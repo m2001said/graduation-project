@@ -1,13 +1,11 @@
 import "./App.css";
 import Hero from "./components/sections/heros/hero1/Hero";
-import Services from "./components/sections/services/services1/services1Card/Services";
 
 function App() {
   return (
     <div className="App">
+      <h1>graduation project</h1>
       <Hero/> 
-      <Services/>
-
 
     </div>
   );

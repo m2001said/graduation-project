@@ -1,5 +1,4 @@
 /* Start Variables */
-
 :root {
   --transparent-color:  rgba(205, 162, 116, 0.47);
   --section-padding: 100px;
@@ -181,7 +180,7 @@ header nav .form i {
 .landing {
   min-height: 100vh;
   background-color: #ffffff;
-  background-image: url("./images/Photo.jpg");
+  background-image: url("../images/Photo.jpg");
   background-size: cover;
   position: relative;
   border-radius: 0 0 0 115px;

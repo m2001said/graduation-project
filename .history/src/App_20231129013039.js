@@ -1,6 +1,6 @@
 import "./App.css";
 import Hero from "./components/sections/heros/hero1/Hero";
-import Services from "./components/sections/services/services1/services1Card/Services";
+import Services from "./components/sections/services/services1/services1Card/services";
 
 function App() {
   return (
