@@ -1,0 +1,1 @@
+[ {        personName: 'Alice',       personImg: 'alice-avatar.jpg',       personOpinion: 'I love the flowers from this shop. They are always fresh and beautifully arranged.',      },      {        personName: 'Bob',       personImg: 'bob-avatar.jpg',        personOpinion: 'The flowers I ordered for my wife's birthday were a big hit. She loved them!'}]

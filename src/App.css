@@ -11,6 +11,11 @@
   --website-color-4: #f4f0ec;
   --website-border-raduis: 10;
 }
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 body {
   margin: 0;
