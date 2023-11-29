@@ -1,18 +1,16 @@
-/* Variables */
+/* Start Variables */
 :root {
   --transparent-color: rgba(205, 162, 116, 0.47);
   --section-padding: 100px;
 }
 
-/* Global Rules */
+/* End Variables */
+
+/* Global Styles */
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-}
-
-html {
-  scroll-behavior: smooth;
 }
 
 body {
@@ -203,7 +201,7 @@ header nav .form i {
   top: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(255, 255, 255, );
+  background-color: var(--transparent-color);
 }
 
 .landing .text {
@@ -244,9 +242,8 @@ header nav .form i {
 }
 
 .landing .text .content h2 {
-  font-family: "DM Serif Display";
-  font-size: 42px;
-  font-weight: bold;
+  font-size: 32px;
+  font-weight: 700;
   line-height: 1.5;
   margin-bottom: 20px;
 }
@@ -275,18 +272,11 @@ header nav .form i {
   padding-bottom: var(--section-padding);
 }
 
-.services .srv-box i {
-  color: rgba(205, 162, 116, 1);
-}
-
-@media (min-width: 768px) {
-  .services .services-container {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    gap: 50px;
-  }
+.services .services-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
 }
 
 .services .srv-box {
@@ -311,9 +301,17 @@ header nav .form i {
   }
 }
 
+/* Responsive Design */
+@media (min-width: 768px) {
+  .services .srv-box {
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+  }
+}
+
 @media (min-width: 992px) {
   .services .srv-box {
-    display: flex;
     flex-direction: row;
     text-align: center;
     align-items: center;
@@ -323,7 +321,6 @@ header nav .form i {
 /* Large Screens */
 @media (min-width: 1200px) {
   .services .srv-box {
-    display: flex;
     flex-direction: row;
     text-align: center;
     align-items: center;
