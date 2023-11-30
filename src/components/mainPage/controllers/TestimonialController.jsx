@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import {  updateSectionTitle, updateSectionSubTitle, updateSectionDescription } from "../../../features/testimonialData/testimonialSlice";
-import { FaCaretDown } from "react-icons/fa";
 
 const TestimonialController = () => {
   const testimonialData = useSelector((state) => state.testimonialData);
@@ -12,7 +11,8 @@ const TestimonialController = () => {
     <div className="controller">
       <div className="flex-between" onClick={() => setOpen(!open)}>
         <h3 className="controller-name">{testimonialData.sectionName}</h3>
-        <FaCaretDown fontSize={23} cursor={"pointer"} />
+        <img src="/assets/icons/down.svg" width={18} alt="down" style={{cursor:"pointer"}}/>
+
       </div>
       {open && (
         <>

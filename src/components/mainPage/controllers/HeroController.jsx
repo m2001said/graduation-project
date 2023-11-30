@@ -1,9 +1,7 @@
 import React, { useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { updateSectionTitle, updateSectionSubTitle, updateSectionDescription, updateSectionImgUrl } from "../../../features/heroData/heroSlice";
-import { FaCaretDown } from "react-icons/fa";
 import UploadWidget from "../cloudinary/UploadWidget";
-import { IoCheckmarkDone } from "react-icons/io5";
 
 const HeroController = () => {
   const heroData = useSelector((state) => state.heroData);
@@ -23,7 +21,7 @@ const HeroController = () => {
     <div className="controller">
       <div className="flex-between" onClick={() => setOpen(!open)}>
         <h3 className="controller-name">{heroData.sectionName}</h3>
-        <FaCaretDown fontSize={23} cursor={"pointer"} />
+        <img src="/assets/icons/down.svg" width={18} alt="down" style={{cursor:"pointer"}}/>
       </div>
       {open && (
         <>

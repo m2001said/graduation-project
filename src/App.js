@@ -1,11 +1,10 @@
-// import "./App.css";
 import { Route, Routes } from "react-router";
-import DashboardLayout from "./components/mainPage/DashboardLayout";
+import Dashboard from "./pages/Dashboard";
 function App() {
   return (
     <>
       <Routes>
-        <Route path="/mainpage" element={<DashboardLayout />} />
+        <Route path="/dashboard" element={<Dashboard />} />
       </Routes>
     </>
   );

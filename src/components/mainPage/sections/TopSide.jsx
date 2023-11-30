@@ -1,7 +1,4 @@
 import React, { useState, useEffect } from "react";
-import { MdComputer } from "react-icons/md";
-import { FaTabletAlt } from "react-icons/fa";
-import { MdPhoneIphone } from "react-icons/md";
 import { useDispatch, useSelector } from "react-redux";
 import { updateScreen } from "../../../features/screen/screenSlice";
 
@@ -33,19 +30,19 @@ const TopSide = () => {
 
   const devices = [
     {
-      icon: <MdComputer fontSize={30} cursor={"pointer"} onClick={updateToPC} />,
+      icon: <img src="/assets/icons/pc.svg" width={33} alt="down" style={{ cursor: "pointer" }} onClick={updateToPC} />,
       endPoint: "5000",
       startPoint: "1024",
       type: "pc",
     },
     {
-      icon: <FaTabletAlt fontSize={22} cursor={"pointer"} onClick={updateToTablet} />,
+      icon: <img src="/assets/icons/tablet.svg" width={30} alt="down" style={{ cursor: "pointer" }} onClick={updateToTablet} />,
       endPoint: "1023",
       startPoint: "768",
       type: "tablet",
     },
     {
-      icon: <MdPhoneIphone fontSize={24} cursor={"pointer"} onClick={updateToIphone} />,
+      icon: <img src="/assets/icons/phone.svg" width={20} alt="down" style={{ cursor: "pointer" }} onClick={updateToIphone} />,
       endPoint: "767",
       startPoint: "0",
       type: "phone",
