@@ -14,6 +14,7 @@ import PhoneRoundedIcon from '@mui/icons-material/PhoneRounded';
 import ShoppingCartRoundedIcon from '@mui/icons-material/ShoppingCartRounded';
 import Logo from '../../../../images/Logo.jpg';
 import useMediaQuery from '@mui/material/useMediaQuery';
+import './navbar1'
 
 
 const Navbar = () => {
@@ -48,7 +49,7 @@ const Navbar = () => {
   ];
 
   return (
-    <div>
+    <div >
       <header>
         <div className="container">
           <a href="#" className="logo">
