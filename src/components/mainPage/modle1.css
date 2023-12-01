@@ -1,0 +1,80 @@
+/* styles.css or your existing CSS file */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .modal {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+  }
+  
+  .modal img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+
+
+  /* modle1.css */
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .modal {
+    background: #fff;
+    padding: 20px;
+    text-align: left;
+  }
+  
+  .modal-content {
+    display: flex;
+    align-items: center;
+  }
+  
+  .modal-image {
+    /* max-width: 50%; */
+    margin-right: 20px;
+    width: 320px;
+    height: 650px;
+  }
+  
+  .modal-text {
+    flex: 1;
+    color: black;
+  }
+  
+  textarea {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  
+  button {
+    background-color: #1b1d1b;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    margin-left: 100px;
+  }
+  
