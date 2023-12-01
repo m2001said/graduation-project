@@ -1,0 +1,27 @@
+.cta-container{
+    background-color:#292F36;
+    color: white;
+    text-align: center;
+    border: 1px solid #292F36;
+    border-radius: 50px;
+    max-width: 55%;
+    align-items: center;
+    margin-left: 300px;
+    margin-top: 50px;
+}
+.button{
+      margin:40px;
+      padding: 15px;
+      color: white;
+      background-color: #CDA274;
+      border: 1px solid #dddbdb;
+      border-radius: 12px;
+      font-weight: bold;
+}
+
+@media screen and (max-width: 680px) {
+    .cta-container{
+        width: 80%;
+        margin: auto;
+    }
+  }
