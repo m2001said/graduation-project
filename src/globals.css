@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -24,12 +24,6 @@
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
-}
-
-
-
-body {
-  @apply text-white min-h-screen;
 }
 
 /* TYPOGRAPHY */
@@ -135,10 +129,6 @@ body {
   @apply w-full grid grid-cols-1  md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-7 max-w-5xl;
 }
 
-
-
-
-
 /* Controller */
 .controller {
   @apply flex flex-col gap-4 bg-white py-4 pl-2 pr-1  border-2 border-blue-900 text-blue-600;
@@ -156,7 +146,6 @@ body {
 .input-controller {
   @apply text-gray-800 text-ellipsis p-2 h-auto outline-none;
 }
-
 
 .card_img {
   @apply h-64  lg:h-[450px] w-full rounded-[24px] object-cover mb-5;
