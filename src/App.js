@@ -1,16 +1,14 @@
-import React from 'react';
-import Header from './components/mainPage/header';
-import MainSection from './components/mainPage/mainSection';
-import Footer from './components/mainPage/footer';
-import './components/mainPage/index.css';
-
+import { Route, Routes } from "react-router";
+import Dashboard from "./pages/Dashboard";
+import MainPage from "./pages/MainPage";
 function App() {
   return (
-    <div>
-      <Header />
-      <MainSection />
-      <Footer />
-    </div>
+    <>
+      <Routes>
+        <Route path="/" element={<MainPage />} />
+        <Route path="/dashboard" element={<Dashboard />} />
+      </Routes>
+    </>
   );
 }
 
