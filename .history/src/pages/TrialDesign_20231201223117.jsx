@@ -1,6 +1,6 @@
 import React from "react";
 import Hero from "../components/sections/heros/hero1/Hero1";
-import Services from "../components/sections/services/services1/Services1";
+import Services
 import App from "../../src/App";
 
 

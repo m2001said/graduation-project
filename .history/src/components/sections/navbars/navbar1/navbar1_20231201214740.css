@@ -1,6 +1,6 @@
 /* Your CSS styles for MyComponent go here */
 /* Variables */
-
+.navbar1 { 
 
 
 :root {
@@ -190,3 +190,4 @@
   .navbar-menu-container {
     display: none;
   }
+}

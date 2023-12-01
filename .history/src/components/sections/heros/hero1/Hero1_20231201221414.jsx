@@ -1,6 +1,5 @@
 import React from 'react'
 import Navbar from '../../navbars/navbar1/Navbar1'
-import './hero.css'
 
 
 

@@ -1,7 +1,7 @@
 import React from 'react'
-import './services1.css'
+import './services.css'
 
-const Services = () => {
+const services = () => {
   return (
     <div className="services">
     <div className="container">
@@ -45,4 +45,4 @@ const Services = () => {
   )
 }
 
-export default Services
+export default services
