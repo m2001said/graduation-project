@@ -5,11 +5,11 @@ const ModalPage = ({ onClose }) => {
   return (
     <div className="modal-overlay">
       <div className="modal">
+        <div></div>
         <div className="modal-content">
           <img  src={image} alt="Description" className="modal-image" />
           <div className="modal-text">
             <h3>
-              
               Create your website quickly with artificial intelligence.
             </h3>
             <div className="input-section">

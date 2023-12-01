@@ -1,11 +1,17 @@
 import React from "react";
+import Header from "../components/mainPage/header";
+import Section from "../components/mainPage/mainSection";
+import Footer from "../components/mainPage/footer";
 
 const MainPage = () => {
   return (
-    <div>
-      <h1>hi this is the main page</h1>
-    </div>
+    <>
+      <Header/>
+      <Section/>
+      <Footer/>
+     
+    </>
   );
-};
+};git 
 
 export default MainPage;
