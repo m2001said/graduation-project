@@ -1,9 +1,9 @@
 import "./App.css";
-
+//import Featrue1 from "./components/sections/features/feature1/Featrue1";
 function App() {
   return (
     <div className="App">
-      <h1>graduation project | from said branch2</h1>
+  
     </div>
   );
 }
