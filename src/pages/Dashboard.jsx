@@ -5,9 +5,10 @@ import RightSide from "./../components/mainPage/sections/RightSide";
 
 const Dashboard = () => {
   return (
-    <section className="w-full">
+    <section className="container mx-auto">
       <TopSide />
       <div className="flex-center">
+        
         <LeftSide />
         <RightSide />
       </div>
