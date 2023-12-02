@@ -68,7 +68,9 @@ const Navbar = () => {
               <li><a href="#">Blog</a></li>
               <li><a href="#">Contact</a></li>
             </ul>
-           
+            {/* <div className="form">
+              <i className="fas fa-search"></i>
+            </div> */}
           </nav>
         </div>
       </header>
