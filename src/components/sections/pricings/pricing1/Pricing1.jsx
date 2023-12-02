@@ -11,7 +11,7 @@ const pricing1 = () => {
     </div>
     <Cards />
    </div> 
-   
+   // fff
   )
 }
 
