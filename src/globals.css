@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -13,6 +13,7 @@
   --primary-color2-dark: #7a4179;
   --grey: #777777;
   --white: #ffff;
+
 
   --website-color-1: #fff;
   --website-color-2: #cda274;
@@ -102,6 +103,8 @@ body {
 .custom-scrollbar::-webkit-scrollbar {
   width: 4px;
   height: 2px;
+  width: 4px;
+  height: 2px;
   border-radius: 2px;
 }
 
@@ -112,7 +115,9 @@ body {
 
 .custom-scrollbar::-webkit-scrollbar-thumb {
   background: var(--primary-color2);
+  background: var(--primary-color2);
   border-radius: 50px;
+
 }
 
 .custom-scrollbar::-webkit-scrollbar-thumb:hover {
@@ -164,6 +169,8 @@ body {
 .controller-field {
   @apply flex flex-col border-2 rounded-lg border-solid pb-1 overflow-hidden text-black;
   border-color: var(--grey);
+  @apply flex flex-col border-2 rounded-lg border-solid pb-1 overflow-hidden text-black;
+  border-color: var(--grey);
 }
 .controller-label {
   @apply text-[16px]  capitalize pl-1 border-b-2;
@@ -172,6 +179,7 @@ body {
   color: var(--website-filed-title);
 }
 .input-controller {
+  @apply text-black  p-2 h-auto outline-none w-full custom-scrollbar;
   @apply text-black  p-2 h-auto outline-none w-full custom-scrollbar;
 }
 
