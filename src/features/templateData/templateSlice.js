@@ -1,8 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
 const templateSlice = createSlice({
-
-
-
   initialState: [
     {
       heroSection: {
@@ -29,9 +26,6 @@ const templateSlice = createSlice({
     },
   ],
 
-
-  
-
   name: "templateSlice",
   reducers: {
     updateHeroSection: (state, action) => {
@@ -54,10 +48,8 @@ const templateSlice = createSlice({
           [variable]: value,
         },
       };
-
       state[templateId] = updatedTemplate;
     },
-    
   },
 });
 

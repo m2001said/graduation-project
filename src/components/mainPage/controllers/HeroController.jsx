@@ -2,11 +2,9 @@ import React, { useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { updateHeroSection } from "../../../features/templateData/templateSlice";
 import UploadWidget from "../cloudinary/UploadWidget";
-
 const HeroController = () => {
   const id = 1;
   const { heroSection } = useSelector((state) => state.template[id - 1]);
-  // console.log(Object.keys(heroSection));
   const fields = Object.keys(heroSection);
   const dispatch = useDispatch();
   const [open, setOpen] = useState(false);
@@ -19,7 +17,6 @@ const HeroController = () => {
     }
     dispatch(updateHeroSection({ templateId: id - 1, variable: "imgUrl", value: result?.info?.secure_url }));
   }
-
   return (
     <div className="controller">
       <div className="flex-between" onClick={() => setOpen(!open)}>
@@ -69,5 +66,4 @@ const HeroController = () => {
     </div>
   );
 };
-
 export default HeroController;

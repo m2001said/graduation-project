@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { updateTestimonialSection } from "../../../features/templateData/templateSlice";
 import UploadWidget from "../cloudinary/UploadWidget";
-
 const TestimonialController = () => {
   const id = 1;
   const { testimonialSection } = useSelector((state) => state.template[id - 1]);
