@@ -140,13 +140,10 @@
     .landing .text {
       width: 100%;
       left: 0;
-      top:300px ; 
-      border-radius: 0 ;
     }
   
     .landing .text .content {
       max-width: 100%;
-      
     }
   }
   
