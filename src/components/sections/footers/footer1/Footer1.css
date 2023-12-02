@@ -9,6 +9,12 @@
 
 .footer-icons{
   max-width: 31%;
+  margin: 5px;
+}
+.footer-icons h1{
+  font-size:xx-large ;
+  font-weight: bold;
+  
 }
 .img{
     width: 20px;
@@ -43,6 +49,12 @@
 .footer-contact{
     width: 23%;
 }
+.footer-section h4,
+.footer-services h4,
+.footer-contact h4 {
+    font-weight: 700;
+}
+
 p{
     color: rgb(78, 74, 74);
 }

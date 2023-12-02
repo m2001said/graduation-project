@@ -1,4 +1,4 @@
-import Team from "./cards.jsx/cards";
+import Team from "./cards.jsx/team-cards";
 import './Teams1.css'
 import React from 'react'
 

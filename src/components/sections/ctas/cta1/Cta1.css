@@ -8,6 +8,16 @@
     align-items: center;
     margin-left: 300px;
     margin-top: 50px;
+    min-width: 200px;
+
+}
+.cta-container h1{
+    font-weight: bold;
+    font-size:xx-large;
+    padding-top: 30px;
+}
+.cta-container p{
+    color: #dddbdb;
 }
 .button{
       margin:40px;
