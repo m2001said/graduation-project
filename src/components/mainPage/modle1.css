@@ -1,80 +1,168 @@
-/* styles.css or your existing CSS file */
+
+/* Overlay Styles */
 .modal-overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.5);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .modal {
-    background: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    text-align: center;
-  }
-  
-  .modal img {
-    max-width: 100%;
-    height: auto;
-  }
-  
+  position: fixed;
+  background: #00000066;
+  top: 0;
+  left: 10;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* Modal Content Styles */
+.modal-content {
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+  width: 440px;
+  height: 490px;
+  display: flex;
+}
+/* Modal Text Styles */
+.modal-text {
+  width: 60%;
+}
+/* Input Section Styles */
+.input-section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+/* Icon Styles */
+.icon-cross {
+  display: inline-block;
+  width: 17.79px;
+  height: 18.58px;
+  border: 3px solid #1A2345;
+  clip-path: polygon(0 0, 100% 0, 50% 50%, 100% 100%, 0 100%);
+}
+
+.modal {
+  background: white;
+  border-radius: 8px;
+  width: 890px;
+  height: 490px;
+  display: flex;
+  position: relative;
+  margin-right: 70px;
+  margin-top: 15px;
+}
+/* Image Background Styles */
+.image-background {
+  background: url('../../assets/images/img2.png') center/cover;
+  width: 440px;
+  height: 490px;
+}
+/* Add these styles for the background overlay */
 
 
-  /* modle1.css */
+/* Add this style */
+.zag-web-builder p {
+  font-size: 30px;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  margin-bottom: 20px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 160px;
+  margin-left: 10px;
+  width: 261px;
+height: 46px;
+top: 424px;
+left: 299px;
 
-.modal-overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.5);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+
   
-  .modal {
-    background: #fff;
-    padding: 20px;
-    text-align: left;
-  }
-  
-  .modal-content {
-    display: flex;
-    align-items: center;
-  }
-  
-  .modal-image {
-    /* max-width: 50%; */
-    margin-right: 20px;
-    width: 320px;
-    height: 650px;
-  }
-  
-  .modal-text {
-    flex: 1;
-    color: black;
-  }
-  
-  textarea {
-    width: 100%;
-    margin-bottom: 10px;
-  }
-  
-  button {
-    background-color: #1b1d1b;
-    color: white;
-    padding: 10px;
-    border: none;
-    cursor: pointer;
-    align-items: center;
-    justify-content: center;
-    margin-left: 100px;
-  }
-  
+}
+
+
+/* Modal Text Styles */
+.modal-text {
+font-style: DM Sans;
+font-size: 22px;
+text-align: left;
+width: 450px;
+height: 490px;
+margin-top: 30px;
+color: #1A2345;
+margin-left: 10px;
+}
+.modal-text2{
+  width: 436px;
+  height: 22px;
+  top: 154px;
+  left: 509px;
+  font-style: DM Sans;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 26px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: #697386;
+  margin-top: 10px; 
+}
+/* Textarea Styles */
+textarea {
+  width: Fixed (416px);
+  height: Fixed (207px);
+  top: -15px;
+  left: -6px;
+  padding: 9px, 12px, 9px, 12px;
+  border-radius: 8px;
+  border: 1px;
+  gap: 8px;
+  background: linear-gradient(0deg, rgba(60, 66, 87, 0.12), rgba(60, 66, 87, 0.12)),
+  linear-gradient(0deg, #FFFFFF, #FFFFFF);
+  border: 1px solid #3C42571F;
+  box-shadow: 0px 1px 1px 0px #0000000A;
+  box-shadow: 0px 2px 5px 0px #00000014;
+  width: 100%;
+  height: 100px;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 6px;
+
+}
+
+/* Button Styles */
+button {
+  width: 150px;
+  height: 40px;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  background-color: #20254B;
+}
+.btn-modal1{
+  width:380px;
+  height:  51px;
+  margin-left: 15PX;
+  margin-top: 25PX;
+  left: 527px;
+  padding: 10px, 60px, 10px, 60px;
+  border-radius: 6px;
+  gap: 10px;
+  background: #1A2345;
+  color: #f9f8f8;
+  animation-duration: 0ms; 
+}
+
+/* Close Button Styles */
+.btn-close {
+  position: absolute;
+  width: 150px;
+  height: 40px;
+  color: #20254B;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  top: 15px;
+  left: 780px;
+  max-width: 50%;
+}
+

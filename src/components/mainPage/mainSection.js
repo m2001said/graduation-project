@@ -1,29 +1,34 @@
-
+// Section.jsx
 import React from 'react';
-// import myImage from '../Images/img1.png';
+import '../mainPage/index.css'; 
+import myImage from '../../assets/images/img2.png';
 
 const Section = () => {
   return (
     <>
-    <section className="section">
-      {/* <img src={myImage} alt="Description" className="section-image" /> */}
-      <div className="section-content">
-        <p>Welcome to the website creation platform! Create your website easily 
-          and quickly using artificial intelligence. Or start creating your own site 
-          using your chosen elements.
-          Create a powerful website for your company or project simply and 
-          professionally. Choose from pre-made templates or design a custom 
-          layout according to your needs. Let creativity breathe life into your new website now!</p>
-      </div>
-
-    </section>
-    <section className="section">
-      <div className="section-content2">
-      <p>
-        Make Your WebSite
-      </p>
-      </div>
-    </section>
+      <section className="section">
+        <div className="section-content">
+          <img src={myImage} alt="Description" className="section-image" />
+          <p>
+            Welcome to the website creation platform! Build your<br/>
+            website easily and quickly using artificial <br/>
+            intelligence. Or start creating your site youtself with your <br/>
+            chosen elements. <br/>
+            Create a stunning  website for your company or project <br/>
+            with simplicity and professionalism. Choose from pre-<br/>
+            made templates or design a custom layout according to<br/>
+            your needs. Let creativity breathe life into your new<br/>
+            website now!
+          </p>
+        </div>
+      </section>
+      <section className="section">
+        <div className="section-content2">
+          <h1>
+            Make Your Website
+          </h1>
+        </div>
+      </section>
     </>
   );
 };

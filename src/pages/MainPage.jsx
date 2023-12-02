@@ -9,9 +9,8 @@ const MainPage = () => {
       <Header/>
       <Section/>
       <Footer/>
-     
     </>
   );
-};git 
+};
 
 export default MainPage;
