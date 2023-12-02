@@ -52,13 +52,10 @@
 }
 /* Image Background Styles */
 .image-background {
-  background: url('../../assets/images/img2.png') center/cover;
+  background: url('../../../../assets/images/img1.webp') center/cover;
   width: 440px;
   height: 490px;
 }
-/* Add these styles for the background overlay */
-
-
 /* Add this style */
 .zag-web-builder p {
   font-size: 30px;
@@ -71,14 +68,10 @@
   margin-top: 160px;
   margin-left: 10px;
   width: 261px;
-height: 46px;
-top: 424px;
-left: 299px;
-
-
-  
+  height: 46px;
+  top: 424px;
+  left: 299px;
 }
-
 
 /* Modal Text Styles */
 .modal-text {
@@ -115,7 +108,7 @@ textarea {
   border-radius: 8px;
   border: 1px;
   gap: 8px;
-  background: linear-gradient(0deg, rgba(60, 66, 87, 0.12), rgba(60, 66, 87, 0.12)),
+  background: linear-gradient(0deg, rgba(236, 237, 240, 0.12rgba(227, 228, 232, 0.12)12)),
   linear-gradient(0deg, #FFFFFF, #FFFFFF);
   border: 1px solid #3C42571F;
   box-shadow: 0px 1px 1px 0px #0000000A;
@@ -125,6 +118,7 @@ textarea {
   padding: 10px;
   margin-bottom: 10px;
   border-radius: 6px;
+ 
 
 }
 
