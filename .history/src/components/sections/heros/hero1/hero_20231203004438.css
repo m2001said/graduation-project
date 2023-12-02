@@ -88,7 +88,7 @@
   
   .landing .text {
     position: absolute;
-    top: 350px;
+    top: 380px;
     transform: translateY(-50%);
     padding: 50px;
     background-color: var(--transparent-color);
@@ -141,7 +141,7 @@
   
   .landing .change-background {
     position: absolute;
-    top: 50%;
+    /* top: 50%; */
     transform: translateY(-50%);
     color: var( --website-color-1);
   }

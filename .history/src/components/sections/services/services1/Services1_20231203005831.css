@@ -73,7 +73,7 @@
   @media (min-width: 992px) {
     .services .srv-box {
       display: flex;
-      flex-direction: column;
+      flex-direction: row;
       text-align: center;
       align-items: center;
       justify-content: center;
@@ -84,7 +84,6 @@
   @media (min-width: 1200px) {
     .services .srv-box {
       display: flex;
-      flex-direction: column;
       justify-content: center;
       text-align: center;
       align-items: center;
@@ -98,8 +97,4 @@
   .services .srv-box p {
     line-height: 2;
     color: var(--grey);
-  }
-
-  .text { 
-    text-align: center;
   }

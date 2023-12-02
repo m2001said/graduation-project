@@ -1,8 +1,5 @@
 import React from 'react'
 import './services1.css'
-import Groupwork from '../../../../images/Groupwork.svg';
-import Iocn from '../../../../images/Iocn.svg';
-import Vector from '../../../../images/Vector.svg';
 
 const Services = () => {
   return (
@@ -10,8 +7,8 @@ const Services = () => {
     <div className="container">
       <div className="services-container">
         <div className="srv-box">
-          <img src={Vector} alt="image of Groupwork" />
           <div className="text">
+            <i className="fas fa-desktop fa-3x"></i>
             <h3>Project plan</h3>
             <p>
               There are many variations of the <br/> passages of lorem Ipsum from <br/>
@@ -21,8 +18,8 @@ const Services = () => {
           </div>
         </div>
         <div className="srv-box">
-          <img src={Groupwork} alt="image of Groupwork" />
           <div className="text">
+            <i className="fas fa-cog fa-3x"></i>
             <h3>Interior work</h3>
             <p>
               There are many variations of the <br/> passages of lorem Ipsum from <br/>
@@ -32,8 +29,8 @@ const Services = () => {
           </div>
         </div>
         <div className="srv-box">
-            <img src={Iocn} alt="image of Groupwork" />
           <div className="text">
+            <img src="../../../../images/" alt="" />
             <h3>Relization</h3>
             <p>
               There are many variations of the <br/> passages of lorem Ipsum from <br/>
