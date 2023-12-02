@@ -1,6 +1,6 @@
 import React from 'react'
 import Cards from './cards/pricing-cards.jsx'
-import "./Pricing1.css"
+import "./pricing1.css"
 
 const pricing1 = () => {
   return (
