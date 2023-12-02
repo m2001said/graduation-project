@@ -4,10 +4,10 @@ import FaceBook from "../../../../assets/images/facebook.jpg"
 import Twitter from "../../../../assets/images/x.jpg"
 import LinkedIn from "../../../../assets/images/ln.jpg"
 import Inestagram from "../../../../assets/images/instagram.jpg"
-import "./Footer1.css"
+import "./footer1.css"
 
 
-const footer1 = () => {
+const Footer = () => {
   return (
     <div className='footer-container'>
         <div className="footer-icons">
@@ -50,4 +50,4 @@ const footer1 = () => {
   )
 }
 
-export default footer1
+export default Footer

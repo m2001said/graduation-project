@@ -1,5 +1,5 @@
 import React from 'react'
-import "./Cta1.css"
+import "./cta1.css"
 const cta1 = () => {
   return (
     <div className='cta-container'>
