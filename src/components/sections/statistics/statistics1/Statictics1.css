@@ -1,0 +1,90 @@
+
+:root{
+--main-color2:#F4F0EC;
+--main-color1:#CDA274;
+--primary-text-color:#292F36;
+--sec-text-color:#707070;
+--description-text:#4D5053;
+}
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+a{
+text-decoration: none;
+color:var(--primary-text-color);
+}
+.container{
+padding: 0px 30px;
+margin: auto;
+}
+/* Small */
+@media (min-width: 768px) {
+.container {
+width: 750px;
+}
+}
+/* Medium */
+@media (min-width: 992px) {
+.container {
+width: 970px;
+}
+}
+/* Large */
+@media (min-width: 1200px) {
+.container {
+width: 1170px;
+}
+}
+
+/*state counter*/
+.state{
+background:var(--main-color2);
+padding: 95px 0;
+}
+.state .container{
+display: flex;
+justify-content: center;
+align-items: center;
+gap:10px; 
+}
+.state-box{
+width: 200px;
+padding: 0 10px;         
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+align-items: center;
+border-right: solid 1px var(--main-color1);
+}
+.state-box:last-child{
+border:none;
+}
+.state .state-num{
+font-weight: 600;
+color: var(--main-color1);
+margin-bottom: 10px;
+font-size: 6em;
+}
+.state    .state-name{
+color: var(--description-text);
+font-weight: 400;
+letter-spacing: 0.22px;
+text-align: center;
+font-size: 0.9em;
+}
+@media(max-width:768px){
+.state .container{
+display: flex;
+flex-direction: column;
+}
+.state-box{
+padding: 15px;
+border: solid 1px var(--main-color1);
+border-radius: 5px;
+}
+.state-box:last-child{
+border: solid 1px var(--main-color1);
+}
+}  
