@@ -154,7 +154,7 @@ header nav ul {
   display: flex;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 667px) {
   header nav ul {
     display: none;
     flex-direction: column;
@@ -200,7 +200,7 @@ header nav ul li a {
   cursor: pointer;
 }
 
-@media (max-width: 750px) {
+@media (max-width: 700px) {
   .navbar-menu-container {
     display: block;
   }
