@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import './Statictics1.css';
 
+
+
 const Statictics1 = () => {
   const statistic = [
     {

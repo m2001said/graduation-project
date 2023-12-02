@@ -1,12 +1,10 @@
 import React from 'react';
 import './Project1.css';
-import project1 from '......../img/project1.png';
-import project2 from '......../img/project2.png';
-import project3 from '......../img/project3.png';
-import project4 from '......../img/project4.png';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faAngleRight } from '@fortawesome/free-solid-svg-icons'; 
-
+import project1 from '......../assets/images/project1.png'
+import project2 from '......../assets/images/project2.png'
+import project3 from '......../assets/images/project3.png'
+import project4 from '......../assets/images/project4.png'
+import Icon from '......../assets/images/angle-right-solid.svg'
 
 const Project1 = () => {
     let header = {
@@ -67,7 +65,7 @@ const Project1 = () => {
             </div>
             <a href={data.link} className='go-to'>
             <span>
-            <FontAwesomeIcon icon={faAngleRight} />
+            <Icon />
             </span>
             </a> 
           </div>

@@ -1,10 +1,9 @@
 import React from 'react';
 import './Items1.css';
-import article1 from '......../img/article1.png';
-import article2 from '......../img/article2.png';
-import article3 from '......../img/article3.png';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faAngleRight } from '@fortawesome/free-solid-svg-icons'; 
+import article1 from '......../assets/images/article1.png'
+import article2 from '......../assets/images/article2.png'
+import article3 from '......../assets/images/article3.png'
+import Icon from '......../assets/images/angle-right-solid.svg'
 
 
 const Articles = () => {
@@ -14,7 +13,7 @@ const Articles = () => {
         a page when lookings at its layouts the points of using.` ,
         }
  
-    let aeticlesBox = [
+    let articlesBox = [
         {
             image:article1 ,   
             title:"let's get solution for building construction work" ,   
@@ -51,7 +50,7 @@ const Articles = () => {
         }
         <div className='container'>
            {
-            aeticlesBox.map((data) => (     
+            articlesBox.map((data) => (     
         <div className='box article-box '>
         <div className='img'>
         <img src={data.image} alt='Article 1' />
@@ -63,7 +62,7 @@ const Articles = () => {
         <p>{data.date}</p>
         <a href={data.link} className='go-to'>
         <span>
-        <FontAwesomeIcon icon={faAngleRight} />
+        <Icon />
         </span>
         </a> 
         </div>
