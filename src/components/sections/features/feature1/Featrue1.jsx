@@ -1,50 +1,49 @@
-import "/features.css";
-import React from 'react';
+import React from "react";
 import PhotoImage from "./Photo1.jpg";
+import PhotoImage2 from "./Vector .svg";
+import "./feature.css";
 
-const Feature1 = () => {
- 
-/*
+const Featrue1 = () => {
   return (
-    <div >style={containerStyle}>
-      <div style={contentStyle}>
-        <div style={subContentStyle}>
-          <div style={textStyle}>
-            <h1>We Create The Art Of Stylish Living Stylishly</h1>
-          </div>
-          <div>
-            <p>It is a long established fact that a reader will be distracted by the of readable content of a page
-              when lookings at its layouts the points of using
-              that it has a more-or-less normal.
-            </p>
-          </div>
+    <div className="feature1-layout">
+      <div className="content">
+        <div className="sub-content">
+          <h1>We Create The Art Of Stylish Living Stylishly</h1>
+
+          <p>
+            It is a long established fact that a reader will be distracted by the of readable content of a page when lookings at its layouts the points of using
+            that it has a more-or-less normal.
+          </p>
         </div>
-      </div>
-      <div >
-        <div style={callStyle}>
-          <div style={callIconStyle}>
-            <div style={ellipseStyle}></div>
-            <div style={{ ...ellipseStyle, borderRadius: '9999px', background: '#F4F0EC' }}>
-              <div style={callNumberStyle}>01010351108</div>
-              <div style={callUsStyle}>Call US Anytime</div>
+
+        <div className="contact-container">
+          <div className="details">
+            <img src="/images/call-icon.svg" alt="" />
+            <div className="phone">
+              <h1>01010351108</h1>
+              <h2>Call Us Anytime </h2>
             </div>
           </div>
+          <button>
+            <p>Get Free Estimate</p>
+            <img src={PhotoImage2} alt="" />
+          </button>
         </div>
       </div>
-      <div style={buttonContainerStyle}>
-        <div style={buttonStyle}>
-          <div style={getFreeEstimateStyle}>
-            <div style={getFreeEstimateTextStyle}>Get Free Estimate</div>
-            <div style={vectorStyle}></div>
+
+       
+      <div className="image-container">
+      <div className="img-background">
+          <img src={PhotoImage} alt="" />{" "}
           </div>
-        </div>
+
       </div>
-      <div style={imageContainerStyle}>
-        <div style={imageBackgroundStyle}></div>
-        <img style={photoStyle} src={PhotoImage} alt='' />
-      </div>
+
+      {/* <div className="image-container">
+        <img src={PhotoImage} alt="" />{" "}
+      </div> */}
     </div>
   );
 };
 
-export default Feature1;
+export default Featrue1;
