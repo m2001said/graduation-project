@@ -1,10 +1,14 @@
-import "./App.css";
-//import Featrue1 from "./components/sections/features/feature1/Featrue1";
+import { Route, Routes } from "react-router";
+import Dashboard from "./pages/Dashboard";
+import MainPage from "./pages/MainPage";
 function App() {
   return (
-    <div className="App">
-  
-    </div>
+    <>
+      <Routes>
+        <Route path="/" element={<MainPage />} />
+        <Route path="/dashboard" element={<Dashboard />} />
+      </Routes>
+    </>
   );
 }
 
