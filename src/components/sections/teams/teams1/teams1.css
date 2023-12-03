@@ -1,13 +1,13 @@
 .team-container{
   background-color: #F4F0EC;
-  /* padding: 10px; */
-  
+  padding: 60px;
 }
 .head{
   text-align: center;
   font-weight:bold;
   font-size: xx-large;
   padding:20px;
+  margin-bottom: 35px;
 }
 @media screen and (max-width: 680px) {
   .team-container {

@@ -5,13 +5,12 @@ import "./pricing1.css"
 const pricing1 = () => {
   return (
    <div className="pricing-container">
-    <div>
-    <h1 className='head'>Pricing & Plan</h1>
+    <div className='head'>
+    <h1 >Pricing & Plan</h1>
     <p>Home / Priceing</p>
     </div>
     <Cards />
    </div> 
-   // fff
   )
 }
 

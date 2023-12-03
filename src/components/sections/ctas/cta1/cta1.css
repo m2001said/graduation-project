@@ -1,37 +1,66 @@
 .cta-container{
     background-color:#292F36;
-    color: white;
-    text-align: center;
-    border: 1px solid #292F36;
-    border-radius: 50px;
-    max-width: 55%;
+    border-radius: 70px;
+    max-width: 65%;
+    height: 300px;
+    padding: 80px, 315px, 80px, 315px;
     align-items: center;
-    margin-left: 300px;
+    margin-left: 240px;
     margin-top: 50px;
     min-width: 200px;
-
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
 }
 .cta-container h1{
-    font-weight: bold;
-    font-size:xx-large;
+    font-family: DM Serif Display;
+    font-weight: 400;
+    font-size:50px;
+    line-height:62.5px;
     padding-top: 30px;
+    color: #FFFFFF;
+    text-align: center;
 }
 .cta-container p{
-    color: #dddbdb;
+   font-family:Jost;
+   font-weight: 400;
+    font-size:22px;
+    line-height:33px;
+    color: #FFFFFF;
+    text-align: center;
 }
 .button{
+      font-family:Jost;
+      font-weight: 600;
+      font-size:18px;
+      line-height:22.5px;
+      display: flex;
+      flex-direction: row;
       margin:40px;
-      padding: 15px;
+      padding: 20px;
       color: white;
       background-color: #CDA274;
-      border: 1px solid #dddbdb;
-      border-radius: 12px;
-      font-weight: bold;
+      border-radius: 18px;
+      gap: 10px;
+}
+.button img{
+    width:15.14px;
+    height:13.18px;
+    margin-top:7px ;
 }
 
+@media screen and (max-width: 980px) {
+    .cta-container{
+        width: 80%;
+        height: 80%;
+        margin: auto;
+    }
+  }
 @media screen and (max-width: 680px) {
     .cta-container{
         width: 80%;
+        height: 80%;
         margin: auto;
     }
   }
