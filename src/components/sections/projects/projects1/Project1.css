@@ -76,7 +76,7 @@
     text-transform: capitalize;
   }
   
-  img {
+  .projects img {
     width: 100%;
     display: block;
   }
