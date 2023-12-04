@@ -1,0 +1,150 @@
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  a {
+    text-decoration: none;
+    color: var(--website-color-3);
+  }
+  .container {
+    padding: 0px 30px;
+    margin: auto;
+  }
+  /* Small */
+  @media (min-width: 768px) {
+    .container {
+      width: 750px;
+    }
+  }
+  /* Medium */
+  @media (min-width: 992px) {
+    .container {
+      width: 970px;
+    }
+  }
+  /* Large */
+  @media (min-width: 1200px) {
+    .container {
+      width: 1170px;
+    }
+  }
+  /* Articles & News counter*/
+  .articles {
+    margin: 60px 0;
+  }
+  .header {
+    text-align: center;
+    margin: 0 auto 50px auto;
+    width: 55%;
+  }
+  @media (max-width: 768px) {
+    .header {
+      width: 90%;
+    }
+  }
+  .header h1 {
+    color: var(--website-color-3);
+    font-size: 2em;
+  }
+  .header p {
+    padding: 20px 0;
+    color: var(--grey);
+    line-height: 1.3;
+    font-size: 1.2em;
+  }
+  
+  .articles .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 50px;
+    position: relative;
+  }
+  
+  .box {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-transform: capitalize;
+  }
+  .article-box {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+    border-radius: 20px;
+    border: solid 1px #e9e9e9;
+    transition: 0.4s;
+    justify-content: space-between;
+  }
+  .article-box:hover {
+    background: var(--website-color-4);
+  }
+  img {
+    width: 100%;
+    display: block;
+  }
+  .articles .img {
+    overflow: hidden;
+    margin-bottom: 10px;
+    width: 100%;
+    position: relative;
+    border-radius: 10px 10px 0 0;
+  }
+  
+  .caption {
+    border-radius: 6px;
+    border-bottom-left-radius: 0;
+    z-index: 1;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    width: fit-content;
+    background: white;
+    padding: 7px;
+  }
+  .articles .info {
+    width: 100%;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .info h1 {
+    color: var(--primary-text-color);
+    font-size: 1.2em;
+    font-weight: 700;
+    line-height: 1.4;
+    margin-bottom: 8px;
+  }
+  .articles .info p {
+    font-size: 20px;
+    color: var(--description-text);
+  }
+  
+  .article-foot {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .article-box:hover .go-to {
+    background: white;
+  }
+  .articles .go-to {
+    width: 40px;
+    height: 40px;
+    background: var(--website-color-4);
+    color: var(--website-color-3);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .go-to span {
+    display: flex;
+  }
+  
