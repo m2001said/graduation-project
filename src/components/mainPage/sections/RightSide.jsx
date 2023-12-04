@@ -1,8 +1,7 @@
 import React from "react";
 import { useSelector } from "react-redux";
 const RightSide = () => {
-  const id = 1;
-  const { heroSection } = useSelector((state) => state.template[id - 1]);
+  const { heroSection } = useSelector((state) => state.template);
 
   const screen = useSelector((state) => state.screen);
   return (

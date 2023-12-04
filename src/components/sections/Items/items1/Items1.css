@@ -83,7 +83,7 @@
   .article-box:hover {
     background: var(--website-color-4);
   }
-  img {
+  .articles img {
     width: 100%;
     display: block;
   }

@@ -3,8 +3,7 @@ import { useSelector, useDispatch } from "react-redux";
 import { updateHeroSection } from "../../../features/templateData/templateSlice";
 import UploadWidget from "../cloudinary/UploadWidget";
 const HeroController = () => {
-  const id = 1;
-  const { heroSection } = useSelector((state) => state.template[id - 1]);
+  const { heroSection } = useSelector((state) => state.template);
   const fields = Object.keys(heroSection);
   const dispatch = useDispatch();
   const [open, setOpen] = useState(false);
@@ -15,7 +14,7 @@ const HeroController = () => {
       });
       return;
     }
-    dispatch(updateHeroSection({ templateId: id - 1, variable: "imgUrl", value: result?.info?.secure_url }));
+    dispatch(updateHeroSection({ variable: "imgUrl", value: result?.info?.secure_url }));
   }
   return (
     <div className="controller">
@@ -55,7 +54,7 @@ const HeroController = () => {
                     className="input-controller"
                     wrap="hard"
                     value={heroSection[field]}
-                    onChange={(e) => dispatch(updateHeroSection({ templateId: id - 1, variable: field, value: e.target.value }))}
+                    onChange={(e) => dispatch(updateHeroSection({ variable: field, value: e.target.value }))}
                   />
                 )}
               </div>

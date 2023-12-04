@@ -3,8 +3,7 @@ import { useSelector, useDispatch } from "react-redux";
 import { updateTestimonialSection } from "../../../features/templateData/templateSlice";
 import UploadWidget from "../cloudinary/UploadWidget";
 const TestimonialController = () => {
-  const id = 1;
-  const { testimonialSection } = useSelector((state) => state.template[id - 1]);
+  const { testimonialSection } = useSelector((state) => state.template);
   const fields = Object.keys(testimonialSection);
   const dispatch = useDispatch();
   const [open, setOpen] = useState(false);
@@ -15,7 +14,7 @@ const TestimonialController = () => {
       });
       return;
     }
-    dispatch(updateTestimonialSection({ templateId: id - 1, variable: "imgUrl", value: result?.info?.secure_url }));
+    dispatch(updateTestimonialSection({ variable: "imgUrl", value: result?.info?.secure_url }));
   }
 
   return (
@@ -56,7 +55,7 @@ const TestimonialController = () => {
                     className="input-controller"
                     wrap="hard"
                     value={testimonialSection[field]}
-                    onChange={(e) => dispatch(updateTestimonialSection({ templateId: id - 1, variable: field, value: e.target.value }))}
+                    onChange={(e) => dispatch(updateTestimonialSection({ variable: field, value: e.target.value }))}
                   />
                 )}
               </div>
