@@ -30,19 +30,19 @@ const TopSide = () => {
 
   const devices = [
     {
-      icon: <img src="/assets/icons/pc.svg" width={33} alt="down" style={{ cursor: "pointer" }} onClick={updateToPC} />,
+      icon: <img src="/assets/icons/pc.svg" height={22} alt="down" style={{ cursor: "pointer" }} onClick={updateToPC} />,
       endPoint: "5000",
       startPoint: "1024",
       type: "pc",
     },
     {
-      icon: <img src="/assets/icons/tablet.svg" width={30} alt="down" style={{ cursor: "pointer" }} onClick={updateToTablet} />,
+      icon: <img src="/assets/icons/tablet.svg" height={27} alt="down" style={{ cursor: "pointer" }} onClick={updateToTablet} />,
       endPoint: "1023",
       startPoint: "768",
       type: "tablet",
     },
     {
-      icon: <img src="/assets/icons/phone.svg" width={20} alt="down" style={{ cursor: "pointer" }} onClick={updateToIphone} />,
+      icon: <img src="/assets/icons/phone.svg" height={27} alt="down" style={{ cursor: "pointer" }} onClick={updateToIphone} />,
       endPoint: "767",
       startPoint: "0",
       type: "phone",
@@ -50,12 +50,12 @@ const TopSide = () => {
   ];
 
   return (
-    <div className="flex-center gap-5 bg-1A2345 text-white py-2 h-12">
+    <div className="flex-center gap-5 bg-1A2345 text-white  h-14">
       {devices.map((device) => {
         const showControllers = viewportWidth >= 1024;
         const isActive = screen === device.type;
         return showControllers ? (
-          <div key={device.endPoint} className={isActive ? "bg-blue-500 p-1 rounded-sm" : ""}>
+          <div  key={device.endPoint} className={isActive ? "bg-blue-500 p-1 rounded-sm w-10 h-10 flex-center" : "w-10 h-10 flex-center"}>
             {device.icon}
           </div>
         ) : (
