@@ -22,10 +22,7 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 # Ignore all files with a .history extension
-history*
-*.history
-history.txt
-npm-debug.log*
+.history
 
 
 
