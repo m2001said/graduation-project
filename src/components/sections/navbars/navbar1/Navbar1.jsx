@@ -8,7 +8,7 @@ import ListItemButton from '@mui/material/ListItemButton';
 import ListItemText from '@mui/material/ListItemText';
 import Logo from '../../../../images/Logo.jpg';
 import useMediaQuery from '@mui/material/useMediaQuery';
-import './navbar1.css'
+import './navbar1.css';
 
 const Navbar = () => {
   const [openMenu, setOpenMenu] = useState(false);
@@ -45,19 +45,26 @@ const Navbar = () => {
           </a>
           <nav>
             {isSmallScreen && (
-              <i className="fas fa-bars toggle-menu" onClick={() => setOpenMenu(!openMenu)}></i>
+              <div className="toggle-menu" onClick={() => setOpenMenu(!openMenu)}>
+                <div className="bar"></div>
+                <div className="bar"></div>
+                <div className="bar"></div>
+              </div>
             )}
             <ul>
               {menuOptions.map((item, index) => (
-                <li key={index}><a className={index === 0 ? "active" : ""} href="#">{item.text}</a></li>
+                <li key={index}>
+                  <a className={index === 0 ? "active" : ""} href="#">
+                    {item.text}
+                  </a>
+                </li>
               ))}
             </ul>
           </nav>
         </div>
       </header>
       {isSmallScreen && (
-        <div className="navbar-menu-container">
-          <i className="fas fa-bars toggle-menu" onClick={() => setOpenMenu(!openMenu)}></i>
+        <div className="navbar-menu-container" onClick={() => setOpenMenu(!openMenu)}>
         </div>
       )}
       <Drawer open={isSmallScreen && openMenu} onClose={() => setOpenMenu(false)} anchor="right">

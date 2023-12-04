@@ -66,6 +66,37 @@ header nav .toggle-menu {
   font-size: 22px;
   cursor: pointer;
 }
+/* Your existing styles */
+/* Add these styles to your existing CSS file */
+
+.toggle-menu {
+  color: #000;
+  font-size: 22px;
+  cursor: pointer;
+  position: relative;
+}
+
+.bar {
+  background-color: #000;
+  height: 3px;
+  width: 24px;
+  margin: 5px 0;
+}
+
+.toggle-menu .bar:first-child {
+  margin-top: -8px;
+}
+
+.toggle-menu .bar:last-child {
+  margin-top: 6px;
+}
+
+.toggle-menu .bar:nth-child(2) {
+  margin-top: 4px;
+}
+
+/* ... (your existing styles) ... */
+
 
 @media (min-width: 768px) {
   header nav .toggle-menu {
