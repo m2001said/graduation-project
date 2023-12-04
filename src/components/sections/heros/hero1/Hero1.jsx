@@ -4,7 +4,7 @@ import './hero.css'
 
 
 
-const Hero = () => {
+const Hero1 = () => {
   return (
     <div >
      
@@ -29,5 +29,5 @@ const Hero = () => {
   )
 }
 
-export default Hero
+export default Hero1
 

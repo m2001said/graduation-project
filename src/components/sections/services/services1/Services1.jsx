@@ -1,10 +1,10 @@
 import React from 'react'
-import './services1.css'
+import './Services1.css'
 import Groupwork from '../../../../images/Groupwork.svg';
 import Iocn from '../../../../images/Iocn.svg';
 import Vector from '../../../../images/Vector.svg';
 
-const Services = () => {
+const Services1 = () => {
   return (
     <div className="services">
     <div className="container">
@@ -48,4 +48,4 @@ const Services = () => {
   )
 }
 
-export default Services
+export default Services1

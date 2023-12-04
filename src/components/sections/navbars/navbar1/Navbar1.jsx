@@ -4,7 +4,7 @@ import React, { useState, useRef, useEffect } from 'react';
 import './navbar1.css'; // Import your CSS file
 // ... (other imports and code)
 
-const Navbar = () => {
+const Navbar1 = () => {
   const [openMenu, setOpenMenu] = useState(false);
   const isSmallScreen = window.innerWidth <= 768; // Adjust the breakpoint as needed
   const menuRef = useRef(null);
@@ -57,6 +57,6 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+export default Navbar1;
 
 
