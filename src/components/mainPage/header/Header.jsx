@@ -1,12 +1,11 @@
 
-
 import React from 'react';
-// import './styles.css';
+import '../styles/index.css'; // Import the external CSS file
 
 const Header = () => {
   return (
     <header className="header">
-      <div className="logo">Zag Web Builder</div>
+      <div className="logo">Zap With Builder</div>
     </header>
   );
 };
