@@ -28,11 +28,6 @@ body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
 }
-/* Variables */
-:root {
-  --transparent-color: rgba(205, 162, 116, 0.47);
-  --section-padding: 100px;
-}
 
 /* Global Rules */
 * {

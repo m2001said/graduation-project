@@ -1,4 +1,5 @@
 import React from "react";
+import Navbar from '../components/sections/navbars/navbar1/Navbar1'
 import Hero from "../components/sections/heros/hero1/Hero1";
 import Services from "../components/sections/services/services1/Services1";
 import App from "../../src/App";
@@ -11,16 +12,13 @@ import Statictics1 from '../components/sections/statistics/statistics1/Statictic
 const TrialDesign = () => {
   return (
     <div>
+      <Navbar/>
       <Hero/> 
       <Services/> 
-      <h1>صفحة التصميم الاولي ، ضيفوا ملفاتكم بترتيب التصميم لو سمحتم</h1>
-      <p>رجب وحسني والسيد سليمان</p>
+      <Project1 />
+      <Statictics1 />
+      <Articles /> 
     </div>
-    <>
-<Project1 />
-<Statictics1 />
-<Articles /> 
-   </>
   );
 };
 

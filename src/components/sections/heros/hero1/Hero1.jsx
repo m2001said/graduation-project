@@ -1,5 +1,5 @@
 import React from 'react'
-import Navbar from '../../navbars/navbar1/Navbar1'
+
 import './hero.css'
 
 
@@ -7,7 +7,7 @@ import './hero.css'
 const Hero = () => {
   return (
     <div >
-      <Navbar/>
+     
       <div className="landing">
       <div className="overlay"></div>
       <div className="text">
