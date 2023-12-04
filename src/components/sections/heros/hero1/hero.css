@@ -108,11 +108,12 @@
     padding: 20px 45px;
     border-radius: 18px;
     gap: 10px;
-    background: var(--primary-color1);
+    
+    background: var(--website-color-3);
     color: var(--white);
   }
   .landing-btn:hover {
-    background: var(--website-color-3);
+    background: var(--primary-color1);
     transition: .3s;
     font-size: 16.5px;
   }
