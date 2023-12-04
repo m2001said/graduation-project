@@ -5,11 +5,8 @@ import article2 from "../../../../assets/images/article2.png";
 import article3 from "../../../../assets/images/article3.png";
 import Icon from "../../../../assets/images/Icon.svg";
 
-import { useSelector } from "react-redux";
 
 const Articles = () => {
-  const {articlesSection} = useSelector((state) => state.template);
-  console.log(articlesSection);
   let header = {
     headerTitle: "Articles & News",
     headerDescribe: `it is a long established fact that a reader will be distracted by the of readable content of 
@@ -55,7 +52,7 @@ const Articles = () => {
         {articlesBox.map((data) => (
           <div className="box article-box " key={data.title}>
             <div className="img">
-              <img src={data.image} alt="Article 1" />
+              <img src={articlesSection.cards[0].imgUrl} alt="Article 1" />
               <p className="caption">{data.caption}</p>
             </div>
             <div className="info">
