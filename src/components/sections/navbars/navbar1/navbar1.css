@@ -109,18 +109,9 @@ header nav ul li a:hover {
 /* ... (your existing styles) ... */
 
 
-@media (min-width: 768px) {
+@media (min-width: 767px) {
   header nav .toggle-menu {
     display: none;
-  }
-  header nav .toggle-menu:hover + ul {
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    background-color: rgba(255, 255, 255, 0.5);
   }
   header nav ul li a {
     padding: 15px !important;
@@ -131,32 +122,38 @@ header nav ul {
   display: flex;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   header nav ul {
     display: none;
     flex-direction: column;
     position: absolute;
-    top: 70px;
-    left: 0;
-    width: 100%;
-    background-color: var(--website-color-4);
-    box-shadow: 0 2px 4px var(--website-color-3);
+    top: 80px;
+    right: 0;
+    width: 40%;
+    background-color: var(--website-color-2);
+    opacity: .8;
+    box-shadow: 0 2px 4px var(--website-color-2);
+  }
+  header nav ul li a:hover {
+    color: var(--primary-color1);
   }
 
   header nav ul.show {
     display: flex;
+    
   }
 
   header nav ul li {
     width: 100%;
+    right: 0;
   }
 
   header nav ul li a {
-    padding: 15px;
+    padding: 5px;
     display: block;
     color: var(--website-color-3);
     text-decoration: none;
-    font-size: 14px;
+    font-size: 18px;
     transition: 0.3s;
   }
 }
@@ -177,8 +174,8 @@ header nav ul li a {
   cursor: pointer;
 }
 
-@media (max-width: 750px) {
+/* @media (max-width: 750px) {
   .navbar-menu-container {
     display: block;
   }
-}
+} */

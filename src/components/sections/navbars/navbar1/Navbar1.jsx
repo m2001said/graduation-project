@@ -1,17 +1,17 @@
 
-
 import Logo from '../../../../images/Logo.jpg';
 import React, { useState, useRef, useEffect } from 'react';
 import './navbar1.css'; // Import your CSS file
+// ... (other imports and code)
 
 const Navbar = () => {
   const [openMenu, setOpenMenu] = useState(false);
-  const isSmallScreen = window.innerWidth <= 767; // Adjust the breakpoint as needed
+  const isSmallScreen = window.innerWidth <= 768; // Adjust the breakpoint as needed
   const menuRef = useRef(null);
 
   useEffect(() => {
     const handleClickOutside = (event) => {
-      if (menuRef.current && !menuRef.current.contains(event.target)) {
+      if (menuRef.current && !menuRef.current.contains(event.target) && !event.target.classList.contains('toggle-menu')) {
         setOpenMenu(false);
       }
     };
@@ -27,37 +27,11 @@ const Navbar = () => {
     setOpenMenu(!openMenu);
   };
 
-  const closeMenu = () => {
-    setOpenMenu(false);
-  };
-
-  const menuOptions = [
-    {
-      text: 'Home',
-    },
-    {
-      text: 'Pages',
-    },
-    {
-      text: 'Services',
-    },
-    {
-      text: 'Project',
-    },
-    {
-      text: 'Blog',
-    },
-    {
-      text: 'Contact',
-    },
-  ];
-
   return (
     <div>
       <header>
         <div className="container">
           <a href="#" className="logo">
-            {/* Replace with your actual logo */}
             <img src={Logo} alt="Logo" />
           </a>
           <nav>
@@ -69,33 +43,20 @@ const Navbar = () => {
               </div>
             )}
             <ul className={isSmallScreen && openMenu ? 'show' : ''}>
-              {menuOptions.map((item, index) => (
-                <li key={index}>
-                  <a className={index === 0 ? 'active' : ''} href="#" onClick={closeMenu}>
-                    {item.text}
-                  </a>
-                </li>
-              ))}
+              <li><a href="#" onClick={() => setOpenMenu(false)}>Home</a></li>
+              <li><a href="#" onClick={() => setOpenMenu(false)}>Pages</a></li>
+              <li><a href="#" onClick={() => setOpenMenu(false)}>Services</a></li>
+              <li><a href="#" onClick={() => setOpenMenu(false)}>Project</a></li>
+              <li><a href="#" onClick={() => setOpenMenu(false)}>Blog</a></li>
+              <li><a href="#" onClick={() => setOpenMenu(false)}>Contact</a></li>
             </ul>
           </nav>
         </div>
       </header>
-      {isSmallScreen && (
-        <div className="navbar-menu-container" onClick={toggleMenu}></div>
-      )}
-      {isSmallScreen && openMenu && (
-        <div className="drawer">
-          <ul>
-            {menuOptions.map((item, index) => (
-              <li key={index} onClick={closeMenu}>
-                <a href="#">{item.text}</a>
-              </li>
-            ))}
-          </ul>
-        </div>
-      )}
     </div>
   );
 };
 
 export default Navbar;
+
+
