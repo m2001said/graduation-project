@@ -1,5 +1,5 @@
 import React from 'react'
-import './Services1.css'
+import './services1.css'
 import Groupwork from '../../../../images/Groupwork.svg';
 import Iocn from '../../../../images/Iocn.svg';
 import Vector from '../../../../images/Vector.svg';
