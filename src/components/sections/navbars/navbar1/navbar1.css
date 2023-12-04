@@ -130,12 +130,12 @@ header nav ul {
     top: 80px;
     right: 0;
     width: 40%;
-    background-color: var(--website-color-2);
-    opacity: .8;
+    background-color: var(--white);
+    opacity: .7;
     box-shadow: 0 2px 4px var(--website-color-2);
   }
   header nav ul li a:hover {
-    color: var(--primary-color1);
+    color: var(--main-color1);
   }
 
   header nav ul.show {
@@ -151,7 +151,7 @@ header nav ul {
   header nav ul li a {
     padding: 5px;
     display: block;
-    color: var(--website-color-3);
+    color: var(--white);
     text-decoration: none;
     font-size: 18px;
     transition: 0.3s;
