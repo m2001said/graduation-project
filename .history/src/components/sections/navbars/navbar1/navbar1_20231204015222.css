@@ -1,0 +1,169 @@
+
+
+.container {
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+/* Responsive Container */
+@media (min-width: 576px) {
+  .container {
+    width: 100%;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+
+/* Header */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 2;
+  background-color: rgb(255, 255, 255);
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  min-height: 80px;
+}
+
+
+header .logo img {
+  height: 30px;
+}
+
+header nav {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+header nav .toggle-menu {
+  color: var(--website-color-3);
+  font-size: 22px;
+  cursor: pointer;
+}
+/* Your existing styles */
+
+.toggle-menu {
+  color: #000;
+  font-size: 22px;
+  cursor: pointer;
+  position: relative;
+}
+
+.toggle-menu::before,
+.toggle-menu::after {
+  content: '';
+  display: block;
+  background-color: #000;
+  height: 3px;
+  width: 24px;
+  margin: 5px 0;
+}
+.toggle-menu::before {
+  margin-top: -8px;
+}
+
+.toggle-menu::after {
+  margin-top: 8px;
+}
+
+
+
+@media (min-width: 768px) {
+  header nav .toggle-menu {
+    display: none;
+  }
+  header nav .toggle-menu:hover + ul {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+  header nav ul li a {
+    padding: 15px !important;
+  }
+}
+
+header nav ul {
+  display: flex;
+}
+
+@media (max-width: 600px) {
+  header nav ul {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    background-color: var(--website-color-4);
+    box-shadow: 0 2px 4px var(--website-color-3);
+  }
+
+  header nav ul.show {
+    display: flex;
+  }
+
+  header nav ul li {
+    width: 100%;
+  }
+
+  header nav ul li a {
+    padding: 15px;
+    display: block;
+    color: var(--website-color-3);
+    text-decoration: none;
+    font-size: 14px;
+    transition: 0.3s;
+  }
+}
+
+header nav ul li a {
+  padding: 20px 10px;
+  display: block;
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  font-size: 14px;
+  transition: 0.3s;
+  position: relative;
+  z-index: 2;
+}
+
+.navbar-menu-container {
+  display: none;
+  cursor: pointer;
+}
+
+@media (max-width: 750px) {
+  .navbar-menu-container {
+    display: block;
+  }
+}

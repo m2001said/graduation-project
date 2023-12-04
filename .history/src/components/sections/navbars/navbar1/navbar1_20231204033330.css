@@ -1,0 +1,177 @@
+
+
+.container {
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+/* Responsive Container */
+@media (min-width: 576px) {
+  .container {
+    width: 100%;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+
+/* Header */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 2;
+  background-color: rgb(255, 255, 255);
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  min-height: 80px;
+}
+
+
+header .logo img {
+  height: 30px;
+}
+
+header nav {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+header nav .toggle-menu {
+  color: var(--website-color-3);
+  font-size: 22px;
+  cursor: pointer;
+}
+/* Your existing styles */
+/* Add these styles to your existing CSS file */
+/* ... (your existing styles) ... */
+
+.toggle-menu {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease-in-out;
+  color: var(--website-color-2);
+  font-size: 22px;
+}
+
+.toggle-menu.open {
+  transform: rotate(90deg);
+}
+
+.bar {
+  background-color: var(--website-color-3);
+  height: 3px;
+  width: 24px;
+  margin: 5px 0;
+  transition: transform 0.3s ease-in-out;
+}
+
+.toggle-menu.open .bar:first-child {
+  transform: translateY(8px) rotate(45deg);
+}
+
+.toggle-menu.open .bar:last-child {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+/* Add hover effect on links */
+header nav ul li a:hover {
+  color: var(--website-color-2);
+}
+
+
+
+/* ... (your existing styles) ... */
+
+
+@media (min-width: 767px) {
+  header nav .toggle-menu {
+    display: none;
+  }
+  header nav ul li a {
+    padding: 15px !important;
+  }
+}
+
+header nav ul {
+  display: flex;
+}
+
+@media (max-width: 768px) {
+  header nav ul {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 78px;
+    right: 0;
+    width: 40%;
+    background-color: var(--website-color-2);
+    opacity: .8;
+    box-shadow: 0 2px 4px var(--website-color-3);
+  }
+
+  header nav ul.show {
+    display: flex;
+  }
+
+  header nav ul li {
+    width: 100%;
+    right: 0;
+  }
+
+  header nav ul li a {
+    padding: 15px;
+    display: block;
+    color: var(--website-color-3);
+    text-decoration: none;
+    font-size: 14px;
+    transition: 0.3s;
+  }
+}
+
+header nav ul li a {
+  padding: 20px 10px;
+  display: block;
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  font-size: 14px;
+  transition: 0.3s;
+  position: relative;
+  z-index: 2;
+}
+
+.navbar-menu-container {
+  display: none;
+  cursor: pointer;
+}
+
+/* @media (max-width: 750px) {
+  .navbar-menu-container {
+    display: block;
+  }
+} */

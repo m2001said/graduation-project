@@ -1,0 +1,156 @@
+
+  
+  .container {
+    padding: 0 15px;
+    margin: 0 auto;
+  }
+  
+  /* Responsive Container */
+  @media (min-width: 768px) {
+    .container {
+      width: 750px;
+    }
+  }
+  
+  @media (min-width: 992px) {
+    .container {
+      width: 970px;
+    }
+  }
+  
+  @media (min-width: 1200px) {
+    .container {
+      width: 1170px;
+    }
+  }
+  
+  /* Components */
+  .main-heading {
+    text-align: center;
+  }
+  
+  .main-heading h2 {
+    font-weight: normal;
+    font-size: 40px;
+    position: relative;
+    margin-bottom: 70px;
+    text-transform: uppercase;
+  }
+  
+  .main-heading h2::before,
+  .main-heading h2::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .main-heading h2::before {
+    height: 2px;
+    background-color: var(--grey);
+    bottom: -30px;
+    width: 120px;
+  }
+  
+  .main-heading h2::after {
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    border: 2px solid var(--grey);
+    bottom: -38px;
+    background-color: var(--white);
+  }
+  
+  .main-heading p {
+    width: 100%;
+    max-width: 550px;
+    margin: 0 auto 100px;
+    line-height: 2;
+    color: var(--grey);
+  }
+  /* Landing */
+.landing {
+    min-height: 100vh;
+    background-color: var(--white);
+    background-image: url("../../../../images/Photo.jpg");
+    background-size: cover;
+    position: relative;
+    border-radius: 0 0 0 115px;
+  }
+  
+  .landing .overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .landing .text {
+    position: absolute;
+    top: 350px;
+    transform: translateY(-50%);
+    padding: 50px;
+    background-color: var(--transparent-color);
+    color: var( --website-color-3);
+    display: flex;
+    justify-content: flex-end;
+    left: 90px;
+    border-radius: 0 0 0 115px;
+  }
+  
+  .landing .text .content {
+    max-width: 285px;
+  }
+  
+  .landing-btn {
+    margin-top: 12px;
+    padding: 20px 45px;
+    border-radius: 18px;
+    gap: 10px;
+    background: var(--primary-color1);
+    color: var(--white);
+  }
+  .landing-btn:hover {
+    background: var(--website-color-3);
+  }
+  
+  @media (max-width: 767px) {
+    .landing .text {
+      width: 100%;
+      left: 0;
+      top:240px ; 
+      border-radius: 0 ;
+    }
+  
+    .landing .text .content {
+      max-width: 100%;
+      
+    }
+  }
+  
+  .landing .text .content h2 {
+    font-family: "DM Serif Display";
+    font-size: 42px;
+    font-weight: bold;
+    line-height: 1.5;
+    margin-bottom: 20px;
+  }
+  
+  .landing .text .content p {
+    font-size: 14px;
+    line-height: 2;
+  }
+  
+  .landing .change-background {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var( --website-color-1);
+  }
+  
+  @media (max-width: 767px) {
+    .landing .change-background {
+      display: none;
+    }
+  }
