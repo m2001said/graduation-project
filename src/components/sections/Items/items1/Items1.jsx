@@ -5,7 +5,6 @@ import article2 from "../../../../assets/images/article2.png";
 import article3 from "../../../../assets/images/article3.png";
 import Icon from "../../../../assets/images/Icon.svg";
 
-
 const Articles = () => {
   let header = {
     headerTitle: "Articles & News",
@@ -52,7 +51,7 @@ const Articles = () => {
         {articlesBox.map((data) => (
           <div className="box article-box " key={data.title}>
             <div className="img">
-              <img src={articlesSection.cards[0].imgUrl} alt="Article 1" />
+              <img src={data.image} alt="Article 1" />
               <p className="caption">{data.caption}</p>
             </div>
             <div className="info">
