@@ -42,14 +42,14 @@ const Articles = () => {
   return (
     <div className="articles">
       {
-        <div className="header">
+        <div className="head">
           <h1>{header.headerTitle}</h1>
           <p>{header.headerDescribe}</p>
         </div>
       }
       <div className="container">
         {articlesBox.map((data) => (
-          <div className="box article-box " key={data.title}>
+          <div className="box article-box ">
             <div className="img">
               <img src={data.image} alt="Article 1" />
               <p className="caption">{data.caption}</p>
