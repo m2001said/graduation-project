@@ -105,10 +105,9 @@
   
   .landing-btn {
     margin-top: 12px;
-    padding: 20px 45px;
+    padding: 20px 45px  ; 
     border-radius: 18px;
     gap: 10px;
-    
     background: var(--website-color-3);
     color: var(--white);
   }
