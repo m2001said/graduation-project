@@ -1,0 +1,142 @@
+body {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Testimonials-container {
+  background-color: #F4F0EC;
+  padding: 20px;
+  border-radius: 30px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Testimonials-heading {
+  margin-top: 88px;
+  width: 100%;
+  max-width: 547px;
+  text-align: center;
+  margin: auto;
+}
+
+.Testimonials {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.testimonial {
+  width: calc(33.33% - 40px);  
+  margin: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+}
+
+.testimonial .background {
+  background-size: cover;
+  background-position: center;
+  background-color: white;
+  width: 100%;
+  height: 339px;
+  border-radius: 10px;
+}
+
+.testimonial .details {
+  text-align: center;
+}
+
+.testimonial .person img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.testimonial h1 {
+  margin: 0;
+}
+
+.testimonial p {
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.Testimonials-heading h1 {
+  color: #292F36;
+  font-family: 'DM Serif Display';
+  font-size: 50px;
+  font-weight: 400;
+  line-height: 125%;
+  letter-spacing: 1px;
+}
+
+.testimonial .lorem-ipsum {
+  width: 100%;
+  max-width: 360px;
+  color: #555555;
+  font-family: 'Jost';
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 150%;
+  height: auto;
+  word-wrap: break-word;
+}
+@media screen and (max-width: 600px) {
+  
+  .Testimonials {
+    flex-direction: column;  
+  }
+
+  .testimonial {
+    width: 100%;  
+    margin: 20px 0;  
+  }
+
+  .Testimonials-container {
+     width: 80%; 
+    margin-top: 660px; 
+    margin-left: 25%; 
+    margin-right: 25%;
+    margin-top: 115%;
+   }  
+}
+@media screen and (max-width: 600px) {
+  body {
+    margin-left: 20px;  
+    margin-right: 20px;
+  }
+}
+@media screen and (min-width: 650px) and (max-width: 1200px) {
+  .Testimonials-container{
+max-width: 70%; 
+max-height: fit-content;
+ }
+ .contentt{
+  max-width: 100%;
+ }
+ .Testimonials-container{
+  max-width: fit-content;
+
+ }
+ .Testimonials-heading h1{
+  max-width: fit-content;
+ }
+
+.Testimonials{
+  max-width: 100%;
+}
+}
+
+/****/
+@media screen and (min-width: 650px) and (max-width: 1200px) {
+  .feature1-layout .img-background img {
+    width: 70%;  
+   }
+}

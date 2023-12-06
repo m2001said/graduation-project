@@ -6,7 +6,7 @@ import "./feature.css";
 const Featrue1 = () => {
   return (
     <div className="feature1-layout">
-      <div className="content">
+      <div className="feature-content">
         <div className="sub-content">
           <h1>We Create The Art Of Stylish Living Stylishly</h1>
 
