@@ -55,7 +55,7 @@ const TopSide = () => {
         const showControllers = viewportWidth >= 1024;
         const isActive = screen === device.type;
         return showControllers ? (
-          <div  key={device.endPoint} className={isActive ? "bg-blue-500 p-1 rounded-sm w-10 h-10 flex-center" : "w-10 h-10 flex-center"}>
+          <div key={device.endPoint} className={isActive ? "bg-blue-500 p-1 rounded-sm w-10 h-10 flex-center" : "w-10 h-10 flex-center"}>
             {device.icon}
           </div>
         ) : (
