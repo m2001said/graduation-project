@@ -45,23 +45,23 @@ const Project1 = () => {
   ];
 
   return (
-    <div className="">
-      <div className="header">
-        <h1>{header.headerTitle}</h1>
-        <p>{header.headerDescribe}</p>
+    <div className="projects1 design-1">
+      <div className="projects1-header">
+        <p className="title-1">{header.headerTitle}</p>
+        <p className="description-1">{header.headerDescribe}</p>
       </div>
-      <div className="container">
+      <div className="projects1-cards">
         {projectsBox.map((data) => (
-          <div className="box">
-            <div className="img">
+          <div className="projects1-card">
+            <div className="projects1-card-img">
               <img src={data.image} alt="Article 1" />
             </div>
-            <div className="info">
-              <div className="details">
+            <div className="projects1-card-info">
+              <div className="projects1-card-details">
                 <h1>{data.title}</h1>
                 <p>{data.describe}</p>
               </div>
-              <a href={data.link} className="go-to">
+              <a href={data.link} className="projects1-card-link">
                 <span>
                   <img src={data.icon} alt="icon" />
                 </span>
