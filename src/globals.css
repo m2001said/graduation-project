@@ -1,3 +1,7 @@
+/* this globals only for shaaban and abdelmoaty */
+/* for mainPages and dashboard and for root-colors and root-fonts of all */
+/* root-colors and root-fonts ----all team will use them */
+
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap");
 @tailwind base;
 @tailwind components;
@@ -14,7 +18,6 @@
   --grey: #777777;
   --white: #ffff;
 
-
   --website-color-1: #fff;
   --website-color-2: #cda274;
   --website-color-3: #292f36;
@@ -28,7 +31,22 @@ html{
 }
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+}
+
+/* Global Rules */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+ul {
+  list-style: none;
 }
 
 /* TYPOGRAPHY */
@@ -123,7 +141,6 @@ body {
   background: var(--primary-color2);
   background: var(--primary-color2);
   border-radius: 50px;
-
 }
 
 .custom-scrollbar::-webkit-scrollbar-thumb:hover {

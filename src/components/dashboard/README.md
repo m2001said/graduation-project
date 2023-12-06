@@ -1,1 +1,3 @@
-# This folder for main page sections for ---> شعبان وعبدالمعطي
+this folder only for dashboard and all its content and components
+
+# ---only for shaaban

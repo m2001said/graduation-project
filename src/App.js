@@ -1,9 +1,11 @@
+
 import { Route, Routes } from "react-router";
 import Dashboard from "./pages/Dashboard";
 import MainPage from "./pages/MainPage";
 import TrialDesign from "./pages/TrialDesign";
 function App() {
   return (
+      
     <>
       <Routes>
         <Route path="/" element={<MainPage />} />
