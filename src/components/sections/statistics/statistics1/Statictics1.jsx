@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react';
 import './statictics1.css';
 
 
-
 const Statictics1 = () => {
   const statistic = [
     {
@@ -31,7 +30,7 @@ const Statictics1 = () => {
       if (parseInt(el.textContent) === goal) {
         clearInterval(count);
       }
-    }, 2500 / goal);
+    }, 2400 / goal);
   };
 
   const handleScroll = () => {
