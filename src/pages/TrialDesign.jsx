@@ -16,12 +16,12 @@ import Footer1 from "../components/sections/footers/footer1/Footer1"
 const TrialDesign = () => {
   return (
     <div>
-      {/* <Navbar1/>
+      <Navbar1/>
       <Hero1/> 
       <Services1/> 
       <Project1 />
       <Statictics1 />
-      <Articles />  */}
+      <Articles /> 
       <Team1 />
       <Pricing1 />
       <Cta1 />

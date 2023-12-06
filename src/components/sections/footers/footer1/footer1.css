@@ -1,4 +1,4 @@
-.footer-container{
+.footer1{
   /* margin: 6rem 0rem; */
   display: flex;
   margin-top: 10rem;
@@ -7,51 +7,51 @@
   justify-content: center;
 }
 
-.footer-icons{
+.footer1-icons{
   max-width: 31%;
   margin: 5px;
 }
-.footer-icons h1{
+.footer1-icons h1{
   font-size:xx-large ;
   font-weight: bold;
   
 }
-.img{
+.footer1-img{
     width: 20px;
     height: 20px;
 }
-.media-icon{
+.footer1-media-icon{
     display: flex;
     flex-direction: row;
     justify-content:space-between;
     max-width: 180px;
 }
-.footerSections{
+.footer1-Sections{
     flex: 1;
     display: flex;
     justify-content: flex-end;
   }
-.footer-section{
+.footer1-section{
     display: flex;
     flex-direction: column;
     width: 23%;
 }
-.footer-section a {
+.footer1-section a {
     text-decoration: none;
 }
 
-.footer-services{
+.footer1-services{
   margin: 0.25rem 0rem;
   cursor: pointer;
   width: 23%;
   
 }
-.footer-contact{
+.footer1-contact{
     width: 23%;
 }
-.footer-section h4,
-.footer-services h4,
-.footer-contact h4 {
+.footer1-section h4,
+.footer1-services h4,
+.footer1-contact h4 {
     font-weight: 700;
 }
 
@@ -60,7 +60,7 @@ p{
 }
 
 @media screen and (max-width: 680px) {
-    .footer-container{
+    .footer1{
         display: flex;
         flex-direction: column;
         width: 80%;
@@ -68,27 +68,27 @@ p{
         margin-top: 50px;
         justify-content: center;
     }
-    .footer-icons{
+    .footer1-icons{
         display: flex;
         justify-content: center;
         flex-direction: column;
         width: 80%;
         margin: auto;
     }
-    .footer-icons h1{
+    .footer1-icons h1{
         display: flex;
         flex-direction: row;
     }
-    .footerSections{
+    .footer1-Sections{
         display: flex;
         flex-direction: column;
         width: 80%;
         margin: auto;
         justify-content: center;
     }
-    .footer-section,
-    .footer-services,
-    .footer-contact{
+    .footer1-section,
+    .footer1-services,
+    .footer1-contact{
         width: 80%;
         margin: auto;
         

@@ -50,7 +50,7 @@ const Teams1 = () => {
        <div className="team1-Card-main">
         {teamMembers.map((member) => (
           <div className="team1-Card-main-show" key={member.id} onClick={() => handleCardClick(member)}>
-            <img  src={member.image} alt={member.name} />
+            <img className="team1-Card-main-img" src={member.image} alt={member.name} />
             {selectedMember && selectedMember.id === member.id && (
               <div className="team1-Card-main-info slideUp">
                 <h1>{selectedMember.name}</h1>

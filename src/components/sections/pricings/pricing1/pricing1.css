@@ -1,30 +1,32 @@
-.pricing-container{
+.pricing1{
     padding: 10px;
     text-align: center;
     margin-top: 70px;  
 }
-.head{
+.pricing1-head{
     text-align: center;
     font-family: DM Serif Display;
-    font-size: 30px;
+    font-size: 45px;
     font-weight: 400;
     color: #1e2125;
+    margin-bottom: 25px;
+    
 }
-.head p{
+.pricing1-head p{
     font-family: Jost;
-    font-size: 22px;
-    font-weight: 400;
+    font-size: 18px;
+    font-weight: 300;
     color: #4D5053;
     text-align: center;
 }
-.pricingCard-container{
+.pricing1-mainCards{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content:center; 
     align-items: center;
   }
-  .pricingCard{ 
+  .pricing1-card{ 
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -37,10 +39,10 @@
       margin: 20px;
       background-color: #F4F0EC
   }
-  .pricingCard2{
-    box-shadow: 0px 3px 3px 4px #99989831 
+  .pricing1-card2{
+    box-shadow: 0px 2px 2px 2px rgba(168, 168, 168, 0.192) 
   }
-  .pricingCard h3{
+  .pricing1-card-title{
   font-family: DM Serif Display;
    font-size:22px;
    font-weight: 600;
@@ -48,41 +50,34 @@
    color: #292F36;
 
   }
-  .pricingCard1 h1,
-  .pricingCard3 h1{
+  .pricing1-card h1{
     font-family:DM Serif Display;
    font-size:70px;
    font-weight: 600;
    color: #292F36;
   }
 
-  .pricingCard2 h1{
-    font-family:DM Serif Display;
-    font-size:70px;
-    font-weight: 600;
+  .pricing1-card2 h1{
    color:#CDA274;
   }
 
-  .pricingCard h1 span{
+  .pricing1-card h1 span{
     font-family: DM Serif Display;
-    font-size: 20px;
+    font-size: 18px;
     font-weight:600;
     color: #292F36;
    }
 
-  .pricingCard1 hr,
-  .pricingCard3 hr  
-  {
+  .pricing1-card hr{
    background-color: #CDA274;
    height: 2px;
    margin-top: 15px;
   }
-  .pricingCard2 hr{
+  .pricing1-card2 hr{
    background-color: #292F36;
-   height: 2px;
-   margin-top: 15px;
   }
-  .pricingCard2 h6{
+
+  .pricing1-card2 h6{
    background-color: #292F36;
    color: #dddbdb;
    border-radius: 8px;
@@ -93,62 +88,50 @@
    margin-top: -10px;
   }
   
-  .pricingCard span{
+  .pricing1-card span{
    color: #292F36;
    font-weight: 600;
   }
-  .pricingCard p {
+  .pricing1-card p {
       align-items: center;
       font-size: 12px;
       margin: 5px;
+      margin-top: 20px;
     } 
 
-
-   .button1,
-   .button3{
+    .pricing-card-button{
       display: flex;
       flex-direction: row;
       justify-content: center;
       margin-top:40px;
-      padding: 15px;
-      background-color: #CDA274;
+      padding: 6px;
       border-radius: 12px;
       gap: 10px;
-   }
-   
-   .button2{
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      margin-top: 40px;
-      padding: 15px;
-      background-color: #292F36;
-      border-radius: 12px;
-      gap: 10px;  
+      background-color: #CDA274;
    }
 
-   .button1 span,
-   .button2 span,
-   .button3 span{
+   .pricing-card-button2{
+      background-color: #292F36; 
+   }
+
+   .pricing-card-button span{
     font-family: Jost;
     font-size: 18px;
     font-weight:600;
     color: #FFFFFF;
    }
 
-   .button1 img,
-   .button2 img,
-   .button3 img{
+   .pricing-card-button img{
     width:15.14px;
     height:13.18px;
     margin-top:7px ;
    }
-   .button3 img{
+   .pricing-card-button3 img{
     background-color: #CDA274;
    }
 
-   @media screen and (max-width: 980px) {
-    .pricingCard-container{
+   /* @media screen and (max-width: 980px) {
+    .pricing1-cards{
         display: flex;
         flex-direction: column;
     }
@@ -157,14 +140,12 @@
       margin: 20px auto;
     }
   
-    .button1,
-    .button2,
-    .button3 {
+    .pricing-card-button {
       margin-top: 20px;
     }
   }
    @media screen and (max-width: 680px) {
-    .pricingCard-container{
+    .pricing1-cards{
         display: flex;
         flex-direction: column;
     }
@@ -173,9 +154,7 @@
       margin: 20px auto;
     }
   
-    .button1,
-    .button2,
-    .button3 {
+    .pricing-card-button {
       margin-top: 20px;
     }
-  }
+  } */
