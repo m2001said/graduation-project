@@ -1,90 +1,74 @@
 
-
-   /* components/Header/styles.css */
- body{
-  
-    background-color: #f4f1f4;
-}
 /* styles.css */
-
-.header {
-  width: 261px;
+body{
+    background-color: #f4f1f4  ;
+}
+/* components/Header/styles.css */
+.title-1 {
+  width: 261px !important;
   height: 46px;
-  top: 47px;
-  left: 53px;
+  top: 27px;
+  left: 33px;
   font-family: 'Roboto Condensed', sans-serif;
   font-size: 32px;
   font-weight: 700;
   line-height: 34px;
-  margin-top: 20px;
-  margin-left: 20px;
   text-align: left;
   background: #F4F1F4; 
 }
-
-.logo {
-  background: linear-gradient(90deg, #FBC2EB 0%, #A18CD1 100%);
-  -webkit-background-clip: text; 
+ .logo { 
+ background: linear-gradient(90deg, #FBC2EB 0%, #A18CD1 100%);
+ -webkit-background-clip: text; 
   color: transparent; 
   display: inline-block; 
-  border: 2px solid transparent; 
-}
-.section {
+  border: 2px solid transparent;  
+}  
+/* style of heroSection*/
+.sections-image-para {
   text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 30px;
+  margin-top: 90px;
 }
-
-.section-content {
+.section-content-1 {
   display: flex;
+  align-items: center;
 }
-
-.section-image {
+.section-content-1-image {
   width: 394px;
   height: 394px;
-  top: 252px;
-  left: 117px;
   border-radius: 13px;
+  margin-right: 20px; 
 }
-
-.section-content p {
+.section-content-1 p {
   width: 642px;
-  height: 405px;
-  top: 247px;
-  left: 555px;
   font-family: 'DM Sans';
   font-size: 24px;
   font-weight: 500;
   line-height: 45px;
   letter-spacing: 0px;
   text-align: left;
-  margin-left: 30px;
   color: #20254B;
-  flex: 1;
+  margin-left: 20px;
 }
-.section-content2{
+.section-content-2{
   font-size: 30px;
-}
-/* styles.css */
-.footer {
-  padding: 10px;
-  /* color: white; */
+  text-align: center;
   display: flex;
-  justify-content: center; /* Center the buttons horizontally */
-  align-items: center; /* Center the buttons vertically */
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
 }
-
-.button {
-  border-radius: 10px;
-  font-size: 13px;
-  cursor: pointer;
-  margin-right: 20px;
-  margin-top: 30px;
+/* styles.css /buttons */
+.Buttons {
+  padding: 5px;
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  margin-top: 50px;
 }
-
-.button#a1 {
+.button-1 {
   width: 146px;
   height: 40px;
   top: 20px;
@@ -96,8 +80,7 @@
   color: #CE79CC;
   border: 1px solid #CE79CC;
 }
-
-.button#a2 {
+.button-2 {
   width: 130px;
   height: 40px;
   font-style: 'DM Sans';
@@ -107,6 +90,7 @@
   text-align: center;
   color: white;
   background-color:#20254B;
+  margin-left: 17px;
 }
 
 

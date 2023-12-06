@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+// import '../../../assets/css/globals1.css';
 import '../styles/index.css';
 import '../heroSection/modals/modalPage.css';
 import ModalPage from '../heroSection/modals/modalPage.jsx';
@@ -15,9 +16,9 @@ const Section = () => {
   };
   return (
     <>
-      <section className="section">
-        <div className="section-content">
-          <img src={myImage} alt="Description" className="section-image" />
+      <section className="sections-image-para">
+        <div className="section-content-1">
+          <img src={myImage} alt="Description" className="section-content-1-image" />
           <p>
             Welcome to the website creation platform! Build your<br />
             website easily and quickly using artificial <br />
@@ -31,20 +32,23 @@ const Section = () => {
           </p>
         </div>
       </section>
-      <section className="section">
-        <div className="section-content2">
-          <h1>Make Your Website</h1>
-        </div>
+
+      <section>
+        <div className="section-content-2">
+            <h1>Make Your Website</h1>
+          </div>
       </section>
-      <footer className="footer">
-        <button className="button" id="a1">
+        
+      
+      < section className="Buttons">
+        <button className="button-1" >
           With Your Self
         </button>
-        <button className="button" id="a2" onClick={openModal}>
+        <button className="button-2" onClick={openModal}>
           With AI
         </button>
         {isModalOpen && <ModalPage onClose={closeModal} />}
-      </footer>
+      </section>
     </>
   );
 };

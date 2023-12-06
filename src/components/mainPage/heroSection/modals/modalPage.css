@@ -2,7 +2,7 @@
 /* Overlay Styles */
 .modal-overlay {
   position: fixed;
-  background: #00000066;
+  background: #00000066 ;
   top: 0;
   left: 10;
   width: 100%;
@@ -31,6 +31,7 @@
   flex-direction: column;
   margin-top: 20px;
 }
+
 /* Icon Styles */
 .icon-cross {
   display: inline-block;
@@ -49,12 +50,14 @@
   position: relative;
   margin-right: 70px;
   margin-top: 15px;
+  border-radius: 15px;
 }
 /* Image Background Styles */
 .image-background {
   background: url('../../../../assets/images/img1.webp') center/cover;
   width: 440px;
   height: 490px;
+  border-radius: 10px;
 }
 /* Add this style */
 .zag-web-builder p {
@@ -159,4 +162,6 @@ button {
   left: 780px;
   max-width: 50%;
 }
+
+
 
