@@ -40,25 +40,23 @@ const Articles = () => {
   ];
 
   return (
-    <div className="articles">
-      {
-        <div className="head">
-          <h1>{header.headerTitle}</h1>
-          <p>{header.headerDescribe}</p>
+    <div className="items1 design-1">
+        <div className="items1-header">
+          <p className="title-1">{header.headerTitle}</h1>
+          <p className="description-1">{header.headerDescribe}</p>
         </div>
-      }
-      <div className="container">
+      <div className="items1-cards">
         {articlesBox.map((data) => (
-          <div className="box article-box ">
-            <div className="img">
+          <div className="article1-card">
+            <div className="article1-card-img">
               <img src={data.image} alt="Article 1" />
-              <p className="caption">{data.caption}</p>
+              <p className="article1-card-caption">{data.caption}</p>
             </div>
-            <div className="info">
+            <div className="article1-card-info">
               <h1>{data.title}</h1>
-              <div className="article-foot">
+              <div className="article1-card-foot">
                 <p>{data.date}</p>
-                <a href={data.link} className="go-to">
+                <a href={data.link} className="article1-card-link">
                   <span>
                     <img src={data.icon} alt="icon" />
                   </span>
