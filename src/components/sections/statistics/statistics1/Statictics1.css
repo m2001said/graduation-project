@@ -1,84 +1,49 @@
-
-
-*{
-margin: 0;
-padding: 0;
-box-sizing: border-box;
-}
-a{
-text-decoration: none;
-color:var(--website-color-3);
-}
-.container{
-padding: 0px 30px;
-margin: auto;
-}
-/* Small */
-@media (min-width: 768px) {
-.container {
-width: 750px;
-}
-}
-/* Medium */
-@media (min-width: 992px) {
-.container {
-width: 970px;
-}
-}
-/* Large */
-@media (min-width: 1200px) {
-.container {
-width: 1170px;
-}
-}
-
-/*state counter*/
-.state{
-background:var(--website-color-4);
-padding: 95px 0;
-}
-.state .container{
-display: flex;
-justify-content: center;
-align-items: center;
-gap:10px; 
-}
-.state-box{
-width: 200px;
-padding: 0 10px;         
-display: flex;
-flex-direction: column;
-justify-content: space-between;
-align-items: center;
-border-right: solid 1px var(--website-color-2);
-}
-.state-box:last-child{
-border:none;
-}
-.state .state-num{
-font-weight: 600;
-color: var(--website-color-2);
-margin-bottom: 10px;
-font-size: 6em;
-}
-.state    .state-name{
-color: var(--grey);
-font-weight: 400;
-letter-spacing: 0.22px;
-text-align: center;
-font-size: 0.9em;
-}
-@media(max-width:768px){
-.state .container{
-display: flex;
-flex-direction: column;
-}
-.state-box{
-padding: 15px;
-border: solid 1px var(--website-color-2);
-border-radius: 5px;
-}
-.state-box:last-child{
-border: solid 1px var(--website-color-2);
-}
-}  
+.statistics1{
+    background:var(--website-color-4);
+    
+    }
+    .statistics1-cards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:10px; 
+    }
+    .statistics1-card{
+    width: 200px;
+    padding: 0 10px;         
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border-right: solid 1px var(--website-color-2);
+    }
+    .statistics1-card:last-child{
+    border:none;
+    }
+    .statistics1-card-value{
+    font-weight: 600;
+    color: var(--website-color-2);
+    margin-bottom: 10px;
+    font-size: 6em;
+    }
+    .statistics1-card-title{
+    color: var(--grey);
+    font-weight: 400;
+    letter-spacing: 0.22px;
+    text-align: center;
+    font-size: 0.9em;
+    }
+    @media(max-width:768px){
+    .statistics1-cards{
+    display: flex;
+    flex-direction: column;
+    }
+    .statistics1-card{
+    padding: 15px;
+    border: solid 1px var(--website-color-2);
+    border-radius: 5px;
+    }
+    .statistics1-card:last-child{
+    border: solid 1px var(--website-color-2);
+    }
+    }  

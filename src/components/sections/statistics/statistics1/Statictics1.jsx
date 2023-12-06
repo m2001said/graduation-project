@@ -52,12 +52,12 @@ const Statictics1 = () => {
   }, [started, statistic]);
 
   return (
-    <div className='state'>
-      <div className='container'>
+    <div className='statistics1 design-1'>
+      <div className='statistics1-cards'>
         {statistic.map((data, index) => (
-          <div className='state-box' key={index}>
-            <div className='state-num'>0</div>
-            <div className='state-name'>{data.stateName}</div>
+          <div className='statistics1-card' key={index}>
+            <div className='statistics1-card-value'>0</div>
+            <div className='statistics1-card-title'>{data.stateName}</div>
           </div>
         ))}
       </div>
