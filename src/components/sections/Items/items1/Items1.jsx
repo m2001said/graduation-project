@@ -42,8 +42,8 @@ const Articles = () => {
   return (
     <div className="items1 design-1">
       <div className="items1-header">
-          <p className="title-1">{header.headerTitle}</p>
-          <p className="description-1">{header.headerDescribe}</p>
+        <p className="title-1">{header.headerTitle}</p>
+        <p className="description-1">{header.headerDescribe}</p>
       </div>
       <div className="items1-cards">
         {articlesBox.map((data) => (
