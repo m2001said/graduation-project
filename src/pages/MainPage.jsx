@@ -1,11 +1,12 @@
 import React from "react";
-
+import Header from "../components/mainPage/header/Header.jsx";
+import Section from "../components/mainPage/heroSection/MainSection.js";
 const MainPage = () => {
   return (
-    <div>
-      <h1>hi this is the main page</h1>
-    </div>
+    <>
+      <Header/>
+      <Section/> 
+    </>
   );
 };
-
 export default MainPage;

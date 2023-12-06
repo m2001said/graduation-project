@@ -1,11 +1,5 @@
 
-:root{
---main-color2:#F4F0EC;
---main-color1:#CDA274;
---primary-text-color:#292F36;
---sec-text-color:#707070;
---description-text:#4D5053;
-}
+
 *{
 margin: 0;
 padding: 0;
@@ -13,7 +7,7 @@ box-sizing: border-box;
 }
 a{
 text-decoration: none;
-color:var(--primary-text-color);
+color:var(--website-color-3);
 }
 .container{
 padding: 0px 30px;
@@ -40,7 +34,7 @@ width: 1170px;
 
 /*state counter*/
 .state{
-background:var(--main-color2);
+background:var(--website-color-4);
 padding: 95px 0;
 }
 .state .container{
@@ -56,19 +50,19 @@ display: flex;
 flex-direction: column;
 justify-content: space-between;
 align-items: center;
-border-right: solid 1px var(--main-color1);
+border-right: solid 1px var(--website-color-2);
 }
 .state-box:last-child{
 border:none;
 }
 .state .state-num{
 font-weight: 600;
-color: var(--main-color1);
+color: var(--website-color-2);
 margin-bottom: 10px;
 font-size: 6em;
 }
 .state    .state-name{
-color: var(--description-text);
+color: var(--grey);
 font-weight: 400;
 letter-spacing: 0.22px;
 text-align: center;
@@ -81,10 +75,10 @@ flex-direction: column;
 }
 .state-box{
 padding: 15px;
-border: solid 1px var(--main-color1);
+border: solid 1px var(--website-color-2);
 border-radius: 5px;
 }
 .state-box:last-child{
-border: solid 1px var(--main-color1);
+border: solid 1px var(--website-color-2);
 }
 }  
