@@ -1,12 +1,23 @@
 import Logo from "../../../../images/Logo.jpg";
 import React, { useState, useRef, useEffect } from "react";
-import "./navbar1.css"; // Import your CSS file
-// ... (other imports and code)
+import "./navbar1.css";
 
 const Navbar1 = () => {
   const [openMenu, setOpenMenu] = useState(false);
-  const isSmallScreen = window.innerWidth <= 768; // Adjust the breakpoint as needed
+  const [isSmallScreen, setIsSmallScreen] = useState(window.innerWidth <= 768);
   const menuRef = useRef(null);
+
+  useEffect(() => {
+    const updateWindowDimensions = () => {
+      setIsSmallScreen(window.innerWidth <= 768);
+    };
+
+    window.addEventListener("resize", updateWindowDimensions);
+
+    return () => {
+      window.removeEventListener("resize", updateWindowDimensions);
+    };
+  }, []);
 
   useEffect(() => {
     const handleClickOutside = (event) => {
