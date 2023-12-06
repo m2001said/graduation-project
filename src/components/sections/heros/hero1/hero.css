@@ -77,33 +77,19 @@
   max-width: 285px;
 }
 
-.landing-btn {
+.landing .text .landing-btn {
   margin-top: 12px;
-  padding: 20px 45px;
+  padding: 20px 45px !important;
   border-radius: 18px;
   gap: 10px;
   background: var(--website-color-3);
   color: var(--white);
 }
-.landing-btn:hover {
+.landing .text .landing-btn:hover {
   background: var(--primary-color1);
   transition: 0.3s;
   font-size: 16.5px;
 }
-
-@media (max-width: 767px) {
-  .landing .text {
-    width: 100%;
-    left: 0;
-    top: 240px;
-    border-radius: 0;
-  }
-
-  .landing .text .content {
-    max-width: 100%;
-  }
-}
-
 .landing .text .content h2 {
   font-family: "DM Serif Display";
   font-size: 42px;
@@ -122,6 +108,29 @@
   top: 50%;
   transform: translateY(-50%);
   color: var(--website-color-1);
+}
+
+@media (max-width: 600px) {
+  .landing .text {
+    width: 80%;
+    left: 26px;
+    top: 300px;
+    border-radius: 0 0 0 118px;
+    padding: 40px;
+  }
+
+  .landing .text .content {
+    max-width: 90%;
+  }
+  .landing .text .content h2 {
+    font-size: 38px;
+    margin-bottom: 10px;
+    line-height: 1.2;
+  }
+  .landing .text .content p {
+    font-size: 14px;
+    line-height: 1.5;
+  }
 }
 
 @media (max-width: 767px) {
