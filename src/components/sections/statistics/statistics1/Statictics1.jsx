@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import './Statictics1.css';
+import './statictics1.css';
 
 
 
