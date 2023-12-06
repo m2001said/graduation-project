@@ -23,7 +23,9 @@
 
   --website-filed-title: #1a2345;
 }
-
+html{
+  background-color: white;
+}
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
@@ -90,6 +92,10 @@ body {
 
 .flex-center {
   @apply flex justify-center items-center;
+}
+.flex-column{
+  @apply flex justify-center items-center flex-col;
+
 }
 
 .flex-between {
