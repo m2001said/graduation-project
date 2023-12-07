@@ -1,5 +1,5 @@
 .items1 {
-  background: white;
+  background: var(--white);
 }
 
 .items1-header{

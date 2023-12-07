@@ -1,5 +1,5 @@
 .projects1{
-  background: #fff;
+  background: var(--white);
 }
 .projects1-header{
   text-align: center;
