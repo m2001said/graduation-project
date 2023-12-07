@@ -3,7 +3,6 @@ import { Route, Routes } from "react-router";
 import Dashboard from "./pages/Dashboard";
 import MainPage from "./pages/MainPage";
 import TrialDesign from "./pages/TrialDesign";
-import ModalPage from "./components/mainPage/ui/modals/ModalPage";
 function App() {
   return ( 
     <>
