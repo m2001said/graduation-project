@@ -5,7 +5,6 @@ import {useSelector} from 'react-redux'
 const Project1 = () => {
 
   const { projects } = useSelector((state) => state.template);
- console.log(projects);
 
   return (
     <div className="projects1 design-1">

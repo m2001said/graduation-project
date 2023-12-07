@@ -6,7 +6,6 @@ import {useSelector} from 'react-redux'
 
 const Articles = () => {
   const { items } = useSelector((state) => state.template);
- console.log(items);
  
   return (
     <div className="items1 design-1">
