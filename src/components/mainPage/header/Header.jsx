@@ -1,12 +1,11 @@
 
 import React from 'react';
-// import "../../../assets/css/globals1.css";
-import '../styles/index.css'; 
+import '../header/header.css'; 
 
 const Header = () => {
   return (
-    <header className="title-1">
-      <div className="logo">Zap With Builder</div>
+    <header className="header-1">
+      <div className="logo">Zap Web Builder</div>
     </header>
   );
 };

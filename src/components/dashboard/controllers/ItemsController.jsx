@@ -1,10 +1,12 @@
 import React, { useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
-import { updateHeroSection } from "../../../features/templateData/templateSlice";
+import { updateItems } from "../../../features/templateData/templateSlice";
 import UploadWidget from "../cloudinary/UploadWidget";
-const HeroController = () => {
-  const { heroSection } = useSelector((state) => state.template);
-  const fields = Object.keys(heroSection);
+import Shared from "./subControllers/Shared";
+
+const ItemsController = () => {
+  const { items } = useSelector((state) => state.template);
+  const fields = Object.keys(items);
   const dispatch = useDispatch();
   const [open, setOpen] = useState(false);
   function handleOnUpload(error, result, widget) {
@@ -14,12 +16,12 @@ const HeroController = () => {
       });
       return;
     }
-    dispatch(updateHeroSection({ variable: "imgUrl", value: result?.info?.secure_url }));
+    dispatch(updateItems({ variable: "imgUrl", value: result?.info?.secure_url }));
   }
   return (
     <div className="controller">
       <div className="flex-between" onClick={() => setOpen(!open)}>
-        <h3 className="controller-name">hero section</h3>
+        <h3 className="controller-name">articles section</h3>
         {open ? (
           <img src="/assets/icons/up.svg" width={18} alt="down" style={{ cursor: "pointer" }} />
         ) : (
@@ -29,12 +31,19 @@ const HeroController = () => {
       {open && (
         <>
           {fields.map((field) => {
+            console.log(field)
+            console.log(items[field])
+            if (field === "cards") {
+              return items.cards.map((_, index) => {
+                return <Shared cardIndex={index} sectionName="items" blockName="cards"  dispatchRef={updateItems} key={index} />;
+              });
+            }
             return (
               <div className="controller-field" key={field}>
                 <label className=" controller-label">{field}</label>
                 {field === "imgUrl" ? (
                   <div className="input-controller flex flex-between">
-                    <img src={heroSection[field]} alt="img" width={50} height={50} />
+                    <img src={items[field]} alt="img" width={50} height={50} />
                     <UploadWidget onUpload={handleOnUpload}>
                       {({ open }) => {
                         function handleOnClick(e) {
@@ -53,8 +62,8 @@ const HeroController = () => {
                   <textarea
                     className="input-controller"
                     wrap="hard"
-                    value={heroSection[field]}
-                    onChange={(e) => dispatch(updateHeroSection({ variable: field, value: e.target.value }))}
+                    value={items[field]}
+                    onChange={(e) => dispatch(updateItems({ variable: field, value: e.target.value }))}
                   />
                 )}
               </div>
@@ -65,4 +74,5 @@ const HeroController = () => {
     </div>
   );
 };
-export default HeroController;
+
+export default ItemsController;

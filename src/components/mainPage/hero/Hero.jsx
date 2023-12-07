@@ -1,12 +1,10 @@
 import React, { useState } from 'react';
-// import '../../../assets/css/globals1.css';
-import '../styles/index.css';
-import '../heroSection/modals/modalPage.css';
-import ModalPage from '../heroSection/modals/modalPage.jsx';
+import "../hero/hero.css";
+import ModalPage from '../ui/modals/ModalPage.jsx';
 import myImage from '../../../assets/images/img1.webp';
-import '../heroSection/modals/modalPage.jsx'; 
+import '../ui/modals/ModalPage.jsx'; 
 
-const Section = () => {
+const Hero = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const openModal = () => {
     setIsModalOpen(true);
@@ -38,8 +36,6 @@ const Section = () => {
             <h1>Make Your Website</h1>
           </div>
       </section>
-        
-      
       < section className="Buttons">
         <button className="button-1" >
           With Your Self
@@ -52,6 +48,6 @@ const Section = () => {
     </>
   );
 };
-export default Section;
+export default Hero;
 
 

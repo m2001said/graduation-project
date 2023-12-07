@@ -1,0 +1,27 @@
+
+.header-1 {
+  width: 261px !important;
+  height: 46px;
+  top: 27px;
+  left: 33px;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 34px;
+  text-align: left;
+
+}
+ .logo { 
+ background: linear-gradient(90deg, #FBC2EB 0%, #A18CD1 100%);
+ -webkit-background-clip: text; 
+  color: transparent; 
+  display: inline-block; 
+  border: 2px solid transparent;  
+}  
+@media (max-width: 300px) {
+  .header-1 {
+    width: auto;
+    text-align: center;
+    padding: 10px;
+  }
+}
