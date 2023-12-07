@@ -168,7 +168,19 @@ const templateSlice = createSlice({
           name: "Nattasha Julie",
           location: "Design, Australia",
           imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701808855/templates/template_one/Photo_fz8cuc.jpg",
-          icons: [
+          mediaIcons: [
+            "https://res.cloudinary.com/duc04fwdb/image/upload/v1701809141/templates/template_one/facebook_td263x.svg",
+            "https://res.cloudinary.com/duc04fwdb/image/upload/v1701809142/templates/template_one/x_yp3y5n.svg",
+            "https://res.cloudinary.com/duc04fwdb/image/upload/v1701809142/templates/template_one/linkedin_itbvp5.svg",
+            "https://res.cloudinary.com/duc04fwdb/image/upload/v1701809141/templates/template_one/instagram_dlrab9.svg",
+          ],
+          email: "julie@email.com",
+        },
+        {
+          name: "Nattasha Julie",
+          location: "Design, Australia",
+          imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701808855/templates/template_one/Photo_fz8cuc.jpg",
+          mediaIcons: [
             "https://res.cloudinary.com/duc04fwdb/image/upload/v1701809141/templates/template_one/facebook_td263x.svg",
             "https://res.cloudinary.com/duc04fwdb/image/upload/v1701809142/templates/template_one/x_yp3y5n.svg",
             "https://res.cloudinary.com/duc04fwdb/image/upload/v1701809142/templates/template_one/linkedin_itbvp5.svg",
@@ -197,7 +209,7 @@ const templateSlice = createSlice({
         {
           plan: "Design advices",
           price: "29",
-          timeUnit: "month",
+          timeUnit: "/month",
           moneyUnit: "$",
           description: "General living space advices Rennovation advices Interior design advices Furniture reorganization Up to 5 hours meetings",
           buttonText: "Get Started",
@@ -206,8 +218,9 @@ const templateSlice = createSlice({
         {
           plan: "Complete interior",
           price: "39",
-          timeUnit: "month",
+          timeUnit: "/month",
           moneyUnit: "$",
+          PopularPlan:"Most Popular Plans" ,
           description: "Complete home redesign Interior and exterior works Modular interior planning Kitchen design Garages organization",
           buttonText: "Get Started",
           buttonIcon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701813389/templates/template_one/Vector_5_vvvt2o.svg",
@@ -215,7 +228,7 @@ const templateSlice = createSlice({
         {
           plan: "Furniture design",
           price: "59",
-          timeUnit: "month",
+          timeUnit: "/month",
           moneyUnit: "$",
           description: "Furniture for living room Furniture refurbishment Sofas and amchairs Tables and chairs Kitchens",
           buttonText: "Get Started",

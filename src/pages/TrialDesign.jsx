@@ -8,13 +8,10 @@ import Articles from "../components/sections/Items/items1/Items1";
 import Statictics1 from "../components/sections/statistics/statistics1/Statictics1";
 
 import "../assets/css/globals1.css";
-import Project1 from '../components/sections/projects/projects1/Project1' 
-import Articles from '../components/sections/Items/items1/Items1' 
-import Statictics1 from '../components/sections/statistics/statistics1/Statictics1' 
-import Team1 from "../components/sections/teams/teams1/Teams1"
-import Pricing1 from "../components/sections/pricings/pricing1/Pricing1"
-import Cta1 from "../components/sections/ctas/cta1/Cta1"
-import Footer1 from "../components/sections/footers/footer1/Footer1"
+import Team1 from "../components/sections/teams/teams1/Teams1";
+import Pricing1 from "../components/sections/pricings/pricing1/Pricing1";
+import Cta1 from "../components/sections/ctas/cta1/Cta1";
+import Footer1 from "../components/sections/footers/footer1/Footer1";
 
 
 
@@ -27,6 +24,10 @@ const TrialDesign = () => {
       <Project1 />
       <Statictics1 />
       <Articles /> 
+      <Team1 />
+      <Pricing1 />
+      <Cta1 />
+      <Footer1 />
     </div>
   );
 };

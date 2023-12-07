@@ -1,14 +1,15 @@
 .pricing1{
     padding: 10px;
     text-align: center;
-    margin-top: 70px;  
+    margin-top: 70px; 
+    background-color: #FFFFFF; 
 }
 .pricing1-head{
     text-align: center;
     font-family: DM Serif Display;
-    font-size: 45px;
+    font-size: 40px;
     font-weight: 400;
-    color: #1e2125;
+    color: #292F36;
     margin-bottom: 25px;
     
 }
@@ -77,7 +78,7 @@
    background-color: #292F36;
   }
 
-  .pricing1-card2 h6{
+  .card-Popular-Plan{
    background-color: #292F36;
    color: #dddbdb;
    border-radius: 8px;
