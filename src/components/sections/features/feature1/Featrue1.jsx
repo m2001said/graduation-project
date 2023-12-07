@@ -2,7 +2,6 @@ import React from "react";
 import PhotoImage from "./Photo1.jpg";
 import PhotoImage2 from "./Vector .svg";
 import "./feature.css";
-
 const Featrue1 = () => {
   return (
     <div className="feature1-layout">
@@ -31,17 +30,11 @@ const Featrue1 = () => {
         </div>
       </div>
 
-       
       <div className="image-container">
-      <div className="img-background">
+        <div className="img-background">
           <img src={PhotoImage} alt="" />{" "}
-          </div>
-
+        </div>
       </div>
-
-      {/* <div className="image-container">
-        <img src={PhotoImage} alt="" />{" "}
-      </div> */}
     </div>
   );
 };

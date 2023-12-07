@@ -1,9 +1,9 @@
-
 import React from "react";
 import PhotoImage from "./person1.jpg";
 import PhotoImage2 from "./person1.jpg";
 import PhotoBackground from "./Background (1).png";
 import "./testimonials1.css";
+import { useSelector } from "react-redux";
 
 const testimonialData = [
   {
@@ -33,40 +33,41 @@ const testimonialData = [
 ];
 
 const Testimonial = ({ name, location, image, background, content }) => {
-  return (
-    <div className="testimonial">
-      <div className="background" style={{ backgroundImage: `url(${background})` }}>
-        <div className="content">
-          <div className="details">
-            <div className="person">
-              <img src={PhotoImage} alt="" />
+  const { testimonial } = useSelector((state) => state.template);
+  return testimonial.cards.map((card, index) => {
+    return (
+      <div className="testimonial" key={index}>
+        <div className="Testimonial__background">
+          <div className="Testimonial__content">
+            <div className="Testimonial__details">
+              <div className="Testimonial__person">
+                <img className="Testimonial__person-img" src={card.imgUrl} alt="" />
+              </div>
+              <h2 className="Testimonial__name-location">
+                <b>{card.title}</b>
+                <br />
+                {card.location}
+              </h2>
             </div>
-            <h1>
-              <b>{name}</b>
-              <br />
-              {location}
-            </h1>
+            <p className="lorem-ipsum">{card.opinion}</p>{" "}
           </div>
-          <p className="lorem-ipsum">{content}</p>        </div>
+        </div>
       </div>
-    </div>
-  );
+    );
+  });
 };
 
 const Testimonials1 = () => {
+  const { testimonial } = useSelector((state) => state.template);
+
   return (
     <div className="Testimonials-container">
       <div className="contentt">
         <div className="Testimonials-heading">
-          <h1>
-            What the People Thinks
-            <br /> About Us
-          </h1>
+          <h2>{testimonial.title}</h2>
         </div>
         <div className="Testimonials">
-          {testimonialData.map((testimonial) => (
-            <Testimonial key={testimonial.id} {...testimonial} />
-          ))}
+          <Testimonial />
         </div>
       </div>
     </div>
@@ -74,15 +75,6 @@ const Testimonials1 = () => {
 };
 
 export default Testimonials1;
-
-
-
-
-
-
-
-
-
 
 /***ستاااتيك */
 
@@ -165,4 +157,3 @@ export default Testimonials1;
 // };
 
 // export default Testimonials1;
-
