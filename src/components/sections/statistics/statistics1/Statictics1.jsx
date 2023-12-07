@@ -11,8 +11,8 @@ const Statictics1 = () => {
 
   const startCount = (el, goal) => {
     let count = setInterval(() => {
-      el.textContent++;
-      if (parseInt(el.textContent) === goal) {
+      el.textContent = String(parseInt(el.textContent) + 1);
+      if (el.textContent === goal) {
         clearInterval(count);
       }
     }, 2400 / goal);
