@@ -1,5 +1,4 @@
 import React from "react";
-import PhotoImage from "./person1.jpg";
 import "./testimonials1.css";
 import { useSelector } from "react-redux";
 

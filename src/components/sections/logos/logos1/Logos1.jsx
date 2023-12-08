@@ -1,5 +1,4 @@
 import React from "react";
-import "./logos.css";
 import { useSelector } from "react-redux";
 
 const Logos1 = () => {

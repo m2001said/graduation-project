@@ -1,6 +1,4 @@
 import React from "react";
-import PhotoImage from "./Photo1.jpg";
-import PhotoImage2 from "./Vector .svg";
 import "./feature.css";
 import { useSelector } from "react-redux";
 const Featrue1 = () => {
