@@ -1,0 +1,108 @@
+/* style of heroSection */
+body{
+  background-color: #F4F1F4 !important;
+}
+.sections-image-para {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 90px;
+  }
+  .section-content-1 {
+    display: flex;
+    align-items: center;
+  }
+  .section-content-1-image {
+    width: 394px;
+    height: 394px;
+    border-radius: 13px;
+    margin-right: 20px; 
+  }
+  .section-content-1 p {
+    width: 642px;
+    font-family: 'DM Sans';
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 45px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: #20254B;
+    margin-left: 20px;
+  }
+  .section-content-2{
+    font-size: 30px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+  /* styles.css /buttons */
+  .Buttons {
+    padding: 5px;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    margin-top: 50px;
+  }
+  .button-1 {
+    width: 146px;
+    height: 40px;
+    top: 20px;
+    left: 32px;
+    font-style: 'DM Sans';
+    font-weight: 700;
+    line-height: 26px;
+    margin-left: 10px;
+    color: #CE79CC;
+    border: 1px solid #CE79CC;
+  }
+  .button-2 {
+    width: 130px;
+    height: 40px;
+    font-style: 'DM Sans';
+    font-weight: 700;
+    line-height: 26px;
+    letter-spacing: 0px;
+    text-align: center;
+    color: white;
+    background-color:#20254B;
+    margin-left: 17px;
+  }
+@media (max-width: 768px) {
+  .section-content-1 {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .section-content-1-image {
+    width: 100%;
+    max-width: 768px;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .section-content-1 p {
+    width: 100%;
+    margin-left: 0;
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  .section-content-2 h1 {
+    font-size: 24px;
+  }
+
+  .Buttons {
+    flex-direction: column;
+    margin-top: 20px;
+  }
+
+  .button-1,
+  .button-2 {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
+
