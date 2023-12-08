@@ -1,35 +1,32 @@
-
-
-.container {
+.Nav-container {
   padding: 0 15px;
   margin: 0 auto;
 }
 
 /* Responsive Container */
 @media (min-width: 576px) {
-  .container {
+  .Nav-container {
     width: 100%;
   }
 }
 
 @media (min-width: 768px) {
-  .container {
+  .Nav-container {
     width: 750px;
   }
 }
 
 @media (min-width: 992px) {
-  .container {
+  .Nav-container {
     width: 970px;
   }
 }
 
 @media (min-width: 1200px) {
-  .container {
+  .Nav-container {
     width: 1170px;
   }
 }
-
 
 /* Header */
 header {
@@ -38,17 +35,16 @@ header {
   left: 0;
   width: 100%;
   z-index: 2;
-  background-color: rgb(255, 255, 255);
+  background-color: var(--white);
 }
 
-header .container {
+header .Nav-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
   position: relative;
   min-height: 80px;
 }
-
 
 header .logo img {
   height: 30px;
@@ -104,12 +100,9 @@ header nav ul li a:hover {
   color: var(--website-color-2);
 }
 
-
-
 /* ... (your existing styles) ... */
 
-
-@media (min-width: 767px) {
+@media (min-width: 668px) {
   header nav .toggle-menu {
     display: none;
   }
@@ -122,7 +115,7 @@ header nav ul {
   display: flex;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 668px) {
   header nav ul {
     display: none;
     flex-direction: column;
@@ -131,16 +124,15 @@ header nav ul {
     right: 0;
     width: 40%;
     background-color: var(--white);
-    opacity: .7;
+    opacity: 0.7;
     box-shadow: 0 2px 4px var(--website-color-2);
   }
   header nav ul li a:hover {
-    color: var(--main-color1);
+    color: var(--website-color-2);
   }
 
   header nav ul.show {
     display: flex;
-    
   }
 
   header nav ul li {
@@ -161,7 +153,7 @@ header nav ul {
 header nav ul li a {
   padding: 20px 10px;
   display: block;
-  color: rgb(0, 0, 0);
+  color: var(--website-color-3);
   text-decoration: none;
   font-size: 14px;
   transition: 0.3s;
