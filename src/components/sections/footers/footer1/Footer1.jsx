@@ -18,22 +18,21 @@ const Footer = () => {
         </div>
         <div className='footer1-Sections'>
          <div className="footer1-section">
-            <h4>Sections</h4>
-            <p>About Us</p>
-            <p>Our Projects</p>
-            <p>Our Team</p>
-            <p>Contact Us</p>
-            <p>Services</p>
+         <h4>{footer.sectionTitle}</h4>
+         {footer.blocks.map((service, index) => (
+             
+            <p  key={index}>{service.Sections}</p>
+          ))}
               
          </div>
          <div className="footer1-services">
-            <h4>Services</h4>
+            <h4>{footer.serviceTitle}</h4>
             {footer.blocks.map((service, index) => (
             <p  key={index}>{service.services}</p>
           ))}
          </div>
          <div className="footer1-contact">
-            <h4>Contact</h4>
+            <h4>{footer.contactTitle}</h4>
             <p>{footer.location}</p>
             <p>{footer.email}</p>
             <p>{footer.phone}</p>

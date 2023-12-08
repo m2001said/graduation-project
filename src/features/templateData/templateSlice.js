@@ -267,15 +267,25 @@ const templateSlice = createSlice({
       location: "55 East Birchwood Ave. Brooklyn, New York 11201",
       email : "contact@interno.com",
       phone : "(123) 125-858",
+      sectionTitle:"Section",
+      serviceTitle:"Services",
+      contactTitle:"Contact",
+
       blocks:[
         {
-        services : [
-        "Kitchan,",
-        "Living Area,",
-        "Bathroom,",
-        "Dinning Hall,",
-        "Bedroom",
-        ]
+
+        services : ["Kitchan,",
+                    "Living Area,",
+                    "Bathroom,",
+                    "Dinning Hall,",
+                    "Bedroom",]
+        },
+        {
+          Sections : ["About Us",
+                      " Projects",
+                      "Our Team",
+                      "Contact Us",
+                      "Services",]
         },
       ]
     },

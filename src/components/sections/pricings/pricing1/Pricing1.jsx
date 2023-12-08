@@ -2,20 +2,7 @@ import React from "react";
 import "./pricing1.css";
 import { useSelector } from "react-redux";
 
-const cardData = [
-  {
 
-    cardClass: "pricing1-card1",
-  },
-  {
-    Plans: "Most Popular Plans",
-    cardClass: "pricing1-card2",
-  },
-  {
-    
-    cardClass: "pricing1-card3",
-  },
-];
 
 const Pricing1 = () => {
   const { pricing } = useSelector((state) => state.template);
