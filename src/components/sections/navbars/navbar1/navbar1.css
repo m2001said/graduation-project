@@ -115,7 +115,7 @@ header nav ul {
   display: flex;
 }
 
-@media (max-width: 668px) {
+@media (max-width: 667px) {
   header nav ul {
     display: none;
     flex-direction: column;
