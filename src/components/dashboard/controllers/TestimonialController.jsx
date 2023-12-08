@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
-import { updateTestimonialSection } from "../../../features/templateData/templateSlice";
+import { updateTestimonial } from "../../../features/templateData/templateSlice";
 import UploadWidget from "../cloudinary/UploadWidget";
 const TestimonialController = () => {
-  const { testimonialSection } = useSelector((state) => state.template);
-  const fields = Object.keys(testimonialSection);
+  const { testimonial } = useSelector((state) => state.template);
+  const fields = Object.keys(testimonial);
   const dispatch = useDispatch();
   const [open, setOpen] = useState(false);
   function handleOnUpload(error, result, widget) {
@@ -14,7 +14,7 @@ const TestimonialController = () => {
       });
       return;
     }
-    dispatch(updateTestimonialSection({ variable: "imgUrl", value: result?.info?.secure_url }));
+    dispatch(updateTestimonial({ variable: "imgUrl", value: result?.info?.secure_url }));
   }
 
   return (
@@ -35,7 +35,7 @@ const TestimonialController = () => {
                 <label className=" controller-label">{field}</label>
                 {field === "imgUrl" ? (
                   <div className="input-controller flex flex-between">
-                    <img src={testimonialSection[field]} alt="img" width={50} height={50} />
+                    <img src={testimonial[field]} alt="img" width={50} height={50} />
                     <UploadWidget onUpload={handleOnUpload}>
                       {({ open }) => {
                         function handleOnClick(e) {
@@ -54,8 +54,8 @@ const TestimonialController = () => {
                   <textarea
                     className="input-controller"
                     wrap="hard"
-                    value={testimonialSection[field]}
-                    onChange={(e) => dispatch(updateTestimonialSection({ variable: field, value: e.target.value }))}
+                    value={testimonial[field]}
+                    onChange={(e) => dispatch(updateTestimonial({ variable: field, value: e.target.value }))}
                   />
                 )}
               </div>
