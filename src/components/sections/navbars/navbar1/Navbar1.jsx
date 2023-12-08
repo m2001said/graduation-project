@@ -1,8 +1,10 @@
 import Logo from "../../../../images/Logo.jpg";
 import React, { useState, useRef, useEffect } from "react";
 import "./navbar1.css";
+import { useSelector } from "react-redux";
 
 const Navbar1 = () => {
+  const { navbar } = useSelector((state) => state.template);
   const [openMenu, setOpenMenu] = useState(false);
   const [isSmallScreen, setIsSmallScreen] = useState(window.innerWidth <= 667);
   const menuRef = useRef(null);
@@ -42,7 +44,7 @@ const Navbar1 = () => {
       <header>
         <div className="Nav-container">
           <a href="#" className="logo">
-            <img src={Logo} alt="Logo" />
+            <img src={navbar.logo} alt="Logo" />
           </a>
           <nav>
             {isSmallScreen && (
@@ -55,32 +57,32 @@ const Navbar1 = () => {
             <ul className={isSmallScreen && openMenu ? "show" : ""}>
               <li>
                 <a href="#" onClick={() => setOpenMenu(false)}>
-                  Home
+                  {navbar.links[0]}
                 </a>
               </li>
               <li>
                 <a href="#" onClick={() => setOpenMenu(false)}>
-                  Pages
+                  {navbar.links[1]}
                 </a>
               </li>
               <li>
                 <a href="#" onClick={() => setOpenMenu(false)}>
-                  Services
+                  {navbar.links[2]}
                 </a>
               </li>
               <li>
                 <a href="#" onClick={() => setOpenMenu(false)}>
-                  Project
+                  {navbar.links[3]}
                 </a>
               </li>
               <li>
                 <a href="#" onClick={() => setOpenMenu(false)}>
-                  Blog
+                  {navbar.links[4]}
                 </a>
               </li>
               <li>
                 <a href="#" onClick={() => setOpenMenu(false)}>
-                  Contact
+                  {navbar.links[5]}
                 </a>
               </li>
             </ul>
