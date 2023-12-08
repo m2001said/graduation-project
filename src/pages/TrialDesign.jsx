@@ -6,6 +6,9 @@ import App from "../../src/App";
 import Project1 from "../components/sections/projects/projects1/Project1";
 import Articles from "../components/sections/Items/items1/Items1";
 import Statictics1 from "../components/sections/statistics/statistics1/Statictics1";
+import Testimonials1 from "../components/sections/testimonials/testimonials1/Testimonials1";
+import Featrue1 from "../components/sections/features/feature1/Featrue1";
+import Logos1 from "../components/sections/logos/logos1/Logos1";
 
 import "../assets/css/globals1.css";
 const TrialDesign = () => {
@@ -17,6 +20,9 @@ const TrialDesign = () => {
       <Project1 />
       <Statictics1 />
       <Articles />
+      <Featrue1 />
+      <Testimonials1 />
+      <Logos1 />
     </div>
   );
 };
