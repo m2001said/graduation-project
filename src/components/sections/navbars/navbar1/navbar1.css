@@ -83,17 +83,19 @@ header nav .toggle-menu {
   background-color: var(--website-color-3);
   height: 2px;
   width: 21px;
-  margin: 5px 0;
+  margin: 4px 0;
   transition: transform 0.3s ease-in-out;
+  border-radius: 5px;
 }
 
-.toggle-menu.open .bar:first-child {
-  transform: translateY(8px) rotate(45deg);
+.toggle-menu.open .bar:nth-child(2) {
+  transform: translateX(-4px);
+  margin: 1px;
 }
 
-.toggle-menu.open .bar:last-child {
+/* .toggle-menu.open .bar:last-child {
   transform: translateY(-8px) rotate(-45deg);
-}
+} */
 
 /* Add hover effect on links */
 header nav ul li a:hover {
@@ -133,7 +135,6 @@ header nav ul {
 
   header nav ul.show {
     display: flex;
-    background-color: rgb(0, 0, 0);
   }
 
   header nav ul li {
