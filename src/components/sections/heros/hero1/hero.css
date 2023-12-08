@@ -45,8 +45,9 @@
 }
 /* Landing */
 .landing {
-  min-height: 640px;
+  height: 800px;
   background-color: var(--white);
+  background-position: center;
   background-size: cover;
   position: relative;
   border-radius: 0 0 0 115px;
