@@ -11,6 +11,13 @@ import Featrue1 from "../components/sections/features/feature1/Featrue1";
 import Logos1 from "../components/sections/logos/logos1/Logos1";
 
 import "../assets/css/globals1.css";
+import Team1 from "../components/sections/teams/teams1/Teams1";
+import Pricing1 from "../components/sections/pricings/pricing1/Pricing1";
+import Cta1 from "../components/sections/ctas/cta1/Cta1";
+import Footer1 from "../components/sections/footers/footer1/Footer1";
+
+
+
 const TrialDesign = () => {
   return (
     <div>
