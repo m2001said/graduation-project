@@ -1,5 +1,6 @@
 .Nav-container {
-  padding: 0 15px;
+  padding-top: 15px !important;
+  padding-bottom: 15px !important;
   margin: 0 auto;
 }
 
@@ -85,10 +86,6 @@ header nav .toggle-menu {
   transform: translate(-7px);
 }
 
-header nav ul li a:hover {
-  color: var(--website-color-2);
-}
-
 @media (min-width: 668px) {
   header nav .toggle-menu {
     display: none;
@@ -110,7 +107,6 @@ header nav ul {
     top: 80px;
     right: 0;
     width: 40%;
-    background-color: var(--white);
     opacity: 0.7;
     box-shadow: 0 2px 4px var(--website-color-2);
   }
@@ -120,32 +116,37 @@ header nav ul {
 
   header nav ul.show {
     display: flex;
+    width: 150px;
   }
-
-  header nav ul li {
-    width: 100%;
-    right: 0;
-  }
-
-  header nav ul li a {
-    padding: 5px;
-    display: block;
+  header nav ul.show li a {
+    text-transform: capitalize;
+    padding: 10px 30px;
     color: var(--white);
-    text-decoration: none;
+    background-color: var(--website-color-3);
     font-size: 18px;
-    transition: 0.3s;
+  }
+  header nav ul.show li a:hover {
+    color: var(--website-color-2);
+    border-radius: 0;
   }
 }
 
 header nav ul li a {
-  padding: 20px 10px;
+  padding: 20px 35px;
   display: block;
   color: var(--website-color-3);
   text-decoration: none;
-  font-size: 14px;
-  transition: 0.3s;
+  font-size: 18px;
+  transition: 0.2s;
+  text-transform: capitalize;
   position: relative;
   z-index: 2;
+}
+header nav ul li a:hover {
+  background-color: var(--website-color-3);
+  color: var(--website-color-2);
+  border-radius: 8px;
+  font-weight: bold;
 }
 
 .navbar-menu-container {

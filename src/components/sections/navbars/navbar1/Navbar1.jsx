@@ -40,7 +40,7 @@ const Navbar1 = () => {
 
   return (
     <header>
-      <div className="Nav-container ">
+      <div className="Nav-container design-1">
         <a href="#" className="logo">
           <img src={navbar.logo} alt="Logo" />
         </a>
