@@ -45,7 +45,7 @@
 }
 /* Landing */
 .landing {
-  min-height: 100vh;
+  min-height: 640px;
   background-color: var(--white);
   background-size: cover;
   position: relative;
@@ -78,6 +78,7 @@
 }
 
 .landing .text .landing-btn {
+  padding: 20px 40px;
   margin-top: 12px;
   font-size: 18px;
   background: var(--website-color-3);
