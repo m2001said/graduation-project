@@ -1,4 +1,3 @@
-import Logo from "../../../../images/Logo.jpg";
 import React, { useState, useRef, useEffect } from "react";
 import "./navbar1.css";
 import { useSelector } from "react-redux";
@@ -55,36 +54,14 @@ const Navbar1 = () => {
               </div>
             )}
             <ul className={isSmallScreen && openMenu ? "show" : ""}>
-              <li>
-                <a href="#" onClick={() => setOpenMenu(false)}>
-                  {navbar.links[0]}
-                </a>
-              </li>
-              <li>
-                <a href="#" onClick={() => setOpenMenu(false)}>
-                  {navbar.links[1]}
-                </a>
-              </li>
-              <li>
-                <a href="#" onClick={() => setOpenMenu(false)}>
-                  {navbar.links[2]}
-                </a>
-              </li>
-              <li>
-                <a href="#" onClick={() => setOpenMenu(false)}>
-                  {navbar.links[3]}
-                </a>
-              </li>
-              <li>
-                <a href="#" onClick={() => setOpenMenu(false)}>
-                  {navbar.links[4]}
-                </a>
-              </li>
-              <li>
-                <a href="#" onClick={() => setOpenMenu(false)}>
-                  {navbar.links[5]}
-                </a>
-              </li>
+              {/* Map over navbar.links to dynamically generate links */}
+              {navbar.links.map((link, index) => (
+                <li key={index}>
+                  <a href="#" onClick={() => setOpenMenu(false)}>
+                    {link}
+                  </a>
+                </li>
+              ))}
             </ul>
           </nav>
         </div>
@@ -92,4 +69,5 @@ const Navbar1 = () => {
     </div>
   );
 };
+
 export default Navbar1;
