@@ -62,9 +62,6 @@ header nav .toggle-menu {
   font-size: 22px;
   cursor: pointer;
 }
-/* Your existing styles */
-/* Add these styles to your existing CSS file */
-/* ... (your existing styles) ... */
 
 .toggle-menu {
   cursor: pointer;
@@ -75,34 +72,22 @@ header nav .toggle-menu {
   font-size: 22px;
 }
 
-.toggle-menu.open {
-  transform: rotate(90deg);
-}
-
 .bar {
   background-color: var(--website-color-3);
   height: 2px;
   width: 21px;
-  margin: 4px 0;
+  margin: 3px 0;
   transition: transform 0.3s ease-in-out;
   border-radius: 5px;
 }
 
 .toggle-menu.open .bar:nth-child(2) {
-  transform: translateX(-4px);
-  margin: 1px;
+  transform: translate(-7px);
 }
 
-/* .toggle-menu.open .bar:last-child {
-  transform: translateY(-8px) rotate(-45deg);
-} */
-
-/* Add hover effect on links */
 header nav ul li a:hover {
   color: var(--website-color-2);
 }
-
-/* ... (your existing styles) ... */
 
 @media (min-width: 668px) {
   header nav .toggle-menu {
