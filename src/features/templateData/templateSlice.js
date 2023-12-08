@@ -153,7 +153,7 @@ const templateSlice = createSlice({
       title: "Our Team Members",
       cards: [
         {
-          name: "Nattasha Julie",
+          name: "Nattasha",
           location: "Design, Australia",
           imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701808855/templates/template_one/Photo_fz8cuc.jpg",
           mediaIcons: [
@@ -165,7 +165,7 @@ const templateSlice = createSlice({
           email: "julie@email.com",
         },
         {
-          name: "Nattasha Julie",
+          name: "Julie",
           location: "Design, Australia",
           imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701808855/templates/template_one/Photo_fz8cuc.jpg",
           mediaIcons: [
@@ -177,7 +177,7 @@ const templateSlice = createSlice({
           email: "julie@email.com",
         },
         {
-          name: "Nattasha Julie",
+          name: "Alex",
           location: "Design, Australia",
           imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701808855/templates/template_one/Photo_fz8cuc.jpg",
           mediaIcons: [
@@ -189,7 +189,7 @@ const templateSlice = createSlice({
           email: "julie@email.com",
         },
         {
-          name: "Nattasha Julie",
+          name: "John",
           location: "Design, Australia",
           imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701808855/templates/template_one/Photo_fz8cuc.jpg",
           icons: [
@@ -211,7 +211,12 @@ const templateSlice = createSlice({
           price: "29",
           timeUnit: "/month",
           moneyUnit: "$",
-          description: "General living space advices Rennovation advices Interior design advices Furniture reorganization Up to 5 hours meetings",
+          features: ["General living space advices", 
+                     "Renovation advices",
+                     "Interior design advices", 
+                     "Furniture reorganization", 
+                     "Up to 5 hours meetings"
+                    ],
           buttonText: "Get Started",
           buttonIcon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701813389/templates/template_one/Vector_5_vvvt2o.svg",
         },
@@ -221,7 +226,11 @@ const templateSlice = createSlice({
           timeUnit: "/month",
           moneyUnit: "$",
           PopularPlan:"Most Popular Plans" ,
-          description: "Complete home redesign Interior and exterior works Modular interior planning Kitchen design Garages organization",
+          features: ["Complete home redesign", 
+                     "Interior and exterior works", 
+                     "Modular interior planning", 
+                     "Kitchen design", 
+                     "Garages organization"],
           buttonText: "Get Started",
           buttonIcon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701813389/templates/template_one/Vector_5_vvvt2o.svg",
         },
@@ -230,7 +239,11 @@ const templateSlice = createSlice({
           price: "59",
           timeUnit: "/month",
           moneyUnit: "$",
-          description: "Furniture for living room Furniture refurbishment Sofas and amchairs Tables and chairs Kitchens",
+          features: ["Furniture for living room", 
+                     "Furniture refurbishment", 
+                     "Sofas and armchairs", 
+                     "Tables and chairs", 
+                     "Kitchens"],
           buttonText: "Get Started",
           buttonIcon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701813389/templates/template_one/Vector_5_vvvt2o.svg",
         },
@@ -251,17 +264,20 @@ const templateSlice = createSlice({
         "https://res.cloudinary.com/duc04fwdb/image/upload/v1701809142/templates/template_one/linkedin_itbvp5.svg",
         "https://res.cloudinary.com/duc04fwdb/image/upload/v1701809141/templates/template_one/instagram_dlrab9.svg",
       ],
-      blocks: [
+      location: "55 East Birchwood Ave. Brooklyn, New York 11201",
+      email : "contact@interno.com",
+      phone : "(123) 125-858",
+      blocks:[
         {
-          title: "sections",
+        services : [
+        "Kitchan,",
+        "Living Area,",
+        "Bathroom,",
+        "Dinning Hall,",
+        "Bedroom",
+        ]
         },
-        {
-          title: "services",
-        },
-        {
-          title: "contact",
-        },
-      ],
+      ]
     },
   },
 

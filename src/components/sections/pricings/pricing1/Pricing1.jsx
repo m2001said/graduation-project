@@ -4,22 +4,15 @@ import { useSelector } from "react-redux";
 
 const cardData = [
   {
-    features: ["General living space advices", "Renovation advices", "Interior design advices", "Furniture reorganization", "Up to 5 hours meetings"],
-    buttonClass: "pricing-card-button1",
-    // Vector: Vector1,
+
     cardClass: "pricing1-card1",
   },
   {
     Plans: "Most Popular Plans",
-    features: ["Complete home redesign", "Interior and exterior works", "Modular interior planning", "Kitchen design", "Garages organization"],
-    buttonClass: "pricing-card-button2",
-    // Vector: Vector2,
     cardClass: "pricing1-card2",
   },
   {
-    features: ["Furniture for living room", "Furniture refurbishment", "Sofas and armchairs", "Tables and chairs", "Kitchens"],
-    buttonClass: "pricing-card-button3",
-    // Vector: Vector1,
+    
     cardClass: "pricing1-card3",
   },
 ];
@@ -35,21 +28,23 @@ const Pricing1 = () => {
       </div>
       <div className="pricing1-mainCards">
         {pricing.blocks.map((card, index) => (
-          <div key={index} className={`pricing1-card ${card.cardClass}`}>
+          <div key={index} className={`pricing1-card${index}`}>
             <h3 className="pricing1-card-title">{card.plan}</h3>
             <h1>
               <span>{card.moneyUnit}</span>
               {card.price}
             </h1>
-            <span>{card.timeUnit}</span>
+            <span className="pricing1-timeUnit">{card.timeUnit}</span>
             <hr></hr>
-            <h6 className="card-Popular-Plan">{card.PopularPlan}</h6>
-            {/* {card.features.map((feature, i) => (
-              <p key={i}>{feature}</p>
-            ))} */}
-            <button className={`pricing-card-button ${card.buttonClass}`}>
-              <span> Get started </span>
-              <img src={card.Vector} alt="" />
+            <h6>{card.PopularPlan}</h6>
+            {card.features.map((feature, i) => (
+              <p className="pricing1-feature" key={i}>{feature}</p>
+            ))}
+            <button className={`pricing-card-button${index}`}>
+              <span> {card.buttonText} </span>
+              <a href={" #"}>
+                    <img src={card.buttonIcon} alt="icon" />
+              </a>
             </button>
           </div>
         ))}
