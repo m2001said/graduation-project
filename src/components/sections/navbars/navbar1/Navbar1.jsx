@@ -39,34 +39,32 @@ const Navbar1 = () => {
   };
 
   return (
-    <div>
-      <header>
-        <div className="Nav-container">
-          <a href="#" className="logo">
-            <img src={navbar.logo} alt="Logo" />
-          </a>
-          <nav>
-            {isSmallScreen && (
-              <div ref={menuRef} className={`toggle-menu ${openMenu ? "open" : ""}`} onClick={toggleMenu}>
-                <div className="bar"></div>
-                <div className="bar"></div>
-                <div className="bar"></div>
-              </div>
-            )}
-            <ul className={isSmallScreen && openMenu ? "show" : ""}>
-              {/* Map over navbar.links to dynamically generate links */}
-              {navbar.links.map((link, index) => (
-                <li key={index}>
-                  <a href="#" onClick={() => setOpenMenu(false)}>
-                    {link}
-                  </a>
-                </li>
-              ))}
-            </ul>
-          </nav>
-        </div>
-      </header>
-    </div>
+    <header>
+      <div className="Nav-container design-1">
+        <a href="#" className="logo">
+          <img src={navbar.logo} alt="Logo" />
+        </a>
+        <nav>
+          {isSmallScreen && (
+            <div ref={menuRef} className={`toggle-menu ${openMenu ? "open" : ""}`} onClick={toggleMenu}>
+              <div className="bar"></div>
+              <div className="bar"></div>
+              <div className="bar"></div>
+            </div>
+          )}
+          <ul className={isSmallScreen && openMenu ? "show" : ""}>
+            {/* Map over navbar.links to dynamically generate links */}
+            {navbar.links.map((link, index) => (
+              <li key={index}>
+                <a href="#" onClick={() => setOpenMenu(false)}>
+                  {link}
+                </a>
+              </li>
+            ))}
+          </ul>
+        </nav>
+      </div>
+    </header>
   );
 };
 
