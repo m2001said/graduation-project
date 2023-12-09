@@ -116,18 +116,21 @@ header nav ul {
 
   header nav ul.show {
     display: flex;
-    width: 150px;
+    width: 170px;
   }
   header nav ul.show li a {
     text-transform: capitalize;
     padding: 10px 30px;
-    color: var(--white);
-    background-color: var(--website-color-3);
+    color: var(--website-color-3);
+    background-color: var(--white);
     font-size: 18px;
+    border: 0.7px solid var(--website-color-2);
   }
   header nav ul.show li a:hover {
+    background-color: var(--website-color-3);
     color: var(--website-color-2);
     border-radius: 0;
+    font-weight: bold;
   }
 }
 
