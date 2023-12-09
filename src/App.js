@@ -1,17 +1,17 @@
-
 import { Route, Routes } from "react-router";
 import Dashboard from "./pages/Dashboard";
 import MainPage from "./pages/MainPage";
-import TrialDesign from "./pages/TrialDesign";
+import TrialDesign1 from "./pages/TrialDesign1";
+import TrialDesign2 from "./pages/TrialDesign2";
 function App() {
-  return ( 
+  return (
     <>
       <Routes>
         <Route path="/" element={<MainPage />} />
         <Route path="/dashboard" element={<Dashboard />} />
-        <Route path="/trialDesign" element={<TrialDesign />} />
-       </Routes>
-        
+        <Route path="/trial-design1" element={<TrialDesign1 />} />
+        <Route path="/trial-design2" element={<TrialDesign2 />} />
+      </Routes>
     </>
   );
 }
