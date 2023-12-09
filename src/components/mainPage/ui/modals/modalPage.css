@@ -155,6 +155,7 @@ transform: rotate(132.14deg);
   animation-duration: 0ms; 
 }
 @media only screen and (max-width: 768px) {
+  
   .modal-A {
     flex-direction: column;
     width: 80%;
