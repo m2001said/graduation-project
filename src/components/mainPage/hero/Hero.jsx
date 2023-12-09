@@ -13,6 +13,15 @@ const Hero = () => {
   const closeModal = () => {
     setIsModalOpen(false);
   };
+
+  const links = [
+    { to: "trial-design1", text: "go to TrialDesign1" },
+    { to: "trial-design2", text: "go to TrialDesign2" },
+    { to: "trial-design3", text: "go to TrialDesign3" },
+    { to: "trial-design4", text: "go to TrialDesign4" },
+    { to: "trial-design5", text: "go to TrialDesign5" },
+    { to: "trial-design6", text: "go to TrialDesign6" },
+  ];
   return (
     <>
       <section className="sections-image-para">
@@ -50,12 +59,11 @@ const Hero = () => {
       </section>
 
       <div className="flex  gap-8 items-center justify-center w-full">
-        <Link className="temporary-link" to={"trial-design1"}>
-          go to TrialDesign1
-        </Link>
-        <Link className="temporary-link" to={"trial-design2"}>
-          go to TrialDesign2
-        </Link>
+        {links.map((link, index) => (
+          <Link key={index} className="temporary-link" to={link.to}>
+            {link.text}
+          </Link>
+        ))}
       </div>
     </>
   );
