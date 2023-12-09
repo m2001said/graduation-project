@@ -87,7 +87,6 @@
 }
 .landing .text .landing-btn:hover {
   color: var(--website-color-2);
-  font-weight: bold;
   transition: 0.1s;
 }
 .landing .text .content h2 {
