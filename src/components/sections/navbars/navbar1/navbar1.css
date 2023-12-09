@@ -124,7 +124,7 @@ header nav ul {
     color: var(--website-color-3);
     background-color: var(--white);
     font-size: 18px;
-    border: 0.7px solid var(--website-color-2);
+    border-bottom: 0.5px solid var(--website-color-2);
   }
   header nav ul.show li a:hover {
     background-color: var(--website-color-3);
