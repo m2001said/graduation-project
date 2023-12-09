@@ -1,23 +1,19 @@
 .pricing1{
-    padding: 10px;
+    padding: 20px 0;
     text-align: center;
-    margin-top: 70px; 
-    background-color: #FFFFFF; 
+    background: var(--website-color-1);
 }
 .pricing1-head{
     text-align: center;
-    font-family: DM Serif Display;
-    font-size: 40px;
+    font-size: 36px;
     font-weight: 400;
-    color: #292F36;
+    color: var( --website-color-3);
     margin-bottom: 25px;
-    
 }
 .pricing1-head p{
-    font-family: Jost;
     font-size: 18px;
-    font-weight: 300;
-    color: #4D5053;
+    font-weight: 400;
+    color: var( --grey);
     text-align: center;
 }
 .pricing1-mainCards{
@@ -40,58 +36,55 @@
       border-radius: 20px;
       padding: 45px;
       margin: 20px;
-      background-color: #F4F0EC
+      background: var(--website-color-4);
   }
   .pricing1-card1{
     box-shadow: 0px 2px 2px 2px rgba(168, 168, 168, 0.192) 
   }
   .pricing1-card-title{
-  font-family: DM Serif Display;
    font-size:22px;
    font-weight: 600;
    line-height: 25px;
-   color: #292F36;
+   color: var( --website-color-3);
 
   }
   .pricing1-card0 h1,
   .pricing1-card1 h1,
   .pricing1-card2 h1{
-   font-family:DM Serif Display;
    font-size:70px;
    font-weight: 600;
-   color: #292F36;
+   color: var( --website-color-3);
    margin-bottom: -15px;
   }
 
   .pricing1-card1 h1{
-   color:#CDA274;
+    color: var(--website-color-2);
   }
 
   .pricing1-card0 h1 span,
   .pricing1-card1 h1 span,
   .pricing1-card2 h1 span{
-    font-family: DM Serif Display;
     font-size: 18px;
     font-weight:600;
-    color: #292F36;
+    color: var( --website-color-3);
    
    }
 
   .pricing1-card0 hr,
   .pricing1-card2 hr{
-   background-color: #CDA274;
+   background: var(--website-color-2);
    height: 2px;
    margin-top: 15px;
   }
   .pricing1-card1 hr{
-   background-color: #292F36;
+   background: var(--website-color-3);
    height: 2px;
    margin-top: 15px;
   }
 
   .pricing1-card1 h6{
-   background-color: #292F36;
-   color: #dddbdb;
+   background: var(--website-color-3);
+   color: var( --white);
    border-radius: 8px;
    padding: 2px;
    font-size: xx-small;
@@ -101,7 +94,7 @@
   }
   
   .pricing1-timeUnit{
-   color: #292F36;
+   color: var(--website-color-3);
    font-weight: 600;
    
   }
@@ -123,27 +116,25 @@
       padding: 6px;
       border-radius: 12px;
       gap: 10px;
-      background-color: #CDA274;
+      background: var(--website-color-2);
    }
    
 
    .pricing-card-button1{
-      background-color: #292F36;
+      background: var(--website-color-3);
       margin-top: 31px; 
    }
 
    .pricing-card-button0 span,
    .pricing-card-button2 span{
-    font-family: Jost;
     font-size: 18px;
     font-weight:600;
-    color: #FFFFFF;
+    color: var( --white);
    }
    .pricing-card-button1 span{
-    font-family: Jost;
     font-size: 18px;
     font-weight:600;
-    color: #FFFFFF;
+    color: var( --white);
    }
 
    .pricing-card-button0 img,
@@ -153,9 +144,7 @@
     height:13.18px;
     margin-top:7px ;
    }
-   .pricing-card-button3 img{
-    background-color: #CDA274;
-   }
+   
 
    /* @media screen and (max-width: 980px) {
     .pricing1-cards{

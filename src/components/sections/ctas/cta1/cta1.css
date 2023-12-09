@@ -1,9 +1,10 @@
 .cta1-main{
-    background-color: #FFFFFF;
+    background: var(--website-color-1);
+    padding: 20px 0;
 }
 
 .cta1{
-    background-color:#292F36;
+    background: var(--website-color-3);
     border-radius: 70px;
     width: 65%;
     max-width: 1000px;
@@ -17,24 +18,21 @@
     justify-content: center;
 }
 .cta1 h1{
-    font-family: DM Serif Display;
     font-weight: 400;
     font-size:50px;
     line-height:62.5px;
     padding-top: 30px;
-    color: #FFFFFF;
+    color: var(--white);
     text-align: center;
 }
 .cta1 p{
-   font-family:Jost;
-   font-weight: 400;
+    font-weight: 400;
     font-size:19px;
     line-height:33px;
-    color: #FFFFFF;
+    color: var(--white);
     text-align: center;
 }
 .cta1-button{
-      font-family:Jost;
       font-weight: 400;
       font-size:18px; 
       min-width: 30%;
@@ -46,8 +44,8 @@
       align-items: center;
       margin:40px;
       padding: 26px, 37px, 26px, 37px;
-      color: white;
-      background-color: #CDA274;
+      color: var(--white);
+      background: var(--website-color-2);
       border-radius: 18px;
       gap: 10px;
 }

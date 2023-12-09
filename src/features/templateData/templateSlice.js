@@ -153,7 +153,7 @@ const templateSlice = createSlice({
       title: "Our Team Members",
       cards: [
         {
-          name: "Nattasha",
+          name: "Nattasha Julie",
           location: "Design, Australia",
           imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701808855/templates/template_one/Photo_fz8cuc.jpg",
           mediaIcons: [
@@ -192,7 +192,7 @@ const templateSlice = createSlice({
           name: "John",
           location: "Design, Australia",
           imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701808855/templates/template_one/Photo_fz8cuc.jpg",
-          icons: [
+          mediaIcons: [
             "https://res.cloudinary.com/duc04fwdb/image/upload/v1701809141/templates/template_one/facebook_td263x.svg",
             "https://res.cloudinary.com/duc04fwdb/image/upload/v1701809142/templates/template_one/x_yp3y5n.svg",
             "https://res.cloudinary.com/duc04fwdb/image/upload/v1701809142/templates/template_one/linkedin_itbvp5.svg",
@@ -265,27 +265,30 @@ const templateSlice = createSlice({
         "https://res.cloudinary.com/duc04fwdb/image/upload/v1701809141/templates/template_one/instagram_dlrab9.svg",
       ],
       location: "55 East Birchwood Ave. Brooklyn, New York 11201",
-      email : "contact@interno.com",
-      phone : "(123) 125-858",
+      email: "contact@interno.com",
+      phone: "(123) 125-858",
       sectionTitle:"Section",
       serviceTitle:"Services",
       contactTitle:"Contact",
-
       blocks:[
         {
-
-        services : ["Kitchan,",
-                    "Living Area,",
-                    "Bathroom,",
-                    "Dinning Hall,",
-                    "Bedroom",]
+          services:[
+            "Kitchan",
+            "Living Area",
+            "Bathroom",
+            "Dinning Hall",
+            "Bedroom",
+             ],
+        
         },
         {
-          Sections : ["About Us",
-                      " Projects",
-                      "Our Team",
-                      "Contact Us",
-                      "Services",]
+        sections : [
+            "About Us",
+            "Projects",
+            "Our Team",
+            "Contact Us",
+            "Services",
+        ],
         },
       ]
     },

@@ -4,7 +4,7 @@ import { useSelector } from "react-redux";
 const Cta1 = () => {
   const { cta} = useSelector((state) => state.template);
   return (
-    <div className="cta1-main">
+    <div className="cta1-main design-1">
       <div className="cta1">
         <h1>{cta.title}</h1>
         <p>{cta.description}</p>
