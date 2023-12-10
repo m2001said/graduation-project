@@ -16,9 +16,8 @@ const Testimonials1 = () => {
               <div className="testimonials-card-header">
                 <img className="testimonials-card-header-img" src={card.imgUrl} alt=" " />
                 <div className="testimonials-card-info">
-                  <p>
-                    <b>{card.name}</b>
-                  </p>
+                  <b>{card.name}</b>
+
                   <p>{card.location}</p>
                 </div>
               </div>
