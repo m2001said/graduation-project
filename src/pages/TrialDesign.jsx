@@ -4,7 +4,7 @@ import Hero1 from "../components/sections/heros/hero1/Hero1";
 import Services1 from "../components/sections/services/services1/Services1";
 import App from "../../src/App";
 import Project1 from "../components/sections/projects/projects1/Project1";
-import Articles from "../components/sections/Items/items1/Items1";
+import Items from "../components/sections/Items/items1/Items1";
 import Statictics1 from "../components/sections/statistics/statistics1/Statictics1";
 
 import "../assets/css/globals1.css";
@@ -16,7 +16,7 @@ const TrialDesign = () => {
       <Services1 />
       <Project1 />
       <Statictics1 />
-      <Articles />
+      <Items />
     </div>
   );
 };

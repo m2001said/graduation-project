@@ -4,7 +4,7 @@ import {useSelector} from 'react-redux'
 
 
 
-const Articles = () => {
+const Items = () => {
   const { items } = useSelector((state) => state.template);
  
   return (
@@ -38,4 +38,4 @@ const Articles = () => {
   );
 };
 
-export default Articles;
+export default Items;
