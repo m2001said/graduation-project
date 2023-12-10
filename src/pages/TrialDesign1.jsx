@@ -3,7 +3,7 @@ import Navbar1 from "../components/sections/navbars/navbar1/Navbar1";
 import Hero1 from "../components/sections/heros/hero1/Hero1";
 import Services1 from "../components/sections/services/services1/Services1";
 import Project1 from "../components/sections/projects/projects1/Project1";
-import Articles from "../components/sections/Items/items1/Items1";
+import Items from "../components/sections/Items/items1/Items1";
 import Statictics1 from "../components/sections/statistics/statistics1/Statictics1";
 import Testimonials1 from "../components/sections/testimonials/testimonials1/Testimonials1";
 import Featrue1 from "../components/sections/features/feature1/Featrue1";
@@ -23,7 +23,7 @@ const TrialDesign1 = () => {
       <Services1 />
       <Project1 />
       <Statictics1 />
-      <Articles />
+      <Items />
       <Featrue1 />
       <Testimonials1 />
       <Logos1 />
