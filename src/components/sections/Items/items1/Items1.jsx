@@ -1,12 +1,10 @@
 import React from "react";
 import "./items1.css";
-import {useSelector} from 'react-redux'
-
-
+import { useSelector } from "react-redux";
 
 const Articles = () => {
   const { items } = useSelector((state) => state.template);
- 
+
   return (
     <div className="items1 design-1">
       <div className="items1-header">
