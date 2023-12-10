@@ -75,15 +75,21 @@
   .testimonials {
     max-width: 80%;
     margin: 0.5rem auto;
-    height: 60%;
+    /* height: 60%; */
   }
   .testimonials-cards {
     max-width: 80%;
     margin: 0.5rem auto;
     padding: 0.5rem auto;
+    gap: 20px;
+    display: flex;
+    padding: auto;
   }
   .Testimonials__title {
-    font-size: 40px;
+    max-width: 90%;
+    font-size: 30px;
+    text-align: center;
+    padding-left: ;
   }
   .testimonials-card-header {
     padding: auto;
@@ -95,5 +101,20 @@
   .testimonials-card {
     max-width: 100%;
     font-size: smaller;
+    padding: 20px;
+  }
+  .testimonials-card-header {
+    padding-top: 20px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: auto;
+  }
+  .testimonials-card-body {
+    font-size: 20px;
+
+    text-align: start;
+    /* justify-content: center; */
+    /* align-items: center; */
   }
 }
