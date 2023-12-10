@@ -1,3 +1,8 @@
+.Testimonials1 {
+  background: white;
+  max-width: 100%;
+  /* height: auto; */
+}
 .testimonials {
   background-color: var(--website-color-4);
   text-align: center;
@@ -12,7 +17,7 @@
 .Testimonials__title {
   color: var(--website-filed-title);
   text-align: center;
-  font-family: "DM Serif Display";
+  /* font-family: "DM Serif Display"; */
   font-size: 60px;
   font-style: normal;
   font-weight: 400;
@@ -57,7 +62,7 @@
 }
 .testimonials-card-body {
   color: var(--website-color-3);
-  font-family: Jost;
+  /* font-family: Jost; */
   font-size: 22px;
   font-style: normal;
   font-weight: 400;
