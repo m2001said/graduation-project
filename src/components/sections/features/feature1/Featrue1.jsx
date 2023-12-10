@@ -21,7 +21,7 @@ const Featrue1 = () => {
             </div>
           </div>
           <button>
-            <p>{feature.buttonText}</p>
+            {feature.buttonText}
             <img src={feature.buttonIcon} alt="" />
           </button>
         </div>
