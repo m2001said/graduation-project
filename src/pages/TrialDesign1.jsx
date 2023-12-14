@@ -15,7 +15,7 @@ import Footer1 from "../components/sections/footers/footer1/Footer1";
 
 import "../assets/css/globals1.css";
 
-const TrialDesign = () => {
+const TrialDesign1 = () => {
   return (
     <div>
       <Navbar1 />
@@ -35,4 +35,4 @@ const TrialDesign = () => {
   );
 };
 
-export default TrialDesign;
+export default TrialDesign1;

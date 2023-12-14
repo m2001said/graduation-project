@@ -45,8 +45,9 @@
 }
 /* Landing */
 .landing {
-  min-height: 640px;
+  height: 800px;
   background-color: var(--white);
+  background-position: center;
   background-size: cover;
   position: relative;
   border-radius: 0 0 0 115px;
@@ -76,18 +77,18 @@
 .landing .text .content {
   max-width: 285px;
 }
-
 .landing .text .landing-btn {
   padding: 20px 40px;
   margin-top: 12px;
   font-size: 18px;
-  background: var(--website-color-3);
+  background-color: var(--website-color-3);
   color: var(--white);
   border-radius: 20px;
 }
 .landing .text .landing-btn:hover {
-  background: var(--primary-color1);
-  transition: 0.3s;
+  color: var(--website-color-2);
+  font-weight: bold;
+  transition: 0.1s;
 }
 .landing .text .content h2 {
   font-family: "DM Serif Display";
