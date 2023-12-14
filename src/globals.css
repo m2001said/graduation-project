@@ -2,7 +2,7 @@
 /* for mainPages and dashboard and for root-colors and root-fonts of all */
 /* root-colors and root-fonts ----all team will use them */
 
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -26,12 +26,12 @@
 
   --website-filed-title: #1a2345;
 }
-html{
+html {
   background-color: white;
 }
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
 }
 
 /* Global Rules */
@@ -79,7 +79,7 @@ ul {
 }
 
 .body-bold {
-  @apply text-[18px] font-bold leading-[140%];
+  @apply lg:text-[18px] font-bold leading-[140%] text-[16] max-md:text-[18px];
 }
 
 .body-medium {
@@ -111,9 +111,8 @@ ul {
 .flex-center {
   @apply flex justify-center items-center;
 }
-.flex-column{
+.flex-column {
   @apply flex justify-center items-center flex-col;
-
 }
 
 .flex-between {
@@ -178,6 +177,14 @@ ul {
   border-bottom: 4px solid var(--primary-color2);
   border-right: 4px solid var(--primary-color2);
 }
+.dashboard-subContainer {
+  height: auto;
+}
+@media (min-width: 767px) {
+  .dashboard-subContainer {
+    height: calc(100vh - 56px);
+  }
+}
 .update-controller {
   color: white;
   padding: 1rem;
@@ -194,6 +201,12 @@ ul {
   border-color: var(--grey);
   @apply flex flex-col border-2 rounded-lg border-solid pb-1 overflow-hidden text-black;
   border-color: var(--grey);
+}
+.subController {
+  padding-left: 0.5rem;
+}
+.subController:not(:last-child) {
+  border-bottom: 2px solid var(--grey);
 }
 .controller-label {
   @apply text-[16px]  capitalize pl-1 border-b-2;

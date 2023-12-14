@@ -13,7 +13,7 @@ const Articles = () => {
       </div>
       <div className="items1-cards">
         {items.cards.map((cards) => (
-          <div className="article1-card">
+          <div className="article1-card" key={cards.title}>
             <div className="article1-card-img">
               <img src={cards.imgUrl} alt="Article 1" />
               <p className="article1-card-caption">{cards.caption}</p>
