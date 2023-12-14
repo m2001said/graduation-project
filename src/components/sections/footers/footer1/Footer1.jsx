@@ -4,7 +4,6 @@ import { useSelector } from "react-redux";
 
 const Footer = () => {
   const { footer } = useSelector((state) => state.template);
-   console.log(footer);
 
   return (
     
