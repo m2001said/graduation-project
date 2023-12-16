@@ -1,9 +1,11 @@
 import React from "react";
 import { useDispatch, useSelector } from "react-redux";
+
 const SharedObj = ({ sectionName, blockName, dispatchRef }) => {
   const targetSection = useSelector((state) => state.template[sectionName]);
   const dispatch = useDispatch();
   const fields = Object.keys(targetSection[blockName]);
+
   return (
     <div className="controller-field">
       <label className=" controller-label">{blockName}</label>

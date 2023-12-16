@@ -12,9 +12,9 @@ const LeftSide = () => {
   return showLeftSide ? (
     <div className="max-md:w-full flex-auto w-60 pb-6 bg-white md:overflow-y-auto md:overflow-x-hidden dashboard-subContainer" style={{ minWidth: "250px" }}>
       <div className="update-controller">
-        <div className="flex-between ">
+        <div className="flex-between cursor-pointer" onClick={handleClick}>
           <h3 className="body-bold  cursor-pointer uppercase">edit sections</h3>
-          <img src="/assets/icons/goLeft.svg" width={18} alt="down" style={{ cursor: "pointer" }} onClick={handleClick} />
+          <img src="/assets/icons/goLeft.svg" width={18} alt="down" />
         </div>
       </div>
       {sections.map((section) => (
@@ -22,8 +22,9 @@ const LeftSide = () => {
       ))}
     </div>
   ) : (
-    <div className="absolute top-3 left-4 bg-blue-500 w-7 h-7 rounded-md flex-center ">
-      <img src="/assets/icons/down.svg" width={18} alt="down" style={{ cursor: "pointer" }} onClick={handleClick} />
+    <div className="absolute top-3 left-4 bg-white rounded-sm p-1 flex-center cursor-pointer" onClick={handleClick}>
+      <p className="font-bold white mr-1">Open Dashboard</p>
+      <img src="/assets/icons/down.svg" width={18} alt="down" />
     </div>
   );
 };

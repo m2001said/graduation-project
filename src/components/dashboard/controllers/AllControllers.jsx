@@ -22,13 +22,9 @@ const AllControllers = ({ controllerSection }) => {
   }
   return (
     <div className="controller">
-      <div className="flex-between" onClick={() => setOpen(!open)}>
+      <div className="flex-between cursor-pointer" onClick={() => setOpen(!open)}>
         <h3 className="controller-name">{controllerSection} section</h3>
-        {open ? (
-          <img src="/assets/icons/down.svg" width={18} alt="down" style={{ cursor: "pointer" }} />
-          ) : (
-          <img src="/assets/icons/up.svg" width={18} alt="down" style={{ cursor: "pointer" }} />
-        )}
+        {open ? <img src="/assets/icons/down.svg" width={18} alt="down" /> : <img src="/assets/icons/up.svg" width={18} alt="down" />}
       </div>
       {open && (
         <>

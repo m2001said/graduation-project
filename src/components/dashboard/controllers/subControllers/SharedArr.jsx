@@ -19,7 +19,7 @@ const SharedArr = ({ sectionName, subName, blockName, dispatchRef }) => {
               style={{ backgroundColor: "#F2F2F2", borderRadius: "6px" }}
               wrap="hard"
               value={field}
-              onChange={(e) => dispatch(dispatchRef({section: sectionName, variable: null, value: e.target.value, i: index , blockName:blockName}))}
+              onChange={(e) => dispatch(dispatchRef({ section: sectionName, variable: null, value: e.target.value, i: index, blockName: blockName }))}
             />
           </div>
         );
