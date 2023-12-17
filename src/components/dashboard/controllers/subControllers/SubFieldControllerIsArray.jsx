@@ -1,6 +1,6 @@
 import React from "react";
 import { useDispatch, useSelector } from "react-redux";
-const SubSharedArr = ({ cardIndex, sectionName, blockName, subBlockName, dispatchRef }) => {
+const SubFieldControllerIsArray = ({ cardIndex, sectionName, blockName, subBlockName, dispatchRef }) => {
   const targetSection = useSelector((state) => state.template[sectionName]);
   const dispatch = useDispatch();
   const fields = targetSection[blockName][cardIndex][subBlockName];
@@ -39,4 +39,4 @@ const SubSharedArr = ({ cardIndex, sectionName, blockName, subBlockName, dispatc
     </div>
   );
 };
-export default SubSharedArr;
+export default SubFieldControllerIsArray;

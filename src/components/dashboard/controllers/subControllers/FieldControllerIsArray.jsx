@@ -1,22 +1,27 @@
 import React from "react";
 import { useDispatch, useSelector } from "react-redux";
-const SharedObj = ({ sectionName, blockName, dispatchRef }) => {
+const FieldControllerIsArray = ({ sectionName, subName, blockName, dispatchRef }) => {
   const targetSection = useSelector((state) => state.template[sectionName]);
   const dispatch = useDispatch();
-  const fields = Object.keys(targetSection[blockName]);
+  const fields = targetSection[blockName];
   return (
     <div className="controller-field">
       <label className=" controller-label">{blockName}</label>
       {fields.map((field, index) => {
         return (
           <div className="subController " key={index}>
-            <label className="text-[16px]  capitalize">{field}</label>
+            <label className="text-[16px]  capitalize">
+              {subName}
+              {index + 1}
+            </label>
             <textarea
               className="input-controller"
               style={{ backgroundColor: "#F2F2F2", borderRadius: "6px" }}
               wrap="hard"
-              value={targetSection[blockName][field]}
-              onChange={(e) => dispatch(dispatchRef({ section: sectionName, variable: null, value: e.target.value, blockName: blockName, objKey: field }))}
+              value={field}
+              // onChange={(e) => dispatch(dispatchRef({section: sectionName, variable: null, value: e.target.value, i: index , blockName:blockName}))}
+              onChange={(e) => dispatch(dispatchRef({section: sectionName, variable: null, value: e.target.value , blockName:blockName}))}
+
             />
           </div>
         );
@@ -24,4 +29,4 @@ const SharedObj = ({ sectionName, blockName, dispatchRef }) => {
     </div>
   );
 };
-export default SharedObj;
+export default FieldControllerIsArray;
