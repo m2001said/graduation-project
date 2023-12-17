@@ -1,0 +1,115 @@
+.teams5{
+    margin: auto;
+    padding-bottom: 5rem;
+
+}
+
+.teams5-mainSectiom{
+    text-align: center;
+}
+
+.teams5-mainSectiom h2{
+    padding: 1.5rem;
+    font-size: 27px;
+    font-weight: 700;
+}
+
+.teams5-travelersCards{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2.5rem;
+}
+
+.teams5-single-card{
+    position: relative;
+    height: 250px;
+    width: 170px;
+    max-width: 250px;
+    overflow: hidden;
+    border-radius: 6rem;
+    gap: 1rem;
+}
+
+.destinationImage,
+.travelerImage,
+.travelerName{
+    position: absolute;
+}
+
+.destinationImage{
+    min-height: 100%;
+    width: 100%;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    object-fit: cover;
+}
+
+.travelerImage{
+    height: 50px;
+    width: 50px;
+    object-fit: cover;
+    border-radius: 50%;
+    bottom: 30px;
+    left: 35%;
+    transform: translateX(-50%);
+    border: 4px solid rgba(255, 255, 255, 0.637);
+    transition: var(--transition);
+    animation: animated 2.3s infinite;
+}
+
+@keyframes animated{
+    0%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(8px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+
+.travelerName{
+    bottom: -100%;
+    width: 100%;
+    height: max-content;
+    background: var(--website-5-white);
+    padding: 1rem 1rem;
+    transition: var(--transition);
+    animation: animatedBorders 2.3s infinite;
+}
+.travelerName span{
+    display: block;
+    font-weight: 700;
+    color: var(--website-5-black);
+}
+
+.travelerName p{
+    color: var(--website-5-color-1);
+    font-style: italic;
+}
+
+@keyframes animatedBorders{
+    0%{
+        border-radius: 0rem;
+    }
+    50%{
+        border-radius: 2rem;
+    }
+    100%{
+        border-radius: 0rem;
+    }
+}
+
+.teams5-single-card:hover .travelerName {
+    bottom: 0;
+    transition: 1s ease-in-out;
+}
+.teams5-single-card:hover .travelerImage {
+    bottom: 110px;
+    transition: 1s ease-in-out;
+}

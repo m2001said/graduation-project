@@ -1,13 +1,148 @@
-/* add here your website colors with start  --website-5   */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Spartan", sans-serif;
+}
 
 :root {
   /* these are temporary colors , you should change it  */
-  --website-5-color-1: #fff;
-  --website-5-color-2: #cda274;
-  --website-5-color-3: #292f36;
-  --website-5-color-4: #f4f0ec;
-
-  --website-5-hover-1: #f4f0ec;
-
+  --website-5-color-1: hsl(255, 50%, 48%);
+  --website-5-color-2: hsl(180, 17%, 95%);
+  --website-5-color-3: hsl(15, 74%, 70%);
+  --website-5-color-4: hsl(28, 100%, 82%);
+  --website-5-hover-1: hsl(255, 56%, 59%);
+  --website-5-white: hsl(0, 0%, 100%);
+  --website-5-black: hsl(0, 0%, 12%);
+  --website-5-textColor: hsl(240, 1%, 48%);
+  --website-5-borderColor: hsl(0, 0%, 83%);
+  --website-5-whiteColorDeam: hsl(0, 0%, 93%);
+  --website-5-greyBg: hsl(0, 0%, 96%);
+  --website-5-greyText: rgb(145, 145, 145);
+  --website-5-inputColor: hsl(330, 12%, 97%);
+  --boxShadow: box-shadow: rgb(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px ;
+  --transition: .4s ease-in-out ;
   /* and add your */
+}
+
+.bady {
+  background: var(--website-5-white);
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+  cursor: pointer;
+}
+
+.section {
+  padding: 4rem 0 2rem;
+}
+
+.container {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.icon {
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+.grid {
+  display: grid;
+  align-items: center;
+}
+
+.none {
+  display: none;
+}
+
+img, video {
+  width: 100%;
+  height: auto;
+}
+
+input {
+  font-size: 100%;
+  color: var(--website-5-greyText);
+}
+
+p {
+  font-size: 13px;
+  color: var(--website-5-greyText);
+  line-height: 22px;
+}
+
+h4 {
+  padding: 1rem 0;
+  font-weight: 700;
+  color: var(--website-5-black);
+}
+
+h2 {
+  font-size: 25px;
+  padding: 1rem 0;
+  color: var(--website-5-black);
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 1.5rem;
+  background: var(--website-5-color-1);
+  border: none;
+  outline: none;
+  border-radius: 3rem;
+  cursor: pointer;
+  color: var(--website-5-white);
+}
+
+
+@media screen and (min-width: 1024px){
+  p {
+    font-size: 13px;
+    line-height: 22px;
+  }
+  
+  h4 {
+    font-size: 20px;
+  }
+  
+  h2 {
+    font-size: 30px;
+  }
+
+  .section {
+    padding: 6rem 0 4rem;
+  }
+  
+  .container {
+    width: 75%;
+    margin:auto;
+  }
+}
+
+
+::selection{
+  background: var(--website-5-color-1);
+  color: var(--website-5-white);
+}
+
+::-webkit-scrollbar{
+  width: 10px;
+  background: var(--website-5-greyBg);
+}
+
+::-webkit-scrollbar-thumb{
+  background: var(--website-5-color-1);
+  border-radius: 10px;
 }
