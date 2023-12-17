@@ -1,46 +1,46 @@
-import React from 'react'
-import "./footer1.css"
-import { useSelector } from 'react-redux'
-
+import React from "react";
+import "./footer1.css";
+import { useSelector } from "react-redux";
 
 const Footer = () => {
-  const {footer} = useSelector((state) => state.template );
+  const { footer } = useSelector((state) => state.template);
+  const contactInfo = Object.keys(footer.contact);
   return (
-    <div className='footer1'>
-        <div className="footer1-icons">
-            <a href=' #'><img src={footer.logo} alt=""/></a>
-            <p>{footer.description}</p>
-          <div className='footer1-media-icon'>
-          {footer.mediaIcons.map((icon, index) => (
-            <a href={"# "} key={index}><img src={icon.mediaIcons} alt="" className='footer1-img' /></a>
-          ))} 
+    <div className="footer1 design-1">
+      <div className="footer1-icons">
+        <a href=" #">
+          <img src={footer.imgUrl} alt="" />
+        </a>
+        <p>{footer.description}</p>
+        <div className="footer1-media-icon">
+          {footer.mediaIcons.map((icon) => (
+            <a href={icon.url} key={icon.url}>
+              <img src={icon.icon} alt="" className="footer1-img" />
+            </a>
+          ))}
+        </div>
+      </div>
+      {footer.items.map((item) => (
+        <div className="footer1-section" key={item.title}>
+          <h4>{item.title}</h4>
+          <div className="footer1-element">
+            {item.links.map((link) => (
+              <p key={link}>{link}</p>
+            ))}
           </div>
         </div>
-        <div className='footer1-Sections'>
-         <div className="footer1-section">
-         <h4>{footer.sectionTitle}</h4>
-         {footer.blocks.map((service, index) => (
-             
-            <p  key={index}>{service.Sections}</p>
-          ))}
-              
-         </div>
-         <div className="footer1-services">
-            <h4>{footer.serviceTitle}</h4>
-            {footer.blocks.map((service, index) => (
-            <p  key={index}>{service.services}</p>
-          ))}
-         </div>
-         <div className="footer1-contact">
-            <h4>{footer.contactTitle}</h4>
-            <p>{footer.location}</p>
-            <p>{footer.email}</p>
-            <p>{footer.phone}</p>
-         </div>
+      ))}
+      <div className="footer1-contact">
+        <h4>{footer.contact.title}</h4>
+        <div className="footer1-element">
+          {contactInfo.map((info, index) => {
+            if (index === 0) return null;
+            return <p key={info}>{footer.contact[info]}</p>;
+          })}
         </div>
+      </div>
     </div>
-    
-  )
-}
+  );
+};
 
-export default Footer
+export default Footer;

@@ -12,7 +12,10 @@ const Hero1 = () => {
         <div className="content">
           <h2>{hero.title}</h2>
           <p>{hero.description}</p>
-          <button className="landing-btn">{hero.buttonText} </button>
+          <button className="landing-btn flex-center gap-2">
+            <span>{hero.buttonText}</span>
+            <img src={hero.icon} alt="icon" />
+          </button>
         </div>
       </div>
     </div>
