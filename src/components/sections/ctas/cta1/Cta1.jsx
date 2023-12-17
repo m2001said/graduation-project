@@ -10,8 +10,8 @@ const Cta1 = () => {
         <p>{cta.description}</p>
         <button className="cta1-button">
           <span>{cta.buttonText}</span>
-          <a href={"#"} className="cta1-button-img">
-          <img  src={cta.buttonIcon} alt="" />
+          <a href="#cta" className="cta1-button-img">
+          <img  src={cta.icon} alt="" />
           </a>
         </button>
       </div>

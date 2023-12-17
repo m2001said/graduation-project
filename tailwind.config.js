@@ -6,6 +6,10 @@ module.exports = {
       backgroundColor: {
         "1A2345": "#1A2345",
       },
+      width:{
+        "70":"70%",
+        "30":"30%"
+      }
     },
   },
   plugins: [],

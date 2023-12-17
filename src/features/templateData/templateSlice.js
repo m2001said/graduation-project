@@ -1,20 +1,18 @@
 import { createSlice } from "@reduxjs/toolkit";
 const templateSlice = createSlice({
   initialState: {
-   navbar: {
-      logo: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701811960/templates/template_one/Logo_mj7rvw.png",
+    navbar: {
+      imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701811960/templates/template_one/Logo_mj7rvw.png",
       links: ["home", "pages", "services", "projects", "blog", "contact"],
     },
-    hero : {
+    hero: {
       title: "Let Your Home Be Unique",
       description: "There are many variations of the passages of lorem Ipsum from available, variations of the passages.",
       imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701808857/templates/template_one/Photo_3_jpjtdv.jpg",
       buttonText: "Get Started",
-      buttonIcon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701813389/templates/template_one/Vector_5_vvvt2o.svg",
+      icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701813389/templates/template_one/Vector_5_vvvt2o.svg",
     },
     services: {
-      title: "",
-      description: "",
       blocks: [
         {
           icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701808099/templates/template_one/icon_one_xvd7d6.svg",
@@ -38,9 +36,15 @@ const templateSlice = createSlice({
       description:
         "It is a long established fact that a reader will be distracted by the of readable content of a page when looking at its layouts the points of using that it has a more-or-less normal.",
       phone: "012345678",
-      icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701813236/templates/template_one/Call_gqvv4l.svg",
       buttonText: "Get Free Estimate",
-      buttonIcon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701813389/templates/template_one/Vector_5_vvvt2o.svg",
+      icons: [
+        {
+          icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701813236/templates/template_one/Call_gqvv4l.svg",
+        },
+        {
+          icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701813389/templates/template_one/Vector_5_vvvt2o.svg",
+        },
+      ],
       imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701813388/templates/template_one/Photo_sonnlx.jpg",
     },
     testimonial: {
@@ -66,13 +70,15 @@ const templateSlice = createSlice({
         },
       ],
     },
-    logos: [
-      "https://res.cloudinary.com/duc04fwdb/image/upload/v1701808448/templates/template_one/01_p78hjd.svg",
-      "https://res.cloudinary.com/duc04fwdb/image/upload/v1701808448/templates/template_one/02_mnw1ps.svg",
-      "https://res.cloudinary.com/duc04fwdb/image/upload/v1701808448/templates/template_one/03_fiplpx.svg",
-      "https://res.cloudinary.com/duc04fwdb/image/upload/v1701808449/templates/template_one/04_pg8flc.svg",
-      "https://res.cloudinary.com/duc04fwdb/image/upload/v1701808449/templates/template_one/05_prt3gi.svg",
-    ],
+    logos: {
+      companies: [
+        { imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701808448/templates/template_one/01_p78hjd.svg" },
+        { imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701808448/templates/template_one/02_mnw1ps.svg" },
+        { imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701808448/templates/template_one/03_fiplpx.svg" },
+        { imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701808449/templates/template_one/04_pg8flc.svg" },
+        { imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701808449/templates/template_one/05_prt3gi.svg" },
+      ],
+    },
     projects: {
       title: "Follow Our Projects",
       description: "It is a long established fact that a reader will be distracted by the of readable content of page  lookings at its layouts  points.",
@@ -81,46 +87,48 @@ const templateSlice = createSlice({
           imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701808451/templates/template_one/Photo_2_w7jdep.jpg",
           title: "Modern Kitchan",
           description: "Decor / Artchitecture",
-          icons: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701718889/templates/template_one/Vector_5_nzmfwn.svg",
+          icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701718889/templates/template_one/Vector_5_nzmfwn.svg",
         },
         {
           imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701808451/templates/template_one/Photo_3_wig9kc.jpg",
           title: "Modern Kitchan",
           description: "Decor / Artchitecture",
-          icons: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701718889/templates/template_one/Vector_5_nzmfwn.svg",
+          icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701718889/templates/template_one/Vector_5_nzmfwn.svg",
         },
         {
           imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701808452/templates/template_one/Photo_iojikc.jpg",
           title: "Modern Kitchan",
           description: "Decor / Artchitecture",
-          icons: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701718889/templates/template_one/Vector_5_nzmfwn.svg",
+          icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701718889/templates/template_one/Vector_5_nzmfwn.svg",
         },
         {
           imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701808450/templates/template_one/Photo_1_njncs1.jpg",
           title: "Modern Kitchan",
           description: "Decor / Artchitecture",
-          icons: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701718889/templates/template_one/Vector_5_nzmfwn.svg",
+          icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701718889/templates/template_one/Vector_5_nzmfwn.svg",
         },
       ],
     },
-    statistic: [
-      {
-        title: "Years Of Experience",
-        value: "12",
-      },
-      {
-        title: "Success Projects",
-        value: "85",
-      },
-      {
-        title: "Active Projects",
-        value: "15",
-      },
-      {
-        title: "Happy Customers",
-        value: "95",
-      },
-    ],
+    statistic: {
+      statistics: [
+        {
+          title: "Years Of Experience",
+          value: "12",
+        },
+        {
+          title: "Success Projects",
+          value: "85",
+        },
+        {
+          title: "Active Projects",
+          value: "15",
+        },
+        {
+          title: "Happy Customers",
+          value: "95",
+        },
+      ],
+    },
     items: {
       title: "Articles & News",
       description:
@@ -157,10 +165,22 @@ const templateSlice = createSlice({
           location: "Design, Australia",
           imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701808855/templates/template_one/Photo_fz8cuc.jpg",
           mediaIcons: [
-            "https://res.cloudinary.com/duc04fwdb/image/upload/v1701809141/templates/template_one/facebook_td263x.svg",
-            "https://res.cloudinary.com/duc04fwdb/image/upload/v1701809142/templates/template_one/x_yp3y5n.svg",
-            "https://res.cloudinary.com/duc04fwdb/image/upload/v1701809142/templates/template_one/linkedin_itbvp5.svg",
-            "https://res.cloudinary.com/duc04fwdb/image/upload/v1701809141/templates/template_one/instagram_dlrab9.svg",
+            {
+              icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701809141/templates/template_one/facebook_td263x.svg",
+              url: "https://facebook.com",
+            },
+            {
+              icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701809142/templates/template_one/x_yp3y5n.svg",
+              url: "https://x.com",
+            },
+            {
+              icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701809142/templates/template_one/linkedin_itbvp5.svg",
+              url: "https://linkedin.com",
+            },
+            {
+              icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701809141/templates/template_one/instagram_dlrab9.svg",
+              url: "https://instagram.com",
+            },
           ],
           email: "julie@email.com",
         },
@@ -169,10 +189,22 @@ const templateSlice = createSlice({
           location: "Design, Australia",
           imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701808855/templates/template_one/Photo_fz8cuc.jpg",
           mediaIcons: [
-            "https://res.cloudinary.com/duc04fwdb/image/upload/v1701809141/templates/template_one/facebook_td263x.svg",
-            "https://res.cloudinary.com/duc04fwdb/image/upload/v1701809142/templates/template_one/x_yp3y5n.svg",
-            "https://res.cloudinary.com/duc04fwdb/image/upload/v1701809142/templates/template_one/linkedin_itbvp5.svg",
-            "https://res.cloudinary.com/duc04fwdb/image/upload/v1701809141/templates/template_one/instagram_dlrab9.svg",
+            {
+              icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701809141/templates/template_one/facebook_td263x.svg",
+              url: "https://facebook.com",
+            },
+            {
+              icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701809142/templates/template_one/x_yp3y5n.svg",
+              url: "https://x.com",
+            },
+            {
+              icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701809142/templates/template_one/linkedin_itbvp5.svg",
+              url: "https://linkedin.com",
+            },
+            {
+              icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701809141/templates/template_one/instagram_dlrab9.svg",
+              url: "https://instagram.com",
+            },
           ],
           email: "julie@email.com",
         },
@@ -181,10 +213,22 @@ const templateSlice = createSlice({
           location: "Design, Australia",
           imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701808855/templates/template_one/Photo_fz8cuc.jpg",
           mediaIcons: [
-            "https://res.cloudinary.com/duc04fwdb/image/upload/v1701809141/templates/template_one/facebook_td263x.svg",
-            "https://res.cloudinary.com/duc04fwdb/image/upload/v1701809142/templates/template_one/x_yp3y5n.svg",
-            "https://res.cloudinary.com/duc04fwdb/image/upload/v1701809142/templates/template_one/linkedin_itbvp5.svg",
-            "https://res.cloudinary.com/duc04fwdb/image/upload/v1701809141/templates/template_one/instagram_dlrab9.svg",
+            {
+              icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701809141/templates/template_one/facebook_td263x.svg",
+              url: "https://facebook.com",
+            },
+            {
+              icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701809142/templates/template_one/x_yp3y5n.svg",
+              url: "https://x.com",
+            },
+            {
+              icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701809142/templates/template_one/linkedin_itbvp5.svg",
+              url: "https://linkedin.com",
+            },
+            {
+              icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701809141/templates/template_one/instagram_dlrab9.svg",
+              url: "https://instagram.com",
+            },
           ],
           email: "julie@email.com",
         },
@@ -192,11 +236,23 @@ const templateSlice = createSlice({
           name: "John",
           location: "Design, Australia",
           imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701808855/templates/template_one/Photo_fz8cuc.jpg",
-          icons: [
-            "https://res.cloudinary.com/duc04fwdb/image/upload/v1701809141/templates/template_one/facebook_td263x.svg",
-            "https://res.cloudinary.com/duc04fwdb/image/upload/v1701809142/templates/template_one/x_yp3y5n.svg",
-            "https://res.cloudinary.com/duc04fwdb/image/upload/v1701809142/templates/template_one/linkedin_itbvp5.svg",
-            "https://res.cloudinary.com/duc04fwdb/image/upload/v1701809141/templates/template_one/instagram_dlrab9.svg",
+          mediaIcons: [
+            {
+              icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701809141/templates/template_one/facebook_td263x.svg",
+              url: "https://facebook.com",
+            },
+            {
+              icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701809142/templates/template_one/x_yp3y5n.svg",
+              url: "https://x.com",
+            },
+            {
+              icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701809142/templates/template_one/linkedin_itbvp5.svg",
+              url: "https://linkedin.com",
+            },
+            {
+              icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701809141/templates/template_one/instagram_dlrab9.svg",
+              url: "https://instagram.com",
+            },
           ],
           email: "julie@email.com",
         },
@@ -211,41 +267,28 @@ const templateSlice = createSlice({
           price: "29",
           timeUnit: "/month",
           moneyUnit: "$",
-          features: ["General living space advices", 
-                     "Renovation advices",
-                     "Interior design advices", 
-                     "Furniture reorganization", 
-                     "Up to 5 hours meetings"
-                    ],
+          features: ["General living space advices", "Renovation advices", "Interior design advices", "Furniture reorganization", "Up to 5 hours meetings"],
           buttonText: "Get Started",
-          buttonIcon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701813389/templates/template_one/Vector_5_vvvt2o.svg",
+          icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701813389/templates/template_one/Vector_5_vvvt2o.svg",
         },
         {
           plan: "Complete interior",
           price: "39",
           timeUnit: "/month",
           moneyUnit: "$",
-          PopularPlan:"Most Popular Plans" ,
-          features: ["Complete home redesign", 
-                     "Interior and exterior works", 
-                     "Modular interior planning", 
-                     "Kitchen design", 
-                     "Garages organization"],
+          PopularPlan: "Most Popular Plans",
+          features: ["Complete home redesign", "Interior and exterior works", "Modular interior planning", "Kitchen design", "Garages organization"],
           buttonText: "Get Started",
-          buttonIcon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701813389/templates/template_one/Vector_5_vvvt2o.svg",
+          icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701813389/templates/template_one/Vector_5_vvvt2o.svg",
         },
         {
           plan: "Furniture design",
           price: "59",
           timeUnit: "/month",
           moneyUnit: "$",
-          features: ["Furniture for living room", 
-                     "Furniture refurbishment", 
-                     "Sofas and armchairs", 
-                     "Tables and chairs", 
-                     "Kitchens"],
+          features: ["Furniture for living room", "Furniture refurbishment", "Sofas and armchairs", "Tables and chairs", "Kitchens"],
           buttonText: "Get Started",
-          buttonIcon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701813389/templates/template_one/Vector_5_vvvt2o.svg",
+          icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701813389/templates/template_one/Vector_5_vvvt2o.svg",
         },
       ],
     },
@@ -253,82 +296,88 @@ const templateSlice = createSlice({
       title: "Wanna join the interno?",
       description: "It is a long established fact  will be distracted.",
       buttonText: "Contact With Us",
-      buttonIcon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701813389/templates/template_one/Vector_5_vvvt2o.svg",
+      icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701813389/templates/template_one/Vector_5_vvvt2o.svg",
     },
+
     footer: {
-      logo: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701811960/templates/template_one/Logo_mj7rvw.png",
+      imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701811960/templates/template_one/Logo_mj7rvw.png",
       description: "It is a long established fact that a reader will be distracted lookings.",
       mediaIcons: [
-        "https://res.cloudinary.com/duc04fwdb/image/upload/v1701809141/templates/template_one/facebook_td263x.svg",
-        "https://res.cloudinary.com/duc04fwdb/image/upload/v1701809142/templates/template_one/x_yp3y5n.svg",
-        "https://res.cloudinary.com/duc04fwdb/image/upload/v1701809142/templates/template_one/linkedin_itbvp5.svg",
-        "https://res.cloudinary.com/duc04fwdb/image/upload/v1701809141/templates/template_one/instagram_dlrab9.svg",
+        {
+          icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701809141/templates/template_one/facebook_td263x.svg",
+          url: "https://facebook.com",
+        },
+        {
+          icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701809142/templates/template_one/x_yp3y5n.svg",
+          url: "https://x.com",
+        },
+        {
+          icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701809142/templates/template_one/linkedin_itbvp5.svg",
+          url: "https://linkedin.com",
+        },
+        {
+          icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701809141/templates/template_one/instagram_dlrab9.svg",
+          url: "https://instagram.com",
+        },
       ],
-      location: "55 East Birchwood Ave. Brooklyn, New York 11201",
-      email : "contact@interno.com",
-      phone : "(123) 125-858",
-      sectionTitle:"Section",
-      serviceTitle:"Services",
-      contactTitle:"Contact",
 
-      blocks:[
+      items: [
         {
-
-        services : ["Kitchan,",
-                    "Living Area,",
-                    "Bathroom,",
-                    "Dinning Hall,",
-                    "Bedroom",]
+          title: "services",
+          links: ["Kitchan,", "Living Area,", "Bathroom,", "Dinning Hall,", "Bedroom"],
         },
         {
-          Sections : ["About Us",
-                      " Projects",
-                      "Our Team",
-                      "Contact Us",
-                      "Services",]
+          title: "section",
+          links: ["About Us", " Projects", "Our Team", "Contact Us", "Services"],
         },
-      ]
+      ],
+      contact: {
+        title: "contact",
+        location: "55 East Birchwood Ave. Brooklyn, New York 11201",
+        email: "contact@interno.com",
+        phone: "(123) 125-858",
+      },
     },
   },
 
   name: "templateSlice",
   reducers: {
-    updateHero: (state, action) => {
-      const { variable, value } = action.payload;
-      return {
-        ...state,
-        hero: {
-          ...state.hero,
-          [variable]: value,
-        },
-      };
-    },
-    updateTestimonial: (state, action) => {
-      const { variable, value } = action.payload;
-      return {
-        ...state,
-        testimonial: {
-          ...state.testimonial,
-          [variable]: value,
-        },
-      };
-    },
-    updateItems: (state, action) => {
-      const { variable, value, i } = action.payload;
-      const newState = { ...state };
-      const newItems = { ...newState.items };
+    updateAll: (state, action) => {
+      const { section, variable, value, i, blockName, subBlockName, subIndex, objKey } = action.payload;
+      // sub means level 2 of fields
       if (i === undefined) {
-        newItems[variable] = value;
-        newState.items = newItems;
+        if (variable === null) {
+          // edit object filed
+          state[section][blockName][objKey] = value;
+        } else {
+          // edit normal field
+          state[section][variable] = value;
+        }
       } else {
-        const updatedCard = { ...newItems.cards[i], [variable]: value };
-        newItems.cards = [...newItems.cards.slice(0, i), updatedCard, ...newItems.cards.slice(i + 1)];
-        newState.items = newItems;
+        if (subIndex === undefined) {
+          // edit array filed with index
+          if (variable === null) state[section][blockName][i] = value;
+          else {
+            if (subBlockName === undefined) {
+              // edit obj in array of objects
+              state[section][blockName][i][variable] = value;
+            } else {
+              // edit sub obj directly
+              state[section][blockName][i][subBlockName][variable] = value;
+            }
+          }
+        } else {
+          // edit sub element in array
+          if (variable === null) state[section][blockName][i][subBlockName][subIndex] = value;
+          else {
+            // edit sub obj in array of objects
+            state[section][blockName][i][subBlockName][subIndex][variable] = value;
+          }
+        }
       }
-      return newState;
     },
   },
 });
 
-export const { updateHero, updateTestimonial, updateItems } = templateSlice.actions;
+export const { updateAll } = templateSlice.actions;
 export default templateSlice.reducer;
