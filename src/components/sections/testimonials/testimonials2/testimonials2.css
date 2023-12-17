@@ -1,0 +1,82 @@
+.container .testimonials2__container {
+  width: 40%;
+  padding-bottom: 4rem;
+  /* align-items: center;
+  justify-content: center; */
+}
+.client__avatar {
+  width: 4rem;
+  aspect-ratio: 1/1;
+  overflow: hidden;
+  border-radius: 50%;
+  margin: 0 auto 1rem;
+  border: 0.4rem solid var(--color-2-primary-variant);
+}
+
+.testimonial {
+  background: var(--color-2-bg-variant);
+  text-align: center;
+  padding: 1rem;
+  border-radius: 2rem;
+  user-select: none;
+  display: flex;
+  flex-direction: column;
+  max-width: 80%;
+}
+.client__review {
+  color: var(--color-2-light);
+  font-weight: 300;
+  display: block;
+  width: 80%;
+  margin: 0.8rem auto 0;
+}
+
+/******************************** tablets     *** *** **** * * ***/
+
+@media screen and (max-width: 1024px) {
+  .testimonials2__container {
+    width: 60%;
+  }
+  .client__avatar {
+    justify-content: center;
+    align-items: center;
+    width: 10%;
+    margin-top: 1rem;
+    padding: auto;
+    overflow: visible;
+  }
+  .client__avatar img {
+    max-width: fit-content;
+    border-radius: 50%;
+  }
+}
+
+/******************************** Media Query for "phones"     *** *** **** * * ***/
+
+@media screen and (max-width: 600px) {
+  .testimonials2__container {
+    width: var(--container2-width-sm);
+    align-items: center;
+
+    justify-content: center;
+  }
+  .client__avatar {
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+    margin-top: 1rem;
+    padding: auto;
+    overflow: visible;
+  }
+  .client__avatar img {
+    max-width: fit-content;
+    border-radius: 50%;
+  }
+  .testimonial {
+    padding: 0rem;
+    max-width: 80%;
+  }
+  .swiper-wrapper {
+    align-items: center;
+  }
+}

@@ -1,13 +1,132 @@
-/* add here your website colors with start  --website-2   */
-
 :root {
   /* these are temporary colors , you should change it  */
-  --website-2-color-1: #fff;
-  --website-2-color-2: #cda274;
-  --website-2-color-3: #292f36;
-  --website-2-color-4: #f4f0ec;
 
-  --website-2-hover-1: #f4f0ec;
+  --color-2-bg: #1f1f38;
+  --color-2-bg-variant: #2c2c6c;
+  --color-2-primary: #4db5ff;
+  --color-2-primary-variant: rgba(77, 181, 255, 0.4);
+  --color-2-white: #fff;
+  --color-2-light: rgba(255, 255, 255, 0.848);
+  --color-2-golden: rgba(255, 223, 0, 0.8);
+  --container2-width-lg: 75%;
+  --container2-width-md: 86%;
+  --container2-width-sm: 90%;
+  --transition2: all 400ms ease;
 
   /* and add your */
+}
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  box-sizing: border-box;
+  list-style: none; /*no pullets*/
+  text-decoration: none; /*no under line for links*/
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  background: var(--color-2-bg);
+  /* background-color: var(--color1-bg); */
+  color: var(--color-2-white);
+  line-height: 1.7;
+  background-image: url(../../assets//images2/bg-texture.png);
+  /* display: flex;
+  flex-direction: column; */
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
+  padding: 2rem;
+}
+
+.container {
+  width: var(--container2-width-lg);
+  margin: 0 auto; /*to posisition it in middle hoirzontally*/
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-weight: 500;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+section {
+  margin-top: 8rem;
+  /* height: 100vh; */
+}
+
+/*direct childs of sction */
+section > h2,
+section > h5 {
+  text-align: center;
+  color: var(--color-2-light);
+}
+section > h2 {
+  color: var(--color-2-primary);
+  margin-bottom: 3rem;
+}
+.text-light {
+  color: var(--color-2-light);
+}
+a {
+  color: var(--color-2-primary);
+  transition: var(--transition2);
+}
+a:hover {
+  color: var(--color-2-white);
+}
+.btn {
+  width: max-content; /*to make it fit exactly its content*/
+  display: inline-block;
+  color: var(--color-2-primary);
+  padding: 0.75rem 1.2rem; /*top-bottom   left-right**/
+  border-radius: 0.4rem;
+  cursor: pointer;
+  border: 1px solid var(--color-2-primary);
+  transition: var(--transition2);
+}
+
+.btn:hover {
+  background: var(--color-2-white);
+  color: var(--color-2-bg);
+  border-color: transparent; /*will change from color primary to transparent*/
+}
+.btn-primary {
+  background: var(--color-2-primary);
+  color: var(--color-2-bg);
+}
+
+img {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+}
+
+/******************************** Media Query for "tablets"     *** *** **** * * ***/
+@media screen and (max-width: 1024px) {
+  .container {
+    width: var(--container2-width-md);
+  }
+  section {
+    margin-top: 6rem;
+  }
+}
+/******************************** Media Query for "phones"     *** *** **** * * ***/
+
+@media screen and (max-width: 600px) {
+  .container {
+    max-width: 70%;
+  }
+  section > h2 {
+    margin-bottom: 2rem;
+  }
 }
