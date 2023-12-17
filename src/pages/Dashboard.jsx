@@ -4,7 +4,7 @@ import LeftSide from "../components/dashboard/sections/LeftSide";
 import RightSide from "../components/dashboard/sections/RightSide";
 const Dashboard = () => {
   return (
-    <section className="dashboard-container mx-auto ">
+    <section className="dashboard-container mx-auto relative">
       <TopSide />
       <div className="w-full flex-between flex-col md:flex-row bg-white dashboard-subContainer overflow-hidden">
         <LeftSide />

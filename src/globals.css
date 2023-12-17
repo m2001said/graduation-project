@@ -2,7 +2,7 @@
 /* for mainPages and dashboard and for root-colors and root-fonts of all */
 /* root-colors and root-fonts ----all team will use them */
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -31,7 +31,7 @@ html {
 }
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
 }
 
 /* Global Rules */
@@ -176,6 +176,10 @@ ul {
   color: var(--primary-color2);
   border-bottom: 4px solid var(--primary-color2);
   border-right: 4px solid var(--primary-color2);
+  border-left: 4px solid var(--primary-color2);
+}
+.controller:hover .controller-name {
+  color: var(--primary-color1);
 }
 .dashboard-subContainer {
   height: auto;
@@ -194,6 +198,7 @@ ul {
 }
 .controller-name {
   @apply body-bold  cursor-pointer capitalize;
+  transition: all 0.3s;
 }
 
 .controller-field {
