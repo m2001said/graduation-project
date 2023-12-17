@@ -1,4 +1,4 @@
-.header {
+.nav6 {
   width: 100%;
   height: 80px;
   line-height: 80px;
@@ -7,37 +7,40 @@
   left: 0;
   z-index: 9;
   background: #141124;
+  display: flex;
+  align-items: center;
 }
 
-.navigation {
+.nav6  .navigation {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-.logo h2 {
+.nav6 nav6 .logo h2 {
   margin-bottom: 0;
 }
 
-.nav__list {
+ .nav6 .nav__list {
   display: flex;
   align-items: center;
   margin-bottom: 0;
   list-style: none;
-  column-gap: 2.7rem;
+  column-gap: 2rem;
 }
 
-.nav__item a {
+ .nav6 .nav__item a {
   color: #fff;
   cursor: pointer;
   transition: 0.3s;
+  text-decoration: none;
 }
 
-.nav__item a:hover {
+.nav6  .nav__item a:hover {
   color: #f5b70a;
 }
 
-.custom__search {
+.nav6  .custom__search {
   display: flex;
   align-items: center;
   padding: 10px 25px;
@@ -46,38 +49,39 @@
   background: #0a071a;
 }
 
-.custom__search input {
+ .nav6 .custom__search input {
   border: none;
   outline: none;
   background: transparent;
   color: #fff;
 }
 
-.custom__search span img {
+.nav6  .custom__search span img {
   cursor: pointer;
+  width: 16px;
 }
 
-.mobile__menu span img {
-    font-size: 1.3rem;
+.nav6  .mobile__menu span img {
+  width: 28px;
 }
 
-.mobile__menu {
+.nav6  .mobile__menu {
   display: none;
 }
 
-.cart__icon {
+.nav6  .cart__icon {
   position: relative;
   z-index: 11;
-  width: 40px;
-  height: 30px;
+  width: 45px;
   border-radius: 5px;
   background: #f76e11;
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 4px;
 }
 
-.badge {
+ .nav6 .badge {
   position: absolute;
   top: -2px;
   right: -3px;
@@ -89,7 +93,7 @@
 
 
 @media only screen and (max-width: 992px) {
-  .nav__menu {
+ .nav6 .nav__menu {
     position: fixed;
     top: 0;
     left: 0;
@@ -100,7 +104,7 @@
     display: none;
   }
 
-  .nav__list__wrapper {
+ .nav6 .nav__list__wrapper {
     position: absolute;
     top: 0;
     right: 0;
@@ -114,22 +118,22 @@
     padding: 0px 20px;
   }
 
-  .nav__list {
+ .nav6 .nav__list {
     flex-direction: column;
     padding: 0;
   }
 
-  .nav__item a {
+ .nav6 .nav__item a {
     font-size: 0.9rem;
   }
 
-  .header {
+.nav6  .nav6 {
     line-height: 40px;
     height: 60px;
     padding: 10px 0px;
   }
 
-  .custom__search {
+.nav6  .custom__search {
     border: 1px solid #c4c4c425;
     padding: 5px 15px;
     font-size: 0.9rem;
@@ -137,15 +141,15 @@
     margin-top: 15px;
   }
 
-  .mobile__menu {
+ .nav6 .mobile__menu {
     display: block;
   }
 
-  .logo h2 {
+.nav6  .logo h2 {
     font-size: 1.5rem;
   }
 
-  .active__menu {
+.nav6  .active__menu {
     display: block;
   }
 }

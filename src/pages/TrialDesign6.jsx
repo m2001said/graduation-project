@@ -12,7 +12,7 @@ const TrialDesign6 = () => {
   return (
     <>
     <Navbar6 />
-    <Hero6 />
+    <Hero6 /> 
     <CartItems6 />
     <Feature6 />
     <FilterItems6 />

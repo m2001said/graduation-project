@@ -2,7 +2,7 @@ import React, { useRef } from "react";
 import "./navbar6.css";
 import { Container } from "reactstrap";
 import restaurant2 from "../../../../assets/images/images6/restaurant-2-line.svg";
-import shopping from "../../../../assets/images/images6/shopping-basket-line.svg";
+import shopping from "../../../../assets/images/images6/shopping-basket-fill.svg";
 import menu from "../../../../assets/images/images6/menu-line.svg";
 import search from "../../../../assets/images/images6/search-line.svg";
 
@@ -24,8 +24,6 @@ const navLinks = [
   },
 ];
 
-
-
 const Navbar6 = () => {
  
   const menuRef = useRef();
@@ -33,7 +31,7 @@ const Navbar6 = () => {
  
   return (
 
-      <header className="header">
+      <header className="nav6">
         <Container>
           <div className="navigation">
             <div className="logo">
@@ -74,11 +72,13 @@ const Navbar6 = () => {
               <span className="badge">2</span>
               </span>
             </div>
+
             <div className="mobile__menu">
               <span>
                 <img src={menu} alt="" onClick={menuToggle}/>
               </span>
             </div>
+            
           </div>
 
         </Container>
