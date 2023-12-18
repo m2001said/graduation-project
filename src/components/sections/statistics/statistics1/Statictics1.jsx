@@ -6,7 +6,7 @@ import {useSelector} from 'react-redux'
 const Statictics1 = () => {
   const { statistic } = useSelector((state) => state.template);
 
-  const [started, setStarted] = useState(false);
+  const [started, setStarted] = useState(true);
 
   const startCount = (el, goal) => {
     let count = setInterval(() => {
@@ -20,7 +20,7 @@ const Statictics1 = () => {
   const handleScroll = () => {
     const elements = document.querySelectorAll('.statistics1-card-value');
     if (!started) {
-      elements.forEach((el, index) => startCount(el, statistic[index].value));
+      elements.forEach((el, index) => startCount(el, statistic.statistics[index].value));
       setStarted(true);
       window.removeEventListener('scroll', handleScroll); // Remove the event listener after starting
     }
@@ -37,7 +37,7 @@ const Statictics1 = () => {
   return (
     <div className='statistics1 design-1'>
       <div className='statistics1-cards'>
-        {statistic.map((cards, index) => (
+        {statistic.statistics.map((cards, index) => (
           <div className='statistics1-card' key={index}>
             <div className='statistics1-card-value'>0</div>
             <div className='statistics1-card-title'>{cards.title}</div>

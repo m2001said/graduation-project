@@ -1,5 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
-const templateSlice = createSlice({
+const templateSlice4 = createSlice({
   initialState: {
     navbar: {
       imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701811960/templates/template_one/Logo_mj7rvw.png",
@@ -340,7 +340,7 @@ const templateSlice = createSlice({
     },
   },
 
-  name: "templateSlice",
+  name: "templateSlice4",
   reducers: {
     updateAll: (state, action) => {
       const { section, variable, value, i, blockName, subBlockName, subIndex, objKey } = action.payload;
@@ -379,5 +379,5 @@ const templateSlice = createSlice({
   },
 });
 
-export const { updateAll } = templateSlice.actions;
-export default templateSlice.reducer;
+export const { updateAll } = templateSlice4.actions;
+export default templateSlice4.reducer;

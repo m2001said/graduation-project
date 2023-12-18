@@ -42,7 +42,7 @@ const Navbar1 = () => {
     <header>
       <div className="Nav-container design-1">
         <a href="#" className="logo">
-          <img src={navbar.logo} alt="Logo" />
+          <img src={navbar.imgUrl} alt="Logo" />
         </a>
         <nav>
           {isSmallScreen && (
@@ -56,7 +56,7 @@ const Navbar1 = () => {
             {/* Map over navbar.links to dynamically generate links */}
             {navbar.links.map((link, index) => (
               <li key={index}>
-                <a href="#" onClick={() => setOpenMenu(false)}>
+                <a href={`#${link}`} onClick={() => setOpenMenu(false)}>
                   {link}
                 </a>
               </li>
