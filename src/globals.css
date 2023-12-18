@@ -26,7 +26,7 @@
 
   --website-filed-title: #1a2345;
 }
-html{
+html {
   background-color: white;
 }
 body {
@@ -79,7 +79,7 @@ ul {
 }
 
 .body-bold {
-  @apply text-[18px] font-bold leading-[140%];
+  @apply lg:text-[18px] font-bold leading-[140%] text-[16] max-md:text-[18px];
 }
 
 .body-medium {
@@ -111,9 +111,8 @@ ul {
 .flex-center {
   @apply flex justify-center items-center;
 }
-.flex-column{
+.flex-column {
   @apply flex justify-center items-center flex-col;
-
 }
 
 .flex-between {
@@ -177,6 +176,18 @@ ul {
   color: var(--primary-color2);
   border-bottom: 4px solid var(--primary-color2);
   border-right: 4px solid var(--primary-color2);
+  border-left: 4px solid var(--primary-color2);
+}
+.controller:hover .controller-name {
+  color: var(--primary-color1);
+}
+.dashboard-subContainer {
+  height: auto;
+}
+@media (min-width: 767px) {
+  .dashboard-subContainer {
+    height: calc(100vh - 56px);
+  }
 }
 .update-controller {
   color: white;
@@ -187,6 +198,7 @@ ul {
 }
 .controller-name {
   @apply body-bold  cursor-pointer capitalize;
+  transition: all 0.3s;
 }
 
 .controller-field {
@@ -194,6 +206,12 @@ ul {
   border-color: var(--grey);
   @apply flex flex-col border-2 rounded-lg border-solid pb-1 overflow-hidden text-black;
   border-color: var(--grey);
+}
+.subController {
+  padding-left: 0.5rem;
+}
+.subController:not(:last-child) {
+  border-bottom: 2px solid var(--grey);
 }
 .controller-label {
   @apply text-[16px]  capitalize pl-1 border-b-2;

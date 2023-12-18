@@ -7,8 +7,8 @@ const Logos1 = () => {
 
   return (
     <div className="logos-1">
-      {logos.map((logo, index) => (
-        <img key={index} src={logo} alt={`Logo ${index + 1}`} />
+      {logos.companies.map((logo, index) => (
+        <img key={index} src={logo.imgUrl} alt={`Logo ${index + 1}`} />
       ))}
     </div>
   );
