@@ -31,7 +31,7 @@ const Navbar6 = () => {
  
   return (
 
-      <header className="nav6">
+      <header className="design-6">
         <Container>
           <div className="navigation">
             <div className="logo">

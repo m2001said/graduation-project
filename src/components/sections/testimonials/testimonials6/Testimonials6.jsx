@@ -17,7 +17,7 @@ const Testimonials6 = () => {
     autoplaySpeed: 3000,
   };
   return (
-    <section>
+    <section className="design-6">
     <Container>
       <Row>
         <Col lg="8" sm="12" md="12" className="m-auto">

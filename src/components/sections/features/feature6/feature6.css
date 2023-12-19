@@ -1,4 +1,4 @@
-.single__feature span {
+.design-6 .single__feature span {
     width: 50px;
     height: 50px;
     border-radius: 50%;
@@ -9,54 +9,54 @@
     margin-bottom: 10px;
   }
   
-  .single__feature span i {
+.design-6  .single__feature span i {
     font-size: 1.5rem;
   }
   
-  .choose__content h4 {
+.design-6  .choose__content h4 {
     color: var(--website-6-color-text);
     margin-bottom: 15px;
   }
   
-  .single__feature h6 {
+.design-6  .single__feature h6 {
     color: var(--website-6-color-2);
     margin-bottom: 0;
   }
   
-  .single__feature p {
+.design-6  .single__feature p {
     font-size: 0.7rem;
   }
   
-  .feature__icon-two {
+.design-6  .feature__icon-two {
     background: var(--website-6-secondary-bg-color) !important;
   }
   
-  .feature__icon-3 {
+.design-6  .feature__icon-3 {
     background: var(--website-6-color-2) !important;
   }
   
-  .feature__icon-4 {
+.design-6  .feature__icon-4 {
     background: var(--website-6-additional-color) !important;
   }
   
   @media only screen and (max-width: 992px) {
-    .choose__content h2 {
+.design-6    .choose__content h2 {
       font-size: 1.5rem;
     }
   
-    .choose__content h4 {
+.design-6    .choose__content h4 {
       font-size: 1rem;
     }
   
-    .choose__content p {
+.design-6    .choose__content p {
       font-size: 0.8rem;
     }
   
-    .single__feature h6 {
+.design-6    .single__feature h6 {
       font-size: 0.8rem;
     }
   
-    .single__feature p {
+.design-6    .single__feature p {
       font-size: 0.6rem;
     }
   }

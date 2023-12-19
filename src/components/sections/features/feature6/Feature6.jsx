@@ -11,7 +11,7 @@ import hours from "../../../../assets/images/images6/24-hours-line.svg"
 
 const Feature6 = () => {
   return (
-    <section>
+    <section  className="design-6">
     <Container>
       <Row>
         <Col lg="6" md="6">

@@ -17,7 +17,7 @@ const Hero6 = () => {
     autoplaySpeed: 3000,
   };
   return (
-    <section className="hero6">
+    <section className="design-6">
       <Container>
         <Slider {...settings}>
           {sliderData.map((item) => (

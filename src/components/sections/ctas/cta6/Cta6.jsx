@@ -8,7 +8,7 @@ import { Container, Row, Col } from "reactstrap";
 
 const Cta6 = () => {
   return (
-    <section className='cta6'>
+    <section className='design-6'>
     <Container className="app__container">
       <Row>
         <Col lg="6" md="6">
