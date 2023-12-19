@@ -6,7 +6,7 @@ import "./cartItems6.css";
 
 const CartItems6 = () => {
   return (
-    <section className="pt-0">
+    <section className="pt-0 cart6">
     <Container>
       <Row>
         <Col lg="12" className="mb-5">

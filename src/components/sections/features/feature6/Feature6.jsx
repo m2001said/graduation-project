@@ -1,8 +1,9 @@
 import React from 'react'
 import "./feature6.css"
-import React from "react";
 import { Container, Row, Col } from "reactstrap";
 import pastaImg from "../../../../assets/images/images6/pasta.png";
+import truck from "../../../../assets/images/images6/truck-line.svg";
+import dollar from "../../../../assets/images/images6/money-dollar-circle-line.svg"
 
 const Feature6 = () => {
   return (
@@ -27,15 +28,15 @@ const Feature6 = () => {
             <div className="feature1 d-flex align-items-center gap-5">
               <div className="single__feature">
                 <span>
-                  <i class="ri-truck-line"></i>
-                </span>
+                 <img src={truck} alt=""/>
+               </span>
                 <h6>Free Home Delivery</h6>
                 <p>Lorem ipsum dolor sit amet.</p>
               </div>
 
               <div className="single__feature">
                 <span className="feature__icon-two">
-                  <i class="ri-money-dollar-circle-line"></i>
+                <img src={dollar} alt=""/>
                 </span>
                 <h6>Return & Refund</h6>
                 <p>Lorem ipsum dolor sit amet.</p>

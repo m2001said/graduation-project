@@ -1,5 +1,7 @@
 import React from "react";
 import "./product-card.css";
+import star from "../../../../../assets/images/images6/star-s-fill.svg";
+import shoppingcart from "../../../../../assets/images/images6/shopping-cart-line.svg";
 
 const ProductCard = (props) => {
   const { title, imgUrl, price } = props.item;
@@ -13,19 +15,19 @@ const ProductCard = (props) => {
       <div className="product__content">
         <div className="rating text-center">
           <span>
-            <i class="ri-star-s-fill"></i>
+            <img src={star} alt="" />
           </span>
           <span>
-            <i class="ri-star-s-fill"></i>
+          <img src={star} alt="" />
           </span>
           <span>
-            <i class="ri-star-s-fill"></i>
+          <img src={star} alt="" />
           </span>
           <span>
-            <i class="ri-star-s-fill"></i>
+          <img src={star} alt="" />
           </span>
           <span>
-            <i class="ri-star-s-fill"></i>
+          <img src={star} alt="" />
           </span>
         </div>
 
@@ -37,7 +39,7 @@ const ProductCard = (props) => {
             Price: $<span>{price}</span>
           </span>
           <span className="shopping__icon">
-            <i class="ri-shopping-cart-line"></i>
+          <img src={shoppingcart} alt="" />
           </span>
         </div>
       </div>
