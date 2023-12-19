@@ -15,7 +15,7 @@ const Featrue1 = () => {
 
         <div className="contact-container">
           <div className="details">
-            <img src={feature.icon} alt="" />
+            <img src={feature.icons[0].icon} alt="" />
             <div className="phone">
               <h1>{feature.phone}</h1>
               <h2>Call Us Anytime </h2>
@@ -23,7 +23,7 @@ const Featrue1 = () => {
           </div>
           <button>
             <p>{feature.buttonText}</p>
-            <img src={feature.buttonIcon} alt="" />
+            <img src={feature.icons[1].icon} alt="" />
           </button>
         </div>
       </div>

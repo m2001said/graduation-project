@@ -1,10 +1,10 @@
 import React from "react";
-import Articles from "../../sections/Items/items1/Items1";
+import { Outlet } from "react-router";
 const RightSide = () => {
   return (
-    <>
-      <Articles />
-    </>
+    <div className="dashboard-subContainer">
+      <Outlet />
+    </div>
   );
 };
 export default RightSide;
