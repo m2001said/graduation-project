@@ -35,16 +35,20 @@
   font-family: "Rubik", sans-serif;
 }
 
-.design-6 a {
-  text-decoration: none;
-  color: #333;
+.design-6  a {
+      text-decoration: none !important;
 }
-
+.nav-6 .ico,.design-6 .ico{
+width:18px;
+}
 .design-6,footer{
+  padding: 70px 20px;
+  background: var(--website-6-button-bg);
+}
+footer{
   padding: 70px 0px;
   background: var(--website-6-button-bg);
 }
-
 
 @media only screen and (max-width: 767px) {
   .design-6{

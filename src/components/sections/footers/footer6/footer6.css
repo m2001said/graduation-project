@@ -14,6 +14,7 @@
   
   .footer6 .link__item a {
     color: var(--website-6-text-color);
+      text-decoration: none !important;
   }
   
   .footer6  .footer__bottom {
@@ -31,6 +32,7 @@
   @media only screen and (max-width: 992px) {
     .footer6   .link__item a {
       font-size: 0.8rem;
+      text-decoration: none !important;
     }
   
     .footer6    .link__item {
@@ -49,3 +51,9 @@
       padding: 15px 0px;
     }
   }
+.footer6 img:not(.ico-Logo){
+    width:18px
+}
+.footer6 .ico-Logo{
+    width:35px
+}

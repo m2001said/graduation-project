@@ -119,22 +119,19 @@
 .design-6 .btn__apple {
   background: var(--website-6-button-bg);
   border: none;
-  color: var(--website-6-color-text);
+  color: var(--website-6-color-text)  !important; 
   padding: 7px 25px;
   border-radius: 5px;
 }
 
 .design-6 .btn__google {
   background: var(--website-6-color-text);
-  color: var(--website-6-button-bg);
+  color: var(--website-6-button-bg)  !important;
   border: none;
   padding: 7px 25px;
   border-radius: 5px;
 }
 
-.design-6 .btn__google i {
-  color: var(--website-6-button-bg);
-}
 
 .design-6 .btn__apple:hover a {
   color: var(--website-6-color-text);

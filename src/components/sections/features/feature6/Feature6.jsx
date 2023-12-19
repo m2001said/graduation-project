@@ -32,7 +32,7 @@ const Feature6 = () => {
             <div className="feature1 d-flex align-items-center gap-5">
               <div className="single__feature">
                 <span>
-                 <img src={truck} alt=""/>
+                 <img src={truck} alt="" className="ico"/>
                </span>
                 <h6>Free Home Delivery</h6>
                 <p>Lorem ipsum dolor sit amet.</p>
@@ -40,7 +40,7 @@ const Feature6 = () => {
 
               <div className="single__feature">
                 <span className="feature__icon-two">
-                <img src={dollar} alt=""/>
+                <img src={dollar} alt="" className="ico"/>
                 </span>
                 <h6>Return & Refund</h6>
                 <p>Lorem ipsum dolor sit amet.</p>
@@ -50,7 +50,7 @@ const Feature6 = () => {
             <div className="feature1 mt-3 d-flex align-items-center gap-5">
               <div className="single__feature">
                 <span className="feature__icon-3">
-                  <img src={payment} alt=""/>
+                  <img src={payment} alt="" className="ico"/>
                 </span>
                 <h6>Secure Payment</h6>
                 <p>Lorem ipsum dolor sit amet.</p>
@@ -58,7 +58,7 @@ const Feature6 = () => {
 
               <div className="single__feature">
                 <span className="feature__icon-4">
-                  <img src={hours} alt=""/>
+                  <img src={hours} alt="" className="ico"/>
                 </span>
                 <h6>24/7 Hours Support</h6>
                 <p>Lorem ipsum dolor sit amet.</p>

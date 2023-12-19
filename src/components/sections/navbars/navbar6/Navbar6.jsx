@@ -31,13 +31,13 @@ const Navbar6 = () => {
  
   return (
 
-      <header className="design-6">
+      <header className="nav-6">
         <Container>
           <div className="navigation">
             <div className="logo">
               <h2 className="d-flex align-items-center gap-1">
                 <span>
-                <img src={restaurant2} alt="logo" />
+                <img src={restaurant2} alt="logo" className="logo-icon" />
               </span>{" "}
                 Chef Food
               </h2>
@@ -59,7 +59,7 @@ const Navbar6 = () => {
                   <div className="custom__search ">
                     <input type="text" placeholder="search item...." />
                     <span>
-                      <img src={search} alt="" />
+                      <img src={search} alt=""    className="ico"/>
                     </span>
                   </div>
                 </div>
@@ -68,14 +68,14 @@ const Navbar6 = () => {
   
             <div>
               <span className="cart__icon">
-              <img src={shopping} alt="" />
+              <img src={shopping} alt=""   className="ico" />
               <span className="badge">2</span>
               </span>
             </div>
 
             <div className="mobile__menu">
               <span>
-                <img src={menu} alt="" onClick={menuToggle}/>
+                <img src={menu} alt="" onClick={menuToggle}   className="ico"/>
               </span>
             </div>
             

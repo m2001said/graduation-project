@@ -49,7 +49,7 @@ const Footer6 = () => {
             <div className="logo">
               <h2 className=" d-flex align-items-center gap-1 mb-4">
                 <span>
-                  <img src={restaurant2} alt="" />
+                  <img src={restaurant2} alt=""  className="ico-Logo"/>
                 </span>{" "}
                 Chef Food
               </h2>
@@ -89,17 +89,17 @@ const Footer6 = () => {
 
             <ListGroup>
               <ListGroupItem className="link__item d-flex align-items-center gap-3">
-                <img src={map} alt="" />
+                <img src={map} alt=""  className="ico"/>
                  Sylhet, Bangladesh{" "}
               </ListGroupItem>
 
               <ListGroupItem className="link__item d-flex align-items-center gap-3">
-                <img src={mail} alt="" />
+                <img src={mail} alt=""  className="ico"/>
                  example@gmail.com{" "}
               </ListGroupItem>
 
               <ListGroupItem className="link__item d-flex align-items-center gap-3">
-                <img src={phone} alt="" />
+                <img src={phone} alt=""  className="ico"/>
                  +880 123 456 7890
               </ListGroupItem>
             </ListGroup>
@@ -112,7 +112,7 @@ const Footer6 = () => {
       <Container>
         <Row>
           <Col lg="12">
-            <p>copyright 2022, developed by muhib. All rights reserved</p>
+            <p>copyright 2022, developed by ana. All rights reserved</p>
           </Col>
         </Row>
       </Container>

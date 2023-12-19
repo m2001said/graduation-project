@@ -26,6 +26,7 @@
 .single__product .rating {
   margin-bottom: 10px;
   display: flex;
+  justify-content:center;
 }
 
 .single__product .price {

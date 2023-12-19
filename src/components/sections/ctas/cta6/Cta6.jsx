@@ -31,12 +31,12 @@ const Cta6 = () => {
 
             <div className="app__btns d-flex align-items-center gap-5 mt-4">
               <button className="btn__apple d-flex align-items-center gap-3">
-                <img src={apple} alt="" /> 
+                <img src={apple} alt=""  className="ico"/> 
                 <a href="#">Apple Store</a>
               </button>
 
               <button className="btn__google d-flex align-items-center gap-3">
-                <img src={google} alt="" /> 
+                <img src={google} alt=""  className="ico" /> 
                 {" "}
                 <a href="https://play.google.com">Google Play</a>
               </button>
