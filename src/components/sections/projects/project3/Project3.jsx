@@ -1,31 +1,32 @@
-import React from 'react'
+import React from "react";
 import "./project3.css";
-import {programsData} from "../project3/data/programsData";
-import RightArrow from "../../../../assets/images/images3/rightArrow.png";
+import { useSelector } from "react-redux";
+
 const Project3 = () => {
+  const { projects3 } = useSelector((state) => state.template3);
   return (
-    <div className='Project3' id='project3'>
-        <div className='Project3-header'>
-            <span className='stroke-text'>Explore our</span>
-            <span> Programs</span>
-            <span className='stroke-text'>to shape you </span>
-        </div>
+    <div className="Project3" id="project3">
+      <div className="Project3-header">
+        <span className="stroke-text">{projects3.title[0].titleA}</span>
+        <span> {projects3.title[0].titleB}</span>
+        <span className="stroke-text">{projects3.title[0].titleB}</span>
+      </div>
 
-        <div className='project3-categories'>
-            {programsData.map((program)=>(
-                    <div className='category'>
-                        {program.image}
-                        <span>{program.heading}</span>
-                        <span>{program.details}</span>
-                        <div className='join-now'>
-                            <span>join Now</span>
-                            <img src={RightArrow} alt=''/>
-                        </div>
-                    </div>
-            ))}
-        </div>
+      <div className="project3-categories">
+        {projects3.programsData.map((program) => (
+          <div className="category">
+            {program.image}
+            <span>{program.heading}</span>
+            <span>{program.details}</span>
+            <div className="join-now">
+              <span>{projects3.buttonText}</span>
+              <img src={projects3.imgUrl} alt="" />
+            </div>
+          </div>
+        ))}
+      </div>
     </div>
-  )
-}
+  );
+};
 
-export default Project3
+export default Project3;

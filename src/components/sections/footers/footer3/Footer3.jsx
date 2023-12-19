@@ -1,28 +1,27 @@
-import React from 'react'
+import React from "react";
 import "./footer3.css";
-import Githup from "../../../../assets/images/images3/github.png";
-import Instagram from "../../../../assets/images/images3/instagram.png";
-import LinkedIn from "../../../../assets/images/images3/linkedin.png";
-import Logo from "../../../../assets/images/images3/logo.png";
+import { useSelector } from "react-redux";
 const Footer3 = () => {
+  const { footer3 } = useSelector((state) => state.template3);
+
   return (
-    <div className='footer3-container'>
-        <hr/>
-        <div className='footer3'>
-            <div className='scoil-links-f3'>
-              <img src={Githup}alt=""/>
-              <img src={Instagram}alt=""/>
-              <img src={LinkedIn}alt=""/>
-              </div>
+    <div className="footer3-container">
+      <hr />
+      <div className="footer3">
+        <div className="scoil-links-f3">
+          <img src={footer3.imgUrl[0].imgUrl1} alt="" />
+          <img src={footer3.imgUrl[0].imgUrl2} alt="" />
+          <img src={footer3.imgUrl[0].imgUrl3} alt="" />
+        </div>
 
-              <div className='logo-f3'>
-                <img src={Logo} alt='' />
-              </div>
-            </div>
-            <div className='blur blur-f-1'></div>
-            <div className='blur blur-f-2'></div>
+        <div className="logo-f3">
+          <img src={footer3.imgUrl[0].imgUrl4} alt="" />
+        </div>
+      </div>
+      <div className="blur3 blur-f-1"></div>
+      <div className="blur3 blur-f-2"></div>
     </div>
-  )
-}
+  );
+};
 
-export default Footer3
+export default Footer3;
