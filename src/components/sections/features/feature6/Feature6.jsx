@@ -4,6 +4,10 @@ import { Container, Row, Col } from "reactstrap";
 import pastaImg from "../../../../assets/images/images6/pasta.png";
 import truck from "../../../../assets/images/images6/truck-line.svg";
 import dollar from "../../../../assets/images/images6/money-dollar-circle-line.svg"
+import payment from "../../../../assets/images/images6/secure-payment-line.svg"
+import hours from "../../../../assets/images/images6/24-hours-line.svg"
+
+
 
 const Feature6 = () => {
   return (
@@ -46,7 +50,7 @@ const Feature6 = () => {
             <div className="feature1 mt-3 d-flex align-items-center gap-5">
               <div className="single__feature">
                 <span className="feature__icon-3">
-                  <i class="ri-secure-payment-line"></i>
+                  <img src={payment} alt=""/>
                 </span>
                 <h6>Secure Payment</h6>
                 <p>Lorem ipsum dolor sit amet.</p>
@@ -54,7 +58,7 @@ const Feature6 = () => {
 
               <div className="single__feature">
                 <span className="feature__icon-4">
-                  <i class="ri-24-hours-line"></i>
+                  <img src={hours} alt=""/>
                 </span>
                 <h6>24/7 Hours Support</h6>
                 <p>Lorem ipsum dolor sit amet.</p>

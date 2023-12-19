@@ -1,30 +1,30 @@
-.app__container {
+.cta6 .app__container {
     background: var(--website-6-color-2);
     border-radius: 10px;
   }
   
-  .app__img {
+.cta6  .app__img {
     margin-bottom: -100px;
   }
   
-  .app__content h5 {
+.cta6  .app__content h5 {
     color: var(--website-6-button-bg);
   }
   
-  .app__content h2 {
+.cta6  .app__content h2 {
     color: var(--website-6-button-bg);
     font-weight: 600;
   }
   
-  .app__content {
+.cta6  .app__content {
     padding-top: 50px;
   }
   
-  .app__content p {
+.cta6  .app__content p {
     color: var(--website-6-color-text);
   }
   
-  .btn__apple {
+.cta6  .btn__apple {
     background: var(--website-6-button-bg);
     border: none;
     color: var(--website-6-color-text);
@@ -32,7 +32,7 @@
     border-radius: 5px;
   }
   
-  .btn__google {
+.cta6  .btn__google {
     background: var(--website-6-color-text);
     color: var(--website-6-button-bg);
     border: none;
@@ -40,82 +40,83 @@
     border-radius: 5px;
   }
   
-  .btn__google i {
+.cta6  .btn__google i {
     color: var(--website-6-button-bg);
   }
   
-  .btn__apple:hover a {
+.cta6  .btn__apple:hover a {
     color: var(--website-6-color-text);
   }
   
-  .btn__google:hover a {
+ .cta6 .btn__google:hover a {
     color: var(--website-6-button-bg);
   }
   
   @media only screen and (max-width: 992px) {
-    .app__img img {
+   .cta6 .app__img img {
       width: 100%;
     }
   
-    .app__content h5 {
+  .cta6  .app__content h5 {
       font-size: 1rem;
     }
   
-    .app__content h2 {
+  .cta6  .app__content h2 {
       font-size: 1.5rem;
     }
   
-    .app__content p {
+   .cta6 .app__content p {
       font-size: 0.7rem;
       line-height: 25px;
     }
   
-    .btn__apple,
-    .btn__google {
+   .cta6 .btn__apple,
+   .cta6 .btn__google {
       padding: 5px 20px;
       font-size: 0.8rem;
     }
   
-    .app__content {
+   .cta6 .app__content {
       padding-bottom: 50px;
     }
   }
   
   @media only screen and (max-width: 768px) {
-    .app__content {
+   .cta6 .app__content {
       padding: 30px;
     }
   
-    .app__img {
+   .cta6 .app__img {
       margin-bottom: 0;
     }
-  }.app__container {
+  } 
+   .cta6 .app__container {
   background: var(--website-6-color-2);
   border-radius: 10px;
 }
 
-.app__img {
+.cta6 .app__img {
   margin-bottom: -100px;
 }
 
-.app__content h5 {
+.cta6 .app__content h5 {
   color: var(--website-6-button-bg);
 }
 
-.app__content h2 {
+.cta6 .app__content h2 {
   color: var(--website-6-button-bg);
   font-weight: 600;
 }
 
-.app__content {
+.cta6 .app__content {
   padding-top: 50px;
 }
 
-.app__content p {
+.cta6 .app__content p {
   color: var(--website-6-color-text);
 }
 
-.btn__apple {
+.cta6 .btn__apple {
   background: var(--website-6-button-bg);
   border: none;
   color: var(--website-6-color-text);
@@ -123,7 +124,7 @@
   border-radius: 5px;
 }
 
-.btn__google {
+.cta6 .btn__google {
   background: var(--website-6-color-text);
   color: var(--website-6-button-bg);
   border: none;
@@ -131,53 +132,53 @@
   border-radius: 5px;
 }
 
-.btn__google i {
+.cta6 .btn__google i {
   color: var(--website-6-button-bg);
 }
 
-.btn__apple:hover a {
+.cta6 .btn__apple:hover a {
   color: var(--website-6-color-text);
 }
 
-.btn__google:hover a {
+.cta6 .btn__google:hover a {
   color: var(--website-6-button-bg);
 }
 
 @media only screen and (max-width: 992px) {
-  .app__img img {
+.cta6  .app__img img {
     width: 100%;
   }
 
-  .app__content h5 {
+.cta6  .app__content h5 {
     font-size: 1rem;
   }
 
-  .app__content h2 {
+.cta6  .app__content h2 {
     font-size: 1.5rem;
   }
 
-  .app__content p {
+.cta6  .app__content p {
     font-size: 0.7rem;
     line-height: 25px;
   }
 
-  .btn__apple,
-  .btn__google {
+.cta6  .btn__apple,
+.cta6  .btn__google {
     padding: 5px 20px;
     font-size: 0.8rem;
   }
 
-  .app__content {
+.cta6  .app__content {
     padding-bottom: 50px;
   }
 }
 
 @media only screen and (max-width: 768px) {
-  .app__content {
+.cta6  .app__content {
     padding: 30px;
   }
 
-  .app__img {
+.cta6  .app__img {
     margin-bottom: 0;
   }
 }

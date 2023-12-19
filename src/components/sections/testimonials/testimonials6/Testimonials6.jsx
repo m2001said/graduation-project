@@ -34,7 +34,19 @@ const Testimonials6 = () => {
                       neque odit natus cumque a expedita, corrupti libero!
                       Praesentium!"
                     </p>
-
+                    <h6>Jhon Doe</h6>
+                    <p>Web Developer</p>
+                  </div>
+                </div>
+                <div>
+                  <div className="single__testimonial">
+                    <p className="review__content">
+                      Lorem ipsum dolor sit amet consectetur, adipisicing
+                      elit. Perferendis aliquam numquam laudantium atque velit
+                      accusamus ipsum molestias, maiores amet! Earum nobis
+                      neque odit natus cumque a expedita, corrupti libero!
+                      Praesentium!
+                    </p>
                     <h6>Jhon Doe</h6>
                     <p>Web Developer</p>
                   </div>
@@ -49,29 +61,12 @@ const Testimonials6 = () => {
                       neque odit natus cumque a expedita, corrupti libero!
                       Praesentium!
                     </p>
-
-                    <h6>Jhon Doe</h6>
-                    <p>Web Developer</p>
-                  </div>
-                </div>
-
-                <div>
-                  <div className="single__testimonial">
-                    <p className="review__content">
-                      Lorem ipsum dolor sit amet consectetur, adipisicing
-                      elit. Perferendis aliquam numquam laudantium atque velit
-                      accusamus ipsum molestias, maiores amet! Earum nobis
-                      neque odit natus cumque a expedita, corrupti libero!
-                      Praesentium!
-                    </p>
-
                     <h6>Jhon Doe</h6>
                     <p>Web Developer</p>
                   </div>
                 </div>
               </Slider>
             </div>
-
             <div className="slider__img w-50">
               <img src={testimonialImg} alt="" className="w-100" />
             </div>

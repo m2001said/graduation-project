@@ -1,50 +1,47 @@
 import React from 'react'
 import "./footer6.css"
 import { Container, Row, Col, ListGroup, ListGroupItem } from "reactstrap";
+import restaurant2 from "../../../../assets/images/images6/restaurant-2-line.svg";
+import map from "../../../../assets/images/images6/map-pin-line.svg";
+import mail from "../../../../assets/images/images6/mail-line.svg";
+import phone from "../../../../assets/images/images6/phone-line.svg";
+
 
 const footerQuickLinks = [
   {
     display: "Terms & Conditions",
-    url: "#",
   },
   {
     display: "Privacy Policy",
-    url: "#",
   },
   {
     display: "Return & Refund",
-    url: "#",
   },
 
   {
     display: "Payment Method",
-    url: "#",
   },
 ];
 
 const footerLinks = [
   {
     display: "About Us",
-    url: "#",
   },
   {
     display: "Menu",
-    url: "#",
   },
   {
     display: "Recipes",
-    url: "#",
   },
 
   {
     display: "Contact",
-    url: "#",
   },
 ];
 
 const Footer6 = () => {
   return (
-    <footer className="footer">
+    <footer className="footer6">
     <div className="footer__top">
       <Container>
         <Row>
@@ -52,7 +49,7 @@ const Footer6 = () => {
             <div className="logo">
               <h2 className=" d-flex align-items-center gap-1 mb-4">
                 <span>
-                  <i class="ri-restaurant-2-line"></i>
+                  <img src={restaurant2} alt="" />
                 </span>{" "}
                 Chef Food
               </h2>
@@ -69,7 +66,7 @@ const Footer6 = () => {
             <ListGroup>
               {footerQuickLinks.map((item, index) => (
                 <ListGroupItem key={index} className="link__item">
-                  <a href={item.url}>{item.display}</a>
+                  <a href="#">{item.display}</a>
                 </ListGroupItem>
               ))}
             </ListGroup>
@@ -81,7 +78,7 @@ const Footer6 = () => {
             <ListGroup>
               {footerLinks.map((item, index) => (
                 <ListGroupItem key={index} className="link__item">
-                  <a href={item.url}>{item.display}</a>
+                  <a href="#">{item.display}</a>
                 </ListGroupItem>
               ))}
             </ListGroup>
@@ -92,15 +89,18 @@ const Footer6 = () => {
 
             <ListGroup>
               <ListGroupItem className="link__item d-flex align-items-center gap-3">
-                <i class="ri-map-pin-line"></i> Sylhet, Bangladesh{" "}
+                <img src={map} alt="" />
+                 Sylhet, Bangladesh{" "}
               </ListGroupItem>
 
               <ListGroupItem className="link__item d-flex align-items-center gap-3">
-                <i class="ri-mail-line"></i> example@gmail.com{" "}
+                <img src={mail} alt="" />
+                 example@gmail.com{" "}
               </ListGroupItem>
 
               <ListGroupItem className="link__item d-flex align-items-center gap-3">
-                <i class="ri-phone-line"></i> +880 123 456 7890
+                <img src={phone} alt="" />
+                 +880 123 456 7890
               </ListGroupItem>
             </ListGroup>
           </Col>

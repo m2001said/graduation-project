@@ -12,3 +12,6 @@
   --website-6-icon-background-color: #f76e11;
   --website-6-testimonial-bg: #000;
 }
+a{
+  text-decoration: none;
+}
