@@ -1,10 +1,9 @@
-
 import React from 'react';
 import "./hero6.css";
 import { sliderData } from "./slider-data";
 import { Container } from "reactstrap";
 import Slider from "react-slick";
-import sliderImg03 from "../../../../assets/images/images6/slider03.png";
+
 
 
 
@@ -27,7 +26,7 @@ const Hero6 = () => {
                 <div className="slider__content w-50 ps-2">
                   <h2 className="mb-3 ">{item.title}</h2>
                   <p>{item.desc}</p>
-                  <button className="hero-btn">Explore Food</button>
+                  <button className="btn">Explore Food</button>
                 </div>
 
                 <div className="slider__img w-50">

@@ -1,4 +1,4 @@
-.header {
+.nav6 .header {
   width: 100%;
   height: 80px;
   line-height: 80px;
@@ -9,17 +9,17 @@
   background: var(--website-6-color-1);
 }
 
-.navigation {
+.nav6 .navigation {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-.logo h2 {
+.nav6 .logo h2 {
   margin-bottom: 0;
 }
 
-.nav__list {
+.nav6 .nav__list {
   display: flex;
   align-items: center;
   margin-bottom: 0;
@@ -27,17 +27,17 @@
   column-gap: 2.7rem;
 }
 
-.nav__item a {
+.nav6 .nav__item a {
   color: var(--website-6-color-text);
   cursor: pointer;
   transition: 0.3s;
 }
 
-.nav__item a:hover {
+.nav6 .nav__item a:hover {
   color: var(--website-6-color-2);
 }
 
-.custom__search {
+.nav6 .custom__search {
   display: flex;
   align-items: center;
   padding: 10px 25px;
@@ -46,26 +46,26 @@
   background: var(--website-6-button-bg);
 }
 
-.custom__search input {
+.nav6 .custom__search input {
   border: none;
   outline: none;
   background: transparent;
   color: var(--website-6-color-text);
 }
 
-.custom__search span i {
+.nav6 .custom__search span i {
   cursor: pointer;
 }
 
-.mobile__menu span i {
+.nav6 .mobile__menu span i {
   font-size: 1.3rem;
 }
 
-.mobile__menu {
+.nav6 .mobile__menu {
   display: none;
 }
 
-.cart__icon {
+.nav6 .cart__icon {
   position: relative;
   z-index: 11;
   width: 40px;
@@ -77,7 +77,7 @@
   justify-content: center;
 }
 
-.badge {
+.nav6 .badge {
   position: absolute;
   top: -2px;
   right: -3px;
@@ -87,9 +87,8 @@
   font-weight: 700;
 }
 
-
 @media only screen and (max-width: 992px) {
-  .nav__menu {
+  .nav6 .nav__menu {
     position: fixed;
     top: 0;
     left: 0;
@@ -100,7 +99,7 @@
     display: none;
   }
 
-  .nav__list__wrapper {
+  .nav6 .nav__list__wrapper {
     position: absolute;
     top: 0;
     right: 0;
@@ -114,22 +113,22 @@
     padding: 0px 20px;
   }
 
-  .nav__list {
+  .nav6 .nav__list {
     flex-direction: column;
     padding: 0;
   }
 
-  .nav__item a {
+  .nav6 .nav__item a {
     font-size: 0.9rem;
   }
 
-  .header {
+  .nav6 .header {
     line-height: 40px;
     height: 60px;
     padding: 10px 0px;
   }
 
-  .custom__search {
+  .nav6 .custom__search {
     border: 1px solid var(--website-6-shadow-color);
     padding: 5px 15px;
     font-size: 0.9rem;
@@ -137,15 +136,15 @@
     margin-top: 15px;
   }
 
-  .mobile__menu {
+  .nav6 .mobile__menu {
     display: block;
   }
 
-  .logo h2 {
+  .nav6 .logo h2 {
     font-size: 1.5rem;
   }
 
-  .active__menu {
+  .nav6 .active__menu {
     display: block;
   }
 }
