@@ -3,7 +3,7 @@ import React, { useState, useEffect } from "react";
 
 import { Container, Row, Col } from "reactstrap";
 
-import ProductCard from "../product-card/ProductCard";
+import ProductCard from "../../CartItems/cartItems6/product-card/ProductCard";
 import {
   fastFoodProducts,
   riceMenuProducts,
@@ -39,7 +39,7 @@ const FilterItems6 = () => {
   }, [filter]);
 
   return (
-    <section>
+    <section className="filter6">
     <Container>
       <Row>
         <Col lg="12" className="text-center mb-4">
