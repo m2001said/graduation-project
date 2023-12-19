@@ -15,20 +15,20 @@ const Teams1 = () => {
       <h1 className="team1-head">{team.title}</h1>
       <div className="team1-Card">
         <div className="team1-Card-main">
-          {team.cards.map((member) => (
-            <div className="team1-Card-main-show" key={member.name} onClick={() => handleCardClick(member)}>
+          {team.cards.map((member, index) => (
+            <div className="team1-Card-main-show" key={index} onClick={() => handleCardClick(member)}>
               <img className="team1-Card-main-img" src={member.imgUrl} alt={member.name} />
               {selectedMember && selectedMember.name === member.name && (
                 <div className="team1-Card-main-info slideUp">
                   <h1>{selectedMember.name}</h1>
-                  <p>{selectedMember.location}</p>
-                  <div className="team-media-icon">
-                    {member.mediaIcons.map((icon, index) => (
-                      <a href={" #"} key={index}>
-                        <img src={icon} alt="" />
-                      </a>
-                    ))}
-                  </div>
+                  <h4>{selectedMember.location}</h4>
+                  {team.cards.map((icon, index) => (
+                    <a href={" #"} key={index} className="team-media-icon">
+                      <span>
+                      <img src={icon.mediaIcons} alt="" />
+                      </span>
+                    </a>
+                  ))}
                   <h4>{selectedMember.email}</h4>
                 </div>
               )}

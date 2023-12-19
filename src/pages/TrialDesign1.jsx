@@ -21,12 +21,12 @@ const TrialDesign1 = () => {
       <Navbar1 />
       <Hero1 />
       <Services1 />
-      <Project1 />
-      <Statictics1 />
-      <Articles />
       <Featrue1 />
       <Testimonials1 />
       <Logos1 />
+      <Project1 />
+      <Statictics1 />
+      <Articles />
       <Team1 />
       <Pricing1 />
       <Cta1 />

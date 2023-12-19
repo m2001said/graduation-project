@@ -30,7 +30,7 @@ const Pricing1 = () => {
             <button className={`pricing-card-button${index}`}>
               <span> {card.buttonText} </span>
               <a href={" #"}>
-                    <img src={card.buttonIcon} alt="icon" />
+                    <img src={card.icon} alt="icon" />
               </a>
             </button>
           </div>
