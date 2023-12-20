@@ -1,11 +1,8 @@
-import React from 'react';
+import React from "react";
 import "./hero6.css";
 import { sliderData } from "./slider-data";
 import { Container } from "reactstrap";
 import Slider from "react-slick";
-
-
-
 
 const Hero6 = () => {
   const settings = {
@@ -38,7 +35,7 @@ const Hero6 = () => {
         </Slider>
       </Container>
     </section>
-  )
-}
+  );
+};
 
 export default Hero6;

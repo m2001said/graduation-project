@@ -25,65 +25,61 @@ const navLinks = [
 ];
 
 const Navbar6 = () => {
- 
   const menuRef = useRef();
   const menuToggle = () => menuRef.current.classList.toggle("active__menu");
- 
-  return (
 
-      <header className="nav-6">
-        <Container>
-          <div className="navigation">
-            <div className="logo">
-              <h2 className="d-flex align-items-center gap-1">
-                <span>
+  return (
+    <header className="nav-6">
+      <Container>
+        <div className="navigation">
+          <div className="logo">
+            <h2 className="d-flex align-items-center gap-1">
+              <span>
                 <img src={restaurant2} alt="logo" className="logo-icon" />
               </span>{" "}
-                Chef Food
-              </h2>
-            </div>
-  
-            <div className="nav__menu " ref={menuRef}>
-              <div className="nav__list__wrapper d-flex align-items-center gap-5">
-                <ul className="nav__list">
-                  {navLinks.map((item, index) => (
-                    <li className="nav__item" key={index}>
-                      <a href={"#"} onClick={menuToggle}>
-                        {item.display}
-                      </a>
-                    </li>
-                  ))}
-                </ul>
-  
-                <div className="menu__right">
-                  <div className="custom__search ">
-                    <input type="text" placeholder="search item...." />
-                    <span>
-                      <img src={search} alt=""    className="ico"/>
-                    </span>
-                  </div>
+              Chef Food
+            </h2>
+          </div>
+
+          <div className="nav__menu " ref={menuRef}>
+            <div className="nav__list__wrapper d-flex align-items-center gap-5">
+              <ul className="nav__list">
+                {navLinks.map((item, index) => (
+                  <li className="nav__item" key={index}>
+                    <a href={"#"} onClick={menuToggle}>
+                      {item.display}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+
+              <div className="menu__right">
+                <div className="custom__search ">
+                  <input type="text" placeholder="search item...." />
+                  <span>
+                    <img src={search} alt="" className="ico" />
+                  </span>
                 </div>
               </div>
             </div>
-  
-            <div>
-              <span className="cart__icon">
-              <img src={shopping} alt=""   className="ico" />
-              <span className="badge">2</span>
-              </span>
-            </div>
-
-            <div className="mobile__menu">
-              <span>
-                <img src={menu} alt="" onClick={menuToggle}   className="ico"/>
-              </span>
-            </div>
-            
           </div>
 
-        </Container>
-      </header>
-    )
-}
+          <div>
+            <span className="cart__icon">
+              <img src={shopping} alt="" className="ico" />
+              <span className="badge">2</span>
+            </span>
+          </div>
 
-export default Navbar6
+          <div className="mobile__menu">
+            <span>
+              <img src={menu} alt="" onClick={menuToggle} className="ico" />
+            </span>
+          </div>
+        </div>
+      </Container>
+    </header>
+  );
+};
+
+export default Navbar6;

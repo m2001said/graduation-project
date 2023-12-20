@@ -1,75 +1,70 @@
-import React from 'react'
-import "./feature6.css"
+import React from "react";
+import "./feature6.css";
 import { Container, Row, Col } from "reactstrap";
 import pastaImg from "../../../../assets/images/images6/pasta.png";
 import truck from "../../../../assets/images/images6/truck-line.svg";
-import dollar from "../../../../assets/images/images6/money-dollar-circle-line.svg"
-import payment from "../../../../assets/images/images6/secure-payment-line.svg"
-import hours from "../../../../assets/images/images6/24-hours-line.svg"
-
-
+import dollar from "../../../../assets/images/images6/money-dollar-circle-line.svg";
+import payment from "../../../../assets/images/images6/secure-payment-line.svg";
+import hours from "../../../../assets/images/images6/24-hours-line.svg";
 
 const Feature6 = () => {
   return (
-    <section  className="design-6">
-    <Container>
-      <Row>
-        <Col lg="6" md="6">
-          <img src={pastaImg} alt="" className="w-100" />
-        </Col>
+    <section className="design-6">
+      <Container>
+        <Row>
+          <Col lg="6" md="6">
+            <img src={pastaImg} alt="" className="w-100" />
+          </Col>
 
-        <Col lg="6" md="6">
-          <div className="choose__content">
-            <h4>Who we are?</h4>
-            <h2>Take a look at the benefits we offer you</h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi
-              officiis impedit rem neque minus adipisci.
-            </p>
-          </div>
-
-          <div className="features mt-4">
-            <div className="feature1 d-flex align-items-center gap-5">
-              <div className="single__feature">
-                <span>
-                 <img src={truck} alt="" className="ico"/>
-               </span>
-                <h6>Free Home Delivery</h6>
-                <p>Lorem ipsum dolor sit amet.</p>
-              </div>
-
-              <div className="single__feature">
-                <span className="feature__icon-two">
-                <img src={dollar} alt="" className="ico"/>
-                </span>
-                <h6>Return & Refund</h6>
-                <p>Lorem ipsum dolor sit amet.</p>
-              </div>
+          <Col lg="6" md="6">
+            <div className="choose__content">
+              <h4>Who we are?</h4>
+              <h2>Take a look at the benefits we offer you</h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi officiis impedit rem neque minus adipisci.</p>
             </div>
 
-            <div className="feature1 mt-3 d-flex align-items-center gap-5">
-              <div className="single__feature">
-                <span className="feature__icon-3">
-                  <img src={payment} alt="" className="ico"/>
-                </span>
-                <h6>Secure Payment</h6>
-                <p>Lorem ipsum dolor sit amet.</p>
+            <div className="features mt-4">
+              <div className="feature1 d-flex align-items-center gap-5">
+                <div className="single__feature">
+                  <span>
+                    <img src={truck} alt="" className="ico" />
+                  </span>
+                  <h6>Free Home Delivery</h6>
+                  <p>Lorem ipsum dolor sit amet.</p>
+                </div>
+
+                <div className="single__feature">
+                  <span className="feature__icon-two">
+                    <img src={dollar} alt="" className="ico" />
+                  </span>
+                  <h6>Return & Refund</h6>
+                  <p>Lorem ipsum dolor sit amet.</p>
+                </div>
               </div>
 
-              <div className="single__feature">
-                <span className="feature__icon-4">
-                  <img src={hours} alt="" className="ico"/>
-                </span>
-                <h6>24/7 Hours Support</h6>
-                <p>Lorem ipsum dolor sit amet.</p>
+              <div className="feature1 mt-3 d-flex align-items-center gap-5">
+                <div className="single__feature">
+                  <span className="feature__icon-3">
+                    <img src={payment} alt="" className="ico" />
+                  </span>
+                  <h6>Secure Payment</h6>
+                  <p>Lorem ipsum dolor sit amet.</p>
+                </div>
+
+                <div className="single__feature">
+                  <span className="feature__icon-4">
+                    <img src={hours} alt="" className="ico" />
+                  </span>
+                  <h6>24/7 Hours Support</h6>
+                  <p>Lorem ipsum dolor sit amet.</p>
+                </div>
               </div>
             </div>
-          </div>
-        </Col>
-      </Row>
-    </Container>
-  </section>
-    )
-}
+          </Col>
+        </Row>
+      </Container>
+    </section>
+  );
+};
 
-export default Feature6
+export default Feature6;
