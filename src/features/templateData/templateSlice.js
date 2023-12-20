@@ -338,6 +338,9 @@ const templateSlice = createSlice({
         phone: "(123) 125-858",
       },
     },
+    colors: {
+      templateColors: ["#fff", "#cda274", "#292f36", "#f4f0ec"],
+    },
   },
 
   name: "templateSlice",

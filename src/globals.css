@@ -2,7 +2,7 @@
 /* for mainPages and dashboard and for root-colors and root-fonts of all */
 /* root-colors and root-fonts ----all team will use them */
 
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -31,7 +31,7 @@ html {
 }
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
 }
 
 /* Global Rules */
@@ -164,7 +164,10 @@ ul {
 .dashboard-container {
   @apply w-full;
 }
-
+.dashboard-right-section {
+  @apply max-md:w-full md:w-70 flex-auto  flex justify-start flex-col items-center text-black p-2;
+  height: calc(100vh - 56px);
+}
 @media screen and (min-width: 1600px) {
   .dashboard-container {
     width: 1600px;
@@ -177,6 +180,21 @@ ul {
   border-bottom: 4px solid var(--primary-color2);
   border-right: 4px solid var(--primary-color2);
   border-left: 4px solid var(--primary-color2);
+  position: relative;
+}
+ .controller-name::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 57px;
+  width: 100%;
+  height: 4px;
+  background-color: var(--primary-color2);
+}
+@media (min-width: 767px) and (max-width: 1025px) {
+  .controller-name::after {
+    top: 54px;
+  }
 }
 .controller:hover .controller-name {
   color: var(--primary-color1);
@@ -200,7 +218,9 @@ ul {
   @apply body-bold  cursor-pointer capitalize;
   transition: all 0.3s;
 }
-
+.controller div:nth-child(2) {
+  margin-top: 1rem;
+}
 .controller-field {
   @apply flex flex-col border-2 rounded-lg border-solid pb-1 overflow-hidden text-black;
   border-color: var(--grey);
@@ -223,7 +243,23 @@ ul {
   @apply text-black  p-2 h-auto outline-none w-full custom-scrollbar;
   @apply text-black  p-2 h-auto outline-none w-full custom-scrollbar;
 }
-
+.dashboard-color-picker {
+  margin-right: 4px;
+  border: none;
+  background: none;
+  height: auto;
+  width: auto;
+  outline: none;
+  &::-webkit-color-swatch-wrapper {
+    height: 20px;
+    width: 20px;
+    padding: 0;
+  }
+  &::-webkit-color-swatch {
+    border: none;
+    border-radius: 4px;
+  }
+}
 .card_img {
   @apply h-64  lg:h-[450px] w-full rounded-[24px] object-cover mb-5;
 }

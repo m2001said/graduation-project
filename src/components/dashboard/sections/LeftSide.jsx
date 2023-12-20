@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { useSelector } from "react-redux";
 import AllControllers from "../controllers/AllControllers";
+import ColorController from "../controllers/ColorController";
 const LeftSide = () => {
   const [showLeftSide, setShowLeftSide] = useState(true);
   const handleClick = () => {
@@ -17,9 +18,10 @@ const LeftSide = () => {
           <img src="/assets/icons/goLeft.svg" width={18} alt="down" />
         </div>
       </div>
-      {sections.map((section) => (
-        <AllControllers controllerSection={section} key={section} />
-      ))}
+      {sections.map((section) => {
+        if (section === "colors") return <ColorController key={section} />;
+        else return <AllControllers controllerSection={section} key={section} />;
+      })}
     </div>
   ) : (
     <div className="absolute top-3 left-4 bg-white rounded-sm p-1 flex-center cursor-pointer" onClick={handleClick}>

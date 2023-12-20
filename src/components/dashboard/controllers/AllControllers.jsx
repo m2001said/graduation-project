@@ -25,7 +25,16 @@ const AllControllers = ({ controllerSection }) => {
             if (typeof targetSection[field] === "object") {
               if (typeof targetSection[field][0] === "object") {
                 return targetSection[field].map((_, index) => {
-                  return <FieldControllerIsArrayOfObjects cardIndex={index} sectionName={controllerSection} blockName={field} subName={subName} dispatchRef={updateAll} key={index} />;
+                  return (
+                    <FieldControllerIsArrayOfObjects
+                      cardIndex={index}
+                      sectionName={controllerSection}
+                      blockName={field}
+                      subName={subName}
+                      dispatchRef={updateAll}
+                      key={index}
+                    />
+                  );
                 });
               } else if (typeof targetSection[field][0] === "undefined") {
                 return <FieldControllerIsObject sectionName={controllerSection} blockName={field} subName={subName} dispatchRef={updateAll} key={field} />;
