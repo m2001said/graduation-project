@@ -12,7 +12,7 @@ const Feature5_1 = () => {
   },[])
 
   return (
-    <div className="feature5_1 section" >
+    <div className="feature5_1 design5-section" >
       <div className="feature5_1-mainSection">
         <div data-aos='fade-down' data-aos-duration='2500' className="feature5_1-title">
           <small>travel support</small>

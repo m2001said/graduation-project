@@ -21,8 +21,10 @@
 }
 
 
+
 .navbar5-one-list-icon,
 .navbar5-two-icon{
+    cursor: pointer;
     display: flex;
     align-items: center;
 }
@@ -74,6 +76,10 @@
     align-items: center;
     gap: 2.5rem;
 }
+.navbarMenu-list li{
+    list-style: none;
+    cursor: pointer;
+}
 .navbarMenu-list li:hover{
     color: var(--website-5-color-1);
     font-weight: 700;
@@ -112,6 +118,8 @@
   }
 
   .navbar5-one-list li{
+    list-style: none;
+    cursor: pointer;
     color: var(--website-5-black);
     font-size: 12px;
     cursor: pointer;

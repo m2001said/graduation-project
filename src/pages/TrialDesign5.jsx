@@ -10,7 +10,7 @@ import Footer5 from "../components/sections/footers/footer5/Footer5";
 
 const TrialDesign5 = () => {
   return (
-    <div>
+    <div className="design5">
       <Navbar5 />
       <Hero5 />
       <Feature5_1 />

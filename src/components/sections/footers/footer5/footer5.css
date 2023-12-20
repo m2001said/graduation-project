@@ -14,7 +14,12 @@
     gap:1rem;
     justify-content: center;
     margin: auto;
+}
 
+.footer5-gridOne p{
+    font-size: 13px;
+    color: var(--website-5-greyText);
+    line-height: 22px;
 }
 
 .footer5-logo{
@@ -26,7 +31,7 @@
    gap: 1rem; 
 }
 
-.singleIcon {
+.footer5-singleIcon {
     height: 50px;
     width: 30px;
     border-radius: 10rem;
@@ -34,9 +39,11 @@
     box-shadow: var(--boxShadow);
     padding: 0.4rem;
     color: var(--website-5-greyText);
+    font-size: 1.3rem;
+    cursor: pointer;
 }
 
-.singleIcon:hover {
+.footer5-singleIcon:hover {
     background: var(--website-5-color-1);
     transform: translateY(-7px);
     transition: var(--transition);
@@ -55,12 +62,18 @@
     padding-bottom: 1rem;
 }
 
+.footer5-links li{
+    list-style: none;
+    cursor: pointer;
+  }
 .footer5-links li a {
     display: block;
     color: var(--website-5-greyText);
     transition: var(--transition);
     padding: .3rem 0;
+    text-decoration: none;
   }
+
   .footer5-links li a:hover {
     transform: translateX(7px);
     color: var(--website-5-color-1);

@@ -9,9 +9,9 @@
 }
 
 .teams5-mainSectiom h2{
-    padding: 1.5rem;
-    font-size: 27px;
-    font-weight: 700;
+    font-size: 25px;
+    padding: 1rem 0;
+    color: var(--website-5-black);
 }
 
 .teams5-travelersCards{
@@ -61,6 +61,8 @@
     animation: animated 2.3s infinite;
 }
 
+
+
 @keyframes animated{
     0%{
         transform: translateY(0px);
@@ -89,7 +91,9 @@
 }
 
 .travelerName p{
-    color: var(--website-5-color-1);
+    font-size: 13px;
+    color: var(--website-5-greyText);
+    line-height: 22px;
     font-style: italic;
 }
 

@@ -1,6 +1,8 @@
 .feature5_2{
     width: 100%;
     margin: auto;
+    padding: 2rem;
+    padding-left: 4rem;
 }
 
 .featue5_2-main{
@@ -20,6 +22,8 @@
     max-width: 680px;
 }
 .feature5_2-text h2{
+    padding: 1rem 0;
+    color: var(--website-5-black);
     font-size: 25px;
     font-weight: 600;
 }
@@ -33,6 +37,12 @@
     padding-bottom: .5rem;
     font-weight: 500;
     color: var(--website-5-black);
+}
+
+.feature5_2-singleCard p{
+    font-size: 13px;
+    color: var(--website-5-greyText);
+    line-height: 22px;
 }
 
 @media screen and (min-width: 570px){

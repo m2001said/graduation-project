@@ -12,7 +12,7 @@ const Feature5_2 = () => {
   },[])
 
   return (
-    <div className="feature5_2 container section">
+    <div className="feature5_2 design5-container design5-section">
 
       <div className="featue5_2-main">
         <div data-aos='fade-down' data-aos-duration='2500' className="feature5_2-imgDiv">
@@ -22,7 +22,7 @@ const Feature5_2 = () => {
         <div className="feature5_2-text">
           <h2 data-aos='fade-down' data-aos-duration='2500'>Unaccompanied minor lounge</h2>
 
-          <div className="feature5_2-cards grid">
+          <div className="feature5_2-cards design5-grid">
             <div data-aos='fade-down' data-aos-duration='2500' className="feature5_2-singleCard">
               <span className="singleCard-title">Help through the airport</span>
               <p>You can also call airlines from your phone and book aflight ticket to one of your faverite destinations</p>

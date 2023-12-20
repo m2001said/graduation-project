@@ -47,7 +47,7 @@ const Teams5 = () => {
   },[])
 
   return (
-    <div className='teams5 container section'>
+    <div className='teams5 design5-container design5-section'>
       <div className="teams5-mainSectiom">
         <h2 data-aos='fade-down' data-aos-duration='2500'>Top travelers of this month!</h2>
 

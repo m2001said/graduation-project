@@ -19,18 +19,18 @@ const Footer5 = () => {
   return (
     <div className='footer5'>
 
-      <div className="footer5-mainSection container grid">
+      <div className="footer5-mainSection design5-container design5-grid">
 
         <div data-aos='fade-up' data-aos-duration='2500' className="footer5-gridOne">
           <div  className="gridOne-logeDiv">
             <img src={Logo} className='footer5-logo' alt=''  />
           </div>
           <p>Your mind shoud be stronger than your feeling, fly! </p>
-          <div className="socialIcon flex">
-          <TiSocialFacebook className='singleIcon'/>
-          <AiOutlineTwitter className='singleIcon'/>
-          <AiFillYoutube className='singleIcon'/>
-          <FaPinterestP className='singleIcon'/>
+          <div className="socialIcon design5-flex">
+          <TiSocialFacebook className='footer5-singleIcon'/>
+          <AiOutlineTwitter className='footer5-singleIcon'/>
+          <AiFillYoutube className='footer5-singleIcon'/>
+          <FaPinterestP className='footer5-singleIcon'/>
           </div>
         </div>
 

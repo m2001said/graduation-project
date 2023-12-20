@@ -25,86 +25,29 @@
   /* and add your */
 }
 
-.bady {
+.design5{
   background: var(--website-5-white);
 }
 
-a {
-  text-decoration: none;
-}
-
-li {
-  list-style: none;
-  cursor: pointer;
-}
-
-.section {
+.design5-section {
   padding: 4rem 0 2rem;
 }
 
-.container {
+.design5-container {
   padding-left: 1.5rem;
   padding-right: 1.5rem;
 }
 
-.icon {
-  font-size: 1.3rem;
-  cursor: pointer;
-}
-
-.flex {
+.design5-flex {
   display: flex;
   align-items: center;
 }
 
-.grid {
+.design5-grid {
   display: grid;
   align-items: center;
 }
 
-.none {
-  display: none;
-}
-
-img, video {
-  width: 100%;
-  height: auto;
-}
-
-input {
-  font-size: 100%;
-  color: var(--website-5-greyText);
-}
-
-p {
-  font-size: 13px;
-  color: var(--website-5-greyText);
-  line-height: 22px;
-}
-
-h4 {
-  padding: 1rem 0;
-  font-weight: 700;
-  color: var(--website-5-black);
-}
-
-h2 {
-  font-size: 25px;
-  padding: 1rem 0;
-  color: var(--website-5-black);
-}
-
-.btn {
-  display: flex;
-  align-items: center;
-  padding: 0.5rem 1.5rem;
-  background: var(--website-5-color-1);
-  border: none;
-  outline: none;
-  border-radius: 3rem;
-  cursor: pointer;
-  color: var(--website-5-white);
-}
 
 
 @media screen and (min-width: 1024px){
@@ -131,18 +74,15 @@ h2 {
   }
 }
 
-
-::selection{
+/* ::selection {
   background: var(--website-5-color-1);
   color: var(--website-5-white);
 }
-
-::-webkit-scrollbar{
+::-webkit-scrollbar {
   width: 10px;
   background: var(--website-5-greyBg);
 }
-
-::-webkit-scrollbar-thumb{
+::-webkit-scrollbar-thumb {
   background: var(--website-5-color-1);
   border-radius: 10px;
-}
+} */
