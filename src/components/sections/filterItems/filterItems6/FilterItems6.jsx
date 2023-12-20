@@ -1,12 +1,13 @@
 import "./filterItems6.css";
 import React, { useState, useEffect } from "react";
-
 import { Container, Row, Col } from "reactstrap";
-
 import ProductCard from "../../CartItems/cartItems6/product-card/ProductCard";
-import { fastFoodProducts, riceMenuProducts, pizzaProducts, dessertProducts, coffeeProducts } from "../../CartItems/cartItems6/productsData/products";
+import { useSelector } from "react-redux";
+
 
 const FilterItems6 = () => {
+  const { fastFoodProducts,riceMenuProducts, pizzaProducts, dessertProducts, coffeeProducts  } = useSelector((state) => state.template6.product);
+
   const [filter, setFilter] = useState("RICE-MENU");
   const [products, setProducts] = useState(riceMenuProducts);
 
