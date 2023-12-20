@@ -2,6 +2,7 @@ import { createSlice } from "@reduxjs/toolkit";
 const templateSlice6 = createSlice({
   initialState: {
     navbar: {
+      logo:"Chef Food",
       imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703095423/jammal_photos/x22ihnvjg9i0i40xtbo5.svg",
       searchIcon:"https://res.cloudinary.com/duc04fwdb/image/upload/v1703095771/jammal_photos/kedw9coptwqkovrsssd1.svg",
       shoppingIcon:"https://res.cloudinary.com/duc04fwdb/image/upload/v1703095842/jammal_photos/gehvutbyftfxemvoqmu8.svg",
@@ -367,273 +368,48 @@ const templateSlice6 = createSlice({
         },
       ],
     },
-    logos: {
-      companies: [
-        { imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701808448/templates/template_one/01_p78hjd.svg" },
-        { imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701808448/templates/template_one/02_mnw1ps.svg" },
-        { imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701808448/templates/template_one/03_fiplpx.svg" },
-        { imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701808449/templates/template_one/04_pg8flc.svg" },
-        { imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701808449/templates/template_one/05_prt3gi.svg" },
-      ],
-    },
-    projects: {
-      title: "Follow Our Projects",
-      description: "It is a long established fact that a reader will be distracted by the of readable content of page  lookings at its layouts  points.",
-      cards: [
-        {
-          imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701808451/templates/template_one/Photo_2_w7jdep.jpg",
-          title: "Modern Kitchan",
-          description: "Decor / Artchitecture",
-          icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701718889/templates/template_one/Vector_5_nzmfwn.svg",
-        },
-        {
-          imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701808451/templates/template_one/Photo_3_wig9kc.jpg",
-          title: "Modern Kitchan",
-          description: "Decor / Artchitecture",
-          icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701718889/templates/template_one/Vector_5_nzmfwn.svg",
-        },
-        {
-          imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701808452/templates/template_one/Photo_iojikc.jpg",
-          title: "Modern Kitchan",
-          description: "Decor / Artchitecture",
-          icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701718889/templates/template_one/Vector_5_nzmfwn.svg",
-        },
-        {
-          imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701808450/templates/template_one/Photo_1_njncs1.jpg",
-          title: "Modern Kitchan",
-          description: "Decor / Artchitecture",
-          icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701718889/templates/template_one/Vector_5_nzmfwn.svg",
-        },
-      ],
-    },
-    statistic: {
-      statistics: [
-        {
-          title: "Years Of Experience",
-          value: "12",
-        },
-        {
-          title: "Success Projects",
-          value: "85",
-        },
-        {
-          title: "Active Projects",
-          value: "15",
-        },
-        {
-          title: "Happy Customers",
-          value: "95",
-        },
-      ],
-    },
-    items: {
-      title: "Articles & News",
-      description:
-        "It is a long established fact that a reader will be distracted by the of readable content of a page when lookings at its layouts the points of using.",
-      cards: [
-        {
-          title: "Let’s Get Solution For Building Construction Work",
-          description: "26 December,2022 ",
-          imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701718041/templates/template_one/article1.f88f54e6a4cdbf340b36_l3ujjw.png",
-          icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701718889/templates/template_one/Vector_5_nzmfwn.svg",
-          caption: "Kitchan Design",
-        },
-        {
-          title: "Low Cost Latest Invented Interior Designing Ideas.",
-          description: "22 December,2022 ",
-          icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701718889/templates/template_one/Vector_5_nzmfwn.svg",
-          imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701718042/templates/template_one/article2.43be768543cb8cfeaf07_atvwjd.png",
-          caption: "Living Design",
-        },
-        {
-          title: "Best For Any Office & Business Interior Solution",
-          description: "25 December,2022 ",
-          icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701718889/templates/template_one/Vector_5_nzmfwn.svg",
-          imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701718042/templates/template_one/article3.f759fde0c85f3fb92b22_c2tqkv.png",
-          caption: "Interior Design",
-        },
-      ],
-    },
-    team: {
-      title: "Our Team Members",
-      cards: [
-        {
-          name: "Nattasha",
-          location: "Design, Australia",
-          imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701808855/templates/template_one/Photo_fz8cuc.jpg",
-          mediaIcons: [
-            {
-              icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701809141/templates/template_one/facebook_td263x.svg",
-              url: "https://facebook.com",
-            },
-            {
-              icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701809142/templates/template_one/x_yp3y5n.svg",
-              url: "https://x.com",
-            },
-            {
-              icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701809142/templates/template_one/linkedin_itbvp5.svg",
-              url: "https://linkedin.com",
-            },
-            {
-              icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701809141/templates/template_one/instagram_dlrab9.svg",
-              url: "https://instagram.com",
-            },
-          ],
-          email: "julie@email.com",
-        },
-        {
-          name: "Julie",
-          location: "Design, Australia",
-          imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701808855/templates/template_one/Photo_fz8cuc.jpg",
-          mediaIcons: [
-            {
-              icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701809141/templates/template_one/facebook_td263x.svg",
-              url: "https://facebook.com",
-            },
-            {
-              icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701809142/templates/template_one/x_yp3y5n.svg",
-              url: "https://x.com",
-            },
-            {
-              icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701809142/templates/template_one/linkedin_itbvp5.svg",
-              url: "https://linkedin.com",
-            },
-            {
-              icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701809141/templates/template_one/instagram_dlrab9.svg",
-              url: "https://instagram.com",
-            },
-          ],
-          email: "julie@email.com",
-        },
-        {
-          name: "Alex",
-          location: "Design, Australia",
-          imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701808855/templates/template_one/Photo_fz8cuc.jpg",
-          mediaIcons: [
-            {
-              icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701809141/templates/template_one/facebook_td263x.svg",
-              url: "https://facebook.com",
-            },
-            {
-              icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701809142/templates/template_one/x_yp3y5n.svg",
-              url: "https://x.com",
-            },
-            {
-              icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701809142/templates/template_one/linkedin_itbvp5.svg",
-              url: "https://linkedin.com",
-            },
-            {
-              icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701809141/templates/template_one/instagram_dlrab9.svg",
-              url: "https://instagram.com",
-            },
-          ],
-          email: "julie@email.com",
-        },
-        {
-          name: "John",
-          location: "Design, Australia",
-          imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701808855/templates/template_one/Photo_fz8cuc.jpg",
-          mediaIcons: [
-            {
-              icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701809141/templates/template_one/facebook_td263x.svg",
-              url: "https://facebook.com",
-            },
-            {
-              icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701809142/templates/template_one/x_yp3y5n.svg",
-              url: "https://x.com",
-            },
-            {
-              icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701809142/templates/template_one/linkedin_itbvp5.svg",
-              url: "https://linkedin.com",
-            },
-            {
-              icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701809141/templates/template_one/instagram_dlrab9.svg",
-              url: "https://instagram.com",
-            },
-          ],
-          email: "julie@email.com",
-        },
-      ],
-    },
-    pricing: {
-      title: "Pricing & Plan",
-      description: "Home / Priceing",
-      blocks: [
-        {
-          plan: "Design advices",
-          price: "29",
-          timeUnit: "/month",
-          moneyUnit: "$",
-          features: ["General living space advices", "Renovation advices", "Interior design advices", "Furniture reorganization", "Up to 5 hours meetings"],
-          buttonText: "Get Started",
-          icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701813389/templates/template_one/Vector_5_vvvt2o.svg",
-        },
-        {
-          plan: "Complete interior",
-          price: "39",
-          timeUnit: "/month",
-          moneyUnit: "$",
-          PopularPlan: "Most Popular Plans",
-          features: ["Complete home redesign", "Interior and exterior works", "Modular interior planning", "Kitchen design", "Garages organization"],
-          buttonText: "Get Started",
-          icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701813389/templates/template_one/Vector_5_vvvt2o.svg",
-        },
-        {
-          plan: "Furniture design",
-          price: "59",
-          timeUnit: "/month",
-          moneyUnit: "$",
-          features: ["Furniture for living room", "Furniture refurbishment", "Sofas and armchairs", "Tables and chairs", "Kitchens"],
-          buttonText: "Get Started",
-          icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701813389/templates/template_one/Vector_5_vvvt2o.svg",
-        },
-      ],
-    },
     cta: {
-      title: "Wanna join the interno?",
-      description: "It is a long established fact  will be distracted.",
-      buttonText: "Contact With Us",
-      icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701813389/templates/template_one/Vector_5_vvvt2o.svg",
+      title: "Download our app",
+      description: " Never Feel Hungry! Download Our Mobile App Order Delicious Food",
+      info:"Experience the convenience of our mobile app, ensuring you never go hungry, Download now to order delicious food anytime, anywhere. ",
+      imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703105732/jammal_photos/lldrbchcloecmarn2bep.png",
+      googleButton:{
+        title:"Google Play",
+        icon:"https://res.cloudinary.com/duc04fwdb/image/upload/v1703106187/jammal_photos/bm7fqpnzrwtkawffbci3.svg",
+      },
+      appleButton:{
+        title:"Apple Store",
+        icon:"https://res.cloudinary.com/duc04fwdb/image/upload/v1703106097/jammal_photos/gmyir4uguaz6ejvw3s3t.svg",
+      },
     },
 
     footer: {
-      imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701811960/templates/template_one/Logo_mj7rvw.png",
+      logo:"Chef Food",
+      imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703095423/jammal_photos/x22ihnvjg9i0i40xtbo5.svg",
       description: "It is a long established fact that a reader will be distracted lookings.",
-      mediaIcons: [
+      copyright:"copyright 2022, developed by ana. All rights reserved",
+      infoLinks: {
+        title:"Info Links",
+        content:["Terms & Conditions","Privacy Policy","Return & Refund","Payment Method"],
+          },
+      quickLinks: {
+      title:"Quick Links",
+      content:["About Us","Menu","Recips","Contact"],
+        },
+      contact:[
         {
-          icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701809141/templates/template_one/facebook_td263x.svg",
-          url: "https://facebook.com",
+          title: "Sylhet, Bangladesh",
+          icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703108316/jammal_photos/oe8rjvrg0ckgohix2b6v.svg",
         },
         {
-          icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701809142/templates/template_one/x_yp3y5n.svg",
-          url: "https://x.com",
-        },
+          title: "example@gmail.com",
+          icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703108228/jammal_photos/opdhewds9do1znaaj5li.svg",
+        }, 
         {
-          icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701809142/templates/template_one/linkedin_itbvp5.svg",
-          url: "https://linkedin.com",
-        },
-        {
-          icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701809141/templates/template_one/instagram_dlrab9.svg",
-          url: "https://instagram.com",
-        },
-      ],
-
-      items: [
-        {
-          title: "services",
-          links: ["Kitchan,", "Living Area,", "Bathroom,", "Dinning Hall,", "Bedroom"],
-        },
-        {
-          title: "section",
-          links: ["About Us", " Projects", "Our Team", "Contact Us", "Services"],
+          title: "+880 123 456 7890",
+          icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703108367/jammal_photos/y2583eh76th902gnzlje.svg",
         },
       ],
-      contact: {
-        title: "contact",
-        location: "55 East Birchwood Ave. Brooklyn, New York 11201",
-        email: "contact@interno.com",
-        phone: "(123) 125-858",
-      },
     },
   },
 

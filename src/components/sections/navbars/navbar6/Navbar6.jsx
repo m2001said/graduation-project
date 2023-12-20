@@ -3,9 +3,8 @@ import "./navbar6.css";
 import { Container } from "reactstrap";
 import { useSelector } from "react-redux";
 
-
 const Navbar6 = () => {
-  const { navbar } = useSelector((state) => state.template6); 
+  const { navbar } = useSelector((state) => state.template6);
   const menuRef = useRef();
   const menuToggle = () => menuRef.current.classList.toggle("active__menu");
 
@@ -18,7 +17,7 @@ const Navbar6 = () => {
               <span>
                 <img src={navbar.imgUrl} alt="logo" className="logo-icon" />
               </span>{" "}
-              Chef Food
+              {navbar.logo}
             </h2>
           </div>
 

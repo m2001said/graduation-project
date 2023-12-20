@@ -1,51 +1,43 @@
-import React from 'react';
-import "./cta6.css"
-import appImg from "../../../../assets/images/images6/app.png";
-import google from "../../../../assets/images/images6/google-play-line.svg";
-import apple from "../../../../assets/images/images6/apple-line.svg";
+import React from "react";
+import "./cta6.css";
+import { useSelector } from "react-redux";
 
 import { Container, Row, Col } from "reactstrap";
 
 const Cta6 = () => {
+  const { cta } = useSelector((state) => state.template6);
   return (
-    <section className='design-6'>
-    <Container className="app__container">
-      <Row>
-        <Col lg="6" md="6">
-          <div className="app__img">
-            <img src={appImg} alt="" />
-          </div>
-        </Col>
-
-        <Col lg="6" md="6">
-          <div className="app__content">
-            <h5>Download our app</h5>
-            <h2 className="mb-4">
-              Never Feel Hungry! Download Our Mobile App Order Delicious Food
-            </h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit
-              ducimus iste minus quidem optio natus, ullam omnis! Esse, sint
-              quia.
-            </p>
-
-            <div className="app__btns d-flex align-items-center gap-5 mt-4">
-              <button className="btn__apple d-flex align-items-center gap-3">
-                <img src={apple} alt=""  className="ico"/> 
-                <a href="#">Apple Store</a>
-              </button>
-
-              <button className="btn__google d-flex align-items-center gap-3">
-                <img src={google} alt=""  className="ico" /> 
-                {" "}
-                <a href="https://play.google.com">Google Play</a>
-              </button>
+    <section className="design-6">
+      <Container className="app__container">
+        <Row>
+          <Col lg="6" md="6">
+            <div className="app__img">
+              <img src={cta.imgUrl} alt="" />
             </div>
-          </div>
-        </Col>
-      </Row>
-    </Container>
-  </section>  )
-}
+          </Col>
 
-export default Cta6
+          <Col lg="6" md="6">
+            <div className="app__content">
+              <h5>{cta.title}</h5>
+              <h2 className="mb-4">{cta.description}</h2>
+              <p>{cta.info}</p>
+
+              <div className="app__btns d-flex align-items-center gap-5 mt-4">
+                <button className="btn__apple d-flex align-items-center gap-3">
+                  <img src={cta.appleButton.icon} alt="" className="ico" />
+                  <a href="#">{cta.appleButton.title}</a>
+                </button>
+
+                <button className="btn__google d-flex align-items-center gap-3">
+                  <img src={cta.googleButton.icon} alt="" className="ico" /> <a href="https://play.google.com">{cta.googleButton.title}</a>
+                </button>
+              </div>
+            </div>
+          </Col>
+        </Row>
+      </Container>
+    </section>
+  );
+};
+
+export default Cta6;
