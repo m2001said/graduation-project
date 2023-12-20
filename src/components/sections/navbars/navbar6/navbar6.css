@@ -1,5 +1,6 @@
 .nav-6 {
   background: var(--website-6-button-bg);
+  padding: 15px 0px;
 }
 .nav-6 .header {
   width: 100%;
@@ -123,6 +124,8 @@
   .nav-6 .nav__list {
     flex-direction: column;
     padding: 0;
+    gap: 50px;
+    width: 100%; 
   }
 
   .nav-6 .nav__item a {
