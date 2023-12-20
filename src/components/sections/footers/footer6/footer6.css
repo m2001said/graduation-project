@@ -10,6 +10,7 @@
   padding-left: 0;
   background: transparent;
   color: var(--website-6-text-color);
+  border:none !important;
 }
 
 .footer6 .link__item a {
@@ -37,6 +38,7 @@
 
   .footer6 .link__item {
     font-size: 0.8rem;
+    border:none !important;
   }
 
   .footer6 .logo p {
