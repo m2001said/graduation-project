@@ -2,39 +2,39 @@ import { createSlice } from "@reduxjs/toolkit";
 const templateSlice6 = createSlice({
   initialState: {
     navbar: {
-      logo:"Chef Food",
+      logo: "Chef Food",
       imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703095423/jammal_photos/x22ihnvjg9i0i40xtbo5.svg",
-      searchIcon:"https://res.cloudinary.com/duc04fwdb/image/upload/v1703095771/jammal_photos/kedw9coptwqkovrsssd1.svg",
-      shoppingIcon:"https://res.cloudinary.com/duc04fwdb/image/upload/v1703095842/jammal_photos/gehvutbyftfxemvoqmu8.svg",
-      menuIcon:"https://res.cloudinary.com/duc04fwdb/image/upload/v1703095877/jammal_photos/rwbeynsg3bftgrjqaqnf.svg",
+      searchIcon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703095771/jammal_photos/kedw9coptwqkovrsssd1.svg",
+      shoppingIcon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703095842/jammal_photos/gehvutbyftfxemvoqmu8.svg",
+      menuIcon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703095877/jammal_photos/rwbeynsg3bftgrjqaqnf.svg",
       links: ["Home", "About", "Menu", "Recipes", "Contact"],
     },
     hero: {
       buttonText: "Explore Food",
-      sliderData : [
+      sliderData: [
         {
           id: "01",
           title: "Experience the Authentic Flavors",
           desc: "Indulge in our simple and delicious dishes crafted with the finest ingredients. Your taste buds will thank you!",
-          imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703096681/jammal_photos/eukd4unr2l7mwyllvmi9.png", 
+          imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703096681/jammal_photos/eukd4unr2l7mwyllvmi9.png",
         },
         {
           id: "02",
           title: "Bring Joy to Your Taste Buds",
           desc: "At our restaurant, we believe good food leads to great smiles. Explore our menu and discover a world of culinary delight.",
-          imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703096719/jammal_photos/j7y2zx8aolnucnu25dl4.png", 
+          imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703096719/jammal_photos/j7y2zx8aolnucnu25dl4.png",
         },
         {
           id: "03",
           title: "Savor Every Bite, Create Memories",
           desc: "Meet, eat, and enjoy the true taste of happiness. Our diverse menu ensures there's something for everyone to relish and remember.",
-          imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703096745/jammal_photos/j97dbol3pzuleeccxwdt.png", 
+          imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703096745/jammal_photos/j97dbol3pzuleeccxwdt.png",
         },
       ],
     },
     product: {
-      cartitemsTitle:"Popular food menu",
-      popularMenuFood : [
+      cartitemsTitle: "Popular food menu",
+      popularMenuFood: [
         {
           id: "01",
           title: "Vegetable",
@@ -47,14 +47,14 @@ const templateSlice6 = createSlice({
           price: 250,
           imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703098694/jammal_photos/rbtige8oucnpqluq3b5j.png",
         },
-      
+
         {
           id: "03",
           title: "Whipped Cream",
           price: 45,
           imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703098853/jammal_photos/zuclkds0uufzktzfeien.png",
         },
-      
+
         {
           id: "04",
           title: "Pizza",
@@ -62,7 +62,7 @@ const templateSlice6 = createSlice({
           imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703098919/jammal_photos/bvipjezk42alazv5roew.png",
         },
       ],
-      fastFoodProducts : [
+      fastFoodProducts: [
         {
           id: "05",
           title: "Burger",
@@ -112,7 +112,7 @@ const templateSlice6 = createSlice({
           imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703099049/jammal_photos/nw1126s6ntsb3o2ohs3s.png",
         },
       ],
-      riceMenuProducts : [
+      riceMenuProducts: [
         {
           id: "12",
           title: "Fried Rice",
@@ -162,7 +162,7 @@ const templateSlice6 = createSlice({
           imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703099126/jammal_photos/t6olygisps4ufz02fezk.png",
         },
       ],
-      dessertProducts : [
+      dessertProducts: [
         {
           id: "21",
           title: "Whipped Cream",
@@ -212,7 +212,7 @@ const templateSlice6 = createSlice({
           imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703099335/jammal_photos/why415hwonyxffn1cyon.png",
         },
       ],
-      pizzaProducts : [
+      pizzaProducts: [
         {
           id: "29",
           title: "Pizza",
@@ -249,7 +249,7 @@ const templateSlice6 = createSlice({
           price: 95,
           imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703098919/jammal_photos/bvipjezk42alazv5roew.png",
         },
-      
+
         {
           id: "35",
           title: "Pizza",
@@ -263,7 +263,7 @@ const templateSlice6 = createSlice({
           imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703098919/jammal_photos/bvipjezk42alazv5roew.png",
         },
       ],
-      coffeeProducts : [
+      coffeeProducts: [
         {
           id: "37",
           title: "Hot Coffee",
@@ -300,7 +300,7 @@ const templateSlice6 = createSlice({
           price: 20,
           imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703099401/jammal_photos/tb2lmnbq0imabiyxzsub.png",
         },
-      
+
         {
           id: "43",
           title: "Black Coffee",
@@ -317,10 +317,9 @@ const templateSlice6 = createSlice({
     },
     feature: {
       title: "Who we are?",
-      imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703103180/jammal_photos/afcfogeancctcy4nhsfn.png", 
-      description:
-        "Take a look at the benefits we offer you",
-      info:"we prioritize your satisfaction. Our commitment to excellence is evident in the benefits we offer. ",
+      imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703103180/jammal_photos/afcfogeancctcy4nhsfn.png",
+      description: "Take a look at the benefits we offer you",
+      info: "we prioritize your satisfaction. Our commitment to excellence is evident in the benefits we offer. ",
       cards: [
         {
           icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703103379/jammal_photos/wvvtn9lgn5k84md2jhtm.svg",
@@ -346,23 +345,20 @@ const templateSlice6 = createSlice({
     },
     testimonial: {
       title: "What our customers are saying",
-      imgUrl:"https://res.cloudinary.com/duc04fwdb/image/upload/v1703093874/jammal_photos/dwbzkjuoel7mlgqohppt.png",
+      imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703093874/jammal_photos/dwbzkjuoel7mlgqohppt.png",
       cards: [
         {
-          content:
-            "I'm impressed with the professionalism and quality of service. The team delivered beyond my expectations!",
+          content: "I'm impressed with the professionalism and quality of service. The team delivered beyond my expectations!",
           name: "Alice Johnson",
           role: "Marketing Manager",
         },
         {
-          content:
-            "Great experience working with this company. The attention to detail and dedication of the team is commendable.",
+          content: "Great experience working with this company. The attention to detail and dedication of the team is commendable.",
           name: "Bob Smith",
           role: "Business Owner",
         },
         {
-          content:
-            "The website they developed for us not only looks fantastic but also performs exceptionally well. Highly recommended!",
+          content: "The website they developed for us not only looks fantastic but also performs exceptionally well. Highly recommended!",
           name: "Emily Davis",
           role: "UX Designer",
         },
@@ -371,32 +367,31 @@ const templateSlice6 = createSlice({
     cta: {
       title: "Download our app",
       description: " Never Feel Hungry! Download Our Mobile App Order Delicious Food",
-      info:"Experience the convenience of our mobile app, ensuring you never go hungry, Download now to order delicious food anytime, anywhere. ",
+      info: "Experience the convenience of our mobile app, ensuring you never go hungry, Download now to order delicious food anytime, anywhere. ",
       imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703105732/jammal_photos/lldrbchcloecmarn2bep.png",
-      googleButton:{
-        title:"Google Play",
-        icon:"https://res.cloudinary.com/duc04fwdb/image/upload/v1703106187/jammal_photos/bm7fqpnzrwtkawffbci3.svg",
+      googleButton: {
+        title: "Google Play",
+        icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703106187/jammal_photos/bm7fqpnzrwtkawffbci3.svg",
       },
-      appleButton:{
-        title:"Apple Store",
-        icon:"https://res.cloudinary.com/duc04fwdb/image/upload/v1703106097/jammal_photos/gmyir4uguaz6ejvw3s3t.svg",
+      appleButton: {
+        title: "Apple Store",
+        icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703106097/jammal_photos/gmyir4uguaz6ejvw3s3t.svg",
       },
     },
-
     footer: {
-      logo:"Chef Food",
+      logo: "Chef Food",
       imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703095423/jammal_photos/x22ihnvjg9i0i40xtbo5.svg",
       description: "It is a long established fact that a reader will be distracted lookings.",
-      copyright:"copyright 2022, developed by ana. All rights reserved",
+      copyright: "copyright 2022, developed by ana. All rights reserved",
       infoLinks: {
-        title:"Info Links",
-        content:["Terms & Conditions","Privacy Policy","Return & Refund","Payment Method"],
-          },
+        title: "Info Links",
+        content: ["Terms & Conditions", "Privacy Policy", "Return & Refund", "Payment Method"],
+      },
       quickLinks: {
-      title:"Quick Links",
-      content:["About Us","Menu","Recips","Contact"],
-        },
-      contact:[
+        title: "Quick Links",
+        content: ["About Us", "Menu", "Recips", "Contact"],
+      },
+      contact: [
         {
           title: "Sylhet, Bangladesh",
           icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703108316/jammal_photos/oe8rjvrg0ckgohix2b6v.svg",
@@ -404,7 +399,7 @@ const templateSlice6 = createSlice({
         {
           title: "example@gmail.com",
           icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703108228/jammal_photos/opdhewds9do1znaaj5li.svg",
-        }, 
+        },
         {
           title: "+880 123 456 7890",
           icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703108367/jammal_photos/y2583eh76th902gnzlje.svg",
