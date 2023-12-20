@@ -9,7 +9,7 @@ const ColorController = () => {
   const templateColors = Object.keys(colors)[0];
   const dispatch = useDispatch();
   const handleChange = (e, index) => {
-    document.documentElement.style.setProperty(`--website-color-${index + 1}`, e.target.value );
+    document.documentElement.style.setProperty(`--website-color-${index + 1}`, e.target.value);
     dispatch(updateAll({ section: "colors", variable: null, value: e.target.value, i: index, blockName: templateColors }));
   };
 
