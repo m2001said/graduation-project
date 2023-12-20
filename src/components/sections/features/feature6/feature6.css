@@ -8,11 +8,7 @@
     justify-content: center;
     margin-bottom: 10px;
   }
-  
-.design-6  .single__feature span i {
-    font-size: 1.5rem;
-  }
-  
+   
 .design-6  .choose__content h4 {
     color: var(--website-6-color-text);
     margin-bottom: 15px;

@@ -40,9 +40,6 @@
     border-radius: 5px;
   }
   
-.design-6  .btn__google i {
-    color: var(--website-6-button-bg);
-  }
   
 .design-6  .btn__apple:hover a {
     color: var(--website-6-color-text);

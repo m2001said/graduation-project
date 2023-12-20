@@ -60,7 +60,7 @@ width:60px
   color: var(--website-6-color-text);
 }
 
-.nav-6 .custom__search span i {
+.nav-6 .custom__search span img {
   cursor: pointer;
 }
 
