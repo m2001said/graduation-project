@@ -17,6 +17,7 @@ const Dashboard = () => {
   return (
     <section className="dashboard-container mx-auto relative">
       <TopSide />
+
       <div className="w-full flex-between flex-col md:flex-row dashboard-subContainer overflow-hidden">
         <LeftSide />
         <div className="dashboard-right-section" style={{ maxWidth: screen === "pc" ? "100%" : screen === "tablet" ? "991px" : "767px" }}>
