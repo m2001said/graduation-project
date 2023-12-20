@@ -391,7 +391,9 @@ const templateSlice6 = createSlice({
         title: "Quick Links",
         content: ["About Us", "Menu", "Recips", "Contact"],
       },
-      contact: [
+      contact:{
+        title: "Contact",
+        content:  [
         {
           title: "Sylhet, Bangladesh",
           icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703108316/jammal_photos/oe8rjvrg0ckgohix2b6v.svg",
@@ -405,6 +407,7 @@ const templateSlice6 = createSlice({
           icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703108367/jammal_photos/y2583eh76th902gnzlje.svg",
         },
       ],
+    } 
     },
   },
 

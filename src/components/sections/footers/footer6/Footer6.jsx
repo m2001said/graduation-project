@@ -48,10 +48,10 @@ const Footer6 = () => {
             </Col>
 
             <Col lg="3" md="4" sm="6">
-              <h5 className="footer__link-title">Contact</h5>
+              <h5 className="footer__link-title">{footer.contact.title}</h5>
 
               <ListGroup>
-                {footer.contact.map((item) => (
+                {footer.contact.content.map((item) => (
                   <ListGroupItem className="link__item d-flex align-items-center gap-3">
                     <img src={item.icon} alt="" className="ico" />
                     {item.title}
