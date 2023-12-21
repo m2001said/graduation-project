@@ -1,6 +1,5 @@
 nav {
   background: rgba(0, 0, 0, 0.3);
-  width: max-content;
   display: block;
   padding: 0.7rem 1.7rem;
   z-index: 2;
@@ -13,6 +12,7 @@ nav {
   display: flex;
   border-radius: 3rem;
   backdrop-filter: blur(15px);
+  max-width: 30rem;
 }
 
 nav a {
@@ -21,6 +21,7 @@ nav a {
   display: flex;
   color: var(--color-2-light);
   font-size: 1.1rem;
+  /* width: 50%; */
 }
 nav a:hover {
   background-color: rgba(0, 0, 0, 0.3);

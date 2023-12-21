@@ -34,13 +34,19 @@
   gap: 1rem;
   margin-bottom: 0.8rem;
 }
+
 .service__list-icon {
   color: var(--color-2-primary);
   margin-top: 2px;
 }
+
 .service__list p {
   font-size: 0.9rem;
   color: var(--color-2-light);
+}
+article.service img.service__list-icon {
+  width: 16px;
+  height: 16px;
 }
 
 @media screen and (max-width: 1024px) {

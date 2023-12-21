@@ -1,95 +1,114 @@
-#about2 {
+/* hero2.css */
+
+#hero2 {
   margin-top: 4rem;
 }
 
-.about2__container {
+.hero2__container {
   display: grid;
   grid-template-columns: 35% 50%;
   gap: 15%;
 }
-
-.about2__me {
+.hero2__icon {
+  max-width: 20px;
+  margin: 0 auto;
+}
+.hero2__icon:hover {
+  transition: var(--transition2);
+  background: var(--color-2-bg-variant);
+  border-radius: 50%;
+}
+.hero2__me {
   width: 100%;
-  aspect-ratio: 0/1; /*height will always match width always the same value*/
+  aspect-ratio: 0/1;
   border-radius: 2rem;
   background: linear-gradient(120deg, transparent, var(--color-2-golden), transparent);
   display: grid;
   place-items: center;
 }
-.about2__me-image {
+
+.hero2__me-image {
   border-radius: 2rem;
   overflow: hidden;
   transform: rotate(10deg);
   transition: var(--transition2);
 }
-.about2__me-image:hover {
+
+.hero2__me-image:hover {
   transform: rotate(0deg);
 }
-.about2__cards {
+
+.hero2__cards {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1.5rem;
 }
-.about2__card {
+
+.hero2__card {
   background: var(--color-2-bg-variant);
   border: 1px solid transparent;
   border-radius: 1rem;
   padding: 2rem;
   text-align: center;
+  align-items: center;
 }
-.about2__card:hover {
+
+.hero2__card:hover {
   background: transparent;
   border-color: var(--color-2-primary-variant);
   cursor: default;
 }
-.about2__icon {
+
+.hero2__icon {
   color: var(--color-2-primary);
   font-size: 1.4rem;
   margin-bottom: 1rem;
+  width: 20%;
 }
-.about2__card h5 {
+
+.hero2__card h5 {
   font-size: 0.95rem;
 }
 
-.about2__card small {
+.hero2__card small {
   font-size: 0.7rem;
   color: var(--color-2-light);
 }
 
-.about2__content p {
+.hero2__content p {
   margin: 2rem 0 2.6rem;
   color: var(--color-2-light);
 }
 
-/**================== Tablets ======= **/
+/* Media Queries for Tablets */
 @media screen and (max-width: 1024px) {
-  .about2__container {
+  .hero2__container {
     grid-template-columns: 1fr;
     gap: 0;
   }
-  .about2__me {
+  .hero2__me {
     width: 50%;
     margin: 2rem auto 4rem;
   }
-  .about2__content p {
+  .hero2__content p {
     max-width: 1rem 0 1.5rem;
   }
 }
-/**================== small phones ======= **/
 
+/* Media Queries for Small Phones */
 @media screen and (max-width: 600px) {
-  .about2__me {
+  .hero2__me {
     width: 65%;
     margin: 0 auto 3rem;
   }
-  .about2__cards {
+  .hero2__cards {
     grid-template-columns: 1fr 1fr;
     gap: 1rem;
   }
-  .about2__content {
+  .hero2__content {
     text-align: center;
   }
-  .about2__content p {
+  .hero2__content p {
     margin: 1.5rem 0;
   }
 }

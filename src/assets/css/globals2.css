@@ -21,13 +21,11 @@
   border: 0;
   outline: 0;
   box-sizing: border-box;
-  list-style: none; /*no pullets*/
-  text-decoration: none; /*no under line for links*/
+  list-style: none;
+  text-decoration: none;
 }
-html {
-  scroll-behavior: smooth;
-}
-body {
+
+.trialdesign2 {
   font-family: "Poppins", sans-serif;
   background: var(--color-2-bg);
   /* background-color: var(--color1-bg); */
@@ -43,9 +41,11 @@ body {
   padding: 2rem;
 }
 
-.container {
+.trialdesign2 .container {
   width: var(--container2-width-lg);
   margin: 0 auto; /*to posisition it in middle hoirzontally*/
+  justify-content: center;
+  align-items: center;
 }
 h1,
 h2,
@@ -57,11 +57,6 @@ h5 {
 
 h1 {
   font-size: 2.5rem;
-}
-
-section {
-  margin-top: 8rem;
-  /* height: 100vh; */
 }
 
 /*direct childs of sction */
@@ -84,7 +79,7 @@ a {
 a:hover {
   color: var(--color-2-white);
 }
-.btn {
+.trialdesign2 .btn {
   width: max-content; /*to make it fit exactly its content*/
   display: inline-block;
   color: var(--color-2-primary);
@@ -95,17 +90,16 @@ a:hover {
   transition: var(--transition2);
 }
 
-.btn:hover {
+.trialdesign2 .btn:hover {
   background: var(--color-2-white);
   color: var(--color-2-bg);
   border-color: transparent; /*will change from color primary to transparent*/
 }
-.btn-primary {
+.trialdesign2 .btn-primary {
   background: var(--color-2-primary);
   color: var(--color-2-bg);
 }
-
-img {
+.trialdesign2 img {
   display: block;
   width: 100%;
   object-fit: cover;
@@ -123,7 +117,7 @@ img {
 /******************************** Media Query for "phones"     *** *** **** * * ***/
 
 @media screen and (max-width: 600px) {
-  .container {
+  .trialdesign2 .container {
     max-width: 70%;
   }
   section > h2 {

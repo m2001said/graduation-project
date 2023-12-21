@@ -44,7 +44,16 @@
   display: inline-block;
   font-size: 0.7rem;
 }
-
+.contactUs2__option > img {
+  width: 1.5rem;
+}
+.contactUs2__option {
+  align-items: baseline;
+  justify-content: flex-start;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
 /**============= form ========**/
 form {
   margin-top: 1.4rem;

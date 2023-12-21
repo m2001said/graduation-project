@@ -1,55 +1,46 @@
 import React from "react";
 import "./footer2.css";
-import { FaMeta } from "react-icons/fa6";
-import { FaInstagram } from "react-icons/fa";
-import { FaXTwitter } from "react-icons/fa6";
+import { useSelector } from "react-redux";
 
-const footer2 = () => {
+const Footer2 = () => {
+  const { footer } = useSelector((state) => state.template2);
+
   return (
     <footer>
       <a href="#" className="footer2__logo">
-        CSE{" "}
+        {footer.logo}{" "}
       </a>
 
       <ul className="permalinks">
         <li>
-          <a href="#">Home</a>
+          <a href="#hero2">Home</a>
         </li>
         <li>
-          <a href="#">About</a>
+          <a href="#experiences2">Experience</a>
         </li>
         <li>
-          <a href="#">Experience</a>
+          <a href="#services2"></a>Services
+        </li>
+
+        <li>
+          <a href="#testimonials2">Testimonials</a>
         </li>
         <li>
-          <a href="#"></a>Services
-        </li>
-        <li>
-          <a href="#">Portfolio</a>
-        </li>
-        <li>
-          <a href="#">Testimonials</a>
-        </li>
-        <li>
-          <a href="#">Contact</a>
+          <a href="#contactUs2">Contact</a>
         </li>
       </ul>
       <div className="footer2__socials">
-        <a href="https://facebook.com">
-          <FaMeta />
-        </a>
-        <a href="https://instagram.com">
-          <FaInstagram />
-        </a>
-        <a href="https://x.com">
-          <FaXTwitter />
-        </a>
+        {footer.mediaIcons.map((icon) => (
+          <a href={icon.url}>
+            <img src={icon.icon} alt="" className="footer2-image" />{" "}
+          </a>
+        ))}
       </div>
       <div className="footer2__copyright">
-        <small>&copy; ssssssssssssssssssssss all rights reserved.</small>
+        <small>&copy; {footer.rights}</small>
       </div>
     </footer>
   );
 };
 
-export default footer2;
+export default Footer2;

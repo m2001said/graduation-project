@@ -1,14 +1,13 @@
 import React from "react";
 import "./contactus2.css";
-import { GiMailbox } from "react-icons/gi";
-import { FaFacebookMessenger } from "react-icons/fa";
-import { RiWhatsappFill } from "react-icons/ri";
 import { useRef } from "react";
 import emailjs from "emailjs-com";
-import "../../../../assets/css/globals2.css";
+import { useSelector } from "react-redux";
 
 const ContactUs2 = () => {
   const form = useRef();
+  const { contact } = useSelector((state) => state.template2);
+
   const sendEmail = (e) => {
     e.preventDefault();
 
@@ -21,41 +20,24 @@ const ContactUs2 = () => {
       }
     );
   };
+
   return (
     <div id="contactUs2">
       <h5 className="text-light">Get in Touch</h5>
-      <h2>ContactUs2 Me</h2>
+      <h2>Contact Us</h2>
 
       <div className="container contactUs2__container">
         <div id="contactUs2" className="contactUs2__options">
-          <article className="contactUs2__option">
-            <GiMailbox className="contactUs2__option-icon" />
-            <h4>Email</h4>
-            <h5>ahmed.solimanth57@gmail.com</h5>
-            <a href="mailto:ahmed.solimanth57@gmail.com" target="_blank">
-              {" "}
-              Send a message
-            </a>
-          </article>
-          <article className="contactUs2__option">
-            <FaFacebookMessenger className="contactUs2__option-icon" />
-            <h4>Messanger</h4>
-            <h5>Ahmed soliman Gohnaim</h5>
-            <a href="https://m.me/ahmed.soliman.3591267" target="_blank">
-              {" "}
-              Send a message
-            </a>
-          </article>
-          <article className="contactUs2__option">
-            <RiWhatsappFill className="contactUs2__option-icon" />
-
-            <h4>Whats App</h4>
-            <h5>___________</h5>
-            <a href="https://api.whatsapp.com/send?phone=201010351108" target="_blank">
-              {" "}
-              Open whats app
-            </a>
-          </article>
+          {contact.options.map((option, index) => (
+            <article className="contactUs2__option" key={index}>
+              <img src={option.logo} alt={`${option.title} Logo`} className="contactUs2__option-logo" />
+              <h4>{option.title}</h4>
+              <h5>{option.subtitle}</h5>
+              <a href={option.link} target="_blank" rel="noopener noreferrer">
+                Send a message
+              </a>
+            </article>
+          ))}
         </div>
 
         {/* End of ContactUs2 */}
@@ -63,7 +45,7 @@ const ContactUs2 = () => {
         <form ref={form} onSubmit={sendEmail}>
           <input type="text" name="name" placeholder="Your Full Name" required />
           <input type="email" name="email" placeholder="Your email " required />
-          <textarea name="message" placeholder="Your Messsage" rows="7" required></textarea>
+          <textarea name="message" placeholder="Your Message" rows="7" required></textarea>
           <button type="submit" className="btn">
             Send
           </button>

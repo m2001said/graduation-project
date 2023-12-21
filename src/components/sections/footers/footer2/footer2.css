@@ -13,13 +13,20 @@ footer {
 footer2 a {
   color: var(--color-2-bg);
 }
+.footer2__logo:hover {
+  transition: var(--transition);
+  color: var(--color-2-bg-variant);
+}
 .footer2__logo {
   font-size: 2rem;
   font-weight: 500;
   margin-bottom: 2rem;
   display: inline-block;
 }
-
+.permalinks:hover {
+  transition: var(--transition);
+  color: var(--color-2-bg-variant);
+}
 .permalinks {
   display: flex;
   flex-wrap: wrap;
@@ -40,6 +47,14 @@ footer2 a {
   border-radius: 0.7rem;
   display: flex;
   border: 1px solid transparent;
+}
+.footer2-image {
+  width: 12px;
+  height: 12px;
+}
+.footer2-image:hover {
+  transition: var(--transition);
+  color: var(--color-2-white);
 }
 
 .footer2__socials:hover {

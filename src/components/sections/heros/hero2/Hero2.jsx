@@ -1,49 +1,32 @@
 import React from "react";
 import "./hero2.css";
-import ME from "../../../../assets/images2/me-about.jpg";
-import { FiAward } from "react-icons/fi";
-import { FaUsers } from "react-icons/fa6";
-import { FaFolderTree } from "react-icons/fa6";
+import { useSelector } from "react-redux";
 
-const About2 = () => {
+const Hero2 = () => {
+  const { hero } = useSelector((state) => state.template2);
+
   return (
-    <section id="about2">
-      <h5>Get to know </h5>
-      <h2>About Me</h2>
-      <div className="container about2__container">
-        <div className="about2__me">
-          <div className="about2__me-image">
-            <img src={ME} alt="" />
+    <section id="hero2">
+      <h5>{hero.title}</h5>
+      <h2>{hero.subtitle}</h2>
+      <div className="container hero2__container">
+        <div className="hero2__me">
+          <div className="hero2__me-image">
+            <img src={hero.image} alt="" />
           </div>
         </div>
 
-        <div className="about2__content">
-          <div className="about2__cards">
-            <article className="about2__card">
-              <FiAward className="about2__icon" />
-
-              <h5>Experience</h5>
-              <small>3+Years Working</small>
-            </article>
-            <article className="about2__card">
-              <FaUsers className="about2__icon" />
-
-              <h5>Clients</h5>
-
-              <small>300+ Clients Worldwide</small>
-            </article>
-            <article className="about2__card">
-              <FaFolderTree className="about2__icon" />
-
-              <h5>Projects</h5>
-              <small>80+ completed projects</small>
-            </article>
+        <div className="hero2__content">
+          <div className="hero2__cards">
+            {hero.cards.map((card, index) => (
+              <article className="hero2__card" key={index}>
+                <img className="hero2__icon" src={card.icon} alt={card.title} />
+                <h5>{card.title}</h5>
+                <small>{card.content}</small>
+              </article>
+            ))}
           </div>
-          <p>
-            lorem ipsum dolor sit lorem ipsum dolor sit lorem ipsum dolor sit lorem ipsum dolor sit lorem ipsum dolor sit lorem ipsum dolor sit lorem ipsum
-            dolor sit lorem ipsum dolor sit lorem ipsum dolor sit lorem ipsum dolor sit lorem ipsum dolor sit lorem ipsum dolor sit lorem ipsum dolor sit lorem
-            ipsum dolor sit lorem ipsum dolor sit
-          </p>
+          <p>{hero.description}</p>
           <a href="#contactUs2" className="btn btn-primary">
             Let's Talk
           </a>
@@ -53,4 +36,4 @@ const About2 = () => {
   );
 };
 
-export default About2;
+export default Hero2;
