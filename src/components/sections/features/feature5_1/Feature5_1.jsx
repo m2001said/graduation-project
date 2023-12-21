@@ -1,6 +1,6 @@
 import React,{useEffect} from "react";
 import "./feature5_1.css";
-import image from "../../../../assets/images/images5/R.jpeg"
+import { useSelector } from "react-redux";
 
 import Aos from 'aos'
 import "aos/dist/aos.css"
@@ -11,38 +11,31 @@ const Feature5_1 = () => {
     Aos.init({duration: 2000})
   },[])
 
+
+  const { feature5_1 } = useSelector((state) => state.template5);
+
   return (
-    <div className="feature5_1 design5-section" >
+    <div className="feature5_1 design5-section">
       <div className="feature5_1-mainSection">
-        <div data-aos='fade-down' data-aos-duration='2500' className="feature5_1-title">
-          <small>travel support</small>
-          <h2>Plan your travel with confidence</h2>
-          <p>find help with booking and travel plans, see what to expect the journey</p>
+        <div data-aos="fade-down" data-aos-duration="2500" className="feature5_1-title">
+          <small>{feature5_1.smallTitle}</small>
+          <h2>{feature5_1.title}</h2>
+          <p>{feature5_1.description}</p>
         </div>
 
         <div className="feature5_1-info">
           <div className="feature5_1-info-text">
-            <div data-aos='fade-down' data-aos-duration='2500' className="feature5_1-singleInfo">
-              <span className="feature5_1-number1">01</span>
-              <h4>Travel requirment for Dubai</h4>
-              <p>find help with booking and travel plans, see what to expect the journey</p>
-            </div>
-
-            <div data-aos='fade-down' data-aos-duration='3500' className="feature5_1-singleInfo">
-              <span className="feature5_1-number2">02</span>
-              <h4>Travel requirment for Dubai</h4>
-              <p>find help with booking and travel plans, see what to expect the journey</p>
-            </div>
-
-            <div data-aos='fade-down' data-aos-duration='4500' className="feature5_1-singleInfo">
-              <span className="feature5_1-number3">03</span>
-              <h4>Travel requirment for Dubai</h4>
-              <p>find help with booking and travel plans, see what to expect the journey</p>
-            </div>
+            {feature5_1.blocks.map((content, index) => (
+              <div key={index} data-aos="fade-down" data-aos-duration={content.duration} className="feature5_1-singleInfo">
+                <span className={`feature5_1-number${index}`}>{content.number}</span>
+                <h4>{content.title}</h4>
+                <p>{content.description}</p>
+              </div>
+            ))}
           </div>
 
-          <div data-aos='fade-up' data-aos-duration='2500' className="feature5_1-info-imgDiv">
-            <img src={image} alt=""/>
+          <div data-aos="fade-up" data-aos-duration="2500" className="feature5_1-info-imgDiv">
+            <img src={feature5_1.imgUrl} alt="" />
           </div>
         </div>
       </div>

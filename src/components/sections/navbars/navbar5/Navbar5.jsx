@@ -1,13 +1,10 @@
 import React,{useState} from 'react';
-import { SiConsul } from "react-icons/si";
-import { BsPhoneVibrate } from "react-icons/bs";
-import { AiOutlineGlobal } from "react-icons/ai";
-import { CgMenuGridO } from "react-icons/cg";
-import Logo from "../../../../assets/images/images5/logo.jpg";
+import { useSelector } from "react-redux";
 import "./navbar5.css";
 
 const Navbar5 = () => {
- 
+ const { navbar5 } = useSelector((state) => state.template5);
+
  const[active, setActive]= useState('navbarMenu')
  const showNavbar =()=>{
   setActive('navbarMenu showNavbar')
@@ -28,52 +25,65 @@ const Navbar5 = () => {
  window.addEventListener('scroll',addBgColor)
 
   return (
-    <div className='navbar5'>
-      <div className='navbar5-one'>
+    <div className="navbar5">
+      <div className="navbar5-one">
         <div>
-        <SiConsul className='navbar5-one-icon'/>
+          <a href=" #">
+            <img src={navbar5.navIcon} alt="" className="navbar5-one-icon" />
+          </a>
         </div>
 
-        <div className='navbar5-one-list'>
-          <li className='navbar5-one-list-icon'><BsPhoneVibrate className='navbar5-one-icon'/>Support</li>
-          <li className='navbar5-one-list-icon'> <AiOutlineGlobal className='navbar5-one-icon'/>Languages</li>
+        <div className="navbar5-one-list">
+          <li className="navbar5-one-list-icon">
+            <a href=" #">
+              <img src={navbar5.supportIcon} alt="" className="navbar5-one-icon" />
+            </a>
+            {navbar5.supporttTxt}
+          </li>
+          <li className="navbar5-one-list-icon">
+            <a href=" #">
+              <img src={navbar5.LanguageIcon} alt="" className="navbar5-one-icon" />
+            </a>
+            {navbar5.LanguageTxt}
+          </li>
         </div>
 
-        <div className='navbar5-one-atb'>
-          <span> Sing In</span>
-          <span> Sing Out</span>
+        <div className="navbar5-one-atb">
+          <span> {navbar5.singInTxt}</span>
+          <span> {navbar5.singOutTxt}</span>
         </div>
       </div>
 
       <div className={noBg}>
-        <div className='navbar5-logoDiv'>
-          <img src={Logo} alt='' className='navbar5-logo' />
+        <div className="navbar5-logoDiv">
+          <a href=" #">
+            <img src={navbar5.imgUrl} alt="" className="navbar5-logo" />
+          </a>
         </div>
         <div className={active}>
-          <ul className='navbarMenu-list'>
-            <li onClick={removeNavbar} className='navbarMenu-listItem'>Home</li>
-            <li onClick={removeNavbar} className='navbarMenu-listItem'>About</li>
-            <li onClick={removeNavbar} className='navbarMenu-listItem'>Offers</li>
-            <li onClick={removeNavbar} className='navbarMenu-listItem'>Seats</li>
-            <li onClick={removeNavbar} className='navbarMenu-listItem'>Destiations</li>
+          <ul className="navbarMenu-list">
+            {navbar5.links.map((link, index) => (
+              <li key={index} className="navbarMenu-listItem">
+                <a href={`#${link}`} onClick={() => removeNavbar()}>
+                  {link}
+                </a>
+              </li>
+            ))}
           </ul>
 
-          <button onClick={removeNavbar} className='navbarMenu-btnOne'>
-            contact
+          <button onClick={removeNavbar} className="navbarMenu-btnOne">
+            {navbar5.buttonTxt}
           </button>
         </div>
 
-         {/* <button className='navbar5-two-btn'>
-            contact
-          </button> */}
-
-          <div className='toggleIcon' onClick={showNavbar}>
-          <CgMenuGridO className='navbar5-two-icon'/>
-          </div>
-
+        <div className="toggleIcon" onClick={showNavbar}>
+          <a href=" #">
+            <img src={navbar5.menuIcon} alt="" className="navbar5-two-icon" />
+          </a>
+        </div>
       </div>
     </div>
-  )
+  );
 }
 
 export default Navbar5

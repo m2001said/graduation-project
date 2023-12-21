@@ -66,7 +66,7 @@
     list-style: none;
     cursor: pointer;
   }
-.footer5-links li a {
+.footer5-links-element {
     display: block;
     color: var(--website-5-greyText);
     transition: var(--transition);
@@ -74,7 +74,7 @@
     text-decoration: none;
   }
 
-  .footer5-links li a:hover {
+  .footer5-links-element:hover {
     transform: translateX(7px);
     color: var(--website-5-color-1);
   }

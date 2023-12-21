@@ -1,5 +1,6 @@
 import React,{useEffect} from 'react';
 import "./footer5.css";
+import { useSelector } from "react-redux";
 import Logo from "../../../../assets/images/images5/logo.jpg";
 
 import { TiSocialFacebook } from "react-icons/ti";
@@ -16,93 +17,41 @@ const Footer5 = () => {
     Aos.init({duration: 2000})
   },[])
 
+  const { footer5 } = useSelector((state) => state.template5);
+
   return (
-    <div className='footer5'>
-
+    <div className="footer5">
       <div className="footer5-mainSection design5-container design5-grid">
-
-        <div data-aos='fade-up' data-aos-duration='2500' className="footer5-gridOne">
-          <div  className="gridOne-logeDiv">
-            <img src={Logo} className='footer5-logo' alt=''  />
+        <div data-aos="fade-up" data-aos-duration="2500" className="footer5-gridOne">
+          <div className="gridOne-logeDiv">
+            <img src={footer5.imgUrl} className="footer5-logo" alt="" />
           </div>
-          <p>Your mind shoud be stronger than your feeling, fly! </p>
+          <p>{footer5.description}</p>
           <div className="socialIcon design5-flex">
-          <TiSocialFacebook className='footer5-singleIcon'/>
-          <AiOutlineTwitter className='footer5-singleIcon'/>
-          <AiFillYoutube className='footer5-singleIcon'/>
-          <FaPinterestP className='footer5-singleIcon'/>
+            {footer5.mediaIcons.map((icon) => (
+              <a href={icon.url} key={icon.url}>
+                <img src={icon.icon} alt="" className="footer5-singleIcon" />
+              </a>
+            ))}
           </div>
         </div>
 
-        <div data-aos='fade-up' data-aos-duration='2500' className="footer5-links">
-          <span className="link-title">Information</span>
-          <li>
-            <a href=" ">Home</a>
-          </li>
-          <li>
-            <a href=" ">Explore</a>
-          </li>
-          <li>
-            <a href=" ">Flight State</a>
-          </li>
-          <li>
-            <a href=" ">Travel</a>
-          </li>
-          <li>
-            <a href=" ">Check-In</a>
-          </li>
-          <li>
-            <a href=" ">Manage your booking</a>
-          </li>
-        </div>
+        {footer5.items.map((item) => (
+          <div div data-aos="fade-up" data-aos-duration="2500" className="footer5-links" key={item.title}>
+            <span className="link-title">{item.title}</span>
 
-        <div data-aos='fade-up' data-aos-duration='2500' className="footer5-links">
-          <span className="link-title">Quick Guide</span>
-          <li>
-            <a href=" ">FAQ</a>
-          </li>
-          <li>
-            <a href=" ">How To</a>
-          </li>
-          <li>
-            <a href=" ">Features</a>
-          </li>
-          <li>
-            <a href=" ">Baggage</a>
-          </li>
-          <li>
-            <a href=" ">Route Map</a>
-          </li>
-          <li>
-            <a href=" ">Our Communities</a>
-          </li>
-        </div>
+            {item.links.map((link) => (
+              <a href=" " key={link}>
+                <li className="footer5-links-element">{link}</li>
+              </a>
+            ))}
+          </div>
+        ))}
 
-        <div data-aos='fade-up' data-aos-duration='2500' className="footer5-links">
-          <span className="link-title">Information</span>
-          <li>
-            <a href=" ">chauffer</a>
-          </li>
-          <li>
-            <a href=" ">our partners</a>
-          </li>
-          <li>
-            <a href=" ">Destination</a>
-          </li>
-          <li>
-            <a href=" ">Careers</a>
-          </li>
-          <li>
-            <a href=" ">Transportation</a>
-          </li>
-          <li>
-            <a href=" ">Programme Rules</a>
-          </li>
-        </div>
-
+        
       </div>
     </div>
-  )
+  );
 }
 
 export default Footer5

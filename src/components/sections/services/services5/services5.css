@@ -57,29 +57,30 @@
     line-height: 22px;
 }
 
+.cardIconDiv0,
 .cardIconDiv1,
-.cardIconDiv2,
-.cardIconDiv3{
+.cardIconDiv2{
     display: flex;
     align-items: center;
     justify-content: center;
     width: max-content;
-    height: 55px;
+    height: 60px;
     padding: 1rem;
     border-radius: 3rem;
 }
 
-.cardIconDiv1{
+.cardIconDiv0{
     background: var(--website-5-color-1);
 }
-.cardIconDiv2{
+.cardIconDiv1{
     background: var(--website-5-color-3);
 }
-.cardIconDiv3{
+.cardIconDiv2{
     background: var(--website-5-color-4);
 }
 
 .cardIcon{
+    width: 25px;
    color: var(--website-5-white); 
 }
 

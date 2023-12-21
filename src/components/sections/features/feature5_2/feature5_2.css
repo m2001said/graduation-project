@@ -1,7 +1,7 @@
 .feature5_2{
     width: 100%;
     margin: auto;
-    padding: 2rem;
+    padding: 1rem;
     padding-left: 4rem;
 }
 
@@ -14,12 +14,16 @@
 
 .feature5_2-imgDiv{
     margin: auto;
+    width: 55%;
+    height: 85%;
+    padding: 2rem;
 }
 .feature5_2-imgDiv img{
-    border-radius: 4rem;
-    width: 100%;
+    border-radius: 10rem;
+    width: 90%;
     height: auto;
-    max-width: 680px;
+    max-width: 480px;
+    max-height: 500px;
 }
 .feature5_2-text h2{
     padding: 1rem 0;

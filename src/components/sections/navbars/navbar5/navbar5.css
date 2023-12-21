@@ -29,6 +29,14 @@
     align-items: center;
 }
 
+.navbar5-two-icon{
+    width: 30px;
+    height: auto;
+}
+.navbar5-one-icon{
+    width: 20px;
+    height: auto;
+}
 .navbar5-one-icon:hover{
     color: var(--website-5-color-1);
 }

@@ -161,7 +161,7 @@ const templateSlice = createSlice({
       title: "Our Team Members",
       cards: [
         {
-          name: "Nattasha Julie",
+          name: "Nattasha",
           location: "Design, Australia",
           imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701808855/templates/template_one/Photo_fz8cuc.jpg",
           mediaIcons: [
@@ -303,35 +303,43 @@ const templateSlice = createSlice({
       imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701811960/templates/template_one/Logo_mj7rvw.png",
       description: "It is a long established fact that a reader will be distracted lookings.",
       mediaIcons: [
-        "https://res.cloudinary.com/duc04fwdb/image/upload/v1701809141/templates/template_one/facebook_td263x.svg",
-        "https://res.cloudinary.com/duc04fwdb/image/upload/v1701809142/templates/template_one/x_yp3y5n.svg",
-        "https://res.cloudinary.com/duc04fwdb/image/upload/v1701809142/templates/template_one/linkedin_itbvp5.svg",
-        "https://res.cloudinary.com/duc04fwdb/image/upload/v1701809141/templates/template_one/instagram_dlrab9.svg",
+        {
+          icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701809141/templates/template_one/facebook_td263x.svg",
+          url: "https://facebook.com",
+        },
+        {
+          icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701809142/templates/template_one/x_yp3y5n.svg",
+          url: "https://x.com",
+        },
+        {
+          icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701809142/templates/template_one/linkedin_itbvp5.svg",
+          url: "https://linkedin.com",
+        },
+        {
+          icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701809141/templates/template_one/instagram_dlrab9.svg",
+          url: "https://instagram.com",
+        },
       ],
-      location: "55 East Birchwood Ave. Brooklyn, New York 11201",
-      email : "contact@interno.com",
-      phone : "(123) 125-858",
-      sectionTitle:"Section",
-      serviceTitle:"Services",
-      contactTitle:"Contact",
 
-      blocks:[
+      items: [
         {
-
-        services : ["Kitchan,",
-                    "Living Area,",
-                    "Bathroom,",
-                    "Dinning Hall,",
-                    "Bedroom",]
+          title: "services",
+          links: ["Kitchan,", "Living Area,", "Bathroom,", "Dinning Hall,", "Bedroom"],
         },
         {
-          Sections : ["About Us",
-                      " Projects",
-                      "Our Team",
-                      "Contact Us",
-                      "Services",]
+          title: "section",
+          links: ["About Us", " Projects", "Our Team", "Contact Us", "Services"],
         },
-      ]
+      ],
+      contact: {
+        title: "contact",
+        location: "55 East Birchwood Ave. Brooklyn, New York 11201",
+        email: "contact@interno.com",
+        phone: "(123) 125-858",
+      },
+    },
+    colors: {
+      templateColors: ["#fff", "#cda274", "#292f36", "#f4f0ec", "#777777"],
     },
   },
 

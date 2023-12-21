@@ -4,7 +4,6 @@ import { useSelector } from "react-redux";
 
 const Teams1 = () => {
   const { team } = useSelector((state) => state.template);
-  console.log(team.cards[0].location);
   const [selectedMember, setSelectedMember] = useState(null);
 
   const handleCardClick = (member) => {
@@ -21,14 +20,14 @@ const Teams1 = () => {
               {selectedMember && selectedMember.name === member.name && (
                 <div className="team1-Card-main-info slideUp">
                   <h1>{selectedMember.name}</h1>
-                  <h4>{selectedMember.location}</h4>
-                  {team.cards.map((icon, index) => (
-                    <a href={" #"} key={index} className="team-media-icon">
-                      <span>
-                      <img src={icon.mediaIcons} alt="" />
-                      </span>
-                    </a>
-                  ))}
+                  <p>{selectedMember.location}</p>
+                  <div className="team-media-icon">
+                    {member.mediaIcons.map((icon) => (
+                      <a href={icon.url} key={icon.url} target="_blank" rel="noreferrer">
+                        <img src={icon.icon} alt="" />
+                      </a>
+                    ))}
+                  </div>
                   <h4>{selectedMember.email}</h4>
                 </div>
               )}

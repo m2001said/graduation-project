@@ -51,24 +51,11 @@
 
 
 @media screen and (min-width: 1024px){
-  p {
-    font-size: 13px;
-    line-height: 22px;
-  }
-  
-  h4 {
-    font-size: 20px;
-  }
-  
-  h2 {
-    font-size: 30px;
-  }
-
-  .section {
+  .design5-section {
     padding: 6rem 0 4rem;
   }
   
-  .container {
+  .design5-container {
     width: 75%;
     margin:auto;
   }

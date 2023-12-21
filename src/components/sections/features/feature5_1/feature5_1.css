@@ -54,9 +54,9 @@
     align-items: center;
 }
 
+.feature5_1-number0,
 .feature5_1-number1,
-.feature5_1-number2,
-.feature5_1-number3{
+.feature5_1-number2{
     padding:5px 12px;
     width:40px;
     border-radius: 3rem;
@@ -66,13 +66,13 @@
     color: var(--website-5-white);
 }
 
-.feature5_1-number1{
+.feature5_1-number0{
     background: var(--website-5-color-1);
 }
-.feature5_1-number2{
+.feature5_1-number1{
     background: var(--website-5-color-3);
 }
-.feature5_1-number3{
+.feature5_1-number2{
     background: var(--website-5-color-4);
 }
 .feature5_1-info-imgDiv{
