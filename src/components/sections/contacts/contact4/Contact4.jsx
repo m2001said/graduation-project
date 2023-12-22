@@ -3,18 +3,19 @@ import "./contact4.css";
 import { MdCall } from "react-icons/md";
 import { BsFillChatDotsFill } from "react-icons/bs";
 import { HiChatBubbleBottomCenter } from "react-icons/hi2";
-import contact from "../../../../assets/images/design-images4/contact.jpg";
+import { useSelector } from "react-redux";
+
 const Contact4 = () => {
+  const { contact4 } = useSelector((state) => state.template4);
+
   return (
     <div id="contact-us" className="c-wrapper">
       <div className="paddings innerWidth flexCenter c-container">
         {/* left side */}
         <div className="flexColStart c-left">
-          <span className="orangeText">Our Contact Us</span>
-          <span className="primaryText">Easy to contact us</span>
-          <span className="secondaryText">
-            We always ready to help by providijng the best services for you. We beleive a good blace to live can make your life better{" "}
-          </span>
+          <span className="orangeText">{contact4.title}</span>
+          <span className="primaryText">{contact4.sub_title}</span>
+          <span className="secondaryText">{contact4.description} </span>
 
           <div className="flexColStart contactModes">
             {/* first row */}
@@ -25,11 +26,11 @@ const Contact4 = () => {
                     <MdCall size={25} />
                   </div>
                   <div className="flexColStart detail">
-                    <span className="primaryText">Call</span>
-                    <span className="secondaryText">021 123 145 14</span>
+                    <span className="primaryText">{contact4.contacts[0].type}</span>
+                    <span className="secondaryText">{contact4.contacts[0].phone}</span>
                   </div>
                 </div>
-                <div className="flexCenter button">Call now</div>
+                <div className="flexCenter button">{contact4.contacts[0].btn_contact}</div>
               </div>
 
               <div className="flexColCenter mode">
@@ -38,11 +39,11 @@ const Contact4 = () => {
                     <BsFillChatDotsFill size={25} />
                   </div>
                   <div className="flexColStart detail">
-                    <span className="primaryText">Chat</span>
-                    <span className="secondaryText">021 123 145 14</span>
+                    <span className="primaryText">{contact4.contacts[1].type}</span>
+                    <span className="secondaryText">{contact4.contacts[1].phone}</span>
                   </div>
                 </div>
-                <div className="flexCenter button">Chat now</div>
+                <div className="flexCenter button">{contact4.contacts[1].btn_contact}</div>
               </div>
             </div>
 
@@ -54,11 +55,11 @@ const Contact4 = () => {
                     <BsFillChatDotsFill size={25} />
                   </div>
                   <div className="flexColStart detail">
-                    <span className="primaryText">Video Call</span>
-                    <span className="secondaryText">021 123 145 14</span>
+                    <span className="primaryText">{contact4.contacts[2].type}</span>
+                    <span className="secondaryText">{contact4.contacts[2].phone}</span>
                   </div>
                 </div>
-                <div className="flexCenter button">Video Call now</div>
+                <div className="flexCenter button">{contact4.contacts[2].btn_contact}</div>
               </div>
 
               <div className="flexColCenter mode">
@@ -67,11 +68,11 @@ const Contact4 = () => {
                     <HiChatBubbleBottomCenter size={25} />
                   </div>
                   <div className="flexColStart detail">
-                    <span className="primaryText">Message</span>
-                    <span className="secondaryText">021 123 145 14</span>
+                    <span className="primaryText">{contact4.contacts[3].type}</span>
+                    <span className="secondaryText">{contact4.contacts[3].phone}</span>
                   </div>
                 </div>
-                <div className="flexCenter button">Message now</div>
+                <div className="flexCenter button">{contact4.contacts[3].btn_contact}</div>
               </div>
             </div>
           </div>
@@ -80,7 +81,7 @@ const Contact4 = () => {
         {/* right side */}
         <div className="flexEnd c-right">
           <div className="image-container">
-            <img src={contact} alt="" />
+            <img src={contact4.UrlImage} alt="" />
           </div>
         </div>
       </div>

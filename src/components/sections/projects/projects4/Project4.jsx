@@ -1,26 +1,25 @@
 import React from "react";
-import data from "./slider.json";
+import { useSelector } from "react-redux";
 import { Swiper, SwiperSlide, useSwiper } from "swiper/react";
-import r2 from "../../../../assets/images/design-images4/r2.png";
-// Import Swiper styles
 import "swiper/css";
 import "./project4.css";
 import { sliderSettings } from "./common";
 const Project4 = () => {
+  const { project4 } = useSelector((state) => state.template4);
   return (
     <div id="residencies" className="r-wrapper">
       <div className="paddings innerWidth r-container">
         <div className="flexColStart r-head">
-          <span className="orangeText">Best Choices</span>
-          <span className="primaryText">Popular Residencies</span>
+          <span className="orangeText">{project4.title}</span>
+          <span className="primaryText">{project4.sub_title}</span>
         </div>
         <Swiper {...sliderSettings}>
           <SlideNextButton />
           {/* slider */}
-          {data.map((card, i) => (
+          {project4.card.map((card, i) => (
             <SwiperSlide key={i}>
               <div className="flexColStart r-card">
-                <img src={r2} alt="home" />
+                <img src={card.image} alt="home" />
 
                 <span className="secondaryText r-price">
                   <span style={{ color: "orange" }}>$</span>

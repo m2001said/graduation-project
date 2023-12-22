@@ -2,8 +2,9 @@ import "./hero4.css";
 import { HiLocationMarker } from "react-icons/hi";
 import CountUp from "react-countup";
 import { motion } from "framer-motion";
-import heroImage from "../../../../assets/images/design-images4/heroImage.png";
+import { useSelector } from "react-redux";
 const Hero4 = () => {
+  const { hero4 } = useSelector((state) => state.template4);
   return (
     <section className="hero-wrapper">
       <div className="paddings innerWidth flexCenter hero-container">
@@ -18,42 +19,40 @@ const Hero4 = () => {
                 type: "ease-in",
               }}
             >
-              Discover <br />
-              Most Suitable
-              <br /> Property
+              {hero4.title}
             </motion.h1>
           </div>
           <div className="flexColStart secondaryText flexhero-des">
-            <span>Find a variety of properties that suit you very easilty</span>
-            <span>Forget all difficulties in finding a residence for you</span>
+            <span>{hero4.description1}</span>
+            <span>{hero4.description2}</span>
           </div>
 
           <div className="flexCenter search-bar">
             <HiLocationMarker color="var(--blue)" size={25} />
             <input type="text" />
-            <button className="button">Search</button>
+            <button className="button">{hero4.buttonText}</button>
           </div>
 
           <div className="flexCenter stats">
             <div className="flexColCenter stat">
               <span>
-                <CountUp start={8800} end={9000} duration={4} /> <span>+</span>
+                <CountUp start={hero4.stats[0].start} end={hero4.stats[0].end} duration={hero4.duration} /> <span>{hero4.icon}</span>
               </span>
-              <span className="secondaryText">Premium Product</span>
+              <span className="secondaryText">{hero4.stats[0].title}</span>
             </div>
 
             <div className="flexColCenter stat">
               <span>
-                <CountUp start={1950} end={2000} duration={4} /> <span>+</span>
+                <CountUp start={hero4.stats[1].start} end={hero4.stats[1].end} duration={hero4.duration} /> <span>{hero4.icon}</span>
               </span>
-              <span className="secondaryText">Happy Customer</span>
+              <span className="secondaryText">{hero4.stats[1].title}</span>
             </div>
 
             <div className="flexColCenter stat">
               <span>
-                <CountUp end={28} /> <span>+</span>
+                <CountUp end={hero4.stats[2].end} /> <span>+</span>
               </span>
-              <span className="secondaryText">Awards Winning</span>
+              <span className="secondaryText">{hero4.stats[2].title}</span>
             </div>
           </div>
         </div>
@@ -69,7 +68,7 @@ const Hero4 = () => {
             }}
             className="image-container"
           >
-            <img src={heroImage} alt="houses" />
+            <img src={hero4.imgUrl} alt="houses" />
           </motion.div>
         </div>
       </div>

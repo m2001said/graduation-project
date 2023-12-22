@@ -1,18 +1,20 @@
 import React from "react";
+import { useSelector } from "react-redux";
 import "./cta4.css";
 const Cta4 = () => {
+  const { Cta4 } = useSelector((state) => state.template4);
   return (
     <div id="get-started" className="g-wrapper">
       <div className="paddings innerWidth g-container">
         <div className="flexColCenter inner-container">
-          <span className="primaryText">Get started with Homyz</span>
+          <span className="primaryText">{Cta4.title}</span>
           <span className="secondaryText">
-            Subscribe and find super attractive price quotes from us.
+            {Cta4.description1}
             <br />
-            Find your residence soon
+            {Cta4.description2}
           </span>
-          <button className="button" href>
-            <a href="mailto:zainkeepscode@gmail.com">Get Started</a>
+          <button className="button">
+            <a href={Cta4.email}> {Cta4.buttonText}</a>
           </button>
         </div>
       </div>
