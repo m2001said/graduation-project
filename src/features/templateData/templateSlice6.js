@@ -2,7 +2,7 @@ import { createSlice } from "@reduxjs/toolkit";
 const templateSlice6 = createSlice({
   initialState: {
     navbar: {
-      logo: "Chef Food",
+      logo: "https://res.cloudinary.com/duc04fwdb/image/upload/v1705928957/jammal_photos/nukabq5r1fuobg8yo1a8.png",
       imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703095423/jammal_photos/x22ihnvjg9i0i40xtbo5.svg",
       searchIcon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703095771/jammal_photos/kedw9coptwqkovrsssd1.svg",
       shoppingIcon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703095842/jammal_photos/gehvutbyftfxemvoqmu8.svg",
