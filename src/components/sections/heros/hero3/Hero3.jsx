@@ -1,7 +1,6 @@
 import React from "react";
 import "./hero3.css";
 import Navbar3 from "../../navbars/navbar3/Navbar3";
-import hero_image from "../../../../assets/images/images3/hero_image.png";
 import NumberCounter from "number-counter";
 import { motion } from "framer-motion";
 import { useSelector } from "react-redux";
@@ -69,8 +68,8 @@ const Hero3 = () => {
         <button className="btn">{hero3.buttonText[0].buttonTextC}</button>
 
         {/* hero images */}
-        <img src={hero_image} alt="" className="hero-image" />
-        
+        <img src={hero3.imgUrl} alt="" className="hero-image" />
+
         <div className="hero-image-back1" initial={{ right: "11rem" }} whileInView={{ right: "20rem" }} transition={transition}></div>
         <div className="hero-image-back2" initial={{ right: "11rem" }} whileInView={{ right: "20rem" }} transition={transition}></div>
       </div>

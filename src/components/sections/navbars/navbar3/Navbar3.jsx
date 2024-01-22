@@ -1,7 +1,5 @@
 import React, { useState } from "react";
 import "./navbar3.css";
-// import Logo from "../../../../assets/images/images3/logo.png";
-import Bars from "../../../../assets/images/images3/bars.png";
 import { useSelector } from "react-redux";
 import { Link } from "react-scroll";
 
@@ -12,11 +10,9 @@ const Navbar3 = () => {
 
   return (
     <div className="navbar3">
-      <img src={navbar3.imgUrl} alt="" className="logo" />
+      <img src={navbar3.imgUrlA} alt="" className="logo" />
       {menuOpend === false && mobile === true ? (
-        <div style={{ backgroundColor: "gray", padding: "0.5rem", borderRadius: "5px", cursor: "pointer" }} onClick={() => setMenuOpend(true)}>
-          <img src={Bars} alt="" style={{ width: "1.5rem", height: "1.5rem" }} />
-        </div>
+        <div style={{ backgroundColor: "gray", padding: "0.5rem", borderRadius: "5px", cursor: "pointer" }} onClick={() => setMenuOpend(true)}></div>
       ) : (
         <ul className="navbar3-menu">
           <li>
