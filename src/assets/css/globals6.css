@@ -1,3 +1,10 @@
+
+/* =========== google fonts =========== */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600&display=swap");
+
+/* ======== base style ======= */
 :root{
   --website-6-color-1-dark:#0a071a;
   --website-6-color-1-light:#141124;
@@ -7,13 +14,6 @@
   --white:#fff;
   --gray:#c4c4c4;
   }
-/* =========== google fonts =========== */
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap");
-
-@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600&display=swap");
-
-/* ======== base style ======= */
-
 .design-6 h1,
 .design-6 h2 {
   font-size: 2rem;
