@@ -17,7 +17,7 @@ const Navbar6 = () => {
               <span>
                 <img src={navbar.imgUrl} alt="logo" className="logo-icon" />
               </span>{" "}
-              {navbar.logo}
+                <img src={navbar.logo} alt="logo" className="design6-LogoIcon" />
             </h2>
           </div>
 
