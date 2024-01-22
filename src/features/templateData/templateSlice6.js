@@ -379,7 +379,7 @@ const templateSlice6 = createSlice({
       },
     },
     footer: {
-      logo: "Chef Food",
+      logo: "https://res.cloudinary.com/duc04fwdb/image/upload/v1705928957/jammal_photos/nukabq5r1fuobg8yo1a8.png",
       imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703095423/jammal_photos/x22ihnvjg9i0i40xtbo5.svg",
       description: "It is a long established fact that a reader will be distracted lookings.",
       copyright: "copyright 2022, developed by ana. All rights reserved",
