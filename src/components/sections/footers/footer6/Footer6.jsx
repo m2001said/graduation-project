@@ -17,7 +17,7 @@ const Footer6 = () => {
                   <span>
                     <img src={footer.imgUrl} alt="" className="ico-Logo" />
                   </span>{" "}
-                  {footer.logo}
+                    <img src={navbar.logo} alt="logo" className="design6-LogoIcon" />
                 </h2>
                 <p>{footer.description}</p>
               </div>
