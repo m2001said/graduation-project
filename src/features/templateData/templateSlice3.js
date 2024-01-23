@@ -2,9 +2,15 @@ import { createSlice } from "@reduxjs/toolkit";
 const templateSlice3 = createSlice({
   initialState: {
     navbar3: {
-      imgUrlA: "https://res.cloudinary.com/duc04fwdb/image/upload/v1705928879/jammal_photos/vqliep1jh8zlgkmwkewx.png",
-      links: ["hero3", "Project3", "Reasons3", "plans3", "testimonials3"],
+      imgUrl: [
+        {
+          imgUrlA: "https://res.cloudinary.com/duc04fwdb/image/upload/v1705928879/jammal_photos/vqliep1jh8zlgkmwkewx.png",
+          imgUrlB: "https://res.cloudinary.com/duc04fwdb/image/upload/v1705931744/jammal_photos/fbb4rdapofxl04oewfc3.png",
+        },
+      ],
+      links: ["Home", "Programs", "Why us", "Plans", "Testimonials"],
     },
+
     hero3: {
       Subtitle: "the best fitness club in the town",
       imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703609517/jammal_photos/neoqh0j4yjexem6j9ozp.png",

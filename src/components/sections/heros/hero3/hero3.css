@@ -128,7 +128,7 @@
   border-top-right-radius: 200px;
   border: 10px solid var(--darkOrange);
   border-bottom: 0;
-  transform: rotate(-92deg);
+  transform: rotate(272deg);
 }
 .hero-image-back2 {
   position: absolute;
@@ -140,7 +140,7 @@
   border-top-right-radius: 150px;
   border: 10px solid var(--darkOrange);
   border-bottom: 0;
-  transform: rotate(-90deg);
+  transform: rotate(272deg);
 }
 
 .hero-blur {

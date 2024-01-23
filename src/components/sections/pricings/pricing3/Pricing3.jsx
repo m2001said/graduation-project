@@ -23,10 +23,10 @@ const Pricing3 = () => {
             <span>$ {plan.price}</span>
 
             <div className="features3">
-              {plan.features.map((feature, i) => (
-                <div className="feature3">
+              {plan.features.map((feature, j) => (
+                <div className="feature3" key={j}>
                   <img src={pricing3.imgUrl} alt="" />
-                  <span key={i}>{feature}</span>
+                  <span>{feature}</span>
                 </div>
               ))}
             </div>
@@ -40,4 +40,5 @@ const Pricing3 = () => {
     </div>
   );
 };
+
 export default Pricing3;

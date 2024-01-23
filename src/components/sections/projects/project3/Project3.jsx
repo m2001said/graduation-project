@@ -13,8 +13,8 @@ const Project3 = () => {
       </div>
 
       <div className="project3-categories">
-        {projects3.programsData.map((program) => (
-          <div className="category">
+        {projects3.programsData.map((program, index) => (
+          <div className="category" key={index}>
             {program.image}
             <span>{program.heading}</span>
             <span>{program.details}</span>
