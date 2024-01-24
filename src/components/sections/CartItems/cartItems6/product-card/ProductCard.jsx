@@ -1,9 +1,11 @@
 import React from "react";
 import "./product-card.css";
 import star from "../../../../../assets/images/images6/star-s-fill.svg";
-import shoppingcart from "../../../../../assets/images/images6/shopping-cart-line.svg";
+import { useSelector } from "react-redux";
+
 
 const ProductCard = (props) => {
+  const { productcard } = useSelector((state) => state.template6);
   const { title, imgUrl, price } = props.item;
 
   return (
@@ -39,7 +41,7 @@ const ProductCard = (props) => {
             Price: $<span>{price}</span>
           </span>
           <span className="shopping__icon">
-            <img src={shoppingcart} alt="" className="ico" />
+            <img src={productcard.shoppingIcon} alt="" className="ico" />
           </span>
         </div>
       </div>

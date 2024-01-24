@@ -32,6 +32,9 @@ const templateSlice6 = createSlice({
         },
       ],
     },
+    productcard: {
+      shoppingIcon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703095842/jammal_photos/gehvutbyftfxemvoqmu8.svg",
+    },
     FilterItems: {
       fastFoodProducts: [
         {
@@ -317,7 +320,6 @@ const templateSlice6 = createSlice({
         },
       ],    
     },    
-
     feature: {
       title: "Who we are?",
       imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703103180/jammal_photos/afcfogeancctcy4nhsfn.png",
