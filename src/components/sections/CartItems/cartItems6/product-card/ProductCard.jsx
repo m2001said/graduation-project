@@ -3,7 +3,6 @@ import "./product-card.css";
 import star from "../../../../../assets/images/images6/star-s-fill.svg";
 import { useSelector } from "react-redux";
 
-
 const ProductCard = (props) => {
   const { productcard } = useSelector((state) => state.template6);
   const { title, imgUrl, price } = props.item;
@@ -16,21 +15,11 @@ const ProductCard = (props) => {
 
       <div className="product__content">
         <div className="rating text-center">
-          <span>
-            <img src={star} alt="" className="ico" />
-          </span>
-          <span>
-            <img src={star} alt="" className="ico" />
-          </span>
-          <span>
-            <img src={star} alt="" className="ico" />
-          </span>
-          <span>
-            <img src={star} alt="" className="ico" />
-          </span>
-          <span>
-            <img src={star} alt="" className="ico" />
-          </span>
+          {[1, 2, 3, 4, 5].map((el) => (
+            <span>
+              <img src={star} alt="" className="ico" />
+            </span>
+          ))}
         </div>
 
         <h6>{title}</h6>
