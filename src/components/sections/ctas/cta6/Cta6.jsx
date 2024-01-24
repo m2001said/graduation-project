@@ -25,7 +25,7 @@ const Cta6 = () => {
               <div className="app__btns d-flex align-items-center gap-5 mt-4">
                 <button className="btn__apple d-flex align-items-center gap-3">
                   <img src={cta.appleButton.icon} alt="" className="ico" />
-                  <a href="#">{cta.appleButton.title}</a>
+                  <a href="https://www.apple.com/store">{cta.appleButton.title}</a>
                 </button>
 
                 <button className="btn__google d-flex align-items-center gap-3">
