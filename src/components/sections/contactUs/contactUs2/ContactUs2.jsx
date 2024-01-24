@@ -1,25 +1,25 @@
 import React from "react";
 import "./contactus2.css";
 import { useRef } from "react";
-import emailjs from "emailjs-com";
+// import emailjs from "emailjs-com";
 import { useSelector } from "react-redux";
 
 const ContactUs2 = () => {
   const form = useRef();
   const { contact } = useSelector((state) => state.template2);
 
-  const sendEmail = (e) => {
-    e.preventDefault();
+  // const sendEmail = (e) => {
+  //   e.preventDefault();
 
-    emailjs.sendForm("service_rbyx6tj", "service_rbyx6tj", form.current, "0QLQxh2eNcWa-5vs2").then(
-      (result) => {
-        console.log(result.text);
-      },
-      (error) => {
-        console.log(error.text);
-      }
-    );
-  };
+  //   emailjs.sendForm("service_rbyx6tj", "service_rbyx6tj", form.current, "0QLQxh2eNcWa-5vs2").then(
+  //     (result) => {
+  //       console.log(result.text);
+  //     },
+  //     (error) => {
+  //       console.log(error.text);
+  //     }
+  //   );
+  // };
 
   return (
     <div id="contactUs2">
@@ -42,7 +42,8 @@ const ContactUs2 = () => {
 
         {/* End of ContactUs2 */}
 
-        <form ref={form} onSubmit={sendEmail}>
+        <form ref={form} onSubmit={"sendEmail"}>
+          {/* <form ref={form} onSubmit={sendEmail}> */}
           <input type="text" name="name" placeholder="Your Full Name" required />
           <input type="email" name="email" placeholder="Your email " required />
           <textarea name="message" placeholder="Your Message" rows="7" required></textarea>

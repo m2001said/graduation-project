@@ -6,15 +6,15 @@ import "swiper/css";
 import "swiper/css/effect-cards";
 import "./tstyles2.css";
 import { EffectCards } from "swiper/modules";
-import { useSelector } from "react-redux"; // Fix the import
+import { useSelector } from "react-redux";
 
 const Testimonials2 = () => {
-  const { testimonial } = useSelector((state) => state.template2); // Use correct state property name
+  const { testimonial } = useSelector((state) => state.template2);
 
   return (
     <section id="testimonials2">
       <h5>Review from Clients</h5>
-      <h2>{testimonial.title}</h2> {/* Use correct property name for title */}
+      <h2>{testimonial.title}</h2>
       <Swiper
         className="container testimonials2__container"
         // install Swiper modules

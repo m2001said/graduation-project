@@ -9,7 +9,16 @@
 #contactUs2 h2 {
   color: var(--color-2-primary);
 }
+.contactUs2__options .contactUs2__option a {
+  color: var(--color-2-2-white);
+  text-decoration: none;
+}
 
+.contactUs2__options .contactUs2__option a:hover {
+  color: var(--color-2-primary);
+  text-decoration: underline;
+  font-weight: bold;
+}
 .contactUs2__container {
   width: 58%;
   display: grid;
