@@ -7,7 +7,7 @@ import { Container, Row, Col } from "reactstrap";
 const Cta6 = () => {
   const { cta } = useSelector((state) => state.template6);
   return (
-    <section className="design-6">
+    <section className="design-6" id="Contact">
       <Container className="app__container">
         <Row>
           <Col lg="6" md="6">

@@ -41,7 +41,7 @@ const Footer6 = () => {
               <ListGroup>
                 {footer.quickLinks.content.map((item, index) => (
                   <ListGroupItem key={index} className="link__item">
-                    <a href="#link">{item}</a>
+                    <a href={`#${footer.quickLinks.links[index]}`}>{item}</a>
                   </ListGroupItem>
                 ))}
               </ListGroup>
@@ -49,7 +49,6 @@ const Footer6 = () => {
 
             <Col lg="3" md="4" sm="6">
               <h5 className="footer__link-title">{footer.contact.title}</h5>
-
               <ListGroup>
                 {footer.contact.content.map((item) => (
                   <ListGroupItem className="link__item d-flex align-items-center gap-3">

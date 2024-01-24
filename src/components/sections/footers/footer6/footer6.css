@@ -18,6 +18,10 @@
 .footer6 .link__item a {
   color: var(--gray);
   text-decoration: none !important;
+  transition: 0.2s;
+}
+.footer6 .link__item:hover a {
+  color: var(--white);
 }
 
 .footer6 .footer__bottom {
@@ -35,7 +39,6 @@
 @media only screen and (max-width: 992px) {
   .footer6 .link__item a {
     font-size: 0.8rem;
-    text-decoration: none !important;
   }
 
   .footer6 .link__item {

@@ -33,7 +33,7 @@ const FilterItems6 = () => {
   }, [filter]);
 
   return (
-    <section className="design-6">
+    <section className="design-6" id="Recipes">
       <Container>
         <Row>
           <Col lg="12" className="text-center mb-4">

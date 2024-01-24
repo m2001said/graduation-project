@@ -393,6 +393,7 @@ const templateSlice6 = createSlice({
       quickLinks: {
         title: "Quick Links",
         content: ["About Us", "Menu", "Recips", "Contact"],
+        links: ["About", "Menu", "Recipes", "Contact"],
       },
       contact:{
         title: "Contact",

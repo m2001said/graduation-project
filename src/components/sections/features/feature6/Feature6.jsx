@@ -7,7 +7,7 @@ const Feature6 = () => {
   const { feature } = useSelector((state) => state.template6);
 
   return (
-    <section className="design-6">
+    <section className="design-6" id="About">
       <Container>
         <Row>
           <Col lg="6" md="6">

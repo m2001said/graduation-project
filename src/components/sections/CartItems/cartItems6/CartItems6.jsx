@@ -9,7 +9,7 @@ const CartItems6 = () => {
   const { CartItems } = useSelector((state) => state.template6);
 
   return (
-    <section className="pt-0 design-6">
+    <section className="pt-0 design-6" id="Menu">
       <Container>
         <Row>
           <Col lg="12" className="mb-5">
