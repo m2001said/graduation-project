@@ -15,9 +15,9 @@ const Footer6 = () => {
               <div className="logo">
                 <h2 className=" d-flex align-items-center gap-1 mb-4">
                   <span>
-                    <img src={footer.imgUrl} alt="" className="ico-Logo" />
+                    <img src={footer.imgUrl} alt="" className="logo6-icon" />
                   </span>{" "}
-                    <img src={footer.logo} alt="logo" className="design6-LogoIcon" />
+                    <img src={footer.logo} alt="logo" className="design6-Logo" />
                 </h2>
                 <p>{footer.description}</p>
               </div>
@@ -29,7 +29,7 @@ const Footer6 = () => {
               <ListGroup>
                 {footer.infoLinks.content.map((item, index) => (
                   <ListGroupItem key={index} className="link__item">
-                    <a href="#">{item}</a>
+                    <a href="#link">{item}</a>
                   </ListGroupItem>
                 ))}
               </ListGroup>
@@ -41,7 +41,7 @@ const Footer6 = () => {
               <ListGroup>
                 {footer.quickLinks.content.map((item, index) => (
                   <ListGroupItem key={index} className="link__item">
-                    <a href="#">{item}</a>
+                    <a href="#link">{item}</a>
                   </ListGroupItem>
                 ))}
               </ListGroup>

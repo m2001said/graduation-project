@@ -6,7 +6,7 @@ import { useSelector } from "react-redux";
 
 
 const FilterItems6 = () => {
-  const { fastFoodProducts,riceMenuProducts, pizzaProducts, dessertProducts, coffeeProducts  } = useSelector((state) => state.template6.product);
+  const { fastFoodProducts,riceMenuProducts, pizzaProducts, dessertProducts, coffeeProducts  } = useSelector((state) => state.template6.FilterItems);
 
   const [filter, setFilter] = useState("RICE-MENU");
   const [products, setProducts] = useState(riceMenuProducts);

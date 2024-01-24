@@ -12,7 +12,9 @@
   color: var(--gray);
   border:none !important;
 }
-
+.footer6 img{
+  width: 20px;
+}
 .footer6 .link__item a {
   color: var(--gray);
   text-decoration: none !important;
@@ -52,10 +54,4 @@
   .footer6 .footer__bottom {
     padding: 15px 0px;
   }
-}
-.footer6 img:not(.ico-Logo) {
-  width: 18px;
-}
-.footer6 .ico-Logo {
-  width: 35px;
 }

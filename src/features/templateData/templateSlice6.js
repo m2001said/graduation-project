@@ -32,36 +32,7 @@ const templateSlice6 = createSlice({
         },
       ],
     },
-    product: {
-      cartitemsTitle: "Popular food menu",
-      popularMenuFood: [
-        {
-          id: "01",
-          title: "Vegetable",
-          price: 25,
-          imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703098596/jammal_photos/n4r8kzctvhbymxmmydhq.png",
-        },
-        {
-          id: "02",
-          title: "Chicken",
-          price: 250,
-          imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703098694/jammal_photos/rbtige8oucnpqluq3b5j.png",
-        },
-
-        {
-          id: "03",
-          title: "Whipped Cream",
-          price: 45,
-          imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703098853/jammal_photos/zuclkds0uufzktzfeien.png",
-        },
-
-        {
-          id: "04",
-          title: "Pizza",
-          price: 75,
-          imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703098919/jammal_photos/bvipjezk42alazv5roew.png",
-        },
-      ],
+    FilterItems: {
       fastFoodProducts: [
         {
           id: "05",
@@ -315,6 +286,38 @@ const templateSlice6 = createSlice({
         },
       ],
     },
+    CartItems:{
+      Title: "Popular food menu",
+      popularMenuFood: [
+        {
+          id: "01",
+          title: "Vegetable",
+          price: 25,
+          imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703098596/jammal_photos/n4r8kzctvhbymxmmydhq.png",
+        },
+        {
+          id: "02",
+          title: "Chicken",
+          price: 250,
+          imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703098694/jammal_photos/rbtige8oucnpqluq3b5j.png",
+        },
+
+        {
+          id: "03",
+          title: "Whipped Cream",
+          price: 45,
+          imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703098853/jammal_photos/zuclkds0uufzktzfeien.png",
+        },
+
+        {
+          id: "04",
+          title: "Pizza",
+          price: 75,
+          imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703098919/jammal_photos/bvipjezk42alazv5roew.png",
+        },
+      ],    
+    },    
+
     feature: {
       title: "Who we are?",
       imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703103180/jammal_photos/afcfogeancctcy4nhsfn.png",

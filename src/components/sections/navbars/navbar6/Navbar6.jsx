@@ -15,9 +15,9 @@ const Navbar6 = () => {
           <div className="logo">
             <h2 className="d-flex align-items-center gap-1">
               <span>
-                <img src={navbar.imgUrl} alt="logo" className="logo-icon" />
+                <img src={navbar.imgUrl} alt="logo" className="logo6-icon" />
               </span>{" "}
-                <img src={navbar.logo} alt="logo" className="design6-LogoIcon" />
+                <img src={navbar.logo} alt="logo" className="design6-Logo" />
             </h2>
           </div>
 
@@ -26,7 +26,7 @@ const Navbar6 = () => {
               <ul className="nav__list">
                 {navbar.links.map((item, index) => (
                   <li className="nav__item" key={index}>
-                    <a href={"#"} onClick={menuToggle}>
+                    <a href={"#link"} onClick={menuToggle}>
                       {item}
                     </a>
                   </li>

@@ -15,19 +15,19 @@ const ProductCard = (props) => {
       <div className="product__content">
         <div className="rating text-center">
           <span>
-            <img src={star} alt=""      className="ico"/>
+            <img src={star} alt="" className="ico" />
           </span>
           <span>
-          <img src={star} alt=""     className="ico" />
+            <img src={star} alt="" className="ico" />
           </span>
           <span>
-          <img src={star} alt=""    className="ico" />
+            <img src={star} alt="" className="ico" />
           </span>
           <span>
-          <img src={star} alt=""     className="ico" />
+            <img src={star} alt="" className="ico" />
           </span>
           <span>
-          <img src={star} alt=""      className="ico"/>
+            <img src={star} alt="" className="ico" />
           </span>
         </div>
 
@@ -39,7 +39,7 @@ const ProductCard = (props) => {
             Price: $<span>{price}</span>
           </span>
           <span className="shopping__icon">
-          <img src={shoppingcart} alt=""     className="ico" />
+            <img src={shoppingcart} alt="" className="ico" />
           </span>
         </div>
       </div>

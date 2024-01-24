@@ -3,6 +3,7 @@
   border-radius: 10px;
   cursor: pointer;
   animation: animate 1s ease-in;
+  border: solid 1px transparent;
 }
 
 .single__product:hover {
