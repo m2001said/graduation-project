@@ -2,6 +2,7 @@ import React from "react";
 import "./footer6.css";
 import { Container, Row, Col, ListGroup, ListGroupItem } from "reactstrap";
 import { useSelector } from "react-redux";
+import logo from "../../../../assets/images/images6/logo.png"
 
 const Footer6 = () => {
   const { footer } = useSelector((state) => state.template6);
@@ -14,10 +15,7 @@ const Footer6 = () => {
             <Col lg="4" md="4" sm="6">
               <div className="logo">
                 <h2 className=" d-flex align-items-center gap-1 mb-4">
-                  <span>
-                    <img src={footer.imgUrl} alt="" className="logo6-icon" />
-                  </span>{" "}
-                    <img src={footer.logo} alt="logo" className="design6-Logo" />
+                    <img src={logo} alt="" className="design6-logo" />
                 </h2>
                 <p>{footer.description}</p>
               </div>

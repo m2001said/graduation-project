@@ -2,6 +2,8 @@ import React, { useRef } from "react";
 import "./navbar6.css";
 import { Container } from "reactstrap";
 import { useSelector } from "react-redux";
+import logo from "../../../../assets/images/images6/logo.png"
+
 
 const Navbar6 = () => {
   const { navbar } = useSelector((state) => state.template6);
@@ -13,12 +15,9 @@ const Navbar6 = () => {
       <Container>
         <div className="navigation">
           <div className="logo">
-            <h2 className="d-flex align-items-center gap-1">
-              <span>
-                <img src={navbar.imgUrl} alt="logo" className="logo6-icon" />
-              </span>{" "}
-                <img src={navbar.logo} alt="logo" className="design6-Logo" />
-            </h2>
+            <div className="d-flex align-items-center gap-1">
+            <img src={logo} alt="" className="design6-logo" />
+            </div>
           </div>
 
           <div className="nav__menu " ref={menuRef}>

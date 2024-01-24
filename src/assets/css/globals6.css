@@ -49,10 +49,7 @@ footer {
   .design-6 {
     padding: 80px 0px;
   }
-.design6-Logo{
-  width: 110px;
-  height: auto !important;
-}
- .logo6-icon{
-  width: 60px !important;
-}
+  .design6-logo{
+    width: 120px !important;
+    height: auto !important;
+  }
