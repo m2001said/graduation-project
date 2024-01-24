@@ -2,15 +2,8 @@ import { createSlice } from "@reduxjs/toolkit";
 const templateSlice5 = createSlice({
   initialState: {
     navbar5: {
-      navIcon: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1703105956/consul_rkcykw.jpg",
-      singInTxt: "Sing In",
-      singOutTxt: "Sing Out",
-      supporttTxt: "Support",
-      LanguageTxt: "Languages",
-      supportIcon: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1703107835/phone-vibrate-svgrepo-com_s5tcqs.svg",
-      LanguageIcon: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1703108600/AiOutlineGlobal_thftuk.svg",
       menuIcon: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1703106705/menu-svgrepo-com_mgpt72.svg",
-      imgUrl: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1703101139/logo_ytwn3z.jpg",
+      icon: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1703101139/logo_ytwn3z.jpg",
       links: ["Home", "About", "Offers", "Seats", "Destiations"],
       buttonTxt: "contact",
     },

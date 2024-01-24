@@ -26,38 +26,11 @@ const Navbar5 = () => {
 
   return (
     <div className="navbar5">
-      <div className="navbar5-one">
-        <div>
-          <a href=" #">
-            <img src={navbar5.navIcon} alt="" className="navbar5-one-icon" />
-          </a>
-        </div>
-
-        <div className="navbar5-one-list">
-          <li className="navbar5-one-list-icon">
-            <a href=" #">
-              <img src={navbar5.supportIcon} alt="" className="navbar5-one-icon" />
-            </a>
-            {navbar5.supporttTxt}
-          </li>
-          <li className="navbar5-one-list-icon">
-            <a href=" #">
-              <img src={navbar5.LanguageIcon} alt="" className="navbar5-one-icon" />
-            </a>
-            {navbar5.LanguageTxt}
-          </li>
-        </div>
-
-        <div className="navbar5-one-atb">
-          <span> {navbar5.singInTxt}</span>
-          <span> {navbar5.singOutTxt}</span>
-        </div>
-      </div>
 
       <div className={noBg}>
         <div className="navbar5-logoDiv">
           <a href=" #">
-            <img src={navbar5.imgUrl} alt="" className="navbar5-logo" />
+            <img src={navbar5.icon} alt="" className="navbar5-logo" />
           </a>
         </div>
         <div className={active}>

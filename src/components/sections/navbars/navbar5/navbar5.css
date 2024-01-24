@@ -7,22 +7,16 @@
     z-index: 1000;
 }
 
-.navbar5-one,
+
 .navbar5-two{
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1rem;
     width: 100%;
+
 }
 
-.navbar5-one{
-    background: var(--website-5-color-2);
-}
-
-
-
-.navbar5-one-list-icon,
 .navbar5-two-icon{
     cursor: pointer;
     display: flex;
@@ -33,34 +27,8 @@
     width: 30px;
     height: auto;
 }
-.navbar5-one-icon{
-    width: 20px;
-    height: auto;
-}
-.navbar5-one-icon:hover{
-    color: var(--website-5-color-1);
-}
 
-.navbar5-one-atb{
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-}
 
-.navbar5-one-atb span{
-    color: var(--website-5-black);
-    font-size: 12px;
-    cursor: pointer;
-}
-
-.navbar5-one-atb span:hover{
-    color: var(--website-5-color-1);
-    font-size: 13px;
-}
-.navbar5-one-list{
-    display: flex;
-    gap: 1.5rem;
-}
 .navbar5-two{
     display: flex;
     align-items: center;
@@ -75,6 +43,7 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content:right;
     gap: 2.5rem;
 }
 
@@ -125,24 +94,14 @@
 
   }
 
-  .navbar5-one-list li{
-    list-style: none;
-    cursor: pointer;
-    color: var(--website-5-black);
-    font-size: 12px;
-    cursor: pointer;
-}
 
-  .navbar5-one-list-icon:hover{
-    color: var(--website-5-color-1);
-    font-size: 13px;
-}
-
-@media screen and (min-width: 920px){
+/*
+ @media screen and (min-width: 980px){
     .navbarMenu{
-        margin-right: -7rem;
+        margin-right: -20rem;
     }
 }
+
 @media screen and (min-width: 1022px){
     .navbarMenu{
         margin-right: -12rem;
@@ -157,8 +116,8 @@
     .navbarMenu{
         margin-right: -19rem;
     }
-}
-@media screen and (min-width: 1300px){
+} */
+/* @media screen and (min-width: 1300px){
     .navbarMenu{
         gap: 2rem;
     }
@@ -166,7 +125,7 @@
         padding: 0 1rem;
         font-size: 14px;
     }
-}
+} */
 
 
 @media screen and (max-width: 768px) {
@@ -196,12 +155,6 @@
         text-align: center;
     }
 
-    .navbar5-one-list{
-        display: flex;
-        align-items: center;
-        display: none;
-    }
-
     .navbarMenu-listItem{
         padding: .5rem 0;
         cursor: pointer;
@@ -216,7 +169,7 @@
         display: block;
         justify-content: center;
         margin: auto;
-        margin-top: 1rem;
+        margin-top: 0.2rem;
     }
 
     .navbar5-two-btn{

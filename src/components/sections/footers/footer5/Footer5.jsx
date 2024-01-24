@@ -1,12 +1,6 @@
 import React,{useEffect} from 'react';
 import "./footer5.css";
 import { useSelector } from "react-redux";
-import Logo from "../../../../assets/images/images5/logo.jpg";
-
-import { TiSocialFacebook } from "react-icons/ti";
-import { AiOutlineTwitter } from "react-icons/ai";
-import { AiFillYoutube } from "react-icons/ai";
-import { FaPinterestP } from "react-icons/fa";
 
 import Aos from 'aos'
 import "aos/dist/aos.css"

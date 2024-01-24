@@ -19,7 +19,6 @@ const TrialDesign5 = () => {
       <Teams5 />
       <Cta5 />
       <Footer5 />
-
     </div>
   );
 };
