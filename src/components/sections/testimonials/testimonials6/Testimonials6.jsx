@@ -3,6 +3,7 @@ import { Container, Row, Col } from "reactstrap";
 import "./testimonials6.css";
 import { useSelector } from "react-redux";
 import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation, Pagination, Autoplay } from "swiper/modules";
 import "swiper/css";
 
 const Testimonials6 = () => {
@@ -16,7 +17,7 @@ const Testimonials6 = () => {
             <div className="slider__wrapper d-flex align-items-center gap-5  ">
               <div className="slider__content w-50">
                 <h2 className="mb-4 ps-3">{testimonial.title}</h2>
-                <Swiper spaceBetween={50} slidesPerView={1} autoplay={{ delay: 2500 }} className="mySwiper">
+                <Swiper modules={[Navigation, Pagination, Autoplay]} spaceBetween={50} slidesPerView={1} autoplay={{ delay: 3000 }} className="mySwiper">
                   {testimonial.cards.map((data, index) => (
                     <SwiperSlide key={index}>
                       <div className="single__testimonial">
