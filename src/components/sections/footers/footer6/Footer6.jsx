@@ -2,7 +2,7 @@ import React from "react";
 import "./footer6.css";
 import { Container, Row, Col, ListGroup, ListGroupItem } from "reactstrap";
 import { useSelector } from "react-redux";
-import logo from "../../../../assets/images/images6/logo.png"
+import logo from "../../../../assets/images/images6/logo.png";
 
 const Footer6 = () => {
   const { footer } = useSelector((state) => state.template6);
@@ -10,64 +10,56 @@ const Footer6 = () => {
   return (
     <footer className="footer6">
       <div className="footer__top">
-        <Container>
-          <Row>
-            <Col lg="4" md="4" sm="6">
-              <div className="logo">
-                <h2 className=" d-flex align-items-center gap-1 mb-4">
-                    <img src={logo} alt="" className="design6-logo" />
-                </h2>
-                <p>{footer.description}</p>
-              </div>
-            </Col>
+        <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+          <div className="logo">
+            <div className=" d-flex align-items-center gap-1 mb-4">
+              <img src={logo} alt="" className="design6-logo" />
+            </div>
+            <p>{footer.description}</p>
+          </div>
 
-            <Col lg="3" md="4" sm="6">
-              <h5 className="footer__link-title">{footer.infoLinks.title}</h5>
+          <div className="footer__links">
+            <h5 className="footer__link-title">{footer.infoLinks.title}</h5>
+            <div>
+              {footer.infoLinks.content.map((item, index) => (
+                <div key={index} className="link__item my-3">
+                  <a href="#links">{item}</a>
+                </div>
+              ))}
+            </div>
+          </div>
 
-              <ListGroup>
-                {footer.infoLinks.content.map((item, index) => (
-                  <ListGroupItem key={index} className="link__item">
-                    <a href="#link">{item}</a>
-                  </ListGroupItem>
-                ))}
-              </ListGroup>
-            </Col>
+          <div className="footer__links">
+            <h5 className="footer__link-title">{footer.quickLinks.title}</h5>
+            <div>
+              {footer.quickLinks.content.map((item, index) => (
+                <div key={index} className="link__item my-3">
+                  <a href={`#${footer.quickLinks.links[index]}`}>{item}</a>
+                </div>
+              ))}
+            </div>
+          </div>
 
-            <Col lg="2" md="4" sm="6">
-              <h5 className="footer__link-title">{footer.quickLinks.title}</h5>
-
-              <ListGroup>
-                {footer.quickLinks.content.map((item, index) => (
-                  <ListGroupItem key={index} className="link__item">
-                    <a href={`#${footer.quickLinks.links[index]}`}>{item}</a>
-                  </ListGroupItem>
-                ))}
-              </ListGroup>
-            </Col>
-
-            <Col lg="3" md="4" sm="6">
-              <h5 className="footer__link-title">{footer.contact.title}</h5>
-              <ListGroup>
-                {footer.contact.content.map((item) => (
-                  <ListGroupItem className="link__item d-flex align-items-center gap-3">
-                    <img src={item.icon} alt="" className="ico" />
-                    {item.title}
-                  </ListGroupItem>
-                ))}
-              </ListGroup>
-            </Col>
-          </Row>
-        </Container>
+          <div className="footer__links">
+            <h5 className="footer__link-title">{footer.contact.title}</h5>
+            <div>
+              {footer.contact.content.map((item) => (
+                <div className="link__item  flex items-center gap-3 my-3">
+                  <img src={item.icon} alt="" className="ico" />
+                  {item.title}
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
       </div>
 
       <div className="footer__bottom">
-        <Container>
-          <Row>
-            <Col lg="12">
-              <p>{footer.copyright}</p>
-            </Col>
-          </Row>
-        </Container>
+        <div className="container mx-auto">
+          <div className="text-center">
+            <p>{footer.copyright}</p>
+          </div>
+        </div>
       </div>
     </footer>
   );
