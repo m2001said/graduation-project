@@ -1,21 +1,13 @@
 import React from "react";
 import { Container, Row, Col } from "reactstrap";
 import "./testimonials6.css";
-import Slider from "react-slick";
 import { useSelector } from "react-redux";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
 
 const Testimonials6 = () => {
   const { testimonial } = useSelector((state) => state.template6);
 
-  const settings = {
-    infinite: true,
-    dots: true,
-    speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 3000,
-  };
   return (
     <section className="design-6">
       <Container>
@@ -24,17 +16,17 @@ const Testimonials6 = () => {
             <div className="slider__wrapper d-flex align-items-center gap-5  ">
               <div className="slider__content w-50">
                 <h2 className="mb-4 ps-3">{testimonial.title}</h2>
-                <Slider {...settings}>
-                  {testimonial.cards.map((data) => (
-                    <div>
+                <Swiper spaceBetween={50} slidesPerView={1} autoplay={{ delay: 2500 }} className="mySwiper">
+                  {testimonial.cards.map((data, index) => (
+                    <SwiperSlide key={index}>
                       <div className="single__testimonial">
                         <p className="review__content">{data.content}</p>
                         <h6>{data.name}</h6>
                         <p>{data.role}</p>
                       </div>
-                    </div>
+                    </SwiperSlide>
                   ))}
-                </Slider>
+                </Swiper>
               </div>
               <div className="slider__img w-50">
                 <img src={testimonial.imgUrl} alt="" className="w-100" />
