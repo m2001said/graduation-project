@@ -1,9 +1,7 @@
 import React, { useRef } from "react";
 import "./navbar6.css";
-import { Container } from "reactstrap";
 import { useSelector } from "react-redux";
-import logo from "../../../../assets/images/images6/logo.png"
-
+import logo from "../../../../assets/images/images6/logo.png";
 
 const Navbar6 = () => {
   const { navbar } = useSelector((state) => state.template6);
@@ -12,16 +10,16 @@ const Navbar6 = () => {
 
   return (
     <header className="nav-6">
-      <Container>
+      <div className="container mx-auto px-8 py-2">
         <div className="navigation">
           <div className="logo">
-            <div className="d-flex align-items-center gap-1">
-            <img src={logo} alt="" className="design6-logo" />
+            <div className="flex items-center gap-1">
+              <img src={logo} alt="" className="design6-logo" />
             </div>
           </div>
 
           <div className="nav__menu " ref={menuRef}>
-            <div className="nav__list__wrapper d-flex align-items-center gap-5">
+            <div className="nav__list__wrapper flex items-center gap-5">
               <ul className="nav__list">
                 {navbar.links.map((item, index) => (
                   <li className="nav__item" key={index}>
@@ -56,7 +54,7 @@ const Navbar6 = () => {
             </span>
           </div>
         </div>
-      </Container>
+      </div>
     </header>
   );
 };

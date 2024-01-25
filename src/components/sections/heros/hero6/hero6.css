@@ -7,11 +7,8 @@
   margin-top: 30px;
   transition: 0.4s;
 }
-.design-6 .slider__content .btn:hover {
+.design-6 .slider__content .btn:active {
   color: var(--gray);
-}
-.design-6 .slider__content .btn:hover {
-  color: var(--website-6-color-text);
 }
 
 @media only screen and (max-width: 992px) {
