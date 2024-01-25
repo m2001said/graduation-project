@@ -30,7 +30,7 @@ const Testimonials6 = () => {
                 </Swiper>
               </div>
               <div className="slider__img w-50">
-                <img src={testimonial.imgUrl} alt="" className="w-100" />
+                <img src={testimonial.imgUrl} alt="testimonial_image" className="w-100" />
               </div>
             </div>
           </Col>
