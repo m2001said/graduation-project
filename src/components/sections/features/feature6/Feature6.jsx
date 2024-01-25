@@ -8,21 +8,21 @@ const Feature6 = () => {
 
   return (
     <section className="design-6" id="About">
-      <Container>
-        <Row>
-          <Col lg="6" md="6">
-            <img src={feature.imgUrl} alt="" className="w-100" />
-          </Col>
+      <div className="container mx-auto">
+        <div className="row">
+          <div className="col-lg-6 col-md-6">
+            <img src={feature.imgUrl} alt="" className="w-full" />
+          </div>
 
-          <Col lg="6" md="6">
+          <div className="col-lg-6 col-md-6">
+            {" "}
             <div className="choose__content">
               <h4>{feature.title}</h4>
               <h2>{feature.description}</h2>
               <p>{feature.info}</p>
             </div>
-
             <div className="features mt-4">
-              <div className="feature1 d-flex align-items-center gap-5">
+              <div className="feature1 flex items-center gap-5">
                 <div className="single__feature">
                   <span>
                     <img src={feature.cards[0].icon} alt="" className="ico" />
@@ -40,7 +40,7 @@ const Feature6 = () => {
                 </div>
               </div>
 
-              <div className="feature1 mt-3 d-flex align-items-center gap-5">
+              <div className="feature1 mt-3 flex items-center gap-5">
                 <div className="single__feature">
                   <span className="feature__icon-3">
                     <img src={feature.cards[2].icon} alt="" className="ico" />
@@ -58,9 +58,9 @@ const Feature6 = () => {
                 </div>
               </div>
             </div>
-          </Col>
-        </Row>
-      </Container>
+          </div>
+        </div>
+      </div>
     </section>
   );
 };
