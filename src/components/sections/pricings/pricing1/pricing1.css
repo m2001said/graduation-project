@@ -41,13 +41,15 @@
   .pricing1-card1{
     box-shadow: 0px 2px 2px 2px rgba(168, 168, 168, 0.192) 
   }
-  .pricing1-card-title{
+  .pricing1-card0 h3,
+  .pricing1-card1 h3,
+  .pricing1-card2 h3{
    font-size:22px;
    font-weight: 600;
    line-height: 25px;
    color: var( --website-color-3);
-
   }
+
   .pricing1-card0 h1,
   .pricing1-card1 h1,
   .pricing1-card2 h1{
@@ -98,11 +100,14 @@
    font-weight: 600;
    
   }
-  .pricing1-feature {
+  .pricing1-card0 p,
+  .pricing1-card1 p,
+  .pricing1-card2 p {
       align-items: center;
       font-size: 12px;
       margin: 5px;
       margin-top: 20px;
+      color: var(--grey);
     } 
 
     .pricing-card-button0,
