@@ -1,27 +1,18 @@
 import React from "react";
 import "./hero6.css";
-import { Container } from "reactstrap";
-import Slider from "react-slick";
 import { useSelector } from "react-redux";
-
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
 
 const Hero6 = () => {
   const { hero } = useSelector((state) => state.template6);
 
-  const settings = {
-    infinite: true,
-    speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 3000,
-  };
   return (
     <section className="design-6" id="Home">
-      <Container>
-        <Slider {...settings}>
-          {hero.sliderData.map((item) => (
-            <div key={item.id}>
+      <div className="container mx-auto px-8 py-2">
+        <Swiper spaceBetween={50} slidesPerView={1} autoplay={{ delay: 2500 }} className="mySwiper">
+          {hero.sliderData.map((item, index) => (
+            <SwiperSlide key={index}>
               <div className="slider__wrapper d-flex align-items-center justify-content-between pt-5">
                 <div className="slider__content w-50 ps-2">
                   <h2 className="mb-3 ">{item.title}</h2>
@@ -32,10 +23,10 @@ const Hero6 = () => {
                   <img src={item.imgUrl} alt="" className="w-100" />
                 </div>
               </div>
-            </div>
+            </SwiperSlide>
           ))}
-        </Slider>
-      </Container>
+        </Swiper>
+      </div>
     </section>
   );
 };
