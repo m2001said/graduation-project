@@ -1,5 +1,5 @@
 nav {
-  background: rgba(0, 0, 0, 0.3);
+  background: var(--color-2-nav);
   display: block;
   padding: 0.7rem 1.7rem;
   z-index: 2;
@@ -24,11 +24,22 @@ nav a {
   /* width: 50%; */
 }
 nav a:hover {
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: var(--color-2-grey);
 }
 
 nav a.active {
-  background: var(--color-2-bg);
-  color: var(--color-2-white);
+  background: var(--color-2-primary-variant);
   border-radius: 50%;
+}
+
+@media screen and (max-width: 600px) {
+  nav a {
+    padding: 0%;
+  }
+  nav a:hover {
+    background-color: var(--color-2-white);
+  }
+  nav a.active {
+    background: var(--color-2-primary);
+  }
 }

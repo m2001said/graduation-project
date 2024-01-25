@@ -8,7 +8,7 @@ const Navbar2 = () => {
   return (
     <nav>
       {navbar.map((item) => (
-        <a key={item.link} href={`#${item.link}`} onClick={() => setActiveNav(`#${item.url}`)} className={activeNav === `#${item.url}` ? "active" : ""}>
+        <a key={item.url} href={`#${item.url}`} onClick={() => setActiveNav(`#${item.url}`)} className={activeNav === `#${item.url}` ? "active" : ""}>
           <img src={item.imgUrl} alt="" />
 
           {item.url === "home"}

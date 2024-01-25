@@ -5,10 +5,11 @@ const templateSlice2 = createSlice({
     navbar: [
       {
         imgUrl: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1703134252/home-1-svgrepo-com_axgckp.svg",
-        url: "home",
+        url: "hero2",
       },
       {
         imgUrl: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1703134253/info-circle-svgrepo-com_a6q6z3.svg",
+        url: "services2",
       },
       {
         imgUrl: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1703134396/project-svgrepo-com_qjvqow.svg",
