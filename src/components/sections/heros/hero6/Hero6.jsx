@@ -14,14 +14,14 @@ const Hero6 = () => {
         <Swiper modules={[Navigation, Pagination, Autoplay]} spaceBetween={50} slidesPerView={1} autoplay={{ delay: 3000 }} className="mySwiper">
           {hero.sliderData.map((item, index) => (
             <SwiperSlide key={index}>
-              <div className="slider__wrapper d-flex align-items-center justify-content-between pt-5">
-                <div className="slider__content w-50 ps-2">
+              <div className="slider__wrapper flex items-center justify-between pt-5">
+                <div className="slider__content w-1/2 ps-2">
                   <h2 className="mb-3 ">{item.title}</h2>
                   <p>{item.desc}</p>
                   <button className="btn">{hero.buttonText}</button>
                 </div>
-                <div className="slider__img w-50">
-                  <img src={item.imgUrl} alt="" className="w-100" />
+                <div className="slider__img w-1/2">
+                  <img src={item.imgUrl} alt="" className="w-full" />
                 </div>
               </div>
             </SwiperSlide>
