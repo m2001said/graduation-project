@@ -13,18 +13,22 @@
   align-items: center;
   justify-content: center;
   height: 20rem;
+  /* z-index: 1; */
 }
 .scoil-links-f3 {
   display: flex;
   gap: 4rem;
+  z-index: 1;
 }
 .scoil-links-f3 > img {
   width: 2rem;
   height: 2rem;
   cursor: pointer;
+  z-index: 1;
 }
 .logo-f3 > img {
   width: 10rem;
+  z-index: 1;
 }
 .blur-f-1 {
   bottom: 0;

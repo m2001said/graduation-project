@@ -1,7 +1,6 @@
 import React, { useEffect } from "react";
 import "./hero3.css";
 import Navbar3 from "../../navbars/navbar3/Navbar3";
-import NumberCounter from "number-counter";
 import { useSelector } from "react-redux";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -42,21 +41,15 @@ const Hero3 = () => {
         {/* figures */}
         <div className="figures">
           <div>
-            <span>
-              <NumberCounter end={parseInt(hero3.numCounter[0].count1, 10)} start={100} delay="4" preFix="+" />
-            </span>
+            <span>{hero3.numCounter[0].count1}</span>
             <span>{hero3.numCounter[0].descr1}</span>
           </div>
           <div>
-            <span>
-              <NumberCounter end={parseInt(hero3.numCounter[0].count2, 10)} start={800} delay="4" preFix="+" />
-            </span>
+            <span>{hero3.numCounter[0].count2}</span>
             <span>{hero3.numCounter[0].descr2}</span>
           </div>
           <div>
-            <span>
-              <NumberCounter end={parseInt(hero3.numCounter[0].count3, 10)} start={0} delay="4" preFix="+" />
-            </span>
+            <span>{hero3.numCounter[0].count3}</span>
             <span>{hero3.numCounter[0].descr3}</span>
           </div>
         </div>

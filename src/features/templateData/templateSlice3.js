@@ -24,13 +24,13 @@ const templateSlice3 = createSlice({
       description: "In here we will help you to shape and build your ideal body and live up your life to fullest..",
       numCounter: [
         {
-          count1: "140",
+          count1: "+140",
           descr1: "EXPORT COACHS",
 
-          count2: "978",
+          count2: "+978",
           descr2: "MEMBERS JOINED",
 
-          count3: "50",
+          count3: "+50",
           descr3: "FITNESS PROGRAMS",
         },
       ],

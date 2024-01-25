@@ -1,6 +1,8 @@
 .hero3 {
   display: flex;
   justify-content: space-between;
+  position: relative;
+  z-index: 1;
 }
 .left-h {
   padding: 2rem;
@@ -9,11 +11,13 @@
   display: flex;
   gap: 2rem;
   flex-direction: column;
+  z-index: 2;
 }
 .right-h {
   flex: 1;
   position: relative;
   background-color: var(--orange);
+  z-index: 2;
 }
 .the-best-ad {
   margin-top: 4rem;
@@ -187,6 +191,7 @@
   .right-h {
     position: relative;
     background: none;
+    z-index: 1;
   }
   .right-h > button {
     z-index: 2;
@@ -194,14 +199,15 @@
   .hero-image {
     position: relative;
     width: 14rem;
-    left: 8rem;
-    top: 5rem;
-    align-self: center;
-  }
-  .hero-image-back1 {
-    position: absolute;
-    width: 22rem;
-    right: 3rem;
+    left: 3rem;
     top: 8rem;
+    align-self: center;
+    justify-content: center;
+    margin-right: 200px;
+  }
+
+  .hero-image-back1,
+  .hero-image-back2 {
+    display: none;
   }
 }
