@@ -20,11 +20,19 @@
 .menu-icon {
   display: none;
 }
+.menu-icon .bar {
+  font-size: 30px;
+  color: var(--white);
+  background-color: transparent;
+  cursor: pointer;
+  padding-bottom: 80px;
+}
 
 @media (max-width: 768px) {
   .menu-icon {
     display: block;
   }
+
   .h-container {
     padding-bottom: 2rem;
   }
@@ -35,7 +43,7 @@
     font-weight: 500;
     flex-direction: column;
     right: 4rem;
-    top: 3rem;
+    top: 4.5rem;
     background: var(--white);
     display: flex;
     border-radius: 10px;

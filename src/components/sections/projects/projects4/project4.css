@@ -31,7 +31,10 @@
   font-size: 0.7rem;
   width: 15rem;
 }
-
+.r-price .sign {
+  color: var(--orange);
+  padding-right: 2px;
+}
 .r-card:hover {
   scale: 1.025;
   cursor: pointer;
@@ -50,17 +53,17 @@
 .r-buttons button {
   font-size: 1.2rem;
   padding: 0.2rem 0.8rem;
-  color: blue;
+  color: var(--blue);
   border: none;
   border-radius: 5px;
-  background-color: white;
+  background-color: var(--white);
   cursor: pointer;
 }
 .r-buttons > :nth-child(1) {
-  background-color: #eeeeff;
+  background-color: var(--white);
 }
 .r-buttons > :nth-child(2) {
-  box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 0px 5px 1px var(--black);
 }
 /* project4.css */
 .r-card img {

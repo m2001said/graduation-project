@@ -20,10 +20,9 @@
 .mode {
   width: 16rem;
   padding: 1rem;
-  border: 0.8px solid rgba(128, 128, 128, 0.143);
   border-radius: 5px;
   gap: 1rem;
-  transition: all 300ms ease-in;
+  transition: all 200ms ease-in;
 }
 .mode .button {
   width: 100%;
@@ -48,17 +47,17 @@
 
 .mode .button:hover {
   background: var(--blue-gradient);
-  color: white;
+  color: var(--white);
   scale: 0.8;
 }
 .button {
   font-weight: 500;
   padding: 0.6rem 1.4rem;
-  color: white;
+  color: var(--white);
   background: var(--blue-gradient);
   border: none;
   border-radius: 4px;
-  transition: all 300ms ease-in;
+  transition: all 200ms ease-in;
 }
 .button:hover {
   cursor: pointer;

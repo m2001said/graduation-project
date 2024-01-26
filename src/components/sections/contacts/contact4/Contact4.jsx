@@ -1,8 +1,5 @@
 import React from "react";
 import "./contact4.css";
-import { MdCall } from "react-icons/md";
-import { BsFillChatDotsFill } from "react-icons/bs";
-import { HiChatBubbleBottomCenter } from "react-icons/hi2";
 import { useSelector } from "react-redux";
 
 const Contact4 = () => {
@@ -23,7 +20,7 @@ const Contact4 = () => {
               <div className="flexColCenter mode">
                 <div className="flexStart">
                   <div className="flexCenter icon">
-                    <MdCall size={25} />
+                    <span>📞</span> {/* Phone Icon */}
                   </div>
                   <div className="flexColStart detail">
                     <span className="primaryText">{contact4.contacts[0].type}</span>
@@ -36,7 +33,7 @@ const Contact4 = () => {
               <div className="flexColCenter mode">
                 <div className="flexStart">
                   <div className="flexCenter icon">
-                    <BsFillChatDotsFill size={25} />
+                    <span>💬</span> {/* Chat Icon */}
                   </div>
                   <div className="flexColStart detail">
                     <span className="primaryText">{contact4.contacts[1].type}</span>
@@ -52,7 +49,7 @@ const Contact4 = () => {
               <div className="flexColCenter mode">
                 <div className="flexStart">
                   <div className="flexCenter icon">
-                    <BsFillChatDotsFill size={25} />
+                    <span>📞</span>
                   </div>
                   <div className="flexColStart detail">
                     <span className="primaryText">{contact4.contacts[2].type}</span>
@@ -65,7 +62,7 @@ const Contact4 = () => {
               <div className="flexColCenter mode">
                 <div className="flexStart">
                   <div className="flexCenter icon">
-                    <HiChatBubbleBottomCenter size={25} />
+                    <span>💬</span> {/* Chat Icon */}
                   </div>
                   <div className="flexColStart detail">
                     <span className="primaryText">{contact4.contacts[3].type}</span>

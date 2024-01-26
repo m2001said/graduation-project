@@ -22,7 +22,7 @@ const Project4 = () => {
                 <img src={card.image} alt="home" />
 
                 <span className="secondaryText r-price">
-                  <span style={{ color: "orange" }}>$</span>
+                  <span className="sign">$</span>
                   <span>{card.price}</span>
                 </span>
                 <span className="primaryText">{card.name}</span>

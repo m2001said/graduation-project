@@ -1,26 +1,42 @@
 import "./hero4.css";
-import { HiLocationMarker } from "react-icons/hi";
-import CountUp from "react-countup";
-import { motion } from "framer-motion";
+import { useEffect } from "react";
 import { useSelector } from "react-redux";
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 const Hero4 = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      easing: "ease-in-out",
+    });
+
+    const handleResize = () => {
+      // Manually refresh AOS on window resize
+      AOS.refresh();
+    };
+
+    // Refresh AOS on component mount
+    AOS.refresh();
+
+    // Event listener for window resize
+    window.addEventListener("resize", handleResize);
+
+    // Clean up the event listener on component unmount
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
   const { hero4 } = useSelector((state) => state.template4);
+
   return (
-    <section className="hero-wrapper">
+    <section className="hero-wrapper" data-aos="fade-up">
       <div className="paddings innerWidth flexCenter hero-container">
-        <div className="flexColStart hero-left">
+        <div className="flexColStart hero-left" data-aos="fade-right">
           <div className="hero-title">
             <div className="orange-circle" />
-            <motion.h1
-              initial={{ y: "2rem", opacity: 0 }}
-              animate={{ y: 0, opacity: 1 }}
-              transition={{
-                duration: 2,
-                type: "ease-in",
-              }}
-            >
-              {hero4.title}
-            </motion.h1>
+            <h1>{hero4.title}</h1>
           </div>
           <div className="flexColStart secondaryText flexhero-des">
             <span>{hero4.description1}</span>
@@ -28,7 +44,7 @@ const Hero4 = () => {
           </div>
 
           <div className="flexCenter search-bar">
-            <HiLocationMarker color="var(--blue)" size={25} />
+            {/* <HiLocationMarker color="var(--blue)" size={25} /> */}
             <input type="text" />
             <button className="button">{hero4.buttonText}</button>
           </div>
@@ -36,21 +52,21 @@ const Hero4 = () => {
           <div className="flexCenter stats">
             <div className="flexColCenter stat">
               <span>
-                <CountUp start={hero4.stats[0].start} end={hero4.stats[0].end} duration={hero4.duration} /> <span>{hero4.icon}</span>
+                {hero4.stats[0].end} <span>{hero4.icon}</span>
               </span>
               <span className="secondaryText">{hero4.stats[0].title}</span>
             </div>
 
             <div className="flexColCenter stat">
               <span>
-                <CountUp start={hero4.stats[1].start} end={hero4.stats[1].end} duration={hero4.duration} /> <span>{hero4.icon}</span>
+                {hero4.stats[1].end} <span>{hero4.icon}</span>
               </span>
               <span className="secondaryText">{hero4.stats[1].title}</span>
             </div>
 
             <div className="flexColCenter stat">
               <span>
-                <CountUp end={hero4.stats[2].end} /> <span>+</span>
+                {hero4.stats[2].end} <span>{hero4.icon}</span>
               </span>
               <span className="secondaryText">{hero4.stats[2].title}</span>
             </div>
@@ -59,17 +75,9 @@ const Hero4 = () => {
 
         {/* right side */}
         <div className="flexCenter hero-right">
-          <motion.div
-            initial={{ x: "7rem", opacity: 0 }}
-            animate={{ x: 0, opacity: 1 }}
-            transition={{
-              duration: 2,
-              type: "ease-in",
-            }}
-            className="image-container"
-          >
+          <div className="image-container">
             <img src={hero4.imgUrl} alt="houses" />
-          </motion.div>
+          </div>
         </div>
       </div>
     </section>
