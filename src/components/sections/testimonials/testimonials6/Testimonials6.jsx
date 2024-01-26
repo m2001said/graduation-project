@@ -26,8 +26,8 @@ const Testimonials6 = () => {
               ))}
             </Swiper>
           </div>
-          <div className="slider__img md:w-1/2">
-            <img src={testimonial.imgUrl} alt="testimonial_image" className="w-full" />
+          <div className="slider__img md:w-1/2 flex justify-center">
+            <img src={testimonial.imgUrl} alt="testimonial_image" className="w-1/2" />
           </div>
         </div>
       </div>
