@@ -28,57 +28,58 @@
 }
 430C7B , 30086B,CE79CC,FDC2B8
 */
-@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
-:root{
-  --color-1:#430C7B;
-  --color-2:#30086B;
-  --color-3:#CE79CC;
-  --color-4:#FDC2B8;
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap");
+:root {
+  --color-1: #430c7b;
+  --color-2: #30086b;
+  --color-3: #ce79cc;
+  --color-4: #fdc2b8;
 }
-.main-header{
-  background:var(--color-1) ;
+.main-header {
+  background: var(--color-1);
   font-family: "Source Code Pro", monospace;
   letter-spacing: -1px;
 }
-.main-logo{
+.main-logo {
   color: #fff;
   font-size: 30px;
-  img{
+  img {
     width: 50px;
   }
 }
-.signIn-btn{
+.signIn-btn {
   color: white;
   background-color: var(--color-3);
   padding: 5px 10px;
   border-radius: 5px;
 }
-.hero-section .info-title{
+.hero-section .info-title {
   color: white;
   font-weight: 500;
-  font-size: 37px;
+  font-size: 1.3em;
   text-transform: capitalize;
 }
-.hero-section .info-description{
+.hero-section .info-description {
   color: rgb(235 235 235 / 91%);
 }
-.hero-section .info-btn{
+.hero-section .info-btn {
   width: fit-content;
   color: white;
   padding: 8px;
   border-radius: 5px;
-  background: linear-gradient(to right ,var(--color-3),var(--color-2),var(--color-1));
+  background: linear-gradient(to right, var(--color-3), var(--color-2), var(--color-1));
 }
-.info-btn,.signIn-btn{
+.info-btn,
+.signIn-btn {
   cursor: pointer;
 }
-.main-hero-image{
+.main-hero-image {
   position: relative;
   width: 45%;
   flex-shrink: 0;
 }
 @media (max-width: 768px) {
   .main-hero-image {
-    display: none; 
-   }
+    display: none;
+  }
 }
