@@ -1,6 +1,5 @@
 import React from "react";
 import "./feature6.css";
-import { Container, Row, Col } from "reactstrap";
 import { useSelector } from "react-redux";
 
 const Feature6 = () => {
@@ -8,14 +7,15 @@ const Feature6 = () => {
 
   return (
     <section className="design-6" id="About">
-      <div className="container mx-auto">
-        <div className="row">
-          <div className="col-lg-6 col-md-6">
-            <img src={feature.imgUrl} alt="" className="w-full" />
+      <div className="container mx-auto px-4">
+      <div className="flex flex-wrap -mx-4">
+        <div className="w-full lg:w-1/2 md:w-1/2 px-4">
+            <img src={feature.imgUrl} alt="" className="w-full"/>
           </div>
 
-          <div className="col-lg-6 col-md-6">
-            {" "}
+
+          <div className="w-full lg:w-1/2 md:w-1/2 px-4">
+                   {" "}
             <div className="choose__content">
               <h4>{feature.title}</h4>
               <h2>{feature.description}</h2>

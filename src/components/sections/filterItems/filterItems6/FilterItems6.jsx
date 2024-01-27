@@ -1,12 +1,10 @@
 import "./filterItems6.css";
 import React, { useState, useEffect } from "react";
-import { Container, Row, Col } from "reactstrap";
 import ProductCard from "../../CartItems/cartItems6/product-card/ProductCard";
 import { useSelector } from "react-redux";
 
-
 const FilterItems6 = () => {
-  const { fastFoodProducts,riceMenuProducts, pizzaProducts, dessertProducts, coffeeProducts  } = useSelector((state) => state.template6.FilterItems);
+  const { fastFoodProducts, riceMenuProducts, pizzaProducts, dessertProducts, coffeeProducts } = useSelector((state) => state.template6.FilterItems);
 
   const [filter, setFilter] = useState("RICE-MENU");
   const [products, setProducts] = useState(riceMenuProducts);
@@ -34,12 +32,12 @@ const FilterItems6 = () => {
 
   return (
     <section className="design-6" id="Recipes">
-      <Container>
-        <Row>
-          <Col lg="12" className="text-center mb-4">
+      <div className="container mx-auto px-4">
+        <div className="flex flex-wrap">
+          <div className="text-center w-full mb-4">
             <h3 className="menu__title">Our Menu Pack</h3>
-          </Col>
-          <Col lg="12" className="text-center mb-5">
+          </div>
+          <div className="text-center w-full mb-5">
             <button className={`filter-btn ${filter === "FAST-FOOD" ? "active__btn" : ""}`} onClick={() => setFilter("FAST-FOOD")}>
               Fast Food
             </button>
@@ -55,16 +53,16 @@ const FilterItems6 = () => {
             <button className={`filter-btn ${filter === "COFFEE" ? "active__btn" : ""}`} onClick={() => setFilter("COFFEE")}>
               Coffee
             </button>
-          </Col>
+          </div>
 
           {products.map((item) => (
-            <Col lg="3" md="4" sm="6" xs="6" key={item.id} className="mb-4">
+            <div key={item.id} className="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 p-2  mb-4">
               {" "}
               <ProductCard item={item} />
-            </Col>
+            </div>
           ))}
-        </Row>
-      </Container>
+        </div>
+      </div>
     </section>
   );
 };

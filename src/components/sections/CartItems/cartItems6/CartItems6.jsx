@@ -1,27 +1,25 @@
 import React from "react";
-import { Container, Row, Col } from "reactstrap";
 import ProductCard from "./product-card/ProductCard";
 import "./cartItems6.css";
 import { useSelector } from "react-redux";
-
 
 const CartItems6 = () => {
   const { CartItems } = useSelector((state) => state.template6);
 
   return (
     <section className="pt-0 design-6" id="Menu">
-      <Container>
-        <Row>
-          <Col lg="12" className="mb-5">
+      <div className="container mx-auto px-4">
+        <div className="flex flex-wrap mx-4">
+          <div className="w-full mb-5">
             <h2 className="popular__menu-title">{CartItems.Title}</h2>
-          </Col>
+          </div>
           {CartItems.popularMenuFood.map((item) => (
-            <Col lg="3" md="4" sm="6" xs="6" className="mb-4" key={item.id}>
+            <div className="w-full sm:w-1/2 md:w-1/2 lg:w-1/3 xl:w-1/4 mb-4 p-2" key={item.id}>
               <ProductCard item={item} />
-            </Col>
+            </div>
           ))}
-        </Row>
-      </Container>
+        </div>
+      </div>
     </section>
   );
 };

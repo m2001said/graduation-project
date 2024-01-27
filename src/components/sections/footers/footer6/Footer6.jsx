@@ -1,6 +1,5 @@
 import React from "react";
 import "./footer6.css";
-import { Container, Row, Col, ListGroup, ListGroupItem } from "reactstrap";
 import { useSelector } from "react-redux";
 import logo from "../../../../assets/images/images6/logo.png";
 
@@ -10,7 +9,7 @@ const Footer6 = () => {
   return (
     <footer className="footer6">
       <div className="footer__top">
-        <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+        <div className="container mx-auto px-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
           <div className="logo">
             <div className=" d-flex align-items-center gap-1 mb-4">
               <img src={logo} alt="" className="design6-logo" />

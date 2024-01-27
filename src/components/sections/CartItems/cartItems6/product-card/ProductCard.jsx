@@ -10,7 +10,7 @@ const ProductCard = (props) => {
   return (
     <div className="single__product">
       <div className="product__img">
-        <img src={imgUrl} alt="" className="w-100" />
+        <img src={imgUrl} alt="" className="w-full" />
       </div>
 
       <div className="product__content">
@@ -24,8 +24,8 @@ const ProductCard = (props) => {
 
         <h6>{title}</h6>
 
-        <div className=" d-flex align-items-center justify-content-between">
-          <span className="price d-flex align-items-center">
+        <div className=" flex items-center justify-between">
+          <span className="price flex items-center">
             {" "}
             Price: $<span>{price}</span>
           </span>

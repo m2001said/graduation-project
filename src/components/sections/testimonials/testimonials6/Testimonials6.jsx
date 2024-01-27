@@ -10,7 +10,7 @@ const Testimonials6 = () => {
 
   return (
     <section className="design-6">
-      <div className="container mx-auto">
+      <div className="container mx-auto px-4">
         <div className="md:flex md:items-center">
           <div className="md:w-1/2">
             <h2 className="mb-4 ps-3">{testimonial.title}</h2>

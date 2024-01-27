@@ -10,7 +10,7 @@ const Hero6 = () => {
 
   return (
     <section className="design-6" id="Home">
-      <div className="container mx-auto px-8 py-2">
+      <div className="container mx-auto px-4 py-2">
         <Swiper modules={[Navigation, Pagination, Autoplay]} spaceBetween={50} slidesPerView={1} autoplay={{ delay: 3000 }} className="mySwiper">
           {hero.sliderData.map((item, index) => (
             <SwiperSlide key={index}>
