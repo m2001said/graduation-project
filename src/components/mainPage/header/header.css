@@ -53,9 +53,6 @@
   padding: 5px 10px;
   border-radius: 5px;
 }
-.hero-section{
-  height: 70vh;
-}
 .hero-section .info-title{
   color: white;
   font-weight: 500;
@@ -63,7 +60,7 @@
   text-transform: capitalize;
 }
 .hero-section .info-description{
-  color: rgb(194, 194, 194);
+  color: rgb(235 235 235 / 91%);
 }
 .hero-section .info-btn{
   width: fit-content;
