@@ -1,0 +1,38 @@
+.design-6 .slider__content .btn {
+  padding: 7px 25px;
+  border-radius: 5px;
+  background: var(--website-6-color-2-dark);
+  color: var(--white);
+  font-size: 0.9rem;
+  margin-top: 30px;
+  transition: 0.4s;
+}
+.design-6 .slider__content .btn:active {
+  color: var(--gray);
+}
+
+@media only screen and (max-width: 992px) {
+  .design-6 .slider__content h2 {
+    font-size: 1.5rem;
+  }
+
+  .design-6 .slider__content p {
+    font-size: 0.8rem;
+  }
+
+  .design-6 .slider__content .btn {
+    padding: 5px 20px;
+    font-size: 0.7rem;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .design-6 .slider__content {
+    padding-left: 0;
+  }
+
+  .design-6 .slick-prev,
+  .design-6 .slick-next {
+    display: none !important;
+  }
+}

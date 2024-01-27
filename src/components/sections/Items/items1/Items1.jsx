@@ -1,8 +1,10 @@
 import React from "react";
 import "./items1.css";
-import { useSelector } from "react-redux";
+import {useSelector} from 'react-redux'
 
-const Articles = () => {
+
+
+const Items1 = () => {
   const { items } = useSelector((state) => state.template);
 
   return (
@@ -36,4 +38,4 @@ const Articles = () => {
   );
 };
 
-export default Articles;
+export default Items1;
