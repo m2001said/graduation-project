@@ -69,6 +69,9 @@
   border-radius: 5px;
   background: linear-gradient(to right ,var(--color-3),var(--color-2),var(--color-1));
 }
+.info-btn,.signIn-btn{
+  cursor: pointer;
+}
 .main-hero-image{
   position: relative;
   width: 45%;
