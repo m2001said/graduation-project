@@ -114,7 +114,7 @@ a:hover {
     width: var(--container2-width-md);
   }
   section {
-    margin-top: 6rem;
+    /* margin-top: 1rem; */
   }
 }
 /******************************** Media Query for "phones"     *** *** **** * * ***/
