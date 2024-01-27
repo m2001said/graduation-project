@@ -1,3 +1,7 @@
+#services2 h5 {
+  padding-top: 2.1rem;
+}
+
 .services__container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);

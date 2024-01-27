@@ -27,7 +27,7 @@ const Hero2 = () => {
             ))}
           </div>
           <p>{hero.description}</p>
-          <a href="#contactUs2" className="btn btn-primary">
+          <a href="#contactUs2" className="btn btn-letstalk">
             Let's Talk
           </a>
         </div>
