@@ -1,6 +1,6 @@
 import React from "react";
 import "./product-card.css";
-import star from "../../../../../assets/images/images6/star-s-fill.svg";
+import star from "https://res.cloudinary.com/duc04fwdb/image/upload/v1706352872/jammal_photos/v02eynmgkqv3wkrbhnda.svg";
 import { useSelector } from "react-redux";
 
 const ProductCard = (props) => {

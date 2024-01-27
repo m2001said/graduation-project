@@ -1,7 +1,6 @@
 import React from "react";
 import "./footer6.css";
 import { useSelector } from "react-redux";
-import logo from "../../../../assets/images/images6/logo.png";
 
 const Footer6 = () => {
   const { footer } = useSelector((state) => state.template6);
@@ -12,7 +11,7 @@ const Footer6 = () => {
         <div className="container mx-auto px-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
           <div className="logo">
             <div className=" d-flex align-items-center gap-1 mb-4">
-              <img src={logo} alt="" className="design6-logo" />
+              <img src={footer.logo} alt="" className="design6-logo" />
             </div>
             <p>{footer.description}</p>
           </div>

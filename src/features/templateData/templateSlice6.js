@@ -2,7 +2,7 @@ import { createSlice } from "@reduxjs/toolkit";
 const templateSlice6 = createSlice({
   initialState: {
     navbar: {
-      logo: "https://res.cloudinary.com/duc04fwdb/image/upload/v1705928957/jammal_photos/nukabq5r1fuobg8yo1a8.png",
+      logo: "https://res.cloudinary.com/duc04fwdb/image/upload/v1706351943/jammal_photos/jicfizb2xdqr8hcgkmc4.png",
       imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703095423/jammal_photos/x22ihnvjg9i0i40xtbo5.svg",
       searchIcon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703095771/jammal_photos/kedw9coptwqkovrsssd1.svg",
       shoppingIcon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703095842/jammal_photos/gehvutbyftfxemvoqmu8.svg",
@@ -384,7 +384,7 @@ const templateSlice6 = createSlice({
       },
     },
     footer: {
-      logo: "https://res.cloudinary.com/duc04fwdb/image/upload/v1705928957/jammal_photos/nukabq5r1fuobg8yo1a8.png",
+      logo: "https://res.cloudinary.com/duc04fwdb/image/upload/v1706351943/jammal_photos/jicfizb2xdqr8hcgkmc4.png",
       imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703095423/jammal_photos/x22ihnvjg9i0i40xtbo5.svg",
       description: "It is a long established fact that a reader will be distracted lookings.",
       copyright: "copyright 2022, developed by ana. All rights reserved",
