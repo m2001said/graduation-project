@@ -6,7 +6,7 @@ const MainPage = () => {
   return (
     <>
       <Header />
-      {/* <Steps /> */}
+      <Steps />
     </>
   );
 };
