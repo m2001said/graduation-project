@@ -23,6 +23,8 @@
     height: 30px;
     width: 30px;
     background: var(--color-2);
+    outline: solid 1px var(--color-2);
+    outline-offset: 1px;
     color: whitesmoke;
     display: flex;
     justify-content: center;

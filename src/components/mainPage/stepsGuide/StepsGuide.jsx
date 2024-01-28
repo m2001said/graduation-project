@@ -14,19 +14,20 @@ const stepsData = [
   },
   {
     title: "Choose Your Design",
-    description: `Tailor your website with two design ,
-      Blank Page: Begin with a blank canvas, selecting sections from our diverse range of designs.
-      AI-Generated: Pick a design, and let our AI generate text and suitable images for you.`,
-    imageUrl: ai,
-  },
-  {
-    title: "Ai generator",
-    description: " Select any design you like and let our AI generate the texts and suitable images for you.",
+    description: `
+Personalize your website with two design options. Blank Page: Start from scratch, choosing from our wide array of designs. AI-Generated: Select a design and let our AI create text and appropriate images for you. Enjoy the flexibility and creativity of our design choices.`,
     imageUrl: ways,
   },
   {
+    title: "Ai generator",
+    description:
+      " Select your preferred design and let our AI do the rest. It will generate relevant text and choose suitable images based on your selection. Our AI ensures the content aligns with your design and purpose. Enjoy the convenience of our reliable AI generator for your content needs. Remember, clear instructions yield the best results.",
+    imageUrl: ai,
+  },
+  {
     title: "Revise Your Data",
-    description: "Revise all your texts, change what you need, then save it and deploy it.",
+    description:
+      "Feel free to review and modify your texts as needed. Once you’re satisfied, save your changes. The revised content is now ready for deployment. Remember, your data is in your control. Make the most of it! ",
     imageUrl: deploy,
   },
 ];
