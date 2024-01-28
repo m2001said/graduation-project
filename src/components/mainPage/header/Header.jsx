@@ -1,5 +1,5 @@
 import React from "react";
-import "./header.css";
+import "../header/header.css";
 import logo from "../../../assets/images/mainPageAssets/logo.svg";
 import hero from "../../../assets/images/mainPageAssets/hero.svg";
 const Header = () => {
@@ -13,7 +13,7 @@ const Header = () => {
           </div>
           <div className="signIn-btn">Sign In</div>
         </div>
-        <div className="hero-section flex gap-5 justify-between items-center py-8">
+        <div className="info-section flex gap-5 justify-between items-center py-8">
           <div className="hero-info">
             <div className="info-title">welcome to ZWEB where your websites dreams take flight with ai    </div>
             <div className="info-description my-6">

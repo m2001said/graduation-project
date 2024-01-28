@@ -1,12 +1,12 @@
 import React from "react";
 import Header from "../components/mainPage/header/Header.jsx";
-import Hero from "../components/mainPage/hero/Hero.jsx";
+import Steps from "../components/mainPage/stepsGuide/StepsGuide.jsx";
 
 const MainPage = () => {
   return (
     <>
       <Header />
-      {/* <Hero /> */}
+      {/* <Steps /> */}
     </>
   );
 };
