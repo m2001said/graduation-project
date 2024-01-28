@@ -8,7 +8,8 @@ import deploy from "../../../assets/images/mainPageAssets/deploy.svg";
 const stepsData = [
   {
     title: "Sign In",
-    description: "Start by signing in to create your free website page. Your page is accessible anytime.",
+    description:
+      "To embark on your website creation journey, sign in to unlock the potential of crafting your own personalized web space. This process is your gateway to a free website page that remains at your fingertips, offering the flexibility to make modifications and deploy updates whenever inspiration strikes.",
     imageUrl: signin,
   },
   {
