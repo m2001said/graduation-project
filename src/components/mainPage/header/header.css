@@ -36,7 +36,6 @@
   border-radius: 5px;
   transition: var(--transition);
   box-sizing: 0 0 2px #1111113f;
-  user-select: none;
 }
 .signIn-btn:active {
   transform: scale(0.95);
@@ -66,12 +65,14 @@
   background-size: 266px;
   background-position-x: -67px;
 }
+.main-header .info-btn,
+.main-header .signIn-btn,
+.main-header .main-logo {
+  user-select: none;
+  cursor: pointer;
+}
 .info-section .info-btn:hover {
   background-position-x: 0px;
-}
-.info-btn,
-.signIn-btn {
-  cursor: pointer;
 }
 .main-hero-image {
   position: relative;
