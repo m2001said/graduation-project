@@ -2,7 +2,7 @@ import { Route, Routes } from "react-router";
 import Dashboard from "./pages/Dashboard";
 import MainPage from "./pages/MainPage";
 import TrialDesign1 from "./pages/TrialDesign1";
-// import TrialDesign2 from "./pages/TrialDesign2";
+import TrialDesign2 from "./pages/TrialDesign2";
 import TrialDesign3 from "./pages/TrialDesign3";
 import TrialDesign4 from "./pages/TrialDesign4";
 import TrialDesign5 from "./pages/TrialDesign5";
