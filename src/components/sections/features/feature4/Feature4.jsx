@@ -1,11 +1,15 @@
 import React, { useState } from "react";
-import { Accordion, AccordionItem, AccordionItemHeading, AccordionItemButton, AccordionItemPanel } from "react-accessible-accordion";
-import "react-accessible-accordion/dist/fancy-example.css";
 import "./feature4.css";
 import { useSelector } from "react-redux";
 
 const Feature4 = () => {
   const { feature4 } = useSelector((state) => state.template4);
+
+  const [expandedIndex, setExpandedIndex] = useState(null);
+
+  const handleAccordionState = (index) => {
+    setExpandedIndex((prevIndex) => (prevIndex === index ? null : index));
+  };
 
   return (
     <section id="value" className="v-wrapper">
@@ -29,31 +33,24 @@ const Feature4 = () => {
             {feature4.description2}
           </span>
 
-          <Accordion className="accordion" allowMultipleExpanded={false} preExpanded={[0]}>
-            {feature4.data.map((item, i) => {
-              // eslint-disable-next-line react-hooks/rules-of-hooks
-              const [className, setClassName] = useState(null);
-
-              const handleAccordionState = () => {
-                setClassName((prevClassName) => (prevClassName === "collapsed" ? "expanded" : "collapsed"));
-              };
-
-              return (
-                <AccordionItem className={`accordionItem ${className}`} uuid={i} key={i}>
-                  <AccordionItemHeading>
-                    <AccordionItemButton className="flexCenter accordionButton" onClick={handleAccordionState}>
-                      <div className="flexCenter icon">✔</div>
-                      <span className="primaryText">{feature4.data.heading}</span>
-                      <div className="flexCenter icon">🔻</div>
-                    </AccordionItemButton>
-                  </AccordionItemHeading>
-                  <AccordionItemPanel>
-                    <p className="secondaryText">{feature4.data[i].detail}</p>
-                  </AccordionItemPanel>
-                </AccordionItem>
-              );
-            })}
-          </Accordion>
+          <div className="accordion">
+            {feature4.data.map((item, i) => (
+              <div className={`accordionItem ${expandedIndex === i ? "expanded" : "collapsed"}`} key={i}>
+                <div className="accordionItemHeading">
+                  <button className="flexCenter accordionButton" onClick={() => handleAccordionState(i)}>
+                    <div className="flexCenter icon">✔</div>
+                    <span className="primaryText">{item.heading}</span>
+                    <div className="flexCenter icon">{expandedIndex === i ? "🔺" : "🔻"}</div>
+                  </button>
+                </div>
+                {expandedIndex === i && (
+                  <div className="accordionItemPanel">
+                    <p className="secondaryText">{item.detail}</p>
+                  </div>
+                )}
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </section>
