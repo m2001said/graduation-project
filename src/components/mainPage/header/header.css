@@ -36,7 +36,7 @@
   color: #f1f1f1;
 }
 .info-section {
-  height: 90vh;
+  height: 85vh;
 }
 .info-section .info-title {
   color: white;
@@ -55,6 +55,12 @@
   padding: 8px;
   border-radius: 5px;
   background: linear-gradient(to right, var(--color-3), var(--color-2), var(--color-1));
+  transition: var(--transition);
+  background-size: 266px;
+  background-position-x: -67px;
+}
+.info-section .info-btn:hover {
+  background-position-x: 0px;
 }
 .info-btn,
 .signIn-btn {
