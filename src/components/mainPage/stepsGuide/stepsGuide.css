@@ -3,16 +3,37 @@
   position: relative;
   &::after {
     content: "";
-    height: calc(100% - 40px);
+    height: calc(100% - 95px);
     position: absolute;
-    top: 20px;
+    top: 75px;
     left: 50%;
     transform: translateX(-50%);
-    border: dashed 1px black;
+    border: dashed 1px var(--color-1);
   }
 }
 .main-steps .step-card {
   position: relative;
+  counter-increment: stepcounter;
+  margin-block: 55px;
+  &:nth-child(odd) {
+    flex-direction: row-reverse;
+  }
+  &::before {
+    content: counter(stepcounter);
+    height: 30px;
+    width: 30px;
+    background: var(--color-2);
+    color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
 }
 .main-steps .step-img,
 .main-steps .step-info {

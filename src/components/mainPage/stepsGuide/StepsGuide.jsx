@@ -1,12 +1,15 @@
 import React from "react";
 import "./stepsGuide.css";
 import ai from "../../../assets/images/mainPageAssets/ai.svg";
+import signin from "../../../assets/images/mainPageAssets/signin.svg";
+import ways from "../../../assets/images/mainPageAssets/ways.svg";
+import deploy from "../../../assets/images/mainPageAssets/deploy.svg";
 
 const stepsData = [
   {
     title: "Sign In",
     description: "Start by signing in to create your free website page. Your page is accessible anytime.",
-    imageUrl: ai,
+    imageUrl: signin,
   },
   {
     title: "Choose Your Design",
@@ -18,12 +21,12 @@ const stepsData = [
   {
     title: "Ai generator",
     description: " Select any design you like and let our AI generate the texts and suitable images for you.",
-    imageUrl: ai,
+    imageUrl: ways,
   },
   {
     title: "Revise Your Data",
     description: "Revise all your texts, change what you need, then save it and deploy it.",
-    imageUrl: ai,
+    imageUrl: deploy,
   },
 ];
 
