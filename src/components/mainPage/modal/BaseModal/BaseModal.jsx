@@ -12,7 +12,7 @@ const BaseModal = ({ poster, children }) => {
 
   return (
     <div className={`modal-overlay  ${modalClass} `}>
-      <div className={`modal ${modalClass} flex justify-between gap-2 items-center`}>
+      <div className={`Basemodal ${modalClass} flex justify-between gap-2 items-center`}>
         <div className="modal-head flex px-4 py-4 items-center justify-between">
           <span>logo</span>
           <button onClick={onClose} className="modal-closeBtn">

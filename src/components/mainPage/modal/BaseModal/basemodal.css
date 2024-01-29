@@ -1,3 +1,11 @@
+:root {
+  --color-1: #430c7b;
+  --color-2: #30086b;
+  --color-3: #ce79cc;
+  --color-4: #fdc2b8;
+  --color-5: #6b3974;
+  --transition: 0.4s;
+}
 .modal-overlay {
   position: fixed;
   top: 0;
@@ -17,14 +25,16 @@
 .modal-overlay.closed {
   display: none;
 }
-.modal {
-  position: relative;
-  background: #fff;
-  padding: 20px;
+.Basemodal {
+  background: #ffffff;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-  border-radius: 5px;
-  width: 80%;
+  border-radius: 0px;
+  height: 450px;
+  max-width: 750px;
+  position: relative;
+  width: 85%;
   z-index: 20;
+  overflow: hidden;
 }
 
 .modal-head {
@@ -47,9 +57,10 @@ input {
 .modal-poster,
 .modal-content {
   width: 50%;
+  height: 100%;
 }
 .modal-poster {
-  background: #fff;
+  background: var(--color-5);
 }
 .modal-poster img {
   width: 50%;
