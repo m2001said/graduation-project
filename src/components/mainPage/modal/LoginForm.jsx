@@ -11,7 +11,7 @@ const LoginForm = ({ toggleForm }) => (
       <div className="message-error"></div>
       <button className="form-button">تسجيل الدخول</button>
       <div className="sub-button">
-        <span>ليس لديك حساب؟</span>
+        <span> ليس لديك حساب؟ </span>
         <button onClick={toggleForm}>انشاء الحساب</button>
       </div>
     </div>

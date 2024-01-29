@@ -16,7 +16,7 @@ const Header = () => {
 
   const [showModal, setshowModal] = useState(false);
   const toggleModal = () => {
-    setIsLogin(!showModal);
+    setshowModal(!showModal);
   };
   return (
     <header className="main-header">
@@ -44,7 +44,13 @@ const Header = () => {
           </div>
         </div>
       </div>
-      {showModal ? <BaseModal poster={posterImage}>{isLogin ? <LoginForm toggleForm={toggleForm} /> : <SignUpForm toggleForm={toggleForm} />}</BaseModal> : ""}
+      {showModal ? (
+        <BaseModal poster={posterImage} toggleModal={toggleModal}>
+          {isLogin ? <LoginForm toggleForm={toggleForm} /> : <SignUpForm toggleForm={toggleForm} />}
+        </BaseModal>
+      ) : (
+        ""
+      )}
     </header>
   );
 };

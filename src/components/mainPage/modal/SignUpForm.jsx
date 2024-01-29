@@ -11,7 +11,7 @@ const SignUpForm = ({ toggleForm }) => (
       <div className="message-error"></div>
       <button className="form-button">انشاء الحساب</button>
       <div className="sub-button">
-        <span>لديك حساب بالفعل ؟</span>
+        <span> لديك حساب بالفعل ؟ </span>
         <button onClick={toggleForm}>تسجيل الدخول</button>
       </div>
     </div>

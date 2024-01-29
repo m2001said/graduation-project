@@ -62,16 +62,13 @@
   height: 100%;
 }
 .modal-poster {
-  background: var(--modal-button);
+  background: var(--color-5);
 }
 @media (max-width: 768px) {
   .modal-poster {
     display: none !important;
   }
-  .modal-content {
-    width: 80%;
-    max-width: 330px;
-  }
+
   .Basemodal {
     max-width: 400px;
   }
@@ -82,15 +79,14 @@
 .modal-poster img {
   width: 60%;
 }
-/*content of modal*/
-
-.modal-content {
-  padding: 15px;
-  padding-top: 70px;
-}
 
 /* content for sign-in & log-in*/
 .modal-content {
+  margin: auto;
+  padding: 15px;
+  padding-top: 70px;
+  width: 85%;
+  max-width: 330px;
   flex-direction: column;
   direction: rtl;
   h1 {
