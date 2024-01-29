@@ -1,9 +1,23 @@
-import React from "react";
+import React, { useState } from "react";
 import "./header.css";
 import logo from "../../../assets/images/mainPageAssets/logo.svg";
 import hero from "../../../assets/images/mainPageAssets/hero.svg";
+import posterImage from "../../../assets/images/mainPageAssets/signin.svg";
+import BaseModal from "../modal/BaseModal/BaseModal.jsx";
+import LoginForm from "../modal/LoginForm.jsx";
+import SignUpForm from "../modal/SignUpForm.jsx";
 
 const Header = () => {
+  const [isLogin, setIsLogin] = useState(false);
+
+  const toggleForm = () => {
+    setIsLogin(!isLogin);
+  };
+
+  const [showModal, setshowModal] = useState(false);
+  const toggleModal = () => {
+    setIsLogin(!showModal);
+  };
   return (
     <header className="main-header">
       <div className="container mx-auto px-4">
@@ -12,7 +26,9 @@ const Header = () => {
             <img src={logo} alt="" />
             <span>WEB</span>
           </div>
-          <div className="signIn-btn">Sign In</div>
+          <button className="signIn-btn" onClick={toggleModal}>
+            Sign In
+          </button>
         </div>
         <div className="info-section flex gap-5 justify-between items-center py-8">
           <div className="hero-info">
@@ -28,6 +44,7 @@ const Header = () => {
           </div>
         </div>
       </div>
+      {showModal ? <BaseModal poster={posterImage}>{isLogin ? <LoginForm toggleForm={toggleForm} /> : <SignUpForm toggleForm={toggleForm} />}</BaseModal> : ""}
     </header>
   );
 };
