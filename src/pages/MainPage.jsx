@@ -19,7 +19,7 @@ const MainPage = () => {
           <label htmlFor="newPassword">الرقم السري</label>
           <input type="password" id="newPassword" />
           <div className="message-error"></div>
-          <button>انشاء حساب</button>
+          <button className="form-button">انشاء الحساب</button>
           <div className="sub-button">
             <span>لديك حساب بالفعل ؟</span>
             <button>تسجيل الدخول</button>
