@@ -3,7 +3,7 @@ import "./modal.css";
 import signinPoster from "../../../assets/images/mainPageAssets/proj-05.svg";
 import loginPoster from "../../../assets/images/mainPageAssets/proj-01.svg";
 import aiformPoster from "../../../assets/images/mainPageAssets/proj-08.svg";
-
+import Confetti from "../congrats/Confetti"
 const modalData = {
   signin: {
     poster: signinPoster,
@@ -39,6 +39,7 @@ const Modal = ({ type }) => {
   return (
     <div className="overlay">
       <div className="modal">
+        <Confetti></Confetti>
         {modalType === "sign-in" && (
           <>
             <img src={modalData.signin.poster} alt="Modal Poster" />
