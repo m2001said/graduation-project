@@ -8,13 +8,14 @@ const BaseModal = ({ poster, children, toggleModal }) => {
 
   const onClose = () => {
     toggleModal();
+    setIsOpen(false);
   };
 
   let modalClass = isOpen ? "open" : "closed";
 
   return (
     <div className={`modal-overlay  ${modalClass} `}>
-      <div className={`Basemodal ${modalClass} flex justify-between  gap-2 items-center`}>
+      <div className={`Basemodal flex justify-between  gap-2 items-center`}>
         <div className="modal-head flex px-4 py-4 justify-between">
           <div className="main-logo flex items-center">
             <img src={logo} alt="" />
@@ -24,7 +25,6 @@ const BaseModal = ({ poster, children, toggleModal }) => {
             <img src={close} />
           </button>
         </div>
-
         <div className="modal-poster flex justify-center items-center">
           <img src={poster} alt="" />
         </div>
