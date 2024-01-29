@@ -2,8 +2,6 @@ import React from "react";
 import "./header.css";
 import logo from "../../../assets/images/mainPageAssets/logo.svg";
 import hero from "../../../assets/images/mainPageAssets/hero.svg";
-import Modal from "../modal/Modal";
-
 
 const Header = () => {
   return (
@@ -30,7 +28,6 @@ const Header = () => {
           </div>
         </div>
       </div>
-      {/* <Modal type={"sign-in"} posterImage={logo}></Modal> */}
     </header>
   );
 };

@@ -4,6 +4,7 @@
   --color-3: #ce79cc;
   --color-4: #fdc2b8;
   --color-5: #6b3974;
+  --modal-button: #19204a;
   --transition: 0.4s;
 }
 .modal-overlay {
@@ -36,24 +37,27 @@
   z-index: 20;
   overflow: hidden;
 }
-
+/*head of modal*/
 .modal-head {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
 }
-
-h2 {
-  margin-bottom: 10px;
+.main-logo-modal {
+  width: 45px;
+}
+.modal-closeBtn {
+  height: 0;
+  img {
+    width: 13px;
+    transition: 0.4s;
+  }
+  & img:active {
+    transform: rotate(45deg) scale(0.9);
+  }
 }
 
-input {
-  width: 100%;
-  padding: 8px;
-  margin-bottom: 10px;
-  box-sizing: border-box;
-}
 .modal-poster,
 .modal-content {
   width: 50%;
@@ -63,14 +67,44 @@ input {
   background: var(--color-5);
 }
 .modal-poster img {
-  width: 50%;
+  width: 60%;
 }
-.modal-closeBtn {
-  img {
-    width: 13px;
-    transition: 0.4s;
+/*content of modal*/
+
+.modal-content {
+  padding: 15px;
+  padding-top: 50px;
+}
+
+/* content for sign-in & log-in*/
+.modal-content {
+  flex-direction: column;
+  direction: rtl;
+  h1 {
+    font-weight: 800;
+    font-size: 31px;
+    text-align: center;
   }
-  & img:active {
-    transform: rotate(45deg) scale(0.9);
+}
+.modal-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  & .sub-button {
+    text-align: center;
+    button {
+      color: var(--color-3);
+    }
+  }
+  & input {
+    outline: none;
+    border: solid 1px #bbbbbb;
+    border-radius: 3px;
+    box-shadow: 0 2px 5px #5b5b5b12;
+    padding: 3px 8px;
+    transition: var(--transition);
+  }
+  & input:active {
+    border: solid 1px var(--modal-button);
   }
 }

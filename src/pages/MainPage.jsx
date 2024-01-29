@@ -2,7 +2,7 @@ import React from "react";
 import Header from "../components/mainPage/header/Header.jsx";
 import Steps from "../components/mainPage/stepsGuide/StepsGuide.jsx";
 import Modal from "../components/mainPage/modal/Modal.jsx";
-import posterImage from "../assets/images/mainPageAssets/hero.svg";
+import posterImage from "../assets/images/mainPageAssets/signin.svg";
 import BaseModal from "../components/mainPage/modal/BaseModal/BaseModal.jsx";
 
 const MainPage = () => {
@@ -12,7 +12,19 @@ const MainPage = () => {
       {/* <Steps /> */}
       {/* <Modal type={"sign-in"} posterImage={posterImage} /> */}
       <BaseModal poster={posterImage}>
-        <h2>form</h2>
+        <h1>انشاء حساب</h1>
+        <div className="modal-form">
+          <label htmlFor="newEmail">البريد الالكتروني</label>
+          <input type="email" id="newEmail" />
+          <label htmlFor="newPassword">الرقم السري</label>
+          <input type="password" id="newPassword" />
+          <div className="message-error"></div>
+          <button>انشاء حساب</button>
+          <div className="sub-button">
+            <span>لديك حساب بالفعل ؟</span>
+            <button>تسجيل الدخول</button>
+          </div>
+        </div>
       </BaseModal>
     </>
   );
