@@ -30,11 +30,9 @@
 
 .trialdesign2 {
   font-family: "Poppins", sans-serif;
-  background: var(--color-2-bg);
-  /* background-color: var(--color1-bg); */
+  background: var(--color-2-bg) url("https://res.cloudinary.com/dowtlcpxj/image/upload/v1703134021/bg-texture_up9ylo.png");
   color: var(--color-2-white);
   line-height: 1.7;
-  background-image: url(../../assets//images2/bg-texture.png);
   /* display: flex;
   flex-direction: column; */
   align-items: center;
