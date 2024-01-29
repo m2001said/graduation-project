@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./basemodal.css";
-
+import close from "../../../../assets/images/mainPageAssets/close.svg";
 const BaseModal = ({ poster, children }) => {
   const [isOpen, setIsOpen] = useState(true);
 
@@ -11,16 +11,16 @@ const BaseModal = ({ poster, children }) => {
   let modalClass = isOpen ? "open" : "closed";
 
   return (
-    <div className="modal-overlay">
-      <div className={`modal ${modalClass} flex justify-between gap-2`}>
-        <div className="modal-head flex px-2 justify-between">
+    <div className={`modal-overlay  ${modalClass} `}>
+      <div className={`modal ${modalClass} flex justify-between gap-2 items-center`}>
+        <div className="modal-head flex px-4 py-4 items-center justify-between">
           <span>logo</span>
-          <span>close</span>
+          <button onClick={onClose} className="modal-closeBtn">
+            <img src={close} />
+          </button>
         </div>
 
-        <div className="poster">
-          <img src={poster} alt="" />
-        </div>
+        <div className="modal-poster flex justify-center items-center">{/* <img src={poster} alt="" /> */}</div>
         <div className="modal-content">{children}</div>
       </div>
     </div>

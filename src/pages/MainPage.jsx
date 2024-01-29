@@ -8,8 +8,8 @@ import BaseModal from "../components/mainPage/modal/BaseModal/BaseModal.jsx";
 const MainPage = () => {
   return (
     <>
-      <Header />
-      <Steps />
+      {/* <Header /> */}
+      {/* <Steps /> */}
       {/* <Modal type={"sign-in"} posterImage={posterImage} /> */}
       <BaseModal poster={posterImage}>
         <h2>form</h2>
