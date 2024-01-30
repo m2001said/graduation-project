@@ -15,7 +15,7 @@ const MainNav = () => {
   };
 
   const toggleModal = () => {
-    document.querySelector(".modal-overlay").classList.toggle("closed");
+    document.querySelector(".main-nav + .modal-overlay").classList.toggle("closed");
   };
   return (
     <>

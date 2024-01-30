@@ -5,7 +5,9 @@ import logo from "../../../../assets/images/mainPageAssets/logo.svg";
 
 const BaseModal = ({ poster, children }) => {
   const onClose = () => {
-    document.querySelector(".modal-overlay").classList.toggle("closed");
+    document.querySelectorAll(".modal-overlay").forEach((el) => {
+      el.classList.add("closed");
+    });
   };
 
   return (
