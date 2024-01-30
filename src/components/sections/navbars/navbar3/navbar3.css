@@ -1,0 +1,35 @@
+.navbar3 {
+  display: flex;
+  justify-content: space-between;
+}
+.logo {
+  width: 10rem;
+  height: 3rem;
+}
+.navbar3-menu {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  color: white;
+}
+.navbar3-menu > li {
+  cursor: pointer;
+}
+.navbar3-menu > li:hover {
+  cursor: pointer;
+  color: orange;
+}
+/* res mobile */
+@media screen and (max-width: 768px) {
+  .navbar3 > :nth-child(2) {
+    position: fixed;
+    right: 2rem;
+    z-index: 2;
+  }
+  .navbar3-menu {
+    flex-direction: column;
+    background: var(--appColor);
+    padding: 2rem;
+    position: relative;
+  }
+}
