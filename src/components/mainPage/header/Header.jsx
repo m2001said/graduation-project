@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./header.css";
 import logo from "../../../assets/images/mainPageAssets/logo.svg";
-import hero from "../../../assets/images/mainPageAssets/hero.svg";
+import hero from "../../../assets/images/mainPageAssets/hero.png";
 import posterImage from "../../../assets/images/mainPageAssets/signin.svg";
 import BaseModal from "../modal/BaseModal/BaseModal.jsx";
 import LoginForm from "../modal/LoginForm.jsx";
