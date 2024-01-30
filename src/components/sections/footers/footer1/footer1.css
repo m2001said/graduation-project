@@ -57,7 +57,7 @@
   text-transform: capitalize;
 }
 p {
-  color: var(--grey);
+  color: var(--website-color-5);
 }
 
 @media screen and (max-width: 980px) {

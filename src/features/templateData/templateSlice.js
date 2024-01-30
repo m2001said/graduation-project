@@ -339,7 +339,7 @@ const templateSlice = createSlice({
       },
     },
     colors: {
-      templateColors: ["#fff", "#cda274", "#292f36", "#f4f0ec"],
+      templateColors: ["#fff", "#cda274", "#292f36", "#f4f0ec", "#777777"],
     },
   },
 

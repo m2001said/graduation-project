@@ -10,7 +10,7 @@
   flex-direction: column;
 }
 .Testimonials__title {
-  color: var(--website-filed-title);
+  color: var(--website-color-3);
   text-align: center;
   font-family: "DM Serif Display";
   font-size: 60px;

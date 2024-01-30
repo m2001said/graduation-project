@@ -1,73 +1,73 @@
-.cta1-main{
-    background-color: #FFFFFF;
+.cta1-main {
+  background-color: var(--website-color-1);
 }
 
-.cta1{
-    background-color:#292F36;
-    border-radius: 70px;
-    width: 65%;
-    max-width: 1000px;
-    height: 300px;
-    padding: 80px, 315px, 80px, 315px;
-    align-items: center;
-    margin: 50px auto;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: center;
+.cta1 {
+  background-color: var(--website-color-3);
+  border-radius: 70px;
+  width: 65%;
+  max-width: 1000px;
+  height: 300px;
+  padding: 80px, 315px, 80px, 315px;
+  align-items: center;
+  margin: 50px auto;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
 }
-.cta1 h1{
-    font-family: DM Serif Display;
-    font-weight: 400;
-    font-size:50px;
-    line-height:62.5px;
-    padding-top: 30px;
-    color: #FFFFFF;
-    text-align: center;
+.cta1 h1 {
+  font-family: DM Serif Display;
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 62.5px;
+  padding-top: 30px;
+  color: var(--website-color-1);
+  text-align: center;
 }
-.cta1 p{
-   font-family:Jost;
-   font-weight: 400;
-    font-size:19px;
-    line-height:33px;
-    color: #FFFFFF;
-    text-align: center;
+.cta1 p {
+  font-family: Jost;
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 33px;
+  color: var(--website-color-1);
+  text-align: center;
 }
-.cta1-button{
-      font-family:Jost;
-      font-weight: 400;
-      font-size:18px; 
-      min-width: 30%;
-      min-height: 60px;
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-      justify-content: center;
-      align-items: center;
-      margin:40px;
-      padding: 26px, 37px, 26px, 37px;
-      color: white;
-      background-color: #CDA274;
-      border-radius: 18px;
-      gap: 10px;
+.cta1-button {
+  font-family: Jost;
+  font-weight: 400;
+  font-size: 18px;
+  min-width: 30%;
+  min-height: 60px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 40px;
+  padding: 26px, 37px, 26px, 37px;
+  color: var(--website-color-1);
+  background-color: var(--website-color-2);
+  border-radius: 18px;
+  gap: 10px;
 }
-.cta1-button-img{
-    width:15.14px;
-    height:13.18px;
-    margin-top:5px ;
+.cta1-button-img {
+  width: 15.14px;
+  height: 13.18px;
+  margin-top: 5px;
 }
 
 @media screen and (max-width: 980px) {
-    .cta1{
-        width: 80%;
-        height: 80%;
-        margin: auto;
-    }
+  .cta1 {
+    width: 80%;
+    height: 80%;
+    margin: auto;
   }
+}
 @media screen and (max-width: 680px) {
-    .cta1{
-        width: 80%;
-        height: 80%;
-        margin: auto;
-    }
+  .cta1 {
+    width: 80%;
+    height: 80%;
+    margin: auto;
   }
+}

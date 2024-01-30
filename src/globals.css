@@ -2,7 +2,7 @@
 /* for mainPages and dashboard and for root-colors and root-fonts of all */
 /* root-colors and root-fonts ----all team will use them */
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -15,23 +15,21 @@
   --primary-color1: #1c2448;
   --primary-color2: #ce79cc;
   --primary-color2-dark: #7a4179;
-  --grey: #777777;
-  --white: #ffff;
+  --website-filed-title: #1a2345;
 
   --website-color-1: #fff;
   --website-color-2: #cda274;
   --website-color-3: #292f36;
   --website-color-4: #f4f0ec;
+  --website-color-5: #777777;
   --website-border-raduis: 10;
-
-  --website-filed-title: #1a2345;
 }
 html {
   background-color: white;
 }
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
 }
 
 /* Global Rules */
@@ -182,8 +180,8 @@ ul {
   border-left: 4px solid var(--primary-color2);
   position: relative;
 }
- .controller-name::after {
-  content: '';
+.controller-name::after {
+  content: "";
   position: absolute;
   left: 0;
   top: 57px;
@@ -223,19 +221,19 @@ ul {
 }
 .controller-field {
   @apply flex flex-col border-2 rounded-lg border-solid pb-1 overflow-hidden text-black;
-  border-color: var(--grey);
+  border-color: var(--website-color-5);
   @apply flex flex-col border-2 rounded-lg border-solid pb-1 overflow-hidden text-black;
-  border-color: var(--grey);
+  border-color: var(--website-color-5);
 }
 .subController {
   padding-left: 0.5rem;
 }
 .subController:not(:last-child) {
-  border-bottom: 2px solid var(--grey);
+  border-bottom: 2px solid var(--website-color-5);
 }
 .controller-label {
   @apply text-[16px]  capitalize pl-1 border-b-2;
-  border-color: var(--grey);
+  border-color: var(--website-color-5);
   background-color: #fff0fe;
   color: var(--website-filed-title);
 }
