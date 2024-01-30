@@ -3,7 +3,7 @@ import "./basemodal.css";
 import close from "../../../../assets/images/mainPageAssets/close.svg";
 import logo from "../../../../assets/images/mainPageAssets/logo.svg";
 
-const BaseModal = ({ poster, children, toggleModal }) => {
+const BaseModal = ({ poster, children }) => {
   const onClose = () => {
     document.querySelector(".modal-overlay").classList.toggle("closed");
   };

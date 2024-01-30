@@ -45,9 +45,7 @@ const Header = () => {
         </div>
       </div>
 
-      <BaseModal poster={posterImage} toggleModal={toggleModal}>
-        {isLogin ? <LoginForm toggleForm={toggleForm} /> : <SignUpForm toggleForm={toggleForm} />}
-      </BaseModal>
+      <BaseModal poster={posterImage}>{isLogin ? <LoginForm toggleForm={toggleForm} /> : <SignUpForm toggleForm={toggleForm} />}</BaseModal>
     </header>
   );
 };
