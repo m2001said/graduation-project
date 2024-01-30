@@ -1,42 +1,47 @@
 .main-steps .container {
   padding-block: 20px;
   position: relative;
-  &::after {
-    content: "";
-    height: calc(100% - 95px);
-    position: absolute;
-    top: 75px;
-    left: 50%;
-    transform: translateX(-50%);
-    border: dashed 1px #430c7b40;
-  }
 }
+
+.main-steps .container::after {
+  content: "";
+  height: calc(100% - 95px);
+  position: absolute;
+  top: 75px;
+  left: 50%;
+  transform: translateX(-50%);
+  border: dashed 1px #430c7b40;
+}
+
 .main-steps .step-card {
   position: relative;
   counter-increment: stepcounter;
   margin-block: 55px;
-  &:nth-child(odd) {
-    flex-direction: row-reverse;
-  }
-  &::before {
-    content: counter(stepcounter);
-    height: 30px;
-    width: 30px;
-    background: var(--color-2);
-    outline: solid 1px var(--color-2);
-    outline-offset: 1px;
-    color: whitesmoke;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 1;
-    border-radius: 50%;
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-  }
 }
+
+.main-steps .step-card:nth-child(odd) {
+  flex-direction: row-reverse;
+}
+
+.main-steps .step-card::before {
+  content: counter(stepcounter);
+  height: 30px;
+  width: 30px;
+  background: var(--color-2);
+  outline: solid 1px var(--color-2);
+  outline-offset: 1px;
+  color: whitesmoke;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
 .main-steps .step-img,
 .main-steps .step-info {
   width: 40%;

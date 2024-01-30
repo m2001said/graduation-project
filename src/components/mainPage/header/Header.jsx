@@ -8,22 +8,22 @@ import LoginForm from "../modal/LoginForm.jsx";
 import SignUpForm from "../modal/SignUpForm.jsx";
 
 const Header = () => {
+  // for login/signin form
   const [isLogin, setIsLogin] = useState(false);
 
   const toggleForm = () => {
     setIsLogin(!isLogin);
   };
 
-  const [showModal, setshowModal] = useState(false);
   const toggleModal = () => {
-    setshowModal(!showModal);
+    document.querySelector(".modal-overlay").classList.toggle("closed");
   };
   return (
     <header className="main-header">
       <div className="container mx-auto px-4">
         <div className="head flex  justify-between items-center py-4">
           <div className="main-logo flex items-center">
-            <img src={logo} alt="" />
+            <img src={logo} alt="logo" />
             <span>WEB</span>
           </div>
           <button className="signIn-btn" onClick={toggleModal}>
@@ -40,17 +40,14 @@ const Header = () => {
             <div className="info-btn">Generate your website</div>
           </div>
           <div className="main-hero-image">
-            <img src={hero} alt="" />
+            <img src={hero} alt="hero" />
           </div>
         </div>
       </div>
-      {showModal ? (
-        <BaseModal poster={posterImage} toggleModal={toggleModal}>
-          {isLogin ? <LoginForm toggleForm={toggleForm} /> : <SignUpForm toggleForm={toggleForm} />}
-        </BaseModal>
-      ) : (
-        ""
-      )}
+
+      <BaseModal poster={posterImage} toggleModal={toggleModal}>
+        {isLogin ? <LoginForm toggleForm={toggleForm} /> : <SignUpForm toggleForm={toggleForm} />}
+      </BaseModal>
     </header>
   );
 };
