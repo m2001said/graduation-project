@@ -1,7 +1,6 @@
 /*
 430C7B , 30086B,CE79CC,FDC2B8
 */
-@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap");
 :root {
   --color-1: #430c7b;
   --color-2: #30086b;
@@ -13,8 +12,6 @@
   position: relative;
   height: 100vh;
   background: var(--color-1);
-  font-family: "Source Code Pro", monospace;
-  letter-spacing: -1px;
   /* optional  background layers 
   background-image: linear-gradient(45deg, #0000009e, transparent);
   background-image: linear-gradient(90deg, #ffffff12 1px, transparent 0), linear-gradient(0deg, #ffffff12 1px, transparent 0);
@@ -23,10 +20,18 @@
   background-image: linear-gradient(90deg, #ffffff12 1px, transparent 0), linear-gradient(0deg, #ffffff12 1px, transparent 0);
   background-size: 93px 93px;
 }
+.main-nav {
+  position: fixed;
+  width: inherit;
+  left: 0;
+  top: 0;
+  padding-inline: 20px;
+  background: #430c7b44;
+  backdrop-filter: blur(20px);
+}
 .main-logo {
   color: #fff;
   font-size: 30px;
-  font-family: "Source Code Pro", monospace;
   img {
     width: 50px;
   }
@@ -48,14 +53,14 @@
 }
 .info-section .info-title {
   color: white;
-  font-weight: 500;
-  font-size: 1.9em;
   text-transform: capitalize;
+  font-size: 1.8em;
+  margin-top: 76px;
 }
-.info-section .info-description {
-  color: rgb(235 235 235 / 91%);
-  font-size: 0.9em;
-  line-height: 2.8em;
+.info-section .info-description p {
+  color: #cdcdcd !important;
+  margin-block: 41px !important;
+  line-height: 2.5 !important;
 }
 .info-section .info-btn {
   width: fit-content;
@@ -87,7 +92,7 @@
     transform: translateY(-15px);
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 991px) {
   .main-hero-image {
     display: none;
   }
