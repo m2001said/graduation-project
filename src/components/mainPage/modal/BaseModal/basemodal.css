@@ -133,3 +133,11 @@
   box-shadow: 0 0 0 transparent;
   transform: scale(0.96);
 }
+
+/* ai form */
+.ai-form-title {
+  font-weight: 600;
+  font-size: 20px;
+  text-transform: capitalize;
+  text-align: left;
+}
