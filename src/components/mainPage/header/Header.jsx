@@ -19,12 +19,13 @@ const Header = () => {
               </div>
               <div className="info-description my-6">
                 <p>
-                  At Zzgazig Website Easy Builer, we're revolutionizing design proces With our intelligent AI website builder, your vision f or a digital
-                  presence is transformed into reality with just a few clicks. From nebulous ideas to fully-fledged websites, the future of web design begins
-                  here
+                  At Zzgazig Easy Website Builder, we’re pioneering a new era in the design process. Our intelligent AI website builder turns your digital
+                  vision into reality in just a few clicks. From abstract concepts to fully developed websites, the future of web design starts here.
                 </p>
               </div>
-              <div className="info-btn" onClick={toggleModal}>Generate your website</div>
+              <div className="info-btn" onClick={toggleModal}>
+                Generate your website
+              </div>
             </div>
             <div className="main-hero-image">
               <img src={hero} alt="hero" />
