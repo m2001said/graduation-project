@@ -15,7 +15,7 @@ const BaseModal = ({ poster, children }) => {
           <div className="main-logo flex items-center">
             <img src={logo} alt="logo" />
             <span>WEB</span>
-          </div>{" "}
+          </div>
           <button onClick={onClose} className="modal-closeBtn">
             <img src={close} alt="close-icon" />
           </button>
