@@ -5,7 +5,7 @@ import AiForm from "../modal/AiForm.jsx";
 import BaseModal from "../modal/BaseModal/BaseModal.jsx";
 
   const toggleModal = () => {
-    document.querySelector(".main-header + .modal-overlay").classList.toggle("closed");
+    document.querySelector(" .modal-overlay").classList.toggle("closed");
   };
 const Header = () => {
   return (

@@ -1,19 +1,10 @@
-import React, { useState } from "react";
+import React from "react";
 import "./mainNav.css";
 import logo from "../../../assets/images/mainPageAssets/logo.svg";
-import posterImage from "../../../assets/images/mainPageAssets/signin.svg";
-import BaseModal from "../modal/BaseModal/BaseModal.jsx";
-import SigninLogin from "../modal/SigninLogin.jsx";
 
-const MainNav = () => {
-  const [isSignedIn, setIsSignedIn] = useState(false);
+const MainNav = ({ loginState, setSignOUT }) => {
   const toggleModal = () => {
-    document.querySelector(".main-nav + .modal-overlay").classList.toggle("closed");
-  };
-
-  const handleSignIn = () => {
-    setIsSignedIn(true);
-    toggleModal();
+    document.querySelector(".modal-overlay").classList.toggle("closed");
   };
 
   return (
@@ -24,14 +15,11 @@ const MainNav = () => {
             <img src={logo} alt="logo" />
             <span>WEB</span>
           </div>
-          <button className="signIn-btn" onClick={isSignedIn ? () => setIsSignedIn(false) : toggleModal}>
-            {isSignedIn ? "Sign Out" : "Sign In"}
+          <button className="signIn-btn" onClick={loginState ? setSignOUT : toggleModal}>
+            {loginState ? "Sign Out" : "Sign In"}
           </button>
         </div>
       </div>
-      <BaseModal poster={posterImage}>
-        <SigninLogin handleSignIn={handleSignIn}></SigninLogin>
-      </BaseModal>
     </>
   );
 };
