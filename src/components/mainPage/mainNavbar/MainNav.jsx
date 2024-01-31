@@ -8,11 +8,11 @@ import SignUpForm from "../modal/SignUpForm.jsx";
 
 const MainNav = () => {
   // for login/signin form
-  const [isLogin, setIsLogin] = useState(false);
-  const [isSignedIn, setIsSignedIn] = useState(false); // new state variable
+  const [isLoginForm, setIsLoginForm] = useState(false);
+  const [isSignedIn, setIsSignedIn] = useState(false); 
 
   const toggleForm = () => {
-    setIsLogin(!isLogin);
+    setIsLoginForm(!isLoginForm);
   };
 
   const toggleModal = () => {
@@ -20,8 +20,8 @@ const MainNav = () => {
   };
 
   const handleSignIn = () => {
-    setIsSignedIn(true); // set isSignedIn to true when user signs in
-    toggleModal(); // close the modal
+    setIsSignedIn(true); 
+    toggleModal(); 
   };
 
   return (
@@ -38,7 +38,7 @@ const MainNav = () => {
         </div>
       </div>
       <BaseModal poster={posterImage}>
-        {isLogin ? <LoginForm toggleForm={toggleForm} handleSignIn={handleSignIn} /> : <SignUpForm toggleForm={toggleForm} />}
+        {isLoginForm ? <LoginForm toggleForm={toggleForm} handleSignIn={handleSignIn} /> : <SignUpForm toggleForm={toggleForm} />}
       </BaseModal>
     </>
   );
