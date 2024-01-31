@@ -3,25 +3,17 @@ import "./mainNav.css";
 import logo from "../../../assets/images/mainPageAssets/logo.svg";
 import posterImage from "../../../assets/images/mainPageAssets/signin.svg";
 import BaseModal from "../modal/BaseModal/BaseModal.jsx";
-import LoginForm from "../modal/LoginForm.jsx";
-import SignUpForm from "../modal/SignUpForm.jsx";
+import SigninLogin from "../modal/SigninLogin.jsx";
 
 const MainNav = () => {
-  // for login/signin form
-  const [isLoginForm, setIsLoginForm] = useState(false);
-  const [isSignedIn, setIsSignedIn] = useState(false); 
-
-  const toggleForm = () => {
-    setIsLoginForm(!isLoginForm);
-  };
-
+  const [isSignedIn, setIsSignedIn] = useState(false);
   const toggleModal = () => {
     document.querySelector(".main-nav + .modal-overlay").classList.toggle("closed");
   };
 
   const handleSignIn = () => {
-    setIsSignedIn(true); 
-    toggleModal(); 
+    setIsSignedIn(true);
+    toggleModal();
   };
 
   return (
@@ -38,7 +30,7 @@ const MainNav = () => {
         </div>
       </div>
       <BaseModal poster={posterImage}>
-        {isLoginForm ? <LoginForm toggleForm={toggleForm} handleSignIn={handleSignIn} /> : <SignUpForm toggleForm={toggleForm} />}
+        <SigninLogin handleSignIn={handleSignIn}></SigninLogin>
       </BaseModal>
     </>
   );
