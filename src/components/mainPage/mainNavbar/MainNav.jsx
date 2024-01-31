@@ -9,6 +9,7 @@ import SignUpForm from "../modal/SignUpForm.jsx";
 const MainNav = () => {
   // for login/signin form
   const [isLogin, setIsLogin] = useState(false);
+  const [isSignedIn, setIsSignedIn] = useState(false); // new state variable
 
   const toggleForm = () => {
     setIsLogin(!isLogin);
@@ -17,6 +18,12 @@ const MainNav = () => {
   const toggleModal = () => {
     document.querySelector(".main-nav + .modal-overlay").classList.toggle("closed");
   };
+
+  const handleSignIn = () => {
+    setIsSignedIn(true); // set isSignedIn to true when user signs in
+    toggleModal(); // close the modal
+  };
+
   return (
     <>
       <div className="main-nav ">
@@ -25,13 +32,16 @@ const MainNav = () => {
             <img src={logo} alt="logo" />
             <span>WEB</span>
           </div>
-          <button className="signIn-btn" onClick={toggleModal}>
-            Sign In
+          <button className="signIn-btn" onClick={isSignedIn ? () => setIsSignedIn(false) : toggleModal}>
+            {isSignedIn ? "Sign Out" : "Sign In"}
           </button>
         </div>
       </div>
-      <BaseModal poster={posterImage}>{isLogin ? <LoginForm toggleForm={toggleForm} /> : <SignUpForm toggleForm={toggleForm} />}</BaseModal>
+      <BaseModal poster={posterImage}>
+        {isLogin ? <LoginForm toggleForm={toggleForm} handleSignIn={handleSignIn} /> : <SignUpForm toggleForm={toggleForm} />}
+      </BaseModal>
     </>
   );
 };
+
 export default MainNav;
