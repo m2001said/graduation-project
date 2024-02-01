@@ -109,7 +109,8 @@
 
 .modal-content input,
 .modal-content .form-button,
-.modal-content textarea {
+.modal-content textarea,
+.modal-content .website-link {
   outline: none;
   border: solid 1px #bbbbbb69;
   border-radius: 3px;
@@ -134,8 +135,7 @@
   box-shadow: 0 0 0 transparent;
   transform: scale(0.96);
 }
+.button-2 {
+  background: var(--color-5) !important;
+}
 
-.modal-form .label {
-}
-.modal-form .ebsite-link {
-}

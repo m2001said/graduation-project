@@ -11,9 +11,7 @@
   text-transform: uppercase;
   font-size: 13px;
 }
-.button-2 {
-  background: var(--color-5) !important;
-}
+
 .modal-content textarea {
   resize: none;
   margin-block: 15px;
