@@ -2,7 +2,7 @@ import React from "react";
 
 const LoginForm = ({ toggleForm, handleSignIn }) => {
   const handleSignInClick = () => {
-    // Perform validation or other actions س
+    // Perform validation or other actions
     handleSignIn();
     document.querySelector(".modal-overlay").classList.add("closed");
   };
