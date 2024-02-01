@@ -1,12 +1,10 @@
 import React from "react";
 import "./header.css";
 import hero from "../../../assets/images/mainPageAssets/hero.png";
-import AiForm from "../modal/AiForm.jsx";
-import BaseModal from "../modal/BaseModal/BaseModal.jsx";
 
-  const toggleModal = () => {
-    document.querySelector(" .modal-overlay").classList.toggle("closed");
-  };
+const toggleModal = () => {
+  document.querySelector(" .modal-overlay").classList.toggle("closed");
+};
 const Header = () => {
   return (
     <>
@@ -33,9 +31,6 @@ const Header = () => {
           </div>
         </div>
       </header>
-      <BaseModal poster={hero}>
-        <AiForm></AiForm>
-      </BaseModal>
     </>
   );
 };

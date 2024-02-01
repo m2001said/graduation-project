@@ -107,8 +107,9 @@
   color: var(--color-3);
 }
 
-.modal-form input,
-.modal-form .form-button {
+.modal-content input,
+.modal-content .form-button,
+.modal-content textarea {
   outline: none;
   border: solid 1px #bbbbbb69;
   border-radius: 3px;
@@ -117,10 +118,10 @@
   transition: var(--transition);
 }
 
-.modal-form input:focus {
+.modal-content input:focus {
   border: solid 1px var(--modal-button);
 }
-.modal-form .form-button {
+.modal-content .form-button {
   background: var(--modal-button);
   color: white;
   display: flex;
@@ -129,24 +130,11 @@
   border: none;
 }
 
-.modal-form .form-button:active {
+.modal-content .form-button:active {
   box-shadow: 0 0 0 transparent;
   transform: scale(0.96);
 }
 
-/* ai form */
-.ai-form-title {
-  font-weight: 600;
-  font-size: 20px;
-  text-transform: capitalize;
-  text-align: left;
-}
-.ai-form-discription {
-}
-.form-2-button {
-}
-.modal-form textarea {
-}
 .modal-form .label {
 }
 .modal-form .ebsite-link {
