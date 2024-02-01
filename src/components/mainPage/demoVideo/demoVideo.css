@@ -1,0 +1,12 @@
+.demo-section {
+}
+.demo-section .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  padding-block: 40px;
+}
+.demo-video {
+  margin-top: 20px;
+}
