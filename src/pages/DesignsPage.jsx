@@ -1,12 +1,12 @@
 import React from "react";
-import DesignCard from "./../components/designsPage/sections/DesignCard";
+import DesignsContainer from "./../components/designsPage/sections/DesignsContainer";
 import MainNav from "./../components/mainPage/mainNavbar/MainNav";
 
 const DesignsPage = () => {
   return (
     <>
       <MainNav></MainNav>
-      <designCard></designCard>
+      <DesignsContainer></DesignsContainer>
     </>
   );
 };
