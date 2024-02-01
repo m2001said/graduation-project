@@ -1,9 +1,12 @@
 import React from "react";
+import DesignCard from "./../components/designsPage/sections/DesignCard";
+import MainNav from "./../components/mainPage/mainNavbar/MainNav";
 
 const DesignsPage = () => {
   return (
     <>
-      <h1>DesignsPage</h1>
+      <MainNav></MainNav>
+      <designCard></designCard>
     </>
   );
 };
