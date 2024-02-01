@@ -1,11 +1,12 @@
 import React from "react";
 import "./header.css";
+import { Link } from "react-router-dom";
 import hero from "../../../assets/images/mainPageAssets/hero.png";
 
 const toggleModal = () => {
-  document.querySelector(" .modal-overlay").classList.toggle("closed");
+  document.querySelector(".modal-overlay").classList.toggle("closed");
 };
-const Header = () => {
+const Header = ({ loginState }) => {
   return (
     <>
       <header className="main-header">
@@ -21,9 +22,9 @@ const Header = () => {
                   vision into reality in just a few clicks. From abstract concepts to fully developed websites, the future of web design starts here.
                 </p>
               </div>
-              <div className="info-btn" onClick={toggleModal}>
-                Generate your website
-              </div>
+              <button className="info-btn" onClick={toggleModal}>
+                {loginState ? <Link to={"Designs-page"}>Generate your website</Link> : " Generate your website"}
+              </button>
             </div>
             <div className="main-hero-image">
               <img src={hero} alt="hero" />

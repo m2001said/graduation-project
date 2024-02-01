@@ -1,6 +1,7 @@
 import { Route, Routes } from "react-router";
 import Dashboard from "./pages/Dashboard";
 import MainPage from "./pages/MainPage";
+import DesignsPage from "./pages/DesignsPage";
 import TrialDesign1 from "./pages/TrialDesign1";
 import TrialDesign2 from "./pages/TrialDesign2";
 import TrialDesign3 from "./pages/TrialDesign3";
@@ -12,6 +13,7 @@ function App() {
     <>
       <Routes>
         <Route path="/" element={<MainPage />} />
+        <Route path="/Designs-page" element={<DesignsPage />} />
         <Route element={<Dashboard />}>
           <Route path="/trial-design1" element={<TrialDesign1 />} />
           <Route path="/trial-design2" element={<TrialDesign2 />} />
@@ -21,7 +23,6 @@ function App() {
           <Route path="/trial-design6" element={<TrialDesign6 />} />
         </Route>
         {/* <Route path="/trial-design1" element={<TrialDesign1 />} /> */}
-
       </Routes>
     </>
   );

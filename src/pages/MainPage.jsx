@@ -21,7 +21,7 @@ const MainPage = () => {
         <SigninLogin setIsSignedIn={signIn} />
       </BaseModal>
       <MainNav loginState={isSignedIn} setSignOUT={signOut}></MainNav>
-      <Header></Header>
+      <Header loginState={isSignedIn}></Header>
       <Steps></Steps>
       {/* <BaseModal poster={posterImage}>
         <AiForm />

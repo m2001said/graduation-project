@@ -4,6 +4,7 @@ const LoginForm = ({ toggleForm, handleSignIn }) => {
   const handleSignInClick = () => {
     // Perform validation or other actions س
     handleSignIn();
+    document.querySelector(".modal-overlay").classList.add("closed");
   };
 
   return (
