@@ -7,6 +7,7 @@ import TrialDesign3 from "./pages/TrialDesign3";
 import TrialDesign4 from "./pages/TrialDesign4";
 import TrialDesign5 from "./pages/TrialDesign5";
 import TrialDesign6 from "./pages/TrialDesign6";
+
 function App() {
   return (
     <>
