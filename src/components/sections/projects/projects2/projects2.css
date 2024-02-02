@@ -1,0 +1,49 @@
+#projects2 h5 {
+  padding-top: 1.5rem;
+}
+.projects2__container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2.5rem;
+}
+.projects2__item {
+  background: var(--color-2-bg-variant);
+  padding: 1.2rem;
+  border-radius: 2rem;
+  border: 1px solid transparent;
+  transition: var(--transition2);
+}
+.projects2__item:hover {
+  border-color: var(--color-2-primary-variant);
+  background: transparent;
+}
+
+.projects2__item-img {
+  border-radius: 1.5rem;
+  overflow: hidden;
+}
+.projects2__container h3 {
+  margin: 1.2rem 0 2rem;
+}
+.projects2__item-cta {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+.trialdesign2 .btn {
+  background: transparent;
+}
+
+@media screen and (max-width: 1024px) {
+  .projects2__container {
+    grid-template-columns: 1fr 1fr;
+    gap: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .projects2__container {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+}

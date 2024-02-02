@@ -150,7 +150,6 @@ header nav ul li a:hover {
   background-color: var(--website-color-3);
   color: var(--website-color-2);
   border-radius: 8px;
-  font-weight: bold;
 }
 
 .navbar-menu-container {
