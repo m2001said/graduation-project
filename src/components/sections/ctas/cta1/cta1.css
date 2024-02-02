@@ -1,9 +1,10 @@
 .cta1-main{
-    background-color: #FFFFFF;
+    background: var(--website-color-1);
+    padding: 20px 0;
 }
 
 .cta1{
-    background-color:#292F36;
+    background: var(--website-color-3);
     border-radius: 70px;
     width: 65%;
     max-width: 1000px;
@@ -17,26 +18,23 @@
     justify-content: center;
 }
 .cta1 h1{
-    font-family: DM Serif Display;
     font-weight: 400;
     font-size:50px;
     line-height:62.5px;
     padding-top: 30px;
-    color: #FFFFFF;
+    color: var(--white);
     text-align: center;
 }
 .cta1 p{
-   font-family:Jost;
-   font-weight: 400;
+    font-weight: 400;
     font-size:19px;
     line-height:33px;
-    color: #FFFFFF;
+    color: var(--white);
     text-align: center;
 }
 .cta1-button{
-      font-family:Jost;
       font-weight: 400;
-      font-size:18px; 
+      font-size:16px; 
       min-width: 30%;
       min-height: 60px;
       display: flex;
@@ -45,9 +43,9 @@
       justify-content: center;
       align-items: center;
       margin:40px;
-      padding: 26px, 37px, 26px, 37px;
-      color: white;
-      background-color: #CDA274;
+      padding: 26px 40px 26px 40px;
+      color: var(--white);
+      background: var(--website-color-2);
       border-radius: 18px;
       gap: 10px;
 }
@@ -70,4 +68,51 @@
         height: 80%;
         margin: auto;
     }
+    .cta1 h1{
+        padding: auto;
+        font-weight: 400;
+        font-size:40px;
+        line-height:58px;
+    }
+    .cta1 p{
+        font-weight: 400;
+        font-size:15px;
+        line-height:25px;
+        padding: 5px;
+    }
+    .cta1-button{
+        padding: 6px 10px;
+        display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      gap: 0px;
+    }
+  }
+  @media screen and (max-width: 390px) {
+    .cta1 h1{
+        margin: 8px;
+        padding: auto;
+        font-weight: 400;
+        font-size:30px;
+        line-height: normal;
+    }
+    .cta1 p{
+        font-weight: 400;
+        font-size:12px;
+        line-height:25px;
+        padding: 5px;
+    }
+    .cta1-button{
+      padding: 6px 6px;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      gap: 6px;
+      font-size:14px;
+    }
+
   }

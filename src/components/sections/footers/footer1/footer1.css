@@ -17,6 +17,10 @@
   flex-direction: column;
 }
 
+.footer1-icons p{
+  color: var(--grey);
+}
+
 .footer1-img {
   width: 20px;
   height: 20px;
@@ -30,10 +34,23 @@
   margin-top: 15px;
   gap: 15px;
 }
+
 .footer1-section {
   display: flex;
   flex-direction: column;
 }
+
+.footer1-section h4,
+.footer1-contact h4{
+ color: var(--website-color-3);
+}
+
+
+.footer1-element p{
+ color: var(--grey);
+}
+
+
 .footer1-services {
   display: flex;
   flex-direction: column;
@@ -57,7 +74,7 @@
   text-transform: capitalize;
 }
 p {
-  color: var(--grey);
+  color: var(--website-color-5);
 }
 
 @media screen and (max-width: 980px) {
