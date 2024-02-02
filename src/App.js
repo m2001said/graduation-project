@@ -21,7 +21,7 @@ function App() {
           <Route path="/trial-design5" element={<TrialDesign5 />} />
           <Route path="/trial-design6" element={<TrialDesign6 />} />
         </Route>
-        {/* <Routes path="/trial-design1" element={<TrialDesign1 />} /> */}
+        {/* <Route path="/trial-design1" element={<TrialDesign1 />} /> */}
       </Routes>
     </>
   );
