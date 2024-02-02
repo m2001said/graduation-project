@@ -7,19 +7,30 @@
   overflow: hidden;
   border-radius: inherit;
   position: relative;
+  transition: 0.4s;
 }
-.design-Img-container::after{
-    content: url("");
+.Preview-button {
+    width: 50px;
+    height: 50px;
+    padding: 15px;
+    border-radius: 50%;
+    background: #44444440;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-168px, -50%);
+    transition: 0.4s;
+}
+.design-card:hover .Preview-button {
+  transform: translate(-50%, -50%);
 }
 .Build-button {
   /* flex: 1; */
   background: #481b91;
   color: white;
+  width: 100%;
 }
-.Preview-button {
-  color: #481b91;
-  border-color: #481b91;
-}
+
 /* .designs-title {
   margin-block: 8px;
   color: whitesmoke;
