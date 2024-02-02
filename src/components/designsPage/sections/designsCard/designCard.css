@@ -1,11 +1,11 @@
 .design-card {
   max-width: 250px;
-  background: #ffffff;
+  background: #ffffffbf;
   position: relative;
-  z-index: 1;
-  background: transparent;
+  /* z-index: 1;
+  background: transparent; */
 }
-.design-card::after {
+/* .design-card::after {
   content: "";
   position: absolute;
   width: 100%;
@@ -17,7 +17,7 @@
   transform: skewY(-6deg);
   border-radius: 15px;
   backdrop-filter: blur(8px);
-}
+} */
 .design-Img-container {
   height: 250px;
   overflow: hidden;
