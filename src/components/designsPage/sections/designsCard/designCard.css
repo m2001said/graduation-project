@@ -1,0 +1,30 @@
+.design-card {
+  max-width: 250px;
+  background: #ffffff;
+}
+.design-Img-container {
+  height: 250px;
+  overflow: hidden;
+  border-radius: inherit;
+  position: relative;
+}
+.design-Img-container::after{
+    content: url("");
+}
+.Build-button {
+  /* flex: 1; */
+  background: #481b91;
+  color: white;
+}
+.Preview-button {
+  color: #481b91;
+  border-color: #481b91;
+}
+/* .designs-title {
+  margin-block: 8px;
+  color: whitesmoke;
+  font-size: 19px;
+}
+.designs-description {
+  color: rgba(255, 255, 255, 0.767);
+} */
