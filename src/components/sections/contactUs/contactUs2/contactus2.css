@@ -1,0 +1,105 @@
+#contactUs2 {
+  text-align: center;
+  /* gap: 2rem; */
+  align-items: center;
+  justify-content: center;
+  /* display: grid; */
+  padding-top: 2rem;
+}
+#contactUs2 h2 {
+  color: var(--color-2-primary);
+}
+.contactUs2__options .contactUs2__option a {
+  color: var(--color-2-2-white);
+  text-decoration: none;
+}
+
+.contactUs2__options .contactUs2__option a:hover {
+  color: var(--color-2-primary);
+  text-decoration: underline;
+  font-weight: bold;
+}
+.contactUs2__container {
+  width: 58%;
+  display: grid;
+  grid-template-columns: 30% 58%;
+  gap: 12%;
+  justify-content: center;
+}
+.contactUs2__options {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+.contactUs2__options {
+  background: var(--color-2-bg-variant);
+  padding: 1.2rem;
+  border-radius: 1.2rem;
+  text-align: center;
+  border: 1px solid transparent;
+  transition: var(--transition2);
+}
+.contactUs2__option:hover {
+  background: transparent;
+  border-color: var(--color-2-primary-variant);
+}
+.contactUs2__option-icon {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+.contactUs2__option a {
+  margin-top: 0.7rem;
+  display: inline-block;
+  font-size: 0.7rem;
+}
+.contactUs2__option > img {
+  width: 1.5rem;
+}
+.contactUs2__option {
+  align-items: baseline;
+  justify-content: flex-start;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+/**============= form ========**/
+form {
+  margin-top: 1.4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+/* .btn-primary {
+  background: var(--color-2-primary);
+} */
+input,
+textarea {
+  width: 100%;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  border: 2px solid var(--color-2-primary-variant);
+  resize: none;
+  color: var(--color-2-2-white);
+  background: transparent;
+}
+
+@media screen and (max-width: 1024px) {
+  .contactUs2__container {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  .contactUs2__container {
+    width: var(--container2-width-sm);
+    margin: 0 auto;
+  }
+  #contactUs2 {
+    margin: 1rem auto;
+  }
+  form {
+    /* width: 80%; */
+    /* margin: 0 auto; */
+  }
+}
