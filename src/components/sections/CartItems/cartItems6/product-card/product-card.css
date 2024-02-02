@@ -21,13 +21,13 @@
 }
 
 .single__product .rating span img {
-  width:15px;
-} 
+  width: 15px;
+}
 
 .single__product .rating {
   margin-bottom: 10px;
   display: flex;
-  justify-content:center;
+  justify-content: center;
 }
 
 .single__product .price {
@@ -59,7 +59,7 @@
 
   to {
     opacity: 1;
-    transform: translatey(0px);  
+    transform: translatey(0px);
   }
 }
 

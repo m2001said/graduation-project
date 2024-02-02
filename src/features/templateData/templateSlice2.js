@@ -1,131 +1,137 @@
 import { createSlice } from "@reduxjs/toolkit";
+
 const templateSlice2 = createSlice({
   initialState: {
-    navbar: {
-      imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701811960/templates/template_one/Logo_mj7rvw.png",
-      links: ["home", "pages", "services", "projects", "blog", "contact"],
-    },
+    navbar: [
+      {
+        imgUrl: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1703134252/home-1-svgrepo-com_axgckp.svg",
+        url: "hero2",
+      },
+      {
+        imgUrl: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1703134253/info-circle-svgrepo-com_a6q6z3.svg",
+        url: "services2",
+      },
+      {
+        imgUrl: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1703134396/project-svgrepo-com_qjvqow.svg",
+        url: "projects2",
+      },
+      {
+        imgUrl: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1703134251/customer-testimonial-svgrepo-com_vdnnre.svg",
+        url: "testimonials2",
+      },
+      {
+        imgUrl: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1703134254/message-circle-lines-alt-svgrepo-com_iotcwk.svg",
+        url: "contactUs2",
+      },
+    ],
     hero: {
-      title: "Let Your Home Be Unique",
-      description: "There are many variations of the passages of lorem Ipsum from available, variations of the passages.",
-      imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701808857/templates/template_one/Photo_3_jpjtdv.jpg",
-      buttonText: "Get Started",
-      icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701813389/templates/template_one/Vector_5_vvvt2o.svg",
-    },
-    services: {
-      blocks: [
+      title: "Get to know",
+      subtitle: "Hero",
+      image: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1703142400/me-about_pobewn.jpg",
+      cards: [
+        { icon: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1703134251/book-svgrepo-com_f62qre.svg", title: "Experience", content: "3+ Years Working" },
         {
-          icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701808099/templates/template_one/icon_one_xvd7d6.svg",
-          title: "Project Plan",
-          description: "There are many variations of the passages of lorem Ipsum from available, majority.",
+          icon: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1703134396/users-svgrepo-com_acna7b.svg",
+          title: "Clients",
+          content: "300+ Clients Worldwide",
         },
         {
-          icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701808099/templates/template_one/icon_two_dptua1.svg",
-          title: "Interior Work",
-          description: "There are many variations of the passages of lorem Ipsum from available, majority.",
-        },
-        {
-          icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701808099/templates/template_one/icon_three_v71ltg.svg",
-          title: "Realization",
-          description: "There are many variations of the passages of lorem Ipsum from available, majority.",
+          icon: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1703134396/project-svgrepo-com_qjvqow.svg",
+          title: "Projects",
+          content: "80+ completed projects",
         },
       ],
-    },
-    feature: {
-      title: "We Create The Art Of Stylish Living Stylishly",
       description:
-        "It is a long established fact that a reader will be distracted by the of readable content of a page when looking at its layouts the points of using that it has a more-or-less normal.",
-      phone: "012345678",
-      buttonText: "Get Free Estimate",
-      icons: [
-        {
-          icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701813236/templates/template_one/Call_gqvv4l.svg",
-        },
-        {
-          icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701813389/templates/template_one/Vector_5_vvvt2o.svg",
-        },
-      ],
-      imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701813388/templates/template_one/Photo_sonnlx.jpg",
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...",
     },
     testimonial: {
       title: "What the People Thinks About Us",
       cards: [
         {
-          name: "Nattasha Mith",
-          location: "Sydney, USA",
-          imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701808853/templates/template_one/Photo_1_zsyklb.jpg",
-          opinion: "Lorem Ipsum is simply dummy text of the typesetting industry. Ipsum has been.",
+          avatar: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1703134021/avatar4_tn7dyv.jpg",
+          name: "Ernest Achiever",
+          review:
+            "Lorem ipsum doloripsum doloripsum doloripsum doloripsum doloripsum doloripsum dolor ipsum doloripsumdoloripsumdoloripsumdoloripsumdoloripsum doloripsum doloripsum doloripsum dolor",
         },
         {
-          name: "Raymond Galario",
-          location: "Sydney, Australia",
-          imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701808853/templates/template_one/Photo_1_zsyklb.jpg",
-          opinion: "Lorem Ipsum is simply dummy text of the typesetting industry. Ipsum has been scrambled it to make a type book.",
+          avatar: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1703134020/avatar3_pbztwn.jpg",
+          name: "Ernest Achiever",
+          review:
+            "Lorem ipsum doloripsum doloripsum doloripsum doloripsum doloripsum doloripsum dolor ipsum doloripsumdoloripsumdoloripsumdoloripsumdoloripsum doloripsum doloripsum doloripsum dolor",
         },
         {
-          name: "Benny Roll ",
-          location: "Sydney, New York",
-          imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701808853/templates/template_one/Photo_1_zsyklb.jpg",
-          opinion: "Lorem Ipsum is simply dummy text of the typesetting industry. Ipsum has been scrambled.",
+          avatar: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1703134020/avatar2_lgwr3o.jpg",
+          name: "Ernest Achiever",
+          review:
+            "Lorem ipsum doloripsum doloripsum doloripsum doloripsum doloripsum doloripsum dolor ipsum doloripsumdoloripsumdoloripsumdoloripsumdoloripsum doloripsum doloripsum doloripsum dolor",
         },
-      ],
-    },
-    logos: {
-      companies: [
-        { imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701808448/templates/template_one/01_p78hjd.svg" },
-        { imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701808448/templates/template_one/02_mnw1ps.svg" },
-        { imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701808448/templates/template_one/03_fiplpx.svg" },
-        { imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701808449/templates/template_one/04_pg8flc.svg" },
-        { imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701808449/templates/template_one/05_prt3gi.svg" },
+        {
+          avatar: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1703134020/avatar1_g7wm1r.jpg",
+          name: "Ernest Achiever",
+          review:
+            "Lorem ipsum doloripsum doloripsum doloripsum doloripsum doloripsum doloripsum dolor ipsum doloripsumdoloripsumdoloripsumdoloripsumdoloripsum doloripsum doloripsum doloripsum dolor",
+        },
       ],
     },
     projects: {
-      title: "Follow Our Projects",
-      description: "It is a long established fact that a reader will be distracted by the of readable content of page  lookings at its layouts  points.",
       cards: [
         {
-          imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701808451/templates/template_one/Photo_2_w7jdep.jpg",
-          title: "Modern Kitchan",
-          description: "Decor / Artchitecture",
-          icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701718889/templates/template_one/Vector_5_nzmfwn.svg",
+          image: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1703134068/portfolio3_rzhjvk.jpg",
+          title: "projects2 Item 1",
+          githubLink: "https://github.com",
+          demoLink: "https://dribbble.com/Alien_pixels",
         },
         {
-          imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701808451/templates/template_one/Photo_3_wig9kc.jpg",
-          title: "Modern Kitchan",
-          description: "Decor / Artchitecture",
-          icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701718889/templates/template_one/Vector_5_nzmfwn.svg",
+          image: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1703134049/portfolio4_ibgd9o.jpg",
+          title: "projects2 Item 2",
+          githubLink: "https://github.com",
+          demoLink: "https://dribbble.com/Alien_pixels",
         },
         {
-          imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701808452/templates/template_one/Photo_iojikc.jpg",
-          title: "Modern Kitchan",
-          description: "Decor / Artchitecture",
-          icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701718889/templates/template_one/Vector_5_nzmfwn.svg",
+          image: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1703134068/portfolio3_rzhjvk.jpg",
+          title: "projects2 Item 3",
+          githubLink: "https://github.com",
+          demoLink: "https://dribbble.com/Alien_pixels",
         },
         {
-          imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701808450/templates/template_one/Photo_1_njncs1.jpg",
-          title: "Modern Kitchan",
-          description: "Decor / Artchitecture",
-          icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701718889/templates/template_one/Vector_5_nzmfwn.svg",
+          image: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1703134049/portfolio4_ibgd9o.jpg",
+          title: "projects2 Item 4",
+          githubLink: "https://github.com",
+          demoLink: "https://dribbble.com/Alien_pixels",
+        },
+        {
+          image: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1703134029/portfolio5_cugtet.png",
+          title: "projects2 Item 5",
+          githubLink: "https://github.com",
+          demoLink: "https://dribbble.com/Alien_pixels",
+        },
+        {
+          image: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1703134049/portfolio4_ibgd9o.jpg",
+          title: "projects2 Item 6",
+          githubLink: "https://github.com",
+          demoLink: "https://dribbble.com/Alien_pixels",
         },
       ],
     },
-    statistic: {
-      statistics: [
+    contact: {
+      options: [
         {
-          title: "Years Of Experience",
-          value: "12",
+          title: "Email",
+          subtitle: "ahmed.solimanth57@gmail.com",
+          link: "mailto:ahmed.solimanth57@gmail.com",
+          logo: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1703134252/gmail-svgrepo-com_xppy7f.svg",
         },
         {
-          title: "Success Projects",
-          value: "85",
+          title: "Messenger",
+          subtitle: "Ahmed soliman Gohnaim",
+          link: "https://m.me/ahmed.soliman.3591267",
+          logo: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1703134252/facebook-svgrepo-com_lmghnk.svg",
         },
         {
-          title: "Active Projects",
-          value: "15",
-        },
-        {
-          title: "Happy Customers",
-          value: "95",
+          title: "WhatsApp",
+          subtitle: "___________",
+          link: "https://wa.me/1234567890",
+          logo: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1703134203/whatsapp-whats-app-svgrepo-com_ug4dbt.svg", // Replace with your WhatsApp link
         },
       ],
     },
@@ -157,187 +163,41 @@ const templateSlice2 = createSlice({
         },
       ],
     },
-    team: {
-      title: "Our Team Members",
-      cards: [
-        {
-          name: "Nattasha",
-          location: "Design, Australia",
-          imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701808855/templates/template_one/Photo_fz8cuc.jpg",
-          mediaIcons: [
-            {
-              icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701809141/templates/template_one/facebook_td263x.svg",
-              url: "https://facebook.com",
-            },
-            {
-              icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701809142/templates/template_one/x_yp3y5n.svg",
-              url: "https://x.com",
-            },
-            {
-              icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701809142/templates/template_one/linkedin_itbvp5.svg",
-              url: "https://linkedin.com",
-            },
-            {
-              icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701809141/templates/template_one/instagram_dlrab9.svg",
-              url: "https://instagram.com",
-            },
-          ],
-          email: "julie@email.com",
-        },
-        {
-          name: "Julie",
-          location: "Design, Australia",
-          imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701808855/templates/template_one/Photo_fz8cuc.jpg",
-          mediaIcons: [
-            {
-              icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701809141/templates/template_one/facebook_td263x.svg",
-              url: "https://facebook.com",
-            },
-            {
-              icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701809142/templates/template_one/x_yp3y5n.svg",
-              url: "https://x.com",
-            },
-            {
-              icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701809142/templates/template_one/linkedin_itbvp5.svg",
-              url: "https://linkedin.com",
-            },
-            {
-              icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701809141/templates/template_one/instagram_dlrab9.svg",
-              url: "https://instagram.com",
-            },
-          ],
-          email: "julie@email.com",
-        },
-        {
-          name: "Alex",
-          location: "Design, Australia",
-          imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701808855/templates/template_one/Photo_fz8cuc.jpg",
-          mediaIcons: [
-            {
-              icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701809141/templates/template_one/facebook_td263x.svg",
-              url: "https://facebook.com",
-            },
-            {
-              icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701809142/templates/template_one/x_yp3y5n.svg",
-              url: "https://x.com",
-            },
-            {
-              icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701809142/templates/template_one/linkedin_itbvp5.svg",
-              url: "https://linkedin.com",
-            },
-            {
-              icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701809141/templates/template_one/instagram_dlrab9.svg",
-              url: "https://instagram.com",
-            },
-          ],
-          email: "julie@email.com",
-        },
-        {
-          name: "John",
-          location: "Design, Australia",
-          imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701808855/templates/template_one/Photo_fz8cuc.jpg",
-          mediaIcons: [
-            {
-              icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701809141/templates/template_one/facebook_td263x.svg",
-              url: "https://facebook.com",
-            },
-            {
-              icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701809142/templates/template_one/x_yp3y5n.svg",
-              url: "https://x.com",
-            },
-            {
-              icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701809142/templates/template_one/linkedin_itbvp5.svg",
-              url: "https://linkedin.com",
-            },
-            {
-              icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701809141/templates/template_one/instagram_dlrab9.svg",
-              url: "https://instagram.com",
-            },
-          ],
-          email: "julie@email.com",
-        },
-      ],
-    },
-    pricing: {
-      title: "Pricing & Plan",
-      description: "Home / Priceing",
-      blocks: [
-        {
-          plan: "Design advices",
-          price: "29",
-          timeUnit: "/month",
-          moneyUnit: "$",
-          features: ["General living space advices", "Renovation advices", "Interior design advices", "Furniture reorganization", "Up to 5 hours meetings"],
-          buttonText: "Get Started",
-          icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701813389/templates/template_one/Vector_5_vvvt2o.svg",
-        },
-        {
-          plan: "Complete interior",
-          price: "39",
-          timeUnit: "/month",
-          moneyUnit: "$",
-          PopularPlan: "Most Popular Plans",
-          features: ["Complete home redesign", "Interior and exterior works", "Modular interior planning", "Kitchen design", "Garages organization"],
-          buttonText: "Get Started",
-          icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701813389/templates/template_one/Vector_5_vvvt2o.svg",
-        },
-        {
-          plan: "Furniture design",
-          price: "59",
-          timeUnit: "/month",
-          moneyUnit: "$",
-          features: ["Furniture for living room", "Furniture refurbishment", "Sofas and armchairs", "Tables and chairs", "Kitchens"],
-          buttonText: "Get Started",
-          icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701813389/templates/template_one/Vector_5_vvvt2o.svg",
-        },
-      ],
-    },
-    cta: {
-      title: "Wanna join the interno?",
-      description: "It is a long established fact  will be distracted.",
-      buttonText: "Contact With Us",
-      icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701813389/templates/template_one/Vector_5_vvvt2o.svg",
-    },
-
     footer: {
-      imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701811960/templates/template_one/Logo_mj7rvw.png",
-      description: "It is a long established fact that a reader will be distracted lookings.",
+      logo: "CSE",
+      rights: "ssssssssssssssssssssss all rights reserved.",
       mediaIcons: [
         {
-          icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701809141/templates/template_one/facebook_td263x.svg",
+          icon: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1703129090/icons8-facebook-50_xfbimo.png",
           url: "https://facebook.com",
         },
         {
-          icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701809142/templates/template_one/x_yp3y5n.svg",
-          url: "https://x.com",
-        },
-        {
-          icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701809142/templates/template_one/linkedin_itbvp5.svg",
-          url: "https://linkedin.com",
-        },
-        {
-          icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701809141/templates/template_one/instagram_dlrab9.svg",
+          icon: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1703129090/icons8-instagram-48_tywoff.png",
           url: "https://instagram.com",
         },
-      ],
-
-      items: [
         {
-          title: "services",
-          links: ["Kitchan,", "Living Area,", "Bathroom,", "Dinning Hall,", "Bedroom"],
-        },
-        {
-          title: "section",
-          links: ["About Us", " Projects", "Our Team", "Contact Us", "Services"],
+          icon: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1703129090/icons8-facebook-50_xfbimo.png",
+          url: "https://facebook.com",
         },
       ],
-      contact: {
-        title: "contact",
-        location: "55 East Birchwood Ave. Brooklyn, New York 11201",
-        email: "contact@interno.com",
-        phone: "(123) 125-858",
-      },
     },
+    services: [
+      {
+        title: "UI/UX Design",
+        items: ["lorem ipsum,", "Llorem ipsuma,", "Blorem ipsumm,", "Dilorem ipsumll,", "lorem ipsum"],
+        icon: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1703134251/correct-signal-svgrepo-com_vvf3sw.svg",
+      },
+      {
+        title: "WebDevelopment",
+        items: ["lorem ipsum,", "Llorem ipsuma,", "Blorem ipsumm,", "Dilorem ipsumll,", "lorem ipsum"],
+        icon: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1703134251/correct-signal-svgrepo-com_vvf3sw.svg",
+      },
+      {
+        title: "Content Creation",
+        items: ["lorem ipsum,", "Llorem ipsuma,", "Blorem ipsumm,", "Dilorem ipsumll,", "lorem ipsum"],
+        icon: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1703134251/correct-signal-svgrepo-com_vvf3sw.svg",
+      },
+    ],
   },
 
   name: "templateSlice2",
