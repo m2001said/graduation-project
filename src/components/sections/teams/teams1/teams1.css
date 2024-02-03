@@ -1,12 +1,17 @@
-.team1{
+.team1 {
   background: var(--website-color-4);
   padding: 40px;
 }
-.team1-head{
+
+.team1 h1{
+  color: var(--website-color-3);
+}
+
+.team1-head {
   text-align: center;
-  font-weight:550;
+  font-weight: 550;
   font-size: 40px;
-  padding:10px;
+  padding: 10px;
   margin-bottom: 30px;
 }
 .team1-Card {
@@ -20,14 +25,14 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content:center;
+  justify-content: center;
   gap: 22px;
 }
 
 .team1-Card-main-show {
   position: relative;
   width: 20%;
-  max-width:200px ;
+  max-width: 200px;
   max-height: 300px;
   min-width: 200px;
   gap: 7px;
@@ -35,34 +40,40 @@
 }
 
 .team1-Card-main-img {
-  width:100%;
+  width: 100%;
   height: 100%;
   border-radius: 8px;
 }
 .team1-Card-main-info {
   position: absolute;
-  bottom: -100%; 
+  bottom: -100%;
   left: 0;
   width: 100%;
   height: 100%;
-  background: var(--white);
+  background: var(--website-color-1);
   padding: 20px;
   transition: bottom 0.5s ease-in-out;
   border-radius: 6px;
   text-align: center;
 }
 
-.team1-Card-main-info h1{
+.team1-Card-main-info h1 {
   font-size: 20px;
   font-weight: bold;
+  color: var(--website-color-3);
 }
-.team1-Card-main-info p{
+.team1-Card-main-info p {
   font-size: 14px;
   font-weight: 400px;
+  color: var(--grey);
+}
+
+.team1-Card-main-info h4 {
+  color: var(--website-color-3);
 }
 
 .slideUp {
-  bottom: 0; 
+  bottom: 0;
 }
 .team-media-icon {
   width: auto;
@@ -70,17 +81,15 @@
   margin: auto;
   margin-top: 40px;
   margin-bottom: 60px;
-  padding: 15px; 
+  padding: 15px;
   color: var(--website-color-3);
   border-radius: 50%;
   display: flex;
   flex-direction: row;
   justify-content: center;
-  align-items: center; 
+  align-items: center;
   gap: 15px;
 }
-
-
 
 /* Media query for smaller screens */
 @media screen and (max-width: 680px) {
