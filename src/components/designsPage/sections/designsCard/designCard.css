@@ -66,6 +66,6 @@
 .designs-container {
   margin-top: 4rem;
 }
-.design-info {
-  flex: 1;
-}
+.designs-description {
+  color: rgba(255, 255, 255, 0.767);
+} */
