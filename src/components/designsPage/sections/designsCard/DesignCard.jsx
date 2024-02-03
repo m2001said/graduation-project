@@ -24,7 +24,7 @@ const DesignCard = ({ Designdata, index }) => {
           <p className="designs-description text-gray-600 text-sm  text-center ">{Designdata.description}</p>
         </div>
         {index > 0 ? (
-          <Link className="flex justify-center items-center text-white rounded-md mt-2 px-4 py-2 Build-button" to={`/build-trial-design${index + 1}`}>
+          <Link className="flex justify-center items-center text-white rounded-md mt-2 px-4 py-2 Build-button" to={`/build-trial-design${index}`}>
             Build
           </Link>
         ) : (
