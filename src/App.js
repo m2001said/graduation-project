@@ -9,6 +9,7 @@ import TrialDesign4 from "./pages/TrialDesign4";
 import TrialDesign5 from "./pages/TrialDesign5";
 import TrialDesign6 from "./pages/TrialDesign6";
 import BuildYourPage from "./pages/BuildYourPage";
+import NotFound from "./pages/NotFoundPage";
 
 function App() {
   return (
@@ -17,7 +18,6 @@ function App() {
         <Route path="/" element={<MainPage />} />
         <Route path="/Designs-page" element={<DesignsPage />} />
         <Route path="/build-your-own-page" element={<BuildYourPage />} />
-
         <Route path="/preview-trial-design1" element={<TrialDesign1 />} />
         <Route path="/preview-trial-design2" element={<TrialDesign2 />} />
         <Route path="/preview-trial-design3" element={<TrialDesign3 />} />
@@ -34,7 +34,7 @@ function App() {
         </Route>
         {/* <Route path="/trial-design1" element={<TrialDesign1 />} /> */}
 
-        {/* <Route path="*" element={<NotFound />} /> */}
+        <Route path="*" element={<NotFound />} />
       </Routes>
     </>
   );
