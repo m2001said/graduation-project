@@ -44,7 +44,7 @@ const DesignsContainer = () => {
         <div className="container mx-auto px-4  py-4">
           <h1 className="text-3xl font-bold tracking-tighter mb-4 text-center text-white sm:text-4xl md:text-5xl lg:text-6xl/none">Our Designs</h1>
           <p className="text-gray-400 text-center">Explore our latest and greatest designs.</p>
-          <div className="designs-container mt-8 flex flex-wrap gap-4 justify-center">
+          <div className="designs-container flex flex-wrap gap-8 justify-center">
             {DesignsData.map((design, index) => (
               <DesignCard Designdata={design} index={index + 1}></DesignCard>
             ))}

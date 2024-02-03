@@ -1,5 +1,5 @@
 .design-card {
-  max-width: 250px;
+  max-width: 270px;
   background: #ffffffbf;
   position: relative;
   /* z-index: 1;
@@ -45,7 +45,7 @@
 }
 .design-Img-container:hover img {
   transform: scale(1.05);
-  filter: brightness(80%);
+  filter: brightness(0.5);
 }
 .design-Img-container:hover > .Preview-button {
   transform: translate(-50%, -50%);
@@ -55,13 +55,14 @@
   background: #481b91;
   color: white;
   width: 100%;
+  transition: var(--transition);
 }
-
-/* .designs-title {
-  margin-block: 8px;
-  color: whitesmoke;
-  font-size: 19px;
+.Build-button:active {
+  transform: scale(0.95);
 }
-.designs-description {
-  color: rgba(255, 255, 255, 0.767);
-} */
+.Build-button:hover {
+  background: #511fa0;
+}
+.designs-container {
+  margin-top: 4rem;
+}
