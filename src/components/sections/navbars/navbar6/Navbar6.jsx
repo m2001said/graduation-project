@@ -11,11 +11,9 @@ const Navbar6 = () => {
     <header className="nav-6">
       <div className="container mx-auto px-8 py-2">
         <div className="navigation">
-          <div className="logo">
-            <div className="flex items-center gap-1">
+            <div className="logo flex items-center gap-1">
               <img src={navbar.logo} alt="" className="design6-logo" />
             </div>
-          </div>
 
           <div className="nav__menu " ref={menuRef}>
             <div className="nav__list__wrapper flex items-center gap-5">
