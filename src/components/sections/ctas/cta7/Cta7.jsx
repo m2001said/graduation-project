@@ -1,5 +1,5 @@
 import styles from "../../../sections/heros/hero7/styles7/style";
-import Button7 from "../../features/feature7/feature71/Button7";
+import Button7 from "../../features/feature7/feature7_1/Button7";
 import { Ctas7 } from "../../../../features/templateData/templateSlice7";
 
 const Cta7 = () => (

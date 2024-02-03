@@ -1,7 +1,7 @@
 import { features } from "../../../../../features/templateData/templateSlice7";
 import { features1 } from "../../../../../features/templateData/templateSlice7";
 import styles, { layout } from "../../../heros/hero7/styles7/style";
-import Button7 from "../feature71/Button7";
+import Button7 from "../feature7_1/Button7";
 
 const FeatureCard = ({ icon, title, content, index }) => (
   <div className={`flex flex-row p-6 rounded-[20px] ${index !== features.length - 1 ? "mb-6" : "mb-0"} feature-card`}>

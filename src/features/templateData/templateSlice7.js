@@ -155,13 +155,6 @@ export const feedback = [
     img: "https://res.cloudinary.com/duc04fwdb/image/upload/v1706815330/jammal_photos/xc3vlzv96mohozyawmnq.png",
   },
 ];
-export const feedbackimg = [
-  {
-    imgUrl: {
-      imgUrlA: "https://res.cloudinary.com/duc04fwdb/image/upload/v1706814918/jammal_photos/aziszwc65j5tueql0pov.svg",
-    },
-  },
-];
 
 export const statss = [
   {

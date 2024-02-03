@@ -1,6 +1,6 @@
 import styles, { layout } from "../../../heros/hero7/styles7/style";
 import { features3 } from "../../../../../features/templateData/templateSlice7";
-import Button7 from "../feature71/Button7";
+import Button7 from "../feature7_1/Button7";
 
 const CardDeal = () => (
   <section className={layout.section}>

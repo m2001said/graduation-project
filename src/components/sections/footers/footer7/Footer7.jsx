@@ -2,7 +2,7 @@ import styles from "../../heros/hero7/styles7/style";
 import { footerLinks, socialMedia, sM } from "../../../../features/templateData/templateSlice7";
 
 const Footer7 = () => (
-  <section className={`${styles.flexCenter} ${styles.paddingY} flex-col`}>
+  <section className={`${styles.flexCenter} ${styles.paddingY} flex-col`} style={{ color: "var(--color-dim-white)" }}>
     <div className={`${styles.flexStart} md:flex-row flex-col mb-8 w-full`}>
       <div className="flex-[1] flex flex-col justify-start mr-10">
         <img src={footerLinks[0].imgUrlA} alt="hoobank" className="w-[266px] h-[72.14px] object-contain" />
@@ -17,9 +17,13 @@ const Footer7 = () => (
               {footerlink.links.map((link, index) => (
                 <li
                   key={link.name}
-                  className={`font-poppins font-normal text-[16px] leading-[24px] text-dimWhite hover:text-secondary cursor-pointer ${
-                    index !== footerlink.links.length - 1 ? "mb-4" : "mb-0"
-                  }`}
+                  className={`font-poppins font-normal text-[16px] leading-[24px] cursor-pointer ${index !== footerlink.links.length - 1 ? "mb-4" : "mb-0"}`}
+                  style={{
+                    color: "var(--color-dim-white)",
+                    transition: "color 0.3s",
+                  }}
+                  onMouseEnter={(e) => (e.target.style.color = "var(--color-secondary)")}
+                  onMouseLeave={(e) => (e.target.style.color = "var(--color-dim-white)")}
                 >
                   {link.name}
                 </li>

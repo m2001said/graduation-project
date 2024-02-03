@@ -1,7 +1,7 @@
 import { feedback } from "../../../../features/templateData/templateSlice7";
 import { test7 } from "../../../../features/templateData/templateSlice7";
 import styles from "../../heros/hero7/styles7/style";
-import FeedbackCard from "../testimonials7/FeedbackCard";
+import FeedbackCard from "../testimonials7/feedback7/FeedbackCard7";
 
 const Testimonials7 = () => (
   <section id="clients" className={`${styles.paddingY} ${styles.flexCenter} flex-col relative `}>
