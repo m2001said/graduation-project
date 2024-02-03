@@ -40,6 +40,9 @@
   transform: translate(-168px, -50%);
   transition: 0.4s;
 }
+.Preview-button img {
+  width: 20px;
+}
 .design-Img-container:hover img {
   transform: scale(1.05);
   filter: brightness(80%);
