@@ -2,17 +2,17 @@ import React from "react";
 
 const SignUpForm = ({ toggleForm }) => (
   <>
-    <h1>انشاء حساب</h1>
+    <h1>Create Account</h1>
     <div className="modal-form">
-      <label htmlFor="newEmail">البريد الالكتروني</label>
+      <label htmlFor="newEmail">Email</label>
       <input type="email" id="newEmail" />
-      <label htmlFor="newPassword">الرقم السري</label>
+      <label htmlFor="newPassword">Password</label>
       <input type="password" id="newPassword" />
       <div className="message-error"></div>
-      <button className="form-button">انشاء الحساب</button>
+      <button className="form-button">Create Account</button>
       <div className="sub-button">
-        <span> لديك حساب بالفعل ؟ </span>
-        <button onClick={toggleForm}>تسجيل الدخول</button>
+        <span> Already have an account? </span>
+        <button onClick={toggleForm}>Login</button>
       </div>
     </div>
   </>

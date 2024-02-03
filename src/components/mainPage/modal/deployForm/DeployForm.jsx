@@ -7,14 +7,14 @@ const AiForm = () => {
   };
   return (
     <>
-      <h1> تم النشر </h1>
+      <h1> Published </h1>
       <div className="deploy-form-link">
-        <p className="deploy-form-label"> لينك موقعك </p>
+        <p className="deploy-form-label"> Your website link </p>
         <p className="website-link">Abdo.website.vercel.com</p>
       </div>
       <div className="deploy-buttons">
-        <button className="form-button button-2">الذهاب للموقع</button>
-        <button onClick={toggleForm}>رجوع</button>
+        <button className="form-button button-2">Go to the website</button>
+        <button onClick={toggleForm}>Back</button>
       </div>
     </>
   );
