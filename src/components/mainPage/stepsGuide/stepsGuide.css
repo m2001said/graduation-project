@@ -29,7 +29,8 @@
   flex-direction: row-reverse;
 }
 
-.main-steps .step-card::before {
+.main-steps .step-card::before,
+.step-title:after {
   content: counter(stepcounter);
   height: 30px;
   width: 30px;
@@ -47,7 +48,9 @@
   left: 50%;
   transform: translateX(-50%);
 }
-
+.step-title:after {
+  display: none;
+}
 .main-steps .step-img,
 .main-steps .step-info {
   width: 40%;
@@ -86,5 +89,24 @@
   }
   .step-info {
     text-align: center;
+  }
+  .step-title:after {
+    position: absolute;
+    left: -33px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    top: auto;
+    font-weight: 400;
+    width: 25px;
+    height: 25px;
+  }
+  .step-title {
+    width: fit-content;
+    position: relative;
+    margin: auto;
+    display: flex;
+    align-items: center;
   }
 }
