@@ -1,0 +1,33 @@
+.swiper {
+  width: 240px;
+  height: auto;
+  /* align-items: center; */
+  /* justify-content: center; */
+  padding: 0.1rem;
+}
+
+.swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 18px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.swiper-slide:nth-child(1n) {
+  background-color: var(--color-2-primary);
+}
+
+.swiper-slide:nth-child(2n) {
+  background-color: var(--color-2-primary);
+}
+
+.swiper-slide:nth-child(3n) {
+  background-color: var(--color-2-primary);
+}
+.swiper-slide:hover {
+  transition: var(--transition2);
+  background-color: var(--color-2-bg);
+}

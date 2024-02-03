@@ -1,0 +1,119 @@
+.hero5{
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    padding-top: 10rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    margin: auto;
+}
+
+.hero5-mainText{
+    display: flex;
+    align-items: center;
+    color: var(--website-5-black);
+    font-size:30px ;
+    font-weight: 700;
+    line-height: 2.5rem;
+    text-align: center;
+    justify-content: center;
+    margin: auto;
+}
+
+.hero5-imeges{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin: 1rem auto 0;
+    justify-content: center;
+    position: relative;
+    border-radius: 5rem;
+}
+
+.hero5-videoDiv{
+    width: 100%;
+}
+
+.hero5-imeges-video{
+    border-radius: 10rem;
+}
+
+.hero5-plane-image{
+    position: absolute;
+    width: 100%;
+    top: -70%;
+}
+
+@media screen and (min-width: 480px) {
+    .hero5{
+        padding-top: 12rem;
+    }
+}
+@media screen and (min-width: 570px) {
+   .hero5-mainText{
+    width: 80%;
+    /* font-size: 33px; */
+   }
+   .hero5-imeges-video{
+    border-radius: 15rem;
+   }
+
+   .hero5-plane-image{
+    position: absolute;
+    width: 95%;
+    top: -70%;
+   }
+}
+
+@media screen and (min-width: 680px) {
+    .hero5-mainText{
+        width: 80%;
+        margin: auto;
+    }
+
+    .hero5-videoDiv{
+        width: 80%;
+    }
+
+    .hero5-imeges-video{
+        width: 100%;
+        height: 100%;
+        border-radius: 15rem;
+    }
+
+    .hero5-plane-image{
+        width: 95%;
+        top: -80%;
+    }
+}
+@media screen and (min-width: 960px) {
+    .hero5{
+        padding: 13rem;
+        padding-bottom: 5rem;
+        font-size: 35px;
+        line-height: 4rem;
+    }
+    .hero5-mainText{
+        width: 50%;
+        padding-bottom: 1.5rem;
+        font-size: 32px;
+        line-height: 4rem;
+    }
+}
+
+@media screen and (min-width: 1024px){
+    p {
+      font-size: 13px;
+      line-height: 22px;
+    }
+    
+    h4 {
+      font-size: 20px;
+    }
+    
+    h2 {
+      font-size: 30px;
+    }
+  }
+
