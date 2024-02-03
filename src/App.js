@@ -29,6 +29,8 @@ function App() {
           <Route path="/build-trial-design6" element={<TrialDesign6 />} />
         </Route>
         {/* <Route path="/trial-design1" element={<TrialDesign1 />} /> */}
+
+        {/* <Route path="*" element={<NotFound />} /> */}
       </Routes>
     </>
   );
