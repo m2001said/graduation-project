@@ -25,7 +25,7 @@
   position: relative;
   transition: 0.4s;
 }
-.design-Img-container img {
+.design-Img-container .design-Img {
   transition: 0.4s;
 }
 .Preview-button {
@@ -43,7 +43,7 @@
 .Preview-button img {
   width: 20px;
 }
-.design-Img-container:hover img {
+.design-Img-container:hover .design-Img {
   transform: scale(1.05);
   filter: brightness(0.5);
 }
@@ -65,4 +65,7 @@
 }
 .designs-container {
   margin-top: 4rem;
+}
+.design-info {
+  flex: 1;
 }

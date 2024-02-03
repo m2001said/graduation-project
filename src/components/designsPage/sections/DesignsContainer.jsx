@@ -6,6 +6,11 @@ import design3 from "../../../assets/images/designs/design3.png";
 
 const DesignsData = [
   {
+    title: "Start From Scratch",
+    description: " Craft a page that reflects your professionalism",
+    imageUrl: design3,
+  },
+  {
     title: "DesignTitle1",
     description: " Design description Design description ",
     imageUrl: design3,
@@ -46,7 +51,7 @@ const DesignsContainer = () => {
           <p className="text-gray-400 text-center">Explore our latest and greatest designs.</p>
           <div className="designs-container flex flex-wrap gap-8 justify-center">
             {DesignsData.map((design, index) => (
-              <DesignCard Designdata={design} index={index + 1}></DesignCard>
+              <DesignCard Designdata={design} index={index}></DesignCard>
             ))}
           </div>
         </div>
