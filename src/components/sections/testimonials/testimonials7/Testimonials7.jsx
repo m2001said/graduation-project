@@ -6,8 +6,6 @@ import FeedbackCard from "../testimonials7/feedback7/FeedbackCard7";
 
 const Testimonials7 = () => (
   <section id="clients" className={`${styles.paddingY} ${styles.flexCenter} flex-col relative `}>
-    <div className="absolute z-0 w-60 h-60 right-[-50%] rounded-full bg-blue-gradient bottom-40" />
-
     <div className="w-full flex justify-between items-center md:flex-row flex-col sm:mb-16 mb-6 relative z-1">
       <h2 className={styles.heading2}>
         {test7[0].title.titleA} <br className="sm:block hidden" /> {test7[0].title.titleB}
