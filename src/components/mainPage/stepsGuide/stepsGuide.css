@@ -2,7 +2,8 @@
   /* background: radial-gradient(circle at center right, #b2b3f194, #fff 9%, transparent 0),
     radial-gradient(circle at center left, #f1d7b294, #fff 9%, transparent 0);
   background-size: 100% 600px;
-  background-position-y: -106px, 879px; */
+  background-position-y: -106px, 879px; 
+  */
 }
 .main-steps .container {
   padding-block: 20px;
@@ -28,7 +29,9 @@
 .main-steps .step-card:nth-child(odd) {
   flex-direction: row-reverse;
 }
-
+.step-description{
+  font-size: 1.3rem;
+}
 .main-steps .step-card::before,
 .step-title:after {
   content: counter(stepcounter);
@@ -67,7 +70,7 @@
   margin: auto;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 991px) {
   .step-card,
   .step-card:nth-child(odd) {
     flex-direction: column-reverse !important;
