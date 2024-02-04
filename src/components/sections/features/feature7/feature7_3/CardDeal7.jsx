@@ -8,7 +8,9 @@ const CardDeal = () => (
       <h2 className={styles.heading2}>
         {features3[0].title.titleA} <br className="sm:block hidden" /> {features3[0].title.titleB}
       </h2>
-      <p className={`${styles.paragraph} max-w-[470px] mt-5`}>{features3[0].title.titleC} </p>
+      <p className={`${styles.paragraph} max-w-[470px] mt-5`} style={{ color: "var(--color-dim-white)" }}>
+        {features3[0].title.titleC}{" "}
+      </p>
 
       <Button7 styles={`px-4 py-5 mt-6 bg-green-500 text-white rounded-full hover:bg-green-700 `} />
     </div>

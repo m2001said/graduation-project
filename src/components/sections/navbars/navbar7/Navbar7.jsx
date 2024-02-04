@@ -6,7 +6,7 @@ const Navbar7 = () => {
   const [toggle, setToggle] = useState(false);
 
   return (
-    <nav className="w-full flex py-6 justify-between items-center navbar" style={{ color: "var(--color-dim-white)" }}>
+    <nav7 className="w-full flex py-6 justify-between items-center navbar" style={{ color: "var(--color-dim-white)" }}>
       <img src={navLinks7[0].imgUrl.imgUrlA} alt="hoobank" className="w-[124px] h-[32px]" />
 
       <ul className="list-none sm:flex hidden justify-end items-center flex-1">
@@ -51,7 +51,7 @@ const Navbar7 = () => {
           </ul>
         </div>
       </div>
-    </nav>
+    </nav7>
   );
 };
 
