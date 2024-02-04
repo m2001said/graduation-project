@@ -8,6 +8,8 @@
   --black-gradient-2: linear-gradient(-168.39deg, #ffffff -278.56%, #6d6d6d -78.47%, #11101d 91.61%);
   --gray-gradient: linear-gradient(153.47deg, rgba(255, 255, 255, 0) -341.94%, #14101d 95.11%);
   --discount-gradient: linear-gradient(125.17deg, #272727 0%, #11101d 100%);
+  --pink__gradient: linear-gradient(90deg, #f4c4f3 0%, #fc67fa 100%);
+  --white__gradient: rgba(255, 255, 255, 0.6);
   --color-primary: #000f04;
   --color-secondary: #00f6ff;
   --color-dim-white: rgba(255, 255, 255, 0.7);
@@ -42,8 +44,8 @@
 @tailwind utilities;
 
 :root {
-  --black-gradient: linear-gradient(144.39deg, #ffffff -278.56%, #6d6d6d -78.47%, #11101d 91.61%);
-  --card-shadow: 0px 20px 100px -10px rgba(66, 71, 91, 0.1);
+  /* --black-gradient: linear-gradient(144.39deg, #ffffff -278.56%, #6d6d6d -78.47%, #11101d 91.61%); */
+  /* --card-shadow: 0px 20px 100px -10px rgba(66, 71, 91, 0.1); */
 }
 
 * {
@@ -59,23 +61,23 @@
 }
 
 .bg-blue-gradient {
-  background: linear-gradient(157.81deg, #def9fa -43.27%, #bef3f5 -21.24%, #9dedf0 12.19%, #7de7eb 29.82%, #5ce1e6 51.94%, #33bbcf 90.29%);
+  background: var(--blue-gradient);
 }
 
 .bg-black-gradient {
-  background: linear-gradient(144.39deg, #ffffff -278.56%, #6d6d6d -78.47%, #11101d 91.61%);
+  background: var(--black-gradient);
 }
 
 .bg-black-gradient-2 {
-  background: linear-gradient(-168.39deg, #ffffff -278.56%, #6d6d6d -78.47%, #11101d 91.61%);
+  background: var(--black-gradient-2);
 }
 
 .bg-gray-gradient {
-  background: linear-gradient(153.47deg, rgba(255, 255, 255, 0) -341.94%, #14101d 95.11%);
+  background: var(--gray-gradient);
 }
 
 .bg-discount-gradient {
-  background: linear-gradient(125.17deg, #272727 0%, #11101d 100%);
+  background: var(--discount-gradient);
 }
 
 .box-shadow {
@@ -127,16 +129,16 @@
 }
 
 .blue__gradient {
-  background: linear-gradient(180deg, rgba(188, 165, 255, 0) 0%, #214d76 100%);
+  background: var(--blue-gradient);
   filter: blur(123px);
 }
 
 .pink__gradient {
-  background: linear-gradient(90deg, #f4c4f3 0%, #fc67fa 100%);
+  background: var(--pink__gradient);
   filter: blur(900px);
 }
 
 .white__gradient {
-  background: rgba(255, 255, 255, 0.6);
+  background: var(--white__gradient);
   filter: blur(750px);
 }
