@@ -11,6 +11,15 @@ import TrialDesign6 from "./pages/TrialDesign6";
 import BuildYourPage from "./pages/BuildYourPage";
 import NotFound from "./pages/NotFoundPage";
 
+const trialDesignComponents = [
+  TrialDesign1,
+  TrialDesign2,
+  TrialDesign3,
+  TrialDesign4,
+  TrialDesign5,
+  TrialDesign6,
+];
+
 function App() {
   return (
     <>
@@ -18,22 +27,14 @@ function App() {
         <Route path="/" element={<MainPage />} />
         <Route path="/Designs-page" element={<DesignsPage />} />
         <Route path="/build-your-own-page" element={<BuildYourPage />} />
-        <Route path="/preview-trial-design1" element={<TrialDesign1 />} />
-        <Route path="/preview-trial-design2" element={<TrialDesign2 />} />
-        <Route path="/preview-trial-design3" element={<TrialDesign3 />} />
-        <Route path="/preview-trial-design4" element={<TrialDesign4 />} />
-        <Route path="/preview-trial-design5" element={<TrialDesign5 />} />
-        <Route path="/preview-trial-design6" element={<TrialDesign6 />} />
+        {trialDesignComponents.map((Component, index) => (
+          <Route path={`/preview-trial-design${index + 1}`} element={<Component />} />
+        ))}
         <Route element={<Dashboard />}>
-          <Route path="/build-trial-design1" element={<TrialDesign1 />} />
-          <Route path="/build-trial-design2" element={<TrialDesign2 />} />
-          <Route path="/build-trial-design3" element={<TrialDesign3 />} />
-          <Route path="/build-trial-design4" element={<TrialDesign4 />} />
-          <Route path="/build-trial-design5" element={<TrialDesign5 />} />
-          <Route path="/build-trial-design6" element={<TrialDesign6 />} />
+          {trialDesignComponents.map((Component, index) => (
+            <Route path={`/build-trial-design${index + 1}`} element={<Component />} />
+          ))}
         </Route>
-        {/* <Route path="/trial-design1" element={<TrialDesign1 />} /> */}
-
         <Route path="*" element={<NotFound />} />
       </Routes>
     </>
