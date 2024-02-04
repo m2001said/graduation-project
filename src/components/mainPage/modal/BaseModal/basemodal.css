@@ -84,7 +84,7 @@
   width: 85%;
   max-width: 330px;
   flex-direction: column;
-  direction: rtl;
+/*  direction: rtl;*/
 }
 
 .modal-content h1 {
@@ -138,4 +138,6 @@
 .button-2 {
   background: var(--color-5) !important;
 }
-
+.message-error{
+  color:#d71616e3 ;
+}
