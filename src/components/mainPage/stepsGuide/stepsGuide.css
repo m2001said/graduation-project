@@ -29,8 +29,9 @@
 .main-steps .step-card:nth-child(odd) {
   flex-direction: row-reverse;
 }
-.step-description{
+.step-description {
   font-size: 1.3rem;
+  color: #555;
 }
 .main-steps .step-card::before,
 .step-title:after {
