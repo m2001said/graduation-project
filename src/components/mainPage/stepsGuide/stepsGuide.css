@@ -36,7 +36,7 @@
   flex-direction: row-reverse;
 }
 .step-description {
-  font-size: 25px;
+  font-size: 22px;
   color: var(--discription-dark);
   line-height: 1.8;
 }
@@ -56,28 +56,27 @@
   font-size: 32px;
   color: var(--title-dark);
 }
-.main-steps .step-card::before,
-.step-title:after {
+.main-steps .step-card::before {
   content: counter(stepcounter);
   height: 30px;
   width: 30px;
   background: var(--color-2);
-  outline: solid 1px var(--color-2);
-  outline-offset: 1px;
   color: whitesmoke;
   display: flex;
   justify-content: center;
   align-items: center;
   z-index: 1;
   border-radius: 50%;
+  outline: solid 10px white;
   position: absolute;
   top: 0;
   left: 50%;
   transform: translateX(-50%);
 }
-.step-title:after {
+
+/*.step-title:after {
   display: none;
-}
+}*/
 .main-steps .step-img,
 .main-steps .step-info {
   width: 40%;
@@ -106,12 +105,26 @@
   .main-steps .container::after {
     display: none;
   }
-  .step-card::before {
+  .step-card{
+  padding-top: 60px;
+  }
+/*  .step-card::before {
     display: none !important;
   }
+  
+  .main-steps .step-card::after{
+    width: 200px;
+    height: 1px;
+    background: #30086b4b;
+    position: absolute;
+    top: 15px;
+    content: "";
+    transform: translatex(-50%);
+    left: 50%;
+  }*/
   .step-info {
     text-align: center;
-  }
+  }/*
   .step-title:after {
     position: absolute;
     left: -33px;
@@ -131,4 +144,4 @@
     display: flex;
     align-items: center;
   }
-}
+*/}

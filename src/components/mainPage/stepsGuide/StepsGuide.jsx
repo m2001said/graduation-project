@@ -9,19 +9,19 @@ const stepsData = [
   {
     title: "Sign In",
     description:
-      "To embark on your website creation journey, sign in to unlock the potential of crafting your own personalized web space. This process is your gateway to a free website page that remains at your fingertips, offering the flexibility to make modifications and deploy updates whenever inspiration strikes.",
+      "To embark on your website creation journey, sign in to unlock the potential of crafting your own personalized web space. This process is your gateway to a free website page that remains at your fingertips.",
     imageUrl: signin,
   },
   {
     title: "Choose Your Design",
     description: `
-Personalize your website with two design options. Blank Page: Start from scratch, choosing from our wide array of designs. AI-Generated: Select a design and let our AI create text and appropriate images for you. Enjoy the flexibility and creativity of our design choices.`,
+Personalize your website with two design options. Blank Page: Start from scratch, choosing from our wide array of designs. AI-Generated: Select a design and let our AI create text and appropriate images for you.`,
     imageUrl: ways,
   },
   {
     title: "Ai generator",
     description:
-      " Select your preferred design and let our AI do the rest. It will generate relevant text and choose suitable images based on your selection. Our AI ensures the content aligns with your design and purpose. Enjoy the convenience of our reliable AI generator for your content needs. Remember, clear instructions yield the best results.",
+      " Select your preferred design and let our AI do the rest. It will generate relevant text and choose suitable images based on your selection. Our AI ensures the content aligns with your design and purpose. ",
     imageUrl: ai,
   },
   {
