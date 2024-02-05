@@ -8,14 +8,11 @@ const DesignCard = ({ Designdata, index }) => {
       <div className="design-card rounded-lg overflow-hidden shadow-lg p-4 flex flex-column">
         <div className="design-Img-container">
           {index > 0 ? (
-            <>
-              <img src={Designdata.imageUrl} className="design-Img object-cover w-full" alt="design--Img" />
-              <Link className="Preview-button flex justify-center items-center" to={`/preview-trial-design${index}`}>
-                <img src="https://res.cloudinary.com/duc04fwdb/image/upload/v1706887574/jammal_photos/inkcorzh0n6jvtfvolgq.svg" alt="" />
-              </Link>
-            </>
+            <img src={Designdata.imageUrl} className="design-Img object-cover w-full" alt="design--Img" />
           ) : (
-            <img src={Designdata.imageUrl} className="object-cover w-full" alt="plank--Img" />
+            <Link to={`/build-your-own-page`}>
+              <img src={Designdata.imageUrl} className="object-cover w-full" alt="plank--Img" />
+            </Link>
           )}
         </div>
 
@@ -24,13 +21,16 @@ const DesignCard = ({ Designdata, index }) => {
           <p className="designs-description text-gray-600 text-sm  text-center ">{Designdata.description}</p>
         </div>
         {index > 0 ? (
-          <Link className="flex justify-center items-center text-white rounded-md mt-2 px-4 py-2 Build-button" to={`/build-trial-design${index}`}>
-            Build
-          </Link>
+          <div className="button-container flex justify-between gap-4">
+            <Link className="flex justify-center items-center text-white rounded-md mt-2 px-4 py-2 Build-button" to={`/build-trial-design${index}`}>
+              Build
+            </Link>
+            <Link className="Preview--button flex justify-center items-center text-white rounded-md mt-2 px-4 py-2 Build-button" to={`/preview-trial-design${index}`}>
+              Preview
+            </Link>
+          </div>
         ) : (
-          <Link className="flex justify-center items-center text-white rounded-md mt-2 px-4 py-2 Build-button" to={`/build-your-own-page`}>
-            Explore
-          </Link>
+          ""
         )}
       </div>
     </>
