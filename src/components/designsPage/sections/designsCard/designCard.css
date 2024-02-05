@@ -25,19 +25,32 @@ h2.designs-title {
 .design-Img-container {
   height: 250px;
   overflow: hidden;
-  border-radius: inherit;
 }
-.Build-button {
-  background: #481b91;
-  color: white;
-  width: 100%;
+.design-card-button{
   transition: var(--transition);
+  width: 100%;
 }
-.Build-button:active {
+.design-card-button:active {
   transform: scale(0.95);
 }
+.button-container{
+  border-top: solid 1px #22222247;
+  margin-top: 15px;
+  font-weight: 700;
+}
+.Build-button {
+  color: var(--color-2);
+}
+
 .Build-button:hover {
-  background: #511fa0;
+  color: #42158b;
+}
+.Preview-button {
+  color: var(--color-3);
+}
+
+.Preview-button:hover {
+  color: #b963b8;
 }
 .designs-container {
   margin-top: 4rem;

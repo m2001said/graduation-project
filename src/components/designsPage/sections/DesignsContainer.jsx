@@ -8,7 +8,7 @@ const DesignsData = [
   {
     title: "Start From Scratch",
     description: " Craft a page that reflects your professionalism",
-    imageUrl: "https://via.placeholder.com/300x320/222/777?text=Blank",
+    imageUrl: "https://via.placeholder.com/300x280/eee/777?text=Blank",
   },
   {
     title: "DesignTitle1",
