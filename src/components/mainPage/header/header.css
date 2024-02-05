@@ -55,10 +55,12 @@
   color: white;
   padding: 8px;
   border-radius: 5px;
-  background-color: var(--color-2);
-  background-image: linear-gradient(85deg, #00000055 14%, transparent 0);
+  background-image: linear-gradient(to right, #831fa5 , #4a2199 , var(--color-1));
   transition: var(--transition);
   background-size: 100%;
+}
+.info-section .info-btn:hover {
+  background-size: 300%;
 }
 .main-header .info-btn,
 .main-header .signIn-btn,
@@ -66,9 +68,7 @@
   user-select: none;
   cursor: pointer;
 }
-.info-section .info-btn:hover {
-  background-size: 900%;
-}
+
 .main-hero-image {
   position: relative;
   width: 50%;

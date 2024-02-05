@@ -7,8 +7,8 @@
 
   --title-light: white;
   --title-dark: #3d3d3d;
-  --discription-light: rgb(229 231 235);
-  --discription-dark: #838383;
+  --discription-light: #f7f7f7b5;
+  --discription-dark: #444d5c;
 }
 
 .main-steps .container {
@@ -36,8 +36,25 @@
   flex-direction: row-reverse;
 }
 .step-description {
-  font-size: 1.3rem;
-  color: #555;
+  font-size: 25px;
+  color: var(--discription-dark);
+  line-height: 1.8;
+}
+@media (max-width:767px){
+  .step-description {
+    font-size: 20px;
+  }
+}
+@media(max-width:375px){
+  .step-description {
+    font-size: 15px;
+  }
+}
+.step-title {
+  padding-bottom: 15px;
+  font-weight: 600;
+  font-size: 32px;
+  color: var(--title-dark);
 }
 .main-steps .step-card::before,
 .step-title:after {
@@ -66,12 +83,7 @@
   width: 40%;
   flex-shrink: 0;
 }
-.step-title {
-  padding-bottom: 15px;
-  font-weight: 600;
-  font-size: 23px;
-  color: #272727;
-}
+
 .step-img img {
   width: 80%;
   margin: auto;
