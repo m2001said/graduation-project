@@ -1,7 +1,21 @@
+:root {
+  --color-1: #430c7b;
+  --color-2: #30086b;
+  --color-3: #ce79cc;
+  --color-4: #fdc2b8;
+  --transition: 0.4s;
+
+  --title-light: white;
+  --title-dark: #3d3d3d;
+  --discription-light: rgb(229 231 235);
+  --discription-dark: #838383;
+}
 .designs-section {
   padding-top: 85px;
   padding-bottom: 55px;
-  background-image: linear-gradient(to right, #481b91, #240d55);
-  background-size: 100% 100%;
+  background-image: linear-gradient(to right, #481b91, #240d55), radial-gradient(circle at center right, #b2b3f194, #fff 9%, transparent 0),
+    radial-gradient(circle at center left, #f1d7b294, #fff 9%, transparent 0);
   min-height: 100vh;
+  background-size: 100% 100%, 100% 600px;
+  background-position-y: 0, -106px, 879px;
 }

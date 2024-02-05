@@ -7,6 +7,11 @@
   --color-3: #ce79cc;
   --color-4: #fdc2b8;
   --transition: 0.4s;
+
+  --title-light: white;
+  --title-dark: #3d3d3d;
+  --discription-light: #f7f7f7b5;
+  --discription-dark: #444d5c;
 }
 .main-header {
   position: relative;
@@ -26,16 +31,24 @@
   padding-top: 186px !important;
 }
 .info-section .info-title {
-  color: white;
+  color: var(--title-light);
   text-transform: capitalize;
-  font-size: 2.2em;
+  font-size: 38px;
   font-weight: 600;
 }
-.info-section .info-description p {
-  color: #cdcdcd !important;
-  margin-block: 41px !important;
-  line-height: 2.5 !important;
-  font-size: 1.04em;
+.info-section .info-description {
+  color: var(--discription-light) !important;
+  margin-bottom: 41px !important;
+  line-height: 1.8 !important;
+  font-size: 22px;
+}
+@media (max-width:540px) {
+  .info-section .info-title {
+    font-size: 30px;
+  }
+  .info-section .info-description {
+    font-size: 17px;
+  }
 }
 .info-section .info-btn {
   width: fit-content;
@@ -58,9 +71,12 @@
 }
 .main-hero-image {
   position: relative;
-  width: 45%;
+  width: 50%;
   flex-shrink: 0;
   animation: poster 3s ease infinite;
+}
+.main-hero-image img{
+  width: 100%;
 }
 @keyframes poster {
   50% {
