@@ -22,7 +22,7 @@ const DemoVideo = () => {
               Watch the video below to understand how to navigate and use our website effectively.
             </p>
           </div>
-          <div className="demo-video py-2" data-aos="fade-down" data-aos-duration="1000" >
+          <div className="demo-video py-2" data-aos="fade-up" data-aos-duration="1000" >
             <video src={demo} controls></video>
           </div>
         </div>

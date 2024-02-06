@@ -38,6 +38,7 @@
 }
 .info-section .info-btn {
   width: fit-content;
+  font-weight: bold;
   color: white;
   padding: 8px;
   border-radius: 5px;
