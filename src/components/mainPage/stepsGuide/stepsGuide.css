@@ -1,4 +1,3 @@
-
 .main-steps .container {
   padding-block: 20px;
   position: relative;
@@ -43,6 +42,7 @@
   font-weight: 600;
   font-size: 32px;
   color: var(--title-dark);
+  line-height: 1;
 }
 .main-steps .step-card::before {
   content: counter(stepcounter);
@@ -62,9 +62,6 @@
   transform: translateX(-50%);
 }
 
-/*.step-title:after {
-  display: none;
-}*/
 .main-steps .step-img,
 .main-steps .step-info {
   width: 40%;
@@ -79,7 +76,7 @@
 @media (max-width: 991px) {
   .step-card,
   .step-card:nth-child(odd) {
-    flex-direction: column-reverse !important;
+    flex-direction: column !important;
     gap: 20px;
   }
   .main-steps .step-img,
@@ -92,48 +89,9 @@
     margin: auto;
   }
   .main-steps .container::after {
-    /* display: none;*/
     left: 46px;
-  }
-  .step-card {
-    padding-top: 60px;
   }
   .step-card::before {
     left: 21px !important;
   }
-  /*  
-  
-  .main-steps .step-card::after{
-    width: 200px;
-    height: 1px;
-    background: #30086b4b;
-    position: absolute;
-    top: 15px;
-    content: "";
-    transform: translatex(-50%);
-    left: 50%;
-  }
-  .step-info {
-    text-align: center;
-  }
-  .step-title:after {
-    position: absolute;
-    left: -33px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 14px;
-    top: auto;
-    font-weight: 400;
-    width: 25px;
-    height: 25px;
-  }
-  .step-title {
-    width: fit-content;
-    position: relative;
-    margin: auto;
-    display: flex;
-    align-items: center;
-  }
-*/
 }
