@@ -1,9 +1,12 @@
-import React from "react";
+import React, { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import "./stepsGuide.css";
 import ai from "../../../assets/images/mainPageAssets/ai.svg";
 import signin from "../../../assets/images/mainPageAssets/signin.svg";
 import ways from "../../../assets/images/mainPageAssets/ways.svg";
 import deploy from "../../../assets/images/mainPageAssets/deploy.svg";
+
 
 const stepsData = [
   {
@@ -33,11 +36,19 @@ Personalize your website with two design options. Blank Page: Start from scratch
 ];
 
 const Steps = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      easing: 'ease-in-out',
+      once: true, 
+    }); 
+  }, []);
   return (
     <div className="main-steps">
       <div className="container mx-auto px-4 px-6">
-        {stepsData.map((item, index) => (
-          <div className="step-card flex justify-between">
+        {stepsData.map((item , index) => (
+          <div className="step-card flex justify-between" data-aos={index % 2 === 0 ? "fade-right" : "fade-left"}
+          data-aos-duration="1000" >
             <div className="step-info">
               <h1 className="step-title">{item.title}</h1>
               <p className="step-description">{item.description}</p>
