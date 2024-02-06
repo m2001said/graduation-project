@@ -1,39 +1,30 @@
 import React, { useState } from "react";
 import { useNavigate } from 'react-router-dom';
+import { validate } from './validationUtils';
 
 const LoginForm = ({ toggleForm, handleSignIn }) => {
   const navigate = useNavigate();
-  
+
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
 
-  const validate = () => {
-    if (!email || !password) {
-      setError("Both fields are required.");
-      return false;
-    }
-    if (!/^[\w-]+(\.[\w-]+)*@([\w-]+\.)+[a-zA-Z]{2,7}$/.test(email)) {
-      setError("Please enter a valid email address.");
-      return false;
-    }
-    if (password.length < 6) {
-      setError("Password must be at least 6 characters long.");
-      return false;
-    }
-    setError(""); // Clear the error message if validation is successful
-    return true;
-  };
+
+
 
   const handleSignInClick = () => {
-    if (validate()) {
-      navigate("/Designs");
-
-      handleSignIn();
-      document.querySelector(".modal-overlay").classList.add("closed");
+    const validationError = validate(email, password);
+    if (validationError) {
+      setError(validationError);
+      return;
     }
+  
+    // Proceed with sign-in logic
+    navigate("/Designs");
+    handleSignIn();
+    document.querySelector(".modal-overlay").classList.add("closed");
   };
-
+  
   return (
     <>
       <h1>Login</h1>
