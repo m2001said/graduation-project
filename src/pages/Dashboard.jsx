@@ -54,8 +54,9 @@ const Dashboard = () => {
       <TopSide />
 
       <div className="w-full flex-between flex-col md:flex-row dashboard-subContainer overflow-hidden">
-        <LeftSide targetTemplate={template} updateAllRef={updateAllRef} />
-        <div className="dashboard-right-section" style={{ maxWidth: screen === "pc" ? "100%" : screen === "tablet" ? "991px" : "767px" }}>
+
+        <LeftSide />
+        <div className="max-md:w-full md:w-70 flex-auto  flex justify-start flex-col items-center text-black p-2" style={{ height: "calc(100vh - 56px)" }}>
           <div className="w-full border border-slate-300 shadow  md:rounded-tl-3xl md:rounded-bl-3xl  mb-2 overflow-y-auto overflow-x-hidden  mx-2 md:mx-4 md:self-start md:ml-1 relative">
             <RightSide />
           </div>
@@ -66,3 +67,19 @@ const Dashboard = () => {
 };
 
 export default Dashboard;
+
+
+
+// this is the solution for design5 (elsayed)
+
+//  <section className="dashboard-container mx-auto relative">
+//       {/*here */}
+//       <TopSide />
+      
+//       {/*this is the solution for aos li */}
+//       <div className="w-full flex-between flex-col md:flex-row dashboard-subContainer ">
+//         <LeftSide />
+//            <RightSide />
+ 
+//       </div>
+//     </section> 

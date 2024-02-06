@@ -1,14 +1,111 @@
-/* add here your website colors with start  --website-4   */
-
 :root {
-  /* these are temporary colors , you should change it  */
-  --website-4-color-1: #fff;
-  --website-4-color-2: #cda274;
-  --website-4-color-3: #292f36;
-  --website-4-color-4: #f4f0ec;
+  --primary: #517522;
+  --secondary: rgba(255, 255, 255);
+  --black: #303030bc;
+  --blue-gradient: red;
+  --orange-gradient: rgba(35, 223, 185, 0.775);
+  --blue: #40dfffa5;
+  --lightBlue: #eefbff;
+  --shadow: 0px 23px 21px -8px rgba(136, 160, 255, 0.25);
+  --orange: orange;
+}
 
-  --website-4-hover-1: #f4f0ec;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+}
 
-  /* and add your */
+.paddings {
+  padding: 1.5rem;
+}
+
+.innerWidth {
+  width: 100%;
+}
+
+.flexCenter {
+  display: flex;
+  row-gap: 2rem;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.flexStart {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.flexEnd {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.flexColCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.flexColStart {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.flexColEnd {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.primaryText {
+  color: var(--orange-gradient);
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.secondaryText {
+  color: var(--gray);
+  font-size: 0.9rem;
+}
+.orangeText {
+  color: var(--orange);
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+/* media queries */
+@media (min-width: 1536px) {
+  .innerWidth {
+    max-width: 1280px;
+    margin: auto;
+  }
+}
+
+@media (min-width: 640px) {
+  .paddings {
+    padding: 4rem;
+  }
+}
+
+@media (min-width: 1280px), (min-width: 768px) {
+  .paddings {
+    padding: 2rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .primaryText {
+    font-size: 1.5rem;
+  }
+  .orangeText {
+    font-size: 1.2rem;
+  }
 }
 

@@ -1,342 +1,155 @@
 import { createSlice } from "@reduxjs/toolkit";
 const templateSlice4 = createSlice({
   initialState: {
-    navbar: {
-      imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701811960/templates/template_one/Logo_mj7rvw.png",
-      links: ["home", "pages", "services", "projects", "blog", "contact"],
+    navbar4: {
+      imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703193372/jammal_photos/eygwjnnq4d9scpxd9unv.png",
+      links: ["Residencies", "Our Value", "Contact Us", "Get Started"],
+      email4: "mailto:zainkeepscode@gmail.com",
+      buttonText: "Contact",
     },
-    hero: {
-      title: "Let Your Home Be Unique",
-      description: "There are many variations of the passages of lorem Ipsum from available, variations of the passages.",
-      imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701808857/templates/template_one/Photo_3_jpjtdv.jpg",
+    hero4: {
+      imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703196080/jammal_photos/taiu0lj7gzq6ew6srqsz.png",
+      title: " Discover Most Suitable Property",
+      description1: "Find a variety of properties that suit you very easilty",
+      description2: " Forget all difficulties in finding a residence for you",
+      buttonText: "Search",
+      stats: [
+        {
+          title: "Premium Product",
+          start: "8880",
+          end: "9000",
+        },
+
+        {
+          title: "Happy Customer",
+          start: "1950",
+          end: "2000",
+        },
+        {
+          title: "Awards Winning",
+          start: "0",
+          end: "28",
+        },
+      ],
+      duration: "6",
+      icon: "+",
+    },
+
+    feature4: {
+      title: "Our Value",
+      sub_title: "Value We Give to You",
+      description1: " We are always ready to help by providing the best services for you.",
+      description2: " We believe a good place to live can make your life better",
+      data: [
+        {
+          icon: "💧",
+          heading: "Best interest rates on the market",
+          detail:
+            "Exercitation in fugiat est ut ad ea cupidatat ut in cupidatat occaecat ut occaecat consequat est minim minim esse tempor laborum consequat esse adipisicing eu reprehenderit enim.",
+        },
+        {
+          icon: "🩲",
+          heading: "Prevent unstable prices",
+          detail:
+            "Exercitation in fugiat est ut ad ea cupidatat ut in cupidatat occaecat ut occaecat consequat est minim minim esse tempor laborum consequat esse adipisicing eu reprehenderit enim.",
+        },
+        {
+          icon: "✔",
+          heading: "Best price on the market",
+          detail:
+            "Exercitation in fugiat est ut ad ea cupidatat ut in cupidatat occaecat ut occaecat consequat est minim minim esse tempor laborum consequat esse adipisicing eu reprehenderit enim.",
+        },
+      ],
+      imgUrl: "	https://res.cloudinary.com/duc04fwdb/image/upload/v1703203417/jammal_photos/if4uayalbxuh6enjdenm.png",
+    },
+
+    project4: {
+      title: "Best Choices",
+      sub_title: "Popular Residencies",
+      card: [
+        {
+          image: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703197994/jammal_photos/v4fz1ap7aa3lnz6f3cqo.png",
+          name: "Aliva Priva Jardin",
+          price: "47,043",
+          detail: "Jakarta Garden City Street, Cakung. Pulo Gadung, Jakarta Timur, DKI Jakarta",
+        },
+        {
+          image: "	https://res.cloudinary.com/duc04fwdb/image/upload/v1703198149/jammal_photos/m4s3ppbfcwgwoanctetr.png",
+          name: "Asatti Garden City",
+          price: "66,353",
+          detail: "Pahlawan Street XVII No.215, Cinangka, Sawangan, Depok, Jawa Barat",
+        },
+        {
+          image: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703198230/jammal_photos/sy4citkq8uqg3qpgtvj7.png",
+          name: "Citralan Puri Serang",
+          price: "35,853",
+          detail: "Ruko Puri Indah Residence Block A7, Lingkar Street, Ciracas, Serang, Banten",
+        },
+        {
+          image: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703197994/jammal_photos/v4fz1ap7aa3lnz6f3cqo.png",
+          name: "Aliva Priva Jardin",
+          price: "47,043",
+          detail: "Jakarta Garden City Street, Cakung. Pulo Gadung, Jakarta Timur, DKI Jakarta",
+        },
+        {
+          image: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703198149/jammal_photos/m4s3ppbfcwgwoanctetr.png",
+          name: "Asatti Garden City",
+          price: "66,353",
+          detail: "Pahlawan Street XVII No.215, Cinangka, Sawangan, Depok, Jawa Barat",
+        },
+        {
+          image: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703198230/jammal_photos/sy4citkq8uqg3qpgtvj7.png",
+          name: "Citralan Puri Serang",
+          price: "35,853",
+          detail: "Ruko Puri Indah Residence Block A7, Lingkar Street, Ciracas, Serang, Banten",
+        },
+      ],
+    },
+
+    contact4: {
+      title: "Our Contact Us",
+      sub_title: "Easy to contact us",
+      description: " We always ready to help by providijng the best services for you. We beleive a good blace to live can make your life better",
+      email: "contact@interno.com",
+      phone: "(123) 125-858",
+      UrlImage: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703206872/jammal_photos/hqcx6ikyfgeuqe0vcset.jpg",
+      contacts: [
+        {
+          type: "Call",
+          phone: "021 123 145 14",
+          btn_contact: "Call now",
+        },
+        {
+          type: "Chat",
+          phone: "021 123 145 14",
+          btn_contact: "Chat now",
+        },
+        {
+          type: "Video Call",
+          phone: "021 123 145 14",
+          btn_contact: "Video Call now",
+        },
+        {
+          type: "Message",
+          phone: "021 123 145 14",
+          btn_contact: "Message now",
+        },
+      ],
+    },
+    Cta4: {
+      title: "Get started with Homyz",
+      description1: " Subscribe and find super attractive price quotes from us.",
+      description2: " Find your residence soon",
       buttonText: "Get Started",
-      icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701813389/templates/template_one/Vector_5_vvvt2o.svg",
-    },
-    services: {
-      blocks: [
-        {
-          icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701808099/templates/template_one/icon_one_xvd7d6.svg",
-          title: "Project Plan",
-          description: "There are many variations of the passages of lorem Ipsum from available, majority.",
-        },
-        {
-          icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701808099/templates/template_one/icon_two_dptua1.svg",
-          title: "Interior Work",
-          description: "There are many variations of the passages of lorem Ipsum from available, majority.",
-        },
-        {
-          icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701808099/templates/template_one/icon_three_v71ltg.svg",
-          title: "Realization",
-          description: "There are many variations of the passages of lorem Ipsum from available, majority.",
-        },
-      ],
-    },
-    feature: {
-      title: "We Create The Art Of Stylish Living Stylishly",
-      description:
-        "It is a long established fact that a reader will be distracted by the of readable content of a page when looking at its layouts the points of using that it has a more-or-less normal.",
-      phone: "012345678",
-      buttonText: "Get Free Estimate",
-      icons: [
-        {
-          icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701813236/templates/template_one/Call_gqvv4l.svg",
-        },
-        {
-          icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701813389/templates/template_one/Vector_5_vvvt2o.svg",
-        },
-      ],
-      imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701813388/templates/template_one/Photo_sonnlx.jpg",
-    },
-    testimonial: {
-      title: "What the People Thinks About Us",
-      cards: [
-        {
-          name: "Nattasha Mith",
-          location: "Sydney, USA",
-          imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701808853/templates/template_one/Photo_1_zsyklb.jpg",
-          opinion: "Lorem Ipsum is simply dummy text of the typesetting industry. Ipsum has been.",
-        },
-        {
-          name: "Raymond Galario",
-          location: "Sydney, Australia",
-          imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701808853/templates/template_one/Photo_1_zsyklb.jpg",
-          opinion: "Lorem Ipsum is simply dummy text of the typesetting industry. Ipsum has been scrambled it to make a type book.",
-        },
-        {
-          name: "Benny Roll ",
-          location: "Sydney, New York",
-          imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701808853/templates/template_one/Photo_1_zsyklb.jpg",
-          opinion: "Lorem Ipsum is simply dummy text of the typesetting industry. Ipsum has been scrambled.",
-        },
-      ],
-    },
-    logos: {
-      companies: [
-        { imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701808448/templates/template_one/01_p78hjd.svg" },
-        { imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701808448/templates/template_one/02_mnw1ps.svg" },
-        { imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701808448/templates/template_one/03_fiplpx.svg" },
-        { imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701808449/templates/template_one/04_pg8flc.svg" },
-        { imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701808449/templates/template_one/05_prt3gi.svg" },
-      ],
-    },
-    projects: {
-      title: "Follow Our Projects",
-      description: "It is a long established fact that a reader will be distracted by the of readable content of page  lookings at its layouts  points.",
-      cards: [
-        {
-          imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701808451/templates/template_one/Photo_2_w7jdep.jpg",
-          title: "Modern Kitchan",
-          description: "Decor / Artchitecture",
-          icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701718889/templates/template_one/Vector_5_nzmfwn.svg",
-        },
-        {
-          imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701808451/templates/template_one/Photo_3_wig9kc.jpg",
-          title: "Modern Kitchan",
-          description: "Decor / Artchitecture",
-          icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701718889/templates/template_one/Vector_5_nzmfwn.svg",
-        },
-        {
-          imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701808452/templates/template_one/Photo_iojikc.jpg",
-          title: "Modern Kitchan",
-          description: "Decor / Artchitecture",
-          icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701718889/templates/template_one/Vector_5_nzmfwn.svg",
-        },
-        {
-          imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701808450/templates/template_one/Photo_1_njncs1.jpg",
-          title: "Modern Kitchan",
-          description: "Decor / Artchitecture",
-          icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701718889/templates/template_one/Vector_5_nzmfwn.svg",
-        },
-      ],
-    },
-    statistic: {
-      statistics: [
-        {
-          title: "Years Of Experience",
-          value: "12",
-        },
-        {
-          title: "Success Projects",
-          value: "85",
-        },
-        {
-          title: "Active Projects",
-          value: "15",
-        },
-        {
-          title: "Happy Customers",
-          value: "95",
-        },
-      ],
-    },
-    items: {
-      title: "Articles & News",
-      description:
-        "It is a long established fact that a reader will be distracted by the of readable content of a page when lookings at its layouts the points of using.",
-      cards: [
-        {
-          title: "Let’s Get Solution For Building Construction Work",
-          description: "26 December,2022 ",
-          imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701718041/templates/template_one/article1.f88f54e6a4cdbf340b36_l3ujjw.png",
-          icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701718889/templates/template_one/Vector_5_nzmfwn.svg",
-          caption: "Kitchan Design",
-        },
-        {
-          title: "Low Cost Latest Invented Interior Designing Ideas.",
-          description: "22 December,2022 ",
-          icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701718889/templates/template_one/Vector_5_nzmfwn.svg",
-          imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701718042/templates/template_one/article2.43be768543cb8cfeaf07_atvwjd.png",
-          caption: "Living Design",
-        },
-        {
-          title: "Best For Any Office & Business Interior Solution",
-          description: "25 December,2022 ",
-          icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701718889/templates/template_one/Vector_5_nzmfwn.svg",
-          imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701718042/templates/template_one/article3.f759fde0c85f3fb92b22_c2tqkv.png",
-          caption: "Interior Design",
-        },
-      ],
-    },
-    team: {
-      title: "Our Team Members",
-      cards: [
-        {
-          name: "Nattasha",
-          location: "Design, Australia",
-          imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701808855/templates/template_one/Photo_fz8cuc.jpg",
-          mediaIcons: [
-            {
-              icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701809141/templates/template_one/facebook_td263x.svg",
-              url: "https://facebook.com",
-            },
-            {
-              icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701809142/templates/template_one/x_yp3y5n.svg",
-              url: "https://x.com",
-            },
-            {
-              icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701809142/templates/template_one/linkedin_itbvp5.svg",
-              url: "https://linkedin.com",
-            },
-            {
-              icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701809141/templates/template_one/instagram_dlrab9.svg",
-              url: "https://instagram.com",
-            },
-          ],
-          email: "julie@email.com",
-        },
-        {
-          name: "Julie",
-          location: "Design, Australia",
-          imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701808855/templates/template_one/Photo_fz8cuc.jpg",
-          mediaIcons: [
-            {
-              icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701809141/templates/template_one/facebook_td263x.svg",
-              url: "https://facebook.com",
-            },
-            {
-              icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701809142/templates/template_one/x_yp3y5n.svg",
-              url: "https://x.com",
-            },
-            {
-              icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701809142/templates/template_one/linkedin_itbvp5.svg",
-              url: "https://linkedin.com",
-            },
-            {
-              icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701809141/templates/template_one/instagram_dlrab9.svg",
-              url: "https://instagram.com",
-            },
-          ],
-          email: "julie@email.com",
-        },
-        {
-          name: "Alex",
-          location: "Design, Australia",
-          imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701808855/templates/template_one/Photo_fz8cuc.jpg",
-          mediaIcons: [
-            {
-              icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701809141/templates/template_one/facebook_td263x.svg",
-              url: "https://facebook.com",
-            },
-            {
-              icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701809142/templates/template_one/x_yp3y5n.svg",
-              url: "https://x.com",
-            },
-            {
-              icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701809142/templates/template_one/linkedin_itbvp5.svg",
-              url: "https://linkedin.com",
-            },
-            {
-              icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701809141/templates/template_one/instagram_dlrab9.svg",
-              url: "https://instagram.com",
-            },
-          ],
-          email: "julie@email.com",
-        },
-        {
-          name: "John",
-          location: "Design, Australia",
-          imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701808855/templates/template_one/Photo_fz8cuc.jpg",
-          mediaIcons: [
-            {
-              icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701809141/templates/template_one/facebook_td263x.svg",
-              url: "https://facebook.com",
-            },
-            {
-              icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701809142/templates/template_one/x_yp3y5n.svg",
-              url: "https://x.com",
-            },
-            {
-              icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701809142/templates/template_one/linkedin_itbvp5.svg",
-              url: "https://linkedin.com",
-            },
-            {
-              icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701809141/templates/template_one/instagram_dlrab9.svg",
-              url: "https://instagram.com",
-            },
-          ],
-          email: "julie@email.com",
-        },
-      ],
-    },
-    pricing: {
-      title: "Pricing & Plan",
-      description: "Home / Priceing",
-      blocks: [
-        {
-          plan: "Design advices",
-          price: "29",
-          timeUnit: "/month",
-          moneyUnit: "$",
-          features: ["General living space advices", "Renovation advices", "Interior design advices", "Furniture reorganization", "Up to 5 hours meetings"],
-          buttonText: "Get Started",
-          icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701813389/templates/template_one/Vector_5_vvvt2o.svg",
-        },
-        {
-          plan: "Complete interior",
-          price: "39",
-          timeUnit: "/month",
-          moneyUnit: "$",
-          PopularPlan: "Most Popular Plans",
-          features: ["Complete home redesign", "Interior and exterior works", "Modular interior planning", "Kitchen design", "Garages organization"],
-          buttonText: "Get Started",
-          icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701813389/templates/template_one/Vector_5_vvvt2o.svg",
-        },
-        {
-          plan: "Furniture design",
-          price: "59",
-          timeUnit: "/month",
-          moneyUnit: "$",
-          features: ["Furniture for living room", "Furniture refurbishment", "Sofas and armchairs", "Tables and chairs", "Kitchens"],
-          buttonText: "Get Started",
-          icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701813389/templates/template_one/Vector_5_vvvt2o.svg",
-        },
-      ],
-    },
-    cta: {
-      title: "Wanna join the interno?",
-      description: "It is a long established fact  will be distracted.",
-      buttonText: "Contact With Us",
-      icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701813389/templates/template_one/Vector_5_vvvt2o.svg",
+      email: "mailto:zainkeepscode@gmail.com",
     },
 
-    footer: {
-      imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701811960/templates/template_one/Logo_mj7rvw.png",
-      description: "It is a long established fact that a reader will be distracted lookings.",
-      mediaIcons: [
-        {
-          icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701809141/templates/template_one/facebook_td263x.svg",
-          url: "https://facebook.com",
-        },
-        {
-          icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701809142/templates/template_one/x_yp3y5n.svg",
-          url: "https://x.com",
-        },
-        {
-          icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701809142/templates/template_one/linkedin_itbvp5.svg",
-          url: "https://linkedin.com",
-        },
-        {
-          icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701809141/templates/template_one/instagram_dlrab9.svg",
-          url: "https://instagram.com",
-        },
-      ],
-
-      items: [
-        {
-          title: "services",
-          links: ["Kitchan,", "Living Area,", "Bathroom,", "Dinning Hall,", "Bedroom"],
-        },
-        {
-          title: "section",
-          links: ["About Us", " Projects", "Our Team", "Contact Us", "Services"],
-        },
-      ],
-      contact: {
-        title: "contact",
-        location: "55 East Birchwood Ave. Brooklyn, New York 11201",
-        email: "contact@interno.com",
-        phone: "(123) 125-858",
-      },
+    Footer4: {
+      logo: "	https://res.cloudinary.com/duc04fwdb/image/upload/v1703209942/jammal_photos/xd2ugq6yopzvjkw37qc7.png",
+      description: "Our vision is to make all people the best place to live for them.",
+      title: "Information",
+      address: "145 New York, FL 5467, USA",
+      serviecs: ["Property", "Services", "Product", "About Us"],
     },
     colors: {
       templateColors: ["#fff", "#cda274", "#292f36", "#f4f0ec", "#777777"],

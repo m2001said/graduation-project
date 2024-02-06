@@ -1,3 +1,8 @@
+.Testimonials1 {
+  background: white;
+  max-width: 100%;
+  /* height: auto; */
+}
 .testimonials {
   background-color: var(--website-color-4);
   text-align: center;
@@ -12,7 +17,7 @@
 .Testimonials__title {
   color: var(--website-color-3);
   text-align: center;
-  font-family: "DM Serif Display";
+  /* font-family: "DM Serif Display"; */
   font-size: 60px;
   font-style: normal;
   font-weight: 400;
@@ -26,6 +31,7 @@
   flex-wrap: wrap;
   gap: 20px;
   padding: auto;
+  height: 300ppx;
 }
 .testimonials-card {
   background-color: var(--website-color-1);
@@ -43,11 +49,11 @@
 
 .testimonials-card-header {
   display: flex;
-  align-items: center;
+  /* align-items: center; */
   justify-content: flex-start;
   padding-right: 70px;
   gap: 20px;
-  text-align: justify;
+  text-align: start;
 }
 
 .testimonials-card-header-img {
@@ -57,7 +63,7 @@
 }
 .testimonials-card-body {
   color: var(--website-color-3);
-  font-family: Jost;
+  /* font-family: Jost; */
   font-size: 22px;
   font-style: normal;
   font-weight: 400;
@@ -68,27 +74,42 @@
 
 @media screen and (max-width: 527px) {
   .testimonials {
-    max-width: 80%;
-    margin: 0.5rem auto;
-    height: 60%;
+    max-width: 100%;
   }
   .testimonials-cards {
-    max-width: 80%;
+    max-width: 100%;
+    padding-left: 5px;
+    padding-right: 5px;
+    /* max-width: 80%;
     margin: 0.5rem auto;
     padding: 0.5rem auto;
+    gap: 20px;
+    display: flex;
+    padding: auto; */
   }
   .Testimonials__title {
+    max-width: 100%;
     font-size: 40px;
   }
   .testimonials-card-header {
-    padding: auto;
-    max-width: 80%;
-  }
-  .testimonials-card-header img {
-    max-width: 50px;
-  }
-  .testimonials-card {
     max-width: 100%;
-    font-size: smaller;
+    font-size: small;
+    padding-top: 30px;
+  }
+
+  .testimonials-card {
+    /* padding: auto; */
+  }
+  .testimonials-card-header {
+    /* padding-top: 20px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: auto; */
+  }
+  .testimonials-card-body {
+    /* font-size: 20px;
+
+    text-align: start; */
   }
 }

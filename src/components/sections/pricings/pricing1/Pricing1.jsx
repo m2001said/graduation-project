@@ -8,7 +8,7 @@ const Pricing1 = () => {
   const { pricing } = useSelector((state) => state.template1);
 
   return (
-    <div className="pricing1">
+    <div className="pricing1 design-1">
       <div className="pricing1-head">
         <h1>{pricing.title}</h1>
         <p>{pricing.description}</p>
