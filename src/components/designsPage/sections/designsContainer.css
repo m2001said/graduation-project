@@ -1,15 +1,4 @@
-:root {
-  --color-1: #430c7b;
-  --color-2: #30086b;
-  --color-3: #ce79cc;
-  --color-4: #fdc2b8;
-  --transition: 0.4s;
 
-  --title-light: white;
-  --title-dark: #3d3d3d;
-  --discription-light: rgb(229 231 235);
-  --discription-dark: #838383;
-}
   .designs-section {
     padding-top: 85px;
     padding-bottom: 55px;

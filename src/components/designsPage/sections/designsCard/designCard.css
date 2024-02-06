@@ -1,15 +1,3 @@
-:root {
-  --color-1: #430c7b;
-  --color-2: #30086b;
-  --color-3: #ce79cc;
-  --color-4: #fdc2b8;
-  --transition: 0.4s;
-
-  --title-light: white;
-  --title-dark: #1f1f1f;
-  --discription-light: rgb(229 231 235);
-  --discription-dark: #838383;
-}
 
 .design-card {
   max-width: 270px;

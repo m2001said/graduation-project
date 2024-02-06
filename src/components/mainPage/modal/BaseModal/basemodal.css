@@ -1,12 +1,4 @@
-:root {
-  --color-1: #430c7b;
-  --color-2: #30086b;
-  --color-3: #ce79cc;
-  --color-4: #fdc2b8;
-  --color-5: #6b3974;
-  --modal-button: #19204a;
-  --transition: 0.4s;
-}
+
 .modal-overlay {
   position: fixed;
   top: 0;

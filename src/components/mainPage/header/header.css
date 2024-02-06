@@ -1,18 +1,4 @@
-/*
-430C7B , 30086B,CE79CC,FDC2B8
-*/
-:root {
-  --color-1: #430c7b;
-  --color-2: #30086b;
-  --color-3: #ce79cc;
-  --color-4: #fdc2b8;
-  --transition: 0.4s;
 
-  --title-light: white;
-  --title-dark: #3d3d3d;
-  --discription-light: #f7f7f7b5;
-  --discription-dark: #444d5c;
-}
 .main-header {
   position: relative;
   height: 100vh;
