@@ -1,10 +1,10 @@
-
 .design-card {
   max-width: 270px;
   background: #ffffff;
   position: relative;
   align-items: stretch !important;
   justify-content: space-between !important;
+  height: 380px;
 }
 h2.designs-title {
   font-family: system-ui;
@@ -14,14 +14,17 @@ h2.designs-title {
   height: 250px;
   overflow: hidden;
 }
-.design-card-button{
+.design-btn {
   transition: var(--transition);
   width: 100%;
 }
-.design-card-button:active {
+.design-btn:first-child {
+  border-right: solid 1px #22222247;
+}
+.design-btn:active {
   transform: scale(0.95);
 }
-.button-container{
+.button-container {
   border-top: solid 1px #22222247;
   margin-top: 15px;
   font-weight: 700;
@@ -49,7 +52,7 @@ h2.designs-title {
   flex-direction: column;
   justify-content: space-around;
 }
-.designs-title{
+.designs-title {
   color: var(--title-dark);
   font-size: 22px;
 }
