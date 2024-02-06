@@ -103,7 +103,7 @@
     margin: auto;
   }
   .main-steps .container::after {
-    display: none;
+   /* display: none;*/
   }
   .step-card{
   padding-top: 60px;
