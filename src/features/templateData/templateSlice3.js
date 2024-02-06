@@ -232,11 +232,14 @@ const templateSlice3 = createSlice({
         },
       ],
     },
+    colors: {
+      templateColors: ["#fff", "#cda274", "#292f36", "#f4f0ec", "#777777"],
+    },
   },
 
   name: "templateSlice3",
   reducers: {
-    updateAll: (state, action) => {
+    updateTemplate3: (state, action) => {
       const { section, variable, value, i, blockName, subBlockName, subIndex, objKey } = action.payload;
       // sub means level 2 of fields
       if (i === undefined) {
@@ -273,5 +276,5 @@ const templateSlice3 = createSlice({
   },
 });
 
-export const { updateAll } = templateSlice3.actions;
+export const { updateTemplate3 } = templateSlice3.actions;
 export default templateSlice3.reducer;

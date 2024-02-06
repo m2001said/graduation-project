@@ -2,7 +2,7 @@ import React from "react";
 import "./cta1.css";
 import { useSelector } from "react-redux";
 const Cta1 = () => {
-  const { cta} = useSelector((state) => state.template);
+  const { cta} = useSelector((state) => state.template1);
   return (
     <div className="cta1-main design-1">
       <div className="cta1">

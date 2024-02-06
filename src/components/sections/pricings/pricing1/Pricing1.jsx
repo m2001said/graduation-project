@@ -5,7 +5,7 @@ import { useSelector } from "react-redux";
 
 
 const Pricing1 = () => {
-  const { pricing } = useSelector((state) => state.template);
+  const { pricing } = useSelector((state) => state.template1);
 
   return (
     <div className="pricing1 design-1">

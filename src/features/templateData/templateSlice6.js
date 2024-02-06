@@ -289,7 +289,7 @@ const templateSlice6 = createSlice({
         },
       ],
     },
-    CartItems:{
+    CartItems: {
       Title: "Popular food menu",
       popularMenuFood: [
         {
@@ -318,8 +318,8 @@ const templateSlice6 = createSlice({
           price: 75,
           imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703098919/jammal_photos/bvipjezk42alazv5roew.png",
         },
-      ],    
-    },    
+      ],
+    },
     feature: {
       title: "Who we are?",
       imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703103180/jammal_photos/afcfogeancctcy4nhsfn.png",
@@ -397,29 +397,32 @@ const templateSlice6 = createSlice({
         content: ["About Us", "Menu", "Recips", "Contact"],
         links: ["About", "Menu", "Recipes", "Contact"],
       },
-      contact:{
+      contact: {
         title: "Contact",
-        content:  [
-        {
-          title: "Sylhet, Bangladesh",
-          icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703108316/jammal_photos/oe8rjvrg0ckgohix2b6v.svg",
-        },
-        {
-          title: "example@gmail.com",
-          icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703108228/jammal_photos/opdhewds9do1znaaj5li.svg",
-        },
-        {
-          title: "+880 123 456 7890",
-          icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703108367/jammal_photos/y2583eh76th902gnzlje.svg",
-        },
-      ],
-    } 
+        content: [
+          {
+            title: "Sylhet, Bangladesh",
+            icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703108316/jammal_photos/oe8rjvrg0ckgohix2b6v.svg",
+          },
+          {
+            title: "example@gmail.com",
+            icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703108228/jammal_photos/opdhewds9do1znaaj5li.svg",
+          },
+          {
+            title: "+880 123 456 7890",
+            icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703108367/jammal_photos/y2583eh76th902gnzlje.svg",
+          },
+        ],
+      },
+    },
+    colors: {
+      templateColors: ["#fff", "#cda274", "#292f36", "#f4f0ec", "#777777"],
     },
   },
 
   name: "templateSlice6",
   reducers: {
-    updateAll: (state, action) => {
+    updateTemplate6: (state, action) => {
       const { section, variable, value, i, blockName, subBlockName, subIndex, objKey } = action.payload;
       // sub means level 2 of fields
       if (i === undefined) {
@@ -456,5 +459,5 @@ const templateSlice6 = createSlice({
   },
 });
 
-export const { updateAll } = templateSlice6.actions;
+export const { updateTemplate6 } = templateSlice6.actions;
 export default templateSlice6.reducer;
