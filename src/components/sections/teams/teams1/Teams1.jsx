@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./teams1.css";
 import { useSelector } from "react-redux";
 
@@ -7,20 +7,22 @@ const Teams1 = () => {
   const [selectedMember, setSelectedMember] = useState(null);
 
   const handleCardClick = (member) => {
-    setSelectedMember(member.name === selectedMember?.name ? null : member);
+    // setSelectedMember(member);
+        setSelectedMember(member === selectedMember ? null : member);
+
   };
   return (
     <div className="team1 design-1">
-      <h1 className="team1-head">{team.title}</h1>
+      <h2 className="team1-head">{team.title}</h2>
       <div className="team1-Card">
         <div className="team1-Card-main">
           {team.cards.map((member, index) => (
-            <div className="team1-Card-main-show" key={index} onClick={() => handleCardClick(member)}>
+            <div className="team1-Card-main-show" key={member.id} onClick={() => handleCardClick(member)}>
               <img className="team1-Card-main-img" src={member.imgUrl} alt={member.name} />
-              {selectedMember && selectedMember.name === member.name && (
+              {selectedMember && selectedMember.id === member.id && (
                 <div className="team1-Card-main-info slideUp">
-                  <h1>{selectedMember.name}</h1>
-                  <p>{selectedMember.location}</p>
+                  <h2>{member.name}</h2>
+                  <p>{member.location}</p>
                   <div className="team-media-icon">
                     {member.mediaIcons.map((icon) => (
                       <a href={icon.url} key={icon.url} target="_blank" rel="noreferrer">
@@ -28,7 +30,7 @@ const Teams1 = () => {
                       </a>
                     ))}
                   </div>
-                  <h4>{selectedMember.email}</h4>
+                  <h4>{member.email}</h4>
                 </div>
               )}
             </div>
@@ -40,3 +42,4 @@ const Teams1 = () => {
 };
 
 export default Teams1;
+

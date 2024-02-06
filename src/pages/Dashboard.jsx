@@ -40,8 +40,6 @@ const Dashboard = () => {
       break;
   }
 
-console.log(template)
-
   const screen = useSelector((state) => state.screen);
   const colors = template.colors;
 

@@ -172,6 +172,7 @@ const templateSlice = createSlice({
       title: "Our Team Members",
       cards: [
         {
+          id:"262024507",
           name: "Nattasha",
           location: "Design, Australia",
           imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701808855/templates/template_one/Photo_fz8cuc.jpg",
@@ -196,6 +197,7 @@ const templateSlice = createSlice({
           email: "julie@email.com",
         },
         {
+          id:"262024508",
           name: "Julie",
           location: "Design, Australia",
           imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701808855/templates/template_one/Photo_fz8cuc.jpg",
@@ -220,6 +222,7 @@ const templateSlice = createSlice({
           email: "julie@email.com",
         },
         {
+          id:"262024509",
           name: "Alex",
           location: "Design, Australia",
           imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701808855/templates/template_one/Photo_fz8cuc.jpg",

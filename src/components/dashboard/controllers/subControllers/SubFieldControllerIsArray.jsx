@@ -7,6 +7,7 @@ const SubFieldControllerIsArray = ({ targetSection, cardIndex, sectionName, bloc
   const pattern = /\.(jpg|gif|png|svg)$/i;
 
   const fields = targetSection[blockName][cardIndex][subBlockName];
+  console.log(fields);
   return (
     <div className="controller-field my-1">
       <label className=" controller-label">{subBlockName}</label>
