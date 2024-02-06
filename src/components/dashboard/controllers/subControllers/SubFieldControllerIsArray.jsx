@@ -1,8 +1,11 @@
 import React from "react";
 import { useDispatch, useSelector } from "react-redux";
-const SubFieldControllerIsArray = ({ cardIndex, sectionName, blockName, subBlockName, dispatchRef }) => {
-  const targetSection = useSelector((state) => state.template[sectionName]);
+import ChangeImageController from "../ChangeImageController";
+const SubFieldControllerIsArray = ({ targetSection, cardIndex, sectionName, blockName, subBlockName, dispatchRef }) => {
+  // const targetSection = useSelector((state) => state.template[sectionName]);
   const dispatch = useDispatch();
+  const pattern = /\.(jpg|gif|png|svg)$/i;
+
   const fields = targetSection[blockName][cardIndex][subBlockName];
   return (
     <div className="controller-field my-1">
@@ -14,25 +17,43 @@ const SubFieldControllerIsArray = ({ cardIndex, sectionName, blockName, subBlock
               {subBlockName.slice(0, subBlockName.length - 1)}
               {index + 1}
             </label>
-            <textarea
-              className="input-controller"
-              style={{ backgroundColor: "#F2F2F2", borderRadius: "6px" }}
-              wrap="hard"
-              value={field}
-              onChange={(e) =>
-                dispatch(
+            {pattern.test(field) ? (
+              <ChangeImageController
+                field={field}
+                src={field}
+                dispatchRef={(target, result) =>
                   dispatchRef({
                     section: sectionName,
                     variable: null,
-                    value: e.target.value,
+                    value: result?.info?.secure_url,
                     i: cardIndex,
                     blockName: blockName,
                     subBlockName: subBlockName,
                     subIndex: index,
                   })
-                )
-              }
-            />
+                }
+              />
+            ) : (
+              <textarea
+                className="input-controller"
+                style={{ backgroundColor: "#F2F2F2", borderRadius: "6px" }}
+                wrap="hard"
+                value={field}
+                onChange={(e) =>
+                  dispatch(
+                    dispatchRef({
+                      section: sectionName,
+                      variable: null,
+                      value: e.target.value,
+                      i: cardIndex,
+                      blockName: blockName,
+                      subBlockName: subBlockName,
+                      subIndex: index,
+                    })
+                  )
+                }
+              />
+            )}
           </div>
         );
       })}

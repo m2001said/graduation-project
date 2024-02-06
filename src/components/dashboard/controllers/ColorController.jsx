@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
-import { updateAll } from "../../../features/templateData/templateSlice";
+// import { updateAll } from "../../../features/templateData/templateSlice";
 
 import ColorPicker from "./ColorPicker";
-const ColorController = () => {
+const ColorController = ({colors , updateAll}) => {
   const [open, setOpen] = useState(false);
-  const { colors } = useSelector((state) => state.template);
+  // const { colors } = useSelector((state) => state.template);
   const templateColors = Object.keys(colors)[0];
   const dispatch = useDispatch();
   const handleChange = (e, index) => {

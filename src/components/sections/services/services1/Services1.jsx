@@ -3,7 +3,7 @@ import Services1Card from "./services1Card/services1Card";
 import { useSelector } from "react-redux";
 
 const Services1 = () => {
-  const { services } = useSelector((state) => state.template);
+  const { services } = useSelector((state) => state.template1);
 
   return (
     <div className="services design-1">

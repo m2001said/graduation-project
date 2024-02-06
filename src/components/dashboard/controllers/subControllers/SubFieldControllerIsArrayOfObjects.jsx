@@ -2,8 +2,8 @@ import React from "react";
 import { useDispatch, useSelector } from "react-redux";
 import ChangeImageController from "../ChangeImageController";
 
-const SubFieldControllerIsArrayOfObjects = ({ cardIndex, sectionName, blockName, subBlockName, subIndex, dispatchRef }) => {
-  const targetSection = useSelector((state) => state.template[sectionName]);
+const SubFieldControllerIsArrayOfObjects = ({ targetSection, cardIndex, sectionName, blockName, subBlockName, subIndex, dispatchRef }) => {
+  // const targetSection = useSelector((state) => state.template[sectionName]);
   const subName = subBlockName.slice(0, subBlockName.length - 1);
   const dispatch = useDispatch();
   const dispatchedRefForImg = (target, result) =>
@@ -18,6 +18,7 @@ const SubFieldControllerIsArrayOfObjects = ({ cardIndex, sectionName, blockName,
     });
 
   const fields = Object.keys(targetSection[blockName][cardIndex][subBlockName][subIndex]);
+  const pattern = /^(https?:\/\/.*\.(?:png|jpg|jpeg|gif|webp|svg))/i;
   return (
     <div className="controller-field my-1">
       <label className=" controller-label">
@@ -25,10 +26,14 @@ const SubFieldControllerIsArrayOfObjects = ({ cardIndex, sectionName, blockName,
         {subIndex + 1}
       </label>
       {fields.map((field) => {
+        if (field === "id") {
+          return null;
+        }
         return (
           <div className="subController" key={field}>
             <label className="text-[16px]  capitalize">{field}</label>
-            {field === "imgUrl" || field === "icon" ? (
+            {/* {field === "imgUrl" || field === "icon" ? ( */}
+            {pattern.test(targetSection[blockName][cardIndex][subBlockName][subIndex][field]) ? (
               <ChangeImageController field={field} src={targetSection[blockName][cardIndex][subBlockName][subIndex][field]} dispatchRef={dispatchedRefForImg} />
             ) : (
               <textarea

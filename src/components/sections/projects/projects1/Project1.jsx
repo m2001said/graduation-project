@@ -3,7 +3,7 @@ import "./project1.css";
 import { useSelector } from "react-redux";
 
 const Project1 = () => {
-  const { projects } = useSelector((state) => state.template);
+  const { projects } = useSelector((state) => state.template1);
 
   return (
     <div className="projects1 design-1">

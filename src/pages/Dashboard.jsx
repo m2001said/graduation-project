@@ -3,10 +3,45 @@ import TopSide from "./../components/dashboard/sections/TopSide";
 import LeftSide from "../components/dashboard/sections/LeftSide";
 import RightSide from "../components/dashboard/sections/RightSide";
 import { useSelector } from "react-redux";
+import { useLocation } from "react-router";
+import { updateTemplate1 } from "../features/templateData/templateSlice";
+import { updateTemplate2 } from "../features/templateData/templateSlice2";
+import { updateTemplate3 } from "../features/templateData/templateSlice3";
+import { updateTemplate4 } from "../features/templateData/templateSlice4";
+import { updateTemplate5 } from "../features/templateData/templateSlice5";
+import { updateTemplate6 } from "../features/templateData/templateSlice6";
 
 const Dashboard = () => {
+  const { pathname } = useLocation();
+  const regex = /\d+/;
+  const templateId = pathname.match(regex)[0];
+  const template = useSelector((state) => state[`template${templateId}`]);
+  let updateAllRef;
+  switch (templateId) {
+    case "1":
+      updateAllRef = updateTemplate1;
+      break;
+    case "2":
+      updateAllRef = updateTemplate2;
+      break;
+    case "3":
+      updateAllRef = updateTemplate3;
+      break;
+    case "4":
+      updateAllRef = updateTemplate4;
+      break;
+    case "5":
+      updateAllRef = updateTemplate5;
+      break;
+    case "6":
+      updateAllRef = updateTemplate6;
+      break;
+    default:
+      break;
+  }
+
   const screen = useSelector((state) => state.screen);
-  const { colors } = useSelector((state) => state.template);
+  const colors = template.colors;
 
   useEffect(() => {
     for (let index = 0; index < colors.templateColors.length; index++) {
@@ -19,7 +54,7 @@ const Dashboard = () => {
       <TopSide />
 
       <div className="w-full flex-between flex-col md:flex-row dashboard-subContainer overflow-hidden">
-        <LeftSide />
+        <LeftSide targetTemplate={template} updateAllRef={updateAllRef} />
         <div className="dashboard-right-section" style={{ maxWidth: screen === "pc" ? "100%" : screen === "tablet" ? "991px" : "767px" }}>
           <div className="w-full border border-slate-300 shadow  md:rounded-tl-3xl md:rounded-bl-3xl  mb-2 overflow-y-auto overflow-x-hidden  mx-2 md:mx-4 md:self-start md:ml-1 relative">
             <RightSide />

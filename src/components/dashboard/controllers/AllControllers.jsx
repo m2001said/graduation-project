@@ -1,16 +1,20 @@
 import React, { useState } from "react";
-import { useSelector, useDispatch } from "react-redux";
-import { updateAll } from "../../../features/templateData/templateSlice";
+import { useDispatch } from "react-redux";
+// import { updateAll } from "../../../features/templateData/templateSlice";
+
 import FieldControllerIsArray from "./subControllers/FieldControllerIsArray";
 import FieldControllerIsArrayOfObjects from "./subControllers/FieldControllerIsArrayOfObjects";
 import FieldControllerIsObject from "./subControllers/FieldControllerIsObject";
 import ChangeImageController from "./ChangeImageController";
-const AllControllers = ({ controllerSection }) => {
-  const targetSection = useSelector((state) => state.template[controllerSection]);
+const AllControllers = ({ controllerSection, targetTemplate , updateAll}) => {
+  // const targetSection = useSelector((state) => state.template6[controllerSection]);
+  const targetSection = targetTemplate[controllerSection];
+
   const fields = Object.keys(targetSection);
   const dispatch = useDispatch();
   const [open, setOpen] = useState(false);
   const dispatchedRefForImg = (target, result) => updateAll({ section: controllerSection, variable: target, value: result?.info?.secure_url });
+  const pattern = /\.(jpg|gif|png|svg)$/i;
 
   return (
     <div className="controller">
@@ -29,6 +33,9 @@ const AllControllers = ({ controllerSection }) => {
                     <FieldControllerIsArrayOfObjects
                       cardIndex={index}
                       sectionName={controllerSection}
+
+                      targetSection={targetSection}
+
                       blockName={field}
                       subName={subName}
                       dispatchRef={updateAll}
@@ -37,13 +44,14 @@ const AllControllers = ({ controllerSection }) => {
                   );
                 });
               } else if (typeof targetSection[field][0] === "undefined") {
-                return <FieldControllerIsObject sectionName={controllerSection} blockName={field} subName={subName} dispatchRef={updateAll} key={field} />;
-              } else return <FieldControllerIsArray sectionName={controllerSection} blockName={field} subName={subName} dispatchRef={updateAll} key={field} />;
+                return <FieldControllerIsObject targetSection={targetSection} sectionName={controllerSection} blockName={field} subName={subName} dispatchRef={updateAll} key={field} />;
+              } else return <FieldControllerIsArray targetSection={targetSection} sectionName={controllerSection} blockName={field} subName={subName} dispatchRef={updateAll} key={field} />;
             }
             return (
               <div className="controller-field" key={field}>
                 <label className=" controller-label">{field}</label>
-                {field === "imgUrl" || field === "icon" ? (
+                {/* {field === "imgUrl" || field === "icon" ? ( */}
+                {pattern.test(targetSection[field]) ? (
                   <ChangeImageController field={field} src={targetSection[field]} dispatchRef={dispatchedRefForImg} />
                 ) : (
                   <textarea

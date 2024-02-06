@@ -3,7 +3,7 @@ import "./teams1.css";
 import { useSelector } from "react-redux";
 
 const Teams1 = () => {
-  const { team } = useSelector((state) => state.template);
+  const { team } = useSelector((state) => state.template1);
   const [selectedMember, setSelectedMember] = useState(null);
 
   const handleCardClick = (member) => {
