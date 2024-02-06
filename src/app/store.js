@@ -12,7 +12,7 @@ export const store = configureStore({
     screen: screenReducer,
     template1: templateReducer,
     template2: templateReducer2,
-    // template3: templateReducer3,
+    template3: templateReducer3,
     template4: templateReducer4,
     template5: templateReducer5,
     template6: templateReducer6,
