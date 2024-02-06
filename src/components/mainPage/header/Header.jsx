@@ -19,7 +19,7 @@ const Header = ({ loginState }) => {
                   vision into reality in just a few clicks. From abstract concepts to fully developed websites, the future of web design starts here.
                 </p>
               <button className="info-btn" onClick={toggleModal}>
-                {loginState ? <Link to={"Designs-page"}>Generate your website</Link> : " Generate your website"}
+                {loginState ? <Link to={"Designs"}>Generate your website</Link> : " Generate your website"}
               </button>
             </div>
             <div className="main-hero-image">

@@ -10,7 +10,7 @@ const DesignCard = ({ Designdata, index }) => {
           {index > 0 ? (
             <img src={Designdata.imageUrl} className="design-Img object-cover w-full" alt="design--Img" />
           ) : (
-            <Link to={`/build-your-own-page`}>
+            <Link to={`/PageCraft`}>
               <img src={Designdata.imageUrl} className="object-cover w-full" alt="plank--Img" />
             </Link>
           )}

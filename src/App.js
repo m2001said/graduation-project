@@ -26,8 +26,8 @@ function App() {
     <>
       <Routes>
         <Route path="/" element={<MainPage />} />
-        <Route path="/Designs-page" element={<DesignsPage />} />
-        <Route path="/build-your-own-page" element={<BuildYourPage />} />
+        <Route path="/Designs" element={<DesignsPage />} />
+        <Route path="/PageCraft" element={<BuildYourPage />} />
         {trialDesignComponents.map((Component, index) => (
           <Route path={`/preview-trial-design${index + 1}`} element={<Component />} />
         ))}

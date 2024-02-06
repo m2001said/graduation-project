@@ -1,6 +1,9 @@
 import React, { useState } from "react";
+import { useNavigate } from 'react-router-dom';
 
 const LoginForm = ({ toggleForm, handleSignIn }) => {
+  const navigate = useNavigate();
+  
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
@@ -24,6 +27,8 @@ const LoginForm = ({ toggleForm, handleSignIn }) => {
 
   const handleSignInClick = () => {
     if (validate()) {
+      navigate("/Designs");
+
       handleSignIn();
       document.querySelector(".modal-overlay").classList.add("closed");
     }
