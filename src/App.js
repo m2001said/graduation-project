@@ -11,15 +11,7 @@ import TrialDesign6 from "./pages/TrialDesign6";
 import BuildYourPage from "./pages/BuildYourPage";
 import NotFound from "./pages/NotFoundPage";
 
-const trialDesignComponents = [
-  TrialDesign1,
-  TrialDesign2,
-  TrialDesign3,
-  TrialDesign4,
-  TrialDesign5,
-  TrialDesign6
-
-];
+const trialDesignComponents = [TrialDesign1, TrialDesign2, TrialDesign3, TrialDesign4, TrialDesign5, TrialDesign6];
 
 function App() {
   return (
