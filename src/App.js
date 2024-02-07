@@ -19,6 +19,7 @@ import SigninLogin from "./components/mainPage/modal/SigninLogin.jsx";
 const trialDesignComponents = [TrialDesign1, TrialDesign2, TrialDesign3, TrialDesign4, TrialDesign5, TrialDesign6];
 
 function App() {
+  
   const [isSignedIn, setIsSignedIn] = React.useState(false);
   const signIn = () => {
     setIsSignedIn(true);
@@ -26,6 +27,8 @@ function App() {
   const signOut = () => {
     setIsSignedIn(false);
   };
+
+
   return (
     <>
       <MainNav loginState={isSignedIn} setSignOUT={signOut} />
