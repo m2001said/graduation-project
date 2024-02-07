@@ -3,7 +3,7 @@
   left: 0;
   top: 0;
   background: #430c7b44;
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(6px);
   width: 100%;
   z-index: 12;
 }
