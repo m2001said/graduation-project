@@ -13,10 +13,10 @@ const MainNav = ({ loginState, setSignOUT }) => {
       <div className="main-nav ">
         <div className="container mx-auto px-4 flex  justify-between items-center py-4">
           <Link to={"/"}>
-          <div className="main-logo flex items-center">
-            <img src={logo} alt="logo" />
-            <span>WEB</span>
-          </div>
+            <div className="main-logo flex items-center">
+              <img src={logo} alt="logo" />
+              <span>WEB</span>
+            </div>
           </Link>
           <button className="signIn-btn" onClick={loginState ? setSignOUT : toggleModal}>
             {loginState ? "Sign Out" : "Sign In"}

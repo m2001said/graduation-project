@@ -28,23 +28,23 @@ function App() {
   };
   return (
     <>
-    <MainNav  loginState={isSignedIn} setSignOUT={signOut} />
-    <BaseModal poster={posterImage}>
+      <MainNav loginState={isSignedIn} setSignOUT={signOut} />
+      <BaseModal poster={posterImage}>
         <SigninLogin setIsSignedIn={signIn} />
       </BaseModal>
       <Routes>
-          <Route path="/" element={<MainPage isSignedIn={isSignedIn} signIn={signIn}/>} />
-          <Route path="/Designs" element={<DesignsPage />} />
-          <Route path="/PageCraft" element={<BuildYourPage />} />
+        <Route path="/" element={<MainPage isSignedIn={isSignedIn} signIn={signIn} />} />
+        <Route path="/Designs" element={<DesignsPage />} />
+        <Route path="/PageCraft" element={<BuildYourPage />} />
+        {trialDesignComponents.map((Component, index) => (
+          <Route path={`/preview-trial-design${index + 1}`} element={<Component />} />
+        ))}
+        <Route element={<Dashboard />}>
           {trialDesignComponents.map((Component, index) => (
-            <Route path={`/preview-trial-design${index + 1}`} element={<Component />} />
+            <Route path={`/build-trial-design${index + 1}`} element={<Component />} />
           ))}
-          <Route element={<Dashboard />}>
-            {trialDesignComponents.map((Component, index) => (
-              <Route path={`/build-trial-design${index + 1}`} element={<Component />} />
-            ))}
-          </Route>
-          <Route path="*" element={<NotFound />} />
+        </Route>
+        <Route path="*" element={<NotFound />} />
       </Routes>
     </>
   );
