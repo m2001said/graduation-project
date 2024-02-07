@@ -5,7 +5,6 @@ import MainNav from "./../components/mainPage/mainNavbar/MainNav";
 const DesignsPage = () => {
   return (
     <>
-      <MainNav></MainNav>
       <DesignsContainer></DesignsContainer>
     </>
   );
