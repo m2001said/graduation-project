@@ -1,13 +1,17 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link ,useNavigate} from "react-router-dom";
 import "./mainNav.css";
 import logo from "../../../assets/images/mainPageAssets/logo.svg";
 
 const MainNav = ({ loginState, setSignOUT }) => {
+  const navigate = useNavigate();
   const toggleModal = () => {
     document.querySelector(".modal-overlay").classList.toggle("closed");
   };
-
+  const signOutClick = () => {
+    setSignOUT();
+    navigate("/");
+  };
   return (
     <>
       <div className="main-nav ">
@@ -18,7 +22,7 @@ const MainNav = ({ loginState, setSignOUT }) => {
               <span>WEB</span>
             </div>
           </Link>
-          <button className="signIn-btn" onClick={loginState ? setSignOUT : toggleModal}>
+          <button className="signIn-btn" onClick={loginState ? signOutClick : toggleModal}>
             {loginState ? "Sign Out" : "Sign In"}
           </button>
         </div>
