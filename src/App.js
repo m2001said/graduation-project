@@ -4,19 +4,13 @@ import MainNav from "./components/mainPage/mainNavbar/MainNav";
 import Dashboard from "./pages/Dashboard";
 import MainPage from "./pages/MainPage";
 import DesignsPage from "./pages/DesignsPage";
-import TrialDesign1 from "./pages/TrialDesign1";
-import TrialDesign2 from "./pages/TrialDesign2";
-import TrialDesign3 from "./pages/TrialDesign3";
-import TrialDesign4 from "./pages/TrialDesign4";
-import TrialDesign5 from "./pages/TrialDesign5";
-import TrialDesign6 from "./pages/TrialDesign6";
 import BuildYourPage from "./pages/BuildYourPage";
 import NotFound from "./pages/NotFoundPage";
 import posterImage from "./assets/images/mainPageAssets/signin.svg";
 import BaseModal from "./components/mainPage/modal/BaseModal/BaseModal.jsx";
 import SigninLogin from "./components/mainPage/modal/SigninLogin.jsx";
 
-const trialDesignComponents = [TrialDesign1, TrialDesign2, TrialDesign3, TrialDesign4, TrialDesign5, TrialDesign6];
+const trialDesignComponents = Array.from({length: 6}, (_, i) => require(`./pages/TrialDesign${i+1}`).default);
 
 function App() {
   
