@@ -10,7 +10,7 @@ import posterImage from "./assets/images/mainPageAssets/signin.svg";
 import BaseModal from "./components/mainPage/modal/BaseModal/BaseModal.jsx";
 import SigninLogin from "./components/mainPage/modal/SigninLogin.jsx";
 
-const trialDesignComponents = Array.from({length: 6}, (_, i) => require(`./pages/TrialDesign${i+1}`).default);
+const trialDesignComponents = Array.from({length: 7}, (_, i) => require(`./pages/TrialDesign${i+1}`).default);
 
 function App() {
   
