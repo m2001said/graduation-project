@@ -2,9 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-.try {
-  background-color: aqua;
-}
+
 
 :root {
   --primary10: rgb(19, 141, 197);

@@ -2,10 +2,9 @@ import React from "react";
 import { useSelector } from "react-redux";
 import "../../../../assets/css/globals10.css";
 
-const Statistics10 = () => {
-
+const Cta10 = () => {
   const { statistic10 } = useSelector((state) => state.template10);
-  
+
   return (
     <>
       <div
@@ -23,10 +22,10 @@ const Statistics10 = () => {
           <div className="space-y-6 max-w-xl mx-auto">
             <h1 className="text-2xl text-center sm:text-left sm:text-4xl font-semibold ">{statistic10.title}</h1>
             <div className="flex flex-wrap justify-center items-center">
-              <a href="# ">
+              <a href="https://www.apple.com/store">
                 <img src={statistic10.AppStoreImg} alt="" className="max-w-[150px] sm:max-w-[120px] md:max-w-[200px]" />
               </a>
-              <a href="# ">
+              <a href="https://play.google.com">
                 <img src={statistic10.PlayStoreImg} alt="" className="max-w-[150px] sm:max-w-[120px] md:max-w-[200px]" />
               </a>
             </div>
@@ -37,4 +36,4 @@ const Statistics10 = () => {
   );
 };
 
-export default Statistics10;
+export default Cta10;
