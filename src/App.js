@@ -9,6 +9,7 @@ import TrialDesign5 from "./pages/TrialDesign5";
 import TrialDesign6 from "./pages/TrialDesign6";
 import TrialDesign7 from "./pages/TrialDesign7";
 import TrialDesign10 from "./pages/TrialDesign10";
+import TrialDesign11 from "./pages/TrialDesign11";
 function App() {
   return (
     <>
@@ -23,6 +24,7 @@ function App() {
           <Route path="/trial-design6" element={<TrialDesign6 />} />
           <Route path="/trial-design7" element={<TrialDesign7 />} />
           <Route path="/trial-design10" element={<TrialDesign10 />} />
+          <Route path="/trial-design11" element={<TrialDesign11 />} />
         </Route>
       </Routes>
     </>

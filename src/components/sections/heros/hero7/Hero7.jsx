@@ -1,8 +1,11 @@
+import React from "react";
 import styles from "../../heros/hero7/styles7/style";
-import { hero7 } from "../../../../features/templateData/templateSlice7";
 import Services7 from "../../services/services7/Services7";
+import { useSelector } from "react-redux";
 
 const Hero7 = () => {
+  const { hero7 } = useSelector((state) => state.template7);
+
   return (
     <section id="home" className={`flex md:flex-row flex-col ${styles.paddingY} TrialDesign7`}>
       <div className={`flex-1 ${styles.flexStart} flex-col xl:px-0 sm:px-16 px-6`}>

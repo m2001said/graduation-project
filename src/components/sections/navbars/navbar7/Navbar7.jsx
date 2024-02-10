@@ -1,7 +1,9 @@
 import React, { useState } from "react";
-import { navLinks7 } from "../../../../features/templateData/templateSlice7";
+import { useSelector } from "react-redux";
 
 const Navbar7 = () => {
+  const { navLinks7 } = useSelector((state) => state.template7);
+
   const [active, setActive] = useState("Home");
   const [toggle, setToggle] = useState(false);
 
