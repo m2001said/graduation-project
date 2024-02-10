@@ -4,7 +4,7 @@ import {useSelector} from 'react-redux'
 
 
 const Statictics1 = () => {
-  const { statistic } = useSelector((state) => state.template);
+  const { statistic } = useSelector((state) => state.template1);
 
   const [started, setStarted] = useState(true);
 

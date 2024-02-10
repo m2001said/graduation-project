@@ -15,13 +15,13 @@
   --primary-color1: #1c2448;
   --primary-color2: #ce79cc;
   --primary-color2-dark: #7a4179;
-  --grey: #777777;
-  --white: #ffff;
+  --website-filed-title: #1a2345;
 
   --website-color-1: #fff;
   --website-color-2: #cda274;
   --website-color-3: #292f36;
   --website-color-4: #f4f0ec;
+  --website-color-5: #777777;
   --website-border-raduis: 10;
 
   --website-filed-title: #1a2345;
@@ -178,7 +178,10 @@ ul {
 .dashboard-container {
   @apply w-full;
 }
-
+.dashboard-right-section {
+  @apply max-md:w-full md:w-70 flex-auto  flex justify-start flex-col items-center text-black p-2;
+  height: calc(100vh - 56px);
+}
 @media screen and (min-width: 1600px) {
   .dashboard-container {
     width: 1600px;
@@ -191,6 +194,21 @@ ul {
   border-bottom: 4px solid var(--primary-color2);
   border-right: 4px solid var(--primary-color2);
   border-left: 4px solid var(--primary-color2);
+  position: relative;
+}
+.controller-name::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 57px;
+  width: 100%;
+  height: 4px;
+  background-color: var(--primary-color2);
+}
+@media (min-width: 767px) and (max-width: 1025px) {
+  .controller-name::after {
+    top: 54px;
+  }
 }
 .controller:hover .controller-name {
   color: var(--primary-color1);
@@ -214,22 +232,24 @@ ul {
   @apply body-bold  cursor-pointer capitalize;
   transition: all 0.3s;
 }
-
+.controller div:nth-child(2) {
+  margin-top: 1rem;
+}
 .controller-field {
   @apply flex flex-col border-2 rounded-lg border-solid pb-1 overflow-hidden text-black;
-  border-color: var(--grey);
+  border-color: var(--website-color-5);
   @apply flex flex-col border-2 rounded-lg border-solid pb-1 overflow-hidden text-black;
-  border-color: var(--grey);
+  border-color: var(--website-color-5);
 }
 .subController {
   padding-left: 0.5rem;
 }
 .subController:not(:last-child) {
-  border-bottom: 2px solid var(--grey);
+  border-bottom: 2px solid var(--website-color-5);
 }
 .controller-label {
   @apply text-[16px]  capitalize pl-1 border-b-2;
-  border-color: var(--grey);
+  border-color: var(--website-color-5);
   background-color: #fff0fe;
   color: var(--website-filed-title);
 }
@@ -237,7 +257,23 @@ ul {
   @apply text-black  p-2 h-auto outline-none w-full custom-scrollbar;
   @apply text-black  p-2 h-auto outline-none w-full custom-scrollbar;
 }
-
+.dashboard-color-picker {
+  margin-right: 4px;
+  border: none;
+  background: none;
+  height: auto;
+  width: auto;
+  outline: none;
+  &::-webkit-color-swatch-wrapper {
+    height: 20px;
+    width: 20px;
+    padding: 0;
+  }
+  &::-webkit-color-swatch {
+    border: none;
+    border-radius: 4px;
+  }
+}
 .card_img {
   @apply h-64  lg:h-[450px] w-full rounded-[24px] object-cover mb-5;
 }

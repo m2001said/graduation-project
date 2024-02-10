@@ -151,11 +151,14 @@ const templateSlice4 = createSlice({
       address: "145 New York, FL 5467, USA",
       serviecs: ["Property", "Services", "Product", "About Us"],
     },
+    colors: {
+      templateColors: ["#fff", "#cda274", "#292f36", "#f4f0ec", "#777777"],
+    },
   },
 
   name: "templateSlice4",
   reducers: {
-    updateAll: (state, action) => {
+    updateTemplate4: (state, action) => {
       const { section, variable, value, i, blockName, subBlockName, subIndex, objKey } = action.payload;
       // sub means level 2 of fields
       if (i === undefined) {
@@ -192,5 +195,5 @@ const templateSlice4 = createSlice({
   },
 });
 
-export const { updateAll } = templateSlice4.actions;
+export const { updateTemplate4 } = templateSlice4.actions;
 export default templateSlice4.reducer;

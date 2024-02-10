@@ -2,7 +2,7 @@ import React from "react";
 import "./feature.css";
 import { useSelector } from "react-redux";
 const Featrue1 = () => {
-  const { feature } = useSelector((state) => state.template);
+  const { feature } = useSelector((state) => state.template1);
 
   return (
     <div className="feature1-layout">
