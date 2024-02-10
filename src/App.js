@@ -32,8 +32,8 @@ function App() {
       <div style={{marginTop: "78px"}}>
         <Routes>
           <Route path="/" element={<MainPage isSignedIn={isSignedIn} signIn={signIn} />} />
-          <Route path="/Designs" element={<DesignsPage />} />
-          <Route path="/PageCraft" element={<BuildYourPage />} />
+          <Route path="/designs" element={<DesignsPage />} />
+          <Route path="/page-craft" element={<BuildYourPage />} />
           {trialDesignComponents.map((Component, index) => (
             <Route path={`/preview-trial-design${index + 1}`} element={<Component />} />
           ))}

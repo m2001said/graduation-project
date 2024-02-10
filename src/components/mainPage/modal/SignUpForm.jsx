@@ -15,7 +15,7 @@ const SignUpForm = ({ toggleForm }) => {
       return;
     }
     // Proceed with sign-up logic
-    navigate("/Designs");
+    navigate("/designs");
     document.querySelector(".modal-overlay").classList.add("closed");
   };
   return (

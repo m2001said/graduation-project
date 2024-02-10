@@ -20,7 +20,7 @@ const LoginForm = ({ toggleForm, handleSignIn }) => {
     }
   
     // Proceed with sign-in logic
-    navigate("/Designs");
+    navigate("/designs");
     handleSignIn();
     document.querySelector(".modal-overlay").classList.add("closed");
   };

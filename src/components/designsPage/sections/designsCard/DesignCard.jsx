@@ -26,7 +26,7 @@ const DesignCard = ({ Designdata, index }) => {
         </div>
       )}
       {index === 0 && (
-        <Link to={`/PageCraft`}>
+        <Link to={`/page-craft`}>
           <div className="design-card rounded-lg overflow-hidden shadow-lg flex flex-column">
             <div className="design-Img-container mb-2">
               <img src={Designdata.imageUrl} className="design-Img object-cover w-full" alt="design--Img" />
