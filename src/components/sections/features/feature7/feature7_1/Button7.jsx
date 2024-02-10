@@ -3,7 +3,6 @@ import { useSelector } from "react-redux";
 
 const Button7 = ({ styles }) => {
   const { btn7 } = useSelector((state) => state.template7);
-
   return (
     <button
       type="button"
@@ -13,5 +12,4 @@ const Button7 = ({ styles }) => {
     </button>
   );
 };
-
 export default Button7;

@@ -3,7 +3,6 @@ import { useSelector } from "react-redux";
 
 const ScorollDown11 = () => {
   const { ScorollDown11 } = useSelector((state) => state.template11);
-
   return (
     <div className="scroll__down11">
       <a href="#about" className="mouse11__wrapper">
@@ -15,5 +14,4 @@ const ScorollDown11 = () => {
     </div>
   );
 };
-
 export default ScorollDown11;

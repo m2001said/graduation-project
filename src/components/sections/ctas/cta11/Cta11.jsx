@@ -1,11 +1,12 @@
 import React from "react";
 import "../cta11/cta11.css";
+import { useSelector } from "react-redux";
 import ResumeData11 from "../cta11/resumeData11";
 import Card11 from "./Card11";
 
 const Cta11 = () => {
-  const resume11 = ResumeData11();
-
+  const { resume11 } = useSelector((state) => state.template11);
+  // const resume11 = ResumeData11();
   return (
     <section className="resume11 container section" id="resume">
       <h2 className="section__title11">Experience</h2>
@@ -17,7 +18,6 @@ const Cta11 = () => {
             }
           })}
         </div>
-
         <div className="timeline11 grid11">
           {resume11.map((val, index) => {
             if (val.category === "experience") {
@@ -29,5 +29,4 @@ const Cta11 = () => {
     </section>
   );
 };
-
 export default Cta11;

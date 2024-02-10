@@ -399,21 +399,21 @@ const templateSlice6 = createSlice({
       },
       contact: {
         title: "Contact",
-        content:  [
-        {
-          title: "Sylhet, Bangladesh",
-          icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703108316/jammal_photos/oe8rjvrg0ckgohix2b6v.svg",
-        },
-        {
-          title: "example@gmail.com",
-          icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703108228/jammal_photos/opdhewds9do1znaaj5li.svg",
-        },
-        {
-          title: "+880 123 456 7890",
-          icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703108367/jammal_photos/y2583eh76th902gnzlje.svg",
-        },
-      ],
-    } 
+        content: [
+          {
+            title: "Sylhet, Bangladesh",
+            icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703108316/jammal_photos/oe8rjvrg0ckgohix2b6v.svg",
+          },
+          {
+            title: "example@gmail.com",
+            icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703108228/jammal_photos/opdhewds9do1znaaj5li.svg",
+          },
+          {
+            title: "+880 123 456 7890",
+            icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703108367/jammal_photos/y2583eh76th902gnzlje.svg",
+          },
+        ],
+      },
     },
   },
 

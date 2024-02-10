@@ -4,7 +4,6 @@ import { useSelector } from "react-redux";
 
 const Footer11 = () => {
   const { foot11 } = useSelector((state) => state.template11);
-
   return (
     <section className="blog11 container section11" id="blog">
       <h2 className="section__title11">{foot11[0].title.title0}</h2>
@@ -18,7 +17,6 @@ const Footer11 = () => {
               <img src={foot11[0].imgUrl.blog1} alt="" className="blog__img11" />
             </a>
           </div>
-
           <div className="blog__details11">
             <h3 className="blog__title11">{foot11[0].paragraf.p1}</h3>
             <div className="blog__meta11">
@@ -29,7 +27,6 @@ const Footer11 = () => {
           </div>
         </div>
       </div>
-
       <div className="blog__container11 grid11">
         <div className="blog__card11">
           <div className="blog__thumb11">
@@ -40,7 +37,6 @@ const Footer11 = () => {
               <img src={foot11[0].imgUrl.blog2} alt="" className="blog__img11" />
             </a>
           </div>
-
           <div className="blog__details11">
             <h3 className="blog__title11">{foot11[0].paragraf.p3}</h3>
             <div className="blog__meta11">
@@ -51,7 +47,6 @@ const Footer11 = () => {
           </div>
         </div>
       </div>
-
       <div className="blog__container11 grid11">
         <div className="blog__card11">
           <div className="blog__thumb11">
@@ -62,7 +57,6 @@ const Footer11 = () => {
               <img src={foot11[0].imgUrl.blog3} alt="" className="blog__img11" />
             </a>
           </div>
-
           <div className="blog__details11">
             <h3 className="blog__title11">{foot11[0].paragraf.p5}</h3>
             <div className="blog__meta11">
@@ -76,5 +70,4 @@ const Footer11 = () => {
     </section>
   );
 };
-
 export default Footer11;

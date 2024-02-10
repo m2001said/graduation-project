@@ -3,10 +3,8 @@ import { useSelector } from "react-redux";
 
 const Navbar7 = () => {
   const { navLinks7 } = useSelector((state) => state.template7);
-
   const [active, setActive] = useState("Home");
   const [toggle, setToggle] = useState(false);
-
   return (
     <nav7 className="w-full flex py-6 justify-between items-center navbar" style={{ color: "var(--color-dim-white)" }}>
       <img src={navLinks7[0].imgUrl.imgUrlA} alt="hoobank" className="w-[124px] h-[32px]" />
@@ -26,7 +24,6 @@ const Navbar7 = () => {
           </li>
         ))}
       </ul>
-
       <div className="sm:hidden flex flex-1 justify-end items-center">
         <img
           src={toggle ? navLinks7[0].imgUrl.imgUrlB : navLinks7[0].imgUrl.imgUrlC}
@@ -34,7 +31,6 @@ const Navbar7 = () => {
           className="w-[28px] h-[28px] object-contain"
           onClick={() => setToggle(!toggle)}
         />
-
         <div className={`${!toggle ? "hidden" : "flex"} p-6 bg-black-gradient absolute top-20 right-0 mx-4 my-2 min-w-[140px] rounded-xl sidebar`}>
           <ul className="list-none flex justify-end items-start flex-1 flex-col">
             {navLinks7.map((nav, index) => (
@@ -56,5 +52,4 @@ const Navbar7 = () => {
     </nav7>
   );
 };
-
 export default Navbar7;

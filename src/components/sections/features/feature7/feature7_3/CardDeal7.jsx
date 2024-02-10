@@ -13,15 +13,12 @@ const CardDeal = () => {
         <p className={`${styles.paragraph} max-w-[470px] mt-5`} style={{ color: "var(--color-dim-white)" }}>
           {features3[0].title.titleC}{" "}
         </p>
-
         <Button7 styles={`px-4 py-5 mt-6 bg-green-500 text-white rounded-full hover:bg-green-700 `} />
       </div>
-
       <div className={layout.sectionImg}>
         <img src={features3[1].imgUrl.imgUrlA} alt="billing" className="w-[100%] h-[100%]" />
       </div>
     </section>
   );
 };
-
 export default CardDeal;

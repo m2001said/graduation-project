@@ -4,16 +4,13 @@ import { useSelector } from "react-redux";
 
 const Project11 = () => {
   const { Project11, Menu11 } = useSelector((state) => state.template11);
-
   const [items, setItems] = useState(Menu11);
-
   const filterItem = (categoryItem) => {
     const updatedItems = Menu11.filter((curElem) => {
       return curElem.category === categoryItem;
     });
     setItems(updatedItems);
   };
-
   return (
     <section className="work11 container section" id="portfolio">
       <h2 className="section__title11">{Project11[0].title[0].titl0}</h2>
@@ -56,5 +53,4 @@ const Project11 = () => {
     </section>
   );
 };
-
 export default Project11;

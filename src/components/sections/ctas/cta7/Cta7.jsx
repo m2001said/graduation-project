@@ -12,12 +12,10 @@ const Cta7 = () => {
           {Ctas7[0].title.titleB}
         </p>
       </div>
-
       <div className={`${styles.flexCenter} sm:ml-10 ml-0 sm:mt-0 mt-10`}>
         <Button7 styles={`px-4 py-5 mt-6 bg-green-500 text-white rounded-full hover:bg-green-700 `} />
       </div>
     </section>
   );
 };
-
 export default Cta7;

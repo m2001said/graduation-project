@@ -4,7 +4,6 @@ import { useSelector } from "react-redux";
 
 const Services11_2 = () => {
   const { data } = useSelector((state) => state.template11);
-
   return (
     <section className="services11 container section" id="services">
       <h2 className="section__title11">Services</h2>
@@ -22,5 +21,4 @@ const Services11_2 = () => {
     </section>
   );
 };
-
 export default Services11_2;

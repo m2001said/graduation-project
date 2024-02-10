@@ -17,7 +17,6 @@ const Testimonials7 = () => {
           </p>
         </div>
       </div>
-
       <div className="flex flex-wrap sm:justify-start justify-center w-full relative z-0">
         {feedback.map((card) => (
           <FeedbackCard key={card.id} {...card} />
@@ -26,5 +25,4 @@ const Testimonials7 = () => {
     </section>
   );
 };
-
 export default Testimonials7;

@@ -4,7 +4,6 @@ import "../testimonials11/testimonials11.css";
 
 const Testimonials11 = () => {
   const { test11 } = useSelector((state) => state.template11);
-
   return (
     <section className="testimonials11 container section11">
       <h2 className="section__title11">Clients & Reviews</h2>
@@ -25,5 +24,4 @@ const Testimonials11 = () => {
     </section>
   );
 };
-
 export default Testimonials11;

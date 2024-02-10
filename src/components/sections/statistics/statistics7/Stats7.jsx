@@ -4,7 +4,6 @@ import { useSelector } from "react-redux";
 
 const Stats7 = () => {
   const { statss } = useSelector((state) => state.template7);
-
   return (
     <section className={`${styles.flexCenter} flex-row flex-wrap sm:mb-20 mb-6`}>
       {statss.map((stat) => (
@@ -18,5 +17,4 @@ const Stats7 = () => {
     </section>
   );
 };
-
 export default Stats7;

@@ -4,11 +4,9 @@ import { useSelector } from "react-redux";
 
 const Pricings11 = () => {
   const { pricing_item11 } = useSelector((state) => state.template11);
-
   return (
     <section className="pricing1 container section11" id="layers">
       <h2 className="section__title11">{pricing_item11[0].title.titl0}</h2>
-
       <div className="pricing__container11 grid11">
         <div className="pricing__item11">
           <img src={pricing_item11[0].imgUrl.imgUrl_price1} alt="" className="pricing__img11" />
@@ -23,7 +21,6 @@ const Pricings11 = () => {
             {pricing_item11[0].btn.B1}
           </a>
         </div>
-
         <div className="pricing__item11 best">
           <span className="badge11">{pricing_item11[0].title.titl2}</span>
           <img src={pricing_item11[0].imgUrl.imgUrl_price2} alt="" className="pricing__img11" />
@@ -37,7 +34,6 @@ const Pricings11 = () => {
             {pricing_item11[0].btn.B1}
           </a>
         </div>
-
         <div className="pricing__item11 ">
           <img src={pricing_item11[0].imgUrl.imgUrl_price3} alt="" className="pricing__img11" />
           <h3 className="pricing__plan11">{pricing_item11[0].title.titl3}</h3>
@@ -54,5 +50,4 @@ const Pricings11 = () => {
     </section>
   );
 };
-
 export default Pricings11;
