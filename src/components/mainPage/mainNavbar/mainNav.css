@@ -2,8 +2,7 @@
   position: fixed;
   left: 0;
   top: 0;
-  background: #430c7b44;
-  backdrop-filter: blur(6px);
+  background: var(--color-1); 
   width: 100%;
   z-index: 12;
 }

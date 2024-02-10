@@ -29,20 +29,22 @@ function App() {
       <BaseModal poster={posterImage}>
         <SigninLogin setIsSignedIn={signIn} />
       </BaseModal>
-      <Routes>
-        <Route path="/" element={<MainPage isSignedIn={isSignedIn} signIn={signIn} />} />
-        <Route path="/Designs" element={<DesignsPage />} />
-        <Route path="/PageCraft" element={<BuildYourPage />} />
-        {trialDesignComponents.map((Component, index) => (
-          <Route path={`/preview-trial-design${index + 1}`} element={<Component />} />
-        ))}
-        <Route element={<Dashboard />}>
+      <div style={{marginTop: "78px"}}>
+        <Routes>
+          <Route path="/" element={<MainPage isSignedIn={isSignedIn} signIn={signIn} />} />
+          <Route path="/Designs" element={<DesignsPage />} />
+          <Route path="/PageCraft" element={<BuildYourPage />} />
           {trialDesignComponents.map((Component, index) => (
-            <Route path={`/build-trial-design${index + 1}`} element={<Component />} />
+            <Route path={`/preview-trial-design${index + 1}`} element={<Component />} />
           ))}
-        </Route>
-        <Route path="*" element={<NotFound />} />
-      </Routes>
+          <Route element={<Dashboard />}>
+            {trialDesignComponents.map((Component, index) => (
+              <Route path={`/build-trial-design${index + 1}`} element={<Component />} />
+            ))}
+          </Route>
+          <Route path="*" element={<NotFound />} />
+        </Routes>
+      </div>
     </>
   );
 }
