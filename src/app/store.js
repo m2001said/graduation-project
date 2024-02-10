@@ -12,7 +12,7 @@ import templateReducer11 from "../features/templateData/templateSlice11";
 export const store = configureStore({
   reducer: {
     screen: screenReducer,
-    template: templateReducer,
+    template1: templateReducer,
     template2: templateReducer2,
     template3: templateReducer3,
     template4: templateReducer4,

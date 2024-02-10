@@ -37,7 +37,7 @@ header {
   left: 0;
   width: 100%;
   z-index: 2;
-  background-color: var(--white);
+  background-color: var(--website-color-1);
 }
 
 header .Nav-container {
@@ -123,7 +123,7 @@ header nav ul {
     text-transform: capitalize;
     padding: 10px 30px;
     color: var(--website-color-3);
-    background-color: var(--white);
+    background-color: var(--website-color-1);
     font-size: 18px;
     border-bottom: 0.5px solid var(--website-color-2);
   }

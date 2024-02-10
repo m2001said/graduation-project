@@ -172,7 +172,15 @@ const templateSlice2 = createSlice({
           url: "https://facebook.com",
         },
         {
-          icon: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1703129090/icons8-instagram-48_tywoff.png",
+          icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701809142/templates/template_one/x_yp3y5n.svg",
+          url: "https://x.com",
+        },
+        {
+          icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701809142/templates/template_one/linkedin_itbvp5.svg",
+          url: "https://linkedin.com",
+        },
+        {
+          icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701809141/templates/template_one/instagram_dlrab9.svg",
           url: "https://instagram.com",
         },
         {
@@ -181,28 +189,33 @@ const templateSlice2 = createSlice({
         },
       ],
     },
-    services: [
-      {
-        title: "UI/UX Design",
-        items: ["lorem ipsum,", "Llorem ipsuma,", "Blorem ipsumm,", "Dilorem ipsumll,", "lorem ipsum"],
-        icon: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1703134251/correct-signal-svgrepo-com_vvf3sw.svg",
-      },
-      {
-        title: "WebDevelopment",
-        items: ["lorem ipsum,", "Llorem ipsuma,", "Blorem ipsumm,", "Dilorem ipsumll,", "lorem ipsum"],
-        icon: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1703134251/correct-signal-svgrepo-com_vvf3sw.svg",
-      },
-      {
-        title: "Content Creation",
-        items: ["lorem ipsum,", "Llorem ipsuma,", "Blorem ipsumm,", "Dilorem ipsumll,", "lorem ipsum"],
-        icon: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1703134251/correct-signal-svgrepo-com_vvf3sw.svg",
-      },
-    ],
+    services: {
+      services: [
+        {
+          title: "UI/UX Design",
+          items: ["lorem ipsum,", "Llorem ipsuma,", "Blorem ipsumm,", "Dilorem ipsumll,", "lorem ipsum"],
+          icon: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1703134251/correct-signal-svgrepo-com_vvf3sw.svg",
+        },
+        {
+          title: "WebDevelopment",
+          items: ["lorem ipsum,", "Llorem ipsuma,", "Blorem ipsumm,", "Dilorem ipsumll,", "lorem ipsum"],
+          icon: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1703134251/correct-signal-svgrepo-com_vvf3sw.svg",
+        },
+        {
+          title: "Content Creation",
+          items: ["lorem ipsum,", "Llorem ipsuma,", "Blorem ipsumm,", "Dilorem ipsumll,", "lorem ipsum"],
+          icon: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1703134251/correct-signal-svgrepo-com_vvf3sw.svg",
+        },
+      ],
+    },
+    colors: {
+      templateColors: ["#fff", "#cda274", "#292f36", "#f4f0ec", "#777777"],
+    },
   },
 
   name: "templateSlice2",
   reducers: {
-    updateAll: (state, action) => {
+    updateTemplate2: (state, action) => {
       const { section, variable, value, i, blockName, subBlockName, subIndex, objKey } = action.payload;
       // sub means level 2 of fields
       if (i === undefined) {
@@ -239,5 +252,5 @@ const templateSlice2 = createSlice({
   },
 });
 
-export const { updateAll } = templateSlice2.actions;
+export const { updateTemplate2 } = templateSlice2.actions;
 export default templateSlice2.reducer;

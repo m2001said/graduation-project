@@ -3,7 +3,7 @@ import "./navbar1.css";
 import { useSelector } from "react-redux";
 
 const Navbar1 = () => {
-  const { navbar } = useSelector((state) => state.template);
+  const { navbar } = useSelector((state) => state.template1);
   const [openMenu, setOpenMenu] = useState(false);
   const [isSmallScreen, setIsSmallScreen] = useState(window.innerWidth <= 667);
   const menuRef = useRef(null);

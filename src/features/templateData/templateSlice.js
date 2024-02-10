@@ -37,12 +37,23 @@ const templateSlice = createSlice({
         "It is a long established fact that a reader will be distracted by the of readable content of a page when looking at its layouts the points of using that it has a more-or-less normal.",
       phone: "012345678",
       buttonText: "Get Free Estimate",
+
       icons: [
         {
           icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701813236/templates/template_one/Call_gqvv4l.svg",
         },
         {
           icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701813389/templates/template_one/Vector_5_vvvt2o.svg",
+        },
+      ],
+
+      test: [
+        {
+          subTest: [
+            "https://res.cloudinary.com/duc04fwdb/image/upload/v1701813236/templates/template_one/Call_gqvv4l.svg",
+            "https://res.cloudinary.com/duc04fwdb/image/upload/v1701813389/templates/template_one/Vector_5_vvvt2o.svg",
+            "https://res.cloudinary.com/duc04fwdb/image/upload/v1701813389/templates/template_one/Vector_5_vvvt2o.svg",
+          ],
         },
       ],
       imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701813388/templates/template_one/Photo_sonnlx.jpg",
@@ -161,6 +172,7 @@ const templateSlice = createSlice({
       title: "Our Team Members",
       cards: [
         {
+          id:"262024507",
           name: "Nattasha",
           location: "Design, Australia",
           imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701808855/templates/template_one/Photo_fz8cuc.jpg",
@@ -185,6 +197,7 @@ const templateSlice = createSlice({
           email: "julie@email.com",
         },
         {
+          id:"262024508",
           name: "Julie",
           location: "Design, Australia",
           imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701808855/templates/template_one/Photo_fz8cuc.jpg",
@@ -209,6 +222,7 @@ const templateSlice = createSlice({
           email: "julie@email.com",
         },
         {
+          id:"262024509",
           name: "Alex",
           location: "Design, Australia",
           imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701808855/templates/template_one/Photo_fz8cuc.jpg",
@@ -345,7 +359,7 @@ const templateSlice = createSlice({
 
   name: "templateSlice",
   reducers: {
-    updateAll: (state, action) => {
+    updateTemplate1: (state, action) => {
       const { section, variable, value, i, blockName, subBlockName, subIndex, objKey } = action.payload;
       // sub means level 2 of fields
       if (i === undefined) {
@@ -382,5 +396,5 @@ const templateSlice = createSlice({
   },
 });
 
-export const { updateAll } = templateSlice.actions;
+export const { updateTemplate1 } = templateSlice.actions;
 export default templateSlice.reducer;

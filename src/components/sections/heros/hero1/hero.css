@@ -22,7 +22,7 @@
 
 .main-heading h2::before {
   height: 2px;
-  background-color: var(--grey);
+  background-color: var(--website-color-5);
   bottom: -30px;
   width: 120px;
 }
@@ -31,9 +31,9 @@
   width: 14px;
   height: 14px;
   border-radius: 50%;
-  border: 2px solid var(--grey);
+  border: 2px solid var(--website-color-5);
   bottom: -38px;
-  background-color: var(--white);
+  background-color: var(--website-color-1);
 }
 
 .main-heading p {
@@ -41,12 +41,12 @@
   max-width: 550px;
   margin: 0 auto 100px;
   line-height: 2;
-  color: var(--grey);
+  color: var(--website-color-5);
 }
 /* Landing */
 .landing {
   height: 800px;
-  background-color: var(--white);
+  background-color: var(--website-color-1);
   background-position: center;
   background-size: cover;
   position: relative;
@@ -82,7 +82,7 @@
   margin-top: 12px;
   font-size: 18px;
   background-color: var(--website-color-3);
-  color: var(--white);
+  color: var(--website-color-1);
   border-radius: 20px;
 }
 .landing .text .landing-btn:hover {

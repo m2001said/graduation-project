@@ -5,13 +5,15 @@ import SubFieldControllerIsArray from "./SubFieldControllerIsArray";
 import ChangeImageController from "../ChangeImageController";
 import SubFieldControllerIsObject from "./SubFieldControllerIsObject";
 
-const FieldControllerIsArrayOfObjects = ({ cardIndex, sectionName, subName, blockName, dispatchRef }) => {
-  const targetSection = useSelector((state) => state.template[sectionName]);
+const FieldControllerIsArrayOfObjects = ({ targetSection, cardIndex, sectionName, subName, blockName, dispatchRef }) => {
+  // const targetSection = useSelector((state) => state.template6[sectionName]);
   const dispatch = useDispatch();
   const dispatchedRefForImg = (target, result) =>
     dispatchRef({ section: sectionName, variable: target, value: result?.info?.secure_url, i: cardIndex, blockName: blockName });
 
   const fields = Object.keys(targetSection[blockName][cardIndex]);
+  const pattern = /\.(jpg|gif|png|svg)$/i;
+
   return (
     <div className="controller-field">
       <label className=" controller-label">
@@ -24,6 +26,7 @@ const FieldControllerIsArrayOfObjects = ({ cardIndex, sectionName, subName, bloc
             return targetSection[blockName][cardIndex][field].map((_, _index) => {
               return (
                 <SubFieldControllerIsArrayOfObjects
+                  targetSection={targetSection}
                   cardIndex={cardIndex}
                   sectionName={sectionName}
                   blockName={blockName}
@@ -37,6 +40,7 @@ const FieldControllerIsArrayOfObjects = ({ cardIndex, sectionName, subName, bloc
           } else if (typeof targetSection[blockName][cardIndex][field][0] === "undefined")
             return (
               <SubFieldControllerIsObject
+                targetSection={targetSection}
                 cardIndex={cardIndex}
                 sectionName={sectionName}
                 blockName={blockName}
@@ -48,6 +52,7 @@ const FieldControllerIsArrayOfObjects = ({ cardIndex, sectionName, subName, bloc
           else
             return (
               <SubFieldControllerIsArray
+                targetSection={targetSection}
                 cardIndex={cardIndex}
                 sectionName={sectionName}
                 blockName={blockName}
@@ -58,10 +63,13 @@ const FieldControllerIsArrayOfObjects = ({ cardIndex, sectionName, subName, bloc
               />
             );
         }
+        if (field === "id") {
+          return null;
+        }
         return (
           <div className="subController" key={field}>
             <label className="text-[16px]  capitalize">{field}</label>
-            {field === "imgUrl" || field === "icon" ? (
+            {pattern.test(targetSection[blockName][cardIndex][field]) ? (
               <ChangeImageController field={field} src={targetSection[blockName][cardIndex][field]} dispatchRef={dispatchedRefForImg} />
             ) : (
               <textarea

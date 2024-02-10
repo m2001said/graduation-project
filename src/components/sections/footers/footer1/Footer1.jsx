@@ -3,7 +3,7 @@ import "./footer1.css";
 import { useSelector } from "react-redux";
 
 const Footer = () => {
-  const { footer } = useSelector((state) => state.template);
+  const { footer } = useSelector((state) => state.template1);
   const contactInfo = Object.keys(footer.contact);
   return (
     <div className="footer1 design-1">
