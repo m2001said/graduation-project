@@ -348,6 +348,9 @@ const templateSlice7 = createSlice({
         logo: "https://res.cloudinary.com/duc04fwdb/image/upload/v1706818069/jammal_photos/uioypquvjmbkcoxpb4rv.png",
       },
     ],
+    colors: {
+      templateColors: ["#fff", "#cda274", "#292f36", "#f4f0ec", "#777777"],
+    },
   },
 
   name: "templateSlice7",
@@ -389,5 +392,5 @@ const templateSlice7 = createSlice({
   },
 });
 
-export const { updateAll } = templateSlice7.actions;
+export const { updateTemplate7 } = templateSlice7.actions;
 export default templateSlice7.reducer;

@@ -351,6 +351,9 @@ const templateSlice11 = createSlice({
         btn: "Send Message",
       },
     ],
+    colors: {
+      templateColors: ["#fff", "#cda274", "#292f36", "#f4f0ec", "#777777"],
+    },
   },
   name: "templateSlice11",
   reducers: {
@@ -383,5 +386,5 @@ const templateSlice11 = createSlice({
   },
 });
 
-export const { updateAll } = templateSlice11.actions;
+export const { updateTemplate11 } = templateSlice11.actions;
 export default templateSlice11.reducer;
