@@ -1,13 +1,16 @@
 import React from "react";
 import Header from "../components/mainPage/header/Header.jsx";
-import Hero from "../components/mainPage/hero/Hero.jsx";
+import Steps from "../components/mainPage/stepsGuide/StepsGuide.jsx";
+import DemoVideo from "../components/mainPage/demoVideo/DemoVideo.jsx";
+const MainPage = ({isSignedIn}) => {
 
-const MainPage = () => {
   return (
     <>
-      <Header />
-      <Hero />
+      <Header loginState={isSignedIn}></Header>
+      <Steps></Steps>
+      <DemoVideo></DemoVideo>
     </>
   );
 };
+
 export default MainPage;
