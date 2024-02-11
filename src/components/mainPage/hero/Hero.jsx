@@ -22,6 +22,7 @@ const Hero = () => {
     { to: "trial-design5", text: "go to TrialDesign5" },
     { to: "trial-design6", text: "go to TrialDesign6" },
     { to: "trial-design7", text: "go to TrialDesign7" },
+    { to: "trial-design9", text: "go to TrialDesign9" },
     // { to: "trial-design11", text: "go to TrialDesign11" },
     // { to: "trial-design15", text: "go to TrialDesign15" },
   ];
