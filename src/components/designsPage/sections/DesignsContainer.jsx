@@ -40,6 +40,66 @@ const DesignsData = [
     description: " Design description Design description ",
     imageUrl: design6,
   },
+  {
+    title: "DesignTitle7",
+    description: " Design description Design description ",
+    imageUrl: design6,
+  },
+  {
+    title: "DesignTitle8",
+    description: " Design description Design description ",
+    imageUrl: design6,
+  },
+  {
+    title: "DesignTitle9",
+    description: " Design description Design description ",
+    imageUrl: design6,
+  },
+  {
+    title: "DesignTitle10",
+    description: " Design description Design description ",
+    imageUrl: design6,
+  },
+  {
+    title: "DesignTitle11",
+    description: " Design description Design description ",
+    imageUrl: design6,
+  },
+  {
+    title: "DesignTitle12",
+    description: " Design description Design description ",
+    imageUrl: design6,
+  },
+  {
+    title: "DesignTitle13",
+    description: " Design description Design description ",
+    imageUrl: design6,
+  },
+  {
+    title: "DesignTitle14",
+    description: " Design description Design description ",
+    imageUrl: design6,
+  },
+  {
+    title: "DesignTitle15",
+    description: " Design description Design description ",
+    imageUrl: design6,
+  },
+  {
+    title: "DesignTitle16",
+    description: " Design description Design description ",
+    imageUrl: design6,
+  },
+  {
+    title: "DesignTitle17",
+    description: " Design description Design description ",
+    imageUrl: design6,
+  },
+  {
+    title: "DesignTitle18",
+    description: " Design description Design description ",
+    imageUrl: design6,
+  },
 ];
 
 const DesignsContainer = () => {
@@ -51,7 +111,7 @@ const DesignsContainer = () => {
           <p className="mx-auto max-w-[700px] text-gray-200 md:text-xl text-center">Explore our latest and greatest designs.</p>
           <div className="designs-container flex flex-wrap gap-8 justify-center">
             {DesignsData.map((design, index) => (
-              <DesignCard Designdata={design} index={index}></DesignCard>
+              <DesignCard key={index} Designdata={design} index={index}></DesignCard>
             ))}
           </div>
         </div>

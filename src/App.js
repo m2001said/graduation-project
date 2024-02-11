@@ -10,10 +10,9 @@ import posterImage from "./assets/images/mainPageAssets/signin.svg";
 import BaseModal from "./components/mainPage/modal/BaseModal/BaseModal.jsx";
 import SigninLogin from "./components/mainPage/modal/SigninLogin.jsx";
 
-const trialDesignComponents = Array.from({length: 7}, (_, i) => require(`./pages/TrialDesign${i+1}`).default);
+const trialDesignComponents = Array.from({ length: 18 }, (_, i) => require(`./pages/TrialDesign${i + 1}`).default);
 
 function App() {
-  
   const [isSignedIn, setIsSignedIn] = React.useState(false);
   const signIn = () => {
     setIsSignedIn(true);
@@ -22,24 +21,23 @@ function App() {
     setIsSignedIn(false);
   };
 
-
   return (
     <>
       <MainNav loginState={isSignedIn} setSignOUT={signOut} />
       <BaseModal poster={posterImage}>
         <SigninLogin setIsSignedIn={signIn} />
       </BaseModal>
-      <div style={{marginTop: "78px"}}>
+      <div style={{ marginTop: "78px" }}>
         <Routes>
           <Route path="/" element={<MainPage isSignedIn={isSignedIn} signIn={signIn} />} />
           <Route path="/designs" element={<DesignsPage />} />
           <Route path="/page-craft" element={<BuildYourPage />} />
           {trialDesignComponents.map((Component, index) => (
-            <Route path={`/preview-trial-design${index + 1}`} element={<Component />} />
+            <Route key={index} path={`/preview-trial-design${index + 1}`} element={<Component />} />
           ))}
           <Route element={<Dashboard />}>
             {trialDesignComponents.map((Component, index) => (
-              <Route path={`/build-trial-design${index + 1}`} element={<Component />} />
+              <Route key={index} path={`/build-trial-design${index + 1}`} element={<Component />} />
             ))}
           </Route>
           <Route path="*" element={<NotFound />} />
