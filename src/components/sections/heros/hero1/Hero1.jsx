@@ -4,7 +4,7 @@ import "./hero.css";
 import { useSelector } from "react-redux";
 
 const Hero1 = () => {
-  const { hero } = useSelector((state) => state.template);
+  const { hero } = useSelector((state) => state.template1);
   return (
     <div className="landing design-1 " style={{ backgroundImage: `url(${hero.imgUrl})` }}>
       <div className="overlay"></div>

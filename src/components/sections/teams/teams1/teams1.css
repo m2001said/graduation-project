@@ -3,7 +3,7 @@
   padding: 40px;
 }
 
-.team1 h1{
+.team1 h2{
   color: var(--website-color-3);
 }
 
@@ -57,7 +57,7 @@
   text-align: center;
 }
 
-.team1-Card-main-info h1 {
+.team1-Card-main-info h2 {
   font-size: 20px;
   font-weight: bold;
   color: var(--website-color-3);

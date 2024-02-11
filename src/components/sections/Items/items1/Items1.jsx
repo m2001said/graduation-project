@@ -5,7 +5,7 @@ import {useSelector} from 'react-redux'
 
 
 const Items1 = () => {
-  const { items } = useSelector((state) => state.template);
+  const { items } = useSelector((state) => state.template1);
 
   return (
     <div className="items1 design-1">
