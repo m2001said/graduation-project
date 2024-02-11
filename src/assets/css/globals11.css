@@ -135,7 +135,7 @@ img {
 
 .section__title11::before {
   content: "";
-  background: url(../images/img11/dots-bg.svg);
+  /* background: url(../images/img11/dots-bg.svg); */
   height: 2.25rem;
   width: 2.25rem;
   position: absolute;
