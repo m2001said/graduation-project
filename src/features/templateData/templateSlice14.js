@@ -230,6 +230,10 @@ const templateSlice14 = createSlice({
       icon: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707094588/icons8-close-24_joqywt.png",
       buttonText: "Order Now",
     },
+
+    colors: {
+      templateColors: ["#fff", "#cda274", "#292f36", "#f4f0ec", "#777777"],
+    },
   },
 
   name: "templateSlice14",
@@ -271,5 +275,5 @@ const templateSlice14 = createSlice({
   },
 });
 
-export const { updateAll } = templateSlice14.actions;
+export const { updateTemplate14 } = templateSlice14.actions;
 export default templateSlice14.reducer;

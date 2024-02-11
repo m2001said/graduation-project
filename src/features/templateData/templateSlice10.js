@@ -236,11 +236,15 @@ const templateSlice10 = createSlice({
       icon: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707094588/icons8-close-24_joqywt.png",
       buttonText: "Order Now",
     },
+
+    colors: {
+      templateColors: ["#fff", "#cda274", "#292f36", "#f4f0ec", "#777777"],
+    },
   },
 
   name: "templateSlice10",
   reducers: {
-    updateAll: (state, action) => {
+    updateTemplate10: (state, action) => {
       const { section, variable, value, i, blockName, subBlockName, subIndex, objKey } = action.payload;
       // sub means level 2 of fields
       if (i === undefined) {
@@ -277,5 +281,5 @@ const templateSlice10 = createSlice({
   },
 });
 
-export const { updateAll } = templateSlice10.actions;
+export const { updateTemplate10 } = templateSlice10.actions;
 export default templateSlice10.reducer;
