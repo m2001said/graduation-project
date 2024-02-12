@@ -238,7 +238,7 @@ const templateSlice14 = createSlice({
 
   name: "templateSlice14",
   reducers: {
-    updateAll: (state, action) => {
+    updateTemplate14: (state, action) => {
       const { section, variable, value, i, blockName, subBlockName, subIndex, objKey } = action.payload;
       // sub means level 2 of fields
       if (i === undefined) {

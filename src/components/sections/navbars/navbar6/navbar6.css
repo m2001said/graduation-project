@@ -86,7 +86,7 @@
 .nav-6 .badge {
   position: absolute;
   top: -2px;
-  right: -3px;
+  right: 3px;
   z-index: 12;
   color: var(--white);
   font-size: 0.8rem;
