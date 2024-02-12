@@ -1,7 +1,6 @@
 import React from "react";
 import "../cta11/cta11.css";
 import { useSelector } from "react-redux";
-import ResumeData11 from "../cta11/resumeData11";
 import Card11 from "./Card11";
 
 const Cta11 = () => {
