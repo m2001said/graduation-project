@@ -357,7 +357,7 @@ const templateSlice11 = createSlice({
   },
   name: "templateSlice11",
   reducers: {
-    updateAll: (state, action) => {
+    updateTemplate11: (state, action) => {
       const { section, variable, value, i, blockName, subBlockName, subIndex, objKey } = action.payload;
       if (i === undefined) {
         if (variable === null) {
