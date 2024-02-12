@@ -1,7 +1,6 @@
 .clip-path {
   display: flex;
 }
-
 .clip-path-container1 {
   clip-path: polygon(27% 0%, 49% 0%, 33% 100%, 0% 100%);
   --blue-gradient: linear-gradient(157.81deg, #def9fa -43.27%, #bef3f5 -21.24%, #9dedf0 12.19%, #7de7eb 29.82%, #5ce1e6 51.94%, #33bbcf 90.29%);
