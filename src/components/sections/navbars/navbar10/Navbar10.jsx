@@ -35,7 +35,7 @@ const Navbar10 = ({ handleOrderPopup }) => {
                   <div className="textHover flex h-[72px] items-center gap-[2px]">
                     {navbar10.DropdownTxt}
                     <a href="/#">
-                      <img src={navbar10.DropdownIcon} alt="" className="w-6 transition-all duration-200 group-hover:rotate-180" />
+                      <img src={navbar10.DropdownIcon} alt="" className="w-5 transition-all duration-200 group-hover:rotate-180" />
                     </a>
                   </div>
 

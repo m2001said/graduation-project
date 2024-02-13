@@ -1,9 +1,12 @@
 import React from "react";
-import LightButton from "../../../../assets/images/img10/website/light-mode-button.png";
-import DarkButton from "../../../../assets/images/img10/website/dark-mode-button.png";
+import { useSelector } from "react-redux";
+
+
 
 
 const DarkMode14 = () => {
+   const { darkMode14 } = useSelector((state) => state.template14);
+
   const [theme, setTheme] = React.useState(localStorage.getItem("theme") ? localStorage.getItem("theme") : "light");
 
   const element = document.documentElement;
@@ -23,11 +26,11 @@ const DarkMode14 = () => {
     <div className="relative">
       <img
         onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
-        src={LightButton}
+        src={darkMode14.lightPng}
         alt=""
         className={`w-12 cursor-pointer absolute right-0 z-10 ${theme === "dark" ? "opacity-0" : "opacity-100"} transition-all duration-300`}
       />
-      <img onClick={() => setTheme(theme === "dark" ? "light" : "dark")} src={DarkButton} alt="" className={`w-12 cursor-pointer `} />
+      <img onClick={() => setTheme(theme === "dark" ? "light" : "dark")} src={darkMode14.darkPng} alt="" className={`w-12 cursor-pointer `} />
     </div>
   );
 };

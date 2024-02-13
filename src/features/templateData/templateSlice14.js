@@ -4,9 +4,26 @@ const templateSlice14 = createSlice({
     navbar14: {
       title: "Eshop",
       icon: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707601954/logo_xtzffr.png",
-      links: ["Home", "Shop", "About", "Blogs"],
+      links: [
+        {
+          name: "Home",
+          link: "/#",
+        },
+        {
+          name: "Shop",
+          link: "/#shop",
+        },
+        {
+          name: "About",
+          link: "/#about",
+        },
+        {
+          name: "Blogs",
+          link: "/#blog",
+        },
+      ],
       DropdownTxt: "Quick Links",
-      DropdownIcon: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1706806280/caret-down-svgrepo-com_r9zuyy.svg",
+      DropdownIcon: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707774619/icons8-sort-down-30_yurjok.png",
       DropdownLinks: [
         {
           name: "Trending Products",
@@ -21,17 +38,15 @@ const templateSlice14 = createSlice({
           link: "/#",
         },
       ],
-      SearchIcon: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707601681/icons8-search-24_e0tzic.png",
+      SearchIcon: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707775350/icons8-search-24_1_vxeohp.png",
       buttonText: "!",
-      buttonIcon: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707601893/icons8-shopping-cart-64_dxjgeg.png",
+      buttonIcon: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707775619/icons8-shopping-cart-24_w0vwvt.png",
     },
 
     darkMode14: {
       darkPng: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1706805795/dark-mode-button_e9kiqi.png",
       lightPng: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1706805773/light-mode-button_ermmq3.png",
     },
-
-    items14: {},
 
     hero14: {
       blocks: [
@@ -55,6 +70,24 @@ const templateSlice14 = createSlice({
         },
       ],
       buttonText: "Shop By Category",
+    },
+
+    items14: {
+      firstTitle: "Enjoy",
+      secondTitle: "With",
+      title1: "Earph",
+      image1: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707777277/earphone_pgistv.png",
+      title2: "Gadget",
+      image2: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707777305/watch_dn63md.png",
+      title3: "Laptop",
+      image3: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707602295/macbook_dxcdn8.png",
+      title4: "Laptop",
+      image4: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707777316/gaming_zceuxk.png",
+      title5: "Gadget",
+      image5: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707602303/vr_zzinjy.png",
+      title6: "Earph",
+      image6: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707777323/speaker_wqwmry.png",
+      buttonText: "Browse",
     },
 
     services14: {
@@ -82,29 +115,26 @@ const templateSlice14 = createSlice({
       ],
     },
 
-    feature14: {
-      blocks: [
-        {
-          discount: "30% OFF",
-          title: "Fine Smile",
-          date: "10 Jan to 28 Jan",
-          image: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707603385/headphone_pkjxnj.png",
-          title2: "Air Solo Bass",
-          title3: "Winter Sale",
-          title4: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque reiciendis",
-          bgColor: "#f42c37",
-        },
-        {
-          discount: "30% OFF",
-          title: "Happy Hours",
-          date: "14 Jan to 28 Jan",
-          image: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707603374/smartwatch2-removebg-preview_ivyg4p.png",
-          title2: "Smart Solo",
-          title3: "Winter Sale",
-          title4: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque reiciendis",
-          bgColor: "#2dcc6f",
-        },
-      ],
+    feature14_1: {
+      discount: "30% OFF",
+      title: "Fine Smile",
+      date: "10 Jan to 28 Jan",
+      image: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707603385/headphone_pkjxnj.png",
+      title2: "Air Solo Bass",
+      title3: "Winter Sale",
+      title4: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque reiciendis",
+      bgColor: "#f42c37",
+    },
+
+    feature14_2: {
+      discount: "30% OFF",
+      title: "Happy Hours",
+      date: "14 Jan to 28 Jan",
+      image: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707603374/smartwatch2-removebg-preview_ivyg4p.png",
+      title2: "Smart Solo",
+      title3: "Winter Sale",
+      title4: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque reiciendis",
+      bgColor: "#2dcc6f",
     },
 
     projects14_1: {
@@ -180,23 +210,24 @@ const templateSlice14 = createSlice({
       ],
     },
 
-    logos: {
+    logos14: {
       companies: [
-        { imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701808448/templates/template_one/01_p78hjd.svg" },
-        { imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701808448/templates/template_one/02_mnw1ps.svg" },
-        { imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701808448/templates/template_one/03_fiplpx.svg" },
-        { imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701808449/templates/template_one/04_pg8flc.svg" },
-        { imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701808449/templates/template_one/05_prt3gi.svg" },
+        { imgUrl: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707780037/br-1_hqubpv.png" },
+        { imgUrl: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707780041/br-2_tlsefn.png" },
+        { imgUrl: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707780045/br-3_tjyara.png" },
+        { imgUrl: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707780049/br-4_zf3evw.png" },
+        { imgUrl: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707780053/br-5_tczupi.png" },
       ],
     },
 
-    footer10: {
+    footer14: {
       title: "Eshop",
       imgUrl: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707601954/logo_xtzffr.png",
       description: "Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, voluptate.",
-      LocationIcon: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707093156/navigation_mdrvbp.png",
+      title3: "Address",
+      LocationIcon: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707781362/icons8-location-arrow-24_mwjabu.png",
       Location: "Noida, Uttar Pradesh",
-      mobileIcon: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707093150/mobile-alt-solid_veust2.svg",
+      mobileIcon: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707781365/icons8-mobile-navigator-50_xvqski.png",
       mobile: "+20 123456789",
       mediaIcons: [
         {
@@ -210,6 +241,10 @@ const templateSlice14 = createSlice({
         {
           icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701809142/templates/template_one/linkedin_itbvp5.svg",
           url: "https://linkedin.com",
+        },
+        {
+          icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701809141/templates/template_one/instagram_dlrab9.svg",
+          url: "https://instagram.com",
         },
       ],
 
@@ -225,9 +260,9 @@ const templateSlice14 = createSlice({
       ],
     },
 
-    orderPopup10: {
+    orderPopup14: {
       title: "Order Now",
-      icon: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707094588/icons8-close-24_joqywt.png",
+      icon: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707791435/icons8-x-24_jske7f.png",
       buttonText: "Order Now",
     },
 

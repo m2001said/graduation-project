@@ -18,11 +18,11 @@ const Footer10 = () => {
             <p className="">{footer10.description}</p>
             <br />
             <div className="flex items-center gap-3">
-              <img src={footer10.LocationIcon} alt="" className="w-4" />
+              <img src={footer10.LocationIcon} alt="" className="w-5" />
               <p>{footer10.Location}</p>
             </div>
             <div className="flex items-center gap-3 mt-3">
-              <img src={footer10.mobileIcon} alt="" className="w-3" />
+              <img src={footer10.mobileIcon} alt="" className="w-5" />
               <p>{footer10.mobile}</p>
             </div>
             {/* Social media */}

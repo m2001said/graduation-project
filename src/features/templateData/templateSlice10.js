@@ -6,7 +6,7 @@ const templateSlice10 = createSlice({
       icon: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1706798279/logo_rcge0a.png",
       links: ["Home", "Best Seller"],
       DropdownTxt: "Quick Links",
-      DropdownIcon: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1706806280/caret-down-svgrepo-com_r9zuyy.svg",
+      DropdownIcon: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707774619/icons8-sort-down-30_yurjok.png",
       DropdownLinks: [
         {
           name: "Trending Books",
@@ -192,9 +192,9 @@ const templateSlice10 = createSlice({
       title: "Books Store",
       imgUrl: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1706798279/logo_rcge0a.png",
       description: "Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, voluptate.",
-      LocationIcon: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707093156/navigation_mdrvbp.png",
+      LocationIcon: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707781362/icons8-location-arrow-24_mwjabu.png",
       Location: "Noida, Uttar Pradesh",
-      mobileIcon: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707093150/mobile-alt-solid_veust2.svg",
+      mobileIcon: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707781365/icons8-mobile-navigator-50_xvqski.png",
       mobile: "+20 123456789",
       mediaIcons: [
         {
@@ -233,7 +233,7 @@ const templateSlice10 = createSlice({
 
     orderPopup10: {
       title: "Order Your Book",
-      icon: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707094588/icons8-close-24_joqywt.png",
+      icon: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707791435/icons8-x-24_jske7f.png",
       buttonText: "Order Now",
     },
 

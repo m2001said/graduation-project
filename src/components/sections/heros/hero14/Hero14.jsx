@@ -1,45 +1,23 @@
 /* eslint-disable no-unused-vars */
 import React from "react";
-import Image1 from "../../../../assets/images/img10/hero/headphone.png";
-import Image2 from "../../../../assets/images/img10/category/vr.png";
-import Image3 from "../../../../assets/images/img10/category/macbook.png";
+import { useSelector } from "react-redux";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import { Pagination } from "swiper/modules";
 
-const HeroData = [
-  {
-    id: 1,
-    img: Image1,
-    subtitle: "Beats Solo",
-    title: "Wireless",
-    title2: "Headphone",
-  },
-  {
-    id: 2,
-    img: Image2,
-    subtitle: "Beats Solo",
-    title: "Wireless",
-    title2: "Virtual",
-  },
-  {
-    id: 1,
-    img: Image3,
-    subtitle: "Beats Solo",
-    title: "Branded",
-    title2: "Laptops",
-  },
-];
 
-// eslint-disable-next-line react/prop-types
+
 const Hero14 = ({ handleOrderPopup }) => {
+  
+  const { hero14 } = useSelector((state) => state.template14);
+
   return (
     <div>
-      <div className="container">
-        <div className="overflow-hidden rounded-3xl min-h-[550px] sm:min-h-[650px] hero-bg-color flex justify-center items-center">
-          <div className="container pb-8 sm:pb-0">
+      <div className="container14">
+        <div className="overflow-hidden rounded-3xl min-h-[550px] sm:min-h-[650px] hero14-bg-color flex justify-center items-center">
+          <div className="container14 pb-8 sm:pb-0">
             {/* hero sec */}
             <Swiper
               spaceBetween={200}
@@ -49,8 +27,8 @@ const Hero14 = ({ handleOrderPopup }) => {
               modules={[Pagination]}
               className="mySwiper"
             >
-              {HeroData.map((data) => (
-                <SwiperSlide key={data.id}>
+              {hero14.blocks.map((data, index) => (
+                <SwiperSlide key={index}>
                   <div className="grid grid-cols-1 sm:grid-cols-2">
                     {/* text sec */}
                     <div className="flex flex-col justify-center gap-4 sm:pl-3 pt-12 sm:pt-0 text-center sm:text-left order-2 sm:order-1 relative z-10 ">
@@ -62,9 +40,9 @@ const Hero14 = ({ handleOrderPopup }) => {
                       <div>
                         <button
                           onClick={handleOrderPopup}
-                          className={`bg-primary text-white cursor-pointer hover:scale-105 duration-300 py-2 px-8 rounded-full relative z-10`}
+                          className={`bg-[--primary-color] text-white cursor-pointer hover:scale-105 duration-300 py-2 px-8 rounded-full relative z-10`}
                         >
-                          Shop By Category
+                          {hero14.buttonText}
                         </button>
                       </div>
                     </div>

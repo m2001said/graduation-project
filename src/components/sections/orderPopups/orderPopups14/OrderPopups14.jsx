@@ -1,8 +1,11 @@
 import React from "react";
-import { IoCloseOutline } from "react-icons/io5";
+import { useSelector } from "react-redux";
 
 
 const Popup14 = ({ orderPopup, handleOrderPopup }) => {
+
+  const { orderPopup14 } = useSelector((state) => state.template14);
+
   return (
     <>
       {orderPopup && (
@@ -11,9 +14,9 @@ const Popup14 = ({ orderPopup, handleOrderPopup }) => {
             <div className="w-[300px] fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 p-4 shadow-md bg-white dark:bg-gray-900 dark:text-white duration-200 rounded-xl">
               {/* header */}
               <div className="flex items-center justify-between">
-                <h1>Order Now</h1>
+                <h1>{orderPopup14.title}</h1>
                 <div>
-                  <IoCloseOutline onClick={handleOrderPopup} className="text-2xl cursor-pointer" />
+                  <img src={orderPopup14.icon} alt="" className="w-4 cursor-pointer " onClick={handleOrderPopup} />
                 </div>
               </div>
 
@@ -25,9 +28,9 @@ const Popup14 = ({ orderPopup, handleOrderPopup }) => {
                 <div className="flex justify-center">
                   <button
                     onClick={handleOrderPopup}
-                    className={`bg-primary text-white cursor-pointer hover:scale-105 duration-300 py-2 px-8 rounded-full relative z-10`}
+                    className={`bg-[--primary-color] text-white cursor-pointer hover:scale-105 duration-300 py-2 px-8 rounded-full relative z-10`}
                   >
-                    Order Now
+                    {orderPopup14.buttonText}
                   </button>
                 </div>
               </div>
