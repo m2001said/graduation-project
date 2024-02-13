@@ -73,7 +73,7 @@
   font-weight: 700;
   text-transform: capitalize;
 }
-p {
+.footer1 p {
   color: var(--website-color-5);
 }
 
