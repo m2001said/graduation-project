@@ -1,9 +1,7 @@
 import React, { useState } from "react";
-import { useNavigate } from 'react-router-dom';
 import { validate } from './validationUtils';
 
-const SignUpForm = ({ toggleForm }) => {
-  const navigate = useNavigate();
+const SignUpForm = ({ toggleForm, closeModal }) => {
   const [newEmail, setNewEmail] = useState("");
   const [newPassword, setNewPassword] = useState("");
   const [error, setError] = useState("");
@@ -15,7 +13,7 @@ const SignUpForm = ({ toggleForm }) => {
       return;
     }
     // Proceed with sign-up logic
-    navigate("/designs");
+    closeModal();
     document.querySelector(".modal-overlay").classList.add("closed");
   };
   return (

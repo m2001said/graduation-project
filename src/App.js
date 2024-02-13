@@ -1,5 +1,5 @@
 /* eslint-disable import/first */
-import React from "react";
+import React, { useState } from "react";
 import { Route, Routes } from "react-router";
 import MainNav from "./components/mainPage/mainNavbar/MainNav";
 import Dashboard from "./pages/Dashboard";
@@ -25,18 +25,32 @@ import TrialDesign14 from "./pages/TrialDesign14";
 
 
 function App() {
-  const [isSignedIn, setIsSignedIn] = React.useState(false);
+  const [isSignedIn, setIsSignedIn] = useState(false);
   const signIn = () => {
     setIsSignedIn(true);
   };
   const signOut = () => {
     setIsSignedIn(false);
   };
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
+  const toggleModal = () => {
+    setIsModalOpen(!isModalOpen);
+  };
+  const closeModal = () => {
+    setIsModalOpen(false);
+  };
   return (
     <>
+      <MainNav loginState={isSignedIn} setSignOUT={signOut} toggleModal={toggleModal} />
+      {isModalOpen ? (
+        <BaseModal poster={posterImage} closeModal={closeModal}>
+          <SigninLogin setIsSignedIn={signIn} closeModal={closeModal} />
+        </BaseModal>
+      ) : null}
+
       <Routes>
-        <Route path="/" element={<MainPage />} />
+        <Route path="/" element={<MainPage toggleModal={toggleModal} />} />
         <Route element={<Dashboard />}>
           <Route path="/trial-design1" element={<TrialDesign1 />} />
           <Route path="/trial-design2" element={<TrialDesign2 />} />
@@ -45,8 +59,8 @@ function App() {
           <Route path="/trial-design5" element={<TrialDesign5 />} />
           <Route path="/trial-design6" element={<TrialDesign6 />} />
           <Route path="/trial-design7" element={<TrialDesign7 />} /> {/* Adjusted line */}
-          <Route path="/trial-design10" element={<TrialDesign10 />} /> 
-          <Route path="/trial-design14" element={<TrialDesign14 />} /> 
+          <Route path="/trial-design10" element={<TrialDesign10 />} />
+          <Route path="/trial-design14" element={<TrialDesign14 />} />
         </Route>
       </Routes>
     </>
