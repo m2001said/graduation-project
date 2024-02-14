@@ -3,7 +3,7 @@ import "./basemodal.css";
 import close from "../../../../assets/images/mainPageAssets/close.svg";
 import logo from "../../../../assets/images/mainPageAssets/logo.svg";
 
-const BaseModal = ({ poster, children, closeModal }) => {
+const BaseModal = ({ poster, children, toggleModal }) => {
 
   return (
     <div className="modal-overlay">
@@ -13,7 +13,7 @@ const BaseModal = ({ poster, children, closeModal }) => {
             <img src={logo} alt="logo" />
             <span>WEB</span>
           </div>
-          <button onClick={closeModal} className="modal-closeBtn">
+          <button onClick={toggleModal} className="modal-closeBtn">
             <img src={close} alt="close-icon" />
           </button>
         </div>
