@@ -1,3 +1,4 @@
+/*
 footer {
   background: var(--color-2-primary);
   padding: 3rem 0;
@@ -69,7 +70,7 @@ footer2 a {
 @media screen and (max-width: 600px) {
   footer {
     max-width: 100%;
-    margin: 0 auto; /* Center the footer2 */
+    margin: 0 auto; 
   }
   .permalinks {
     display: flex;
@@ -80,3 +81,4 @@ footer2 a {
     margin-bottom: 2.6rem;
   }
 }
+*/

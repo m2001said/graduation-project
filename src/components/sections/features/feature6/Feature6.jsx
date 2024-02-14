@@ -22,7 +22,7 @@ const Feature6 = () => {
               <p>{feature.info}</p>
             </div>
             <div className="features mt-4">
-              <div className="feature1 flex items-center gap-5">
+              <div className="feature-row flex items-center gap-5">
                 <div className="single__feature">
                   <span>
                     <img src={feature.cards[0].icon} alt="" className="ico" />
@@ -40,7 +40,7 @@ const Feature6 = () => {
                 </div>
               </div>
 
-              <div className="feature1 mt-3 flex items-center gap-5">
+              <div className="feature-row mt-3 flex items-center gap-5">
                 <div className="single__feature">
                   <span className="feature__icon-3">
                     <img src={feature.cards[2].icon} alt="" className="ico" />
