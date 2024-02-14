@@ -3,22 +3,17 @@ import "./basemodal.css";
 import close from "../../../../assets/images/mainPageAssets/close.svg";
 import logo from "../../../../assets/images/mainPageAssets/logo.svg";
 
-const BaseModal = ({ poster, children }) => {
-  const onClose = () => {
-    document.querySelectorAll(".modal-overlay").forEach((el) => {
-      el.classList.add("closed");
-    });
-  };
+const BaseModal = ({ poster, children, closeModal }) => {
 
   return (
-    <div className="modal-overlay closed">
+    <div className="modal-overlay">
       <div className={`Basemodal flex justify-between  gap-2 items-center`}>
         <div className="modal-head flex px-4 py-4 justify-between">
           <div className="main-logo flex items-center">
             <img src={logo} alt="logo" />
             <span>WEB</span>
           </div>
-          <button onClick={onClose} className="modal-closeBtn">
+          <button onClick={closeModal} className="modal-closeBtn">
             <img src={close} alt="close-icon" />
           </button>
         </div>

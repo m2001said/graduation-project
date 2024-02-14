@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { useNavigate } from 'react-router-dom';
 import { validate } from './validationUtils';
 
-const LoginForm = ({ toggleForm, handleSignIn }) => {
+const LoginForm = ({ toggleForm, handleSignIn, closeModal }) => {
   const navigate = useNavigate();
 
   const [email, setEmail] = useState("");
@@ -20,6 +20,8 @@ const LoginForm = ({ toggleForm, handleSignIn }) => {
     }
   
     // Proceed with sign-in logic
+
+    closeModal();
     navigate("/designs");
     handleSignIn();
     document.querySelector(".modal-overlay").classList.add("closed");
