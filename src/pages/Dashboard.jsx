@@ -11,9 +11,17 @@ import { updateTemplate4 } from "../features/templateData/templateSlice4";
 import { updateTemplate5 } from "../features/templateData/templateSlice5";
 import { updateTemplate6 } from "../features/templateData/templateSlice6";
 import { updateTemplate7 } from "../features/templateData/templateSlice7";
+import { updateTemplate8 } from "../features/templateData/templateSlice8";
+import { updateTemplate9 } from "../features/templateData/templateSlice9";
 import { updateTemplate10 } from "../features/templateData/templateSlice10";
 import { updateTemplate11 } from "../features/templateData/templateSlice11";
+import { updateTemplate12 } from "../features/templateData/templateSlice12";
+import { updateTemplate13 } from "../features/templateData/templateSlice13";
 import { updateTemplate14 } from "../features/templateData/templateSlice14";
+import { updateTemplate15 } from "../features/templateData/templateSlice15";
+import { updateTemplate16 } from "../features/templateData/templateSlice16";
+import { updateTemplate17 } from "../features/templateData/templateSlice17";
+import { updateTemplate18 } from "../features/templateData/templateSlice18";
 
 const Dashboard = () => {
   const { pathname } = useLocation();
@@ -43,17 +51,39 @@ const Dashboard = () => {
     case "7":
       updateAllRef = updateTemplate7;
       break;
+    case "8":
+      updateAllRef = updateTemplate8;
+      break;
+    case "9":
+      updateAllRef = updateTemplate9;
+      break;
     case "10":
       updateAllRef = updateTemplate10;
       break;
     case "11":
       updateAllRef = updateTemplate11;
       break;
+    case "12":
+      updateAllRef = updateTemplate12;
+      break;
+    case "13":
+      updateAllRef = updateTemplate13;
+      break;
     case "14":
       updateAllRef = updateTemplate14;
-
-
-   
+      break;
+    case "15":
+      updateAllRef = updateTemplate15;
+      break;
+    case "16":
+      updateAllRef = updateTemplate16;
+      break;
+    case "17":
+      updateAllRef = updateTemplate17;
+      break;
+    case "18":
+      updateAllRef = updateTemplate18;
+      break;
     default:
       break;
   }
