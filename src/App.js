@@ -27,15 +27,13 @@ function App() {
   const toggleModal = () => {
     setIsModalOpen(!isModalOpen);
   };
-  const closeModal = () => {
-    setIsModalOpen(false);
-  };
+
   return (
     <>
       <MainNav loginState={isSignedIn} setSignOUT={signOut} toggleModal={toggleModal} />
       {isModalOpen ? (
-        <BaseModal poster={posterImage} closeModal={closeModal}>
-          <SigninLogin setIsSignedIn={signIn} closeModal={closeModal} />
+        <BaseModal poster={posterImage} toggleModal={toggleModal}>
+          <SigninLogin setIsSignedIn={signIn} toggleModal={toggleModal} />
         </BaseModal>
       ) : null}
       <div style={{marginTop: "78px"}}>

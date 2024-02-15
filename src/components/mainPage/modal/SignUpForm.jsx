@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { validate } from './validationUtils';
 
-const SignUpForm = ({ toggleForm, closeModal }) => {
+const SignUpForm = ({ toggleForm, toggleModal }) => {
   const [newEmail, setNewEmail] = useState("");
   const [newPassword, setNewPassword] = useState("");
   const [error, setError] = useState("");
@@ -13,7 +13,7 @@ const SignUpForm = ({ toggleForm, closeModal }) => {
       return;
     }
     // Proceed with sign-up logic
-    closeModal();
+    toggleModal();
     document.querySelector(".modal-overlay").classList.add("closed");
   };
   return (

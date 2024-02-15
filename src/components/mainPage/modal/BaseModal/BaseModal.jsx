@@ -1,19 +1,33 @@
-import React from "react";
+import React, { useRef, useEffect } from "react";
 import "./basemodal.css";
 import close from "../../../../assets/images/mainPageAssets/close.svg";
 import logo from "../../../../assets/images/mainPageAssets/logo.svg";
 
-const BaseModal = ({ poster, children, closeModal }) => {
+const BaseModal = ({ poster, children, toggleModal }) => {
+  const modalRef = useRef();
+
+  const CloseModal = (event) => {
+    if (modalRef.current && !modalRef.current.contains(event.target)) {
+      toggleModal();
+    }
+  };
+
+  useEffect(() => {
+    document.addEventListener("mousedown", CloseModal);
+    return () => {
+      document.removeEventListener("mousedown", CloseModal);
+    };
+  }, []);
 
   return (
     <div className="modal-overlay">
-      <div className={`Basemodal flex justify-between  gap-2 items-center`}>
+      <div ref={modalRef} className={`Basemodal flex justify-between gap-2 items-center`}>
         <div className="modal-head flex px-4 py-4 justify-between">
           <div className="main-logo flex items-center">
             <img src={logo} alt="logo" />
             <span>WEB</span>
           </div>
-          <button onClick={closeModal} className="modal-closeBtn">
+          <button onClick={toggleModal} className="modal-closeBtn">
             <img src={close} alt="close-icon" />
           </button>
         </div>
