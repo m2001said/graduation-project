@@ -1,15 +1,14 @@
 import { createSlice } from "@reduxjs/toolkit";
 const templateSlice8 = createSlice({
   initialState: {
-    navbar: {
-      logo: "https://res.cloudinary.com/duc04fwdb/image/upload/v1706351943/jammal_photos/jicfizb2xdqr8hcgkmc4.png",
-      imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703095423/jammal_photos/x22ihnvjg9i0i40xtbo5.svg",
-      searchIcon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703095771/jammal_photos/kedw9coptwqkovrsssd1.svg",
-      shoppingIcon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703095842/jammal_photos/gehvutbyftfxemvoqmu8.svg",
-      menuIcon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703095877/jammal_photos/rwbeynsg3bftgrjqaqnf.svg",
+    navbar8: {
       links: ["Home", "About", "Menu", "Recipes", "Contact"],
     },
-    hero: {
+    Header8: {
+      imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1708034715/jammal_photos/eecgn56msahinktjd5m2.svg",
+      btnText: "Work with me",
+    },
+    hero8: {
       buttonText: "Explore Food",
       sliderData: [
         {

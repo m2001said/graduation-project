@@ -3,7 +3,6 @@ import React, { useEffect, useRef } from "react";
 import Image from "../../../../assets/images/images8/avatar.svg";
 import AOS from "aos";
 import "aos/dist/aos.css";
-// import { fadeIn } from '../variants';
 
 const Hero8 = () => {
   const scrollDirection = useRef("down");
