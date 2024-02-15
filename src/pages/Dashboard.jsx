@@ -10,6 +10,10 @@ import { updateTemplate3 } from "../features/templateData/templateSlice3";
 import { updateTemplate4 } from "../features/templateData/templateSlice4";
 import { updateTemplate5 } from "../features/templateData/templateSlice5";
 import { updateTemplate6 } from "../features/templateData/templateSlice6";
+import { updateTemplate7 } from "../features/templateData/templateSlice7";
+import { updateTemplate10 } from "../features/templateData/templateSlice10";
+import { updateTemplate11 } from "../features/templateData/templateSlice11";
+import { updateTemplate14 } from "../features/templateData/templateSlice14";
 import { updateTemplate13 } from "../features/templateData/templateSlice13";
 
 const Dashboard = () => {
@@ -40,6 +44,20 @@ const Dashboard = () => {
     case "13":
       updateAllRef = updateTemplate13;
       break;
+    case "7":
+      updateAllRef = updateTemplate7;
+      break;
+    case "10":
+      updateAllRef = updateTemplate10;
+      break;
+    case "11":
+      updateAllRef = updateTemplate11;
+      break;
+    case "14":
+      updateAllRef = updateTemplate14;
+
+
+   
     default:
       break;
   }

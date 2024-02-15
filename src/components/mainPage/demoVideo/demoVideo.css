@@ -1,0 +1,16 @@
+.demo-section {
+  padding-top: 85px;
+  padding-bottom: 55px;
+  background-image: linear-gradient(to right, #481b91, #240d55), radial-gradient(#d5d5d5 6%, transparent 19%);
+  background-size: 100% 100%, 19px 20px;
+  background-blend-mode: multiply;
+}
+.demo-section .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+}
+.demo-video {
+  margin-top: 20px;
+}
