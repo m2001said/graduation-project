@@ -34,7 +34,7 @@
 }
 
 .own-page label:before {
-    content: "\f00c";
+    content: url("https://res.cloudinary.com/duc04fwdb/image/upload/v1708037268/jammal_photos/nme9bdbxqehtul4yzmd7.svg");
     content: "✓";
     background: #3498db;
     color: #FFFFFF;
@@ -49,7 +49,6 @@
     width: 30px;
     height: 30px;
     transition: 0.4s;
-    font-family: "Font Awesome 5 Free";
 }
 
 .own-page input[type="radio"]:checked+label {
