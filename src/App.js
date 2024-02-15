@@ -12,8 +12,6 @@ import SigninLogin from "./components/mainPage/modal/SigninLogin.jsx";
 
 const trialDesignComponents = Array.from({ length: 18 }, (_, i) => require(`./pages/TrialDesign${i + 1}`).default);
 
-
-
 function App() {
   const [isSignedIn, setIsSignedIn] = useState(false);
   const signIn = () => {
@@ -36,17 +34,17 @@ function App() {
           <SigninLogin setIsSignedIn={signIn} toggleModal={toggleModal} />
         </BaseModal>
       ) : null}
-      <div style={{marginTop: "78px"}}>
+      <div style={{ marginTop: "78px" }}>
         <Routes>
           <Route path="/" element={<MainPage toggleModal={toggleModal} />} />
           <Route path="/designs" element={<DesignsPage />} />
           <Route path="/page-craft" element={<BuildYourPage />} />
           {trialDesignComponents.map((Component, index) => (
-            <Route path={`/preview-trial-design${index + 1}`} element={<Component />} />
+            <Route key={`preview-trial-design${index}`} path={`/preview-trial-design${index + 1}`} element={<Component />} />
           ))}
           <Route element={<Dashboard />}>
             {trialDesignComponents.map((Component, index) => (
-              <Route path={`/build-trial-design${index + 1}`} element={<Component />} />
+              <Route key={`build-trial-design${index}`} path={`/build-trial-design${index + 1}`} element={<Component />} />
             ))}
           </Route>
           <Route path="*" element={<NotFound />} />
