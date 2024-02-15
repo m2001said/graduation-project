@@ -1,0 +1,74 @@
+
+.group{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+    width: 80%;
+    margin:50px auto;
+    gap: 10px;
+    border:solid 1px #2C2C2C;
+    padding: 10px;
+    position: relative;
+}
+.title{
+position: absolute;
+width: fit-content;
+background: #2C2C2C;
+color: #FFFFFF;
+font-weight: 500;
+padding: 6px 8px;
+top: -0.5px;
+left: 50%;
+transform: translate(-50%,-100%);
+border-radius: 5px 5px 0px 0px;
+}
+img{
+max-width: 100%;
+}
+input{
+display: none;
+}
+label{
+display: flex;
+transition: 0.4s;
+border: solid 2px #00000000;
+position: relative;
+}
+label:before{
+content:"\f00c";
+content:"✓";
+background: #3498db;
+color: #FFFFFF;
+position: absolute;
+top: 0;
+right: 0;
+transform: translate(-50%,-50%) scale(0);
+border-radius: 50%;
+display: flex;
+justify-content: center;
+align-items: center;
+width: 30px;
+height: 30px;
+transition: 0.4s;
+font-family:"Font Awesome 5 Free";
+}
+input[type="radio"]:checked+label {
+border: solid 2px #3498db;
+transform: scale(0.95);
+}
+input[type="radio"]:checked+label:before {
+  transform: translate(-50%,-50%) scale(1);
+}
+.text{
+display: flex;
+}
+.own-page textarea{
+width:100%;
+resize: none !important;
+outline: none;
+padding: 10px;
+line-height: 1.5;
+border: solid 1px #C5C5C5
+}
+textarea:focus{
+border-color: #3498db;
+}
