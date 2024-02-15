@@ -42,12 +42,12 @@ const ContactUs2 = () => {
 
         {/* End of ContactUs2 */}
 
-        <form ref={form} onSubmit={"sendEmail"}>
+        <form ref={form} className="form_2" onSubmit={"sendEmail"}>
           {/* <form ref={form} onSubmit={sendEmail}> */}
-          <input type="text" name="name" placeholder="Your Full Name" required />
-          <input type="email" name="email" placeholder="Your email " required />
-          <textarea name="message" placeholder="Your Message" rows="7" required></textarea>
-          <button type="submit" className="btn">
+          <input className="input_2" type="text" name="name" placeholder="Your Full Name" required />
+          <input className="input_2" type="email" name="email" placeholder="Your email " required />
+          <textarea name="message" placeholder="Your Message" rows="7" required className="txt_2"></textarea>
+          <button type="submit" className="btn2">
             Send
           </button>
         </form>

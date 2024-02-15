@@ -64,7 +64,7 @@
   gap: 10px;
 }
 /**============= form ========**/
-form {
+.form_2 {
   margin-top: 1.4rem;
   display: flex;
   flex-direction: column;
@@ -73,8 +73,7 @@ form {
 /* .btn-primary {
   background: var(--color-2-primary);
 } */
-input,
-textarea {
+.input_2 {
   width: 100%;
   padding: 1.5rem;
   border-radius: 0.5rem;
@@ -83,7 +82,15 @@ textarea {
   color: var(--color-2-2-white);
   background: transparent;
 }
-
+.txt_2 {
+  width: 100%;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  border: 2px solid var(--color-2-primary-variant);
+  resize: none;
+  color: var(--color-2-2-white);
+  background: transparent;
+}
 @media screen and (max-width: 1024px) {
   .contactUs2__container {
     grid-template-columns: 1fr;

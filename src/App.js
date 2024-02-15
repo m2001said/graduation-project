@@ -9,6 +9,7 @@ import TrialDesign5 from "./pages/TrialDesign5";
 import TrialDesign6 from "./pages/TrialDesign6";
 import TrialDesign7 from "./pages/TrialDesign7";
 import TrialDesign9 from "./pages/TrialDesign9";
+import TrialDesign13 from "./pages/TrialDesign13";
 // Adjusted line
 
 function App() {
@@ -25,6 +26,7 @@ function App() {
           <Route path="/trial-design6" element={<TrialDesign6 />} />
           <Route path="/trial-design7" element={<TrialDesign7 />} />
           <Route path="/trial-design9" element={<TrialDesign9 />} />
+          <Route path="/trial-design13" element={<TrialDesign13 />} />
           {/* Adjusted line */}
         </Route>
       </Routes>
