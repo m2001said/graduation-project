@@ -1,6 +1,8 @@
 import React from "react";
+import { useSelector } from "react-redux";
 
 const Navbar8 = () => {
+  const { navbar } = useSelector((state) => state.template8);
   const scrollTo = (id, offset = 0) => {
     const element = document.getElementById(id);
     if (element) {
@@ -16,19 +18,19 @@ const Navbar8 = () => {
       <div className="container mx-auto">
         <div className="w-full rounded-full max-w-[460px] bg-black/20 h-[96px] backdrop-blur-2xl mx-auto px-5 flex justify-between text-2xl text-white/50 items-center">
           <a onClick={() => scrollTo("home", -200)} className="cursor-pointer w-[60px] flex items-center justify-center">
-            Home
+            {navbar.links[0]}
           </a>
           <a onClick={() => scrollTo("about")} className="cursor-pointer w-[60px] flex items-center justify-center">
-            About
+            {navbar.links[1]}
           </a>
           <a onClick={() => scrollTo("services", 2)} className="cursor-pointer w-[60px] flex items-center justify-center">
-            Services
+            {navbar.links[2]}
           </a>
           <a onClick={() => scrollTo("work", 2)} className="cursor-pointer w-[60px] flex items-center justify-center">
-            Work
+            {navbar.links[3]}
           </a>
           <a onClick={() => scrollTo("contact", 2)} className="cursor-pointer w-[60px] flex items-center justify-center">
-            Contact
+            {navbar.links[4]}
           </a>
         </div>
       </div>

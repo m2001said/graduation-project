@@ -1,9 +1,10 @@
 import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { useSelector } from "react-redux";
 
 // services data
-const Services = [
+const Data = [
   {
     name: "UI/UX Design",
     description:
@@ -31,6 +32,8 @@ const Services = [
 ];
 
 const Services8 = () => {
+  const { Services } = useSelector((state) => state.template8);
+
   useEffect(() => {
     AOS.init({
       duration: 800,
@@ -56,29 +59,29 @@ const Services8 = () => {
             data-aos-duration="1200"
             data-aos-offset="300"
           >
-            <h2 className="h2 text-accent mb-6">What I Do.</h2>
-            <h3 className="h3 max-w-[455px] mb-16">I'm a Freelance Frontend Developer with over 5 years of experience.</h3>
-            <button className="btn btn-sm">See my work</button>
+            <h2 className="h2 text-accent mb-6">{Services.title}</h2>
+            <h3 className="h3 max-w-[455px] mb-16">{Services.titleDescription}</h3>
+            <button className="btn btn-sm">{Services.btnText}</button>
           </div>
           {/* services */}
           <div className="flex-1 " data-aos="fade-left" data-aos-duration="1200" data-aos-offset="300">
             {/* services list */}
             <div className="">
-              {Services.map((service, index) => {
+              {Data.map((service, index) => {
                 // Destructure
-                const { name, link, description } = service;
+
                 return (
                   <div className="border-b border-white/20 h-[146px] mb-[36px] flex" key={index}>
                     <div className="max-w-[476px]">
-                      <h4 className="text-[20px] tracking-wider font-primary font-semibold mb-6">{name}</h4>
-                      <p className="font-secondary leading-tight">{description}</p>
+                      <h4 className="text-[20px] tracking-wider font-primary font-semibold mb-6">{service.name}</h4>
+                      <p className="font-secondary leading-tight">{service.description}</p>
                     </div>
                     <div className="flex flex-col flex-1 items-end">
                       <a href="" className="btn w-9 h-9 mb-[24px] flex justify-center items-center">
                         (/){/* Unicode arrow character */}
                       </a>
                       <a href="#" className="text-gradient text-sm">
-                        {link}
+                        {service.link}
                       </a>
                     </div>
                   </div>

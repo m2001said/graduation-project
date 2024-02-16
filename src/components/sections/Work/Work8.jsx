@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { useSelector } from "react-redux";
 
 // img
 import Img1 from "../../../assets/images/images8/portfolio-img1.png";
@@ -8,6 +9,7 @@ import Img2 from "../../../assets/images/images8/portfolio-img2.png";
 import Img3 from "../../../assets/images/images8/portfolio-img3.png";
 
 const Work8 = () => {
+  const { work } = useSelector((state) => state.template8);
   useEffect(() => {
     AOS.init({
       duration: 800,
@@ -29,13 +31,9 @@ const Work8 = () => {
           <div className="flex flex-1 flex-col gap-y-12 mb-10 lg:mb-0" data-aos="fade-right" data-aos-duration="1200" data-aos-offset="300">
             {/* text */}
             <div>
-              <h2 className="h2 leading-tight text-accent">
-                My Latest <br /> Work
-              </h2>
-              <p className="max-w-sm mb-16">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi laborum eius qui recusandae possimus. Dolorem quam illo impedit sunt fugiat.
-              </p>
-              <button className="btn btn-sm">View all projects</button>
+              <h2 className="h2 leading-tight text-accent">{work.titlework}</h2>
+              <p className="max-w-sm mb-16">{work.description}</p>
+              <button className="btn btn-sm">{work.btnText}</button>
             </div>
             {/* Image */}
             <div className="overflow-hidden group relative border-2 border-white/50 rounded-xl">
