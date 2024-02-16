@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+@layer components {
+  .link {
+    @apply cursor-pointer hover:underline;
+  }
+  .button-outline {
+    @apply rounded-md border-2 border-[#ffc727] hover:bg-[#fcca40] hover:text-black duration-500 py-2 px-6 text-[#ffc727] tracking-wider;
+  }
+}
+
+:root {
+  --primary-color: #ffc727;
+  --primary-color-80: #fad46d;
+  --secondary-1-color: #E2E2D5;
+  --secondary-2-color: #888883;
+  --dark18:#111111;
+}
+
+.container18 {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 3rem;
+  padding-left: 3rem;
+}
+
+@media (min-width: 640px) {
+  .container18 {
+    max-width: 640px; 
+  }
+}
+
+@media (min-width: 768px) {
+  .container18 {
+    max-width: 768px; 
+  }
+}
+
+@media (min-width: 1024px) {
+  .container18 {
+    max-width: 1024px; 
+  }
+}
+@media (min-width: 1318px) {
+  .container18 {
+    max-width: 1318px; 
+  }
+}

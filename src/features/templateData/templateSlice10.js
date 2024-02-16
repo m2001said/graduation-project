@@ -110,7 +110,7 @@ const templateSlice10 = createSlice({
       ],
     },
 
-    statistic10: {
+    cta10: {
       title: "Read Books at Your Fingertips",
       bannerImg: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707090472/board_hqttt2.png",
       AppStoreImg: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707090485/app_store_s6wzhh.png",

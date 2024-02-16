@@ -6,8 +6,11 @@ import templateReducer3 from "../features/templateData/templateSlice3";
 import templateReducer4 from "../features/templateData/templateSlice4";
 import templateReducer5 from "../features/templateData/templateSlice5";
 import templateReducer6 from "../features/templateData/templateSlice6";
+import templateReducer7 from "../features/templateData/templateSlice7";
+import templateReducer11 from "../features/templateData/templateSlice11";
 import templateReducer10 from "../features/templateData/templateSlice10";
 import templateReducer14 from "../features/templateData/templateSlice14";
+import templateReducer18 from "../features/templateData/templateSlice18";
 
 export const store = configureStore({
   reducer: {
@@ -20,5 +23,6 @@ export const store = configureStore({
     template6: templateReducer6,
     template10: templateReducer10,
     template14: templateReducer14,
+    template18: templateReducer18,
   },
 });
