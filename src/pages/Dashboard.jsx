@@ -12,6 +12,7 @@ import { updateTemplate5 } from "../features/templateData/templateSlice5";
 import { updateTemplate6 } from "../features/templateData/templateSlice6";
 import { updateTemplate7 } from "../features/templateData/templateSlice7";
 import { updateTemplate11 } from "../features/templateData/templateSlice11";
+import { updateTemplate15 } from "../features/templateData/templateSlice15";
 
 const Dashboard = () => {
   const { pathname } = useLocation();
@@ -43,6 +44,9 @@ const Dashboard = () => {
       break;
     case "11":
       updateAllRef = updateTemplate11;
+      break;
+    case "15":
+      updateAllRef = updateTemplate15;
       break;
     default:
       break;

@@ -9,7 +9,7 @@ const Navbar3 = () => {
 
   return (
     <div className="navbar3">
-      <img src={navbar3.imgUrl[0].imgUrlA} alt="" className="logo" />
+      <img src={navbar3.imgUrl[0].imgUrlA} alt="" className="logo3" />
       {menuOpened === false && mobile === true ? (
         <div className="closed-mobile-menu" onClick={() => setMenuOpened(true)}>
           <img src={navbar3.imgUrl[0].imgUrlB} alt="" className="menu-icon" />

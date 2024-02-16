@@ -65,7 +65,6 @@ html {
 }
 
 body,
-button,
 input,
 textarea {
   background-color: var(--body-color);
@@ -76,14 +75,6 @@ textarea {
 body {
   line-height: 1.7;
   color: var(--text-color);
-}
-
-h1,
-h2,
-h3 {
-  color: var(--title-color);
-  font-weight: var(--font-semibold);
-  line-height: 1.2;
 }
 
 ul {
