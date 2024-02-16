@@ -1,42 +1,65 @@
-import React from "react";
-import "./yourPage.css"
-import hero6 from "../../assets/images/designs/hero6.jpg"
+import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
+import "./yourPage.css";
+import heroImages from "../../assets/images/designs/hero6.jpg"; // Assuming you have images for all hero sections
+
 const YourPage = () => {
+  const [selectedData, setSelectedData] = useState({
+    indexSelected: 1,
+  });
+
+  const navigate = useNavigate();
+
+  const handleIndexChange = (e) => {
+    const { value } = e.target;
+    setSelectedData((prevSelectedData) => ({
+      ...prevSelectedData,
+      indexSelected: parseInt(value, 10),
+    }));
+  };
+
+  const handleSubmit = () => {
+    navigate('/own-page', { state: { selectedData } });
+  };
+
+  const heroData = [
+    { id: 1, name: 'Hero1' },
+    { id: 2, name: 'Hero2' },
+    { id: 3, name: 'Hero3' },
+    { id: 4, name: 'Hero4' },
+    { id: 5, name: 'Hero5' },
+    { id: 6, name: 'Hero6' },
+    { id: 7, name: 'Hero7' },
+    { id: 8, name: 'Hero8' },
+    { id: 9, name: 'Hero9' },
+    { id: 10, name: 'Hero10' },
+  ];
+
   return (
-    <div className="own-page container mx-auto px-4  py-4">
-    <div className="group text">
+    <div className="own-page container mx-auto px-4 py-4">
+      <div className="group text">
         <p className="title">Website description</p>
         <textarea name="text" id="text"></textarea>
       </div>
       <div className="group">
         <p className="title">Hero sections</p>
-        <input type="radio" name="Hero" id="i1" />
-        <label htmlFor="i1">
-          <img src={hero6} alt="Hero Section 1" />
-        </label>
-
-        <input type="radio" name="Hero" id="i2" />
-        <label htmlFor="i2">
-          <img src={hero6} alt="Hero Section 2" />
-        </label>
+        {heroData.map((hero) => (
+          <div key={hero.id}>
+            <input
+              type="radio"
+              id={hero.name}
+              name="index"
+              value={hero.id}
+              checked={selectedData.indexSelected === hero.id}
+              onChange={handleIndexChange}
+            />
+            <label htmlFor={hero.name}>
+              <img src={heroImages} alt={`Hero Section ${hero.id}`} />
+            </label>
+          </div>
+        ))}
       </div>
-      <div className="group">
-        <p className="title">Testimonials sections</p>
-        <input type="radio" name="Testimonials" id="i3" />
-        <label htmlFor="i3">
-          <img src={hero6} alt="Testimonials Section 1" />
-        </label>
-
-        <input type="radio" name="Testimonials" id="i4" />
-        <label htmlFor="i4">
-          <img src={hero6} alt="Testimonials Section 2" />
-        </label>
-
-        <input type="radio" name="Testimonials" id="i5" />
-        <label htmlFor="i5">
-          <img src={hero6} alt="Testimonials Section 3" />
-        </label>
-      </div>
+      <button onClick={handleSubmit}>Submit</button>
     </div>
   );
 };
