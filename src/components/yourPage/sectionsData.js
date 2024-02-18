@@ -34,13 +34,13 @@ export const footerData = [
     { id: 14, name: 'Footer14', image: "https://res.cloudinary.com/duc04fwdb/image/upload/v1708272335/jammal_photos/uvnk7f9iagslzetz7ws5.jpg", type: 'Footer' },
 ];
 export const navData = [
-    { id: 1, name: 'Nav1', image: "https://res.cloudinary.com/duc04fwdb/image/upload/v1708272335/jammal_photos/uvnk7f9iagslzetz7ws5.jpg", type: 'Nav' },
-    { id: 2, name: 'Nav2', image: "https://res.cloudinary.com/duc04fwdb/image/upload/v1708272335/jammal_photos/uvnk7f9iagslzetz7ws5.jpg", type: 'Nav' },
+    { id: 1, name: 'Nav1', image: "https://res.cloudinary.com/duc04fwdb/image/upload/v1708272486/jammal_photos/ciuemjhixdpin3mmgkfn.jpg", type: 'Nav' },
+    { id: 2, name: 'Nav2', image: "https://res.cloudinary.com/duc04fwdb/image/upload/v1708272486/jammal_photos/ciuemjhixdpin3mmgkfn.jpg", type: 'Nav' },
     // ... other Footer sections 
-    { id: 3, name: 'Nav3', image: "https://res.cloudinary.com/duc04fwdb/image/upload/v1708272335/jammal_photos/uvnk7f9iagslzetz7ws5.jpg", type: 'Nav' },
-    { id: 6, name: 'Nav6', image: "https://res.cloudinary.com/duc04fwdb/image/upload/v1708272335/jammal_photos/uvnk7f9iagslzetz7ws5.jpg", type: 'Nav' },
-    { id: 7, name: 'Nav7', image: "https://res.cloudinary.com/duc04fwdb/image/upload/v1708272335/jammal_photos/uvnk7f9iagslzetz7ws5.jpg", type: 'Nav' },
-    { id: 10, name: 'Nav10', image: "https://res.cloudinary.com/duc04fwdb/image/upload/v1708272335/jammal_photos/uvnk7f9iagslzetz7ws5.jpg", type: 'Nav' },
-    { id: 11, name: 'Nav11', image: "https://res.cloudinary.com/duc04fwdb/image/upload/v1708272335/jammal_photos/uvnk7f9iagslzetz7ws5.jpg", type: 'Nav' },
-    { id: 14, name: 'Nav14', image: "https://res.cloudinary.com/duc04fwdb/image/upload/v1708272335/jammal_photos/uvnk7f9iagslzetz7ws5.jpg", type: 'Nav' },
+    { id: 3, name: 'Nav3', image: "https://res.cloudinary.com/duc04fwdb/image/upload/v1708272486/jammal_photos/ciuemjhixdpin3mmgkfn.jpg", type: 'Nav' },
+    { id: 6, name: 'Nav6', image: "https://res.cloudinary.com/duc04fwdb/image/upload/v1708272486/jammal_photos/ciuemjhixdpin3mmgkfn.jpg", type: 'Nav' },
+    { id: 7, name: 'Nav7', image: "https://res.cloudinary.com/duc04fwdb/image/upload/v1708272486/jammal_photos/ciuemjhixdpin3mmgkfn.jpg", type: 'Nav' },
+    { id: 10, name: 'Nav10', image: "https://res.cloudinary.com/duc04fwdb/image/upload/v1708272486/jammal_photos/ciuemjhixdpin3mmgkfn.jpg", type: 'Nav' },
+    { id: 11, name: 'Nav11', image: "https://res.cloudinary.com/duc04fwdb/image/upload/v1708272486/jammal_photos/ciuemjhixdpin3mmgkfn.jpg", type: 'Nav' },
+    { id: 14, name: 'Nav14', image: "https://res.cloudinary.com/duc04fwdb/image/upload/v1708272486/jammal_photos/ciuemjhixdpin3mmgkfn.jpg", type: 'Nav' },
 ];
