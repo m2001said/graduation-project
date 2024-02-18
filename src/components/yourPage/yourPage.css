@@ -1,18 +1,23 @@
+.own-page {
+    background: #481b91;
+}
+
 .group {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     width: 80%;
     margin: 50px auto;
     gap: 10px;
-    border: solid 1px #2C2C2C;
+    border: solid 1px var(--color-3);
     padding: 10px;
     position: relative;
+    background: white;
 }
 
-.own-page .title {
+.own-page .group .title {
     position: absolute;
     width: fit-content;
-    background: #2C2C2C;
+    background: var(--color-3);
     color: #FFFFFF;
     font-weight: 500;
     padding: 6px 8px;
@@ -33,11 +38,8 @@
     position: relative;
 }
 
-.own-page label:before {
-    content: url("https://res.cloudinary.com/duc04fwdb/image/upload/v1708037268/jammal_photos/nme9bdbxqehtul4yzmd7.svg");
-    content: "✓";
-    background: #3498db;
-    color: #FFFFFF;
+.own-page .check-icon {
+    background: var(--color-3);
     position: absolute;
     top: 0;
     right: 0;
@@ -49,30 +51,43 @@
     width: 30px;
     height: 30px;
     transition: 0.4s;
+    padding: 8px;
 }
 
 .own-page input[type="radio"]:checked+label {
-    border: solid 2px #3498db;
+    border: solid 2px var(--color-3);
     transform: scale(0.95);
 }
 
-.own-page input[type="radio"]:checked+label:before {
-    transform: translate(-50%, -50%) scale(1);
+.own-page input[type="radio"]:checked+label  .check-icon  {
+    transform: translate(-50%, -50%) scale(1) rotate(360deg);
 }
 
-.text {
+.group.text{
+    background: transparent;
     display: flex;
 }
-
 .own-page textarea {
     width: 100%;
     resize: none !important;
     outline: none;
     padding: 10px;
     line-height: 1.5;
-    border: solid 1px #C5C5C5
+    border: solid 1px #C5C5C5;
+    border-radius: 3px;
 }
 
 .own-page textarea:focus {
-    border-color: #3498db;
+    border-color: var(--color-3);
+}
+.own-page .generate-own-btn {
+    width: -moz-fit-content;
+    width: fit-content;
+    margin: 80px auto;
+    background: var(--color-3);
+    padding: 6px 9px;
+    color: white;
+    font-weight: bold;
+    display: flex;
+    border-radius: 7px;
 }
