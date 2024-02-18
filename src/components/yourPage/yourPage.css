@@ -2,7 +2,7 @@
     background: #481b91;
 }
 
-.group {
+.own-page  .group {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     width: 80%;
