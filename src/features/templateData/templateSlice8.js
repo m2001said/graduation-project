@@ -9,7 +9,7 @@ const templateSlice8 = createSlice({
       btnText: "Work with me",
     },
     hero: {
-      Name: ["Abdo", "Hosni"],
+      Name: ["BEN", "AIDEN"],
       jop: ["I Am a ", "DEVELOPER"],
       description:
         "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia sequi vel tempora aut voluptatibus accusantium est voluptate perspiciatis omnis assumenda.",
@@ -24,12 +24,14 @@ const templateSlice8 = createSlice({
       description:
         "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora accusamus porro tempore quibusdam ab nesciunt voluptatum magnam doloribus corrupti molestiae.",
       numbers: ["13", "15", "12"],
-      typeOfExpericnce: ["Years of", "Projects", "Satisfied"],
-      typeOfExpericnce: ["Years of", "Projects", "Satisfied"],
+      sign: ["+", "+", "+"],
+      type: ["Years of", "Projects", "Satisfied"],
+      typeOfExpericnce: ["Experience", "Completed", "Clients"],
       btnText: "Contact me",
       linktext: "My portofolio",
       UrlImg: "https://res.cloudinary.com/duc04fwdb/image/upload/v1708042892/jammal_photos/ui2jxaq52dfjtffndkjq.png",
     },
+
     // services data
     Services: {
       title: "WHAT I DO.",
@@ -64,26 +66,31 @@ const templateSlice8 = createSlice({
     },
 
     work: {
-      titlework: "MY WORK.",
-      description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi laborum eius qui recusandae possimus. Dolorem quam illo impedit sunt fugiat",
-      btnText: "View all projects",
       projects: [
         {
-          UrlImg: "",
+          UrlImg: "	https://res.cloudinary.com/duc04fwdb/image/upload/v1708272971/jammal_photos/w5rnjea8huwe5pgrazeg.png",
           pretitle: "UI/UX Design",
           title: "Project Title",
         },
         {
-          UrlImg: "",
+          UrlImg: "https://res.cloudinary.com/duc04fwdb/image/upload/v1708273069/jammal_photos/exhaactq1fplnnapxrwc.png",
           pretitle: "UI/UX Design",
           title: "Project Title",
         },
         {
-          UrlImg: "",
+          UrlImg: "https://res.cloudinary.com/duc04fwdb/image/upload/v1708273131/jammal_photos/eww7hd9cpv5mkxwkasyy.png",
           pretitle: "UI/UX Design",
           title: "Project Title",
         },
       ],
+      title: "MY WORK.",
+      description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi laborum eius qui recusandae possimus. Dolorem quam illo impedit sunt fugiat",
+      btnText: "View all projects",
+    },
+    Contact: {
+      title: "  Let's work  together!",
+      subtitle: "Get in touch",
+      btnText: "Send message",
     },
 
     colors: {
@@ -93,7 +100,7 @@ const templateSlice8 = createSlice({
 
   name: "templateSlice8",
   reducers: {
-    updateTemplate6: (state, action) => {
+    updateTemplate8: (state, action) => {
       const { section, variable, value, i, blockName, subBlockName, subIndex, objKey } = action.payload;
       // sub means level 2 of fields
       if (i === undefined) {

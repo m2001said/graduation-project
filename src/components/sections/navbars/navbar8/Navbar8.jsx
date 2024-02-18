@@ -3,6 +3,7 @@ import { useSelector } from "react-redux";
 
 const Navbar8 = () => {
   const { navbar } = useSelector((state) => state.template8);
+  console.log(navbar);
   const scrollTo = (id, offset = 0) => {
     const element = document.getElementById(id);
     if (element) {
