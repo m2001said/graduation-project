@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import "./yourPage.css";
 import InputsGroup from "./InputsGroup";
-import { heroData, testimonialData, footerData } from "./sectionsData";
+import { heroData, testimonialData, footerData, navData } from "./sectionsData";
 
 
 const YourPage = () => {
@@ -18,7 +18,7 @@ const YourPage = () => {
   };
 
   const handleSubmit = () => {
-    navigate('/own-page', { state: { heroIndexSelected: selectedIndices.hero, testimonialIndexSelected: selectedIndices.testimonial, footerIndexSelected: selectedIndices.footer } });
+    navigate('/own-page', { state: { heroIndexSelected: selectedIndices.hero, testimonialIndexSelected: selectedIndices.testimonial, footerIndexSelected: selectedIndices.footer,  navIndexSelected: selectedIndices.nav  } });
   };
 
   return (
@@ -31,6 +31,18 @@ const YourPage = () => {
       </div>
   
       <div className="group">
+        <p className="title">Navbar sections</p>
+        {navData.map((nav) => (
+          <InputsGroup
+            key={nav.id}
+            data={nav}
+            selectedIndex={selectedIndices.nav}
+            handleIndexChange={handleIndexChange('nav')}
+          />
+        ))}
+      </div>
+
+      <div className="group">
         <p className="title">Hero sections</p>
         {heroData.map((hero) => (
           <InputsGroup
@@ -41,7 +53,7 @@ const YourPage = () => {
           />
         ))}
       </div>
-  
+    
       <div className="group">
         <p className="title">Testimonial sections</p>
         {testimonialData.map((testimonial) => (

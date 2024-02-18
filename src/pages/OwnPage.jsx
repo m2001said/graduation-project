@@ -9,18 +9,21 @@ const OwnPage = () => {
   const heroIndexSelected = selectedData.heroIndexSelected || 1;
   const testimonialIndexSelected = selectedData.testimonialIndexSelected || 1;
   const footerIndexSelected = selectedData.footerIndexSelected || 1;
+  const navIndexSelected = selectedData.navIndexSelected || 1;
 
   // Import components 
   const Hero = require(`../components/sections/heros/hero${heroIndexSelected}/Hero${heroIndexSelected}`).default;
   const Testimonial = require(`../components/sections/testimonials/testimonials${testimonialIndexSelected}/Testimonials${testimonialIndexSelected}`).default;
   const Footer = require(`../components/sections/footers/footer${footerIndexSelected}/Footer${footerIndexSelected}`).default;
+  const Nav = require(`../components/sections/navbars/navbar${navIndexSelected}/Navbar${navIndexSelected}`).default;
 
   return (
-    <div>
+    <>
+      <Nav />
       <Hero />
       <Testimonial />
       <Footer />
-    </div>
+    </>
   );
 };
 
