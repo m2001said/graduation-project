@@ -7,7 +7,7 @@ const Features = () => {
   const { feature18 } = useSelector((state) => state.template18);
 
   return (
-    <div className="dark:bg-dark bg-slate-100 sm:min-h-[600px] sm:grid sm:place-items-center duration-300">
+    <div className="dark:bg-[--dark18] bg-slate-100 sm:min-h-[600px] sm:grid sm:place-items-center duration-300">
       <div className="container18">
         <div className="grid grid-cols-1 sm:grid-cols-2 place-items-center">
           <div>

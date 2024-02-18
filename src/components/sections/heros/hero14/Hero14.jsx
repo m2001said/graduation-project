@@ -21,9 +21,9 @@ const Hero14 = ({ handleOrderPopup }) => {
             {/* hero sec */}
             <Swiper
               spaceBetween={200}
-              //   pagination={{
-              //     clickable: true,
-              //   }}
+                pagination={{
+                  clickable: true,
+                }}
               modules={[Pagination]}
               className="mySwiper"
             >

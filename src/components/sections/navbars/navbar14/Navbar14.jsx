@@ -26,7 +26,7 @@ const Navbar14 = ({ handleOrderPopup }) => {
                   </li>
                 ))}
                 {/* dropdown  */}
-                <li className="relative cursor-pointer group">
+                {/* <li className="relative cursor-pointer group">
                   <span className="flex items-center gap-[2px] font-semibold text-gray-500 hover:text-black dark:hover:text-white py-2 ">
                     {navbar14.DropdownTxt}
                     <span>
@@ -34,7 +34,7 @@ const Navbar14 = ({ handleOrderPopup }) => {
                     </span>
                   </span>
 
-                  {/* dropdown links */}
+                  
                   <div className="absolute z-[9999] hidden group-hover:block w-[200px] rounded-md bg-white shadow-md dark:bg-gray-900 p-2 dark:text-white ">
                     <ul className="space-y-2">
                       {navbar14.DropdownLinks.map((data, index) => (
@@ -49,7 +49,7 @@ const Navbar14 = ({ handleOrderPopup }) => {
                       ))}
                     </ul>
                   </div>
-                </li>
+                </li> */}
               </ul>
             </div>
           </div>
@@ -57,10 +57,10 @@ const Navbar14 = ({ handleOrderPopup }) => {
           {/* Nav right sec */}
           <div className="flex justify-between items-center gap-4">
             {/* Search section */}
-            <div className="relative group hidden sm:block">
+            {/* <div className="relative group hidden sm:block">
               <input type="text" placeholder="Search" className="search14-bar" />
               <img src={navbar14.SearchIcon} alt="" className="absolute top-1/2 -translate-y-1/2 right-3 duration-200" />
-            </div>
+            </div> */}
 
             {/* Order-button */}
             <button className="relative p-3" onClick={handleOrderPopup}>
