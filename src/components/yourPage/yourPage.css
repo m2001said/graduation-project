@@ -6,7 +6,7 @@
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     width: 80%;
-    margin: 50px auto;
+    margin: 120px auto;
     gap: 10px;
     border: solid 1px var(--color-3);
     padding: 10px;
@@ -19,7 +19,7 @@
     width: fit-content;
     background: var(--color-3);
     color: #FFFFFF;
-    font-weight: 500;
+    font-size: 20px;
     padding: 6px 8px;
     top: -0.5px;
     left: 50%;
@@ -60,14 +60,15 @@
     transform: scale(0.95);
 }
 
-.own-page input[type="radio"]:checked+label  .check-icon  {
+.own-page input[type="radio"]:checked+label .check-icon {
     transform: translate(-50%, -50%) scale(1) rotate(360deg);
 }
 
-.group.text{
+.group.text {
     background: transparent;
     display: flex;
 }
+
 .own-page textarea {
     width: 100%;
     resize: none !important;
@@ -81,14 +82,21 @@
 .own-page textarea:focus {
     border-color: var(--color-3);
 }
+
 .own-page .generate-own-btn {
-    width: -moz-fit-content;
+    font-size: 24px;
     width: fit-content;
     margin: 80px auto;
     background: var(--color-3);
-    padding: 6px 9px;
-    color: white;
-    font-weight: bold;
+    padding: 9px 18px;
+    font-weight: 500;
     display: flex;
     border-radius: 7px;
+    color: white;
+    transition: 0.4s;
+}
+
+.own-page button.generate-own-btn:active {
+    outline: solid 1px var(--color-3);
+    outline-offset: 2px;
 }

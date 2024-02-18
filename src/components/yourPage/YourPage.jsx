@@ -2,12 +2,13 @@ import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import "./yourPage.css";
 import InputsGroup from "./InputsGroup";
-import { heroData, testimonialData } from "./sectionsData";
+import { heroData, testimonialData, footerData } from "./sectionsData";
 
 
 const YourPage = () => {
   const [heroIndexSelected, setHeroIndexSelected] = useState(1);
   const [testimonialIndexSelected, setTestimonialIndexSelected] = useState(1);
+  const [footerIndexSelected, setFooterIndexSelected] = useState(1);
 
   const navigate = useNavigate();
 
@@ -21,8 +22,13 @@ const YourPage = () => {
     setTestimonialIndexSelected(parseInt(value, 10));
   };
 
+  const handleFooterIndexChange = (e) => {
+    const { value } = e.target;
+    setFooterIndexSelected(parseInt(value, 10));
+  };
+
   const handleSubmit = () => {
-    navigate('/own-page', { state: { heroIndexSelected, testimonialIndexSelected } });
+    navigate('/own-page', { state: { heroIndexSelected, testimonialIndexSelected,footerIndexSelected } });
   };
 
 
@@ -55,6 +61,18 @@ const YourPage = () => {
               data={testimonial}
               selectedIndex={testimonialIndexSelected}
               handleIndexChange={handleTestimonialIndexChange}
+            />
+          ))}
+        </div>
+
+        <div className="group">
+          <p className="title">footer sections</p>
+          {footerData.map((footer) => (
+            <InputsGroup
+              key={footer.id}
+              data={footer}
+              selectedIndex={footerIndexSelected}
+              handleIndexChange={handleFooterIndexChange}
             />
           ))}
         </div>
