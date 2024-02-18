@@ -28,7 +28,7 @@ const Hero4 = () => {
     };
   }, []);
 
-  const { hero4 } = useSelector((state) => state.template4);
+  const { hero } = useSelector((state) => state.template4);
 
   return (
     <section className="hero-wrapper" data-aos="fade-up">
@@ -36,39 +36,39 @@ const Hero4 = () => {
         <div className="flexColStart hero-left" data-aos="fade-right">
           <div className="hero-title">
             <div className="orange-circle" />
-            <h1>{hero4.title}</h1>
+            <h1>{hero.title}</h1>
           </div>
           <div className="flexColStart secondaryText flexhero-des">
-            <span>{hero4.description1}</span>
-            <span>{hero4.description2}</span>
+            <span>{hero.description1}</span>
+            <span>{hero.description2}</span>
           </div>
 
           <div className="flexCenter search-bar">
             {/* <HiLocationMarker color="var(--blue)" size={25} /> */}
             <input type="text" />
-            <button className="button">{hero4.buttonText}</button>
+            <button className="button">{hero.buttonText}</button>
           </div>
 
           <div className="flexCenter stats">
             <div className="flexColCenter stat">
               <span>
-                {hero4.stats[0].end} <span>{hero4.icon}</span>
+                {hero.stats[0].end} <span>{hero.icon}</span>
               </span>
-              <span className="secondaryText">{hero4.stats[0].title}</span>
+              <span className="secondaryText">{hero.stats[0].title}</span>
             </div>
 
             <div className="flexColCenter stat">
               <span>
-                {hero4.stats[1].end} <span>{hero4.icon}</span>
+                {hero.stats[1].end} <span>{hero.icon}</span>
               </span>
-              <span className="secondaryText">{hero4.stats[1].title}</span>
+              <span className="secondaryText">{hero.stats[1].title}</span>
             </div>
 
             <div className="flexColCenter stat">
               <span>
-                {hero4.stats[2].end} <span>{hero4.icon}</span>
+                {hero.stats[2].end} <span>{hero.icon}</span>
               </span>
-              <span className="secondaryText">{hero4.stats[2].title}</span>
+              <span className="secondaryText">{hero.stats[2].title}</span>
             </div>
           </div>
         </div>
@@ -76,7 +76,7 @@ const Hero4 = () => {
         {/* right side */}
         <div className="flexCenter hero-right">
           <div className="image-container">
-            <img src={hero4.imgUrl} alt="houses" />
+            <img src={hero.imgUrl} alt="houses" />
           </div>
         </div>
       </div>

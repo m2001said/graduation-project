@@ -1,13 +1,14 @@
 import { createSlice } from "@reduxjs/toolkit";
+import { addElement, deleteElement, deleteSection, editElement, reorder, reorderSections } from "./actions";
 const templateSlice4 = createSlice({
   initialState: {
-    navbar4: {
+    navbar: {
       imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703193372/jammal_photos/eygwjnnq4d9scpxd9unv.png",
       links: ["Residencies", "Our Value", "Contact Us", "Get Started"],
       email4: "mailto:zainkeepscode@gmail.com",
       buttonText: "Contact",
     },
-    hero4: {
+    hero: {
       imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703196080/jammal_photos/taiu0lj7gzq6ew6srqsz.png",
       title: " Discover Most Suitable Property",
       description1: "Find a variety of properties that suit you very easilty",
@@ -35,7 +36,7 @@ const templateSlice4 = createSlice({
       icon: "+",
     },
 
-    feature4: {
+    features: {
       title: "Our Value",
       sub_title: "Value We Give to You",
       description1: " We are always ready to help by providing the best services for you.",
@@ -63,7 +64,7 @@ const templateSlice4 = createSlice({
       imgUrl: "	https://res.cloudinary.com/duc04fwdb/image/upload/v1703203417/jammal_photos/if4uayalbxuh6enjdenm.png",
     },
 
-    project4: {
+    projects: {
       title: "Best Choices",
       sub_title: "Popular Residencies",
       card: [
@@ -106,7 +107,7 @@ const templateSlice4 = createSlice({
       ],
     },
 
-    contact4: {
+    contact: {
       title: "Our Contact Us",
       sub_title: "Easy to contact us",
       description: " We always ready to help by providijng the best services for you. We beleive a good blace to live can make your life better",
@@ -136,7 +137,7 @@ const templateSlice4 = createSlice({
         },
       ],
     },
-    Cta4: {
+    cta: {
       title: "Get started with Homyz",
       description1: " Subscribe and find super attractive price quotes from us.",
       description2: " Find your residence soon",
@@ -144,7 +145,7 @@ const templateSlice4 = createSlice({
       email: "mailto:zainkeepscode@gmail.com",
     },
 
-    Footer4: {
+    footer: {
       logo: "	https://res.cloudinary.com/duc04fwdb/image/upload/v1703209942/jammal_photos/xd2ugq6yopzvjkw37qc7.png",
       description: "Our vision is to make all people the best place to live for them.",
       title: "Information",
@@ -158,42 +159,27 @@ const templateSlice4 = createSlice({
 
   name: "templateSlice4",
   reducers: {
-    updateTemplate4: (state, action) => {
-      const { section, variable, value, i, blockName, subBlockName, subIndex, objKey } = action.payload;
-      // sub means level 2 of fields
-      if (i === undefined) {
-        if (variable === null) {
-          // edit object filed
-          state[section][blockName][objKey] = value;
-        } else {
-          // edit normal field
-          state[section][variable] = value;
-        }
-      } else {
-        if (subIndex === undefined) {
-          // edit array filed with index
-          if (variable === null) state[section][blockName][i] = value;
-          else {
-            if (subBlockName === undefined) {
-              // edit obj in array of objects
-              state[section][blockName][i][variable] = value;
-            } else {
-              // edit sub obj directly
-              state[section][blockName][i][subBlockName][variable] = value;
-            }
-          }
-        } else {
-          // edit sub element in array
-          if (variable === null) state[section][blockName][i][subBlockName][subIndex] = value;
-          else {
-            // edit sub obj in array of objects
-            state[section][blockName][i][subBlockName][subIndex][variable] = value;
-          }
-        }
-      }
+    updateTemplate: (state, action) => {
+      editElement(state, action);
+    },
+    addNewElement: (state, action) => {
+      addElement(state, action);
+    },
+
+    deleteElement: (state, action) => {
+      deleteElement(state, action);
+    },
+    reorder: (state, action) => {
+      reorder(state, action);
+    },
+    reorderSection: (state, action) => {
+      return reorderSections(state, action);
+    },
+    deleteSection: (state, action) => {
+      return deleteSection(state, action);
     },
   },
 });
 
-export const { updateTemplate4 } = templateSlice4.actions;
+export const templateActions4 = templateSlice4.actions;
 export default templateSlice4.reducer;

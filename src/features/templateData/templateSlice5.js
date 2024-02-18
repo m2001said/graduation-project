@@ -1,20 +1,21 @@
 import { createSlice } from "@reduxjs/toolkit";
+import { addElement, deleteElement, deleteSection, editElement, reorder, reorderSections } from "./actions";
 const templateSlice5 = createSlice({
   initialState: {
-    navbar5: {
+    navbar: {
       menuIcon: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1703106705/menu-svgrepo-com_mgpt72.svg",
       icon: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1703101139/logo_ytwn3z.jpg",
       links: ["Home", "About", "Offers", "Seats", "Destiations"],
       buttonTxt: "contact",
     },
 
-    hero5: {
+    hero: {
       title: "Create Ever-lasting Memories With us",
       imgUrl: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1703110738/takeOff_znaedp.png",
       videoUrl: "https://res.cloudinary.com/dmcdea0b9/video/upload/v1703110566/heroVideo_z23a38.mp4",
     },
 
-    feature5_1: {
+    features1: {
       smallTitle: "travel support",
       title: "Plan your travel with confidence",
       description: "find help with booking and travel plans, see what to expect the journey",
@@ -41,7 +42,7 @@ const templateSlice5 = createSlice({
       imgUrl: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1703111688/R_aejs2k.jpg",
     },
 
-    services5: {
+    services: {
       title: "Travel to make memories all around the world",
       buttonTxt: "View all",
       blocks: [
@@ -63,7 +64,7 @@ const templateSlice5 = createSlice({
       ],
     },
 
-    feature5_2: {
+    features2: {
       imgUrl: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1703116246/fea5-2_q5na0z.jpg",
       title: "Unaccompanied minor lounge",
       blocks: [
@@ -86,7 +87,7 @@ const templateSlice5 = createSlice({
       ],
     },
 
-    team5: {
+    team: {
       title: "Top travelers of this month!",
       cards: [
         {
@@ -116,13 +117,13 @@ const templateSlice5 = createSlice({
       ],
     },
 
-    cta5: {
+    cta: {
       title: "Subscribe Newletter & get Latest News",
       inputPlaceholder: "enter your email addres",
       buttonText: "Subscribe",
     },
 
-    footer5: {
+    footer: {
       imgUrl: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1703101139/logo_ytwn3z.jpg",
       description: "Your mind shoud be stronger than your feeling, fly!",
       mediaIcons: [
@@ -166,42 +167,27 @@ const templateSlice5 = createSlice({
 
   name: "templateSlice5",
   reducers: {
-    updateTemplate5: (state, action) => {
-      const { section, variable, value, i, blockName, subBlockName, subIndex, objKey } = action.payload;
-      // sub means level 2 of fields
-      if (i === undefined) {
-        if (variable === null) {
-          // edit object filed
-          state[section][blockName][objKey] = value;
-        } else {
-          // edit normal field
-          state[section][variable] = value;
-        }
-      } else {
-        if (subIndex === undefined) {
-          // edit array filed with index
-          if (variable === null) state[section][blockName][i] = value;
-          else {
-            if (subBlockName === undefined) {
-              // edit obj in array of objects
-              state[section][blockName][i][variable] = value;
-            } else {
-              // edit sub obj directly
-              state[section][blockName][i][subBlockName][variable] = value;
-            }
-          }
-        } else {
-          // edit sub element in array
-          if (variable === null) state[section][blockName][i][subBlockName][subIndex] = value;
-          else {
-            // edit sub obj in array of objects
-            state[section][blockName][i][subBlockName][subIndex][variable] = value;
-          }
-        }
-      }
+    updateTemplate: (state, action) => {
+      editElement(state, action);
+    },
+    addNewElement: (state, action) => {
+      addElement(state, action);
+    },
+
+    deleteElement: (state, action) => {
+      deleteElement(state, action);
+    },
+    reorder: (state, action) => {
+      reorder(state, action);
+    },
+    reorderSection: (state, action) => {
+      return reorderSections(state, action);
+    },
+    deleteSection: (state, action) => {
+      return deleteSection(state, action);
     },
   },
 });
 
-export const { updateTemplate5 } = templateSlice5.actions;
+export const templateActions5 = templateSlice5.actions;
 export default templateSlice5.reducer;

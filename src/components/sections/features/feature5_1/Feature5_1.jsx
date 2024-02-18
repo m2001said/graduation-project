@@ -12,7 +12,8 @@ const Feature5_1 = () => {
   },[])
 
 
-  const { feature5_1 } = useSelector((state) => state.template5);
+  const { features1 } = useSelector((state) => state.template5);
+  const feature5_1 = features1
 
   return (
     <div className="feature5_1 design5-section">

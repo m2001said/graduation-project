@@ -2,7 +2,7 @@ import React from "react";
 import { useDispatch, useSelector } from "react-redux";
 import ChangeImageController from "../ChangeImageController";
 
-const SubFieldControllerIsArrayOfObjects = ({ targetSection, cardIndex, sectionName, blockName, subBlockName, subIndex, dispatchRef }) => {
+const SubFieldControllerIsArrayOfObjects = ({ targetSection, cardIndex, sectionName, blockName, subBlockName, subIndex, dispatchRef ,showSection }) => {
   // const targetSection = useSelector((state) => state.template[sectionName]);
   const subName = subBlockName.slice(0, subBlockName.length - 1);
   const dispatch = useDispatch();
@@ -19,7 +19,7 @@ const SubFieldControllerIsArrayOfObjects = ({ targetSection, cardIndex, sectionN
 
   const fields = Object.keys(targetSection[blockName][cardIndex][subBlockName][subIndex]);
   const pattern = /^(https?:\/\/.*\.(?:png|jpg|jpeg|gif|webp|svg))/i;
-  return (
+  return showSection? (
     <div className="controller-field my-1">
       <label className=" controller-label">
         {subName}
@@ -60,6 +60,6 @@ const SubFieldControllerIsArrayOfObjects = ({ targetSection, cardIndex, sectionN
         );
       })}
     </div>
-  );
+  ):<></>;
 };
 export default SubFieldControllerIsArrayOfObjects;

@@ -1,14 +1,13 @@
 import React from "react";
 import { useDispatch, useSelector } from "react-redux";
 import ChangeImageController from "../ChangeImageController";
-const SubFieldControllerIsArray = ({ targetSection, cardIndex, sectionName, blockName, subBlockName, dispatchRef }) => {
+const SubFieldControllerIsArray = ({ targetSection, cardIndex, sectionName, blockName, subBlockName, dispatchRef , showSection }) => {
   // const targetSection = useSelector((state) => state.template[sectionName]);
   const dispatch = useDispatch();
   const pattern = /\.(jpg|gif|png|svg)$/i;
 
   const fields = targetSection[blockName][cardIndex][subBlockName];
-  console.log(fields);
-  return (
+  return showSection ? (
     <div className="controller-field my-1">
       <label className=" controller-label">{subBlockName}</label>
       {fields.map((field, index) => {
@@ -59,6 +58,6 @@ const SubFieldControllerIsArray = ({ targetSection, cardIndex, sectionName, bloc
         );
       })}
     </div>
-  );
+  ): <></>
 };
 export default SubFieldControllerIsArray;

@@ -12,28 +12,33 @@ import Team1 from "../components/sections/teams/teams1/Teams1";
 import Pricing1 from "../components/sections/pricings/pricing1/Pricing1";
 import Cta1 from "../components/sections/ctas/cta1/Cta1";
 import Footer1 from "../components/sections/footers/footer1/Footer1";
-
 import "../assets/css/globals1.css";
-
+import { useSelector } from "react-redux";
 const TrialDesign1 = () => {
+  const state = useSelector((state) => state.template1);
+  const reorderedComponents = Object.keys(state);
+  const componentMapping = {
+    navbar: Navbar1,
+    hero: Hero1,
+    services: Services1,
+    features: Featrue1,
+    testimonials: Testimonials1,
+    logos: Logos1,
+    projects: Project1,
+    statistics: Statictics1,
+    items: Items1,
+    team: Team1,
+    pricing: Pricing1,
+    cta: Cta1,
+    footer: Footer1,
+  };
+
   return (
     <div>
-      <Navbar1 />
-      <Hero1 />
-      <Services1 />
-      <Featrue1 />
-      <Testimonials1 />
-      <Logos1 />
-      <Project1 />
-      <Statictics1 />
-      <Items1 />
-      <Featrue1 />
-      <Testimonials1 />
-      <Logos1 />
-      <Team1 />
-      <Pricing1 />
-      <Cta1 />
-      <Footer1 />
+      {reorderedComponents.map((_component) => {
+        const Component = componentMapping[_component];
+        return Component && <Component key={_component} />;
+      })}
     </div>
   );
 };

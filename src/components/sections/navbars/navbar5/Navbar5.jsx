@@ -3,7 +3,8 @@ import { useSelector } from "react-redux";
 import "./navbar5.css";
 
 const Navbar5 = () => {
- const { navbar5 } = useSelector((state) => state.template5);
+ const { navbar } = useSelector((state) => state.template5);
+ const navbar5 = navbar;
 
  const[active, setActive]= useState('navbarMenu')
  const showNavbar =()=>{

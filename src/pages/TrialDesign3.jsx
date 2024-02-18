@@ -7,6 +7,7 @@ import Testimonials3 from "../components/sections/testimonials/testimonials3/Tes
 import Cta3 from "../components/sections/ctas/cta3/Cta3";
 import Footer3 from "../components/sections/footers/footer3/Footer3";
 const TrialDesign3 = () => {
+
   return (
     <div className="TrialDesign3">
       <Hero3 />

@@ -2,7 +2,7 @@ import React from "react";
 import { useDispatch, useSelector } from "react-redux";
 import ChangeImageController from "../ChangeImageController";
 
-const SubFieldControllerIsObject = ({ targetSection, sectionName, cardIndex, blockName, subBlockName, dispatchRef }) => {
+const SubFieldControllerIsObject = ({ targetSection, sectionName, cardIndex, blockName, subBlockName, dispatchRef , showSection}) => {
   // const targetSection = useSelector((state) => state.template[sectionName]);
   const dispatch = useDispatch();
   const fields = Object.keys(targetSection[blockName][cardIndex][subBlockName]);
@@ -11,7 +11,7 @@ const SubFieldControllerIsObject = ({ targetSection, sectionName, cardIndex, blo
 
   const dispatchedRefForImg = (target, result) =>
     dispatchRef({ section: sectionName, i: cardIndex, variable: target, value: result?.info?.secure_url, blockName: blockName, subBlockName: subBlockName });
-  return (
+  return showSection ? (
     <div className="controller-field my-1">
       <label className=" controller-label">{subBlockName}</label>
       {fields.map((field, index) => {
@@ -51,7 +51,7 @@ const SubFieldControllerIsObject = ({ targetSection, sectionName, cardIndex, blo
         );
       })}
     </div>
-  );
+  ):<></>;
 };
 
 export default SubFieldControllerIsObject;

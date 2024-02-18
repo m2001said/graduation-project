@@ -7,20 +7,30 @@ import FilterItems6 from "../components/sections/filterItems/filterItems6/Filter
 import Testimonials6 from "../components/sections/testimonials/testimonials6/Testimonials6";
 import Cta6 from "../components/sections/ctas/cta6/Cta6";
 import Footer6 from "../components/sections/footers/footer6/Footer6";
+import { useSelector } from "react-redux";
 
 const TrialDesign6 = () => {
+  const state = useSelector((state) => state.template6);
+  const reorderedComponents = Object.keys(state);
+  const componentMapping = {
+    navbar: Navbar6,
+    hero: Hero6,
+    features: Feature6,
+    testimonials: Testimonials6,
+    products: FilterItems6,
+    menu: CartItems6,
+    cta: Cta6,
+    footer: Footer6,
+  };
   return (
     <>
-      <Navbar6 />
-      <Hero6 />
-      <CartItems6 />
-      <Feature6 />
-      <FilterItems6 />
-      <Testimonials6 />
-      <Cta6 />
-      <Footer6 />
+      {reorderedComponents.map((_component) => {
+        const Component = componentMapping[_component];
+        return Component && <Component key={_component} />;
+      })}
     </>
   );
 };
 
 export default TrialDesign6;
+

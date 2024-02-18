@@ -3,7 +3,7 @@ import "./feature4.css";
 import { useSelector } from "react-redux";
 
 const Feature4 = () => {
-  const { feature4 } = useSelector((state) => state.template4);
+  const { features } = useSelector((state) => state.template4);
 
   const [expandedIndex, setExpandedIndex] = useState(null);
 
@@ -17,24 +17,24 @@ const Feature4 = () => {
         {/* left side */}
         <div className="v-left">
           <div className="image-container">
-            <img src={feature4.imgUrl} alt="image of value" />
+            <img src={features.imgUrl} alt="loading" />
           </div>
         </div>
 
         {/* right */}
         <div className="flexColStart v-right">
-          <span className="orangeText">{feature4.title}</span>
+          <span className="orangeText">{features.title}</span>
 
-          <span className="primaryText">{feature4.sub_title}</span>
+          <span className="primaryText">{features.sub_title}</span>
 
           <span className="secondaryText">
-            {feature4.description1}
+            {features.description1}
             <br />
-            {feature4.description2}
+            {features.description2}
           </span>
 
           <div className="accordion">
-            {feature4.data.map((item, i) => (
+            {features.data.map((item, i) => (
               <div className={`accordionItem ${expandedIndex === i ? "expanded" : "collapsed"}`} key={i}>
                 <div className="accordionItemHeading">
                   <button className="flexCenter accordionButton" onClick={() => handleAccordionState(i)}>
