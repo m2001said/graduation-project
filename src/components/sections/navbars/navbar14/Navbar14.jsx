@@ -14,7 +14,7 @@ const Navbar14 = ({ handleOrderPopup }) => {
           {/* Logo and Links sec */}
           <div className="flex items-center gap-4">
             <img src={navbar14.icon} alt="" className="w-7 cursor-pointer" />
-            <span className="text-[--primary-color] font-semibold tracking-widest text-2xl uppercase sm:text-3xl cursor-pointer">{navbar14.title}</span>
+            <span className="text-[--primary14-color] font-semibold tracking-widest text-2xl uppercase sm:text-3xl cursor-pointer">{navbar14.title}</span>
             {/* Menu */}
             <div className="hidden lg:block">
               <ul className="flex items-center gap-4">
@@ -40,7 +40,7 @@ const Navbar14 = ({ handleOrderPopup }) => {
                       {navbar14.DropdownLinks.map((data, index) => (
                         <li key={index}>
                           <a
-                            className="text-gray-500  dark:hover:text-white duration-200 inline-block w-full p-2 hover:bg-[--primaryHover-color] rounded-md font-semibold"
+                            className="text-gray-500  dark:hover:text-white duration-200 inline-block w-full p-2 hover:bg-[--primaryHover14-color] rounded-md font-semibold"
                             href={data.link}
                           >
                             {data.name}

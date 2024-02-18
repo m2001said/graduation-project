@@ -25,7 +25,7 @@ const Navbar = ({ theme, setTheme }) => {
                 <li key={index} className="py-4">
                   <a
                     href={data.link}
-                    className=" text-lg font-medium  hover:text-[--primary-color] py-2 hover:border-b-2 hover:border-[--primary-color] transition-colors duration-500  "
+                    className=" text-lg font-medium  hover:text-[--primary18-color] py-2 hover:border-b-2 hover:border-[--primary18-color] transition-colors duration-500  "
                   >
                     {data.name}
                   </a>

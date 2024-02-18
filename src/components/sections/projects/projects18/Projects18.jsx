@@ -17,12 +17,12 @@ const Projects = () => {
         <div>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-16">
             {projects18.cards.map((data) => (
-              <div className="space-y-3 border-2 border-gray-300 hover:border-[--primary-color] p-3 rounded-xl relative group">
+              <div className="space-y-3 border-2 border-gray-300 hover:border-[--primary18-color] p-3 rounded-xl relative group">
                 <div className="w-full h-[120px]">
                   <img src={data.image} alt="" className="w-full h-[120px] object-contain sm:translate-x-8 group-hover:sm:translate-x-16 duration-700" />
                 </div>
                 <div className="space-y-2">
-                  <h1 className="text-[--primary-color] font-semibold">{data.name}</h1>
+                  <h1 className="text-[--primary18-color] font-semibold">{data.name}</h1>
                   <div className="flex justify-between items-center text-xl font-semibold">
                     <p>{data.price}</p>
                     <a href="/#">{data.Details}</a>

@@ -4,8 +4,6 @@ import { useSelector } from "react-redux";
 
 
 
-
-// eslint-disable-next-line react/prop-types
 const Hero = ({ theme }) => {
   const { hero18 } = useSelector((state) => state.template18);
 
@@ -24,7 +22,7 @@ const Hero = ({ theme }) => {
             <p className="text-primary text-2xl font-serif">{hero18.smTitle}</p>
             <h1 className="text-5xl lg:text-7xl font-semibold font-serif">{hero18.title}</h1>
             <p>{hero18.Description} </p>
-            <button className="rounded-md bg-[--primary-color] hover:bg-[--primary-color-80] transition duration-500 py-2 px-6 text-black">
+            <button className="rounded-md bg-[--primary18-color] hover:bg-[--primary18-color-80] transition duration-500 py-2 px-6 text-black">
               {hero18.buttonText}
             </button>
           </div>
