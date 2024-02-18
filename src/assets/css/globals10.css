@@ -3,10 +3,100 @@
 @tailwind utilities;
 
 
-/* :root {
-    --primary: #1182c5;
-    --secondary:#2aa6df;
-}
-.design10-container{
 
-} */
+:root {
+  --primary10: rgb(19, 141, 197);
+  --white: rgb(255, 255, 255);
+  --black: rgb(0, 0, 0);
+  --grey: #777777;
+  --website10-color-1: rgb(228, 240, 247);
+  --website10-color-2: rgb(236, 209, 159);
+  --website10-color-3: rgb(211, 205, 230);
+  --website10-color-4: rgb(139, 196, 158);
+  --website10-color-5:  rgb(227, 235, 122);
+}
+/* txt style */
+.textHover:hover {
+  color: var(--primary10);
+}
+
+.textColor {
+  color: var(--black);
+}
+
+.textColor2 {
+  color: var(--white);
+}
+
+.paraColor {
+  color: var(--grey);
+}
+
+.smHeader {
+  background-color: var(--primary10);
+}
+
+.bgHover:hover {
+  background-color: var(--primary10);
+}
+/* ////////// */
+
+.testimonailBg {
+  background-color: var(--website10-color-1);
+}
+
+/* button style */
+
+.btnBg {
+  background-color: var(--primary10);
+}
+
+.btnTxt {
+  color: var(--white);
+}
+/* /////////////// */
+
+/* for feature10 style */
+.divIcon0 {
+  background-color: var(--website10-color-2);
+  display: flex;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  padding: 4px;
+  border-radius: 50%;
+}
+
+.divIcon1 {
+  background-color: var(--website10-color-3);
+  display: flex;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  padding: 4px;
+  border-radius: 50%;
+}
+
+.divIcon2 {
+  background-color: var(--website10-color-4);
+  display: flex;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  padding: 4px;
+  border-radius: 50%;
+}
+
+.divIcon3 {
+  background-color: var(--website10-color-5);
+  display: flex;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  padding: 4px;
+  border-radius: 50%;
+}
+/* //////// */
+
+
+

@@ -19,10 +19,12 @@ const Footer15 = () => {
               <img src={footer15[0].imgUrl.FaBehance} alt="Behance" style={{ width: "40px", height: "40px" }} />
             </a>
           </span>
-          {footer15[0].title.title1} <span className="foot15_2">{footer15[0].title.title2} </span>
-          {footer15[0].title.title3}
+          <span className="ml-[500px]">
+            <span className="foot15_1"> {footer15[0].title.title1}</span> <span className="foot15_2">{footer15[0].title.title2} </span>
+            <span className="foot15_3"> {footer15[0].title.title3}</span>
+          </span>
         </p>
-        <p className="text-[17px] foot15_4 font-bold">
+        <p className="text-[17px] foot15_4 font-bold ml-[600px]">
           {footer15[0].title.title4} <span className="foot15_5">{footer15[0].title.title5}</span>
         </p>
       </div>

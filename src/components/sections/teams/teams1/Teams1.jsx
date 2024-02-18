@@ -8,8 +8,7 @@ const Teams1 = () => {
 
   const handleCardClick = (member) => {
     // setSelectedMember(member);
-        setSelectedMember(member === selectedMember ? null : member);
-
+    setSelectedMember(member === selectedMember ? null : member);
   };
   return (
     <div className="team1 design-1">
@@ -17,7 +16,7 @@ const Teams1 = () => {
       <div className="team1-Card">
         <div className="team1-Card-main">
           {team.cards.map((member, index) => (
-            <div className="team1-Card-main-show" key={member.id} onClick={() => handleCardClick(member)}>
+            <div className="team1-Card-main-show" key={index} onClick={() => handleCardClick(member)}>
               <img className="team1-Card-main-img" src={member.imgUrl} alt={member.name} />
               {selectedMember && selectedMember.id === member.id && (
                 <div className="team1-Card-main-info slideUp">
@@ -42,4 +41,3 @@ const Teams1 = () => {
 };
 
 export default Teams1;
-

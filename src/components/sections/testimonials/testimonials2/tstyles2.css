@@ -1,12 +1,11 @@
-.swiper {
+/*
+#testimonials2 .swiper {
   width: 240px;
   height: auto;
-  /* align-items: center; */
-  /* justify-content: center; */
   padding: 0.1rem;
 }
 
-.swiper-slide {
+#testimonials2 .swiper-slide {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -16,18 +15,19 @@
   color: #fff;
 }
 
-.swiper-slide:nth-child(1n) {
+#testimonials2 .swiper-slide:nth-child(1n) {
   background-color: var(--color-2-primary);
 }
 
-.swiper-slide:nth-child(2n) {
+#testimonials2 .swiper-slide:nth-child(2n) {
   background-color: var(--color-2-primary);
 }
 
-.swiper-slide:nth-child(3n) {
+#testimonials2 .swiper-slide:nth-child(3n) {
   background-color: var(--color-2-primary);
 }
-.swiper-slide:hover {
+#testimonials2 .swiper-slide:hover {
   transition: var(--transition2);
   background-color: var(--color-2-bg);
 }
+*/

@@ -3,11 +3,8 @@ import { Link ,useNavigate} from "react-router-dom";
 import "./mainNav.css";
 import logo from "../../../assets/images/mainPageAssets/logo.svg";
 
-const MainNav = ({ loginState, setSignOUT }) => {
+const MainNav = ({ loginState, setSignOUT , toggleModal}) => {
   const navigate = useNavigate();
-  const toggleModal = () => {
-    document.querySelector(".modal-overlay").classList.toggle("closed");
-  };
   const signOutClick = () => {
     setSignOUT();
     navigate("/");

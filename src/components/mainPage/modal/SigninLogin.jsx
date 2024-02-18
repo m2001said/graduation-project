@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import LoginForm from "../modal/LoginForm.jsx";
 import SignUpForm from "../modal/SignUpForm.jsx";
 
-const SigninLogin = ({ setIsSignedIn }) => {
+const SigninLogin = ({ setIsSignedIn, toggleModal }) => {
   const [isLoginForm, setIsLoginForm] = useState(false);
 
   const toggleForm = () => {
@@ -10,7 +10,7 @@ const SigninLogin = ({ setIsSignedIn }) => {
   };
 
 
-  return isLoginForm ? <LoginForm toggleForm={toggleForm} handleSignIn={setIsSignedIn} /> : <SignUpForm toggleForm={toggleForm} />;
+  return isLoginForm ? <LoginForm toggleModal={toggleModal} toggleForm={toggleForm} handleSignIn={setIsSignedIn} /> : <SignUpForm toggleModal={toggleModal} toggleForm={toggleForm} />;
 };
 
 export default SigninLogin;
