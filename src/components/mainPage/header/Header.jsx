@@ -5,10 +5,8 @@ import "./header.css";
 import { Link } from "react-router-dom";
 import hero from "../../../assets/images/mainPageAssets/hero-min.svg";
 
-const toggleModal = () => {
-  document.querySelector(".modal-overlay").classList.toggle("closed");
-};
-const Header = ({ loginState }) => {
+
+const Header = ({ toggleModal }) => {
   useEffect(() => {
     AOS.init({
       duration: 1000,
@@ -28,7 +26,7 @@ const Header = ({ loginState }) => {
                 into reality in just a few clicks. From abstract concepts to fully developed websites, the future of web design starts here.
               </p>
               <button className="info-btn" onClick={toggleModal}>
-                {loginState ? <Link to={"designs"}>Generate your website</Link> : " Generate your website"}
+                Generate your website
               </button>
             </div>
             <div className="main-hero-image">
