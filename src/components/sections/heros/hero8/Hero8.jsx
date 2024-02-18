@@ -1,10 +1,13 @@
 import Header from "./Header";
 import React, { useEffect, useRef } from "react";
 import Image from "../../../../assets/images/images8/avatar.svg";
+import { useSelector } from "react-redux";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
 const Hero8 = () => {
+  const { hero } = useSelector((state) => state.template8);
+
   const scrollDirection = useRef("down");
 
   useEffect(() => {
@@ -47,29 +50,28 @@ const Hero8 = () => {
           <div className="flex flex-col lg:flex-row gap-y-8 lg:gap-x-14 lg:items-center">
             <div className="flex-1 text-center font-secondary lg:text-left">
               <h1 data-aos="fade-up" data-aos-duration="2000" className="text-[55px] font-bold leading-[0.8] lg:text-[110px]">
-                BEN{" "}
+                {hero.Name[0]}{" "}
                 <span data-aos="fade-up" data-aos-duration="2000">
-                  AIDEN
+                  {hero.Name[1]}
                 </span>
               </h1>
               <div data-aos="fade-up" data-aos-duration="2000" className="mb-6 text-[36px] lg:text-[60px] font-secondary font-semibold uppercase leading-[1]">
                 <span className="text-white mr-4" data-aos="fade-up" data-aos-duration="2000">
-                  I am a{" "}
+                  {hero.jop[0]}{" "}
                 </span>
                 <span data-aos="fade-up" data-aos-duration="2000" data-aos-delay="400" className="text-accent">
-                  <span>Developer</span>
+                  <span>{hero.jop[1]}</span>
                 </span>
               </div>
               <p data-aos="fade-up" data-aos-duration="2000" className="mb-8 max-w-lg mx-auto lg:mx-0">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia sequi vel tempora aut voluptatibus accusantium est voluptate perspiciatis omnis
-                assumenda.
+                {hero.description}
               </p>
               <div data-aos="fade-up" data-aos-duration="2000" className="flex max-w-max items-center gap-x-6 mb-12 mx-auto lg:mx-0">
                 <button data-aos="fade-up" data-aos-duration="2000" className="btn btn-lg">
-                  Contact me
+                  {hero.btnText}
                 </button>
                 <a href="#" data-aos="fade-up" data-aos-duration="2000" className="text-gradient btn-link">
-                  My portfolio
+                  {hero.linktext}
                 </a>
               </div>
               <div data-aos="fade-up" data-aos-duration="2000" className="flex text-[20px] gap-x-6 max-w-max mx-auto lg:mx-0">
