@@ -5,6 +5,8 @@ import { useSelector } from "react-redux";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
+// ... other imports ...
+
 const Hero8 = () => {
   const { hero } = useSelector((state) => state.template8);
 
@@ -75,19 +77,15 @@ const Hero8 = () => {
                 </a>
               </div>
               <div data-aos="fade-up" data-aos-duration="2000" className="flex text-[20px] gap-x-6 max-w-max mx-auto lg:mx-0">
-                <a href="#" style={{ cursor: "pointer" }}>
-                  🚀{/* Unicode character for Rocket */}
-                </a>
-                <a href="#" style={{ cursor: "pointer" }}>
-                  💻{/* Unicode character for Laptop */}
-                </a>
-                <a href="#" style={{ cursor: "pointer" }}>
-                  🎨{/* Unicode character for Palette */}
-                </a>
+                {hero.soialContact.map((socialContact, index) => (
+                  <a key={index} href="#" style={{ cursor: "pointer" }}>
+                    {socialContact}
+                  </a>
+                ))}
               </div>
             </div>
             <div data-aos="fade-down" data-aos-duration="2000" className="hidden lg:flex flex-1 max-w-[320px] lg:max-w-[482px]">
-              <img src={Image} alt="Image" />
+              <img src={hero.UrlImg} alt="Image" />
             </div>
           </div>
         </div>

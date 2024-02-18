@@ -3,34 +3,6 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { useSelector } from "react-redux";
 
-// services data
-const Data = [
-  {
-    name: "UI/UX Design",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui recusandae commodi obcaecati minus quibusdam laudantium sunt doloribus dicta quidem quas!",
-    link: "Learn more",
-  },
-  {
-    name: "Development",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui recusandae commodi obcaecati minus quibusdam laudantium sunt doloribus dicta quidem quas!",
-    link: "Learn more",
-  },
-  {
-    name: "Digital Marketing",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui recusandae commodi obcaecati minus quibusdam laudantium sunt doloribus dicta quidem quas!",
-    link: "Learn more",
-  },
-  {
-    name: "Product Branding",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui recusandae commodi obcaecati minus quibusdam laudantium sunt doloribus dicta quidem quas!",
-    link: "Learn more",
-  },
-];
-
 const Services8 = () => {
   const { Services } = useSelector((state) => state.template8);
 
@@ -67,7 +39,7 @@ const Services8 = () => {
           <div className="flex-1 " data-aos="fade-left" data-aos-duration="1200" data-aos-offset="300">
             {/* services list */}
             <div className="">
-              {Data.map((service, index) => {
+              {Services.Data.map((service, index) => {
                 // Destructure
 
                 return (

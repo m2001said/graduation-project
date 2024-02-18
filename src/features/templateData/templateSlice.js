@@ -31,28 +31,7 @@ const templateSlice = createSlice({
         },
       ],
     },
-    Work: {
-      title: "MY WORK.",
-      description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi laborum eius qui recusandae possimus. Dolorem quam illo impedit sunt fugiat",
-      btnText: "View all projects",
-      projects: [
-        {
-          UrlImg: "",
-          pretitle: "UI/UX Design",
-          title: "Project Title",
-        },
-        {
-          UrlImg: "",
-          pretitle: "UI/UX Design",
-          title: "Project Title",
-        },
-        {
-          UrlImg: "",
-          pretitle: "UI/UX Design",
-          title: "Project Title",
-        },
-      ],
-    },
+
     feature: {
       title: "We Create The Art Of Stylish Living Stylishly",
       description:

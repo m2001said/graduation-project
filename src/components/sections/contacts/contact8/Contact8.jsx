@@ -4,7 +4,7 @@ import "aos/dist/aos.css";
 import { useSelector } from "react-redux";
 
 const Contact8 = () => {
-  const { contact } = useSelector((state) => state.template8);
+  const { Contact } = useSelector((state) => state.template8);
 
   useEffect(() => {
     AOS.init({
