@@ -7,15 +7,11 @@ export const Education = () => {
 
   return (
     <div>
-      <div>
-        <div>
-          {cta15[0].cv
-            .filter((item) => item.category === "education")
-            .map((item) => (
-              <SingleItem key={item.id} {...item} />
-            ))}
-        </div>
-      </div>
+      {cta15[0].cv
+        .filter((item) => item.category === "education")
+        .map((item) => (
+          <SingleItem key={item.id} {...item} />
+        ))}
     </div>
   );
 };
@@ -25,15 +21,11 @@ export const Experience = () => {
 
   return (
     <div>
-      <div>
-        <div>
-          {cta15[0].cv
-            .filter((item) => item.category === "experience")
-            .map((item) => (
-              <SingleItem key={item.id} {...item} />
-            ))}
-        </div>
-      </div>
+      {cta15[0].cv
+        .filter((item) => item.category === "experience")
+        .map((item) => (
+          <SingleItem key={item.id} {...item} />
+        ))}
     </div>
   );
 };
