@@ -2,7 +2,7 @@
     background: #481b91;
 }
 
-.own-page  .group {
+.own-page .group {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     width: 80%;
@@ -26,6 +26,7 @@
     transform: translate(-50%, -100%);
     border-radius: 5px 5px 0px 0px;
     font-weight: bold;
+    font-size: 17px;
 }
 
 .own-page input {
@@ -94,9 +95,11 @@
     border-radius: 7px;
     color: white;
     transition: 0.4s;
+    font-size: 17px;
 }
 
 .own-page button.generate-own-btn:active {
     outline: solid 1px var(--color-3);
     outline-offset: 2px;
+    transform: scale(0.95);
 }
