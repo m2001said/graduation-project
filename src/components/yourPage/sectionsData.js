@@ -1,6 +1,6 @@
 const createData = (type, ids, images) => {
     return ids.map((id, index) => ({
-      id,
+      id:id,
       name: `${type}${id}`,
       image: images[index],
       type
