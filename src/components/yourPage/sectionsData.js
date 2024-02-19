@@ -12,14 +12,23 @@ export const heroData = [
     { id: 11, name: 'Hero11', image: "https://res.cloudinary.com/duc04fwdb/image/upload/v1708272889/jammal_photos/t85k0fzxmmb1aiujd9nh.jpg", type: 'Hero' },
 ];
 
-export const testimonialData = [
-    { id: 1, name: 'Testimonial1', image: "https://res.cloudinary.com/duc04fwdb/image/upload/v1708271703/jammal_photos/mwuj5ajidibzp8vwdtgq.jpg", type: 'Testimonial' },
-    { id: 2, name: 'Testimonial2', image: "https://res.cloudinary.com/duc04fwdb/image/upload/v1708271703/jammal_photos/mwuj5ajidibzp8vwdtgq.jpg", type: 'Testimonial' },
-    // ... other testimonial sections 
-    { id: 3, name: 'Testimonial3', image: "https://res.cloudinary.com/duc04fwdb/image/upload/v1708271703/jammal_photos/mwuj5ajidibzp8vwdtgq.jpg", type: 'Testimonial' },
-    { id: 6, name: 'Testimonial6', image: "https://res.cloudinary.com/duc04fwdb/image/upload/v1708271703/jammal_photos/mwuj5ajidibzp8vwdtgq.jpg", type: 'Testimonial' },
-    { id: 7, name: 'Testimonial7', image: "https://res.cloudinary.com/duc04fwdb/image/upload/v1708271703/jammal_photos/mwuj5ajidibzp8vwdtgq.jpg", type: 'Testimonial' },
-    { id: 11, name: 'Testimonial11', image: "https://res.cloudinary.com/duc04fwdb/image/upload/v1708271703/jammal_photos/mwuj5ajidibzp8vwdtgq.jpg", type: 'Testimonial' },
+export const ctaData = [
+    { id: 1, name: 'Cta1', image: "https://res.cloudinary.com/duc04fwdb/image/upload/v1708271703/jammal_photos/mwuj5ajidibzp8vwdtgq.jpg", type: 'Cta' },
+    { id: 2, name: 'Cta2', image: "https://res.cloudinary.com/duc04fwdb/image/upload/v1708271703/jammal_photos/mwuj5ajidibzp8vwdtgq.jpg", type: 'Cta' },
+    // ... other Cta sections 
+    { id: 3, name: 'Cta3', image: "https://res.cloudinary.com/duc04fwdb/image/upload/v1708271703/jammal_photos/mwuj5ajidibzp8vwdtgq.jpg", type: 'Cta' },
+    { id: 4, name: 'Cta4', image: "https://res.cloudinary.com/duc04fwdb/image/upload/v1708271703/jammal_photos/mwuj5ajidibzp8vwdtgq.jpg", type: 'Cta' },
+    { id: 5, name: 'Cta5', image: "https://res.cloudinary.com/duc04fwdb/image/upload/v1708271703/jammal_photos/mwuj5ajidibzp8vwdtgq.jpg", type: 'Cta' },
+    { id: 6, name: 'Cta6', image: "https://res.cloudinary.com/duc04fwdb/image/upload/v1708271703/jammal_photos/mwuj5ajidibzp8vwdtgq.jpg", type: 'Cta' },
+    { id: 7, name: 'Cta7', image: "https://res.cloudinary.com/duc04fwdb/image/upload/v1708271703/jammal_photos/mwuj5ajidibzp8vwdtgq.jpg", type: 'Cta' },
+    { id: 10, name: 'Cta10', image: "https://res.cloudinary.com/duc04fwdb/image/upload/v1708271703/jammal_photos/mwuj5ajidibzp8vwdtgq.jpg", type: 'Cta' },
+    { id: 11, name: 'Cta11', image: "https://res.cloudinary.com/duc04fwdb/image/upload/v1708271703/jammal_photos/mwuj5ajidibzp8vwdtgq.jpg", type: 'Cta' },
+];
+
+export const contactData = [
+    // ... other Cta sections 
+    { id: 4, name: 'Contact4', image: "https://res.cloudinary.com/duc04fwdb/image/upload/v1708271703/jammal_photos/mwuj5ajidibzp8vwdtgq.jpg", type: 'Contact' },
+    { id: 11, name: 'Contact11', image: "https://res.cloudinary.com/duc04fwdb/image/upload/v1708271703/jammal_photos/mwuj5ajidibzp8vwdtgq.jpg", type: 'Contact' },
 ];
 
 export const footerData = [

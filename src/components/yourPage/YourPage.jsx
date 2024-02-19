@@ -2,12 +2,12 @@ import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import "./yourPage.css";
 import InputsGroup from "./InputsGroup";
-import { heroData, testimonialData, footerData, navData } from "./sectionsData";
+import { heroData, ctaData, footerData, navData,contactData } from "./sectionsData";
 
 
 const YourPage = () => {
 
-  const sectionNames = ['hero', 'testimonial', 'footer', 'nav', 'feature', 'cta', 'pricing', 'project', 'service', 'team', 'statistic'];
+  const sectionNames = ['hero', 'testimonial', 'footer', 'nav', 'feature', 'cta', 'pricing', 'project', 'service', 'team', 'statistic','contact'];
   const [selectedIndices, setSelectedIndices] = useState(sectionNames.reduce((acc, curr) => ({ ...acc, [curr]: 1 }), {}));
 
   const navigate = useNavigate();
@@ -18,7 +18,7 @@ const YourPage = () => {
   };
 
   const handleSubmit = () => {
-    navigate('/own-page', { state: { heroIndexSelected: selectedIndices.hero, testimonialIndexSelected: selectedIndices.testimonial, footerIndexSelected: selectedIndices.footer, navIndexSelected: selectedIndices.nav } });
+    navigate('/own-page', { state: { heroIndexSelected: selectedIndices.hero, ctaIndexSelected: selectedIndices.cta, footerIndexSelected: selectedIndices.footer, navIndexSelected: selectedIndices.nav ,contactIndexSelected: selectedIndices.contact } });
   };
 
   return (
@@ -55,18 +55,30 @@ const YourPage = () => {
         </div>
 
         <div className="group">
-          <p className="title">Testimonial sections</p>
-          {testimonialData.map((testimonial) => (
+          <p className="title">Cta sections</p>
+          {ctaData.map((cta) => (
             <InputsGroup
-              key={testimonial.id}
-              data={testimonial}
-              selectedIndex={selectedIndices.testimonial}
-              handleIndexChange={handleIndexChange('testimonial')}
+              key={cta.id}
+              data={cta}
+              selectedIndex={selectedIndices.cta}
+              handleIndexChange={handleIndexChange('cta')}
             />
           ))}
         </div>
 
         <div className="group">
+          <p className="title">contact sections</p>
+          {contactData.map((contact) => (
+            <InputsGroup
+              key={contact.id}
+              data={contact}
+              selectedIndex={selectedIndices.contact}
+              handleIndexChange={handleIndexChange('contact')}
+            />
+          ))}
+        </div>
+
+         <div className="group">
           <p className="title">footer sections</p>
           {footerData.map((footer) => (
             <InputsGroup
