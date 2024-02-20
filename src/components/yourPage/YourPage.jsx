@@ -5,27 +5,9 @@ import InputsGroup from "./InputsGroup";
 import { heroData, ctaData, footerData, navData, contactData } from "./sectionsData";
 
 const YourPage = () => {
-  const defaultValues = {
-    'hero': 1,
-    'testimonial': 1,
-    'footer': 1,
-    'nav': 1,
-    'feature': 1,
-    'cta': 1,
-    'pricing': 1,
-    'project': 1,
-    'service': 1,
-    'team': 1,
-    'statistic': 1,
-    'contact': 4
-  };
+  const sectionNames = ['hero', 'testimonial', 'footer', 'nav', 'feature', 'cta', 'pricing', 'project', 'service', 'team', 'statistic', 'contact'];
+  const [selectedIndices, setSelectedIndices] = useState(Object.fromEntries(sectionNames.map(name => [name, undefined])));
   
-  const sectionNames = ['hero', 'testimonial', 'footer', 'nav', 'feature', 'cta', 'pricing', 'project', 'service', 'team', 'statistic','contact'];
-  const [selectedIndices, setSelectedIndices] = useState(
-    sectionNames.reduce((acc, curr) => {
-      return { ...acc, [curr]: defaultValues[curr] };
-    }, {})
-  );
 
   const navigate = useNavigate();
 
@@ -36,16 +18,17 @@ const YourPage = () => {
 
   const handleSubmit = () => {
     const selectedSections = {};
-
-    // Check if a section is selected before sending it
+  
+    // Check if a section is selected and not equal to the default value (undefined) before sending it
     sectionNames.forEach((section) => {
-      if (selectedIndices[section]) {
+      if (selectedIndices[section] !== undefined) {
         selectedSections[`${section}IndexSelected`] = selectedIndices[section];
       }
     });
-
+  
     navigate('/own-page', { state: selectedSections });
   };
+  
 
   return (
     <div className="own-page ">
