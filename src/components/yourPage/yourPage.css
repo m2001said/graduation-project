@@ -96,10 +96,10 @@
     color: white;
     transition: 0.4s;
     font-size: 17px;
+    outline: solid 1px var(--color-3);
 }
 
 .own-page button.generate-own-btn:active {
-    outline: solid 1px var(--color-3);
     outline-offset: 2px;
     transform: scale(0.95);
 }
