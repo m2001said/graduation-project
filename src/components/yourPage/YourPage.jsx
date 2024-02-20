@@ -2,11 +2,9 @@ import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import "./yourPage.css";
 import InputsGroup from "./InputsGroup";
-import { heroData, ctaData, footerData, navData,contactData } from "./sectionsData";
-
+import { heroData, ctaData, footerData, navData, contactData } from "./sectionsData";
 
 const YourPage = () => {
-
   const defaultValues = {
     'hero': 1,
     'testimonial': 1,
@@ -28,7 +26,7 @@ const YourPage = () => {
       return { ...acc, [curr]: defaultValues[curr] };
     }, {})
   );
-  
+
   const navigate = useNavigate();
 
   const handleIndexChange = (section) => (e) => {
@@ -37,7 +35,16 @@ const YourPage = () => {
   };
 
   const handleSubmit = () => {
-    navigate('/own-page', { state: { heroIndexSelected: selectedIndices.hero, ctaIndexSelected: selectedIndices.cta, footerIndexSelected: selectedIndices.footer, navIndexSelected: selectedIndices.nav ,contactIndexSelected: selectedIndices.contact } });
+    const selectedSections = {};
+
+    // Check if a section is selected before sending it
+    sectionNames.forEach((section) => {
+      if (selectedIndices[section]) {
+        selectedSections[`${section}IndexSelected`] = selectedIndices[section];
+      }
+    });
+
+    navigate('/own-page', { state: selectedSections });
   };
 
   return (
@@ -97,7 +104,7 @@ const YourPage = () => {
           ))}
         </div>
 
-         <div className="group">
+        <div className="group">
           <p className="title">footer sections</p>
           {footerData.map((footer) => (
             <InputsGroup
@@ -112,7 +119,6 @@ const YourPage = () => {
         <button className='generate-own-btn' onClick={handleSubmit}>Generate your website</button>
       </div>
     </div>
-
   );
 };
 
