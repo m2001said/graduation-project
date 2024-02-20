@@ -1,12 +1,13 @@
+/* eslint-disable react/jsx-pascal-case */
 import React from "react";
 import "../assets/css/globals14.css";
 import { useSelector } from "react-redux";
 
-import Navbar14 from "../components/sections/navbars/navbars14/Navbar14";
+import Navbar14 from "../components/sections/navbars/navbar14/Navbar14";
 import Hero14 from "../components/sections/heros/hero14/Hero14";
 import Items14 from "../components/sections/Items/items14/Items14";
 import Services14 from "../components/sections/services/services14/Services14";
-import Features14 from "../components/sections/features/features14/Feature14";
+import Features14 from "../components/sections/features/feature14/Feature14";
 import Projects14_1 from "../components/sections/projects/projects14_1/Projects14_1";
 import Projects14_2 from "../components/sections/projects/projects14_2/Projects14_2";
 import Logos14 from "../components/sections/logos/logos14/Logos14";
