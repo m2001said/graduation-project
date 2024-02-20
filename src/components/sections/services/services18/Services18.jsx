@@ -17,7 +17,7 @@ const Services = () => {
             {services18.blocks.map((data) => (
               <div
                 key={data.name}
-                className="card text-center group space-y-3 sm:space-y-6 p-4 sm:py-16 bg-[--dark18]  hover:bg-[--primary-color] duration-300 text-white hover:text-black rounded-lg"
+                className="card text-center group space-y-3 sm:space-y-6 p-4 sm:py-16 bg-[--dark18]  hover:bg-[--primary18-color] duration-300 text-white hover:text-black rounded-lg"
               >
                 <div className="grid place-items-center">
                   <img src={data.icon} alt="" className="w-8" />

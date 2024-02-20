@@ -6,7 +6,7 @@ import { useSelector } from "react-redux";
 const Footer18 = () => {
   const { footer18 } = useSelector((state) => state.template18);
   return (
-    <div className="bg-gray-100 dark:bg-dark mt-14 rounded-t-3xl">
+    <div className="bg-gray-100 dark:bg-[--dark18] mt-14 rounded-t-3xl">
       <section className="container18">
         <div className=" grid md:grid-cols-3 py-5">
           {/* company Details */}
@@ -39,7 +39,7 @@ const Footer18 = () => {
                 <ul className={`flex flex-col gap-3`}>
                   {item.links.map((link) => (
                     <a href=" " key={link}>
-                      <li className="cursor-pointer hover:translate-x-1 duration-300 hover:!text-[ --primary-color] space-x-1 text-gray-500 dark:text-gray-200">
+                      <li className="cursor-pointer hover:translate-x-1 duration-300 hover:!text-[ --primary18-color] space-x-1 text-gray-500 dark:text-gray-200">
                         {link}
                       </li>
                     </a>

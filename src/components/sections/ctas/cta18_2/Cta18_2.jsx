@@ -18,7 +18,7 @@ const Cta18_2 = () => {
             <div className="sm:grid sm:place-items-center">
               <a
                 href={cta18_2.link}
-                className="inline-block font-semibold py-2 px-6 bg-[--primary-color] text-white hover:bg-[--primary-color-80] duration-200 tracking-widest uppercase "
+                className="inline-block font-semibold py-2 px-6 bg-[--primary18-color] text-white hover:bg-[--primary18-color-80] duration-200 tracking-widest uppercase "
               >
                 {cta18_2.linkTxt}
               </a>

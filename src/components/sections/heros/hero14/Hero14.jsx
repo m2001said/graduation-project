@@ -21,9 +21,9 @@ const Hero14 = ({ handleOrderPopup }) => {
             {/* hero sec */}
             <Swiper
               spaceBetween={200}
-              //   pagination={{
-              //     clickable: true,
-              //   }}
+                pagination={{
+                  clickable: true,
+                }}
               modules={[Pagination]}
               className="mySwiper"
             >
@@ -40,7 +40,7 @@ const Hero14 = ({ handleOrderPopup }) => {
                       <div>
                         <button
                           onClick={handleOrderPopup}
-                          className={`bg-[--primary-color] text-white cursor-pointer hover:scale-105 duration-300 py-2 px-8 rounded-full relative z-10`}
+                          className={`bg-[--primary14-color] text-white cursor-pointer hover:scale-105 duration-300 py-2 px-8 rounded-full relative z-10`}
                         >
                           {hero14.buttonText}
                         </button>

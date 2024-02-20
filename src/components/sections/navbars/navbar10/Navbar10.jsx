@@ -31,7 +31,7 @@ const Navbar10 = ({ handleOrderPopup }) => {
                 ))}
 
                 {/* drop sec */}
-                <li className="group relative cursor-pointer">
+                {/* <li className="group relative cursor-pointer">
                   <div className="textHover flex h-[72px] items-center gap-[2px]">
                     {navbar10.DropdownTxt}
                     <a href="/#">
@@ -50,7 +50,7 @@ const Navbar10 = ({ handleOrderPopup }) => {
                       ))}
                     </ul>
                   </div>
-                </li>
+                </li> */}
               </ul>
               <button className="btnBg btnTxt hover:scale-105 duration-200 py-1 px-4 rounded-full flex items-center gap-3" onClick={() => handleOrderPopup()}>
                 {navbar10.buttonText}

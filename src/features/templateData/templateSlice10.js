@@ -5,22 +5,22 @@ const templateSlice10 = createSlice({
       title: "Books",
       icon: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1706798279/logo_rcge0a.png",
       links: ["Home", "Best Seller"],
-      DropdownTxt: "Quick Links",
-      DropdownIcon: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707774619/icons8-sort-down-30_yurjok.png",
-      DropdownLinks: [
-        {
-          name: "Trending Books",
-          link: "/#",
-        },
-        {
-          name: "Best Selling",
-          link: "/#",
-        },
-        {
-          name: "Authors",
-          link: "/#",
-        },
-      ],
+      // DropdownTxt: "Quick Links",
+      // DropdownIcon: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707774619/icons8-sort-down-30_yurjok.png",
+      // DropdownLinks: [
+      //   {
+      //     name: "Trending Books",
+      //     link: "/#",
+      //   },
+      //   {
+      //     name: "Best Selling",
+      //     link: "/#",
+      //   },
+      //   {
+      //     name: "Authors",
+      //     link: "/#",
+      //   },
+      // ],
       buttonText: "Order",
       buttonIcon: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1706806477/cart-shopping-shop-svgrepo-com_oxwiez.svg",
     },
