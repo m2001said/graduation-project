@@ -96,6 +96,11 @@ const templateSlice8 = createSlice({
     colors: {
       templateColors: ["#fff", "#cda274", "#292f36", "#f4f0ec", "#777777"],
     },
+    backgroundImage: {
+      site: "url('https://res.cloudinary.com/duc04fwdb/image/upload/v1708030305/jammal_photos/hfeutnseoqs0gsa2kx2u.jpg')",
+      about: "url('https://res.cloudinary.com/duc04fwdb/image/upload/v1708030938/jammal_photos/zxvali7en6j98kruxig5.png')",
+      services: "url('https://res.cloudinary.com/duc04fwdb/image/upload/v1708031587/jammal_photos/lidxpp6o8dtr95ajdv5t.png')",
+    },
   },
 
   name: "templateSlice8",

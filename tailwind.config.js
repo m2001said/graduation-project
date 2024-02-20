@@ -20,10 +20,6 @@ module.exports = {
       xl: "1200px",
     },
     extend: {
-      colors: {
-        primary: "#0a0a0a",
-        accent: "#B809C3",
-      },
       backgroundColor: {
         "1A2345": "#1A2345",
       },

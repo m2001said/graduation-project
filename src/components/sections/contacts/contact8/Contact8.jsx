@@ -27,11 +27,8 @@ const Contact8 = () => {
           {/* text */}
           <div className="flex-1 flex justify-center items-center" data-aos="fade-right" data-aos-duration="2000" data-aos-offset="300">
             <div className="">
-              <h4 className="text-xl uppercase text-accent font-medium mb-2 tracking-wide">Get in touch</h4>
-              <h2 className="text-[45px] lg:text-[90px] leading-none mb-12">
-                Let's work <br />
-                together!
-              </h2>
+              <h4 className="text-xl uppercase text-accent font-medium mb-2 tracking-wide">{Contact.subtitle}</h4>
+              <h2 className="text-[45px] lg:text-[90px] leading-none mb-12">{Contact.title}</h2>
             </div>
           </div>
           {/* form */}
@@ -55,7 +52,7 @@ const Contact8 = () => {
               className="bg-transparent border-b py-12 outline-none w-full placeholder:text-white focus:border-accent transition-all resize-none mb-12"
               placeholder="Your message"
             ></textarea>
-            <button className="btn btn-lg">Send message</button>
+            <button className="btn btn-lg">{Contact.btnText}</button>
           </form>
         </div>
       </div>

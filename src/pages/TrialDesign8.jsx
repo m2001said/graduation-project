@@ -6,6 +6,7 @@ import About8 from "../components/sections/AboutMe/About8";
 import Services8 from "../components/sections/services/services8/Services8";
 import Work8 from "../components/sections/teams/items8/item8";
 import Contact8 from "../components/sections/contacts/contact8/Contact8";
+
 const TrialDesign8 = () => {
   return (
     <div className="bg-site bg-no-repeat bg-cover overflow-hidden">
