@@ -7,8 +7,7 @@ import { heroData, ctaData, footerData, navData, contactData } from "./sectionsD
 const YourPage = () => {
   const sectionNames = ['hero', 'testimonial', 'footer', 'nav', 'feature', 'cta', 'pricing', 'project', 'service', 'team', 'statistic', 'contact'];
   const [selectedIndices, setSelectedIndices] = useState(Object.fromEntries(sectionNames.map(name => [name, undefined])));
-  
-
+  const [checkError, setCheckError] = useState(false);
   const navigate = useNavigate();
 
   const handleIndexChange = (section) => (e) => {
@@ -25,10 +24,16 @@ const YourPage = () => {
         selectedSections[`${section}IndexSelected`] = selectedIndices[section];
       }
     });
-  
-    navigate('/own-page', { state: selectedSections });
+
+    const selectedSectionCount = Object.values(selectedSections).filter(val => val !== undefined).length;
+
+    if (selectedSectionCount < 3) {
+      setCheckError(true);
+    } else {
+      setCheckError(false);
+      navigate('/own-page', { state: selectedSections });
+    }
   };
-  
 
   return (
     <div className="own-page ">
@@ -98,8 +103,8 @@ const YourPage = () => {
             />
           ))}
         </div>
-
         <button className='generate-own-btn' onClick={handleSubmit}>Generate your website</button>
+        {checkError && <p className='select-message'>Select at least 3 sections </p>}
       </div>
     </div>
   );
