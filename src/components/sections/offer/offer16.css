@@ -1,0 +1,117 @@
+.offer16 {
+  background: url(https://res.cloudinary.com/duc04fwdb/image/upload/v1708472806/jammal_photos/mjgepidhntphvebq5eff.png) center / cover fixed;
+  position: relative;
+}
+
+.offer16::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--hsla);
+}
+
+.offer16 .section__title16 {
+  position: relative;
+  z-index: 1;
+}
+
+.offer__item16 {
+  display: grid;
+  grid-template-columns: 7fr 5fr;
+  align-items: center;
+}
+
+.offer__img-wrapper16 {
+  margin-right: -5rem;
+}
+
+.offer__content16 {
+  background-color: var(--container-color);
+  padding: 3.75rem 2.25rem;
+  position: relative;
+}
+
+.offer__content16::before {
+  content: "";
+  position: absolute;
+  inset: 0.5rem;
+  border: 2px dashed var(--first-color);
+}
+
+.offer__img16,
+.offer__content16,
+.offer__content16::before {
+  border-radius: var(--radius);
+}
+
+.offer__title16 {
+  font-size: var(--h2-font-size);
+  margin-bottom: 1.25rem;
+}
+
+.offer_discount16 {
+  color: var(--title-color);
+  font-family: var(--second-font);
+  font-size: var(--large-font-size);
+  font-weight: var(--weight-500);
+}
+
+.offer__description16 {
+  margin-block: 0.5rem 1.5rem;
+}
+.swiper-button {
+  position: absolute;
+  top: 50%;
+  left: 10px; /* Adjust left positioning as needed */
+  transform: translateY(-50%);
+  background-color: #3498db;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.swiper-button:hover {
+  background-color: #2980b9;
+}
+.swiper-pagination16 {
+  position: initial;
+  margin-top: 2rem;
+}
+
+.swiper-pagination-bullet16 {
+  width: 16px;
+  height: 16px;
+  border: 3px solid var(--title-color);
+  background-color: transparent;
+  opacity: 1;
+}
+
+.swiper-pagination-bullet-active16 {
+  background-color: var(--first-color);
+}
+
+/* MEDIA QUERY */
+
+@media only screen and (max-width: 992px) {
+  .offer__title16 {
+    margin-bottom: 1rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .offer__item16 {
+    grid-template-columns: 1fr;
+  }
+  .offer__img-wrapper16 {
+    margin-right: 0;
+  }
+  .offer__img16 {
+    vertical-align: middle;
+  }
+}

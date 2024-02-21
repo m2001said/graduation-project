@@ -2,418 +2,357 @@ import { createSlice } from "@reduxjs/toolkit";
 const templateSlice16 = createSlice({
   initialState: {
     navbar: {
-      logo: "https://res.cloudinary.com/duc04fwdb/image/upload/v1706351943/jammal_photos/jicfizb2xdqr8hcgkmc4.png",
-      imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703095423/jammal_photos/x22ihnvjg9i0i40xtbo5.svg",
-      searchIcon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703095771/jammal_photos/kedw9coptwqkovrsssd1.svg",
-      shoppingIcon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703095842/jammal_photos/gehvutbyftfxemvoqmu8.svg",
-      menuIcon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703095877/jammal_photos/rwbeynsg3bftgrjqaqnf.svg",
-      links: ["Home", "About", "Menu", "Recipes", "Contact"],
+      logo: "https://res.cloudinary.com/duc04fwdb/image/upload/v1708464166/jammal_photos/pzfqcxfrr2cw4mvelbjd.png",
+      links: [
+        {
+          name: "Home",
+          path: "home",
+        },
+        {
+          name: "About",
+          path: "about",
+        },
+        {
+          name: "Features",
+          path: "features",
+        },
+        {
+          name: "Menu",
+          path: "menu",
+        },
+        {
+          name: "Gallery",
+          path: "gallery",
+        },
+        {
+          name: "Chefs",
+          path: "team",
+        },
+        {
+          name: "Testimonials",
+          path: "testimonials",
+        },
+      ],
     },
     hero: {
-      buttonText: "Explore Food",
-      sliderData: [
-        {
-          id: "01",
-          title: "Experience the Authentic Flavors",
-          desc: "Indulge in our simple and delicious dishes crafted with the finest ingredients. Your taste buds will thank you!",
-          imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703096681/jammal_photos/eukd4unr2l7mwyllvmi9.png",
-        },
-        {
-          id: "02",
-          title: "Bring Joy to Your Taste Buds",
-          desc: "At our restaurant, we believe good food leads to great smiles. Explore our menu and discover a world of culinary delight.",
-          imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703096719/jammal_photos/j7y2zx8aolnucnu25dl4.png",
-        },
-        {
-          id: "03",
-          title: "Savor Every Bite, Create Memories",
-          desc: "Meet, eat, and enjoy the true taste of happiness. Our diverse menu ensures there's something for everyone to relish and remember.",
-          imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703096745/jammal_photos/j97dbol3pzuleeccxwdt.png",
-        },
-      ],
+      subtitle: "Welcome To Coffero!",
+      title: "Discover Amazing Coffee House & Get Energy",
+      description:
+        "There are many variations of passages available but the majority have suffered alteration in some form by injected humour or randomised words.",
+      Link1: "Check Menu",
+      Link2: "Book Table",
     },
-    productcard: {
-      shoppingIcon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703095842/jammal_photos/gehvutbyftfxemvoqmu8.svg",
+    about: {
+      imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1708474752/jammal_photos/hcfbci9uogqgszxelae3.jpg",
+
+      title: "Fresh Quality And Organic Tasty Coffee House For You",
+      description:
+        "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't have look even slightly believable.",
+      details: ["At vero eos et accusamus et iusto odio", "Established fact that a reader will be distracted", "Sed ut perspiciatis unde omnis iste natus sit"],
+      buttonText: "Our Experts",
     },
-    FilterItems: {
-      fastFoodProducts: [
-        {
-          id: "05",
-          title: "Burger",
-          price: 95,
-          imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703099049/jammal_photos/nw1126s6ntsb3o2ohs3s.png",
-        },
-        {
-          id: "06",
-          title: "Chicken",
-          price: 250,
-          imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703099049/jammal_photos/nw1126s6ntsb3o2ohs3s.png",
-        },
-        {
-          id: "07",
-          title: "Grill Chicken",
-          price: 195,
-          imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703099049/jammal_photos/nw1126s6ntsb3o2ohs3s.png",
-        },
-        {
-          id: "08",
-          title: "Barbeque",
-          price: 275,
-          imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703099049/jammal_photos/nw1126s6ntsb3o2ohs3s.png",
-        },
-        {
-          id: "09",
-          title: "Pizza",
-          price: 275,
-          imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703099049/jammal_photos/nw1126s6ntsb3o2ohs3s.png",
-        },
-        {
-          id: "10",
-          title: "Burger",
-          price: 95,
-          imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703099049/jammal_photos/nw1126s6ntsb3o2ohs3s.png",
-        },
-        {
-          id: "11",
-          title: "Chicken",
-          price: 250,
-          imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703099049/jammal_photos/nw1126s6ntsb3o2ohs3s.png",
-        },
-        {
-          id: "12",
-          title: "Grill Chicken",
-          price: 195,
-          imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703099049/jammal_photos/nw1126s6ntsb3o2ohs3s.png",
-        },
-      ],
-      riceMenuProducts: [
-        {
-          id: "12",
-          title: "Fried Rice",
-          price: 95,
-          imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703099126/jammal_photos/t6olygisps4ufz02fezk.png",
-        },
-        {
-          id: "14",
-          title: "Vegetable",
-          price: 250,
-          imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703099126/jammal_photos/t6olygisps4ufz02fezk.png",
-        },
-        {
-          id: "15",
-          title: "Vegetable",
-          price: 195,
-          imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703099126/jammal_photos/t6olygisps4ufz02fezk.png",
-        },
-        {
-          id: "16",
-          title: "Meal",
-          price: 275,
-          imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703099126/jammal_photos/t6olygisps4ufz02fezk.png",
-        },
-        {
-          id: "17",
-          title: "Fried Rice",
-          price: 95,
-          imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703099126/jammal_photos/t6olygisps4ufz02fezk.png",
-        },
-        {
-          id: "18",
-          title: "Vegetable",
-          price: 250,
-          imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703099126/jammal_photos/t6olygisps4ufz02fezk.png",
-        },
-        {
-          id: "19",
-          title: "Vegetable",
-          price: 195,
-          imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703099126/jammal_photos/t6olygisps4ufz02fezk.png",
-        },
-        {
-          id: "20",
-          title: "Meal",
-          price: 275,
-          imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703099126/jammal_photos/t6olygisps4ufz02fezk.png",
-        },
-      ],
-      dessertProducts: [
-        {
-          id: "21",
-          title: "Whipped Cream",
-          price: 50,
-          imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703099235/jammal_photos/mwphxi7ujoec1c2krana.png",
-        },
-        {
-          id: "22",
-          title: "Cake Cream",
-          price: 50,
-          imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703098853/jammal_photos/zuclkds0uufzktzfeien.png",
-        },
-        {
-          id: "23",
-          title: "Cake",
-          price: 50,
-          imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703099235/jammal_photos/mwphxi7ujoec1c2krana.png",
-        },
-        {
-          id: "24",
-          title: "Cup Cake",
-          price: 275,
-          imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703099335/jammal_photos/why415hwonyxffn1cyon.png",
-        },
-        {
-          id: "25",
-          title: "Whipped Cream",
-          price: 50,
-          imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703099235/jammal_photos/mwphxi7ujoec1c2krana.png",
-        },
-        {
-          id: "26",
-          title: "Cake Cream",
-          price: 50,
-          imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703098853/jammal_photos/zuclkds0uufzktzfeien.png",
-        },
-        {
-          id: "27",
-          title: "Cake",
-          price: 50,
-          imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703099235/jammal_photos/mwphxi7ujoec1c2krana.png",
-        },
-        {
-          id: "28",
-          title: "Cup Cake",
-          price: 275,
-          imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703099335/jammal_photos/why415hwonyxffn1cyon.png",
-        },
-      ],
-      pizzaProducts: [
-        {
-          id: "29",
-          title: "Pizza",
-          price: 95,
-          imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703098919/jammal_photos/bvipjezk42alazv5roew.png",
-        },
-        {
-          id: "30",
-          title: "Pizza",
-          price: 95,
-          imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703098919/jammal_photos/bvipjezk42alazv5roew.png",
-        },
-        {
-          id: "31",
-          title: "Pizza",
-          price: 95,
-          imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703098919/jammal_photos/bvipjezk42alazv5roew.png",
-        },
-        {
-          id: "32",
-          title: "Pizza",
-          price: 95,
-          imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703098919/jammal_photos/bvipjezk42alazv5roew.png",
-        },
-        {
-          id: "33",
-          title: "Pizza",
-          price: 95,
-          imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703098919/jammal_photos/bvipjezk42alazv5roew.png",
-        },
-        {
-          id: "34",
-          title: "Pizza",
-          price: 95,
-          imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703098919/jammal_photos/bvipjezk42alazv5roew.png",
-        },
 
-        {
-          id: "35",
-          title: "Pizza",
-          price: 95,
-          imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703098919/jammal_photos/bvipjezk42alazv5roew.png",
-        },
-        {
-          id: "36",
-          title: "Pizza",
-          price: 95,
-          imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703098919/jammal_photos/bvipjezk42alazv5roew.png",
-        },
-      ],
-      coffeeProducts: [
-        {
-          id: "37",
-          title: "Hot Coffee",
-          price: 20,
-          imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703099401/jammal_photos/tb2lmnbq0imabiyxzsub.png",
-        },
-        {
-          id: "38",
-          title: "Cold Coffee",
-          price: 20,
-          imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703099401/jammal_photos/tb2lmnbq0imabiyxzsub.png",
-        },
-        {
-          id: "39",
-          title: "Black Coffee",
-          price: 20,
-          imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703099401/jammal_photos/tb2lmnbq0imabiyxzsub.png",
-        },
-        {
-          id: "40",
-          title: "White Coffee",
-          price: 95,
-          imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703099401/jammal_photos/tb2lmnbq0imabiyxzsub.png",
-        },
-        {
-          id: "41",
-          title: "Hot Coffee",
-          price: 20,
-          imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703099401/jammal_photos/tb2lmnbq0imabiyxzsub.png",
-        },
-        {
-          id: "42",
-          title: "Cold Coffee",
-          price: 20,
-          imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703099401/jammal_photos/tb2lmnbq0imabiyxzsub.png",
-        },
-
-        {
-          id: "43",
-          title: "Black Coffee",
-          price: 20,
-          imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703099401/jammal_photos/tb2lmnbq0imabiyxzsub.png",
-        },
-        {
-          id: "44",
-          title: "White Coffee",
-          price: 95,
-          imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703099401/jammal_photos/tb2lmnbq0imabiyxzsub.png",
-        },
-      ],
-    },
-    CartItems: {
-      Title: "Popular food menu",
-      popularMenuFood: [
-        {
-          id: "01",
-          title: "Vegetable",
-          price: 25,
-          imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703098596/jammal_photos/n4r8kzctvhbymxmmydhq.png",
-        },
-        {
-          id: "02",
-          title: "Chicken",
-          price: 250,
-          imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703098694/jammal_photos/rbtige8oucnpqluq3b5j.png",
-        },
-
-        {
-          id: "03",
-          title: "Whipped Cream",
-          price: 45,
-          imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703098853/jammal_photos/zuclkds0uufzktzfeien.png",
-        },
-
-        {
-          id: "04",
-          title: "Pizza",
-          price: 75,
-          imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703098919/jammal_photos/bvipjezk42alazv5roew.png",
-        },
-      ],
-    },
     feature: {
-      title: "Who we are?",
-      imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703103180/jammal_photos/afcfogeancctcy4nhsfn.png",
-      description: "Take a look at the benefits we offer you",
-      info: "we prioritize your satisfaction. Our commitment to excellence is evident in the benefits we offer. ",
-      cards: [
+      title: "Our Best Features",
+      imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1708479391/jammal_photos/wscmwomccmc5jdnbwidf.png",
+      data: [
         {
-          icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703103379/jammal_photos/wvvtn9lgn5k84md2jhtm.svg",
-          title: "Free Home Delivery",
-          description: "Enjoy free and timely home delivery. ",
+          id: 1,
+          img: "	https://res.cloudinary.com/duc04fwdb/image/upload/v1708478670/jammal_photos/ozb5izm9qn6poltumpwv.svg",
+          title: "Free Shipping",
+          description: "It is a long established fact that a reader will be by the readable content of a page looking at its layout.",
         },
         {
-          icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703103489/jammal_photos/rihmvtglekzcmjdavtbm.svg",
-          title: "Return & Refund",
-          description: "We guarantee a hassle-free return and refund process. ",
+          id: 2,
+          img: "https://res.cloudinary.com/duc04fwdb/image/upload/v1708478739/jammal_photos/leroe6brdemdsshw6dkw.svg",
+          title: "Organic Certified",
+          description: "It is a long established fact that a reader will be by the readable content of a page looking at its layout.",
         },
         {
-          icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703103560/jammal_photos/k3irnc1fhkmugeekjbol.svg",
-          title: "Secure Payment",
-          description: "Your transactions are securely processed. ",
+          id: 3,
+          img: "	https://res.cloudinary.com/duc04fwdb/image/upload/v1708478826/jammal_photos/ohmjqysziwtxnl2vn7it.svg",
+          title: "High Quality",
+          description: "It is a long established fact that a reader will be by the readable content of a page looking at its layout.",
         },
         {
-          icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703103423/jammal_photos/legalyoxmyba3arp5n3p.svg",
-          title: "24/7 Hours Support",
-          description: "We are here for you round the clock. ",
+          id: 4,
+          img: "https://res.cloudinary.com/duc04fwdb/image/upload/v1708478897/jammal_photos/q8ejj4bvar3fmxom1yft.svg",
+          title: "Proper Roasting",
+          description: "It is a long established fact that a reader will be by the readable content of a page looking at its layout.",
         },
       ],
     },
+    Gallary: {
+      gallerydata: [
+        {
+          id: 1,
+          img: "https://res.cloudinary.com/duc04fwdb/image/upload/v1708538315/jammal_photos/vma52kyndc9kydhebbww.jpg",
+          title: "Cappuccino Arabica",
+        },
+        {
+          id: 2,
+          img: "	https://res.cloudinary.com/duc04fwdb/image/upload/v1708538390/jammal_photos/v0my6mfbimgsggvwl8bk.jpg",
+          title: "Cappuccino Arabica",
+        },
+        {
+          id: 3,
+          img: "	https://res.cloudinary.com/duc04fwdb/image/upload/v1708538453/jammal_photos/v6l5xiezr7nzs69nufwf.jpg",
+          title: "Cappuccino Arabica",
+        },
+        {
+          id: 4,
+          img: "	https://res.cloudinary.com/duc04fwdb/image/upload/v1708538524/jammal_photos/qtouornendbwkjyambyg.jpg",
+          title: "Cappuccino Arabica",
+        },
+        {
+          id: 5,
+          img: "https://res.cloudinary.com/duc04fwdb/image/upload/v1708538585/jammal_photos/vteshmmqcgso0krkoaev.jpg",
+          title: "Cappuccino Arabica",
+        },
+        {
+          id: 6,
+          img: "	https://res.cloudinary.com/duc04fwdb/image/upload/v1708538453/jammal_photos/v6l5xiezr7nzs69nufwf.jpg",
+          title: "Cappuccino Arabica",
+        },
+      ],
+    },
+    Menu: {
+      menudata: [
+        {
+          id: 1,
+          img: "https://res.cloudinary.com/duc04fwdb/image/upload/v1708539082/jammal_photos/fk4qk2x6enbuflmobk3f.jpg",
+          title: "Americano Coffee",
+          description: "Milk with vanilla flavored",
+          price: 50.25,
+        },
+        {
+          id: 2,
+          img: "https://res.cloudinary.com/duc04fwdb/image/upload/v1708539149/jammal_photos/vxty3khh0dg6diuvtkyr.jpg",
+          title: "Cappuccino Arabica",
+          description: "Milk with vanilla flavored",
+          price: 70.25,
+        },
+        {
+          id: 3,
+          img: "https://res.cloudinary.com/duc04fwdb/image/upload/v1708539214/jammal_photos/nhy4fuc3aprted46zsri.jpg",
+          title: "Milk Cream Coffee",
+          description: "Milk with vanilla flavored",
+          price: 30.25,
+        },
+        {
+          id: 4,
+          img: "	https://res.cloudinary.com/duc04fwdb/image/upload/v1708539264/jammal_photos/t7lekgob4ens8rp487ml.jpg",
+          title: "Special Raw Coffee",
+          description: "Milk with vanilla flavored",
+          price: 80.25,
+        },
+        {
+          id: 5,
+          img: "	https://res.cloudinary.com/duc04fwdb/image/upload/v1708539326/jammal_photos/awnuzrxfhs0mkm8rsiyb.jpg",
+          title: "Fresh Black Coffee",
+          description: "Milk with vanilla flavored",
+          price: 90.25,
+        },
+        {
+          id: 6,
+          img: "https://res.cloudinary.com/duc04fwdb/image/upload/v1708539385/jammal_photos/kwk22ufefvalgr2xc8c7.jpg",
+          title: "Cappuccino Arabica",
+          description: "Milk with vanilla flavored",
+          price: 70.25,
+        },
+        {
+          id: 7,
+          img: "https://res.cloudinary.com/duc04fwdb/image/upload/v1708539589/jammal_photos/rfuzwhd1kjps1urpjbhd.jpg",
+          title: "Milk Cream Coffee",
+          description: "Milk with vanilla flavored",
+          price: 120.25,
+        },
+        {
+          id: 8,
+          img: "https://res.cloudinary.com/duc04fwdb/image/upload/v1708539796/jammal_photos/t1rctyrr8uszseyror1n.jpg",
+          title: "Cold Coffee",
+          description: "Milk with vanilla flavored",
+          price: 40.25,
+        },
+      ],
+    },
+    Choose: {
+      title: "Coffero Most Out Of Your Favorite & Tasty Coffe House",
+      description:
+        "There ara many variations of passages of Lorem Ipsum available but the majority have suffered alteration in some form by injected humour or randomised words which don't look even slightly believable.",
+
+      details: [
+        {
+          img: "	https://res.cloudinary.com/duc04fwdb/image/upload/v1708544662/jammal_photos/vmpmyjso1fy8iwc2mxzv.svg",
+          title: "Awesome Aroma",
+          description: "There ara many variations of passages of Lorem Ipsum available but the majority have suffered alteration in some injected",
+        },
+        {
+          img: "https://res.cloudinary.com/duc04fwdb/image/upload/v1708544732/jammal_photos/og60dt6hamluqmlyyi5u.svg",
+          title: "Pure Grades",
+          description: "There ara many variations of passages of Lorem Ipsum available but the majority have suffered alteration in some injected",
+        },
+        {
+          img: "https://res.cloudinary.com/duc04fwdb/image/upload/v1708544772/jammal_photos/dy9d7lt86x0uykpf3fdk.svg",
+          title: "Healthy Coffee",
+          description: "There ara many variations of passages of Lorem Ipsum available but the majority have suffered alteration in some injected",
+        },
+      ],
+      chooseImg: "https://res.cloudinary.com/duc04fwdb/image/upload/v1708544842/jammal_photos/s39yk1hre9kt36flguug.jpg",
+    },
+    Statistics: {
+      statsData: [
+        {
+          img: "https://res.cloudinary.com/duc04fwdb/image/upload/v1708549772/jammal_photos/cdulhjzrscft50xc9qpq.svg",
+          number: "1500",
+          title: "+ Total Branches",
+        },
+        {
+          img: "https://res.cloudinary.com/duc04fwdb/image/upload/v1708549772/jammal_photos/cdulhjzrscft50xc9qpq.svg",
+          number: "250",
+          title: "+ Happy Customers",
+        },
+        {
+          img: "https://res.cloudinary.com/duc04fwdb/image/upload/v1708549859/jammal_photos/fxwoqrv32nrigcejyzl9.svg",
+          number: "120",
+          title: "+ Professional Chefs",
+        },
+        {
+          img: "https://res.cloudinary.com/duc04fwdb/image/upload/v1708549982/jammal_photos/lh9hadm3hvwv9zduqhm3.svg",
+          number: "50",
+          title: "+ Years Experience",
+        },
+      ],
+    },
+    Teams: {
+      title: "Meet Our Experts",
+      teamMembers: [
+        {
+          name: "Melissa Fie",
+          job: "Senior Chef",
+          img: "	https://res.cloudinary.com/duc04fwdb/image/upload/v1708549637/jammal_photos/xg3omldwwfpdgfrmhzub.jpg",
+        },
+        {
+          name: "Chad Smith",
+          job: "Senior Chef",
+          img: "https://res.cloudinary.com/duc04fwdb/image/upload/v1708549709/jammal_photos/nbrapiqruszc048xe8rx.jpg",
+        },
+        {
+          name: "Arron Rodri",
+          job: "Senior Chef",
+          img: "	https://res.cloudinary.com/duc04fwdb/image/upload/v1708549637/jammal_photos/xg3omldwwfpdgfrmhzub.jpg",
+        },
+        {
+          name: "Annie Pinto",
+          job: "Senior Chef",
+          img: "https://res.cloudinary.com/duc04fwdb/image/upload/v1708549709/jammal_photos/nbrapiqruszc048xe8rx.jpg",
+        },
+      ],
+      socials: [
+        { icon: "🌐", url: "https://facebook.com" },
+        { icon: "🐦", url: "https://twitter.com" },
+        { icon: "🔗", url: "https://linkedin.com" },
+        { icon: "▶️", url: "https://youtube.com" },
+      ],
+    },
+    Offer: {
+      title: "Special Offer For You",
+      btnOffer: "Order now ",
+      offerdata: [
+        {
+          id: 1,
+          img: "	https://res.cloudinary.com/duc04fwdb/image/upload/v1708546231/jammal_photos/oeale2ff1q06wkwmxled.jpg",
+          title: "Cappuccino Arabica",
+          discount: "Get 40% Offer",
+          description:
+            "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its normal distribution layout.",
+        },
+        {
+          id: 2,
+          img: "https://res.cloudinary.com/duc04fwdb/image/upload/v1708546311/jammal_photos/a0mnlnag2gk47lndpv94.jpg",
+          title: "Cappuccino Arabica",
+          discount: "Get 40% Offer",
+          description:
+            "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its normal distribution layout.",
+        },
+      ],
+    },
+    Rezervation: {
+      title: "Book A Table",
+      btnTable: "Book A Table",
+      shape2: "	https://res.cloudinary.com/duc04fwdb/image/upload/v1708555056/jammal_photos/irqxlw9ph3hzp28ipfv9.png",
+      shape3: "https://res.cloudinary.com/duc04fwdb/image/upload/v1708555103/jammal_photos/vsurnwxgmf1bvfbgr5hu.png",
+    },
+
     testimonial: {
-      title: "What our customers are saying",
-      imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703093874/jammal_photos/dwbzkjuoel7mlgqohppt.png",
-      cards: [
+      testimonialsdata: [
         {
-          content: "I'm impressed with the professionalism and quality of service. The team delivered beyond my expectations!",
-          name: "Alice Johnson",
-          role: "Marketing Manager",
+          id: 1,
+          img: "https://res.cloudinary.com/duc04fwdb/image/upload/v1708545949/jammal_photos/kjcpvqovfxziihn6firi.jpg",
+          title: "Reid E Butt",
+          service: "Customer",
+          description:
+            "There are many variations passages of the available but the majority have suffered to the alteration in some form by injected of humour or randomised words.",
         },
         {
-          content: "Great experience working with this company. The attention to detail and dedication of the team is commendable.",
-          name: "Bob Smith",
-          role: "Business Owner",
+          id: 2,
+          img: "https://res.cloudinary.com/duc04fwdb/image/upload/v1708546033/jammal_photos/lut9zyvwnctqytyriih9.jpg",
+          title: "Parker Jimenez",
+          service: "Customer",
+          description:
+            "There are many variations passages of the available but the majority have suffered to the alteration in some form by injected of humour or randomised words.",
         },
         {
-          content: "The website they developed for us not only looks fantastic but also performs exceptionally well. Highly recommended!",
-          name: "Emily Davis",
-          role: "UX Designer",
+          id: 3,
+          img: "https://res.cloudinary.com/duc04fwdb/image/upload/v1708546089/jammal_photos/o9shd85cnsznypdcrf6k.jpg",
+          title: "Sylvia H Green",
+          service: "Customer",
+          description:
+            "There are many variations passages of the available but the majority have suffered to the alteration in some form by injected of humour or randomised words.",
+        },
+        {
+          id: 4,
+          img: "https://res.cloudinary.com/duc04fwdb/image/upload/v1708546154/jammal_photos/gxevdg3quyvcmcnrqoxh.jpg",
+          title: "Gordon D Novak",
+          service: "Customer",
+          description:
+            "There are many variations passages of the available but the majority have suffered to the alteration in some form by injected of humour or randomised words.",
         },
       ],
     },
-    cta: {
-      title: "Download our app",
-      description: " Never Feel Hungry! Download Our Mobile App Order Delicious Food",
-      info: "Experience the convenience of our mobile app, ensuring you never go hungry, Download now to order delicious food anytime, anywhere. ",
-      imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703105732/jammal_photos/lldrbchcloecmarn2bep.png",
-      googleButton: {
-        title: "Google Play",
-        icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703106187/jammal_photos/bm7fqpnzrwtkawffbci3.svg",
-      },
-      appleButton: {
-        title: "Apple Store",
-        icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703106097/jammal_photos/gmyir4uguaz6ejvw3s3t.svg",
-      },
-    },
+
     footer: {
-      logo: "https://res.cloudinary.com/duc04fwdb/image/upload/v1706351943/jammal_photos/jicfizb2xdqr8hcgkmc4.png",
-      imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703095423/jammal_photos/x22ihnvjg9i0i40xtbo5.svg",
-      description: "It is a long established fact that a reader will be distracted lookings.",
-      copyright: "copyright 2022, developed by ana. All rights reserved",
-      infoLinks: {
-        title: "Info Links",
-        content: ["Terms & Conditions", "Privacy Policy", "Return & Refund", "Payment Method"],
-      },
-      quickLinks: {
-        title: "Quick Links",
-        content: ["About Us", "Menu", "Recips", "Contact"],
-        links: ["About", "Menu", "Recipes", "Contact"],
-      },
-      contact: {
-        title: "Contact",
-        content: [
-          {
-            title: "Sylhet, Bangladesh",
-            icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703108316/jammal_photos/oe8rjvrg0ckgohix2b6v.svg",
-          },
-          {
-            title: "example@gmail.com",
-            icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703108228/jammal_photos/opdhewds9do1znaaj5li.svg",
-          },
-          {
-            title: "+880 123 456 7890",
-            icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703108367/jammal_photos/y2583eh76th902gnzlje.svg",
-          },
-        ],
-      },
+      description:
+        "We are many variations of passages available, but the majority have suffered alteration in some form by injected humour words which don't look even slightly believable.",
+      logo: "	https://res.cloudinary.com/duc04fwdb/image/upload/v1708556947/jammal_photos/ddhmuvn3h3rycioxyiyd.png",
+      contactInfo: [
+        { icon: "☎", text: "+2 123 654 7898" },
+        { icon: "📍", text: "25/B Milford Road, New York" },
+        { icon: "✉", text: "info@example.com" },
+      ],
+      quickLinks: [
+        { text: "About Us", link: "#about" },
+        { text: "Menu", link: "#menu" },
+        { text: "Features", link: "#features" },
+        { text: "Gallery", link: "#gallery" },
+        { text: "Team", link: "#team" },
+        { text: "Reservation", link: "#reservation" },
+      ],
+      openingHours: [
+        { day: "Saturday", time: "09AM - 06PM" },
+        { day: "Monday", time: "09AM - 06PM" },
+        { day: "Tuesday", time: "09AM - 06PM" },
+        { day: "Wednesday", time: "09AM - 06PM" },
+        { day: "Thursday", time: "09AM - 06PM" },
+        { day: "Friday", time: "09AM - 06PM" },
+        { day: "Sunday", time: "Closed" },
+      ],
+      socialLinks: [
+        { icon: "📱", link: "https://www.facebook.com/" },
+        { icon: "📷", link: "https://www.instagram.com/" },
+        { icon: "🐦", link: "https://twitter.com/" },
+        { icon: "🔗", link: "https://www.linkedin.com/" },
+      ],
     },
     colors: {
       templateColors: ["#fff", "#cda274", "#292f36", "#f4f0ec", "#777777"],
