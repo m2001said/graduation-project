@@ -7,7 +7,7 @@ const Statistics16 = () => {
 
   return (
     <section className="stats16 section16">
-      <div className="stats__grid16 container grid16">
+      <div className="stats__grid16 container16 grid16">
         {Statistics.statsData.map((stat, index) => (
           <div className="stats__item16" key={index}>
             <div className="stats__img-wrapper16">
