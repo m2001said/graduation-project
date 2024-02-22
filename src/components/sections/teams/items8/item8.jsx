@@ -21,6 +21,11 @@ const Work8 = () => {
   return (
     <section className="section8" id="work">
       <div className="container mx-auto">
+        <div>
+          <h2 className="h2 leading-tight text-accent">{work.title}</h2>
+          <p className="max-w-sm mb-16">{work.description}</p>
+          <button className="btn btn-sm mb-4">{work.btnText}</button>
+        </div>
         <div className="flex flex-col lg:flex-row gap-x-10">
           {work.projects.map((project, index) => (
             <div
@@ -31,11 +36,7 @@ const Work8 = () => {
               data-aos-offset="300"
             >
               {/* text */}
-              <div>
-                <h2 className="h2 leading-tight text-accent">{work.title}</h2>
-                <p className="max-w-sm mb-16">{work.description}</p>
-                <button className="btn btn-sm">{work.btnText}</button>
-              </div>
+
               {/* Image */}
               <div className="overflow-hidden group relative border-2 border-white/50 rounded-xl">
                 <div>

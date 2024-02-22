@@ -67,14 +67,14 @@ const About8 = () => {
                 </div>
               </div>
               <div>
-                <div className="text-[40px] font-tertiary text-gradient mb-2">{inView ? about.numbers[1] : null}+</div>
+                <div className="text-[40px] font-tertiary text-gradient mb-2">{inView ? about.numbers[1] : null}</div>
                 <div className="font-primary text-sm tracking-[2px]">
                   <span>{about.type[1]}</span>
                   <br /> {about.typeOfExpericnce[1]}
                 </div>
               </div>
               <div>
-                <div className="text-[40px] font-tertiary text-gradient mb-2">{inView ? about.numbers[2] : null}+</div>
+                <div className="text-[40px] font-tertiary text-gradient mb-2">{inView ? about.numbers[2] : null}</div>
                 <div className="font-primary text-sm tracking-[2px]">
                   <span>{about.type[2]}</span>
                   <br /> {about.typeOfExpericnce[2]}
