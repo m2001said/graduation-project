@@ -34,9 +34,9 @@ const Services8 = () => {
               backgroundImage: `url(${Services.UrlImg})`,
             }}
           >
-            <h2 className="h2 text-accent mb-6">{Services.title}</h2>
-            <h3 className="h3 max-w-[455px] mb-16">{Services.titleDescription}</h3>
-            <button className="btn btn-sm">{Services.btnText}</button>
+            <h2 className="h2 text-accent mb-6 serviceC">{Services.title}</h2>
+            <h3 className="h3 max-w-[455px] mb-16 serviceC">{Services.titleDescription}</h3>
+            <button className="btn btn-sm serviceC">{Services.btnText}</button>
           </div>
           {/* services */}
           <div className="flex-1 " data-aos="fade-left" data-aos-duration="1200" data-aos-offset="300">

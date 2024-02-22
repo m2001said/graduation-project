@@ -53,7 +53,7 @@ const About8 = () => {
             }}
           ></div>
           {/* text */}
-          <div className="flex-1" data-aos="fade-left" data-aos-duration="1200" data-aos-offset="300">
+          <div className="flex-1 " data-aos="fade-left" data-aos-duration="1200" data-aos-offset="300">
             <h2 className="h2 text-accent">{about.title}</h2>
             <h3 className="h3 mb-4">{about.jopTitle}</h3>
             <p className="mb-6">{about.description}</p>

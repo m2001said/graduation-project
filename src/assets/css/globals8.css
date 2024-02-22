@@ -3,9 +3,13 @@
 @tailwind utilities;
 
 .site-container8 {
-  background-color: var(--black);
+  background-image: var(--background-image);
   background-size: cover;
   overflow: hidden;
+  color: var(--black);
+}
+.serviceC {
+  color: var(--white);
 }
 
 .btn {

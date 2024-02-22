@@ -39,6 +39,8 @@
   --title-dark: #3d3d3d;
   --discription-light: #f7f7f7b5;
   --discription-dark: #444d5c;
+  --background-image: radial-gradient(circle at top right, #7b7de0, #fff 42%, transparent 0),
+    radial-gradient(circle at bottom left, #b2b3f1, #fff 42%, transparent 0);
 }
 html {
   background-color: white;
