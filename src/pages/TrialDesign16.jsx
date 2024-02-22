@@ -16,7 +16,7 @@ import Footer16 from "../components/sections/footers/footer16/Footer16";
 
 const TrialDesign16 = () => {
   return (
-    <div>
+    <div className="body16 ">
       <Navbar16 />
       <Hero16 />
       <About16 />

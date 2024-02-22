@@ -58,57 +58,9 @@
 #RESET
 ===================================*/
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
-input,
-textarea,
-button,
-body {
-  font-family: var(--body-font);
-  font-size: var(--normal-font-size);
-}
-
-body {
+.body16 {
   color: var(--text-color);
   background: var(--bg-color) !important;
-}
-
-h1,
-h2,
-h3 {
-  font-family: var(--second-font);
-  color: var(--title-color);
-  font-weight: var(--weight-400);
-}
-
-ul {
-  list-style: none;
-}
-
-p {
-  line-height: 1.8;
-}
-
-a {
-  text-decoration: none;
-}
-
-input,
-textarea {
-  border: none;
-  outline: none;
-}
-
-img {
-  max-width: 100%;
 }
 
 /*=================================== 
