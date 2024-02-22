@@ -13,7 +13,6 @@ const About8 = () => {
       mirror: false,
     });
 
-    // Optional: Refresh AOS when the component updates
     AOS.refresh();
 
     // Clean up AOS when the component unmounts
@@ -32,7 +31,6 @@ const About8 = () => {
 
     window.addEventListener("scroll", handleScroll);
 
-    // Cleanup event listener
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };

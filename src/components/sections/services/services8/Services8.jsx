@@ -12,11 +12,7 @@ const Services8 = () => {
       once: true,
       mirror: false,
     });
-
-    // Optional: Refresh AOS when the component updates
     AOS.refresh();
-
-    // Clean up AOS when the component unmounts
     return () => AOS.refreshHard();
   }, []);
 
