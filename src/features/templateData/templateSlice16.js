@@ -43,7 +43,7 @@ const templateSlice16 = createSlice({
       Link2: "Book Table",
     },
     about: {
-      imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1708474752/jammal_photos/hcfbci9uogqgszxelae3.jpg",
+      imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1708549637/jammal_photos/xg3omldwwfpdgfrmhzub.jpg",
 
       title: "Fresh Quality And Organic Tasty Coffee House For You",
       description:
