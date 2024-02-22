@@ -277,7 +277,7 @@ const templateSlice16 = createSlice({
         },
       ],
     },
-    Rezervation: {
+    Reservation: {
       title: "Book A Table",
       btnTable: "Book A Table",
       shape2: "	https://res.cloudinary.com/duc04fwdb/image/upload/v1708555056/jammal_photos/irqxlw9ph3hzp28ipfv9.png",

@@ -6,7 +6,7 @@ const Menu16 = () => {
   const { Menu } = useSelector((state) => state.template16);
 
   return (
-    <section className="menu16 section16" id="menu16">
+    <section className="menu16 section16" id="menu">
       <h2 className="section__title16 " data-title="Our Menu">
         Let's Check Our Menu
       </h2>

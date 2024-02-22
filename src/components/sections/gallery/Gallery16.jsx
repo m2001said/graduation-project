@@ -6,7 +6,7 @@ const Gallery16 = () => {
   const { Gallary } = useSelector((state) => state.template16);
 
   return (
-    <section className="gallery16 section16" id="section16">
+    <section className="gallery16 section16" id="gallery">
       <h2 className="section__title16" data-title="Gallery">
         Our Photo Gallery
       </h2>

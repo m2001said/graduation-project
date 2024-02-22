@@ -6,7 +6,7 @@ const Hero16 = () => {
   const { hero } = useSelector((state) => state.template16);
 
   return (
-    <section className="home16" id="home16">
+    <section className="home16" id="home">
       <div className="home__container16 container16">
         <div className="home__content16">
           <span className="home__subtitle16">{hero.subtitle}</span>

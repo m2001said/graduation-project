@@ -6,7 +6,7 @@ const About16 = () => {
   const { about } = useSelector((state) => state.template16);
 
   return (
-    <section className="about16 section16" id="about16">
+    <section className="about16 section16" id="about">
       <div className="about__grid16 container16 grid16">
         <div className="about__img-wrapper16">
           <img src={about.imgUrl} alt="" className="about__image16" />

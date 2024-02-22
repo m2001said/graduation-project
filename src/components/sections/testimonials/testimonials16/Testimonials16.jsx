@@ -13,7 +13,7 @@ const Testimonials16 = () => {
   };
 
   return (
-    <section className="testimonials16 container16 section16" id="testimonials16">
+    <section className="testimonials16 container16 section16" id="testimonials">
       <h2 className="section__title16 " data-title="Testimonials">
         What Client Say's
       </h2>

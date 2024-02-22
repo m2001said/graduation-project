@@ -6,7 +6,7 @@ const Feature16 = () => {
   const { feature } = useSelector((state) => state.template16);
 
   return (
-    <section className="features16 section16" id="features16">
+    <section className="features16 section16" id="features">
       <h2 className="section__title16" data-title="Features">
         {feature.title}
       </h2>

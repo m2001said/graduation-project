@@ -8,12 +8,12 @@ const Offer16 = () => {
   const { Offer } = useSelector((state) => state.template16);
 
   return (
-    <section className="offer16 section16" id="offer16">
+    <section className="offer16 section16" id="offer">
       <h2 className="section__title16 " data-title="Offer">
         {Offer.title}
       </h2>
-      <Swiper spaceBetween={30} className="container" onSwiper={(swiper) => (window.swiper = swiper)}>
-        <button className="swiper-button" onClick={() => window.swiper.slidePrev()}>
+      <Swiper spaceBetween={30} className="container16" onSwiper={(swiper) => (window.swiper = swiper)}>
+        <button className="swiper-button16" onClick={() => window.swiper.slidePrev()}>
           &lt; Prev
         </button>
         {Offer.offerdata.map(({ img, title, discount, description }, index) => (
@@ -31,7 +31,7 @@ const Offer16 = () => {
             </div>
           </SwiperSlide>
         ))}
-        <button className="swiper-button" onClick={() => window.swiper.slideNext()}>
+        <button className="swiper-button16" onClick={() => window.swiper.slideNext()}>
           Next &gt;
         </button>
       </Swiper>
