@@ -47,7 +47,10 @@ const About8 = () => {
             data-aos="fade-right"
             data-aos-duration="1200"
             data-aos-offset="300"
-            className="flex-1 bg-about bg-contain bg-no-repeat h-[640px] mix-blend-lighten bg-top"
+            className="flex-1  bg-contain bg-no-repeat h-[640px] mix-blend-lighten bg-top"
+            style={{
+              backgroundImage: `url(${about.UrlImg})`,
+            }}
           ></div>
           {/* text */}
           <div className="flex-1" data-aos="fade-left" data-aos-duration="1200" data-aos-offset="300">

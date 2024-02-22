@@ -9,7 +9,7 @@ import Contact8 from "../components/sections/contacts/contact8/Contact8";
 
 const TrialDesign8 = () => {
   return (
-    <div className="bg-site bg-no-repeat bg-cover overflow-hidden">
+    <div className="site-container8">
       <Hero8 />
       <Navbar8 />
       <About8 />

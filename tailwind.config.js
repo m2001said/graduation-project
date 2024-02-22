@@ -23,11 +23,7 @@ module.exports = {
       backgroundColor: {
         "1A2345": "#1A2345",
       },
-      backgroundImage: {
-        site: "url('https://res.cloudinary.com/duc04fwdb/image/upload/v1708030305/jammal_photos/hfeutnseoqs0gsa2kx2u.jpg')",
-        about: "url('https://res.cloudinary.com/duc04fwdb/image/upload/v1708030938/jammal_photos/zxvali7en6j98kruxig5.png')",
-        services: "url('https://res.cloudinary.com/duc04fwdb/image/upload/v1708031587/jammal_photos/lidxpp6o8dtr95ajdv5t.png')",
-      },
+
       width: {
         70: "70%",
         30: "30%",
