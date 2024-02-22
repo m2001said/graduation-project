@@ -1,32 +1,38 @@
 import React, { useState } from "react";
-import { useNavigate } from 'react-router-dom';
-import { validate } from './validationUtils';
+import { useNavigate } from "react-router-dom";
+import { validate } from "./validationUtils";
+import { useDispatch } from "react-redux";
+import { loginUser } from "../../../features/auth/authSlice";
 
 const LoginForm = ({ toggleForm, handleSignIn, toggleModal }) => {
+  const dispatch = useDispatch();
   const navigate = useNavigate();
 
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
 
-
-
-
   const handleSignInClick = () => {
     const validationError = validate(email, password);
-    if (validationError) {
-      setError(validationError);
-      return;
-    }
-  
-    // Proceed with sign-in logic
+    // if (validationError) {
+    //   setError(validationError);
+    //   return;
+    // }
 
-    toggleModal();
-    navigate("/designs");
-    handleSignIn();
-    document.querySelector(".modal-overlay").classList.add("closed");
+    // Proceed with sign-in logic
+    const resultAction = dispatch(loginUser({ email: email, password: password }));
+    if (loginUser.fulfilled.match(resultAction)) {
+      navigate("/designs");
+      toggleModal();
+    } else {
+      if (resultAction.payload) {
+        setError(resultAction.payload.message);
+      } else {
+        setError("Failed to sign up. Please try again.");
+      }
+    }
   };
-  
+
   return (
     <>
       <h1>Login</h1>

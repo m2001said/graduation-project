@@ -1,21 +1,37 @@
 import React, { useState } from "react";
 import { validate } from "./validationUtils";
 import { useNavigate } from "react-router";
+import { useDispatch } from "react-redux";
+import { signupUser } from "../../../features/auth/authSlice";
 
 const SignUpForm = ({ toggleForm, toggleModal }) => {
+  const dispatch = useDispatch();
   const navigate = useNavigate();
+
   const [newEmail, setNewEmail] = useState("");
   const [newPassword, setNewPassword] = useState("");
   const [error, setError] = useState("");
 
+  console.log("====================================");
+  console.log(process.env.REACT_APP_BACK_SERVER);
+
   const handleSignUpClick = () => {
     const validationError = validate(newEmail, newPassword);
-    if (validationError) {
-      setError(validationError);
-      return;
+    // if (validationError) {
+    //   setError(validationError);
+    //   return;
+    // }
+    const resultAction = dispatch(signupUser({ email: newEmail, password: newPassword }));
+    if (signupUser.fulfilled.match(resultAction)) {
+      navigate("/designs");
+      toggleModal();
+    } else {
+      if (resultAction.payload) {
+        setError(resultAction.payload.message);
+      } else {
+        setError("Failed to sign up. Please try again.");
+      }
     }
-    navigate("/designs");
-    toggleModal();
   };
   return (
     <>

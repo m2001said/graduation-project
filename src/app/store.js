@@ -3,6 +3,7 @@ import storage from "redux-persist/lib/storage";
 import { combineReducers } from "redux";
 import { persistReducer, persistStore } from "redux-persist";
 
+import authReducer from "../features/auth/authSlice";
 import screenReducer from "../features/screen/screenSlice";
 import templateReducer from "../features/templateData/templateSlice";
 import templateReducer2 from "../features/templateData/templateSlice2";
@@ -24,6 +25,7 @@ import templateReducer17 from "../features/templateData/templateSlice17";
 import templateReducer18 from "../features/templateData/templateSlice18";
 
 const rootReducer = combineReducers({
+  auth: authReducer,
   screen: screenReducer,
   template1: templateReducer,
   template2: templateReducer2,
@@ -49,6 +51,7 @@ const persistConfig = {
   key: "root",
   storage,
   whitelist: [
+    "auth",
     "screen",
     "template1",
     "template2",

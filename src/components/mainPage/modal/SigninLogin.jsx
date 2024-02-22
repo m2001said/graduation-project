@@ -9,8 +9,11 @@ const SigninLogin = ({ setIsSignedIn, toggleModal }) => {
     setIsLoginForm(!isLoginForm);
   };
 
-
-  return isLoginForm ? <LoginForm toggleModal={toggleModal} toggleForm={toggleForm} handleSignIn={setIsSignedIn} /> : <SignUpForm toggleModal={toggleModal} toggleForm={toggleForm} />;
+  return isLoginForm ? (
+    <LoginForm toggleModal={toggleModal} toggleForm={toggleForm} handleSignIn={setIsSignedIn} />
+  ) : (
+    <SignUpForm toggleModal={toggleModal} toggleForm={toggleForm} />
+  );
 };
 
 export default SigninLogin;
