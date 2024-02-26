@@ -21,7 +21,7 @@ const Footer6 = () => {
             <div>
               {footer.infoLinks.content.map((item, index) => (
                 <div key={index} className="link__item my-3">
-                  <a href="#links">{item}</a>
+                  <a href="">{item}</a>
                 </div>
               ))}
             </div>
