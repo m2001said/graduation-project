@@ -13,7 +13,6 @@ const About8 = () => {
       mirror: false,
     });
 
-    // Optional: Refresh AOS when the component updates
     AOS.refresh();
 
     // Clean up AOS when the component unmounts
@@ -32,7 +31,6 @@ const About8 = () => {
 
     window.addEventListener("scroll", handleScroll);
 
-    // Cleanup event listener
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
@@ -47,10 +45,13 @@ const About8 = () => {
             data-aos="fade-right"
             data-aos-duration="1200"
             data-aos-offset="300"
-            className="flex-1 bg-about bg-contain bg-no-repeat h-[640px] mix-blend-lighten bg-top"
+            className="flex-1  bg-contain bg-no-repeat h-[640px] mix-blend-lighten bg-top"
+            style={{
+              backgroundImage: `url(${about.UrlImg})`,
+            }}
           ></div>
           {/* text */}
-          <div className="flex-1" data-aos="fade-left" data-aos-duration="1200" data-aos-offset="300">
+          <div className="flex-1 " data-aos="fade-left" data-aos-duration="1200" data-aos-offset="300">
             <h2 className="h2 text-accent">{about.title}</h2>
             <h3 className="h3 mb-4">{about.jopTitle}</h3>
             <p className="mb-6">{about.description}</p>
@@ -64,14 +65,14 @@ const About8 = () => {
                 </div>
               </div>
               <div>
-                <div className="text-[40px] font-tertiary text-gradient mb-2">{inView ? about.numbers[1] : null}+</div>
+                <div className="text-[40px] font-tertiary text-gradient mb-2">{inView ? about.numbers[1] : null}</div>
                 <div className="font-primary text-sm tracking-[2px]">
                   <span>{about.type[1]}</span>
                   <br /> {about.typeOfExpericnce[1]}
                 </div>
               </div>
               <div>
-                <div className="text-[40px] font-tertiary text-gradient mb-2">{inView ? about.numbers[2] : null}+</div>
+                <div className="text-[40px] font-tertiary text-gradient mb-2">{inView ? about.numbers[2] : null}</div>
                 <div className="font-primary text-sm tracking-[2px]">
                   <span>{about.type[2]}</span>
                   <br /> {about.typeOfExpericnce[2]}

@@ -1,6 +1,5 @@
 import Header from "./Header";
 import React, { useEffect, useRef } from "react";
-// import Image from "../../../../assets/images/images8/avatar.svg";
 import { useSelector } from "react-redux";
 import AOS from "aos";
 import "aos/dist/aos.css";
