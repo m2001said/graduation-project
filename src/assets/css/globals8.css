@@ -33,7 +33,7 @@
 }
 
 @layer base {
-  body {
+  .site-container8 {
     @apply font-secondary text-lg leading-8 text-white;
   }
   .h2 {
