@@ -2,17 +2,23 @@ import React from 'react';
 import { useLocation } from 'react-router-dom';
 
 const importComponent = (type, index) => {
+  let module = null;
   try {
     if (index) {
-      // Use require only if the module exists
-      const module = require(`../components/sections/${type}s/${type}${index}/${type.charAt(0).toUpperCase() + type.slice(1)}${index}`);
-      return module.default ? module.default : null;
+      // Try the first pattern
+      module = require(`../components/sections/${type}s/${type}${index}/${type.charAt(0).toUpperCase() + type.slice(1)}${index}`);
     }
   } catch (error) {
-    console.error(error.message);
+    console.error(`First pattern failed: ${error.message}`);
+    try {
+      module = require(`../components/sections/${type}s/${type}s${index}/${type.charAt(0).toUpperCase() + type.slice(1)}s${index}`);
+    } catch (error) {
+      console.error(`Second pattern failed: ${error.message}`);
+    }
   }
-  return null;
+  return module && module.default ? module.default : null;
 };
+
 
 const OwnPage = () => {
   const location = useLocation();

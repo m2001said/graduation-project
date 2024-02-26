@@ -19,7 +19,7 @@ import {
   } from "./sectionsData";
 
 const sectionDataMap = {
-    'nav': navData,
+    'navbar': navData,
     'hero': heroData,
     'footer': footerData,    
     'cta': ctaData,

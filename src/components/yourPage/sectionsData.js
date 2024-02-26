@@ -71,6 +71,6 @@ export const statisticData = createData('Statistic', [1, 2, 7], navImages);
 export const itemData = createData('Item', [1, 2, 14], navImages);
 export const filterItemData = createData('FilterItem', [6], navImages);
 export const orderPopupData = createData('OrderPopup', [10, 14], navImages);
-export const navData = createData('Nav', [1, 2, 3, 6, 7, 10, 11, 14], navImages);
+export const navData = createData('Navbar', [1, 2, 3, 6, 7, 10, 11, 14], navImages);
 export const testimonialData = createData('Testimonial', [1, 2, 3, 6, 7, 10, 11], navImages);
 export const serviceData = createData('Service', [1, 2, 5, 7, 10, 11, 14], navImages);

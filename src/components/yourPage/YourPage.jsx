@@ -7,7 +7,7 @@ import { getSectionData } from "./getSectionData";
 
 const YourPage = () => {
   const sectionNames = [
-    'hero', 'testimonial', 'footer', 'nav', 'feature', 'cta', 'pricing',
+    'hero', 'testimonial', 'footer', 'navbar', 'feature', 'cta', 'pricing',
     'project', 'service', 'team', 'statistic', 'contact', 'logo',
     'item', 'cartItem', 'filterItem', 'orderPopup',
   ];
