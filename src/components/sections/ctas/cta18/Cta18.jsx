@@ -7,7 +7,7 @@ import { useSelector } from "react-redux";
 
 
 
-const Cta18_1 = () => {
+const Cta18 = () => {
 
   const { cta18_1 } = useSelector((state) => state.template18);
   return (
@@ -42,4 +42,4 @@ const Cta18_1 = () => {
   );
 };
 
-export default Cta18_1;
+export default Cta18;
