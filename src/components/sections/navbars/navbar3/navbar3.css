@@ -2,10 +2,10 @@
   display: flex;
   justify-content: space-between;
 }
-.logo {
+/*.logo {
   width: 10rem;
   height: 3rem;
-}
+}*/
 .navbar3-menu {
   list-style: none;
   display: flex;

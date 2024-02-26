@@ -1,0 +1,12 @@
+.modal-content .deploy-form-label {
+  margin-block: 6px;
+  color: #222;
+}
+.modal-content .website-link {
+  text-align: left;
+}
+.deploy-buttons{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
