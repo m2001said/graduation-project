@@ -13,7 +13,7 @@ const Footer14 = () => {
           <div className="py-8 px-4">
             <div className="flex gap-4">
               <img src={footer14.imgUrl} alt="" className="w-10 cursor-pointer" />
-              <span className="text-[--primary-color] font-semibold tracking-widest text-2xl uppercase sm:text-3xl cursor-pointer">{footer14.title}</span>
+              <span className="text-[--primary14-color] font-semibold tracking-widest text-2xl uppercase sm:text-3xl cursor-pointer">{footer14.title}</span>
             </div>
             <p className="text-sm text-gray-600 dark:text-white/70 lg:pr-24 pt-7">{footer14.description}</p>
           </div>

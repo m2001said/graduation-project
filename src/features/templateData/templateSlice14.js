@@ -22,23 +22,23 @@ const templateSlice14 = createSlice({
           link: "/#blog",
         },
       ],
-      DropdownTxt: "Quick Links",
-      DropdownIcon: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707774619/icons8-sort-down-30_yurjok.png",
-      DropdownLinks: [
-        {
-          name: "Trending Products",
-          link: "/#",
-        },
-        {
-          name: "Best Selling",
-          link: "/#",
-        },
-        {
-          name: "Top Rated",
-          link: "/#",
-        },
-      ],
-      SearchIcon: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707775350/icons8-search-24_1_vxeohp.png",
+      // DropdownTxt: "Quick Links",
+      // DropdownIcon: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707774619/icons8-sort-down-30_yurjok.png",
+      // DropdownLinks: [
+      //   {
+      //     name: "Trending Products",
+      //     link: "/#",
+      //   },
+      //   {
+      //     name: "Best Selling",
+      //     link: "/#",
+      //   },
+      //   {
+      //     name: "Top Rated",
+      //     link: "/#",
+      //   },
+      // ],
+      // SearchIcon: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707775350/icons8-search-24_1_vxeohp.png",
       buttonText: "!",
       buttonIcon: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707775619/icons8-shopping-cart-24_w0vwvt.png",
     },

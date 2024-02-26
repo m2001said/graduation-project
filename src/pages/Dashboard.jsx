@@ -71,19 +71,19 @@ const Dashboard = () => {
       break;
     case "14":
       updateAllRef = updateTemplate14;
-      break;
+       break;
     case "15":
       updateAllRef = updateTemplate15;
-      break;
+       break;
     case "16":
       updateAllRef = updateTemplate16;
-      break;
+       break;
     case "17":
       updateAllRef = updateTemplate17;
-      break;
+       break;
     case "18":
       updateAllRef = updateTemplate18;
-      break;
+       break;
     default:
       break;
   }
