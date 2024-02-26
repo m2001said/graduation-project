@@ -8,14 +8,14 @@ const Hero = ({ theme }) => {
   const { hero18 } = useSelector((state) => state.template18);
 
   return (
-    <div className="dark:bg-black dark:text-white duration-300 relative z-20">
+    <div className="pb-3 dark:bg-black dark:text-white duration-300">
       <div className="container18 min-h-[620px] flex">
         <div className="grid grid-cols-1 sm:grid-cols-2 place-items-center">
           <div className="order-1 sm:order-2">
             <img
               src={theme === "dark" ? hero18.darkImage : hero18.lightImage}
               alt=""
-              className="sm:scale-125 relative -z-10 max-h-[500px] drop-shadow-[2px_20px_6px_rgba(0,0,0,0.50)]"
+              className="sm:scale-125 max-h-[500px] drop-shadow-[2px_20px_6px_rgba(0,0,0,0.50)]"
             />
           </div>
           <div className="space-y-5 order-2 sm:order-1 sm:pr-32 ">
