@@ -9,6 +9,7 @@ import NotFound from "./pages/NotFoundPage";
 import posterImage from "./assets/images/mainPageAssets/signin.svg";
 import BaseModal from "./components/mainPage/modal/BaseModal/BaseModal.jsx";
 import SigninLogin from "./components/mainPage/modal/SigninLogin.jsx";
+import OwnPage from "./pages/OwnPage.jsx";
 
 const trialDesignComponents = Array.from({ length: 18 }, (_, i) => require(`./pages/TrialDesign${i + 1}`).default);
 
@@ -39,6 +40,7 @@ function App() {
           <Route path="/" element={<MainPage toggleModal={toggleModal} />} />
           <Route path="/designs" element={<DesignsPage />} />
           <Route path="/page-craft" element={<BuildYourPage />} />
+          <Route path="/own-page" element={<OwnPage />} />
           {trialDesignComponents.map((Component, index) => (
             <Route key={`preview-trial-design${index}`} path={`/preview-trial-design${index + 1}`} element={<Component />} />
           ))}

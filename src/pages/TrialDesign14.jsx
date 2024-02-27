@@ -8,8 +8,8 @@ import Hero14 from "../components/sections/heros/hero14/Hero14";
 import Items14 from "../components/sections/Items/items14/Items14";
 import Services14 from "../components/sections/services/services14/Services14";
 import Features14 from "../components/sections/features/feature14/Feature14";
-import Projects14_1 from "../components/sections/projects/projects14_1/Projects14_1";
-import Projects14_2 from "../components/sections/projects/projects14_2/Projects14_2";
+import Projects14 from "../components/sections/projects/projects14/Projects14";
+import Projects21 from "../components/sections/projects/projects21/Projects21";
 import Logos14 from "../components/sections/logos/logos14/Logos14";
 import Footer14 from "../components/sections/footers/footer14/Footer14";
 import Popup14 from "../components/sections/orderPopups/orderPopups14/OrderPopups14";
@@ -35,9 +35,9 @@ const TrialDesign14 = () => {
       <Items14 />
       <Services14 />
       <Features14 data={feature14_1} />
-      <Projects14_1 />
+      <Projects14 />
       <Features14 data={feature14_2} />
-      <Projects14_2 />
+      <Projects21 />
       <Logos14 />
       <Footer14 />
       <Popup14 orderPopup={orderPopup} handleOrderPopup={handleOrderPopup} />

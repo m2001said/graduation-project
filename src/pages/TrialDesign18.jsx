@@ -8,8 +8,8 @@ import Feature18 from "../components/sections/features/feature18/feature18";
 import Services18 from "../components/sections/services/services18/Services18";
 import Projects18 from "../components/sections/projects/projects18/Projects18";
 import Testimonial18 from "../components/sections/testimonials/testimonials18/Testimonials18";
-import Cta18_1 from "../components/sections/ctas/cta18_1/Cta18_1";
-import Cta18_2 from "../components/sections/ctas/cta18_2/Cta18_2";
+import Cta18 from "../components/sections/ctas/cta18/Cta18";
+import Cta21 from "../components/sections/ctas/cta21/Cta21";
 import Footer18 from "../components/sections/footers/footer18/Footer18";
 
 
@@ -39,8 +39,8 @@ const TrialDesign18 = () => {
       <Services18 />
       <Projects18 />
       <Testimonial18 />
-      <Cta18_1 />
-      <Cta18_2 />
+      <Cta18/>
+      <Cta21 />
       <Footer18 />
     </div>
   );
