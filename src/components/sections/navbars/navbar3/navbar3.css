@@ -2,14 +2,15 @@
   display: flex;
   justify-content: space-between;
 }
+
 .logo3 {
   width: 10rem;
   height: 3rem;
-}*/
+}
 .navbar3-menu {
   list-style: none;
   display: flex;
-  gap: 2rem;
+  gap: 6rem;
   color: white;
 }
 .navbar3-menu > li {

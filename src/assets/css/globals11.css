@@ -64,31 +64,12 @@ html {
   scroll-behavior: smooth;
 }
 
-body,
-input,
-textarea {
+.TrialDesign11 {
+  line-height: 1.7;
+  color: var(--text-color);
   background-color: var(--body-color);
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
-}
-
-body {
-  line-height: 1.7;
-  color: var(--text-color);
-}
-
-ul {
-  list-style: none;
-}
-
-a {
-  text-decoration: none;
-}
-
-button {
-  cursor: pointer;
-  border: none;
-  outline: none;
 }
 
 img {
@@ -126,7 +107,6 @@ img {
 
 .section__title11::before {
   content: "";
-  /* background: url(../images/img11/dots-bg.svg); */
   height: 2.25rem;
   width: 2.25rem;
   position: absolute;

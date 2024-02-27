@@ -1,5 +1,5 @@
 .aside11 {
-  position: fixed;
+  position: absolute;
   left: 0;
   top: 9%;
   background: var(--body-color);
