@@ -19,8 +19,8 @@ import Popup14 from "../components/sections/orderPopups/orderPopups14/OrderPopup
 
 const TrialDesign14 = () => {
 
-  const { feature14_1 } = useSelector((state) => state.template14);
-  const { feature14_2 } = useSelector((state) => state.template14);
+  const { feature1 } = useSelector((state) => state.template14);
+  const { feature2 } = useSelector((state) => state.template14);
 
   const [orderPopup, setOrderPopup] = React.useState(false);
 
@@ -34,9 +34,9 @@ const TrialDesign14 = () => {
       <Hero14 handleOrderPopup={handleOrderPopup} />
       <Items14 />
       <Services14 />
-      <Features14 data={feature14_1} />
+      <Features14 data={feature1} />
       <Projects14 />
-      <Features14 data={feature14_2} />
+      <Features14 data={feature2} />
       <Projects21 />
       <Logos14 />
       <Footer14 />
