@@ -41,7 +41,7 @@ const Testimonials9 = () => {
       </div>
 
       <div className="relative rounded-2xl shadow-2xl lg:w-2/5 lg:p-16 p-6 lg:mt-0 mt-8">
-        <img src={block9.qot} className="text-[#ffe999] text-3xl logo" />
+        <img src={block9.qot} className="text-[#ffe999] text-3xl logo-9" />
         <p className="font-medium pt-2 pb-8">{currentTestimonial.quote}</p>
         <div className="border-t border-[var(--d4d4d4-9)] flex items-center py-4">
           <img src={currentTestimonial.imageUrl} alt="" className="rounded-full h-12 w-12 object-cover" />
@@ -51,7 +51,7 @@ const Testimonials9 = () => {
               {" "}
               {[...Array(5)].map((_, index) => (
                 <button key={index} className="cursor-auto text-[var(--ffe999-9)] last:text-[var(--d4d4d4-9)]">
-                  <img src={block9.star} className="w-6 h-6 mr-1" /> {/* Apply flex properties to container */}
+                  <img src={block9.star} className="w-6 h-6 mr-1" />
                 </button>
               ))}
             </div>

@@ -1,4 +1,3 @@
-/* Example CSS styles */
 .red-button {
   color: rgb(244, 136, 136);
 }
@@ -6,15 +5,6 @@
 .blue-background {
   background-color: rgb(216, 216, 236);
 }
-
-/* :root {
-    --primary-text-color: #6f9789;
-    --button-text-color: #0ca39a;
-    --button-border-color: #0ca39a;
-    --button-hover-text-color: #fff;
-    --button-hover-background-color: #0ca39a;
-    --secondary-text-color: #808080;
-  } */
 
 .plus-9 {
   height: 13px;
@@ -71,6 +61,8 @@
   --font-weight-bold: 700;
 
   /****/
+}
+.trialdesign9 {
   max-width: 98%;
   margin: 0 auto;
   /* padding: 2rem; */
@@ -88,42 +80,18 @@
   font-size: var(--font-size-base);
 }
 
-/* Use the extracted colors for the button */
-button {
-  background: linear-gradient(to right, var(--button-bg-gradient-from), var(--button-bg-gradient-to));
-}
-
-/* Use the extracted text colors */
 .uppercase {
   color: var(--primary-text-color);
 }
 
-/* Use the extracted border radius */
 .rounded-full {
-  border-radius: 9999px; /* A high value to make it fully round */
+  border-radius: 9999px;
 }
 
-/* Use the extracted padding */
 .pb-12 {
-  padding-bottom: 3rem; /* Assuming you wanted 12px, adjust as needed */
+  padding-bottom: 3rem;
 }
 
-* {
-  margin: 0 auto;
-  padding: 30rem;
-  border: 0;
-  outline: 0;
-  box-sizing: border-box;
-  list-style: none;
-  text-decoration: none;
-}
-
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
 .logo-9 {
   height: 6em;
   padding: 1.5em;
@@ -136,12 +104,6 @@ button {
   padding: 2rem;
   will-change: filter;
   transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
 }
 
 @keyframes logo-spin {
@@ -169,17 +131,13 @@ button {
   }
 }
 
-.card {
-  padding: 2em;
-}
-
 .read-the-docs {
   color: #888;
 }
 .gradient-background {
   background: linear-gradient(to top, #bce6e4, #f8fdfe);
   border-radius: 560px;
-  border-radius: 0 0 560px 560px; /* If you want rounded only at the bottom */
+  border-radius: 0 0 560px 560px;
 }
 .about-9:hover {
   background: var(--button-bg-gradient-from);
