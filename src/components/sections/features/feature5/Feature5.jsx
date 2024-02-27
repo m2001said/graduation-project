@@ -5,7 +5,7 @@ import { useSelector } from "react-redux";
 import Aos from 'aos'
 import "aos/dist/aos.css"
 
-const Feature5_1 = () => {
+const Feature5 = () => {
 
   useEffect(()=>{
     Aos.init({duration: 2000})
@@ -43,4 +43,4 @@ const Feature5_1 = () => {
   );
 };
 
-export default Feature5_1;
+export default Feature5;

@@ -2,7 +2,7 @@ import React from "react";
 import { useSelector } from "react-redux";
 
 
-const Projects14_2 = () => {
+const Projects21 = () => {
 
   const { projects14_2 } = useSelector((state) => state.template14);
 
@@ -38,4 +38,4 @@ const Projects14_2 = () => {
   );
 };
 
-export default Projects14_2;
+export default Projects21;
