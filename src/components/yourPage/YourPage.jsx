@@ -62,11 +62,17 @@ const YourPage = () => {
           <textarea name="text" id="text"></textarea>
         </div>
 
-        {sectionNames.map((section) => (
-          <div className="group" key={section}>
-            <p className="title">{`${section} sections`}</p>
-            {renderInputsGroup(getSectionData(section), section)}
-          </div>
+        {sectionNames.map((section, index) => (
+          <>
+            <label htmlFor={`show${index}`} className="show-section">
+              <p className="title">{`${section} sections`}</p>
+              <img src="https://res.cloudinary.com/duc04fwdb/image/upload/v1709052019/jammal_photos/vdybrjarzdlo6x9fdwga.svg" alt="down-icon" />
+            </label>
+            <input type="radio" name="show" className='show-btn' id={`show${index}`} />
+            <div className="group" key={section}>
+              {renderInputsGroup(getSectionData(section), section)}
+            </div>
+          </>
         ))}
 
         <button className='generate-own-btn' onClick={handleSubmit}>Generate your website</button>

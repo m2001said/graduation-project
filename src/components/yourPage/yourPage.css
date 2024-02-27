@@ -6,14 +6,33 @@
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     width: 80%;
-    margin: 120px auto;
+    margin: 5px auto 20px;
     gap: 10px;
     border: solid 1px var(--color-3);
     padding: 10px;
     position: relative;
     background: white;
+    display: none;
 }
-
+.show-btn{
+    display: none;
+}
+.show-btn:checked + .group{
+    display: grid !important;
+}
+.show-section{
+    display: flex;
+    width: 80%;
+    background: white;
+    padding: 10px;
+    justify-content: space-between;
+    border-radius: 5px;
+    margin: 15px auto;
+    color: #373737;
+}
+.show-section img{
+    width: 18px;
+}
 .own-page .group .title {
     position: absolute;
     width: fit-content;
@@ -29,11 +48,11 @@
     font-size: 17px;
 }
 
-.own-page input {
+.group input {
     display: none;
 }
 
-.own-page label {
+.group label {
     display: flex;
     transition: 0.4s;
     border: solid 2px #00000000;
@@ -56,12 +75,12 @@
     padding: 8px;
 }
 
-.own-page input[type="radio"]:checked+label {
+.group input[type="radio"]:checked+label {
     border: solid 2px var(--color-3);
     transform: scale(0.95);
 }
 
-.own-page input[type="radio"]:checked+label .check-icon {
+.group input[type="radio"]:checked+label .check-icon {
     transform: translate(-50%, -50%) scale(1) rotate(360deg);
 }
 
@@ -78,6 +97,7 @@
     line-height: 1.5;
     border: solid 1px #C5C5C5;
     border-radius: 3px;
+    color: #373737 !important;
 }
 
 .own-page textarea:focus {

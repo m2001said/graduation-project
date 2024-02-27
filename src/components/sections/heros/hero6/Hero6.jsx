@@ -18,7 +18,7 @@ const Hero6 = () => {
                 <div className="slider__content w-1/2 ps-2">
                   <h2 className="mb-3 ">{item.title}</h2>
                   <p>{item.desc}</p>
-                  <button className="btn">{hero.buttonText}</button>
+                  <button className="design-6-slider-btn">{hero.buttonText}</button>
                 </div>
                 <div className="slider__img w-1/2">
                   <img src={item.imgUrl} alt="" className="w-full" />
