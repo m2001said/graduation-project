@@ -62,11 +62,17 @@ const YourPage = () => {
           <textarea name="text" id="text"></textarea>
         </div>
 
-        {sectionNames.map((section) => (
-          <div className="group" key={section}>
-            <p className="title">{`${section} sections`}</p>
-            {renderInputsGroup(getSectionData(section), section)}
-          </div>
+        {sectionNames.map((section, index) => (
+          <>
+            <div className="show-section">
+              <p className="title">{`${section} sections`}</p>
+              <label htmlFor={`show${index}`}>show</label>
+            </div>
+            <input type="checkbox" name="show" className='show-btn' id={`show${index}`} />
+            <div className="group" key={section}>
+              {renderInputsGroup(getSectionData(section), section)}
+            </div>
+          </>
         ))}
 
         <button className='generate-own-btn' onClick={handleSubmit}>Generate your website</button>
