@@ -11,14 +11,14 @@ import Testimonials13 from "../components/sections/testimonials/testimonials13/T
 const TrialDesign2 = () => {
   return (
     <div className="trialdesign13">
-      <Navbar13 />
+      <Navbar13 className="trialdesign13" />
       <main>
-        <Hero13 />
-        <About13 />
-        <Testimonials13 />
-        <Projects13 />
+        <Hero13 className="trialdesign13" />
+        <About13 className="trialdesign13" />
+        <Testimonials13 className="trialdesign13" />
+        <Projects13 className="trialdesign13" />
       </main>
-      <Footer13 />
+      <Footer13 className="trialdesign13" />
     </div>
   );
 };
