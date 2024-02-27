@@ -6,7 +6,7 @@ const About9 = () => {
   return (
     <main className="container mx-auto lg:flex px-3 mb-12 lg:pt-0 pt-8 about-9">
       <div className="lg:w-2/5">
-        <p className="text-var[(--primary-text-color-9)] md:text-xl text-lg font-medium">{about.title}</p>
+        <p className="text-var[(--primary-text-color-9)] md:text-xl text-lg font-medium">{about.title}!</p>
         <h1 className="lg:text-4xl text-2xl font-medium py-3">{about.description} </h1>
         <p className="lg:w-4/5 text-var[(--text-9-color)]">{aboutcont.more}</p>
         <div className="lg:block hidden">

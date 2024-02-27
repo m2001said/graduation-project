@@ -27,8 +27,8 @@ const Hero9 = () => {
         <div className="container mx-auto px-3 lg:flex justify-between items-center lg:h-screen">
           <div className="lg:w-2/5">
             <p className="text-[va(--primary-text-color-9)] md:text-xl text-lg font-medium">{hero9.title}</p>
-            <h1 className="lg:text-3xl text-3xl font-medium pt-3 pb-12">{hero9.heading}</h1>
-            <p className="text-[var(--color-808080-color-9)] lg:text-base text-sm pb-8">{hero9.paragraph}</p>
+            <h1 className="lg:text-3xl text-3xl font-medium pt-3 pb-12 realestateh">{hero9.heading}</h1>
+            <p className="text-[var(--color-808080-color-9)] lg:text-base text-sm pb-8 realestateh">{hero9.paragraph}</p>
             <div className="w-full lg:w-2/3">
               <Carousel
                 className="z-20"
