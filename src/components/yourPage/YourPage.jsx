@@ -64,10 +64,9 @@ const YourPage = () => {
 
         {sectionNames.map((section, index) => (
           <>
-            <div className="show-section">
+            <label htmlFor={`show${index}`} className="show-section">
               <p className="title">{`${section} sections`}</p>
-              <label htmlFor={`show${index}`}>show</label>
-            </div>
+            </label>
             <input type="checkbox" name="show" className='show-btn' id={`show${index}`} />
             <div className="group" key={section}>
               {renderInputsGroup(getSectionData(section), section)}
