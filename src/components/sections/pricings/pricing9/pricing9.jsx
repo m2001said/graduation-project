@@ -144,7 +144,7 @@ const Pricing9 = () => {
           responsive={responsive}
           ssr={true}
           infinite
-          autoPlay={true}
+          autoPlay={false}
           keyBoardControl={true}
           customTransition="all.5"
           transitionDuration={700}
@@ -152,17 +152,16 @@ const Pricing9 = () => {
           {cards.map((card, index) => (
             <div key={index}>
               <div className="relative h-80 sm:w-80">
-                {/* Image with error handling */}
                 <img
                   src={card.imgUrl}
                   onError={(e) => {
-                    e.target.onerror = null; // Prevent infinite loop
-                    e.target.src = "/path/to/fallback-image.jpg"; // Fallback image URL
+                    e.target.onerror = null;
+                    e.target.src = "/path/to/fallback-image.jpg";
                   }}
                   alt=""
                   className="rounded-3xl h-full w-full object-cover"
                 />
-                {/* Button with feature icon */}
+
                 <button
                   className={`px-5 py-2 flex gap-x-2 items-center ${card.buttonColor}-button ${card.buttonBgColor}-background rounded-full absolute bottom-10 left-10`}
                 >

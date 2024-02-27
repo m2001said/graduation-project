@@ -11,17 +11,17 @@ import Contact9 from "../components/sections/contactUs/contactUs9/Contact9";
 const TrialDesign9 = () => {
   return (
     <div className="trialdesign9">
-      <main>
-        <Hero9 />
-        <About9 />
-        <Pricing9 />
-        <Services9 />
-        <Feature9 />
-        <Teams9 />
-        <Testimonials9 />
-        <Contact9 />
+      <main className="trialdesign9">
+        <Hero9 className="trialdesign9" />
+        <About9 className="trialdesign9" />
+        <Pricing9 className="trialdesign9" />
+        <Services9 className="trialdesign9" />
+        <Feature9 className="trialdesign9" />
+        <Teams9 className="trialdesign9" />
+        <Testimonials9 className="trialdesign9" />
+        <Contact9 className="trialdesign9" />
       </main>
-      <Footer9 />
+      <Footer9 className="trialdesign9" />
     </div>
   );
 };
