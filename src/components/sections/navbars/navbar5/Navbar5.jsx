@@ -3,7 +3,7 @@ import { useSelector } from "react-redux";
 import "./navbar5.css";
 
 const Navbar5 = () => {
- const { navbar5 } = useSelector((state) => state.template5);
+ const { navbar } = useSelector((state) => state.template5);
 
  const[active, setActive]= useState('navbarMenu')
  const showNavbar =()=>{
@@ -30,12 +30,12 @@ const Navbar5 = () => {
       <div className={noBg}>
         <div className="navbar5-logoDiv">
           <a href=" #">
-            <img src={navbar5.icon} alt="" className="navbar5-logo" />
+            <img src={navbar.icon} alt="" className="navbar5-logo" />
           </a>
         </div>
         <div className={active}>
           <ul className="navbarMenu-list">
-            {navbar5.links.map((link, index) => (
+            {navbar.links.map((link, index) => (
               <li key={index} className="navbarMenu-listItem">
                 <a href={`#${link}`} onClick={() => removeNavbar()}>
                   {link}
@@ -45,13 +45,13 @@ const Navbar5 = () => {
           </ul>
 
           <button onClick={removeNavbar} className="navbarMenu-btnOne">
-            {navbar5.buttonTxt}
+            {navbar.buttonTxt}
           </button>
         </div>
 
         <div className="toggleIcon" onClick={showNavbar}>
           <a href=" #">
-            <img src={navbar5.menuIcon} alt="" className="navbar5-two-icon" />
+            <img src={navbar.menuIcon} alt="" className="navbar5-two-icon" />
           </a>
         </div>
       </div>
