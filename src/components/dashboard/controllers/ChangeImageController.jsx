@@ -2,6 +2,7 @@ import React from "react";
 import UploadWidget from "../cloudinary/UploadWidget";
 import { useDispatch } from "react-redux";
 const ChangeImageController = ({ field, src, dispatchRef }) => {
+  console.log(field)
   const dispatch = useDispatch();
   function handleOnUpload(error, result, widget, target) {
     if (error) {
@@ -15,7 +16,7 @@ const ChangeImageController = ({ field, src, dispatchRef }) => {
   return (
     <div className="input-controller flex flex-between">
       <img src={src} alt="img" width={100} style={{ maxHeight: "150px", backgroundColor:"#f0e3ef" }} />
-      <UploadWidget onUpload={(error, result, widget) => handleOnUpload(error, result, widget, "imgUrl")}>
+      <UploadWidget onUpload={(error, result, widget) => handleOnUpload(error, result, widget, field)}>
         {({ open }) => {
           function handleOnClick(e) {
             e.preventDefault();

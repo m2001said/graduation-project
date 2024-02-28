@@ -30,12 +30,12 @@ const Footer5 = () => {
           </div>
         </div>
 
-        {footer.items.map((item) => (
-          <div div data-aos="fade-up" data-aos-duration="2500" className="footer5-links" key={item.title}>
+        {footer.items.map((item , index) => (
+          <div data-aos="fade-up" data-aos-duration="2500" className="footer5-links" key={index}>
             <span className="link-title">{item.title}</span>
 
             {item.links.map((link) => (
-              <a href=" " key={link}>
+              <a href="#footer5" key={link}>
                 <li className="footer5-links-element">{link}</li>
               </a>
             ))}

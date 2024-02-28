@@ -4,12 +4,12 @@ import LeftSide from "../components/dashboard/sections/LeftSide";
 import RightSide from "../components/dashboard/sections/RightSide";
 import { useSelector } from "react-redux";
 import { useLocation } from "react-router";
-import { updateTemplate1 } from "../features/templateData/templateSlice";
-import { updateTemplate2 } from "../features/templateData/templateSlice2";
-import { updateTemplate3 } from "../features/templateData/templateSlice3";
-import { updateTemplate4 } from "../features/templateData/templateSlice4";
-import { updateTemplate5 } from "../features/templateData/templateSlice5";
-import { updateTemplate6 } from "../features/templateData/templateSlice6";
+import { templateActions1 } from "../features/templateData/templateSlice";
+import { templateActions2 } from "../features/templateData/templateSlice2";
+// import { updateTemplate3 } from "../features/templateData/templateSlice3";
+import { templateActions4 } from "../features/templateData/templateSlice4";
+import { templateActions5 } from "../features/templateData/templateSlice5";
+import { templateActions6 } from "../features/templateData/templateSlice6";
 import { updateTemplate7 } from "../features/templateData/templateSlice7";
 import { updateTemplate8 } from "../features/templateData/templateSlice8";
 import { updateTemplate9 } from "../features/templateData/templateSlice9";
@@ -46,7 +46,7 @@ const Dashboard = () => {
       updateAllRef = templateActions5;
       break;
     case "6":
-      updateAllRef = updateTemplate6;
+      updateAllRef = templateActions6;
       break;
     case "7":
       updateAllRef = updateTemplate7;
