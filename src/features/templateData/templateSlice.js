@@ -18,21 +18,16 @@ const templateSlice = createSlice({
         {
           icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701808099/templates/template_one/icon_one_xvd7d6.svg",
           title: "Project Plan",
-          name:"ahmed",
           description: "There are many variations of the passages of lorem Ipsum from available, majority.",
         },
         {
           icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701808099/templates/template_one/icon_two_dptua1.svg",
           title: "Interior Work",
-          name:"ahmed",
-
           description: "There are many variations of the passages of lorem Ipsum from available, majority.",
         },
         {
           icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701808099/templates/template_one/icon_three_v71ltg.svg",
           title: "Realization",
-          name:"ahmed",
-
           description: "There are many variations of the passages of lorem Ipsum from available, majority.",
         },
       ],

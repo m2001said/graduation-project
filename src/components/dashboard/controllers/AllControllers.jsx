@@ -94,7 +94,9 @@ const AllControllers = ({ controllerSection, targetTemplate, updateAll, sectionI
                     sectionName={controllerSection}
                     blockName={field}
                     subName={subName}
-                    dispatchRef={updateAll.updateTemplate}
+                    
+                    dispatchRef={updateAll}
+                    // dispatchRef={updateAll.updateTemplate}
                     key={field}
                   />
                 );

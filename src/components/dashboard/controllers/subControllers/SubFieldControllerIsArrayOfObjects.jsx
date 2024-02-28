@@ -4,6 +4,8 @@ import ChangeImageController from "../ChangeImageController";
 
 const SubFieldControllerIsArrayOfObjects = ({ targetSection, cardIndex, sectionName, blockName, subBlockName, subIndex, dispatchRef ,showSection }) => {
   // const targetSection = useSelector((state) => state.template[sectionName]);
+  console.log(subBlockName);
+
   const subName = subBlockName.slice(0, subBlockName.length - 1);
   const dispatch = useDispatch();
   const dispatchedRefForImg = (target, result) =>

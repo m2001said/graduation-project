@@ -11,6 +11,7 @@ const FieldControllerIsArrayOfObjects = ({ targetSection, cardIndex, sectionName
   const dispatchedRefForImg = (target, result) =>
     dispatchRef.updateTemplate({ section: sectionName, variable: target, value: result?.info?.secure_url, i: cardIndex, blockName: blockName });
 
+
   const fields = Object.keys(targetSection[blockName][cardIndex]);
   const pattern = /\.(jpg|gif|png|svg)$/i;
 

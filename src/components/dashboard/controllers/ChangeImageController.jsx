@@ -2,7 +2,6 @@ import React from "react";
 import UploadWidget from "../cloudinary/UploadWidget";
 import { useDispatch } from "react-redux";
 const ChangeImageController = ({ field, src, dispatchRef }) => {
-  console.log(field)
   const dispatch = useDispatch();
   function handleOnUpload(error, result, widget, target) {
     if (error) {
