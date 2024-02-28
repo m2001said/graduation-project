@@ -10,7 +10,7 @@ const Teams10 = () => {
         <div className="items-center p-7 sm:p-30">
           {/* head sec */}
           <div className="text-center mb-10 max-w-[600px] mx-auto">
-            <p className="smHeader text-sm bg-clip-text text-transparent">{teams.smTitle}</p>
+            <p className="smHeader10 text-sm bg-clip-text text-transparent">{teams.smTitle}</p>
             <h1 className="text-3xl font-bold">{teams.title}</h1>
             <p className="text-xs text-gray-400">{teams.description}</p>
           </div>
@@ -32,7 +32,7 @@ const Teams10 = () => {
               ))}
             </div>
             <div className="flex justify-center">
-              <button className="text-center mt-10 cursor-pointer  btnBg btnTxt py-1 px-5 rounded-full">{teams.buttonText}</button>
+              <button className="text-center mt-10 cursor-pointer  btnBg10 btnTxt10 py-1 px-5 rounded-full">{teams.buttonText}</button>
             </div>
           </div>
         </div>

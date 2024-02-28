@@ -42,7 +42,7 @@ const Footer10 = () => {
                 <ul className={`flex flex-col gap-3`}>
                   {item.links.map((link) => (
                     <a href=" " key={link}>
-                      <li className="cursor-pointer hover:translate-x-1 duration-300 textHover space-x-1 paraColor">{link}</li>
+                      <li className="cursor-pointer hover:translate-x-1 duration-300 textHover10 space-x-1 paraColor10">{link}</li>
                     </a>
                   ))}
                 </ul>

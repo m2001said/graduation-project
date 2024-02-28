@@ -25,8 +25,7 @@ const Navbar5 = () => {
  window.addEventListener('scroll',addBgColor)
 
   return (
-    <div className="navbar5">
-
+    // <div className="navbar5">
       <div className={noBg}>
         <div className="navbar5-logoDiv">
           <a href=" #">
@@ -55,7 +54,7 @@ const Navbar5 = () => {
           </a>
         </div>
       </div>
-    </div>
+    // </div>
   );
 }
 
