@@ -50,17 +50,13 @@
   background: var(--planCard);
   transform: scale(1.1);
 }
-.plan3 > svg {
-  fill: var(--orange);
-  width: 2rem;
-  height: 2rem;
-}
+
 .plan3 > :nth-child(2) {
-  font-size: 1rem;
+  font-size: 1.5rem;
   font-weight: bold;
 }
 .plan3 > :nth-child(3) {
-  font-size: 3rem;
+  font-size: 1.5rem;
   font-weight: bold;
 }
 .plan3 > :nth-child(5) {
@@ -106,6 +102,9 @@
     transform: none;
   }
   .plans-container3 {
-  z-index: 0;
-}
+    z-index: 0;
+  }
+  .plans-blur-1 {
+    display: none;
+  }
 }

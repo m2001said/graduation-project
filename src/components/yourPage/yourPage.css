@@ -2,8 +2,11 @@
     background: #481b91;
 }
 
+.own-page h1 {
+    margin: 40px auto 93px;
+}
+
 .own-page .group {
-    display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     width: 80%;
     margin: 5px auto 20px;
@@ -14,13 +17,16 @@
     background: white;
     display: none;
 }
-.show-btn{
+
+.show-btn {
     display: none;
 }
-.show-btn:checked + .group{
+
+.show-btn:checked+.group {
     display: grid !important;
 }
-.show-section{
+
+.show-section {
     display: flex;
     width: 80%;
     background: white;
@@ -30,9 +36,11 @@
     margin: 15px auto;
     color: #373737;
 }
-.show-section img{
+
+.show-section img {
     width: 18px;
 }
+
 .own-page .group .title {
     position: absolute;
     width: fit-content;
@@ -123,7 +131,8 @@
     outline-offset: 2px;
     transform: scale(0.95);
 }
-.select-message{
+
+.select-message {
     color: #C5C5C5;
     text-align: center;
 }
