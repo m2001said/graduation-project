@@ -81,12 +81,14 @@
   font-weight: 800;
   font-size: 31px;
   text-align: center;
+  color: var(--modal-button) !important;
 }
 
 .modal-form {
   display: flex;
   flex-direction: column;
   gap: 15px;
+  color: #494949;
 }
 
 .modal-form .sub-button {

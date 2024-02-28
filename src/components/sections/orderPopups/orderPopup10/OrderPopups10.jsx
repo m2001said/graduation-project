@@ -2,7 +2,7 @@ import React from "react";
 import { useSelector } from "react-redux";
 
 const OrderPopup10 = ({ orderPopup, setOrderPopup }) => {
-  const { orderPopup10 } = useSelector((state) => state.template10);
+  const { order } = useSelector((state) => state.template10);
   return (
     <>
       {orderPopup && (
@@ -11,10 +11,10 @@ const OrderPopup10 = ({ orderPopup, setOrderPopup }) => {
             {/* Head */}
             <div className="flex items-center justify-between">
               <div>
-                <h1>{orderPopup10.title}</h1>
+                <h1>{order.title}</h1>
               </div>
               <div>
-                <img src={orderPopup10.icon} alt="" className="w-4 cursor-pointer " onClick={() => setOrderPopup(false)} />
+                <img src={order.icon} alt="" className="w-4 cursor-pointer " onClick={() => setOrderPopup(false)} />
               </div>
             </div>
             {/* body */}
@@ -35,7 +35,7 @@ const OrderPopup10 = ({ orderPopup, setOrderPopup }) => {
                 className="w-full rounded-full border border-gray-300 dark:border-gray-500 dark:bg-gray-800 px-2 py-1 mb-4"
               />
               <div className="flex justify-center">
-                <button className="btnBg btnTxt hover:scale-105 duration-200 text-white py-1 px-4 rounded-full ">{orderPopup10.buttonText}</button>
+                <button className="btnBg btnTxt hover:scale-105 duration-200 text-white py-1 px-4 rounded-full ">{order.buttonText}</button>
               </div>
             </div>
           </div>

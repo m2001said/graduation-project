@@ -1,20 +1,20 @@
 import { createSlice } from "@reduxjs/toolkit";
 const templateSlice5 = createSlice({
   initialState: {
-    navbar5: {
+    navbar: {
       menuIcon: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1703106705/menu-svgrepo-com_mgpt72.svg",
       icon: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1703101139/logo_ytwn3z.jpg",
       links: ["Home", "About", "Offers", "Seats", "Destiations"],
       buttonTxt: "contact",
     },
 
-    hero5: {
+    hero: {
       title: "Create Ever-lasting Memories With us",
       imgUrl: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1703110738/takeOff_znaedp.png",
       videoUrl: "https://res.cloudinary.com/dmcdea0b9/video/upload/v1703110566/heroVideo_z23a38.mp4",
     },
 
-    feature5_1: {
+    feature1: {
       smallTitle: "travel support",
       title: "Plan your travel with confidence",
       description: "find help with booking and travel plans, see what to expect the journey",
@@ -41,7 +41,7 @@ const templateSlice5 = createSlice({
       imgUrl: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1703111688/R_aejs2k.jpg",
     },
 
-    services5: {
+    services: {
       title: "Travel to make memories all around the world",
       buttonTxt: "View all",
       blocks: [
@@ -63,7 +63,7 @@ const templateSlice5 = createSlice({
       ],
     },
 
-    feature5_2: {
+    feature2: {
       imgUrl: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1703116246/fea5-2_q5na0z.jpg",
       title: "Unaccompanied minor lounge",
       blocks: [
@@ -86,7 +86,7 @@ const templateSlice5 = createSlice({
       ],
     },
 
-    team5: {
+    team: {
       title: "Top travelers of this month!",
       cards: [
         {
@@ -116,13 +116,13 @@ const templateSlice5 = createSlice({
       ],
     },
 
-    cta5: {
+    cta: {
       title: "Subscribe Newletter & get Latest News",
       inputPlaceholder: "enter your email addres",
       buttonText: "Subscribe",
     },
 
-    footer5: {
+    footer: {
       imgUrl: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1703101139/logo_ytwn3z.jpg",
       description: "Your mind shoud be stronger than your feeling, fly!",
       mediaIcons: [

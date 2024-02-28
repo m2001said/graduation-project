@@ -1,7 +1,7 @@
 import { createSlice } from "@reduxjs/toolkit";
 const templateSlice10 = createSlice({
   initialState: {
-    navbar10: {
+    navbar: {
       title: "Books",
       icon: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1706798279/logo_rcge0a.png",
       links: ["Home", "Best Seller"],
@@ -25,12 +25,12 @@ const templateSlice10 = createSlice({
       buttonIcon: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1706806477/cart-shopping-shop-svgrepo-com_oxwiez.svg",
     },
 
-    darkMode10: {
+    darkMode: {
       darkPng: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1706805795/dark-mode-button_e9kiqi.png",
       lightPng: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1706805773/light-mode-button_ermmq3.png",
     },
 
-    hero10: {
+    hero: {
       backGroundImage: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1706805805/blue-pattern_d1mb2e.png",
       defaultImage: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707067713/book1_a7epcd.jpg",
       defaultTitle: "His Life will forever be Changed",
@@ -61,7 +61,7 @@ const templateSlice10 = createSlice({
       buttonText: "Order Now",
     },
 
-    services10: {
+    services: {
       smTitle: "Trending Books",
       title: "Best Books",
       description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit Distinctio consectetur",
@@ -86,7 +86,7 @@ const templateSlice10 = createSlice({
       ],
     },
 
-    feature10: {
+    feature: {
       imgUrl: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707084593/library_ww1bzg.jpg",
       title: "Library at your fingertips",
       description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque reiciendis inventore iste ratione ex alias quis magni at optio",
@@ -110,14 +110,14 @@ const templateSlice10 = createSlice({
       ],
     },
 
-    cta10: {
+    cta: {
       title: "Read Books at Your Fingertips",
       bannerImg: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707090472/board_hqttt2.png",
       AppStoreImg: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707090485/app_store_s6wzhh.png",
       PlayStoreImg: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707090481/play_store_nmzfln.png",
     },
 
-    teams10: {
+    teams: {
       smTitle: "Top Books for you",
       title: "Top Books",
       description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis delectus architecto error nesciunt",
@@ -161,7 +161,7 @@ const templateSlice10 = createSlice({
       buttonText: "View All Books",
     },
 
-    testimonial10: {
+    testimonial: {
       smTitle: "What our customers say",
       title: "Testimonial",
       description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis delectus architecto error nesciunt",
@@ -188,7 +188,7 @@ const templateSlice10 = createSlice({
       ],
     },
 
-    footer10: {
+    footer: {
       title: "Books Store",
       imgUrl: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1706798279/logo_rcge0a.png",
       description: "Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, voluptate.",
@@ -231,7 +231,7 @@ const templateSlice10 = createSlice({
       ],
     },
 
-    orderPopup10: {
+    order: {
       title: "Order Your Book",
       icon: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707791435/icons8-x-24_jske7f.png",
       buttonText: "Order Now",

@@ -12,22 +12,22 @@ const Services5 = () => {
     Aos.init({duration: 2000})
   },[])
 
-  const { services5 } = useSelector((state) => state.template5);
+  const { services } = useSelector((state) => state.template5);
 
   return (
     <div className="services5">
       <div className="servicess5-mainSection">
         <div className="services5-title">
           <h2 data-aos="fade-right" data-aos-duration="2500">
-            {services5.title}
+            {services.title}
           </h2>
           <button data-aos="fade-left" data-aos-duration="2500" className="services5-btn">
-            {services5.buttonTxt}
+            {services.buttonTxt}
           </button>
         </div>
 
         <div className="services5-cards">
-          {services5.blocks.map((card, index) => (
+          {services.blocks.map((card, index) => (
             <div key={index} data-aos="fade-up" data-aos-duration="2500" className="services5-singleCard">
               <div className={`cardIconDiv${index}`}>
                 <a href=" #">

@@ -31,6 +31,7 @@ const templateSlice = createSlice({
         },
       ],
     },
+
     feature: {
       title: "We Create The Art Of Stylish Living Stylishly",
       description:
