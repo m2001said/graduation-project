@@ -27,8 +27,8 @@
   transform: scale(1.1);
 }
 .blog__category11 {
-  color: var(--container-color);
-  background-color: var(--first-color);
+  color: var(--container-color11);
+  background-color: var(--first-color11);
   border-bottom-left-radius: 0.9375rem;
   border-bottom-right-radius: 0.9375rem;
   position: absolute;
@@ -41,7 +41,7 @@
   z-index: 1;
 }
 .blog__details11 {
-  background-color: var(--container-color);
+  background-color: var(--container-color11);
   padding: 1.25rem;
 }
 .blog__title11 {
