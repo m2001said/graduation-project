@@ -65,6 +65,7 @@ const YourPage = () => {
         {sectionNames.map((section, index) => (
           <>
             <label htmlFor={`show${index}`} className="show-section">
+              {selectedIndices[section] &&  <div className="selected-item"></div>}
               <p className="title">{`${section} sections`}</p>
               <img src="https://res.cloudinary.com/duc04fwdb/image/upload/v1709052019/jammal_photos/vdybrjarzdlo6x9fdwga.svg" alt="down-icon" />
             </label>
