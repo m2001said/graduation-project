@@ -1,11 +1,11 @@
-.navbar5 {
+/* .navbar5 {
   position: fixed;
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 100%;
-  /* z-index: 1000; */
-}
+  z-index: 1000;
+} */
 
 .navbar5-two {
   display: flex;
