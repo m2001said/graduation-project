@@ -6,19 +6,19 @@ const templateSlice18 = createSlice({
       links: [
         {
           name: "HOME",
-          link: "/#",
+          link: "#",
         },
         {
           name: "CARS",
-          link: "/#cars",
+          link: "#",
         },
         {
           name: "ABOUT",
-          link: "/#about",
+          link: "#about",
         },
         {
           name: "BOOKING",
-          link: "/#booking",
+          link: "#",
         },
       ],
       lightIcon: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1708092466/icons8-sun-24_oonunj.png",

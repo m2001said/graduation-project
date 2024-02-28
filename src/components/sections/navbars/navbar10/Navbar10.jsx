@@ -24,7 +24,7 @@ const Navbar10 = ({ handleOrderPopup }) => {
               <ul className="items-center gap-4 hidden sm:flex">
                 {navbar.links.map((link, index) => (
                   <li key={index}>
-                    <a href={`#${link}`} className="textHover inline-block py-4 px-4 duration-200">
+                    <a href={`#${link}`} className="textHover10 inline-block py-4 px-4 duration-200">
                       {link}
                     </a>
                   </li>
@@ -52,7 +52,7 @@ const Navbar10 = ({ handleOrderPopup }) => {
                   </div>
                 </li> */}
               </ul>
-              <button className="btnBg btnTxt hover:scale-105 duration-200 py-1 px-4 rounded-full flex items-center gap-3" onClick={() => handleOrderPopup()}>
+              <button className="btnBg10 btnTxt10 hover:scale-105 duration-200 py-1 px-4 rounded-full flex items-center gap-3" onClick={() => handleOrderPopup()}>
                 {navbar.buttonText}
                 <a href="/#">
                   <img src={navbar.buttonIcon} alt="" className="w-7 drop-shadow-sm cursor-pointer" />
