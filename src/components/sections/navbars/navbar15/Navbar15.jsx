@@ -6,7 +6,7 @@ const Navbar15 = () => {
   const [active, setActive] = useState("Home");
   const [toggle, setToggle] = useState(false);
   return (
-    <nav className="w-full flex py-6 justify-between items-center navbar" style={{ color: "var(--btn-hover-color)" }}>
+    <nav className="w-full flex py-6 justify-between items-center navbar" style={{ color: "var(--btn-hover-color15)" }}>
       <img src={navbar.imgUrl[0]} alt="hoobank" className="w-[124px] h-[32px]" />
 
       <ul className="list-none sm:flex hidden justify-end items-center flex-1">
@@ -18,7 +18,7 @@ const Navbar15 = () => {
             }`}
             onClick={() => setActive(nav.title)}
           >
-            <a className="honerlink11" href={`#${nav.id}`} style={{ color: active === nav.title ? "var(--btn-hover-color)" : "var(--text-color)" }}>
+            <a className="honerlink11" href={`#${nav.id}`} style={{ color: active === nav.title ? "var(--btn-hover-color15)" : "var(--text-color15)" }}>
               {nav.title}
             </a>
           </li>

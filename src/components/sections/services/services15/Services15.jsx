@@ -21,7 +21,7 @@ const Services15 = () => {
   };
 
   return (
-    <div className="pt-52 backgroundcolor darkModeColor px-3" id="services">
+    <div className="pt-52 backgroundcolor15 darkModeColor15 px-3" id="services">
       <div className="container max-w-[1300px] w-full mx-auto">
         <h1 className="sm:text-[44px] text-[26px] text-center m-0 title15_1">{services.title.t1}</h1>
         <p className="font-bold text-sm textColor flex items-center text-center justify-center gap-x-4 title15_2">
