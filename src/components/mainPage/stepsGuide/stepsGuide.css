@@ -11,33 +11,38 @@
   left: 50%;
   transform: translateX(-50%);
   border: dashed 1px #430c7b40;
-  z-index: -1;
+  z-index: 1;
 }
 
 .main-steps .step-card {
   position: relative;
   counter-increment: stepcounter;
   margin-block: 55px;
+  z-index: 2;
 }
 
 .main-steps .step-card:nth-child(odd) {
   flex-direction: row-reverse;
 }
+
 .step-description {
   font-size: 22px;
   color: var(--discription-dark);
   line-height: 1.8;
 }
+
 @media (max-width: 767px) {
   .step-description {
     font-size: 20px;
   }
 }
+
 @media (max-width: 375px) {
   .step-description {
     font-size: 15px;
   }
 }
+
 .step-title {
   padding-bottom: 15px;
   font-weight: 600;
@@ -45,6 +50,7 @@
   color: var(--title-dark);
   line-height: 1;
 }
+
 .main-steps .step-card::before {
   content: counter(stepcounter);
   height: 30px;
@@ -54,7 +60,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 1;
+  z-index: 3;
   border-radius: 50%;
   outline: solid 10px white;
   position: absolute;
@@ -75,23 +81,28 @@
 }
 
 @media (max-width: 991px) {
+
   .step-card,
   .step-card:nth-child(odd) {
     flex-direction: column !important;
     gap: 20px;
   }
+
   .main-steps .step-img,
   .main-steps .step-info {
     width: auto;
     padding-left: 60px;
   }
+
   .step-img img {
     width: 40%;
     margin: auto;
   }
+
   .main-steps .container::after {
     left: 46px;
   }
+
   .step-card::before {
     left: 21px !important;
   }

@@ -1,456 +1,446 @@
 import { createSlice } from "@reduxjs/toolkit";
+
 const templateSlice15 = createSlice({
   initialState: {
     navbar: {
-      logo: "https://res.cloudinary.com/duc04fwdb/image/upload/v1706351943/jammal_photos/jicfizb2xdqr8hcgkmc4.png",
-      imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703095423/jammal_photos/x22ihnvjg9i0i40xtbo5.svg",
-      searchIcon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703095771/jammal_photos/kedw9coptwqkovrsssd1.svg",
-      shoppingIcon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703095842/jammal_photos/gehvutbyftfxemvoqmu8.svg",
-      menuIcon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703095877/jammal_photos/rwbeynsg3bftgrjqaqnf.svg",
-      links: ["Home", "About", "Menu", "Recipes", "Contact"],
+      imgUrl: [
+        "https://res.cloudinary.com/duc04fwdb/image/upload/v1706799023/jammal_photos/wz8vakvjdjio0wcqhnfe.svg",
+        "https://res.cloudinary.com/duc04fwdb/image/upload/v1706799683/jammal_photos/msugi233fn6vkrra5x9f.svg",
+        "https://res.cloudinary.com/duc04fwdb/image/upload/v1706799720/jammal_photos/jx9bn26thzu46apznikl.svg",
+      ],
+      items: [
+        {
+          id: "home",
+          title: "Home",
+        },
+        {
+          id: "services",
+          title: "Services",
+        },
+        {
+          id: "skills",
+          title: "Skills",
+        },
+        {
+          id: "works",
+          title: "Works",
+        },
+        {
+          id: "resume",
+          title: "Resume",
+        },
+        {
+          id: "testimonals",
+          title: "Testimonials",
+        },
+        {
+          id: "pricing",
+          title: "Pricing",
+        },
+        {
+          id: "blog",
+          title: "Blog",
+        },
+        {
+          id: "contact",
+          title: "Contact",
+        },
+      ],
     },
+
     hero: {
-      buttonText: "Explore Food",
-      sliderData: [
-        {
-          id: "01",
-          title: "Experience the Authentic Flavors",
-          desc: "Indulge in our simple and delicious dishes crafted with the finest ingredients. Your taste buds will thank you!",
-          imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703096681/jammal_photos/eukd4unr2l7mwyllvmi9.png",
-        },
-        {
-          id: "02",
-          title: "Bring Joy to Your Taste Buds",
-          desc: "At our restaurant, we believe good food leads to great smiles. Explore our menu and discover a world of culinary delight.",
-          imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703096719/jammal_photos/j7y2zx8aolnucnu25dl4.png",
-        },
-        {
-          id: "03",
-          title: "Savor Every Bite, Create Memories",
-          desc: "Meet, eat, and enjoy the true taste of happiness. Our diverse menu ensures there's something for everyone to relish and remember.",
-          imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703096745/jammal_photos/j97dbol3pzuleeccxwdt.png",
-        },
+      imgUrl: [
+        "https://res.cloudinary.com/duc04fwdb/image/upload/v1708017251/jammal_photos/z8h6g9lv2sxmywvygcts.png",
+        "https://res.cloudinary.com/duc04fwdb/image/upload/v1708017487/jammal_photos/dov4re8wizaegdj3jiza.svg",
+        "https://res.cloudinary.com/duc04fwdb/image/upload/v1708017404/jammal_photos/ihzghh1idyxmj1u4vk9r.svg",
+        "https://res.cloudinary.com/duc04fwdb/image/upload/v1708017568/jammal_photos/hpyyah3zyuwxvydg7dnw.png",
       ],
+      title: {
+        title1: "HELLO",
+        title2: "MY NAME IS",
+        title3: "ZOE",
+        title4: "MILLER",
+        title5: "I AM",
+        title6: "Web Developer",
+        descA: "From France, Paris. I have right experience in web design, also I am good at WordPress. I love to talk with you about our unique.",
+      },
+      btn: {
+        text: "DOWNLOAD CV",
+        paragraf: "MY SKILLS",
+      },
+      sub_title: {
+        sub_title1: "12",
+        sub_title2: "+",
+        sub_title3: "YEARS OF",
+        sub_title4: "EXPERIENCE",
+        sub_title5: "330",
+        sub_title6: "COMPLETED",
+        sub_title7: "PROJECTS",
+      },
     },
-    productcard: {
-      shoppingIcon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703095842/jammal_photos/gehvutbyftfxemvoqmu8.svg",
+    services: {
+      imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1708020289/jammal_photos/yd48mthnmtr9zswrqrms.png",
+      Card1: {
+        title: "Web Development",
+        sub_title: "Web Design & Logo",
+        text: "Web designers craft the overall vision & plan for a website layout. Professional logo development: Business, Company, or Personal.",
+      },
+      Card2: {
+        title: "Apps Development",
+        sub_title: "iOS & Android",
+        text: "Design Software applications to run on mobile devices. Modern and mobile-ready application that will help you reach all of your marketing.",
+      },
+      Card3: {
+        title: "Game Development",
+        sub_title: "Unity & Unreal Engine ",
+        text: "Creating games & describes the design, development and release of a game. Developing unique mobile android and ios games. ",
+      },
+      btn: {
+        btn15_Text: " See Pricing",
+      },
+      title: {
+        t1: "WHAT I DO",
+        t2: "My",
+        t3: "Services",
+      },
     },
-    FilterItems: {
-      fastFoodProducts: [
-        {
-          id: "05",
-          title: "Burger",
-          price: 95,
-          imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703099049/jammal_photos/nw1126s6ntsb3o2ohs3s.png",
-        },
-        {
-          id: "06",
-          title: "Chicken",
-          price: 250,
-          imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703099049/jammal_photos/nw1126s6ntsb3o2ohs3s.png",
-        },
-        {
-          id: "07",
-          title: "Grill Chicken",
-          price: 195,
-          imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703099049/jammal_photos/nw1126s6ntsb3o2ohs3s.png",
-        },
-        {
-          id: "08",
-          title: "Barbeque",
-          price: 275,
-          imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703099049/jammal_photos/nw1126s6ntsb3o2ohs3s.png",
-        },
-        {
-          id: "09",
-          title: "Pizza",
-          price: 275,
-          imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703099049/jammal_photos/nw1126s6ntsb3o2ohs3s.png",
-        },
-        {
-          id: "10",
-          title: "Burger",
-          price: 95,
-          imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703099049/jammal_photos/nw1126s6ntsb3o2ohs3s.png",
-        },
-        {
-          id: "11",
-          title: "Chicken",
-          price: 250,
-          imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703099049/jammal_photos/nw1126s6ntsb3o2ohs3s.png",
-        },
-        {
-          id: "12",
-          title: "Grill Chicken",
-          price: 195,
-          imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703099049/jammal_photos/nw1126s6ntsb3o2ohs3s.png",
-        },
-      ],
-      riceMenuProducts: [
-        {
-          id: "12",
-          title: "Fried Rice",
-          price: 95,
-          imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703099126/jammal_photos/t6olygisps4ufz02fezk.png",
-        },
-        {
-          id: "14",
-          title: "Vegetable",
-          price: 250,
-          imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703099126/jammal_photos/t6olygisps4ufz02fezk.png",
-        },
-        {
-          id: "15",
-          title: "Vegetable",
-          price: 195,
-          imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703099126/jammal_photos/t6olygisps4ufz02fezk.png",
-        },
-        {
-          id: "16",
-          title: "Meal",
-          price: 275,
-          imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703099126/jammal_photos/t6olygisps4ufz02fezk.png",
-        },
-        {
-          id: "17",
-          title: "Fried Rice",
-          price: 95,
-          imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703099126/jammal_photos/t6olygisps4ufz02fezk.png",
-        },
-        {
-          id: "18",
-          title: "Vegetable",
-          price: 250,
-          imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703099126/jammal_photos/t6olygisps4ufz02fezk.png",
-        },
-        {
-          id: "19",
-          title: "Vegetable",
-          price: 195,
-          imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703099126/jammal_photos/t6olygisps4ufz02fezk.png",
-        },
-        {
-          id: "20",
-          title: "Meal",
-          price: 275,
-          imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703099126/jammal_photos/t6olygisps4ufz02fezk.png",
-        },
-      ],
-      dessertProducts: [
-        {
-          id: "21",
-          title: "Whipped Cream",
-          price: 50,
-          imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703099235/jammal_photos/mwphxi7ujoec1c2krana.png",
-        },
-        {
-          id: "22",
-          title: "Cake Cream",
-          price: 50,
-          imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703098853/jammal_photos/zuclkds0uufzktzfeien.png",
-        },
-        {
-          id: "23",
-          title: "Cake",
-          price: 50,
-          imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703099235/jammal_photos/mwphxi7ujoec1c2krana.png",
-        },
-        {
-          id: "24",
-          title: "Cup Cake",
-          price: 275,
-          imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703099335/jammal_photos/why415hwonyxffn1cyon.png",
-        },
-        {
-          id: "25",
-          title: "Whipped Cream",
-          price: 50,
-          imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703099235/jammal_photos/mwphxi7ujoec1c2krana.png",
-        },
-        {
-          id: "26",
-          title: "Cake Cream",
-          price: 50,
-          imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703098853/jammal_photos/zuclkds0uufzktzfeien.png",
-        },
-        {
-          id: "27",
-          title: "Cake",
-          price: 50,
-          imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703099235/jammal_photos/mwphxi7ujoec1c2krana.png",
-        },
-        {
-          id: "28",
-          title: "Cup Cake",
-          price: 275,
-          imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703099335/jammal_photos/why415hwonyxffn1cyon.png",
-        },
-      ],
-      pizzaProducts: [
-        {
-          id: "29",
-          title: "Pizza",
-          price: 95,
-          imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703098919/jammal_photos/bvipjezk42alazv5roew.png",
-        },
-        {
-          id: "30",
-          title: "Pizza",
-          price: 95,
-          imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703098919/jammal_photos/bvipjezk42alazv5roew.png",
-        },
-        {
-          id: "31",
-          title: "Pizza",
-          price: 95,
-          imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703098919/jammal_photos/bvipjezk42alazv5roew.png",
-        },
-        {
-          id: "32",
-          title: "Pizza",
-          price: 95,
-          imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703098919/jammal_photos/bvipjezk42alazv5roew.png",
-        },
-        {
-          id: "33",
-          title: "Pizza",
-          price: 95,
-          imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703098919/jammal_photos/bvipjezk42alazv5roew.png",
-        },
-        {
-          id: "34",
-          title: "Pizza",
-          price: 95,
-          imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703098919/jammal_photos/bvipjezk42alazv5roew.png",
-        },
 
-        {
-          id: "35",
-          title: "Pizza",
-          price: 95,
-          imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703098919/jammal_photos/bvipjezk42alazv5roew.png",
-        },
-        {
-          id: "36",
-          title: "Pizza",
-          price: 95,
-          imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703098919/jammal_photos/bvipjezk42alazv5roew.png",
-        },
-      ],
-      coffeeProducts: [
-        {
-          id: "37",
-          title: "Hot Coffee",
-          price: 20,
-          imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703099401/jammal_photos/tb2lmnbq0imabiyxzsub.png",
-        },
-        {
-          id: "38",
-          title: "Cold Coffee",
-          price: 20,
-          imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703099401/jammal_photos/tb2lmnbq0imabiyxzsub.png",
-        },
-        {
-          id: "39",
-          title: "Black Coffee",
-          price: 20,
-          imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703099401/jammal_photos/tb2lmnbq0imabiyxzsub.png",
-        },
-        {
-          id: "40",
-          title: "White Coffee",
-          price: 95,
-          imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703099401/jammal_photos/tb2lmnbq0imabiyxzsub.png",
-        },
-        {
-          id: "41",
-          title: "Hot Coffee",
-          price: 20,
-          imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703099401/jammal_photos/tb2lmnbq0imabiyxzsub.png",
-        },
-        {
-          id: "42",
-          title: "Cold Coffee",
-          price: 20,
-          imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703099401/jammal_photos/tb2lmnbq0imabiyxzsub.png",
-        },
-
-        {
-          id: "43",
-          title: "Black Coffee",
-          price: 20,
-          imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703099401/jammal_photos/tb2lmnbq0imabiyxzsub.png",
-        },
-        {
-          id: "44",
-          title: "White Coffee",
-          price: 95,
-          imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703099401/jammal_photos/tb2lmnbq0imabiyxzsub.png",
-        },
-      ],
-    },
-    CartItems: {
-      Title: "Popular food menu",
-      popularMenuFood: [
-        {
-          id: "01",
-          title: "Vegetable",
-          price: 25,
-          imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703098596/jammal_photos/n4r8kzctvhbymxmmydhq.png",
-        },
-        {
-          id: "02",
-          title: "Chicken",
-          price: 250,
-          imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703098694/jammal_photos/rbtige8oucnpqluq3b5j.png",
-        },
-
-        {
-          id: "03",
-          title: "Whipped Cream",
-          price: 45,
-          imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703098853/jammal_photos/zuclkds0uufzktzfeien.png",
-        },
-
-        {
-          id: "04",
-          title: "Pizza",
-          price: 75,
-          imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703098919/jammal_photos/bvipjezk42alazv5roew.png",
-        },
-      ],
-    },
     feature: {
-      title: "Who we are?",
-      imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703103180/jammal_photos/afcfogeancctcy4nhsfn.png",
-      description: "Take a look at the benefits we offer you",
-      info: "we prioritize your satisfaction. Our commitment to excellence is evident in the benefits we offer. ",
-      cards: [
+      paragraf: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      title: {
+        title1: "PROFESSIONAL SKILLS",
+        title2: "My",
+        title3: "Talent",
+      },
+      sub_title: {
+        title1: "PHP",
+        title2: "JavaScript",
+        title3: "WordPress",
+        title4: "Python",
+        title5: "React",
+        title6: "Adobe XD",
+      },
+      percentage: {
+        percentage1: "85",
+        percentage2: "75",
+        percentage3: "90",
+        percentage4: "75",
+        percentage5: "70",
+        percentage6: "85",
+      },
+    },
+
+    projects: {
+      imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1708020289/jammal_photos/yd48mthnmtr9zswrqrms.png",
+
+      title: {
+        title1: "PROTFOLIO",
+        title2: "My",
+        title3: "Cases",
+        title4: "See Pricing",
+      },
+      links: {
+        link1: "All",
+        link2: "VIDEO",
+        link3: "PHOTOGRAPHY",
+        link4: "BRANDING",
+      },
+      Card1: {
+        title: "BRANDING",
+        sub_title: "Zorro",
+        imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1707863833/jammal_photos/wbbku6kd3nqj8mu9yfr2.jpg",
+        text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.",
+      },
+      Card2: {
+        title: "BRANDING",
+        sub_title: "Gooir",
+        imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1707863903/jammal_photos/rnu0jaturksoviadcjr6.jpg",
+        text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.",
+      },
+      Card3: {
+        title: "VIDEO",
+        sub_title: "Explore",
+        imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1707863941/jammal_photos/g0zjiini4m5j7hqz91gz.jpg",
+        text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.",
+      },
+      Card4: {
+        title: "VIDEO",
+        sub_title: "Stay Fit",
+        imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1707863973/jammal_photos/damj0sk3sklyrebj6met.jpg",
+        text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.",
+      },
+      Card5: {
+        title: "PHOTOGRAPHY",
+        sub_title: "Kana",
+        imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1707864004/jammal_photos/hg9kws6fqvgyfneidaqg.jpg",
+        text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.",
+      },
+      Card6: {
+        title: "PHOTOGRAPHY",
+        sub_title: "Mozar",
+        imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1707864030/jammal_photos/xzrxu3uwolixnvhxn8ka.jpg",
+        text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.",
+      },
+      btn15: {
+        btn_text: " VIEW MORE",
+      },
+    },
+    cta: {
+      title: {
+        title1: "RESUME",
+        title2: "My",
+        title3: "Story",
+      },
+      imgUrl: [
+        "https://res.cloudinary.com/duc04fwdb/image/upload/v1708028064/jammal_photos/dxfncgzlnm5uoeyhugkf.svg",
+        "https://res.cloudinary.com/duc04fwdb/image/upload/v1708027950/jammal_photos/suloncptxwohoete98cr.png",
+      ],
+      cv: [
         {
-          icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703103379/jammal_photos/wvvtn9lgn5k84md2jhtm.svg",
-          title: "Free Home Delivery",
-          description: "Enjoy free and timely home delivery. ",
+          id: 1,
+          title: "CoderHouse Courses",
+          subtitle: "Backend Programming",
+          date: "2014 - 2016",
+          description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+          category: "education",
         },
         {
-          icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703103489/jammal_photos/rihmvtglekzcmjdavtbm.svg",
-          title: "Return & Refund",
-          description: "We guarantee a hassle-free return and refund process. ",
+          id: 2,
+          title: "Lviv National Academy of Arts",
+          subtitle: "Faculty of Design",
+          date: "2012 - 2014",
+          description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+          category: "education",
         },
         {
-          icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703103560/jammal_photos/k3irnc1fhkmugeekjbol.svg",
-          title: "Secure Payment",
-          description: "Your transactions are securely processed. ",
+          id: 3,
+          title: "IT Future",
+          subtitle: "High School",
+          date: "2010 - 2012",
+          description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+          category: "education",
         },
         {
-          icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703103423/jammal_photos/legalyoxmyba3arp5n3p.svg",
-          title: "24/7 Hours Support",
-          description: "We are here for you round the clock. ",
+          id: 4,
+          title: "UI Head & Manager",
+          subtitle: "Soft Tech Inc.",
+          date: "2020 - 2022",
+          description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+          category: "experience",
+        },
+        {
+          id: 5,
+          title: "UI / UX Specialist",
+          subtitle: "Kana Design Studio",
+          date: "2018 - 2020",
+          description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+          category: "experience",
+        },
+        {
+          id: 6,
+          title: "Plugins Developer",
+          subtitle: "Fiverr.com",
+          date: "2016 - 2018",
+          description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+          category: "experience",
         },
       ],
     },
     testimonial: {
-      title: "What our customers are saying",
-      imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703093874/jammal_photos/dwbzkjuoel7mlgqohppt.png",
-      cards: [
-        {
-          content: "I'm impressed with the professionalism and quality of service. The team delivered beyond my expectations!",
-          name: "Alice Johnson",
-          role: "Marketing Manager",
-        },
-        {
-          content: "Great experience working with this company. The attention to detail and dedication of the team is commendable.",
-          name: "Bob Smith",
-          role: "Business Owner",
-        },
-        {
-          content: "The website they developed for us not only looks fantastic but also performs exceptionally well. Highly recommended!",
-          name: "Emily Davis",
-          role: "UX Designer",
-        },
-      ],
-    },
-    cta: {
-      title: "Download our app",
-      description: " Never Feel Hungry! Download Our Mobile App Order Delicious Food",
-      info: "Experience the convenience of our mobile app, ensuring you never go hungry, Download now to order delicious food anytime, anywhere. ",
-      imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703105732/jammal_photos/lldrbchcloecmarn2bep.png",
-      googleButton: {
-        title: "Google Play",
-        icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703106187/jammal_photos/bm7fqpnzrwtkawffbci3.svg",
+      imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1708029335/jammal_photos/vposir7tunyagdu3f9uq.svg",
+      title: {
+        title1: "Testimonials",
+        title2: "WHAT",
+        title3: "Customers Say",
+        pargarf: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       },
-      appleButton: {
-        title: "Apple Store",
-        icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703106097/jammal_photos/gmyir4uguaz6ejvw3s3t.svg",
+      Card1: {
+        name: "Barbara Wilson",
+        job: "CEO Company",
+        imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1707919207/jammal_photos/kg0g3xrmwu16y709xbf2.jpg",
+        text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      },
+      Card2: {
+        name: "Charlie Smith",
+        job: "Designer",
+        imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1707919242/jammal_photos/jmnw7gbg47vcyqczyqym.jpg",
+        text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      },
+      Card3: {
+        name: "Roy Wang",
+        job: "Manager GYM",
+        imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1707919266/jammal_photos/sq5wudx05l26l781sjgf.jpg",
+        text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      },
+      Card4: {
+        name: "Jennifer Smith",
+        job: "CEO & Founder",
+        imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1707919283/jammal_photos/icj4v6zzd11ykcgpyse4.jpg",
+        text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      },
+      Card5: {
+        name: "Paul Freeman",
+        job: "Photographer",
+        imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1707919298/jammal_photos/kbtunpnxyziktokmlwjo.jpg",
+        text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      },
+    },
+    pricing: {
+      imgUrl: [
+        "https://res.cloudinary.com/duc04fwdb/image/upload/v1708030355/jammal_photos/px8o2t9qtet1pumt2yip.svg",
+        "https://res.cloudinary.com/duc04fwdb/image/upload/v1708030465/jammal_photos/capby7kt0b8mwxgzf3hs.png",
+      ],
+      title: {
+        title1: "PRICING",
+        title2: "MY",
+        title3: "Price Board",
+        paragraf:
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.",
+      },
+      sub_title: {
+        sub_title1: "Brand Design",
+        sub_title2: "Web Development",
+        sub_title3: "Advertising",
+        sub_title4: "Photography",
+
+        sub_title5: "Brand Design",
+        sub_title6: "Web Development",
+        sub_title7: "Advertising",
+        sub_title8: "Photography",
+
+        sub_title9: "Brand Design",
+        sub_title10: "Web Development",
+        sub_title11: "Advertising",
+        sub_title12: "Photography",
+      },
+      btn_text: {
+        btn1: "START PROJECT",
+      },
+      Card1: {
+        amount: "39",
+        title: "HOURLY BASIS",
+        duration: "hour",
+      },
+      Card2: {
+        amount: "259",
+        title: "FREELANCING ",
+        duration: "Week",
+      },
+      Card3: {
+        amount: "1.249",
+        title: "FULL TIME ",
+        duration: "Month",
+      },
+    },
+    blog: {
+      imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1708030465/jammal_photos/capby7kt0b8mwxgzf3hs.png",
+
+      title: {
+        title1: "LATEST BLOG",
+        title2: "MY",
+        title3: "Articles and Advice ",
+        title4: "Read more ",
+        paragraf:
+          "Vivamus interdum suscipit lacus. Nunc ultrices accumsan matties. Aliguam vel sem vel velit efficer malesuda. Donec arcu lacus, ornare rget...",
+      },
+      btn_text: {
+        btn1: " VIEW BLOG ",
+      },
+      Card1: {
+        data: "OCTOBER 31, 2022",
+        title: "The Main Thing For The Designer",
+        imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1707942658/jammal_photos/lyixvtrnvyazsfa5yuje.jpg",
+      },
+      Card2: {
+        data: "OCTOBER 31, 2022",
+        title: "Follow Your Own Design Process",
+        imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1707942696/jammal_photos/yjikp3c1msirossmsu3d.jpg",
+      },
+      Card3: {
+        data: "NOVEMBER 28, 2021",
+        title: "Usability Secrets to Create Better Interfaces",
+        imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1707942724/jammal_photos/fiysz2n20varciifews5.jpg",
+      },
+    },
+
+    contact: {
+      title: {
+        title1: "CONTACT ME ",
+        title2: "LET'S ",
+        title3: "Talk About Ideas",
+      },
+      labels: {
+        label1: "YOUR FULL NAME *",
+        label2: "YOUR EMAIL ADDRESS *",
+        label3: "YOUR SUBJECT *",
+        label4: "YOUR MESSAGE *",
+      },
+      btn_text: {
+        btn1: "SEND MESSAGE",
+      },
+      Contact15_info1: {
+        title: "Address",
+        sub_title: "North Tower, Toronto, Canada",
+        imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1707946243/jammal_photos/mc5lc3k5hntokrcqgvgq.png",
+      },
+      Contact15_info2: {
+        title: "Freelance",
+        sub_title: "Available Right Now",
+        imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1707946243/jammal_photos/mc5lc3k5hntokrcqgvgq.png",
+      },
+      Contact15_info3: {
+        title: "Email",
+        sub_title: "Zoe.miller@mydomain.com",
+        imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1707946243/jammal_photos/mc5lc3k5hntokrcqgvgq.png",
+      },
+      Contact15_info4: {
+        title: "Phone",
+        sub_title: "+1 900 - 900 - 9000",
+        imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1707946243/jammal_photos/mc5lc3k5hntokrcqgvgq.png",
       },
     },
     footer: {
-      logo: "https://res.cloudinary.com/duc04fwdb/image/upload/v1706351943/jammal_photos/jicfizb2xdqr8hcgkmc4.png",
-      imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703095423/jammal_photos/x22ihnvjg9i0i40xtbo5.svg",
-      description: "It is a long established fact that a reader will be distracted lookings.",
-      copyright: "copyright 2022, developed by ana. All rights reserved",
-      infoLinks: {
-        title: "Info Links",
-        content: ["Terms & Conditions", "Privacy Policy", "Return & Refund", "Payment Method"],
-      },
-      quickLinks: {
-        title: "Quick Links",
-        content: ["About Us", "Menu", "Recips", "Contact"],
-        links: ["About", "Menu", "Recipes", "Contact"],
-      },
-      contact: {
-        title: "Contact",
-        content: [
-          {
-            title: "Sylhet, Bangladesh",
-            icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703108316/jammal_photos/oe8rjvrg0ckgohix2b6v.svg",
-          },
-          {
-            title: "example@gmail.com",
-            icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703108228/jammal_photos/opdhewds9do1znaaj5li.svg",
-          },
-          {
-            title: "+880 123 456 7890",
-            icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703108367/jammal_photos/y2583eh76th902gnzlje.svg",
-          },
-        ],
+      imgUrl: [
+        "https://res.cloudinary.com/duc04fwdb/image/upload/v1708017487/jammal_photos/dov4re8wizaegdj3jiza.svg",
+        "https://res.cloudinary.com/duc04fwdb/image/upload/v1708017404/jammal_photos/ihzghh1idyxmj1u4vk9r.svg",
+        "https://res.cloudinary.com/duc04fwdb/image/upload/v1708017568/jammal_photos/hpyyah3zyuwxvydg7dnw.png",
+      ],
+      title: {
+        title1: " Copyright Ⓒ 2022 ",
+        title2: "LUIQUE",
+        title3: ". ALL RIGHTS RESERVED ",
+        title4: " DEVELOPED BY ",
+        title5: " BSLTHEMES ",
       },
     },
+
     colors: {
       templateColors: ["#fff", "#cda274", "#292f36", "#f4f0ec", "#777777"],
     },
   },
-
   name: "templateSlice15",
   reducers: {
     updateTemplate15: (state, action) => {
       const { section, variable, value, i, blockName, subBlockName, subIndex, objKey } = action.payload;
-      // sub means level 2 of fields
       if (i === undefined) {
         if (variable === null) {
-          // edit object filed
           state[section][blockName][objKey] = value;
         } else {
-          // edit normal field
           state[section][variable] = value;
         }
       } else {
         if (subIndex === undefined) {
-          // edit array filed with index
           if (variable === null) state[section][blockName][i] = value;
           else {
             if (subBlockName === undefined) {
-              // edit obj in array of objects
               state[section][blockName][i][variable] = value;
             } else {
-              // edit sub obj directly
               state[section][blockName][i][subBlockName][variable] = value;
             }
           }
         } else {
-          // edit sub element in array
           if (variable === null) state[section][blockName][i][subBlockName][subIndex] = value;
           else {
-            // edit sub obj in array of objects
             state[section][blockName][i][subBlockName][subIndex][variable] = value;
           }
         }

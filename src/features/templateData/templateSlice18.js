@@ -1,24 +1,24 @@
 import { createSlice } from "@reduxjs/toolkit";
 const templateSlice18 = createSlice({
   initialState: {
-    navbar18: {
+    navbar: {
       title: "Car Rental",
       links: [
         {
           name: "HOME",
-          link: "/#",
+          link: "#",
         },
         {
           name: "CARS",
-          link: "/#cars",
+          link: "#",
         },
         {
           name: "ABOUT",
-          link: "/#about",
+          link: "#about",
         },
         {
           name: "BOOKING",
-          link: "/#booking",
+          link: "#",
         },
       ],
       lightIcon: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1708092466/icons8-sun-24_oonunj.png",
@@ -26,7 +26,7 @@ const templateSlice18 = createSlice({
       menuIcon: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1708092472/icons8-menu-32_ixhdzw.png",
     },
 
-    hero18: {
+    hero: {
       lightImage: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1708094043/banner-car_nzxi5c.png",
       darkImage: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1708094046/car_wnmkfa.png",
       smTitle: "Effortless",
@@ -35,14 +35,14 @@ const templateSlice18 = createSlice({
       buttonText: "Get Started",
     },
 
-    feature18: {
+    feature: {
       imgUrl: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1708094582/car1_yzpkby.png",
       title: "About us",
       description1: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, magnam! Tenetur odio quo et maxime?",
       description2: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, tempora.",
       buttonText: "Get Started",
     },
-    services18: {
+    services: {
       title: "Why Choose Us",
       blocks: [
         {
@@ -69,7 +69,7 @@ const templateSlice18 = createSlice({
       ],
     },
 
-    projects18: {
+    projects: {
       title: "Lorem ipsum dolor",
       description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor iure nemo ab?",
       cards: [
@@ -98,7 +98,7 @@ const templateSlice18 = createSlice({
       buttonText: "Get Started",
     },
 
-    testimonial18: {
+    testimonial: {
       title: "What Our Clients Say About Us",
       description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis iure consectetur tempora amet.",
       cards: [
@@ -123,7 +123,7 @@ const templateSlice18 = createSlice({
       ],
     },
 
-    cta18_1: {
+    cta1: {
       title: "What Our Clients Say About Us",
       description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis iure consectetur tempora amet.",
       bannerImg: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1708098410/pattern_t0naia.jpg",
@@ -131,14 +131,14 @@ const templateSlice18 = createSlice({
       PlayStoreImg: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707090481/play_store_nmzfln.png",
     },
 
-    cta18_2: {
+    cta2: {
       title: "Let's collaborate on your upcoming car rental venture",
       description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem necessitatibus quasi et vel,",
       linkTxt: "Contact",
       link: "#",
     },
 
-    footer18: {
+    footer: {
       title: "Car Rental",
       description: "Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, voluptate.",
       LocationIcon: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707781362/icons8-location-arrow-24_mwjabu.png",

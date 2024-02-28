@@ -15,7 +15,7 @@ const templateSlice5 = createSlice({
       videoUrl: "https://res.cloudinary.com/dmcdea0b9/video/upload/v1703110566/heroVideo_z23a38.mp4",
     },
 
-    features1: {
+    feature1: {
       smallTitle: "travel support",
       title: "Plan your travel with confidence",
       description: "find help with booking and travel plans, see what to expect the journey",
@@ -64,7 +64,7 @@ const templateSlice5 = createSlice({
       ],
     },
 
-    features2: {
+    feature2: {
       imgUrl: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1703116246/fea5-2_q5na0z.jpg",
       title: "Unaccompanied minor lounge",
       blocks: [

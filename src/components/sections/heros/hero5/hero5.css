@@ -1,7 +1,7 @@
 .hero5{
     padding-left: 1.5rem;
     padding-right: 1.5rem;
-    padding-top: 10rem;
+    padding-top: 1rem;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -15,7 +15,7 @@
     color: var(--website-5-black);
     font-size:30px ;
     font-weight: 700;
-    line-height: 2.5rem;
+    line-height: 2rem;
     text-align: center;
     justify-content: center;
     margin: auto;

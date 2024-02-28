@@ -5,7 +5,7 @@ import ResponsiveMenu from "./ResponsiveMenu";
 
 
 const Navbar = ({ theme, setTheme }) => {
-  const { navbar18 } = useSelector((state) => state.template18);
+  const { navbar } = useSelector((state) => state.template18);
 
   const [showMenu, setShowMenu] = useState(false);
 
@@ -17,11 +17,11 @@ const Navbar = ({ theme, setTheme }) => {
       <div className="container18 py-2 md:py-0">
         <div className="flex justify-between items-center">
           <div className="flex gap-4">
-            <span className="text-3xl font-bold font-serif">{navbar18.title}</span>
+            <span className="text-3xl font-bold font-serif">{navbar.title}</span>
           </div>
           <nav className="hidden md:block">
             <ul className="flex items-center gap-8">
-              {navbar18.links.map((data, index) => (
+              {navbar.links.map((data, index) => (
                 <li key={index} className="py-4">
                   <a
                     href={data.link}
@@ -33,9 +33,9 @@ const Navbar = ({ theme, setTheme }) => {
               ))}
               {/* DarkMode feature implement */}
               {theme === "dark" ? (
-                <img src={navbar18.lightIcon} alt="" onClick={() => setTheme("light")} className="" />
+                <img src={navbar.lightIcon} alt="" onClick={() => setTheme("light")} className="" />
               ) : (
-                <img src={navbar18.darkIcon} alt="" onClick={() => setTheme("dark")} className="" />
+                <img src={navbar.darkIcon} alt="" onClick={() => setTheme("dark")} className="" />
               )}
             </ul>
           </nav>
@@ -43,15 +43,15 @@ const Navbar = ({ theme, setTheme }) => {
           <div className="flex items-center gap-4 md:hidden ">
             {/* dark  mode */}
             {theme === "dark" ? (
-              <img src={navbar18.lightIcon} alt="" onClick={() => setTheme("light")} className="" />
+              <img src={navbar.lightIcon} alt="" onClick={() => setTheme("light")} className="" />
             ) : (
-              <img src={navbar18.darkIcon} alt="" onClick={() => setTheme("dark")} className="" />
+              <img src={navbar.darkIcon} alt="" onClick={() => setTheme("dark")} className="" />
             )}
             {/* Mobile Hamburger icon */}
             {showMenu ? (
-              <img src={navbar18.menuIcon} alt="" onClick={toggleMenu} className=" cursor-pointer transition-all" size={30} />
+              <img src={navbar.menuIcon} alt="" onClick={toggleMenu} className=" cursor-pointer transition-all" size={30} />
             ) : (
-              <img src={navbar18.menuIcon} alt="" onClick={toggleMenu} className="cursor-pointer transition-all" size={30} />
+              <img src={navbar.menuIcon} alt="" onClick={toggleMenu} className="cursor-pointer transition-all" size={30} />
             )}
           </div>
         </div>

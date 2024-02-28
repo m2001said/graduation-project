@@ -33,6 +33,7 @@
   width: 2rem;
   height: 2rem;
   fill: var(--website-3-color-1);
+  display: contents;
 }
 .category > :nth-child(2) {
   font-size: 1rem;
