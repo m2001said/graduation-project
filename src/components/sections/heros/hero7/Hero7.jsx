@@ -2,7 +2,6 @@ import React from "react";
 import styles from "../../heros/hero7/styles7/style";
 import Services7 from "../../services/services7/Services7";
 import { useSelector } from "react-redux";
-
 const Hero7 = () => {
   const { hero } = useSelector((state) => state.template7);
   console.log(hero);
@@ -19,7 +18,7 @@ const Hero7 = () => {
         </div>
         <div className="flex flex-row justify-between items-center w-full">
           <h1 className={`flex-1 font-poppins font-semibold ss:text-[72px] text-[52px] text-white ss:leading-[100.8px] leading-[75px] ${styles.textGradient}`}>
-            {hero.title.titleA} <br className="sm:block hidden" /> <span className="text-gradient">{hero.title.titleB} </span>
+            {hero.title.titleA} <br className="sm:block hidden" /> <span className="text-gradient7">{hero.title.titleB} </span>
           </h1>
           <div className="ss:flex hidden md:mr-4 mr-0">
             <Services7 />

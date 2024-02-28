@@ -22,7 +22,7 @@
 .category {
   display: flex;
   flex-direction: column;
-  background-color: var(--gray);
+  background-color: var(--gray3);
   padding: 2rem;
   margin: 2rem 0.4rem;
   gap: 1rem;
@@ -52,7 +52,7 @@
   width: 1rem;
 }
 .category:hover {
-  background: var(--planCard);
+  background: var(--planCard3);
   cursor: pointer;
 }
 
