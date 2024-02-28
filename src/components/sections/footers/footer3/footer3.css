@@ -46,3 +46,9 @@
   filter: blur(200px);
   background: rgb(255, 115, 0);
 }
+@media screen and (max-width: 1024px) {
+  .blur-f-1,
+  .blur-f-2 {
+    display: none;
+  }
+}

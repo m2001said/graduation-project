@@ -3,15 +3,15 @@ import { useSelector } from "react-redux";
 import "../testimonials11/testimonials11.css";
 
 const Testimonials11 = () => {
-  const { test11 } = useSelector((state) => state.template11);
+  const { testimonial } = useSelector((state) => state.template11);
   return (
     <section className="testimonials11 container section11">
       <h2 className="section__title11">Clients & Reviews</h2>
       <div className="testimonials__container grid11">
-        {test11.map(({ id, image, title, subtitle, comment }) => (
+        {testimonial.map(({ id, imgUrl, title, subtitle, comment }) => (
           <div className="testimonials__item11" key={id}>
             <div className="thumb11">
-              <img src={image} alt="" />
+              <img src={imgUrl} alt="" />
             </div>
             <div className="content11">
               <h3 className="testimonials__title11">{title}</h3>

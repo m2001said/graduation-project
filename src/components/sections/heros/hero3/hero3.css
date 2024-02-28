@@ -19,6 +19,7 @@
   background-color: var(--orange);
   z-index: 2;
 }
+
 .the-best-ad {
   margin-top: 4rem;
   background-color: var(--darkGrey);
@@ -66,6 +67,7 @@
   display: flex;
   gap: 2rem;
 }
+
 .figures > div {
   display: flex;
   flex-direction: column;
@@ -75,7 +77,7 @@
   font-size: 2rem;
 }
 .figures > div > span:nth-of-type(2) {
-  color: var(--gray);
+  color: var(--orange);
   text-transform: uppercase;
 }
 .btn {
