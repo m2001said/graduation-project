@@ -3,13 +3,6 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { useSelector } from "react-redux";
 
-// img
-import Img1 from "../../../assets/images/images8/portfolio-img1.png";
-import Img2 from "../../../assets/images/images8/portfolio-img2.png";
-import Img3 from "../../../assets/images/images8/portfolio-img3.png";
-
-// ... (your imports)
-
 const Work8 = () => {
   const { work } = useSelector((state) => state.template8);
 
