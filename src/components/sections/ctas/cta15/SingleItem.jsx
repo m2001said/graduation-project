@@ -7,7 +7,7 @@ const SingleItem = ({ id, title, description, subtitle, date }) => {
   const [expanded, setExpanded] = useState(false);
 
   return (
-    <article className="h-full flex-wrap basis-0 flex mb-2 border-0 border-b-2 border-solid border-black relative">
+    <article className="h-full flex-wrap basis-0 flex mb-2 border-0 border-b-2 border-solid border-black relative ">
       <div className={`${id === 1 ? "border-0" : "accordion-border"} w-full mr-6`}>
         <p className="flex justify-between relative items-center m-auto w-full pl-6">
           <span className="items-center text-2xl font-bold py-3 cta_6">{title}</span>

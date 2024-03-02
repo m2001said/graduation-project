@@ -10,10 +10,10 @@ const CardDeal = () => {
         <h2 className={styles.heading2}>
           {feature.title.titleG} <br className="sm:block hidden" /> {feature.title.titleH}
         </h2>
-        <p className={`${styles.paragraph} max-w-[470px] mt-5`} style={{ color: "var(--color-dim-white)" }}>
+        <p className={`${styles.paragraph} max-w-[470px] mt-5`} style={{ color: "var(--color5)" }}>
           {feature.title.titleK}{" "}
         </p>
-        <Button7 styles={`px-4 py-5 mt-6 bg-green-500 text-white rounded-full hover:bg-green-700 `} />
+        <Button7 styles={`px-4 py-5 mt-6  text-[var(--color2)] rounded-full bg-[var(--color3)] `} />
       </div>
       <div className={layout.sectionImg}>
         <img src={feature.imgUrl[3]} alt="billing" className="w-[100%] h-[100%]" />

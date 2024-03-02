@@ -8,12 +8,12 @@ const Hero7 = () => {
   return (
     <section id="home" className={`flex md:flex-row flex-col ${styles.paddingY} TrialDesign7`}>
       <div className={`flex-1 ${styles.flexStart} flex-col xl:px-0 sm:px-16 px-6`}>
-        <div className={`flex flex-row items-center py-[6px] px-4 rounded-[10px] mb-2 ${styles.primary}`} style={{ backgroundColor: "var(--color-primary)" }}>
+        <div className={`flex flex-row items-center py-[6px] px-4 rounded-[10px] mb-2 ${styles.primary}`} style={{ backgroundColor: "var(--color4)" }}>
           <img src={hero.imgUrl[0]} alt="discount" className="w-[32px] h-[32px]" />
           <p className={`${styles.paragraph} ml-2`}>
             <span className="text-white">{hero.Subtitle.SubtitleA}</span>
-            <span style={{ color: "var(--color-dim-white)" }}> {hero.Subtitle.SubtitleB}</span> <span className="text-white">{hero.Subtitle.SubtitleC}</span>
-            <span style={{ color: "var(--color-dim-white)" }}> {hero.Subtitle.SubtitleD}</span>
+            <span style={{ color: "var(--color5)" }}> {hero.Subtitle.SubtitleB}</span> <span className="text-white">{hero.Subtitle.SubtitleC}</span>
+            <span style={{ color: "var(--color5)" }}> {hero.Subtitle.SubtitleD}</span>
           </p>
         </div>
         <div className="flex flex-row justify-between items-center w-full">
@@ -29,7 +29,7 @@ const Hero7 = () => {
           {hero.title.titleC}
         </h1>
 
-        <p className={`${styles.paragraph} max-w-[470px] mt-5`} style={{ color: "var(--color-dim-white)" }}>
+        <p className={`${styles.paragraph} max-w-[470px] mt-5`} style={{ color: "var(--color5)" }}>
           {hero.paragrafA}
         </p>
       </div>

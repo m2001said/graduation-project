@@ -12,7 +12,7 @@ const Blog15 = () => {
           <p className="text-2xl blog15_6 font-bold hover:text-[#29a587] my-[15px]">{title}</p>
           <p className="blog15_5 opacity-80 leading-[1.7rem]">{blog.title.paragraf} </p>
           <span className="pt-[10px]">
-            <a href="#" className="font-bold flex items-center gap-x-2 no-underline text-black">
+            <a href="#" className="font-bold flex items-center gap-x-2 no-underline text-[var(--color2)] hover:text-[var(--color3)]">
               {blog.title.title4}
               <img src={blog.imgUrl} style={{ width: "30px", height: "30px" }} />
             </a>
@@ -42,11 +42,7 @@ const Blog15 = () => {
           </div>
         </section>
         <span className="block rounded-full mt-[90px] h-14 border border-black border-solid shadowbtn">
-          <button
-            className=" dark:text-white h-full font-bold px-10 rounded-full border-2 border-solid border-transparent blog15_8 blog15_9 "
-            tabIndex="0"
-            role="button"
-          >
+          <button className="  h-full font-bold px-10 rounded-full border-2 border-solid border-transparent blog15_8 blog15_9 " tabIndex="0" role="button">
             {blog.btn_text.btn1}
           </button>
         </span>

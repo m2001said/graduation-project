@@ -12,7 +12,7 @@ const Testimonials7 = () => {
           {testimonial.titleA} <br className="sm:block hidden" /> {testimonial.titleB}
         </h2>
         <div className="w-full md:mt-0 mt-6">
-          <p className={`${styles.paragraph} text-left max-w-[450px]`} style={{ color: "var(--color-dim-white)" }}>
+          <p className={`${styles.paragraph} text-left max-w-[450px]`} style={{ color: "var(--color5)" }}>
             {testimonial.titleC}{" "}
           </p>
         </div>

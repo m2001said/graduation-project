@@ -7,7 +7,7 @@ const Navbar7 = () => {
   const [toggle, setToggle] = useState(false);
 
   return (
-    <nav className="w-full flex py-6 justify-between items-center navbar" style={{ color: "var(--color-dim-white)" }}>
+    <nav className="w-full flex py-6 justify-between items-center navbar" style={{ color: "var(--color3)" }}>
       <img src={navbar.imgUrl[0]} alt="hoobank" className="w-[124px] h-[32px]" />
 
       <ul className="list-none sm:flex hidden justify-end items-center flex-1">
@@ -19,7 +19,7 @@ const Navbar7 = () => {
             }`}
             onClick={() => setActive(nav.title)}
           >
-            <a href={`#${nav.id}`} style={{ color: active === nav.title ? "var(--color-secondary)" : "var(--color-dim-white)" }}>
+            <a href={`#${nav.id}`} style={{ color: active === nav.title ? "var(--color6)" : "var(--color3)" }}>
               {nav.title}
             </a>
           </li>
@@ -37,7 +37,7 @@ const Navbar7 = () => {
                 }`}
                 onClick={() => setActive(nav.title)}
               >
-                <a href={`#${nav.id}`} style={{ color: active === nav.title ? "var(--color-secondary)" : "var(--color-dim-white)" }}>
+                <a href={`#${nav.id}`} style={{ color: active === nav.title ? "var(--color6)" : "var(--color3)" }}>
                   {nav.title}
                 </a>
               </li>

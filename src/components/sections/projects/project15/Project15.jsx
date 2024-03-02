@@ -12,7 +12,7 @@ const Project15 = () => {
           <p className="text-[13px] font-bold pt-[30px] m-0 pb-[5px] proj15_7">{title}</p>
           <h1 className="text-2xl font-bold m-0 proj15_8">{sub_title}</h1>
           <p className=" opacity-80 my-[30px] leading-[1.7rem] proj15_9">{text}</p>
-          <a href="#project" className="font-bold flex items-center gap-x-2 no-underline text-black">
+          <a href="#project" className="font-bold flex items-center gap-x-2 no-underline text-[var(--color2)] hover:text-[var(--color3)] ">
             {projects.title.title4} <img src={projects.imgUrl} style={{ width: "30px", height: "30px" }} />
           </a>
           <div className="absolute -right-6 -bottom-6 bg-contain bg-center w-[131px] h-[131px]"></div>
@@ -66,7 +66,7 @@ const Project15 = () => {
           )}
         </section>
         <span className="block rounded-full mt-[70px] h-14 border-black border-solid shadowbtn">
-          <button className="bg-transparent  h-full font-bold px-10 rounded-full hover:border-2 border-solid hover:bg-[#29a587] hover:text-white hover:border-white proj15_10">
+          <button className="bg-transparent  h-full font-bold px-10 rounded-full hover:border-2 border-solid bg-[var(--color3)] text-[var(--color5)] hover:border-white proj15_10">
             {projects.btn15.btn_text}
           </button>
         </span>
