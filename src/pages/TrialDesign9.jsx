@@ -2,7 +2,7 @@ import React from "react";
 import Testimonials9 from "../components/sections/testimonials/testimonials9/Testimonials9";
 import "../assets/css/globals9.css";
 import Hero9 from "../components/sections/heros/hero9/Hero9";
-import About9 from "../components/sections/aboutUS/aboutUs9/About9";
+import About9 from "../components/sections/aboutUS/aboutus9/About9";
 import Services9 from "../components/sections/services/services9/Services9";
 import Footer9 from "../components/sections/footers/footer9/Footer9";
 import Teams9 from "../components/sections/teams/teams9/Teams9";
