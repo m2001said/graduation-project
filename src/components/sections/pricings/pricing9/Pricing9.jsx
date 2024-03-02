@@ -1,57 +1,104 @@
-// import { useSelector } from "react-redux";
-// const About9 = () => {
-//   const about = useSelector((state) => state.template9.about);
-//   const aboutcont = useSelector((state) => state.template9.aboutcont);
+import React from "react";
+import { useSelector } from "react-redux";
+import Carousel from "react-multi-carousel";
+import "react-multi-carousel/lib/styles.css";
 
-//   return (
-//     <main className="container mx-auto lg:flex px-3 mb-12 lg:pt-0 pt-8 about-9">
-//       <div className="lg:w-2/5">
-//         <p className="text-var[(--primary-text-color-9)] md:text-xl text-lg font-medium">{about.title}!</p>
-//         <h1 className="lg:text-4xl text-2xl font-medium py-3">{about.description} </h1>
-//         <p className="lg:w-4/5 text-var[(--text-9-color)]">{aboutcont.more}</p>
-//         <div className="lg:block hidden">
-//           <div className="  bg-var[(--white-9)] shadow-2xl px-4 py-6 rounded-3xl flex items-start gap-x-3 lg:w-4/5 mt-6 ">
-//             <span>
-//               <button>
-//                 {" "}
-//                 <img
-//                   src={about.icon}
-//                   alt=""
-//                   className="  m-auto bg-[var(--transparent)] hover:bg-[var(--icon-hover-color)] active:bg-[var(--icon-active-color) about9_logo "
-//                 />
-//               </button>{" "}
-//               <h1 className="text-var[(--primary-text-color-9)] text-lg font-medium">{aboutcont.more1}</h1>
-//               <p className="flex items-center  text-var[( --black-9)] w-4/5">{aboutcont.moreP}</p>
-//             </span>
-//           </div>
-//           {/* <div className="bg-white shadow-2xl px-4 py-6 rounded-3xl flex items-center gap-x-3 lg:w-4/5 mt-6">
-//             <img src="home" className="text-4xl text-[#0c4f37] w-1/3" />
-//             <span>
-//               <h1 className="text-[#0c4f37] text-lg font-medium">donec porttier cusimd</h1>
-//               <p className="text-[#a5a5a5] w-4/5">ksldmvldskv lknmsdfkls dnsklfnsdkl , mdfks.</p>
-//             </span>
-//           </div> */}
-//         </div>
-//       </div>
-//       <div className="lg:w-1/2 flex items-end gap-4 lg:mt-0 mt-12 lg:h-auto h-[30rem]">
-//         <img src={about.img1} alt="" className="rounded-3xl w-1/2 h-4/5 shadow-md object-cover" />
-//         <div className="w-1/2 h-4/5 flex flex-col gap-4 relative -top-20">
-//           <img src={about.img2} alt="ssssssss" className="w-full h-3/5 rounded-3xl shadow-md object-cover" />
-//           <img src={about.img3} alt="" className="w-full h-2/5 rounded-3xl shadow-md object-cover" />
-//           <button className="bg-gradient-to-r from-var[(--button-bg-gradient-from)] to-var[(--button-bg-gradient-to)] rounded-full h-12 w-12 cursor-auto absolute -bottom-8 left-16"></button>
-//         </div>
-//       </div>
-//       <div className="lg:hidden block pt-4 py-16 ">
-//         <div className=" bg-var[(--white-9)] shadow-2xl px-4 py-6 rounded-3xl flex items-center gap-x-3 lg:w-4/5 mt-6">
-//           <img src={about.icon} className="md:w-10 h-10 text-4xl text-var[(--primary-text-color-9)]" />
-//           <span>
-//             <h1 className="text-var[(  --primary-text-color-9)] text-lg font-medium">{about.iconH}</h1>
-//             <p className="text-var[(--text-9-color)]">{about.iconP} </p>
-//           </span>
-//         </div>
-//       </div>
-//     </main>
-//   );
-// };
+const Pricing9 = () => {
+  const responsive = {
+    superLargeDesktop: { breakpoint: { max: 4000, min: 3000 }, items: 3.2 },
+    desktop: { breakpoint: { max: 3000, min: 1024 }, items: 3 },
+    tablet: { breakpoint: { max: 1024, min: 464 }, items: 2.2 },
+    mobile: { breakpoint: { max: 464, min: 0 }, items: 1.7 },
+  };
 
-// export default About9;
+  // Assuming useSelector hook is correctly configured
+  const { pricing } = useSelector((state) => state.template9);
+  const cards = pricing ? pricing.cards : [];
+
+  return (
+    <main className="container mx-auto  pricing-9">
+      <div className="lg:flex justify-between items-center">
+        <div className="lg:w-3/5">
+          <h1 className={`text-[var(--primary-text-color-9)] lg:text-xl uppercase`}>checkout our new </h1>
+          <h1 className={`lg:text-4xl text-2xl font-medium capitalize py-3`}>Latest Listed Properties</h1>
+          <p className={`text-[var(--secondary-text-color-9)] lg:text:base text-sm lg:w-3/5`}>asda asd dadc dad</p>
+        </div>
+
+        <div className="flex gap-x-4 lg:w-2/5 lg:pt-0 pt-6">
+          <button
+            className={`text-[var(--button-text-color-9)] rounded-full border border-[var(--button-text-color-9)] hover:text-[var(--icon-bg-color-9)] focus:bg-[var(--button-text-color-9)] focus:text-[var(--icon-bg-color-9)]`}
+          >
+            ALL
+          </button>
+          <button
+            className={`text-[var(--button-text-color-9)] rounded-full border border-[var(--button-text-color-9)] hover:text-[var(--icon-bg-color-9)] focus:bg-[var(--button-text-color-9)] focus:text-[var(--icon-bg-color-9)]`}
+          >
+            SELL
+          </button>
+          <button
+            className={`text-[var(--button-text-color-9)] rounded-full border border-[var(--button-text-color-9)] hover:text-[var(--icon-bg-color-9)] focus:bg-[var(--button-text-color-9)] focus:text-[var(--icon-bg-color-9)]`}
+          >
+            RENT
+          </button>
+        </div>
+      </div>
+
+      <section className="mt-8">
+        <Carousel
+          className="z-30 w-full lg:flex  justify-center carousel-9"
+          swipeable={true}
+          draggable={false}
+          responsive={responsive}
+          ssr={true}
+          infinite
+          autoPlay={true}
+          keyBoardControl={true}
+          customTransition="all.5"
+          transitionDuration={700}
+        >
+          {cards.map((card, index) => (
+            <div key={index}>
+              <div className="relative h-80 sm:w-80">
+                {/* Image with error handling */}
+                <img
+                  src={card.imgUrl}
+                  onError={(e) => {
+                    e.target.onerror = null; // Prevent infinite loop
+                    e.target.src = "/path/to/fallback-image.jpg"; // Fallback image URL
+                  }}
+                  alt=""
+                  className="rounded-3xl h-full w-full object-cover"
+                />
+                {/* Button with feature icon */}
+                <button
+                  className={`px-5 py-2 flex gap-x-2 items-center ${card.buttonColor}-button ${card.buttonBgColor}-background rounded-full absolute bottom-10 left-10`}
+                >
+                  <img src={card.features[0].icon} className="w-6 h-6" alt={card.features[0].text} />
+                  {card.features[0].text}
+                </button>
+              </div>
+              {/* Card details */}
+              <span className="flex flex-col gap-y-1 py-4">
+                <p className="text-2xl font-medium">{card.price}</p>
+                <p className="text-lg font-medium">{card.view}</p>
+                <p className="text-sm">{card.Address}</p>
+                <div className="flex items-center gap-x-4 text-sm">
+                  {card.features.slice(1).map((feature, index) => (
+                    <span key={index} className="flex items-center gap-x-2">
+                      <img src={feature.icon} alt={feature.text} className="w-6 h-6" />
+                      {feature.text}
+                    </span>
+                  ))}
+                </div>
+              </span>
+            </div>
+          ))}
+        </Carousel>
+
+        <div className="sm:hidden block">{/* Render mobile view content */}</div>
+      </section>
+    </main>
+  );
+};
+
+export default Pricing9;
