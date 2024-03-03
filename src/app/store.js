@@ -6,7 +6,7 @@ import { configureStore } from "@reduxjs/toolkit";
 import screenReducer from "../features/screen/screenSlice";
 import templateReducer from "../features/templateData/templateSlice";
 import templateReducer2 from "../features/templateData/templateSlice2";
-// import templateReducer3 from "../features/templateData/templateSlice3";
+import templateReducer3 from "../features/templateData/templateSlice3";
 import templateReducer4 from "../features/templateData/templateSlice4";
 import templateReducer5 from "../features/templateData/templateSlice5";
 import templateReducer6 from "../features/templateData/templateSlice6";

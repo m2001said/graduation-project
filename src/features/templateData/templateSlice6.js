@@ -398,23 +398,20 @@ const templateSlice6 = createSlice({
         content: ["About Us", "Menu", "Recips", "Contact"],
         links: ["About", "Menu", "Recipes", "Contact"],
       },
-      contact: {
-        title: "Contact",
-        content: [
-          {
-            title: "Sylhet, Bangladesh",
-            icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703108316/jammal_photos/oe8rjvrg0ckgohix2b6v.svg",
-          },
-          {
-            title: "example@gmail.com",
-            icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703108228/jammal_photos/opdhewds9do1znaaj5li.svg",
-          },
-          {
-            title: "+880 123 456 7890",
-            icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703108367/jammal_photos/y2583eh76th902gnzlje.svg",
-          },
-        ],
-      },
+      contact: [
+        {
+          title: "Sylhet, Bangladesh",
+          icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703108316/jammal_photos/oe8rjvrg0ckgohix2b6v.svg",
+        },
+        {
+          title: "example@gmail.com",
+          icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703108228/jammal_photos/opdhewds9do1znaaj5li.svg",
+        },
+        {
+          title: "+880 123 456 7890",
+          icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703108367/jammal_photos/y2583eh76th902gnzlje.svg",
+        },
+      ],
     },
     colors: {
       templateColors: ["#fff", "#cda274", "#292f36", "#f4f0ec", "#777777"],

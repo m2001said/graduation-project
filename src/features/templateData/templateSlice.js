@@ -33,27 +33,19 @@ const templateSlice = createSlice({
       ],
     },
 
-    feature: {
-      title: "We Create The Art Of Stylish Living Stylishly",
-      description:
-        "It is a long established fact that a reader will be distracted by the of readable content of a page when looking at its layouts the points of using that it has a more-or-less normal.",
-      phone: "012345678",
-      buttonText: "Get Free Estimate",
-      icons: [
-        "https://res.cloudinary.com/duc04fwdb/image/upload/v1701813236/templates/template_one/Call_gqvv4l.svg",
-        "https://res.cloudinary.com/duc04fwdb/image/upload/v1701813389/templates/template_one/Vector_5_vvvt2o.svg",
-      ],
+    // feature: {
+    //   title: "We Create The Art Of Stylish Living Stylishly",
+    //   description:
+    //     "It is a long established fact that a reader will be distracted by the of readable content of a page when looking at its layouts the points of using that it has a more-or-less normal.",
+    //   phone: "012345678",
+    //   buttonText: "Get Free Estimate",
+    //   icons: [
+    //     "https://res.cloudinary.com/duc04fwdb/image/upload/v1701813236/templates/template_one/Call_gqvv4l.svg",
+    //     "https://res.cloudinary.com/duc04fwdb/image/upload/v1701813389/templates/template_one/Vector_5_vvvt2o.svg",
+    //   ],
 
-      // icons: [
-      //   {
-      //     icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701813236/templates/template_one/Call_gqvv4l.svg",
-      //   },
-      //   {
-      //     icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701813389/templates/template_one/Vector_5_vvvt2o.svg",
-      //   },
-      // ],
-      imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701813388/templates/template_one/Photo_sonnlx.jpg",
-    },
+    //   imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701813388/templates/template_one/Photo_sonnlx.jpg",
+    // },
     testimonials: {
       title: "What the People Thinks About Us",
       cards: [

@@ -6,7 +6,7 @@ import { useSelector } from "react-redux";
 import { useLocation } from "react-router";
 import { templateActions1 } from "../features/templateData/templateSlice";
 import { templateActions2 } from "../features/templateData/templateSlice2";
-// import { updateTemplate3 } from "../features/templateData/templateSlice3";
+import { templateActions3 } from "../features/templateData/templateSlice3";
 import { templateActions4 } from "../features/templateData/templateSlice4";
 import { templateActions5 } from "../features/templateData/templateSlice5";
 import { templateActions6 } from "../features/templateData/templateSlice6";
@@ -36,9 +36,9 @@ const Dashboard = () => {
     case "2":
       updateAllRef = templateActions2;
       break;
-    // case "3":
-    //   updateAllRef = templateActions3;
-    //   break;
+    case "3":
+      updateAllRef = templateActions3;
+      break;
     case "4":
       updateAllRef = templateActions4;
       break;
