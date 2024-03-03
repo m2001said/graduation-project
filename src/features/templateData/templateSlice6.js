@@ -36,7 +36,8 @@ const templateSlice6 = createSlice({
       shoppingIcon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703095842/jammal_photos/gehvutbyftfxemvoqmu8.svg",
     },
     FilterItems: {
-      fastFoodProducts: [
+      menuTitle: "Our Menu Pack",
+      "FAST FOOD": [
         {
           id: "05",
           title: "Burger",
@@ -86,7 +87,7 @@ const templateSlice6 = createSlice({
           imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703099049/jammal_photos/nw1126s6ntsb3o2ohs3s.png",
         },
       ],
-      riceMenuProducts: [
+      "RICE MENU": [
         {
           id: "12",
           title: "Fried Rice",
@@ -136,7 +137,7 @@ const templateSlice6 = createSlice({
           imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703099126/jammal_photos/t6olygisps4ufz02fezk.png",
         },
       ],
-      dessertProducts: [
+      DESSERT: [
         {
           id: "21",
           title: "Whipped Cream",
@@ -186,7 +187,7 @@ const templateSlice6 = createSlice({
           imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703099335/jammal_photos/why415hwonyxffn1cyon.png",
         },
       ],
-      pizzaProducts: [
+      PIZZA: [
         {
           id: "29",
           title: "Pizza",
@@ -237,7 +238,7 @@ const templateSlice6 = createSlice({
           imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703098919/jammal_photos/bvipjezk42alazv5roew.png",
         },
       ],
-      coffeeProducts: [
+      COFFEE: [
         {
           id: "37",
           title: "Hot Coffee",
