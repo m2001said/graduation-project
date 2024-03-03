@@ -1,8 +1,8 @@
-import Carousel from "react-multi-carousel";
-import "react-multi-carousel/lib/styles.css";
 import Marquee from "react-fast-marquee";
 import { useSelector } from "react-redux";
-
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation, Pagination, Autoplay } from "swiper/modules";
+import "swiper/css";
 const responsive = {
   module: {
     breakpoint: { max: 4000, min: 0 },
@@ -30,30 +30,23 @@ const Hero9 = () => {
             <h1 className="lg:text-3xl text-3xl font-medium pt-3 pb-12 realestateh">{hero9.heading}</h1>
             <p className="text-[var(--color-808080-color-9)] lg:text-base text-sm pb-8 realestateh">{hero9.paragraph}</p>
             <div className="w-full lg:w-2/3">
-              <Carousel
-                className="z-20"
-                swipeable={true}
-                draggable={false}
-                responsive={responsive}
-                showDots
-                arrows
-                autoPlaySpeed={2000}
-                ssr={true}
-                infinite
-                autoPlay={true}
-                keyBoardControl={true}
-                customTransition="all.5"
-                transitionDuration={700}
+              <Swiper
+                modules={[Navigation, Pagination, Autoplay]}
+                spaceBetween={50}
+                slidesPerView={1}
+                autoplay={{ delay: 3000 }}
+                direction="horizontal"
+                className="z-30 w-full"
               >
                 {hero9.carouselImages.map((img, index) => (
-                  <div key={index}>
-                    <img src={img} alt="Carousel Image" className="rounded-2xl" />
-                  </div>
+                  <SwiperSlide key={index}>
+                    <img src={img} alt="Carousel Image" className="rounded-2xl w-full" />
+                  </SwiperSlide>
                 ))}
-              </Carousel>
+              </Swiper>
             </div>
           </div>
-          <form className="lg:w-2/3 relative lg:mt-0 mt-12 w-full lg:pl-4">
+          <form className="shadow-2xl rounded-3xl py-8 lg:w-1/3 relative lg:mt-0 mt-12 w-full">
             <div className="bg-[var(--white-9)] shadow-2xl rounded-3xl py-8">
               <div className="flex justify-between border-b border-[var(--aaaaaa-color-9)] h-12 px-3">
                 <button type="button" className="w-1/2 text-[var(--color-808080-color-9)] focus:border-[var(--button-text-colo-r-9)] cursor-pointer">
@@ -108,11 +101,15 @@ const Hero9 = () => {
           <p className="text-[var(--text-9-color)] ">Trusted by 100+ companies across the global</p>
         </span>
         <div className="py-12">
-          <Marquee>
+          <Swiper modules={[Navigation, Autoplay]} slidesPerView={2} spaceBetween={2} speed={5000} autoplay={{ delay: 100 }} direction="horizontal">
             {hero9.otherImages &&
               hero9.otherImages.logos &&
-              hero9.otherImages.logos.map((logo, index) => <img key={index} src={logo} alt="Company Logo" className="mr-4 h-8" />)}
-          </Marquee>
+              hero9.otherImages.logos.map((logo, index) => (
+                <SwiperSlide key={index}>
+                  <img src={logo} alt="Company Logo" className="mr-4 h-8" />
+                </SwiperSlide>
+              ))}
+          </Swiper>
         </div>
       </div>
       <div className="lg:flex justify-center lg:mt-16  gap-x-8 lg:px-0 px-3 ">

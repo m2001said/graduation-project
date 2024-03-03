@@ -1,7 +1,8 @@
 /* eslint-disable react/prop-types */
-import Carousel from "react-multi-carousel";
-import "react-multi-carousel/lib/styles.css";
+
 import { useSelector } from "react-redux";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation, Pagination, Autoplay } from "swiper/modules";
 const responsive = {
   superLargeDesktop: {
     breakpoint: { max: 4000, min: 3000 },
@@ -40,9 +41,9 @@ const Testimonials13 = () => {
   const Card = ({ img, name, title, desc }) => {
     return (
       <div id="testimonials13" className="bg-[var(--g06412f)] w-80 relative flex justify-center z-20 p-8 mt-40">
-        <button className="rounded-full bg-[var(--g06412f)] absolute -top-20 h-32 w-64 rounded-b-none"></button>
+        <button className="rounded-full bg-[var(--g06412f)] absolute -top-20 h-32 w-64 rounded-b-none btn13"></button>
         <div className="relative z-20 text-center">
-          <img src={img} alt="" className="w-20 h-20 rounded-full -mt-8 mx-auto" />
+          <img src={img} alt="" className="w-20 h-20 rounded-full -mt-8 mx-auto img-13" />
           <p className="text-xl text-[var(--white-13)] primary-font font-semibold pt-4 pb-2">{name}</p>
           <p className="font-light pb-4">{title}</p>
           <hr />
@@ -61,21 +62,27 @@ const Testimonials13 = () => {
         <h1 className="lg:text-4xl primary-font text-[var(--white-13)] text-xl">
           {testimonials.heading1} <span className="underline decoration-[var(--color-13-yel)]">{testimonials.heading2}</span> {testimonials.heading3}
         </h1>
-        <Carousel
-          swipeable={true}
-          draggable={false}
-          responsive={responsive}
-          arrows={true}
-          infinite
-          autoPlay
-          renderButtonGroupOutside={<ButtonGroup />}
-          keyBoardControl={true}
+        <Swiper
+          modules={[Navigation, Pagination, Autoplay]}
+          spaceBetween={10}
+          slidesPerView={3}
+          autoplay={{ delay: 3000 }}
+          direction="horizontal"
+          className="z-30 w-full"
         >
-          <Card img={testimonials.p1} name={testimonials.name1} title={testimonials.title1} desc={testimonials.desc1} />
-          <Card img={testimonials.p2} name={testimonials.name2} title={testimonials.title2} desc={testimonials.desc2} />
-          <Card img={testimonials.p3} name={testimonials.name3} title={testimonials.title3} desc={testimonials.desc3} />
-          <Card img={testimonials.p4} name={testimonials.name4} title={testimonials.title4} desc={testimonials.desc4} />
-        </Carousel>
+          <SwiperSlide>
+            <Card img={testimonials.p1} name={testimonials.name1} title={testimonials.title1} desc={testimonials.desc1} />
+          </SwiperSlide>
+          <SwiperSlide>
+            <Card img={testimonials.p2} name={testimonials.name2} title={testimonials.title2} desc={testimonials.desc2} />
+          </SwiperSlide>
+          <SwiperSlide>
+            <Card img={testimonials.p3} name={testimonials.name3} title={testimonials.title3} desc={testimonials.desc3} />
+          </SwiperSlide>
+          <SwiperSlide>
+            <Card img={testimonials.p4} name={testimonials.name4} title={testimonials.title4} desc={testimonials.desc4} />
+          </SwiperSlide>
+        </Swiper>
       </div>
     </div>
   );

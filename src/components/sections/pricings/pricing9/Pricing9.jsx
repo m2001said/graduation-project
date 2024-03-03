@@ -1,7 +1,7 @@
 import React from "react";
 import { useSelector } from "react-redux";
-import Carousel from "react-multi-carousel";
-import "react-multi-carousel/lib/styles.css";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation, Pagination, Autoplay } from "swiper/modules";
 
 const Pricing9 = () => {
   const responsive = {
@@ -16,7 +16,7 @@ const Pricing9 = () => {
   const cards = pricing ? pricing.cards : [];
 
   return (
-    <main className="container mx-auto  pricing-9">
+    <main className="container mx-auto px-3 pricing-9">
       <div className="lg:flex justify-between items-center">
         <div className="lg:w-3/5">
           <h1 className={`text-[var(--primary-text-color-9)] lg:text-xl uppercase`}>checkout our new </h1>
@@ -44,20 +44,23 @@ const Pricing9 = () => {
       </div>
 
       <section className="mt-8">
-        <Carousel
-          className="z-30 w-full lg:flex  justify-center carousel-9"
-          swipeable={true}
-          draggable={false}
-          responsive={responsive}
-          ssr={true}
-          infinite
-          autoPlay={true}
-          keyBoardControl={true}
-          customTransition="all.5"
-          transitionDuration={700}
+        <Swiper
+          modules={[Navigation, Pagination, Autoplay]}
+          className="z-30 w-full "
+          slidesPerView={3}
+          // autoplay={{ delay: 5000 }}
+          loop={false}
+          keyboard={true}
+          spaceBetween={5}
+          speed={700}
+          breakpoints={responsive}
+          navigation={{
+            prevEl: ".swiper-button-prev",
+            nextEl: ".swiper-button-next",
+          }}
         >
           {cards.map((card, index) => (
-            <div key={index}>
+            <SwiperSlide key={index}>
               <div className="relative h-80 sm:w-80">
                 {/* Image with error handling */}
                 <img
@@ -67,7 +70,7 @@ const Pricing9 = () => {
                     e.target.src = "/path/to/fallback-image.jpg"; // Fallback image URL
                   }}
                   alt=""
-                  className="rounded-3xl h-full w-full object-cover"
+                  className="rounded-3xl w-full h-full  object-cover "
                 />
                 {/* Button with feature icon */}
                 <button
@@ -78,9 +81,7 @@ const Pricing9 = () => {
                 </button>
               </div>
               {/* Card details */}
-              <span className="flex flex-col gap-y-1 py-4">
-                <p className="text-2xl font-medium">{card.price}</p>
-                <p className="text-lg font-medium">{card.view}</p>
+              <span className="flex flex-col gap-y-1 py-4 ">
                 <p className="text-sm">{card.Address}</p>
                 <div className="flex items-center gap-x-4 text-sm">
                   {card.features.slice(1).map((feature, index) => (
@@ -91,9 +92,9 @@ const Pricing9 = () => {
                   ))}
                 </div>
               </span>
-            </div>
+            </SwiperSlide>
           ))}
-        </Carousel>
+        </Swiper>
 
         <div className="sm:hidden block">{/* Render mobile view content */}</div>
       </section>

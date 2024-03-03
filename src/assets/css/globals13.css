@@ -109,7 +109,14 @@ button {
     animation: logo-spin infinite 20s linear;
   }
 }
+#testimonials13:hover {
+  color: var(--black-13);
+  background-color: var(--color-darkG-13);
+}
 
+.img-13:hover {
+  border: 2px solid var(--color-13-yel);
+}
 .read-the-docs {
   color: #888;
 }
