@@ -1,4 +1,3 @@
-import Marquee from "react-fast-marquee";
 import { useSelector } from "react-redux";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Autoplay } from "swiper/modules";
