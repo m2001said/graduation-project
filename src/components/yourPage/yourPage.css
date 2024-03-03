@@ -5,7 +5,28 @@
 .own-page h1 {
     margin: 40px auto 93px;
 }
-
+.own-page textarea{
+    background-color: white !important;
+    color: #373737  !important;
+}
+.selected-item{
+    width: 0px;
+    height: 142%;
+    background: #430c7b57;
+    content: "";
+    position: absolute;
+    top: -8px;
+    left: -11px;
+    transform: rotate(5deg);
+    z-index: -1;
+    transition: 0.4s;
+    animation: select 1s ease forwards;
+}
+@keyframes select {
+    100%{
+        width: 166px;
+    }
+}
 .own-page .group {
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     width: 80%;
@@ -35,6 +56,9 @@
     border-radius: 5px;
     margin: 15px auto;
     color: #373737;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
 }
 
 .show-section img {

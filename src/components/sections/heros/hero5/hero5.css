@@ -47,7 +47,7 @@
 
 @media screen and (min-width: 480px) {
     .hero5{
-        padding-top: 12rem;
+        padding-top: 8rem;
     }
 }
 @media screen and (min-width: 570px) {
@@ -89,8 +89,8 @@
 }
 @media screen and (min-width: 960px) {
     .hero5{
-        padding: 13rem;
-        padding-bottom: 5rem;
+        padding: 9rem;
+        padding-bottom: 3rem;
         font-size: 35px;
         line-height: 4rem;
     }

@@ -52,12 +52,12 @@ const Hero3 = () => {
         </div>
 
         <div className="hero3-button">
-          <button className="btn">{hero.buttonText.buttonTextA}</button>
-          <button className="btn">{hero.buttonText.buttonTextB}</button>
+          <button className="btn3">{hero.buttonText.buttonTextA}</button>
+          <button className="btn3">{hero.buttonText.buttonTextB}</button>
         </div>
       </div>
       <div className="right-h">
-        <button className="btn">{hero.buttonText.buttonTextC}</button>
+        <button className="btn33">{hero.buttonText.buttonTextC}</button>
         <img src={hero.imgUrl} alt="" className="hero-image" />
 
         <div className="hero-image-back1"></div>
