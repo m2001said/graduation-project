@@ -14,6 +14,11 @@ h2.designs-title {
   height: 250px;
   overflow: hidden;
 }
+.design-Img-container:hover{
+  img{
+    filter: brightness(90%);
+  }
+}
 .design-btn {
   transition: var(--transition);
   width: 100%;

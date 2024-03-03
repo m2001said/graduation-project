@@ -1,14 +1,12 @@
 import React from "react";
 import "./designsContainer.css";
 import DesignCard from "./designsCard/DesignCard";
-import design6 from "../../../assets/images/designs/design6.png";
-import design3 from "../../../assets/images/designs/design3.png";
 
 const DesignsData = [
   {
     title: "Start From Scratch",
     description: " Craft a page that reflects your professionalism",
-    imageUrl: "https://via.placeholder.com/300x280/eee/777?text=Blank",
+    imageUrl: "https://res.cloudinary.com/dvp3nyulf/image/upload/v1709490323/create-with-you-self.jpg",
   },
   {
     title: "DesignTitle1",
@@ -23,7 +21,7 @@ const DesignsData = [
   {
     title: "DesignTitle3",
     description: " Design description Design description ",
-    imageUrl: design3,
+    imageUrl: "https://res.cloudinary.com/dvp3nyulf/image/upload/v1709490797/design3.png",
   },
   {
     title: "DesignTitle4",
@@ -38,7 +36,7 @@ const DesignsData = [
   {
     title: "DesignTitle6",
     description: " Design description Design description ",
-    imageUrl: design6,
+    imageUrl: "https://res.cloudinary.com/dvp3nyulf/image/upload/v1709490708/design6.png",
   },
   {
     title: "DesignTitle7",

@@ -35,7 +35,7 @@ function App() {
           <SigninLogin setIsSignedIn={signIn} toggleModal={toggleModal} />
         </BaseModal>
       ) : null}
-      <div style={{ marginTop: "78px" }}>
+      <div style={{ marginTop: "77px" }}>
         <Routes>
           <Route path="/" element={<MainPage toggleModal={toggleModal} />} />
           <Route path="/designs" element={<DesignsPage />} />
