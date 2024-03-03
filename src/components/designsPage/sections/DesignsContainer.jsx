@@ -10,12 +10,12 @@ const DesignsData = [
   },
   {
     title: "Unique Homes",
-    description: " Explore personalized living with diverse design inspirations and project updates. ",
+    description: " Explore diverse design and project updates for personalized living. ",
     imageUrl: "https://res.cloudinary.com/dvp3nyulf/image/upload/v1709145474/tnxikx0i27syq6uzsav6.png",
   },
   {
     title: "Web Dev Protofolio",
-    description: " A showcase of your web development skills and impressive project portfolio. ",
+    description: " Showcase your web dev skills and impressive projects in one place. ",
     imageUrl: "https://res.cloudinary.com/dvp3nyulf/image/upload/v1709145450/design2.png",
   },
   {
@@ -25,27 +25,27 @@ const DesignsData = [
   },
   {
     title: "Home Finder Pro",
-    description: " Easily find your dream residence with 9000+ choices, and 2000+ satisfied customers. ",
+    description: " Find your dream home among 9000+ options with 2000+ happy customers. ",
     imageUrl: "https://res.cloudinary.com/dvp3nyulf/image/upload/v1709145472/design4.png",
   },
   {
     title: "Memorable Journeys",
-    description: " Discover travel tips, assistance, and create lasting memories around the world. ",
+    description: " Explore travel tips, assistance, and create lasting global memories. ",
     imageUrl: "https://res.cloudinary.com/dvp3nyulf/image/upload/v1709145463/design5.png",
   },
   {
     title: "Chef Food",
-    description: " Explore a world of taste with our popular food menu and satisfied customer testimonials. ",
+    description: " Discover diverse flavors with our menu and satisfied testimonials. ",
     imageUrl: "https://res.cloudinary.com/dvp3nyulf/image/upload/v1709490708/design6.png",
   },
   {
     title: "Secure Money Solutions",
-    description: " Explore the next-gen payment method with Hoobank - Secure, Reliable, and Efficient. ",
+    description: " Discover Hoobank - Your secure and efficient next-gen payment solution. ",
     imageUrl: "https://res.cloudinary.com/dvp3nyulf/image/upload/v1709145448/design7.jpg",
   },
   {
     title: "Protofolio Hub",
-    description: " Witness the synergy of frontend development and captivating UI/UX designs in our portfolio. ",
+    description: " Experience frontend and captivating UI/UX designs in our portfolio. ",
     imageUrl: "https://res.cloudinary.com/dvp3nyulf/image/upload/v1709145450/design8.png",
   },
   {
@@ -55,7 +55,7 @@ const DesignsData = [
   },
   {
     title: "Bookstore Bliss",
-    description: " Discover top-rated books, customer testimonials, and a library at your fingertips. ",
+    description: " Explore top books, reviews, and a virtual library experience. ",
     imageUrl: "https://res.cloudinary.com/dvp3nyulf/image/upload/v1709145436/design10.jpg",
   },
   {
@@ -75,16 +75,16 @@ const DesignsData = [
   },
   {
     title: "Gadget Store Hub",
-    description: " Explore our curated collection of headphones, laptops, and gadgets in our store. ",
+    description: " Explore our curated collection of headphones, laptops in our store. ",
     imageUrl: "https://res.cloudinary.com/dvp3nyulf/image/upload/v1709145457/design14.png",
   },
   {
-    title: "Apps Developer Portfolio",
+    title: "Developer Portfolio",
     description: " Explore innovative app development with our software developer portfolio. ",
     imageUrl: "https://res.cloudinary.com/dvp3nyulf/image/upload/v1709147870/under-work.jpg",
   },
   {
-    title: "Coffero's Café Delights",
+    title: "Coffero's Café",
     description: " Savor the essence of coffee at our store. Check our menu, book a table. ",
     imageUrl: "https://res.cloudinary.com/dvp3nyulf/image/upload/v1709145480/sclyoscpjmei8sdnevi3.png",
   },
@@ -94,8 +94,8 @@ const DesignsData = [
     imageUrl: "https://res.cloudinary.com/dvp3nyulf/image/upload/v1709147870/under-work.jpg",
   },
   {
-    title: "AutoSelect Hub",
-    description: " Choose us for the best prices, fast and secure transactions, and skilled drivers. ",
+    title: "DriveWise Autos",
+    description: " Choose us for the best prices, fast and secure, and skilled drivers. ",
     imageUrl: "https://res.cloudinary.com/dvp3nyulf/image/upload/v1709145438/design18.png",
   },
 ];
