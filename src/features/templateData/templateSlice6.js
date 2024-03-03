@@ -15,19 +15,19 @@ const templateSlice6 = createSlice({
         {
           id: "01",
           title: "Experience the Authentic Flavors",
-          desc: "Indulge in our simple and delicious dishes crafted with the finest ingredients. Your taste buds will thank you!",
+          description: "Indulge in our simple and delicious dishes crafted with the finest ingredients. Your taste buds will thank you!",
           imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703096681/jammal_photos/eukd4unr2l7mwyllvmi9.png",
         },
         {
           id: "02",
           title: "Bring Joy to Your Taste Buds",
-          desc: "At our restaurant, we believe good food leads to great smiles. Explore our menu and discover a world of culinary delight.",
+          description: "At our restaurant, we believe good food leads to great smiles. Explore our menu and discover a world of culinary delight.",
           imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703096719/jammal_photos/j7y2zx8aolnucnu25dl4.png",
         },
         {
           id: "03",
           title: "Savor Every Bite, Create Memories",
-          desc: "Meet, eat, and enjoy the true taste of happiness. Our diverse menu ensures there's something for everyone to relish and remember.",
+          description: "Meet, eat, and enjoy the true taste of happiness. Our diverse menu ensures there's something for everyone to relish and remember.",
           imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703096745/jammal_photos/j97dbol3pzuleeccxwdt.png",
         },
       ],
