@@ -49,8 +49,8 @@ const DesignsData = [
     imageUrl: "https://res.cloudinary.com/dvp3nyulf/image/upload/v1709145450/design8.png",
   },
   {
-    title: "DesignTitle9",
-    description: " Design ",
+    title: "HomeHub",
+    description: " Discover your dream home in an immersive and user-friendly e-commerce platform. ",
     imageUrl: "https://res.cloudinary.com/dvp3nyulf/image/upload/v1709147870/under-work.jpg",
   },
   {
@@ -64,13 +64,13 @@ const DesignsData = [
     imageUrl: "https://res.cloudinary.com/dvp3nyulf/image/upload/v1709145439/design11.png",
   },
   {
-    title: "DesignTitle12",
-    description: " Design ",
+    title: "Nike Ecommerce",
+    description: " Innovative Nike e-commerce for a stylish and seamless shopping experience. ",
     imageUrl: "https://res.cloudinary.com/dvp3nyulf/image/upload/v1709147870/under-work.jpg",
   },
   {
-    title: "DesignTitle13",
-    description: " Design ",
+    title: "Architecture Showcase",
+    description: " Innovative portfolio highlighting architectural expertise and diverse, creative projects. ",
     imageUrl: "https://res.cloudinary.com/dvp3nyulf/image/upload/v1709147870/under-work.jpg",
   },
   {
@@ -89,8 +89,8 @@ const DesignsData = [
     imageUrl: "https://res.cloudinary.com/dvp3nyulf/image/upload/v1709145480/sclyoscpjmei8sdnevi3.png",
   },
   {
-    title: "DesignTitle17",
-    description: " Design ",
+    title: "Personal Portfolio",
+    description: " Dynamic web portfolio emphasizing frontend and UI/UX design expertise. ",
     imageUrl: "https://res.cloudinary.com/dvp3nyulf/image/upload/v1709147870/under-work.jpg",
   },
   {
