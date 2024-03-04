@@ -3,15 +3,16 @@ import React, { useState, useEffect } from "react";
 import ProductCard from "../../CartItems/cartItems6/product-card/ProductCard";
 import { useSelector } from "react-redux";
 
-const FilterItems6 = () => {
-  const { menuTitle, ...allProducts } = useSelector((state) => state.template6.FilterItems);
+const FilterItems = () => {
+  const { menuTitle, filterContent } = useSelector((state) => state.template6.FilterItems);
 
-  const [filter, setFilter] = useState("RICE MENU");
-  const [products, setProducts] = useState(allProducts[filter]);
+  const [filter, setFilter] = useState(filterContent[0].title); // Set initial filter to the first category
+  const [products, setProducts] = useState(filterContent.find(category => category.title === filter)?.content || []);
 
   useEffect(() => {
-    setProducts(allProducts[filter]);
-  }, [filter, allProducts]);
+    const selectedCategory = filterContent.find(category => category.title === filter);
+    setProducts(selectedCategory?.content || []);
+  }, [filter, filterContent]);
 
   return (
     <section className="design-6" id="Recipes">
@@ -21,9 +22,9 @@ const FilterItems6 = () => {
             <h3 className="menu__title">{menuTitle}</h3>
           </div>
           <div className="text-center w-full mb-5">
-            {Object.keys(allProducts).map((category) => (
-              <button key={category} className={`filter-btn ${filter === category ? "active__btn" : ""}`} onClick={() => setFilter(category)}>
-                {category}
+            {filterContent.map((category) => (
+              <button key={category.title} className={`filter-btn ${filter === category.title ? "active__btn" : ""}`} onClick={() => setFilter(category.title)}>
+                {category.title}
               </button>
             ))}
           </div>
@@ -38,7 +39,4 @@ const FilterItems6 = () => {
     </section>
   );
 };
-
-
-
-export default FilterItems6;
+export default FilterItems;
