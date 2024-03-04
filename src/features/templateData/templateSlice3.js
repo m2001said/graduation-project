@@ -36,11 +36,7 @@ const templateSlice3 = createSlice({
     },
 
     projects: {
-      title: {
-        titleA: "EXPLORE OUR",
-        titleB: "PROGRAMS",
-        titleC: "TO SHAPE YOU",
-      },
+      title: [{ Subtitle: "EXPLORE OUR" }, { Subtitle: "PROGRAMS" }, { Subtitle: "TO SHAPE YOU" }],
       actionButton: "Join Now",
       imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1702986510/jammal_photos/pouffwm6ffmtztpisvjv.png",
       descriptions: [
@@ -95,11 +91,17 @@ const templateSlice3 = createSlice({
       ],
     },
     pricing: {
-      title: {
-        titleA: "READY TO START",
-        titleB: "YOUR JOURNEY",
-        titleC: "NOW WITHUS",
-      },
+      title: [
+        {
+          Subtitle: "READY TO START",
+        },
+        {
+          Subtitle: "YOUR JOURNEY",
+        },
+        {
+          Subtitle: "NOW WITHUS",
+        },
+      ],
       description: "See more benefits",
       actionButton: "join Now",
       imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1702988784/jammal_photos/vrqn7t4vmruj1drgmpdb.png",
@@ -123,10 +125,12 @@ const templateSlice3 = createSlice({
     },
     testimonial: {
       title: {
-        Subtitle: "TESTIMONIALS",
-        titleA: "WHAT THE PEOPLE THINKS ABOUT US",
-        titleB: "SAY ABOUT US",
+        mainTitle: "TESTIMONIALS",
+        primaryTitle: "WHAT THE PEOPLE THINK ABOUT US",
+        secondaryTitle: "WHAT THEY SAY ABOUT US",
       },
+
+
       imgUrl: [
         "https://res.cloudinary.com/duc04fwdb/image/upload/v1702987916/jammal_photos/pt96uext4dvfv3op3khc.png",
         "https://res.cloudinary.com/duc04fwdb/image/upload/v1702987950/jammal_photos/rkwjn9zqa9jgcp1dhzsb.png",
@@ -154,21 +158,29 @@ const templateSlice3 = createSlice({
     },
 
     cta: {
-      title: {
-        titleA: "READY TO",
-        titleB: "LEVEL UP",
-        titleC: "YOUR BODY",
-        titleD: "WITH US?",
-      },
+      title: [
+        {
+          Subtitle: "READY TO",
+        },
+        {
+          Subtitle: "LEVEL UP",
+        },
+        {
+          Subtitle: "YOUR BODY ",
+        },
+        {
+          Subtitle: "WITH US?",
+        },
+      ],
       actionButton: "join Now",
     },
 
     footer: {
-      imgUrl: [
-        "https://res.cloudinary.com/duc04fwdb/image/upload/v1702990946/jammal_photos/op32ysn37afrbyyvzlpo.png", //githup
-        "https://res.cloudinary.com/duc04fwdb/image/upload/v1702991031/jammal_photos/ttvjziej5llydncutm9u.png", //linkedIn
-        "https://res.cloudinary.com/duc04fwdb/image/upload/v1702991055/jammal_photos/mt2lapqflvpafmnfpree.png", //insta
-        "https://res.cloudinary.com/duc04fwdb/image/upload/v1702990991/jammal_photos/isxpadjx12ja5wqaqzsk.png", //logo
+      imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1702990991/jammal_photos/isxpadjx12ja5wqaqzsk.png", //logo
+      mediaIcons: [
+        { icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1702990946/jammal_photos/op32ysn37afrbyyvzlpo.png" }, //githup
+        { icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1702991031/jammal_photos/ttvjziej5llydncutm9u.png" }, //linkedIn
+        { icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1702991055/jammal_photos/mt2lapqflvpafmnfpree.png" }, //insta
       ],
     },
     colors: {

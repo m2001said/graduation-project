@@ -9,9 +9,9 @@ const Testimonials3 = () => {
   return (
     <div className="testimonials3" id="Testimonials">
       <div className="left-t3">
-        <span>{testimonial.title.Subtitle}</span>
-        <span className="stroke-text">{testimonial.title.titleA}</span>
-        <span>{testimonial.title.titleB}</span>
+        <span>{testimonial.title.mainTitle}</span>
+        <span className="stroke-text">{testimonial.title.primaryTitle}</span>
+        <span>{testimonial.title.secondaryTitle}</span>
         <span>{testimonial.testimonials[selected].review}</span>
         <span>
           <span style={{ color: "var(--orange)" }}>{testimonial.testimonials[selected].name}</span>- {testimonial.testimonials[selected].status}

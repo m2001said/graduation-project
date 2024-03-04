@@ -11,6 +11,7 @@
   font-weight: bold;
   text-transform: uppercase;
   position: relative;
+  display: block;
 }
 .left-c3 > hr {
   position: absolute;
@@ -54,8 +55,9 @@
     flex-direction: column;
     gap: 1rem;
   }
-  .left-c3 {
-    font-size: x-large;
+  .left-c3,
+  .stroke-text {
+    font-size: 2px;
     flex-direction: column;
   }
   .right-c3 {
