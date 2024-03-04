@@ -18,16 +18,30 @@ const templateSlice3 = createSlice({
         titleC: "ideal body",
       },
       description: "In here we will help you to shape and build your ideal body and live up your life to fullest..",
-      numCounter: {
-        count1: "+140",
-        descr1: "EXPORT COACHS",
+      numCounter: [
+        {
+          count: "+140",
+          description: "EXPORT COACHS",
+        },
+        {
+          count: "+978",
+          description: "MEMBERS JOINED",
+        },
+        {
+          count: "+50",
+          description: "FITNESS PROGRAMS",
+        },
+      ],
+      // numCounter: {
+      //   count1: "+140",
+      //   description: "EXPORT COACHS",
 
-        count2: "+978",
-        descr2: "MEMBERS JOINED",
+      //   count2: "+978",
+      //   description: "MEMBERS JOINED",
 
-        count3: "+50",
-        descr3: "FITNESS PROGRAMS",
-      },
+      //   count3: "+50",
+      //   description: "FITNESS PROGRAMS",
+      // },
       buttonText: {
         buttonTextA: "Get Started",
         buttonTextB: "Learn More",

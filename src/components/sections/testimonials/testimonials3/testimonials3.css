@@ -2,7 +2,8 @@
   display: flex;
   gap: 1rem;
   padding: 0 2rem;
-  margin-top: 6rem;
+  padding-top: 6rem;
+  background: var(--appColor3);
 }
 .left-t3 {
   display: flex;

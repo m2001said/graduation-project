@@ -1,6 +1,8 @@
 .footer3-container {
   position: relative;
-  margin-top: 6rem;
+  padding-top: 6rem;
+  background: var(--appColor3);
+  
 }
 .footer3-container > hr {
   border: 1px solid var(--lightgray3);
