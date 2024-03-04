@@ -13,12 +13,12 @@ const Project3 = () => {
       </div>
 
       <div className="project3-categories">
-        {projects.programsData.map((program, index) => (
+        {projects.descriptions.map((program, index) => (
           <div className="category" key={index}>
             <span>{program.heading}</span>
             <span>{program.details}</span>
             <div className="join-now">
-              <span>{projects.buttonText}</span>
+              <span>{projects.actionButton}</span>
               <img src={projects.imgUrl} alt="" />
             </div>
           </div>

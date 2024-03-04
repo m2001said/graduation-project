@@ -14,9 +14,8 @@ const Pricing3 = () => {
         <span className="stroke-text">{pricing.title.titleC}</span>
       </div>
 
-      {/* plans-card */}
       <div className="plans3">
-        {pricing.plansData.map((plan, i) => (
+        {pricing.plans.map((plan, i) => (
           <div className="plan3" key={i}>
             {plan.icon}
             <span>{plan.name}</span>
@@ -33,7 +32,7 @@ const Pricing3 = () => {
             <div>
               <span>{pricing.description}</span>
             </div>
-            <button className="btn3">{pricing.buttonText}</button>
+            <button className="btn3">{pricing.actionButton}</button>
           </div>
         ))}
       </div>

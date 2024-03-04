@@ -5,16 +5,16 @@ import { useSelector } from "react-redux";
 const Testimonials3 = () => {
   const { testimonial } = useSelector((state) => state.template3);
   const [selected, setselected] = useState(0);
-  const tLength = testimonial.testimonialsData.length;
+  const tLength = testimonial.testimonials.length;
   return (
     <div className="testimonials3" id="Testimonials">
       <div className="left-t3">
         <span>{testimonial.title.Subtitle}</span>
         <span className="stroke-text">{testimonial.title.titleA}</span>
         <span>{testimonial.title.titleB}</span>
-        <span>{testimonial.testimonialsData[selected].review}</span>
+        <span>{testimonial.testimonials[selected].review}</span>
         <span>
-          <span style={{ color: "var(--orange)" }}>{testimonial.testimonialsData[selected].name}</span>- {testimonial.testimonialsData[selected].status}
+          <span style={{ color: "var(--orange)" }}>{testimonial.testimonials[selected].name}</span>- {testimonial.testimonials[selected].status}
         </span>
       </div>
 
@@ -22,7 +22,7 @@ const Testimonials3 = () => {
         <div></div>
         <div></div>
 
-        <img key={selected} src={testimonial.testimonialsData[selected].imgUrl} alt="" />
+        <img key={selected} src={testimonial.testimonials[selected].imgUrl} alt="" />
         <div className="t3-arrows">
           <img
             onClick={() => {

@@ -102,4 +102,7 @@
     width: 7rem;
     height: 6rem;
   }
+  .stroke-text {
+    font-size: 30px;
+  }
 }

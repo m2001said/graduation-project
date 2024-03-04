@@ -21,7 +21,7 @@ const Cta3 = () => {
       <div className="right-c3">
         <form className="email3-container">
           <input className="email3-container-input" type="email" name="user_email" placeholder="Enter Your Email address" />
-          <button className="btn3 btn3-c3">{cta.buttonText}</button>
+          <button className="btn3 btn3-c3">{cta.actionButton}</button>
         </form>
       </div>
     </div>

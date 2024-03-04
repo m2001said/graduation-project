@@ -38,16 +38,16 @@
 
 //         <div className="figures">
 //           <div>
-//             <span>{hero.numCounter.count1}</span>
-//             <span>{hero.numCounter.descr1}</span>
+//             <span>{hero.statistics.count1}</span>
+//             <span>{hero.statistics.descr1}</span>
 //           </div>
 //           <div>
-//             <span>{hero.numCounter.count2}</span>
-//             <span>{hero.numCounter.descr2}</span>
+//             <span>{hero.statistics.count2}</span>
+//             <span>{hero.statistics.descr2}</span>
 //           </div>
 //           <div>
-//             <span>{hero.numCounter.count3}</span>
-//             <span>{hero.numCounter.descr3}</span>
+//             <span>{hero.statistics.count3}</span>
+//             <span>{hero.statistics.descr3}</span>
 //           </div>
 //         </div>
 
@@ -97,21 +97,17 @@ const Hero3 = () => {
           <span>{hero.Subtitle}</span>
         </div>
 
-        <div className="hero3-text">
+        <div className="hero3-title">
           <div>
-            <span className="stroke-text">{hero.title.titleA} </span>
-            <span>{hero.title.titleB}</span>
+            <span className="stroke-text">{hero.title}</span>
           </div>
-          <div>
-            <span>{hero.title.titleC}</span>
-          </div>
-          <div>
+          <div className="hero3-description">
             <span>{hero.description}</span>
           </div>
         </div>
 
         <div className="figures">
-          {hero.numCounter.map((counter) => (
+          {hero.statistics.map((counter) => (
             <div key={counter.description}>
               <span>{counter.count}</span>
               <span>{counter.description}</span>
@@ -120,12 +116,12 @@ const Hero3 = () => {
         </div>
 
         <div className="hero3-button">
-          <button className="btn3">{hero.buttonText.buttonTextA}</button>
-          <button className="btn3">{hero.buttonText.buttonTextB}</button>
+          <button className="btn3">{hero.Button.primaryButton}</button>
+          <button className="btn3">{hero.Button.secondaryButton}</button>
         </div>
       </div>
       <div className="right-h">
-        <button className="btn33">{hero.buttonText.buttonTextC}</button>
+        <button className="btn33">{hero.Button.actionButton}</button>
         <img src={hero.imgUrl} alt="" className="hero-image" />
 
         <div className="hero-image-back1"></div>
