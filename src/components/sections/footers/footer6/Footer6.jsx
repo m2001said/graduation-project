@@ -13,7 +13,7 @@ const Footer6 = () => {
             <div className=" d-flex align-items-center gap-1 mb-4">
               <img src={footer.logo} alt="" className="design6-logo" />
             </div>
-            <p>{footer.description}</p>
+            <p className="footer-description">{footer.description}</p>
           </div>
 
           <div className="footer__links">
@@ -55,7 +55,7 @@ const Footer6 = () => {
       <div className="footer__bottom">
         <div className="container mx-auto">
           <div className="text-center">
-            <p>{footer.copyright}</p>
+            <p className="footer-copyright">{footer.copyright}</p>
           </div>
         </div>
       </div>

@@ -14,6 +14,10 @@
   color: var(--color6) !important;
   border:none !important;
 }
+.footer6 .footer-description,
+.footer6 .footer-copyright{
+  color: var(--color6) !important;
+}
 .footer6 img{
   width: 20px;
 }
