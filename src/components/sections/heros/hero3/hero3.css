@@ -16,12 +16,13 @@
 .right-h {
   flex: 1;
   position: relative;
-  background-color: var(--orange);
+  background-color: var(--orange3);
   z-index: 2;
 }
+
 .the-best-ad {
   margin-top: 4rem;
-  background-color: var(--darkGrey);
+  background-color: var(--darkGrey3);
   border-radius: 4rem;
   width: fit-content;
   padding: 16px 11px;
@@ -38,7 +39,7 @@
 }
 .the-best-ad > div {
   position: absolute;
-  background-color: var(--orange);
+  background-color: var(--orange3);
   width: 5.4rem;
   height: 80%;
   left: 8px;
@@ -66,6 +67,7 @@
   display: flex;
   gap: 2rem;
 }
+
 .figures > div {
   display: flex;
   flex-direction: column;
@@ -75,10 +77,11 @@
   font-size: 2rem;
 }
 .figures > div > span:nth-of-type(2) {
-  color: var(--gray);
+  color: var(--orange3);
   text-transform: uppercase;
 }
-.btn {
+.btn3,
+.btn33 {
   background-color: var(--website-3-color-1);
   padding: 0.5rem;
   font-weight: bold;
@@ -88,7 +91,7 @@
   justify-content: center;
   align-items: center;
 }
-.btn:hover {
+.btn3:hover {
   cursor: pointer;
 }
 .hero3-button {
@@ -99,21 +102,21 @@
 }
 .hero3-button > :nth-child(1) {
   color: var(--website-3-color-1);
-  background-color: var(--orange);
+  background-color: var(--orange3);
   width: 8rem;
 }
 .hero3-button > :nth-child(2) {
   color: var(--website-3-color-1);
   background-color: transparent;
   width: 8rem;
-  border: 2px solid var(--orange);
+  border: 2px solid var(--orange3);
 }
 
-.right-h > .btn {
+.right-h > .btn33 {
   position: absolute;
   right: 3rem;
   top: 2rem;
-  color: var(--black);
+  color: var(--balck3);
 }
 .hero-image {
   position: absolute;
@@ -130,7 +133,7 @@
   height: 200px;
   border-top-left-radius: 200px;
   border-top-right-radius: 200px;
-  border: 10px solid var(--darkOrange);
+  border: 10px solid var(--darkOrange3);
   border-bottom: 0;
   transform: rotate(272deg);
 }
@@ -142,7 +145,7 @@
   height: 150px;
   border-top-left-radius: 150px;
   border-top-right-radius: 150px;
-  border: 10px solid var(--darkOrange);
+  border: 10px solid var(--darkOrange3);
   border-bottom: 0;
   transform: rotate(272deg);
 }

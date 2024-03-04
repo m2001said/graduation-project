@@ -4,7 +4,7 @@ import { useSelector } from "react-redux";
 
 const DarkMode = () => {
 
-  const { darkMode10 } = useSelector((state) => state.template10);
+  const { navbar } = useSelector((state) => state.template10);
 
   const [theme, setTheme] = useState(localStorage.getItem("theme") ? localStorage.getItem("theme") : "light");
 
@@ -21,7 +21,7 @@ const DarkMode = () => {
     <>
       <div className="relative ">
         <img
-          src={darkMode10.lightPng}
+          src={navbar.lightPng}
           alt=""
           onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
           className={`w-12 cursor-pointer drop-shadow-[1px_1px_1px_rgba(0,0,0,0.1)] transition-all duration-300 absolute right-0 z-10
@@ -29,7 +29,7 @@ const DarkMode = () => {
         />
 
         <img
-          src={darkMode10.darkPng}
+          src={navbar.darkPng}
           alt=""
           onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
           className="w-12 cursor-pointer drop-shadow-[1px_1px_2px_rgba(0,0,0,0.5)] duration-300 "

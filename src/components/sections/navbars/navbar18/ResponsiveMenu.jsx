@@ -6,7 +6,7 @@ import { useSelector } from "react-redux";
 const ResponsiveMenu = ({ showMenu }) => {
 
 
-  const { navbar18 } = useSelector((state) => state.template18);
+  const { navbar } = useSelector((state) => state.template18);
   return (
     <div
       className={`${
@@ -16,7 +16,7 @@ const ResponsiveMenu = ({ showMenu }) => {
       <div className="card">
         <nav className="mt-12">
           <ul className="space-y-4 text-xl">
-            {navbar18.links.map((data) => (
+            {navbar.links.map((data) => (
               <li>
                 <a href={data.link} className="mb-5 inline-block hover:text-[--primary18-color]">
                   {data.name}

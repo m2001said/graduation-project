@@ -5,7 +5,7 @@ import DarkMode14 from "./DarkMode14";
 
 
 const Navbar14 = ({ handleOrderPopup }) => {
-  const { navbar14 } = useSelector((state) => state.template14);
+  const { navbar } = useSelector((state) => state.template14);
 
   return (
     <div className="bg-white dark:bg-gray-900 dark:text-white duration-200 relative z-40">
@@ -13,12 +13,12 @@ const Navbar14 = ({ handleOrderPopup }) => {
         <div className="container14 flex justify-between items-center">
           {/* Logo and Links sec */}
           <div className="flex items-center gap-4">
-            <img src={navbar14.icon} alt="" className="w-7 cursor-pointer" />
-            <span className="text-[--primary14-color] font-semibold tracking-widest text-2xl uppercase sm:text-3xl cursor-pointer">{navbar14.title}</span>
+            <img src={navbar.icon} alt="" className="w-7 cursor-pointer" />
+            <span className="text-[--primary14-color] font-semibold tracking-widest text-2xl uppercase sm:text-3xl cursor-pointer">{navbar.title}</span>
             {/* Menu */}
             <div className="hidden lg:block">
               <ul className="flex items-center gap-4">
-                {navbar14.links.map((data, index) => (
+                {navbar.links.map((data, index) => (
                   <li key={index}>
                     <a href={data.link} className="inline-block px-4 font-semibold text-gray-500 hover:text-black dark:hover:text-white duration-200">
                       {data.name}
@@ -30,7 +30,7 @@ const Navbar14 = ({ handleOrderPopup }) => {
                   <span className="flex items-center gap-[2px] font-semibold text-gray-500 hover:text-black dark:hover:text-white py-2 ">
                     {navbar14.DropdownTxt}
                     <span>
-                      <img src={navbar14.DropdownIcon} alt="" className="w-5 group-hover:rotate-180 duration-300" />
+                      <img src={navbar.DropdownIcon} alt="" className="w-5 group-hover:rotate-180 duration-300" />
                     </span>
                   </span>
 
@@ -57,16 +57,16 @@ const Navbar14 = ({ handleOrderPopup }) => {
           {/* Nav right sec */}
           <div className="flex justify-between items-center gap-4">
             {/* Search section */}
-            {/* <div className="relative group hidden sm:block">
+           {/* <div className="relative group hidden sm:block">
               <input type="text" placeholder="Search" className="search14-bar" />
-              <img src={navbar14.SearchIcon} alt="" className="absolute top-1/2 -translate-y-1/2 right-3 duration-200" />
-            </div> */}
+              <img src={navbar.SearchIcon} alt="" className="absolute top-1/2 -translate-y-1/2 right-3 duration-200" />
+            </div>  */}
 
             {/* Order-button */}
             <button className="relative p-3" onClick={handleOrderPopup}>
-              <img src={navbar14.buttonIcon} alt="" className="w-6" />
+              <img src={navbar.buttonIcon} alt="" className="w-6" />
               <div className="w-4 h-4 bg-red-500 text-white rounded-full absolute top-0 right-0 flex items-center justify-center text-xs">
-                {navbar14.buttonText}
+                {navbar.buttonText}
               </div>
             </button>
             {/* Dark Mode sec */}

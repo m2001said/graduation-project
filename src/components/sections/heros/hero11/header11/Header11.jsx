@@ -3,23 +3,23 @@ import { useSelector } from "react-redux";
 import "../header11/header11.css";
 
 const Header11 = () => {
-  const { header11 } = useSelector((state) => state.template11);
+  const { header } = useSelector((state) => state.template11);
   return (
     <div className="home11__socials">
-      <a href={header11[0].links.link_instagram} className="home11__social-link" target="_blank">
-        <img src={header11[0].imgUrl.imgUrl_instagram} alt="" />
+      <a href={header.links.link_instagram} className="home11__social-link" target="_blank">
+        <img src={header.imgUrl[0]} alt="" />
       </a>
-      <a href={header11[0].links.link_twitter} className="home11__social-link" target="_blank">
-        <img src={header11[0].imgUrl.imgUrl_twitter} alt="" />
+      <a href={header.links.link_twitter} className="home11__social-link" target="_blank">
+        <img src={header.imgUrl[1]} alt="" />
       </a>
-      <a href={header11[0].links.link_behance} className="home11__social-link" target="_blank">
-        <img src={header11[0].imgUrl.imgUrl_behance} alt="" />
+      <a href={header.links.link_behance} className="home11__social-link" target="_blank">
+        <img src={header.imgUrl[2]} alt="" />
       </a>
-      <a href={header11[0].links.link_dribble} className="home11__social-link" target="_blank">
-        <img src={header11[0].imgUrl.imgUrl_dribble} alt="" />
+      <a href={header.links.link_dribble} className="home11__social-link" target="_blank">
+        <img src={header.imgUrl[3]} alt="" />
       </a>
-      <a href={header11[0].links.link_pinterest} className="home11__social-link" target="_blank">
-        <img src={header11[0].imgUrl.imgUrl_pinterest} alt="" />
+      <a href={header.links.link_pinterest} className="home11__social-link" target="_blank">
+        <img src={header.imgUrl[4]} alt="" />
       </a>
     </div>
   );

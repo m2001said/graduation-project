@@ -81,12 +81,14 @@
   font-weight: 800;
   font-size: 31px;
   text-align: center;
+  color: var(--modal-button) !important;
 }
 
 .modal-form {
   display: flex;
   flex-direction: column;
   gap: 15px;
+  color: #494949;
 }
 
 .modal-form .sub-button {
@@ -102,19 +104,21 @@
 .modal-content textarea,
 .modal-content .website-link {
   outline: none;
-  border: solid 1px #bbbbbb69;
+  border: solid 1px #bbbbbb69 !important;
   border-radius: 3px;
-  box-shadow: 0 2px 3px #5b5b5b21;
+  box-shadow: 0 2px 3px #5b5b5b21 !important;
   padding: 5px 8px;
   transition: var(--transition);
+  background-color: white  !important;
+  color: #494949 !important;
 }
 
 .modal-content input:focus {
-  border: solid 1px var(--modal-button);
+  border: solid 1px var(--modal-button) !important;
 }
 .modal-content .form-button {
-  background: var(--modal-button);
-  color: white;
+  background: var(--modal-button) !important;
+  color: white  !important;
   display: flex;
   justify-content: center;
   align-items: center;

@@ -5,7 +5,7 @@ import DarkMode from "./DarkMode";
 
 
 const Navbar10 = ({ handleOrderPopup }) => {
-  const { navbar10 } = useSelector((state) => state.template10);
+  const { navbar } = useSelector((state) => state.template10);
   return (
     <>
       <div className="shadow-lg bg-white dark:bg-gray-900 dark:text-white duration-200 ">
@@ -13,18 +13,18 @@ const Navbar10 = ({ handleOrderPopup }) => {
           <div className="flex justify-between items-center">
             <div className="font-bold text-2xl sm:text-3xl flex gap-2">
               <a href="# ">
-                <img src={navbar10.icon} alt="" className="w-10" />
+                <img src={navbar.icon} alt="" className="w-10" />
               </a>
-              {navbar10.title}
+              {navbar.title}
             </div>
             <div className="flex justify-between items-center gap-4">
               <div>
                 <DarkMode />
               </div>
               <ul className="items-center gap-4 hidden sm:flex">
-                {navbar10.links.map((link, index) => (
+                {navbar.links.map((link, index) => (
                   <li key={index}>
-                    <a href={`#${link}`} className="textHover inline-block py-4 px-4 duration-200">
+                    <a href={`#${link}`} className="textHover10 inline-block py-4 px-4 duration-200">
                       {link}
                     </a>
                   </li>
@@ -52,10 +52,10 @@ const Navbar10 = ({ handleOrderPopup }) => {
                   </div>
                 </li> */}
               </ul>
-              <button className="btnBg btnTxt hover:scale-105 duration-200 py-1 px-4 rounded-full flex items-center gap-3" onClick={() => handleOrderPopup()}>
-                {navbar10.buttonText}
+              <button className="btnBg10 btnTxt10 hover:scale-105 duration-200 py-1 px-4 rounded-full flex items-center gap-3" onClick={() => handleOrderPopup()}>
+                {navbar.buttonText}
                 <a href="/#">
-                  <img src={navbar10.buttonIcon} alt="" className="w-7 drop-shadow-sm cursor-pointer" />
+                  <img src={navbar.buttonIcon} alt="" className="w-7 drop-shadow-sm cursor-pointer" />
                 </a>
               </button>
             </div>
