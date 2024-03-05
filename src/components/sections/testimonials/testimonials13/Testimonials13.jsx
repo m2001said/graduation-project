@@ -38,7 +38,7 @@ const Testimonials13 = () => {
     );
   };
 
-  const Card = ({ img, name, title, desc }) => {
+  const Card = ({ img, name, title, description }) => {
     return (
       <div id="testimonials13" className="bg-[var(--g06412f)] w-80 relative flex justify-center z-20 p-8 mt-40">
         <button className="rounded-full bg-[var(--g06412f)] absolute -top-20 h-32 w-64 rounded-b-none btn13"></button>
@@ -47,7 +47,7 @@ const Testimonials13 = () => {
           <p className="text-xl text-[var(--white-13)] primary-font font-semibold pt-4 pb-2">{name}</p>
           <p className="font-light pb-4">{title}</p>
           <hr />
-          <p className="pt-4 text-[var(--white-13)]">{desc}</p>
+          <p className="pt-4 text-[var(--white-13)]">{description}</p>
         </div>
       </div>
     );
@@ -65,24 +65,54 @@ const Testimonials13 = () => {
         <Swiper
           modules={[Navigation, Pagination, Autoplay]}
           spaceBetween={10}
-          slidesPerView={3}
+          slidesPerView={1}
           autoplay={{ delay: 3000 }}
           direction="horizontal"
-          className="z-30 w-full"
+          className="z-30 w-full swiper13"
+          // breakpoints={{
+          //   // when window width is <= 768px
+          //   768: {
+          //     slidesPerView: 1,
+          //   },
+          // }}
         >
           <SwiperSlide>
-            <Card img={testimonials.p1} name={testimonials.name1} title={testimonials.title1} desc={testimonials.desc1} />
+            <Card img={testimonials.person1} name={testimonials.name1} title={testimonials.title1} description={testimonials.description1} />
           </SwiperSlide>
           <SwiperSlide>
-            <Card img={testimonials.p2} name={testimonials.name2} title={testimonials.title2} desc={testimonials.desc2} />
+            <Card img={testimonials.person2} name={testimonials.name2} title={testimonials.title2} description={testimonials.description2} />
           </SwiperSlide>
           <SwiperSlide>
-            <Card img={testimonials.p3} name={testimonials.name3} title={testimonials.title3} desc={testimonials.desc3} />
+            <Card img={testimonials.person3} name={testimonials.name3} title={testimonials.title3} description={testimonials.description3} />
           </SwiperSlide>
           <SwiperSlide>
-            <Card img={testimonials.p4} name={testimonials.name4} title={testimonials.title4} desc={testimonials.desc4} />
+            <Card img={testimonials.person4} name={testimonials.name4} title={testimonials.title4} description={testimonials.description4} />
           </SwiperSlide>
         </Swiper>
+
+        {/**small devices cards */}
+        <div
+          className="z-30 w-full justify-center flex flex-col items-center lg:hidden md:hidden swiper13-s"
+          // breakpoints={{
+          //   // when window width is <= 768px
+          //   768: {
+          //     slidesPerView: 1,
+          //   },
+          // }}
+        >
+          <div>
+            <Card img={testimonials.person1} name={testimonials.name1} title={testimonials.title1} description={testimonials.description1} />
+          </div>
+          <div>
+            <Card img={testimonials.person2} name={testimonials.name2} title={testimonials.title2} description={testimonials.description2} />
+          </div>
+          <div>
+            <Card img={testimonials.person3} name={testimonials.name3} title={testimonials.title3} description={testimonials.description3} />
+          </div>
+          <div>
+            <Card img={testimonials.person4} name={testimonials.name4} title={testimonials.title4} description={testimonials.description4} />
+          </div>
+        </div>
       </div>
     </div>
   );

@@ -16,7 +16,7 @@ const Hero13 = () => {
           <h1 className="lg:text-7xl text-2xl text-[var(--white-13)] leading-normal pb-8 primary-font font-medium">{title}</h1>
           <p className="text-[var(--white-13)]">{subtitle}</p>
           <div className="flex items-center gap-x-2 ">
-            <button className="rounded-full px-3 py-2 flex items-center text-sm bg-[#fd7b47] gap-2 transition ease-out duration-300 transform hover:scale-110">
+            <button className="rounded-full px-3 py-2 flex items-center text-sm bg-[var(--fd7b47)] gap-2 transition ease-out duration-300 transform hover:scale-110">
               <p className="text-[var(--white-13)]">{servicesButtonText}</p>
               <img src={icon} className="w-10 h-auto text-xl" alt="arrow" />
             </button>

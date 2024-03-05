@@ -5,7 +5,7 @@ const Feature9 = () => {
   const neighborhoods = useSelector((state) => state.template9.neighborhoods);
 
   return (
-    <main className="container px-3 lg:pt-24 feature-9">
+    <main className=" justify-center  bg-gradient-to-t from-[var(--primary-text-color)] to-[var(--color-color-blue-9)] feature-9">
       {" "}
       <span className="flex justify-center items-center pb-12">
         <button className="bg-gradient-to-r from-[var(--button-bg-gradient-from)] to-[var(--button-bg-gradient-to]) rounded-full h-12 w-12 cursor-auto"></button>

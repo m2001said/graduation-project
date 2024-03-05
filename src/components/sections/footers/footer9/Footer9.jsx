@@ -5,7 +5,7 @@ const Footer9 = () => {
   const footer9 = useSelector((state) => state.template9.footer9);
 
   return (
-    <footer className="footer9">
+    <footer className="footer9   text-[var(--c616161)]">
       <section className="flex flex-col bg-[var(--e6edeb-9)] pt-8">
         <div className="container mx-auto lg:flex items-start justify-between pb-8">
           <div className="lg:flex justify-between px-3 w-full py-12 lg:text-left">
@@ -58,14 +58,14 @@ const Footer9 = () => {
               <p className="font-semibold py-6 text-lg lg:text-left text-center">{footer9.followUsText}</p>
               <span className="text-[var(--button-text-colo-r-9)] flex items-center gap-4 text-2xl lg:justify-normal justify-center ">
                 {footer9.socialMediaLinks.map((link, index) => (
-                  <img key={index} src={link} className="cursor-pointer logo-9" alt={link} />
+                  <img key={index} src={link} className="cursor-pointer loogo-9" alt={link} />
                 ))}
               </span>
             </div>
           </div>
         </div>
       </section>
-      <section className="bg-[var(--black-9)] text-[#7b7a7a] xl:text-base text-sm">
+      <section className="bg-[var(--black-9)] text-[var(--c616161)] xl:text-base text-sm">
         <div className="container mx-auto px-3 lg:flex justify-between items-center lg:h-14 lg:text-left text-center">
           <p>{footer9.copyrightText}</p>
           <ul className="flex lg:flex-row flex-wrap lg:justify-normal justify-center items-center gap-x-4 ">

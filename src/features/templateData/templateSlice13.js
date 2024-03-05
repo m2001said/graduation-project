@@ -105,10 +105,10 @@ const templateSlice13 = createSlice({
       heading3: "say's",
       arrowR: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707952901/right-arrow_1_y7iz2i.png",
       arrowL: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707977502/leftArrow_w76yfj.png",
-      p1: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1703134020/avatar3_pbztwn.jpg",
-      p2: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1703134020/avatar3_pbztwn.jpg",
-      p3: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1703134020/avatar2_lgwr3o.jpg",
-      p4: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1703134020/avatar3_pbztwn.jpg",
+      person1: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1703134020/avatar3_pbztwn.jpg",
+      person2: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1703134020/avatar3_pbztwn.jpg",
+      person3: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1703134020/avatar2_lgwr3o.jpg",
+      person4: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1703134020/avatar3_pbztwn.jpg",
 
       name1: "ahmed",
       name2: "nader",
@@ -120,10 +120,10 @@ const templateSlice13 = createSlice({
       title3: "CEO at AST",
       title4: "CEO at AST",
 
-      desc1: "We would like to take the opportunity to express our delights with the ways things are progressing.",
-      desc2: "We would like to take the opportunity to express our delights with the ways things are progressing.",
-      desc3: "We would like to take the opportunity to express our delights with the ways things are progressing.",
-      desc4: "We would like to take the opportunity to express our delights with the ways things are progressing.",
+      description1: "We would like to take the opportunity to express our delights with the ways things are progressing.",
+      description2: "We would like to take the opportunity to express our delights with the ways things are progressing.",
+      description3: "We would like to take the opportunity to express our delights with the ways things are progressing.",
+      description4: "We would like to take the opportunity to express our delights with the ways things are progressing.",
     },
 
     logos: {

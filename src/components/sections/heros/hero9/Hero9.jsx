@@ -25,7 +25,7 @@ const Hero9 = () => {
       <div className="bg-gradient-to-t from-[var(--primary-text-color)] to-[var(--color-color-blue-9)]  rounded-[560px] rounded-t-none">
         <div className="container mx-auto px-3 lg:flex justify-between items-center lg:h-screen">
           <div className="lg:w-2/5">
-            <p className="text-[va(--primary-text-color-9)] md:text-xl text-lg font-medium">{hero9.title}</p>
+            <p className="text-[var(--primary-text-color-9)] md:text-xl text-lg font-medium">{hero9.title}</p>
             <h1 className="lg:text-3xl text-3xl font-medium pt-3 pb-12 realestateh">{hero9.heading}</h1>
             <p className="text-[var(--color-808080-color-9)] lg:text-base text-sm pb-8 realestateh">{hero9.paragraph}</p>
             <div className="w-full lg:w-2/3">
@@ -112,7 +112,7 @@ const Hero9 = () => {
         </div>
       </div>
       <div className="lg:flex justify-center lg:mt-16  gap-x-8 lg:px-0 px-3 ">
-        <div className="bg-[var(--white-9)] rounded-full py-4 lg:px-8 px-3 flex items-center justify-center gap-x-4 shadow-2xl ">
+        <div className="bg-[var(--secondary-text-color-9)] rounded-full py-4 lg:px-8 px-3 flex items-center justify-center gap-x-4 shadow-2xl ">
           <span className="flex items-center relative h-10 w-44">
             {hero9.otherImages &&
               hero9.carouselImages &&
@@ -134,7 +134,7 @@ const Hero9 = () => {
           </span>
           <p className="w-36 md:text-xl font-medium">{hero9.customerStats && hero9.customerStats.description}</p>
         </div>
-        <div className="bg-[var(--white-9)] rounded-full py-4 lg:px-8 px-3 flex items-center justify-center gap-x-4 shadow-2xl">
+        <div className="bg-[var(--button-bg-gradient-from)] rounded-full py-4 lg:px-8 px-3 flex items-center justify-center gap-x-4 shadow-2xl">
           <span className="flex items-center relative h-10 w-44">
             {hero9.otherImages &&
               hero9.otherImages.customerImage &&

@@ -23,7 +23,7 @@ const Testimonials9 = () => {
       <div className="lg:w-1/3 flex flex-col">
         <p className="text-[va(--primary-text-color-9)] uppercase md:text-xl text-lg">Testimonials</p>
         <h1 className="lg:text-4xl text-3xl font-medium capitalize py-3">Look What Our Customers Say!</h1>
-        <p className="text-[#a5a5a5] text-sm">{block9.speach}.</p>
+        <p className="text-[var(--black-9)] text-sm">{block9.speach}.</p>
         <div className="lg:flex hidden gap-x-12 mt-16">
           <button
             onClick={handlePrevTestimonial}
@@ -42,11 +42,11 @@ const Testimonials9 = () => {
 
       <div className="relative rounded-2xl shadow-2xl lg:w-2/5 lg:p-16 p-6 lg:mt-0 mt-8">
         <img src={block9.qot} className="text-[#ffe999] text-3xl logo-9" />
-        <p className="font-medium pt-2 pb-8">{currentTestimonial.quote}</p>
+        <p className="font-medium pt-2 text-[var(--black-9)] pb-8">{currentTestimonial.quote}</p>
         <div className="border-t border-[var(--d4d4d4-9)] flex items-center py-4">
           <img src={currentTestimonial.imageUrl} alt="" className="rounded-full h-12 w-12 object-cover" />
           <span className="lg:flex items-center justify-between w-full gap-x-4 font-medium pl-3">
-            <p>{currentTestimonial.author}</p>
+            <p className="text-[var(--secondary-text-color-9)]">{currentTestimonial.author}</p>
             <div className="flex flex-row">
               {" "}
               {[...Array(5)].map((_, index) => (
