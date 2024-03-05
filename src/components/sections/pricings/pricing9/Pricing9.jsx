@@ -118,8 +118,8 @@ const Pricing9 = () => {
                 <img
                   src={card.imgUrl}
                   onError={(e) => {
-                    e.target.onerror = null; // Prevent infinite loop
-                    e.target.src = "/path/to/fallback-image.jpg"; // Fallback image URL
+                    e.target.onerror = null;
+                    e.target.src = "/path/to/fallback-image.jpg";
                   }}
                   alt=""
                   className="rounded-3xl w-full h-80 object-cover "
@@ -132,7 +132,7 @@ const Pricing9 = () => {
                   {card.features[0].text}
                 </button>
               </div>
-              {/* Card details */}
+              {/* Card- details */}
               <div className="py-4">
                 <p className="text-sm">{card.Address}</p>
                 <div className="flex items-center gap-x-4 text-sm">
