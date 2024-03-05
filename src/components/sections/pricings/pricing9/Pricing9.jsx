@@ -8,7 +8,7 @@ const Pricing9 = () => {
     superLargeDesktop: { breakpoint: { max: 4000, min: 3000 }, items: 3.2 },
     desktop: { breakpoint: { max: 3000, min: 1024 }, items: 3 },
     tablet: { breakpoint: { max: 1024, min: 464 }, items: 2.2 },
-    mobile: { breakpoint: { max: 464, min: 0 }, items: 1.7 },
+    mobile: { breakpoint: { max: 600, min: 0 }, items: 1.2 }, // Adjusted for small devices
   };
 
   // Assuming useSelector hook is correctly configured
@@ -44,11 +44,11 @@ const Pricing9 = () => {
       </div>
 
       <section className="mt-8">
+        {/* Swiper for desktop and larger devices */}
         <Swiper
           modules={[Navigation, Pagination, Autoplay]}
-          className="z-30 w-full "
+          className="hidden lg:block z-30 w-full "
           slidesPerView={3}
-          // autoplay={{ delay: 5000 }}
           loop={false}
           keyboard={true}
           spaceBetween={5}
@@ -61,7 +61,7 @@ const Pricing9 = () => {
         >
           {cards.map((card, index) => (
             <SwiperSlide key={index}>
-              <div className="relative h-80 sm:w-80">
+              <div className="relative">
                 {/* Image with error handling */}
                 <img
                   src={card.imgUrl}
@@ -70,7 +70,7 @@ const Pricing9 = () => {
                     e.target.src = "/path/to/fallback-image.jpg"; // Fallback image URL
                   }}
                   alt=""
-                  className="rounded-3xl w-full h-full  object-cover "
+                  className="rounded-3xl w-full h-80 object-cover "
                 />
                 {/* Button with feature icon */}
                 <button
@@ -81,7 +81,7 @@ const Pricing9 = () => {
                 </button>
               </div>
               {/* Card details */}
-              <span className="flex flex-col gap-y-1 py-4 ">
+              <div className="py-4">
                 <p className="text-sm">{card.Address}</p>
                 <div className="flex items-center gap-x-4 text-sm">
                   {card.features.slice(1).map((feature, index) => (
@@ -91,12 +91,62 @@ const Pricing9 = () => {
                     </span>
                   ))}
                 </div>
-              </span>
+              </div>
             </SwiperSlide>
           ))}
         </Swiper>
 
-        <div className="sm:hidden block">{/* Render mobile view content */}</div>
+        {/* Swiper for small devices */}
+        <Swiper
+          modules={[Navigation, Pagination, Autoplay]}
+          className="block lg:hidden z-30 w-full "
+          slidesPerView={1}
+          loop={false}
+          keyboard={true}
+          spaceBetween={5}
+          speed={700}
+          breakpoints={responsive}
+          navigation={{
+            prevEl: ".swiper-button-prev",
+            nextEl: ".swiper-button-next",
+          }}
+        >
+          {cards.map((card, index) => (
+            <SwiperSlide key={index}>
+              <div className="relative">
+                {/* Image with error handling */}
+                <img
+                  src={card.imgUrl}
+                  onError={(e) => {
+                    e.target.onerror = null; // Prevent infinite loop
+                    e.target.src = "/path/to/fallback-image.jpg"; // Fallback image URL
+                  }}
+                  alt=""
+                  className="rounded-3xl w-full h-80 object-cover "
+                />
+                {/* Button with feature icon */}
+                <button
+                  className={`px-5 py-2 flex gap-x-2 items-center ${card.buttonColor}-button ${card.buttonBgColor}-background rounded-full absolute bottom-10 left-10`}
+                >
+                  <img src={card.features[0].icon} className="w-6 h-6" alt={card.features[0].text} />
+                  {card.features[0].text}
+                </button>
+              </div>
+              {/* Card details */}
+              <div className="py-4">
+                <p className="text-sm">{card.Address}</p>
+                <div className="flex items-center gap-x-4 text-sm">
+                  {card.features.slice(1).map((feature, index) => (
+                    <span key={index} className="flex items-center gap-x-2">
+                      <img src={feature.icon} alt={feature.text} className="w-6 h-6" />
+                      {feature.text}
+                    </span>
+                  ))}
+                </div>
+              </div>
+            </SwiperSlide>
+          ))}
+        </Swiper>
       </section>
     </main>
   );

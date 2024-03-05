@@ -198,3 +198,9 @@
 .loogo-9 {
   width: 10%;
 }
+
+/* @media screen and (max-width: 600px) {
+  .swiper-container {
+    width: 100%;
+  }
+} */
