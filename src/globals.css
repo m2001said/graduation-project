@@ -221,6 +221,7 @@ ul {
 }
 .dashboard-subContainer {
   height: auto;
+
 }
 @media (min-width: 767px) {
   .dashboard-subContainer {
@@ -254,6 +255,8 @@ ul {
 }
 .subController {
   padding-left: 0.5rem;
+  padding-right: 4px;
+
 }
 .subController:not(:last-child) {
   border-bottom: 2px solid var(--website-color-5);

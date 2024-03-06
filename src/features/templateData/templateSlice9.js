@@ -1,4 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
+import { addElement, addElementToArray, addSubElement, deleteElement, deleteSection, editElement, reorder, reorderSections } from "./actions";
 const templateSlice9 = createSlice({
   initialState: {
     navbar: {
@@ -422,42 +423,32 @@ const templateSlice9 = createSlice({
 
   name: "templateSlice9",
   reducers: {
-    updateTemplate9: (state, action) => {
-      const { section, variable, value, i, blockName, subBlockName, subIndex, objKey } = action.payload;
-      // sub means level 2 of fields
-      if (i === undefined) {
-        if (variable === null) {
-          // edit object filed
-          state[section][blockName][objKey] = value;
-        } else {
-          // edit normal field
-          state[section][variable] = value;
-        }
-      } else {
-        if (subIndex === undefined) {
-          // edit array filed with index
-          if (variable === null) state[section][blockName][i] = value;
-          else {
-            if (subBlockName === undefined) {
-              // edit obj in array of objects
-              state[section][blockName][i][variable] = value;
-            } else {
-              // edit sub obj directly
-              state[section][blockName][i][subBlockName][variable] = value;
-            }
-          }
-        } else {
-          // edit sub element in array
-          if (variable === null) state[section][blockName][i][subBlockName][subIndex] = value;
-          else {
-            // edit sub obj in array of objects
-            state[section][blockName][i][subBlockName][subIndex][variable] = value;
-          }
-        }
-      }
+    updateTemplate: (state, action) => {
+      editElement(state, action);
+    },
+    addNewElement: (state, action) => {
+      addElement(state, action);
+    },
+    addElementToArray: (state, action) => {
+      addElementToArray(state, action);
+    },
+    addNewSubElement: (state, action) => {
+      addSubElement(state, action);
+    },
+    deleteElement: (state, action) => {
+      deleteElement(state, action);
+    },
+    reorder: (state, action) => {
+      reorder(state, action);
+    },
+    reorderSection: (state, action) => {
+      return reorderSections(state, action);
+    },
+    deleteSection: (state, action) => {
+      return deleteSection(state, action);
     },
   },
 });
 
-export const { updateTemplate9 } = templateSlice9.actions;
+export const templateActions9 = templateSlice9.actions;
 export default templateSlice9.reducer;

@@ -1,5 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
-import { addElement, deleteElement, deleteSection, editElement, reorder, reorderSections } from "./actions";
+import { addElement, addElementToArray, addSubElement, deleteElement, deleteSection, editElement, reorder, reorderSections } from "./actions";
 const templateSlice5 = createSlice({
   initialState: {
     navbar: {
@@ -173,7 +173,12 @@ const templateSlice5 = createSlice({
     addNewElement: (state, action) => {
       addElement(state, action);
     },
-
+    addElementToArray: (state, action) => {
+      addElementToArray(state, action);
+    },
+    addNewSubElement: (state, action) => {
+      addSubElement(state, action);
+    },
     deleteElement: (state, action) => {
       deleteElement(state, action);
     },

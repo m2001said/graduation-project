@@ -3,7 +3,10 @@ import React from "react";
 export const Reorder = ({ isLastFiled, isFirstFiled, handleReorder, deleteItem, componentType }) => {
   const isMainComp = componentType === "main";
   return (
-    <div className={`flex-center px-2  ${isMainComp ? " gap-1" : "gap-2 py-1"} border rounded-xl `} style={{ paddingTop: `${isMainComp ? "1px" : ""}`,paddingBottom: `${isMainComp ? "1px" : ""}`, marginTop:0 }}>
+    <div
+      className={`flex-center px-2  ${isMainComp ? " gap-1" : "gap-2 py-1"} border rounded-xl `}
+      style={{ paddingTop: `${isMainComp ? "1px" : ""}`, paddingBottom: `${isMainComp ? "1px" : ""}`, marginTop: 0 }}
+    >
       <div className={`${isMainComp ? "0" : "0"}`}>
         <img
           src="/assets/icons/arrow-small-up.svg"
@@ -12,10 +15,16 @@ export const Reorder = ({ isLastFiled, isFirstFiled, handleReorder, deleteItem, 
           onClick={() => handleReorder("up")}
         />
       </div>
-      <div style={{ marginTop: "0px" }}>
-        <img src="/assets/icons/trash.svg" alt="delete" style={{  width: `${isMainComp ? "25px" : "18px"}`, cursor: "pointer" }} onClick={deleteItem} />
-      </div>
-      <div >
+      {isFirstFiled & (componentType === "branch") ? (
+        <div style={{ marginTop: "0px" }}>
+          <div style={{ opacity: "0", width: `${isMainComp ? "25px" : "18px"}` }}></div>
+        </div>
+      ) : (
+        <div style={{ marginTop: "0px" }}>
+          <img src="/assets/icons/trash.svg" alt="delete" style={{ width: `${isMainComp ? "25px" : "18px"}`, cursor: "pointer" }} onClick={deleteItem} />
+        </div>
+      )}
+      <div>
         <img
           src="/assets/icons/arrow-small-up.svg"
           alt="delete"

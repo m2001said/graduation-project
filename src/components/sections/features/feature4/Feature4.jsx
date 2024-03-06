@@ -34,7 +34,7 @@ const Feature4 = () => {
           </span>
 
           <div className="accordion">
-            {features.data.map((item, i) => (
+            {features.features.map((item, i) => (
               <div className={`accordionItem ${expandedIndex === i ? "expanded" : "collapsed"}`} key={i}>
                 <div className="accordionItemHeading">
                   <button className="flexCenter accordionButton" onClick={() => handleAccordionState(i)}>

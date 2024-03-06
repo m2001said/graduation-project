@@ -17,7 +17,6 @@ import { useSelector } from "react-redux";
 const TrialDesign1 = () => {
   const state = useSelector((state) => state.template1);
   const reorderedComponents = Object.keys(state);
-  console.log(reorderedComponents)
   const componentMapping = {
     navbar: Navbar1,
     hero: Hero1,

@@ -1,5 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
-import { addElement, deleteElement, deleteSection, editElement, reorder, reorderSections } from "./actions";
+import { addElement, addElementToArray, addSubElement, deleteElement, deleteSection, editElement, reorder, reorderSections } from "./actions";
 
 const templateSlice7 = createSlice({
   initialState: {
@@ -59,22 +59,38 @@ const templateSlice7 = createSlice({
       textB: "Started",
     },
     // /----------------------------/
-    statistic: {
-      "stats-1": {
-        id: "stats-1",
-        title: "User Active",
-        value: "3800+",
-      },
-      "stats-2": {
-        id: "stats-2",
-        title: "Trusted by Company",
-        value: "230+",
-      },
-      "stats-3": {
-        id: "stats-3",
-        title: "Transaction",
-        value: "$230M+",
-      },
+    statistics: {
+      statistics: [
+        {
+          title: "User Active",
+          value: "3800+",
+        },
+        {
+          title: "Trusted by Company",
+          value: "230+",
+        },
+        {
+          title: "Transaction",
+          value: "$230M+",
+        }
+      ],
+
+
+      // "stats-1": {
+      //   id: "stats-1",
+      //   title: "User Active",
+      //   value: "3800+",
+      // },
+      // "stats-2": {
+      //   id: "stats-2",
+      //   title: "Trusted by Company",
+      //   value: "230+",
+      // },
+      // "stats-3": {
+      //   id: "stats-3",
+      //   title: "Transaction",
+      //   value: "$230M+",
+      // },
     },
     // --------------------------------
     feature: {
@@ -273,7 +289,12 @@ const templateSlice7 = createSlice({
     addNewElement: (state, action) => {
       addElement(state, action);
     },
-
+    addElementToArray: (state, action) => {
+      addElementToArray(state, action);
+    },
+    addNewSubElement: (state, action) => {
+      addSubElement(state, action);
+    },
     deleteElement: (state, action) => {
       deleteElement(state, action);
     },
@@ -289,5 +310,5 @@ const templateSlice7 = createSlice({
   },
 });
 
-export const { updateTemplate7 } = templateSlice7.actions;
+export const templateActions7 = templateSlice7.actions;
 export default templateSlice7.reducer;

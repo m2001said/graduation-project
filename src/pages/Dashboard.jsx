@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import TopSide from "./../components/dashboard/sections/TopSide";
 import LeftSide from "../components/dashboard/sections/LeftSide";
 import RightSide from "../components/dashboard/sections/RightSide";
@@ -10,18 +10,18 @@ import { templateActions3 } from "../features/templateData/templateSlice3";
 import { templateActions4 } from "../features/templateData/templateSlice4";
 import { templateActions5 } from "../features/templateData/templateSlice5";
 import { templateActions6 } from "../features/templateData/templateSlice6";
-import { updateTemplate7 } from "../features/templateData/templateSlice7";
-import { updateTemplate8 } from "../features/templateData/templateSlice8";
-import { updateTemplate9 } from "../features/templateData/templateSlice9";
-import { updateTemplate10 } from "../features/templateData/templateSlice10";
-import { updateTemplate11 } from "../features/templateData/templateSlice11";
-import { updateTemplate12 } from "../features/templateData/templateSlice12";
-import { updateTemplate13 } from "../features/templateData/templateSlice13";
-import { updateTemplate14 } from "../features/templateData/templateSlice14";
-import { updateTemplate15 } from "../features/templateData/templateSlice15";
-import { updateTemplate16 } from "../features/templateData/templateSlice16";
-import { updateTemplate17 } from "../features/templateData/templateSlice17";
-import { updateTemplate18 } from "../features/templateData/templateSlice18";
+import { templateActions7 } from "../features/templateData/templateSlice7";
+import { templateActions8 } from "../features/templateData/templateSlice8";
+import { templateActions9 } from "../features/templateData/templateSlice9";
+import { templateActions10 } from "../features/templateData/templateSlice10";
+import { templateActions11 } from "../features/templateData/templateSlice11";
+import { templateActions12 } from "../features/templateData/templateSlice12";
+import { templateActions13 } from "../features/templateData/templateSlice13";
+import { templateActions14 } from "../features/templateData/templateSlice14";
+import { templateActions15 } from "../features/templateData/templateSlice15";
+import { templateActions16 } from "../features/templateData/templateSlice16";
+import { templateActions17 } from "../features/templateData/templateSlice17";
+import { templateActions18 } from "../features/templateData/templateSlice18";
 
 const Dashboard = () => {
   const { pathname } = useLocation();
@@ -49,41 +49,41 @@ const Dashboard = () => {
       updateAllRef = templateActions6;
       break;
     case "7":
-      updateAllRef = updateTemplate7;
+      updateAllRef = templateActions7;
       break;
     case "8":
-      updateAllRef = updateTemplate8;
+      updateAllRef = templateActions8;
       break;
     case "9":
-      updateAllRef = updateTemplate9;
+      updateAllRef = templateActions9;
       break;
     case "10":
-      updateAllRef = updateTemplate10;
+      updateAllRef = templateActions10;
       break;
     case "11":
-      updateAllRef = updateTemplate11;
+      updateAllRef = templateActions11;
       break;
     case "12":
-      updateAllRef = updateTemplate12;
+      updateAllRef = templateActions12;
       break;
     case "13":
-      updateAllRef = updateTemplate13;
+      updateAllRef = templateActions13;
       break;
     case "14":
-      updateAllRef = updateTemplate14;
-       break;
+      updateAllRef = templateActions14;
+      break;
     case "15":
-      updateAllRef = updateTemplate15;
-       break;
+      updateAllRef = templateActions15;
+      break;
     case "16":
-      updateAllRef = updateTemplate16;
-       break;
+      updateAllRef = templateActions16;
+      break;
     case "17":
-      updateAllRef = updateTemplate17;
-       break;
+      updateAllRef = templateActions17;
+      break;
     case "18":
-      updateAllRef = updateTemplate18;
-       break;
+      updateAllRef = templateActions18;
+      break;
     default:
       break;
   }

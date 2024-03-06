@@ -1,5 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
-import { addElement, deleteElement, deleteSection, editElement, reorder, reorderSections } from "./actions";
+import { addElement, addElementToArray, addSubElement, deleteElement, deleteSection, editElement, reorder, reorderSections } from "./actions";
 const templateSlice = createSlice({
   initialState: {
     navbar: {
@@ -48,7 +48,7 @@ const templateSlice = createSlice({
     // },
     testimonials: {
       title: "What the People Thinks About Us",
-      cards: [
+      testimonials: [
         {
           name: "Nattasha Mith",
           location: "Sydney, USA",
@@ -81,7 +81,7 @@ const templateSlice = createSlice({
     projects: {
       title: "Follow Our Projects",
       description: "It is a long established fact that a reader will be distracted by the of readable content of page  lookings at its layouts  points.",
-      cards: [
+      projects: [
         {
           imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701808451/templates/template_one/Photo_2_w7jdep.jpg",
           title: "Modern Kitchan",
@@ -132,7 +132,7 @@ const templateSlice = createSlice({
       title: "Articles & News",
       description:
         "It is a long established fact that a reader will be distracted by the of readable content of a page when lookings at its layouts the points of using.",
-      cards: [
+      items: [
         {
           title: "Let’s Get Solution For Building Construction Work",
           description: "26 December,2022 ",
@@ -158,9 +158,9 @@ const templateSlice = createSlice({
     },
     team: {
       title: "Our Team Members",
-      cards: [
+      members: [
         {
-          id: "262024507",
+          id: "1",
           name: "Nattasha",
           location: "Design, Australia",
           imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701808855/templates/template_one/Photo_fz8cuc.jpg",
@@ -185,7 +185,7 @@ const templateSlice = createSlice({
           email: "julie@email.com",
         },
         {
-          id: "262024508",
+          id: "2",
           name: "Julie",
           location: "Design, Australia",
           imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701808855/templates/template_one/Photo_fz8cuc.jpg",
@@ -210,7 +210,7 @@ const templateSlice = createSlice({
           email: "julie@email.com",
         },
         {
-          id: "262024509",
+          id: "3",
           name: "Alex",
           location: "Design, Australia",
           imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701808855/templates/template_one/Photo_fz8cuc.jpg",
@@ -263,20 +263,20 @@ const templateSlice = createSlice({
     pricing: {
       title: "Pricing & Plan",
       description: "Home / Priceing",
-      blocks: [
+      plans: [
         {
           plan: "Design advices",
           price: "29",
-          timeUnit: "/month",
+          timeUnit: "month",
           moneyUnit: "$",
           features: ["General living space advices", "Renovation advices", "Interior design advices", "Furniture reorganization", "Up to 5 hours meetings"],
           buttonText: "Get Started",
-          icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701813389/templates/template_one/Vector_5_vvvt2o.svg",
+          icon: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1709586475/Vector_urtrep.svg",
         },
         {
           plan: "Complete interior",
           price: "39",
-          timeUnit: "/month",
+          timeUnit: "month",
           moneyUnit: "$",
           PopularPlan: "Most Popular Plans",
           features: ["Complete home redesign", "Interior and exterior works", "Modular interior planning", "Kitchen design", "Garages organization"],
@@ -286,11 +286,11 @@ const templateSlice = createSlice({
         {
           plan: "Furniture design",
           price: "59",
-          timeUnit: "/month",
+          timeUnit: "month",
           moneyUnit: "$",
           features: ["Furniture for living room", "Furniture refurbishment", "Sofas and armchairs", "Tables and chairs", "Kitchens"],
           buttonText: "Get Started",
-          icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701813389/templates/template_one/Vector_5_vvvt2o.svg",
+          icon: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1709586475/Vector_urtrep.svg",
         },
       ],
     },
@@ -298,9 +298,8 @@ const templateSlice = createSlice({
       title: "Wanna join the interno?",
       description: "It is a long established fact  will be distracted.",
       buttonText: "Contact With Us",
-      icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701813389/templates/template_one/Vector_5_vvvt2o.svg",
+      icon: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1709586475/Vector_urtrep.svg",
     },
-
     footer: {
       imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701811960/templates/template_one/Logo_mj7rvw.png",
       description: "It is a long established fact that a reader will be distracted lookings.",
@@ -322,11 +321,10 @@ const templateSlice = createSlice({
           url: "https://instagram.com",
         },
       ],
-
       items: [
         {
           title: "services",
-          links: ["Kitchan,", "Living Area,", "Bathroom,", "Dinning Hall,", "Bedroom"],
+          links: ["Kitchan", "Living Area", "Bathroom", "Dinning Hall", "Bedroom"],
         },
         {
           title: "section",
@@ -340,6 +338,7 @@ const templateSlice = createSlice({
         phone: "(123) 125-858",
       },
     },
+
     colors: {
       templateColors: ["#fff", "#cda274", "#292f36", "#f4f0ec", "#777777"],
     },
@@ -353,7 +352,12 @@ const templateSlice = createSlice({
     addNewElement: (state, action) => {
       addElement(state, action);
     },
-
+    addElementToArray: (state, action) => {
+      addElementToArray(state, action);
+    },
+    addNewSubElement: (state, action) => {
+      addSubElement(state, action);
+    },
     deleteElement: (state, action) => {
       deleteElement(state, action);
     },

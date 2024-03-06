@@ -12,7 +12,7 @@ const Testimonials1 = () => {
         <p className="Testimonials__title">{testimonial.title}</p>
 
         <div className="testimonials-cards">
-          {testimonial.cards.map((card, index) => (
+          {testimonial.testimonials.map((card, index) => (
             <div className="testimonials-card" key={index}>
               <div className="testimonials-card-header">
                 <img className="testimonials-card-header-img" src={card.imgUrl} alt=" " />

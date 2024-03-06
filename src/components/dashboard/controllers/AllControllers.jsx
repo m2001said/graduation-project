@@ -16,7 +16,7 @@ const AllControllers = ({ controllerSection, targetTemplate, updateAll, sectionI
   const dispatchedRefForImg = (target, result) => updateAll.updateTemplate({ section: controllerSection, variable: target, value: result?.info?.secure_url });
   const pattern = /\.(jpg|gif|png|svg)$/i;
 
-  // add new future to section for example if i have 3 services and i need to add one else
+  // add new card to section for example if i have 3 services and i need to add one else
   const addNewElement = (blockName) => {
     dispatch(updateAll.addNewElement({ section: controllerSection, blockName: blockName }));
   };
@@ -34,13 +34,13 @@ const AllControllers = ({ controllerSection, targetTemplate, updateAll, sectionI
     } else dispatch(updateAll.reorderSection({ section: controllerSection, type: type }));
   };
 
-
-
   return (
     <div className="controller">
       {/* <div className="flex justify-between items-start gap-1">  */}
-      <div className="flex-between cursor-pointer " >
-        <h3 className="controller-name w-full" onClick={() => setOpen(!open)}>{controllerSection} section</h3>
+      <div className="flex-between cursor-pointer ">
+        <h3 className="controller-name w-full" onClick={() => setOpen(!open)}>
+          {controllerSection} section
+        </h3>
 
         {(sectionIndex <= 1) | isLastSection ? (
           <></>
@@ -54,14 +54,14 @@ const AllControllers = ({ controllerSection, targetTemplate, updateAll, sectionI
           />
         )}
         {open ? (
-          <img src="/assets/icons/down.svg" style={{ width: 18, marginLeft: "6px" }} alt="down" onClick={() => setOpen(!open)}/>
+          <img src="/assets/icons/down.svg" style={{ width: 18, marginLeft: "6px" }} alt="down" onClick={() => setOpen(!open)} />
         ) : (
-          <img src="/assets/icons/up.svg" style={{ width: 18, marginLeft: "6px" }} alt="down" onClick={() => setOpen(!open)}/>
+          <img src="/assets/icons/up.svg" style={{ width: 18, marginLeft: "6px" }} alt="down" onClick={() => setOpen(!open)} />
         )}
       </div>
       {open && (
         <>
-          {fields.map((field) => {
+          {fields.map((field, index) => {
             const subName = field.slice(0, field.length - 1);
             if (typeof targetSection[field] === "object") {
               if (typeof targetSection[field][0] === "object") {
@@ -70,8 +70,8 @@ const AllControllers = ({ controllerSection, targetTemplate, updateAll, sectionI
                 return _targetSection.map((ele, index) => {
                   return ele === "add" ? (
                     <div key={index}>
-                      <button className="controller-btn-add" onClick={() => addNewElement(field)}>
-                        Add
+                      <button className="controller-btn-add capitalize" onClick={() => addNewElement(field)}>
+                        Add {field.slice(0, -1)}
                       </button>
                     </div>
                   ) : (
@@ -94,9 +94,7 @@ const AllControllers = ({ controllerSection, targetTemplate, updateAll, sectionI
                     sectionName={controllerSection}
                     blockName={field}
                     subName={subName}
-                    
                     dispatchRef={updateAll}
-                    // dispatchRef={updateAll.updateTemplate}
                     key={field}
                   />
                 );
@@ -107,8 +105,9 @@ const AllControllers = ({ controllerSection, targetTemplate, updateAll, sectionI
                     sectionName={controllerSection}
                     blockName={field}
                     subName={subName}
-                    dispatchRef={updateAll.updateTemplate}
+                    dispatchRef={updateAll}
                     key={field}
+                    numOfFields={targetSection[field].length}
                   />
                 );
             }

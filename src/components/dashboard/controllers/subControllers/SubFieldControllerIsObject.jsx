@@ -6,7 +6,6 @@ const SubFieldControllerIsObject = ({ targetSection, sectionName, cardIndex, blo
   // const targetSection = useSelector((state) => state.template[sectionName]);
   const dispatch = useDispatch();
   const fields = Object.keys(targetSection[blockName][cardIndex][subBlockName]);
-  // const pattern = /^(https?:\/\/.*\.(?:png|jpg|jpeg|gif|webp|svg))/i;
   const pattern = /\.(jpg|gif|png|svg)$/i;
 
   const dispatchedRefForImg = (target, result) =>
@@ -21,8 +20,7 @@ const SubFieldControllerIsObject = ({ targetSection, sectionName, cardIndex, blo
         return (
           <div className="subController " key={index}>
             <label className="text-[16px]  capitalize">
-              {subBlockName.slice(0, subBlockName.length - 1)}
-              {index + 1}
+              {field}
             </label>
             {/* {field === "imgUrl" || field === "icon" ? ( */}
             {pattern.test(targetSection[blockName][cardIndex][subBlockName][field]) ? (

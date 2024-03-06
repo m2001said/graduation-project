@@ -1,5 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
-import { addElement, deleteElement, deleteSection, editElement, reorder, reorderSections } from "./actions";
+import { addElement, addElementToArray, addSubElement, deleteElement, deleteSection, editElement, reorder, reorderSections } from "./actions";
 const templateSlice4 = createSlice({
   initialState: {
     navbar: {
@@ -41,7 +41,7 @@ const templateSlice4 = createSlice({
       sub_title: "Value We Give to You",
       description1: " We are always ready to help by providing the best services for you.",
       description2: " We believe a good place to live can make your life better",
-      data: [
+      features: [
         {
           icon: "💧",
           heading: "Best interest rates on the market",
@@ -165,7 +165,12 @@ const templateSlice4 = createSlice({
     addNewElement: (state, action) => {
       addElement(state, action);
     },
-
+    addElementToArray: (state, action) => {
+      addElementToArray(state, action);
+    },
+    addNewSubElement: (state, action) => {
+      addSubElement(state, action);
+    },
     deleteElement: (state, action) => {
       deleteElement(state, action);
     },
