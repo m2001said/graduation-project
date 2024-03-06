@@ -14,8 +14,8 @@ const ChangeImageController = ({ field, src, dispatchRef }) => {
   }
   return (
     <div className="input-controller flex flex-between">
-      <img src={src} alt="img" width={100} style={{ maxHeight: "150px", backgroundColor:"#f0e3ef" }} />
-      <UploadWidget onUpload={(error, result, widget) => handleOnUpload(error, result, widget, "imgUrl")}>
+      <img src={src} alt="img" width={80} style={{ maxHeight: "100px", backgroundColor:"#f0e3ef" }} />
+      <UploadWidget onUpload={(error, result, widget) => handleOnUpload(error, result, widget, field)}>
         {({ open }) => {
           function handleOnClick(e) {
             e.preventDefault();

@@ -7,7 +7,7 @@ const Navbar4 = () => {
   const [menuOpened, setMenuOpened] = useState(false);
 
   // Fetching data from Redux state
-  const { navbar4 } = useSelector((state) => state.template4);
+  const { navbar } = useSelector((state) => state.template4);
 
   const handleMenuToggle = () => {
     setMenuOpened((prev) => !prev);
@@ -22,15 +22,15 @@ const Navbar4 = () => {
   return (
     <section className="h-wrapper">
       <div className="flexCenter innerWidth paddings h-container">
-        <img src={navbar4.imgUrl} alt="logo" width={100} />
+        <img src={navbar.imgUrl} alt="logo" width={100} />
         <div className="flexCenter h-menu" style={getMenuStyles(menuOpened)}>
-          {navbar4.links.map((link, index) => (
+          {navbar.links.map((link, index) => (
             <a key={index} href={`#${link.toLowerCase().replace(" ", "-")}`} onClick={handleLinkClick}>
               {link}
             </a>
           ))}
           <button className="button">
-            <a href={navbar4.email4}>{navbar4.buttonText}</a>
+            <a href={navbar.email4}>{navbar.buttonText}</a>
           </button>
         </div>
 

@@ -14,7 +14,7 @@ const Items1 = () => {
         <p className="description-1">{items.description}</p>
       </div>
       <div className="items1-cards">
-        {items.cards.map((cards) => (
+        {items.items.map((cards) => (
           <div className="article1-card" key={cards.title}>
             <div className="article1-card-img">
               <img src={cards.imgUrl} alt="Article 1" />
