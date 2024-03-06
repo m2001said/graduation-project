@@ -134,6 +134,7 @@ const Pricing9 = () => {
               </div>
               {/* Card- details */}
               <div className="py-4">
+                
                 <p className="text-sm">{card.Address}</p>
                 <div className="flex items-center gap-x-4 text-sm">
                   {card.features.slice(1).map((feature, index) => (

@@ -2,8 +2,8 @@ import React from "react";
 import "./feature.css";
 import { useSelector } from "react-redux";
 const Featrue1 = () => {
-  const { feature } = useSelector((state) => state.template1);
-
+  const { features } = useSelector((state) => state.template1);
+  const feature = features;
   return (
     <div className="feature1-layout">
       <div className="feature-content">
@@ -15,7 +15,7 @@ const Featrue1 = () => {
 
         <div className="contact-container">
           <div className="details">
-            <img src={feature.icons[0].icon} alt="" />
+            <img src={feature.icons[0]} alt="" />
             <div className="phone">
               <h1>{feature.phone}</h1>
               <h2>Call Us Anytime </h2>
@@ -23,7 +23,7 @@ const Featrue1 = () => {
           </div>
           <button>
             <p>{feature.buttonText}</p>
-            <img src={feature.icons[1].icon} alt="" />
+            <img src={feature.icons[1]} alt="" />
           </button>
         </div>
       </div>

@@ -35,7 +35,7 @@ const Footer5 = () => {
             <span className="link-title">{item.title}</span>
 
             {item.links.map((link) => (
-              <a href=" " key={link}>
+              <a href="#footer5" key={link}>
                 <li className="footer5-links-element">{link}</li>
               </a>
             ))}

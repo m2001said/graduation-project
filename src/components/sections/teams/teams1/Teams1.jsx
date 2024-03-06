@@ -7,7 +7,6 @@ const Teams1 = () => {
   const [selectedMember, setSelectedMember] = useState(null);
 
   const handleCardClick = (member) => {
-    // setSelectedMember(member);
     setSelectedMember(member === selectedMember ? null : member);
   };
   return (
@@ -15,7 +14,7 @@ const Teams1 = () => {
       <h2 className="team1-head">{team.title}</h2>
       <div className="team1-Card">
         <div className="team1-Card-main">
-          {team.cards.map((member, index) => (
+          {team.members.map((member, index) => (
             <div className="team1-Card-main-show" key={index} onClick={() => handleCardClick(member)}>
               <img className="team1-Card-main-img" src={member.imgUrl} alt={member.name} />
               {selectedMember && selectedMember.id === member.id && (
@@ -25,7 +24,8 @@ const Teams1 = () => {
                   <div className="team-media-icon">
                     {member.mediaIcons.map((icon) => (
                       <a href={icon.url} key={icon.url} target="_blank" rel="noreferrer">
-                        <img src={icon.icon} alt="" />
+                        <img src={icon.icon} alt="" style={{maxWidth:"20px"}}/> 
+                        {/* style={{maxWidth:"20px"}} */}
                       </a>
                     ))}
                   </div>

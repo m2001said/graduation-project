@@ -7,16 +7,25 @@ import Contact4 from "../components/sections/contacts/contact4/Contact4";
 import Cta4 from "../components/sections/ctas/cta4/cta4";
 import Footer4 from "../components/sections/footers/footer4/Footer4";
 
+import { useSelector } from "react-redux";
 const TrialDesign4 = () => {
+  const state = useSelector((state) => state.template4);
+  const reorderedComponents = Object.keys(state);
+  const componentMapping = {
+    navbar: Navbar4,
+    hero: Hero4,
+    features: Feature4,
+    projects: Project4,
+    contact: Contact4,
+    cta: Cta4,
+    footer: Footer4,
+  };
   return (
     <div>
-      <Navbar4 />
-      <Hero4 />
-      <Project4 />
-      <Feature4 />
-      <Contact4 />
-      <Cta4 />
-      <Footer4 />
+      {reorderedComponents.map((_component) => {
+        const Component = componentMapping[_component];
+        return Component && <Component key={_component} />;
+      })}
     </div>
   );
 };
