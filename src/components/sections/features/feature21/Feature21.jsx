@@ -21,18 +21,15 @@ const Feature5_2 = () => {
         </div>
 
         <div className="feature5_2-text">
-          <h2>
-            {feature2.title}
-          </h2>
+          <h2>{feature2.title}</h2>
 
           <div className="feature5_2-cards design5-grid">
-            {feature2.blocks.map((content, index) => (
-              <div key={index}className="feature5_2-singleCard">
+            {feature2.features.map((content, index) => (
+              <div key={index} className="feature5_2-singleCard">
                 <span className="singleCard-title">{content.head}</span>
                 <p>{content.description}</p>
               </div>
             ))}
-            
           </div>
         </div>
       </div>

@@ -284,7 +284,7 @@ const templateSlice = createSlice({
           moneyUnit: "$",
           features: ["General living space advices", "Renovation advices", "Interior design advices", "Furniture reorganization", "Up to 5 hours meetings"],
           buttonText: "Get Started",
-          icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701813389/templates/template_one/Vector_5_vvvt2o.svg",
+          icon: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1709586475/Vector_urtrep.svg",
         },
         {
           plan: "Complete interior",
@@ -303,7 +303,7 @@ const templateSlice = createSlice({
           moneyUnit: "$",
           features: ["Furniture for living room", "Furniture refurbishment", "Sofas and armchairs", "Tables and chairs", "Kitchens"],
           buttonText: "Get Started",
-          icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701813389/templates/template_one/Vector_5_vvvt2o.svg",
+          icon: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1709586475/Vector_urtrep.svg",
         },
       ],
     },
@@ -311,7 +311,7 @@ const templateSlice = createSlice({
       title: "Wanna join the interno?",
       description: "It is a long established fact  will be distracted.",
       buttonText: "Contact With Us",
-      icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701813389/templates/template_one/Vector_5_vvvt2o.svg",
+      icon: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1709586475/Vector_urtrep.svg",
     },
 
     footer: {
@@ -339,7 +339,7 @@ const templateSlice = createSlice({
       items: [
         {
           title: "services",
-          links: ["Kitchan,", "Living Area,", "Bathroom,", "Dinning Hall,", "Bedroom"],
+          links: ["Kitchan", "Living Area", "Bathroom", "Dinning Hall", "Bedroom"],
         },
         {
           title: "section",

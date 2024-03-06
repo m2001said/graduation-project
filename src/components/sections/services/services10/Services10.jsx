@@ -19,7 +19,7 @@ const Services10 = ({ handleOrderPopup }) => {
           </div>
           {/* card sec */}
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-20 md:gap-5 place-items-center">
-            {services.blocks.map((service) => (
+            {services.services.map((service) => (
               <div className="rounded-2xl bg-white bgHover10 dark:bg-gray-800 dark:hover:bg-blue-600 hover:text-white relative shadow-xl duration-high group max-w-[300px]">
                 <div className="h-[100px]">
                   <img
@@ -41,7 +41,7 @@ const Services10 = ({ handleOrderPopup }) => {
                     onClick={handleOrderPopup}
                     className="btnBg10 btnTxt10 hover:scale-105 duration-300 py-1 px-4 rounded-full mt-4 group-hover:bg-white group-hover:text-blue-600"
                   >
-                    {services.buttonText}
+                    {service.buttonText}
                   </button>
                 </div>
               </div>

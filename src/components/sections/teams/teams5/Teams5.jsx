@@ -19,12 +19,10 @@ const Teams5 = () => {
   return (
     <div className="teams5 design5-container design5-section">
       <div className="teams5-mainSectiom">
-        <h2>
-          {team.title}
-        </h2>
+        <h2>{team.title}</h2>
 
         <div className="teams5-travelersCards">
-          {team.cards.map((Card, index) => (
+          {team.teams.map((Card, index) => (
             <div key={index} className="teams5-single-card">
               <img src={Card.destinationImage} className="destinationImage" alt="" />
 

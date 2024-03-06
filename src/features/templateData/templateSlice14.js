@@ -46,7 +46,7 @@ const templateSlice14 = createSlice({
     },
 
     hero: {
-      blocks: [
+      heros: [
         {
           img: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707602286/headphone_qbcak3.png",
           subtitle: "Beats Solo",
@@ -88,7 +88,7 @@ const templateSlice14 = createSlice({
     },
 
     services: {
-      blocks: [
+      services: [
         {
           imgUrl: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707602721/icons8-sedan-30_zecew1.png",
           title: "Free Shipping",
@@ -126,7 +126,7 @@ const templateSlice14 = createSlice({
     projects1: {
       title: "Our Products",
       description: "Explore Our Products",
-      cards: [
+      projects: [
         {
           img: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707604733/p-1_mqzmix.jpg",
           title: "Boat Headphone",
@@ -185,7 +185,7 @@ const templateSlice14 = createSlice({
     projects2: {
       title: "Recent News",
       description: "Explore Our Blogs",
-      cards: [
+      projects: [
         {
           title: "How to choose perfect smartwatch",
           subtitle: "minima facere deserunt vero illo beatae deleniti eius dolores consequuntur, eligendi corporis maiores molestiae Porro?",
@@ -255,12 +255,6 @@ const templateSlice14 = createSlice({
           links: ["Home", "About", "Contact", "Blog"],
         },
       ],
-    },
-
-    order: {
-      title: "Order Now",
-      icon: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707791435/icons8-x-24_jske7f.png",
-      buttonText: "Order Now",
     },
 
     colors: {

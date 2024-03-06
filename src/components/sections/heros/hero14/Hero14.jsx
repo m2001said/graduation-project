@@ -21,13 +21,13 @@ const Hero14 = ({ handleOrderPopup }) => {
             {/* hero sec */}
             <Swiper
               spaceBetween={200}
-                pagination={{
-                  clickable: true,
-                }}
+              pagination={{
+                clickable: true,
+              }}
               modules={[Pagination]}
               className="mySwiper"
             >
-              {hero.blocks.map((data, index) => (
+              {hero.heros.map((data, index) => (
                 <SwiperSlide key={index}>
                   <div className="grid grid-cols-1 sm:grid-cols-2">
                     {/* text sec */}

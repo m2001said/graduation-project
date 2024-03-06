@@ -18,7 +18,7 @@ const templateSlice5 = createSlice({
       smallTitle: "travel support",
       title: "Plan your travel with confidence",
       description: "find help with booking and travel plans, see what to expect the journey",
-      blocks: [
+      features: [
         {
           number: "01",
           title: "Travel requirement for Dubai",
@@ -41,10 +41,10 @@ const templateSlice5 = createSlice({
       imgUrl: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1703111688/R_aejs2k.jpg",
     },
 
-    services: {
+    service: {
       title: "Travel to make memories all around the world",
       buttonTxt: "View all",
-      blocks: [
+      services: [
         {
           icon: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1703114489/calendar_ry8vjw.svg",
           title: "Book & Relax",
@@ -66,7 +66,7 @@ const templateSlice5 = createSlice({
     feature2: {
       imgUrl: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1703116246/fea5-2_q5na0z.jpg",
       title: "Unaccompanied minor lounge",
-      blocks: [
+      features: [
         {
           head: "Help through the airport",
           description: "You can also call airlines from your phone and book aflight ticket to one of your faverite destinations",
@@ -88,7 +88,7 @@ const templateSlice5 = createSlice({
 
     team: {
       title: "Top travelers of this month!",
-      cards: [
+      teams: [
         {
           destinationImage: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1703118167/paris_w35pqv.jpg",
           travelerImage: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1703118040/user1_tjx7hg.jpg",

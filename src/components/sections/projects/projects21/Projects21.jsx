@@ -18,7 +18,7 @@ const Projects21 = () => {
         {/* body */}
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 gap-y-8 sm:gap-4 md:gap-7">
           {/* card seC */}
-          {projects2.cards.map((data) => (
+          {projects2.projects.map((data) => (
             <div key={data.title} className="bg-white dark:bg-gray-900">
               {/* img sec */}
               <div className="overflow-hidden rounded-2xl mb-2">
