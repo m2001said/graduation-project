@@ -6,7 +6,7 @@ const Navbar2 = () => {
   const [activeNav, setActiveNav] = useState("#");
   const { navbar } = useSelector((state) => state.template2);
   return (
-    <nav>
+    <nav className="nav2">
       {navbar.map((item) => (
         <a key={item.url} href={`#${item.url}`} onClick={() => setActiveNav(`#${item.url}`)} className={activeNav === `#${item.url}` ? "active" : ""}>
           <img src={item.imgUrl} alt="" />

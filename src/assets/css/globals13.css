@@ -1,0 +1,173 @@
+.red-button {
+  color: rgb(244, 136, 136);
+}
+/************/
+.blue-background {
+  background-color: rgb(216, 216, 236);
+}
+
+.plus-9 {
+  height: 13px;
+  width: 13px;
+}
+
+:root {
+  --color-g-13-g: #154b3b;
+  --color-darkG-13: #003629;
+  --color-13-green: #003b29;
+  --green-13: #054130;
+  --g06412f: #06412f;
+  --white-13: rgb(255, 255, 255);
+  --color-13-green2: #134e3c;
+  --color-13-yel: #fdca51;
+  --fffaf4: #fffaf4;
+  --fff6ed: #fff6ed;
+  --c616161: #616161;
+  --fb7a3f: #fb7a3f;
+  --fd7b47: #fd7b47;
+  --black-13: rgb(0, 0, 0);
+}
+
+/* Add the new font sizes extracted from the component */
+.text-xl {
+  font-size: var(--font-size-md);
+}
+.text-lg {
+  font-size: var(--font-size-base);
+}
+
+/* Use the extracted colors for the button */
+button {
+  background: linear-gradient(to right, var(--button-bg-gradient-from), var(--button-bg-gradient-to));
+}
+
+/* Use the extracted text colors */
+.uppercase {
+  color: var(--primary-text-color);
+}
+
+/* Use the extracted border radius */
+.rounded-full {
+  border-radius: 9999px; /* A high value to make it fully round */
+}
+
+/* Use the extracted padding */
+.pb-12 {
+  padding-bottom: 3rem; /* Assuming you wanted 12px, adjust as needed */
+}
+
+.logo-9 {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.about9_logo {
+  width: 30%;
+
+  padding: 2rem;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo-9:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo-9.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.img-9:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.img-9.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+#testimonials13:hover {
+  color: var(--black-13);
+  background-color: var(--color-darkG-13);
+}
+
+.img-13:hover {
+  border: 2px solid var(--color-13-yel);
+}
+.read-the-docs {
+  color: #888;
+}
+.gradient-background {
+  background: linear-gradient(to top, #bce6e4, #f8fdfe);
+  border-radius: 560px;
+  border-radius: 0 0 560px 560px; /* If you want rounded only at the bottom */
+}
+.about-9:hover {
+  background: var(--button-bg-gradient-from);
+}
+.about-9 {
+  /* display: flex; */
+  justify-content: center;
+  /* align-items: center; */
+}
+.pricing-9 {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  /* gap: 2rem; */
+}
+.pricing-9:hover {
+  background-color: var();
+  background: linear-gradient(to right, var(--primary-text-color-9), var(--white-9));
+  transition: var(--transition9);
+  color: var(--black-9);
+  /* background-size: cover; */
+}
+.pricing-9:hover h1,
+.pricing-9:hover p,
+.pricing-9:hover button {
+  color: var(--black-9);
+}
+.about-9 {
+  transition: var(--transition9);
+}
+
+.service-9:hover {
+  background: linear-gradient(to right, var(--primary-next-9-color), var(--white-9));
+  background-size: contain;
+}
+
+.cusror-9 {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.testimonial-9:hover {
+  background: linear-gradient(to right, #8bd3ce, #eff9f9);
+}
+.footer9:hover {
+  background: #0c4d37;
+  height: 10px;
+}
+
+/******************************/
+@media (max-width: 600px) {
+  .swiper13 {
+    display: none;
+  }
+}
