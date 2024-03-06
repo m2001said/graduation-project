@@ -7,7 +7,7 @@ const Services1 = () => {
 
   return (
     <div className="services design-1">
-      {services.blocks.map((service, index) => (
+      {services.services.map((service, index) => (
         <Services1Card key={index} image={service.icon} title={service.title} description={service.description} />
       ))}
     </div>

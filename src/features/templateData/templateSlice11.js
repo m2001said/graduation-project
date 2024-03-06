@@ -1,5 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
-
+import { addElement, addElementToArray, addSubElement, deleteElement, deleteSection, editElement, reorder, reorderSections } from "./actions";
 const templateSlice11 = createSlice({
   initialState: {
     navbar: {
@@ -291,34 +291,32 @@ const templateSlice11 = createSlice({
   },
   name: "templateSlice11",
   reducers: {
-    updateTemplate11: (state, action) => {
-      const { section, variable, value, i, blockName, subBlockName, subIndex, objKey } = action.payload;
-      if (i === undefined) {
-        if (variable === null) {
-          state[section][blockName][objKey] = value;
-        } else {
-          state[section][variable] = value;
-        }
-      } else {
-        if (subIndex === undefined) {
-          if (variable === null) state[section][blockName][i] = value;
-          else {
-            if (subBlockName === undefined) {
-              state[section][blockName][i][variable] = value;
-            } else {
-              state[section][blockName][i][subBlockName][variable] = value;
-            }
-          }
-        } else {
-          if (variable === null) state[section][blockName][i][subBlockName][subIndex] = value;
-          else {
-            state[section][blockName][i][subBlockName][subIndex][variable] = value;
-          }
-        }
-      }
+    updateTemplate: (state, action) => {
+      editElement(state, action);
+    },
+    addNewElement: (state, action) => {
+      addElement(state, action);
+    },
+    addElementToArray: (state, action) => {
+      addElementToArray(state, action);
+    },
+    addNewSubElement: (state, action) => {
+      addSubElement(state, action);
+    },
+    deleteElement: (state, action) => {
+      deleteElement(state, action);
+    },
+    reorder: (state, action) => {
+      reorder(state, action);
+    },
+    reorderSection: (state, action) => {
+      return reorderSections(state, action);
+    },
+    deleteSection: (state, action) => {
+      return deleteSection(state, action);
     },
   },
 });
 
-export const { updateTemplate11 } = templateSlice11.actions;
+export const templateActions11 = templateSlice11.actions;
 export default templateSlice11.reducer;

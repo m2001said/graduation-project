@@ -9,7 +9,8 @@ import { EffectCards } from "swiper/modules";
 import { useSelector } from "react-redux";
 
 const Testimonials2 = () => {
-  const { testimonial } = useSelector((state) => state.template2);
+  const { testimonials } = useSelector((state) => state.template2);
+  const testimonial = testimonials;
 
   return (
     <section id="testimonials2">

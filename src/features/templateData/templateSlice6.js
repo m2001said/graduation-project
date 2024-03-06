@@ -1,4 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
+import { addElement, addElementToArray, addSubElement, deleteElement, deleteSection, editElement, reorder, reorderSections } from "./actions";
 const templateSlice6 = createSlice({
   initialState: {
     navbar: {
@@ -31,7 +32,7 @@ const templateSlice6 = createSlice({
         },
       ],
     },
-    productcard: {
+    productCard: {
       shoppingIcon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703095842/jammal_photos/gehvutbyftfxemvoqmu8.svg",
     },
     CartItems: {
@@ -330,8 +331,7 @@ const templateSlice6 = createSlice({
         },
       ]
     },
-
-    feature: {
+    features: {
       title: "Who we are?",
       imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703103180/jammal_photos/afcfogeancctcy4nhsfn.png",
       description: "Take a look at the benefits we offer you",
@@ -359,7 +359,7 @@ const templateSlice6 = createSlice({
         },
       ],
     },
-    testimonial: {
+    testimonials: {
       title: "What our customers are saying",
       imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703093874/jammal_photos/dwbzkjuoel7mlgqohppt.png",
       cards: [
@@ -408,23 +408,20 @@ const templateSlice6 = createSlice({
         content: ["About Us", "Menu", "Recips", "Contact"],
         links: ["About", "Menu", "Recipes", "Contact"],
       },
-      contact: {
-        title: "Contact",
-        content: [
-          {
-            title: "Sylhet, Bangladesh",
-            icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703108316/jammal_photos/oe8rjvrg0ckgohix2b6v.svg",
-          },
-          {
-            title: "example@gmail.com",
-            icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703108228/jammal_photos/opdhewds9do1znaaj5li.svg",
-          },
-          {
-            title: "+880 123 456 7890",
-            icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703108367/jammal_photos/y2583eh76th902gnzlje.svg",
-          },
-        ],
-      },
+      contact: [
+        {
+          title: "Sylhet, Bangladesh",
+          icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703108316/jammal_photos/oe8rjvrg0ckgohix2b6v.svg",
+        },
+        {
+          title: "example@gmail.com",
+          icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703108228/jammal_photos/opdhewds9do1znaaj5li.svg",
+        },
+        {
+          title: "+880 123 456 7890",
+          icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703108367/jammal_photos/y2583eh76th902gnzlje.svg",
+        },
+      ],
     },
     colors: {
       templateColors: ["#fff", "#cda274", "#292f36", "#f4f0ec", "#777777"],
@@ -433,42 +430,32 @@ const templateSlice6 = createSlice({
 
   name: "templateSlice6",
   reducers: {
-    updateTemplate6: (state, action) => {
-      const { section, variable, value, i, blockName, subBlockName, subIndex, objKey } = action.payload;
-      // sub means level 2 of fields
-      if (i === undefined) {
-        if (variable === null) {
-          // edit object filed
-          state[section][blockName][objKey] = value;
-        } else {
-          // edit normal field
-          state[section][variable] = value;
-        }
-      } else {
-        if (subIndex === undefined) {
-          // edit array filed with index
-          if (variable === null) state[section][blockName][i] = value;
-          else {
-            if (subBlockName === undefined) {
-              // edit obj in array of objects
-              state[section][blockName][i][variable] = value;
-            } else {
-              // edit sub obj directly
-              state[section][blockName][i][subBlockName][variable] = value;
-            }
-          }
-        } else {
-          // edit sub element in array
-          if (variable === null) state[section][blockName][i][subBlockName][subIndex] = value;
-          else {
-            // edit sub obj in array of objects
-            state[section][blockName][i][subBlockName][subIndex][variable] = value;
-          }
-        }
-      }
+    updateTemplate: (state, action) => {
+      editElement(state, action);
+    },
+    addNewElement: (state, action) => {
+      addElement(state, action);
+    },
+    addElementToArray: (state, action) => {
+      addElementToArray(state, action);
+    },
+    addNewSubElement: (state, action) => {
+      addSubElement(state, action);
+    },
+    deleteElement: (state, action) => {
+      deleteElement(state, action);
+    },
+    reorder: (state, action) => {
+      reorder(state, action);
+    },
+    reorderSection: (state, action) => {
+      return reorderSections(state, action);
+    },
+    deleteSection: (state, action) => {
+      return deleteSection(state, action);
     },
   },
 });
 
-export const { updateTemplate6 } = templateSlice6.actions;
+export const templateActions6 = templateSlice6.actions;
 export default templateSlice6.reducer;
