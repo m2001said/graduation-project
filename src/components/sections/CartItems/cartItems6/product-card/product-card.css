@@ -36,7 +36,7 @@
 
 .single__product .price span {
   color: var(--color4);
-  font-size: 1.3rem;
+  font-size: 1rem;
   font-weight: 500;
 }
 
@@ -75,4 +75,7 @@
   .single__product .price span {
     font-size: 0.9rem;
   }
+}
+.product__img {
+  padding: 24px;
 }
