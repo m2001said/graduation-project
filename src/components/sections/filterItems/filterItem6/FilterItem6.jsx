@@ -4,7 +4,7 @@ import ProductCard from "../../CartItems/cartItems6/product-card/ProductCard";
 import { useSelector } from "react-redux";
 
 const FilterItems = () => {
-  const { menuTitle, filterContent } = useSelector((state) => state.template6.FilterItems);
+  const { menuTitle, filterContent } = useSelector((state) => state.template6.products);
 
   const [filter, setFilter] = useState(filterContent[0].title); // Set initial filter to the first category
   const [products, setProducts] = useState(filterContent.find(category => category.title === filter)?.content || []);

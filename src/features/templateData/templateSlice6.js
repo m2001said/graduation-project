@@ -65,7 +65,7 @@ const templateSlice6 = createSlice({
           imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703098919/jammal_photos/bvipjezk42alazv5roew.png",
         },
       ],
-    }, FilterItems: {
+    }, products: {
       menuTitle: "Our Menu Pack",
       filterContent: [
         {
