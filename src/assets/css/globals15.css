@@ -24,10 +24,6 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.honerlink11:hover {
-  color: #535bf2;
-}
-
 .backgroundcolor15 {
   color: var(--background-color15);
 }
@@ -51,7 +47,17 @@
 .darkModeColor15 {
   color: var(--color2);
 }
+.nav15 {
+  background-color: var(--color1);
+}
+.hero15 {
+  background-color: var(--color1);
+}
 /* serve15 */
+.serve15 {
+  background-color: var(--color1);
+}
+
 .title15_1 {
   color: var(--color5);
 }
@@ -74,6 +80,9 @@
   color: var(--color2);
 }
 /* feat15 */
+.feat15 {
+  background-color: var(--color1);
+}
 .feat15_1 {
   color: var(--color5);
 }
@@ -96,6 +105,9 @@
   color: var(--color4);
 }
 /* proj15 */
+.proj15 {
+  background-color: var(--color1);
+}
 .proj15_1 {
   color: var(--color5);
 }
@@ -128,6 +140,9 @@
   color: var(--color2);
 }
 /* cta15 */
+.cta15 {
+  background-color: var(--color1);
+}
 .cta15_1 {
   color: var(--color5);
 }
@@ -156,6 +171,9 @@
   color: var(--color5);
 }
 /* test15 */
+.test15 {
+  background-color: var(--color1);
+}
 .test15_1 {
   color: var(--color5);
 }
@@ -179,6 +197,9 @@
   color: var(--color2);
 }
 /* pricn15 */
+.pricn15 {
+  background-color: var(--color1);
+}
 .pricin15_1 {
   color: var(--color5);
 }
@@ -213,6 +234,9 @@
   color: var(--color2);
 }
 /* blog15 */
+.blog15 {
+  background-color: var(--color1);
+}
 .blog15_1 {
   color: var(--color5);
 }
@@ -241,6 +265,9 @@
   color: var(--color5);
 }
 /* cont15 */
+.cont15 {
+  background-color: var(--color1);
+}
 .cont15_1 {
   color: var(--color5);
 }
@@ -266,6 +293,9 @@
   color: var(--color5);
 }
 /* foot15 */
+.foot15 {
+  background-color: var(--color1);
+}
 .foot15_1 {
   color: var(--color5);
 }
@@ -287,7 +317,6 @@
 }
 
 .TrialDesign15 {
-  background-color: var(--color1);
   margin: 0;
   place-items: center;
   min-width: 320px;

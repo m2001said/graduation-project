@@ -1,3 +1,4 @@
+import React from "react";
 import "../feedback7/feedback7.css";
 
 const FeedbackCard = ({ content, name, title, imgUrl }) => (
@@ -16,4 +17,5 @@ const FeedbackCard = ({ content, name, title, imgUrl }) => (
     </div>
   </div>
 );
+
 export default FeedbackCard;

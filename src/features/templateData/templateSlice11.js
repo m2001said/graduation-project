@@ -15,66 +15,57 @@ const templateSlice11 = createSlice({
         "https://res.cloudinary.com/duc04fwdb/image/upload/v1707526505/jammal_photos/iri11hg4ko9cfycfuwul.png",
       ],
     },
-
-    header: {
-      imgUrl: [
-        "https://res.cloudinary.com/duc04fwdb/image/upload/v1707527618/jammal_photos/qxpmecvimok1s04rvjaf.svg",
-        "https://res.cloudinary.com/duc04fwdb/image/upload/v1707527652/jammal_photos/furgxu5bmhp4dytyau0d.png",
-        "https://res.cloudinary.com/duc04fwdb/image/upload/v1707527691/jammal_photos/uzwvjddnc8yk20x9w0vt.svg",
-        "https://res.cloudinary.com/duc04fwdb/image/upload/v1707527724/jammal_photos/c2acr5tb8dswk7nmuzjt.svg",
-        "https://res.cloudinary.com/duc04fwdb/image/upload/v1707527760/jammal_photos/fizcisutwa4soxzeng3u.svg",
-      ],
-
-      links: {
-        link_instagram: "https://www.instagram.com/",
-        link_twitter: "https://www.twitter.com/",
-        link_behance: "https://www.behance.com/",
-        link_dribble: "https://www.dribble.com/",
-        link_pinterest: "https://www.pinterest.com/",
-      },
-      title: "Scroll Down",
-    },
-
     hero: {
       imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1707528928/jammal_photos/vtflccswxqzvklifgnrp.svg",
-      title1: "Bolby Doe",
-      title2: "I'm a Front-End developer",
-    },
-    servicesBox: {
-      imgUrl: [
-        "https://res.cloudinary.com/duc04fwdb/image/upload/v1707529254/jammal_photos/spnh089rxrr416y4kbgi.png",
-        "https://res.cloudinary.com/duc04fwdb/image/upload/v1707529311/jammal_photos/pz1rrv85kzajkutewxab.png",
-        "https://res.cloudinary.com/duc04fwdb/image/upload/v1707529342/jammal_photos/pk7qb56mjpspx8tbppt2.png",
-        "https://res.cloudinary.com/duc04fwdb/image/upload/v1707529377/jammal_photos/ke93bwvdtgnwajajiguq.png",
+      title: "Bolby Doe",
+      subtitle: "I'm a Front-End developer",
+      actionButton: "Hire Me",
+      actionScroll: "Scroll Down",
+      mediaIcons: [
+        {
+          icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1707527618/jammal_photos/qxpmecvimok1s04rvjaf.svg",
+          url: "https://www.instagram.com/",
+        },
+        {
+          icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1707527652/jammal_photos/furgxu5bmhp4dytyau0d.png",
+          url: "https://www.twitter.com/",
+        },
+        {
+          icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1707527691/jammal_photos/uzwvjddnc8yk20x9w0vt.svg",
+          url: "https://www.behance.com/",
+        },
+        {
+          icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1707527724/jammal_photos/c2acr5tb8dswk7nmuzjt.svg",
+          url: "https://www.dribble.com/",
+        },
+        {
+          icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1707527760/jammal_photos/fizcisutwa4soxzeng3u.svg",
+          url: "https://www.pinterest.com/",
+        },
       ],
-
-      number11: {
-        num1: "198",
-        num2: "5670",
-        num3: "427",
-        num4: "35",
-      },
-      paragraf11: {
-        p1: "Project completed",
-        p2: "Cup of coffee",
-        p3: "Satisfied clients",
-        p4: "Nominees winner",
-      },
     },
 
     services: {
       imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1707529935/jammal_photos/qkowgxkdtneaviwup0dv.svg",
       title: "About Me",
-      paragraf:
+      content:
         "I am Bolby Doe, web developer from London, United Kingdom. I have rich experience in web site design and building and customization, also I am good at Word Press.",
-      btn: "Download CV",
-      skills11__name1: "Development",
-      skills11__name2: "UI/UX design",
-      skills11__name3: "Photography",
-      skills11__number1: "90%",
-      skills11__number2: "80%",
-      skills11__number3: "60%",
-      data: [
+      actionButton: "Download CV",
+      statistics: [
+        {
+          title: "Development",
+          value: "90%",
+        },
+        {
+          title: "UI/UX design",
+          value: "80%",
+        },
+        {
+          title: "Photography",
+          value: "60%",
+        },
+      ],
+      datas: [
         {
           id: 1,
           imgUrl: " https://res.cloudinary.com/duc04fwdb/image/upload/v1707530832/jammal_photos/fjodtcpjr0admhaoxbs3.svg",
@@ -96,6 +87,30 @@ const templateSlice11 = createSlice({
       ],
     },
 
+    statistic: {
+      statistics: [
+        {
+          title: "Project completed",
+          value: "198",
+          imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1707529254/jammal_photos/spnh089rxrr416y4kbgi.png",
+        },
+        {
+          title: "Cup of coffee",
+          value: "5670",
+          imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1707529311/jammal_photos/pz1rrv85kzajkutewxab.png",
+        },
+        {
+          title: "Satisfied clients",
+          value: "427",
+          imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1707529342/jammal_photos/pk7qb56mjpspx8tbppt2.png",
+        },
+        {
+          title: "Nominees winner",
+          value: "35",
+          imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1707529377/jammal_photos/ke93bwvdtgnwajajiguq.png",
+        },
+      ],
+    },
     cta: {
       education: [
         {
