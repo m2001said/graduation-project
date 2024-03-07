@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./designCard.css";
+import ImageLoader from "../../../Loader/loader.jsx"; 
 
 const DesignCard = ({ Designdata, index }) => {
   return (
@@ -8,7 +9,7 @@ const DesignCard = ({ Designdata, index }) => {
       {index > 0 && (
         <div className="design-card rounded-lg overflow-hidden shadow-lg flex flex-column">
           <div className="design-Img-container mb-2">
-            <img src={Designdata.imageUrl} className="design-Img object-cover w-full" alt="design--Img" />
+            <ImageLoader src={Designdata.imageUrl} alt="design--Img" />
           </div>
 
           <div className="design-info px4 py-2">
@@ -29,7 +30,7 @@ const DesignCard = ({ Designdata, index }) => {
         <Link to={`/page-craft`}>
           <div className="design-card rounded-lg overflow-hidden shadow-lg flex flex-column">
             <div className="design-Img-container mb-2">
-              <img src={Designdata.imageUrl} className="design-Img object-cover w-full" alt="design--Img" />
+              <ImageLoader src={Designdata.imageUrl} alt="design--Img" />
             </div>
 
             <div className="design-info px4 py-2">
