@@ -1,11 +1,27 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./designCard.css";
-import ImageLoader from "../../../Loader/loader.jsx"; 
+import BaseModal from "../../../mainPage/modal/BaseModal/BaseModal.jsx"
+import AiForm from "../../../mainPage/modal/aiForm/AiForm.jsx"
+import aiPoster from "../../../../assets/images/mainPageAssets/hero-min.svg"
+
+import ImageLoader from "../../../Loader/loader.jsx";
 
 const DesignCard = ({ Designdata, index }) => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const toggleModal = () => {
+    setIsModalOpen(!isModalOpen);
+  };
+
+
   return (
     <>
+      {isModalOpen ? (
+        <BaseModal poster={aiPoster} toggleModal={toggleModal}>
+          <AiForm index={index} />
+        </BaseModal>
+      ) : null}
       {index > 0 && (
         <div className="design-card rounded-lg overflow-hidden shadow-lg flex flex-column">
           <div className="design-Img-container mb-2">
@@ -17,9 +33,10 @@ const DesignCard = ({ Designdata, index }) => {
             <p className="designs-description text-gray-600 text-sm  text-center ">{Designdata.description}</p>
           </div>
           <div className="button-container px-4 flex justify-between gap-4">
-            <Link className="flex justify-center items-center  w-full py-2 Build-button design-btn" to={`/build-trial-design${index}`}>
+            <button className="flex justify-center items-center w-full py-2 Build-button design-btn" onClick={() => toggleModal(index)}>
               Build
-            </Link>
+            </button>
+
             <Link className="Preview-button flex justify-center items-center  w-full py-2 design-btn" to={`/preview-trial-design${index}`}>
               Preview
             </Link>
