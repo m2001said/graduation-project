@@ -1,4 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
+import { addElement, addElementToArray, addSubElement, deleteElement, deleteSection, editElement, reorder, reorderSections } from "./actions";
 
 const templateSlice7 = createSlice({
   initialState: {
@@ -43,24 +44,38 @@ const templateSlice7 = createSlice({
       imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1706801327/jammal_photos/pu1mdivlop5zpuugkqn9.svg",
       actionButton: "Get Started",
     },
-    statistic: {
-      items: [
+    // /----------------------------/
+    statistics: {
+      statistics: [
         {
-          id: "stats-1",
-          value: "3800+",
           title: "User Active",
+          value: "3800+",
         },
         {
-          id: "stats-2",
-          value: "230+",
           title: "Trusted by Company",
+          value: "230+",
         },
         {
-          id: "stats-3",
-          value: "$230M+",
           title: "Transaction",
+          value: "$230M+",
         },
       ],
+
+      // "stats-1": {
+      //   id: "stats-1",
+      //   title: "User Active",
+      //   value: "3800+",
+      // },
+      // "stats-2": {
+      //   id: "stats-2",
+      //   title: "Trusted by Company",
+      //   value: "230+",
+      // },
+      // "stats-3": {
+      //   id: "stats-3",
+      //   title: "Transaction",
+      //   value: "$230M+",
+      // },
     },
 
     feature: {
@@ -243,42 +258,32 @@ const templateSlice7 = createSlice({
 
   name: "templateSlice7",
   reducers: {
-    updateTemplate7: (state, action) => {
-      const { section, variable, value, i, blockName, subBlockName, subIndex, objKey } = action.payload;
-      // sub means level 2 of fields
-      if (i === undefined) {
-        if (variable === null) {
-          // edit object filed
-          state[section][blockName][objKey] = value;
-        } else {
-          // edit normal field
-          state[section][variable] = value;
-        }
-      } else {
-        if (subIndex === undefined) {
-          // edit array filed with index
-          if (variable === null) state[section][blockName][i] = value;
-          else {
-            if (subBlockName === undefined) {
-              // edit obj in array of objects
-              state[section][blockName][i][variable] = value;
-            } else {
-              // edit sub obj directly
-              state[section][blockName][i][subBlockName][variable] = value;
-            }
-          }
-        } else {
-          // edit sub element in array
-          if (variable === null) state[section][blockName][i][subBlockName][subIndex] = value;
-          else {
-            // edit sub obj in array of objects
-            state[section][blockName][i][subBlockName][subIndex][variable] = value;
-          }
-        }
-      }
+    updateTemplate: (state, action) => {
+      editElement(state, action);
+    },
+    addNewElement: (state, action) => {
+      addElement(state, action);
+    },
+    addElementToArray: (state, action) => {
+      addElementToArray(state, action);
+    },
+    addNewSubElement: (state, action) => {
+      addSubElement(state, action);
+    },
+    deleteElement: (state, action) => {
+      deleteElement(state, action);
+    },
+    reorder: (state, action) => {
+      reorder(state, action);
+    },
+    reorderSection: (state, action) => {
+      return reorderSections(state, action);
+    },
+    deleteSection: (state, action) => {
+      return deleteSection(state, action);
     },
   },
 });
 
-export const { updateTemplate7 } = templateSlice7.actions;
+export const templateActions7 = templateSlice7.actions;
 export default templateSlice7.reducer;

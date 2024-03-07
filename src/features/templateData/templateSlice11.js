@@ -1,5 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
-
+import { addElement, addElementToArray, addSubElement, deleteElement, deleteSection, editElement, reorder, reorderSections } from "./actions";
 const templateSlice11 = createSlice({
   initialState: {
     navbar: {
@@ -112,7 +112,7 @@ const templateSlice11 = createSlice({
       ],
     },
     cta: {
-      education: [
+      educations: [
         {
           id: 1,
           imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1707315263/jammal_photos/e8txoexg8c3isadzrzl4.png",
@@ -135,7 +135,7 @@ const templateSlice11 = createSlice({
           desc: "Lorem ipsum dolor sit amet quo ei simul congue exerci ad nec admodum perfecto.",
         },
       ],
-      experience: [
+      experiences: [
         {
           id: 4,
           imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1707315138/jammal_photos/jjusigmt6zz4eo7i00rm.svg",
@@ -162,47 +162,35 @@ const templateSlice11 = createSlice({
 
     projects: {
       imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1707532366/jammal_photos/j8mhijwgfitdt7jodrfo.png",
-      title: {
-        titl0: "Projects",
-        title1: "Everything",
-        title2: "Creative",
-        title3: "Art",
-        title4: "Design",
-        title5: "Branding",
-      },
-      Menu11: [
+      title: "Projects",
+      links: [{ name: "Everything" }, { name: "Creative" }, { name: "Art" }, { name: "Design" }, { name: "Branding" }],
+      cards: [
         {
-          id: 1,
           imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1707531996/jammal_photos/d6bkxalscogk4dh51xbn.svg",
           title: "Project Management Illustration",
           category: "Design",
         },
         {
-          id: 2,
           imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1707532031/jammal_photos/vbmrao9xbughuacemn8z.svg",
           title: "Guest App Walkthrough Screens",
           category: "Art",
         },
         {
-          id: 3,
           imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1707532063/jammal_photos/poxem7ymkahfv9brke6k.svg",
           title: "Delivery App Wireframe",
           category: "Branding",
         },
         {
-          id: 4,
           imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1707532105/jammal_photos/zuzgoospnw8rkchet8uz.svg",
           title: "Onboarding Motivation",
           category: "Design",
         },
         {
-          id: 5,
           imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1707532139/jammal_photos/a902sheq3oxkzwplffbt.svg",
           title: "iMac Mockup Design",
           category: "Creative",
         },
         {
-          id: 6,
           imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1707532169/jammal_photos/gp1h7hcnbvmjfew99gr6.svg",
           title: "Game Store App Concept",
           category: "Art",
@@ -210,94 +198,90 @@ const templateSlice11 = createSlice({
       ],
     },
     pricing: {
-      imgUrl: [
-        "https://res.cloudinary.com/duc04fwdb/image/upload/v1707533563/jammal_photos/d7f3hwuspkhzrd4gixml.svg",
-        "https://res.cloudinary.com/duc04fwdb/image/upload/v1707533646/jammal_photos/ecwgh1geup2tlrbkywss.svg",
-        "https://res.cloudinary.com/duc04fwdb/image/upload/v1707533677/jammal_photos/iefwt1dhzkcm1t9qsik0.svg",
-      ],
-      title: {
-        titl0: "Pricing Plans",
-        titl1: "Basic",
-        titl2: "Recommended",
-        titl3: "Ultimate",
-        titl4: "Premium",
-      },
-      paragraf: {
-        p1: "A Simple option but powerful to manage your business",
-        p2: "Email support",
-        p3: "Unlimited product including app integration and more features",
-        p4: "Mon-Fri support",
-        p5: "A wise option for large companies and individuals",
-        p6: "24/7 support",
-      },
-      item11: [
+      title: "Pricing Plans",
+      cards: [
         {
-          item1: "$",
-          item2: "9",
-          item3: "Month",
+          title: "Basic",
+          subtitle: "Email support",
+          content: "A Simple option but powerful to manage your business",
+          currencySymbol: "$",
+          price: "9",
+          duration: "Month",
+          imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1707533563/jammal_photos/d7f3hwuspkhzrd4gixml.svg",
         },
         {
-          item4: "$",
-          item5: "15",
-          item6: "Month",
+          title: "Ultimate",
+          subtitle: "Mon-Fri support",
+          content: "Unlimited product including app integration and more features",
+          currencySymbol: "$",
+          price: "9",
+          duration: "Month",
+          imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1707533646/jammal_photos/ecwgh1geup2tlrbkywss.svg",
         },
         {
-          item7: "$",
-          item8: "19",
-          item9: "Month",
+          title: "Premium",
+          subtitle: "24/7 support",
+          content: "A wise option for large companies and individuals",
+          currencySymbol: "$",
+          price: "9",
+          duration: "Month",
+          imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1707533677/jammal_photos/iefwt1dhzkcm1t9qsik0.svg",
         },
       ],
-      btn: { B1: "Get Started" },
+      actionButton: "Get Started",
     },
-    testimonial: [
-      {
-        id: 1,
-        imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1707536339/jammal_photos/ygo3scdgrqd9e8wnp7hd.svg",
-        title: "A7md M7md",
-        subtitle: "Product designer at Dribble",
-        comment: "I enjoy working with the theme and learn so much. You guys make the process fun and interesting. Good luck! 👍",
-      },
-      {
-        id: 2,
-        imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1707536399/jammal_photos/ahs4v2ti9ltcukn9awnn.svg",
-        title: "M7md A7md",
-        subtitle: "Product designer at Dribble",
-        comment: "I enjoy working with the theme and learn so much. You guys make the process fun and interesting. Good luck! 👍",
-      },
-    ],
-    footer: {
-      imgUrl: [
-        "https://res.cloudinary.com/duc04fwdb/image/upload/v1707536629/jammal_photos/pmgnbkfrkxuhmwom4fdx.svg",
-        "https://res.cloudinary.com/duc04fwdb/image/upload/v1707536689/jammal_photos/zurrd2gqiqn3hovkigki.svg",
-        "https://res.cloudinary.com/duc04fwdb/image/upload/v1707536723/jammal_photos/mm847mrsdrh7xfbfq3ff.svg",
+    testimonial: {
+      testimonials: [
+        {
+          id: 1,
+          imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1707536339/jammal_photos/ygo3scdgrqd9e8wnp7hd.svg",
+          title: "A7md M7md",
+          subtitle: "Product designer at Dribble",
+          comment: "I enjoy working with the theme and learn so much. You guys make the process fun and interesting. Good luck! 👍",
+        },
+        {
+          id: 2,
+          imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1707536399/jammal_photos/ahs4v2ti9ltcukn9awnn.svg",
+          title: "M7md A7md",
+          subtitle: "Product designer at Dribble",
+          comment: "I enjoy working with the theme and learn so much. You guys make the process fun and interesting. Good luck! 👍",
+        },
       ],
-      title: {
-        title0: "Latest Posts",
-        title1: "Reviews",
-        title2: "Bolby",
-        title3: "Tutorial",
-        title4: "Bolby",
-        title5: "Business",
-        title6: "Bolby",
-        title7: ".",
-      },
-      paragraf: {
-        p1: "5 Best App Development Tool for Your Projects",
-        p2: "09 February, 2024",
-        p3: "Common Misconceptions About Payment",
-        p4: "07 February, 2024",
-        p5: "3 Things to know about startup business",
-        p6: "05 February, 2024",
-      },
+    },
+    footer: {
+      title: "Latest Posts",
+      cards: [
+        {
+          title: "Reviews",
+          name: "Bolby",
+          data: "09 February, 2024",
+          content: "5 Best App Development Tool for Your Projects",
+          imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1707536629/jammal_photos/pmgnbkfrkxuhmwom4fdx.svg",
+        },
+        {
+          title: "Tutorial",
+          name: "Bolby",
+          data: "07 February, 2024",
+          content: "Common Misconceptions About Payment",
+          imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1707536689/jammal_photos/zurrd2gqiqn3hovkigki.svg",
+        },
+        {
+          title: "Business",
+          name: "Bolby",
+          data: "05 February, 2024",
+          content: "3 Things to know about startup business",
+          imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1707536723/jammal_photos/mm847mrsdrh7xfbfq3ff.svg",
+        },
+      ],
     },
 
     contact: {
       title: "Get In Touch",
-      pargraf: {
-        p1: "Let's talk about everything!",
-        p2: "Don't like forms? Send me an email. 👋",
+      actionButton: "Send Message",
+      contactParagraph: {
+        introText: "Let's talk about everything!",
+        emailText: "Don't like forms? Send me an email. 👋",
       },
-      btn: "Send Message",
     },
 
     colors: {
@@ -306,34 +290,32 @@ const templateSlice11 = createSlice({
   },
   name: "templateSlice11",
   reducers: {
-    updateTemplate11: (state, action) => {
-      const { section, variable, value, i, blockName, subBlockName, subIndex, objKey } = action.payload;
-      if (i === undefined) {
-        if (variable === null) {
-          state[section][blockName][objKey] = value;
-        } else {
-          state[section][variable] = value;
-        }
-      } else {
-        if (subIndex === undefined) {
-          if (variable === null) state[section][blockName][i] = value;
-          else {
-            if (subBlockName === undefined) {
-              state[section][blockName][i][variable] = value;
-            } else {
-              state[section][blockName][i][subBlockName][variable] = value;
-            }
-          }
-        } else {
-          if (variable === null) state[section][blockName][i][subBlockName][subIndex] = value;
-          else {
-            state[section][blockName][i][subBlockName][subIndex][variable] = value;
-          }
-        }
-      }
+    updateTemplate: (state, action) => {
+      editElement(state, action);
+    },
+    addNewElement: (state, action) => {
+      addElement(state, action);
+    },
+    addElementToArray: (state, action) => {
+      addElementToArray(state, action);
+    },
+    addNewSubElement: (state, action) => {
+      addSubElement(state, action);
+    },
+    deleteElement: (state, action) => {
+      deleteElement(state, action);
+    },
+    reorder: (state, action) => {
+      reorder(state, action);
+    },
+    reorderSection: (state, action) => {
+      return reorderSections(state, action);
+    },
+    deleteSection: (state, action) => {
+      return deleteSection(state, action);
     },
   },
 });
 
-export const { updateTemplate11 } = templateSlice11.actions;
+export const templateActions11 = templateSlice11.actions;
 export default templateSlice11.reducer;

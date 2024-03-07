@@ -1,4 +1,4 @@
-.pricing1 {
+/* .pricing1 {
   background-color: transparent;
 }
 .pricing__container11 {
@@ -69,5 +69,31 @@
   }
   .pricing__item11.best {
     padding: 2.4rem 2.5rem;
+  }
+} */
+.pricing__container11 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Center items horizontally */
+  gap: 1.875rem; /* Spacing between items */
+}
+
+.pricing__item11 {
+  flex: 0 0 calc(33.333% - 1.875rem); /* Each item takes up 33.333% of the container width with a gap */
+  padding: 1.875rem 2.5rem;
+  background-color: var(--container-color11);
+  text-align: center;
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow);
+  margin-bottom: 1.875rem; /* Spacing between rows */
+}
+
+@media screen and (max-width: 1024px) {
+  .pricing__container11 {
+    justify-content: flex-start; /* Align items to the start when wrapping to new row */
+  }
+
+  .pricing__item11 {
+    flex: 0 0 calc(100% - 1.875rem); /* Each item takes up 100% of the container width with a gap */
   }
 }

@@ -1,9 +1,10 @@
 .resume__container11 {
+  display: grid;
   grid-template-columns: repeat(2, 1fr);
   column-gap: 1.875rem;
   width: 70rem;
-  margin-left: 100px;
 }
+
 .timeline11 {
   background-color: var(--container-color11);
   padding: 1.875rem;
@@ -11,14 +12,19 @@
   position: relative;
   box-shadow: var(--shadow);
 }
+
 .timeline__item11 {
-  position: relative;
+  display: flex; /* Display items in a row */
+  flex-direction: column; /* Stack icon, data, and title vertically */
+  align-items: center; /* Center items horizontally */
   padding-left: 3.125rem;
   padding-bottom: 3.125rem;
 }
+
 .timeline__item11:last-child {
   padding-bottom: 0;
 }
+
 .timeline__item11::before {
   content: "";
   width: 1px;
@@ -28,23 +34,24 @@
   left: 0.25rem;
   top: 0;
 }
+
 .timeline__icon11 {
-  position: absolute;
-  left: -0.4375rem;
-  top: 0;
   width: 25px;
   color: var(--first-color11);
   background-color: var(--container-color11);
   padding: 0.4375rem 0;
 }
+
 .timeline__data11 {
   color: var(--move11);
   font-size: var(--small-font-size);
 }
+
 .timeline__title11 {
   font-size: var(--h3-font-size);
   margin: 0.5rem 0;
 }
+
 @media screen and (max-width: 1024px) {
   .resume__container11 {
     grid-template-columns: repeat(1, 1fr);

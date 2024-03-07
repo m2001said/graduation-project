@@ -5,18 +5,18 @@ import "swiper/css";
 import "./project4.css";
 import { sliderSettings } from "./common";
 const Project4 = () => {
-  const { project4 } = useSelector((state) => state.template4);
+  const { projects } = useSelector((state) => state.template4);
   return (
     <div id="residencies" className="r-wrapper">
       <div className="paddings innerWidth r-container">
         <div className="flexColStart r-head">
-          <span className="orangeText">{project4.title}</span>
-          <span className="primaryText">{project4.sub_title}</span>
+          <span className="orangeText">{projects.title}</span>
+          <span className="primaryText">{projects.sub_title}</span>
         </div>
         <Swiper {...sliderSettings}>
           <SlideNextButton />
           {/* slider */}
-          {project4.card.map((card, i) => (
+          {projects.card.map((card, i) => (
             <SwiperSlide key={i}>
               <div className="flexColStart r-card">
                 <img src={card.image} alt="home" />

@@ -2,19 +2,25 @@
   grid-template-columns: repeat(3, 1fr);
   column-gap: 1.875rem;
   margin-bottom: 4.357rem;
-  display: grid;
-  
+  display: flex;
+  flex-wrap: wrap;
 }
+
 .services__card11_2 {
+  display: grid;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
   text-align: center;
   padding: 1.875rem;
   border-radius: var(--broder-radius);
   background-color: var(--container-color11);
   transition: all 0.3s ease-in-out;
-  width: 400px;
+  width: 300px;
   height: 300px;
-  margin: 20px;
 }
+
 .services__card11_2:hover {
   transform: translateY(-10px);
 }

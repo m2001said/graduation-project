@@ -7,7 +7,7 @@ const Services11_2 = () => {
   return (
     <section className="services11 container section" id="services">
       <h2 className="section__title11">Services</h2>
-      <div className="services__container11 grid11">
+      <div className="services__container11_2 grid11">
         {services.datas.map((service) => {
           return (
             <div className="services__card11_2" key={service.id}>
