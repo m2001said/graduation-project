@@ -1,7 +1,7 @@
 // InputsGroup.jsx
 import React from "react";
 
-const InputsGroup = ({ data, selectedIndex, handleIndexChange }) => {
+const InputsGroup = ({ data, handleIndexChange }) => {
   return (
     <div>
       <input

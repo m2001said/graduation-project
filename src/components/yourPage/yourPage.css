@@ -69,7 +69,8 @@
 .group label {
     display: flex;
     transition: 0.4s;
-    border: solid 2px #00000000;
+    outline: solid 2px #00000000;
+    outline-offset: 1px;
     position: relative;
 }
 
@@ -90,8 +91,7 @@
 }
 
 .group input[type="radio"]:checked+label {
-    border: solid 2px var(--color-3);
-    transform: scale(0.95);
+    outline: solid 2px var(--color-3);
 }
 
 .group input[type="radio"]:checked+label .check-icon {
