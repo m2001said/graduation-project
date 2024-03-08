@@ -53,6 +53,7 @@
   width: fit-content;
   background: white;
   padding: 7px;
+  color: var(--discription-dark);
 }
 .article1-card-info {
   width: 100%;
@@ -62,7 +63,7 @@
   justify-content: space-between;
 }
 .article1-card-info h1 {
-  color: var(--primary-text-color);
+  color: var(--title-dark);
   font-size: 1.2em;
   font-weight: 700;
   line-height: 1.4;
@@ -70,7 +71,7 @@
 }
 .article1-card-info p {
   font-size: 20px;
-  color: var(--description-text);
+  color: var(--discription-dark);
 }
 
 .article1-card-foot {
