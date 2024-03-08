@@ -28,15 +28,15 @@ export const cartItemData = createData('CartItem', [
 ]);
 
 export const heroData = createData('Hero', [
-  { id: 1, imgUrl: "hero1.png" },
-  { id: 2, imgUrl: "hero2.png" },
-  { id: 3, imgUrl: "hero3.png" },
-  { id: 4, imgUrl: "hero4.png" },
-  { id: 5, imgUrl: "hero5.png" },
+  { id: 1, imgUrl: hero14 },
+  { id: 2, imgUrl: hero14 },
+  { id: 3, imgUrl: hero14 },
+  { id: 4, imgUrl: hero6 },
+  { id: 5, imgUrl: hero14 },
   { id: 6, imgUrl: hero6 },
-  { id: 7, imgUrl: "hero7.png" },
-  { id: 10, imgUrl: "hero10.png" },
-  { id: 11, imgUrl: "hero11.png" },
+  { id: 7, imgUrl: hero14 },
+  { id: 10, imgUrl: hero6 },
+  { id: 11, imgUrl: hero14 },
   { id: 14, imgUrl: hero14 }
 ]);
 
