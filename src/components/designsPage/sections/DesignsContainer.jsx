@@ -1,7 +1,19 @@
 import React from "react";
 import "./designsContainer.css";
 import DesignCard from "./designsCard/DesignCard";
-
+import design1 from "../../../assets/images/designs/design1.jpg"
+import design2 from "../../../assets/images/designs/design2.jpg"
+import design3 from "../../../assets/images/designs/design3.jpg"
+import design4 from "../../../assets/images/designs/design4.jpg"
+import design5 from "../../../assets/images/designs/design5.jpg"
+import design6 from "../../../assets/images/designs/design6.jpg"
+import design7 from "../../../assets/images/designs/design7.jpg"
+import design8 from "../../../assets/images/designs/design8.jpg"
+import design10 from "../../../assets/images/designs/design10.jpg"
+import design11 from "../../../assets/images/designs/design11.jpg"
+import design14 from "../../../assets/images/designs/design14.jpg"
+import design16 from "../../../assets/images/designs/design16.jpg"
+import design18 from "../../../assets/images/designs/design18.jpg"
 const DesignsData = [
   {
     title: "Start From Scratch",
@@ -11,42 +23,42 @@ const DesignsData = [
   {
     title: "Unique Homes",
     description: " Explore diverse design and project updates for personalized living. ",
-    imageUrl: "https://res.cloudinary.com/dvp3nyulf/image/upload/v1709145474/tnxikx0i27syq6uzsav6.png",
+    imageUrl: design1,
   },
   {
     title: "Web Dev Protofolio",
     description: " Showcase your web dev skills and impressive projects in one place. ",
-    imageUrl: "https://res.cloudinary.com/dvp3nyulf/image/upload/v1709145450/design2.png",
+    imageUrl: design2,
   },
   {
     title: "FitClub Pro",
     description: " Shape your ideal body with expert coaches, diverse programs. ",
-    imageUrl: "https://res.cloudinary.com/dvp3nyulf/image/upload/v1709490797/design3.png",
+    imageUrl: design3,
   },
   {
     title: "Home Finder Pro",
     description: " Find your dream home among 9000+ options with 2000+ happy customers. ",
-    imageUrl: "https://res.cloudinary.com/dvp3nyulf/image/upload/v1709145472/design4.png",
+    imageUrl: design4,
   },
   {
     title: "Memorable Journeys",
     description: " Explore travel tips, assistance, and create lasting global memories. ",
-    imageUrl: "https://res.cloudinary.com/dvp3nyulf/image/upload/v1709145463/design5.png",
+    imageUrl: design5,
   },
   {
     title: "Chef Food",
     description: " Discover diverse flavors with our menu and satisfied testimonials. ",
-    imageUrl: "https://res.cloudinary.com/dvp3nyulf/image/upload/v1709490708/design6.png",
+    imageUrl: design6,
   },
   {
     title: "Secure Money Solutions",
     description: " Discover Hoobank - Your secure and efficient next-gen payment solution. ",
-    imageUrl: "https://res.cloudinary.com/dvp3nyulf/image/upload/v1709145448/design7.jpg",
+    imageUrl: design7,
   },
   {
     title: "Protofolio Hub",
     description: " Experience frontend and captivating UI/UX designs in our portfolio. ",
-    imageUrl: "https://res.cloudinary.com/dvp3nyulf/image/upload/v1709145450/design8.png",
+    imageUrl: design8,
   },
   {
     title: "HomeHub",
@@ -56,12 +68,12 @@ const DesignsData = [
   {
     title: "Bookstore Bliss",
     description: " Explore top books, reviews, and a virtual library experience. ",
-    imageUrl: "https://res.cloudinary.com/dvp3nyulf/image/upload/v1709145436/design10.jpg",
+    imageUrl: design10,
   },
   {
     title: "Digital Portfolio Showcase",
     description: " Explore Bolby Doe's impressive web design and development portfolio. ",
-    imageUrl: "https://res.cloudinary.com/dvp3nyulf/image/upload/v1709145439/design11.png",
+    imageUrl: design11,
   },
   {
     title: "Nike Ecommerce",
@@ -76,7 +88,7 @@ const DesignsData = [
   {
     title: "Gadget Store Hub",
     description: " Explore our curated collection of headphones, laptops in our store. ",
-    imageUrl: "https://res.cloudinary.com/dvp3nyulf/image/upload/v1709145457/design14.png",
+    imageUrl: design14,
   },
   {
     title: "Developer Portfolio",
@@ -86,7 +98,7 @@ const DesignsData = [
   {
     title: "Coffero's Café",
     description: " Savor the essence of coffee at our store. Check our menu, book a table. ",
-    imageUrl: "https://res.cloudinary.com/dvp3nyulf/image/upload/v1709145480/sclyoscpjmei8sdnevi3.png",
+    imageUrl: design16
   },
   {
     title: "Personal Portfolio",
@@ -96,7 +108,7 @@ const DesignsData = [
   {
     title: "DriveWise Autos",
     description: " Choose us for the best prices, fast and secure, and skilled drivers. ",
-    imageUrl: "https://res.cloudinary.com/dvp3nyulf/image/upload/v1709145438/design18.png",
+    imageUrl: design18,
   },
 ];
 
