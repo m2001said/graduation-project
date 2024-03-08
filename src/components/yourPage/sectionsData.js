@@ -1,14 +1,18 @@
 import nav1 from "../../assets/images/navs/nav1.jpg";
-import nav3 from "../../assets/images/navs/nav3.jpg"; 
-import nav4 from "../../assets/images/navs/nav4.png"; 
-import nav5 from "../../assets/images/navs/nav5.png"; 
-import nav6 from "../../assets/images/navs/nav6.jpg"; 
-import nav7 from "../../assets/images/navs/nav7.jpg"; 
+import nav3 from "../../assets/images/navs/nav3.jpg";
+import nav4 from "../../assets/images/navs/nav4.png";
+import nav5 from "../../assets/images/navs/nav5.png";
+import nav6 from "../../assets/images/navs/nav6.jpg";
+import nav7 from "../../assets/images/navs/nav7.jpg";
 import nav8 from "../../assets/images/navs/nav8.png";
 import nav10 from "../../assets/images/navs/nav10.jpg";
 import nav14 from "../../assets/images/navs/nav14.jpg";
 import nav16 from "../../assets/images/navs/nav16.png";
 import nav18 from "../../assets/images/navs/nav18.png";
+
+
+import hero6 from "../../assets/images/hero6.png";
+import hero14 from "../../assets/images/hero14.png";
 
 const createData = (type, data) => {
   return data.map(item => ({
@@ -29,10 +33,11 @@ export const heroData = createData('Hero', [
   { id: 3, imgUrl: "hero3.png" },
   { id: 4, imgUrl: "hero4.png" },
   { id: 5, imgUrl: "hero5.png" },
-  { id: 6, imgUrl: "hero6.png" },
+  { id: 6, imgUrl: hero6 },
   { id: 7, imgUrl: "hero7.png" },
   { id: 10, imgUrl: "hero10.png" },
-  { id: 11, imgUrl: "hero11.png" }
+  { id: 11, imgUrl: "hero11.png" },
+  { id: 14, imgUrl: hero14 }
 ]);
 
 export const ctaData = createData('Cta', [
