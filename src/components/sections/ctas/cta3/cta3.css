@@ -4,14 +4,17 @@
   gap: 10rem;
   padding-top: 7rem;
   background: var(--appColor3);
+  
+  
 }
 .left-c3 {
   color: var(--website-3-color-1);
-  font-size: 3rem;
+  font-size: 2rem;
   font-weight: bold;
   text-transform: uppercase;
   position: relative;
   display: block;
+  flex-wrap: wrap;
 }
 .left-c3 > hr {
   position: absolute;
@@ -22,6 +25,8 @@
 }
 .left-c3 > div {
   display: flex;
+    flex-wrap: wrap;
+
   gap: 1rem;
 }
 .right-c3 {
@@ -57,7 +62,7 @@
   }
   .left-c3,
   .stroke-text {
-    font-size: 2px;
+    font-size: 25px;
     flex-direction: column;
   }
   .right-c3 {

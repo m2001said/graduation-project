@@ -1,12 +1,15 @@
 .testimonials11 {
   max-width: 700px;
   margin: auto;
+    background-color: var(--color1);
+
 }
 
 .testimonials__container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  background-color: var(--color1);
 }
 
 .testimonials__item11 {

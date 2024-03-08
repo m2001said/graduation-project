@@ -4,6 +4,7 @@
 .contact__container11 {
   grid-template-columns: 1fr;
   column-gap: 1.875rem;
+  background-color: var(--color3);
 }
 .contact__title11 {
   font-size: var(--h3-font-size);

@@ -2,8 +2,6 @@
 
 /* ===========Variables CSS======== */
 :root {
-  /* ================Colors================ */
-  /* Color mode Hsl (hue, saturation, lightness) */
   --first-color11: hsl(353, 100%, 65%);
   --second-color11: hsl(244, 100%, 65%);
   --title-color11: hsl(244, 24%, 26%);
@@ -19,6 +17,13 @@
   --whiteMove11: #e8dfec;
   --Banf11: #6c6ce5;
   --white0011: #f1f1f1;
+
+  --color1: hsl(353, 100%, 65%);
+  --color2: #fff;
+  --color3: "";
+  --color4: "";
+  --color5: "";
+  --color6: "";
   /* ======================Font and Typography================== */
   /* .5rem = 8px | 1rem = 16px ...*/
   --body-font: "Rubik", sans-serif;
@@ -34,13 +39,41 @@
   --font-semibold: 600;
   --font-bold: 700;
 
-  /* ==============Box Shadow============= */
   --shadow: 0px 5px 20px 0px rgba(69, 67, 96, 0.1);
 
-  /*============================ Border Radius=========== */
   --border-radius: 20px;
 }
+.nav11_background{
+background-color: var(--color1);
+}
 
+.serv11_background{
+background-color: var(--color1);
+}
+.static11_background{
+background-color: var(--color1);
+}
+.hero11_background{
+background-color: var(--color1);
+}
+.hero11_background{
+background-color: var(--color1);
+}
+.hero11_background{
+background-color: var(--color1);
+}
+.hero11_background{
+background-color: var(--color1);
+}
+.hero11_background{
+background-color: var(--color1);
+}
+.hero11_background{
+background-color: var(--color1);
+}
+.hero11_background{
+background-color: var(--color1);
+}
 /* =========== Responsive ============= */
 @media screen and (max-width: 1024px) {
   :root {
@@ -53,7 +86,6 @@
   }
 }
 
-/* ====================BASE=============== */
 * {
   margin: 0;
   padding: 0;
