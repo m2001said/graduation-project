@@ -6,7 +6,7 @@ const Teams10 = () => {
   const { team } = useSelector((state) => state.template10);
   return (
     <>
-      <div className="pt-10">
+      <div className="pt-10 bg-[--white10] dark:bg-gray-900">
         <div className="items-center p-7 sm:p-30">
           {/* head sec */}
           <div className="text-center mb-10 max-w-[600px] mx-auto">

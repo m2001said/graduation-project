@@ -15,7 +15,7 @@ const Feature5 = () => {
   const { feature1 } = useSelector((state) => state.template5);
 
   return (
-    <div className="feature5_1 design5-section">
+    <div className="feature5_1 design5-section design5">
       <div className="feature5_1-mainSection">
         <div className="feature5_1-title">
           <small>{feature1.smallTitle}</small>

@@ -6,9 +6,9 @@ const FieldControllerIsObject = ({ targetSection, sectionName, blockName, dispat
   const dispatch = useDispatch();
   const fields = Object.keys(targetSection[blockName]);
   const pattern = /\.(jpg|gif|png|svg)$/i;
-
   const dispatchedRefForImg = (target, result) =>
-    dispatchRef({ section: sectionName, variable: null, value: result?.info?.secure_url, blockName: blockName, objKey: target });
+  dispatchRef.updateTemplate({ section: sectionName, variable: null, value: result?.info?.secure_url, blockName: blockName, objKey: target });
+
   return (
     <div className="controller-field">
       <label className=" controller-label">{blockName}</label>
@@ -16,6 +16,7 @@ const FieldControllerIsObject = ({ targetSection, sectionName, blockName, dispat
         if (field === "id") {
           return null;
         }
+
         return (
           <div className="subController " key={index}>
             <label className="text-[16px]  capitalize">{field}</label>
@@ -28,7 +29,9 @@ const FieldControllerIsObject = ({ targetSection, sectionName, blockName, dispat
                 style={{ backgroundColor: "#F2F2F2", borderRadius: "6px" }}
                 wrap="hard"
                 value={targetSection[blockName][field]}
-                onChange={(e) => dispatch(dispatchRef({ section: sectionName, variable: null, value: e.target.value, blockName: blockName, objKey: field }))}
+                onChange={(e) =>
+                  dispatch(dispatchRef.updateTemplate({ section: sectionName, variable: null, value: e.target.value, blockName: blockName, objKey: field }))
+                }
               />
             )}
           </div>

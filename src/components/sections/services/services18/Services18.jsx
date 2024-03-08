@@ -8,7 +8,7 @@ const Services = () => {
   return (
     <>
       <span id="about"></span>
-      <div className="dark:bg-black dark:text-white py-14 sm:min-h-[600px] sm:grid sm:place-items-center">
+      <div className="bg-white dark:bg-black dark:text-white py-14 sm:min-h-[600px] sm:grid sm:place-items-center">
         <div className="container18">
           <div className="pb-12">
             <h1 className="text-3xl font-semibold text-center sm:text-4xl font-serif">{services.title}</h1>

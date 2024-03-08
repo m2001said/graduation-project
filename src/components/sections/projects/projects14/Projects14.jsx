@@ -5,7 +5,7 @@ import { useSelector } from "react-redux";
 const Projects14 = () => {
   const { projects1 } = useSelector((state) => state.template14);
   return (
-    <div>
+    <div className="bg-white dark:bg-gray-900">
       <div className="container14">
         {/* Header section */}
         <div className="text-center mb-10 max-w-[600px] mx-auto space-y-2">

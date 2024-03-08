@@ -6,7 +6,7 @@ const Footer14 = () => {
   const { footer } = useSelector((state) => state.template14);
 
   return (
-    <div className="dark:bg-gray-950">
+    <div className="bg-white dark:bg-gray-950">
       <div className="container14">
         <div className="grid md:grid-cols-3 pb-20 pt-5">
           {/* company details */}

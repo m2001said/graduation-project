@@ -6,12 +6,12 @@ const Footer2 = () => {
   const { footer } = useSelector((state) => state.template2);
 
   return (
-    <footer>
+    <footer className="footer2">
       <a href="#" className="footer2__logo">
         {footer.logo}{" "}
       </a>
 
-      <ul className="permalinks">
+      <ul className="permalinks2">
         <li>
           <a href="#hero2">Home</a>
         </li>

@@ -1,5 +1,4 @@
-/*
-footer {
+.footer2 {
   background: var(--color-2-primary);
   padding: 3rem 0;
   text-align: center;
@@ -11,7 +10,7 @@ footer {
   border-radius: 2rem;
   margin-top: 2rem;
 }
-footer2 a {
+.footer2 a {
   color: var(--color-2-bg);
 }
 .footer2__logo:hover {
@@ -24,11 +23,11 @@ footer2 a {
   margin-bottom: 2rem;
   display: inline-block;
 }
-.permalinks:hover {
+.permalinks2:hover {
   transition: var(--transition);
   color: var(--color-2-bg-variant);
 }
-.permalinks {
+.permalinks2 {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -68,11 +67,11 @@ footer2 a {
   color: var(--color-2-bg);
 }
 @media screen and (max-width: 600px) {
-  footer {
+  .footer2 {
     max-width: 100%;
-    margin: 0 auto; 
+    margin: 0 auto;
   }
-  .permalinks {
+  .permalinks2 {
     display: flex;
     flex-direction: column;
     gap: 1.9rem;
@@ -81,4 +80,3 @@ footer2 a {
     margin-bottom: 2.6rem;
   }
 }
-*/

@@ -9,11 +9,8 @@
   --white10: rgb(255, 255, 255);
   --black10: rgb(0, 0, 0);
   --grey10: #777777;
+  --graybg:#eeeeee;
   --website10-color-1: rgb(228, 240, 247);
-  --website10-color-2: rgb(236, 209, 159);
-  --website10-color-3: rgb(211, 205, 230);
-  --website10-color-4: rgb(139, 196, 158);
-  --website10-color-5:  rgb(227, 235, 122);
 }
 /* txt style */
 .textHover10:hover {
@@ -21,15 +18,15 @@
 }
 
 .textColor10 {
-  color: var(--black10);
+  color:var(--black10);
 }
 
 .textColor2 {
-  color: var(--white10);
+  color:var(--white10);
 }
 
 .paraColor10 {
-  color: var(--grey10);
+  color:var(--grey10);
 }
 
 .smHeader10 {
@@ -52,13 +49,12 @@
 }
 
 .btnTxt10 {
-  color: var(--white10);
+  color: rgb(255, 255, 255);
 }
 /* /////////////// */
 
 /* for feature10 style */
-.divIcon0 {
-  background-color: var(--website10-color-2);
+.feature10-divIcon {
   display: flex;
   justify-content: center;
   width: 50px;
@@ -67,7 +63,7 @@
   border-radius: 50%;
 }
 
-.divIcon1 {
+/* .divIcon1 {
   background-color: var(--website10-color-3);
   display: flex;
   justify-content: center;
@@ -95,7 +91,7 @@
   height: 50px;
   padding: 4px;
   border-radius: 50%;
-}
+} */
 /* //////// */
 
 

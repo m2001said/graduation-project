@@ -1,5 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
-
+import { addElement, addElementToArray, addSubElement, deleteElement, deleteSection, editElement, reorder, reorderSections } from "./actions";
 const templateSlice15 = createSlice({
   initialState: {
     navbar: {
@@ -148,7 +148,7 @@ const templateSlice15 = createSlice({
       Card1: {
         title: "BRANDING",
         sub_title: "Zorro",
-        imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1707863833/jammal_photos/wbbku6kd3nqj8mu9yfr2.jpg",
+        imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1707863903/jammal_photos/rnu0jaturksoviadcjr6.jpg",
         text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.",
       },
       Card2: {
@@ -160,25 +160,25 @@ const templateSlice15 = createSlice({
       Card3: {
         title: "VIDEO",
         sub_title: "Explore",
-        imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1707863941/jammal_photos/g0zjiini4m5j7hqz91gz.jpg",
+        imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1707863903/jammal_photos/rnu0jaturksoviadcjr6.jpg",
         text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.",
       },
       Card4: {
         title: "VIDEO",
         sub_title: "Stay Fit",
-        imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1707863973/jammal_photos/damj0sk3sklyrebj6met.jpg",
+        imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1707863903/jammal_photos/rnu0jaturksoviadcjr6.jpg",
         text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.",
       },
       Card5: {
         title: "PHOTOGRAPHY",
         sub_title: "Kana",
-        imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1707864004/jammal_photos/hg9kws6fqvgyfneidaqg.jpg",
+        imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1707863903/jammal_photos/rnu0jaturksoviadcjr6.jpg",
         text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.",
       },
       Card6: {
         title: "PHOTOGRAPHY",
         sub_title: "Mozar",
-        imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1707864030/jammal_photos/xzrxu3uwolixnvhxn8ka.jpg",
+        imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1707863903/jammal_photos/rnu0jaturksoviadcjr6.jpg",
         text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.",
       },
       btn15: {
@@ -257,13 +257,13 @@ const templateSlice15 = createSlice({
       Card1: {
         name: "Barbara Wilson",
         job: "CEO Company",
-        imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1707919207/jammal_photos/kg0g3xrmwu16y709xbf2.jpg",
+        imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1707919266/jammal_photos/sq5wudx05l26l781sjgf.jpg",
         text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       },
       Card2: {
         name: "Charlie Smith",
         job: "Designer",
-        imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1707919242/jammal_photos/jmnw7gbg47vcyqczyqym.jpg",
+        imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1707919266/jammal_photos/sq5wudx05l26l781sjgf.jpg",
         text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       },
       Card3: {
@@ -275,13 +275,13 @@ const templateSlice15 = createSlice({
       Card4: {
         name: "Jennifer Smith",
         job: "CEO & Founder",
-        imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1707919283/jammal_photos/icj4v6zzd11ykcgpyse4.jpg",
+        imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1707919266/jammal_photos/sq5wudx05l26l781sjgf.jpg",
         text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       },
       Card5: {
         name: "Paul Freeman",
         job: "Photographer",
-        imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1707919298/jammal_photos/kbtunpnxyziktokmlwjo.jpg",
+        imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1707919266/jammal_photos/sq5wudx05l26l781sjgf.jpg",
         text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       },
     },
@@ -420,34 +420,32 @@ const templateSlice15 = createSlice({
   },
   name: "templateSlice15",
   reducers: {
-    updateTemplate15: (state, action) => {
-      const { section, variable, value, i, blockName, subBlockName, subIndex, objKey } = action.payload;
-      if (i === undefined) {
-        if (variable === null) {
-          state[section][blockName][objKey] = value;
-        } else {
-          state[section][variable] = value;
-        }
-      } else {
-        if (subIndex === undefined) {
-          if (variable === null) state[section][blockName][i] = value;
-          else {
-            if (subBlockName === undefined) {
-              state[section][blockName][i][variable] = value;
-            } else {
-              state[section][blockName][i][subBlockName][variable] = value;
-            }
-          }
-        } else {
-          if (variable === null) state[section][blockName][i][subBlockName][subIndex] = value;
-          else {
-            state[section][blockName][i][subBlockName][subIndex][variable] = value;
-          }
-        }
-      }
+    updateTemplate: (state, action) => {
+      editElement(state, action);
+    },
+    addNewElement: (state, action) => {
+      addElement(state, action);
+    },
+    addElementToArray: (state, action) => {
+      addElementToArray(state, action);
+    },
+    addNewSubElement: (state, action) => {
+      addSubElement(state, action);
+    },
+    deleteElement: (state, action) => {
+      deleteElement(state, action);
+    },
+    reorder: (state, action) => {
+      reorder(state, action);
+    },
+    reorderSection: (state, action) => {
+      return reorderSections(state, action);
+    },
+    deleteSection: (state, action) => {
+      return deleteSection(state, action);
     },
   },
 });
 
-export const { updateTemplate15 } = templateSlice15.actions;
+export const templateActions15 = templateSlice15.actions;
 export default templateSlice15.reducer;

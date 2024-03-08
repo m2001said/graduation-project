@@ -14,7 +14,7 @@ const Feature5_2 = () => {
     const { feature2 } = useSelector((state) => state.template5);
 
   return (
-    <div className="feature5_2 design5-container design5-section">
+    <div className="feature5_2 design5 design5-container design5-section">
       <div className="featue5_2-main">
         <div className="feature5_2-imgDiv">
           <img src={feature2.imgUrl} alt="" className="feature5_2-image" />

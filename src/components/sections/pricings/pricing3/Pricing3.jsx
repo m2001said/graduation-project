@@ -33,7 +33,7 @@ const Pricing3 = () => {
             <div>
               <span>{pricing.description}</span>
             </div>
-            <button className="btn">{pricing.buttonText}</button>
+            <button className="btn3">{pricing.buttonText}</button>
           </div>
         ))}
       </div>

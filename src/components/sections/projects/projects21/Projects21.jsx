@@ -7,7 +7,7 @@ const Projects21 = () => {
   const { projects2 } = useSelector((state) => state.template14);
 
   return (
-    <div className="my-12">
+    <div className="my-12 bg-white dark:bg-gray-900">
       <div className="container14">
         {/* head sec */}
         <div className="text-center mb-10 max-w-[600px] mx-auto space-y-2">

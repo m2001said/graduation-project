@@ -16,7 +16,7 @@ const Services5 = () => {
 
   return (
     <div className="services5">
-      <div className="servicess5-mainSection">
+      <div className="services5-mainSection">
         <div className="services5-title">
           <h2>{service.title}</h2>
           <button className="services5-btn">{service.buttonTxt}</button>

@@ -12,7 +12,7 @@
 .hero5-mainText{
     display: flex;
     align-items: center;
-    color: var(--website-5-black);
+    /* color: var(--website-5-black); */
     font-size:30px ;
     font-weight: 700;
     line-height: 2rem;

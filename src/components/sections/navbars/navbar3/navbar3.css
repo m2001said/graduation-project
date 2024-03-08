@@ -29,7 +29,7 @@
   }
   .navbar3-menu {
     flex-direction: column;
-    background: var(--appColor);
+    background: var(--appColor3);
     padding: 2rem;
     position: relative;
   }

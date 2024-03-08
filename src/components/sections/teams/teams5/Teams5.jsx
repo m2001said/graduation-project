@@ -17,7 +17,7 @@ const Teams5 = () => {
   const { team } = useSelector((state) => state.template5);
 
   return (
-    <div className="teams5 design5-container design5-section">
+    <div className="teams5 design5 design5-container design5-section">
       <div className="teams5-mainSectiom">
         <h2>{team.title}</h2>
 

@@ -8,7 +8,7 @@ const Testimonial = () => {
   return (
     <>
       <span id="about"></span>
-      <div className="dark:bg-black dark:text-white py-14 sm:pb-24">
+      <div className="bg-white dark:bg-black dark:text-white py-14 sm:pb-24">
         <div className="container18">
           {/* Header */}
           <div className="space-y-4 pb-12">

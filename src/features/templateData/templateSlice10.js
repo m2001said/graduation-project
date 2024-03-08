@@ -1,4 +1,6 @@
 import { createSlice } from "@reduxjs/toolkit";
+import { addElement, addElementToArray, addSubElement, deleteElement, deleteSection, editElement, reorder, reorderSections } from "./actions";
+
 const templateSlice10 = createSlice({
   initialState: {
     navbar: {
@@ -90,15 +92,15 @@ const templateSlice10 = createSlice({
       description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque reiciendis inventore iste ratione ex alias quis magni at optio",
       features: [
         {
-          icon: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707085438/icons8-secure-50_kclhuh.png",
+          icon: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1709902864/icons8-secure-50_yn2jxx.png",
           text: "Quality Books",
         },
         {
-          icon: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707085765/icons8-food-bar-48_ghpah5.png",
+          icon: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1709903151/icons8-food-truck-64_lr5ghp.png",
           text: "Fast Delivery",
         },
         {
-          icon: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707085773/icons8-food-truck-24_ollgew.png",
+          icon: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1709902985/icons8-fast-food-32_kjo9ui.png",
           text: "Easy Payment method",
         },
         {
@@ -229,8 +231,6 @@ const templateSlice10 = createSlice({
       ],
     },
 
-    
-
     colors: {
       templateColors: ["#fff", "#cda274", "#292f36", "#f4f0ec", "#777777"],
     },
@@ -238,42 +238,32 @@ const templateSlice10 = createSlice({
 
   name: "templateSlice10",
   reducers: {
-    updateTemplate10: (state, action) => {
-      const { section, variable, value, i, blockName, subBlockName, subIndex, objKey } = action.payload;
-      // sub means level 2 of fields
-      if (i === undefined) {
-        if (variable === null) {
-          // edit object filed
-          state[section][blockName][objKey] = value;
-        } else {
-          // edit normal field
-          state[section][variable] = value;
-        }
-      } else {
-        if (subIndex === undefined) {
-          // edit array filed with index
-          if (variable === null) state[section][blockName][i] = value;
-          else {
-            if (subBlockName === undefined) {
-              // edit obj in array of objects
-              state[section][blockName][i][variable] = value;
-            } else {
-              // edit sub obj directly
-              state[section][blockName][i][subBlockName][variable] = value;
-            }
-          }
-        } else {
-          // edit sub element in array
-          if (variable === null) state[section][blockName][i][subBlockName][subIndex] = value;
-          else {
-            // edit sub obj in array of objects
-            state[section][blockName][i][subBlockName][subIndex][variable] = value;
-          }
-        }
-      }
+    updateTemplate: (state, action) => {
+      editElement(state, action);
+    },
+    addNewElement: (state, action) => {
+      addElement(state, action);
+    },
+    addElementToArray: (state, action) => {
+      addElementToArray(state, action);
+    },
+    addNewSubElement: (state, action) => {
+      addSubElement(state, action);
+    },
+    deleteElement: (state, action) => {
+      deleteElement(state, action);
+    },
+    reorder: (state, action) => {
+      reorder(state, action);
+    },
+    reorderSection: (state, action) => {
+      return reorderSections(state, action);
+    },
+    deleteSection: (state, action) => {
+      return deleteSection(state, action);
     },
   },
 });
 
-export const { updateTemplate10 } = templateSlice10.actions;
+export const templateActions10 = templateSlice10.actions;
 export default templateSlice10.reducer;
