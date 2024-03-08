@@ -18,7 +18,7 @@ const Hero14 = ({ handleOrderPopup }) => {
       <div className="container14">
         <div className="overflow-hidden rounded-3xl min-h-[550px] sm:min-h-[650px] hero14-bg-color flex justify-center items-center">
           <div className="container14 pb-8 sm:pb-0">
-            {/* hero sec */}
+            {/* hero section */}
             <Swiper
               spaceBetween={200}
               pagination={{
