@@ -26,7 +26,6 @@ const YourPage = () => {
 
   const handleSubmit = () => {
     const selectedSections = {};
-
     // Check if a section is selected and not equal to the default value (undefined) before sending it
     sectionNames.forEach((section) => {
       if (selectedIndices[section] !== undefined) {
