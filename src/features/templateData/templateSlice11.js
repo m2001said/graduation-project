@@ -53,16 +53,17 @@ const templateSlice11 = createSlice({
       actionButton: "Download CV",
       statistics: [
         {
-          title: "Development",
-          value: "90%",
+          title: "UI/UX design",
+          value: "97%",
         },
         {
-          title: "UI/UX design",
-          value: "80%",
+          title: "Development",
+          value: "84%",
         },
+
         {
           title: "Photography",
-          value: "60%",
+          value: "66%",
         },
       ],
       datas: [

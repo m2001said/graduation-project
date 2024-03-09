@@ -3,7 +3,7 @@
   gap: 1rem;
   padding: 0 2rem;
   padding-top: 6rem;
-  background: var(--appColor3);
+  background: var(--color8);
 }
 .left-t3 {
   display: flex;
@@ -11,10 +11,10 @@
   gap: 2rem;
   flex-direction: column;
   text-transform: uppercase;
-  color: var(--website-3-color-1);
+  color: var(--color11);
 }
 .left-t3 > :nth-child(1) {
-  color: var(--orange3);
+  color: var(--color7);
   font-weight: bold;
 }
 .left-t3 > :nth-child(2),
@@ -44,7 +44,7 @@
   position: absolute;
   width: 17rem;
   height: 20rem;
-  border: 2px solid var(--orange3);
+  border: 2px solid var(--color7);
   background-color: transparent;
   right: 9rem;
   top: 0.9rem;
@@ -55,8 +55,7 @@
   height: 19rem;
   right: 7rem;
   top: 4rem;
-  /* background: linear-gradient(210.41deg, #fa5042 1.14%, #ffa739 100.75%); */
-  background: var(--planCard3);
+  background: var(--color9);
 }
 .t3-arrows {
   display: flex;

@@ -3,7 +3,7 @@
   display: flex;
   gap: 2rem;
   padding-top: 5rem;
-  background: var(--appColor3);
+  background: var(--color8);
 }
 .left-r3 {
   flex: 1 1;
@@ -45,10 +45,10 @@
 }
 .right-r3 > span {
   font-weight: bold;
-  color: var(--orange);
+  color: var(--color7);
 }
 .right-r3 > div {
-  color: var(--website-3-color-1);
+  color: var(--color11);
   font-size: 3rem;
   font-weight: bold;
 }

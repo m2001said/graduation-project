@@ -4,7 +4,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: var(--color4);
+  background-color: var(--color22);
 }
 .intro11 {
   max-width: 540px;
@@ -28,12 +28,12 @@
 }
 
 .home11__social-link {
-  color: var(--title-color11);
+  color: var(--color5);
   font-size: 1.3rem;
   transition: 0.3s;
 }
 .home11__social-link:hover {
-  color: var(--hsl111);
+  color: var(--color3);
 }
 .scroll__down11 {
   position: absolute;
@@ -42,7 +42,7 @@
   width: 100%;
 }
 .mouse11 {
-  border: 2px solid var(--gray11);
+  border: 2px solid var(--color4);
   display: block;
   height: 1.6rem;
   width: 1.25rem;
@@ -71,7 +71,7 @@
   }
 }
 .wheel11 {
-  background-color: var(--title-color11);
+  background-color: var(--color5);
   border-radius: 100%;
   width: 0.25rem;
   height: 0.25rem;

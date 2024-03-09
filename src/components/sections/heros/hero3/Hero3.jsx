@@ -83,7 +83,7 @@ const Hero3 = () => {
   const { hero } = useSelector((state) => state.template3);
 
   if (!hero) {
-    return null; // or display a loading indicator
+    return null;
   }
 
   return (

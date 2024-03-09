@@ -1,15 +1,14 @@
 .testimonials11 {
   max-width: 700px;
   margin: auto;
-    background-color: var(--color1);
-
+  background-color: var(--color22);
 }
 
 .testimonials__container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  background-color: var(--color1);
+  background-color: var(--color22);
 }
 
 .testimonials__item11 {
@@ -40,7 +39,7 @@
 }
 
 .comment11 {
-  background-color: var(--container-color11);
+  background-color: var(--color22);
   padding: 1.875rem;
   margin-top: 1.5rem;
   box-shadow: var(--shadow);
@@ -54,7 +53,7 @@
   height: 0;
   border-left: 10px solid transparent;
   border-right: 10px solid transparent;
-  border-bottom: 10px solid var(--container-color11);
+  border-bottom: 10px solid var(--color22);
   position: absolute;
   left: 49.5%;
   top: -0.625rem;

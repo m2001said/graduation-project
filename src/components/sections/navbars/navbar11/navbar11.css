@@ -2,8 +2,8 @@
   position: absolute;
   left: 0;
   top: 9%;
-  background: var(--color5);
-  border-right: 1px solid var(--balck011);
+  background: var(--color22);
+  border-right: 1px solid var(--color5);
   padding: 2.5rem;
   width: 110px;
   min-height: 89.5vh;
@@ -20,15 +20,15 @@
 }
 .nav11__link {
   font-size: 1.5rem;
-  color: var(--title-color11);
+  color: var(--color5);
   font-weight: var(--font-bold);
   transition: 0.3s;
 }
 .nav11__link:hover {
-  color: var(--hsl111);
+  color: var(--color3);
 }
 .copyright11 {
-  color: var(--hsl211);
+  color: var(--color4);
   font-size: var(--small-font-size);
   transform: rotate(-180deg);
   writing-mode: vertical-rl;
@@ -40,8 +40,8 @@
   cursor: pointer;
   height: 40px;
   width: 45px;
-  background-color: var(--body-color11);
-  border: 1px solid var(--whiteMove11);
+  background-color: var(--color22);
+  border: 1px solid var(--color22);
   display: none;
   justify-content: center;
   align-items: center;

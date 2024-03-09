@@ -2,7 +2,7 @@
 
 /* ===========Variables CSS======== */
 :root {
-  --first-color11: hsl(353, 100%, 65%);
+  /* --first-color11: hsl(353, 100%, 65%);
   --second-color11: hsl(244, 100%, 65%);
   --title-color11: hsl(244, 24%, 26%);
   --text-color11: hsl(244, 16%, 43%);
@@ -16,14 +16,14 @@
   --black011: rgba(0, 0, 0, 0.05);
   --whiteMove11: #e8dfec;
   --Banf11: #6c6ce5;
-  --white0011: #f1f1f1;
+  --white0011: #f1f1f1; */
 
   --color1: hsl(353, 100%, 65%);
-  --color2: #fff;
-  --color3: "";
-  --color4: "";
-  --color5: "";
-  --color6: "";
+  --color22: #fff;
+  --color3: #f48915;
+  --color4: hsl(245, 15%, 65%);
+  --color5: hsl(244, 24%, 26%);
+  --color6: #6c6ce5;
   /* ======================Font and Typography================== */
   /* .5rem = 8px | 1rem = 16px ...*/
   --body-font: "Rubik", sans-serif;
@@ -43,36 +43,36 @@
 
   --border-radius: 20px;
 }
-.nav11_background{
-background-color: var(--color1);
+.nav11_background {
+  background-color: var(--color1);
 }
 
-.serv11_background{
-background-color: var(--color1);
+.serv11_background {
+  background-color: var(--color1);
 }
-.static11_background{
-background-color: var(--color1);
+.static11_background {
+  background-color: var(--color1);
 }
-.hero11_background{
-background-color: var(--color1);
+.hero11_background {
+  background-color: var(--color1);
 }
-.hero11_background{
-background-color: var(--color1);
+.hero11_background {
+  background-color: var(--color1);
 }
-.hero11_background{
-background-color: var(--color1);
+.hero11_background {
+  background-color: var(--color1);
 }
-.hero11_background{
-background-color: var(--color1);
+.hero11_background {
+  background-color: var(--color1);
 }
-.hero11_background{
-background-color: var(--color1);
+.hero11_background {
+  background-color: var(--color1);
 }
-.hero11_background{
-background-color: var(--color1);
+.hero11_background {
+  background-color: var(--color1);
 }
-.hero11_background{
-background-color: var(--color1);
+.hero11_background {
+  background-color: var(--color1);
 }
 /* =========== Responsive ============= */
 @media screen and (max-width: 1024px) {
@@ -98,8 +98,6 @@ html {
 
 .TrialDesign11 {
   line-height: 1.7;
-  color: var(--text-color11);
-  background-color: var(--body-color11);
   font-family: var(--body-font11);
   font-size: var(--normal-font-size);
 }
@@ -152,9 +150,9 @@ img {
   border-radius: 1.875rem;
   box-shadow: 0 0 1px rgba(0, 0, 0, 0);
   border: 1px solid transparent;
-  color: var(--container-color11);
+  color: var(--color22);
   display: inline-block;
-  background-color: var(--first-color11);
+  background-color: var(--color1);
   font-weight: var(--font-bold);
 }
 

@@ -3,12 +3,10 @@
   padding: 0 2rem;
   gap: 10rem;
   padding-top: 7rem;
-  background: var(--appColor3);
-  
-  
+  background: var(--color8);
 }
 .left-c3 {
-  color: var(--website-3-color-1);
+  color: var(--color11);
   font-size: 2rem;
   font-weight: bold;
   text-transform: uppercase;
@@ -19,13 +17,13 @@
 .left-c3 > hr {
   position: absolute;
   width: 10.5rem;
-  border: 2px solid var(--orange);
+  border: 2px solid var(--color7);
   border-radius: 20%;
   margin: -10px 0;
 }
 .left-c3 > div {
   display: flex;
-    flex-wrap: wrap;
+  flex-wrap: wrap;
 
   gap: 1rem;
 }
@@ -37,21 +35,21 @@
 .email3-container {
   display: flex;
   gap: 3rem;
-  background-color: var(--caloryCard3);
+  background-color: var(--color12);
   padding: 1rem 2rem;
 }
 .email3-container > input {
   border: none;
   background-color: transparent;
   outline: none;
-  color: var(--website-3-color-1);
+  color: var(--color11);
 }
 ::placeholder {
-  color: var(--website-3-color-1);
+  color: var(--color11);
 }
 .btn3-c3 {
-  color: var(--website-3-color-1);
-  background-color: var(--orange3);
+  color: var(--color11);
+  background-color: var(--color7);
 }
 
 /* res mobike */

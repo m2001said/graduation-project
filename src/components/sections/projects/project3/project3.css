@@ -3,7 +3,7 @@
   flex-direction: column;
   gap: 2rem;
   flex-wrap: wrap;
-  background-color: var(--appColor3);
+  background-color: var(--color8);
 }
 .Project3-header {
   display: flex;
@@ -11,17 +11,17 @@
   font-weight: bold;
   font-size: 2rem;
   justify-content: center;
-  color: var(--website-3-color-1);
+  color: var(--color11);
   text-transform: uppercase;
   font-style: italic;
   padding-top: 5rem;
-  background: var(--appColor3);
+  background-color: var(--color8);
   flex-wrap: wrap;
 }
 .project3-categories {
   display: flex;
   gap: 1rem;
-  background: var(--appColor3);
+  background-color: var(--color8);
   flex-direction: column;
   flex-wrap: wrap;
 }
@@ -29,16 +29,16 @@
 .category {
   display: flex;
   flex-direction: column;
-  background-color: var(--gray3);
+  background-color: var(--color10);
   padding: 2rem;
   gap: 1rem;
-  color: var(--website-3-color-1);
+  color: var(--color11);
   justify-content: space-evenly;
 }
 .category > :nth-child(1) {
   width: 2rem;
   height: 2rem;
-  fill: var(--website-3-color-1);
+  fill: var(--color11);
   display: contents;
   font-size: 1rem;
 }
@@ -61,7 +61,7 @@
   width: 1rem;
 }
 .category:hover {
-  background: var(--planCard3);
+  background: var(--color9);
   cursor: pointer;
 }
 
@@ -73,7 +73,7 @@
     align-items: center;
     justify-content: center;
     padding-top: 11rem;
-    background: var(--appColor3);
+    background-color: var(--color8);
   }
   .project3-categories {
     flex-direction: column;

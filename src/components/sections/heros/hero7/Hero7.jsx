@@ -276,7 +276,7 @@ const Hero7 = () => {
   const { hero } = useSelector((state) => state.template7);
 
   return (
-    <section id="home" className={`flex md:flex-row flex-col ${styles.paddingY} TrialDesign7`}>
+    <section id="home" className={`flex md:flex-row flex-col ${styles.paddingY} ئ`}>
       <div className={`flex-1 ${styles.flexStart} flex-col xl:px-0 sm:px-16 px-6`}>
         <div className={`flex flex-row items-center py-[6px] px-4 rounded-[10px]  ${styles.primary}`} style={{ backgroundColor: "var(--color4)" }}>
           <img src={hero.imgUrl[0]} alt="discount" className="w-[32px] h-[32px]" />
