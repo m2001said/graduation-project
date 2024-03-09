@@ -4,7 +4,7 @@ const Footer13 = () => {
   const footer = useSelector((state) => state.template13.footer);
 
   return (
-    <footer className="bg-[var(--color-13-green)] text-[var(--white-13)] pb-16">
+    <footer className="bg-[var(--color-darkG-13)] text-[var(--white-13)] pb-16">
       <div className="container mx-auto px-3 lg:pt-20 pt-8">
         <section>
           <div className="lg:flex items-center justify-between">

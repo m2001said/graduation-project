@@ -22,7 +22,7 @@ const Hero9 = () => {
 
   return (
     <main className="mb-12 pt-4">
-      <div className="bg-gradient-to-t from-[var(--primary-text-color)] to-[var(--color-color-blue-9)]  rounded-[560px] rounded-t-none">
+      <div className="bg-gradient-to-t from-[var(--primary-text-color-9)] to-[var(--white-9)]  rounded-[560px] rounded-t-none">
         <div className="container mx-auto px-3 lg:flex justify-between items-center lg:h-screen">
           <div className="lg:w-2/5">
             <p className="text-[var(--primary-text-color-9)] md:text-xl text-lg font-medium">{hero9.title}</p>
@@ -46,12 +46,12 @@ const Hero9 = () => {
             </div>
           </div>
           <form className="shadow-2xl rounded-3xl py-8 lg:w-1/3 relative lg:mt-0 mt-12 w-full">
-            <div className="bg-[var(--white-9)] shadow-2xl rounded-3xl py-8">
-              <div className="flex justify-between border-b border-[var(--aaaaaa-color-9)] h-12 px-3">
-                <button type="button" className="w-1/2 text-[var(--color-808080-color-9)] focus:border-[var(--button-text-colo-r-9)] cursor-pointer">
+            <div className="bg-[var(--primary-text-color-9)] shadow-2xl rounded-3xl py-8">
+              <div className="flex justify-between border-b border-[var(--text-9-color)] h-12 px-3">
+                <button type="button" className="w-1/2 text-[var(--color-808080-color-9)] focus:border-[var(--button-text-color-9)] cursor-pointer">
                   {hero9.buttons && hero9.buttons[0]}
                 </button>
-                <button type="button" className="w-1/2 text-[var(--color-808080-color-9)] focus:border-[var(--button-text-colo-r-9)] cursor-pointer">
+                <button type="button" className="w-1/2 text-[var(--color-808080-color-9)] focus:border-[var(--button-text-color-9)] cursor-pointer">
                   {hero9.buttons && hero9.buttons[1]}
                 </button>
               </div>
@@ -59,45 +59,45 @@ const Hero9 = () => {
                 <input
                   type="text"
                   placeholder={hero9.inputPlaceholders && hero9.inputPlaceholders.location}
-                  className="h-16 outline-none rounded-3xl bg-[var(--color-f6-9)] border border-[var(--e5e5e5-9)] px-6"
+                  className="h-16 outline-none rounded-3xl bg-[var(--white-9)] border border-[var(--white-9)] px-6"
                 />
                 <select
                   placeholder={hero9.inputPlaceholders && hero9.inputPlaceholders.propertyType}
-                  className="h-16 outline-none rounded-3xl bg-[var(--color-f6-9)] border border-[var(--e5e5e5-9)] px-6"
+                  className="h-16 outline-none rounded-3xl bg-[var(--white-9)] border border-[var(--white-9)] px-6"
                 >
                   <option> Select Property Type</option>
                 </select>
                 <select
                   placeholder={hero9.inputPlaceholders && hero9.inputPlaceholders.rooms}
-                  className="h-16 outline-none rounded-3xl bg-[var(--color-f6-9)] border border-[var(--e5e5e5-9)] px-6"
+                  className="h-16 outline-none rounded-3xl bg-[var(--white-9)] border border-[var(--white-9)] px-6"
                 >
                   <option> Select Rooms</option>
                 </select>
                 {hero9.otherImages && (
-                  <span className="flex items-center text-[var(--button-text-colo-r-9)] gap-x-2">
+                  <span className="flex items-center text-[var(--button-text-color-9)] gap-x-2">
                     <img src={hero9.otherImages.settingsIcon} className="text-2xl" alt="Settings Icon" />
                     <p>Advance Search</p>
                   </span>
                 )}
                 <button
                   type="button"
-                  className="w-full flex justify-center items-center gap-x-2 rounded-full h-14 text-[var(--white-9)]  bg-[var(--button-text-colo-r-9)]"
+                  className="w-full flex justify-center items-center gap-x-2 rounded-full h-14 text-[var(--white-9)]  bg-[var(--button-text-color-9)]"
                 >
                   <img src={hero9.otherImages && hero9.otherImages.searchIcon} alt="Search Icon" className="logo-9" />
                   Search
                 </button>
               </div>
-              <button className="bg-gradient-to-r from-[var(--button-bg-gradient-from-9)] to-[var(--button-bg-gradient-to-9)] rounded-full h-12 w-12 cursor-auto absolute -top-2 -right-2"></button>
+              <button className="bg-gradient-to-r from-[var(--icon-hover-color-9)] to-[var(--white-9)] rounded-full h-12 w-12 cursor-auto absolute -top-2 -right-2"></button>
             </div>
           </form>
         </div>
       </div>
       <div className="lg: container mx-auto px-3 py-8">
         <span className="lg:flex items-end gap-x-60 lg:text-left text-center">
-          <button className="lg:block  bg-gradient-to-r from-[var(--button-bg-gradient-from-9)] to-[var(--button-bg-gradient-to-9)] rounded-full h-24 w-24 cursor-auto">
+          <button className="lg:block  bg-gradient-to-r from-[var(--icon-hover-color-9)] to-[var(--white-9)] rounded-full h-24 w-24 cursor-auto">
             {" "}
           </button>
-          <p className="text-[var(--text-9-color)] ">Trusted by 100+ companies across the global</p>
+          <p className="text-[var(--color-808080-color-9)] ">Trusted by 100+ companies across the global</p>
         </span>
         <div className="py-12">
           <Swiper modules={[Navigation, Autoplay]} slidesPerView={2} spaceBetween={2} speed={5000} autoplay={{ delay: 100 }} direction="horizontal">
@@ -112,7 +112,7 @@ const Hero9 = () => {
         </div>
       </div>
       <div className="lg:flex justify-center lg:mt-16  gap-x-8 lg:px-0 px-3 ">
-        <div className="bg-[var(--secondary-text-color-9)] rounded-full py-4 lg:px-8 px-3 flex items-center justify-center gap-x-4 shadow-2xl ">
+        <div className="bg-[var(--primary-text-color-9)] rounded-full py-4 lg:px-8 px-3 flex items-center justify-center gap-x-4 shadow-2xl ">
           <span className="flex items-center relative h-10 w-44">
             {hero9.otherImages &&
               hero9.carouselImages &&
@@ -122,7 +122,7 @@ const Hero9 = () => {
                   <img
                     src={img}
                     alt="Customer Image"
-                    className="w-10 h-10 rounded-full object-cover absolute bg-[var(--f2f2f2-color-9)] border border-[var(--white-9)]"
+                    className="w-10 h-10 rounded-full object-cover absolute bg-[var(--white-9)] border border-[var(--white-9)]"
                   />
                 </div>
               ))}
@@ -134,7 +134,7 @@ const Hero9 = () => {
           </span>
           <p className="w-36 md:text-xl font-medium">{hero9.customerStats && hero9.customerStats.description}</p>
         </div>
-        <div className="bg-[var(--button-bg-gradient-from)] rounded-full py-4 lg:px-8 px-3 flex items-center justify-center gap-x-4 shadow-2xl">
+        <div className="bg-[var(--icon-hover-color-9)] rounded-full py-4 lg:px-8 px-3 flex items-center justify-center gap-x-4 shadow-2xl">
           <span className="flex items-center relative h-10 w-44">
             {hero9.otherImages &&
               hero9.otherImages.customerImage &&
@@ -144,7 +144,7 @@ const Hero9 = () => {
                   <img
                     src={img}
                     alt="Customer Image"
-                    className="w-10 h-10 rounded-full object-cover absolute bg-[var(--f2f2f2-color-9)] border border-[var(--white-9)]"
+                    className="w-10 h-10 rounded-full object-cover absolute bg-[var(--white-9)] border border-[var(--white-9)]"
                   />
                 </div>
               ))}

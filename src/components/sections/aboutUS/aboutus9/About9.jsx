@@ -8,7 +8,7 @@ const About9 = () => {
       <div className="lg:w-2/5">
         <p className="text-var[(--primary-text-color-9)] md:text-xl text-lg font-medium">{about.title}!</p>
         <h1 className="lg:text-4xl text-2xl font-medium py-3">{about.description} </h1>
-        <p className="lg:w-4/5 text-var[(--text-9-color)]">{aboutcont.more}</p>
+        <p className="lg:w-4/5 text-var[(--color-808080-color-9)]">{aboutcont.more}</p>
         <div className="lg:block hidden">
           <div className="  bg-var[(--white-9)] shadow-2xl px-4 py-6 rounded-3xl flex items-start gap-x-3 lg:w-4/5 mt-6 ">
             <span>
@@ -21,7 +21,7 @@ const About9 = () => {
                 />
               </button>{" "}
               <h1 className="text-var[(--primary-text-color-9)] text-lg font-medium">{aboutcont.more1}</h1>
-              <p className="flex items-center  text-var[( --black-9)] w-4/5">{aboutcont.moreP}</p>
+              <p className="flex items-center  text-var[(--primary-text-color-9)] w-4/5">{aboutcont.moreP}</p>
             </span>
           </div>
           {/* <div className="bg-white shadow-2xl px-4 py-6 rounded-3xl flex items-center gap-x-3 lg:w-4/5 mt-6">
@@ -38,7 +38,7 @@ const About9 = () => {
         <div className="w-1/2 h-4/5 flex flex-col gap-4 relative -top-20">
           <img src={about.img2} alt="ssssssss" className="w-full h-3/5 rounded-3xl shadow-md object-cover" />
           <img src={about.img3} alt="" className="w-full h-2/5 rounded-3xl shadow-md object-cover" />
-          <button className="bg-gradient-to-r from-var[(--button-bg-gradient-from)] to-var[(--button-bg-gradient-to)] rounded-full h-12 w-12 cursor-auto absolute -bottom-8 left-16"></button>
+          <button className="bg-gradient-to-r from-var[(--icon-hover-color-9)] to-var[(--white-9)] rounded-full h-12 w-12 cursor-auto absolute -bottom-8 left-16"></button>
         </div>
       </div>
       <div className="lg:hidden block pt-4 py-16 ">
@@ -46,7 +46,7 @@ const About9 = () => {
           <img src={about.icon} className="md:w-10 h-10 text-4xl text-var[(--primary-text-color-9)]" />
           <span>
             <h1 className="text-var[(  --primary-text-color-9)] text-lg font-medium">{about.iconH}</h1>
-            <p className="text-var[(--text-9-color)]">{about.iconP} </p>
+            <p className="text-var[(--color-808080-color-9)]">{about.iconP} </p>
           </span>
         </div>
       </div>

@@ -23,13 +23,13 @@ const Testimonials13 = () => {
     return (
       <div className="carousel-bottom-group mb-4 gap-4 flex justify-end items-center w-full absolute lg:top-0 top-8">
         <button
-          className="block p-3 bg-slate-300 rounded-full focus:bg-[var(--fd7b47)] hover:bg-[var(--fd7b47)] border border-[var(--white-13)]"
+          className="block p-3 bg-slate-300 rounded-full focus:bg-[var(--color-13-yel)] hover:bg-[var(--color-13-yel)] border border-[var(--white-13)]"
           onClick={() => previous()}
         >
           <img src={testimonials.arrowL} className="bg-[var(--black-13)]" />
         </button>
         <button
-          className="block p-3 bg-slate-300 rounded-full focus:bg-[var(--fd7b47)] hover:bg-[var(--fd7b47)] border border-[var(--white-13)]"
+          className="block p-3 bg-slate-300 rounded-full focus:bg-[var(--color-13-yel)] hover:bg-[var(--color-13-yel)] border border-[var(--white-13)]"
           onClick={() => next()}
         >
           <img src={testimonials.arrowR} className="bg-[var(--black-13)]" />
@@ -40,8 +40,8 @@ const Testimonials13 = () => {
 
   const Card = ({ img, name, title, description }) => {
     return (
-      <div id="testimonials13" className="bg-[var(--g06412f)] w-80 relative flex justify-center z-20 p-8 mt-40">
-        <button className="rounded-full bg-[var(--g06412f)] absolute -top-20 h-32 w-64 rounded-b-none btn13"></button>
+      <div id="testimonials13" className="bg-[var(--green-13)] w-80 relative flex justify-center z-20 p-8 mt-40">
+        <button className="rounded-full bg-[var(--green-13)] absolute -top-20 h-32 w-64 rounded-b-none btn13"></button>
         <div className="relative z-20 text-center">
           <img src={img} alt="" className="w-20 h-20 rounded-full -mt-8 mx-auto img-13" />
           <p className="text-xl text-[var(--white-13)] primary-font font-semibold pt-4 pb-2">{name}</p>
@@ -54,8 +54,8 @@ const Testimonials13 = () => {
   };
 
   return (
-    <div className="relative overflow-hidden bg-[var(--color-13-green)] lg:py-24 py-8">
-      <div className="h-[50px] bg-[var(--fff6ed)] absolute -bottom-7 -left-[30px] -right-[30px] py-3 px-[30px] rounded-[50%]"></div>
+    <div className="relative overflow-hidden bg-[var(--color-g-13-g)] lg:py-24 py-8">
+      <div className="h-[50px] bg-[var(--c616161)] absolute -bottom-7 -left-[30px] -right-[30px] py-3 px-[30px] rounded-[50%]"></div>
       <div className="xl:w-[1200px] text-[var(--white-13)] mx-auto px-3">
         <p>Testimonials</p>
         <div className="relative lg:pb-0 pb-8"></div>

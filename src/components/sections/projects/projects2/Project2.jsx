@@ -20,10 +20,10 @@ const Projects2 = () => {
             <h3>{item.title}</h3>
 
             <div className="projects2__item-cta">
-              <a href={item.githubLink} className="btn">
+              <a href={item.githubLink} className="btn-2">
                 Github
               </a>
-              <a href={item.demoLink} className="btn btn-primary" target="_blank" rel="noopener noreferrer">
+              <a href={item.demoLink} className="btn-2 btn-primary" target="_blank" rel="noopener noreferrer">
                 Live Demo
               </a>
             </div>
