@@ -1,4 +1,6 @@
 #contactUs2 {
+  background: var(--color-2-bg) url("https://res.cloudinary.com/dowtlcpxj/image/upload/v1703134021/bg-texture_up9ylo.png");
+
   text-align: center;
   /* gap: 2rem; */
   align-items: center;

@@ -1,6 +1,10 @@
 #testimonials2 h5 {
   padding-top: 1.4rem;
 }
+#testimonials2{
+  background: var(--color-2-bg) url("https://res.cloudinary.com/dowtlcpxj/image/upload/v1703134021/bg-texture_up9ylo.png");
+
+}
 
 .container .testimonials2__container {
   width: 40%;

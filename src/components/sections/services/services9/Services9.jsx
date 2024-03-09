@@ -21,7 +21,7 @@ const Services9 = () => {
                   className="w-2/3 h-1/2 m-auto bg-[var(--primary-text-color-9)] hover:bg-[var(--icon-hover-color-9)] active:bg-[var(--icon-hover-color-9)]"
                 />
               </button>
-              <p className="text-lg font-medium py-4 text-[var(--primary-text-color-9)]">service.title</p>
+              <p className="text-lg font-medium py-4 text-[var(--primary-text-color-9)]">{service.title}</p>
               <p className="w-2/3 mx-auto text-[var(--primary-text-color-9)]">{service.description}</p>
             </div>
           ))}
