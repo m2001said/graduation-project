@@ -1,9 +1,8 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import "./yourPage.css";
-import InputsGroup from "./InputsGroup";
+import InputOption from "./InputsGroup";
 import { getSectionData } from "./getSectionData";
-
 
 const YourPage = () => {
   const sectionNames = [
@@ -21,7 +20,15 @@ const YourPage = () => {
 
   const handleIndexChange = (section) => (e) => {
     const { value } = e.target;
-    setSelectedIndices(prevState => ({ ...prevState, [section]: parseInt(value, 10) }));
+
+    // If the checkbox is unchecked, set the selected index to undefined
+    const selectedIndex = selectedIndices[section] === parseInt(value, 10) ? undefined : parseInt(value, 10);
+    setSelectedIndices(prevState => ({ ...prevState, [section]: selectedIndex }));
+  };  
+
+  const removeIndexChange = (section) => (e) => {
+    const selectedIndex = undefined;
+    setSelectedIndices(prevState => ({ ...prevState, [section]: selectedIndex }));
   };
 
   const handleSubmit = () => {
@@ -41,17 +48,6 @@ const YourPage = () => {
     }
   };
 
-  const renderInputsGroup = (data, section) => {
-    return data.map((item) => (
-      <InputsGroup
-        key={item.id}
-        data={item}
-        selectedIndex={selectedIndices[section]}
-        handleIndexChange={handleIndexChange(section)}
-      />
-    ));
-  };
-
   return (
     <div className="own-page ">
       <div className="container mx-auto px-4 py-4">
@@ -62,16 +58,16 @@ const YourPage = () => {
         </div>
 
         {sectionNames.map((section, index) => (
-          <>
+          <div key={section}>
             <label htmlFor={`show${index}`} className="show-section">
               <p className="title">{`${section} sections`}</p>
               <img src="https://res.cloudinary.com/duc04fwdb/image/upload/v1709052019/jammal_photos/vdybrjarzdlo6x9fdwga.svg" alt="down-icon" />
             </label>
-            <input type="radio" name="show" className='show-btn' id={`show${index}`} />
-            <div className="group" key={section}>
-              {renderInputsGroup(getSectionData(section), section)}
-            </div>
-          </>
+            <input type="checkbox" name="show" className='show-btn' id={`show${index}`} onChange={removeIndexChange(section)} />
+              <div className="group">
+                <InputOption item={getSectionData(section)} section={section} selectedIndex={selectedIndices[section]} handleIndexChange={handleIndexChange} />
+              </div>
+          </div>
         ))}
 
         <button className='generate-own-btn' onClick={handleSubmit}>Generate your website</button>
