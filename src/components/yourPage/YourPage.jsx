@@ -7,9 +7,9 @@ import { getSectionData } from "./getSectionData";
 
 const YourPage = () => {
   const sectionNames = [
-    'hero', 'testimonial', 'footer', 'navbar', 'feature', 'cta', 'pricing',
-    'project', 'service', 'team', 'statistic', 'contact', 'logo',
-    'item', 'cartItem', 'filterItem', 'orderPopup',
+    'heros', 'testimonials', 'footers', 'navbars', 'features', 'ctas', 'pricings',
+    'projects', 'services', 'teams', 'statistics', 'contacts', 'logos',
+    'items', 'cartItems', 'filterItems', 'orderPopups',
   ];
 
   const [selectedIndices, setSelectedIndices] = useState(

@@ -5,7 +5,6 @@ const importComponent = (type, index) => {
   let module = null;
   try {
     if (index) {
-      // Try the first pattern
       module = require(`../components/sections/${type}s/${type}${index}/${type.charAt(0).toUpperCase() + type.slice(1)}${index}`);
     }
   } catch (error) {
@@ -29,17 +28,21 @@ const OwnPage = () => {
     return Component ? <Component key={`${type}-${index}`} /> : null;
   };
 
+  const sectionNames = [
+    'heros', 'testimonials', 'footers', 'navbars', 'features', 'ctas', 'pricings',
+    'projects', 'services', 'teams', 'statistics', 'contacts', 'logos',
+    'items', 'cartItems', 'filterItems', 'orderPopups',
+  ];
   // Define the list of section types
   const sectionTypes = [
-    'navbar', 'hero', 'contact', 'cta', 'footer',
-    'feature', 'logo', 'pricing', 'project', 'service',
-    'team', 'statistic', 'item', 'cartItem', 'filterItem',
-    'orderPopup', 'testimonial'
+    'hero', 'testimonial', 'footer', 'navbar', 'feature', 'cta', 'pricing',
+    'project', 'service', 'team', 'statistic', 'contact', 'logo',
+    'item', 'cartItem', 'filterItem', 'orderPopup',
   ];
 
   return (
     <>
-      {sectionTypes.map((type) => renderComponent(type, selectedData[`${type}IndexSelected`]))}
+      {sectionTypes.map((type, index) => renderComponent(type, selectedData[`${sectionNames[index]}IndexSelected`]))}
     </>
   );
 };
