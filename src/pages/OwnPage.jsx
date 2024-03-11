@@ -8,11 +8,14 @@ const importComponent = (type, index) => {
       module = require(`../components/sections/${type}s/${type}${index}/${type.charAt(0).toUpperCase() + type.slice(1)}${index}`);
     }
   } catch (error) {
-    console.error(`First pattern failed: ${error.message}`);
     try {
       module = require(`../components/sections/${type}s/${type}s${index}/${type.charAt(0).toUpperCase() + type.slice(1)}s${index}`);
     } catch (error) {
-      console.error(`Second pattern failed: ${error.message}`);
+      try {
+        module = require(`../components/sections/${type}s/${type}s${index}/${type.charAt(0).toUpperCase() + type.slice(1)}${index}`);
+      } catch (error) {
+        console.error(`third pattern failed: ${error.message}`);
+      }
     }
   }
   return module && module.default ? module.default : null;

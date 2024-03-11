@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
-import './statictics1.css';
-import {useSelector} from 'react-redux'
+import './statistics1.css';
+import { useSelector } from 'react-redux'
 
 
 const Statictics1 = () => {
