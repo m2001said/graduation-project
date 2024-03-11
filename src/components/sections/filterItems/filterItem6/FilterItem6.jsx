@@ -1,6 +1,6 @@
 import "./filterItems6.css";
 import React, { useState, useEffect } from "react";
-import ProductCard from "../../CartItems/cartItems6/product-card/ProductCard";
+import ProductCard from "../../cartItems/cartItems6/product-card/ProductCard";
 import { useSelector } from "react-redux";
 
 const FilterItems = () => {
