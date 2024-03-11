@@ -40,7 +40,7 @@ export const navData = createData('Navbar', [
   { id: 1, imgUrl: nav1 },
   { id: 2, imgUrl: "nav2" },
   { id: 4, imgUrl: nav4 },
-  // { id: 5, imgUrl: nav5 },
+  { id: 5, imgUrl: nav5 },
   // { id: 6, imgUrl: nav6 },
   // { id: 7, imgUrl: nav7 },
   // { id: 8, imgUrl: nav8 },
@@ -55,7 +55,7 @@ export const heroData = createData('Hero', [
   { id: 2, imgUrl: hero2 },
   { id: 3, imgUrl: hero3 },
   { id: 4, imgUrl: hero4 },
-  // { id: 5, imgUrl: hero5 },
+  { id: 5, imgUrl: hero5 },
   // { id: 6, imgUrl: hero6 },
   // { id: 7, imgUrl: hero7 },
   // { id: 8, imgUrl: hero8 },
@@ -70,7 +70,8 @@ export const featureData = createData('Feature', [
   // { id: 1, imgUrl: "feature1.png" },
   { id: 3, imgUrl: "feature3.png" },
   { id: 4, imgUrl: "feature4.png" },
-  // { id: 5, imgUrl: "feature5.png" },
+  { id: 5, imgUrl: "feature5.png" },
+  { id: 21, imgUrl: "feature21.png" },
   // { id: 6, imgUrl: "feature6.png" },
   // { id: 7, imgUrl: "feature7.png" },
   // { id: 10, imgUrl: "feature10.png" },
@@ -89,7 +90,7 @@ export const projectData = createData('Project', [
 export const serviceData = createData('Service', [
   { id: 1, imgUrl: "service1.png" },
   { id: 2, imgUrl: "service2.png" },
-  // { id: 5, imgUrl: "service5.png" },
+  { id: 5, imgUrl: "service5.png" },
   // { id: 7, imgUrl: "service7.png" },
   // { id: 10, imgUrl: "service10.png" },
   // { id: 11, imgUrl: "service11.png" },
@@ -106,7 +107,7 @@ export const ctaData = createData('Cta', [
   { id: 1, imgUrl: "cta1.png" },
   { id: 3, imgUrl: "cta3.png" },
   { id: 4, imgUrl: "cta4.png" },
-  // { id: 5, imgUrl: "cta5.png" },
+  { id: 5, imgUrl: "cta5.png" },
   // { id: 6, imgUrl: "cta6.png" },
   // { id: 7, imgUrl: "cta7.png" },
   // { id: 10, imgUrl: "cta10.png" },
@@ -118,6 +119,7 @@ export const footerData = createData('Footer', [
   { id: 2, imgUrl: "footer2.png" },
   { id: 3, imgUrl: "footer3.png" },
   { id: 4, imgUrl: "footer4.png" },
+  { id: 5, imgUrl: "footer5.png" },
   // { id: 6, imgUrl: "footer6.png" },
   // { id: 7, imgUrl: "footer7.png" },
   // { id: 10, imgUrl: "footer10.png" },
@@ -145,7 +147,7 @@ export const pricingData = createData('Pricing', [
 
 export const teamData = createData('Team', [
   { id: 1, imgUrl: "team1.png" },
-  // { id: 5, imgUrl: "team5.png" },
+  { id: 5, imgUrl: "team5.png" },
   // { id: 10, imgUrl: "team10.png" }
 ]);
 
