@@ -30,15 +30,15 @@ const OwnPage = () => {
   };
 
   const sectionNames = [
-    'heros', 'testimonials', 'footers', 'navbars', 'features', 'ctas', 'pricings',
-    'projects', 'services', 'teams', 'statistics', 'contacts', 'logos',
-    'items', 'cartItems', 'filterItems', 'orderPopups',
+    'navbars', 'heros', 'features', 'projects', 'services', 'contacts', 'teams',
+    'testimonials', 'statistics', 'logos', 'items', 'cartItems', 'filterItems',
+    'orderPopups', 'pricings', 'ctas', 'footers',
   ];
   // Define the list of section types
   const sectionTypes = [
-    'hero', 'testimonial', 'footer', 'navbar', 'feature', 'cta', 'pricing',
-    'project', 'service', 'team', 'statistic', 'contact', 'logo',
-    'item', 'cartItem', 'filterItem', 'orderPopup',
+    'navbar', 'hero', 'feature', 'project', 'service', 'contact', 'team',
+    'testimonial', 'statistic', 'logo', 'item', 'cartItem', 'filterItem',
+    'orderPopup', 'pricing', 'cta', 'footer',
   ];
 
   return (
