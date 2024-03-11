@@ -5,9 +5,10 @@
 .own-page h1 {
     margin: 40px auto 93px;
 }
-.own-page textarea{
+
+.own-page textarea {
     background-color: white !important;
-    color: #373737  !important;
+    color: #373737 !important;
 }
 
 .own-page .group {
@@ -41,6 +42,10 @@
     position: relative;
     z-index: 1;
     overflow: hidden;
+}
+
+.show-section .title {
+    text-transform: capitalize;
 }
 
 .show-section img {
@@ -131,10 +136,12 @@
     transition: 0.4s;
     font-size: 17px;
     outline: solid 1px var(--color-3);
+    margin-block: 45px;
 }
 
 .own-page button.generate-own-btn:active {
     outline-offset: 2px;
+    background: #d16fce;
     transform: scale(0.95);
 }
 
@@ -142,11 +149,32 @@
     color: #C5C5C5;
     text-align: center;
 }
+
 .Hero--section-poster {
     object-fit: cover;
     width: 100%;
 }
-.Hero--section-poster-container{
+
+.Hero--section-poster-container {
     height: 180px;
     width: 100%;
+}
+
+.own-page .error-message {
+    max-width: 330px;
+    padding: 20px;
+    margin: 20px auto;
+    background: white;
+    color: #373737;
+    border-radius: 8px;
+    box-shadow: 0 5px 6px #3613702f;
+    text-transform: capitalize;
+    opacity: 0%;
+    transform: translateY(20px);
+    transition: 0.2s;
+}
+
+.own-page .error-message.active {
+    opacity: 100%;
+    transform: translateY(0px);
 }

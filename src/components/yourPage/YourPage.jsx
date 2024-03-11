@@ -6,9 +6,9 @@ import { getSectionData } from "./getSectionData";
 
 const YourPage = () => {
   const sectionNames = [
-    'heros', 'testimonials', 'footers', 'navbars', 'features', 'ctas', 'pricings',
-    'projects', 'services', 'teams', 'statistics', 'contacts', 'logos',
-    'items', 'cartItems', 'filterItems', 'orderPopups',
+    'navbars', 'heros', 'features', 'projects', 'services', 'contacts', 'teams',
+    'testimonials', 'statistics', 'logos', 'items', 'cartItems', 'filterItems',
+    'orderPopups', 'pricings', 'ctas', 'footers',
   ];
 
   const [selectedIndices, setSelectedIndices] = useState(
@@ -24,7 +24,7 @@ const YourPage = () => {
     // If the checkbox is unchecked, set the selected index to undefined
     const selectedIndex = selectedIndices[section] === parseInt(value, 10) ? undefined : parseInt(value, 10);
     setSelectedIndices(prevState => ({ ...prevState, [section]: selectedIndex }));
-  };  
+  };
 
   const removeIndexChange = (section) => (e) => {
     const selectedIndex = undefined;
@@ -64,14 +64,14 @@ const YourPage = () => {
               <img src="https://res.cloudinary.com/duc04fwdb/image/upload/v1709052019/jammal_photos/vdybrjarzdlo6x9fdwga.svg" alt="down-icon" />
             </label>
             <input type="checkbox" name="show" className='show-btn' id={`show${index}`} onChange={removeIndexChange(section)} />
-              <div className="group">
-                <InputOption item={getSectionData(section)} section={section} selectedIndex={selectedIndices[section]} handleIndexChange={handleIndexChange} />
-              </div>
+            <div className="group">
+              <InputOption item={getSectionData(section)} section={section} selectedIndex={selectedIndices[section]} handleIndexChange={handleIndexChange} />
+            </div>
           </div>
         ))}
 
         <button className='generate-own-btn' onClick={handleSubmit}>Generate your website</button>
-        {checkError && <p className="error-message text-center"> select at least 3 sections.</p>}
+        <p className={`error-message text-center ${checkError ? "active" : ""} `}> select at least 3 sections.</p>
       </div>
     </div>
   );
