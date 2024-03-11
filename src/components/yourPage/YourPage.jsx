@@ -41,7 +41,7 @@ const YourPage = () => {
     });
 
     const selectedSectionCount = Object.values(selectedSections).filter(val => val !== undefined).length;
-    if (selectedSectionCount < 3) {
+    if (selectedSectionCount < 3 || !selectedIndices["heros"] || !selectedIndices["navbars"] || !selectedIndices["footers"]) {
       setCheckError(true);
     } else {
       navigate('/own-page', { state: selectedSections });
@@ -71,7 +71,14 @@ const YourPage = () => {
         ))}
 
         <button className='generate-own-btn' onClick={handleSubmit}>Generate your website</button>
-        <p className={`error-message text-center ${checkError ? "active" : ""} `}> select at least 3 sections.</p>
+        <div className={`error-message ${checkError ? "active" : ""}  flex justify-center items-center gap-4`}>
+          <img src="https://res.cloudinary.com/dvp3nyulf/image/upload/v1710190698/warning.png" alt="" />
+          <p>Select a minimum of<span className='important'> 3 </span>sections, including
+            <span className='important'> Navbar</span>,
+            <span className='important'> Hero</span>,
+            <span className='important'> Footer</span>,
+          </p>
+        </div>
       </div>
     </div>
   );
