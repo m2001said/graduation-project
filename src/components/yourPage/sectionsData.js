@@ -38,6 +38,7 @@ const createData = (type, data) => {
 
 export const navData = createData('Navbar', [
   { id: 1, imgUrl: nav1 },
+  { id: 2, imgUrl: "nav2" },
   // { id: 3, imgUrl: nav3 },
   // { id: 4, imgUrl: nav4 },
   // { id: 5, imgUrl: nav5 },
@@ -52,7 +53,7 @@ export const navData = createData('Navbar', [
 
 export const heroData = createData('Hero', [
   { id: 1, imgUrl: hero1 },
-  // { id: 2, imgUrl: hero2 },
+  { id: 2, imgUrl: hero2 },
   // { id: 3, imgUrl: hero3 },
   // { id: 4, imgUrl: hero4 },
   // { id: 5, imgUrl: hero5 },
@@ -67,7 +68,7 @@ export const heroData = createData('Hero', [
 ]);
 export const serviceData = createData('Service', [
   { id: 1, imgUrl: "service1.png" },
-  // { id: 2, imgUrl: "service2.png" },
+  { id: 2, imgUrl: "service2.png" },
   // { id: 5, imgUrl: "service5.png" },
   // { id: 7, imgUrl: "service7.png" },
   // { id: 10, imgUrl: "service10.png" },
@@ -77,7 +78,7 @@ export const serviceData = createData('Service', [
 
 export const footerData = createData('Footer', [
   { id: 1, imgUrl: "footer1.png" },
-  // { id: 2, imgUrl: "footer2.png" },
+  { id: 2, imgUrl: "footer2.png" },
   // { id: 3, imgUrl: "footer3.png" },
   // { id: 6, imgUrl: "footer6.png" },
   // { id: 7, imgUrl: "footer7.png" },
@@ -89,7 +90,6 @@ export const footerData = createData('Footer', [
 
 export const ctaData = createData('Cta', [
   { id: 1, imgUrl: "cta1.png" },
-  // { id: 2, imgUrl: "cta2.png" },
   // { id: 3, imgUrl: "cta3.png" },
   // { id: 4, imgUrl: "cta4.png" },
   // { id: 5, imgUrl: "cta5.png" },
@@ -102,6 +102,7 @@ export const ctaData = createData('Cta', [
 
 export const contactData = createData('Contact', [
   // { id: 4, imgUrl: "contact4.png" },
+  { id: 2, imgUrl: "contact2.png" },
   // { id: 11, imgUrl: "contact11.png" }
 ]);
 
@@ -134,7 +135,7 @@ export const pricingData = createData('Pricing', [
 
 export const projectData = createData('Project', [
   { id: 1, imgUrl: "project1.png" },
-  // { id: 2, imgUrl: "project2.png" },
+  { id: 2, imgUrl: "project2.png" },
   // { id: 3, imgUrl: "project3.png" },
   // { id: 4, imgUrl: "project4.png" },
   // { id: 11, imgUrl: "project11.png" },
@@ -143,20 +144,17 @@ export const projectData = createData('Project', [
 
 export const teamData = createData('Team', [
   { id: 1, imgUrl: "team1.png" },
-  // { id: 2, imgUrl: "team2.png" },
   // { id: 5, imgUrl: "team5.png" },
   // { id: 10, imgUrl: "team10.png" }
 ]);
 
 export const statisticData = createData('Statistic', [
   { id: 1, imgUrl: "statistic1.png" },
-  // { id: 2, imgUrl: "statistic2.png" },
   // { id: 7, imgUrl: "statistic7.png" }
 ]);
 
 export const itemData = createData('Item', [
   { id: 1, imgUrl: "item1.png" },
-  // { id: 2, imgUrl: "item2.png" },
   // { id: 14, imgUrl: "item14.png" }
 ]);
 
@@ -172,15 +170,13 @@ export const orderPopupData = createData('OrderPopup', [
 
 export const testimonialData = createData('Testimonial', [
   { id: 1, imgUrl: "testimonial1.png" },
-  // { id: 2, imgUrl: "testimonial2.png" },
+  { id: 2, imgUrl: "testimonial2.png" },
   // { id: 3, imgUrl: "testimonial3.png" },
   // { id: 6, imgUrl: "testimonial6.png" },
   // { id: 7, imgUrl: "testimonial7.png" },
   // { id: 10, imgUrl: "testimonial10.png" },
   // { id: 11, imgUrl: "testimonial11.png" }
 ]);
-
-
 
 export const cartItemData = createData('CartItem', [
   // { id: 6, imgUrl: "cartItem6.png" }

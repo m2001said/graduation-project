@@ -1,5 +1,5 @@
 import React from "react";
-import "./contactus2.css";
+import "./contact2.css";
 import { useRef } from "react";
 // import emailjs from "emailjs-com";
 import { useSelector } from "react-redux";

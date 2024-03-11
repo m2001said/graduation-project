@@ -6,7 +6,7 @@ const Footer2 = () => {
   const { footer } = useSelector((state) => state.template2);
 
   return (
-    <footer>
+    <footer className="design-2">
       <a href="#" className="footer2__logo">
         {footer.logo}{" "}
       </a>
