@@ -39,7 +39,7 @@ const createData = (type, data) => {
 export const navData = createData('Navbar', [
   { id: 1, imgUrl: nav1 },
   { id: 2, imgUrl: "nav2" },
-  // { id: 4, imgUrl: nav4 },
+  { id: 4, imgUrl: nav4 },
   // { id: 5, imgUrl: nav5 },
   // { id: 6, imgUrl: nav6 },
   // { id: 7, imgUrl: nav7 },
@@ -54,7 +54,7 @@ export const heroData = createData('Hero', [
   { id: 1, imgUrl: hero1 },
   { id: 2, imgUrl: hero2 },
   { id: 3, imgUrl: hero3 },
-  // { id: 4, imgUrl: hero4 },
+  { id: 4, imgUrl: hero4 },
   // { id: 5, imgUrl: hero5 },
   // { id: 6, imgUrl: hero6 },
   // { id: 7, imgUrl: hero7 },
@@ -65,6 +65,27 @@ export const heroData = createData('Hero', [
   // { id: 16, imgUrl: hero16 },
   // { id: 18, imgUrl: hero18 }
 ]);
+
+export const featureData = createData('Feature', [
+  // { id: 1, imgUrl: "feature1.png" },
+  { id: 3, imgUrl: "feature3.png" },
+  { id: 4, imgUrl: "feature4.png" },
+  // { id: 5, imgUrl: "feature5.png" },
+  // { id: 6, imgUrl: "feature6.png" },
+  // { id: 7, imgUrl: "feature7.png" },
+  // { id: 10, imgUrl: "feature10.png" },
+  // { id: 14, imgUrl: "feature14.png" }
+]);
+
+export const projectData = createData('Project', [
+  { id: 1, imgUrl: "project1.png" },
+  { id: 2, imgUrl: "project2.png" },
+  { id: 3, imgUrl: "project3.png" },
+  { id: 4, imgUrl: "project4.png" },
+  // { id: 11, imgUrl: "project11.png" },
+  // { id: 14, imgUrl: "project14.png" }
+]);
+
 export const serviceData = createData('Service', [
   { id: 1, imgUrl: "service1.png" },
   { id: 2, imgUrl: "service2.png" },
@@ -75,10 +96,28 @@ export const serviceData = createData('Service', [
   // { id: 14, imgUrl: "service14.png" }
 ]);
 
+export const contactData = createData('Contact', [
+  { id: 2, imgUrl: "contact2.png" },
+  { id: 4, imgUrl: "contact4.png" },
+  // { id: 11, imgUrl: "contact11.png" }
+]);
+
+export const ctaData = createData('Cta', [
+  { id: 1, imgUrl: "cta1.png" },
+  { id: 3, imgUrl: "cta3.png" },
+  { id: 4, imgUrl: "cta4.png" },
+  // { id: 5, imgUrl: "cta5.png" },
+  // { id: 6, imgUrl: "cta6.png" },
+  // { id: 7, imgUrl: "cta7.png" },
+  // { id: 10, imgUrl: "cta10.png" },
+  // { id: 11, imgUrl: "cta11.png" }
+]);
+
 export const footerData = createData('Footer', [
   { id: 1, imgUrl: "footer1.png" },
   { id: 2, imgUrl: "footer2.png" },
   { id: 3, imgUrl: "footer3.png" },
+  { id: 4, imgUrl: "footer4.png" },
   // { id: 6, imgUrl: "footer6.png" },
   // { id: 7, imgUrl: "footer7.png" },
   // { id: 10, imgUrl: "footer10.png" },
@@ -87,36 +126,7 @@ export const footerData = createData('Footer', [
 ]);
 
 
-export const ctaData = createData('Cta', [
-  { id: 1, imgUrl: "cta1.png" },
-  { id: 3, imgUrl: "cta3.png" },
-  // { id: 4, imgUrl: "cta4.png" },
-  // { id: 5, imgUrl: "cta5.png" },
-  // { id: 6, imgUrl: "cta6.png" },
-  // { id: 7, imgUrl: "cta7.png" },
-  // { id: 10, imgUrl: "cta10.png" },
-  // { id: 11, imgUrl: "cta11.png" }
-]);
 
-
-export const contactData = createData('Contact', [
-  // { id: 4, imgUrl: "contact4.png" },
-  { id: 2, imgUrl: "contact2.png" },
-  // { id: 11, imgUrl: "contact11.png" }
-]);
-
-
-
-export const featureData = createData('Feature', [
-  // { id: 1, imgUrl: "feature1.png" },
-  { id: 3, imgUrl: "feature3.png" },
-  // { id: 4, imgUrl: "feature4.png" },
-  // { id: 5, imgUrl: "feature5.png" },
-  // { id: 6, imgUrl: "feature6.png" },
-  // { id: 7, imgUrl: "feature7.png" },
-  // { id: 10, imgUrl: "feature10.png" },
-  // { id: 14, imgUrl: "feature14.png" }
-]);
 
 export const logoData = createData('Logo', [
   { id: 1, imgUrl: "logo1.png" },
@@ -131,14 +141,7 @@ export const pricingData = createData('Pricing', [
   // { id: 11, imgUrl: "pricing11.png" }
 ]);
 
-export const projectData = createData('Project', [
-  { id: 1, imgUrl: "project1.png" },
-  { id: 2, imgUrl: "project2.png" },
-  { id: 3, imgUrl: "project3.png" },
-  // { id: 4, imgUrl: "project4.png" },
-  // { id: 11, imgUrl: "project11.png" },
-  // { id: 14, imgUrl: "project14.png" }
-]);
+
 
 export const teamData = createData('Team', [
   { id: 1, imgUrl: "team1.png" },
