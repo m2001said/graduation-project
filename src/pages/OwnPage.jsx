@@ -19,7 +19,7 @@ const importComponent = (type, index) => {
   }
   return module && module.default ? module.default : null;
 };
-
+// third pattern failed: Cannot find module './cartItems/cartItems6/CartItem6'
 
 const OwnPage = () => {
   const location = useLocation();
