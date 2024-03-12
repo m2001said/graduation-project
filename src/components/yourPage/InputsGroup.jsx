@@ -37,6 +37,7 @@ const InputOption = ({ item, section, handleIndexChange, selectedIndex }) => {
               alt="check-icon"
             />
           </div>
+          <span className="section-id-num">{data.id}</span>
           <img src={data.image} alt={`${data.type} Section ${data.id}`} className={`${data.type}--section-poster`} />
         </label>
       </div>
