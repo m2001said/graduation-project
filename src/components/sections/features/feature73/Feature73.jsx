@@ -1,5 +1,5 @@
-import styles, { layout } from "../../../heros/hero7/styles7/style";
-import Button7 from "../feature7_1/Button7";
+import styles, { layout } from "../../heros/hero7/styles7/style";
+import Button7 from "../feature7/Button7";
 import { useSelector } from "react-redux";
 
 const CardDeal = () => {

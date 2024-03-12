@@ -1,4 +1,4 @@
-import styles, { layout } from "../../../heros/hero7/styles7/style";
+import styles, { layout } from "../../heros/hero7/styles7/style";
 import { useSelector } from "react-redux";
 
 const Billing = () => {

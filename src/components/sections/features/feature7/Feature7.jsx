@@ -1,7 +1,7 @@
 import React from "react";
 import { useSelector } from "react-redux";
-import styles, { layout } from "../../../heros/hero7/styles7/style";
-import Button7 from "../feature7_1/Button7";
+import styles, { layout } from "../../heros/hero7/styles7/style";
+import Button7 from "../feature7/Button7";
 
 const FeatureCard = ({ imgUrl, title, content, index }) => {
   return (

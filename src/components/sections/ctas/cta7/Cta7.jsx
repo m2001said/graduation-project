@@ -1,5 +1,5 @@
 import styles from "../../../sections/heros/hero7/styles7/style";
-import Button7 from "../../features/feature7/feature7_1/Button7";
+import Button7 from "../../features/feature7/Button7";
 import { useSelector } from "react-redux";
 
 const Cta7 = () => {
