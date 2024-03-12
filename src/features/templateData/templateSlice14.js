@@ -1,7 +1,8 @@
 import { createSlice } from "@reduxjs/toolkit";
+import { addElement, addElementToArray, addSubElement, deleteElement, deleteSection, editElement, reorder, reorderSections } from "./actions";
 const templateSlice14 = createSlice({
   initialState: {
-    navbar14: {
+    navbar: {
       title: "Eshop",
       icon: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707601954/logo_xtzffr.png",
       links: [
@@ -22,33 +23,30 @@ const templateSlice14 = createSlice({
           link: "/#blog",
         },
       ],
-      DropdownTxt: "Quick Links",
-      DropdownIcon: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707774619/icons8-sort-down-30_yurjok.png",
-      DropdownLinks: [
-        {
-          name: "Trending Products",
-          link: "/#",
-        },
-        {
-          name: "Best Selling",
-          link: "/#",
-        },
-        {
-          name: "Top Rated",
-          link: "/#",
-        },
-      ],
-      SearchIcon: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707775350/icons8-search-24_1_vxeohp.png",
+      // DropdownTxt: "Quick Links",
+      // DropdownIcon: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707774619/icons8-sort-down-30_yurjok.png",
+      // DropdownLinks: [
+      //   {
+      //     name: "Trending Products",
+      //     link: "/#",
+      //   },
+      //   {
+      //     name: "Best Selling",
+      //     link: "/#",
+      //   },
+      //   {
+      //     name: "Top Rated",
+      //     link: "/#",
+      //   },
+      // ],
+      // SearchIcon: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707775350/icons8-search-24_1_vxeohp.png",
       buttonText: "!",
       buttonIcon: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707775619/icons8-shopping-cart-24_w0vwvt.png",
-    },
-
-    darkMode14: {
       darkPng: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1706805795/dark-mode-button_e9kiqi.png",
       lightPng: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1706805773/light-mode-button_ermmq3.png",
     },
 
-    hero14: {
+    hero: {
       blocks: [
         {
           img: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707602286/headphone_qbcak3.png",
@@ -72,7 +70,7 @@ const templateSlice14 = createSlice({
       buttonText: "Shop By Category",
     },
 
-    items14: {
+    items: {
       firstTitle: "Enjoy",
       secondTitle: "With",
       title1: "Earph",
@@ -90,7 +88,7 @@ const templateSlice14 = createSlice({
       buttonText: "Browse",
     },
 
-    services14: {
+    services: {
       blocks: [
         {
           imgUrl: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707602721/icons8-sedan-30_zecew1.png",
@@ -115,7 +113,7 @@ const templateSlice14 = createSlice({
       ],
     },
 
-    feature14_1: {
+    feature1: {
       discount: "30% OFF",
       title: "Fine Smile",
       date: "10 Jan to 28 Jan",
@@ -126,18 +124,7 @@ const templateSlice14 = createSlice({
       bgColor: "#f42c37",
     },
 
-    feature14_2: {
-      discount: "30% OFF",
-      title: "Happy Hours",
-      date: "14 Jan to 28 Jan",
-      image: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707603374/smartwatch2-removebg-preview_ivyg4p.png",
-      title2: "Smart Solo",
-      title3: "Winter Sale",
-      title4: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque reiciendis",
-      bgColor: "#2dcc6f",
-    },
-
-    projects14_1: {
+    projects1: {
       title: "Our Products",
       description: "Explore Our Products",
       cards: [
@@ -185,32 +172,43 @@ const templateSlice14 = createSlice({
       buttonText: "Add to cart",
     },
 
-    projects14_2: {
+    feature2: {
+      discount: "30% OFF",
+      title: "Happy Hours",
+      date: "14 Jan to 28 Jan",
+      image: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707603374/smartwatch2-removebg-preview_ivyg4p.png",
+      title2: "Smart Solo",
+      title3: "Winter Sale",
+      title4: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque reiciendis",
+      bgColor: "#2dcc6f",
+    },
+
+    projects2: {
       title: "Recent News",
       description: "Explore Our Blogs",
       cards: [
         {
           title: "How to choose perfect smartwatch",
-          subtitle: "minima facere deserunt vero illo beatae deleniti eius dolores consequuntur, eligendi corporis maiores molestiae laudantium. Porro?",
+          subtitle: "minima facere deserunt vero illo beatae deleniti eius dolores consequuntur, eligendi corporis maiores molestiae Porro?",
           published: "Jan 20, 2024 by Dilshad",
           image: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707604612/blog-1_n5jvci.jpg",
         },
         {
           title: "How to choose perfect gadget",
-          subtitle: "minima facere deserunt vero illo beatae deleniti eius dolores consequuntur, eligendi corporis maiores molestiae laudantium. Porro?",
+          subtitle: "minima facere deserunt vero illo beatae deleniti eius dolores consequuntur, eligendi corporis maiores molestiae Porro?",
           published: "Jan 20, 2024 by Satya",
           image: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707604616/blog-2_nmxkbb.jpg",
         },
         {
           title: "How to choose perfect VR headset",
-          subtitle: "minima facere deserunt vero illo beatae deleniti eius dolores consequuntur, eligendi corporis maiores molestiae laudantium. Porro?",
+          subtitle: "minima facere deserunt vero illo beatae deleniti eius dolores consequuntur, eligendi corporis maiores molestiae Porro?",
           published: "Jan 20, 2024 by Sabir",
-          image: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707604616/blog-2_nmxkbb.jpg",
+          image: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707604621/blog-3_ko9kq9.jpg",
         },
       ],
     },
 
-    logos14: {
+    logos: {
       companies: [
         { imgUrl: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707780037/br-1_hqubpv.png" },
         { imgUrl: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707780041/br-2_tlsefn.png" },
@@ -220,7 +218,7 @@ const templateSlice14 = createSlice({
       ],
     },
 
-    footer14: {
+    footer: {
       title: "Eshop",
       imgUrl: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707601954/logo_xtzffr.png",
       description: "Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, voluptate.",
@@ -260,7 +258,7 @@ const templateSlice14 = createSlice({
       ],
     },
 
-    orderPopup14: {
+    order: {
       title: "Order Now",
       icon: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707791435/icons8-x-24_jske7f.png",
       buttonText: "Order Now",
@@ -273,42 +271,32 @@ const templateSlice14 = createSlice({
 
   name: "templateSlice14",
   reducers: {
-    updateTemplate14: (state, action) => {
-      const { section, variable, value, i, blockName, subBlockName, subIndex, objKey } = action.payload;
-      // sub means level 2 of fields
-      if (i === undefined) {
-        if (variable === null) {
-          // edit object filed
-          state[section][blockName][objKey] = value;
-        } else {
-          // edit normal field
-          state[section][variable] = value;
-        }
-      } else {
-        if (subIndex === undefined) {
-          // edit array filed with index
-          if (variable === null) state[section][blockName][i] = value;
-          else {
-            if (subBlockName === undefined) {
-              // edit obj in array of objects
-              state[section][blockName][i][variable] = value;
-            } else {
-              // edit sub obj directly
-              state[section][blockName][i][subBlockName][variable] = value;
-            }
-          }
-        } else {
-          // edit sub element in array
-          if (variable === null) state[section][blockName][i][subBlockName][subIndex] = value;
-          else {
-            // edit sub obj in array of objects
-            state[section][blockName][i][subBlockName][subIndex][variable] = value;
-          }
-        }
-      }
+    updateTemplate: (state, action) => {
+      editElement(state, action);
+    },
+    addNewElement: (state, action) => {
+      addElement(state, action);
+    },
+    addElementToArray: (state, action) => {
+      addElementToArray(state, action);
+    },
+    addNewSubElement: (state, action) => {
+      addSubElement(state, action);
+    },
+    deleteElement: (state, action) => {
+      deleteElement(state, action);
+    },
+    reorder: (state, action) => {
+      reorder(state, action);
+    },
+    reorderSection: (state, action) => {
+      return reorderSections(state, action);
+    },
+    deleteSection: (state, action) => {
+      return deleteSection(state, action);
     },
   },
 });
 
-export const { updateTemplate14 } = templateSlice14.actions;
+export const templateActions14 = templateSlice14.actions;
 export default templateSlice14.reducer;

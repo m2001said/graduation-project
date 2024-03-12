@@ -11,7 +11,7 @@ import { Pagination } from "swiper/modules";
 
 const Hero14 = ({ handleOrderPopup }) => {
   
-  const { hero14 } = useSelector((state) => state.template14);
+  const { hero } = useSelector((state) => state.template14);
 
   return (
     <div>
@@ -21,13 +21,13 @@ const Hero14 = ({ handleOrderPopup }) => {
             {/* hero sec */}
             <Swiper
               spaceBetween={200}
-              //   pagination={{
-              //     clickable: true,
-              //   }}
+                pagination={{
+                  clickable: true,
+                }}
               modules={[Pagination]}
               className="mySwiper"
             >
-              {hero14.blocks.map((data, index) => (
+              {hero.blocks.map((data, index) => (
                 <SwiperSlide key={index}>
                   <div className="grid grid-cols-1 sm:grid-cols-2">
                     {/* text sec */}
@@ -40,9 +40,9 @@ const Hero14 = ({ handleOrderPopup }) => {
                       <div>
                         <button
                           onClick={handleOrderPopup}
-                          className={`bg-[--primary-color] text-white cursor-pointer hover:scale-105 duration-300 py-2 px-8 rounded-full relative z-10`}
+                          className={`bg-[--primary14-color] text-white cursor-pointer hover:scale-105 duration-300 py-2 px-8 rounded-full relative z-10`}
                         >
-                          {hero14.buttonText}
+                          {hero.buttonText}
                         </button>
                       </div>
                     </div>

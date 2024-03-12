@@ -2,14 +2,15 @@
   display: flex;
   justify-content: space-between;
 }
-/*.logo {
+
+.logo3 {
   width: 10rem;
   height: 3rem;
-}*/
+}
 .navbar3-menu {
   list-style: none;
   display: flex;
-  gap: 2rem;
+  gap: 6rem;
   color: white;
 }
 .navbar3-menu > li {
@@ -28,7 +29,7 @@
   }
   .navbar3-menu {
     flex-direction: column;
-    background: var(--appColor);
+    background: var(--appColor3);
     padding: 2rem;
     position: relative;
   }

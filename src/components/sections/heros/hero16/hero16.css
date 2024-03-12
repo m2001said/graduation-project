@@ -1,0 +1,61 @@
+.home16 {
+  background: center / cover url(https://res.cloudinary.com/duc04fwdb/image/upload/v1708472806/jammal_photos/mjgepidhntphvebq5eff.png);
+  min-height: calc(100vh + var(--header-height));
+  display: flex;
+  align-items: center;
+}
+.home__container16 {
+  width: 100%;
+}
+
+.home__content16 {
+  max-width: 660px;
+}
+
+.home__subtitle16,
+.home__description16 {
+  color: var(--title-color);
+}
+
+.home__subtitle16 {
+  font-family: var(--second-font);
+  font-size: var(--h1-font-size);
+  font-weight: var(--weight-500);
+}
+
+.home__title16 {
+  font-size: var(--biggest-font-size);
+  font-weight: var(--weight-500);
+  margin-block: 1.25rem;
+}
+
+.home__description16 {
+  margin-bottom: 2.25rem;
+}
+
+.home__btns16 {
+  display: flex;
+  column-gap: 2rem;
+}
+
+.home__btn16 {
+  background: transparent;
+}
+.home__btn16:hover {
+  background: var(--first-color);
+  color: var(--title-color);
+}
+
+@media only screen and (max-width: 992px) {
+  .home__btns16 {
+    flex-wrap: wrap;
+    gap: 1.25rem;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .home__btns16 {
+    flex-wrap: wrap;
+    gap: 1.25rem;
+  }
+}

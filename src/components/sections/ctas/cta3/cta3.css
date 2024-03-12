@@ -30,7 +30,7 @@
 .email3-container {
   display: flex;
   gap: 3rem;
-  background-color: var(--caloryCard);
+  background-color: var(--caloryCard3);
   padding: 1rem 2rem;
 }
 .email3-container > input {
@@ -42,9 +42,9 @@
 ::placeholder {
   color: var(--website-3-color-1);
 }
-.btn-c3 {
+.btn3-c3 {
   color: var(--website-3-color-1);
-  background-color: var(--orange);
+  background-color: var(--orange3);
 }
 
 /* res mobike */

@@ -12,7 +12,7 @@ const Project1 = () => {
         <p className="description-1">{projects.description}</p>
       </div>
       <div className="projects1-cards">
-        {projects.cards.map((cards , index) => (
+        {projects.projects.map((cards , index) => (
           <div className="projects1-card" key={cards.title + index}>
             <div className="projects1-card-img">
               <img src={cards.imgUrl} alt="Article 1" />
@@ -22,7 +22,7 @@ const Project1 = () => {
                 <h1>{cards.title}</h1>
                 <p>{cards.description}</p>
               </div>
-              <a href={"#"} className="projects1-card-link">
+              <a href={"/#"} className="projects1-card-link">
                 <span>
                   <img src={cards.icon} alt="icon" />
                 </span>

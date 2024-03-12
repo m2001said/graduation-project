@@ -5,13 +5,13 @@ import { useSelector } from "react-redux";
 
 const Logos14 = () => {
 
-  const { logos14 } = useSelector((state) => state.template14);
+  const { logos } = useSelector((state) => state.template14);
 
   return (
     <div className="py-8 mt-24 hidden md:block bg-gray-200 dark:bg-white/10">
       <div className="container14">
         <div className="grid grid-cols-5 gap-3 place-items-center opacity-50">
-          {logos14.companies.map((logo, index) => (
+          {logos.companies.map((logo, index) => (
             <img key={index} src={logo.imgUrl} alt={`Logo ${index + 1}`} />
           ))}
         </div>

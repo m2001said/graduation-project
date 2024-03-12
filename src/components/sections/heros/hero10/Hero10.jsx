@@ -4,11 +4,11 @@ import "../../../../assets/css/globals10.css";
 
 
 const Hero10 = ({ handleOrderPopup }) => {
-  const { hero10 } = useSelector((state) => state.template10);
+  const { hero } = useSelector((state) => state.template10);
 
-  let defaultImage = hero10.defaultImage; ;
-  let defaultTitle = hero10.defaultTitle; ;
-  let defaultDescription = hero10.defaultDescription; ;
+  let defaultImage = hero.defaultImage; ;
+  let defaultTitle = hero.defaultTitle; ;
+  let defaultDescription = hero.defaultDescription; ;
 
   const [imageId, setImageId] = useState(defaultImage);
 
@@ -23,7 +23,7 @@ const Hero10 = ({ handleOrderPopup }) => {
       <div
         className="min-h-[550px] sm:min-h-[650px] bg-gray-100 flex justify-center items-center dark:bg-gray-950 dark:text-white duration-200"
         style={{
-          backgroundImage: `url(${hero10.backGroundImage})`,
+          backgroundImage: `url(${hero.backGroundImage})`,
           backgroundPosition: "center",
           backgroundRepeat: "no-repeat",
           backgroundSize: "cover",
@@ -37,8 +37,8 @@ const Hero10 = ({ handleOrderPopup }) => {
               <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold">{title}</h1>
               <p className="text-sm mt-4">{description}</p>
               <div>
-                <button onClick={handleOrderPopup} className="btnBg btnTxt px-4 py-2 rounded-full mt-4 hover:scale-105 duration-200 ">
-                  {hero10.buttonText}
+                <button onClick={handleOrderPopup} className="btnBg10 btnTxt10 px-4 py-2 rounded-full mt-4 hover:scale-105 duration-200 ">
+                  {hero.buttonText}
                 </button>
               </div>
             </div>
@@ -50,7 +50,7 @@ const Hero10 = ({ handleOrderPopup }) => {
               </div>
               {/* other image list */}
               <div className="flex lg:flex-col lg:top-1/2 lg:-translate-y-1/2 lg:py-2 justify-center gap-4 absolute -bottom-[40px] lg:-right-1 bg-white rounded-full">
-                {hero10.ImageList.map((data) => (
+                {hero.ImageList.map((data) => (
                   <img
                     src={data.imgUrl}
                     alt=""

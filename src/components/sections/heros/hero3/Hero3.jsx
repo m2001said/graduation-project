@@ -10,60 +10,55 @@ const Hero3 = () => {
     AOS.init();
   }, []);
 
-  const { hero3 } = useSelector((state) => state.template3);
+  const { hero } = useSelector((state) => state.template3);
 
   return (
-    <div className="hero3">
+    <div className="hero3" id="Home">
       <div className="blur3 hero-blur"></div>
       <div className="left-h">
         <Navbar3 />
 
-        {/* the best ad */}
         <div className="the-best-ad">
           <div data-aos="fade-left" data-aos-duration="3000" className="arch-left"></div>
-          <span>{hero3.Subtitle}</span>
+          <span>{hero.Subtitle}</span>
         </div>
 
-        {/* Hero Heading */}
         <div className="hero3-text">
           <div>
-            <span className="stroke-text">{hero3.title[0].titleA} </span>
-            <span>{hero3.title[0].titleB}</span>
+            <span className="stroke-text">{hero.title.titleA} </span>
+            <span>{hero.title.titleB}</span>
           </div>
           <div>
-            <span>{hero3.title[0].titleC}</span>
+            <span>{hero.title.titleC}</span>
           </div>
           <div>
-            <span>{hero3.description}</span>
+            <span>{hero.description}</span>
           </div>
         </div>
 
-        {/* figures */}
         <div className="figures">
           <div>
-            <span>{hero3.numCounter[0].count1}</span>
-            <span>{hero3.numCounter[0].descr1}</span>
+            <span>{hero.numCounter.count1}</span>
+            <span>{hero.numCounter.descr1}</span>
           </div>
           <div>
-            <span>{hero3.numCounter[0].count2}</span>
-            <span>{hero3.numCounter[0].descr2}</span>
+            <span>{hero.numCounter.count2}</span>
+            <span>{hero.numCounter.descr2}</span>
           </div>
           <div>
-            <span>{hero3.numCounter[0].count3}</span>
-            <span>{hero3.numCounter[0].descr3}</span>
+            <span>{hero.numCounter.count3}</span>
+            <span>{hero.numCounter.descr3}</span>
           </div>
         </div>
 
-        {/* Hero Buttons */}
         <div className="hero3-button">
-          <button className="btn">{hero3.buttonText[0].buttonTextA}</button>
-          <button className="btn">{hero3.buttonText[0].buttonTextB}</button>
+          <button className="btn3">{hero.buttonText.buttonTextA}</button>
+          <button className="btn3">{hero.buttonText.buttonTextB}</button>
         </div>
       </div>
       <div className="right-h">
-        <button className="btn">{hero3.buttonText[0].buttonTextC}</button>
-        {/* hero images */}
-        <img src={hero3.imgUrl} alt="" className="hero-image" />
+        <button className="btn33">{hero.buttonText.buttonTextC}</button>
+        <img src={hero.imgUrl} alt="" className="hero-image" />
 
         <div className="hero-image-back1"></div>
         <div className="hero-image-back2"></div>

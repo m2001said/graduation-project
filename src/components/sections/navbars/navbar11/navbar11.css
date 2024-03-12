@@ -1,9 +1,9 @@
 .aside11 {
-  position: fixed;
+  position: absolute;
   left: 0;
   top: 9%;
-  background: var(--body-color);
-  border-right: 1px solid var(--balck0);
+  background: var(--body-color11);
+  border-right: 1px solid var(--balck011);
   padding: 2.5rem;
   width: 110px;
   min-height: 88.5vh;
@@ -20,15 +20,15 @@
 }
 .nav11__link {
   font-size: 1.5rem;
-  color: var(--title-color);
+  color: var(--title-color11);
   font-weight: var(--font-bold);
   transition: 0.3s;
 }
 .nav11__link:hover {
-  color: var(--hsl1);
+  color: var(--hsl111);
 }
 .copyright11 {
-  color: var(--hsl2);
+  color: var(--hsl211);
   font-size: var(--small-font-size);
   transform: rotate(-180deg);
   writing-mode: vertical-rl;
@@ -40,8 +40,8 @@
   cursor: pointer;
   height: 40px;
   width: 45px;
-  background-color: var(--body-color);
-  border: 1px solid var(--whiteMove);
+  background-color: var(--body-color11);
+  border: 1px solid var(--whiteMove11);
   display: none;
   justify-content: center;
   align-items: center;

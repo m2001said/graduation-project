@@ -3,7 +3,8 @@ import "./testimonials1.css";
 import { useSelector } from "react-redux";
 
 const Testimonials1 = () => {
-  const { testimonial } = useSelector((state) => state.template1);
+  const { testimonials } = useSelector((state) => state.template1);
+  const testimonial = testimonials;
 
   return (
     <div className="Testimonials1 design1">
@@ -11,7 +12,7 @@ const Testimonials1 = () => {
         <p className="Testimonials__title">{testimonial.title}</p>
 
         <div className="testimonials-cards">
-          {testimonial.cards.map((card, index) => (
+          {testimonial.testimonials.map((card, index) => (
             <div className="testimonials-card" key={index}>
               <div className="testimonials-card-header">
                 <img className="testimonials-card-header-img" src={card.imgUrl} alt=" " />

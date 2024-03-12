@@ -6,16 +6,16 @@ import { Navigation, Pagination, Autoplay } from "swiper/modules";
 import "swiper/css";
 
 const Testimonials6 = () => {
-  const { testimonial } = useSelector((state) => state.template6);
+  const { testimonials } = useSelector((state) => state.template6);
 
   return (
     <section className="design-6">
       <div className="container mx-auto px-4">
         <div className="md:flex md:items-center">
           <div className="md:w-1/2">
-            <h2 className="mb-4 ps-3">{testimonial.title}</h2>
+            <h2 className="mb-4 ps-3">{testimonials.title}</h2>
             <Swiper modules={[Navigation, Pagination, Autoplay]} spaceBetween={50} slidesPerView={1} autoplay={{ delay: 3000 }} className="mySwiper">
-              {testimonial.cards.map((data, index) => (
+              {testimonials.cards.map((data, index) => (
                 <SwiperSlide key={index}>
                   <div className="single__testimonial">
                     <p className="review__content">{data.content}</p>
@@ -27,7 +27,7 @@ const Testimonials6 = () => {
             </Swiper>
           </div>
           <div className="slider__img md:w-1/2 flex justify-center">
-            <img src={testimonial.imgUrl} alt="testimonial_image" className="w-1/2" />
+            <img src={testimonials.imgUrl} alt="testimonial_image" className="w-1/2" />
           </div>
         </div>
       </div>

@@ -21,7 +21,7 @@ const Footer6 = () => {
             <div>
               {footer.infoLinks.content.map((item, index) => (
                 <div key={index} className="link__item my-3">
-                  <a href="#links">{item}</a>
+                  <a href="">{item}</a>
                 </div>
               ))}
             </div>
@@ -39,9 +39,9 @@ const Footer6 = () => {
           </div>
 
           <div className="footer__links">
-            <h5 className="footer__link-title">{footer.contact.title}</h5>
+            <h5 className="footer__link-title">Contact</h5>
             <div>
-              {footer.contact.content.map((item) => (
+              {footer.contact.map((item) => (
                 <div className="link__item  flex items-center gap-3 my-3">
                   <img src={item.icon} alt="" className="ico" />
                   {item.title}
