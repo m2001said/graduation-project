@@ -2,7 +2,7 @@ import React from "react";
 import "../assets/css/globals16.css";
 import Navbar16 from "../components/sections/navbars/navbar16/Navbar16";
 import Hero16 from "../components/sections/heros/hero16/Hero16";
-import About16 from "../components/sections/about/About16";
+import About16 from "../components/sections/abouts/about16/About16";
 import Feature16 from "../components/sections/features/feature16/Feature16";
 import Gallery16 from "../components/sections/gallery/Gallery16";
 import Menu16 from "../components/sections/menu/Menu16";

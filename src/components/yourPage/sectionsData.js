@@ -43,7 +43,7 @@ export const navData = createData('Navbar', [
   { id: 5, imgUrl: nav5 },
   { id: 6, imgUrl: nav6 },
   { id: 7, imgUrl: nav7 },
-  // { id: 8, imgUrl: nav8 },
+  { id: 8, imgUrl: nav8 },
   // { id: 10, imgUrl: nav10 },
   // { id: 14, imgUrl: nav14 },
   // { id: 16, imgUrl: nav16 },
@@ -58,7 +58,7 @@ export const heroData = createData('Hero', [
   { id: 5, imgUrl: hero5 },
   { id: 6, imgUrl: hero6 },
   { id: 7, imgUrl: hero7 },
-  // { id: 8, imgUrl: hero8 },
+  { id: 8, imgUrl: hero8 },
   // { id: 10, imgUrl: hero10 },
   // { id: 11, imgUrl: hero11 },
   // { id: 14, imgUrl: hero14 },
@@ -115,6 +115,11 @@ export const ctaData = createData('Cta', [
   // { id: 11, imgUrl: "cta11.png" }
 ]);
 
+export const aboutData = createData('About', [
+  { id: 8, imgUrl: "about8.png" },
+  // { id: 16, imgUrl: "about16.png" },
+]);
+
 export const footerData = createData('Footer', [
   { id: 1, imgUrl: "footer1.png" },
   { id: 2, imgUrl: "footer2.png" },
@@ -159,6 +164,7 @@ export const statisticData = createData('Statistic', [
 
 export const itemData = createData('Item', [
   { id: 1, imgUrl: "item1.png" },
+  { id: 8, imgUrl: "item8.png" },
   // { id: 14, imgUrl: "item14.png" }
 ]);
 
