@@ -44,7 +44,7 @@ export const navData = createData('Navbar', [
   { id: 6, imgUrl: nav6 },
   { id: 7, imgUrl: nav7 },
   { id: 8, imgUrl: nav8 },
-  // { id: 10, imgUrl: nav10 },
+  { id: 10, imgUrl: nav10 },
   // { id: 14, imgUrl: nav14 },
   // { id: 16, imgUrl: nav16 },
   // { id: 18, imgUrl: nav18 }
@@ -59,7 +59,7 @@ export const heroData = createData('Hero', [
   { id: 6, imgUrl: hero6 },
   { id: 7, imgUrl: hero7 },
   { id: 8, imgUrl: hero8 },
-  // { id: 10, imgUrl: hero10 },
+  { id: 10, imgUrl: hero10 },
   // { id: 11, imgUrl: hero11 },
   // { id: 14, imgUrl: hero14 },
   // { id: 16, imgUrl: hero16 },
@@ -76,7 +76,7 @@ export const featureData = createData('Feature', [
   { id: 7, imgUrl: "feature7.png" },
   { id: 72, imgUrl: "feature7.png" },
   { id: 73, imgUrl: "feature7.png" },
-  // { id: 10, imgUrl: "feature10.png" },
+  { id: 10, imgUrl: "feature10.png" },
   // { id: 14, imgUrl: "feature14.png" }
 ]);
 
@@ -93,7 +93,7 @@ export const serviceData = createData('Service', [
   { id: 1, imgUrl: "service1.png" },
   { id: 2, imgUrl: "service2.png" },
   { id: 5, imgUrl: "service5.png" },
-  // { id: 10, imgUrl: "service10.png" },
+  { id: 10, imgUrl: "service10.png" },
   // { id: 11, imgUrl: "service11.png" },
   // { id: 14, imgUrl: "service14.png" }
 ]);
@@ -111,7 +111,7 @@ export const ctaData = createData('Cta', [
   { id: 5, imgUrl: "cta5.png" },
   { id: 6, imgUrl: "cta6.png" },
   { id: 7, imgUrl: "cta7.png" },
-  // { id: 10, imgUrl: "cta10.png" },
+  { id: 10, imgUrl: "cta10.png" },
   // { id: 11, imgUrl: "cta11.png" }
 ]);
 
@@ -128,7 +128,7 @@ export const footerData = createData('Footer', [
   { id: 5, imgUrl: "footer5.png" },
   { id: 6, imgUrl: "footer6.png" },
   { id: 7, imgUrl: "footer7.png" },
-  // { id: 10, imgUrl: "footer10.png" },
+  { id: 10, imgUrl: "footer10.png" },
   // { id: 11, imgUrl: "footer11.png" },
   // { id: 14, imgUrl: "footer14.png" }
 ]);
@@ -154,7 +154,7 @@ export const pricingData = createData('Pricing', [
 export const teamData = createData('Team', [
   { id: 1, imgUrl: "team1.png" },
   { id: 5, imgUrl: "team5.png" },
-  // { id: 10, imgUrl: "team10.png" }
+  { id: 10, imgUrl: "team10.png" }
 ]);
 
 export const statisticData = createData('Statistic', [
@@ -173,7 +173,7 @@ export const filterItemData = createData('FilterItem', [
 ]);
 
 export const orderPopupData = createData('OrderPopup', [
-  // { id: 10, imgUrl: "orderPopup10.png" },
+  { id: 10, imgUrl: "orderPopup10.png" },
   // { id: 14, imgUrl: "orderPopup14.png" }
 ]);
 
@@ -184,7 +184,7 @@ export const testimonialData = createData('Testimonial', [
   { id: 3, imgUrl: "testimonial3.png" },
   { id: 6, imgUrl: "testimonial6.png" },
   { id: 7, imgUrl: "testimonial7.png" },
-  // { id: 10, imgUrl: "testimonial10.png" },
+  { id: 10, imgUrl: "testimonial10.png" },
   // { id: 11, imgUrl: "testimonial11.png" }
 ]);
 
