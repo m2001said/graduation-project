@@ -8,7 +8,7 @@ import Project15 from "../components/sections/projects/project15/Project15";
 import Cta15 from "../components/sections/ctas/cta15/Cta15";
 import Testimonials15 from "../components/sections/testimonials/testimonials15/Testimonials15";
 import Pricing15 from "../components/sections/pricings/pricing15/Pricing15";
-import Blog15 from "../components/sections/footers/footer15/Blog15";
+import Footer152 from "../components/sections/footers/footer152/Footer152";
 import Contact15 from "../components/sections/contacts/contact15/Contact15";
 import Footer15 from "../components/sections/footers/footer15/Footer15";
 
@@ -19,11 +19,13 @@ const TrialDesign15 = () => {
       <Hero15 />
       <Services15 />
       <Feature15 />
+
       <Project15 />
       <Cta15 />
       <Testimonials15 />
       <Pricing15 />
-      <Blog15 />
+      
+      <Footer152 />
       <Contact15 />
       <Footer15 />
     </div>
