@@ -46,7 +46,7 @@ export const navData = createData('Navbar', [
   { id: 8, imgUrl: nav8 },
   { id: 10, imgUrl: nav10 },
   { id: 11, imgUrl: "nav11" },
-  // { id: 14, imgUrl: nav14 },
+  { id: 14, imgUrl: nav14 },
   // { id: 16, imgUrl: nav16 },
   // { id: 18, imgUrl: nav18 }
 ]);
@@ -62,7 +62,7 @@ export const heroData = createData('Hero', [
   { id: 8, imgUrl: hero8 },
   { id: 10, imgUrl: hero10 },
   { id: 11, imgUrl: hero11 },
-  // { id: 14, imgUrl: hero14 },
+  { id: 14, imgUrl: hero14 },
   // { id: 16, imgUrl: hero16 },
   // { id: 18, imgUrl: hero18 }
 ]);
@@ -78,7 +78,7 @@ export const featureData = createData('Feature', [
   { id: 72, imgUrl: "feature7.png" },
   { id: 73, imgUrl: "feature7.png" },
   { id: 10, imgUrl: "feature10.png" },
-  // { id: 14, imgUrl: "feature14.png" }
+  //{ id: 14, imgUrl: "feature14.png" }
 ]);
 
 export const projectData = createData('Project', [
@@ -87,7 +87,8 @@ export const projectData = createData('Project', [
   { id: 3, imgUrl: "project3.png" },
   { id: 4, imgUrl: "project4.png" },
   { id: 11, imgUrl: "project11.png" },
-  // { id: 14, imgUrl: "project14.png" }
+  { id: 14, imgUrl: "project14.png" },
+  { id: 21, imgUrl: "project21.png" },
 ]);
 
 export const serviceData = createData('Service', [
@@ -97,7 +98,7 @@ export const serviceData = createData('Service', [
   { id: 10, imgUrl: "service10.png" },
   { id: 11, imgUrl: "service11.png" },
   { id: 112, imgUrl: "service112.png" },
-  // { id: 14, imgUrl: "service14.png" }
+  { id: 14, imgUrl: "service14.png" }
 ]);
 
 export const contactData = createData('Contact', [
@@ -132,15 +133,12 @@ export const footerData = createData('Footer', [
   { id: 7, imgUrl: "footer7.png" },
   { id: 10, imgUrl: "footer10.png" },
   { id: 11, imgUrl: "footer11.png" },
-  // { id: 14, imgUrl: "footer14.png" }
+  { id: 14, imgUrl: "footer14.png" }
 ]);
-
-
-
 
 export const logoData = createData('Logo', [
   { id: 1, imgUrl: "logo1.png" },
-  // { id: 14, imgUrl: "logo14.png" }
+  { id: 14, imgUrl: "logo14.png" }
 ]);
 
 export const pricingData = createData('Pricing', [
@@ -167,7 +165,7 @@ export const statisticData = createData('Statistic', [
 export const itemData = createData('Item', [
   { id: 1, imgUrl: "item1.png" },
   { id: 8, imgUrl: "item8.png" },
-  // { id: 14, imgUrl: "item14.png" }
+  { id: 14, imgUrl: "item14.png" }
 ]);
 
 export const filterItemData = createData('FilterItem', [
@@ -176,7 +174,7 @@ export const filterItemData = createData('FilterItem', [
 
 export const orderPopupData = createData('OrderPopup', [
   { id: 10, imgUrl: "orderPopup10.png" },
-  // { id: 14, imgUrl: "orderPopup14.png" }
+  { id: 14, imgUrl: "orderPopup14.png" }
 ]);
 
 
