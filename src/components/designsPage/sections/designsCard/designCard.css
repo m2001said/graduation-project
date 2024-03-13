@@ -38,10 +38,6 @@ h2.designs-title {
   border-right: solid 1px #22222247;
 }
 
-.design-btn:active {
-  transform: scale(0.95);
-}
-
 .button-container {
   border-top: solid 1px #22222247;
   margin-top: 15px;

@@ -4,8 +4,8 @@ import "./designCard.css";
 import BaseModal from "../../../mainPage/modal/BaseModal/BaseModal.jsx"
 import AiForm from "../../../mainPage/modal/aiForm/AiForm.jsx"
 import aiPoster from "../../../../assets/images/mainPageAssets/hero-min.svg"
-import preview from "../../../../assets/images/designs/Preview.svg"
-import build from "../../../../assets/images/designs/Build.svg"
+import preview from "../../../../assets/images/show.png"
+import build from "../../../../assets/images/build2.png"
 
 
 import Loader from "../../../Loader/Loader.jsx";
@@ -37,13 +37,13 @@ const DesignCard = ({ Designdata, index }) => {
           </div>
           <div className="button-container px-4 flex justify-between gap-4">
             <button className="flex justify-center gap-4 items-center w-full py-2 Build-button design-btn" onClick={() => toggleModal(index)}>
-            <span>Build</span>
-            <img src={build} alt="build-icon" className="btn-icon"/>
+              <span>Build</span>
+              <img src={build} alt="build-icon" className="btn-icon" />
             </button>
 
             <Link className="Preview-button flex justify-center gap-4 items-center  w-full py-2 design-btn" to={`/preview-trial-design${index}`}>
               <span>Preview</span>
-              <img src={preview} alt="preview-icon" className="btn-icon"/>
+              <img src={preview} alt="preview-icon" className="btn-icon" />
             </Link>
           </div>
         </div>
