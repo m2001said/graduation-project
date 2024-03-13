@@ -48,7 +48,7 @@ export const navData = createData('Navbar', [
   { id: 11, imgUrl: "nav11" },
   { id: 14, imgUrl: nav14 },
   { id: 16, imgUrl: nav16 },
-  // { id: 18, imgUrl: nav18 }
+  { id: 18, imgUrl: nav18 }
 ]);
 
 export const heroData = createData('Hero', [
@@ -64,7 +64,7 @@ export const heroData = createData('Hero', [
   { id: 11, imgUrl: hero11 },
   { id: 14, imgUrl: hero14 },
   { id: 16, imgUrl: hero16 },
-  // { id: 18, imgUrl: hero18 }
+  { id: 18, imgUrl: hero18 }
 ]);
 
 export const featureData = createData('Feature', [
@@ -79,6 +79,7 @@ export const featureData = createData('Feature', [
   { id: 73, imgUrl: "feature7.png" },
   { id: 10, imgUrl: "feature10.png" },
   { id: 16, imgUrl: "feature16.png" },
+  { id: 18, imgUrl: "feature18.png" },
   //{ id: 14, imgUrl: "feature14.png" }
 ]);
 
@@ -90,6 +91,7 @@ export const projectData = createData('Project', [
   { id: 11, imgUrl: "project11.png" },
   { id: 14, imgUrl: "project14.png" },
   { id: 21, imgUrl: "project21.png" },
+  { id: 18, imgUrl: "project18.png" },
 ]);
 
 export const serviceData = createData('Service', [
@@ -99,7 +101,8 @@ export const serviceData = createData('Service', [
   { id: 10, imgUrl: "service10.png" },
   { id: 11, imgUrl: "service11.png" },
   { id: 112, imgUrl: "service112.png" },
-  { id: 14, imgUrl: "service14.png" }
+  { id: 14, imgUrl: "service14.png" },
+  { id: 18, imgUrl: "service18.png" },
 ]);
 
 export const contactData = createData('Contact', [
@@ -116,7 +119,9 @@ export const ctaData = createData('Cta', [
   { id: 6, imgUrl: "cta6.png" },
   { id: 7, imgUrl: "cta7.png" },
   { id: 10, imgUrl: "cta10.png" },
-  { id: 11, imgUrl: "cta11.png" }
+  { id: 11, imgUrl: "cta11.png" },
+  { id: 18, imgUrl: "cta18.png" },
+  { id: 21, imgUrl: "cta21.png" },
 ]);
 
 export const aboutData = createData('About', [
@@ -136,6 +141,7 @@ export const footerData = createData('Footer', [
   { id: 11, imgUrl: "footer11.png" },
   { id: 14, imgUrl: "footer14.png" },
   { id: 16, imgUrl: "footer16.png" },
+  { id: 18, imgUrl: "footer18.png" },
 ]);
 
 export const logoData = createData('Logo', [
@@ -192,6 +198,7 @@ export const testimonialData = createData('Testimonial', [
   { id: 10, imgUrl: "testimonial10.png" },
   { id: 11, imgUrl: "testimonial11.png" },
   { id: 16, imgUrl: "testimonial16.png" },
+  { id: 18, imgUrl: "testimonial18.png" },
 ]);
 
 export const cartItemData = createData('CartItem', [
