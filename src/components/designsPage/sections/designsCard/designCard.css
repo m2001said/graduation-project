@@ -79,6 +79,7 @@ h2.designs-title {
 .designs-description {
   color: var(--discription-dark);
 }
-.design-card .button-container .btn-icon{
-  width: 32px;
+
+.design-card .button-container .btn-icon {
+  width: 20px;
 }
