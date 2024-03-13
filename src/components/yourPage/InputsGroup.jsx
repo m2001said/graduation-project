@@ -30,7 +30,7 @@ const InputOption = ({ item, section, handleIndexChange, selectedIndex }) => {
           checked={selectedOption === data.id}
           onChange={handleOptionChange}
         />
-        <label htmlFor={data.name} className={`${data.type}--section-poster-container `}>
+        <label htmlFor={data.name} className={`section--poster-container ${data.type}--section `}>
           <div className="check-icon">
             <img
               src="https://res.cloudinary.com/duc04fwdb/image/upload/v1708037268/jammal_photos/nme9bdbxqehtul4yzmd7.svg"
@@ -38,7 +38,7 @@ const InputOption = ({ item, section, handleIndexChange, selectedIndex }) => {
             />
           </div>
           <span className="section-id-num">{data.id}</span>
-          <img src={data.image} alt={`${data.type} Section ${data.id}`} className={`${data.type}--section-poster`} />
+          <img src={data.image} alt={`${data.type} Section ${data.id}`} className="section-poster" />
         </label>
       </div>
     ))
