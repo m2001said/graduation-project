@@ -17,6 +17,11 @@ import {
   orderPopupData,
   testimonialData,
   aboutData,
+  galleryData,
+  offerData,
+  reservationData,
+  menuData,
+  chooseData
 } from "./sectionsData";
 
 const sectionDataMap = {
@@ -38,6 +43,11 @@ const sectionDataMap = {
   'orderPopups': orderPopupData,
   'testimonials': testimonialData,
   'abouts': aboutData,
+  'gallerys': galleryData,
+  'offers': offerData,
+  'reservations': reservationData,
+  'menus': menuData,
+  'chooses': chooseData
 };
 
 export const getSectionData = (section) => sectionDataMap[section] || [];

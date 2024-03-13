@@ -47,7 +47,7 @@ export const navData = createData('Navbar', [
   { id: 10, imgUrl: nav10 },
   { id: 11, imgUrl: "nav11" },
   { id: 14, imgUrl: nav14 },
-  // { id: 16, imgUrl: nav16 },
+  { id: 16, imgUrl: nav16 },
   // { id: 18, imgUrl: nav18 }
 ]);
 
@@ -63,7 +63,7 @@ export const heroData = createData('Hero', [
   { id: 10, imgUrl: hero10 },
   { id: 11, imgUrl: hero11 },
   { id: 14, imgUrl: hero14 },
-  // { id: 16, imgUrl: hero16 },
+  { id: 16, imgUrl: hero16 },
   // { id: 18, imgUrl: hero18 }
 ]);
 
@@ -78,6 +78,7 @@ export const featureData = createData('Feature', [
   { id: 72, imgUrl: "feature7.png" },
   { id: 73, imgUrl: "feature7.png" },
   { id: 10, imgUrl: "feature10.png" },
+  { id: 16, imgUrl: "feature16.png" },
   //{ id: 14, imgUrl: "feature14.png" }
 ]);
 
@@ -120,7 +121,7 @@ export const ctaData = createData('Cta', [
 
 export const aboutData = createData('About', [
   { id: 8, imgUrl: "about8.png" },
-  // { id: 16, imgUrl: "about16.png" },
+  { id: 16, imgUrl: "about16.png" },
 ]);
 
 export const footerData = createData('Footer', [
@@ -133,7 +134,8 @@ export const footerData = createData('Footer', [
   { id: 7, imgUrl: "footer7.png" },
   { id: 10, imgUrl: "footer10.png" },
   { id: 11, imgUrl: "footer11.png" },
-  { id: 14, imgUrl: "footer14.png" }
+  { id: 14, imgUrl: "footer14.png" },
+  { id: 16, imgUrl: "footer16.png" },
 ]);
 
 export const logoData = createData('Logo', [
@@ -154,12 +156,15 @@ export const pricingData = createData('Pricing', [
 export const teamData = createData('Team', [
   { id: 1, imgUrl: "team1.png" },
   { id: 5, imgUrl: "team5.png" },
-  { id: 10, imgUrl: "team10.png" }
+  { id: 10, imgUrl: "team10.png" },
+  { id: 16, imgUrl: "team16.png" },
 ]);
 
 export const statisticData = createData('Statistic', [
   { id: 1, imgUrl: "statistic1.png" },
-  { id: 7, imgUrl: "statistic7.png" }
+  { id: 7, imgUrl: "statistic7.png" },
+  { id: 16, imgUrl: "statistic16.png" }
+
 ]);
 
 export const itemData = createData('Item', [
@@ -185,9 +190,31 @@ export const testimonialData = createData('Testimonial', [
   { id: 6, imgUrl: "testimonial6.png" },
   { id: 7, imgUrl: "testimonial7.png" },
   { id: 10, imgUrl: "testimonial10.png" },
-  { id: 11, imgUrl: "testimonial11.png" }
+  { id: 11, imgUrl: "testimonial11.png" },
+  { id: 16, imgUrl: "testimonial16.png" },
 ]);
 
 export const cartItemData = createData('CartItem', [
   { id: 6, imgUrl: "cartItem6.png" }
 ]);
+
+export const galleryData = createData('Gallery', [
+  { id: 16, imgUrl: "gallery16.png" }
+]);
+
+export const offerData = createData('Offer', [
+  { id: 16, imgUrl: "offer16.png" }
+]);
+
+export const reservationData = createData('Reservation', [
+  { id: 16, imgUrl: "reservation16.png" }
+]);
+
+export const menuData = createData('Menu', [
+  { id: 16, imgUrl: "menu16.png" }
+]);
+
+export const chooseData = createData('Choose', [
+  { id: 16, imgUrl: "choose16.png" }
+]);
+

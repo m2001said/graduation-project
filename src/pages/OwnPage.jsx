@@ -31,14 +31,14 @@ const OwnPage = () => {
 
   const sectionNames = [
     'navbars', 'heros', 'features', 'abouts', 'projects', 'services', 'contacts', 'teams',
-    'testimonials', 'statistics', 'logos', 'items', 'cartItems', 'filterItems',
-    'orderPopups', 'pricings', 'ctas', 'footers',
+    'testimonials', 'statistics', 'logos', 'items', 'gallerys', 'offers', 'reservations', 'menus', 'cartItems', 'filterItems',
+    'orderPopups', 'chooses', 'pricings', 'ctas', 'footers',
   ];
   // Define the list of section types
   const sectionTypes = [
     'navbar', 'hero', 'feature', 'about', 'project', 'service', 'contact', 'team',
-    'testimonial', 'statistic', 'logo', 'item', 'cartItem', 'filterItem',
-    'orderPopup', 'pricing', 'cta', 'footer',
+    'testimonial', 'statistic', 'logo', 'item', 'gallery', 'offer', 'reservation', 'menu', 'cartItem', 'filterItem',
+    'orderPopup', 'choose', 'pricing', 'cta', 'footer',
   ];
 
   return (
