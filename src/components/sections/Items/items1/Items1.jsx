@@ -1,11 +1,20 @@
 import React from "react";
 import "./items1.css";
 import {useSelector} from 'react-redux'
+import { useLocation } from "react-router";
 
 
 
 const Items1 = () => {
-  const { items } = useSelector((state) => state.template1);
+  // const { items } = useSelector((state) => state.template1);
+  const { pathname } = useLocation();
+  const items = useSelector((state) => {
+    if (pathname.includes("own-page")) {
+      return state.ownTemplate.items;
+    } else {
+      return state.template1.items;
+    }
+  });
 
   return (
     <div className="items1 design-1">

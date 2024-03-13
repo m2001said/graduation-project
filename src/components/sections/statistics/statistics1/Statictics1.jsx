@@ -1,11 +1,19 @@
 import React, { useEffect, useState } from 'react';
 import './statictics1.css';
 import {useSelector} from 'react-redux'
+import { useLocation } from 'react-router';
 
 
 const Statictics1 = () => {
-  const { statistics } = useSelector((state) => state.template1);
-  const statistic = statistics;
+  // const { statistics } = useSelector((state) => state.template1);
+  const { pathname } = useLocation();
+  const statistic = useSelector((state) => {
+    if (pathname.includes("own-page")) {
+      return state.ownTemplate.statistics;
+    } else {
+      return state.template1.statistics;
+    }
+  });
 
   const [started, setStarted] = useState(true);
 

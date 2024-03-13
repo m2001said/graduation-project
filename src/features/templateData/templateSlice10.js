@@ -233,7 +233,7 @@ const templateSlice10 = createSlice({
     order: {
       title: "Order Your Book",
       icon: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707791435/icons8-x-24_jske7f.png",
-      buttonText: "Order Now",
+      buttonText: "Order Now sds",
     },
 
     colors: {

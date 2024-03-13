@@ -42,7 +42,7 @@ function App() {
           {trialDesignComponents.map((Component, index) => (
             <Route key={`preview-trial-design${index}`} path={`/preview-trial-design${index + 1}`} element={<Component />} />
           ))}
-          <Route element={<Dashboard />}>
+          <Route element={<Dashboard/>}>
             {trialDesignComponents.map((Component, index) => (
               <Route key={`build-trial-design${index}`} path={`/build-trial-design${index + 1}`} element={<Component />} />
             ))}

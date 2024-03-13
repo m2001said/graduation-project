@@ -1,9 +1,18 @@
 import React, { useState, useEffect } from "react";
 import "./teams1.css";
 import { useSelector } from "react-redux";
+import { useLocation } from "react-router";
 
 const Teams1 = () => {
-  const { team } = useSelector((state) => state.template1);
+  // const { team } = useSelector((state) => state.template1);
+  const { pathname } = useLocation();
+  const team = useSelector((state) => {
+    if (pathname.includes("own-page")) {
+      return state.ownTemplate.team;
+    } else {
+      return state.template1.team;
+    }
+  });
   const [selectedMember, setSelectedMember] = useState(null);
 
   const handleCardClick = (member) => {

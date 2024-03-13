@@ -1,10 +1,18 @@
 import React from "react";
 import { useSelector } from "react-redux";
 import "./logos.css";
+import { useLocation } from "react-router";
 
 const Logos1 = () => {
-  const { logos } = useSelector((state) => state.template1);
-
+  // const { logos } = useSelector((state) => state.template1);
+  const { pathname } = useLocation();
+  const logos = useSelector((state) => {
+    if (pathname.includes("own-page")) {
+      return state.ownTemplate.logos;
+    } else {
+      return state.template1.logos;
+    }
+  });
   return (
     <div className="logos-1">
       {logos.companies.map((logo, index) => (

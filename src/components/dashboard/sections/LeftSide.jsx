@@ -8,9 +8,28 @@ const LeftSide = ({ targetTemplate, updateAllRef }) => {
     setShowLeftSide(!showLeftSide);
   };
 
-  // const template = useSelector((state) => state.template6);
   const sections = Object.keys(targetTemplate);
-
+  sections.sort((a, b) => {
+    if (a === 'navbar') {
+      return -1; // 'navbar' comes before anything else
+    }
+    if (b === 'navbar') {
+      return 1; // Anything else comes after 'navbar'
+    }
+    if (a === 'hero') {
+      return -1; // 'hero' comes before anything else except 'navbar'
+    }
+    if (b === 'hero') {
+      return 1; // Anything else comes after 'hero' except 'navbar'
+    }
+    if (a === 'footer') {
+      return 1; // 'footer' comes after anything else
+    }
+    if (b === 'footer') {
+      return -1; // Anything else comes before 'footer'
+    }
+    return 0; // No change if both are the same or not 'navbar', 'hero', or 'footer'
+  });
   return showLeftSide ? (
     <div className="max-md:w-full flex-auto w-60 pb-6 bg-white md:overflow-y-auto md:overflow-x-hidden dashboard-subContainer" style={{ minWidth: "250px" }}>
       <div className="update-controller">

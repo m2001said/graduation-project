@@ -1,9 +1,18 @@
 import React from "react";
 import "./footer1.css";
 import { useSelector } from "react-redux";
+import { useLocation } from "react-router";
 
 const Footer = () => {
-  const { footer } = useSelector((state) => state.template1);
+  // const { footer } = useSelector((state) => state.template1);
+  const { pathname } = useLocation();
+  const footer = useSelector((state) => {
+    if (pathname.includes("own-page")) {
+      return state.ownTemplate.footer;
+    } else {
+      return state.template1.footer;
+    }
+  });
   const contactInfo = Object.keys(footer.contact);
   return (
     <div className="footer1 design-1">
