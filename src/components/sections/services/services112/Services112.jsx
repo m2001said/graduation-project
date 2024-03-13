@@ -1,5 +1,5 @@
 import React from "react";
-import "../services11_2/services11_2.css";
+import "./services112.css";
 import { useSelector } from "react-redux";
 
 const Services11_2 = () => {

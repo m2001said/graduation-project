@@ -45,6 +45,7 @@ export const navData = createData('Navbar', [
   { id: 7, imgUrl: nav7 },
   { id: 8, imgUrl: nav8 },
   { id: 10, imgUrl: nav10 },
+  { id: 11, imgUrl: "nav11" },
   // { id: 14, imgUrl: nav14 },
   // { id: 16, imgUrl: nav16 },
   // { id: 18, imgUrl: nav18 }
@@ -60,7 +61,7 @@ export const heroData = createData('Hero', [
   { id: 7, imgUrl: hero7 },
   { id: 8, imgUrl: hero8 },
   { id: 10, imgUrl: hero10 },
-  // { id: 11, imgUrl: hero11 },
+  { id: 11, imgUrl: hero11 },
   // { id: 14, imgUrl: hero14 },
   // { id: 16, imgUrl: hero16 },
   // { id: 18, imgUrl: hero18 }
@@ -85,7 +86,7 @@ export const projectData = createData('Project', [
   { id: 2, imgUrl: "project2.png" },
   { id: 3, imgUrl: "project3.png" },
   { id: 4, imgUrl: "project4.png" },
-  // { id: 11, imgUrl: "project11.png" },
+  { id: 11, imgUrl: "project11.png" },
   // { id: 14, imgUrl: "project14.png" }
 ]);
 
@@ -94,14 +95,15 @@ export const serviceData = createData('Service', [
   { id: 2, imgUrl: "service2.png" },
   { id: 5, imgUrl: "service5.png" },
   { id: 10, imgUrl: "service10.png" },
-  // { id: 11, imgUrl: "service11.png" },
+  { id: 11, imgUrl: "service11.png" },
+  { id: 112, imgUrl: "service112.png" },
   // { id: 14, imgUrl: "service14.png" }
 ]);
 
 export const contactData = createData('Contact', [
   { id: 2, imgUrl: "contact2.png" },
   { id: 4, imgUrl: "contact4.png" },
-  // { id: 11, imgUrl: "contact11.png" }
+  { id: 11, imgUrl: "contact11.png" }
 ]);
 
 export const ctaData = createData('Cta', [
@@ -112,7 +114,7 @@ export const ctaData = createData('Cta', [
   { id: 6, imgUrl: "cta6.png" },
   { id: 7, imgUrl: "cta7.png" },
   { id: 10, imgUrl: "cta10.png" },
-  // { id: 11, imgUrl: "cta11.png" }
+  { id: 11, imgUrl: "cta11.png" }
 ]);
 
 export const aboutData = createData('About', [
@@ -129,7 +131,7 @@ export const footerData = createData('Footer', [
   { id: 6, imgUrl: "footer6.png" },
   { id: 7, imgUrl: "footer7.png" },
   { id: 10, imgUrl: "footer10.png" },
-  // { id: 11, imgUrl: "footer11.png" },
+  { id: 11, imgUrl: "footer11.png" },
   // { id: 14, imgUrl: "footer14.png" }
 ]);
 
@@ -146,7 +148,7 @@ export const pricingData = createData('Pricing', [
   { id: 3, imgUrl: "pricing3.png" },
   // { id: 6, imgUrl: "pricing6.png" },
   { id: 7, imgUrl: "pricing7.png" },
-  // { id: 11, imgUrl: "pricing11.png" }
+  { id: 11, imgUrl: "pricing11.png" }
 ]);
 
 
@@ -185,7 +187,7 @@ export const testimonialData = createData('Testimonial', [
   { id: 6, imgUrl: "testimonial6.png" },
   { id: 7, imgUrl: "testimonial7.png" },
   { id: 10, imgUrl: "testimonial10.png" },
-  // { id: 11, imgUrl: "testimonial11.png" }
+  { id: 11, imgUrl: "testimonial11.png" }
 ]);
 
 export const cartItemData = createData('CartItem', [

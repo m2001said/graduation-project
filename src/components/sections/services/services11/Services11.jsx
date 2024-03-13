@@ -1,5 +1,5 @@
 import React from "react";
-import "../services11_1/services11_1.css";
+import "./services11.css";
 import ServicesBox11 from "./ServicesBox11_1";
 import { useSelector } from "react-redux";
 
