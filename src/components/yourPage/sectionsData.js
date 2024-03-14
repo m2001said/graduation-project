@@ -46,6 +46,7 @@ export const navData = createData('Navbar', [
   { id: 8, imgUrl: nav8 },
   { id: 10, imgUrl: nav10 },
   { id: 11, imgUrl: "nav11" },
+  { id: 13, imgUrl: "nav13" },
   { id: 14, imgUrl: nav14 },
   { id: 15, imgUrl: "nav15" },
   { id: 16, imgUrl: nav16 },
@@ -64,6 +65,7 @@ export const heroData = createData('Hero', [
   { id: 9, imgUrl: "hero9" },
   { id: 10, imgUrl: hero10 },
   { id: 11, imgUrl: hero11 },
+  { id: 13, imgUrl: "hero13" },
   { id: 14, imgUrl: hero14 },
   { id: 15, imgUrl: "hero15" },
   { id: 16, imgUrl: hero16 },
@@ -94,6 +96,7 @@ export const projectData = createData('Project', [
   { id: 3, imgUrl: "project3.png" },
   { id: 4, imgUrl: "project4.png" },
   { id: 11, imgUrl: "project11.png" },
+  { id: 13, imgUrl: "project13.png" },
   { id: 14, imgUrl: "project14.png" },
   { id: 15, imgUrl: "project15.png" },
   { id: 21, imgUrl: "project21.png" },
@@ -138,6 +141,7 @@ export const ctaData = createData('Cta', [
 export const aboutData = createData('About', [
   { id: 8, imgUrl: "about8.png" },
   { id: 9, imgUrl: "about9.png" },
+  { id: 13, imgUrl: "about13.png" },
   { id: 16, imgUrl: "about16.png" },
 ]);
 
@@ -152,6 +156,7 @@ export const footerData = createData('Footer', [
   { id: 9, imgUrl: "footer9.png" },
   { id: 10, imgUrl: "footer10.png" },
   { id: 11, imgUrl: "footer11.png" },
+  { id: 13, imgUrl: "footer13.png" },
   { id: 14, imgUrl: "footer14.png" },
   { id: 15, imgUrl: "footer15.png" },
   { id: 152, imgUrl: "footer152.png" },
@@ -216,6 +221,7 @@ export const testimonialData = createData('Testimonial', [
   { id: 9, imgUrl: "testimonial9.png" },
   { id: 10, imgUrl: "testimonial10.png" },
   { id: 11, imgUrl: "testimonial11.png" },
+  { id: 13, imgUrl: "testimonial13.png" },
   { id: 15, imgUrl: "testimonial15.png" },
   { id: 16, imgUrl: "testimonial16.png" },
   { id: 18, imgUrl: "testimonial18.png" },

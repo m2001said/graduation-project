@@ -8,14 +8,16 @@ import Hero13 from "../components/sections/heros/hero13/Hero13";
 import Projects13 from "../components/sections/projects/projects13/Projects13";
 import Testimonials13 from "../components/sections/testimonials/testimonials13/Testimonials13";
 
-const TrialDesign2 = () => {
+const TrialDesign13 = () => {
   return (
     <div className="trialdesign13">
       <Navbar13 className="trialdesign13" />
       <main>
         <Hero13 className="trialdesign13" />
+
         <About13 className="trialdesign13" />
         <Testimonials13 className="trialdesign13" />
+
         <Projects13 className="trialdesign13" />
       </main>
       <Footer13 className="trialdesign13" />
@@ -23,4 +25,4 @@ const TrialDesign2 = () => {
   );
 };
 
-export default TrialDesign2;
+export default TrialDesign13;
