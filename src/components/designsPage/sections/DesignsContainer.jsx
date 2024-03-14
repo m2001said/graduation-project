@@ -9,8 +9,10 @@ import design5 from "../../../assets/images/designs/design5.jpg"
 import design6 from "../../../assets/images/designs/design6.jpg"
 import design7 from "../../../assets/images/designs/design7.jpg"
 import design8 from "../../../assets/images/designs/design8.jpg"
+import design9 from "../../../assets/images/designs/design9.jpg"
 import design10 from "../../../assets/images/designs/design10.jpg"
 import design11 from "../../../assets/images/designs/design11.jpg"
+import design13 from "../../../assets/images/designs/design13.jpg"
 import design14 from "../../../assets/images/designs/design14.jpg"
 import design16 from "../../../assets/images/designs/design16.jpg"
 import design18 from "../../../assets/images/designs/design18.jpg"
@@ -63,7 +65,7 @@ const DesignsData = [
   {
     title: "HomeHub",
     description: " Discover your dream home in an immersive and user-friendly e-commerce platform. ",
-    imageUrl: "https://res.cloudinary.com/dvp3nyulf/image/upload/v1709147870/under-work.jpg",
+    imageUrl: design9,
   },
   {
     title: "Bookstore Bliss",
@@ -83,7 +85,7 @@ const DesignsData = [
   {
     title: "Architecture Showcase",
     description: " Innovative portfolio highlighting architectural expertise and diverse, creative projects. ",
-    imageUrl: "https://res.cloudinary.com/dvp3nyulf/image/upload/v1709147870/under-work.jpg",
+    imageUrl: design13,
   },
   {
     title: "Gadget Store Hub",

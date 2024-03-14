@@ -61,6 +61,7 @@ export const heroData = createData('Hero', [
   { id: 6, imgUrl: hero6 },
   { id: 7, imgUrl: hero7 },
   { id: 8, imgUrl: hero8 },
+  { id: 9, imgUrl: "hero9" },
   { id: 10, imgUrl: hero10 },
   { id: 11, imgUrl: hero11 },
   { id: 14, imgUrl: hero14 },
@@ -77,8 +78,9 @@ export const featureData = createData('Feature', [
   { id: 21, imgUrl: "feature21.png" },
   { id: 6, imgUrl: "feature6.png" },
   { id: 7, imgUrl: "feature7.png" },
-  { id: 72, imgUrl: "feature7.png" },
-  { id: 73, imgUrl: "feature7.png" },
+  { id: 72, imgUrl: "feature72.png" },
+  { id: 73, imgUrl: "feature73.png" },
+  { id: 9, imgUrl: "feature9.png" },
   { id: 10, imgUrl: "feature10.png" },
   { id: 15, imgUrl: "feature15.png" },
   { id: 16, imgUrl: "feature16.png" },
@@ -102,6 +104,7 @@ export const serviceData = createData('Service', [
   { id: 1, imgUrl: "service1.png" },
   { id: 2, imgUrl: "service2.png" },
   { id: 5, imgUrl: "service5.png" },
+  { id: 9, imgUrl: "service9.png" },
   { id: 10, imgUrl: "service10.png" },
   { id: 11, imgUrl: "service11.png" },
   { id: 112, imgUrl: "service112.png" },
@@ -113,6 +116,7 @@ export const serviceData = createData('Service', [
 export const contactData = createData('Contact', [
   { id: 2, imgUrl: "contact2.png" },
   { id: 4, imgUrl: "contact4.png" },
+  { id: 9, imgUrl: "contact9.png" },
   { id: 11, imgUrl: "contact11.png" },
   { id: 15, imgUrl: "contact15.png" },
 ]);
@@ -133,6 +137,7 @@ export const ctaData = createData('Cta', [
 
 export const aboutData = createData('About', [
   { id: 8, imgUrl: "about8.png" },
+  { id: 9, imgUrl: "about9.png" },
   { id: 16, imgUrl: "about16.png" },
 ]);
 
@@ -144,6 +149,7 @@ export const footerData = createData('Footer', [
   { id: 5, imgUrl: "footer5.png" },
   { id: 6, imgUrl: "footer6.png" },
   { id: 7, imgUrl: "footer7.png" },
+  { id: 9, imgUrl: "footer9.png" },
   { id: 10, imgUrl: "footer10.png" },
   { id: 11, imgUrl: "footer11.png" },
   { id: 14, imgUrl: "footer14.png" },
@@ -163,6 +169,7 @@ export const pricingData = createData('Pricing', [
   { id: 3, imgUrl: "pricing3.png" },
   // { id: 6, imgUrl: "pricing6.png" },
   { id: 7, imgUrl: "pricing7.png" },
+  { id: 9, imgUrl: "pricing9.png" },
   { id: 11, imgUrl: "pricing11.png" },
   { id: 15, imgUrl: "pricing15.png" }
 ]);
@@ -172,6 +179,7 @@ export const pricingData = createData('Pricing', [
 export const teamData = createData('Team', [
   { id: 1, imgUrl: "team1.png" },
   { id: 5, imgUrl: "team5.png" },
+  { id: 9, imgUrl: "team9.png" },
   { id: 10, imgUrl: "team10.png" },
   { id: 16, imgUrl: "team16.png" },
 ]);
@@ -205,6 +213,7 @@ export const testimonialData = createData('Testimonial', [
   { id: 3, imgUrl: "testimonial3.png" },
   { id: 6, imgUrl: "testimonial6.png" },
   { id: 7, imgUrl: "testimonial7.png" },
+  { id: 9, imgUrl: "testimonial9.png" },
   { id: 10, imgUrl: "testimonial10.png" },
   { id: 11, imgUrl: "testimonial11.png" },
   { id: 15, imgUrl: "testimonial15.png" },
