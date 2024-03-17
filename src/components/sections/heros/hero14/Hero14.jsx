@@ -14,20 +14,20 @@ const Hero14 = ({ handleOrderPopup }) => {
   const { hero } = useSelector((state) => state.template14);
 
   return (
-    <div>
+    <div className="bg-white dark:bg-gray-900">
       <div className="container14">
         <div className="overflow-hidden rounded-3xl min-h-[550px] sm:min-h-[650px] hero14-bg-color flex justify-center items-center">
           <div className="container14 pb-8 sm:pb-0">
-            {/* hero sec */}
+            {/* hero section */}
             <Swiper
               spaceBetween={200}
-                pagination={{
-                  clickable: true,
-                }}
+              pagination={{
+                clickable: true,
+              }}
               modules={[Pagination]}
               className="mySwiper"
             >
-              {hero.blocks.map((data, index) => (
+              {hero.heros.map((data, index) => (
                 <SwiperSlide key={index}>
                   <div className="grid grid-cols-1 sm:grid-cols-2">
                     {/* text sec */}

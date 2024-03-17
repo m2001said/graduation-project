@@ -274,11 +274,11 @@ const templateSlice = createSlice({
           icon: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1709586475/Vector_urtrep.svg",
         },
         {
-          plan: "Complete interior",
+          plan: "Design advices",
           price: "39",
           timeUnit: "month",
           moneyUnit: "$",
-          PopularPlan: "Most Popular Plans",
+          // PopularPlan: "Most Popular Plans",
           features: ["Complete home redesign", "Interior and exterior works", "Modular interior planning", "Kitchen design", "Garages organization"],
           buttonText: "Get Started",
           icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701813389/templates/template_one/Vector_5_vvvt2o.svg",

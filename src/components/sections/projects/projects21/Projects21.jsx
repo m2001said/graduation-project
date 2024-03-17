@@ -7,7 +7,7 @@ const Projects21 = () => {
   const { projects2 } = useSelector((state) => state.template14);
 
   return (
-    <div className="my-12">
+    <div className="my-12 bg-white dark:bg-gray-900">
       <div className="container14">
         {/* head sec */}
         <div className="text-center mb-10 max-w-[600px] mx-auto space-y-2">
@@ -18,7 +18,7 @@ const Projects21 = () => {
         {/* body */}
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 gap-y-8 sm:gap-4 md:gap-7">
           {/* card seC */}
-          {projects2.cards.map((data) => (
+          {projects2.projects.map((data) => (
             <div key={data.title} className="bg-white dark:bg-gray-900">
               {/* img sec */}
               <div className="overflow-hidden rounded-2xl mb-2">

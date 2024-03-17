@@ -12,22 +12,22 @@
   --website-5-color-2: hsl(180, 17%, 95%);
   --website-5-color-3: hsl(15, 74%, 70%);
   --website-5-color-4: hsl(28, 100%, 82%);
-  --website-5-hover-1: hsl(255, 56%, 59%);
   --website-5-white: hsl(0, 0%, 100%);
-  --website-5-black: hsl(0, 0%, 12%);
-  --website-5-textColor: hsl(240, 1%, 48%);
-  --website-5-borderColor: hsl(0, 0%, 83%);
-  --website-5-whiteColorDeam: hsl(0, 0%, 93%);
-  --website-5-greyBg: hsl(0, 0%, 96%);
   --website-5-greyText: rgb(145, 145, 145);
-  --website-5-inputColor: hsl(330, 12%, 97%);
+
+  /* --website-5-black: hsl(0, 0%, 12%);   */
+  /* --website-5-textColor: hsl(240, 1%, 48%); */
+  /* --website-5-borderColor: hsl(0, 0%, 83%); */
+  /* --website-5-whiteColorDeam: hsl(0, 0%, 93%); */
+  /* --website-5-greyBg: hsl(0, 0%, 96%); */
+  /* --website-5-inputColor: hsl(330, 12%, 97%); */
   --boxShadow: box-shadow: rgb(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px ;
   --transition: .4s ease-in-out ;
   /* and add your */
 }
 
 .design5{
-  background: var(--website-5-white);
+  background:var(--website-5-white);
 }
 
 .design5-section {

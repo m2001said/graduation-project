@@ -8,7 +8,7 @@ const Feature10 = () => {
 
   return (
     <>
-      <div className="py-10">
+      <div className="py-10 bg-[--white10] dark:bg-gray-900">
         <div className="items-center py-6 px-10 sm:p-30">
           <div className="grid grid-cols-1 sm:grid-cols-2 items-center gap-6">
             {/* image sec */}
@@ -20,10 +20,10 @@ const Feature10 = () => {
               <h1 className="text-3xl sm:text-4xl font-bold">{feature.title}</h1>
               <p className="text-sm text-gray-500 tracking-wide leading-5">{feature.description} </p>
               <div className="flex flex-col gap-4">
-                {feature.blocks.map((data, index) => (
+                {feature.features.map((data, index) => (
                   <div className="flex items-center gap-4">
-                    <div className={`divIcon${index}`}>
-                      <img src={data.icon} alt="" className="w-6 rounded-full" />
+                    <div className={`feature10-divIcon`}>
+                      <img src={data.icon} alt="" className="w-full rounded-full" />
                     </div>
                     <p className="text-base font-sans">{data.text}</p>
                   </div>
