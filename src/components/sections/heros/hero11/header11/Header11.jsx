@@ -1,6 +1,5 @@
 import React from "react";
 import { useSelector } from "react-redux";
-import "../header11/header11.css";
 
 const Header11 = () => {
   const { hero } = useSelector((state) => state.template11);

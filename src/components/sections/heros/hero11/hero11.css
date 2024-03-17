@@ -15,10 +15,11 @@
   margin-bottom: 1.5rem;
   margin-left: 2.5rem;
 }
-.home11_name {
+.h1.home11_name {
   font-size: var(--h1-font-size);
   font-weight: var(--font-bold);
   margin-bottom: 0.5rem;
+  color: red;
 }
 .home11__socials {
   display: flex;
@@ -28,7 +29,7 @@
 }
 
 .home11__social-link {
-  color: var(--color5);
+  color: var(--color6);
   font-size: 1.3rem;
   transition: 0.3s;
 }
