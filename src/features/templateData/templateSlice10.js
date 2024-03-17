@@ -34,7 +34,6 @@ const templateSlice10 = createSlice({
       defaultImage: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707067713/book1_a7epcd.jpg",
       defaultTitle: "His Life will forever be Changed",
       defaultDescription: "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-
       ImageList: [
         {
           imgNum: "1",
@@ -65,22 +64,24 @@ const templateSlice10 = createSlice({
       title: "Best Books",
       description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit Distinctio consectetur",
       starIcon: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707083776/Star_lqpaao.svg",
-      buttonText: "Order Now",
-      blocks: [
+      services: [
         {
           imgUrl: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707067713/book1_a7epcd.jpg",
           title: "His Life",
           description: "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+          buttonText: "Order Now",
         },
         {
           imgUrl: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707067750/book2_fjsnwn.jpg",
           title: "Who's there",
           description: "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+          buttonText: "Order Now",
         },
         {
           imgUrl: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707067757/book3_fkzdr7.jpg",
           title: "Lost Boy",
           description: "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+          buttonText: "Order Now",
         },
       ],
     },
@@ -89,17 +90,17 @@ const templateSlice10 = createSlice({
       imgUrl: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707084593/library_ww1bzg.jpg",
       title: "Library at your fingertips",
       description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque reiciendis inventore iste ratione ex alias quis magni at optio",
-      blocks: [
+      features: [
         {
-          icon: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707085438/icons8-secure-50_kclhuh.png",
+          icon: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1709902864/icons8-secure-50_yn2jxx.png",
           text: "Quality Books",
         },
         {
-          icon: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707085765/icons8-food-bar-48_ghpah5.png",
+          icon: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1709903151/icons8-food-truck-64_lr5ghp.png",
           text: "Fast Delivery",
         },
         {
-          icon: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707085773/icons8-food-truck-24_ollgew.png",
+          icon: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1709902985/icons8-fast-food-32_kjo9ui.png",
           text: "Easy Payment method",
         },
         {
@@ -116,11 +117,11 @@ const templateSlice10 = createSlice({
       PlayStoreImg: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707090481/play_store_nmzfln.png",
     },
 
-    teams: {
+    team: {
       smTitle: "Top Books for you",
       title: "Top Books",
       description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis delectus architecto error nesciunt",
-      cards: [
+      teams: [
         {
           imgUrl: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707067713/book1_a7epcd.jpg",
           title: "Who's there",
@@ -165,7 +166,7 @@ const templateSlice10 = createSlice({
       title: "Testimonial",
       description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis delectus architecto error nesciunt",
       mark: ",,",
-      cards: [
+      testimonials: [
         {
           id: 1,
           name: "Victor",
@@ -228,12 +229,6 @@ const templateSlice10 = createSlice({
           links: ["Home", "About", "Contact", "Blog"],
         },
       ],
-    },
-
-    order: {
-      title: "Order Your Book",
-      icon: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707791435/icons8-x-24_jske7f.png",
-      buttonText: "Order Now",
     },
 
     colors: {

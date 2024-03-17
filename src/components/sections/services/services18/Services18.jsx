@@ -8,13 +8,13 @@ const Services = () => {
   return (
     <>
       <span id="about"></span>
-      <div className="dark:bg-black dark:text-white py-14 sm:min-h-[600px] sm:grid sm:place-items-center">
+      <div className="bg-white dark:bg-black dark:text-white py-14 sm:min-h-[600px] sm:grid sm:place-items-center">
         <div className="container18">
           <div className="pb-12">
             <h1 className="text-3xl font-semibold text-center sm:text-4xl font-serif">{services.title}</h1>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
-            {services.blocks.map((data) => (
+            {services.services.map((data) => (
               <div
                 key={data.name}
                 className="card text-center group space-y-3 sm:space-y-6 p-4 sm:py-16 bg-[--dark18]  hover:bg-[--primary18-color] duration-300 text-white hover:text-black rounded-lg"
