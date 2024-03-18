@@ -10,11 +10,11 @@ const Hero11 = () => {
     <section className="home11 Container" id="home">
       <div className="intro11">
         <img src={hero.imgUrl} alt="" className="home11__img" />
-        <h1 className="home11__name">{hero.title1}</h1>
-        <span className="home11__eduction">{hero.title2}</span>
+        <h1 className="home11__name">{hero.title}</h1>
+        <span className="home11__eduction">{hero.subtitle}</span>
         <Header11 />
         <a href="#contact" className="btn11">
-          Hire Me
+          {hero.actionButton}
         </a>
         <ScorollDown11 />
       </div>

@@ -3,7 +3,8 @@ import { useSelector } from "react-redux";
 
 const Contact15 = () => {
   const { contact } = useSelector((state) => state.template15);
-  const Contact15_info = ({ imgUrl, title, sub_title }) => {
+
+  const ContactInfo = ({ title, sub_title, imgUrl }) => {
     return (
       <div className="flex lg:gap-x-10 pb-10">
         <span className="flex items-center w-fit">
@@ -21,46 +22,45 @@ const Contact15 = () => {
   };
 
   return (
-    <main className="pb-5 lg:py-52 py-16 px-3 " id="contact">
+    <main className="pb-5 lg:py-52 py-16 px-3 cont15 " id="contact">
       <div className="lg:flex flex-col items-center container max-w-[1300px] mx-auto">
-        <h1 className="sm:text-[44px] text-[26px] text-center m-0 cont15_1">{contact.title.title1}</h1>
+        <h1 className="sm:text-[44px] text-[26px] text-center m-0 cont15_1">{contact.titles.title}</h1>
         <p className="font-bold text-sm cont15_2 flex items-center justify-center text-center gap-x-4">
-          L{contact.title.title2} <span className="caveat text-3xl cont15_3">{contact.title.title3}</span>
+          {contact.titles.subtitle} <span className="caveat text-3xl cont15_3">{contact.titles.content}</span>
         </p>
         <div className="lg:flex xl:w-4/5 w-full xl:justify-normal justify-between mx-auto lg:pt-24">
           <section className="lg:pt-[60px] pt-8 xl:w-2/5">
             <div className="lg:block flex flex-wrap gap-x-4">
-              <Contact15_info title={contact.Contact15_info1.title} sub_title={contact.Contact15_info1.sub_title} imgUrl={contact.Contact15_info1.imgUrl} />
-              <Contact15_info title={contact.Contact15_info2.title} sub_title={contact.Contact15_info2.sub_title} imgUrl={contact.Contact15_info2.imgUrl} />
-              <Contact15_info title={contact.Contact15_info3.title} sub_title={contact.Contact15_info3.sub_title} imgUrl={contact.Contact15_info3.imgUrl} />
-              <Contact15_info title={contact.Contact15_info4.title} sub_title={contact.Contact15_info4.sub_title} imgUrl={contact.Contact15_info4.imgUrl} />
+              {contact.items.map((item, index) => (
+                <ContactInfo key={index} title={item.title} sub_title={item.sub_title} imgUrl={item.imgUrl} />
+              ))}
             </div>
           </section>
           <section className="xl:w-1/2">
             <form className="w-full">
               <div className="sm:flex gap-x-8 w-full mb-8">
                 <label className="flex flex-col w-full gap-4">
-                  <p className="pl-12  font-bold text-sm cont15_4">{contact.labels.label1}</p>
-                  <input type="text" className="rounded-full h-[60px] px-8 border border-black border-solid outline-none" />
+                  <p className="pl-12  font-bold text-sm cont15_4">{contact.labels.NAME}</p>
+                  <input type="text" className="rounded-full h-[60px] px-8 border border-white border-solid outline-none" />
                 </label>
 
                 <label className="flex flex-col w-full gap-4">
-                  <p className="pl-12  font-bold text-sm cont15_4">{contact.labels.label2}</p>
-                  <input type="email" className="rounded-full h-[60px] px-8 border border-black border-solid outline-none" />
+                  <p className="pl-12  font-bold text-sm cont15_4">{contact.labels.ADDRESS}</p>
+                  <input type="email" className="rounded-full h-[60px] px-8 border border-white border-solid outline-none" />
                 </label>
               </div>
               <label className="flex flex-col w-full gap-4">
-                <p className="pl-12 font-bold text-sm cont15_4">{contact.labels.label3}</p>
-                <input type="text" className="rounded-full h-[60px] px-8 border border-black border-solid outline-none" />
+                <p className="pl-12 font-bold text-sm cont15_4">{contact.labels.SUBJECT}</p>
+                <input type="text" className="rounded-full h-[60px] px-8 border border-white border-solid outline-none" />
               </label>
               <label className="flex flex-col w-full gap-4">
-                <p className="pl-12  font-bold text-sm cont15_4">{contact.labels.label4}</p>
-                <textarea className="rounded-[30px] p-8 h-[140px] resize-none border-black border-solid outline-none" />
+                <p className="pl-12  font-bold text-sm cont15_4">{contact.labels.MESSAGE}</p>
+                <textarea className="rounded-[30px] p-8 h-[140px] resize-none border-white border-solid outline-none" />
               </label>
               <div className="flex sm:flex-row flex-col sm:items-center items-end justify-end gap-8">
                 <span className="block rounded-full h-14 border border-black border-solid shadowbtn ">
                   <button className="  h-full font-bold px-10 rounded-full border-2 border-solid border-transparent cont15_5 cont15_6 hover:text-white">
-                    {contact.btn_text.btn1}
+                    {contact.actionButton}
                   </button>
                 </span>
               </div>

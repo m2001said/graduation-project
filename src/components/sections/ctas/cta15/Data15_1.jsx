@@ -1,13 +1,13 @@
 import React from "react";
-import SingleItem from "./SingleItem";
 import { useSelector } from "react-redux";
+import SingleItem from "./SingleItem";
 
 export const Education = () => {
   const { cta } = useSelector((state) => state.template15);
 
   return (
     <div>
-      {cta.cv
+      {cta.items
         .filter((item) => item.category === "education")
         .map((item) => (
           <SingleItem key={item.id} {...item} />
@@ -21,7 +21,7 @@ export const Experience = () => {
 
   return (
     <div>
-      {cta.cv
+      {cta.items
         .filter((item) => item.category === "experience")
         .map((item) => (
           <SingleItem key={item.id} {...item} />
