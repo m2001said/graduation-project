@@ -45,7 +45,7 @@ const templateSlice18 = createSlice({
     },
     services: {
       title: "Why Choose Us",
-      blocks: [
+      services: [
         {
           name: "Best Price",
           icon: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1708095320/icons8-compact-camera-24_sbvw3e.png",
@@ -73,7 +73,7 @@ const templateSlice18 = createSlice({
     projects: {
       title: "Lorem ipsum dolor",
       description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor iure nemo ab?",
-      cards: [
+      projects: [
         {
           name: "BMW UX",
           price: "$100/Day",
@@ -102,7 +102,7 @@ const templateSlice18 = createSlice({
     testimonial: {
       title: "What Our Clients Say About Us",
       description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis iure consectetur tempora amet.",
-      cards: [
+      testimonials: [
         {
           name: "Dilshad",
           star: "⭐⭐⭐⭐⭐",

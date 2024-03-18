@@ -11,26 +11,31 @@
   list-style: none;
   display: flex;
   gap: 6rem;
-  color: white;
+  color: var(--color11);
 }
 .navbar3-menu > li {
   cursor: pointer;
 }
 .navbar3-menu > li:hover {
   cursor: pointer;
-  color: orange;
+  color: var(--color7);
+}
+.menu-icon {
+  width: 30px;
+  height: 20px;
+  position: fixed;
 }
 /* res mobile */
 @media screen and (max-width: 768px) {
   .navbar3 > :nth-child(2) {
     position: fixed;
-    right: 2rem;
+    right: 1rem;
     z-index: 2;
   }
   .navbar3-menu {
     flex-direction: column;
-    background: var(--appColor3);
     padding: 2rem;
-    position: relative;
+    position: fixed;
+    right: 1rem;
   }
 }

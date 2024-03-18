@@ -11,7 +11,7 @@
 .teams5-mainSectiom h2{
     font-size: 25px;
     padding: 1rem 0;
-    color: var(--website-5-black);
+    /* color: var(--website-5-black); */
 }
 
 .teams5-travelersCards{
@@ -87,7 +87,7 @@
 .travelerName span{
     display: block;
     font-weight: 700;
-    color: var(--website-5-black);
+    /* color: var(--website-5-black); */
 }
 
 .travelerName p{

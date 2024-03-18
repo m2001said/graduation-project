@@ -1,10 +1,16 @@
 import React from "react";
-import { useSelector } from "react-redux";
+// import { useSelector } from "react-redux";
+
+ const order = {
+   title: "Order Now",
+   icon: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707791435/icons8-x-24_jske7f.png",
+   buttonText: "Order Now",
+ };
 
 
 const Popup14 = ({ orderPopup, handleOrderPopup }) => {
 
-  const { order } = useSelector((state) => state.template14);
+  // const { order } = useSelector((state) => state.template14);
 
   return (
     <>

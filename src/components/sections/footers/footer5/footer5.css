@@ -35,7 +35,7 @@
     height: 50px;
     width: 30px;
     border-radius: 10rem;
-    border: 1px solid var(--website-5-borderColor);
+    border: 1px solid hsl(0, 0%, 83%);
     box-shadow: var(--boxShadow);
     padding: 0.4rem;
     color: var(--website-5-greyText);
@@ -56,7 +56,7 @@
 }
 
 .link-title{
-    color: var(--website-5-black);
+    /* color: var(--website-5-black); */
     font-weight: 550;
     display: block;
     padding-bottom: 1rem;

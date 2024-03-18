@@ -14,13 +14,10 @@ const Hero5 = () => {
 
   const { hero } = useSelector((state) => state.template5);
   return (
-    <div className="hero5">
+    <div className="hero5 design5">
       <div className="hero5-mainText">
-        <h1>
-          {hero.title}
-        </h1>
+        <h1>{hero.title}</h1>
       </div>
-
       <div className="hero5-imeges">
         <div className="hero5-videoDiv">
           <video src={hero.videoUrl} autoPlay muted loop className="hero5-imeges-video"></video>

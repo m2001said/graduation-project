@@ -6,19 +6,19 @@ const Navbar15 = () => {
   const [active, setActive] = useState("Home");
   const [toggle, setToggle] = useState(false);
   return (
-    <nav className="w-full flex py-6 justify-between items-center navbar" style={{ color: "var(--btn-hover-color15)" }}>
+    <nav className="w-full flex py-6 justify-between items-center navbar nav15">
       <img src={navbar.imgUrl[0]} alt="hoobank" className="w-[124px] h-[32px]" />
 
       <ul className="list-none sm:flex hidden justify-end items-center flex-1">
         {navbar.items.map((nav, index) => (
           <li
             key={nav.id}
-            className={`font-poppins font-normal cursor-pointer text-[16px] ${active === nav.title ? "text-white" : "text-dimWhite"} ${
+            className={`font-poppins font-normal cursor-pointer text-[16px] ${active === nav.title ? "var(--color5)" : "var(--color3)"} ${
               index === navbar.items.length - 1 ? "mr-10" : "mr-10"
             }`}
             onClick={() => setActive(nav.title)}
           >
-            <a className="honerlink11" href={`#${nav.id}`} style={{ color: active === nav.title ? "var(--btn-hover-color15)" : "var(--text-color15)" }}>
+            <a className="honerlink11" href={`#${nav.id}`} style={{ color: active === nav.title ? "var(--color3)" : "var(--color5)" }}>
               {nav.title}
             </a>
           </li>
@@ -31,12 +31,12 @@ const Navbar15 = () => {
             {navbar.items.map((nav, index) => (
               <li
                 key={nav.id}
-                className={`font-poppins font-medium cursor-pointer text-[16px] ${active === nav.title ? "text-white" : "text-dimWhite"} ${
+                className={`font-poppins font-medium cursor-pointer text-[16px] ${active === nav.title ? "var(--color5)" : "var(--color2)"} ${
                   index === navbar.items.length - 1 ? "mb-0" : "mb-4"
                 }`}
                 onClick={() => setActive(nav.title)}
               >
-                <a href={`#${nav.id}`} style={{ color: active === nav.title ? "var(--color-secondary)" : "var(--color-dim-white)" }}>
+                <a href={`#${nav.id}`} style={{ color: active === nav.title ? "var(--color2)" : "var(--color5)" }}>
                   {nav.title}
                 </a>
               </li>

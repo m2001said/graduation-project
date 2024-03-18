@@ -12,7 +12,7 @@ const Logos14 = () => {
       <div className="container14">
         <div className="grid grid-cols-5 gap-3 place-items-center opacity-50">
           {logos.companies.map((logo, index) => (
-            <img key={index} src={logo.imgUrl} alt={`Logo ${index + 1}`} />
+            <img key={index} src={logo.imgUrl} alt={`Logo ${index + 1}`} style={{ maxWidth: "200px" }} />
           ))}
         </div>
       </div>

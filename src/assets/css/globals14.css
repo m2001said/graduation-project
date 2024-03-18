@@ -21,18 +21,13 @@
 
 :root {
   --primary14-color: #f42c37;
-  --primaryHover14-color: #ec8c91;
-  --secondary14-color: #f42c37;
-  --primary14-2-color: #fd444d;
   --brand14-yellow: #fdc62e;
-  --brand14-2-yellow: #fccd4e;
   --brand14-green: #34cc73;
   --brand14-blue: #1376f4;
-  --brand14-2-blue: #3288f8;
-  --brand14-white: #eeeeee;
   --brand14-gray: #acabab9c;
-  --brand14-2-gray: #b6b6b6;
+  --brand14-white: #eeeeee;
 }
+
 .container14 {
   width: 100%;
   margin-right: auto;

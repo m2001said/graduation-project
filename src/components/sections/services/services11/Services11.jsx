@@ -12,43 +12,23 @@ const Services11 = () => {
         <img src={services.imgUrl} alt="" className="aboutImg11" />
         <div className="about__data11 grid11">
           <div className="about__info11">
-            <p className="about__description11">{services.paragraf}</p>
+            <p className="about__description11">{services.content}</p>
             <a href="" className="btn11" id="btn11_1">
-              {services.btn}
+              {services.actionButton}
             </a>
           </div>
           <div className="about__skills11 grid11">
-            <div className="skills__data11">
-              <div className="skills__titles11">
-                <h3 className="skills__name11">{services.skills11__name1}</h3>
-                <span className="skills__number11">{services.skills11__number1}</span>
+            {services.statistics.map((statistic, index) => (
+              <div key={index} className="skills__data11">
+                <div className="skills__titles11">
+                  <h3 className="skills__name11">{statistic.title}</h3>
+                  <span className="skills__number11">{statistic.value}</span>
+                </div>
+                <div className="skills__bar11">
+                  <span className={`skills__percentage11 ${statistic.title.toLowerCase().replace(/\s/g, "-")}`}></span>
+                </div>
               </div>
-              <div className="skills__bar11">
-                <span className="skills__percentage11 development"></span>
-              </div>
-            </div>
-          </div>
-          <div className="about11__skills grid11">
-            <div className="skills__data11">
-              <div className="skills__titles11">
-                <h3 className="skills__name11">{services.skills11__name2}</h3>
-                <span className="skills__number11 ">{services.skills11__number2}</span>
-              </div>
-              <div className="skills__bar11">
-                <span className="skills__percentage11 ui__design"></span>
-              </div>
-            </div>
-          </div>
-          <div className="about11__skills grid11">
-            <div className="skills__data11">
-              <div className="skills__titles11">
-                <h3 className="skills__name11">{services.skills11__name3}</h3>
-                <span className="skills__number11 ">{services.skills11__number3}</span>
-              </div>
-              <div className="skills__bar11">
-                <span className="skills__percentage11 photography"></span>
-              </div>
-            </div>
+            ))}
           </div>
         </div>
       </div>

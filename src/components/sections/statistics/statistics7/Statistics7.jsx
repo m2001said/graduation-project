@@ -17,4 +17,5 @@ const Stats7 = () => {
     </section>
   );
 };
+
 export default Stats7;

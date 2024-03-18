@@ -9,16 +9,16 @@ const Pricing3 = () => {
       <div className="blur3 plans-blur-1"></div>
       <div className="blur3 plans-blur-2"></div>
       <div className="plans-header3">
-        <span className="stroke-text">{pricing.title.titleA}</span>
-        <span>{pricing.title.titleB}</span>
-        <span className="stroke-text">{pricing.title.titleC}</span>
+        {pricing.title.map((item, index) => (
+          <span key={index} className={index % 2 === 0 ? "stroke-text" : ""}>
+            {item.Subtitle}
+          </span>
+        ))}
       </div>
 
-      {/* plans-card */}
       <div className="plans3">
-        {pricing.plansData.map((plan, i) => (
+        {pricing.plans.map((plan, i) => (
           <div className="plan3" key={i}>
-            {plan.icon}
             <span>{plan.name}</span>
             <span>$ {plan.price}</span>
 
@@ -33,7 +33,7 @@ const Pricing3 = () => {
             <div>
               <span>{pricing.description}</span>
             </div>
-            <button className="btn3">{pricing.buttonText}</button>
+            <button className="btn3">{pricing.actionButton}</button>
           </div>
         ))}
       </div>
