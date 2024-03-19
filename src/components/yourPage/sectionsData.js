@@ -11,18 +11,19 @@ import nav16 from "../../assets/images/Navbar/nav16.png";
 import nav18 from "../../assets/images/Navbar/nav18.png";
 
 
-import hero6 from "../../assets/images/Hero/hero6.png";
-import hero14 from "../../assets/images/Hero/hero14.png";
-import hero1 from "../../assets/images/Hero/hero1.png";
-import hero2 from "../../assets/images/Hero/hero2.png";
-import hero3 from "../../assets/images/Hero/hero3.png";
-import hero4 from "../../assets/images/Hero/hero4.png";
-import hero5 from "../../assets/images/Hero/hero5.png";
-import hero7 from "../../assets/images/Hero/hero7.jpg";
-import hero8 from "../../assets/images/Hero/hero8.png";
-import hero10 from "../../assets/images/Hero/hero10.jpg";
+
+import hero1 from "../../assets/images/Hero/hero1.webp";
+import hero2 from "../../assets/images/Hero/hero2.webp";
+import hero3 from "../../assets/images/Hero/hero3.webp";
+import hero4 from "../../assets/images/Hero/hero4.webp";
+import hero5 from "../../assets/images/Hero/hero5.webp";
+import hero7 from "../../assets/images/Hero/hero7.webp";
+import hero6 from "../../assets/images/Hero/hero6.webp";
+import hero8 from "../../assets/images/Hero/hero8.webp";
+import hero10 from "../../assets/images/Hero/hero10.webp";
 import hero11 from "../../assets/images/Hero/hero11.jpg";
-import hero16 from "../../assets/images/Hero/hero16.jpg";
+import hero14 from "../../assets/images/Hero/hero14.webp";
+import hero16 from "../../assets/images/Hero/hero16.webp";
 import hero18 from "../../assets/images/Hero/hero18.jpg";
 
 const createData = (type, data) => {
