@@ -1,5 +1,6 @@
 import React from 'react';
 import { useLocation } from 'react-router-dom';
+
 const importComponent = (type, index) => {
   let module = null;
   try {
