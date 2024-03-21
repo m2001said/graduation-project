@@ -27,7 +27,7 @@
 }
 .feature5_2-text h2{
     padding: 1rem 0;
-    color: var(--website-5-black);
+    /* color: var(--website-5-black); */
     font-size: 25px;
     font-weight: 600;
 }
@@ -40,7 +40,7 @@
     display: block;
     padding-bottom: .5rem;
     font-weight: 500;
-    color: var(--website-5-black);
+    /* color: var(--website-5-black); */
 }
 
 .feature5_2-singleCard p{

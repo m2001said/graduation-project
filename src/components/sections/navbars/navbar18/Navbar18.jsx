@@ -13,7 +13,7 @@ const Navbar = ({ theme, setTheme }) => {
     setShowMenu(!showMenu);
   };
   return (
-    <div className="relative z-10 shadow-md w-full dark:bg-black dark:text-white duration-300">
+    <div className="relative z-10 shadow-md w-full bg-white dark:bg-black dark:text-white duration-300">
       <div className="container18 py-2 md:py-0">
         <div className="flex justify-between items-center">
           <div className="flex gap-4">

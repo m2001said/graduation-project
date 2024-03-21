@@ -24,12 +24,12 @@ const Pricing15 = () => {
             <p className="text-[30px] font-bold m-0 pricin15_10">{amount}</p>
             <p className="font-bold m-0 pricin15_11">{duration}</p>
           </div>
-          <p className="pricin15_5">{pricing.title.paragraf}</p>
+          <p className="pricin15_5">{pricing.titles.content}</p>
           {children}
           <span className="block rounded-full mt-8 h-14 border-2 border-black border-solid shadowbtn">
             <button className="pricin15_7 pricin15_8 h-full font-bold px-10 rounded-full relative z-10 w-full flex items-center justify-center cursor:pointer">
-              {pricing.btn_text.btn1}
-              <img src={pricing.imgUrl[1]} style={{ width: "30px", height: "30px", paddingLeft: "5px" }} />
+              {pricing.actionButton}
+              <img src={pricing.imgUrl[1]} style={{ width: "30px", height: "30px", paddingLeft: "5px" }} alt="icon" />
             </button>
           </span>
           <div className="absolute z-20 -right-6 -bottom-6 bg-contain bg-center w-[131px] h-[131px]"></div>
@@ -39,73 +39,24 @@ const Pricing15 = () => {
   };
 
   return (
-    <main className="pb-5 pt-52 px-3 " id="pricing">
+    <main className="pb-5 pt-52 px-3 pricn15" id="pricing">
       <div className="flex flex-col items-center container max-w-[1300px] mx-auto">
-        <h1 className="sm:text-[44px] text-[26px] text-center m-0 pricin15_1">{pricing.title.title1}</h1>
-        <p className="font-bold text-sm text-[#29a587] flex items-center text-center gap-x-4 pricin15_2">
-          {pricing.title.title2} <span className="caveat text-3xl pricin15_3">{pricing.title.title3} </span>
-        </p>
+        <h1 className="sm:text-[44px] text-[26px] text-center m-0 pricin15_1">{pricing.titles.title}</h1>
+        <p className="font-bold text-sm text-[#29a587] flex items-center text-center gap-x-4 pricin15_2">{pricing.titles.subtitle}</p>
         <section className="grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-10 mt-[60px] w-full">
-          <Card amount={pricing.Card1.amount} title={pricing.Card1.title} duration={pricing.Card1.duration}>
-            <div>
-              <span className="flex items-center gap-x-4">
-                <img src={pricing.imgUrl[0]} style={{ width: "30px", height: "30px" }} />
-                <p className="pricin15_6">{pricing.sub_title.sub_title1}</p>
-              </span>
-              <span className="flex items-center gap-x-4">
-                <img src={pricing.imgUrl[0]} style={{ width: "30px", height: "30px" }} />
-                <p className="pricin15_6">{pricing.sub_title.sub_title2} </p>
-              </span>
-              <span className="flex items-center gap-x-4">
-                <img src={pricing.imgUrl[0]} style={{ width: "30px", height: "30px" }} />
-                <p className="pricin15_6 pl-[30px] line-through">{pricing.sub_title.sub_title3}</p>
-              </span>
-              <span className="flex items-center gap-x-4">
-                <img src={pricing.imgUrl[0]} style={{ width: "30px", height: "30px" }} />
-                <p className="pricin15_6 pl-[30px] line-through">{pricing.sub_title.sub_title4}</p>
-              </span>
-            </div>
-          </Card>
-          <Card amount={pricing.Card2.amount} title={pricing.Card2.title} duration={pricing.Card2.duration}>
-            <div>
-              <span className="flex items-center gap-x-4">
-                <img src={pricing.imgUrl[0]} style={{ width: "30px", height: "30px" }} />
-                <p className="pricin15_6">{pricing.sub_title.sub_title5}</p>
-              </span>
-              <span className="flex items-center gap-x-4">
-                <img src={pricing.imgUrl[0]} style={{ width: "30px", height: "30px" }} />
-                <p className="pricin15_6">{pricing.sub_title.sub_title6}</p>
-              </span>
-              <span className="flex items-center gap-x-4">
-                <img src={pricing.imgUrl[0]} style={{ width: "30px", height: "30px" }} />
-                <p className="pricin15_6 pl-[30px] line-through">{pricing.sub_title.sub_title7}</p>
-              </span>
-              <span className="flex items-center gap-x-4">
-                <img src={pricing.imgUrl[0]} style={{ width: "30px", height: "30px" }} />
-                <p className="pricin15_6 pl-[30px] line-through">{pricing.sub_title.sub_title8}</p>
-              </span>
-            </div>
-          </Card>
-          <Card amount={pricing.Card3.amount} title={pricing.Card3.title} duration={pricing.Card3.duration}>
-            <div>
-              <span className="flex items-center gap-x-4">
-                <img src={pricing.imgUrl[0]} style={{ width: "30px", height: "30px" }} />
-                <p className="pricin15_6">{pricing.sub_title.sub_title9} </p>
-              </span>
-              <span className="flex items-center gap-x-4">
-                <img src={pricing.imgUrl[0]} style={{ width: "30px", height: "30px" }} />
-                <p className="pricin15_6">{pricing.sub_title.sub_title10} </p>
-              </span>
-              <span className="flex items-center gap-x-4">
-                <img src={pricing.imgUrl[0]} style={{ width: "30px", height: "30px" }} />
-                <p className="pricin15_6 pl-[30px] line-through">{pricing.sub_title.sub_title11}</p>
-              </span>
-              <span className="flex items-center gap-x-4">
-                <img src={pricing.imgUrl[0]} style={{ width: "30px", height: "30px" }} />
-                <p className="pricin15_6 pl-[30px] line-through">{pricing.sub_title.sub_title12}</p>
-              </span>
-            </div>
-          </Card>
+          {pricing.Cards.map((card, index) => (
+            <Card key={index} amount={card.amount} title={card.title} duration={card.duration}>
+              <div>
+                {pricing.items[index] &&
+                  Object.entries(pricing.items[index]).map(([key, value]) => (
+                    <span key={key} className="flex items-center gap-x-4">
+                      <img src={pricing.imgUrl[0]} style={{ width: "30px", height: "30px" }} alt="icon" />
+                      <p className="pricin15_6">{value}</p>
+                    </span>
+                  ))}
+              </div>
+            </Card>
+          ))}
         </section>
       </div>
     </main>

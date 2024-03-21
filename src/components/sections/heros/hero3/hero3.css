@@ -3,6 +3,7 @@
   justify-content: space-between;
   position: relative;
   z-index: 1;
+  background-color: var(--color8);
 }
 .left-h {
   padding: 2rem;
@@ -16,18 +17,18 @@
 .right-h {
   flex: 1;
   position: relative;
-  background-color: var(--orange3);
+  background-color: var(--color7);
   z-index: 2;
 }
 
 .the-best-ad {
   margin-top: 4rem;
-  background-color: var(--darkGrey3);
+  background-color: var(--color8);
   border-radius: 4rem;
   width: fit-content;
   padding: 16px 11px;
   text-transform: uppercase;
-  color: var(--website-3-color-1);
+  color: var(--color11);
   position: relative;
   display: flex;
   align-items: center;
@@ -39,24 +40,37 @@
 }
 .the-best-ad > div {
   position: absolute;
-  background-color: var(--orange3);
+  background-color: var(--color7);
   width: 5.4rem;
   height: 80%;
   left: 8px;
   border-radius: 3rem;
   z-index: 1;
 }
-.hero3-text {
+.hero3-title {
   display: flex;
   flex-direction: column;
   text-transform: uppercase;
-  font-size: 4.4rem;
+  font-size: 3.4rem;
   font-weight: 700;
-  color: var(--website-3-color-1);
+  color: var(--color11);
   text-overflow: inherit;
 }
+.hero3-description {
+  display: flex;
+  flex-direction: column;
+  font-size: 1rem;
+  color: var(--color11);
+}
 
-.hero3-text > div:nth-of-type(3) {
+.hero3-title > div:nth-of-type(3) {
+  font-size: 1rem;
+  font-weight: 200;
+  text-transform: none;
+  letter-spacing: 1px;
+  width: 80%;
+}
+.hero3-description > div:nth-of-type(3) {
   font-size: 1rem;
   font-weight: 200;
   text-transform: none;
@@ -66,23 +80,27 @@
 .figures {
   display: flex;
   gap: 2rem;
+  flex-wrap: wrap;
 }
 
 .figures > div {
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
 }
 .figures > div > span:nth-of-type(1) {
-  color: var(--website-3-color-1);
+  color: var(--color11);
   font-size: 2rem;
+  flex-wrap: wrap;
 }
 .figures > div > span:nth-of-type(2) {
-  color: var(--orange3);
+  color: var(--color7);
   text-transform: uppercase;
+  flex-wrap: wrap;
 }
 .btn3,
 .btn33 {
-  background-color: var(--website-3-color-1);
+  background-color: var(--color11);
   padding: 0.5rem;
   font-weight: bold;
   border: 4ps solid transparent;
@@ -101,26 +119,26 @@
   margin-bottom: 0.1rem;
 }
 .hero3-button > :nth-child(1) {
-  color: var(--website-3-color-1);
-  background-color: var(--orange3);
+  color: var(--color11);
+  background-color: var(--color7);
   width: 8rem;
 }
 .hero3-button > :nth-child(2) {
-  color: var(--website-3-color-1);
+  color: var(--color11);
   background-color: transparent;
   width: 8rem;
-  border: 2px solid var(--orange3);
+  border: 2px solid var(--color7);
 }
 
 .right-h > .btn33 {
   position: absolute;
   right: 3rem;
   top: 2rem;
-  color: var(--balck3);
+  color: var(--color12);
 }
 .hero-image {
   position: absolute;
-  top: 10rem;
+  top: 9rem;
   right: 8rem;
   width: 23rem;
   z-index: 2;
@@ -133,7 +151,7 @@
   height: 200px;
   border-top-left-radius: 200px;
   border-top-right-radius: 200px;
-  border: 10px solid var(--darkOrange3);
+  border: 10px solid var(--color7);
   border-bottom: 0;
   transform: rotate(272deg);
 }
@@ -145,7 +163,7 @@
   height: 150px;
   border-top-left-radius: 150px;
   border-top-right-radius: 150px;
-  border: 10px solid var(--darkOrange3);
+  border: 10px solid var(--color7);
   border-bottom: 0;
   transform: rotate(272deg);
 }
@@ -170,12 +188,17 @@
     align-self: center;
     transform: scale(0.8);
   }
-  .hero3-text {
-    font-size: xx-large;
+  .hero3-title {
+    font-size: 30px;
     align-items: center;
     justify-content: center;
   }
-  .hero3-text > div:nth-of-type(3) {
+  .hero3-description {
+    font-size: 15px;
+    align-items: center;
+    justify-content: center;
+  }
+  .hero3-title > div:nth-of-type(3) {
     font-size: small;
     font-weight: 200;
     letter-spacing: 1px;
@@ -202,7 +225,7 @@
   .hero-image {
     position: relative;
     width: 14rem;
-    left: 3rem;
+    left: 5rem;
     top: 8rem;
     align-self: center;
     justify-content: center;

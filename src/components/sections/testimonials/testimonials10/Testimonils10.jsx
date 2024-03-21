@@ -15,7 +15,7 @@ const Testimonials10 = () => {
 
 
   return (
-    <div className="pb-4">
+    <div className="pb-4 bg-[--white10] dark:bg-gray-900">
       <div className="items-center p-10 sm:p-20">
         {/* header sec*/}
         <div className="text-center mb-10 max-w-[600px] mx-auto">
@@ -35,7 +35,7 @@ const Testimonials10 = () => {
             modules={[FreeMode, Pagination]}
             className="mySwiper"
           >
-            {testimonial.cards.map((data) => (
+            {testimonial.testimonials.map((data) => (
               <SwiperSlide key={data.id}>
                 <div className="mb-5">
                   <div className="flex flex-col gap-4 shadow-lg py-8 px-6 mx-4 rounded-xl dark:bg-gray-800 testimonailBg10 relative">

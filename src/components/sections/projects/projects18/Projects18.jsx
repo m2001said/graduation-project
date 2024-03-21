@@ -8,15 +8,15 @@ const Projects = () => {
 
   const { projects } = useSelector((state) => state.template18);
   return (
-    <div className="pb-24">
+    <div className="pb-24 bg-white dark:bg-black">
       <div className="container18">
         {/* Heading */}
         <h1 className="text-3xl sm:text-4xl font-semibold font-serif mb-3">{projects.title}</h1>
-        <p className="text-sm pb-10">{projects.description}</p>
+        <p className="text-base pb-10">{projects.description}</p>
         {/* Car listing */}
         <div>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-16">
-            {projects.cards.map((data) => (
+            {projects.projects.map((data) => (
               <div className="space-y-3 border-2 border-gray-300 hover:border-[--primary18-color] p-3 rounded-xl relative group">
                 <div className="w-full h-[120px]">
                   <img src={data.image} alt="" className="w-full h-[120px] object-contain sm:translate-x-8 group-hover:sm:translate-x-16 duration-700" />
