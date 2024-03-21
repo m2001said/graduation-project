@@ -8,6 +8,9 @@
     background-position-y: 0 , -698px , 25px;
     background-blend-mode: overlay;
     background-repeat: no-repeat;
+    img{
+      transition: 0.4s;
+    }
 }
 /*.designs-section::before {
   content: "";

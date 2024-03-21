@@ -5,20 +5,21 @@ const importComponent = (type, index) => {
   let module = null;
   try {
     if (index) {
-      // Try the first pattern
       module = require(`../components/sections/${type}s/${type}${index}/${type.charAt(0).toUpperCase() + type.slice(1)}${index}`);
     }
   } catch (error) {
-    console.error(`First pattern failed: ${error.message}`);
     try {
       module = require(`../components/sections/${type}s/${type}s${index}/${type.charAt(0).toUpperCase() + type.slice(1)}s${index}`);
     } catch (error) {
-      console.error(`Second pattern failed: ${error.message}`);
+      try {
+        module = require(`../components/sections/${type}s/${type}s${index}/${type.charAt(0).toUpperCase() + type.slice(1)}${index}`);
+      } catch (error) {
+        console.error(`third pattern failed: ${error.message}`);
+      }
     }
   }
   return module && module.default ? module.default : null;
 };
-
 
 const OwnPage = () => {
   const location = useLocation();
@@ -29,17 +30,21 @@ const OwnPage = () => {
     return Component ? <Component key={`${type}-${index}`} /> : null;
   };
 
+  const sectionNames = [
+    'navbars', 'heros', 'features', 'abouts', 'projects', 'services', 'contacts', 'teams',
+    'testimonials', 'statistics', 'logos', 'items', 'gallerys', 'offers', 'reservations', 'menus', 'cartItems', 'filterItems',
+    'orderPopups', 'chooses', 'pricings', 'ctas', 'footers',
+  ];
   // Define the list of section types
   const sectionTypes = [
-    'navbar', 'hero', 'contact', 'cta', 'footer',
-    'feature', 'logo', 'pricing', 'project', 'service',
-    'team', 'statistic', 'item', 'cartItem', 'filterItem',
-    'orderPopup', 'testimonial'
+    'navbar', 'hero', 'feature', 'about', 'project', 'service', 'contact', 'team',
+    'testimonial', 'statistic', 'logo', 'item', 'gallery', 'offer', 'reservation', 'menu', 'cartItem', 'filterItem',
+    'orderPopup', 'choose', 'pricing', 'cta', 'footer',
   ];
 
   return (
     <>
-      {sectionTypes.map((type) => renderComponent(type, selectedData[`${type}IndexSelected`]))}
+      {sectionTypes.map((type, index) => renderComponent(type, selectedData[`${sectionNames[index]}IndexSelected`]))}
     </>
   );
 };

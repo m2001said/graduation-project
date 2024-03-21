@@ -8,9 +8,9 @@ import Services10 from "../components/sections/services/services10/Services10";
 import Feature10 from "../components/sections/features/feature10/Feature10";
 import Cta10 from "../components/sections/ctas/cta10/Cta10";
 import Teams10 from "../components/sections/teams/teams10/Teams10";
-import Testimonials10 from "../components/sections/testimonials/testimonials10/Testimonils10";
+import Testimonials10 from "../components/sections/testimonials/testimonials10/Testimonials10";
 import Footer10 from "../components/sections/footers/footer10/Footer10";
-import OrderPopup10 from "../components/sections/orderPopups/orderPopup10/OrderPopups10";
+import OrderPopup10 from "../components/sections/orderPopups/orderPopup10/OrderPopup10";
 
 
 // import AOS from "aos";
