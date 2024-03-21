@@ -3,6 +3,7 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import "./demoVideo.css";
 import demo from "../../../assets/videos/demo.mp4";
+import Loader from "../../Loader/Loader.jsx"
 
 const DemoVideo = () => {
   useEffect(() => {
@@ -23,6 +24,7 @@ const DemoVideo = () => {
             </p>
           </div>
           <div className="demo-video py-2" data-aos="fade-down" data-aos-duration="1000" >
+            {/* <Loader src={demo} alt="Video" isVideo /> */}
             <video src={demo} controls></video>
           </div>
         </div>

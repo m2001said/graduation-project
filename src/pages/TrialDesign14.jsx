@@ -5,7 +5,7 @@ import { useSelector } from "react-redux";
 
 import Navbar14 from "../components/sections/navbars/navbar14/Navbar14";
 import Hero14 from "../components/sections/heros/hero14/Hero14";
-import Items14 from "../components/sections/Items/items14/Items14";
+import Items14 from "../components/sections/items/items14/Items14";
 import Services14 from "../components/sections/services/services14/Services14";
 import Features14 from "../components/sections/features/feature14/Feature14";
 import Projects14 from "../components/sections/projects/projects14/Projects14";
