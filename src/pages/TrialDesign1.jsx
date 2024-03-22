@@ -20,9 +20,10 @@ const TrialDesign1 = () => {
   const componentMapping = {
     navbar: Navbar1,
     hero: Hero1,
+    feature: Featrue1,
     services: Services1,
-    features: Featrue1,
     testimonials: Testimonials1,
+    features: Featrue1,
     logos: Logos1,
     projects: Project1,
     statistics: Statictics1,

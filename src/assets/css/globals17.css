@@ -1,0 +1,85 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=Ephesis&display=swap");
+@layer components {
+  .link {
+    @apply cursor-pointer hover:underline;
+  }
+  .button-outline {
+    @apply rounded-md border-2 border-[#ffc727] hover:bg-[#fcca40] hover:text-black duration-500 py-2 px-6 text-[#ffc727] tracking-wider;
+  }
+}
+html {
+  scroll-behavior: smooth;
+}
+
+:root {
+  --color17-primary: #ff0c00;
+  --color17-primaryDark: #bb2c51;
+  --color17-secondary: #21d4b9;
+  --color17-white: #ffffff;
+  --color17-dark: rgb(0, 0, 0);
+  --color17-light: rgb(160, 157, 157);
+  --color17-light2: rgba(255, 255, 255, 0.7);
+
+  /***** fonts /***/
+  --font17-: "Ephesis", "cursive";
+}
+.icon-17 {
+  width: 30px;
+}
+.icon-177 {
+  width: 30px;
+  filter: invert(100%);
+}
+.icon-17:hover {
+  filter: invert(48%) sepia(100%) saturate(0%) hue-rotate(0deg) brightness(100%) contrast(100%);
+}
+.logo-17 {
+  width: 50px;
+}
+
+.ephesis {
+  font-family: var(--font17-);
+}
+.container17 {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 3rem;
+  padding-left: 3rem;
+}
+
+.p17 {
+  font-size: 16px;
+  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-weight: 400;
+}
+/* .container17 {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 3rem;
+  padding-left: 3rem;
+} */
+/* 
+
+
+@media (min-width: 768px) {
+  .container18 {
+    max-width: 768px; 
+  }
+}
+
+@media (min-width: 1024px) {
+  .container17 {
+    max-width: 1024px; 
+  }
+}
+@media (min-width: 1318px) {
+  .container17 {
+    max-width: 1318px; 
+  }
+} */
+
