@@ -3,12 +3,12 @@ import { useSelector } from "react-redux";
 import "../testimonials11/testimonials11.css";
 
 const Testimonials11 = () => {
-  const { testimonial } = useSelector((state) => state.template11);
+  const { testimonials } = useSelector((state) => state.template11.testimonial);
   return (
     <section className="testimonials11 container section11">
       <h2 className="section__title11">Clients & Reviews</h2>
       <div className="testimonials__container grid11">
-        {testimonial.map(({ id, imgUrl, title, subtitle, comment }) => (
+        {testimonials.map(({ id, imgUrl, title, subtitle, comment }) => (
           <div className="testimonials__item11" key={id}>
             <div className="thumb11">
               <img src={imgUrl} alt="" />

@@ -2,6 +2,7 @@
 .footer15 {
   padding: 0 3px;
   background-color: transparent;
+  background-color: var(--color1);
 }
 
 .footer15-container {
@@ -49,6 +50,9 @@
 .footer15-title-4 {
   font-weight: bold;
 }
+.footer15-subtitle {
+  margin-left: 100px;
+}
 @media (max-width: 1024px) {
   .footer15-icons {
     margin-left: 70px;
@@ -63,5 +67,8 @@
   .footer15-title-4 {
     margin-left: 10px;
     font-size: 13px;
+  }
+  .footer15-subtitle {
+    display: none;
   }
 }

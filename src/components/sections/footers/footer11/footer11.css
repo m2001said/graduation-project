@@ -1,68 +1,71 @@
 .blog__container11 {
-  grid-template-columns: repeat(3, 1fr);
-  column-gap: 1.875rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.875rem;
   text-align: center;
   padding: 1.875rem;
-  width: 450px;
-  height: 250px;
-  min-height: 250px;
-  display: inline-block;
+  width: 100%;
+  background-color: var(--color22);
 }
 
 .blog__card11 {
+  flex: 0 0 calc(33.333% - 1.875rem);
   box-shadow: var(--shadow);
   border-radius: var(--border-radius);
   overflow: hidden;
+  margin-bottom: 1.875rem;
 }
+
+@media screen and (max-width: 1024px) {
+  .blog__container11 {
+    justify-content: flex-start;
+  }
+
+  .blog__card11 {
+    flex: 0 0 calc(100% - 1.875rem);
+  }
+}
+.blog__container11 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.875rem;
+  text-align: center;
+  padding: 1.875rem;
+  width: 100%;
+}
+
+.blog__card11 {
+  flex: 0 0 calc(33.333% - 1.875rem);
+  box-shadow: var(--shadow);
+  border-radius: var(--border-radius);
+  overflow: hidden;
+  margin-bottom: 1.875rem;
+}
+
 .blog__thumb11 {
   position: relative;
   overflow: hidden;
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow);
 }
 
 .blog__img11 {
   transform: scale(1);
   transition: 0.3s;
 }
+
 .blog__thumb11:hover .blog__img11 {
   transform: scale(1.1);
 }
-.blog__category11 {
-  color: var(--container-color11);
-  background-color: var(--first-color11);
-  border-bottom-left-radius: 0.9375rem;
-  border-bottom-right-radius: 0.9375rem;
-  position: absolute;
-  top: 0;
-  left: 1.25rem;
-  font-size: var(--small-font-size);
-  display: inline-block;
-  padding: 0.125rem 0.5rem;
-  transition: 0.3s;
-  z-index: 1;
-}
-.blog__details11 {
-  background-color: var(--container-color11);
-  padding: 1.25rem;
-}
-.blog__title11 {
-  font-size: var(--h3-font-size);
-  margin-bottom: 0.5rem;
-}
-.blog__meta11 {
-  display: flex;
-  column-gap: 0.6rem;
-  font-size: var(--small-font-size);
-  color: var(--move);
-}
-.blog__dot {
-  font-weight: var(--font-bold);
-}
+
 @media screen and (max-width: 1024px) {
   .blog__container11 {
-    grid-template-columns: repeat(1, 1fr);
-    width: 100%;
-    max-width: 450px;
-    margin: 0 auto;
-    text-align: center;
+    justify-content: flex-start;
+  }
+
+  .blog__card11 {
+    flex: 0 0 calc(100% - 1.875rem);
   }
 }

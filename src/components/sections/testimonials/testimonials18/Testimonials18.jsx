@@ -8,7 +8,7 @@ const Testimonial = () => {
   return (
     <>
       <span id="about"></span>
-      <div className="dark:bg-black dark:text-white py-14 sm:pb-24">
+      <div className="bg-white dark:bg-black dark:text-white py-14 sm:pb-24">
         <div className="container18">
           {/* Header */}
           <div className="space-y-4 pb-12">
@@ -17,7 +17,7 @@ const Testimonial = () => {
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 text-black dark:text-white">
-            {testimonial.cards.map((data) => (
+            {testimonial.testimonials.map((data) => (
               <div
                 key={data.name}
                 className="card text-center group space-y-3 sm:space-y-6 p-4 sm:py-12 dark:bg-white/20 bg-gray-100 duration-300  rounded-lg "

@@ -77,7 +77,7 @@
   margin-top: 15px;
 }
 
-.pricing1-odd-card h6 {
+/* .pricing1-odd-card h6 {
   background: var(--website-color-3);
   color: var(--white);
   border-radius: 8px;
@@ -86,7 +86,7 @@
   max-width: 80%;
   margin-left: 16px;
   margin-top: -10px;
-}
+} */
 
 .pricing1-timeUnit {
   color: var(--website-color-3);
@@ -116,7 +116,7 @@
 
 .odd-card-button {
   background: var(--website-color-3);
-  margin-top: 31px;
+  margin-top: 63px;
 }
 
 .even-card-button span {

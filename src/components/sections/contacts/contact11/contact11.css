@@ -4,6 +4,7 @@
 .contact__container11 {
   grid-template-columns: 1fr;
   column-gap: 1.875rem;
+  background-color: var(--color22);
 }
 .contact__title11 {
   font-size: var(--h3-font-size);
@@ -30,8 +31,8 @@
   width: 20rem;
   height: 90%;
   box-shadow: var(--shadow);
-  background-color: var(--container-color11);
-  color: var(--text-color11);
+  background-color: var(--color22);
+  color: var(--color5);
   border: none;
   outline: none;
   border-radius: 1.875rem;
@@ -45,8 +46,8 @@
   width: 20rem;
   height: 90%;
   box-shadow: var(--shadow);
-  background-color: var(--container-color11);
-  color: var(--text-color11);
+  background-color: var(--color22);
+  color: var(--color5);
   border: none;
   outline: none;
   border-radius: 1.875rem;
@@ -61,8 +62,8 @@
   width: 43rem;
   height: 90%;
   box-shadow: var(--shadow);
-  background-color: var(--container-color11);
-  color: var(--text-color11);
+  background-color: var(--color22);
+  color: var(--color5);
   border: none;
   outline: none;
   border-radius: 1.875rem;
@@ -76,8 +77,8 @@
   width: 43rem;
   height: 100%;
   box-shadow: var(--shadow);
-  background-color: var(--container-color11);
-  color: var(--text-color11);
+  background-color: var(--color22);
+  color: var(--color5);
   border: none;
   outline: none;
   border-radius: 1.875rem;
@@ -154,8 +155,8 @@
   width: 100%;
   height: 3.75rem;
   box-shadow: var(--shadow);
-  background-color: var(--container-color11);
-  color: var(--text-color11);
+  background-color: var(--color22);
+  color: var(--color5);
   border: none;
   outline: none;
   border-radius: 1.875rem;

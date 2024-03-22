@@ -3,7 +3,7 @@ import React from "react";
 
 const Feature14 = ({ data }) => {
   return (
-    <div className="min-h-[550px] flex justify-center items-center py-12">
+    <div className="min-h-[550px] flex justify-center items-center py-12 bg-white dark:bg-gray-900">
       <div className="container14">
         <div style={{ backgroundColor: data.bgColor }} className="grid grid-cols-1 md:grid-cols-3 gap-6 items-center text-white rounded-3xl">
           {/* first col */}

@@ -1,47 +1,57 @@
 .Projects3 {
   display: flex;
-  flex-direction: column;
   gap: 2rem;
-  padding: 0 2rem;
+  flex-wrap: wrap;
+  background-color: var(--color8);
 }
 .Project3-header {
   display: flex;
   gap: 5rem;
   font-weight: bold;
-  font-size: 3rem;
+  font-size: 2rem;
   justify-content: center;
-  color: var(--website-3-color-1);
+  color: var(--color11);
   text-transform: uppercase;
   font-style: italic;
-  margin-top: 5rem;
+  padding-top: 5rem;
+  background-color: var(--color8);
+  flex-wrap: wrap;
 }
 .project3-categories {
+  background-color: var(--color8);
   display: flex;
-  gap: 1rem;
+  padding-left: 50px;
+  flex-wrap: wrap;
+  gap: 2rem;
 }
+
 .category {
   display: flex;
   flex-direction: column;
-  background-color: var(--gray3);
+  background-color: var(--color10);
+  width: 330px;
   padding: 2rem;
-  margin: 2rem 0.4rem;
+  flex-wrap: wrap;
   gap: 1rem;
-  color: var(--website-3-color-1);
+  color: var(--color11);
   justify-content: space-evenly;
 }
 .category > :nth-child(1) {
   width: 2rem;
   height: 2rem;
-  fill: var(--website-3-color-1);
+  fill: var(--color11);
   display: contents;
+  font-size: 1rem;
 }
 .category > :nth-child(2) {
-  font-size: 1rem;
+  font-size: 1.6rem;
   font-weight: bold;
+  flex-wrap: wrap;
 }
 .category > :nth-child(3) {
-  font-size: 0.9rem;
+  font-size: 1.5rem;
   line-height: 25px;
+  flex-wrap: wrap;
 }
 .join-now {
   display: flex;
@@ -52,11 +62,10 @@
   width: 1rem;
 }
 .category:hover {
-  background: var(--planCard3);
+  background: var(--color9);
   cursor: pointer;
 }
 
-/* res mobile */
 @media screen and (max-width: 768px) {
   .Project3-header {
     flex-direction: column;
@@ -64,9 +73,13 @@
     font-size: x-large;
     align-items: center;
     justify-content: center;
-    margin-top: 9rem;
+    padding-top: 11rem;
+    background-color: var(--color8);
   }
   .project3-categories {
     flex-direction: column;
+  }
+  .category {
+    width: 280px;
   }
 }

@@ -6,9 +6,6 @@ import MainPage from "./pages/MainPage";
 import DesignsPage from "./pages/DesignsPage";
 import BuildYourPage from "./pages/BuildYourPage";
 import NotFound from "./pages/NotFoundPage";
-import posterImage from "./assets/images/mainPageAssets/signin.svg";
-import BaseModal from "./components/mainPage/modal/BaseModal/BaseModal.jsx";
-import SigninLogin from "./components/mainPage/modal/SigninLogin.jsx";
 import OwnPage from "./pages/OwnPage.jsx";
 const trialDesignComponents = Array.from({ length: 18 }, (_, i) => require(`./pages/TrialDesign${i + 1}`).default);
 function App() {
@@ -28,14 +25,9 @@ function App() {
   return (
     <>
       <MainNav loginState={isSignedIn} setSignOUT={signOut} toggleModal={toggleModal} />
-      {isModalOpen ? (
-        <BaseModal poster={posterImage} toggleModal={toggleModal}>
-          <SigninLogin setIsSignedIn={signIn} toggleModal={toggleModal} />
-        </BaseModal>
-      ) : null}
-      <div style={{ marginTop: "78px" }}>
+      <div style={{ marginTop: "77px" }}>
         <Routes>
-          <Route path="/" element={<MainPage toggleModal={toggleModal} />} />
+          <Route path="/" element={<MainPage toggleModal={toggleModal} isModalOpen={isModalOpen} signIn={signIn}/>} />
           <Route path="/designs" element={<DesignsPage />} />
           <Route path="/page-craft" element={<BuildYourPage />} />
           <Route path="/own-page" element={<OwnPage />} />

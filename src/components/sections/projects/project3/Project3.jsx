@@ -7,18 +7,20 @@ const Project3 = () => {
   return (
     <div className="Project3" id="Programs">
       <div className="Project3-header">
-        <span className="stroke-text">{projects.title.titleA}</span>
-        <span> {projects.title.titleB}</span>
-        <span className="stroke-text">{projects.title.titleB}</span>
+        {projects.title.map((item, index) => (
+          <span key={index} className={index % 2 === 0 ? "stroke-text" : ""}>
+            {item.Subtitle}
+          </span>
+        ))}
       </div>
 
       <div className="project3-categories">
-        {projects.programsData.map((program, index) => (
+        {projects.descriptions.map((program, index) => (
           <div className="category" key={index}>
             <span>{program.heading}</span>
             <span>{program.details}</span>
             <div className="join-now">
-              <span>{projects.buttonText}</span>
+              <span>{projects.actionButton}</span>
               <img src={projects.imgUrl} alt="" />
             </div>
           </div>

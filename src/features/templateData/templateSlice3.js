@@ -13,35 +13,55 @@ const templateSlice3 = createSlice({
     hero: {
       Subtitle: "the best fitness club in the town",
       imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703609517/jammal_photos/neoqh0j4yjexem6j9ozp.png",
-      title: {
-        titleA: "shape",
-        titleB: "your",
-        titleC: "ideal body",
-      },
+      title: "shape your ideal body",
       description: "In here we will help you to shape and build your ideal body and live up your life to fullest..",
-      numCounter: {
-        count1: "+140",
-        descr1: "EXPORT COACHS",
-
-        count2: "+978",
-        descr2: "MEMBERS JOINED",
-
-        count3: "+50",
-        descr3: "FITNESS PROGRAMS",
-      },
-      buttonText: {
-        buttonTextA: "Get Started",
-        buttonTextB: "Learn More",
-        buttonTextC: "Join now",
+      statistics: [
+        {
+          count: "+140",
+          description: "EXPORT COACHS",
+        },
+        {
+          count: "+978",
+          description: "MEMBERS JOINED",
+        },
+        {
+          count: "+50",
+          description: "FITNESS PROGRAMS",
+        },
+      ],
+      Button: {
+        primaryButton: "Get Started",
+        secondaryButton: "Learn More",
+        actionButton: "Join now",
       },
     },
 
-    features: {
+    projects: {
+      title: [{ Subtitle: "EXPLORE OUR" }, { Subtitle: "PROGRAMS" }, { Subtitle: "TO SHAPE YOU" }],
+      actionButton: "Join Now",
+      imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1702986510/jammal_photos/pouffwm6ffmtztpisvjv.png",
+      descriptions: [
+        {
+          heading: "Strength Training",
+          details: "In this program, you are trained to improve your strength through many exercises.",
+        },
+        {
+          heading: "Cardio Training",
+          details: "In this program, you are trained to do sequential moves in range of 20 until 30 minutes.",
+        },
+        {
+          heading: "Fat Burning",
+          details: "This program is suitable for you who wants to get rid of your fat and lose their weight.",
+        },
+        {
+          heading: "Health Fitness",
+          details: "This programs is designed for those who exercises only for their body fitness not body building.",
+        },
+      ],
+    },
+    feature: {
       Subtitle: "SOME REASONS",
-      title: {
-        titleA: "WHY",
-        titleB: " CHOOSE US ?",
-      },
+      title: "WHY CHOOSE US ?",
       imgUrl: [
         "https://res.cloudinary.com/duc04fwdb/image/upload/v1702989257/jammal_photos/ywgmvzeed0ebb7myfvyw.png",
         "https://res.cloudinary.com/duc04fwdb/image/upload/v1702989314/jammal_photos/coh8z8kfvjla5xurgg2p.png",
@@ -53,26 +73,70 @@ const templateSlice3 = createSlice({
         "https://res.cloudinary.com/duc04fwdb/image/upload/v1702989514/jammal_photos/blcyycnc06jda0rwtuol.png", //adadis
       ],
 
-      description: {
-        description1: "OVER 140+ EXPERT COACHS",
-        description2: "TRAIN SMARTER AND FASTER THAN BEFORE",
-        description3: "1 FREE PROGRAM FOR NEW MEMBER",
-        description4: "RELIABLE PARTNERS",
-        description5: "OUR PPARTNERS",
-      },
+      statistics: [
+        {
+          description: "OVER 140+ EXPERT COACHS",
+        },
+        {
+          description: "TRAIN SMARTER AND FASTER THAN BEFORE",
+        },
+        {
+          description: "1 FREE PROGRAM FOR NEW MEMBER",
+        },
+        {
+          description: "RELIABLE PARTNERS",
+        },
+        {
+          description: "OUR PPARTNERS",
+        },
+      ],
     },
-
-    testimonials: {
+    pricing: {
+      title: [
+        {
+          Subtitle: "READY TO START",
+        },
+        {
+          Subtitle: "YOUR JOURNEY",
+        },
+        {
+          Subtitle: "NOW WITHUS",
+        },
+      ],
+      description: "See more benefits",
+      actionButton: "join Now",
+      imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1702988784/jammal_photos/vrqn7t4vmruj1drgmpdb.png",
+      plans: [
+        {
+          name: "BASIC PLAN",
+          price: "25",
+          features: ["2 hours of excercises", "Free consultaion to coaches", "Access to The Community"],
+        },
+        {
+          name: "PREMIUM PLAN",
+          price: "30",
+          features: ["5 hour of excercises", "Free consultaion of Coaches", "Accessto minibar"],
+        },
+        {
+          name: "PRO PLAN",
+          price: "45",
+          features: ["8 hours of excercises", "Consultation of Private Coach", "Free Fitness Merchandises"],
+        },
+      ],
+    },
+    testimonial: {
       title: {
-        Subtitle: "TESTIMONIALS",
-        titleA: "WHAT THE PEOPLE THINKS ABOUT US",
-        titleB: "SAY ABOUT US",
+        mainTitle: "TESTIMONIALS",
+        primaryTitle: "WHAT THE PEOPLE THINK ABOUT US",
+        secondaryTitle: "WHAT THEY SAY ABOUT US",
       },
+
+
       imgUrl: [
         "https://res.cloudinary.com/duc04fwdb/image/upload/v1702987916/jammal_photos/pt96uext4dvfv3op3khc.png",
         "https://res.cloudinary.com/duc04fwdb/image/upload/v1702987950/jammal_photos/rkwjn9zqa9jgcp1dhzsb.png",
       ],
-      testimonialsData: [
+      testimonials: [
         {
           imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1702986897/jammal_photos/xbinalf2qg4aqqhhpeif.png",
           review: "I made the right choice by choosing the Fitclub and by choosing the right plan and program I already achieved my ideal body!",
@@ -94,77 +158,30 @@ const templateSlice3 = createSlice({
       ],
     },
 
-    projects: {
-      title: {
-        titleA: "EXPLORE OUR",
-        titleB: "PROGRAMS",
-        titleC: "TO SHAPE YOU",
-      },
-      buttonText: "Join Now",
-      imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1702986510/jammal_photos/pouffwm6ffmtztpisvjv.png",
-      programsData: [
-        {
-          heading: "Strength Training",
-          details: "In this program, you are trained to improve your strength through many exercises.",
-        },
-        {
-          heading: "Cardio Training",
-          details: "In this program, you are trained to do sequential moves in range of 20 until 30 minutes.",
-        },
-        {
-          heading: "Fat Burning",
-          details: "This program is suitable for you who wants to get rid of your fat and lose their weight.",
-        },
-        {
-          heading: "Health Fitness",
-          details: "This programs is designed for those who exercises only for their body fitness not body building.",
-        },
-      ],
-    },
-
-    pricing: {
-      title: {
-        titleA: "READY TO START",
-        titleB: "YOUR JOURNEY",
-        titleC: "NOW WITHUS",
-      },
-      description: "See more benefits",
-      buttonText: "join Now",
-      imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1702988784/jammal_photos/vrqn7t4vmruj1drgmpdb.png",
-      plansData: [
-        {
-          name: "BASIC PLAN",
-          price: "25",
-          features: ["2 hours of excercises", "Free consultaion to coaches", "Access to The Community"],
-        },
-        {
-          name: "PREMIUM PLAN",
-          price: "30",
-          features: ["5 hour of excercises", "Free consultaion of Coaches", "Accessto minibar"],
-        },
-        {
-          name: "PRO PLAN",
-          price: "45",
-          features: ["8 hours of excercises", "Consultation of Private Coach", "Free Fitness Merchandises"],
-        },
-      ],
-    },
     cta: {
-      title: {
-        titleA: "READY TO",
-        titleB: "LEVEL UP",
-        titleC: "YOUR BODY",
-        titleD: "WITH US?",
-      },
-      buttonText: "join Now",
+      title: [
+        {
+          Subtitle: "READY TO",
+        },
+        {
+          Subtitle: "LEVEL UP",
+        },
+        {
+          Subtitle: "YOUR BODY ",
+        },
+        {
+          Subtitle: "WITH US?",
+        },
+      ],
+      actionButton: "join Now",
     },
 
     footer: {
-      imgUrl: [
-        "https://res.cloudinary.com/duc04fwdb/image/upload/v1702990946/jammal_photos/op32ysn37afrbyyvzlpo.png", //githup
-        "https://res.cloudinary.com/duc04fwdb/image/upload/v1702991031/jammal_photos/ttvjziej5llydncutm9u.png", //linkedIn
-        "https://res.cloudinary.com/duc04fwdb/image/upload/v1702991055/jammal_photos/mt2lapqflvpafmnfpree.png", //insta
-        "https://res.cloudinary.com/duc04fwdb/image/upload/v1702990991/jammal_photos/isxpadjx12ja5wqaqzsk.png", //logo
+      imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1702990991/jammal_photos/isxpadjx12ja5wqaqzsk.png", //logo
+      mediaIcons: [
+        { icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1702990946/jammal_photos/op32ysn37afrbyyvzlpo.png" }, //githup
+        { icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1702991031/jammal_photos/ttvjziej5llydncutm9u.png" }, //linkedIn
+        { icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1702991055/jammal_photos/mt2lapqflvpafmnfpree.png" }, //insta
       ],
     },
     colors: {

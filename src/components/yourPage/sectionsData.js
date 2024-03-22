@@ -1,29 +1,30 @@
 import nav1 from "../../assets/images/Navbar/nav1.jpg";
-import nav3 from "../../assets/images/Navbar/nav1.jpg";
-import nav4 from "../../assets/images/Navbar/nav1.jpg";
-import nav5 from "../../assets/images/Navbar/nav1.jpg";
-import nav6 from "../../assets/images/Navbar/nav1.jpg";
-import nav7 from "../../assets/images/Navbar/nav1.jpg";
-import nav8 from "../../assets/images/Navbar/nav1.jpg";
-import nav10 from "../../assets/images/Navbar/nav1.jpg";
-import nav14 from "../../assets/images/Navbar/nav1.jpg";
-import nav16 from "../../assets/images/Navbar/nav1.jpg";
-import nav18 from "../../assets/images/Navbar/nav1.jpg";
+// import nav3 from "../../assets/images/Navbar/nav3.jpg";
+import nav4 from "../../assets/images/Navbar/nav4.png";
+import nav5 from "../../assets/images/Navbar/nav5.png";
+import nav6 from "../../assets/images/Navbar/nav6.jpg";
+import nav7 from "../../assets/images/Navbar/nav7.jpg";
+import nav8 from "../../assets/images/Navbar/nav8.png";
+import nav10 from "../../assets/images/Navbar/nav10.jpg";
+import nav14 from "../../assets/images/Navbar/nav14.jpg";
+import nav16 from "../../assets/images/Navbar/nav16.png";
+import nav18 from "../../assets/images/Navbar/nav18.png";
 
 
-import hero6 from "../../assets/images/Hero/hero1.png";
-import hero14 from "../../assets/images/Hero/hero1.png";
-import hero1 from "../../assets/images/Hero/hero1.png";
-import hero2 from "../../assets/images/Hero/hero1.png";
-import hero3 from "../../assets/images/Hero/hero1.png";
-import hero4 from "../../assets/images/Hero/hero1.png";
-import hero5 from "../../assets/images/Hero/hero1.png";
-import hero7 from "../../assets/images/Hero/hero1.png";
-import hero8 from "../../assets/images/Hero/hero1.png";
-import hero10 from "../../assets/images/Hero/hero1.png";
-import hero11 from "../../assets/images/Hero/hero1.png";
-import hero16 from "../../assets/images/Hero/hero1.png";
-import hero18 from "../../assets/images/Hero/hero1.png";
+
+import hero1 from "../../assets/images/Hero/hero1.webp";
+import hero2 from "../../assets/images/Hero/hero2.webp";
+import hero3 from "../../assets/images/Hero/hero3.webp";
+import hero4 from "../../assets/images/Hero/hero4.webp";
+import hero5 from "../../assets/images/Hero/hero5.webp";
+import hero7 from "../../assets/images/Hero/hero7.webp";
+import hero6 from "../../assets/images/Hero/hero6.webp";
+import hero8 from "../../assets/images/Hero/hero8.webp";
+import hero10 from "../../assets/images/Hero/hero10.webp";
+import hero11 from "../../assets/images/Hero/hero11.jpg";
+import hero14 from "../../assets/images/Hero/hero14.webp";
+import hero16 from "../../assets/images/Hero/hero16.webp";
+import hero18 from "../../assets/images/Hero/hero18.jpg";
 
 const createData = (type, data) => {
   return data.map(item => ({
@@ -46,7 +47,9 @@ export const navData = createData('Navbar', [
   { id: 8, imgUrl: nav8 },
   { id: 10, imgUrl: nav10 },
   { id: 11, imgUrl: "nav11" },
+  { id: 13, imgUrl: "nav13" },
   { id: 14, imgUrl: nav14 },
+  { id: 15, imgUrl: "nav15" },
   { id: 16, imgUrl: nav16 },
   { id: 18, imgUrl: nav18 }
 ]);
@@ -60,9 +63,12 @@ export const heroData = createData('Hero', [
   { id: 6, imgUrl: hero6 },
   { id: 7, imgUrl: hero7 },
   { id: 8, imgUrl: hero8 },
+  { id: 9, imgUrl: "hero9" },
   { id: 10, imgUrl: hero10 },
   { id: 11, imgUrl: hero11 },
+  { id: 13, imgUrl: "hero13" },
   { id: 14, imgUrl: hero14 },
+  { id: 15, imgUrl: "hero15" },
   { id: 16, imgUrl: hero16 },
   { id: 18, imgUrl: hero18 }
 ]);
@@ -75,9 +81,11 @@ export const featureData = createData('Feature', [
   { id: 21, imgUrl: "feature21.png" },
   { id: 6, imgUrl: "feature6.png" },
   { id: 7, imgUrl: "feature7.png" },
-  { id: 72, imgUrl: "feature7.png" },
-  { id: 73, imgUrl: "feature7.png" },
+  { id: 72, imgUrl: "feature72.png" },
+  { id: 73, imgUrl: "feature73.png" },
+  { id: 9, imgUrl: "feature9.png" },
   { id: 10, imgUrl: "feature10.png" },
+  { id: 15, imgUrl: "feature15.png" },
   { id: 16, imgUrl: "feature16.png" },
   { id: 18, imgUrl: "feature18.png" },
   //{ id: 14, imgUrl: "feature14.png" }
@@ -89,7 +97,9 @@ export const projectData = createData('Project', [
   { id: 3, imgUrl: "project3.png" },
   { id: 4, imgUrl: "project4.png" },
   { id: 11, imgUrl: "project11.png" },
+  { id: 13, imgUrl: "project13.png" },
   { id: 14, imgUrl: "project14.png" },
+  { id: 15, imgUrl: "project15.png" },
   { id: 21, imgUrl: "project21.png" },
   { id: 18, imgUrl: "project18.png" },
 ]);
@@ -98,17 +108,21 @@ export const serviceData = createData('Service', [
   { id: 1, imgUrl: "service1.png" },
   { id: 2, imgUrl: "service2.png" },
   { id: 5, imgUrl: "service5.png" },
+  { id: 9, imgUrl: "service9.png" },
   { id: 10, imgUrl: "service10.png" },
   { id: 11, imgUrl: "service11.png" },
   { id: 112, imgUrl: "service112.png" },
   { id: 14, imgUrl: "service14.png" },
+  { id: 15, imgUrl: "service15.png" },
   { id: 18, imgUrl: "service18.png" },
 ]);
 
 export const contactData = createData('Contact', [
   { id: 2, imgUrl: "contact2.png" },
   { id: 4, imgUrl: "contact4.png" },
-  { id: 11, imgUrl: "contact11.png" }
+  { id: 9, imgUrl: "contact9.png" },
+  { id: 11, imgUrl: "contact11.png" },
+  { id: 15, imgUrl: "contact15.png" },
 ]);
 
 export const ctaData = createData('Cta', [
@@ -120,12 +134,15 @@ export const ctaData = createData('Cta', [
   { id: 7, imgUrl: "cta7.png" },
   { id: 10, imgUrl: "cta10.png" },
   { id: 11, imgUrl: "cta11.png" },
+  { id: 15, imgUrl: "cta15.png" },
   { id: 18, imgUrl: "cta18.png" },
   { id: 21, imgUrl: "cta21.png" },
 ]);
 
 export const aboutData = createData('About', [
   { id: 8, imgUrl: "about8.png" },
+  { id: 9, imgUrl: "about9.png" },
+  { id: 13, imgUrl: "about13.png" },
   { id: 16, imgUrl: "about16.png" },
 ]);
 
@@ -137,9 +154,13 @@ export const footerData = createData('Footer', [
   { id: 5, imgUrl: "footer5.png" },
   { id: 6, imgUrl: "footer6.png" },
   { id: 7, imgUrl: "footer7.png" },
+  { id: 9, imgUrl: "footer9.png" },
   { id: 10, imgUrl: "footer10.png" },
   { id: 11, imgUrl: "footer11.png" },
+  { id: 13, imgUrl: "footer13.png" },
   { id: 14, imgUrl: "footer14.png" },
+  { id: 15, imgUrl: "footer15.png" },
+  { id: 152, imgUrl: "footer152.png" },
   { id: 16, imgUrl: "footer16.png" },
   { id: 18, imgUrl: "footer18.png" },
 ]);
@@ -154,7 +175,9 @@ export const pricingData = createData('Pricing', [
   { id: 3, imgUrl: "pricing3.png" },
   // { id: 6, imgUrl: "pricing6.png" },
   { id: 7, imgUrl: "pricing7.png" },
-  { id: 11, imgUrl: "pricing11.png" }
+  { id: 9, imgUrl: "pricing9.png" },
+  { id: 11, imgUrl: "pricing11.png" },
+  { id: 15, imgUrl: "pricing15.png" }
 ]);
 
 
@@ -162,6 +185,7 @@ export const pricingData = createData('Pricing', [
 export const teamData = createData('Team', [
   { id: 1, imgUrl: "team1.png" },
   { id: 5, imgUrl: "team5.png" },
+  { id: 9, imgUrl: "team9.png" },
   { id: 10, imgUrl: "team10.png" },
   { id: 16, imgUrl: "team16.png" },
 ]);
@@ -195,8 +219,11 @@ export const testimonialData = createData('Testimonial', [
   { id: 3, imgUrl: "testimonial3.png" },
   { id: 6, imgUrl: "testimonial6.png" },
   { id: 7, imgUrl: "testimonial7.png" },
+  { id: 9, imgUrl: "testimonial9.png" },
   { id: 10, imgUrl: "testimonial10.png" },
   { id: 11, imgUrl: "testimonial11.png" },
+  { id: 13, imgUrl: "testimonial13.png" },
+  { id: 15, imgUrl: "testimonial15.png" },
   { id: 16, imgUrl: "testimonial16.png" },
   { id: 18, imgUrl: "testimonial18.png" },
 ]);
@@ -224,3 +251,4 @@ export const menuData = createData('Menu', [
 export const chooseData = createData('Choose', [
   { id: 16, imgUrl: "choose16.png" }
 ]);
+

@@ -21,11 +21,10 @@ const Pricing1 = () => {
         <h1>{pricing.title}</h1>
         <p>{pricing.description}</p>
       </div>
-      {/* key={index} className={index % 2 === 0 ? 'even-card' : 'odd-card'} */}
       <div className="pricing1-mainCards">
         {pricing.plans.map((card, index) => (
+          // <div key={index} className={`pricing1-card${index}`}>
           <div key={index} className={index % 2 === 0 ? "pricing1-even-card" : "pricing1-odd-card"}>
-            {/* <div key={index} className={`pricing1-card${index}`}> */}
             <h3 className="pricing1-card-title">{card.plan}</h3>
             <h1>
               <span>{card.moneyUnit}</span>
@@ -33,7 +32,7 @@ const Pricing1 = () => {
             </h1>
             <span className="pricing1-timeUnit">/{card.timeUnit}</span>
             <hr></hr>
-            <h6>{card.PopularPlan}</h6>
+            {/* <h6>{card.PopularPlan}</h6> */}
             {card.features.map((feature, i) => (
               <p className="pricing1-feature" key={i}>
                 {feature}

@@ -10,7 +10,7 @@
 .feature5_1-title h2{
     font-size: 25px;
     padding: 1rem 0;
-    color: var(--website-5-black);
+    /* color: var(--website-5-black); */
 }
 .feature5_1-title p,
 .feature5_1-singleInfo p{
@@ -22,14 +22,14 @@
 .feature5_1-singleInfo h4{
     padding: 1rem 0;
     font-weight: 700;
-    color: var(--website-5-black);
+    /* color: var(--website-5-black); */
 }
 
 .feature5_1-title small {
     letter-spacing: 0.8rem;
     text-transform: uppercase;
     font-size: 13px;
-    color: var(--website-5-black);
+    /* color: var(--website-5-black); */
     line-height: 1.5rem;
 }
 

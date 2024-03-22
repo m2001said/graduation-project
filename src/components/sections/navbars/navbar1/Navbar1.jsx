@@ -50,7 +50,7 @@ const Navbar1 = () => {
   return (
     <header>
       <div className="Nav-container design-1">
-        <a href="#" className="logo">
+        <a href=" #" className="logo">
           <img src={navbar.imgUrl} alt="Logo" />
         </a>
         <nav>

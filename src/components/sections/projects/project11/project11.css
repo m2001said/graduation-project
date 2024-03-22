@@ -1,22 +1,28 @@
 .work__filters11 {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: wrap; 
   align-items: center;
   column-gap: 1.875rem;
   margin-bottom: 2.5rem;
 }
+
 .work__item11 {
   cursor: pointer;
   font-weight: var(--font-bold);
   transition: 0.3s;
 }
+
 .work__item11:hover {
-  color: var(--first-color11);
+  color: var(--color1);
 }
+
 .work__container11 {
+  display: flex;
+  flex-wrap: wrap;
   grid-template-columns: repeat(3, 1fr);
-  gap: 1.875rem;
+  gap: 1rem;
 }
+
 .work__card11 {
   position: relative;
   overflow: hidden;
@@ -28,7 +34,7 @@
 }
 
 .work__mask11 {
-  background: var(--Banf11);
+  background: var(--color6);
   position: absolute;
   left: 0;
   top: 0;
@@ -41,9 +47,10 @@
 .work__card11:hover .work__mask11 {
   opacity: 0.9;
 }
+
 .work__category11 {
-  color: var(--container-color11);
-  background-color: var(--first-color11);
+  color: var(--color22);
+  background-color: var(--color1);
   border-bottom-left-radius: 0.98rem;
   border-bottom-right-radius: 0.98rem;
   position: absolute;
@@ -55,8 +62,9 @@
   transform: translateY(-40px);
   transition: 0.3s;
 }
+
 .work__title11 {
-  color: var(--container-color11);
+  color: var(--color22);
   font-size: var(--h3-font-size);
   margin: 0 0 0.98rem;
   padding: 0 0.125rem;
@@ -66,14 +74,15 @@
   transition: 0.3s;
   opacity: 0;
 }
+
 .work__button11 {
-  color: var(--container-color11);
+  color: var(--color22);
   position: absolute;
   bottom: 1.5rem;
   left: 1.5rem;
   font-size: var(--h3-font-size);
   display: block;
-  background-color: var(--hsl111);
+  background-color: var(--color3);
   height: 40px;
   width: 40px;
   cursor: pointer;
@@ -83,6 +92,7 @@
   transition: 0.3s;
   opacity: 0;
 }
+
 .work__card11:hover .work__button11 {
   opacity: 1;
 }

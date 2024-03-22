@@ -38,6 +38,7 @@ const TrialDesign18 = () => {
       <Feature18 />
       <Services18 />
       <Projects18 />
+      
       <Testimonial18 />
       <Cta18/>
       <Cta21 />

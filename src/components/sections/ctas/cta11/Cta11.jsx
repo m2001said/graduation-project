@@ -10,12 +10,12 @@ const Cta11 = () => {
       <h2 className="section__title11">Experience</h2>
       <div className="resume__container11 grid11">
         <div className="timeline11 grid11">
-          {cta.education.map((item) => (
+          {cta.educations.map((item) => (
             <Card11 key={item.id} icon={item.imgUrl} title={item.title} year={item.year} desc={item.desc} />
           ))}
         </div>
         <div className="timeline11 grid11">
-          {cta.experience.map((item) => (
+          {cta.experiences.map((item) => (
             <Card11 key={item.id} icon={item.imgUrl} title={item.title} year={item.year} desc={item.desc} />
           ))}
         </div>

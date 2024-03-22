@@ -150,14 +150,19 @@
     text-align: center;
 }
 
-.Hero--section-poster {
+.section-poster {
     object-fit: cover;
     width: 100%;
 }
 
-.Hero--section-poster-container {
+.section--poster-container.Hero--section {
     height: 180px;
     width: 100%;
+}
+
+.section--poster-container:not(.Navbar--section) {
+    min-height: 150px;
+    background-color: var(--appcolor15);
 }
 
 .own-page .error-message {
