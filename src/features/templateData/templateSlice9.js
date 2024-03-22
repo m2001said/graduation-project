@@ -344,12 +344,6 @@ const templateSlice9 = createSlice({
       ],
     },
 
-    cta: {
-      title: "Wanna join the interno?",
-      description: "It is a long established fact  will be distracted.",
-      buttonText: "Contact With Us",
-      icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701813389/templates/template_one/Vector_5_vvvt2o.svg",
-    },
 
     neighborhoods: [
       {

@@ -18,7 +18,7 @@ const CustomDot = ({ onClick, active }) => {
 };
 
 const Hero9 = () => {
-  const hero9 = useSelector((state) => state.template9.hero);
+  const hero9 = useSelector((state) => state.template9.hero9);
 
   return (
     <main className="mb-12 pt-4">

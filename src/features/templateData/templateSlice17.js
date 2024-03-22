@@ -135,8 +135,12 @@ const templateSlice17 = createSlice({
       googleIcon: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1703129088/icons8-gmail-50_u4sqv0.png",
       closeIcon: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707987495/icons8-twitterx-50_1_ggrau2.png",
       login: "Login",
+    }, 
+    colors: {
+      templateColors: ["#fff", "#cda274", "#292f36", "#f4f0ec", "#777777"],
     },
   },
+  
 
   name: "templateSlice17",
   reducers: {

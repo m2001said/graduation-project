@@ -2,6 +2,7 @@ import { useSelector } from "react-redux";
 
 const Teams9 = () => {
   const { title, cards } = useSelector((state) => state.template9.team);
+  
 
   return (
     <main className="container mx-auto px-3 team9">
