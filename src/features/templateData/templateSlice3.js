@@ -36,7 +36,7 @@ const templateSlice3 = createSlice({
       },
     },
 
-    feature: {
+    features: {
       Subtitle: "SOME REASONS",
       title: {
         titleA: "WHY",
@@ -62,7 +62,7 @@ const templateSlice3 = createSlice({
       },
     },
 
-    testimonial: {
+    testimonials: {
       title: {
         Subtitle: "TESTIMONIALS",
         titleA: "WHAT THE PEOPLE THINKS ABOUT US",

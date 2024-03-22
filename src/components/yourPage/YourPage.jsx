@@ -1,43 +1,38 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "./yourPage.css";
-import InputsGroup from "./InputsGroup";
+import InputOption from "./InputsGroup";
 import { getSectionData } from "./getSectionData";
 import { useDispatch, useSelector } from "react-redux";
 import { ownTemplateActions } from "../../features/templateData/ownTemplateSlice";
-
 const YourPage = () => {
   const sectionNames = [
-    "hero",
-    "testimonials",
-    "footer",
     "navbar",
+    "hero",
     "features",
-    "cta",
-    "pricing",
+    "about",
     "projects",
     "services",
+    "contacts",
     "team",
+    "testimonials",
     "statistics",
-    "contact",
     "logos",
     "items",
-    "cartItem",
-    "filterItem",
-    "orderPopup",
+    "gallery",
+    "offers",
+    "reservations",
+    "menus",
+    "cartItems",
+    "filterItems",
+    "orderPopups",
+    "chooses",
+    "pricing",
+    "cta",
+    "footer",
   ];
 
-  const [selectedIndices, setSelectedIndices] = useState(Object.fromEntries(sectionNames.map((name) => [name, undefined])));
-
-  const [checkError, setCheckError] = useState(false);
-  const navigate = useNavigate();
-
-  const handleIndexChange = (section) => (e) => {
-    const { value } = e.target;
-    setSelectedIndices((prevState) => ({ ...prevState, [section]: parseInt(value, 10) }));
-  };
-
-  //  for handle dashboard
+  //   //  for handle dashboard
   const dispatch = useDispatch();
   const template1 = useSelector((state) => state.template1);
   const template2 = useSelector((state) => state.template2);
@@ -79,10 +74,27 @@ const YourPage = () => {
     18: template18,
   };
 
+  const [selectedIndices, setSelectedIndices] = useState(Object.fromEntries(sectionNames.map((name) => [name, undefined])));
+
+  const [checkError, setCheckError] = useState(false);
+  const navigate = useNavigate();
+
+  const handleIndexChange = (section) => (e) => {
+    const { value } = e.target;
+
+    // If the checkbox is unchecked, set the selected index to undefined
+    const selectedIndex = selectedIndices[section] === parseInt(value, 10) ? undefined : parseInt(value, 10);
+    setSelectedIndices((prevState) => ({ ...prevState, [section]: selectedIndex }));
+  };
+
+  const removeIndexChange = (section) => (e) => {
+    const selectedIndex = undefined;
+    setSelectedIndices((prevState) => ({ ...prevState, [section]: selectedIndex }));
+  };
+
   const handleSubmit = () => {
     const selectedSections = {};
-
-    const userSectionSelection = [];
+    const userSectionSelection = []
     // Check if a section is selected and not equal to the default value (undefined) before sending it
     sectionNames.forEach((section) => {
       if (selectedIndices[section] !== undefined) {
@@ -90,8 +102,9 @@ const YourPage = () => {
         userSectionSelection.push({ sectionName: section, templateId: selectedIndices[section] });
       }
     });
+
     const selectedSectionCount = Object.values(selectedSections).filter((val) => val !== undefined).length;
-    if (selectedSectionCount < 3) {
+    if (selectedSectionCount < 3 || !selectedIndices["hero"] || !selectedIndices["navbar"] || !selectedIndices["footer"]) {
       setCheckError(true);
     } else {
       let userSchema = {};
@@ -105,18 +118,11 @@ const YourPage = () => {
         return null;
       });
 
-      console.log(userSchema);
-
+      console.log(userSchema)
       dispatch(ownTemplateActions.insertSections({ data: userSchema }));
 
       navigate("/own-page", { state: selectedSections });
     }
-  };
-
-  const renderInputsGroup = (data, section) => {
-    return data.map((item) => (
-      <InputsGroup key={item.id} data={item} selectedIndex={selectedIndices[section]} handleIndexChange={handleIndexChange(section)} />
-    ));
   };
 
   return (
@@ -129,23 +135,28 @@ const YourPage = () => {
         </div>
 
         {sectionNames.map((section, index) => (
-          <>
+          <div key={section}>
             <label htmlFor={`show${index}`} className="show-section">
-              {selectedIndices[section] && <div className="selected-item"></div>}
               <p className="title">{`${section} sections`}</p>
               <img src="https://res.cloudinary.com/duc04fwdb/image/upload/v1709052019/jammal_photos/vdybrjarzdlo6x9fdwga.svg" alt="down-icon" />
             </label>
-            <input type="radio" name="show" className="show-btn" id={`show${index}`} />
-            <div className="group" key={section}>
-              {renderInputsGroup(getSectionData(section), section)}
+            <input type="checkbox" name="show" className="show-btn" id={`show${index}`} onChange={removeIndexChange(section)} />
+            <div className="group">
+              <InputOption item={getSectionData(section)} section={section} selectedIndex={selectedIndices[section]} handleIndexChange={handleIndexChange} />
             </div>
-          </>
+          </div>
         ))}
 
         <button className="generate-own-btn" onClick={handleSubmit}>
           Generate your website
         </button>
-        {checkError && <p className="error-message"> select at least 3 sections.</p>}
+        <div className={`error-message ${checkError ? "active" : ""}  flex justify-center items-center gap-4`}>
+          <img src="https://res.cloudinary.com/dvp3nyulf/image/upload/v1710190698/warning.png" alt="" />
+          <p>
+            Select a minimum of<span className="important"> 3 </span>sections, including
+            <span className="important"> Navbar</span>,<span className="important"> Hero</span>,<span className="important"> Footer</span>,
+          </p>
+        </div>
       </div>
     </div>
   );

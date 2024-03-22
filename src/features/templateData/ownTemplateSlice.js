@@ -31,6 +31,10 @@ const ownTemplateSlice = createSlice({
     },
     insertSections: (state, action) => {
       const { data } = action.payload;
+      const colors = {
+        templateColors: ["#fff", "#cda274", "#292f36", "#f4f0ec", "#777777"],
+      };
+      data.colors = colors;
       return data;
     },
   },

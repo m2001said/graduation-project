@@ -10,24 +10,31 @@ const LeftSide = ({ targetTemplate, updateAllRef }) => {
 
   const sections = Object.keys(targetTemplate);
   sections.sort((a, b) => {
-    if (a === 'navbar') {
+    if (a === "navbar") {
       return -1; // 'navbar' comes before anything else
     }
-    if (b === 'navbar') {
+    if (b === "navbar") {
       return 1; // Anything else comes after 'navbar'
     }
-    if (a === 'hero') {
+    if (a === "hero") {
       return -1; // 'hero' comes before anything else except 'navbar'
     }
-    if (b === 'hero') {
+    if (b === "hero") {
       return 1; // Anything else comes after 'hero' except 'navbar'
     }
-    if (a === 'footer') {
+    if (a === "colors") {
+      return 1; // 'colors' comes after anything else
+    }
+    if (b === "colors") {
+      return -1; // Anything else comes before 'colors'
+    }
+    if (a === "footer") {
       return 1; // 'footer' comes after anything else
     }
-    if (b === 'footer') {
+    if (b === "footer") {
       return -1; // Anything else comes before 'footer'
     }
+
     return 0; // No change if both are the same or not 'navbar', 'hero', or 'footer'
   });
   return showLeftSide ? (
