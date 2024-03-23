@@ -6,10 +6,8 @@ import FieldControllerIsArrayOfObjects from "./subControllers/FieldControllerIsA
 import FieldControllerIsObject from "./subControllers/FieldControllerIsObject";
 import ChangeImageController from "./ChangeImageController";
 import { Reorder } from "./shared/Reorder";
-const AllControllers = ({ controllerSection, targetTemplate, updateAll, sectionIndex, numOfSections }) => {
-  // const targetSection = useSelector((state) => state.template6[controllerSection]);
+const AllControllers = ({ controllerSection, targetTemplate, updateAll , isFixed , isFirst,isLast }) => {
   const targetSection = targetTemplate[controllerSection];
-
   const fields = Object.keys(targetSection);
   const dispatch = useDispatch();
   const [open, setOpen] = useState(false);
@@ -21,15 +19,11 @@ const AllControllers = ({ controllerSection, targetTemplate, updateAll, sectionI
     dispatch(updateAll.addNewElement({ section: controllerSection, blockName: blockName }));
   };
 
-  const isFirstSection = sectionIndex === 2;
-  const isLastSection = numOfSections - 2 - sectionIndex === 0;
-  const isPrevLastSection = numOfSections - 3 - sectionIndex === 0;
-
   const deleteSection = () => {
     dispatch(updateAll.deleteSection({ section: controllerSection }));
   };
   const handleReorder = (type) => {
-    if ((isPrevLastSection && type === "down") | (isFirstSection && type === "up")) {
+    if ((isLast && type === "down") | (isFirst && type === "up")) {
       return;
     } else dispatch(updateAll.reorderSection({ section: controllerSection, type: type }));
   };
@@ -41,13 +35,12 @@ const AllControllers = ({ controllerSection, targetTemplate, updateAll, sectionI
         <h3 className="controller-name w-full" onClick={() => setOpen(!open)}>
           {controllerSection} section
         </h3>
-
-        {(sectionIndex <= 1) | isLastSection ? (
+        {isFixed ? ( 
           <></>
         ) : (
           <Reorder
-            isFirstFiled={isFirstSection}
-            isLastFiled={isPrevLastSection}
+            isFirstFiled={isFirst}
+            isLastFiled={isLast}
             deleteItem={deleteSection}
             handleReorder={handleReorder}
             componentType={"main"}

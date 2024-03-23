@@ -37,6 +37,7 @@ const LeftSide = ({ targetTemplate, updateAllRef }) => {
 
     return 0; // No change if both are the same or not 'navbar', 'hero', or 'footer'
   });
+  let stopCheckFirst = true;
   return showLeftSide ? (
     <div className="max-md:w-full flex-auto w-60 pb-6 bg-white md:overflow-y-auto md:overflow-x-hidden dashboard-subContainer" style={{ minWidth: "250px" }}>
       <div className="update-controller">
@@ -46,6 +47,20 @@ const LeftSide = ({ targetTemplate, updateAllRef }) => {
         </div>
       </div>
       {sections.map((section, index) => {
+        let isFixed = false;
+        let isFirst = false;
+        let isLast = false;
+        if (section === "navbar" || section === "hero" || section === "footer") {
+          isFixed = true;
+        }
+        if (stopCheckFirst && ((index === 0 && !isFixed) || (index === 1 && !isFixed) || (index === 2 && !isFixed))) {
+          isFirst = true;
+          stopCheckFirst = false;
+        }
+        if (sections[index + 1] === "footer" || sections[index + 1] === "colors") {
+          isLast = true;
+        }
+
         if (section === "colors") return <ColorController key={section} colors={targetTemplate.colors} updateAll={updateAllRef} />;
         else
           return (
@@ -54,8 +69,9 @@ const LeftSide = ({ targetTemplate, updateAllRef }) => {
               targetTemplate={targetTemplate}
               key={section}
               updateAll={updateAllRef}
-              sectionIndex={index}
-              numOfSections={sections.length}
+              isFixed={isFixed}
+              isFirst={isFirst}
+              isLast={isLast}
             />
           );
       })}

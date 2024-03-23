@@ -33,11 +33,11 @@ const Navbar3 = () => {
 
   return (
     <div className="navbar3">
-      <img src={navbar.imgUrl[0]} alt="" className="logo3" />
+      <img src={navbar.logos[0]} alt="" className="logo3" />
       <div className="navbar3-menu">
         {mobile ? (
           <div className="closed-mobile-menu" onClick={toggleMenu}>
-            <img src={navbar.imgUrl[1]} alt="" className="menu-icon" />
+            <img src={navbar.logos[1]} alt="" className="menu-icon" />
           </div>
         ) : (
           navbar.links.map((link, index) => (

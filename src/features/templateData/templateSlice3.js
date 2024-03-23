@@ -2,14 +2,13 @@ import { createSlice } from "@reduxjs/toolkit";
 import { addElement, addElementToArray, addSubElement, deleteElement, deleteSection, editElement, reorder, reorderSections } from "./actions";
 const templateSlice3 = createSlice({
   initialState: {
-    navbar: {
-      imgUrl: [
-        "https://res.cloudinary.com/duc04fwdb/image/upload/v1705928879/jammal_photos/vqliep1jh8zlgkmwkewx.png",
-        "https://res.cloudinary.com/duc04fwdb/image/upload/v1705931744/jammal_photos/fbb4rdapofxl04oewfc3.png",
-      ],
-      links: ["Home", "Programs", "Why us", "Plans", "Testimonials"],
-    },
-
+    // navbar: {
+    //   logos: [
+    //     "https://res.cloudinary.com/duc04fwdb/image/upload/v1705928879/jammal_photos/vqliep1jh8zlgkmwkewx.png",
+    //     "https://res.cloudinary.com/duc04fwdb/image/upload/v1705931744/jammal_photos/fbb4rdapofxl04oewfc3.png",
+    //   ],
+    //   links: ["Home", "Programs", "Why us", "Plans", "Testimonials"],
+    // },
     hero: {
       Subtitle: "the best fitness club in the town",
       imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703609517/jammal_photos/neoqh0j4yjexem6j9ozp.png",
@@ -124,7 +123,7 @@ const templateSlice3 = createSlice({
         },
       ],
     },
-    testimonial: {
+    testimonials: {
       title: {
         mainTitle: "TESTIMONIALS",
         primaryTitle: "WHAT THE PEOPLE THINK ABOUT US",

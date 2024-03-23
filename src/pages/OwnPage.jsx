@@ -30,7 +30,6 @@ const OwnPage = () => {
   const selectedData = location.state || {};
   const ownTemplate = useSelector((state) => state.ownTemplate);
   const reorderedComponents = Object.keys(ownTemplate);
-
   const renderComponent = (type, index) => {
     const Component = importComponent(type, index);
     return Component ? <Component key={`${type}-${index}`} /> : null;

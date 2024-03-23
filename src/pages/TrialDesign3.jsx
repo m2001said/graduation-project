@@ -17,7 +17,7 @@ const TrialDesign3 = () => {
     projects: Project3,
     pricing: Pricing3,
     cta: Cta3,
-    footer: Footer3,
+    footer: Footer3
   };
   return (
     <div className="TrialDesign3">

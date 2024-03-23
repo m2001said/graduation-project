@@ -2,18 +2,18 @@ import { createSlice } from "@reduxjs/toolkit";
 import { addElement, addElementToArray, addSubElement, deleteElement, deleteSection, editElement, reorder, reorderSections } from "./actions";
 const templateSlice9 = createSlice({
   initialState: {
-    navbar: {
-      words: {
-        title: "CSE",
-        menuItems: ["Home", "About", "Listings", "Services", "Features", "Login/Register", "Add Listings"],
-      },
-      images: {
-        menuIcon: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707347075/icons8-bars-64_uzkog5.png",
-        closeIcon: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707347076/icons8-close_ozpkst.svg",
-        homeIcon: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707345078/realestate/home_553416_pdjise.png",
-        personIcon: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707347076/icons8-person-64_ppr9e8.png",
-      },
-    },
+    // navbar: {
+    //   words: {
+    //     title: "CSE",
+    //     menuItems: ["Home", "About", "Listings", "Services", "Features", "Login/Register", "Add Listings"],
+    //   },
+    //   images: {
+    //     menuIcon: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707347075/icons8-bars-64_uzkog5.png",
+    //     closeIcon: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707347076/icons8-close_ozpkst.svg",
+    //     homeIcon: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707345078/realestate/home_553416_pdjise.png",
+    //     personIcon: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707347076/icons8-person-64_ppr9e8.png",
+    //   },
+    // },
 
     hero: {
       title: "REAL ESTATE",

@@ -11,7 +11,6 @@ const BuildYourPage = () => {
     "navbar",
     "hero",
     "features",
-    "about",
     "projects",
     "services",
     "contact",
