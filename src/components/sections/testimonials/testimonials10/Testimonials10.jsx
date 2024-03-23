@@ -7,11 +7,19 @@ import "swiper/css";
 import "swiper/css/free-mode";
 import "swiper/css/pagination";
 import { FreeMode, Pagination } from "swiper/modules";
+import { useLocation } from "react-router";
 
 
 
 const Testimonials10 = () => {
-  const { testimonial } = useSelector((state) => state.template10);
+  const { pathname } = useLocation();
+  const testimonial = useSelector((state) => {
+    if (pathname.includes("own-page")) {
+      return state.ownTemplate.testimonials;
+    } else {
+      return state.template10.testimonials;
+    }
+  });
 
 
   return (

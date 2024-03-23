@@ -4,7 +4,6 @@ import { useSelector } from "react-redux";
 import { useLocation } from "react-router";
 
 const Teams1 = () => {
-  // const { team } = useSelector((state) => state.template1);
   const { pathname } = useLocation();
   const team = useSelector((state) => {
     if (pathname.includes("own-page")) {

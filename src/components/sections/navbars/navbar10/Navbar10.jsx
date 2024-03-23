@@ -2,10 +2,18 @@ import React from "react";
 import { useSelector } from "react-redux";
 import "../../../../assets/css/globals10.css";
 import DarkMode from "./DarkMode";
+import { useLocation } from "react-router";
 
 
 const Navbar10 = ({ handleOrderPopup }) => {
-  const { navbar } = useSelector((state) => state.template10);
+  const { pathname } = useLocation();
+  const navbar = useSelector((state) => {
+    if (pathname.includes("own-page")) {
+      return state.ownTemplate.navbar;
+    } else {
+      return state.template10.navbar;
+    }
+  });
   return (
     <>
       <div className="shadow-lg bg-white dark:bg-gray-900 dark:text-white duration-200 ">

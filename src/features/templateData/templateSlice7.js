@@ -78,7 +78,7 @@ const templateSlice7 = createSlice({
       // },
     },
 
-    feature: {
+    features: {
       actionButton: " Get Started",
       title: {
         title: "You do the business,",
@@ -143,7 +143,7 @@ const templateSlice7 = createSlice({
         },
       ],
     },
-    testimonial: {
+    testimonials: {
       title: "What People are",
       subtitle: "saying about us",
       content: " Everything you need to accept card payments and grow your business anywhere on the planet.",
@@ -161,8 +161,10 @@ const templateSlice7 = createSlice({
       content: "Everything you need to accept card payments and grow your business anywhere on the planet.",
     },
     footer: {
-      imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1706816362/jammal_photos/res7beki52yf4cbmuix3.svg",
+      title: "Copyright Ⓒ 2022 HooBank. All Rights Reserved.",
       Subtitle: "A new way to make the payments easy, reliable and secure.",
+      imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1706816362/jammal_photos/res7beki52yf4cbmuix3.svg",
+
       links: [
         {
           title: "Useful Links",
@@ -228,9 +230,6 @@ const templateSlice7 = createSlice({
           ],
         },
       ],
-    },
-    socialMedia: {
-      title: "Copyright Ⓒ 2022 HooBank. All Rights Reserved.",
       socialMedia: [
         {
           imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1706818177/jammal_photos/zqz9nmo0tqfpnhunvfgl.svg",

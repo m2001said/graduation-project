@@ -4,7 +4,6 @@ import "./logos.css";
 import { useLocation } from "react-router";
 
 const Logos1 = () => {
-  // const { logos } = useSelector((state) => state.template1);
   const { pathname } = useLocation();
   const logos = useSelector((state) => {
     if (pathname.includes("own-page")) {

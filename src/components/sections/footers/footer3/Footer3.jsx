@@ -1,10 +1,17 @@
 import React from "react";
 import "./footer3.css";
 import { useSelector } from "react-redux";
+import { useLocation } from "react-router";
 
 const Footer3 = () => {
-  const { footer } = useSelector((state) => state.template3);
-
+  const { pathname } = useLocation();
+  const footer = useSelector((state) => {
+    if (pathname.includes("own-page")) {
+      return state.ownTemplate.footer;
+    } else {
+      return state.template3.footer;
+    }
+  });
   return (
     <div className="footer3-container">
       <hr />

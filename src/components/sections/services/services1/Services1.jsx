@@ -4,7 +4,6 @@ import { useSelector } from "react-redux";
 import { useLocation } from "react-router";
 
 const Services1 = () => {
-  // const { services } = useSelector((state) => state.template1);
   const { pathname } = useLocation();
   const services = useSelector((state) => {
     if (pathname.includes("own-page")) {

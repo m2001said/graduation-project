@@ -6,7 +6,6 @@ import { useLocation } from "react-router";
 
 
 const Pricing1 = () => {
-  // const { pricing } = useSelector((state) => state.template1);
   const { pathname } = useLocation();
   const pricing = useSelector((state) => {
     if (pathname.includes("own-page")) {

@@ -4,9 +4,9 @@ import Hero1 from "../components/sections/heros/hero1/Hero1";
 import Services1 from "../components/sections/services/services1/Services1";
 import Project1 from "../components/sections/projects/projects1/Project1";
 import Items1 from "../components/sections/items/items1/Items1";
-import Statictics1 from "../components/sections/statistics/statistics1/Statistics1";
+import Statistics1 from "../components/sections/statistics/statistics1/Statistics1";
 import Testimonials1 from "../components/sections/testimonials/testimonials1/Testimonials1";
-// import Featrue1 from "../components/sections/features/feature1/Featrue1";
+import Featrue1 from "../components/sections/features/feature1/Featrue1";
 import Logos1 from "../components/sections/logos/logos1/Logos1";
 import Team1 from "../components/sections/teams/teams1/Teams1";
 import Pricing1 from "../components/sections/pricings/pricing1/Pricing1";
@@ -21,11 +21,11 @@ const TrialDesign1 = () => {
     navbar: Navbar1,
     hero: Hero1,
     services: Services1,
-    // features: Featrue1,
+    features: Featrue1,
     testimonials: Testimonials1,
     logos: Logos1,
     projects: Project1,
-    statistics: Statictics1,
+    statistics: Statistics1,
     items: Items1,
     team: Team1,
     pricing: Pricing1,

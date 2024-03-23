@@ -15,7 +15,7 @@ const templateSlice9 = createSlice({
       },
     },
 
-    hero9: {
+    hero: {
       title: "REAL ESTATE",
       heading: "Find a perfect home you love..!",
       paragraph: "Etiam eget elementum elit. Anean dignissim dapibus vestibulum...",
@@ -73,7 +73,7 @@ const templateSlice9 = createSlice({
         },
       ],
     },
-    feature: {
+    features: {
       title: "We Create The Art Of Stylish Living Stylishly",
       description:
         "It is a long established fact that a reader will be distracted by the of readable content of a page when looking at its layouts the points of using that it has a more-or-less normal.",
@@ -112,7 +112,7 @@ const templateSlice9 = createSlice({
       star: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707601512/star_qhtqlz.png",
       speach: "as as dn djjn etoua mon chanm",
     },
-    testimonialsData: [
+    testimonials: [
       {
         quote:
           "I highly recommend Ali. He was attentive to our needs and worked tirelessly to find us the perfect home. We could not be happier with our new place!",
@@ -388,7 +388,7 @@ const templateSlice9 = createSlice({
         state: "CA",
       },
     ],
-    contactme9: {
+    contact: {
       imgUrl: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707540053/tower_qajd1k.png",
       title: "Become an Agent.",
       description: "Contact asdadsa mksldm asmkdsalk asdmkl .",
@@ -405,7 +405,7 @@ const templateSlice9 = createSlice({
       iconH: "done porttier eusiod",
       iconP: "nullam a lanica ipsum dignissim purus , nulla",
     },
-    footer9: {
+    footer: {
       rezillaInfo: {
         name: "cse",
         address: "227 st zagazig",

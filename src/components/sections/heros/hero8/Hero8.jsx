@@ -3,12 +3,19 @@ import React, { useEffect, useRef } from "react";
 import { useSelector } from "react-redux";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { useLocation } from "react-router";
 
 // ... other imports ...
 
 const Hero8 = () => {
-  const { hero } = useSelector((state) => state.template8);
-
+  const { pathname } = useLocation();
+  const hero = useSelector((state) => {
+    if (pathname.includes("own-page")) {
+      return state.ownTemplate.hero;
+    } else {
+      return state.template8.hero;
+    }
+  });
   const scrollDirection = useRef("down");
 
   useEffect(() => {

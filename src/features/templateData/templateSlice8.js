@@ -34,7 +34,7 @@ const templateSlice8 = createSlice({
     },
 
     // services data
-    Services: {
+    services: {
       title: "WHAT I DO.",
       titleDescription: "I'm a Freelance Frontend Developer with over 5 years of experience.",
       btnText: "see my work ",
@@ -67,7 +67,7 @@ const templateSlice8 = createSlice({
       UrlImg: "https://res.cloudinary.com/duc04fwdb/image/upload/v1708031587/jammal_photos/lidxpp6o8dtr95ajdv5t.png",
     },
 
-    work: {
+    projects: {
       projects: [
         {
           UrlImg: "	https://res.cloudinary.com/duc04fwdb/image/upload/v1708272971/jammal_photos/w5rnjea8huwe5pgrazeg.png",
@@ -89,19 +89,18 @@ const templateSlice8 = createSlice({
       description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi laborum eius qui recusandae possimus. Dolorem quam illo impedit sunt fugiat",
       btnText: "View all projects",
     },
-    Contact: {
+    contact: {
       title: "  Let's work  together!",
       subtitle: "Get in touch",
       btnText: "Send message",
-    },
-
-    colors: {
-      templateColors: ["#fff", "#cda274", "#292f36", "#f4f0ec", "#777777"],
     },
     ImageBackground: {
       siteImg: "url('https://res.cloudinary.com/duc04fwdb/image/upload/v1708030305/jammal_photos/hfeutnseoqs0gsa2kx2u.jpg')",
       aboutImg: "url('https://res.cloudinary.com/duc04fwdb/image/upload/v1708030938/jammal_photos/zxvali7en6j98kruxig5.png')",
       servicesImg: "url('https://res.cloudinary.com/duc04fwdb/image/upload/v1708031587/jammal_photos/lidxpp6o8dtr95ajdv5t.png')",
+    },
+    colors: {
+      templateColors: ["#fff", "#cda274", "#292f36", "#f4f0ec", "#777777"],
     },
   },
 

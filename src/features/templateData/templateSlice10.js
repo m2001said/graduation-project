@@ -86,7 +86,7 @@ const templateSlice10 = createSlice({
       ],
     },
 
-    feature: {
+    features: {
       imgUrl: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707084593/library_ww1bzg.jpg",
       title: "Library at your fingertips",
       description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque reiciendis inventore iste ratione ex alias quis magni at optio",
@@ -161,7 +161,7 @@ const templateSlice10 = createSlice({
       buttonText: "View All Books",
     },
 
-    testimonial: {
+    testimonials: {
       smTitle: "What our customers say",
       title: "Testimonial",
       description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis delectus architecto error nesciunt",

@@ -1,9 +1,17 @@
 import React, { useState, useEffect } from "react";
 import "./navbar3.css";
 import { useSelector } from "react-redux";
+import { useLocation } from "react-router";
 
 const Navbar3 = () => {
-  const { navbar } = useSelector((state) => state.template3);
+  const { pathname } = useLocation();
+  const navbar = useSelector((state) => {
+    if (pathname.includes("own-page")) {
+      return state.ownTemplate.navbar;
+    } else {
+      return state.template3.navbar;
+    }
+  });
   const [menuOpened, setMenuOpened] = useState(false);
   const [mobile, setMobile] = useState(window.innerWidth <= 768);
 

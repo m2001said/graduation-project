@@ -42,7 +42,7 @@ const templateSlice5 = createSlice({
       imgUrl: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1703111688/R_aejs2k.jpg",
     },
 
-    service: {
+    services: {
       title: "Travel to make memories all around the world",
       buttonTxt: "View all",
       services: [

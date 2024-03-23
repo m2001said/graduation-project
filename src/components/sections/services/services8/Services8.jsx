@@ -2,10 +2,17 @@ import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useSelector } from "react-redux";
+import { useLocation } from "react-router";
 
 const Services8 = () => {
-  const { Services } = useSelector((state) => state.template8);
-
+  const { pathname } = useLocation();
+  const Services = useSelector((state) => {
+    if (pathname.includes("own-page")) {
+      return state.ownTemplate.services;
+    } else {
+      return state.template8.services;
+    }
+  });
   useEffect(() => {
     AOS.init({
       duration: 800,

@@ -1,9 +1,17 @@
+import { useLocation } from "react-router";
 import styles from "../../../sections/heros/hero7/styles7/style";
 import Button7 from "../../features/feature7/Button7";
 import { useSelector } from "react-redux";
 
 const Cta7 = () => {
-  const { cta } = useSelector((state) => state.template7);
+  const { pathname } = useLocation();
+  const cta = useSelector((state) => {
+    if (pathname.includes("own-page")) {
+      return state.ownTemplate.cta;
+    } else {
+      return state.template7.cta;
+    }
+  });
   return (
     <section className={`${styles.flexCenter} ${styles.marginY} ${styles.padding} sm:flex-row flex-col bg-black-gradient-2 rounded-[20px] box-shadow`}>
       <div className="flex-1 flex flex-col">

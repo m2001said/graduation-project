@@ -1,9 +1,16 @@
+import { useLocation } from "react-router";
 import "./cta3.css";
 import { useSelector } from "react-redux";
 
 const Cta3 = () => {
-  const { cta } = useSelector((state) => state.template3);
-
+  const { pathname } = useLocation();
+  const cta = useSelector((state) => {
+    if (pathname.includes("own-page")) {
+      return state.ownTemplate.cta;
+    } else {
+      return state.template3.cta;
+    }
+  });
   const firstGroup = cta.title.slice(0, 2);
   const secondGroup = cta.title.slice(2);
 

@@ -136,34 +136,34 @@ const templateSlice2 = createSlice({
         },
       ],
     },
-    items: {
-      title: "Articles & News",
-      description:
-        "It is a long established fact that a reader will be distracted by the of readable content of a page when lookings at its layouts the points of using.",
-      cards: [
-        {
-          title: "Let’s Get Solution For Building Construction Work",
-          description: "26 December,2022 ",
-          imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701718041/templates/template_one/article1.f88f54e6a4cdbf340b36_l3ujjw.png",
-          icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701718889/templates/template_one/Vector_5_nzmfwn.svg",
-          caption: "Kitchan Design",
-        },
-        {
-          title: "Low Cost Latest Invented Interior Designing Ideas.",
-          description: "22 December,2022 ",
-          icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701718889/templates/template_one/Vector_5_nzmfwn.svg",
-          imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701718042/templates/template_one/article2.43be768543cb8cfeaf07_atvwjd.png",
-          caption: "Living Design",
-        },
-        {
-          title: "Best For Any Office & Business Interior Solution",
-          description: "25 December,2022 ",
-          icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701718889/templates/template_one/Vector_5_nzmfwn.svg",
-          imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701718042/templates/template_one/article3.f759fde0c85f3fb92b22_c2tqkv.png",
-          caption: "Interior Design",
-        },
-      ],
-    },
+    // items: {
+    //   title: "Articles & News",
+    //   description:
+    //     "It is a long established fact that a reader will be distracted by the of readable content of a page when lookings at its layouts the points of using.",
+    //   cards: [
+    //     {
+    //       title: "Let’s Get Solution For Building Construction Work",
+    //       description: "26 December,2022 ",
+    //       imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701718041/templates/template_one/article1.f88f54e6a4cdbf340b36_l3ujjw.png",
+    //       icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701718889/templates/template_one/Vector_5_nzmfwn.svg",
+    //       caption: "Kitchan Design",
+    //     },
+    //     {
+    //       title: "Low Cost Latest Invented Interior Designing Ideas.",
+    //       description: "22 December,2022 ",
+    //       icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701718889/templates/template_one/Vector_5_nzmfwn.svg",
+    //       imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701718042/templates/template_one/article2.43be768543cb8cfeaf07_atvwjd.png",
+    //       caption: "Living Design",
+    //     },
+    //     {
+    //       title: "Best For Any Office & Business Interior Solution",
+    //       description: "25 December,2022 ",
+    //       icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701718889/templates/template_one/Vector_5_nzmfwn.svg",
+    //       imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701718042/templates/template_one/article3.f759fde0c85f3fb92b22_c2tqkv.png",
+    //       caption: "Interior Design",
+    //     },
+    //   ],
+    // },
     services: {
       services: [
         {

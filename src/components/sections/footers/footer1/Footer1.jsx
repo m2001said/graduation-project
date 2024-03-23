@@ -4,7 +4,6 @@ import { useSelector } from "react-redux";
 import { useLocation } from "react-router";
 
 const Footer = () => {
-  // const { footer } = useSelector((state) => state.template1);
   const { pathname } = useLocation();
   const footer = useSelector((state) => {
     if (pathname.includes("own-page")) {

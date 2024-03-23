@@ -3,8 +3,6 @@ import "./feature.css";
 import { useSelector } from "react-redux";
 import { useLocation } from "react-router";
 const Featrue1 = () => {
-  // const { features } = useSelector((state) => state.template1);
-  // const feature = features;
   const { pathname } = useLocation();
   const feature = useSelector((state) => {
     if (pathname.includes("own-page")) {

@@ -59,7 +59,7 @@ const templateSlice3 = createSlice({
         },
       ],
     },
-    feature: {
+    features: {
       Subtitle: "SOME REASONS",
       title: "WHY CHOOSE US ?",
       imgUrl: [
@@ -130,7 +130,6 @@ const templateSlice3 = createSlice({
         primaryTitle: "WHAT THE PEOPLE THINK ABOUT US",
         secondaryTitle: "WHAT THEY SAY ABOUT US",
       },
-
 
       imgUrl: [
         "https://res.cloudinary.com/duc04fwdb/image/upload/v1702987916/jammal_photos/pt96uext4dvfv3op3khc.png",

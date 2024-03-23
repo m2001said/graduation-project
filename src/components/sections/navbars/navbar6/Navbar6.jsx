@@ -1,9 +1,17 @@
 import React, { useRef } from "react";
 import "./navbar6.css";
 import { useSelector } from "react-redux";
+import { useLocation } from "react-router";
 
 const Navbar6 = () => {
-  const { navbar } = useSelector((state) => state.template6);
+  const { pathname } = useLocation();
+  const navbar = useSelector((state) => {
+    if (pathname.includes("own-page")) {
+      return state.ownTemplate.navbar;
+    } else {
+      return state.template6.navbar;
+    }
+  });
   const menuRef = useRef();
   const menuToggle = () => menuRef.current.classList.toggle("active__menu");
 

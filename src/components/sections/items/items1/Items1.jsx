@@ -6,7 +6,6 @@ import { useLocation } from "react-router";
 
 
 const Items1 = () => {
-  // const { items } = useSelector((state) => state.template1);
   const { pathname } = useLocation();
   const items = useSelector((state) => {
     if (pathname.includes("own-page")) {

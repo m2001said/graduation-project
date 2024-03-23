@@ -1,8 +1,16 @@
 import React, { useState } from "react";
 import { useSelector } from "react-redux";
+import { useLocation } from "react-router";
 
 const Navbar7 = () => {
-  const { navbar } = useSelector((state) => state.template7);
+  const { pathname } = useLocation();
+  const navbar = useSelector((state) => {
+    if (pathname.includes("own-page")) {
+      return state.ownTemplate.navbar;
+    } else {
+      return state.template7.navbar;
+    }
+  });
   const [active, setActive] = useState("Home");
   const [toggle, setToggle] = useState(false);
 

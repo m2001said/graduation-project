@@ -65,7 +65,8 @@ const templateSlice6 = createSlice({
           imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703098919/jammal_photos/bvipjezk42alazv5roew.png",
         },
       ],
-    }, products: {
+    },
+    products: {
       menuTitle: "Our Menu Pack",
       filterContent: [
         {
@@ -176,160 +177,166 @@ const templateSlice6 = createSlice({
         },
         {
           title: "DESSERT",
-          content: [{
-            id: "21",
-            title: "Whipped Cream",
-            price: 50,
-            imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703099235/jammal_photos/mwphxi7ujoec1c2krana.png",
-          },
-          {
-            id: "22",
-            title: "Cake Cream",
-            price: 50,
-            imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703098853/jammal_photos/zuclkds0uufzktzfeien.png",
-          },
-          {
-            id: "23",
-            title: "Cake",
-            price: 50,
-            imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703099235/jammal_photos/mwphxi7ujoec1c2krana.png",
-          },
-          {
-            id: "24",
-            title: "Cup Cake",
-            price: 275,
-            imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703099335/jammal_photos/why415hwonyxffn1cyon.png",
-          },
-          {
-            id: "25",
-            title: "Whipped Cream",
-            price: 50,
-            imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703099235/jammal_photos/mwphxi7ujoec1c2krana.png",
-          },
-          {
-            id: "26",
-            title: "Cake Cream",
-            price: 50,
-            imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703098853/jammal_photos/zuclkds0uufzktzfeien.png",
-          },
-          {
-            id: "27",
-            title: "Cake",
-            price: 50,
-            imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703099235/jammal_photos/mwphxi7ujoec1c2krana.png",
-          },
-          {
-            id: "28",
-            title: "Cup Cake",
-            price: 275,
-            imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703099335/jammal_photos/why415hwonyxffn1cyon.png",
-          },],
+          content: [
+            {
+              id: "21",
+              title: "Whipped Cream",
+              price: 50,
+              imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703099235/jammal_photos/mwphxi7ujoec1c2krana.png",
+            },
+            {
+              id: "22",
+              title: "Cake Cream",
+              price: 50,
+              imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703098853/jammal_photos/zuclkds0uufzktzfeien.png",
+            },
+            {
+              id: "23",
+              title: "Cake",
+              price: 50,
+              imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703099235/jammal_photos/mwphxi7ujoec1c2krana.png",
+            },
+            {
+              id: "24",
+              title: "Cup Cake",
+              price: 275,
+              imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703099335/jammal_photos/why415hwonyxffn1cyon.png",
+            },
+            {
+              id: "25",
+              title: "Whipped Cream",
+              price: 50,
+              imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703099235/jammal_photos/mwphxi7ujoec1c2krana.png",
+            },
+            {
+              id: "26",
+              title: "Cake Cream",
+              price: 50,
+              imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703098853/jammal_photos/zuclkds0uufzktzfeien.png",
+            },
+            {
+              id: "27",
+              title: "Cake",
+              price: 50,
+              imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703099235/jammal_photos/mwphxi7ujoec1c2krana.png",
+            },
+            {
+              id: "28",
+              title: "Cup Cake",
+              price: 275,
+              imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703099335/jammal_photos/why415hwonyxffn1cyon.png",
+            },
+          ],
         },
         {
           title: "PIZZA",
-          content: [{
-            id: "29",
-            title: "Pizza",
-            price: 95,
-            imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703098919/jammal_photos/bvipjezk42alazv5roew.png",
-          },
-          {
-            id: "30",
-            title: "Pizza",
-            price: 95,
-            imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703098919/jammal_photos/bvipjezk42alazv5roew.png",
-          },
-          {
-            id: "31",
-            title: "Pizza",
-            price: 95,
-            imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703098919/jammal_photos/bvipjezk42alazv5roew.png",
-          },
-          {
-            id: "32",
-            title: "Pizza",
-            price: 95,
-            imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703098919/jammal_photos/bvipjezk42alazv5roew.png",
-          },
-          {
-            id: "33",
-            title: "Pizza",
-            price: 95,
-            imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703098919/jammal_photos/bvipjezk42alazv5roew.png",
-          },
-          {
-            id: "34",
-            title: "Pizza",
-            price: 95,
-            imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703098919/jammal_photos/bvipjezk42alazv5roew.png",
-          },
+          content: [
+            {
+              id: "29",
+              title: "Pizza",
+              price: 95,
+              imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703098919/jammal_photos/bvipjezk42alazv5roew.png",
+            },
+            {
+              id: "30",
+              title: "Pizza",
+              price: 95,
+              imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703098919/jammal_photos/bvipjezk42alazv5roew.png",
+            },
+            {
+              id: "31",
+              title: "Pizza",
+              price: 95,
+              imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703098919/jammal_photos/bvipjezk42alazv5roew.png",
+            },
+            {
+              id: "32",
+              title: "Pizza",
+              price: 95,
+              imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703098919/jammal_photos/bvipjezk42alazv5roew.png",
+            },
+            {
+              id: "33",
+              title: "Pizza",
+              price: 95,
+              imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703098919/jammal_photos/bvipjezk42alazv5roew.png",
+            },
+            {
+              id: "34",
+              title: "Pizza",
+              price: 95,
+              imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703098919/jammal_photos/bvipjezk42alazv5roew.png",
+            },
 
-          {
-            id: "35",
-            title: "Pizza",
-            price: 95,
-            imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703098919/jammal_photos/bvipjezk42alazv5roew.png",
-          },
-          {
-            id: "36",
-            title: "Pizza",
-            price: 95,
-            imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703098919/jammal_photos/bvipjezk42alazv5roew.png",
-          },],
+            {
+              id: "35",
+              title: "Pizza",
+              price: 95,
+              imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703098919/jammal_photos/bvipjezk42alazv5roew.png",
+            },
+            {
+              id: "36",
+              title: "Pizza",
+              price: 95,
+              imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703098919/jammal_photos/bvipjezk42alazv5roew.png",
+            },
+          ],
         },
         {
           title: "COFFEE",
-          content: [{
-            id: "37",
-            title: "Hot Coffee",
-            price: 20,
-            imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703099401/jammal_photos/tb2lmnbq0imabiyxzsub.png",
-          },
-          {
-            id: "38",
-            title: "Cold Coffee",
-            price: 20,
-            imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703099401/jammal_photos/tb2lmnbq0imabiyxzsub.png",
-          },
-          {
-            id: "39",
-            title: "Black Coffee",
-            price: 20,
-            imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703099401/jammal_photos/tb2lmnbq0imabiyxzsub.png",
-          },
-          {
-            id: "40",
-            title: "White Coffee",
-            price: 95,
-            imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703099401/jammal_photos/tb2lmnbq0imabiyxzsub.png",
-          },
-          {
-            id: "41",
-            title: "Hot Coffee",
-            price: 20,
-            imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703099401/jammal_photos/tb2lmnbq0imabiyxzsub.png",
-          },
-          {
-            id: "42",
-            title: "Cold Coffee",
-            price: 20,
-            imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703099401/jammal_photos/tb2lmnbq0imabiyxzsub.png",
-          },
+          content: [
+            {
+              id: "37",
+              title: "Hot Coffee",
+              price: 20,
+              imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703099401/jammal_photos/tb2lmnbq0imabiyxzsub.png",
+            },
+            {
+              id: "38",
+              title: "Cold Coffee",
+              price: 20,
+              imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703099401/jammal_photos/tb2lmnbq0imabiyxzsub.png",
+            },
+            {
+              id: "39",
+              title: "Black Coffee",
+              price: 20,
+              imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703099401/jammal_photos/tb2lmnbq0imabiyxzsub.png",
+            },
+            {
+              id: "40",
+              title: "White Coffee",
+              price: 95,
+              imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703099401/jammal_photos/tb2lmnbq0imabiyxzsub.png",
+            },
+            {
+              id: "41",
+              title: "Hot Coffee",
+              price: 20,
+              imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703099401/jammal_photos/tb2lmnbq0imabiyxzsub.png",
+            },
+            {
+              id: "42",
+              title: "Cold Coffee",
+              price: 20,
+              imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703099401/jammal_photos/tb2lmnbq0imabiyxzsub.png",
+            },
 
-          {
-            id: "43",
-            title: "Black Coffee",
-            price: 20,
-            imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703099401/jammal_photos/tb2lmnbq0imabiyxzsub.png",
-          },
-          {
-            id: "44",
-            title: "White Coffee",
-            price: 95,
-            imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703099401/jammal_photos/tb2lmnbq0imabiyxzsub.png",
-          },],
+            {
+              id: "43",
+              title: "Black Coffee",
+              price: 20,
+              imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703099401/jammal_photos/tb2lmnbq0imabiyxzsub.png",
+            },
+            {
+              id: "44",
+              title: "White Coffee",
+              price: 95,
+              imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703099401/jammal_photos/tb2lmnbq0imabiyxzsub.png",
+            },
+          ],
         },
-      ]
+      ],
     },
     features: {
       title: "Who we are?",

@@ -2,6 +2,7 @@ import React from "react";
 import { useSelector } from "react-redux";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Autoplay } from "swiper/modules";
+import { useLocation } from "react-router";
 
 const Pricing9 = () => {
   const responsive = {
@@ -12,7 +13,15 @@ const Pricing9 = () => {
   };
 
   // Assuming useSelector hook is correctly configured
-  const { pricing } = useSelector((state) => state.template9);
+  const { pathname } = useLocation();
+  const pricing = useSelector((state) => {
+    if (pathname.includes("own-page")) {
+      return state.ownTemplate.pricing;
+    } else {
+      return state.template9.pricing;
+    }
+  });
+
   const cards = pricing ? pricing.cards : [];
 
   return (
@@ -134,7 +143,6 @@ const Pricing9 = () => {
               </div>
               {/* Card- details */}
               <div className="py-4">
-                
                 <p className="text-sm">{card.Address}</p>
                 <div className="flex items-center gap-x-4 text-sm">
                   {card.features.slice(1).map((feature, index) => (
