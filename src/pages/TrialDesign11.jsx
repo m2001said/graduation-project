@@ -2,8 +2,8 @@ import "../assets/css/globals11.css";
 import React from "react";
 import Navbar11 from "../components/sections/navbars/navbar11/Navbar11";
 import Hero11 from "../components/sections/heros/hero11/Hero11";
+import About11 from "../components/sections/abouts/about11/About11";
 import Services11 from "../components/sections/services/services11/Services11";
-import Services112 from "../components/sections/services/services112/Services112";
 import Testimonials11 from "../components/sections/testimonials/testimonials11/Testimonials11";
 import Footer11 from "../components/sections/footers/footer11/Footer11";
 import Pricings11 from "../components/sections/pricings/pricing11/Pricing11";
@@ -18,8 +18,8 @@ const TrialDesign11 = () => {
         <Navbar11 />
         <main className="main">
           <Hero11 />
+          <About11/>
           <Services11 />
-          <Services112 />
           <Cta11 />
           <Project11 />
           <Pricings11 />

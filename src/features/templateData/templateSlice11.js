@@ -44,8 +44,7 @@ const templateSlice11 = createSlice({
         },
       ],
     },
-
-    services: {
+    abouts: {
       imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1707529935/jammal_photos/qkowgxkdtneaviwup0dv.svg",
       title: "About Me",
       content:
@@ -66,6 +65,8 @@ const templateSlice11 = createSlice({
           value: "66%",
         },
       ],
+    },
+    services: {
       datas: [
         {
           id: 1,
