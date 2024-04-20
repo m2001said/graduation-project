@@ -44,7 +44,7 @@ const templateSlice11 = createSlice({
         },
       ],
     },
-    abouts: {
+    about: {
       imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1707529935/jammal_photos/qkowgxkdtneaviwup0dv.svg",
       title: "About Me",
       content:
@@ -67,7 +67,7 @@ const templateSlice11 = createSlice({
       ],
     },
     services: {
-      datas: [
+      services: [
         {
           id: 1,
           imgUrl: " https://res.cloudinary.com/duc04fwdb/image/upload/v1707530832/jammal_photos/fjodtcpjr0admhaoxbs3.svg",
@@ -89,7 +89,7 @@ const templateSlice11 = createSlice({
       ],
     },
 
-    statistic: {
+    statistics: {
       statistics: [
         {
           title: "Project completed",

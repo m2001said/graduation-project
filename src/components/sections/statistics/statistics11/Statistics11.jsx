@@ -2,10 +2,10 @@ import React from "react";
 import { useSelector } from "react-redux";
 
 const ServicesBox11 = () => {
-  const { statistic } = useSelector((state) => state.template11);
+  const { statistics } = useSelector((state) => state.template11);
   return (
     <div className="about___boxes11 grid11">
-      {statistic.statistics.map((stat, index) => (
+      {statistics.statistics.map((stat, index) => (
         <div key={index} className="about__box11">
           <img src={stat.imgUrl} alt="" className="about__icon11" />
           <div>
