@@ -3,6 +3,7 @@ import { useEffect } from "react";
 import { useSelector } from "react-redux";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { useLocation } from "react-router";
 
 const Hero4 = () => {
   useEffect(() => {
@@ -28,8 +29,14 @@ const Hero4 = () => {
     };
   }, []);
 
-  const { hero } = useSelector((state) => state.template4);
-
+  const { pathname } = useLocation();
+  const hero = useSelector((state) => {
+    if (pathname.includes("own-page")) {
+      return state.ownTemplate.hero;
+    } else {
+      return state.template4.hero;
+    }
+  });
   return (
     <section className="hero-wrapper" data-aos="fade-up">
       <div className="paddings innerWidth flexCenter hero-container">

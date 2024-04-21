@@ -2,9 +2,18 @@ import React from "react";
 import "../cta11/cta11.css";
 import { useSelector } from "react-redux";
 import Card11 from "./Card11";
+import { useLocation } from "react-router";
 
 const Cta11 = () => {
-  const { cta } = useSelector((state) => state.template11);
+  // const { cta } = useSelector((state) => state.template11);
+  const { pathname } = useLocation();
+  const cta = useSelector((state) => {
+    if (pathname.includes("own-page")) {
+      return state.ownTemplate.cta;
+    } else {
+      return state.template11.cta;
+    }
+  });
   return (
     <section className="resume11 container section" id="resume">
       <h2 className="section__title11">Experience</h2>

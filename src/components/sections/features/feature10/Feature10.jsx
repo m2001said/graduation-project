@@ -2,9 +2,18 @@
 import React from "react";
 import { useSelector } from "react-redux";
 import "../../../../assets/css/globals10.css";
+import { useLocation } from "react-router";
 
 const Feature10 = () => {
-  const { feature } = useSelector((state) => state.template10);
+  
+  const { pathname } = useLocation();
+  const feature = useSelector((state) => {
+    if (pathname.includes("own-page")) {
+      return state.ownTemplate.features;
+    } else {
+      return state.template10.features;
+    }
+  });
 
   return (
     <>

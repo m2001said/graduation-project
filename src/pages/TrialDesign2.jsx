@@ -12,21 +12,21 @@ const TrialDesign2 = () => {
   const reorderedComponents = Object.keys(state);
 
   const componentMapping = {
-    navbar: Navbar2,
-    hero: Hero2,
     services: Services2,
     testimonials: Testimonials2,
     projects: Project2,
     contact: ContactUs2,
-    footer: Footer2,
   };
 
   return (
     <div className="trialdesign2">
+      <Navbar2 />
+      <Hero2 />
       {reorderedComponents.map((_component) => {
         const Component = componentMapping[_component];
         return Component && <Component key={_component} />;
       })}
+      <Footer2 />
     </div>
   );
 };

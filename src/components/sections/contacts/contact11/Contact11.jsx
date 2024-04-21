@@ -1,9 +1,18 @@
 import React from "react";
 import "../contact11/contact11.css";
 import { useSelector } from "react-redux";
+import { useLocation } from "react-router";
 
 const Contact11 = () => {
-  const { contact } = useSelector((state) => state.template11);
+  // const { contact } = useSelector((state) => state.template11);
+  const { pathname } = useLocation();
+  const contact = useSelector((state) => {
+    if (pathname.includes("own-page")) {
+      return state.ownTemplate.contact;
+    } else {
+      return state.template11.contact;
+    }
+  });
   return (
     <section className="contact11 container scetion" id="contact">
       <h2 className="section__title11">{contact.title}</h2>

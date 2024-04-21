@@ -1,9 +1,16 @@
 import React from "react";
 import { useSelector } from "react-redux";
+import { useLocation } from "react-router";
 
 const Contact9 = () => {
-  const { imgUrl, title, description } = useSelector((state) => state.template9.contactme9);
-
+  const { pathname } = useLocation();
+  const { imgUrl, title, description }  = useSelector((state) => {
+    if (pathname.includes("own-page")) {
+      return state.ownTemplate.contact;
+    } else {
+      return state.template9.contact;
+    }
+  });
   const renderImage = imgUrl ? <img src={imgUrl} alt="" className="h-15 w-60 sm:h-27 sm:w-24 lg:h-40 lg:w-40 mr-40 img-9" /> : null;
 
   return (

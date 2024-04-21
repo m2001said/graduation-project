@@ -1,12 +1,19 @@
 import React from "react";
 import { useSelector } from "react-redux";
+import { useLocation } from "react-router";
 
 
 
 const ResponsiveMenu = ({ showMenu }) => {
-
-
-  const { navbar } = useSelector((state) => state.template18);
+  const { pathname } = useLocation();
+  const navbar = useSelector((state) => {
+    if (pathname.includes("own-page")) {
+      return state.ownTemplate.navbar;
+    } else {
+      return state.template18.navbar;
+    }
+  });
+  // const { navbar } = useSelector((state) => state.template18);
   return (
     <div
       className={`${

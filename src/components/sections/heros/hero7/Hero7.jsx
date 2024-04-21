@@ -271,10 +271,17 @@ import React from "react";
 import styles from "../../heros/hero7/styles7/style";
 import Services7 from "../../services/services7/Services7";
 import { useSelector } from "react-redux";
+import { useLocation } from "react-router";
 
 const Hero7 = () => {
-  const { hero } = useSelector((state) => state.template7);
-
+  const { pathname } = useLocation();
+  const hero = useSelector((state) => {
+    if (pathname.includes("own-page")) {
+      return state.ownTemplate.hero;
+    } else {
+      return state.template7.hero;
+    }
+  });
   return (
     <section id="home" className={`flex md:flex-row flex-col ${styles.paddingY} ئ`}>
       <div className={`flex-1 ${styles.flexStart} flex-col xl:px-0 sm:px-16 px-6`}>

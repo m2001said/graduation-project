@@ -6,20 +6,20 @@ const templateSlice18 = createSlice({
       title: "Car Rental",
       links: [
         {
-          name: "HOME",
-          link: "#",
+          title: "HOME",
+          url: "#",
         },
         {
-          name: "CARS",
-          link: "#",
+          title: "CARS",
+          url: "#",
         },
         {
-          name: "ABOUT",
-          link: "#about",
+          title: "ABOUT",
+          url: "#about",
         },
         {
-          name: "BOOKING",
-          link: "#",
+          title: "BOOKING",
+          url: "#",
         },
       ],
       lightIcon: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1708092466/icons8-sun-24_oonunj.png",
@@ -28,44 +28,44 @@ const templateSlice18 = createSlice({
     },
 
     hero: {
-      lightImage: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1708094043/banner-car_nzxi5c.png",
-      darkImage: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1708094046/car_wnmkfa.png",
-      smTitle: "Effortless",
       title: "Car Rental",
+      smTitle: "Effortless",
       Description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione veritatis explicabo quibusdam quae reprehenderit ab",
       buttonText: "Get Started",
+      lightImage: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1708094043/banner-car_nzxi5c.png",
+      darkImage: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1708094046/car_wnmkfa.png",
     },
 
-    feature: {
-      imgUrl: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1708094582/car1_yzpkby.png",
+    features: {
       title: "About us",
       description1: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, magnam! Tenetur odio quo et maxime?",
       description2: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, tempora.",
       buttonText: "Get Started",
+      imgUrl: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1708094582/car1_yzpkby.png",
     },
     services: {
       title: "Why Choose Us",
       services: [
         {
-          name: "Best Price",
+          title: "Best Price",
+          description: "Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
+          buttonText: "Learn more",
+          url: "#",
           icon: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1708095320/icons8-compact-camera-24_sbvw3e.png",
-          auther: "Learn more",
-          link: "#",
-          description: "Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
         },
         {
-          name: "Fast and Safe",
+          title: "Fast and Safe",
+          description: "Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
+          buttonText: "Learn more",
+          url: "#",
           icon: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1708095302/icons8-notebook-32_wp5emo.png",
-          auther: "Learn more",
-          link: "#",
-          description: "Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
         },
         {
-          name: "Experience Drivers",
-          icon: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1708095310/icons8-microsoft-onenote-24_jrkmre.png",
-          auther: "Learn more",
-          link: "#",
+          title: "Experience Drivers",
           description: "Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
+          buttonText: "Learn more",
+          url: "#",
+          icon: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1708095310/icons8-microsoft-onenote-24_jrkmre.png",
         },
       ],
     },
@@ -75,51 +75,51 @@ const templateSlice18 = createSlice({
       description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor iure nemo ab?",
       projects: [
         {
-          name: "BMW UX",
+          title: "BMW UX",
           price: "$100/Day",
-          image: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1708097455/white-car_vfl2mw.png",
           space: "12Km",
-          Details: "Details",
+          buttonText: "Details",
+          imgUrl: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1708097455/white-car_vfl2mw.png",
         },
         {
-          name: "KIA UX",
+          title: "KIA UX",
           price: "$140/Day",
-          image: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1708097459/car5_gini6n.png",
           space: "12Km",
-          Details: "Details",
+          buttonText: "Details",
+          imgUrl: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1708097459/car5_gini6n.png",
         },
         {
-          name: "BMW UX",
+          title: "BMW UX",
           price: "$100/Day",
-          image: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1708097461/car6_ohp1ia.png",
           space: "12Km",
-          Details: "Details",
+          buttonText: "Details",
+          imgUrl: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1708097461/car6_ohp1ia.png",
         },
       ],
       buttonText: "Get Started",
     },
 
-    testimonial: {
+    testimonials: {
       title: "What Our Clients Say About Us",
       description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis iure consectetur tempora amet.",
       testimonials: [
         {
           name: "Dilshad",
           star: "⭐⭐⭐⭐⭐",
-          image: "https://picsum.photos/200",
           description: "Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
+          imgUrl: "https://picsum.photos/200.jpg",
         },
         {
           name: "Satya",
           star: "⭐⭐⭐⭐⭐",
-          image: "https://picsum.photos/200",
           description: "Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
+          imgUrl: "https://picsum.photos/200.jpg",
         },
         {
           name: "Sabir",
           star: "⭐⭐⭐⭐⭐",
-          image: "https://picsum.photos/200",
           description: "Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
+          imgUrl: "https://picsum.photos/200.jpg",
         },
       ],
     },
@@ -128,25 +128,31 @@ const templateSlice18 = createSlice({
       title: "What Our Clients Say About Us",
       description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis iure consectetur tempora amet.",
       bannerImg: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1708098410/pattern_t0naia.jpg",
-      AppStoreImg: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707090485/app_store_s6wzhh.png",
-      PlayStoreImg: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707090481/play_store_nmzfln.png",
+      appStoreImg: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707090485/app_store_s6wzhh.png",
+      playStoreImg: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707090481/play_store_nmzfln.png",
     },
 
     cta2: {
       title: "Let's collaborate on your upcoming car rental venture",
       description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem necessitatibus quasi et vel,",
-      linkTxt: "Contact",
-      link: "#",
+      linkText: "Contact",
+      url: "#",
     },
 
     footer: {
       title: "Car Rental",
       description: "Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, voluptate.",
-      LocationIcon: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707781362/icons8-location-arrow-24_mwjabu.png",
-      Location: "Noida, Uttar Pradesh",
-      mobileIcon: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707781365/icons8-mobile-navigator-50_xvqski.png",
-      mobile: "+20 123456789",
-      mediaIcons: [
+      contacts: [
+        {
+          value: "55 East Birchwood Ave. Brooklyn, New York 11201",
+          icon: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707781362/icons8-location-arrow-24_mwjabu.png",
+        },
+        {
+          value: "(123) 125-858",
+          icon: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707781365/icons8-mobile-navigator-50_xvqski.png",
+        },
+      ],
+      medias: [
         {
           icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701809141/templates/template_one/facebook_td263x.svg",
           url: "https://facebook.com",
@@ -160,19 +166,33 @@ const templateSlice18 = createSlice({
           url: "https://linkedin.com",
         },
       ],
-
-      items: [
+      footerSections: [
         {
           title: "Important Links",
-          links: ["Home", "About", "Contact", "Blog"],
+          links: [
+            { title: "Home", url: "#" },
+            { title: "About", url: "#" },
+            { title: "Contact", url: "#" },
+            { title: "Blog", url: "#" },
+          ],
         },
         {
           title: "Links",
-          links: ["Home", "About", "Contact", "Blog"],
+          links: [
+            { title: "Home", url: "#" },
+            { title: "About", url: "#" },
+            { title: "Contact", url: "#" },
+            { title: "Blog", url: "#" },
+          ],
         },
         {
-          title: "Location",
-          links: ["Home", "About", "Contact", "Blog"],
+          title: "location",
+          links: [
+            { title: "Home", url: "#" },
+            { title: "About", url: "#" },
+            { title: "Contact", url: "#" },
+            { title: "Blog", url: "#" },
+          ],
         },
       ],
     },

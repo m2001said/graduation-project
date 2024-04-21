@@ -1,6 +1,7 @@
 import React,{useEffect} from 'react';
 import { useSelector } from "react-redux";
 import "./hero5.css";
+import { useLocation } from 'react-router';
 
 // import Aos from 'aos'
 // import "aos/dist/aos.css"
@@ -12,7 +13,14 @@ const Hero5 = () => {
   //   Aos.init({duration: 2000})
   // },[])
 
-  const { hero } = useSelector((state) => state.template5);
+  const { pathname } = useLocation();
+  const hero = useSelector((state) => {
+    if (pathname.includes("own-page")) {
+      return state.ownTemplate.hero;
+    } else {
+      return state.template5.hero;
+    }
+  });
   return (
     <div className="hero5 design5">
       <div className="hero5-mainText">

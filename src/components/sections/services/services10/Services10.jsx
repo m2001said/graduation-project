@@ -1,12 +1,17 @@
 import React from "react";
 import { useSelector } from "react-redux";
 import "../../../../assets/css/globals10.css";
+import { useLocation } from "react-router";
 
 const Services10 = ({ handleOrderPopup }) => {
-
-    const { services } = useSelector((state) => state.template10);
-
-
+  const { pathname } = useLocation();
+  const services = useSelector((state) => {
+    if (pathname.includes("own-page")) {
+      return state.ownTemplate.services;
+    } else {
+      return state.template10.services;
+    }
+  });
   return (
     <>
       <div className="py-10 bg-[--white10] dark:bg-gray-900 ">
