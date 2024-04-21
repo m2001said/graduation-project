@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import { useSelector } from "react-redux";
 import { useLocation } from "react-router";
 
-
 const DarkMode = () => {
   const { pathname } = useLocation();
   const navbar = useSelector((state) => {

@@ -33,8 +33,8 @@ const Navbar4 = () => {
         <img src={navbar.imgUrl} alt="logo" width={100} />
         <div className="flexCenter h-menu" style={getMenuStyles(menuOpened)}>
           {navbar.links.map((link, index) => (
-            <a key={index} href={`#${link.toLowerCase().replace(" ", "-")}`} onClick={handleLinkClick}>
-              {link}
+            <a key={index} href={link.url} onClick={handleLinkClick}>
+              {link.title}
             </a>
           ))}
           <button className="button">

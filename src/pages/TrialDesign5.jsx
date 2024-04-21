@@ -12,22 +12,22 @@ const TrialDesign5 = () => {
   const state = useSelector((state) => state.template5);
   const reorderedComponents = Object.keys(state);
   const componentMapping = {
-    navbar: Navbar5,
-    hero: Hero5,
-    feature1: Feature5,
+    features1: Feature5,
     services: Services5,
-    feature2: Feature21,
+    features2: Feature21,
     team: Teams5,
     cta: Cta5,
-    footer: Footer5,
   };
 
   return (
     <div className="design5">
+      <Navbar5 />
+      <Hero5 />
       {reorderedComponents.map((_component) => {
         const Component = componentMapping[_component];
         return Component && <Component key={_component} />;
       })}
+      <Footer5/>
     </div>
   );
 };

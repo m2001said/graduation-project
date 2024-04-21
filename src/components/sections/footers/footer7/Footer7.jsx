@@ -13,7 +13,7 @@ const Footer7 = () => {
   });
   // const { socialMedia } = useSelector((state) => state.template7);
 
-  const socialMediaIcons = footer.socialMedia;
+  const socialMediaIcons = footer.medias;
 
   return (
     <section className={`${styles.flexCenter} ${styles.paddingY} flex-col`} style={{ color: "var(--color5)" }}>
@@ -23,17 +23,17 @@ const Footer7 = () => {
           <p className={`${styles.paragraph} mt-4 max-w-[312px]`}>{footer.Subtitle}</p>
         </div>
         <div className="flex-[1.5] w-full flex flex-row justify-between flex-wrap md:mt-0 mt-10">
-          {footer.links.map((section, index) => (
+          {footer.footerSections.map((section, index) => (
             <div key={index} className={`flex flex-col ss:my-0 my-4 min-w-[150px]`}>
               <h4 className="font-poppins font-medium text-[18px] leading-[27px] text-[var(--color5)]">{section.title}</h4>
               <ul className="list-none mt-4">
                 {section.links.map((link, index) => (
                   <li
-                    key={link.name}
+                    key={link.title}
                     className={`font-poppins font-normal text-[16px] leading-[24px] cursor-pointer ${index !== section.links.length - 1 ? "mb-4" : "mb-0"}`}
                   >
-                    <a className="footerhover7" href={link.link} target="_blank" rel="noopener noreferrer">
-                      {link.name}
+                    <a className="footerhover7" href={link.url} target="_blank" rel="noopener noreferrer">
+                      {link.title}
                     </a>
                   </li>
                 ))}

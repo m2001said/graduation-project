@@ -64,8 +64,8 @@ const Navbar1 = () => {
             {/* Map over navbar.links to dynamically generate links */}
             {navbar.links.map((link, index) => (
               <li key={index}>
-                <a href={`#${link}`} onClick={() => setOpenMenu(false)}>
-                  {link}
+                <a href={link.url} onClick={() => setOpenMenu(false)}>
+                  {link.title}
                 </a>
               </li>
             ))}

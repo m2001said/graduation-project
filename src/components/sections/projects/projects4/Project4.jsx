@@ -24,7 +24,7 @@ const Project4 = () => {
         <Swiper {...sliderSettings}>
           <SlideNextButton />
           {/* slider */}
-          {projects.card.map((card, i) => (
+          {projects.projects.map((card, i) => (
             <SwiperSlide key={i}>
               <div className="flexColStart r-card">
                 <img src={card.image} alt="home" />

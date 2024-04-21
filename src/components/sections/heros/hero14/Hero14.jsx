@@ -6,13 +6,21 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import { Pagination } from "swiper/modules";
+import { useLocation } from "react-router";
 
 
 
 const Hero14 = ({ handleOrderPopup }) => {
   
-  const { hero } = useSelector((state) => state.template14);
-
+  // const { hero } = useSelector((state) => state.template14);
+  const { pathname } = useLocation();
+  const hero = useSelector((state) => {
+    if (pathname.includes("own-page")) {
+      return state.ownTemplate.hero;
+    } else {
+      return state.template14.hero;
+    }
+  });
   return (
     <div className="bg-white dark:bg-gray-900">
       <div className="container14">

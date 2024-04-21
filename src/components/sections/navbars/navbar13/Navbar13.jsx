@@ -1,8 +1,17 @@
 import { useSelector } from "react-redux";
 import React from "react";
+import { useLocation } from "react-router";
 
 const Navbar13 = ({ navBar, setNavBar }) => {
-  const navbar = useSelector((state) => state.template13.navbar);
+  const { pathname } = useLocation();
+  const navbar = useSelector((state) => {
+    if (pathname.includes("own-page")) {
+      return state.ownTemplate.navbar;
+    } else {
+      return state.template13.navbar;
+    }
+  });
+  // const navbar = useSelector((state) => state.template13.navbar);
 
   return (
     <nav className="sticky top-0 z-50 bg-[var(--color-13-green)] ">

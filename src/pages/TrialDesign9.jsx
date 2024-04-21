@@ -14,7 +14,6 @@ const TrialDesign9 = () => {
   const state = useSelector((state) => state.template9);
   const reorderedComponents = Object.keys(state);
   const componentMapping = {
-    hero: Hero9,
     about: About9,
     pricing: Pricing9,
     services: Services9,
@@ -27,6 +26,7 @@ const TrialDesign9 = () => {
   return (
     <div className="trialdesign9">
       <main>
+      <Hero9 className="trialdesign9"/>
         {reorderedComponents.map((_component) => {
           const Component = componentMapping[_component];
           return Component && <Component key={_component} className="trialdesign9" />;

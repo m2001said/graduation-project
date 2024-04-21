@@ -1,9 +1,18 @@
 import React from "react";
 import { useSelector } from "react-redux";
+import { useLocation } from "react-router";
 import "../testimonials11/testimonials11.css";
 
 const Testimonials11 = () => {
-  const { testimonials } = useSelector((state) => state.template11.testimonial);
+  const { pathname } = useLocation();
+  const testimonial = useSelector((state) => {
+    if (pathname.includes("own-page")) {
+      return state.ownTemplate.testimonials;
+    } else {
+      return state.template11.testimonials;
+    }
+  });
+  const testimonials = testimonial.testimonials;
   return (
     <section className="testimonials11 container section11">
       <h2 className="section__title11">Clients & Reviews</h2>

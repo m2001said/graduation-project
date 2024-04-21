@@ -5,7 +5,28 @@ const templateSlice5 = createSlice({
     navbar: {
       menuIcon: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1703106705/menu-svgrepo-com_mgpt72.svg",
       icon: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1703101139/logo_ytwn3z.jpg",
-      links: ["Home", "About", "Offers", "Seats", "Destiations"],
+      links: [
+        {
+          title: "Home",
+          url: "#",
+        },
+        {
+          title: "About",
+          url: "#",
+        },
+        {
+          title: "Offers",
+          url: "#",
+        },
+        {
+          title: "Seats",
+          url: "#",
+        },
+        {
+          title: "Destinations",
+          url: "#",
+        },
+      ],
       buttonTxt: "contact",
     },
 
@@ -15,28 +36,28 @@ const templateSlice5 = createSlice({
       videoUrl: "https://res.cloudinary.com/dmcdea0b9/video/upload/v1703110566/heroVideo_z23a38.mp4",
     },
 
-    feature1: {
-      smallTitle: "travel support",
+    features1: {
       title: "Plan your travel with confidence",
+      subtitle: "travel support",
       description: "find help with booking and travel plans, see what to expect the journey",
       features: [
         {
-          number: "01",
           title: "Travel requirement for Dubai",
           description: "Find help with booking and travel plans, see what to expect during the journey.",
           duration: 2500,
+          number: "01",
         },
         {
-          number: "02",
           title: "Travel requirement for Dubai",
           description: "Find help with booking and travel plans, see what to expect during the journey.",
           duration: 3500,
+          number: "02",
         },
         {
-          number: "03",
           title: "Travel requirement for Dubai",
           description: "Find help with booking and travel plans, see what to expect during the journey.",
           duration: 4500,
+          number: "03",
         },
       ],
       imgUrl: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1703111688/R_aejs2k.jpg",
@@ -47,41 +68,41 @@ const templateSlice5 = createSlice({
       buttonTxt: "View all",
       services: [
         {
-          icon: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1703114489/calendar_ry8vjw.svg",
           title: "Book & Relax",
           description: "You can also call airlines from your phone and book aflight ticket",
+          icon: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1703114489/calendar_ry8vjw.svg",
         },
         {
-          icon: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1703114500/ShieldCheck_tmepkt.svg",
           title: "Smart & checklist",
           description: "You can also call airlines from your phone and book aflight ticket",
+          icon: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1703114500/ShieldCheck_tmepkt.svg",
         },
         {
-          icon: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1703114509/BookmarkCheckFill_jwdtcd.svg",
           title: "Save more",
           description: "You can also call airlines from your phone and book aflight ticket",
+          icon: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1703114509/BookmarkCheckFill_jwdtcd.svg",
         },
       ],
     },
 
-    feature2: {
-      imgUrl: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1703116246/fea5-2_q5na0z.jpg",
+    features2: {
       title: "Unaccompanied minor lounge",
+      imgUrl: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1703116246/fea5-2_q5na0z.jpg",
       features: [
         {
-          head: "Help through the airport",
+          title: "Help through the airport",
           description: "You can also call airlines from your phone and book aflight ticket to one of your faverite destinations",
         },
         {
-          head: "Priority Boarding",
+          title: "Priority Boarding",
           description: "You can also call airlines from your phone and book aflight ticket to one of your faverite destinations",
         },
         {
-          head: "Care on the fligh",
+          title: "Care on the fligh",
           description: "You can also call airlines from your phone and book aflight ticket to one of your faverite destinations",
         },
         {
-          head: "Chauffeur-drive service",
+          title: "Chauffeur-drive service",
           description: "You can also call airlines from your phone and book aflight ticket to one of your faverite destinations",
         },
       ],
@@ -91,28 +112,28 @@ const templateSlice5 = createSlice({
       title: "Top travelers of this month!",
       teams: [
         {
+          travelerName: "IsraTech",
           destinationImage: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1703118167/paris_w35pqv.jpg",
           travelerImage: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1703118040/user1_tjx7hg.jpg",
-          travelerName: "IsraTech",
-          sociallink: "@Isratech",
+          socialLink: "@Isratech",
         },
         {
+          travelerName: "IsraTech",
           destinationImage: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1703118212/dubia_tegcrp.jpg",
           travelerImage: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1703118040/user1_tjx7hg.jpg",
-          travelerName: "IsraTech",
-          sociallink: "@Isratech",
+          socialLink: "@Isratech",
         },
         {
-          destinationImage: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1703118235/newYork_k8j1t0.jpg",
           travelerImage: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1703118040/user1_tjx7hg.jpg",
+          destinationImage: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1703118235/newYork_k8j1t0.jpg",
           travelerName: "IsraTech",
-          sociallink: "@Isratech",
+          socialLink: "@Isratech",
         },
         {
+          travelerName: "IsraTech",
           destinationImage: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1703118167/paris_w35pqv.jpg",
           travelerImage: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1703118040/user1_tjx7hg.jpg",
-          travelerName: "IsraTech",
-          sociallink: "@Isratech",
+          socialLink: "@Isratech",
         },
       ],
     },
@@ -126,7 +147,7 @@ const templateSlice5 = createSlice({
     footer: {
       imgUrl: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1703101139/logo_ytwn3z.jpg",
       description: "Your mind shoud be stronger than your feeling, fly!",
-      mediaIcons: [
+      medias: [
         {
           icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701809141/templates/template_one/facebook_td263x.svg",
           url: "https://facebook.com",
@@ -145,18 +166,39 @@ const templateSlice5 = createSlice({
         },
       ],
 
-      items: [
+      footerSections: [
         {
           title: "Information",
-          links: ["Home", "Explore", "Flight State", "Travel", "Check-In", "Manage your booking"],
+          links: [
+            { title: "Home", url: "#" },
+            { title: "Explore", url: "#" },
+            { title: "Flight State", url: "#" },
+            { title: "Travel", url: "#" },
+            { title: "Check-In", url: "#" },
+            { title: "Manage your booking", url: "#" },
+          ],
         },
         {
           title: "Quick Guide",
-          links: ["FAQ", "How To", "Features", "Baggage", "Route Map", "Our Communities"],
+          links: [
+            { title: "FAQ", url: "#" },
+            { title: "How To", url: "#" },
+            { title: "Features", url: "#" },
+            { title: "Baggage Us", url: "#" },
+            { title: "Route Map", url: "#" },
+            { title: "Our Communities", url: "#" },
+          ],
         },
         {
           title: "Information",
-          links: ["Chauffer", "Our partners", "Destination", "Careers", "Transportation", "Programme Rules"],
+          links: [
+            { title: "Chauffer", url: "#" },
+            { title: "Our partners", url: "#" },
+            { title: "Destination", url: "#" },
+            { title: "Careers", url: "#" },
+            { title: "Transportation", url: "#" },
+            { title: "Programme Rules", url: "#" },
+          ],
         },
       ],
     },

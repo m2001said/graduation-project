@@ -1,8 +1,17 @@
 import React from "react";
 import { useSelector } from "react-redux";
+import { useLocation } from "react-router";
 
 const Services15 = () => {
-  const { services } = useSelector((state) => state.template15);
+  const { pathname } = useLocation();
+  const services = useSelector((state) => {
+    if (pathname.includes("own-page")) {
+      return state.ownTemplate.services;
+    } else {
+      return state.template15.services;
+    }
+  });
+  // const { services } = useSelector((state) => state.template15);
 
   const Card = ({ title, sub_title, text }) => (
     <div className="w-full hoverBtn">
@@ -22,12 +31,12 @@ const Services15 = () => {
   return (
     <div className="pt-52 backgroundcolor15 darkModeColor15 px-3 serve15" id="services">
       <div className="container max-w-[1300px] w-full mx-auto">
-        <h1 className="sm:text-[44px] text-[26px] text-center m-0 title15_1">{services.titles.title}</h1>
-        <p className="font-bold text-sm textColor flex items-center text-center justify-center gap-x-4 title15_2">{services.titles.subtitle}</p>
+        <h1 className="sm:text-[44px] text-[26px] text-center m-0 title15_1">{services.title}</h1>
+        <p className="font-bold text-sm textColor flex items-center text-center justify-center gap-x-4 title15_2">{services.subtitle}</p>
 
         <section className="grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-10 mt-8 w-full ">
-          {services.Cards.map((card, index) => (
-            <Card key={index} title={card.title} sub_title={card.sub_title} text={card.text} />
+          {services.services.map((card, index) => (
+            <Card key={index} title={card.title} sub_title={card.subtitle} text={card.text} />
           ))}
         </section>
       </div>

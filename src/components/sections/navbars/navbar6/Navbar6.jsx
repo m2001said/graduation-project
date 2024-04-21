@@ -28,8 +28,8 @@ const Navbar6 = () => {
               <ul className="nav__list">
                 {navbar.links.map((item, index) => (
                   <li className="nav__item" key={index}>
-                    <a href={`#${item}`} onClick={menuToggle}>
-                      {item}
+                    <a href={item.url} onClick={menuToggle}>
+                      {item.title}
                     </a>
                   </li>
                 ))}

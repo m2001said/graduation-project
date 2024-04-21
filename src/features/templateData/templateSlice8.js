@@ -3,7 +3,28 @@ import { addElement, addElementToArray, addSubElement, deleteElement, deleteSect
 const templateSlice8 = createSlice({
   initialState: {
     navbar: {
-      links: ["Home", "About", "Services", "Work", "Contact"],
+      links: [
+        {
+          title: "Home",
+          url: "#home",
+        },
+        {
+          title: "About",
+          url: "#about",
+        },
+        {
+          title: "Services",
+          url: "#services",
+        },
+        {
+          title: "Work",
+          url: "#work",
+        },
+        {
+          title: "Contact",
+          url: "#contact",
+        },
+      ],
     },
     header: {
       UrlImg: "https://res.cloudinary.com/duc04fwdb/image/upload/v1708041079/jammal_photos/kafyeopqrooe1smkwiec.svg",

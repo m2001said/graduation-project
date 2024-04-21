@@ -22,12 +22,11 @@ const Footer4 = () => {
         </div>
 
         <div className="flexColStart f-right">
-          <span className="primaryText">{footer.title}</span>
-          <span className="secondaryText">{footer.address}</span>
-
+          <span className="primaryText">Contact</span>
+          <span className="secondaryText">{footer.contacts[0].value}</span>
           <div className="flexCenter f-menu">
-            {footer.serviecs.map((serviec, index) => (
-              <span key={index}>{serviec}</span>
+            {footer.footerSections[0].links.map((link, index) => (
+              <span key={index}>{link.title}</span>
             ))}
           </div>
         </div>

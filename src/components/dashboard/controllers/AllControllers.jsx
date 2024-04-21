@@ -6,7 +6,8 @@ import FieldControllerIsArrayOfObjects from "./subControllers/FieldControllerIsA
 import FieldControllerIsObject from "./subControllers/FieldControllerIsObject";
 import ChangeImageController from "./ChangeImageController";
 import { Reorder } from "./shared/Reorder";
-const AllControllers = ({ controllerSection, targetTemplate, updateAll , isFixed , isFirst,isLast }) => {
+
+const AllControllers = ({ controllerSection, targetTemplate, updateAll, isFixed, isFirst, isLast }) => {
   const targetSection = targetTemplate[controllerSection];
   const fields = Object.keys(targetSection);
   const dispatch = useDispatch();
@@ -35,16 +36,10 @@ const AllControllers = ({ controllerSection, targetTemplate, updateAll , isFixed
         <h3 className="controller-name w-full" onClick={() => setOpen(!open)}>
           {controllerSection} section
         </h3>
-        {isFixed ? ( 
+        {isFixed ? (
           <></>
         ) : (
-          <Reorder
-            isFirstFiled={isFirst}
-            isLastFiled={isLast}
-            deleteItem={deleteSection}
-            handleReorder={handleReorder}
-            componentType={"main"}
-          />
+          <Reorder isFirstFiled={isFirst} isLastFiled={isLast} deleteItem={deleteSection} handleReorder={handleReorder} componentType={"main"} />
         )}
         {open ? (
           <img src="/assets/icons/down.svg" style={{ width: 18, marginLeft: "6px" }} alt="down" onClick={() => setOpen(!open)} />
@@ -60,26 +55,30 @@ const AllControllers = ({ controllerSection, targetTemplate, updateAll , isFixed
               if (typeof targetSection[field][0] === "object") {
                 const _targetSection = [...targetSection[field]];
                 _targetSection.push("add"); //3
-                return _targetSection.map((ele, index) => {
-                  return ele === "add" ? (
-                    <div key={index}>
-                      <button className="controller-btn-add capitalize" onClick={() => addNewElement(field)}>
-                        Add {field.slice(0, -1)}
-                      </button>
-                    </div>
-                  ) : (
-                    <FieldControllerIsArrayOfObjects
-                      cardIndex={index} // 1
-                      numOfFields={_targetSection.length - 1} //2 numOfFields
-                      sectionName={controllerSection}
-                      targetSection={targetSection}
-                      blockName={field}
-                      subName={subName}
-                      dispatchRef={updateAll}
-                      key={index}
-                    />
-                  );
-                });
+                return (
+                  <div className="controller-array" key={index}>
+                    {_targetSection.map((ele, index) => {
+                      return ele === "add" ? (
+                        <div key={index}>
+                          <button className="controller-btn-add capitalize" onClick={() => addNewElement(field)}>
+                            Add {field.slice(0, -1)}
+                          </button>
+                        </div>
+                      ) : (
+                        <FieldControllerIsArrayOfObjects
+                          cardIndex={index} // 1
+                          numOfFields={_targetSection.length - 1} //2 numOfFields
+                          sectionName={controllerSection}
+                          targetSection={targetSection}
+                          blockName={field}
+                          subName={subName}
+                          dispatchRef={updateAll}
+                          key={index}
+                        />
+                      );
+                    })}
+                  </div>
+                );
               } else if (typeof targetSection[field][0] === "undefined") {
                 return (
                   <FieldControllerIsObject

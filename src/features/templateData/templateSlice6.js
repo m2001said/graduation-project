@@ -7,7 +7,28 @@ const templateSlice6 = createSlice({
       searchIcon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703095771/jammal_photos/kedw9coptwqkovrsssd1.svg",
       shoppingIcon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703095842/jammal_photos/gehvutbyftfxemvoqmu8.svg",
       menuIcon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703095877/jammal_photos/rwbeynsg3bftgrjqaqnf.svg",
-      links: ["Home", "About", "Menu", "Recipes", "Contact"],
+      links: [
+        {
+          title: "Home",
+          url: "#",
+        },
+        {
+          title: "About",
+          url: "#",
+        },
+        {
+          title: "Menu",
+          url: "#",
+        },
+        {
+          title: "Recipes",
+          url: "#",
+        },
+        {
+          title: "Contact",
+          url: "#",
+        },
+      ],
     },
     hero: {
       buttonText: "Explore Food",
@@ -406,26 +427,38 @@ const templateSlice6 = createSlice({
       imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703095423/jammal_photos/x22ihnvjg9i0i40xtbo5.svg",
       description: "It is a long established fact that a reader will be distracted lookings.",
       copyright: "copyright 2022, developed by ana. All rights reserved",
-      infoLinks: {
-        title: "Info Links",
-        content: ["Terms & Conditions", "Privacy Policy", "Return & Refund", "Payment Method"],
-      },
-      quickLinks: {
-        title: "Quick Links",
-        content: ["About Us", "Menu", "Recips", "Contact"],
-        links: ["About", "Menu", "Recipes", "Contact"],
-      },
-      contact: [
+
+      footerSections: [
         {
-          title: "Sylhet, Bangladesh",
+          title: "Info Links",
+          links: [
+            { title: "Terms & Conditions", url: "#" },
+            { title: "Privacy Policy", url: "#" },
+            { title: "Return & Refund", url: "#" },
+            { title: "Payment Method", url: "#" },
+          ],
+        },
+        {
+          title: "Quick Links",
+          links: [
+            { title: "About Us", url: "#" },
+            { title: "Menu", url: "#" },
+            { title: "Recipes", url: "#" },
+            { title: "Contact", url: "#" },
+          ],
+        },
+      ],
+      contacts: [
+        {
+          value: "Sylhet, Bangladesh",
           icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703108316/jammal_photos/oe8rjvrg0ckgohix2b6v.svg",
         },
         {
-          title: "example@gmail.com",
+          value: "example@gmail.com",
           icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703108228/jammal_photos/opdhewds9do1znaaj5li.svg",
         },
         {
-          title: "+880 123 456 7890",
+          value: "+880 123 456 7890",
           icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703108367/jammal_photos/y2583eh76th902gnzlje.svg",
         },
       ],

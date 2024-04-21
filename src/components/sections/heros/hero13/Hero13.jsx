@@ -1,10 +1,17 @@
 import React from "react";
 import { useSelector } from "react-redux";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 const Hero13 = () => {
-  const heroData = useSelector((state) => state.template13.hero);
-
+  // const heroData = useSelector((state) => state.template13.hero);
+  const { pathname } = useLocation();
+  const heroData = useSelector((state) => {
+    if (pathname.includes("own-page")) {
+      return state.ownTemplate.hero;
+    } else {
+      return state.template13.hero;
+    }
+  });
   // Extracting data from heroData
   const { title, subtitle, servicesButtonText, projectsButtonText, images, icon, num } = heroData;
 

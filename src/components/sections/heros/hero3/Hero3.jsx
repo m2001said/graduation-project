@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import "./hero3.css";
-// import Navbar3 from "../../navbars/navbar3/Navbar3";
+import Navbar3 from "../../navbars/navbar3/Navbar3";
 import { useSelector } from "react-redux";
 import AOS from "aos";
 import "aos/dist/aos.css";

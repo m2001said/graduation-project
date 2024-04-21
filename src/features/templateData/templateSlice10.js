@@ -6,7 +6,16 @@ const templateSlice10 = createSlice({
     navbar: {
       title: "Books",
       icon: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1706798279/logo_rcge0a.png",
-      links: ["Home", "Best Seller"],
+      links: [
+        {
+          title: "Home",
+          url: "#",
+        },
+        {
+          title: "Best Seller",
+          url: "#",
+        },
+      ],
       // DropdownTxt: "Quick Links",
       // DropdownIcon: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707774619/icons8-sort-down-30_yurjok.png",
       // DropdownLinks: [
@@ -171,19 +180,19 @@ const templateSlice10 = createSlice({
           id: 1,
           name: "Victor",
           text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque reiciendis inventore iste ratione ex alias quis magni at optio",
-          img: "https://picsum.photos/101/101",
+          img: "https://picsum.photos/101/101.jpg",
         },
         {
           id: 1,
           name: "Satya Narayan",
           text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque reiciendis inventore iste ratione ex alias quis magni at optio",
-          img: "https://picsum.photos/102/102",
+          img: "https://picsum.photos/102/102.jpg",
         },
         {
           id: 1,
           name: "Sachin Tendulkar",
           text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque reiciendis inventore iste ratione ex alias quis magni at optio",
-          img: "https://picsum.photos/103/103",
+          img: "https://picsum.photos/103/103.jpg",
         },
       ],
     },
@@ -196,7 +205,19 @@ const templateSlice10 = createSlice({
       Location: "Noida, Uttar Pradesh",
       mobileIcon: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707781365/icons8-mobile-navigator-50_xvqski.png",
       mobile: "+20 123456789",
-      mediaIcons: [
+
+      contacts: [
+        {
+          value: "Noida, Uttar Pradesh",
+          icon: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707781362/icons8-location-arrow-24_mwjabu.png",
+        },
+        {
+          value: "+20 123456789",
+          icon: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707781365/icons8-mobile-navigator-50_xvqski.png",
+        },
+      ],
+
+      medias: [
         {
           icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701809141/templates/template_one/facebook_td263x.svg",
           url: "https://facebook.com",
@@ -215,18 +236,69 @@ const templateSlice10 = createSlice({
         },
       ],
 
-      items: [
+      footerSections: [
         {
           title: "Important Links",
-          links: ["Home", "About", "Contact", "Blog"],
+          links: [
+            {
+              title: "Home",
+              url: "#",
+            },
+            {
+              title: "About",
+              url: "#",
+            },
+            {
+              title: "Contact",
+              url: "#",
+            },
+            {
+              title: "Blog",
+              url: "#",
+            },
+          ],
         },
         {
           title: "Links",
-          links: ["Home", "About", "Contact", "Blog"],
+          links: [
+            {
+              title: "Home",
+              url: "#",
+            },
+            {
+              title: "About",
+              url: "#",
+            },
+            {
+              title: "Contact",
+              url: "#",
+            },
+            {
+              title: "Blog",
+              url: "#",
+            },
+          ],
         },
         {
           title: "Location",
-          links: ["Home", "About", "Contact", "Blog"],
+          links: [
+            {
+              title: "Home",
+              url: "#",
+            },
+            {
+              title: "About",
+              url: "#",
+            },
+            {
+              title: "Contact",
+              url: "#",
+            },
+            {
+              title: "Blog",
+              url: "#",
+            },
+          ],
         },
       ],
     },

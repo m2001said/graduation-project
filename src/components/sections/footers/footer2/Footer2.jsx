@@ -35,7 +35,7 @@ const Footer2 = () => {
         </li>
       </ul>
       <div className="footer2__socials">
-        {footer.mediaIcons.map((icon) => (
+        {footer.medias.map((icon) => (
           <a href={icon.url}>
             <img src={icon.icon} alt="" className="footer2-image" />{" "}
           </a>

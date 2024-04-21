@@ -27,7 +27,6 @@ const TrialDesign7 = () => {
     testimonials: Testimonials7,
     logos: Logos7,
     cta: Cta7,
-    footer: Footer7,
   };
 
   return (
@@ -48,6 +47,7 @@ const TrialDesign7 = () => {
             const Component = componentMapping[_component];
             return Component && <Component key={_component} />;
           })}
+          <Footer7 />
         </div>
       </div>
     </div>

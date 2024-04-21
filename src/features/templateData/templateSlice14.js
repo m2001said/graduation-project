@@ -4,23 +4,23 @@ const templateSlice14 = createSlice({
   initialState: {
     navbar: {
       title: "Eshop",
-      icon: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707601954/logo_xtzffr.png",
+      logo: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707601954/logo_xtzffr.png",
       links: [
         {
-          name: "Home",
-          link: "/#",
+          title: "Home",
+          url: "/#",
         },
         {
-          name: "Shop",
-          link: "/#shop",
+          title: "Shop",
+          url: "/#shop",
         },
         {
-          name: "About",
-          link: "/#about",
+          title: "About",
+          url: "/#about",
         },
         {
-          name: "Blogs",
-          link: "/#blog",
+          title: "Blogs",
+          url: "/#blog",
         },
       ],
       // DropdownTxt: "Quick Links",
@@ -73,18 +73,44 @@ const templateSlice14 = createSlice({
     items: {
       firstTitle: "Enjoy",
       secondTitle: "With",
-      title1: "Earph",
-      image1: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707777277/earphone_pgistv.png",
-      title2: "Gadget",
-      image2: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707777305/watch_dn63md.png",
-      title3: "Laptop",
-      image3: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707602295/macbook_dxcdn8.png",
-      title4: "Laptop",
-      image4: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707777316/gaming_zceuxk.png",
-      title5: "Gadget",
-      image5: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707602303/vr_zzinjy.png",
-      title6: "Earph",
-      image6: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707777323/speaker_wqwmry.png",
+      items: [
+        {
+          title: "Earph",
+          imgUrl: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707777277/earphone_pgistv.png",
+        },
+        {
+          title: "Gadget",
+          imgUrl: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707777305/watch_dn63md.png",
+        },
+        {
+          title: "Laptop",
+          imgUrl: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707602295/macbook_dxcdn8.png",
+        },
+        {
+          title: "Laptop",
+          imgUrl: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707777316/gaming_zceuxk.png",
+        },
+        {
+          title: "Gadget",
+          imgUrl: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707602303/vr_zzinjy.png",
+        },
+        {
+          title: "Earph",
+          imgUrl: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707777323/speaker_wqwmry.png",
+        },
+      ],
+      // title1: "Earph",
+      // image1: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707777277/earphone_pgistv.png",
+      // title2: "Gadget",
+      // image2: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707777305/watch_dn63md.png",
+      // title3: "Laptop",
+      // image3: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707602295/macbook_dxcdn8.png",
+      // title4: "Laptop",
+      // image4: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707777316/gaming_zceuxk.png",
+      // title5: "Gadget",
+      // image5: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707602303/vr_zzinjy.png",
+      // title6: "Earph",
+      // image6: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707777323/speaker_wqwmry.png",
       buttonText: "Browse",
     },
 
@@ -113,7 +139,7 @@ const templateSlice14 = createSlice({
       ],
     },
 
-    feature1: {
+    offer1: {
       discount: "30% OFF",
       title: "Fine Smile",
       date: "10 Jan to 28 Jan",
@@ -121,13 +147,11 @@ const templateSlice14 = createSlice({
       title2: "Air Solo Bass",
       title3: "Winter Sale",
       title4: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque reiciendis",
-      bgColor: "#f42c37",
     },
-
-    projects1: {
+    products: {
       title: "Our Products",
       description: "Explore Our Products",
-      projects: [
+      products: [
         {
           img: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707604733/p-1_mqzmix.jpg",
           title: "Boat Headphone",
@@ -172,7 +196,7 @@ const templateSlice14 = createSlice({
       buttonText: "Add to cart",
     },
 
-    feature2: {
+    offer2: {
       discount: "30% OFF",
       title: "Happy Hours",
       date: "14 Jan to 28 Jan",
@@ -180,13 +204,12 @@ const templateSlice14 = createSlice({
       title2: "Smart Solo",
       title3: "Winter Sale",
       title4: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque reiciendis",
-      bgColor: "#2dcc6f",
     },
 
-    projects2: {
+    blogs: {
       title: "Recent News",
       description: "Explore Our Blogs",
-      projects: [
+      blogs: [
         {
           title: "How to choose perfect smartwatch",
           subtitle: "minima facere deserunt vero illo beatae deleniti eius dolores consequuntur, eligendi corporis maiores molestiae Porro?",
@@ -210,24 +233,19 @@ const templateSlice14 = createSlice({
 
     logos: {
       companies: [
-        { imgUrl: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707780037/br-1_hqubpv.png" },
-        { imgUrl: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707780041/br-2_tlsefn.png" },
-        { imgUrl: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707780045/br-3_tjyara.png" },
-        { imgUrl: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707780049/br-4_zf3evw.png" },
-        { imgUrl: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707780053/br-5_tczupi.png" },
+        { imgUrl: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707780037/br-1_hqubpv.png", url: "https://examble.com" },
+        { imgUrl: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707780041/br-2_tlsefn.png", url: "https://examble.com" },
+        { imgUrl: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707780045/br-3_tjyara.png", url: "https://examble.com" },
+        { imgUrl: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707780049/br-4_zf3evw.png", url: "https://examble.com" },
+        { imgUrl: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707780053/br-5_tczupi.png", url: "https://examble.com" },
       ],
     },
 
     footer: {
       title: "Eshop",
-      imgUrl: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707601954/logo_xtzffr.png",
+      logo: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707601954/logo_xtzffr.png",
       description: "Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, voluptate.",
-      title3: "Address",
-      LocationIcon: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1709831446/icons8-location-24_qiw7so.png",
-      Location: "Noida, Uttar Pradesh",
-      mobileIcon: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707781365/icons8-mobile-navigator-50_xvqski.png",
-      mobile: "+20 123456789",
-      mediaIcons: [
+      medias: [
         {
           icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701809141/templates/template_one/facebook_td263x.svg",
           url: "https://facebook.com",
@@ -246,14 +264,34 @@ const templateSlice14 = createSlice({
         },
       ],
 
-      items: [
+      footerSections: [
         {
           title: "Important Links",
-          links: ["Home", "About", "Contact", "Blog"],
+          links: [
+            { title: "Home", url: "#home" },
+            { title: "About", url: "#about" },
+            { title: "Contact", url: "#contact" },
+            { title: "Blog", url: "#blog" },
+          ],
         },
         {
           title: "Quick Links",
-          links: ["Home", "About", "Contact", "Blog"],
+          links: [
+            { title: "Home", url: "#home" },
+            { title: "About", url: "#about" },
+            { title: "Contact", url: "#contact" },
+            { title: "Blog", url: "#blog" },
+          ],
+        },
+      ],
+      contacts: [
+        {
+          value: "Noida, Uttar Pradesh",
+          icon: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1709831446/icons8-location-24_qiw7so.png",
+        },
+        {
+          value: "+20 123456789",
+          icon: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707781365/icons8-mobile-navigator-50_xvqski.png",
         },
       ],
     },

@@ -38,7 +38,7 @@ const Teams5 = () => {
               </div>
               <div className="travelerName">
                 <span>{Card.travelerName}</span>
-                <p>{Card.sociallink}</p>
+                <p>{Card.socialLink}</p>
               </div>
             </div>
           ))}

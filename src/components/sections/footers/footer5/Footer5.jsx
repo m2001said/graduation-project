@@ -1,13 +1,12 @@
-import React,{useEffect} from 'react';
+import React, { useEffect } from "react";
 import "./footer5.css";
 import { useSelector } from "react-redux";
-import { useLocation } from 'react-router';
+import { useLocation } from "react-router";
 
 // import Aos from 'aos'
 // import "aos/dist/aos.css"
 
 const Footer5 = () => {
-
   // useEffect(()=>{
   //   Aos.init({duration: 2000})
   // },[])
@@ -28,7 +27,7 @@ const Footer5 = () => {
           </div>
           <p>{footer.description}</p>
           <div className="socialIcon design5-flex">
-            {footer.mediaIcons.map((icon) => (
+            {footer.medias.map((icon) => (
               <a href={icon.url} key={icon.url}>
                 <img src={icon.icon} alt="" className="footer5-singleIcon" />
               </a>
@@ -36,22 +35,19 @@ const Footer5 = () => {
           </div>
         </div>
 
-        {footer.items.map((item) => (
-          <div className="footer5-links" key={item.title}>
-            <span className="link-title">{item.title}</span>
-
-            {item.links.map((link) => (
-              <a href="#footer5" key={link}>
-                <li className="footer5-links-element">{link}</li>
+        {footer.footerSections.map((section) => (
+          <div className="footer5-links" key={section.title}>
+            <span className="link-title">{section.title}</span>
+            {section.links.map((link) => (
+              <a href={link.url} key={link.title}>
+                <li className="footer5-links-element">{link.title}</li>
               </a>
             ))}
           </div>
         ))}
-
-        
       </div>
     </div>
   );
-}
+};
 
-export default Footer5
+export default Footer5;

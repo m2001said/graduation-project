@@ -17,7 +17,7 @@ const Footer3 = () => {
       <hr />
       <div className="footer3">
         <div className="scoil-links-f3">
-          {footer.mediaIcons.map((icon, index) => (
+          {footer.medias.map((icon, index) => (
             <img key={index} src={icon.icon} alt="" />
           ))}
         </div>

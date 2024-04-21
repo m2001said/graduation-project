@@ -13,24 +13,23 @@ const TrialDesign6 = () => {
   const state = useSelector((state) => state.template6);
   const reorderedComponents = Object.keys(state);
   const componentMapping = {
-    navbar: Navbar6,
-    hero: Hero6,
     features: Feature6,
     testimonials: Testimonials6,
     products: FilterItems6,
     menu: CartItems6,
     cta: Cta6,
-    footer: Footer6,
   };
   return (
     <>
+      <Navbar6 />
+      <Hero6 />
       {reorderedComponents.map((_component) => {
         const Component = componentMapping[_component];
         return Component && <Component key={_component} />;
       })}
+      <Footer6 />
     </>
   );
 };
 
 export default TrialDesign6;
-

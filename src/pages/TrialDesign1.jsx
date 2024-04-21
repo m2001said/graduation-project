@@ -18,8 +18,6 @@ const TrialDesign1 = () => {
   const state = useSelector((state) => state.template1);
   const reorderedComponents = Object.keys(state);
   const componentMapping = {
-    navbar: Navbar1,
-    hero: Hero1,
     services: Services1,
     features: Featrue1,
     testimonials: Testimonials1,
@@ -30,15 +28,17 @@ const TrialDesign1 = () => {
     team: Team1,
     pricing: Pricing1,
     cta: Cta1,
-    footer: Footer1,
   };
 
   return (
     <div>
+      <Navbar1 />
+      <Hero1 />
       {reorderedComponents.map((_component) => {
         const Component = componentMapping[_component];
         return Component && <Component key={_component} />;
       })}
+      <Footer1 />
     </div>
   );
 };

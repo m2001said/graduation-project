@@ -186,7 +186,7 @@ const templateSlice2 = createSlice({
     footer: {
       logo: "CSE",
       rights: "ssssssssssssssssssssss all rights reserved.",
-      mediaIcons: [
+      medias: [
         {
           icon: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1703129090/icons8-facebook-50_xfbimo.png",
           url: "https://facebook.com",

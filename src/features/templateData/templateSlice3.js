@@ -176,10 +176,10 @@ const templateSlice3 = createSlice({
 
     footer: {
       imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1702990991/jammal_photos/isxpadjx12ja5wqaqzsk.png", //logo
-      mediaIcons: [
-        { icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1702990946/jammal_photos/op32ysn37afrbyyvzlpo.png" }, //githup
-        { icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1702991031/jammal_photos/ttvjziej5llydncutm9u.png" }, //linkedIn
-        { icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1702991055/jammal_photos/mt2lapqflvpafmnfpree.png" }, //insta
+      medias: [
+        { icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1702990946/jammal_photos/op32ysn37afrbyyvzlpo.png", url: "https://githup.com" }, //githup
+        { icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1702991031/jammal_photos/ttvjziej5llydncutm9u.png", url: "https://linked.com" }, //linkedIn
+        { icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1702991055/jammal_photos/mt2lapqflvpafmnfpree.png", url: "https://instagram.com" }, //insta
       ],
     },
     colors: {
