@@ -1,9 +1,18 @@
 import React from "react";
 import "../footer11/footer11.css";
 import { useSelector } from "react-redux";
+import { useLocation } from "react-router";
 
 const Footer11 = () => {
-  const { footer } = useSelector((state) => state.template11);
+  // const { footer } = useSelector((state) => state.template11);
+  const { pathname } = useLocation();
+  const footer = useSelector((state) => {
+    if (pathname.includes("own-page")) {
+      return state.ownTemplate.footer;
+    } else {
+      return state.template11.footer;
+    }
+  });
   return (
     <section className="blog11 container section11" id="blog">
       <h2 className="section__title11">{footer.title}</h2>

@@ -1,9 +1,17 @@
 import React from "react";
 import "./project3.css";
 import { useSelector } from "react-redux";
+import { useLocation } from "react-router";
 
 const Project3 = () => {
-  const { projects } = useSelector((state) => state.template3);
+  const { pathname } = useLocation();
+  const projects = useSelector((state) => {
+    if (pathname.includes("own-page")) {
+      return state.ownTemplate.projects;
+    } else {
+      return state.template3.projects;
+    }
+  });
   return (
     <div className="Project3" id="Programs">
       <div className="Project3-header">

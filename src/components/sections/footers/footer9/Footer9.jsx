@@ -1,9 +1,17 @@
 import React from "react";
 import { useSelector } from "react-redux";
+import { useLocation } from "react-router";
 
 const Footer9 = () => {
-  const footer9 = useSelector((state) => state.template9.footer9);
 
+  const { pathname } = useLocation();
+  const footer9 = useSelector((state) => {
+    if (pathname.includes("own-page")) {
+      return state.ownTemplate.footer;
+    } else {
+      return state.template9.footer;
+    }
+  });
   return (
     <footer className="footer9   text-[var(--c616161)]">
       <section className="flex flex-col bg-[var(--e6edeb-9)] pt-8">

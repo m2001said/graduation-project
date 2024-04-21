@@ -1,6 +1,6 @@
 /* eslint-disable react/jsx-pascal-case */
 /* eslint-disable react-hooks/exhaustive-deps */
-import React, {useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import "../assets/css/globals18.css";
 import Navbar18 from "../components/sections/navbars/navbar18/Navbar18";
 import Hero18 from "../components/sections/heros/hero18/Hero18";
@@ -11,8 +11,7 @@ import Testimonial18 from "../components/sections/testimonials/testimonials18/Te
 import Cta18 from "../components/sections/ctas/cta18/Cta18";
 import Cta21 from "../components/sections/ctas/cta21/Cta21";
 import Footer18 from "../components/sections/footers/footer18/Footer18";
-
-
+import { useSelector } from "react-redux";
 
 const TrialDesign18 = () => {
   ////  dark mode   ////////
@@ -27,21 +26,27 @@ const TrialDesign18 = () => {
       element.classList.remove("dark");
       localStorage.setItem("theme", "light");
     }
-  
   }, [theme]);
   /////////////////////////
+  const state = useSelector((state) => state.template18);
+  const reorderedComponents = Object.keys(state);
+  const componentMapping = {
+    features: Feature18,
+    services: Services18,
+    projects: Projects18,
+    testimonials: Testimonial18,
+    cta1: Cta18,
+    cta2: Cta21,
 
+  };
   return (
     <div className="bg-white dark:bg-black dark:text-white text-black overflow-x-hidden">
       <Navbar18 theme={theme} setTheme={setTheme} />
       <Hero18 theme={theme} />
-      <Feature18 />
-      <Services18 />
-      <Projects18 />
-      
-      <Testimonial18 />
-      <Cta18/>
-      <Cta21 />
+      {reorderedComponents.map((_component) => {
+        const Component = componentMapping[_component];
+        return Component && <Component key={_component} />;
+      })}
       <Footer18 />
     </div>
   );

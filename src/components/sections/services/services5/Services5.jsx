@@ -1,6 +1,7 @@
 import React,{useEffect} from "react";
 import { useSelector } from "react-redux";
 import "./services5.css";
+import { useLocation } from "react-router";
 
 
 // import Aos from 'aos'
@@ -12,8 +13,14 @@ const Services5 = () => {
   //   Aos.init({duration: 2000})
   // },[])
 
-  const { service } = useSelector((state) => state.template5);
-
+  const { pathname } = useLocation();
+  const service = useSelector((state) => {
+    if (pathname.includes("own-page")) {
+      return state.ownTemplate.services;
+    } else {
+      return state.template5.services;
+    }
+  });
   return (
     <div className="services5">
       <div className="services5-mainSection">

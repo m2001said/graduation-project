@@ -1,9 +1,18 @@
 import { useState } from "react";
 import React from "react";
 import { useSelector } from "react-redux";
+import { useLocation } from "react-router";
 
 const Testimonials9 = () => {
-  const { testimonialsData } = useSelector((state) => state.template9);
+  const { pathname } = useLocation();
+  const testimonialsData = useSelector((state) => {
+    if (pathname.includes("own-page")) {
+      return state.ownTemplate.testimonials;
+    } else {
+      return state.template9.testimonials;
+    }
+  });
+
   const { block9 } = useSelector((state) => state.template9);
 
   const [currentTestimonialIndex, setCurrentTestimonialIndex] = useState(0);

@@ -1,8 +1,17 @@
 import React from "react";
 import { useSelector } from "react-redux";
+import { useLocation } from "react-router";
 
 const Button7 = ({ styles }) => {
-  const { feature } = useSelector((state) => state.template7);
+  const { pathname } = useLocation();
+  const feature = useSelector((state) => {
+    if (pathname.includes("own-page")) {
+      return state.ownTemplate.features;
+    } else {
+      return state.template7.features;
+    }
+  });
+
   return (
     <button
       type="button"

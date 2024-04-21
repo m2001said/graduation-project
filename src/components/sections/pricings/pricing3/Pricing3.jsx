@@ -1,9 +1,17 @@
 import React from "react";
 import "./pricing3.css";
 import { useSelector } from "react-redux";
+import { useLocation } from "react-router";
 
 const Pricing3 = () => {
-  const { pricing } = useSelector((state) => state.template3);
+  const { pathname } = useLocation();
+  const pricing = useSelector((state) => {
+    if (pathname.includes("own-page")) {
+      return state.ownTemplate.pricing;
+    } else {
+      return state.template3.pricing;
+    }
+  });
   return (
     <div className="plans-container3" id="Plans">
       <div className="blur3 plans-blur-1"></div>

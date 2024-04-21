@@ -1,9 +1,19 @@
+import { useLocation } from "react-router";
 import styles from "../../heros/hero7/styles7/style";
 import { useSelector } from "react-redux";
 
 const Footer7 = () => {
-  const { footer, socialMedia } = useSelector((state) => state.template7);
-  const socialMediaIcons = socialMedia.socialMedia;
+  const { pathname } = useLocation();
+  const footer = useSelector((state) => {
+    if (pathname.includes("own-page")) {
+      return state.ownTemplate.footer;
+    } else {
+      return state.template7.footer;
+    }
+  });
+  // const { socialMedia } = useSelector((state) => state.template7);
+
+  const socialMediaIcons = footer.medias;
 
   return (
     <section className={`${styles.flexCenter} ${styles.paddingY} flex-col`} style={{ color: "var(--color5)" }}>
@@ -13,17 +23,17 @@ const Footer7 = () => {
           <p className={`${styles.paragraph} mt-4 max-w-[312px]`}>{footer.Subtitle}</p>
         </div>
         <div className="flex-[1.5] w-full flex flex-row justify-between flex-wrap md:mt-0 mt-10">
-          {footer.links.map((section, index) => (
+          {footer.footerSections.map((section, index) => (
             <div key={index} className={`flex flex-col ss:my-0 my-4 min-w-[150px]`}>
               <h4 className="font-poppins font-medium text-[18px] leading-[27px] text-[var(--color5)]">{section.title}</h4>
               <ul className="list-none mt-4">
                 {section.links.map((link, index) => (
                   <li
-                    key={link.name}
+                    key={link.title}
                     className={`font-poppins font-normal text-[16px] leading-[24px] cursor-pointer ${index !== section.links.length - 1 ? "mb-4" : "mb-0"}`}
                   >
-                    <a className="footerhover7" href={link.link} target="_blank" rel="noopener noreferrer">
-                      {link.name}
+                    <a className="footerhover7" href={link.url} target="_blank" rel="noopener noreferrer">
+                      {link.title}
                     </a>
                   </li>
                 ))}
@@ -34,7 +44,7 @@ const Footer7 = () => {
       </div>
 
       <div className="w-full flex justify-between items-center md:flex-row flex-col pt-6 border-t-[1px] border-t-[#3F3E45]">
-        <p className="font-poppins font-normal text-center text-[18px] leading-[27px] text-[var(--color6)]">{socialMedia.title}</p>
+        <p className="font-poppins font-normal text-center text-[18px] leading-[27px] text-[var(--color6)]">{footer.title}</p>
         <div className="flex flex-row md:mt-0 mt-6">
           {socialMediaIcons.map((social, index) => (
             <img

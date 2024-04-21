@@ -1,11 +1,20 @@
 import React from "react";
 import { useSelector } from "react-redux";
 import DarkMode14 from "./DarkMode14";
+import { useLocation } from "react-router";
 
 
 
 const Navbar14 = ({ handleOrderPopup }) => {
-  const { navbar } = useSelector((state) => state.template14);
+  const { pathname } = useLocation();
+  const navbar = useSelector((state) => {
+    if (pathname.includes("own-page")) {
+      return state.ownTemplate.navbar;
+    } else {
+      return state.template14.navbar;
+    }
+  });
+  // const { navbar } = useSelector((state) => state.template14);
 
   return (
     <div className="bg-white dark:bg-gray-900 dark:text-white duration-200 relative z-40">
@@ -13,15 +22,15 @@ const Navbar14 = ({ handleOrderPopup }) => {
         <div className="container14 flex justify-between items-center">
           {/* Logo and Links sec */}
           <div className="flex items-center gap-4">
-            <img src={navbar.icon} alt="" className="w-7 cursor-pointer" />
+            <img src={navbar.logo} alt="" className="w-7 cursor-pointer" />
             <span className="text-[--primary14-color] font-semibold tracking-widest text-2xl uppercase sm:text-3xl cursor-pointer">{navbar.title}</span>
             {/* Menu */}
             <div className="hidden lg:block">
               <ul className="flex items-center gap-4">
-                {navbar.links.map((data, index) => (
+                {navbar.links.map((link, index) => (
                   <li key={index}>
-                    <a href={data.link} className="inline-block px-4 font-semibold text-gray-500 hover:text-black dark:hover:text-white duration-200">
-                      {data.name}
+                    <a href={link.url} className="inline-block px-4 font-semibold text-gray-500 hover:text-black dark:hover:text-white duration-200">
+                      {link.title}
                     </a>
                   </li>
                 ))}
