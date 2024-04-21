@@ -1,8 +1,17 @@
 import React from "react";
 import { useSelector } from "react-redux";
+import { useLocation } from "react-router";
 
 const Header11 = () => {
-  const { hero } = useSelector((state) => state.template11);
+  // const { hero } = useSelector((state) => state.template11);
+  const { pathname } = useLocation();
+  const hero = useSelector((state) => {
+    if (pathname.includes("own-page")) {
+      return state.ownTemplate.hero;
+    } else {
+      return state.template11.hero;
+    }
+  });
   return (
     <div className="home11__socials">
       {hero.mediaIcons.map((icon, index) => (

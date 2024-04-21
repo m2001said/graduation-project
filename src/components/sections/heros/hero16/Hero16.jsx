@@ -1,10 +1,18 @@
 import React from "react";
 import "./hero16.css";
 import { useSelector } from "react-redux";
+import { useLocation } from "react-router";
 
 const Hero16 = () => {
-  const { hero } = useSelector((state) => state.template16);
-
+  // const { hero } = useSelector((state) => state.template16);
+  const { pathname } = useLocation();
+  const hero = useSelector((state) => {
+    if (pathname.includes("own-page")) {
+      return state.ownTemplate.hero;
+    } else {
+      return state.template16.hero;
+    }
+  });
   return (
     <section className="home16" id="home">
       <div className="home__container16 container16">

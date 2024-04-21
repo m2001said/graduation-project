@@ -1,10 +1,18 @@
 import React from "react";
 import { useSelector } from "react-redux";
 import "./feature16.css";
+import { useLocation } from "react-router";
 
 const Feature16 = () => {
-  const { feature } = useSelector((state) => state.template16);
-
+  // const { feature } = useSelector((state) => state.template16);
+  const { pathname } = useLocation();
+  const feature = useSelector((state) => {
+    if (pathname.includes("own-page")) {
+      return state.ownTemplate.features;
+    } else {
+      return state.template16.features;
+    }
+  });
   return (
     <section className="features16 section16" id="features">
       <h2 className="section__title16" data-title="Features">

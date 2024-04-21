@@ -100,7 +100,6 @@ const Dashboard = () => {
   return (
     <section className="dashboard-container mx-auto relative">
       <TopSide />
-
       <div className="w-full flex-between flex-col md:flex-row dashboard-subContainer overflow-hidden">
         <LeftSide targetTemplate={template} updateAllRef={updateAllRef} />
         <div className="max-md:w-full md:w-70 flex-auto  flex justify-start flex-col items-center text-black p-2" style={{ height: "calc(100vh - 56px)" }}>

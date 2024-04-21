@@ -1,6 +1,7 @@
 import React,{useEffect} from 'react';
 import "./teams5.css";
 import { useSelector } from "react-redux";
+import { useLocation } from 'react-router';
 
 // import Aos from 'aos'
 // import "aos/dist/aos.css"
@@ -14,8 +15,14 @@ const Teams5 = () => {
   // },[])
 
 
-  const { team } = useSelector((state) => state.template5);
-
+  const { pathname } = useLocation();
+  const team = useSelector((state) => {
+    if (pathname.includes("own-page")) {
+      return state.ownTemplate.team;
+    } else {
+      return state.template5.team;
+    }
+  });
   return (
     <div className="teams5 design5 design5-container design5-section">
       <div className="teams5-mainSectiom">
@@ -31,7 +38,7 @@ const Teams5 = () => {
               </div>
               <div className="travelerName">
                 <span>{Card.travelerName}</span>
-                <p>{Card.sociallink}</p>
+                <p>{Card.socialLink}</p>
               </div>
             </div>
           ))}

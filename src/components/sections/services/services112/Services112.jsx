@@ -1,9 +1,18 @@
 import React from "react";
 import "./services112.css";
 import { useSelector } from "react-redux";
+import { useLocation } from "react-router";
 
 const Services11_2 = () => {
-  const { services } = useSelector((state) => state.template11);
+  const { pathname } = useLocation();
+  const services = useSelector((state) => {
+    if (pathname.includes("own-page")) {
+      return state.ownTemplate.services;
+    } else {
+      return state.template11.services;
+    }
+  });
+  // const { services } = useSelector((state) => state.template11);
   return (
     <section className="services11 container section" id="services">
       <h2 className="section__title11">Services</h2>

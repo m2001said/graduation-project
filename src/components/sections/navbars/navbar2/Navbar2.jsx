@@ -1,10 +1,18 @@
 import React, { useState } from "react";
 import "./navbar2.css";
 import { useSelector } from "react-redux";
+import { useLocation } from "react-router";
 
 const Navbar2 = () => {
   const [activeNav, setActiveNav] = useState("#");
-  const { navbar } = useSelector((state) => state.template2);
+  const { pathname } = useLocation();
+  const navbar = useSelector((state) => {
+    if (pathname.includes("own-page")) {
+      return state.ownTemplate.navbar;
+    } else {
+      return state.template2.navbar;
+    }
+  });
   return (
     <nav className="nav2">
       {navbar.map((item) => (

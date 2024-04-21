@@ -4,23 +4,30 @@ import Navbar3 from "../../navbars/navbar3/Navbar3";
 import { useSelector } from "react-redux";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { useLocation } from "react-router";
 
 const Hero3 = () => {
   useEffect(() => {
     AOS.init();
   }, []);
 
-  const { hero } = useSelector((state) => state.template3);
+  const { pathname } = useLocation();
+  const hero = useSelector((state) => {
+    if (pathname.includes("own-page")) {
+      return state.ownTemplate.hero;
+    } else {
+      return state.template3.hero;
+    }
+  });
 
   if (!hero) {
     return null;
   }
-
   return (
     <div className="hero3" id="Home">
       <div className="blur3 hero-blur"></div>
       <div className="left-h">
-        <Navbar3 />
+        {/* <Navbar3/> */}
 
         <div className="the-best-ad">
           <div data-aos="fade-left" data-aos-duration="3000" className="arch-left"></div>

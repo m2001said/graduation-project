@@ -1,10 +1,18 @@
 import React from "react";
 import { useSelector } from "react-redux";
+import { useLocation } from "react-router";
 
 
 const Services14 = () => {
-  const { services } = useSelector((state) => state.template14);
-
+  // const { services } = useSelector((state) => state.template14);
+  const { pathname } = useLocation();
+  const services = useSelector((state) => {
+    if (pathname.includes("own-page")) {
+      return state.ownTemplate.services;
+    } else {
+      return state.template14.services;
+    }
+  });
   return (
     <div className="bg-white dark:bg-gray-900">
       <div className="container14 my-14 md:my-20">

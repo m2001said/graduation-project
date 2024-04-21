@@ -1,8 +1,16 @@
 import React, { useState } from "react";
 import { useSelector } from "react-redux";
+import { useLocation } from "react-router";
 
 const Navbar7 = () => {
-  const { navbar } = useSelector((state) => state.template7);
+  const { pathname } = useLocation();
+  const navbar = useSelector((state) => {
+    if (pathname.includes("own-page")) {
+      return state.ownTemplate.navbar;
+    } else {
+      return state.template7.navbar;
+    }
+  });
   const [active, setActive] = useState("Home");
   const [toggle, setToggle] = useState(false);
 
@@ -11,15 +19,15 @@ const Navbar7 = () => {
       <img src={navbar.imgUrl[0]} alt="hoobank" className="w-[124px] h-[32px]" />
 
       <ul className="list-none sm:flex hidden justify-end items-center flex-1">
-        {navbar.Links.map((nav, index) => (
+        {navbar.links.map((nav, index) => (
           <li
-            key={nav.id}
+            key={index}
             className={`font-poppins font-normal cursor-pointer text-[16px] ${active === nav.title ? "text-white" : "text-dimWhite"} ${
-              index === navbar.Links.length - 1 ? "mr-0" : "mr-10"
+              index === navbar.links.length - 1 ? "mr-0" : "mr-10"
             }`}
             onClick={() => setActive(nav.title)}
           >
-            <a href={`#${nav.id}`} style={{ color: active === nav.title ? "var(--color6)" : "var(--color3)" }}>
+            <a href={nav.url} style={{ color: active === nav.title ? "var(--color6)" : "var(--color3)" }}>
               {nav.title}
             </a>
           </li>
@@ -29,15 +37,15 @@ const Navbar7 = () => {
         <img src={toggle ? navbar.imgUrl[1] : navbar.imgUrl[2]} alt="menu" className="w-[28px] h-[28px] object-contain" onClick={() => setToggle(!toggle)} />
         <div className={`${!toggle ? "hidden" : "flex"} p-6 bg-black-gradient absolute top-20 right-0 mx-4 my-2 min-w-[140px] rounded-xl sidebar`}>
           <ul className="list-none flex justify-end items-start flex-1 flex-col">
-            {navbar.Links.map((nav, index) => (
+            {navbar.links.map((nav, index) => (
               <li
-                key={nav.id}
+                key={index}
                 className={`font-poppins font-medium cursor-pointer text-[16px] ${active === nav.title ? "text-white" : "text-dimWhite"} ${
-                  index === navbar.Links.length - 1 ? "mb-0" : "mb-4"
+                  index === navbar.links.length - 1 ? "mb-0" : "mb-4"
                 }`}
                 onClick={() => setActive(nav.title)}
               >
-                <a href={`#${nav.id}`} style={{ color: active === nav.title ? "var(--color6)" : "var(--color3)" }}>
+                <a href={nav.url} style={{ color: active === nav.title ? "var(--color6)" : "var(--color3)" }}>
                   {nav.title}
                 </a>
               </li>

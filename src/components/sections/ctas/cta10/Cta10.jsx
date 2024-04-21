@@ -1,10 +1,17 @@
 import React from "react";
 import { useSelector } from "react-redux";
 import "../../../../assets/css/globals10.css";
+import { useLocation } from "react-router";
 
 const Cta10 = () => {
-  const { cta } = useSelector((state) => state.template10);
-
+  const { pathname } = useLocation();
+  const cta = useSelector((state) => {
+    if (pathname.includes("own-page")) {
+      return state.ownTemplate.cta;
+    } else {
+      return state.template10.cta;
+    }
+  });
   return (
     <>
       <div

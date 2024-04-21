@@ -1,9 +1,17 @@
 import React from "react";
 import { useSelector } from "react-redux";
+import { useLocation } from "react-router";
 
 const Hero15 = () => {
-  const { hero } = useSelector((state) => state.template15);
-
+  // const { hero } = useSelector((state) => state.template15);
+  const { pathname } = useLocation();
+  const hero = useSelector((state) => {
+    if (pathname.includes("own-page")) {
+      return state.ownTemplate.hero;
+    } else {
+      return state.template15.hero;
+    }
+  });
   return (
     <main className="min-h-screen flex xl:pt-0 pt-36 hero15" id="home">
       <div className="xl:flex items-center container max-w-[1300px] mx-auto lg:px-3">
@@ -15,7 +23,7 @@ const Hero15 = () => {
           <p className="text-[15px] mb-5 font-bold darkModeTextColor15">{hero.mainTitle.description}</p>
           <div className="xl:block hidden">
             <div className="flex items-center gap-x-8 pb-6 text-[22px]">
-              {hero.mediaIcons.map((icon, index) => (
+              {hero.medias.map((icon, index) => (
                 <a key={icon.url} href={icon.url} target="_blank" rel="noopener noreferrer">
                   <img src={icon.icon} alt={`Icon ${index + 1}`} style={{ width: "40px", height: "40px" }} />
                 </a>
@@ -38,10 +46,10 @@ const Hero15 = () => {
             <div className="absolute z-10 lg:bottom-24 bottom-20 xl:-left-10 lg:left-40 left-0">
               <div className="block rounded-full sm:h-20 h-14 w-fit shadowbtn relative z-10">
                 <button className="h-full sm:px-6 px-3 border border-black border-solid rounded-full lg:text-[31px] text-[13px] font-bold flex items-center darkModeTextColor15">
-                  {hero.sub_title.experience}
+                  {hero.subtitle.experience}
                 </button>
                 <button className="h-full sm:px-6 px-3 border border-black border-solid rounded-full lg:text-[31px] text-[13px] font-bold flex items-center btnHoverColor15 ml-20">
-                  {hero.sub_title.completedProjects}
+                  {hero.subtitle.completedProjects}
                 </button>
               </div>
             </div>

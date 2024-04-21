@@ -4,10 +4,17 @@ import { useSelector } from "react-redux";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Autoplay } from "swiper/modules";
 import "swiper/css";
+import { useLocation } from "react-router";
 
 const Testimonials6 = () => {
-  const { testimonials } = useSelector((state) => state.template6);
-
+  const { pathname } = useLocation();
+  const testimonials = useSelector((state) => {
+    if (pathname.includes("own-page")) {
+      return state.ownTemplate.testimonials;
+    } else {
+      return state.template6.testimonials;
+    }
+  });
   return (
     <section className="design-6">
       <div className="container mx-auto px-4">

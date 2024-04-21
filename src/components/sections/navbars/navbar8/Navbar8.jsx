@@ -1,9 +1,16 @@
 import React from "react";
 import { useSelector } from "react-redux";
+import { useLocation } from "react-router";
 
 const Navbar8 = () => {
-  const { navbar } = useSelector((state) => state.template8);
-  console.log(navbar);
+  const { pathname } = useLocation();
+  const navbar = useSelector((state) => {
+    if (pathname.includes("own-page")) {
+      return state.ownTemplate.navbar;
+    } else {
+      return state.template8.navbar;
+    }
+  });
 
   // Define the map for linking section IDs with offsets
   const sectionMap = {
@@ -30,8 +37,13 @@ const Navbar8 = () => {
       <div className="container mx-auto">
         <div className="w-full rounded-full max-w-[460px] bg-black/20 h-[96px] backdrop-blur-2xl mx-auto px-5 flex justify-between text-2xl text-white/50 items-center">
           {navbar.links.map((link, index) => (
-            <a key={index} onClick={() => scrollTo(link.toLowerCase())} className="cursor-pointer w-[60px] flex items-center justify-center">
-              {link}
+            <a
+              href={link.url}
+              key={index}
+              onClick={() => scrollTo(link.title.toLowerCase())}
+              className="cursor-pointer w-[60px] flex items-center justify-center"
+            >
+              {link.title}
             </a>
           ))}
         </div>

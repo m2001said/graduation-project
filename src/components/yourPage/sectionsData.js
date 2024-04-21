@@ -77,13 +77,11 @@ export const featureData = createData('Feature', [
   // { id: 1, imgUrl: "feature1.png" },
   { id: 3, imgUrl: "feature3.png" },
   { id: 4, imgUrl: "feature4.png" },
-  { id: 5, imgUrl: "feature5.png" },
-  { id: 21, imgUrl: "feature21.png" },
+  // { id: 5, imgUrl: "feature5.png" },
+  // { id: 21, imgUrl: "feature21.png" },
   { id: 6, imgUrl: "feature6.png" },
   { id: 7, imgUrl: "feature7.png" },
-  { id: 72, imgUrl: "feature72.png" },
-  { id: 73, imgUrl: "feature73.png" },
-  { id: 9, imgUrl: "feature9.png" },
+  // { id: 9, imgUrl: "feature9.png" },
   { id: 10, imgUrl: "feature10.png" },
   { id: 15, imgUrl: "feature15.png" },
   { id: 16, imgUrl: "feature16.png" },
@@ -96,6 +94,7 @@ export const projectData = createData('Project', [
   { id: 2, imgUrl: "project2.png" },
   { id: 3, imgUrl: "project3.png" },
   { id: 4, imgUrl: "project4.png" },
+  { id: 8, imgUrl: "project8.png" },
   { id: 11, imgUrl: "project11.png" },
   { id: 13, imgUrl: "project13.png" },
   { id: 14, imgUrl: "project14.png" },
@@ -167,6 +166,7 @@ export const footerData = createData('Footer', [
 
 export const logoData = createData('Logo', [
   { id: 1, imgUrl: "logo1.png" },
+  { id: 7, imgUrl: "logo7.png" },
   { id: 14, imgUrl: "logo14.png" }
 ]);
 
@@ -174,7 +174,6 @@ export const pricingData = createData('Pricing', [
   { id: 1, imgUrl: "pricing1.png" },
   { id: 3, imgUrl: "pricing3.png" },
   // { id: 6, imgUrl: "pricing6.png" },
-  { id: 7, imgUrl: "pricing7.png" },
   { id: 9, imgUrl: "pricing9.png" },
   { id: 11, imgUrl: "pricing11.png" },
   { id: 15, imgUrl: "pricing15.png" }
@@ -199,7 +198,6 @@ export const statisticData = createData('Statistic', [
 
 export const itemData = createData('Item', [
   { id: 1, imgUrl: "item1.png" },
-  { id: 8, imgUrl: "item8.png" },
   { id: 14, imgUrl: "item14.png" }
 ]);
 
