@@ -18,7 +18,7 @@ const CustomDot = ({ onClick, active }) => {
 };
 
 const Hero9 = () => {
-  const hero9 = useSelector((state) => state.template9.hero9);
+  const hero9 = useSelector((state) => state.template9.hero);
 
   return (
     <main className="mb-12 pt-4">
@@ -58,17 +58,17 @@ const Hero9 = () => {
               <div className="py-12 flex flex-col gap-8 px-4">
                 <input
                   type="text"
-                  placeholder={hero9.inputPlaceholders && hero9.inputPlaceholders.location}
+                  placeholder={hero9.IconsLogos && hero9.IconsLogos.location}
                   className="h-16 outline-none rounded-3xl bg-[var(--white-9)] border border-[var(--white-9)] px-6"
                 />
                 <select
-                  placeholder={hero9.inputPlaceholders && hero9.inputPlaceholders.propertyType}
+                  placeholder={hero9.IconsLogos && hero9.IconsLogos.propertyType}
                   className="h-16 outline-none rounded-3xl bg-[var(--white-9)] border border-[var(--white-9)] px-6"
                 >
                   <option> Select Property Type</option>
                 </select>
                 <select
-                  placeholder={hero9.inputPlaceholders && hero9.inputPlaceholders.rooms}
+                  placeholder={hero9.IconsLogos && hero9.IconsLogos.rooms}
                   className="h-16 outline-none rounded-3xl bg-[var(--white-9)] border border-[var(--white-9)] px-6"
                 >
                   <option> Select Rooms</option>

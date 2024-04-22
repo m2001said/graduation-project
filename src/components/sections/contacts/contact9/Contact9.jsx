@@ -2,7 +2,7 @@ import React from "react";
 import { useSelector } from "react-redux";
 
 const Contact9 = () => {
-  const { imgUrl, title, description } = useSelector((state) => state.template9.contactme9);
+  const { imgUrl, title, description } = useSelector((state) => state.template9.contact);
 
   const renderImage = imgUrl ? <img src={imgUrl} alt="" className="h-15 w-60 sm:h-27 sm:w-24 lg:h-40 lg:w-40 mr-40 img-9" /> : null;
 

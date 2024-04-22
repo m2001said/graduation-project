@@ -22,7 +22,6 @@ const TrialDesign9 = () => {
         <Teams9 className="trialdesign9" />
         <Testimonials9 className="trialdesign9" />
         <Contact9 className="trialdesign9" />
-
       </main>
       <Footer9 className="trialdesign9" />
     </div>

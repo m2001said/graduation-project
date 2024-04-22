@@ -2,7 +2,7 @@ import React from "react";
 import { useSelector } from "react-redux";
 
 const Footer9 = () => {
-  const footer9 = useSelector((state) => state.template9.footer9);
+  const footer9 = useSelector((state) => state.template9.footer);
 
   return (
     <footer className="footer9   text-[var(--primary-text-color-9)]">
@@ -12,18 +12,18 @@ const Footer9 = () => {
             <div className="lg:block flex flex-col items-enter justify-center">
               <span className="flex items-center gap-x-2">
                 <button className="bg-[var(--button-text-color-9)] text-[var(--white-9)] rounded-full w-14 h-14">
-                  <img src={footer9.rezillaInfo.home} className="w-1/2 h-1/2 m-auto" alt="Home" />
+                  <img src={footer9.info.home} className="w-1/2 h-1/2 m-auto" alt="Home" />
                 </button>
-                <p className="font-medium text-xl">{footer9.rezillaInfo.name}</p>
+                <p className="font-medium text-xl">{footer9.info.name}</p>
               </span>
-              <p className="xl:text-base text-sm py-4 w-45 lg:text-left text-center">{footer9.rezillaInfo.address}</p>
+              <p className="xl:text-base text-sm py-4 w-45 lg:text-left text-center">{footer9.info.address}</p>
               <span className="flex items-center gap-x-2 pt-4">
-                <img src={footer9.rezillaInfo.phoneImg} alt="Phone" className="logo-9" />
-                <p>{footer9.rezillaInfo.phone}</p>
+                <img src={footer9.info.phoneImg} alt="Phone" className="logo-9" />
+                <p>{footer9.info.phone}</p>
               </span>
               <span className="flex items-center gap-x-2 pt-2">
-                <img src={footer9.rezillaInfo.mail} alt="Mail" className="logo-9" />
-                <p>{footer9.rezillaInfo.email}</p>
+                <img src={footer9.info.mail} alt="Mail" className="logo-9" />
+                <p>{footer9.info.email}</p>
               </span>
             </div>
 
@@ -52,7 +52,7 @@ const Footer9 = () => {
               <div className="relative h-14 flex justify-center items-center">
                 <input type="email" placeholder="Email Address" className="h-full w-full rounded-full px-3" />
                 <button className="bg-[var(--button-text-color-9)] text-[var(--white-9)] rounded-full w-12 h-12 flex justify-center items-center text-xl absolute right-1">
-                  <img src={footer9.rezillaInfo.arrf} alt="Subscribe" />
+                  <img src={footer9.info.next} alt="Subscribe" />
                 </button>
               </div>
               <p className="font-semibold py-6 text-lg lg:text-left text-center">{footer9.followUsText}</p>
