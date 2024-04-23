@@ -1,22 +1,43 @@
 import React, { useState } from "react";
+import { useDispatch } from 'react-redux';
+import { register } from '../../../features/auth/authSlice';
 import { validate } from "./validationUtils";
 import { useNavigate } from "react-router";
 
 const SignUpForm = ({ toggleForm, toggleModal }) => {
   const navigate = useNavigate();
+  const dispatch = useDispatch();
   const [newEmail, setNewEmail] = useState("");
   const [newPassword, setNewPassword] = useState("");
   const [error, setError] = useState("");
 
-  const handleSignUpClick = () => {
-    const validationError = validate(newEmail, newPassword);
+  const handleSignUpClick = async () => {
+    const validationError = validate(newEmail, newPassword); 
     if (validationError) {
       setError(validationError);
       return;
     }
-    navigate("/designs");
-    toggleModal();
+
+    const response = await fetch('/api/register', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({ email: newEmail, password: newPassword })
+    });
+
+    if (response.ok) {
+      const data = await response.json();
+      console.log(data);
+      dispatch(register(data.user));
+      toggleModal();
+      navigate("/designs");
+    } else {
+      setError('Email already in use');
+    }
   };
+
+
   return (
     <>
       <h1>Create Account</h1>

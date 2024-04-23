@@ -7,7 +7,13 @@ import DesignsPage from "./pages/DesignsPage";
 import BuildYourPage from "./pages/BuildYourPage";
 import NotFound from "./pages/NotFoundPage";
 import OwnPage from "./pages/OwnPage.jsx";
+import ProtectedRoute from "./pages/ProtectedRoute";
+
 const trialDesignComponents = Array.from({ length: 18 }, (_, i) => require(`./pages/TrialDesign${i + 1}`).default);
+
+
+
+
 function App() {
   const [isSignedIn, setIsSignedIn] = useState(false);
   const signIn = () => {
@@ -27,10 +33,10 @@ function App() {
       <MainNav loginState={isSignedIn} setSignOUT={signOut} toggleModal={toggleModal} />
       <div style={{ marginTop: "77px" }}>
         <Routes>
-          <Route path="/" element={<MainPage toggleModal={toggleModal} isModalOpen={isModalOpen} signIn={signIn}/>} />
+          <Route path="/" element={<MainPage toggleModal={toggleModal} isModalOpen={isModalOpen} signIn={signIn} />} />
           <Route path="/designs" element={<DesignsPage />} />
           <Route path="/page-craft" element={<BuildYourPage />} />
-          <Route path="/own-page" element={<OwnPage />} />
+          <ProtectedRoute path="/own-page" element={<OwnPage />} />
           {trialDesignComponents.map((Component, index) => (
             <Route key={`preview-trial-design${index}`} path={`/preview-trial-design${index + 1}`} element={<Component />} />
           ))}

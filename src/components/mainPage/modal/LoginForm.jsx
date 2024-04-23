@@ -1,31 +1,44 @@
 import React, { useState } from "react";
-import { useNavigate } from 'react-router-dom';
+import { useDispatch } from 'react-redux'; 
+import { login } from '../../../features/auth/authSlice'; 
 import { validate } from './validationUtils';
+import { useNavigate } from 'react-router-dom';
 
-const LoginForm = ({ toggleForm, handleSignIn, toggleModal }) => {
+const LoginForm = ({ toggleForm, toggleModal }) => { 
   const navigate = useNavigate();
+  const dispatch = useDispatch(); 
 
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
 
-
-
-
-  const handleSignInClick = () => {
+  const handleSignInClick = async () => {
     const validationError = validate(email, password);
     if (validationError) {
       setError(validationError);
       return;
     }
-  
-    // Proceed with sign-in logic
 
-    toggleModal();
-    navigate("/designs");
-    handleSignIn();
-    document.querySelector(".modal-overlay").classList.add("closed");
+    const response = await fetch('/api/login', { 
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({ email, password })
+    });
+
+    if (response.ok) {
+      const data = await response.json();
+      console.log(data);
+      dispatch(login(data.user));
+      toggleModal();
+      navigate("/designs");
+      document.querySelector(".modal-overlay").classList.add("closed");
+    } else {
+      setError('Invalid email or password');
+    }
   };
+
   
   return (
     <>
