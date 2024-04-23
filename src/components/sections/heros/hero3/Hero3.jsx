@@ -1,6 +1,5 @@
 import React, { useEffect } from "react";
 import "./hero3.css";
-import Navbar3 from "../../navbars/navbar3/Navbar3";
 import { useSelector } from "react-redux";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -27,8 +26,6 @@ const Hero3 = () => {
     <div className="hero3" id="Home">
       <div className="blur3 hero-blur"></div>
       <div className="left-h">
-        {/* <Navbar3/> */}
-
         <div className="the-best-ad">
           <div data-aos="fade-left" data-aos-duration="3000" className="arch-left"></div>
           <span>{hero.Subtitle}</span>
