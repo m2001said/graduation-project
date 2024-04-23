@@ -2,8 +2,8 @@ import "../assets/css/globals11.css";
 import React from "react";
 import Navbar11 from "../components/sections/navbars/navbar11/Navbar11";
 import Hero11 from "../components/sections/heros/hero11/Hero11";
+import About11 from "../components/sections/abouts/about11/About11";
 import Services11 from "../components/sections/services/services11/Services11";
-import Services112 from "../components/sections/services/services112/Services112";
 import Testimonials11 from "../components/sections/testimonials/testimonials11/Testimonials11";
 import Footer11 from "../components/sections/footers/footer11/Footer11";
 import Pricings11 from "../components/sections/pricings/pricing11/Pricing11";
@@ -31,6 +31,7 @@ const TrialDesign11 = () => {
   // };
   return (
     <div>
+<<<<<<< HEAD
       <Navbar11 />
       <main className="main">
         <Hero11 />
@@ -47,6 +48,22 @@ const TrialDesign11 = () => {
           return Component && <Component key={_component} />;
         })} */}
       </main>
+=======
+      <>
+        <Navbar11 />
+        <main className="main">
+          <Hero11 />
+          <About11/>
+          <Services11 />
+          <Cta11 />
+          <Project11 />
+          <Pricings11 />
+          <Testimonials11 />
+          <Footer11 />
+          <Contact11 />
+        </main>
+      </>
+>>>>>>> 57254c1011f83d273bba4f87a7b325d921012b30
     </div>
   );
 };
