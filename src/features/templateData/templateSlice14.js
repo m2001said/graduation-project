@@ -4,23 +4,23 @@ const templateSlice14 = createSlice({
   initialState: {
     navbar: {
       title: "Eshop",
-      logo: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707601954/logo_xtzffr.png",
+      icon: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707601954/logo_xtzffr.png",
       links: [
         {
-          title: "Home",
-          url: "/#",
+          name: "Home",
+          link: "/#",
         },
         {
-          title: "Shop",
-          url: "/#shop",
+          name: "Shop",
+          link: "/#shop",
         },
         {
-          title: "About",
-          url: "/#about",
+          name: "About",
+          link: "/#about",
         },
         {
-          title: "Blogs",
-          url: "/#blog",
+          name: "Blogs",
+          link: "/#blog",
         },
       ],
       // DropdownTxt: "Quick Links",
@@ -139,7 +139,7 @@ const templateSlice14 = createSlice({
       ],
     },
 
-    offer1: {
+    feature1: {
       discount: "30% OFF",
       title: "Fine Smile",
       date: "10 Jan to 28 Jan",
@@ -147,11 +147,13 @@ const templateSlice14 = createSlice({
       title2: "Air Solo Bass",
       title3: "Winter Sale",
       title4: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque reiciendis",
+      bgColor: "#f42c37",
     },
-    products: {
+
+    projects1: {
       title: "Our Products",
       description: "Explore Our Products",
-      products: [
+      projects: [
         {
           img: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707604733/p-1_mqzmix.jpg",
           title: "Boat Headphone",
@@ -196,7 +198,7 @@ const templateSlice14 = createSlice({
       buttonText: "Add to cart",
     },
 
-    offer2: {
+    feature2: {
       discount: "30% OFF",
       title: "Happy Hours",
       date: "14 Jan to 28 Jan",
@@ -204,12 +206,13 @@ const templateSlice14 = createSlice({
       title2: "Smart Solo",
       title3: "Winter Sale",
       title4: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque reiciendis",
+      bgColor: "#2dcc6f",
     },
 
-    blogs: {
+    projects2: {
       title: "Recent News",
       description: "Explore Our Blogs",
-      blogs: [
+      projects: [
         {
           title: "How to choose perfect smartwatch",
           subtitle: "minima facere deserunt vero illo beatae deleniti eius dolores consequuntur, eligendi corporis maiores molestiae Porro?",
@@ -233,19 +236,24 @@ const templateSlice14 = createSlice({
 
     logos: {
       companies: [
-        { imgUrl: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707780037/br-1_hqubpv.png", url: "https://examble.com" },
-        { imgUrl: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707780041/br-2_tlsefn.png", url: "https://examble.com" },
-        { imgUrl: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707780045/br-3_tjyara.png", url: "https://examble.com" },
-        { imgUrl: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707780049/br-4_zf3evw.png", url: "https://examble.com" },
-        { imgUrl: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707780053/br-5_tczupi.png", url: "https://examble.com" },
+        { imgUrl: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707780037/br-1_hqubpv.png" },
+        { imgUrl: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707780041/br-2_tlsefn.png" },
+        { imgUrl: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707780045/br-3_tjyara.png" },
+        { imgUrl: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707780049/br-4_zf3evw.png" },
+        { imgUrl: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707780053/br-5_tczupi.png" },
       ],
     },
 
     footer: {
       title: "Eshop",
-      logo: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707601954/logo_xtzffr.png",
+      imgUrl: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707601954/logo_xtzffr.png",
       description: "Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, voluptate.",
-      medias: [
+      title3: "Address",
+      LocationIcon: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1709831446/icons8-location-24_qiw7so.png",
+      Location: "Noida, Uttar Pradesh",
+      mobileIcon: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707781365/icons8-mobile-navigator-50_xvqski.png",
+      mobile: "+20 123456789",
+      mediaIcons: [
         {
           icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701809141/templates/template_one/facebook_td263x.svg",
           url: "https://facebook.com",
@@ -264,34 +272,14 @@ const templateSlice14 = createSlice({
         },
       ],
 
-      footerSections: [
+      items: [
         {
           title: "Important Links",
-          links: [
-            { title: "Home", url: "#home" },
-            { title: "About", url: "#about" },
-            { title: "Contact", url: "#contact" },
-            { title: "Blog", url: "#blog" },
-          ],
+          links: ["Home", "About", "Contact", "Blog"],
         },
         {
           title: "Quick Links",
-          links: [
-            { title: "Home", url: "#home" },
-            { title: "About", url: "#about" },
-            { title: "Contact", url: "#contact" },
-            { title: "Blog", url: "#blog" },
-          ],
-        },
-      ],
-      contacts: [
-        {
-          value: "Noida, Uttar Pradesh",
-          icon: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1709831446/icons8-location-24_qiw7so.png",
-        },
-        {
-          value: "+20 123456789",
-          icon: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707781365/icons8-mobile-navigator-50_xvqski.png",
+          links: ["Home", "About", "Contact", "Blog"],
         },
       ],
     },
