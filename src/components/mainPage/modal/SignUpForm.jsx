@@ -1,12 +1,13 @@
 import React, { useState } from "react";
 import { useDispatch } from 'react-redux';
+import { useNavigate } from "react-router";
 import { registerRequested } from '../../../features/auth/authSlice'; 
 import { validate } from './validationUtils';
-import { useNavigate } from "react-router";
 
 const SignUpForm = ({ toggleForm, toggleModal }) => {
   const navigate = useNavigate();
   const dispatch = useDispatch();
+  const [newName, setNewName] = useState("");
   const [newEmail, setNewEmail] = useState("");
   const [newPassword, setNewPassword] = useState("");
   const [error, setError] = useState("");
@@ -17,34 +18,38 @@ const SignUpForm = ({ toggleForm, toggleModal }) => {
       setError(validationError);
       return;
     }
-
+  
     try {
-      const response = await fetch('/user/signup', {
+      const response = await fetch('https://zweb.up.railway.app/user', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
         },
-        body: JSON.stringify({ email: newEmail, password: newPassword })
+        body: JSON.stringify({ name: newName, email: newEmail, password: newPassword })
       });
-
+  
       if (!response.ok) {
         const errorData = await response.json();
-        throw new Error(errorData.error || 'Something went wrong');
+        throw new Error(errorData.message || 'Something went wrong');
       }
-
+  
       const data = await response.json();
-      dispatch(registerRequested(data.user)); // Update dispatch
+      console.log(data);
+      dispatch(registerRequested(data.user)); // Pass only the user ID
       toggleModal();
       navigate("/designs");
     } catch (error) {
       setError(error.message);
     }
   };
+  
 
   return (
     <>
       <h1>Create Account</h1>
       <div className="modal-form">
+        <label htmlFor="newName">Name</label>
+        <input type="text" id="newName" value={newName} onChange={(e) => setNewName(e.target.value)} />
         <label htmlFor="newEmail">Email</label>
         <input type="email" id="newEmail" value={newEmail} onChange={(e) => setNewEmail(e.target.value)} />
         <label htmlFor="newPassword">Password</label>

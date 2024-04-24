@@ -70,7 +70,7 @@
 .modal-content {
   margin: auto;
   padding: 15px;
-  padding-top: 70px;
+  padding-top: 20px;
   width: 85%;
   max-width: 330px;
   flex-direction: column;
