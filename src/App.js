@@ -36,7 +36,11 @@ function App() {
           <Route path="/" element={<MainPage toggleModal={toggleModal} isModalOpen={isModalOpen} signIn={signIn} />} />
           <Route path="/designs" element={<DesignsPage />} />
           <Route path="/page-craft" element={<BuildYourPage />} />
-          <ProtectedRoute path="/own-page" element={<OwnPage />} />
+          <Route path="/own-page" element={
+            <ProtectedRoute>
+              <OwnPage />
+            </ProtectedRoute>
+          } />
           {trialDesignComponents.map((Component, index) => (
             <Route key={`preview-trial-design${index}`} path={`/preview-trial-design${index + 1}`} element={<Component />} />
           ))}
