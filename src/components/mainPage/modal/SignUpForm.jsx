@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useDispatch } from 'react-redux';
-import { register } from '../../../features/auth/authSlice';
-import { validate } from "./validationUtils";
+import { registerRequested } from '../../../features/auth/authSlice'; 
+import { validate } from './validationUtils';
 import { useNavigate } from "react-router";
 
 const SignUpForm = ({ toggleForm, toggleModal }) => {
@@ -18,25 +18,28 @@ const SignUpForm = ({ toggleForm, toggleModal }) => {
       return;
     }
 
-    const response = await fetch('/api/register', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json'
-      },
-      body: JSON.stringify({ email: newEmail, password: newPassword })
-    });
+    try {
+      const response = await fetch('/user/signup', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({ email: newEmail, password: newPassword })
+      });
 
-    if (response.ok) {
+      if (!response.ok) {
+        const errorData = await response.json();
+        throw new Error(errorData.error || 'Something went wrong');
+      }
+
       const data = await response.json();
-      console.log(data);
-      dispatch(register(data.user));
+      dispatch(registerRequested(data.user)); // Update dispatch
       toggleModal();
       navigate("/designs");
-    } else {
-      setError('Email already in use');
+    } catch (error) {
+      setError(error.message);
     }
   };
-
 
   return (
     <>

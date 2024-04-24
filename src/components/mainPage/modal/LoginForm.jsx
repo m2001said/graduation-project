@@ -1,17 +1,17 @@
-import React, { useState } from "react";
-import { useDispatch } from 'react-redux'; 
-import { login } from '../../../features/auth/authSlice'; 
+import React, { useState } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
+import { loginRequested } from '../../../features/auth/authSlice';
 import { validate } from './validationUtils';
 import { useNavigate } from 'react-router-dom';
 
-const LoginForm = ({ toggleForm, toggleModal }) => { 
+const LoginForm = ({ toggleForm, handleSignIn, toggleModal }) => {
   const navigate = useNavigate();
-  const dispatch = useDispatch(); 
-
+  const dispatch = useDispatch();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
-
+  const isSignedIn = useSelector(state => state.auth.user);
+  
   const handleSignInClick = async () => {
     const validationError = validate(email, password);
     if (validationError) {
@@ -19,27 +19,28 @@ const LoginForm = ({ toggleForm, toggleModal }) => {
       return;
     }
 
-    const response = await fetch('/api/login', { 
+    const response = await fetch('/user/login', {
       method: 'POST',
       headers: {
-        'Content-Type': 'application/json'
+        'Content-Type': 'application/json',
       },
-      body: JSON.stringify({ email, password })
+      body: JSON.stringify({ email, password }),
     });
 
     if (response.ok) {
       const data = await response.json();
       console.log(data);
-      dispatch(login(data.user));
+      dispatch(loginRequested(data.user)); // Update dispatch
       toggleModal();
       navigate("/designs");
+      handleSignIn();
       document.querySelector(".modal-overlay").classList.add("closed");
     } else {
       setError('Invalid email or password');
     }
   };
 
-  
+
   return (
     <>
       <h1>Login</h1>
