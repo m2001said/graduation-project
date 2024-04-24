@@ -52,9 +52,9 @@ const templateSlice17 = createSlice({
       coloredHeading2: "Delivery",
       headingPart1: " Restaurant fresh and healthy meal plan ",
       headingPart2: "in Cairo",
-      paragraphs: "Discover delicious dishes that will satisfy your cravings Door from 132.95 per week",
+      paragraph: "Discover delicious dishes that will satisfy your cravings Door from 132.95 per week",
       photos: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1710989808/hero_b7quav.png",
-      HeroBg: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1710989607/heroBg_vahqtb.png",
+      background: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1710989607/heroBg_vahqtb.png",
     },
 
     //******************  button   ************************ */
@@ -75,6 +75,8 @@ const templateSlice17 = createSlice({
       paragraph2:
         "We Know That time is the greatest value in the modern world . our healthy meal plan delivery service good food in cairo is the answer for those who want to eat healthy and save time and money .",
 
+     
+      
       apple: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1710989602/apple_cyue6o.png",
       kiwi: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1710989602/kiwi_oenfrv.png",
       lemon: " https://res.cloudinary.com/dowtlcpxj/image/upload/v1710989612/lemon_xp4xcd.png",
@@ -98,30 +100,56 @@ const templateSlice17 = createSlice({
 
     services: {
       heading: "Why Choose Us",
-      paragraph1: "Lorem ipsum dolor, sit amet consectetur adipisicing",
-      paragraph2: "Lorem ipsum dolor, sit amet consectetur adipisicing",
-      paragraph3: "Lorem ipsum dolor, sit amet consectetur adipisicing",
-      paragraph4: "Lorem ipsum dolor, sit amet consectetur adipisicing",
-      icon1: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1711094091/fast-delivery-fast-svgrepo-com_fr05yy.svg",
-      icon2:"https://res.cloudinary.com/dowtlcpxj/image/upload/v1711094092/burger-huge-svgrepo-com_rpo63l.svg",
-      icon3:"https://res.cloudinary.com/dowtlcpxj/image/upload/v1711094091/discount-svgrepo-com_j3jgfu.svg",
-      icon4:"https://res.cloudinary.com/dowtlcpxj/image/upload/v1707959653/holding-hand_1_ip0t5r.png",
+      icons: [
+        {
+          id: 1,
+          icon: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1711094091/fast-delivery-fast-svgrepo-com_fr05yy.svg",
+          paragraph: "Lorem ipsum dolor, sit amet consectetur adipisicing",
+        },
+        {
+          id: 2,
+          icon: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1711094092/burger-huge-svgrepo-com_rpo63l.svg",
+          paragraph: "Lorem ipsum dolor, sit amet consectetur adipisicing",
+        },
+        {
+          id: 3,
+          icon: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1711094091/discount-svgrepo-com_j3jgfu.svg",
+          paragraph: "lorem ipsum dolor, sit amet consectetur adipisicing",
+        },
+        {
+          id: 4,
+          icon: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707959653/holding-hand_1_ip0t5r.png",
+          paragraph: "Lorem ipsum dolor, sit amet consectetur adipisicing",
+        },
+      ],
     },
 
     //*************************  Footer   **************************/
 
     footer: {
       heading: "Contact Us",
-      upAddress: "20, Al-Mahalla Street",
-      downAddress: "Cairo, Egypt",
-      email1: "mkmk@goodFood.com",
-      email2: "mkmk@goodFood.com",
-      phone1: "+20123456789 - Sales and Services",
-      phone2: "+20123456789 - Hiring Queries",
-      whatsapp: "0123456789-Whatsapp",
-      emailIcon: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1703129088/icons8-gmail-50_u4sqv0.png",
-      phoneIcon: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1703129088/icons8-whatsapp-50_knru7l.png",
-      locationIcon: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1711080161/location_535239_clqbiz.png",
+
+      icons: [
+        {
+          upAddress: "20, Al-Mahalla Street",
+          downAddress: "Cairo, Egypt",
+          icon: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1711080161/location_535239_clqbiz.png",
+        },
+
+        {
+          email1: "mkmk@goodFood.com",
+          email2: "mkmk@goodFood.com",
+          icon: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1703129088/icons8-gmail-50_u4sqv0.png",
+        },
+
+        {
+          phone1: "+20123456789 - Sales and Services",
+          phone2: "+20123456789 - Hiring Queries",
+          whatsapp: "0123456789-Whatsapp",
+          icon: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1703129088/icons8-whatsapp-50_knru7l.png",
+        },
+      ],
+
       copyright: "Copyright © 2024 slolGoodFood. All Rights Reserved.",
     },
 
@@ -131,16 +159,36 @@ const templateSlice17 = createSlice({
       title: "Login",
       buttonTitle: "Login",
       other: "or log in with",
-      fbIcon: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1703129089/icons8-meta-50_oibze6.png",
-      googleIcon: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1703129088/icons8-gmail-50_u4sqv0.png",
-      closeIcon: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707987495/icons8-twitterx-50_1_ggrau2.png",
       login: "Login",
-    }, 
+
+      icons:[
+        {
+          id: 1,
+          name: "Facebook",
+          icon: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1703129089/icons8-meta-50_oibze6.png",
+        }
+        ,
+        {
+          id: 2,
+          name: "Google",
+          icon: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1703129088/icons8-gmail-50_u4sqv0.png",
+
+        }
+        ,
+        {
+          id: 3,
+          name: "x",
+          icon: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707987495/icons8-twitterx-50_1_ggrau2.png",
+        },
+      ],
+      // fbIcon: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1703129089/icons8-meta-50_oibze6.png",
+      // googleIcon: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1703129088/icons8-gmail-50_u4sqv0.png",
+      // closeIcon: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707987495/icons8-twitterx-50_1_ggrau2.png",
+    },
     colors: {
       templateColors: ["#fff", "#cda274", "#292f36", "#f4f0ec", "#777777"],
     },
   },
-  
 
   name: "templateSlice17",
   reducers: {

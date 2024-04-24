@@ -4,7 +4,7 @@ import PrimaryButton17 from "../../shared/shared17/PrimaryButton17";
 const Hero17 = () => {
   const hero = useSelector((state) => state.template17.hero);
   const BgStyle = {
-    backgroundImage: `url(${hero.HeroBg})`, // corrected syntax
+    backgroundImage: `url(${hero.background})`, // corrected syntax
     backgroundPosition: "center",
     backgroundSize: "cover",
     backgroundRepeat: "no-repeat",
@@ -26,7 +26,7 @@ const Hero17 = () => {
                 {hero.headingPart2}
               </h1>
               <p className="lg:pr-64" data-aos="fade-up" data-aos-delay="300">
-                {hero.paragraphs}
+                {hero.paragraph}
               </p>
 
               {/* button section */}

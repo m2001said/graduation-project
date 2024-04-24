@@ -25,10 +25,7 @@ const Projects13 = () => {
           <p className="text-center text-[var(--color-13-yel)]">{projects.title}</p>
           <h1 className="text-center text-[#054130] primary-font lg:text-5xl text-xl font-semibold">{projects.heading}</h1>
           <div className="md:flex items-center justify-between lg:pt-20 pt-8 gap-x-16">
-            {projects.project &&
-              projects.project.map((project, index) => (
-                <Cards key={index} img={project.img} title={project.title} desc={project.desc} />
-              ))}
+            {projects.project && projects.project.map((project, index) => <Cards key={index} img={project.img} title={project.title} desc={project.desc} />)}
           </div>
           <button className="rounded-full mx-auto mt-12 px-4 py-2 items-center text-sm bg-[#fd7b74] text-[var(--color-darkG-13)] gap-2 transition ease-out duration-300 hover:scale-110">
             <p className="text-[var(--color-13-yel)]">Load more</p>
