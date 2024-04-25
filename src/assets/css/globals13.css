@@ -13,19 +13,18 @@
 
 :root {
   --color-g-13-g: #154b3b;
-  --color-darkG-13: #003629;
-  --color-13-green: #003b29;
+  --color-darkG-13: #003629; /*  */
+  /* --color-13-green: #003b29; */
   --green-13: #054130;
-  --g06412f: #06412f;
+  /* --g06412f: #06412f; */
   --white-13: rgb(255, 255, 255);
-  --color-13-green2: #134e3c;
-  --color-13-yel: #fdca51;
-  --fffaf4: #fffaf4;
+  /* --color-13-green2: #134e3c; */
+  --color-13-yel: #fbba24;
   --fff6ed: #fff6ed;
   --c616161: #616161;
-  --fb7a3f: #fb7a3f;
-  --fd7b47: #fd7b47;
-  --black-13: rgb(0, 0, 0);
+  /* --fb7a3f: #fb7a3f; */
+  /* --fd7b47: #fd7b47; */
+  /* --black-13: rgb(0, 0, 0); */
 }
 
 /* Add the new font sizes extracted from the component */
@@ -101,7 +100,7 @@ button {
   }
 }
 #testimonials13:hover {
-  color: var(--black-13);
+  color: var(--white-13);
   background-color: var(--color-darkG-13);
 }
 
@@ -116,9 +115,9 @@ button {
   border-radius: 560px;
   border-radius: 0 0 560px 560px; /* If you want rounded only at the bottom */
 }
-.about-9:hover {
-  background: var(--button-bg-gradient-from);
-}
+/* .about-9:hover {
+  background: var(--button-bg-gradient-from-9);
+} */
 .about-9 {
   /* display: flex; */
   justify-content: center;
