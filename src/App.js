@@ -7,6 +7,7 @@ import DesignsPage from "./pages/DesignsPage";
 import BuildYourPage from "./pages/BuildYourPage";
 import NotFound from "./pages/NotFoundPage";
 import OwnPage from "./pages/OwnPage.jsx";
+import YourWebsites from "./pages/YourWebsites.jsx";
 const trialDesignComponents = Array.from({ length: 18 }, (_, i) => require(`./pages/TrialDesign${i + 1}`).default);
 function App() {
   const [isSignedIn, setIsSignedIn] = useState(false);
@@ -29,6 +30,7 @@ function App() {
         <Routes>
           <Route path="/" element={<MainPage toggleModal={toggleModal} isModalOpen={isModalOpen} signIn={signIn}/>} />
           <Route path="/designs" element={<DesignsPage />} />
+          <Route path="/websites" element={<YourWebsites />} />
           <Route path="/page-craft" element={<BuildYourPage />} />
           <Route path="/own-page" element={<OwnPage />} />
           {trialDesignComponents.map((Component, index) => (

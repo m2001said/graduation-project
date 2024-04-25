@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { updateScreen } from "../../../features/screen/screenSlice";
-
-const TopSide = () => {
+import axios from "axios";
+const TopSide = ({ schema }) => {
   const [viewportWidth, setViewportWidth] = useState(window.innerWidth);
   const screen = useSelector((state) => state.screen);
   const dispatch = useDispatch();
@@ -28,6 +28,22 @@ const TopSide = () => {
     dispatch(updateScreen("phone"));
   };
 
+  const handleSubmit = async () => {
+    console.log(schema);
+    // const res = await axios.post(
+    //   "end point",
+    //   { schema },
+      // {
+      //   headers: {
+      //     Authorization: "Bearer " + token,
+      //   },
+      // }
+    // );
+    // console.log(res);
+    // lading
+    // navigate to your website
+  };
+
   const devices = [
     {
       icon: <img src="/assets/icons/pc.svg" height={22} alt="down" style={{ cursor: "pointer" }} onClick={updateToPC} />,
@@ -50,7 +66,7 @@ const TopSide = () => {
   ];
 
   return (
-    <div className="flex-center gap-5 bg-1A2345 text-white  h-14">
+    <div className="flex-center gap-5 bg-1A2345 text-white  h-14 relative">
       {devices.map((device) => {
         const showControllers = viewportWidth >= 1024;
         const isActive = screen === device.type;
@@ -62,6 +78,11 @@ const TopSide = () => {
           ""
         );
       })}
+      <div className="absolute right-6">
+        <button className="bg-blue-500 px-4 rounded-lg h-10 flex-center" onClick={handleSubmit}>
+          Save
+        </button>
+      </div>
     </div>
   );
 };

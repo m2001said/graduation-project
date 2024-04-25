@@ -61,6 +61,7 @@ const LeftSide = ({ targetTemplate, updateAllRef }) => {
           isLast = true;
         }
 
+        if (section === "templateInfo") return null;
         if (section === "colors") return <ColorController key={section} colors={targetTemplate.colors} updateAll={updateAllRef} />;
         else
           return (
