@@ -44,7 +44,6 @@ const templateSlice7 = createSlice({
       imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1706801327/jammal_photos/pu1mdivlop5zpuugkqn9.svg",
       actionButton: "Get Started",
     },
-    // /----------------------------/
     statistics: {
       statistics: [
         {
@@ -60,22 +59,6 @@ const templateSlice7 = createSlice({
           value: "$230M+",
         },
       ],
-
-      // "stats-1": {
-      //   id: "stats-1",
-      //   title: "User Active",
-      //   value: "3800+",
-      // },
-      // "stats-2": {
-      //   id: "stats-2",
-      //   title: "Trusted by Company",
-      //   value: "230+",
-      // },
-      // "stats-3": {
-      //   id: "stats-3",
-      //   title: "Transaction",
-      //   value: "$230M+",
-      // },
     },
 
     features: {

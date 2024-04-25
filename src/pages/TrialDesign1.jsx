@@ -21,6 +21,7 @@ const TrialDesign1 = () => {
     services: Services1,
     features: Featrue1,
     testimonials: Testimonials1,
+    features: Featrue1,
     logos: Logos1,
     projects: Project1,
     statistics: Statistics1,

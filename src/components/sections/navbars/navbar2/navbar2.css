@@ -18,7 +18,7 @@
   padding: 0.9rem;
   background: transparent;
   display: flex;
-  color: var(--color-2-light);
+  color: var(--color-2-white);
   font-size: 1.1rem;
 }
 .nav2 a:hover {
@@ -26,7 +26,7 @@
 }
 
 .nav2 a.active {
-  background: var(--color-2-primary-variant);
+  background: var(--color-2-primary);
   border-radius: 50%;
 }
 

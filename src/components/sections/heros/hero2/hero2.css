@@ -2,6 +2,8 @@
 
 #hero2 {
   margin-top: 4rem;
+  background: var(--color-2-bg) url("https://res.cloudinary.com/dowtlcpxj/image/upload/v1703134021/bg-texture_up9ylo.png");
+
 }
 
 .hero2__container {
@@ -22,7 +24,7 @@
   width: 100%;
   aspect-ratio: 0/1;
   border-radius: 2rem;
-  background: linear-gradient(120deg, transparent, var(--color-2-golden), transparent);
+  background: linear-gradient(120deg, transparent, var(--color-2-primary), transparent);
   display: grid;
   place-items: center;
 }
@@ -55,7 +57,7 @@
 
 .hero2__card:hover {
   background: transparent;
-  border-color: var(--color-2-primary-variant);
+  border-color: var(--color-2-primary);
   cursor: default;
 }
 
@@ -72,12 +74,12 @@
 
 .hero2__card small {
   font-size: 0.7rem;
-  color: var(--color-2-light);
+  color: var(--color-2-white);
 }
 
 .hero2__content p {
   margin: 2rem 0 2.6rem;
-  color: var(--color-2-light);
+  color: var(--color-2-white);
 }
 
 /* Media Queries for Tablets */
