@@ -8,6 +8,7 @@ import BuildYourPage from "./pages/BuildYourPage";
 import NotFound from "./pages/NotFoundPage";
 import OwnPage from "./pages/OwnPage.jsx";
 import ProtectedRoute from "./pages/ProtectedRoute";
+import VerifyEmail from "./pages/VerifyEmail";
 
 const trialDesignComponents = Array.from({ length: 18 }, (_, i) => require(`./pages/TrialDesign${i + 1}`).default);
 
@@ -41,6 +42,9 @@ function App() {
               <OwnPage />
             </ProtectedRoute>
           } />
+
+          <Route path="/verify/:token" element={<VerifyEmail />} />
+
           {trialDesignComponents.map((Component, index) => (
             <Route key={`preview-trial-design${index}`} path={`/preview-trial-design${index + 1}`} element={<Component />} />
           ))}

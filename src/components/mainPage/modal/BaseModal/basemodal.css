@@ -82,12 +82,13 @@
   font-size: 31px;
   text-align: center;
   color: var(--modal-button) !important;
+  margin-top: 45px;
 }
 
 .modal-form {
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: 7px;
   color: #494949;
 }
 

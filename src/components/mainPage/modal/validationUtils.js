@@ -1,12 +1,25 @@
-export const validate = (email, password) => {
-  if (!email || !password) {
-    return "Both fields are required.";
+export const validate = (name, email, password) => {
+  if (!name.trim()) {
+    return "Name is required";
   }
-  if (!/^[\w-]+(\.[\w-]+)*@([\w-]+\.)+[a-zA-Z]{2,7}$/.test(email)) {
-    return "Please enter a valid email address.";
+  
+  if (!email.trim()) {
+    return "Email is required";
+  } else if (!isValidEmail(email)) {
+    return "Invalid email format";
   }
-  if (password.length < 6) {
-    return "Password must be at least 6 characters long.";
+  
+  if (!password.trim()) {
+    return "Password is required";
+  } else if (password.length < 6) {
+    return "Password must be at least 6 characters long";
   }
-  return ""; // No error if validation is successful
+  
+  return ""; // No validation errors
+};
+
+const isValidEmail = (email) => {
+  // Simple email validation regex
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  return emailRegex.test(email);
 };

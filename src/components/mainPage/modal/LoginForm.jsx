@@ -1,45 +1,54 @@
 import React, { useState } from 'react';
-import { useDispatch, useSelector } from 'react-redux';
+import { useDispatch } from 'react-redux';
 import { loginRequested } from '../../../features/auth/authSlice';
-import { validate } from './validationUtils';
 import { useNavigate } from 'react-router-dom';
+import axios from 'axios';
 
-const LoginForm = ({ toggleForm, handleSignIn, toggleModal }) => {
+const LoginForm = ({ toggleForm, toggleModal }) => {
   const navigate = useNavigate();
   const dispatch = useDispatch();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
-  const isSignedIn = useSelector(state => state.auth.user);
-  
+
   const handleSignInClick = async () => {
-    const validationError = validate(email, password);
-    if (validationError) {
-      setError(validationError);
-      return;
-    }
+    try {
+      const response = await axios.post('https://zweb.up.railway.app/user/login', {
+        email,
+        password,
+      });
 
-    const response = await fetch('/user/login', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify({ email, password }),
-    });
-
-    if (response.ok) {
-      const data = await response.json();
-      console.log(data);
-      dispatch(loginRequested(data.user)); // Update dispatch
-      toggleModal();
-      navigate("/designs");
-      handleSignIn();
-      document.querySelector(".modal-overlay").classList.add("closed");
-    } else {
-      setError('Invalid email or password');
+      if (response.status === 200) {
+        const userData = response.data.user;
+        console.log(userData);
+        dispatch(loginRequested(userData));
+        toggleModal();
+        navigate("/designs");
+        // Clear form fields
+        setEmail("");
+        setPassword("");
+        setError("");
+      } else {
+        setError('Invalid email or password');
+      }
+    } catch (error) {
+      if (error.response) {
+        // The request was made and the server responded with a status code
+        if (error.response.status === 500) {
+          setError('Internal server error. Please try again later.');
+        } else {
+          setError('An error occurred. Please try again later.');
+        }
+      } else if (error.request) {
+        // The request was made but no response was received
+        setError('No response from the server. Please check your internet connection.');
+      } else {
+        // Something happened in setting up the request that triggered an error
+        setError('An error occurred. Please try again later.');
+      }
+      console.error('Error logging in:', error);
     }
   };
-
 
   return (
     <>
