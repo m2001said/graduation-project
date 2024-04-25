@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
 // import { updateAll } from "../../../features/templateData/templateSlice";
-
 import ColorPicker from "./ColorPicker";
+
 const ColorController = ({ colors, updateAll }) => {
   const [open, setOpen] = useState(false);
   // const { colors } = useSelector((state) => state.template);
@@ -10,7 +10,7 @@ const ColorController = ({ colors, updateAll }) => {
   const dispatch = useDispatch();
   const handleChange = (e, index) => {
     document.documentElement.style.setProperty(`--website-color-${index + 1}`, e.target.value);
-    dispatch(updateAll({ section: "colors", variable: null, value: e.target.value, i: index, blockName: templateColors }));
+    dispatch(updateAll.updateTemplate({ section: "colors", variable: null, value: e.target.value, i: index, blockName: templateColors }));
   };
 
   return (

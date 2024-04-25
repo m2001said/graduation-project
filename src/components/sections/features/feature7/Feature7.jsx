@@ -2,6 +2,7 @@ import React from "react";
 import { useSelector } from "react-redux";
 import styles, { layout } from "../../heros/hero7/styles7/style";
 import Button7 from "../feature7/Button7";
+import { useLocation } from "react-router";
 
 const FeatureCard = ({ imgUrl, title, content, index }) => {
   return (
@@ -20,7 +21,15 @@ const FeatureCard = ({ imgUrl, title, content, index }) => {
 };
 
 const Business7 = () => {
-  const { feature } = useSelector((state) => state.template7);
+  const { pathname } = useLocation();
+  const feature = useSelector((state) => {
+    if (pathname.includes("own-page")) {
+      return state.ownTemplate.features;
+    } else {
+      return state.template7.features;
+    }
+  });
+
   const { actionButton, title, items: features } = feature; // Change feature to items
   return (
     <section id="features" className={layout.section}>

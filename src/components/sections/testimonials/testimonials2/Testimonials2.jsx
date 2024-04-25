@@ -7,11 +7,17 @@ import "swiper/css/effect-cards";
 import "./tstyles2.css";
 import { EffectCards } from "swiper/modules";
 import { useSelector } from "react-redux";
+import { useLocation } from "react-router";
 
 const Testimonials2 = () => {
-  const { testimonials } = useSelector((state) => state.template2);
-  const testimonial = testimonials;
-
+  const { pathname } = useLocation();
+  const testimonial = useSelector((state) => {
+    if (pathname.includes("own-page")) {
+      return state.ownTemplate.testimonials;
+    } else {
+      return state.template2.testimonials;
+    }
+  });
   return (
     <section id="testimonials2">
       <h5>Review from Clients</h5>

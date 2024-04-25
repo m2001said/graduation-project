@@ -4,7 +4,7 @@ import Hero1 from "../components/sections/heros/hero1/Hero1";
 import Services1 from "../components/sections/services/services1/Services1";
 import Project1 from "../components/sections/projects/projects1/Project1";
 import Items1 from "../components/sections/items/items1/Items1";
-import Statictics1 from "../components/sections/statistics/statistics1/Statistics1";
+import Statistics1 from "../components/sections/statistics/statistics1/Statistics1";
 import Testimonials1 from "../components/sections/testimonials/testimonials1/Testimonials1";
 import Featrue1 from "../components/sections/features/feature1/Featrue1";
 import Logos1 from "../components/sections/logos/logos1/Logos1";
@@ -18,28 +18,28 @@ const TrialDesign1 = () => {
   const state = useSelector((state) => state.template1);
   const reorderedComponents = Object.keys(state);
   const componentMapping = {
-    navbar: Navbar1,
-    hero: Hero1,
-    feature: Featrue1,
     services: Services1,
+    features: Featrue1,
     testimonials: Testimonials1,
     features: Featrue1,
     logos: Logos1,
     projects: Project1,
-    statistics: Statictics1,
+    statistics: Statistics1,
     items: Items1,
     team: Team1,
     pricing: Pricing1,
     cta: Cta1,
-    footer: Footer1,
   };
 
   return (
     <div>
+      <Navbar1 />
+      <Hero1 />
       {reorderedComponents.map((_component) => {
         const Component = componentMapping[_component];
         return Component && <Component key={_component} />;
       })}
+      <Footer1 />
     </div>
   );
 };

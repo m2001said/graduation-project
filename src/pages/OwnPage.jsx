@@ -1,5 +1,9 @@
-import React from 'react';
-import { useLocation } from 'react-router-dom';
+import React from "react";
+import TopSide from "./../components/dashboard/sections/TopSide";
+import LeftSide from "../components/dashboard/sections/LeftSide";
+import { useSelector } from "react-redux";
+import { useLocation } from "react-router-dom";
+import { ownTemplateActions } from "../features/templateData/ownTemplateSlice";
 
 const importComponent = (type, index) => {
   let module = null;
@@ -24,27 +28,69 @@ const importComponent = (type, index) => {
 const OwnPage = () => {
   const location = useLocation();
   const selectedData = location.state || {};
-
+  const ownTemplate = useSelector((state) => state.ownTemplate);
+  const reorderedComponents = Object.keys(ownTemplate);
   const renderComponent = (type, index) => {
     const Component = importComponent(type, index);
     return Component ? <Component key={`${type}-${index}`} /> : null;
   };
 
   const sectionNames = [
-    'navbars', 'heros', 'features', 'abouts', 'projects', 'services', 'contacts', 'teams',
-    'testimonials', 'statistics', 'logos', 'items', 'gallerys', 'offers', 'reservations', 'menus', 'cartItems', 'filterItems',
-    'orderPopups', 'chooses', 'pricings', 'ctas', 'footers',
+    "navbar",
+    "hero",
+    "features",
+    "projects",
+    "services",
+    "contact",
+    "team",
+    "testimonials",
+    "statistics",
+    "logos",
+    "items",
+    "pricing",
+    "cta",
+    "footer",
   ];
-  // Define the list of section types
   const sectionTypes = [
-    'navbar', 'hero', 'feature', 'about', 'project', 'service', 'contact', 'team',
-    'testimonial', 'statistic', 'logo', 'item', 'gallery', 'offer', 'reservation', 'menu', 'cartItem', 'filterItem',
-    'orderPopup', 'choose', 'pricing', 'cta', 'footer',
+    "navbar",
+    "hero",
+    "feature",
+    "project",
+    "service",
+    "contact",
+    "team",
+    "testimonial",
+    "statistic",
+    "logo",
+    "item",
+    "pricing",
+    "cta",
+    "footer",
   ];
 
+  // this function for render components in right order based on changes of user
+  const renderOrderedComponents = reorderedComponents.map((section) => {
+    for (let index = 0; index < sectionTypes.length; index++) {
+      const element = sectionTypes[index];
+      if (section.startsWith(element)) {
+        return { type: sectionTypes[index], index: index };
+      }
+    }
+  });
+  renderOrderedComponents.pop();
   return (
     <>
-      {sectionTypes.map((type, index) => renderComponent(type, selectedData[`${sectionNames[index]}IndexSelected`]))}
+      <section className="dashboard-container mx-auto relative">
+        <TopSide />
+        <div className="w-full flex-between flex-col md:flex-row dashboard-subContainer overflow-hidden">
+          <LeftSide targetTemplate={ownTemplate} updateAllRef={ownTemplateActions} />
+          <div className="max-md:w-full md:w-70 flex-auto  flex justify-start flex-col items-center text-black p-2" style={{ height: "calc(100vh - 56px)" }}>
+            <div className="w-full border border-slate-300 shadow  md:rounded-tl-3xl md:rounded-bl-3xl  mb-2 overflow-y-auto overflow-x-hidden  mx-2 md:mx-4 md:self-start md:ml-1 relative">
+              {renderOrderedComponents.map((element) => renderComponent(element.type, selectedData[`${sectionNames[element.index]}IndexSelected`]))}
+            </div>
+          </div>
+        </div>
+      </section>
     </>
   );
 };

@@ -1,10 +1,17 @@
 import React, { useState } from "react";
 import "./feature4.css";
 import { useSelector } from "react-redux";
+import { useLocation } from "react-router";
 
 const Feature4 = () => {
-  const { features } = useSelector((state) => state.template4);
-
+  const { pathname } = useLocation();
+  const features = useSelector((state) => {
+    if (pathname.includes("own-page")) {
+      return state.ownTemplate.features;
+    } else {
+      return state.template4.features;
+    }
+  });
   const [expandedIndex, setExpandedIndex] = useState(null);
 
   const handleAccordionState = (index) => {

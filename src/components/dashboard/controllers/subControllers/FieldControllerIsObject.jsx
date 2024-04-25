@@ -2,7 +2,6 @@ import React from "react";
 import { useDispatch, useSelector } from "react-redux";
 import ChangeImageController from "../ChangeImageController";
 const FieldControllerIsObject = ({ targetSection, sectionName, blockName, dispatchRef }) => {
-  // const targetSection = useSelector((state) => state.template[sectionName]);
   const dispatch = useDispatch();
   const fields = Object.keys(targetSection[blockName]);
   const pattern = /\.(jpg|gif|png|svg)$/i;
@@ -16,11 +15,9 @@ const FieldControllerIsObject = ({ targetSection, sectionName, blockName, dispat
         if (field === "id") {
           return null;
         }
-
         return (
           <div className="subController " key={index}>
             <label className="text-[16px]  capitalize">{field}</label>
-            {/* {field === "imgUrl" || field === "icon" ? ( */}
             {pattern.test(targetSection[blockName][field]) ? (
               <ChangeImageController field={field} src={targetSection[blockName][field]} dispatchRef={dispatchedRefForImg} />
             ) : (

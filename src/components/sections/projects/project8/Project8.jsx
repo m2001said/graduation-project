@@ -2,10 +2,17 @@ import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useSelector } from "react-redux";
+import { useLocation } from "react-router";
 
-const Work8 = () => {
-  const { work } = useSelector((state) => state.template8);
-
+const Project8 = () => {
+    const { pathname } = useLocation();
+    const work = useSelector((state) => {
+      if (pathname.includes("own-page")) {
+        return state.ownTemplate.projects;
+      } else {
+        return state.template8.projects;
+      }
+    });
   useEffect(() => {
     AOS.init({
       duration: 800,
@@ -69,4 +76,4 @@ const Work8 = () => {
   );
 };
 
-export default Work8;
+export default Project8;

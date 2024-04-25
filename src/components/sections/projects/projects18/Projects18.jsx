@@ -1,12 +1,20 @@
 import React from "react";
 import { useSelector } from "react-redux";
+import { useLocation } from "react-router";
 
 
 
 
 const Projects = () => {
-
-  const { projects } = useSelector((state) => state.template18);
+  const { pathname } = useLocation();
+  const projects = useSelector((state) => {
+    if (pathname.includes("own-page")) {
+      return state.ownTemplate.projects;
+    } else {
+      return state.template18.projects;
+    }
+  });
+  // const { projects } = useSelector((state) => state.template18);
   return (
     <div className="pb-24 bg-white dark:bg-black">
       <div className="container18">
@@ -19,13 +27,13 @@ const Projects = () => {
             {projects.projects.map((data) => (
               <div className="space-y-3 border-2 border-gray-300 hover:border-[--primary18-color] p-3 rounded-xl relative group">
                 <div className="w-full h-[120px]">
-                  <img src={data.image} alt="" className="w-full h-[120px] object-contain sm:translate-x-8 group-hover:sm:translate-x-16 duration-700" />
+                  <img src={data.imgUrl} alt="" className="w-full h-[120px] object-contain sm:translate-x-8 group-hover:sm:translate-x-16 duration-700" />
                 </div>
                 <div className="space-y-2">
-                  <h1 className="text-[--primary18-color] font-semibold">{data.name}</h1>
+                  <h1 className="text-[--primary18-color] font-semibold">{data.title}</h1>
                   <div className="flex justify-between items-center text-xl font-semibold">
                     <p>{data.price}</p>
-                    <a href="/#">{data.Details}</a>
+                    <a href="/#">{data.buttonText}</a>
                   </div>
                 </div>
                 <p className="text-xl font-semibold absolute top-0 left-3">{data.space}</p>

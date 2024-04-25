@@ -1,10 +1,19 @@
 // eslint-disable-next-line no-unused-vars
 import React from "react";
 import { useSelector } from "react-redux";
+import { useLocation } from "react-router";
 
 
 const Features = () => {
-  const { feature } = useSelector((state) => state.template18);
+  // const feature = useSelector((state) => state.template18.features);
+  const { pathname } = useLocation();
+  const feature = useSelector((state) => {
+    if (pathname.includes("own-page")) {
+      return state.ownTemplate.features;
+    } else {
+      return state.template18.features;
+    }
+  });
 
   return (
     <div className="dark:bg-[--dark18] bg-slate-100 sm:min-h-[600px] sm:grid sm:place-items-center duration-300">

@@ -1,9 +1,17 @@
 import React, { useState } from "react";
 import { useSelector } from "react-redux";
+import { useLocation } from "react-router";
 
 const SingleItem = ({ id, title, description, subtitle, date }) => {
-  const { cta } = useSelector((state) => state.template15);
-
+  // const { cta } = useSelector((state) => state.template15);
+  const { pathname } = useLocation();
+  const cta = useSelector((state) => {
+    if (pathname.includes("own-page")) {
+      return state.ownTemplate.cta;
+    } else {
+      return state.template15.cta;
+    }
+  });
   const [expanded, setExpanded] = useState(false);
 
   return (
@@ -25,7 +33,7 @@ const SingleItem = ({ id, title, description, subtitle, date }) => {
         )}
         <span className="absolute z-10 -bottom-6 right-0 rounded-full border-2 border-black shadowbtn" onClick={() => setExpanded(!expanded)}>
           <button className={`${expanded ? "bg-[#f0ebe3]" : "bg-white"} flex items-center justify-center text-2xl font-bold h-12 w-12 rounded-full`}>
-            {expanded ? <img src={cta.imgUrl[1]} alt="expand" /> : <img src={cta.imgUrl[0]} alt="collapse" />}
+            {expanded ? <img src={cta.imgUrls[1]} alt="expand" /> : <img src={cta.imgUrls[0]} alt="collapse" />}
           </button>
         </span>
       </div>

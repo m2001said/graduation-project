@@ -2,9 +2,17 @@ import React from "react";
 
 import "./hero.css";
 import { useSelector } from "react-redux";
+import { useLocation } from "react-router";
 
 const Hero1 = () => {
-  const { hero } = useSelector((state) => state.template1);
+  const { pathname } = useLocation();
+  const hero = useSelector((state) => {
+    if (pathname.includes("own-page")) {
+      return state.ownTemplate.hero;
+    } else {
+      return state.template1.hero;
+    }
+  });
   return (
     <div className="landing design-1 " style={{ backgroundImage: `url(${hero.imgUrl})` }}>
       <div className="overlay"></div>

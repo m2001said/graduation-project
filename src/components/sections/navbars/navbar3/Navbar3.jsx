@@ -1,9 +1,17 @@
 import React, { useState, useEffect } from "react";
 import "./navbar3.css";
 import { useSelector } from "react-redux";
+import { useLocation } from "react-router";
 
 const Navbar3 = () => {
-  const { navbar } = useSelector((state) => state.template3);
+  const { pathname } = useLocation();
+  const navbar = useSelector((state) => {
+    if (pathname.includes("own-page")) {
+      return state.ownTemplate.navbar;
+    } else {
+      return state.template3.navbar;
+    }
+  });
   const [menuOpened, setMenuOpened] = useState(false);
   const [mobile, setMobile] = useState(window.innerWidth <= 768);
 
@@ -25,11 +33,11 @@ const Navbar3 = () => {
 
   return (
     <div className="navbar3">
-      <img src={navbar.imgUrl[0]} alt="" className="logo3" />
+      <img src={navbar.logos[0]} alt="" className="logo3" />
       <div className="navbar3-menu">
         {mobile ? (
           <div className="closed-mobile-menu" onClick={toggleMenu}>
-            <img src={navbar.imgUrl[1]} alt="" className="menu-icon" />
+            <img src={navbar.logos[1]} alt="" className="menu-icon" />
           </div>
         ) : (
           navbar.links.map((link, index) => (

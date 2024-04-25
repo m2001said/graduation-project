@@ -3,11 +3,18 @@ import "./contact2.css";
 import { useRef } from "react";
 // import emailjs from "emailjs-com";
 import { useSelector } from "react-redux";
+import { useLocation } from "react-router";
 
 const ContactUs2 = () => {
   const form = useRef();
-  const { contact } = useSelector((state) => state.template2);
-
+  const { pathname } = useLocation();
+  const contact = useSelector((state) => {
+    if (pathname.includes("own-page")) {
+      return state.ownTemplate.contact;
+    } else {
+      return state.template2.contact;
+    }
+  });
   // const sendEmail = (e) => {
   //   e.preventDefault();
 

@@ -1,9 +1,15 @@
 import { useSelector } from "react-redux";
+import { useLocation } from "react-router";
 
 const Teams9 = () => {
-  const { title, cards } = useSelector((state) => state.template9.team);
-  
-
+  const { pathname } = useLocation();
+  const { title, cards } = useSelector((state) => {
+    if (pathname.includes("own-page")) {
+      return state.ownTemplate.team;
+    } else {
+      return state.template9.team;
+    }
+  });
   return (
     <main className="container mx-auto px-3 team9">
       <p className="text-[var(--primary-text-color-9)] uppercase md:text-xl text-lg text-center">{title}</p>

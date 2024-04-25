@@ -1,5 +1,6 @@
 import React from "react";
 import { useSelector } from "react-redux";
+import { useLocation } from "react-router";
 
 const Contact9 = () => {
   const { imgUrl, title, description } = useSelector((state) => state.template9.contact);

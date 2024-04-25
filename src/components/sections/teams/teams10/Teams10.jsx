@@ -1,9 +1,17 @@
 import React from "react";
 import { useSelector } from "react-redux";
 import "../../../../assets/css/globals10.css";
+import { useLocation } from "react-router";
 
 const Teams10 = () => {
-  const { team } = useSelector((state) => state.template10);
+  const { pathname } = useLocation();
+  const team = useSelector((state) => {
+    if (pathname.includes("own-page")) {
+      return state.ownTemplate.team;
+    } else {
+      return state.template10.team;
+    }
+  });
   return (
     <>
       <div className="pt-10 bg-[--white10] dark:bg-gray-900">

@@ -2,9 +2,18 @@ import React, { useState, useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useSelector } from "react-redux";
+import { useLocation } from "react-router";
 
 const About8 = () => {
-  const { about } = useSelector((state) => state.template8);
+  // const { about } = useSelector((state) => state.template8);
+  const { pathname } = useLocation();
+  const about = useSelector((state) => {
+    if (pathname.includes("own-page")) {
+      return state.ownTemplate.about;
+    } else {
+      return state.template8.about;
+    }
+  });
   const [inView, setInView] = useState(false);
   useEffect(() => {
     AOS.init({
