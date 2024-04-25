@@ -33,6 +33,7 @@
 // export default TrialDesign3;
 import React from "react";
 import { useSelector } from "react-redux";
+import "../assets/css/globals3.css";
 import Navbar3 from "../components/sections/navbars/navbar3/Navbar3";
 import Hero3 from "../components/sections/heros/hero3/Hero3";
 import Project3 from "../components/sections/projects/project3/Project3";
