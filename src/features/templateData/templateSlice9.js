@@ -2,19 +2,6 @@ import { createSlice } from "@reduxjs/toolkit";
 import { addElement, addElementToArray, addSubElement, deleteElement, deleteSection, editElement, reorder, reorderSections } from "./actions";
 const templateSlice9 = createSlice({
   initialState: {
-    // navbar: {
-    //   words: {
-    //     title: "CSE",
-    //     menuItems: ["Home", "About", "Listings", "Services", "Features", "Login/Register", "Add Listings"],
-    //   },
-    //   images: {
-    //     menuIcon: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707347075/icons8-bars-64_uzkog5.png",
-    //     closeIcon: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707347076/icons8-close_ozpkst.svg",
-    //     homeIcon: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707345078/realestate/home_553416_pdjise.png",
-    //     personIcon: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707347076/icons8-person-64_ppr9e8.png",
-    //   },
-    // },
-
     hero: {
       title: "REAL ESTATE",
       heading: "Find a perfect home you love..!",
@@ -55,7 +42,7 @@ const templateSlice9 = createSlice({
     },
 
     services: {
-      blocks: [
+      service: [
         {
           icon: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707553370/klipartz.com_z2zhsv.png",
           title: "Buy a New Home",
@@ -101,30 +88,39 @@ const templateSlice9 = createSlice({
       imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701813388/templates/template_one/Photo_sonnlx.jpg",
     },
 
-    aboutcont: {
-      more: "donecdfkjustify-content- sd fkds ks dfs j sfdnkfskdn fsfksnfixed-top klmdfsl klsdmf lkmdsfm mlksdfl m lmsd mklfdkm , dfsmf, dsmkld lmkdsf sklmf",
-      moreP: "donecdfkjustifyda ad sd fkds ks dfs j sfdnkfskdn fsfksnfixed-top klmdfsl klsdmf lkmdsfm mlksdfl m lmsd mklfdkm , dfsmf, dsmkld lmkdsf sklmf",
+    about: {
+      title: "WHO WE ARE ",
+      heading: "Assisting individuals in locationg the appropriatee real estate ",
+      description: " donecdfkjustify-content- sd fkds ks dfs j sfdnkfskdn fsfksnfixed-top klmdfsl klsdmf lkmdsfm mlksdfl m lms",
+      more: " donecdfkjustify-content- sd fkds ks dfs j sfdnkfskdn fsfksnfixed-top klmdfsl klsdmf lkmdsfm mlksdfl m lmsd mklfdkm , dfsmf, dsmkld lmkdsf sklmf",
+      img1: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707329619/realestate/image_8_dlne2y.jpg",
+      img2: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707329624/realestate/image_10_ska1vi.jpg",
+      img3: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707329653/realestate/image_13_eajsxm.jpg",
+      icon: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707345078/realestate/home_553416_pdjise.png",
+      iconTitle: "done porttier eusiod",
+      iconSubTitle: "nullam a lanica ipsum dignissim purus , nulla",
+      more: "dsdsds",
     },
-    block9: {
-      arrowf: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707346109/realestate/next_2989988_stvovd.png",
-      arrowb: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707345931/realestate/back-arrow_340_m9e0hp.png",
-      qot: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707599138/quote-icon-png-15_c5hrkg.png",
+    testimonials: {
+      next: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707346109/realestate/next_2989988_stvovd.png",
+      previous: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707345931/realestate/back-arrow_340_m9e0hp.png",
+      quotation: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707599138/quote-icon-png-15_c5hrkg.png",
       star: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707601512/star_qhtqlz.png",
       speach: "as as dn djjn etoua mon chanm",
+      testimonial: [
+        {
+          quote:
+            "I highly recommend Ali. He was attentive to our needs and worked tirelessly to find us the perfect home. We could not be happier with our new place!",
+          author: "Sam Mahmoud",
+          imageUrl: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1703134020/avatar3_pbztwn.jpg",
+        },
+        {
+          quote: "جامد موتتتتتتتتتتتتتتتتتتت.",
+          author: "A'laa kamal",
+          imageUrl: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1703134021/avatar4_tn7dyv.jpg",
+        },
+      ],
     },
-    testimonials: [
-      {
-        quote:
-          "I highly recommend Ali. He was attentive to our needs and worked tirelessly to find us the perfect home. We could not be happier with our new place!",
-        author1: "Sam Mahmoud",
-        imageUrl: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1703134020/avatar3_pbztwn.jpg",
-      },
-      {
-        quote: "جامد موتتتتتتتتتتتتتتتتتتت.",
-        author: "A'laa kamal",
-        imageUrl: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1703134021/avatar4_tn7dyv.jpg",
-      },
-    ],
     logos: {
       companies: [
         { imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701808448/templates/template_one/01_p78hjd.svg" },
@@ -164,54 +160,7 @@ const templateSlice9 = createSlice({
         },
       ],
     },
-    statistic: {
-      statistics: [
-        {
-          title: "Years Of Experience",
-          value: "12",
-        },
-        {
-          title: "Success Projects",
-          value: "85",
-        },
-        {
-          title: "Active Projects",
-          value: "15",
-        },
-        {
-          title: "Happy Customers",
-          value: "95",
-        },
-      ],
-    },
-    items: {
-      title: "Articles & News",
-      description:
-        "It is a long established fact that a reader will be distracted by the of readable content of a page when lookings at its layouts the points of using.",
-      cards: [
-        {
-          title: "Let’s Get Solution For Building Construction Work",
-          description: "26 December,2022 ",
-          imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701718041/templates/template_one/article1.f88f54e6a4cdbf340b36_l3ujjw.png",
-          icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701718889/templates/template_one/Vector_5_nzmfwn.svg",
-          caption: "Kitchan Design",
-        },
-        {
-          title: "Low Cost Latest Invented Interior Designing Ideas.",
-          description: "22 December,2022 ",
-          icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701718889/templates/template_one/Vector_5_nzmfwn.svg",
-          imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701718042/templates/template_one/article2.43be768543cb8cfeaf07_atvwjd.png",
-          caption: "Living Design",
-        },
-        {
-          title: "Best For Any Office & Business Interior Solution",
-          description: "25 December,2022 ",
-          icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701718889/templates/template_one/Vector_5_nzmfwn.svg",
-          imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701718042/templates/template_one/article3.f759fde0c85f3fb92b22_c2tqkv.png",
-          caption: "Interior Design",
-        },
-      ],
-    },
+
     team: {
       title: "Hello from",
       cards: [
@@ -344,13 +293,6 @@ const templateSlice9 = createSlice({
       ],
     },
 
-    cta: {
-      title: "Wanna join the interno?",
-      description: "It is a long established fact  will be distracted.",
-      buttonText: "Contact With Us",
-      icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701813389/templates/template_one/Vector_5_vvvt2o.svg",
-    },
-
     neighborhoods: [
       {
         id: 1,
@@ -393,24 +335,13 @@ const templateSlice9 = createSlice({
       title: "Become an Agent.",
       description: "Contact asdadsa mksldm asmkdsalk asdmkl .",
     },
-    about: {
-      title: "WHO WE ARE ",
-      heading: "Assisting individuals in locationg the appropriatee real estate ",
-      description: " donecdfkjustify-content- sd fkds ks dfs j sfdnkfskdn fsfksnfixed-top klmdfsl klsdmf lkmdsfm mlksdfl m lms",
-      more: " donecdfkjustify-content- sd fkds ks dfs j sfdnkfskdn fsfksnfixed-top klmdfsl klsdmf lkmdsfm mlksdfl m lmsd mklfdkm , dfsmf, dsmkld lmkdsf sklmf",
-      img1: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707329619/realestate/image_8_dlne2y.jpg",
-      img2: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707329624/realestate/image_10_ska1vi.jpg",
-      img3: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707329653/realestate/image_13_eajsxm.jpg",
-      icon: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707345078/realestate/home_553416_pdjise.png",
-      iconH: "done porttier eusiod",
-      iconP: "nullam a lanica ipsum dignissim purus , nulla",
-    },
+
     footer: {
-      rezillaInfo: {
+      info: {
         name: "cse",
         address: "227 st zagazig",
         phone: "01010351108",
-        arrf: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707346109/realestate/next_2989988_stvovd.png",
+        next: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707346109/realestate/next_2989988_stvovd.png",
         email: "support@soly.com",
         mail: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707346108/realestate/mail_646135_dviglt.png",
         phoneImg: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707346113/realestate/telephone_126523_woh61t.png",

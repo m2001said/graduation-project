@@ -14,8 +14,8 @@ const Navbar13 = ({ navBar, setNavBar }) => {
   // const navbar = useSelector((state) => state.template13.navbar);
 
   return (
-    <nav className="sticky top-0 z-50 bg-[var(--color-13-green)] ">
-      <div className="container mx-auto lg:flex flex-wrap items-center justify-between px-3 border-b border-[var(--color-13-green2)] ">
+    <nav className="sticky top-0 z-50 bg-[var(--color-darkG-13)] ">
+      <div className="container mx-auto lg:flex flex-wrap items-center justify-between px-3 border-b border-[var(--color-darkG-132)] ">
         <div className="lg:w-1/5 sticky top-0 flex justify-between lg:static lg:justify-start h-[10vh] items-center">
           <a href="/" className="font-medium tracking-wider transition-colors cursor-pointer">
             <button className="flex items-center gap-x-4 text-[var(--white-13)]">

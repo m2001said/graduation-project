@@ -4,10 +4,9 @@
   --color-2-bg: #1f1f38;
   --color-2-bg-variant: #2c2c6c;
   --color-2-primary: #4db5ff;
-  --color-2-primary-variant: rgba(77, 181, 255, 0.4);
+  /* --color-2-primary-variant: rgba(77, 181, 255, 0.4); */
   --color-2-white: #fff;
-  --color-2-light: rgba(255, 255, 255, 0.848);
-  --color-2-golden: rgba(255, 223, 0, 0.8);
+  /* --color-2-golden: rgba(255, 223, 0, 0.8); */
   --color-2-nav: rgba(86, 170, 188, 0.8);
   --color-2-grey: rgba(81, 90, 89, 0.965);
 
@@ -80,7 +79,7 @@ a {
 a:hover {
   color: var(--color-2-white);
 }
-.trialdesign2 .btn {
+.trialdesign2 .btn-2 {
   width: max-content; /*to make it fit exactly its content*/
   display: inline-block;
   color: var(--color-2-primary);

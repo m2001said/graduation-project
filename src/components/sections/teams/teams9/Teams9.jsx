@@ -20,7 +20,7 @@ const Teams9 = () => {
             <img
               src={member.imgUrl}
               alt={member.name}
-              className="md:h-80 h-60 w-full rounded-tr-[var(--border-radius-lg-9)] rounded-tl-[var(--border-radius-lg-9)] object-cover bg-[var(--bg-color-9)]"
+              className="md:h-80 h-60 w-full rounded-tr-[var(--border-radius-lg-9)] rounded-tl-[var(--border-radius-lg-9)] object-cover bg-[var(--grey-9)]"
             />
             <p className="text-center pt-4 md:text-[var(--font-size-md-9)] font-semibold">{member.name || member.job}</p>
             <p className="text-center pt-4 md:text-[var(--font-size-base-9)] text-sm text-[var(--primary-text-color-9)] font-semibold">{member.job}</p>
