@@ -1,9 +1,17 @@
 import React from "react";
 import styles from "../../heros/hero7/styles7/style";
 import { useSelector } from "react-redux";
+import { useLocation } from "react-router";
 
 const Stats7 = () => {
-  const { statistics } = useSelector((state) => state.template7);
+  const { pathname } = useLocation();
+  const  statistics= useSelector((state) => {
+    if (pathname.includes("own-page")) {
+      return state.ownTemplate.statistics;
+    } else {
+      return state.template7.statistics;
+    }
+  });
   return (
     <section className={`${styles.flexCenter} flex-row flex-wrap sm:mb-20 mb-6`}>
       {statistics.statistics.map((stat , index) => (

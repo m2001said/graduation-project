@@ -2,12 +2,20 @@ import React, { useState } from "react";
 import "./navbar4.css";
 import { getMenuStyles } from "./common";
 import { useSelector } from "react-redux";
+import { useLocation } from "react-router";
 
 const Navbar4 = () => {
   const [menuOpened, setMenuOpened] = useState(false);
 
   // Fetching data from Redux state
-  const { navbar } = useSelector((state) => state.template4);
+  const { pathname } = useLocation();
+  const navbar = useSelector((state) => {
+    if (pathname.includes("own-page")) {
+      return state.ownTemplate.navbar;
+    } else {
+      return state.template4.navbar;
+    }
+  });
 
   const handleMenuToggle = () => {
     setMenuOpened((prev) => !prev);
@@ -25,8 +33,8 @@ const Navbar4 = () => {
         <img src={navbar.imgUrl} alt="logo" width={100} />
         <div className="flexCenter h-menu" style={getMenuStyles(menuOpened)}>
           {navbar.links.map((link, index) => (
-            <a key={index} href={`#${link.toLowerCase().replace(" ", "-")}`} onClick={handleLinkClick}>
-              {link}
+            <a key={index} href={link.url} onClick={handleLinkClick}>
+              {link.title}
             </a>
           ))}
           <button className="button">

@@ -1,11 +1,18 @@
 import React, { useState } from "react";
 import { useSelector } from "react-redux";
 import "../../../../assets/css/globals10.css";
+import { useLocation } from "react-router";
 
 
 const Hero10 = ({ handleOrderPopup }) => {
-  const { hero } = useSelector((state) => state.template10);
-
+  const { pathname } = useLocation();
+  const hero = useSelector((state) => {
+    if (pathname.includes("own-page")) {
+      return state.ownTemplate.hero;
+    } else {
+      return state.template10.hero;
+    }
+  });
   let defaultImage = hero.defaultImage; ;
   let defaultTitle = hero.defaultTitle; ;
   let defaultDescription = hero.defaultDescription; ;

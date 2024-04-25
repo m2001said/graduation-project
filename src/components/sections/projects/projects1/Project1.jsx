@@ -1,10 +1,18 @@
 import React from "react";
 import "./project1.css";
 import { useSelector } from "react-redux";
+import { useLocation } from "react-router";
 
 const Project1 = () => {
-  const { projects } = useSelector((state) => state.template1);
-
+  // const { projects } = useSelector((state) => state.template1);
+  const { pathname } = useLocation();
+  const projects = useSelector((state) => {
+    if (pathname.includes("own-page")) {
+      return state.ownTemplate.projects;
+    } else {
+      return state.template1.projects;
+    }
+  });
   return (
     <div className="projects1 design-1">
       <div className="projects1-header">

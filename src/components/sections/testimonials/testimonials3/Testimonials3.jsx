@@ -1,9 +1,19 @@
 import React, { useState } from "react";
 import "./testimonials3.css";
 import { useSelector } from "react-redux";
+import { useLocation } from "react-router";
 
 const Testimonials3 = () => {
-  const { testimonial } = useSelector((state) => state.template3);
+  // const { testimonial } = useSelector((state) => state.template3);
+  const { pathname } = useLocation();
+  const testimonial = useSelector((state) => {
+    if (pathname.includes("own-page")) {
+      return state.ownTemplate.testimonials;
+    } else {
+      return state.template3.testimonials;
+    }
+  });
+
   const [selected, setselected] = useState(0);
   const tLength = testimonial.testimonials.length;
   return (

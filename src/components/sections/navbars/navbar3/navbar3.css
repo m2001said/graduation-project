@@ -16,6 +16,9 @@
   margin-top: 10px;
   margin-right: 350px;
   color: var(--color11);
+  margin-top: 10px;
+  margin-right: 260px;
+  z-index: 2;
 }
 .navbar3-menu > li {
   cursor: pointer;

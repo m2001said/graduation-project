@@ -1,10 +1,18 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
 import { useSelector } from "react-redux";
+import { useLocation } from "react-router";
 
 const Cta21 = () => {
-
-  const { cta2 } = useSelector((state) => state.template18);
+  const { pathname } = useLocation();
+  const cta2 = useSelector((state) => {
+    if (pathname.includes("own-page")) {
+      return state.ownTemplate.cta2;
+    } else {
+      return state.template18.cta2;
+    }
+  });
+  // const { cta2 } = useSelector((state) => state.template18);
   return (
     <>
       <span id="contact"></span>
@@ -17,10 +25,10 @@ const Cta21 = () => {
             </div>
             <div className="sm:grid sm:place-items-center">
               <a
-                href={cta2.link}
+                href={cta2.url}
                 className="inline-block font-semibold py-2 px-6 bg-[--primary18-color] text-white hover:bg-[--primary18-color-80] duration-200 tracking-widest uppercase "
               >
-                {cta2.linkTxt}
+                {cta2.linkText}
               </a>
             </div>
           </div>

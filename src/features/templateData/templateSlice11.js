@@ -3,16 +3,40 @@ import { addElement, addElementToArray, addSubElement, deleteElement, deleteSect
 const templateSlice11 = createSlice({
   initialState: {
     navbar: {
-      imgUrl: [
-        "https://res.cloudinary.com/duc04fwdb/image/upload/v1707525696/jammal_photos/wmm8wc8r2ijrtguljwaa.svg",
-        "https://res.cloudinary.com/duc04fwdb/image/upload/v1707526073/jammal_photos/luyky3ymsgfncvjf1deo.svg",
-        "https://res.cloudinary.com/duc04fwdb/image/upload/v1707525736/jammal_photos/bchiolwka0mnwvxo4hyb.svg",
-        "https://res.cloudinary.com/duc04fwdb/image/upload/v1707525780/jammal_photos/ysgiu27fi7lneuiyn3le.png",
-        "https://res.cloudinary.com/duc04fwdb/image/upload/v1707525829/jammal_photos/tswsmtson7odglvqpal7.png",
-        "https://res.cloudinary.com/duc04fwdb/image/upload/v1707525877/jammal_photos/o0wp66kvooi2ko10robo.png",
-        "https://res.cloudinary.com/duc04fwdb/image/upload/v1707526376/jammal_photos/bzy6y1qtnk4jv90timxl.png",
-        "https://res.cloudinary.com/duc04fwdb/image/upload/v1707526425/jammal_photos/fvk0ywqqxdfrtefnu1bf.png",
-        "https://res.cloudinary.com/duc04fwdb/image/upload/v1707526505/jammal_photos/iri11hg4ko9cfycfuwul.png",
+      logo: "https://res.cloudinary.com/duc04fwdb/image/upload/v1707525696/jammal_photos/wmm8wc8r2ijrtguljwaa.svg",
+      links: [
+        {
+          icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1707526073/jammal_photos/luyky3ymsgfncvjf1deo.svg",
+          url: "#",
+        },
+        {
+          icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1707525736/jammal_photos/bchiolwka0mnwvxo4hyb.svg",
+          url: "#",
+        },
+        {
+          icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1707525780/jammal_photos/ysgiu27fi7lneuiyn3le.png",
+          url: "#",
+        },
+        {
+          icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1707525829/jammal_photos/tswsmtson7odglvqpal7.png",
+          url: "#",
+        },
+        {
+          icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1707525877/jammal_photos/o0wp66kvooi2ko10robo.png",
+          url: "#",
+        },
+        {
+          icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1707526376/jammal_photos/bzy6y1qtnk4jv90timxl.png",
+          url: "#",
+        },
+        {
+          icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1707526425/jammal_photos/fvk0ywqqxdfrtefnu1bf.png",
+          url: "#",
+        },
+        {
+          icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1707526505/jammal_photos/iri11hg4ko9cfycfuwul.png",
+          url: "#",
+        },
       ],
     },
     hero: {
@@ -232,7 +256,7 @@ const templateSlice11 = createSlice({
       ],
       actionButton: "Get Started",
     },
-    testimonial: {
+    testimonials: {
       testimonials: [
         {
           id: 1,

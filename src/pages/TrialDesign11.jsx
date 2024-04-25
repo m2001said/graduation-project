@@ -1,3 +1,4 @@
+
 import "../assets/css/globals11.css";
 import React from "react";
 import Navbar11 from "../components/sections/navbars/navbar11/Navbar11";
@@ -12,24 +13,22 @@ import Cta11 from "../components/sections/ctas/cta11/Cta11";
 import Contact11 from "../components/sections/contacts/contact11/Contact11";
 
 const TrialDesign11 = () => {
-  return (
-    <div>
-      <>
-        <Navbar11 />
-        <main className="main">
-          <Hero11 />
-          <About11/>
-          <Services11 />
-          <Cta11 />
-          <Project11 />
-          <Pricings11 />
-          <Testimonials11 />
-          <Footer11 />
-          <Contact11 />
-        </main>
-      </>
-    </div>
-  );
+    return (
+        <div>
+            <Navbar11 />
+            <main className="main">
+                <Hero11 />
+                <About11 />
+                <Services11 />
+                <Cta11 />
+                <Project11 />
+                <Pricings11 />
+                <Testimonials11 />
+                <Footer11 />
+                <Contact11 />
+            </main>
+        </div>
+    );
 };
 
 export default TrialDesign11;

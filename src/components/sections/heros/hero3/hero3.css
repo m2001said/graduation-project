@@ -155,6 +155,7 @@
 
 .hero-image {
   position: absolute;
+  top: 2rem;
   top: 5rem;
   right: 8rem;
   width: 23rem;

@@ -4,7 +4,24 @@ const templateSlice4 = createSlice({
   initialState: {
     navbar: {
       imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703193372/jammal_photos/eygwjnnq4d9scpxd9unv.png",
-      links: ["Residencies", "Our Value", "Contact Us", "Get Started"],
+      links: [
+        {
+          title: "Residencies",
+          url: "#",
+        },
+        {
+          title: "Our Value",
+          url: "#",
+        },
+        {
+          title: "Contact Us",
+          url: "#",
+        },
+        {
+          title: "Get Started",
+          url: "#",
+        },
+      ],
       email4: "mailto:zainkeepscode@gmail.com",
       buttonText: "Contact",
     },
@@ -67,7 +84,7 @@ const templateSlice4 = createSlice({
     projects: {
       title: "Best Choices",
       sub_title: "Popular Residencies",
-      card: [
+      projects: [
         {
           image: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703197994/jammal_photos/v4fz1ap7aa3lnz6f3cqo.png",
           name: "Aliva Priva Jardin",
@@ -148,9 +165,22 @@ const templateSlice4 = createSlice({
     footer: {
       logo: "	https://res.cloudinary.com/duc04fwdb/image/upload/v1703209942/jammal_photos/xd2ugq6yopzvjkw37qc7.png",
       description: "Our vision is to make all people the best place to live for them.",
-      title: "Information",
-      address: "145 New York, FL 5467, USA",
-      serviecs: ["Property", "Services", "Product", "About Us"],
+      footerSections: [
+        {
+          title: "Services",
+          links: [
+            { title: "Property", url: "#" },
+            { title: "Services", url: "#" },
+            { title: "Product", url: "#" },
+            { title: "About Us", url: "#" },
+          ],
+        },
+      ],
+      contacts: [
+        {
+          value: "145 New York, FL 5467, USA",
+        },
+      ],
     },
     colors: {
       templateColors: ["#fff", "#cda274", "#292f36", "#f4f0ec", "#777777"],

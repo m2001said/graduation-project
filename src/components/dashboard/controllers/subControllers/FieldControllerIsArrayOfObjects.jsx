@@ -34,7 +34,7 @@ const FieldControllerIsArrayOfObjects = ({ targetSection, cardIndex, sectionName
   };
 
   return (
-    <div className="flex justify-between items-center gap-1">
+    <div className="flex justify-between items-center gap-1 ">
       <div className={`flex-grow ${show ? "controller-field" : "controller-field_without-padding"}`}>
         <label className={`cursor-pointer flex-between ${show ? "controller-label " : "controller-label_without-border"}`} onClick={handleShowSection}>
           {subName}
@@ -52,7 +52,7 @@ const FieldControllerIsArrayOfObjects = ({ targetSection, cardIndex, sectionName
                     if (ele === "add new") {
                       return (
                         <div key={_index}>
-                          <button className="controller-btn-add capitalize" onClick={() => addNewElement(field)}>
+                          <button className="controller-btn-add inner capitalize" onClick={() => addNewElement(field)}>
                             Add {field.slice(0, -1)}
                           </button>
                         </div>

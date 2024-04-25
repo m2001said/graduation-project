@@ -1,10 +1,19 @@
 import React from "react";
 import "./testimonials1.css";
 import { useSelector } from "react-redux";
+import { useLocation } from "react-router";
 
 const Testimonials1 = () => {
-  const { testimonials } = useSelector((state) => state.template1);
-  const testimonial = testimonials;
+
+  const { pathname } = useLocation();
+  const testimonial = useSelector((state) => {
+    if (pathname.includes("own-page")) {
+      return state.ownTemplate.testimonials;
+    } else {
+      return state.template1.testimonials;
+    }
+  });
+  // const { testimonials } = useSelector((state) => state.template1);
 
   return (
     <div className="Testimonials1 design1">

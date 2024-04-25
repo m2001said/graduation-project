@@ -4,6 +4,7 @@ import { configureStore } from "@reduxjs/toolkit";
 // import { persistReducer, persistStore } from "redux-persist";
 
 import screenReducer from "../features/screen/screenSlice";
+import ownTemplateReducer from "../features/templateData/ownTemplateSlice";
 import templateReducer from "../features/templateData/templateSlice";
 import templateReducer2 from "../features/templateData/templateSlice2";
 import templateReducer3 from "../features/templateData/templateSlice3";
@@ -48,6 +49,7 @@ import templateReducer18 from "../features/templateData/templateSlice18";
 export const store = configureStore({
   reducer: {
     screen: screenReducer,
+    ownTemplate: ownTemplateReducer,
     template1: templateReducer,
     template2: templateReducer2,
     template3: templateReducer3,

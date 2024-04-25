@@ -1,6 +1,7 @@
 import React,{useEffect} from "react";
 import "./feature5_1.css";
 import { useSelector } from "react-redux";
+import { useLocation } from "react-router";
 
 // import Aos from 'aos'
 // import "aos/dist/aos.css"
@@ -12,13 +13,21 @@ const Feature5 = () => {
   // },[])
 
 
-  const { feature1 } = useSelector((state) => state.template5);
+  // const feature1 = useSelector((state) => state.template5.features1);
+  const { pathname } = useLocation();
+  const feature1 = useSelector((state) => {
+    if (pathname.includes("own-page")) {
+      return state.ownTemplate.features;
+    } else {
+      return state.template5.features1;
+    }
+  });
 
   return (
     <div className="feature5_1 design5-section design5">
       <div className="feature5_1-mainSection">
         <div className="feature5_1-title">
-          <small>{feature1.smallTitle}</small>
+          <small>{feature1.subtitle}</small>
           <h2>{feature1.title}</h2>
           <p>{feature1.description}</p>
         </div>

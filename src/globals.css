@@ -2,7 +2,7 @@
 /* for mainPages and dashboard and for root-colors and root-fonts of all */
 /* root-colors and root-fonts ----all team will use them */
 
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -22,7 +22,7 @@
   --website-color-3: #292f36;
   --website-color-4: #f4f0ec;
   --website-color-5: #777777;
-  --website-border-raduis: 10;
+  --website-border-radius: 10;
 
   --website-filed-title: #1a2345;
 
@@ -45,7 +45,7 @@ html {
 }
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
 }
 
 /* Global Rules */
@@ -197,10 +197,10 @@ ul {
   position: relative;
 }
 .controller-name::after {
-  content: "";
+  content: '';
   position: absolute;
   left: 0;
-  top: 57px; 
+  top: 57px;
   /* to edit height of controller              ****************8888888888888888888888888******************** */
   width: 100%;
   height: 4px;
@@ -213,7 +213,7 @@ ul {
 }
 @media (max-width: 767px) {
   .controller-name::after {
-    top:58px;
+    top: 58px;
   }
 }
 .controller:hover .controller-name {
@@ -221,7 +221,6 @@ ul {
 }
 .dashboard-subContainer {
   height: auto;
-
 }
 @media (min-width: 767px) {
   .dashboard-subContainer {
@@ -239,10 +238,10 @@ ul {
   @apply body-bold  cursor-pointer capitalize;
   transition: all 0.3s;
   white-space: nowrap;
-  text-overflow:ellipsis;
+  text-overflow: ellipsis;
   overflow: hidden;
 }
-.controller div:nth-child(2) {
+.controller > div:nth-child(2) {
   margin-top: 1rem;
 }
 .controller-field,
@@ -250,19 +249,18 @@ ul {
   @apply flex flex-col border-2 rounded-lg border-solid pb-1 overflow-hidden text-black;
   border-color: var(--website-color-5);
 }
-.controller-field_without-padding{
+.controller-field_without-padding {
   padding-bottom: 0;
 }
 .subController {
   padding-left: 0.5rem;
   padding-right: 4px;
-
 }
 .subController:not(:last-child) {
   border-bottom: 2px solid var(--website-color-5);
 }
 .controller-label {
-  @apply text-[14px]  capitalize px-3 py-2 border-b-2 ;
+  @apply text-[14px]  capitalize px-3 py-2 border-b-2;
   border-color: var(--website-color-5);
   background-color: #fff0fe;
   color: var(--website-filed-title);
@@ -272,7 +270,13 @@ ul {
   background-color: #fff0fe;
   color: var(--website-filed-title);
 }
-.controller-btn-add{
+
+.controller-array {
+  @apply flex flex-col rounded-lg p-1;
+  gap: 1rem;
+  border: 2px solid var(--website-color-5);
+}
+.controller-btn-add {
   background: #777777;
   border: none;
   color: white;
@@ -281,9 +285,14 @@ ul {
   text-decoration: none;
   display: inline-block;
   font-size: 14px;
-  margin: 4px 2px;
+  /* margin: 4px 2px; */
   cursor: pointer;
   border-radius: 10px;
+}
+.controller-btn-add.inner {
+  margin-left: 0.25rem;
+  margin-top: 0.25rem;
+
 }
 .input-controller {
   @apply text-black  p-2 h-auto outline-none w-full custom-scrollbar;

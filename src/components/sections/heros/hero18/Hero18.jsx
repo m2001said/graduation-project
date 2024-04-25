@@ -1,12 +1,20 @@
 // eslint-disable-next-line no-unused-vars
 import React, { useEffect, useState } from "react";
 import { useSelector } from "react-redux";
+import { useLocation } from "react-router";
 
 
 
 const Hero = ({ theme }) => {
-  const { hero } = useSelector((state) => state.template18);
-
+  // const { hero } = useSelector((state) => state.template18);
+  const { pathname } = useLocation();
+  const hero = useSelector((state) => {
+    if (pathname.includes("own-page")) {
+      return state.ownTemplate.hero;
+    } else {
+      return state.template18.hero;
+    }
+  });
   return (
     <div className="pb-3 bg-white dark:bg-black dark:text-white duration-300">
       <div className="container18 min-h-[620px] flex">

@@ -2,10 +2,17 @@ import React from "react";
 import { useSelector } from "react-redux";
 import "../../../../assets/css/globals10.css";
 import DarkMode from "./DarkMode";
-
+import { useLocation } from "react-router";
 
 const Navbar10 = ({ handleOrderPopup }) => {
-  const { navbar } = useSelector((state) => state.template10);
+  const { pathname } = useLocation();
+  const navbar = useSelector((state) => {
+    if (pathname.includes("own-page")) {
+      return state.ownTemplate.navbar;
+    } else {
+      return state.template10.navbar;
+    }
+  });
   return (
     <>
       <div className="shadow-lg bg-white dark:bg-gray-900 dark:text-white duration-200 ">
@@ -24,8 +31,8 @@ const Navbar10 = ({ handleOrderPopup }) => {
               <ul className="items-center gap-4 hidden sm:flex">
                 {navbar.links.map((link, index) => (
                   <li key={index}>
-                    <a href={`#${link}`} className="textHover10 inline-block py-4 px-4 duration-200">
-                      {link}
+                    <a href={link.url} className="textHover10 inline-block py-4 px-4 duration-200">
+                      {link.title}
                     </a>
                   </li>
                 ))}
@@ -52,7 +59,10 @@ const Navbar10 = ({ handleOrderPopup }) => {
                   </div>
                 </li> */}
               </ul>
-              <button className="btnBg10 btnTxt10 hover:scale-105 duration-200 py-1 px-4 rounded-full flex items-center gap-3" onClick={() => handleOrderPopup()}>
+              <button
+                className="btnBg10 btnTxt10 hover:scale-105 duration-200 py-1 px-4 rounded-full flex items-center gap-3"
+                onClick={() => handleOrderPopup()}
+              >
                 {navbar.buttonText}
                 <a href="/#">
                   <img src={navbar.buttonIcon} alt="" className="w-7 drop-shadow-sm cursor-pointer" />

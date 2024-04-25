@@ -1,9 +1,18 @@
 import React, { useState } from "react";
 import "../project11/project11.css";
 import { useSelector } from "react-redux";
+import { useLocation } from "react-router";
 
 const Project11 = () => {
-  const { projects } = useSelector((state) => state.template11);
+  const { pathname } = useLocation();
+  const projects = useSelector((state) => {
+    if (pathname.includes("own-page")) {
+      return state.ownTemplate.projects;
+    } else {
+      return state.template11.projects;
+    }
+  });
+  // const { projects } = useSelector((state) => state.template11);
   const [cards, setItems] = useState(projects.cards);
 
   const filterItem = (categoryItem) => {

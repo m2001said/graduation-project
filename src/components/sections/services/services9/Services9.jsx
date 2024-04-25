@@ -1,8 +1,15 @@
 import { useSelector } from "react-redux";
+import { useLocation } from "react-router";
 
 const Services9 = () => {
-  const services = useSelector((state) => state.template9.services);
-
+  const { pathname } = useLocation();
+  const services = useSelector((state) => {
+    if (pathname.includes("own-page")) {
+      return state.ownTemplate.services;
+    } else {
+      return state.template9.services;
+    }
+  });
   return (
     <main className="bg-[var(--bg-color)] mt-20 lg:py-20 service-9">
       <div className="container mx-auto px-3 text-center" service-9-div>

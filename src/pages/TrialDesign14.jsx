@@ -14,13 +14,9 @@ import Logos14 from "../components/sections/logos/logos14/Logos14";
 import Footer14 from "../components/sections/footers/footer14/Footer14";
 import Popup14 from "../components/sections/orderPopups/orderPopups14/OrderPopups14";
 
-
-
-
 const TrialDesign14 = () => {
-
-  const { feature1 } = useSelector((state) => state.template14);
-  const { feature2 } = useSelector((state) => state.template14);
+  const feature1 = useSelector((state) => state.template14.offer1);
+  const feature2 = useSelector((state) => state.template14.offer2);
 
   const [orderPopup, setOrderPopup] = React.useState(false);
 
@@ -28,17 +24,28 @@ const TrialDesign14 = () => {
     setOrderPopup(!orderPopup);
   };
 
+  const state = useSelector((state) => state.template14);
+  const reorderedComponents = Object.keys(state);
+  const componentMapping = {
+    items: Items14,
+    services: Services14,
+    offer1: Features14,
+    products: Projects14,
+    offer2: Features14,
+    blogs: Projects21,
+    logos: Logos14,
+  };
+
   return (
     <div className="bg-white dark:bg-gray-900 dark:text-white duration-200 overflow-hidden">
       <Navbar14 handleOrderPopup={handleOrderPopup} />
       <Hero14 handleOrderPopup={handleOrderPopup} />
-      <Items14 />
-      <Services14 />
-      <Features14 data={feature1} />
-      <Projects14 />
-      <Features14 data={feature2} />
-      <Projects21 />
-      <Logos14 />
+      {reorderedComponents.map((_component) => {
+        const data = _component === "offer1" ? feature1 : feature2;
+        const bgColor = _component === "offer1" ? "#f42c37" : "#2dcc6f";   //******************** */ must be import from web colors in root not constant
+        const Component = componentMapping[_component];
+        return Component && <Component key={_component} data={data} bgColor={bgColor} />;
+      })}
       <Footer14 />
       <Popup14 orderPopup={orderPopup} handleOrderPopup={handleOrderPopup} />
     </div>

@@ -1,9 +1,17 @@
 import React from "react";
 import { useSelector } from "react-redux";
-
+import { useLocation } from "react-router";
 
 const Projects14 = () => {
-  const { projects1 } = useSelector((state) => state.template14);
+  const { pathname } = useLocation();
+  const projects1 = useSelector((state) => {
+    if (pathname.includes("own-page")) {
+      return state.ownTemplate.products;
+    } else {
+      return state.template14.products;
+    }
+  });
+  // const projects1 = useSelector((state) => state.template14.products);
   return (
     <div className="bg-white dark:bg-gray-900">
       <div className="container14">
@@ -16,7 +24,7 @@ const Projects14 = () => {
         <div className="mb-10">
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-5 place-items-center">
             {/* card section */}
-            {projects1.projects.map((data, index) => (
+            {projects1.products.map((data, index) => (
               <div className="group" key={index}>
                 <div className="relative">
                   <img src={data.img} alt="" className="h-[180px] w-[260px] object-cover rounded-md" />

@@ -1,10 +1,17 @@
 import React from "react";
 import { useSelector } from "react-redux";
+import { useLocation } from "react-router";
 
 
 const Testimonial = () => {
-   const { testimonial } = useSelector((state) => state.template18);
-
+  const { pathname } = useLocation();
+  const testimonial = useSelector((state) => {
+    if (pathname.includes("own-page")) {
+      return state.ownTemplate.testimonials;
+    } else {
+      return state.template18.testimonials;
+    }
+  });
   return (
     <>
       <span id="about"></span>
@@ -23,7 +30,7 @@ const Testimonial = () => {
                 className="card text-center group space-y-3 sm:space-y-6 p-4 sm:py-12 dark:bg-white/20 bg-gray-100 duration-300  rounded-lg "
               >
                 <div className="grid place-items-center ">
-                  <img src={data.image} alt="" className="rounded-full w-20 h-20" />
+                  <img src={data.imgUrl} alt="" className="rounded-full w-20 h-20" />
                 </div>
                 <div className="text-2xl">{data.star}</div>
                 <p>{data.description}</p>
