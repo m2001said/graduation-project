@@ -15,11 +15,10 @@ export const validate = (name, email, password) => {
     return "Password must be at least 6 characters long";
   }
   
-  return ""; // No validation errors
+  return ""; 
 };
 
 const isValidEmail = (email) => {
-  // Simple email validation regex
   const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
   return emailRegex.test(email);
 };
