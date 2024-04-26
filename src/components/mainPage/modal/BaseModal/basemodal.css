@@ -92,11 +92,12 @@
   color: #494949;
 }
 
-.modal-form .sub-button {
+.modal-content .sub-button {
   text-align: center;
+  color: #494949;
 }
 
-.modal-form .sub-button button {
+.modal-content .sub-button button {
   color: var(--color-3);
 }
 
@@ -135,4 +136,16 @@
 }
 .message-error{
   color:#d71616e3 ;
+}
+
+.verification-message{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 17px;
+}
+.verification-message p{
+  color: #222222de;
+  text-align: center;
 }

@@ -4,7 +4,7 @@ import { loginRequested } from '../../../features/auth/authSlice';
 import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
 
-const LoginForm = ({ toggleForm, toggleModal }) => {
+const LoginForm = ({ toggleForm }) => {
   const navigate = useNavigate();
   const dispatch = useDispatch();
   const [email, setEmail] = useState("");
@@ -22,9 +22,8 @@ const LoginForm = ({ toggleForm, toggleModal }) => {
         const userData = response.data.user;
         console.log(userData);
         dispatch(loginRequested(userData));
-        toggleModal();
         navigate("/designs");
-        // Clear form fields
+
         setEmail("");
         setPassword("");
         setError("");
