@@ -11,17 +11,7 @@ import ProtectedRoute from "./pages/ProtectedRoute";
 
 const trialDesignComponents = Array.from({ length: 18 }, (_, i) => require(`./pages/TrialDesign${i + 1}`).default);
 
-
-
-
 function App() {
-  const [isSignedIn, setIsSignedIn] = useState(false);
-  const signIn = () => {
-    setIsSignedIn(true);
-  };
-  const signOut = () => {
-    setIsSignedIn(false);
-  };
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   const toggleModal = () => {
@@ -30,10 +20,10 @@ function App() {
 
   return (
     <>
-      <MainNav loginState={isSignedIn} setSignOUT={signOut} toggleModal={toggleModal} />
+      <MainNav toggleModal={toggleModal} />
       <div style={{ marginTop: "77px" }}>
         <Routes>
-          <Route path="/" element={<MainPage toggleModal={toggleModal} isModalOpen={isModalOpen} signIn={signIn} />} />
+          <Route path="/" element={<MainPage toggleModal={toggleModal} isModalOpen={isModalOpen}/>} />
           <Route path="/designs" element={<DesignsPage />} />
           <Route path="/page-craft" element={<BuildYourPage />} />
           <Route path="/own-page" element={

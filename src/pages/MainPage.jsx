@@ -4,16 +4,16 @@ import Steps from "../components/mainPage/stepsGuide/StepsGuide.jsx";
 import DemoVideo from "../components/mainPage/demoVideo/DemoVideo.jsx";
 import posterImage from "../assets/images/mainPageAssets/signin.svg";
 import BaseModal from "../components/mainPage/modal/BaseModal/BaseModal.jsx";
-import SigninLogin from "../components/mainPage/modal/SigninLogin.jsx";
+import SigninLoginToggle from "../components/mainPage/modal/SigninLoginToggle.jsx";
 
 
-const MainPage = ({ toggleModal ,isModalOpen,signIn}) => {
+const MainPage = ({ toggleModal ,isModalOpen}) => {
 
   return (
     <>
       {isModalOpen ? (
         <BaseModal poster={posterImage} toggleModal={toggleModal}>
-          <SigninLogin setIsSignedIn={signIn} toggleModal={toggleModal} />
+          <SigninLoginToggle toggleModal={toggleModal} />
         </BaseModal>
       ) : null}      
       <Header toggleModal={toggleModal}></Header>
