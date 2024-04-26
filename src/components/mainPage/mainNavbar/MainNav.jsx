@@ -1,15 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { useNavigate } from "react-router-dom";
 import "./mainNav.css";
 import logo from "../../../assets/images/mainPageAssets/logo.svg";
+import { useSelector } from 'react-redux';
 
-const MainNav = ({ loginState, setSignOUT , toggleModal}) => {
-  const navigate = useNavigate();
-  const signOutClick = () => {
-    setSignOUT();
-    navigate("/");
-  };
+const MainNav = ({toggleModal}) => {
+  const authState = useSelector(state => state.auth); 
+  console.log(authState.status);
   return (
     <>
       <div className="main-nav ">
@@ -20,9 +17,12 @@ const MainNav = ({ loginState, setSignOUT , toggleModal}) => {
               <span>WEB</span>
             </div>
           </Link>
-          <button className="signIn-btn" onClick={loginState ? signOutClick : toggleModal}>
-            {loginState ? "Sign Out" : "Sign In"}
+          <div className="nav-controls flex  justify-between items-center gap-4">
+            <div className="user-name">{authState.user.name}</div>
+          <button className="signIn-btn" onClick={toggleModal}>
+            {authState.status === "succeeded" ? "Sign Out" : "Sign In"}
           </button>
+          </div>
         </div>
       </div>
     </>
