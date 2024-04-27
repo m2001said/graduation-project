@@ -98,12 +98,15 @@ const templateSlice7 = createSlice({
         "https://res.cloudinary.com/duc04fwdb/image/upload/v1706814053/jammal_photos/vwwyntauf0akzyaef7e5.png",
       ],
     },
+
+
     paymentMethods: {
       title: " Find a better card deal",
       subtitle: "in few easy steps.",
       content: " Arcu tortor, purus in mattis at sed integer faucibus. Aliquet quis aliquet eget mauris tortor.ç Aliquet ultrices ac, ametau.",
       imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1706814478/jammal_photos/na4dc3msncykyboct0nu.png",
     },
+
     feedbacks: {
       cards: [
         {

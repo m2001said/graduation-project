@@ -1,22 +1,29 @@
 import React from "react";
 import "./designsContainer.css";
 import DesignCard from "./designsCard/DesignCard";
-import design1 from "../../../assets/images/designs/design1.jpg"
-import design2 from "../../../assets/images/designs/design2.jpg"
-import design3 from "../../../assets/images/designs/design3.jpg"
-import design4 from "../../../assets/images/designs/design4.jpg"
-import design5 from "../../../assets/images/designs/design5.jpg"
-import design6 from "../../../assets/images/designs/design6.jpg"
-import design7 from "../../../assets/images/designs/design7.jpg"
-import design8 from "../../../assets/images/designs/design8.jpg"
-import design9 from "../../../assets/images/designs/design9.jpg"
-import design10 from "../../../assets/images/designs/design10.jpg"
-import design11 from "../../../assets/images/designs/design11.jpg"
-import design13 from "../../../assets/images/designs/design13.jpg"
-import design14 from "../../../assets/images/designs/design14.jpg"
-import design16 from "../../../assets/images/designs/design16.jpg"
-import design18 from "../../../assets/images/designs/design18.jpg"
+import design1 from "../../../assets/images/designs/design1.jpg";
+import design2 from "../../../assets/images/designs/design2.jpg";
+import design3 from "../../../assets/images/designs/design3.jpg";
+import design4 from "../../../assets/images/designs/design4.jpg";
+import design5 from "../../../assets/images/designs/design5.jpg";
+import design6 from "../../../assets/images/designs/design6.jpg";
+import design7 from "../../../assets/images/designs/design7.jpg";
+import design8 from "../../../assets/images/designs/design8.jpg";
+import design9 from "../../../assets/images/designs/design9.jpg";
+import design10 from "../../../assets/images/designs/design10.jpg";
+import design11 from "../../../assets/images/designs/design11.jpg";
+import design13 from "../../../assets/images/designs/design13.jpg";
+import design14 from "../../../assets/images/designs/design14.jpg";
+import design16 from "../../../assets/images/designs/design16.jpg";
+import design18 from "../../../assets/images/designs/design18.jpg";
+import websites from "../../../assets/images/websites.jpg";
+
 const DesignsData = [
+  {
+    title: "Your Websites",
+    description: "Discover the incredible websites you've created.",
+    imageUrl: websites,
+  },
   {
     title: "Start From Scratch",
     description: " Craft a page that reflects your professionalism",
@@ -100,7 +107,7 @@ const DesignsData = [
   {
     title: "Coffero's Café",
     description: " Savor the essence of coffee at our store. Check our menu, book a table. ",
-    imageUrl: design16
+    imageUrl: design16,
   },
   {
     title: "Personal Portfolio",
