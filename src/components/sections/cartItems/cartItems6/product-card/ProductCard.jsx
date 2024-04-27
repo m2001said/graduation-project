@@ -16,7 +16,7 @@ const ProductCard = (props) => {
       <div className="product__content">
         <div className="rating text-center">
           {[1, 2, 3, 4, 5].map((el) => (
-            <span> <img src={ "https://res.cloudinary.com/duc04fwdb/image/upload/v1706352872/jammal_photos/v02eynmgkqv3wkrbhnda.svg"} alt="" className="ico" /> </span>
+            <span> <img src={ ProductCard.rateIcon } alt="" className="ico" /> </span>
           ))}
         </div>
 
@@ -24,8 +24,7 @@ const ProductCard = (props) => {
 
         <div className=" flex items-center justify-between">
           <span className="price flex items-center">
-            {" "}
-            Price: $<span>{price}</span>
+            { productcard.valueName } <span>{price}</span>
           </span>
           <span className="shopping__icon">
             <img src={productcard.shoppingIcon} alt="" className="ico" />

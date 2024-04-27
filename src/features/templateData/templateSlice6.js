@@ -66,6 +66,8 @@ const templateSlice6 = createSlice({
     },
     productCard: {
       shoppingIcon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703095842/jammal_photos/gehvutbyftfxemvoqmu8.svg",
+      rateIcon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1706352872/jammal_photos/v02eynmgkqv3wkrbhnda.svg",
+      valueName: "Price: $",
     },
     products: {
       menuTitle: "Our Menu Pack",
