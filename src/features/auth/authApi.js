@@ -20,3 +20,13 @@ export const loginUser = async (email, password) => {
   });
   return response.data;
 };
+
+// Function to logout a user
+export const logoutUser = async (token) => {
+  const response = await axios.get(`${API_BASE_URL}/user/logout-user`, {
+    headers: {
+      Authorization: `Bearer ${token}`,
+    },
+  });
+  return response.data;
+};

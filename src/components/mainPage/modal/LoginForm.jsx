@@ -3,7 +3,7 @@ import { useDispatch } from 'react-redux';
 import { loginUserAsync } from '../../../features/auth/authSlice';
 import { useNavigate } from 'react-router-dom';
 
-const LoginForm = ({ toggleForm }) => {
+const LoginForm = ({ toggleForm ,toggleModal}) => {
   const Navigate = useNavigate(); 
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
@@ -11,6 +11,7 @@ const LoginForm = ({ toggleForm }) => {
 
   const handleSignInClick = async () => {
     dispatch(loginUserAsync({ email, password }));
+    toggleModal();
     Navigate('/designs');
   };
 
