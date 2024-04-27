@@ -41,8 +41,8 @@ const Footer6 = () => {
           <div className="footer__links">
             <h5 className="footer__link-title">Contact</h5>
             <div>
-              {footer.contact.map((item) => (
-                <div className="link__item  flex items-center gap-3 my-3">
+              {footer.contact.map((item, index) => (
+                <div key={index} className="link__item  flex items-center gap-3 my-3">
                   <img src={item.icon} alt="" className="ico" />
                   {item.title}
                 </div>
