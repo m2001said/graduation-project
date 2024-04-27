@@ -24,8 +24,16 @@ function App() {
       <div style={{ marginTop: "77px" }}>
         <Routes>
           <Route path="/" element={<MainPage toggleModal={toggleModal} isModalOpen={isModalOpen}/>} />
-          <Route path="/designs" element={<DesignsPage />} />
-          <Route path="/page-craft" element={<BuildYourPage />} />
+          <Route path="/designs" element={
+            <ProtectedRoute>
+              <DesignsPage />
+            </ProtectedRoute>
+          } />
+          <Route path="/page-craft" element={
+            <ProtectedRoute>
+              <BuildYourPage />
+            </ProtectedRoute>
+          } />
           <Route path="/own-page" element={
             <ProtectedRoute>
               <OwnPage />

@@ -30,7 +30,7 @@ const Header = ({ toggleModal }) => {
               {
                 authState.status === "succeeded" ? (
                   <Link to={"/designs"}>
-                    <button className="info-btn" onClick={toggleModal}>
+                    <button className="info-btn">
                       Generate your website
                     </button>
                   </Link>

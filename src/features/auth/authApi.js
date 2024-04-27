@@ -30,3 +30,19 @@ export const logoutUser = async (token) => {
   });
   return response.data;
 };
+
+// Function to forget password
+export const forgetPassword = async (email) => {
+  const response = await axios.post(`${API_BASE_URL}/user/forget-password`, {
+    email,
+  });
+  return response.data;
+};
+
+// Function to reset password
+export const resetPassword = async (token, password) => {
+  const response = await axios.post(`${API_BASE_URL}/user/reset-password/${token}`, {
+    password,
+  });
+  return response.data;
+};
