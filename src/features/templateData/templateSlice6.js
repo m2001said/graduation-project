@@ -32,9 +32,7 @@ const templateSlice6 = createSlice({
         },
       ],
     },
-    productCard: {
-      shoppingIcon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703095842/jammal_photos/gehvutbyftfxemvoqmu8.svg",
-    },
+
     menu: {
       Title: "Popular food menu",
       popularMenuFood: [
@@ -65,7 +63,11 @@ const templateSlice6 = createSlice({
           imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703098919/jammal_photos/bvipjezk42alazv5roew.png",
         },
       ],
-    }, products: {
+    },
+    productCard: {
+      shoppingIcon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703095842/jammal_photos/gehvutbyftfxemvoqmu8.svg",
+    },
+    products: {
       menuTitle: "Our Menu Pack",
       filterContent: [
         {
