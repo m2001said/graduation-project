@@ -14,6 +14,7 @@ const TrialDesign9 = () => {
   const state = useSelector((state) => state.template9);
   const reorderedComponents = Object.keys(state);
   const componentMapping = {
+    
     about: About9,
     pricing: Pricing9,
     services: Services9,
@@ -21,24 +22,23 @@ const TrialDesign9 = () => {
     team: Teams9,
     testimonials: Testimonials9,
     contact: Contact9,
-  };
 
-  return (
-    <div className="trialdesign9">
+  };
+ return (
+  <div className="TrialDesign9">
       <main>
         <Hero9 className="trialdesign9" />
-        <About9 className="trialdesign9" />
-        <Pricing9 className="trialdesign9" />
-        <Services9 className="trialdesign9" />
 
-        <Feature9 className="trialdesign9" />
-        <Teams9 className="trialdesign9" />
-        <Testimonials9 className="trialdesign9" />
-        <Contact9 className="trialdesign9" />
-
+        {reorderedComponents.map((_component) => {
+        const Component = componentMapping[_component];
+        return Component && <Component key={_component} />;
+     
+ })}
       </main>
+      
       <Footer9 className="trialdesign9" />
     </div>
+    
   );
 };
 
