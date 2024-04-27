@@ -43,25 +43,6 @@
   color: var(--color4);
 }
 
-.nav-6 .custom__search {
-  display: flex;
-  align-items: center;
-  padding: 10px 25px;
-  height: 35px;
-  border-radius: 50px;
-  background: var(--color1);
-}
-
-.nav-6 .custom__search input {
-  border: none;
-  outline: none;
-  background: transparent;
-  color: var(--color5);
-}
-
-.nav-6 .custom__search span img {
-  cursor: pointer;
-}
 
 .nav-6 .mobile__menu span img {
   width: 28px;
@@ -134,14 +115,6 @@
     line-height: 40px;
     height: 60px;
     padding: 10px 0px;
-  }
-
-  .nav-6 .custom__search {
-    border: 1px solid var(--color1);
-    padding: 5px 15px;
-    font-size: 0.9rem;
-    height: 30px;
-    margin-top: 15px;
   }
 
   .nav-6 .mobile__menu {
