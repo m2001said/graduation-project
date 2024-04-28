@@ -31,7 +31,7 @@ const Testimonials16 = () => {
           },
         }}
       >
-        {testimonial.testimonialsdata.map(({ img, title, service, description }, index) => {
+        {testimonial.testimonial.map(({ image, title, service, description }, index) => {
           return (
             <SwiperSlide className="testimonials__item16" key={index}>
               <div className="testimonial__qoute16">
@@ -42,7 +42,7 @@ const Testimonials16 = () => {
               </div>
               <div className="testimonial__content16">
                 <div className="testimonial__img-wrapper16">
-                  <img src={img} alt="" className="testimonial__img16" />
+                  <img src={image} alt="" className="testimonial__img16" />
                 </div>
                 <div>
                   <h3 className="testimonial__title16">{title}</h3>

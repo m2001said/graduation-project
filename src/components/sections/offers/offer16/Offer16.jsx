@@ -16,10 +16,10 @@ const Offer16 = () => {
         <button className="swiper-button16" onClick={() => window.swiper.slidePrev()}>
           &lt; Prev
         </button>
-        {Offer.offerdata.map(({ img, title, discount, description }, index) => (
+        {Offer.Offer.map(({ image, title, discount, description }, index) => (
           <SwiperSlide className="offer__item16" key={index}>
             <div className="offer__img-wrapper16">
-              <img src={img} alt="" className="offer_img16" />
+              <img src={image} alt="" className="offer_img16" />
             </div>
             <div className="offer__content16">
               <h3 className="offer__title16">{title}</h3>

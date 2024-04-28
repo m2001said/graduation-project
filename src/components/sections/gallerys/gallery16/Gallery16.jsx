@@ -11,10 +11,10 @@ const Gallery16 = () => {
         Our Photo Gallery
       </h2>
       <div className="gallery__grid16 container16 grid16">
-        {Gallary.gallerydata.map(({ title, img }, index) => {
+        {Gallary.Gallary.map(({ title, image }, index) => {
           return (
             <div className="gallery__item16" key={index}>
-              <img src={img} alt="" className="gallery_img16" />
+              <img src={image} alt="" className="gallery_img16" />
               <a href="/" className="gallery__icon16">
                 {/* Replace react-icons with Unicode character */}
                 &#43;
