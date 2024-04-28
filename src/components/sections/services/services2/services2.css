@@ -1,3 +1,8 @@
+#services2{
+  background: var(--color-2-bg) url("https://res.cloudinary.com/dowtlcpxj/image/upload/v1703134021/bg-texture_up9ylo.png");
+
+}
+
 #services2 h5 {
   padding-top: 2.1rem;
 }
@@ -16,7 +21,7 @@
 }
 .service:hover {
   background: transparent;
-  border-color: var(--color-2-primary-variant);
+  border-color: var(--color-2-primary);
   cursor: default;
 }
 .service__head {
@@ -46,7 +51,7 @@
 
 .service__list p {
   font-size: 0.9rem;
-  color: var(--color-2-light);
+  color: var(--color-2-white);
 }
 article.service img.service__list-icon {
   width: 16px;

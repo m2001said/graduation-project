@@ -1,10 +1,17 @@
 import React from "react";
 import "./projects2.css";
 import { useSelector } from "react-redux";
+import { useLocation } from "react-router";
 
 const Projects2 = () => {
-  const { projects } = useSelector((state) => state.template2);
-
+  const { pathname } = useLocation();
+  const projects = useSelector((state) => {
+    if (pathname.includes("own-page")) {
+      return state.ownTemplate.projects;
+    } else {
+      return state.template2.projects;
+    }
+  });
   return (
     <section id="projects2">
       <h5>My Recent Work</h5>
@@ -20,10 +27,10 @@ const Projects2 = () => {
             <h3>{item.title}</h3>
 
             <div className="projects2__item-cta">
-              <a href={item.githubLink} className="btn">
+              <a href={item.githubLink} className="btn-2">
                 Github
               </a>
-              <a href={item.demoLink} className="btn btn-primary" target="_blank" rel="noopener noreferrer">
+              <a href={item.demoLink} className="btn-2 btn-primary" target="_blank" rel="noopener noreferrer">
                 Live Demo
               </a>
             </div>

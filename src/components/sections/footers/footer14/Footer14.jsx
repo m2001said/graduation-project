@@ -1,10 +1,17 @@
 import React from "react";
 import { useSelector } from "react-redux";
-
+import { useLocation } from "react-router";
 
 const Footer14 = () => {
-  const { footer } = useSelector((state) => state.template14);
-
+  // const { footer } = useSelector((state) => state.template14);
+  const { pathname } = useLocation();
+  const footer = useSelector((state) => {
+    if (pathname.includes("own-page")) {
+      return state.ownTemplate.footer;
+    } else {
+      return state.template14.footer;
+    }
+  });
   return (
     <div className="bg-white dark:bg-gray-950">
       <div className="container14">
@@ -12,7 +19,7 @@ const Footer14 = () => {
           {/* company details */}
           <div className="py-8 px-4">
             <div className="flex gap-4">
-              <img src={footer.imgUrl} alt="" className="w-10 cursor-pointer" />
+              <img src={footer.logo} alt="logo" className="w-10 cursor-pointer" />
               <span className="text-[--primary14-color] font-semibold tracking-widest text-2xl uppercase sm:text-3xl cursor-pointer">{footer.title}</span>
             </div>
             <p className="text-sm text-gray-600 dark:text-white/70 lg:pr-24 pt-7">{footer.description}</p>
@@ -20,13 +27,13 @@ const Footer14 = () => {
 
           {/* Footer links */}
           <div className="col-span-2 grid grid-cols-2 sm:grid-cols-3 md:pl-10">
-            {footer.items.map((item) => (
+            {footer.footerSections.map((item) => (
               <div className="py-8 px-4 " key={item.title}>
                 <h1 className="text-xl font-bold sm:text-left mb-3">{item.title}</h1>
                 <ul className={`flex flex-col gap-3`}>
                   {item.links.map((link) => (
-                    <a href=" " key={link}>
-                      <li className="text-gray-600 dark:text-gray-400 hover:dark:text-white hover:text-black duration-300">{link}</li>
+                    <a href={link.url} key={link.title}>
+                      <li className="text-gray-600 dark:text-gray-400 hover:dark:text-white hover:text-black duration-300">{link.title}</li>
                     </a>
                   ))}
                 </ul>
@@ -35,20 +42,19 @@ const Footer14 = () => {
 
             {/* Company Address */}
             <div className="py-8 px-4 col-span-2 sm:col-auto">
-              <h1 className="text-xl font-bold sm:text-left mb-3">{footer.title3}</h1>
+              <h1 className="text-xl font-bold sm:text-left mb-3">Contact</h1>
               <div>
-                <div className="flex items-center gap-3">
-                  <img src={footer.LocationIcon} alt="" className="w-6" />
-                  <p>{footer.Location}</p>
+                <div className="flex flex-col gap-3">
+                  {footer.contacts.map((item) => (
+                    <div className="flex items-center gap-3 ">
+                      <img src={item.icon} alt="" className="w-6" />
+                      <p>{item.value}</p>
+                    </div>
+                  ))}
                 </div>
-                <div className="flex items-center gap-3 mt-6">
-                  <img src={footer.mobileIcon} alt="" className="w-6" />
-                  <p>{footer.mobile}</p>
-                </div>
-
                 {/* social links */}
                 <div className="flex items-center gap-3 mt-6">
-                  {footer.mediaIcons.map((icon) => (
+                  {footer.medias.map((icon) => (
                     <a href={icon.url} key={icon.url}>
                       <img src={icon.icon} alt="" className="w-6 h-6" />
                     </a>

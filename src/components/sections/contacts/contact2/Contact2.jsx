@@ -3,11 +3,18 @@ import "./contact2.css";
 import { useRef } from "react";
 // import emailjs from "emailjs-com";
 import { useSelector } from "react-redux";
+import { useLocation } from "react-router";
 
 const ContactUs2 = () => {
   const form = useRef();
-  const { contact } = useSelector((state) => state.template2);
-
+  const { pathname } = useLocation();
+  const contact = useSelector((state) => {
+    if (pathname.includes("own-page")) {
+      return state.ownTemplate.contact;
+    } else {
+      return state.template2.contact;
+    }
+  });
   // const sendEmail = (e) => {
   //   e.preventDefault();
 
@@ -42,12 +49,12 @@ const ContactUs2 = () => {
 
         {/* End of ContactUs2 */}
 
-        <form ref={form} onSubmit={"sendEmail"}>
+        <form ref={form} className="form2" onSubmit={"sendEmail"}>
           {/* <form ref={form} onSubmit={sendEmail}> */}
-          <input type="text" name="name" placeholder="Your Full Name" required />
-          <input type="email" name="email" placeholder="Your email " required />
-          <textarea name="message" placeholder="Your Message" rows="7" required></textarea>
-          <button type="submit" className="btn">
+          <input type="text" name="name" placeholder="Your Full Name" className="input2" required />
+          <input type="email" name="email" placeholder="Your email " className="input2" required />
+          <textarea name="message" placeholder="Your Message" rows="7" className="txt-area2" required></textarea>
+          <button type="submit" className="btn-2">
             Send
           </button>
         </form>

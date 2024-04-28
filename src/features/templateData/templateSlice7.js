@@ -9,22 +9,22 @@ const templateSlice7 = createSlice({
         "https://res.cloudinary.com/duc04fwdb/image/upload/v1706799683/jammal_photos/msugi233fn6vkrra5x9f.svg",
         "https://res.cloudinary.com/duc04fwdb/image/upload/v1706799720/jammal_photos/jx9bn26thzu46apznikl.svg",
       ],
-      Links: [
+      links: [
         {
-          id: "home",
           title: "Home",
+          url: "#home",
         },
         {
-          id: "features",
           title: "Features",
+          url: "#features",
         },
         {
-          id: "product",
           title: "Product",
+          url: "#product",
         },
         {
-          id: "clients",
           title: "Clients",
+          url: "#clients",
         },
       ],
     },
@@ -44,7 +44,6 @@ const templateSlice7 = createSlice({
       imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1706801327/jammal_photos/pu1mdivlop5zpuugkqn9.svg",
       actionButton: "Get Started",
     },
-    // /----------------------------/
     statistics: {
       statistics: [
         {
@@ -60,25 +59,9 @@ const templateSlice7 = createSlice({
           value: "$230M+",
         },
       ],
-
-      // "stats-1": {
-      //   id: "stats-1",
-      //   title: "User Active",
-      //   value: "3800+",
-      // },
-      // "stats-2": {
-      //   id: "stats-2",
-      //   title: "Trusted by Company",
-      //   value: "230+",
-      // },
-      // "stats-3": {
-      //   id: "stats-3",
-      //   title: "Transaction",
-      //   value: "$230M+",
-      // },
     },
 
-    feature: {
+    features: {
       actionButton: " Get Started",
       title: {
         title: "You do the business,",
@@ -115,12 +98,15 @@ const templateSlice7 = createSlice({
         "https://res.cloudinary.com/duc04fwdb/image/upload/v1706814053/jammal_photos/vwwyntauf0akzyaef7e5.png",
       ],
     },
+
+
     paymentMethods: {
       title: " Find a better card deal",
       subtitle: "in few easy steps.",
       content: " Arcu tortor, purus in mattis at sed integer faucibus. Aliquet quis aliquet eget mauris tortor.ç Aliquet ultrices ac, ametau.",
       imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1706814478/jammal_photos/na4dc3msncykyboct0nu.png",
     },
+
     feedbacks: {
       cards: [
         {
@@ -143,7 +129,7 @@ const templateSlice7 = createSlice({
         },
       ],
     },
-    testimonial: {
+    testimonials: {
       title: "What People are",
       subtitle: "saying about us",
       content: " Everything you need to accept card payments and grow your business anywhere on the planet.",
@@ -161,31 +147,32 @@ const templateSlice7 = createSlice({
       content: "Everything you need to accept card payments and grow your business anywhere on the planet.",
     },
     footer: {
-      imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1706816362/jammal_photos/res7beki52yf4cbmuix3.svg",
+      title: "Copyright Ⓒ 2022 HooBank. All Rights Reserved.",
       Subtitle: "A new way to make the payments easy, reliable and secure.",
-      links: [
+      imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1706816362/jammal_photos/res7beki52yf4cbmuix3.svg",
+      footerSections: [
         {
           title: "Useful Links",
           links: [
             {
-              name: "Content",
-              link: "https://www.hoobank.com/content/",
+              title: "Content",
+              url: "https://www.hoobank.com/content/",
             },
             {
-              name: "How it Works",
-              link: "https://www.hoobank.com/how-it-works/",
+              title: "How it Works",
+              url: "https://www.hoobank.com/how-it-works/",
             },
             {
-              name: "Create",
-              link: "https://www.hoobank.com/create/",
+              title: "Create",
+              url: "https://www.hoobank.com/create/",
             },
             {
-              name: "Explore",
-              link: "https://www.hoobank.com/explore/",
+              title: "Explore",
+              url: "https://www.hoobank.com/explore/",
             },
             {
-              name: "Terms & Services",
-              link: "https://www.hoobank.com/terms-and-services/",
+              title: "Terms & Services",
+              url: "https://www.hoobank.com/terms-and-services/",
             },
           ],
         },
@@ -193,24 +180,24 @@ const templateSlice7 = createSlice({
           title: "Community",
           links: [
             {
-              name: "Help Center",
-              link: "https://www.hoobank.com/help-center/",
+              title: "Help Center",
+              url: "https://www.hoobank.com/help-center/",
             },
             {
-              name: "Partners",
-              link: "https://www.hoobank.com/partners/",
+              title: "Partners",
+              url: "https://www.hoobank.com/partners/",
             },
             {
-              name: "Suggestions",
-              link: "https://www.hoobank.com/suggestions/",
+              title: "Suggestions",
+              url: "https://www.hoobank.com/suggestions/",
             },
             {
-              name: "Blog",
-              link: "https://www.hoobank.com/blog/",
+              title: "Blog",
+              url: "https://www.hoobank.com/blog/",
             },
             {
-              name: "Newsletters",
-              link: "https://www.hoobank.com/newsletters/",
+              title: "Newsletters",
+              url: "https://www.hoobank.com/newsletters/",
             },
           ],
         },
@@ -218,35 +205,32 @@ const templateSlice7 = createSlice({
           title: "Partner",
           links: [
             {
-              name: "Our Partner",
-              link: "https://www.hoobank.com/our-partner/",
+              title: "Our Partner",
+              url: "https://www.hoobank.com/our-partner/",
             },
             {
-              name: "Become a Partner",
-              link: "https://www.hoobank.com/become-a-partner/",
+              title: "Become a Partner",
+              url: "https://www.hoobank.com/become-a-partner/",
             },
           ],
         },
       ],
-    },
-    socialMedia: {
-      title: "Copyright Ⓒ 2022 HooBank. All Rights Reserved.",
-      socialMedia: [
+      medias: [
         {
-          imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1706818177/jammal_photos/zqz9nmo0tqfpnhunvfgl.svg",
-          link: "https://www.instagram.com/",
+          icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1706818177/jammal_photos/zqz9nmo0tqfpnhunvfgl.svg",
+          url: "https://www.instagram.com/",
         },
         {
-          imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1706818209/jammal_photos/h6rtmonyzmpckvur3o9g.svg",
-          link: "https://www.facebook.com/",
+          icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1706818209/jammal_photos/h6rtmonyzmpckvur3o9g.svg",
+          url: "https://www.facebook.com/",
         },
         {
-          imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1706818240/jammal_photos/ornmyj05cwnoca5hkljl.svg",
-          link: "https://www.twitter.com/",
+          icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1706818240/jammal_photos/ornmyj05cwnoca5hkljl.svg",
+          url: "https://www.twitter.com/",
         },
         {
-          imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1706818264/jammal_photos/rno8zcfzwccx9gczoks5.svg",
-          link: "https://www.linkedin.com/",
+          icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1706818264/jammal_photos/rno8zcfzwccx9gczoks5.svg",
+          url: "https://www.linkedin.com/",
         },
       ],
     },

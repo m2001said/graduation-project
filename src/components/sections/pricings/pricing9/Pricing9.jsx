@@ -2,6 +2,7 @@ import React from "react";
 import { useSelector } from "react-redux";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Autoplay } from "swiper/modules";
+import { useLocation } from "react-router";
 
 const Pricing9 = () => {
   const responsive = {
@@ -12,7 +13,15 @@ const Pricing9 = () => {
   };
 
   // Assuming useSelector hook is correctly configured
-  const { pricing } = useSelector((state) => state.template9);
+  const { pathname } = useLocation();
+  const pricing = useSelector((state) => {
+    if (pathname.includes("own-page")) {
+      return state.ownTemplate.pricing;
+    } else {
+      return state.template9.pricing;
+    }
+  });
+
   const cards = pricing ? pricing.cards : [];
 
   return (
@@ -21,22 +30,22 @@ const Pricing9 = () => {
         <div className="lg:w-3/5">
           <h1 className={`text-[var(--primary-text-color-9)] lg:text-xl uppercase`}>checkout our new </h1>
           <h1 className={`lg:text-4xl text-2xl font-medium capitalize py-3`}>Latest Listed Properties</h1>
-          <p className={`text-[var(--secondary-text-color-9)] lg:text:base text-sm lg:w-3/5`}>asda asd dadc dad</p>
+          <p className={`text-[var(--primary-text-color-9)] lg:text:base text-sm lg:w-3/5`}>asda asd dadc dad</p>
         </div>
 
         <div className="flex gap-x-4 lg:w-2/5 lg:pt-0 pt-6">
           <button
-            className={`text-[var(--button-text-color-9)] rounded-full border border-[var(--button-text-color-9)] hover:text-[var(--icon-bg-color-9)] focus:bg-[var(--button-text-color-9)] focus:text-[var(--icon-bg-color-9)]`}
+            className={`text-[var(--button-text-color-9)] rounded-full border border-[var(--button-text-color-9)] hover:text-[var(--white-9)] focus:bg-[var(--button-text-color-9)] focus:text-[var(--white-9)]`}
           >
             ALL
           </button>
           <button
-            className={`text-[var(--button-text-color-9)] rounded-full border border-[var(--button-text-color-9)] hover:text-[var(--icon-bg-color-9)] focus:bg-[var(--button-text-color-9)] focus:text-[var(--icon-bg-color-9)]`}
+            className={`text-[var(--button-text-color-9)] rounded-full border border-[var(--button-text-color-9)] hover:text-[var(--white-9)] focus:bg-[var(--button-text-color-9)] focus:text-[var(--white-9)]`}
           >
             SELL
           </button>
           <button
-            className={`text-[var(--button-text-color-9)] rounded-full border border-[var(--button-text-color-9)] hover:text-[var(--icon-bg-color-9)] focus:bg-[var(--button-text-color-9)] focus:text-[var(--icon-bg-color-9)]`}
+            className={`text-[var(--button-text-color-9)] rounded-full border border-[var(--button-text-color-9)] hover:text-[var(--white-9)] focus:bg-[var(--button-text-color-9)] focus:text-[var(--white-9)]`}
           >
             RENT
           </button>
@@ -134,7 +143,6 @@ const Pricing9 = () => {
               </div>
               {/* Card- details */}
               <div className="py-4">
-                
                 <p className="text-sm">{card.Address}</p>
                 <div className="flex items-center gap-x-4 text-sm">
                   {card.features.slice(1).map((feature, index) => (

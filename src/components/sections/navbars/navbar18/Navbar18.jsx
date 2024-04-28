@@ -1,14 +1,19 @@
 import React, { useState } from "react";
 import { useSelector } from "react-redux";
 import ResponsiveMenu from "./ResponsiveMenu";
-
-
+import { useLocation } from "react-router";
 
 const Navbar = ({ theme, setTheme }) => {
-  const { navbar } = useSelector((state) => state.template18);
-
+  const { pathname } = useLocation();
+  const navbar = useSelector((state) => {
+    if (pathname.includes("own-page")) {
+      return state.ownTemplate.navbar;
+    } else {
+      return state.template18.navbar;
+    }
+  });
+  // const { navbar } = useSelector((state) => state.template18);
   const [showMenu, setShowMenu] = useState(false);
-
   const toggleMenu = () => {
     setShowMenu(!showMenu);
   };
@@ -24,10 +29,10 @@ const Navbar = ({ theme, setTheme }) => {
               {navbar.links.map((data, index) => (
                 <li key={index} className="py-4">
                   <a
-                    href={data.link}
+                    href={data.url}
                     className=" text-lg font-medium  hover:text-[--primary18-color] py-2 hover:border-b-2 hover:border-[--primary18-color] transition-colors duration-500  "
                   >
-                    {data.name}
+                    {data.title}
                   </a>
                 </li>
               ))}

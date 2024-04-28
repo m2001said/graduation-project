@@ -2,9 +2,42 @@ import { createSlice } from "@reduxjs/toolkit";
 import { addElement, addElementToArray, addSubElement, deleteElement, deleteSection, editElement, reorder, reorderSections } from "./actions";
 const templateSlice = createSlice({
   initialState: {
+    templateInfo: {
+      id: 1,
+      title: "",
+      description: "",
+      imgUrl: "",
+    },
     navbar: {
       imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701811960/templates/template_one/Logo_mj7rvw.png",
-      links: ["home", "pages", "services", "projects", "blog", "contact"],
+
+
+      links: [
+        {
+          title: "home",
+          url: "#",
+        },
+        {
+          title: "pages",
+          url: "#",
+        },
+        {
+          title: "services",
+          url: "#",
+        },
+        {
+          title: "projects",
+          url: "#",
+        },
+        {
+          title: "blog",
+          url: "#",
+        },
+        {
+          title: "contact",
+          url: "#",
+        },
+      ],
     },
     hero: {
       title: "Let Your Home Be Unique",
@@ -14,6 +47,9 @@ const templateSlice = createSlice({
       icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701813389/templates/template_one/Vector_5_vvvt2o.svg",
     },
     services: {
+
+
+
       services: [
         {
           icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701808099/templates/template_one/icon_one_xvd7d6.svg",
@@ -33,19 +69,19 @@ const templateSlice = createSlice({
       ],
     },
 
-    // feature: {
-    //   title: "We Create The Art Of Stylish Living Stylishly",
-    //   description:
-    //     "It is a long established fact that a reader will be distracted by the of readable content of a page when looking at its layouts the points of using that it has a more-or-less normal.",
-    //   phone: "012345678",
-    //   buttonText: "Get Free Estimate",
-    //   icons: [
-    //     "https://res.cloudinary.com/duc04fwdb/image/upload/v1701813236/templates/template_one/Call_gqvv4l.svg",
-    //     "https://res.cloudinary.com/duc04fwdb/image/upload/v1701813389/templates/template_one/Vector_5_vvvt2o.svg",
-    //   ],
+    feature: {
+      title: "We Create The Art Of Stylish Living Stylishly",
+      description:
+        "It is a long established fact that a reader will be distracted by the of readable content of a page when looking at its layouts the points of using that it has a more-or-less normal.",
+      phone: "012345678",
+      buttonText: "Get Free Estimate",
+      icons: [
+        "https://res.cloudinary.com/duc04fwdb/image/upload/v1701813236/templates/template_one/Call_gqvv4l.svg",
+        "https://res.cloudinary.com/duc04fwdb/image/upload/v1701813389/templates/template_one/Vector_5_vvvt2o.svg",
+      ],
 
-    //   imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701813388/templates/template_one/Photo_sonnlx.jpg",
-    // },
+      imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701813388/templates/template_one/Photo_sonnlx.jpg",
+    },
     testimonials: {
       title: "What the People Thinks About Us",
       testimonials: [
@@ -303,7 +339,7 @@ const templateSlice = createSlice({
     footer: {
       imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701811960/templates/template_one/Logo_mj7rvw.png",
       description: "It is a long established fact that a reader will be distracted lookings.",
-      mediaIcons: [
+      medias: [
         {
           icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701809141/templates/template_one/facebook_td263x.svg",
           url: "https://facebook.com",
@@ -321,22 +357,39 @@ const templateSlice = createSlice({
           url: "https://instagram.com",
         },
       ],
-      items: [
+      footerSections: [
         {
-          title: "services",
-          links: ["Kitchan", "Living Area", "Bathroom", "Dinning Hall", "Bedroom"],
+          title: "Services",
+          links: [
+            { title: "Kitchan", url: "#" },
+            { title: "Living Area", url: "#" },
+            { title: "Bathroom", url: "#" },
+            { title: "Dinning Hall", url: "#" },
+            { title: "Bedroom", url: "#" },
+          ],
         },
         {
-          title: "section",
-          links: ["About Us", " Projects", "Our Team", "Contact Us", "Services"],
+          title: "Sections",
+          links: [
+            { title: "About Us", url: "#" },
+            { title: "Projects", url: "#" },
+            { title: "Our Team", url: "#" },
+            { title: "Contact Us", url: "#" },
+            { title: "Services", url: "#" },
+          ],
         },
       ],
-      contact: {
-        title: "contact",
-        location: "55 East Birchwood Ave. Brooklyn, New York 11201",
-        email: "contact@interno.com",
-        phone: "(123) 125-858",
-      },
+      contacts: [
+        {
+          value: "55 East Birchwood Ave. Brooklyn, New York 11201",
+        },
+        {
+          value: "contact@interno.com",
+        },
+        {
+          value: "(123) 125-858",
+        },
+      ],
     },
 
     colors: {

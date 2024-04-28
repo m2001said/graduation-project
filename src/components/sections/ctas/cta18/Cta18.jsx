@@ -1,9 +1,18 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
 import { useSelector } from "react-redux";
+import { useLocation } from "react-router";
 
 const Cta18 = () => {
-  const { cta1 } = useSelector((state) => state.template18);
+  // const { cta1 } = useSelector((state) => state.template18);
+  const { pathname } = useLocation();
+  const cta1 = useSelector((state) => {
+    if (pathname.includes("own-page")) {
+      return state.ownTemplate.cta1;
+    } else {
+      return state.template18.cta1;
+    }
+  });
   return (
     <div className="container18 bg-white dark:bg-black">
       <div
@@ -23,10 +32,10 @@ const Cta18 = () => {
             <p className="text-center sm:px-20 text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique magnam harum accusantium odit?</p>
             <div className="flex flex-wrap justify-center items-center gap-4">
               <a href="https://play.google.com">
-                <img src={cta1.PlayStoreImg} alt="" className="max-w-[150px] sm:max-w-[120px] md:max-w-[200px]" />
+                <img src={cta1.playStoreImg} alt="" className="max-w-[150px] sm:max-w-[120px] md:max-w-[200px]" />
               </a>
               <a href="https://www.apple.com/store">
-                <img src={cta1.AppStoreImg} alt="" className="max-w-[150px] sm:max-w-[120px] md:max-w-[200px]" />
+                <img src={cta1.appStoreImg} alt="" className="max-w-[150px] sm:max-w-[120px] md:max-w-[200px]" />
               </a>
             </div>
           </div>

@@ -1,10 +1,17 @@
 import React from "react";
 import { useSelector } from "react-redux";
 import "./footer4.css";
+import { useLocation } from "react-router";
 
 const Footer4 = () => {
-  const { footer } = useSelector((state) => state.template4);
-
+  const { pathname } = useLocation();
+  const footer = useSelector((state) => {
+    if (pathname.includes("own-page")) {
+      return state.ownTemplate.footer;
+    } else {
+      return state.template4.footer;
+    }
+  });
   return (
     <div className="f-wrapper">
       <div className="paddings innerWidth flexCenter f-container">
@@ -15,12 +22,11 @@ const Footer4 = () => {
         </div>
 
         <div className="flexColStart f-right">
-          <span className="primaryText">{footer.title}</span>
-          <span className="secondaryText">{footer.address}</span>
-
+          <span className="primaryText">Contact</span>
+          <span className="secondaryText">{footer.contacts[0].value}</span>
           <div className="flexCenter f-menu">
-            {footer.serviecs.map((serviec, index) => (
-              <span key={index}>{serviec}</span>
+            {footer.footerSections[0].links.map((link, index) => (
+              <span key={index}>{link.title}</span>
             ))}
           </div>
         </div>

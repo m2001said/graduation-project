@@ -1,10 +1,17 @@
 import React from "react";
 import "./feature6.css";
 import { useSelector } from "react-redux";
+import { useLocation } from "react-router";
 
 const Feature6 = () => {
-  const { features } = useSelector((state) => state.template6);
-
+  const { pathname } = useLocation();
+  const features = useSelector((state) => {
+    if (pathname.includes("own-page")) {
+      return state.ownTemplate.features;
+    } else {
+      return state.template6.features;
+    }
+  });
   return (
     <section className="design-6" id="About">
       <div className="container mx-auto px-4">

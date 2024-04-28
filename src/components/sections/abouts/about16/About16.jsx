@@ -1,9 +1,18 @@
 import React from "react";
 import "./about16.css";
 import { useSelector } from "react-redux";
+import { useLocation } from "react-router";
 
 const About16 = () => {
-  const { about } = useSelector((state) => state.template16);
+  // const { about } = useSelector((state) => state.template16);
+  const { pathname } = useLocation();
+  const about = useSelector((state) => {
+    if (pathname.includes("own-page")) {
+      return state.ownTemplate.about;
+    } else {
+      return state.template16.about;
+    }
+  });
 
   return (
     <section className="about16 section16" id="about">

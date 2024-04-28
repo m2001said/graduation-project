@@ -9,6 +9,7 @@ import NotFound from "./pages/NotFoundPage";
 import OwnPage from "./pages/OwnPage.jsx";
 import ProtectedRoute from "./pages/ProtectedRoute";
 
+import YourWebsites from "./pages/YourWebsites.jsx";
 const trialDesignComponents = Array.from({ length: 18 }, (_, i) => require(`./pages/TrialDesign${i + 1}`).default);
 
 function App() {
@@ -29,6 +30,7 @@ function App() {
               <DesignsPage />
             </ProtectedRoute>
           } />
+          <Route path="/websites" element={<YourWebsites />} />
           <Route path="/page-craft" element={
             <ProtectedRoute>
               <BuildYourPage />
@@ -43,7 +45,7 @@ function App() {
           {trialDesignComponents.map((Component, index) => (
             <Route key={`preview-trial-design${index}`} path={`/preview-trial-design${index + 1}`} element={<Component />} />
           ))}
-          <Route element={<Dashboard />}>
+          <Route element={<Dashboard/>}>
             {trialDesignComponents.map((Component, index) => (
               <Route key={`build-trial-design${index}`} path={`/build-trial-design${index + 1}`} element={<Component />} />
             ))}

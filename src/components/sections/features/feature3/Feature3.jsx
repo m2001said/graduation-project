@@ -90,10 +90,17 @@
 import React from "react";
 import "./feature3.css";
 import { useSelector } from "react-redux";
+import { useLocation } from "react-router";
 
 const Feature3 = () => {
-  const { feature } = useSelector((state) => state.template3);
-
+  const { pathname } = useLocation();
+  const feature = useSelector((state) => {
+    if (pathname.includes("own-page")) {
+      return state.ownTemplate.features;
+    } else {
+      return state.template3.features;
+    }
+  });
   return (
     <div className="Reasons3" id="Why us">
       <div className="left-r3">

@@ -1,10 +1,17 @@
 import React from "react";
 import "./contact4.css";
 import { useSelector } from "react-redux";
+import { useLocation } from "react-router";
 
 const Contact4 = () => {
-  const { contact } = useSelector((state) => state.template4);
-
+  const { pathname } = useLocation();
+  const contact = useSelector((state) => {
+    if (pathname.includes("own-page")) {
+      return state.ownTemplate.contact;
+    } else {
+      return state.template4.contact;
+    }
+  });
   return (
     <div id="contact-us" className="c-wrapper">
       <div className="paddings innerWidth flexCenter c-container">

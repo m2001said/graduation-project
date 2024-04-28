@@ -1,10 +1,17 @@
 import React from "react";
 import { useSelector } from "react-redux";
-
+import { useLocation } from "react-router";
 
 const Projects21 = () => {
-
-  const { projects2 } = useSelector((state) => state.template14);
+  const { pathname } = useLocation();
+  const projects2 = useSelector((state) => {
+    if (pathname.includes("own-page")) {
+      return state.ownTemplate.blogs;
+    } else {
+      return state.template14.blogs;
+    }
+  });
+  // const projects2 = useSelector((state) => state.template14.blogs);
 
   return (
     <div className="my-12 bg-white dark:bg-gray-900">
@@ -18,7 +25,7 @@ const Projects21 = () => {
         {/* body */}
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 gap-y-8 sm:gap-4 md:gap-7">
           {/* card seC */}
-          {projects2.projects.map((data) => (
+          {projects2.blogs.map((data) => (
             <div key={data.title} className="bg-white dark:bg-gray-900">
               {/* img sec */}
               <div className="overflow-hidden rounded-2xl mb-2">
