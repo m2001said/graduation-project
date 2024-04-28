@@ -30,8 +30,8 @@ import templateReducer18 from "../features/templateData/templateSlice18";
 const rootReducer = combineReducers({
   auth: authReducer,
   screen: screenReducer,
-    templates: templatesReducer,
-    ownTemplate: ownTemplateReducer,
+  templates: templatesReducer,
+  ownTemplate: ownTemplateReducer,
   template1: templateReducer,
   template2: templateReducer2,
   template3: templateReducer3,
