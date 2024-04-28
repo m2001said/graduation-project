@@ -19,7 +19,7 @@ const TrialDesign8 = () => {
 
   return (
     <div className="site-container8">
-      <Navbar8/>
+      <Navbar8 />
       <Hero8 />
       {reorderedComponents.map((_component) => {
         const Component = componentMapping[_component];
