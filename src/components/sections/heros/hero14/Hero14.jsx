@@ -5,7 +5,7 @@ import { useSelector } from "react-redux";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
-import { Pagination } from "swiper/modules";
+import { Navigation, Pagination, Autoplay } from "swiper/modules";
 import { useLocation } from "react-router";
 
 
@@ -28,11 +28,10 @@ const Hero14 = ({ handleOrderPopup }) => {
           <div className="container14 pb-8 sm:pb-0">
             {/* hero section */}
             <Swiper
+              modules={[Navigation, Pagination, Autoplay]}
               spaceBetween={200}
-              pagination={{
-                clickable: true,
-              }}
-              modules={[Pagination]}
+              slidesPerView={1}
+              autoplay={{ delay: 3000 }}
               className="mySwiper"
             >
               {hero.heros.map((data, index) => (

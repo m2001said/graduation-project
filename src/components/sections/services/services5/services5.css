@@ -28,7 +28,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    max-width: 80%;
+    /* max-width: 80%; */
     flex-wrap: wrap;
     gap: 1.5rem;
     margin: auto;
@@ -47,9 +47,9 @@
     gap: 1rem;
     text-align: center;
     margin: auto;
-    height: 320px;
     width: 90%;
     max-width: 250px;
+    min-height: 320px;
 }
 .services5-singleCard p{
     font-size: 13px;

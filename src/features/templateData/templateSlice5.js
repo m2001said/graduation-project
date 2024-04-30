@@ -44,19 +44,19 @@ const templateSlice5 = createSlice({
         {
           title: "Travel requirement for Dubai",
           description: "Find help with booking and travel plans, see what to expect during the journey.",
-          duration: 2500,
+          // duration: 2500,
           number: "01",
         },
         {
           title: "Travel requirement for Dubai",
           description: "Find help with booking and travel plans, see what to expect during the journey.",
-          duration: 3500,
+          // duration: 3500,
           number: "02",
         },
         {
           title: "Travel requirement for Dubai",
           description: "Find help with booking and travel plans, see what to expect during the journey.",
-          duration: 4500,
+          // duration: 4500,
           number: "03",
         },
       ],

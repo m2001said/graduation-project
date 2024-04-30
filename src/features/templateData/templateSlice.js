@@ -58,7 +58,7 @@ const templateSlice = createSlice({
       ],
     },
 
-    feature: {
+    features: {
       title: "We Create The Art Of Stylish Living Stylishly",
       description:
         "It is a long established fact that a reader will be distracted by the of readable content of a page when looking at its layouts the points of using that it has a more-or-less normal.",
