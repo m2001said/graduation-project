@@ -3,9 +3,16 @@ import { addElement, addElementToArray, addSubElement, deleteElement, deleteSect
 
 const templateSlice10 = createSlice({
   initialState: {
+    templateInfo: {
+      id: 10,
+      title: "",
+      description: "",
+      imgUrl: "",
+    },
     navbar: {
-      title: "Books",
-      icon: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1706798279/logo_rcge0a.png",
+      logo: "Books",
+      imgUrl: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1706798279/logo_rcge0a.png",
+      buttonText: "Order",
       links: [
         {
           title: "Home",
@@ -16,196 +23,176 @@ const templateSlice10 = createSlice({
           url: "#",
         },
       ],
-      // DropdownTxt: "Quick Links",
-      // DropdownIcon: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707774619/icons8-sort-down-30_yurjok.png",
-      // DropdownLinks: [
-      //   {
-      //     name: "Trending Books",
-      //     link: "/#",
-      //   },
-      //   {
-      //     name: "Best Selling",
-      //     link: "/#",
-      //   },
-      //   {
-      //     name: "Authors",
-      //     link: "/#",
-      //   },
-      // ],
-      buttonText: "Order",
-      buttonIcon: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1706806477/cart-shopping-shop-svgrepo-com_oxwiez.svg",
-      darkPng: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1706805795/dark-mode-button_e9kiqi.png",
-      lightPng: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1706805773/light-mode-button_ermmq3.png",
+      icons: [
+        "https://res.cloudinary.com/dmcdea0b9/image/upload/v1706806477/cart-shopping-shop-svgrepo-com_oxwiez.svg",
+        "https://res.cloudinary.com/dmcdea0b9/image/upload/v1706805795/dark-mode-button_e9kiqi.png",
+        "https://res.cloudinary.com/dmcdea0b9/image/upload/v1706805773/light-mode-button_ermmq3.png",
+      ],
     },
 
     hero: {
-      backGroundImage: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1706805805/blue-pattern_d1mb2e.png",
-      defaultImage: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707067713/book1_a7epcd.jpg",
-      defaultTitle: "His Life will forever be Changed",
-      defaultDescription: "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      ImageList: [
+      title: "His Life will forever be Changed",
+      description: "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      buttonText: "Order Now",
+      images: [
+        "https://res.cloudinary.com/dmcdea0b9/image/upload/v1706805805/blue-pattern_d1mb2e.png",
+        "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707067713/book1_a7epcd.jpg",
+      ],
+      heros: [
         {
-          imgNum: "1",
-          imgUrl: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707067713/book1_a7epcd.jpg",
           title: "His Life will forever be Changed",
           description:
             "lorem His Life will forever be Changed dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+          imgUrl: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707067713/book1_a7epcd.jpg",
         },
         {
-          imgNum: "2",
-          imgUrl: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707067750/book2_fjsnwn.jpg",
           title: "Who's there",
           description:
             "Who's there lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+          imgUrl: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707067750/book2_fjsnwn.jpg",
         },
         {
-          imgNum: "3",
-          imgUrl: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707067757/book3_fkzdr7.jpg",
           title: "Lost Boy",
           description: "Lost Boy, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+          imgUrl: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707067757/book3_fkzdr7.jpg",
         },
       ],
-      buttonText: "Order Now",
     },
 
     services: {
-      smTitle: "Trending Books",
       title: "Best Books",
       description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit Distinctio consectetur",
+      subtitle: "Trending Books",
       starIcon: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707083776/Star_lqpaao.svg",
       services: [
         {
-          imgUrl: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707067713/book1_a7epcd.jpg",
           title: "His Life",
           description: "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+          imgUrl: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707067713/book1_a7epcd.jpg",
           buttonText: "Order Now",
         },
         {
-          imgUrl: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707067750/book2_fjsnwn.jpg",
           title: "Who's there",
           description: "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+          imgUrl: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707067750/book2_fjsnwn.jpg",
           buttonText: "Order Now",
         },
         {
-          imgUrl: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707067757/book3_fkzdr7.jpg",
           title: "Lost Boy",
           description: "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+          imgUrl: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707067757/book3_fkzdr7.jpg",
           buttonText: "Order Now",
         },
       ],
     },
 
     features: {
-      imgUrl: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707084593/library_ww1bzg.jpg",
       title: "Library at your fingertips",
       description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque reiciendis inventore iste ratione ex alias quis magni at optio",
+      imgUrl: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707084593/library_ww1bzg.jpg",
       features: [
         {
+          title: "Quality Books",
           icon: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1709902864/icons8-secure-50_yn2jxx.png",
-          text: "Quality Books",
         },
         {
+          title: "Fast Delivery",
           icon: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1709903151/icons8-food-truck-64_lr5ghp.png",
-          text: "Fast Delivery",
         },
         {
+          title: "Easy Payment method",
           icon: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1709902985/icons8-fast-food-32_kjo9ui.png",
-          text: "Easy Payment method",
         },
         {
+          title: "Get Offers on Books",
           icon: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707085765/icons8-food-bar-48_ghpah5.png",
-          text: "Get Offers on Books",
         },
       ],
     },
 
     cta: {
       title: "Read Books at Your Fingertips",
+      images: [
+        "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707090472/board_hqttt2.png",
+        "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707090485/app_store_s6wzhh.png",
+        "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707090481/play_store_nmzfln.png",
+      ],
       bannerImg: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707090472/board_hqttt2.png",
       AppStoreImg: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707090485/app_store_s6wzhh.png",
       PlayStoreImg: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707090481/play_store_nmzfln.png",
     },
 
     team: {
-      smTitle: "Top Books for you",
       title: "Top Books",
+      subtitle: "Top Books for you",
       description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis delectus architecto error nesciunt",
-      teams: [
+      buttonText: "View All Books",
+      members: [
         {
-          imgUrl: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707067713/book1_a7epcd.jpg",
           title: "Who's there",
           rating: "5.0",
           author: "Someone",
+          imgUrl: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707067713/book1_a7epcd.jpg",
           icon: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707083776/Star_lqpaao.svg",
         },
         {
-          imgUrl: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707067750/book2_fjsnwn.jpg",
           title: "His Life",
           rating: "4.5",
           author: "John",
+          imgUrl: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707067750/book2_fjsnwn.jpg",
           icon: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707083776/Star_lqpaao.svg",
         },
         {
-          imgUrl: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707067757/book3_fkzdr7.jpg",
           title: "Lost boys",
           rating: "4.7",
           author: "Lost Girl",
+          imgUrl: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707067757/book3_fkzdr7.jpg",
           icon: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707083776/Star_lqpaao.svg",
         },
         {
-          imgUrl: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707067750/book2_fjsnwn.jpg",
           title: "His Life",
           rating: "4.4",
           author: "Someone",
+          imgUrl: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707067750/book2_fjsnwn.jpg",
           icon: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707083776/Star_lqpaao.svg",
         },
         {
-          imgUrl: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707067713/book1_a7epcd.jpg",
           title: "Who's There",
-          rating: "4.5",
+          imgUrl: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707067713/book1_a7epcd.jpg",
           author: "Someone",
+          rating: "4.5",
           icon: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707083776/Star_lqpaao.svg",
         },
       ],
-      buttonText: "View All Books",
     },
 
     testimonials: {
-      smTitle: "What our customers say",
       title: "Testimonial",
+      subtitle: "What our customers say",
       description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis delectus architecto error nesciunt",
-      mark: ",,",
       testimonials: [
         {
-          id: 1,
-          name: "Victor",
-          text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque reiciendis inventore iste ratione ex alias quis magni at optio",
-          img: "https://picsum.photos/101/101.jpg",
+          title: "Victor",
+          description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque reiciendis inventore iste ratione ex alias quis magni at optio",
+          imgUrl: "https://picsum.photos/101/101.jpg",
         },
         {
-          id: 1,
-          name: "Satya Narayan",
-          text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque reiciendis inventore iste ratione ex alias quis magni at optio",
-          img: "https://picsum.photos/102/102.jpg",
+          title: "Satya Narayan",
+          description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque reiciendis inventore iste ratione ex alias quis magni at optio",
+          imgUrl: "https://picsum.photos/102/102.jpg",
         },
         {
-          id: 1,
-          name: "Sachin Tendulkar",
-          text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque reiciendis inventore iste ratione ex alias quis magni at optio",
-          img: "https://picsum.photos/103/103.jpg",
+          title: "Sachin Tendulkar",
+          description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque reiciendis inventore iste ratione ex alias quis magni at optio",
+          imgUrl: "https://picsum.photos/103/103.jpg",
         },
       ],
     },
 
     footer: {
       title: "Books Store",
-      imgUrl: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1706798279/logo_rcge0a.png",
       description: "Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, voluptate.",
-      LocationIcon: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707781362/icons8-location-arrow-24_mwjabu.png",
-      Location: "Noida, Uttar Pradesh",
-      mobileIcon: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707781365/icons8-mobile-navigator-50_xvqski.png",
-      mobile: "+20 123456789",
-
+      imgUrl: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1706798279/logo_rcge0a.png",
       contacts: [
         {
           value: "Noida, Uttar Pradesh",
