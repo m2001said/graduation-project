@@ -31,9 +31,11 @@
   --color5: #00f6ff;
   --color6: rgba(255, 255, 255, 0.7);
 }
+
 .TrialDesign7 {
   background: var(--color1);
 }
+
 .primary {
   color: var(--color1);
 }
@@ -53,6 +55,7 @@
 ::-webkit-scrollbar {
   display: none;
 }
+
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap");
 
 @tailwind base;
@@ -62,10 +65,12 @@
 * {
   scroll-behavior: smooth;
 }
+
 .footerhover7:hover {
   color: var(--color5);
   cursor: pointer;
 }
+
 .text-gradient7 {
   background: radial-gradient(64.18% 64.18% at 71.16% 35.69%, #def9fa 0.89%, #bef3f5 17.23%, #9dedf0 42.04%, #7de7eb 55.12%, #5ce1e6 71.54%, #33bbcf 100%);
   -webkit-background-clip: text;
@@ -109,6 +114,7 @@
     -webkit-transform: translateY(100px);
     transform: translateY(100px);
   }
+
   100% {
     -webkit-transform: translateY(0);
     transform: translateY(0);
@@ -120,6 +126,7 @@
     -webkit-transform: translateY(100px);
     transform: translateY(100px);
   }
+
   100% {
     -webkit-transform: translateY(0);
     transform: translateY(0);

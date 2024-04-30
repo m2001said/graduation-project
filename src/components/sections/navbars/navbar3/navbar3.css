@@ -1,46 +1,50 @@
 .navbar3 {
   display: flex;
   justify-content: space-between;
-  background-color: var(--color8);
-  height: 60px;
+  background-color: var(--website-3-color-2);
+
 }
 
 .logo3 {
   width: 10rem;
   height: 3rem;
+
 }
+
 .navbar3-menu {
-  list-style: none;
-  display: flex;
-  gap: 6rem;
-  color: var(--color11);
+  color: var(--website-3-color-5);
   margin-top: 10px;
   margin-right: 260px;
   z-index: 2;
+  list-style: none;
+  display: flex;
+  gap: 6rem;
+  margin-top: 10px;
+  margin-right: 350px;
 }
-.navbar3-menu > li {
-  cursor: pointer;
-}
-.navbar3-menu > li:hover {
-  cursor: pointer;
-  color: var(--color7);
-}
+
 .menu-icon {
+  position: fixed;
   width: 30px;
   height: 20px;
   position: fixed;
+  right: 1rem;
+  z-index: 2;
 }
+
 /* res mobile */
 @media screen and (max-width: 768px) {
-  .navbar3 > :nth-child(2) {
-    position: fixed;
+  .navbar3> :nth-child(2) {
     right: 1rem;
     z-index: 2;
   }
+
   .navbar3-menu {
     flex-direction: column;
     padding: 2rem;
     position: fixed;
-    right: 1rem;
+    right: 0.5rem;
+    margin-right: 0;
+
   }
 }
