@@ -12,7 +12,7 @@ const FeatureCard = ({ imgUrl, title, content, index }) => {
       </div>
       <div className="flex-1 flex flex-col ml-3">
         <h4 className="font-poppins font-semibold text-white text-[18px] leading-[23.4px] mb-1">{title}</h4>
-        <p className="font-poppins font-normal text-dimWhite text-[16px] leading-[24px]" style={{ color: "var(--color5)" }}>
+        <p className="font-poppins font-normal text-dimWhite text-[16px] leading-[24px]" style={{ color: "var(--website-7-color-2)" }}>
           {content}
         </p>
       </div>
@@ -40,7 +40,7 @@ const Business7 = () => {
         <p className={`${styles.paragraph} max-w-[470px] mt-5`} style={{ color: "var(--color6)" }}>
           {title.content}
         </p>
-        <Button7 text={actionButton} styles={`px-4 py-5 mt-6 text-[var(--color2)] rounded-full bg-[var(--color3)]`} />
+        <Button7 text={actionButton} styles={`px-4 py-5 mt-6 text-[var(--website-7-color-2)] rounded-full bg-[var(--website-7-color-5)]`} />
       </div>
       <div className={`${layout.sectionImg} flex-col`}>
         {features.map((f, index) => (

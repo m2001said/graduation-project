@@ -15,7 +15,7 @@ const Billing = () => {
         <h2 className={styles.heading2}>
           {characteristics.title} <br className="sm:block hidden" /> {characteristics.subtitle}
         </h2>
-        <p className={`${styles.paragraph} max-w-[470px] mt-5`} style={{ color: "var(--color5)" }}>
+        <p className={`${styles.paragraph} max-w-[470px] mt-5`} style={{ color: "var(--website-7-color-5)" }}>
           {characteristics.content}
         </p>
         <div className="flex flex-row flex-wrap sm:mt-10 mt-6">

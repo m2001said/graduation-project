@@ -11,10 +11,10 @@ const CardDeal = () => {
         <h2 className={styles.heading2}>
           {paymentMethods.title} <br className="sm:block hidden" /> {paymentMethods.subtitle}
         </h2>
-        <p className={`${styles.paragraph} max-w-[470px] mt-5`} style={{ color: "var(--color5)" }}>
+        <p className={`${styles.paragraph} max-w-[470px] mt-5`} style={{ color: "var(--website-7-color-5)" }}>
           {paymentMethods.content}
         </p>
-        <Button7 text="Find a Deal" styles={`px-4 py-5 mt-6 text-[var(--color2)] rounded-full bg-[var(--color3)]`} />
+        <Button7 text="Find a Deal" styles={`px-4 py-5 mt-6 text-[var(--website-7-color-2)] rounded-full bg-[var(--website-7-color-5)]`} />
       </div>
       <div className={layout.sectionImg}>
         <img src={paymentMethods.imgUrl} alt="billing" className="w-[100%] h-[100%]" />

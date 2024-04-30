@@ -13,7 +13,7 @@ const Services7 = () => {
     }
   });
   return (
-    <div className={`${styles.flexCenter} w-[140px] h-[140px] rounded-full bg-black-gradient p-[2px] cursor-pointer`}>
+    <div className={`${styles.flexCenter} w-[140px] h-[140px] rounded-full  p-[2px] cursor-pointer`} style={{ backgroundColor: "var(--website-7-color-5)" }}>
       <div className={`${styles.flexCenter} flex-col  w-[100%] h-[100%] rounded-full`}>
         <div className={`${styles.flexStart} flex-row`}>
           <p className="font-poppins font-medium text-[18px] leading-[23.4px]">
