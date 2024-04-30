@@ -18,7 +18,7 @@ const Services10 = ({ handleOrderPopup }) => {
         <div className="items-center p-7 sm:p-30">
           {/* head sec */}
           <div className="text-center mb-20 max-w-[400px] mx-auto">
-            <p className="smHeader10 text-sm bg-clip-text text-transparent">{services.smTitle}</p>
+            <p className="smHeader10 text-sm bg-clip-text text-transparent">{services.subtitle}</p>
             <h1 className="text-3xl font-bold">{services.title}</h1>
             <p className="text-xs text-gray-400">{services.description}</p>
           </div>
@@ -26,7 +26,7 @@ const Services10 = ({ handleOrderPopup }) => {
           {/* <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-20 md:gap-5 place-items-center"> */}
           <div className="flex flex-wrap place-content-center gap-20 md:gap-5">
             {services.services.map((service) => (
-              <div className="my-7 rounded-2xl bg-white bgHover10 dark:bg-gray-800 dark:hover:bg-blue-600 hover:text-white relative shadow-xl duration-high group max-w-[300px]">
+              <div className="my-7 rounded-2xl bg-white bgHover10 dark:bg-gray-800 dark:hover:bg-blue-600 hover:text-white relative shadow-xl duration-high group max-w-[300px] min-w-[300px]">
                 <div className="h-[100px]">
                   <img
                     src={service.imgUrl}

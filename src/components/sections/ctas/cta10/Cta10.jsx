@@ -25,9 +25,9 @@ const Cta10 = () => {
           width: "100%",
         }}
       >
-        <div className="items-center p-7 sm:p-30">
-          <div className="space-y-6 max-w-xl mx-auto">
-            <h1 className="text-2xl text-center sm:text-left sm:text-4xl font-semibold ">{cta.title}</h1>
+        <div className="items-center p-7 sm:p-30 ">
+          <div className="space-y-6 max-w-xl mx-auto ">
+            <h1 className="text-2xl text-center sm:text-4xl font-semibold ">{cta.title}</h1>
             <div className="flex flex-wrap justify-center items-center">
               <a href="https://www.apple.com/store">
                 <img src={cta.AppStoreImg} alt="" className="max-w-[150px] sm:max-w-[120px] md:max-w-[200px]" />

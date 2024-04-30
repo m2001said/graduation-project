@@ -34,7 +34,7 @@ const Feature10 = () => {
                     <div className={`feature10-divIcon`}>
                       <img src={data.icon} alt="" className="w-full rounded-full" />
                     </div>
-                    <p className="text-base font-sans">{data.text}</p>
+                    <p className="text-base font-sans">{data.title}</p>
                   </div>
                 ))}
               </div>
