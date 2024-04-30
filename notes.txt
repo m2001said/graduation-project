@@ -1,0 +1,80 @@
+9 , 13 , 17 need update from soly
+********************************************************
+
+features 72 , 73 not features in own page
+features 9 not features in own page
+footer 152 not
+
+8 => design problem
+
+*****************************************
+5 => features  name repeat
+********************************************************
+
+18 => cta name repeat => elsayed
+cta1 , cta2
+
+********************************************************
+
+14 => pro fea 
+projects => products
+projects2 => blogs
+features1 , features2 => offer1 , 2        // delete it from own page
+bgColor must be from web colors
+
+
+may make error in own page
+
+15 => footer152 => blogs
+
+********************************************************
+
+6 => Rename for good reading  => rageb
+
+********************************************************
+
+
+template 11
+services => must be isolated from about me
+and must be services without services112
+and must be there is statistics section
+
+footer not good   => i should change it
+
+
+********************************************************
+
+
+12 => hosney create
+
+********************************************************
+
+
+
+footer 4 => must be dynamic for user if he need add new thing        => notify hosney
+
+********************************************************
+
+navbar 3 => abd el motey
+
+********************************************************
+
+
+9 => not check
+
+
+********************************************************************
+********************************************************************
+from 1 to 10 except 9 done 
+********************************************************************
+********************************************************************
+
+we need 14 15 16 18
+
+
+
+14 finish  => you just need to say elsayed to edit items section14
+
+15 => rageb    done
+
+18 done
