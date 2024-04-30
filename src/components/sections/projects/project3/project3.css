@@ -2,23 +2,25 @@
   display: flex;
   gap: 2rem;
   flex-wrap: wrap;
-  background-color: var(--color8);
+  background-color: var(--website-3-color-2);
 }
+
 .Project3-header {
   display: flex;
   gap: 5rem;
   font-weight: bold;
   font-size: 2rem;
   justify-content: center;
-  color: var(--color11);
+  color: var(--website-3-color-5);
   text-transform: uppercase;
   font-style: italic;
   padding-top: 5rem;
-  background-color: var(--color8);
+  background-color: var(--website-3-color-2);
   flex-wrap: wrap;
 }
+
 .project3-categories {
-  background-color: var(--color8);
+  background-color: var(--website-3-color-2);
   display: flex;
   padding-left: 50px;
   flex-wrap: wrap;
@@ -28,41 +30,47 @@
 .category {
   display: flex;
   flex-direction: column;
-  background-color: var(--color10);
+  background-color: var(--website-3-color-4);
   width: 330px;
   padding: 2rem;
   flex-wrap: wrap;
   gap: 1rem;
-  color: var(--color11);
+  color: var(--website-3-color-5);
   justify-content: space-evenly;
 }
-.category > :nth-child(1) {
+
+.category> :nth-child(1) {
   width: 2rem;
   height: 2rem;
-  fill: var(--color11);
+  fill: var(--website-3-color-5);
   display: contents;
   font-size: 1rem;
 }
-.category > :nth-child(2) {
+
+.category> :nth-child(2) {
   font-size: 1.6rem;
   font-weight: bold;
   flex-wrap: wrap;
 }
-.category > :nth-child(3) {
+
+.category> :nth-child(3) {
   font-size: 1.5rem;
   line-height: 25px;
   flex-wrap: wrap;
 }
+
 .join-now {
   display: flex;
   align-items: center;
   gap: 2rem;
 }
-.join-now > img {
+
+.join-now>img {
   width: 1rem;
 }
+
 .category:hover {
-  background: var(--color9);
+  background: var(--website-3-color-3);
   cursor: pointer;
 }
 
@@ -74,11 +82,13 @@
     align-items: center;
     justify-content: center;
     padding-top: 11rem;
-    background-color: var(--color8);
+    background-color: var(--website-3-color-2);
   }
+
   .project3-categories {
     flex-direction: column;
   }
+
   .category {
     width: 280px;
   }

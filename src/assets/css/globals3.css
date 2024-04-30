@@ -19,31 +19,32 @@
   --planCard13: linear-gradient(left to right, #fa5042 1.14%, #ffa739 100.75%);
   --darkOrange3: rgba(253, 120, 43, 0.69);
   --appColor3: #3c3f45; */
-
-  --color7: #f48915;
-  --color8: #3c3f45;
-  --color9: linear-gradient(210.41deg, #fa5042 1.14%, #ffa739 100.75%);
-  --color10: #9c9c9c;
-  --color11: #f4f0ec;
-  --color12: #656565;
+  --website-3-color-1: #f48915;
+  --website-3-color-2: #3c3f45;
+  --website-3-color-3: linear-gradient(210.41deg, #fa5042 1.14%, #ffa739 100.75%);
+  --website-3-color-4: #9c9c9c;
+  --website-3-color-5: #f4f0ec;
+  --website-3-color-6: #656565;
 }
 
 ::-webkit-scrollbar {
   display: none;
 }
+
 .stroke-text {
   color: transparent;
   font-family: Arial, Helvetica, sans-serif;
-  -webkit-text-stroke-color: var(--color11);
+  -webkit-text-stroke-color: var(--website-3-color-5);
   -webkit-text-stroke-width: 1px;
 }
 
 .blur3 {
-  background-color: var(--color7);
+  background-color: var(--website-3-color-1);
   position: absolute;
   border-radius: 50%;
   filter: blur(150px);
 }
+
 .hoverlink3:hover {
-  color: var(--color7);
+  color: var(--website-3-color-1);
 }
