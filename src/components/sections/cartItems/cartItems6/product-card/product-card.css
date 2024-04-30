@@ -1,5 +1,5 @@
 .single__product {
-  background: var(--color2);
+  background: var(--website-6-color-2);
   border-radius: 10px;
   cursor: pointer;
   animation: animate 1s ease-in;
@@ -7,7 +7,7 @@
 }
 
 .single__product:hover {
-  border: solid 1px var(--color3);
+  border: solid 1px var(--website-6-color-3);
 }
 
 .product__content {
@@ -16,7 +16,7 @@
 }
 
 .product__content h6 {
-  color: var(--color4);
+  color: var(--website-6-color-4);
   text-align: center;
 }
 
@@ -31,11 +31,11 @@
 }
 
 .single__product .price {
-  color: var(--color5);
+  color: var(--website-6-color-5);
 }
 
 .single__product .price span {
-  color: var(--color4);
+  color: var(--website-6-color-4);
   font-size: 1rem;
   font-weight: 500;
 }
@@ -44,7 +44,7 @@
   width: 30px;
   height: 30px;
   border-radius: 5px;
-  background: var(--color3);
+  background: var(--website-6-color-3);
   display: flex;
   align-items: center;
   justify-content: center;
