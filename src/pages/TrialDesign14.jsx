@@ -1,5 +1,5 @@
 /* eslint-disable react/jsx-pascal-case */
-import React from "react";
+import React, { useEffect } from "react";
 import "../assets/css/globals14.css";
 import { useSelector } from "react-redux";
 
@@ -25,6 +25,18 @@ const TrialDesign14 = () => {
   };
 
   const state = useSelector((state) => state.template14);
+  const colors = state.colors;
+  useEffect(() => {
+    document.documentElement.style = "";
+      document.documentElement.style.setProperty("--primary14-color", colors.templateColors[0]);
+      document.documentElement.style.setProperty("--brand14-yellow", colors.templateColors[1]);
+      document.documentElement.style.setProperty("--brand14-green", colors.templateColors[2]);
+      document.documentElement.style.setProperty("--brand14-blue", colors.templateColors[3]);
+      document.documentElement.style.setProperty("--brand14-gray", colors.templateColors[4]);
+      document.documentElement.style.setProperty("--brand14-white", colors.templateColors[5]);
+
+  }, []);
+
   const reorderedComponents = Object.keys(state);
   const componentMapping = {
     items: Items14,

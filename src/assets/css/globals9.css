@@ -1,9 +1,9 @@
 .red-button {
-  /* color: rgb(244, 136, 136); */
+  color: rgb(244, 136, 136);
 }
 
 .blue-background {
-  /* background-color: rgb(216, 216, 236); */
+  background-color: rgb(216, 216, 236);
 }
 
 .plus-9 {
@@ -13,36 +13,42 @@
 
 :root {
   --button-text-color-9: #0ca39a;
-  --grey-9: #d4d4d4;
-  /* --aaaaaa-color-9: #aaaaaa; */
-  /* --f2f2f2-color-9: #f2f2f2; */
-  /* --primary-next-9-color: rgb(255, 163, 4); */
-  /* --ffe999-9: #ffe999; */
-  /* --e6edeb-9: #e6edeb; */
+  --e5e5e5-9: #e5e5e5;
+  --button-text-colo-r-9: #0ca39a;
+  --d4d4d4-9: #d4d4d4;
+  --color-f6-9: #f6f6f6;
+  --aaaaaa-color-9: #aaaaaa;
+  --f2f2f2-color-9: #f2f2f2;
+  --primary-next-9-color: rgb(255, 163, 4);
+  --ffe999-9: #ffe999;
+  --e6edeb-9: #e6edeb;
+  --primary-text-color: #0c4f37;
   --primary-text-color-9: #0c4f37;
-  /* --black-9: rgb(0, 0, 0); */
+  --black-9: rgb(0, 0, 0);
   --color-808080-color-9: #808080;
-  /* --secondary-text-color-9: #0c4d37; */
+  --secondary-text-color-9: #0c4d37;
   --font-size-md-9: 2rem;
   --white-9: rgb(255, 255, 255);
-  /* --text-9-color: #a5a5a5; */
+  --text-9-color: #a5a5a5;
   --font-size-base-9: 1.25rem;
-  /* --bg-color-9: #cbcbc9; */
+  --bg-color-9: #cbcbc9;
   --border-radius-lg-9: 1.5rem;
   --border-radius-md: 0.5rem;
-  /* --color-color-blue-9: #f8fdfe; */
-  /* --button-bg-gradient-to: #eff9f9; */
-  /* --button-bg-gradient-to-9: #eff9f9; */
+  --color-color-blue-9: #f8fdfe;
+  --button-bg-gradient-from: #8bd3ce;
+  --button-bg-gradient-from-9: #8bd3ce;
+  --button-bg-gradient-to: #eff9f9;
+  --button-bg-gradient-to-9: #eff9f9;
   --transition9: all 400ms ease;
-  /* --color-bce6e4-9: #bce6e4; */
+  --color-bce6e4-9: #bce6e4;
   /* Add extracted colors and fonts */
   --logo-hover-shadow-color: #646cffaa;
-  /* --logo-react-hover-shadow-color: #61dafbaa; */
+  --logo-react-hover-shadow-color: #61dafbaa;
 
-  /* --button-hover-bg-color: #4abab4; */
-  /* --icon-bg-color-9: #fff; */
+  --button-hover-bg-color: #4abab4;
+  --icon-bg-color-9: #fff;
   --icon-hover-color-9: #74cac5;
-  /* --icon-active-color-9: #26ada5; */
+  --icon-active-color-9: #26ada5;
 
   /* Fonts */
   --font-size-lg: 2.25rem;
@@ -72,7 +78,7 @@
 }
 
 .uppercase {
-  color: var(--primary-text-color-9);
+  color: var(--primary-text-color);
 }
 
 .rounded-full {
@@ -123,7 +129,7 @@
 }
 .capitalize,
 .realestateh {
-  color: var(--primary-text-color-9);
+  color: var(--black-9);
 }
 
 .read-the-docs {
@@ -135,7 +141,7 @@
   border-radius: 0 0 560px 560px;
 }
 .about-9:hover {
-  background: var(--icon-hover-color-9);
+  background: var(--button-bg-gradient-from);
 }
 .about-9 {
   /* display: flex; */
@@ -149,24 +155,24 @@
   /* gap: 2rem; */
 }
 .pricing-9:hover {
-  background: var(--icon-hover-color-9);
+  background: var(--button-bg-gradient-from);
   background: linear-gradient(to right, var(--primary-text-color-9), var(--white-9));
   transition: var(--transition9);
-  color: var(--primary-text-color-9);
+  color: var(--black-9);
   /* background-size: cover; */
 }
 .pricing-9:hover h1,
 .pricing-9:hover p,
 .pricing-9:hover button {
-  color: var(--primary-text-color-9);
+  color: var(--black-9);
 }
 .about-9 {
   transition: var(--transition9);
 }
 
-.service-99 {
-  background: var(--primary-text-color-9);
-  /* background-size: contain; */
+.service-9:hover {
+  background: linear-gradient(to right, var(--primary-next-9-color), var(--white-9));
+  background-size: contain;
 }
 
 .cusror-9 {

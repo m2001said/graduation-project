@@ -8,9 +8,18 @@ import Testimonials6 from "../components/sections/testimonials/testimonials6/Tes
 import Cta6 from "../components/sections/ctas/cta6/Cta6";
 import Footer6 from "../components/sections/footers/footer6/Footer6";
 import { useSelector } from "react-redux";
+import { useEffect } from "react";
 
 const TrialDesign6 = () => {
   const state = useSelector((state) => state.template6);
+  const colors = state.colors;
+  useEffect(() => {
+    document.documentElement.style = "";
+
+    for (let index = 0; index < colors.templateColors.length; index++) {
+      document.documentElement.style.setProperty(`--color${index + 1}`, colors.templateColors[index]);
+    }
+  }, []);
   const reorderedComponents = Object.keys(state);
   const componentMapping = {
     features: Feature6,

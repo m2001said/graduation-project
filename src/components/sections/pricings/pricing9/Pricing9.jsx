@@ -30,22 +30,22 @@ const Pricing9 = () => {
         <div className="lg:w-3/5">
           <h1 className={`text-[var(--primary-text-color-9)] lg:text-xl uppercase`}>checkout our new </h1>
           <h1 className={`lg:text-4xl text-2xl font-medium capitalize py-3`}>Latest Listed Properties</h1>
-          <p className={`text-[var(--primary-text-color-9)] lg:text:base text-sm lg:w-3/5`}>asda asd dadc dad</p>
+          <p className={`text-[var(--secondary-text-color-9)] lg:text:base text-sm lg:w-3/5`}>asda asd dadc dad</p>
         </div>
 
         <div className="flex gap-x-4 lg:w-2/5 lg:pt-0 pt-6">
           <button
-            className={`text-[var(--button-text-color-9)] rounded-full border border-[var(--button-text-color-9)] hover:text-[var(--white-9)] focus:bg-[var(--button-text-color-9)] focus:text-[var(--white-9)]`}
+            className={`text-[var(--button-text-color-9)] rounded-full border border-[var(--button-text-color-9)] hover:text-[var(--icon-bg-color-9)] focus:bg-[var(--button-text-color-9)] focus:text-[var(--icon-bg-color-9)]`}
           >
             ALL
           </button>
           <button
-            className={`text-[var(--button-text-color-9)] rounded-full border border-[var(--button-text-color-9)] hover:text-[var(--white-9)] focus:bg-[var(--button-text-color-9)] focus:text-[var(--white-9)]`}
+            className={`text-[var(--button-text-color-9)] rounded-full border border-[var(--button-text-color-9)] hover:text-[var(--icon-bg-color-9)] focus:bg-[var(--button-text-color-9)] focus:text-[var(--icon-bg-color-9)]`}
           >
             SELL
           </button>
           <button
-            className={`text-[var(--button-text-color-9)] rounded-full border border-[var(--button-text-color-9)] hover:text-[var(--white-9)] focus:bg-[var(--button-text-color-9)] focus:text-[var(--white-9)]`}
+            className={`text-[var(--button-text-color-9)] rounded-full border border-[var(--button-text-color-9)] hover:text-[var(--icon-bg-color-9)] focus:bg-[var(--button-text-color-9)] focus:text-[var(--icon-bg-color-9)]`}
           >
             RENT
           </button>

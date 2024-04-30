@@ -16,14 +16,14 @@ const Hero13 = () => {
   const { title, subtitle, servicesButtonText, projectsButtonText, images, icon, num } = heroData;
 
   return (
-    <div id="hero13" className="relative overflow-hidden bg-[var(--color-darkG-13)] lg:py-20 py-8">
-      <div className="h-[50px] bg-[var(--c616161)] absolute -bottom-7 -left-[30px] -right-[-30px] py-3 px-[30px] rounded-[50%]"></div>
+    <div id="hero13" className="relative overflow-hidden bg-[var(--color-13-green)] lg:py-20 py-8">
+      <div className="h-[50px] bg-[var(--fff6ed)] absolute -bottom-7 -left-[30px] -right-[-30px] py-3 px-[30px] rounded-[50%]"></div>
       <div className="xl:w-[1200px] mx-auto px-3 lg:flex items-center justify-between">
         <div className="text-[var(--white-13)] lg:w-1/2">
           <h1 className="lg:text-7xl text-2xl text-[var(--white-13)] leading-normal pb-8 primary-font font-medium">{title}</h1>
           <p className="text-[var(--white-13)]">{subtitle}</p>
           <div className="flex items-center gap-x-2 ">
-            <button className="rounded-full px-3 py-2 flex items-center text-sm bg-[var(--color-13-yel)] gap-2 transition ease-out duration-300 transform hover:scale-110">
+            <button className="rounded-full px-3 py-2 flex items-center text-sm bg-[var(--fd7b47)] gap-2 transition ease-out duration-300 transform hover:scale-110">
               <p className="text-[var(--white-13)]">{servicesButtonText}</p>
               <img src={icon} className="w-10 h-auto text-xl" alt="arrow" />
             </button>

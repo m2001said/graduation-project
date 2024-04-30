@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "../assets/css/globals7.css";
 import styles from "../components/sections/heros/hero7/styles7/style";
 
@@ -18,6 +18,14 @@ import { useSelector } from "react-redux";
 
 const TrialDesign7 = () => {
   const state = useSelector((state) => state.template7);
+  const colors = state.colors;
+  useEffect(() => {
+    document.documentElement.style = "";
+
+    for (let index = 0; index < colors.templateColors.length; index++) {
+      document.documentElement.style.setProperty(`--color${index + 1}`, colors.templateColors[index]);
+    }
+  }, []);
   const reorderedComponents = Object.keys(state);
   const componentMapping = {
     stats: Stats7,

@@ -18,7 +18,7 @@ const Services10 = ({ handleOrderPopup }) => {
         <div className="items-center p-7 sm:p-30">
           {/* head sec */}
           <div className="text-center mb-20 max-w-[400px] mx-auto">
-            <p className="smHeader10 text-sm bg-clip-text text-transparent">{services.smTitle}</p>
+            <p className="smHeader10 text-sm bg-clip-text text-transparent">{services.subtitle}</p>
             <h1 className="text-3xl font-bold">{services.title}</h1>
             <p className="text-xs text-gray-400">{services.description}</p>
           </div>

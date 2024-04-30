@@ -29,7 +29,7 @@ const Teams5 = () => {
         <h2>{team.title}</h2>
 
         <div className="teams5-travelersCards">
-          {team.teams.map((Card, index) => (
+          {team.members.map((Card, index) => (
             <div key={index} className="teams5-single-card">
               <img src={Card.destinationImage} className="destinationImage" alt="" />
 

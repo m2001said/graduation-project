@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "../assets/css/globals15.css";
 import Navbar15 from "../components/sections/navbars/navbar15/Navbar15";
 import Hero15 from "../components/sections/heros/hero15/Hero15";
@@ -15,6 +15,16 @@ import { useSelector } from "react-redux";
 
 const TrialDesign15 = () => {
   const state = useSelector((state) => state.template15);
+  const colors = state.colors;
+  useEffect(() => {
+    document.documentElement.style = "";
+      document.documentElement.style.setProperty("--color1", colors.templateColors[0]);
+      document.documentElement.style.setProperty("--color2", colors.templateColors[1]);
+      document.documentElement.style.setProperty("--color3", colors.templateColors[2]);
+      document.documentElement.style.setProperty("--color4", colors.templateColors[3]);
+      document.documentElement.style.setProperty("--color5", colors.templateColors[4]);
+
+  }, []);
   const reorderedComponents = Object.keys(state);
   const componentMapping = {
     services: Services15,

@@ -1,6 +1,4 @@
 #contactUs2 {
-  background: var(--color-2-bg) url("https://res.cloudinary.com/dowtlcpxj/image/upload/v1703134021/bg-texture_up9ylo.png");
-
   text-align: center;
   /* gap: 2rem; */
   align-items: center;
@@ -44,7 +42,7 @@
 }
 .contactUs2__option:hover {
   background: transparent;
-  border-color: var(--color-2-primary);
+  border-color: var(--color-2-primary-variant);
 }
 .contactUs2__option-icon {
   font-size: 1.5rem;
@@ -66,7 +64,7 @@
   gap: 10px;
 }
 /**============= form ========**/
-.form2 {
+form {
   margin-top: 1.4rem;
   display: flex;
   flex-direction: column;
@@ -75,12 +73,12 @@
 /* .btn-primary {
   background: var(--color-2-primary);
 } */
-.input2,
-.txt-area2 {
+input,
+textarea {
   width: 100%;
   padding: 1.5rem;
   border-radius: 0.5rem;
-  border: 2px solid var(--color-2-primary);
+  border: 2px solid var(--color-2-primary-variant);
   resize: none;
   color: var(--color-2-2-white);
   background: transparent;
@@ -100,7 +98,7 @@
   #contactUs2 {
     margin: 1rem auto;
   }
-  .form2 {
+  form {
     /* width: 80%; */
     /* margin: 0 auto; */
   }
