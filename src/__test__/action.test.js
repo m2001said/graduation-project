@@ -1,4 +1,4 @@
-﻿import { editElement, addElement, addElementToArray, addSubElement, deleteElement, reorder, reorderSections, deleteSection } from '../features/templateData/actions';
+﻿import { editElement, addElement, deleteElement, reorder, reorderSections, deleteSection } from '../features/templateData/actions';
 
 describe('editElement', () => {
     it('should edit object field when i is undefined and variable is null', () => {
@@ -47,64 +47,6 @@ describe('addElement', () => {
 
 });
 
-describe('addElementToArray', () => {
-    it('should add a new element to the specified array', () => {
-        const initialState = {
-            section: {
-                blockName: [
-                    { subBlockName: ['Existing Data'] } 
-                ]
-            }
-        };
-        const action = {
-            payload: {
-                section: 'section',
-                blockName: 'blockName',
-                cardIndex: 0,
-                subBlockName: 'subBlockName'
-            }
-        };
-
-        addElementToArray(initialState, action);
-
-        expect(initialState.section.blockName[0].subBlockName.length).toEqual(2); // New element is added
-        expect(initialState.section.blockName[0].subBlockName[1]).toEqual("Enter SubBlockName's Details"); // New element content is correct
-    });
-
-});
-
-describe('addSubElement', () => {
-    it('should add a new sub-element to the specified array', () => {
-        const initialState = {
-            section: {
-                blockName: [
-                    {
-                        cardIndex: [
-                            {
-                                subBlockName: [{ existingKey: 'Existing Value' }]
-                            }
-                        ]
-                    }
-                ]
-            }
-        };
-        const action = {
-            payload: {
-                section: 'section',
-                blockName: 'blockName',
-                cardIndex: 0,
-                subBlockName: 'subBlockName'
-            }
-        };
-
-        addSubElement(initialState, action);
-
-        const addedSubElement = initialState.section.blockName[0].cardIndex[0].subBlockName[1];
-        expect(addedSubElement).toBeDefined(); 
-        expect(addedSubElement.id).toBeDefined(); 
-    });
-});
-
 describe('deleteElement function', () => {
     it('should delete an element from a normal block', () => {
         const initialState = {
@@ -116,11 +58,11 @@ describe('deleteElement function', () => {
             payload: {
                 section: 'section',
                 blockName: 'blockName',
-                i: 1 
+                i: 1
             }
         };
         deleteElement(initialState, action);
-        expect(initialState.section.blockName).toEqual(['item1', 'item3']); 
+        expect(initialState.section.blockName).toEqual(['item1', 'item3']);
     });
 
     it('should delete an element from a sub-block', () => {
@@ -137,7 +79,7 @@ describe('deleteElement function', () => {
                 blockName: 'blockName',
                 i: 0,
                 subBlockName: 'subBlock',
-                subIndex: 1 
+                subIndex: 1
             }
         };
         deleteElement(initialState, action);

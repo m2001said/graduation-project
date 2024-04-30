@@ -1,4 +1,4 @@
-import { validate } from '../components/mainPage/modal/validationUtils'; 
+import { validate } from '../components/mainPage/modal/validationUtils';
 
 describe('validate function', () => {
     it('should return error message if email is empty', () => {
