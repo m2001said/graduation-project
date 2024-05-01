@@ -29,7 +29,7 @@ const Hero14 = ({ handleOrderPopup }) => {
             {/* hero section */}
             <Swiper
               modules={[Navigation, Pagination, Autoplay]}
-              spaceBetween={200}
+              spaceBetween={500}
               slidesPerView={1}
               autoplay={{ delay: 3000 }}
               className="mySwiper"

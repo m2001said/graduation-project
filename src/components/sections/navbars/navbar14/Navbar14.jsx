@@ -66,14 +66,14 @@ const Navbar14 = ({ handleOrderPopup }) => {
           {/* Nav right sec */}
           <div className="flex justify-between items-center gap-4">
             {/* Search section */}
-           {/* <div className="relative group hidden sm:block">
+            {/* <div className="relative group hidden sm:block">
               <input type="text" placeholder="Search" className="search14-bar" />
               <img src={navbar.SearchIcon} alt="" className="absolute top-1/2 -translate-y-1/2 right-3 duration-200" />
             </div>  */}
 
             {/* Order-button */}
             <button className="relative p-3" onClick={handleOrderPopup}>
-              <img src={navbar.buttonIcon} alt="" className="w-6" />
+              <img src={navbar.icons[0]} alt="" className="w-6" />
               <div className="w-4 h-4 bg-red-500 text-white rounded-full absolute top-0 right-0 flex items-center justify-center text-xs">
                 {navbar.buttonText}
               </div>

@@ -38,9 +38,9 @@ const Navbar = ({ theme, setTheme }) => {
               ))}
               {/* DarkMode feature implement */}
               {theme === "dark" ? (
-                <img src={navbar.lightIcon} alt="" onClick={() => setTheme("light")} className="" />
+                <img src={navbar.icons[0]} alt="" onClick={() => setTheme("light")} className="" />
               ) : (
-                <img src={navbar.darkIcon} alt="" onClick={() => setTheme("dark")} className="" />
+                <img src={navbar.icons[1]} alt="" onClick={() => setTheme("dark")} className="" />
               )}
             </ul>
           </nav>
@@ -48,15 +48,15 @@ const Navbar = ({ theme, setTheme }) => {
           <div className="flex items-center gap-4 md:hidden ">
             {/* dark  mode */}
             {theme === "dark" ? (
-              <img src={navbar.lightIcon} alt="" onClick={() => setTheme("light")} className="" />
+              <img src={navbar.icons[0]} alt="" onClick={() => setTheme("light")} className="" />
             ) : (
-              <img src={navbar.darkIcon} alt="" onClick={() => setTheme("dark")} className="" />
+              <img src={navbar.icons[1]} alt="" onClick={() => setTheme("dark")} className="" />
             )}
             {/* Mobile Hamburger icon */}
             {showMenu ? (
-              <img src={navbar.menuIcon} alt="" onClick={toggleMenu} className=" cursor-pointer transition-all" size={30} />
+              <img src={navbar.icons[2]} alt="" onClick={toggleMenu} className=" cursor-pointer transition-all" size={30} />
             ) : (
-              <img src={navbar.menuIcon} alt="" onClick={toggleMenu} className="cursor-pointer transition-all" size={30} />
+              <img src={navbar.icons[2]} alt="" onClick={toggleMenu} className="cursor-pointer transition-all" size={30} />
             )}
           </div>
         </div>

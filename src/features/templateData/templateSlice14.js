@@ -23,27 +23,12 @@ const templateSlice14 = createSlice({
           url: "/#blog",
         },
       ],
-      // DropdownTxt: "Quick Links",
-      // DropdownIcon: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707774619/icons8-sort-down-30_yurjok.png",
-      // DropdownLinks: [
-      //   {
-      //     name: "Trending Products",
-      //     link: "/#",
-      //   },
-      //   {
-      //     name: "Best Selling",
-      //     link: "/#",
-      //   },
-      //   {
-      //     name: "Top Rated",
-      //     link: "/#",
-      //   },
-      // ],
-      // SearchIcon: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707775350/icons8-search-24_1_vxeohp.png",
       buttonText: "!",
-      buttonIcon: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707775619/icons8-shopping-cart-24_w0vwvt.png",
-      darkPng: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1706805795/dark-mode-button_e9kiqi.png",
-      lightPng: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1706805773/light-mode-button_ermmq3.png",
+      icons: [
+        "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707775619/icons8-shopping-cart-24_w0vwvt.png",
+        "https://res.cloudinary.com/dmcdea0b9/image/upload/v1706805795/dark-mode-button_e9kiqi.png",
+        "https://res.cloudinary.com/dmcdea0b9/image/upload/v1706805773/light-mode-button_ermmq3.png",
+      ],
     },
 
     hero: {
@@ -71,46 +56,44 @@ const templateSlice14 = createSlice({
     },
 
     items: {
-      firstTitle: "Enjoy",
-      secondTitle: "With",
       items: [
         {
+          firstTitle: "Enjoy",
+          secondTitle: "With",
           title: "Earph",
           imgUrl: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707777277/earphone_pgistv.png",
         },
         {
+          firstTitle: "Enjoy",
+          secondTitle: "With",
           title: "Gadget",
           imgUrl: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707777305/watch_dn63md.png",
         },
         {
+          firstTitle: "Enjoy",
+          secondTitle: "With",
           title: "Laptop",
           imgUrl: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707602295/macbook_dxcdn8.png",
         },
         {
+          firstTitle: "Enjoy",
+          secondTitle: "With",
           title: "Laptop",
           imgUrl: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707777316/gaming_zceuxk.png",
         },
         {
+          firstTitle: "Enjoy",
+          secondTitle: "With",
           title: "Gadget",
           imgUrl: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707602303/vr_zzinjy.png",
         },
         {
+          firstTitle: "Enjoy",
+          secondTitle: "With",
           title: "Earph",
           imgUrl: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707777323/speaker_wqwmry.png",
         },
       ],
-      // title1: "Earph",
-      // image1: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707777277/earphone_pgistv.png",
-      // title2: "Gadget",
-      // image2: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707777305/watch_dn63md.png",
-      // title3: "Laptop",
-      // image3: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707602295/macbook_dxcdn8.png",
-      // title4: "Laptop",
-      // image4: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707777316/gaming_zceuxk.png",
-      // title5: "Gadget",
-      // image5: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707602303/vr_zzinjy.png",
-      // title6: "Earph",
-      // image6: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707777323/speaker_wqwmry.png",
       buttonText: "Browse",
     },
 

@@ -16,8 +16,8 @@ const Items14 = () => {
             <div className={`item14-card${index} py-10 pl-5 text-white rounded-3xl relative h-[320px] flex items-end `}>
               <div>
                 <div className="mb-4">
-                  <p className="mb-[2px] text-gray-200">{items.firstTitle}</p>
-                  <p className="text-2xl font-semibold mb-[2px]">{items.secondTitle}</p>
+                  <p className="mb-[2px] text-gray-200">{item.firstTitle}</p>
+                  <p className="text-2xl font-semibold mb-[2px]">{item.secondTitle}</p>
                   <p className="text-4xl xl:text-5xl font-bold opacity-20 mb-2">{item.title}</p>
                   <button className={`item14-button${index} cursor-pointer hover:scale-105 duration-300 py-2 px-8 rounded-full relative z-10`}>
                     {items.buttonText}

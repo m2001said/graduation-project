@@ -34,11 +34,11 @@ const DarkMode14 = () => {
     <div className="relative">
       <img
         onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
-        src={navbar.lightPng}
+        src={navbar.icons[2]}
         alt=""
         className={`w-12 cursor-pointer absolute right-0 z-10 ${theme === "dark" ? "opacity-0" : "opacity-100"} transition-all duration-300`}
       />
-      <img onClick={() => setTheme(theme === "dark" ? "light" : "dark")} src={navbar.darkPng} alt="" className={`w-12 cursor-pointer `} />
+      <img onClick={() => setTheme(theme === "dark" ? "light" : "dark")} src={navbar.icons[1]} alt="" className={`w-12 cursor-pointer `} />
     </div>
   );
 };
