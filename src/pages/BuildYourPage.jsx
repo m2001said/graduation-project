@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "../components/yourPage/yourPage.css";
-import InputOption from "../components/yourPage/InputsGroup";
+import InputOption from "../components/yourPage/ChooseOption";
 import { getSectionData } from "../components/yourPage/getSectionData";
 import { useDispatch, useSelector } from "react-redux";
 
@@ -26,59 +26,38 @@ const BuildYourPage = () => {
 
   //   //  for handle dashboard
   const dispatch = useDispatch();
-  const template1 = useSelector((state) => state.template1);
-  const template2 = useSelector((state) => state.template2);
-  const template3 = useSelector((state) => state.template3);
-  const template4 = useSelector((state) => state.template4);
-  const template5 = useSelector((state) => state.template5);
-  const template6 = useSelector((state) => state.template6);
-  const template7 = useSelector((state) => state.template7);
-  const template8 = useSelector((state) => state.template8);
-  const template9 = useSelector((state) => state.template9);
-  const template10 = useSelector((state) => state.template10);
-  const template11 = useSelector((state) => state.template11);
-  const template12 = useSelector((state) => state.template12);
-  const template13 = useSelector((state) => state.template13);
-  const template14 = useSelector((state) => state.template14);
-  const template15 = useSelector((state) => state.template15);
-  const template16 = useSelector((state) => state.template16);
-  const template17 = useSelector((state) => state.template17);
-  const template18 = useSelector((state) => state.template18);
-
-  const templates = {
-    1: template1,
-    2: template2,
-    3: template3,
-    4: template4,
-    5: template5,
-    6: template6,
-    7: template7,
-    8: template8,
-    9: template9,
-    10: template10,
-    11: template11,
-    12: template12,
-    13: template13,
-    14: template14,
-    15: template15,
-    16: template16,
-    17: template17,
-    18: template18,
-  };
+  const templates = useSelector((state) => ({
+    1: state.template1,
+    2: state.template2,
+    3: state.template3,
+    4: state.template4,
+    5: state.template5,
+    6: state.template6,
+    7: state.template7,
+    8: state.template8,
+    9: state.template9,
+    10: state.template10,
+    11: state.template11,
+    12: state.template12,
+    13: state.template13,
+    14: state.template14,
+    15: state.template15,
+    16: state.template16,
+    17: state.template17,
+    18: state.template18,
+  }));
   const [selectedIndices, setSelectedIndices] = useState(Object.fromEntries(sectionNames.map((name) => [name, undefined])));
 
   const [checkError, setCheckError] = useState(false);
   const navigate = useNavigate();
 
-  const handleIndexChange = (section) => (e) => {
-    const { value } = e.target;
-
+  const handleIndexChange = (section, id) => {
     // If the checkbox is unchecked, set the selected index to undefined
-    const selectedIndex = selectedIndices[section] === parseInt(value, 10) ? undefined : parseInt(value, 10);
+    const selectedIndex = selectedIndices[section] === id ? undefined : id;
     setSelectedIndices((prevState) => ({ ...prevState, [section]: selectedIndex }));
   };
 
-  const removeIndexChange = (section) => (e) => {
+  const removeIndexChange = (section) => () => {
     const selectedIndex = undefined;
     setSelectedIndices((prevState) => ({ ...prevState, [section]: selectedIndex }));
   };
@@ -132,9 +111,7 @@ const BuildYourPage = () => {
               <img src="https://res.cloudinary.com/duc04fwdb/image/upload/v1709052019/jammal_photos/vdybrjarzdlo6x9fdwga.svg" alt="down-icon" />
             </label>
             <input type="checkbox" name="show" className="show-btn" id={`show${index}`} onChange={removeIndexChange(section)} />
-            <div className="group">
-              <InputOption item={getSectionData(section)} section={section} selectedIndex={selectedIndices[section]} handleIndexChange={handleIndexChange} />
-            </div>
+              <InputOption item={getSectionData(section)} section={section} handleIndexChange={handleIndexChange} />
           </div>
         ))}
 
