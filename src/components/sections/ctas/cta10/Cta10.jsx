@@ -14,6 +14,7 @@ const Cta10 = () => {
   });
   return (
     <>
+    {/* cta */}
       <div
         className="bg-gray-100 dark:bg-gray-800 textColor2 py-10"
         style={{
