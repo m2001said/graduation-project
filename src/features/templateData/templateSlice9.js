@@ -173,21 +173,21 @@ const templateSlice9 = createSlice({
         },
         {
           id: "1",
-          job: "Ahmed",
+          name: "Ahmed",
 
           imgUrl: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707329708/realestate/p3_khftcr.jpg",
           job: "Real Estate Developer",
         },
         {
           id: "2",
-          job: "Ali",
+          name: "Ali",
 
           imgUrl: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707329705/realestate/p2_ixjwav.jpg",
           job: "Listing Agent",
         },
         {
           id: "3",
-          name: "Kareem",
+          name: "Kareessssssssss dasd m",
 
           imgUrl: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707329700/realestate/p1_sfvfe2.jpg",
           job: "Buyer's Agent",

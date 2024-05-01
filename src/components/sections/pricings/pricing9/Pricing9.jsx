@@ -25,7 +25,7 @@ const Pricing9 = () => {
   const cards = pricing ? pricing.cards : [];
 
   return (
-    <main className="container mx-auto px-3 pricing-9">
+    <main className="container mx-auto pt-8 px-3 pricing-9">
       <div className="lg:flex justify-between items-center">
         <div className="lg:w-3/5">
           <h1 className={`text-[var(--primary-text-color-9)] lg:text-xl uppercase`}>checkout our new </h1>

@@ -115,6 +115,8 @@ const templateSlice2 = createSlice({
       ],
     },
     contact: {
+      title: "Get in Touch",
+      subtitle: "Reach out to us",
       options: [
         {
           title: "Email",
@@ -135,7 +137,16 @@ const templateSlice2 = createSlice({
           logo: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1703134203/whatsapp-whats-app-svgrepo-com_ug4dbt.svg", // Replace with your WhatsApp link
         },
       ],
+      send: {
+        title: "Send",
+        action: "sendEmail",
+      },
+      sendMessage: {
+        title: "Send a message",
+        action: "sendWhatsAppMessage",
+      },
     },
+    
     // items: {
     //   title: "Articles & News",
     //   description:
@@ -165,6 +176,8 @@ const templateSlice2 = createSlice({
     //   ],
     // },
     services: {
+      title: "What We Offer",
+      subtitle: "Services",
       services: [
         {
           title: "UI/UX Design",
@@ -172,7 +185,7 @@ const templateSlice2 = createSlice({
           icon: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1703134251/correct-signal-svgrepo-com_vvf3sw.svg",
         },
         {
-          title: "WebDevelopment",
+          title: "Web Development",
           items: ["lorem ipsum,", "Llorem ipsuma,", "Blorem ipsumm,", "Dilorem ipsumll,", "lorem ipsum"],
           icon: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1703134251/correct-signal-svgrepo-com_vvf3sw.svg",
         },
@@ -183,6 +196,7 @@ const templateSlice2 = createSlice({
         },
       ],
     },
+    
     footer: {
       logo: "CSE",
       rights: "ssssssssssssssssssssss all rights reserved.",

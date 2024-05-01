@@ -29,7 +29,7 @@ const Hero = () => {
   });
   return (
     <main className="mb-12 pt-4">
-      <div className="bg-gradient-to-t from-[var(--primary-text-color-9)] to-[var(--white-9)]  rounded-[560px] rounded-t-none">
+      <div className="bg-gradient-to-t from-[var(--primary-text-color-9)] to-[var(--white-9)]  rounded-[560px] rounded-t-none hero9">
         <div className="container mx-auto px-3 lg:flex justify-between items-center lg:h-screen">
           <div className="lg:w-2/5">
             <p className="text-[var(--primary-text-color-9)] md:text-xl text-lg font-medium">{hero.title}</p>

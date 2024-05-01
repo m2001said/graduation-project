@@ -66,11 +66,17 @@ article.service img.service__list-icon {
   .service {
     height: auto;
   }
+  #services2  {
+    padding-bottom: 2rem;
+  }
 }
 
 @media screen and (max-width: 600px) {
   .services__container {
     grid-template-columns: 1fr;
     gap: 1.5rem;
+  }
+  #services2  {
+    padding-bottom: 2rem;
   }
 }

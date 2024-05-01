@@ -30,7 +30,7 @@ const Testimonials2 = () => {
         modules={[EffectCards]}
       >
         {testimonial.cards.map((testimonial, index) => (
-          <SwiperSlide className="testimonial" key={index}>
+          <SwiperSlide className="testimonial2" key={index}>
             <div className="client__avatar">
               <img src={testimonial.avatar} alt="" />
             </div>

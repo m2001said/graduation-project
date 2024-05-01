@@ -56,6 +56,17 @@
 
   /****/
 }
+
+.hero9 {
+  padding-bottom: 1.5rem;
+}
+.feature-9 {
+  padding-bottom: 1.5rem;
+  padding-top: 1rem;
+}
+.team9{
+  padding-bottom: 1.5rem;
+}
 .trialdesign9 {
   max-width: 100%;
   margin: 0 auto;
@@ -137,14 +148,11 @@
 .about-9:hover {
   background: var(--icon-hover-color-9);
 }
-.about-9 {
-  /* display: flex; */
-  justify-content: center;
-  /* align-items: center; */
-}
+
 .pricing-9 {
   display: flex;
   flex-direction: column;
+  padding-bottom: 3rem;
   /* justify-content: center; */
   /* gap: 2rem; */
 }
@@ -162,11 +170,22 @@
 }
 .about-9 {
   transition: var(--transition9);
+  /* padding-top: 1rem; */
+  padding-bottom: 3rem;
 }
+.about-9 {
+  /* display: flex; */
+  justify-content: center;
+ 
+
+  /* align-items: center; */
+}
+
 
 .service-99 {
   background: var(--primary-text-color-9);
   /* background-size: contain; */
+  padding-bottom: 2rem;
 }
 
 .cusror-9 {

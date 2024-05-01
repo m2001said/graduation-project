@@ -3,7 +3,7 @@ const About9 = () => {
   const about = useSelector((state) => state.template9.about);
 
   return (
-    <main className="container mx-auto lg:flex px-3 mb-12 lg:pt-0 pt-8 about-9">
+    <main className="container mx-auto lg:flex px-3 mb-12  pt-20 about-9">
       <div className="lg:w-2/5">
         <p className="text-[var(--primary-text-color-9)] md:text-xl text-lg font-medium">{about.title}!</p>
         <h1 className="lg:text-4xl text-2xl font-medium py-3">{about.description} </h1>

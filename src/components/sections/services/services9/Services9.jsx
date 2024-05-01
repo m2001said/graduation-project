@@ -11,7 +11,7 @@ const Services9 = () => {
     }
   });
   return (
-    <main className="bg-[var(--primary-text-color-9)] mt-20 lg:py-20 service-99">
+    <main className="bg-[var(--primary-text-color-9)] mt-20 lg:py-20  service-99">
       <div className="container mx-auto px-3 text-center" service-9-div="true">
         <p className="uppercase text-xl py-8">Our services</p>
 
