@@ -22,12 +22,12 @@ const Navbar15 = () => {
         {navbar.links.map((nav, index) => (
           <li
             key={nav.title}
-            className={`font-poppins font-normal cursor-pointer text-[16px] ${active === nav.title ? "var(--color5)" : "var(--color3)"} ${
+            className={`font-poppins font-normal cursor-pointer text-[16px] ${active === nav.title ? "var(--website-15-color-5)" : "var(--website-15-color-3)"} ${
               index === navbar.links.length - 1 ? "mr-10" : "mr-10"
             }`}
             onClick={() => setActive(nav.title)}
           >
-            <a className="honerlink11" href={nav.url} style={{ color: active === nav.title ? "var(--color3)" : "var(--color5)" }}>
+            <a className="honerlink11" href={nav.url} style={{ color: active === nav.title ? "var(--website-15-color-3)" : "var(--website-15-color-5)" }}>
               {nav.title}
             </a>
           </li>
@@ -49,12 +49,12 @@ const Navbar15 = () => {
             {navbar.links.map((nav, index) => (
               <li
                 key={nav.title}
-                className={`font-poppins font-medium cursor-pointer text-[16px] ${active === nav.title ? "var(--color5)" : "var(--color2)"} ${
+                className={`font-poppins font-medium cursor-pointer text-[16px] ${active === nav.title ? "var(--website-15-color-5)" : "var(--color2)"} ${
                   index === navbar.links.length - 1 ? "mb-0" : "mb-4"
                 }`}
                 onClick={() => setActive(nav.title)}
               >
-                <a href={nav.url} style={{ color: active === nav.title ? "var(--color2)" : "var(--color5)" }}>
+                <a href={nav.url} style={{ color: active === nav.title ? "var(--color2)" : "var(--website-15-color-5)" }}>
                   {nav.title}
                 </a>
               </li>

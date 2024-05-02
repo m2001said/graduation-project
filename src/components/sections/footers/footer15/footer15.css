@@ -2,7 +2,7 @@
 .footer15 {
   padding: 0 3px;
   background-color: transparent;
-  background-color: var(--color1);
+  background-color: var(--website-15-color-1);
 }
 
 .footer15-container {
@@ -15,7 +15,7 @@
 
 .footer15-text {
   font-size: 19px;
-  color: #262626;
+  color: var(--website-15-color-1);
   font-weight: bold;
 }
 
@@ -50,9 +50,11 @@
 .footer15-title-4 {
   font-weight: bold;
 }
+
 .footer15-subtitle {
   margin-left: 100px;
 }
+
 @media (max-width: 1024px) {
   .footer15-icons {
     margin-left: 70px;
@@ -68,6 +70,7 @@
     margin-left: 10px;
     font-size: 13px;
   }
+
   .footer15-subtitle {
     display: none;
   }
