@@ -17,13 +17,13 @@ const Navbar14 = ({ handleOrderPopup }) => {
   // const { navbar } = useSelector((state) => state.template14);
 
   return (
-    <div className="bg-white dark:bg-gray-900 dark:text-white duration-200 relative z-40">
+    <div className="bg-[--website-14-color-6] dark:bg-gray-900 dark:text-white duration-200 relative z-40">
       <div className="py-4">
         <div className="container14 flex justify-between items-center">
           {/* Logo and Links sec */}
           <div className="flex items-center gap-4">
             <img src={navbar.logo} alt="" className="w-7 cursor-pointer" />
-            <span className="text-[--primary14-color] font-semibold tracking-widest text-2xl uppercase sm:text-3xl cursor-pointer">{navbar.title}</span>
+            <span className="text-[--website-14-color-1] font-semibold tracking-widest text-2xl uppercase sm:text-3xl cursor-pointer">{navbar.title}</span>
             {/* Menu */}
             <div className="hidden lg:block">
               <ul className="flex items-center gap-4">
@@ -34,31 +34,6 @@ const Navbar14 = ({ handleOrderPopup }) => {
                     </a>
                   </li>
                 ))}
-                {/* dropdown  */}
-                {/* <li className="relative cursor-pointer group">
-                  <span className="flex items-center gap-[2px] font-semibold text-gray-500 hover:text-black dark:hover:text-white py-2 ">
-                    {navbar14.DropdownTxt}
-                    <span>
-                      <img src={navbar.DropdownIcon} alt="" className="w-5 group-hover:rotate-180 duration-300" />
-                    </span>
-                  </span>
-
-                  
-                  <div className="absolute z-[9999] hidden group-hover:block w-[200px] rounded-md bg-white shadow-md dark:bg-gray-900 p-2 dark:text-white ">
-                    <ul className="space-y-2">
-                      {navbar14.DropdownLinks.map((data, index) => (
-                        <li key={index}>
-                          <a
-                            className="text-gray-500  dark:hover:text-white duration-200 inline-block w-full p-2 hover:bg-[--primaryHover14-color] rounded-md font-semibold"
-                            href={data.link}
-                          >
-                            {data.name}
-                          </a>
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-                </li> */}
               </ul>
             </div>
           </div>
@@ -74,7 +49,7 @@ const Navbar14 = ({ handleOrderPopup }) => {
             {/* Order-button */}
             <button className="relative p-3" onClick={handleOrderPopup}>
               <img src={navbar.icons[0]} alt="" className="w-6" />
-              <div className="w-4 h-4 bg-red-500 text-white rounded-full absolute top-0 right-0 flex items-center justify-center text-xs">
+              <div className="w-4 h-4 bg-[--website-14-color-1] text-white rounded-full absolute top-0 right-0 flex items-center justify-center text-xs">
                 {navbar.buttonText}
               </div>
             </button>

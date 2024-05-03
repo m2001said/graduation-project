@@ -138,42 +138,42 @@ const templateSlice14 = createSlice({
         {
           img: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707604733/p-1_mqzmix.jpg",
           title: "Boat Headphone",
-          price: "120",
+          price: "$120",
         },
         {
           img: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707604737/p-2_qc3prb.jpg",
           title: "Rocky Mountain",
-          price: "420",
+          price: "$420",
         },
         {
           img: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707604741/p-3_gfoj4a.jpg",
           title: "Goggles",
-          price: "320",
+          price: "$320",
         },
         {
           img: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707604745/p-4_hkawqn.jpg",
           title: "Printed ",
-          price: "220",
+          price: "$220",
         },
         {
           img: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707604748/p-5_lbyuxu.jpg",
           title: "Boat Headphone",
-          price: "120",
+          price: "$120",
         },
         {
           img: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707604761/p-7_fkl1tb.jpg",
           title: "Rocky Mountain",
-          price: "420",
+          price: "$420",
         },
         {
           img: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707604765/p-9_bypahb.jpg",
           title: "Goggles",
-          price: "320",
+          price: "$320",
         },
         {
           img: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707604748/p-5_lbyuxu.jpg",
           title: "Printed ",
-          price: "220",
+          price: "$220",
         },
       ],
       buttonText: "Add to cart",
@@ -267,6 +267,7 @@ const templateSlice14 = createSlice({
           ],
         },
       ],
+      
       contacts: [
         {
           value: "Noida, Uttar Pradesh",

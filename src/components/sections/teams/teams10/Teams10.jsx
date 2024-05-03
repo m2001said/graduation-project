@@ -14,7 +14,7 @@ const Teams10 = () => {
   });
   return (
     <>
-      <div className="pt-10 bg-[--white10] dark:bg-gray-900">
+      <div className="pt-10 bg-[--website-10-color-2] dark:bg-gray-900">
         <div className="items-center p-7 sm:p-30">
           {/* head sec */}
           <div className="text-center mb-10 max-w-[600px] mx-auto">
@@ -40,7 +40,7 @@ const Teams10 = () => {
               ))}
             </div>
             <div className="flex justify-center">
-              <button className="text-center mt-10 cursor-pointer  btnBg10 btnTxt10 py-1 px-5 rounded-full">{team.buttonText}</button>
+              <button className="text-center mt-10 cursor-pointer btnBg10 btnTxt10 py-1 px-5 rounded-full">{team.buttonText}</button>
             </div>
           </div>
         </div>

@@ -15,7 +15,7 @@ const Testimonial = () => {
   return (
     <>
       <span id="about"></span>
-      <div className="bg-white dark:bg-black dark:text-white py-14 sm:pb-24">
+      <div className="bg-[--website-18-color-6] dark:bg-black dark:text-white py-14 sm:pb-24">
         <div className="container18">
           {/* Header */}
           <div className="space-y-4 pb-12">
@@ -27,7 +27,7 @@ const Testimonial = () => {
             {testimonial.testimonials.map((data) => (
               <div
                 key={data.name}
-                className="card text-center group space-y-3 sm:space-y-6 p-4 sm:py-12 dark:bg-white/20 bg-gray-100 duration-300  rounded-lg "
+                className="card text-center group space-y-3 sm:space-y-6 p-4 sm:py-12 dark:bg-white/20 bg-[--website-18-color-2] duration-300  rounded-lg "
               >
                 <div className="grid place-items-center ">
                   <img src={data.imgUrl} alt="" className="rounded-full w-20 h-20" />

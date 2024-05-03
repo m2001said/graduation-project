@@ -16,7 +16,7 @@ const Cta10 = () => {
     <>
     {/* cta */}
       <div
-        className="bg-gray-100 dark:bg-gray-800 textColor2 py-10"
+        className="bg-gray-100 dark:bg-gray-800 textColor10-2 py-10"
         style={{
           backgroundImage: `url(${cta.bannerImg})`,
           backgroundPosition: "center",

@@ -14,7 +14,7 @@ const Services14 = () => {
     }
   });
   return (
-    <div className="bg-white dark:bg-gray-900">
+    <div className="bg-[--website-14-color-6] dark:bg-gray-900">
       <div className="container14 my-14 md:my-20">
         <div className="flex justify-center flex-wrap gap-6 gap-y-8">
           {services.services.map((data) => (

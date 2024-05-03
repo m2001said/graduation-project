@@ -41,7 +41,7 @@
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    background: var(--website-5-white);
+    background: var(--website-5-color-5);
     padding: 3rem 2rem;
     border-radius: 10rem;
     gap: 1rem;
@@ -53,7 +53,7 @@
 }
 .services5-singleCard p{
     font-size: 13px;
-    color: var(--website-5-greyText);
+    color: var(--website-5-color-6);
     line-height: 22px;
 }
 
@@ -81,7 +81,7 @@
 
 .cardIcon{
     width: 25px;
-   color: var(--website-5-white); 
+   color: var(--website-5-color-5); 
 }
 
 .cardtitle{
@@ -98,7 +98,11 @@
   outline: none;
   border-radius: 3rem;
   cursor: pointer;
-  color: var(--website-5-white);
+  color: var(--website-5-color-5);
+}
+
+.services5-btn:hover{
+    opacity: 0.8;
 }
 
 @media screen and (min-width: 570px){

@@ -18,7 +18,7 @@ const Navbar = ({ theme, setTheme }) => {
     setShowMenu(!showMenu);
   };
   return (
-    <div className="relative z-10 shadow-md w-full bg-white dark:bg-black dark:text-white duration-300">
+    <div className="relative z-10 shadow-md w-full bg-[--website-18-color-6] dark:bg-black dark:text-white duration-300">
       <div className="container18 py-2 md:py-0">
         <div className="flex justify-between items-center">
           <div className="flex gap-4">
@@ -30,7 +30,7 @@ const Navbar = ({ theme, setTheme }) => {
                 <li key={index} className="py-4">
                   <a
                     href={data.url}
-                    className=" text-lg font-medium  hover:text-[--primary18-color] py-2 hover:border-b-2 hover:border-[--primary18-color] transition-colors duration-500  "
+                    className=" text-lg font-medium hover:text-[--website-18-color-1] py-2 hover:border-b-2 hover:border-[--website-18-color-1] transition-colors duration-500  "
                   >
                     {data.title}
                   </a>

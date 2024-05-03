@@ -9,7 +9,7 @@ const Items14 = () => {
   const { items } = useSelector((state) => state.template14);
 
   return (
-    <div className="py-10 bg-white dark:bg-gray-900">
+    <div className="py-10 bg-[--website-14-color-6] dark:bg-gray-900">
       <div className="container14">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {items.items.map((item, index) => (

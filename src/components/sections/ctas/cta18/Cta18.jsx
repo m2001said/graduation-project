@@ -14,7 +14,7 @@ const Cta18 = () => {
     }
   });
   return (
-    <div className="container18 bg-white dark:bg-black">
+    <div className="container18 bg-[--website-18-color-6] dark:bg-black">
       <div
         className=" text-black py-10 sm:min-h-[400px] sm:grid sm:place-items-center rounded-xl"
         style={{

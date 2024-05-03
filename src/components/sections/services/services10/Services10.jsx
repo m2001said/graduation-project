@@ -14,7 +14,7 @@ const Services10 = ({ handleOrderPopup }) => {
   });
   return (
     <>
-      <div className="py-10 bg-[--white10] dark:bg-gray-900 ">
+      <div className="py-10 bg-[--website-10-color-2] dark:bg-gray-900 ">
         <div className="items-center p-7 sm:p-30">
           {/* head sec */}
           <div className="text-center mb-20 max-w-[400px] mx-auto">

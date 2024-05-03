@@ -18,7 +18,7 @@
 
 .footer5-gridOne p{
     font-size: 13px;
-    color: var(--website-5-greyText);
+    color: var(--website-5-color-6);
     line-height: 22px;
 }
 
@@ -38,9 +38,9 @@
     width: 30px;
     border-radius: 10rem;
     border: 1px solid hsl(0, 0%, 83%);
-    box-shadow: var(--boxShadow);
+    box-shadow:rgb(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px ;
     padding: 0.4rem;
-    color: var(--website-5-greyText);
+    color: var(--website-5-color-6);
     font-size: 1.3rem;
     cursor: pointer;
 }
@@ -48,9 +48,9 @@
 .footer5-singleIcon:hover {
     background: var(--website-5-color-1);
     transform: translateY(-7px);
-    transition: var(--transition);
-    border: 1px solid var(--website-5-white);
-    color: var(--website-5-white);
+    transition: .4s ease-in-out;
+    border: 1px solid var(--website-5-color-5);
+    color: var(--website-5-color-5);
 }
 
 .footer5-links{
@@ -70,8 +70,8 @@
   }
 .footer5-links-element {
     display: block;
-    color: var(--website-5-greyText);
-    transition: var(--transition);
+    color: var(--website-5-color-6);
+    transition: .4s ease-in-out;
     padding: .3rem 0;
     text-decoration: none;
   }
