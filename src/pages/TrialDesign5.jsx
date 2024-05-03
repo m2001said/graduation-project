@@ -8,10 +8,19 @@ import Teams5 from "../components/sections/teams/teams5/Teams5";
 import Cta5 from "../components/sections/ctas/cta5/Cta5";
 import Footer5 from "../components/sections/footers/footer5/Footer5";
 import { useSelector } from "react-redux";
+import { useEffect } from "react";
 const TrialDesign5 = () => {
   const state = useSelector((state) => state.template5);
-  const reorderedComponents = Object.keys(state);
 
+  const colors = state.colors;
+
+  useEffect(() => {
+    for (let index = 0; index < colors.templateColors.length; index++) {
+      document.documentElement.style.setProperty(`color${index + 1}`, colors.templateColors[index]);
+    }
+  }, []);
+
+  const reorderedComponents = Object.keys(state);
   const componentMapping = {
     features1: Feature5,
     services: Services5,

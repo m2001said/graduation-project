@@ -27,7 +27,7 @@ const DarkMode = () => {
     <>
       <div className="relative ">
         <img
-          src={navbar.lightPng}
+          src={navbar.icons[2]}
           alt=""
           onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
           className={`w-12 cursor-pointer drop-shadow-[1px_1px_1px_rgba(0,0,0,0.1)] transition-all duration-300 absolute right-0 z-10
@@ -35,7 +35,7 @@ const DarkMode = () => {
         />
 
         <img
-          src={navbar.darkPng}
+          src={navbar.icons[1]}
           alt=""
           onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
           className="w-12 cursor-pointer drop-shadow-[1px_1px_2px_rgba(0,0,0,0.5)] duration-300 "

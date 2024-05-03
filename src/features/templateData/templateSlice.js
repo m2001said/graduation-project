@@ -10,8 +10,6 @@ const templateSlice = createSlice({
     },
     navbar: {
       imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701811960/templates/template_one/Logo_mj7rvw.png",
-
-
       links: [
         {
           title: "home",
@@ -42,34 +40,31 @@ const templateSlice = createSlice({
     hero: {
       title: "Let Your Home Be Unique",
       description: "There are many variations of the passages of lorem Ipsum from available, variations of the passages.",
-      imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701808857/templates/template_one/Photo_3_jpjtdv.jpg",
       buttonText: "Get Started",
       icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701813389/templates/template_one/Vector_5_vvvt2o.svg",
+      imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701808857/templates/template_one/Photo_3_jpjtdv.jpg",
     },
     services: {
-
-
-
       services: [
         {
-          icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701808099/templates/template_one/icon_one_xvd7d6.svg",
           title: "Project Plan",
           description: "There are many variations of the passages of lorem Ipsum from available, majority.",
+          icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701808099/templates/template_one/icon_one_xvd7d6.svg",
         },
         {
-          icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701808099/templates/template_one/icon_two_dptua1.svg",
           title: "Interior Work",
           description: "There are many variations of the passages of lorem Ipsum from available, majority.",
+          icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701808099/templates/template_one/icon_two_dptua1.svg",
         },
         {
-          icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701808099/templates/template_one/icon_three_v71ltg.svg",
           title: "Realization",
           description: "There are many variations of the passages of lorem Ipsum from available, majority.",
+          icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701808099/templates/template_one/icon_three_v71ltg.svg",
         },
       ],
     },
 
-    feature: {
+    features: {
       title: "We Create The Art Of Stylish Living Stylishly",
       description:
         "It is a long established fact that a reader will be distracted by the of readable content of a page when looking at its layouts the points of using that it has a more-or-less normal.",
@@ -107,11 +102,11 @@ const templateSlice = createSlice({
     },
     logos: {
       companies: [
-        { imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701808448/templates/template_one/01_p78hjd.svg", company_URL: "https://x.com" },
-        { imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701808448/templates/template_one/02_mnw1ps.svg", company_URL: "https://x.com" },
-        { imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701808448/templates/template_one/03_fiplpx.svg", company_URL: "https://x.com" },
-        { imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701808449/templates/template_one/04_pg8flc.svg", company_URL: "https://x.com" },
-        { imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701808449/templates/template_one/05_prt3gi.svg", company_URL: "https://x.com" },
+        { imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701808448/templates/template_one/01_p78hjd.svg", url: "https://x.com" },
+        { imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701808448/templates/template_one/02_mnw1ps.svg", url: "https://x.com" },
+        { imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701808448/templates/template_one/03_fiplpx.svg", url: "https://x.com" },
+        { imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701808449/templates/template_one/04_pg8flc.svg", url: "https://x.com" },
+        { imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701808449/templates/template_one/05_prt3gi.svg", url: "https://x.com" },
       ],
     },
     projects: {
@@ -119,27 +114,27 @@ const templateSlice = createSlice({
       description: "It is a long established fact that a reader will be distracted by the of readable content of page  lookings at its layouts  points.",
       projects: [
         {
+          title: "Modern Kitchan",
+          description: "Decor / Artchitecture",
           imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701808451/templates/template_one/Photo_2_w7jdep.jpg",
-          title: "Modern Kitchan",
-          description: "Decor / Artchitecture",
           icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701718889/templates/template_one/Vector_5_nzmfwn.svg",
         },
         {
+          title: "Modern Kitchan",
+          description: "Decor / Artchitecture",
           imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701808451/templates/template_one/Photo_3_wig9kc.jpg",
-          title: "Modern Kitchan",
-          description: "Decor / Artchitecture",
           icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701718889/templates/template_one/Vector_5_nzmfwn.svg",
         },
         {
+          title: "Modern Kitchan",
+          description: "Decor / Artchitecture",
           imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701808452/templates/template_one/Photo_iojikc.jpg",
-          title: "Modern Kitchan",
-          description: "Decor / Artchitecture",
           icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701718889/templates/template_one/Vector_5_nzmfwn.svg",
         },
         {
-          imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701808450/templates/template_one/Photo_1_njncs1.jpg",
           title: "Modern Kitchan",
           description: "Decor / Artchitecture",
+          imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701808450/templates/template_one/Photo_1_njncs1.jpg",
           icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701718889/templates/template_one/Vector_5_nzmfwn.svg",
         },
       ],
@@ -171,24 +166,24 @@ const templateSlice = createSlice({
       items: [
         {
           title: "Let’s Get Solution For Building Construction Work",
+          subtitle: "Kitchan Design",
           description: "26 December,2022 ",
           imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701718041/templates/template_one/article1.f88f54e6a4cdbf340b36_l3ujjw.png",
           icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701718889/templates/template_one/Vector_5_nzmfwn.svg",
-          caption: "Kitchan Design",
         },
         {
           title: "Low Cost Latest Invented Interior Designing Ideas.",
+          subtitle: "Living Design",
           description: "22 December,2022 ",
           icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701718889/templates/template_one/Vector_5_nzmfwn.svg",
           imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701718042/templates/template_one/article2.43be768543cb8cfeaf07_atvwjd.png",
-          caption: "Living Design",
         },
         {
           title: "Best For Any Office & Business Interior Solution",
+          subtitle: "Interior Design",
           description: "25 December,2022 ",
           icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701718889/templates/template_one/Vector_5_nzmfwn.svg",
           imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701718042/templates/template_one/article3.f759fde0c85f3fb92b22_c2tqkv.png",
-          caption: "Interior Design",
         },
       ],
     },
@@ -198,9 +193,10 @@ const templateSlice = createSlice({
         {
           id: "1",
           name: "Nattasha",
+          email: "julie@email.com",
           location: "Design, Australia",
           imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701808855/templates/template_one/Photo_fz8cuc.jpg",
-          mediaIcons: [
+          medias: [
             {
               icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701809141/templates/template_one/facebook_td263x.svg",
               url: "https://facebook.com",
@@ -218,14 +214,14 @@ const templateSlice = createSlice({
               url: "https://instagram.com",
             },
           ],
-          email: "julie@email.com",
         },
         {
           id: "2",
           name: "Julie",
+          email: "julie@email.com",
           location: "Design, Australia",
           imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701808855/templates/template_one/Photo_fz8cuc.jpg",
-          mediaIcons: [
+          medias: [
             {
               icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701809141/templates/template_one/facebook_td263x.svg",
               url: "https://facebook.com",
@@ -243,14 +239,14 @@ const templateSlice = createSlice({
               url: "https://instagram.com",
             },
           ],
-          email: "julie@email.com",
         },
         {
           id: "3",
           name: "Alex",
+          email: "julie@email.com",
           location: "Design, Australia",
           imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701808855/templates/template_one/Photo_fz8cuc.jpg",
-          mediaIcons: [
+          medias: [
             {
               icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701809141/templates/template_one/facebook_td263x.svg",
               url: "https://facebook.com",
@@ -268,13 +264,14 @@ const templateSlice = createSlice({
               url: "https://instagram.com",
             },
           ],
-          email: "julie@email.com",
         },
         {
+          id: "4",
           name: "John",
+          email: "julie@email.com",
           location: "Design, Australia",
           imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701808855/templates/template_one/Photo_fz8cuc.jpg",
-          mediaIcons: [
+          medias: [
             {
               icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701809141/templates/template_one/facebook_td263x.svg",
               url: "https://facebook.com",
@@ -292,7 +289,6 @@ const templateSlice = createSlice({
               url: "https://instagram.com",
             },
           ],
-          email: "julie@email.com",
         },
       ],
     },
@@ -301,7 +297,7 @@ const templateSlice = createSlice({
       description: "Home / Priceing",
       plans: [
         {
-          plan: "Design advices",
+          title: "Design advices",
           price: "29",
           timeUnit: "month",
           moneyUnit: "$",
@@ -310,17 +306,16 @@ const templateSlice = createSlice({
           icon: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1709586475/Vector_urtrep.svg",
         },
         {
-          plan: "Design advices",
+          title: "Design advices",
           price: "39",
           timeUnit: "month",
           moneyUnit: "$",
-          // PopularPlan: "Most Popular Plans",
           features: ["Complete home redesign", "Interior and exterior works", "Modular interior planning", "Kitchen design", "Garages organization"],
           buttonText: "Get Started",
           icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701813389/templates/template_one/Vector_5_vvvt2o.svg",
         },
         {
-          plan: "Furniture design",
+          title: "Furniture design",
           price: "59",
           timeUnit: "month",
           moneyUnit: "$",
@@ -393,7 +388,7 @@ const templateSlice = createSlice({
     },
 
     colors: {
-      templateColors: ["#fff", "#cda274", "#292f36", "#f4f0ec", "#777777"],
+      templateColors: ["#ffffff", "#cda274", "#292f36", "#f4f0ec", "#777777"],
     },
   },
 

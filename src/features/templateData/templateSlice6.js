@@ -2,6 +2,12 @@ import { createSlice } from "@reduxjs/toolkit";
 import { addElement, addElementToArray, addSubElement, deleteElement, deleteSection, editElement, reorder, reorderSections } from "./actions";
 const templateSlice6 = createSlice({
   initialState: {
+    templateInfo: {
+      id: 6,
+      title: "",
+      description: "",
+      imgUrl: "",
+    },
     navbar: {
       logo: "https://res.cloudinary.com/duc04fwdb/image/upload/v1706351943/jammal_photos/jicfizb2xdqr8hcgkmc4.png",
       searchIcon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703095771/jammal_photos/kedw9coptwqkovrsssd1.svg",
@@ -32,7 +38,7 @@ const templateSlice6 = createSlice({
     },
     hero: {
       buttonText: "Explore Food",
-      sliderData: [
+      heros: [
         {
           id: "01",
           title: "Experience the Authentic Flavors",
@@ -472,7 +478,7 @@ const templateSlice6 = createSlice({
       ],
     },
     colors: {
-      templateColors: ["#fff", "#cda274", "#292f36", "#f4f0ec", "#777777"],
+      templateColors: ["#0a071a", "#141124", "#f76e11", "#f5b70a", "#fff", "#c4c4c4b5"],
     },
   },
 

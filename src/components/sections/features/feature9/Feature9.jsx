@@ -5,12 +5,12 @@ const Feature9 = () => {
   const neighborhoods = useSelector((state) => state.template9.neighborhoods);
 
   return (
-    <main className=" justify-center  bg-gradient-to-t from-[var(--primary-text-color-9)] to-[var(--white-9)] feature-9">
+    <main className=" justify-center  bg-gradient-to-t from-[var(--primary-text-color)] to-[var(--color-color-blue-9)] feature-9">
       {" "}
       <span className="flex justify-center items-center pb-12">
-        <button className="bg-gradient-to-r from-[var(--icon-hover-color-9)] to-[var(--white-9]) rounded-full h-12 w-12 cursor-auto"></button>
+        <button className="bg-gradient-to-r from-[var(--button-bg-gradient-from)] to-[var(--button-bg-gradient-to]) rounded-full h-12 w-12 cursor-auto"></button>
       </span>
-      <p className="text-primary-text-color text-[var(--primary-text-color-9)] uppercase md:text-xl text-lg">Areas across the town</p>
+      <p className="text-primary-text-color uppercase md:text-xl text-lg">Areas across the town</p>
       <h1 className="lg:text-4xl text-3xl font-medium capitalize pt-3 pb-12">Neighborhood Properties</h1>
       <section className="grid md:grid-cols-2 grid-cols-1 md:gap-3 gap-4 pb-12 section-9 justify-center md:text-left ">
         {neighborhoods.map((neighborhood) => (

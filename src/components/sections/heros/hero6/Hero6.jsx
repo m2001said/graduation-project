@@ -19,7 +19,7 @@ const Hero6 = () => {
     <section className="design-6" id="Home">
       <div className="container mx-auto px-4 py-2">
         <Swiper modules={[Navigation, Pagination, Autoplay]} spaceBetween={50} slidesPerView={1} autoplay={{ delay: 3000 }} className="mySwiper">
-          {hero.sliderData.map((item, index) => (
+          {hero.heros.map((item, index) => (
             <SwiperSlide key={index}>
               <div className="slider__wrapper flex items-center justify-between pt-5">
                 <div className="slider__content w-1/2 ps-2">
