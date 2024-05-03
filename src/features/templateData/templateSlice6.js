@@ -67,7 +67,7 @@ const templateSlice6 = createSlice({
         rateIcon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1706352872/jammal_photos/v02eynmgkqv3wkrbhnda.svg",
         valueName: "Price: $",
       },
-      popularMenuFood: [
+      Menus: [
         {
           id: "01",
           title: "Vegetable",
