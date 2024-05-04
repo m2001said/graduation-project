@@ -14,7 +14,7 @@ const Services10 = ({ handleOrderPopup }) => {
   });
   return (
     <>
-      <div className="py-10 bg-[--white10] dark:bg-gray-900 ">
+      <div className="py-10 bg-[--website-10-color-2] dark:bg-gray-900 ">
         <div className="items-center p-7 sm:p-30">
           {/* head sec */}
           <div className="text-center mb-20 max-w-[400px] mx-auto">
@@ -26,7 +26,7 @@ const Services10 = ({ handleOrderPopup }) => {
           {/* <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-20 md:gap-5 place-items-center"> */}
           <div className="flex flex-wrap place-content-center gap-20 md:gap-5">
             {services.services.map((service) => (
-              <div className="my-7 rounded-2xl bg-white bgHover10 dark:bg-gray-800 dark:hover:bg-blue-600 hover:text-white relative shadow-xl duration-high group max-w-[300px]">
+              <div className="my-7 rounded-2xl bg-white bgHover10 dark:bg-gray-800 dark:hover:bg-blue-600 hover:text-white relative shadow-xl duration-high group max-w-[300px] min-w-[300px]">
                 <div className="h-[100px]">
                   <img
                     src={service.imgUrl}

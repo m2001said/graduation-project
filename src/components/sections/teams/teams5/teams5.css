@@ -56,8 +56,8 @@
     bottom: 30px;
     left: 35%;
     transform: translateX(-50%);
-    border: 4px solid rgba(255, 255, 255, 0.637);
-    transition: var(--transition);
+    border: 3px solid rgba(255, 255, 255, 0.637);
+    transition: .4s ease-in-out ;
     animation: animated 2.3s infinite;
 }
 
@@ -79,9 +79,9 @@
     bottom: -100%;
     width: 100%;
     height: max-content;
-    background: var(--website-5-white);
+    background: var(--website-5-color-5);
     padding: 1rem 1rem;
-    transition: var(--transition);
+    transition: .4s ease-in-out ;
     animation: animatedBorders 2.3s infinite;
 }
 .travelerName span{
@@ -92,7 +92,7 @@
 
 .travelerName p{
     font-size: 13px;
-    color: var(--website-5-greyText);
+    color: var(--website-5-color-6);
     line-height: 22px;
     font-style: italic;
 }

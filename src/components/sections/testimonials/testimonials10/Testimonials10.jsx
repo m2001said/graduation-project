@@ -6,10 +6,8 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/free-mode";
 import "swiper/css/pagination";
-import { FreeMode, Pagination } from "swiper/modules";
+import { Navigation, Pagination, Autoplay } from "swiper/modules";
 import { useLocation } from "react-router";
-
-
 
 const Testimonials10 = () => {
   const { pathname } = useLocation();
@@ -20,7 +18,6 @@ const Testimonials10 = () => {
       return state.template10.testimonials;
     }
   });
-
 
   return (
     <div className="pb-4 bg-[--white10] dark:bg-gray-900">
@@ -33,17 +30,8 @@ const Testimonials10 = () => {
         </div>
         {/* card sec */}
         <div className="">
-          <Swiper
-            slidesPerView={1}
-            spaceBetween={100}
-            freeMode={true}
-            pagination={{
-              clickable: true,
-            }}
-            modules={[FreeMode, Pagination]}
-            className="mySwiper"
-          >
-            {testimonial.testimonials.map((data , index) => (
+          <Swiper modules={[Navigation, Pagination, Autoplay]} spaceBetween={50} slidesPerView={1} autoplay={{ delay: 3000 }} className="mySwiper">
+            {testimonial.testimonials.map((data, index) => (
               <SwiperSlide key={index}>
                 <div className="mb-5">
                   <div className="flex flex-col gap-4 shadow-lg py-8 px-6 mx-4 rounded-xl dark:bg-gray-800 testimonailBg10 relative">

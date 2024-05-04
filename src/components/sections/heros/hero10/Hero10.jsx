@@ -12,7 +12,7 @@ const Hero10 = ({ handleOrderPopup }) => {
       return state.template10.hero;
     }
   });
-  const [id , setId] = useState(0);
+  const [id, setId] = useState(0);
   return (
     <>
       <div

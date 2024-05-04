@@ -2,7 +2,7 @@ import React from "react";
 
 const Feature14 = ({ data, bgColor }) => {
   return (
-    <div className="min-h-[550px] flex justify-center items-center py-12 bg-white dark:bg-gray-900">
+    <div className="bg-[--website-14-color-6] min-h-[550px] flex justify-center items-center py-12 bg-white dark:bg-gray-900">
       <div className="container14">
         <div style={{ backgroundColor: bgColor }} className="grid grid-cols-1 md:grid-cols-3 gap-6 items-center text-white rounded-3xl">
           {/* first col */}
@@ -21,7 +21,7 @@ const Feature14 = ({ data, bgColor }) => {
             <p className=" text-3xl sm:text-5xl font-bold">{data.title3}</p>
             <p className="text-sm tracking-wide leading-5">{data.title4}</p>
             <div>
-              <button style={{ color: bgColor }} className="bg-white py-2 px-4 rounded-full">
+              <button style={{ color: bgColor }} className="bg-[--website-14-color-6] py-2 px-4 rounded-full">
                 Shop Now
               </button>
             </div>
