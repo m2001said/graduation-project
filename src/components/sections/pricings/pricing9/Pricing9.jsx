@@ -14,41 +14,35 @@ const Pricing9 = () => {
 
   // Assuming useSelector hook is correctly configured
   const { pathname } = useLocation();
-  const pricing = useSelector((state) => {
+  const projects = useSelector((state) => {
     if (pathname.includes("own-page")) {
-      return state.ownTemplate.pricing;
+      return state.ownTemplate.projects;
     } else {
-      return state.template9.pricing;
+      return state.template9.projects;
     }
   });
 
-  const cards = pricing ? pricing.cards : [];
+  const cards = projects ? projects.cards : [];
 
   return (
-    <main className="container mx-auto pt-8 px-3 pricing-9">
+    <main className="container  mx-auto pt-8 px-3 hover:bg-[var(--website-9-color-3)]  projects-9">
       <div className="lg:flex justify-between items-center">
         <div className="lg:w-3/5">
-          <h1 className={`text-[var(--primary-text-color-9)] lg:text-xl uppercase`}>checkout our new </h1>
-          <h1 className={`lg:text-4xl text-2xl font-medium capitalize py-3`}>Latest Listed Properties</h1>
-          <p className={`text-[var(--primary-text-color-9)] lg:text:base text-sm lg:w-3/5`}>asda asd dadc dad</p>
+          <h1 className={`text-[var(--website-9-color-3)] lg:text-xl uppercase`}>{projects.title}</h1>
+          <h1 className={`lg:text-4xl text-2xl font-medium capitalize py-3`}>{projects.description}</h1>
+          <p className={`text-[var(--website-9-color-3)] lg:text:base text-sm lg:w-3/5`}>{projects.subtitle}</p>
         </div>
 
         <div className="flex gap-x-4 lg:w-2/5 lg:pt-0 pt-6">
-          <button
-            className={`text-[var(--button-text-color-9)] rounded-full border border-[var(--button-text-color-9)] hover:text-[var(--white-9)] focus:bg-[var(--button-text-color-9)] focus:text-[var(--white-9)]`}
-          >
-            ALL
-          </button>
-          <button
-            className={`text-[var(--button-text-color-9)] rounded-full border border-[var(--button-text-color-9)] hover:text-[var(--white-9)] focus:bg-[var(--button-text-color-9)] focus:text-[var(--white-9)]`}
-          >
-            SELL
-          </button>
-          <button
-            className={`text-[var(--button-text-color-9)] rounded-full border border-[var(--button-text-color-9)] hover:text-[var(--white-9)] focus:bg-[var(--button-text-color-9)] focus:text-[var(--white-9)]`}
-          >
-            RENT
-          </button>
+          {/* {projects.categories.map((category, index) =>  */}
+          {projects.category.map((category, index) => (
+            <button
+              key={index}
+              className={`text-[var(--website-9-color-2)] rounded-full border border-[var(--website-9-color-2)] hover:text-[var(--website-9-color-1)] focus:bg-[var(--website-9-color-2)] focus:text-[var(--website-9-color-1)]`}
+            >
+              {category}
+            </button>
+          ))}
         </div>
       </div>
 

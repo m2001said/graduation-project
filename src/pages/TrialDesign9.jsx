@@ -16,7 +16,7 @@ const TrialDesign9 = () => {
   const componentMapping = {
     
     about: About9,
-    pricing: Pricing9,
+    projects: Pricing9,
     services: Services9,
     features: Feature9,
     team: Teams9,
