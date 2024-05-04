@@ -2,19 +2,16 @@ import React from "react";
 import { useSelector } from "react-redux";
 import { useLocation } from "react-router";
 
-
-
-
 const DarkMode14 = () => {
   //  const { navbar } = useSelector((state) => state.template14);
-   const { pathname } = useLocation();
-   const navbar = useSelector((state) => {
-     if (pathname.includes("own-page")) {
-       return state.ownTemplate.navbar;
-     } else {
-       return state.template14.navbar;
-     }
-   });
+  const { pathname } = useLocation();
+  const navbar = useSelector((state) => {
+    if (pathname.includes("own-page")) {
+      return state.ownTemplate.navbar;
+    } else {
+      return state.template14.navbar;
+    }
+  });
   const [theme, setTheme] = React.useState(localStorage.getItem("theme") ? localStorage.getItem("theme") : "light");
 
   const element = document.documentElement;

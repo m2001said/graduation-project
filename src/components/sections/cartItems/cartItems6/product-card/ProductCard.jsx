@@ -3,7 +3,7 @@ import "./product-card.css";
 import { useSelector } from "react-redux";
 
 const ProductCard = (props) => {
-  const { productCard } = useSelector((state) => state.template6);
+  const productCard  = useSelector((state) => state.template6.cardIcon);
   const productcard = productCard;
   const { title, imgUrl, price } = props.item;
 

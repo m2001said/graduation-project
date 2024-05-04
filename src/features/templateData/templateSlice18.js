@@ -2,6 +2,12 @@ import { createSlice } from "@reduxjs/toolkit";
 import { addElement, addElementToArray, addSubElement, deleteElement, deleteSection, editElement, reorder, reorderSections } from "./actions";
 const templateSlice18 = createSlice({
   initialState: {
+    templateInfo: {
+      id: 18,
+      title: "",
+      description: "",
+      imgUrl: "",
+    },
     navbar: {
       title: "Car Rental",
       links: [
@@ -22,9 +28,11 @@ const templateSlice18 = createSlice({
           url: "#",
         },
       ],
-      lightIcon: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1708092466/icons8-sun-24_oonunj.png",
-      darkIcon: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1708092459/icons8-moon-symbol-30_chxqrj.png",
-      menuIcon: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1708092472/icons8-menu-32_ixhdzw.png",
+      icons: [
+        "https://res.cloudinary.com/dmcdea0b9/image/upload/v1708092466/icons8-sun-24_oonunj.png",
+        "https://res.cloudinary.com/dmcdea0b9/image/upload/v1708092459/icons8-moon-symbol-30_chxqrj.png",
+        "https://res.cloudinary.com/dmcdea0b9/image/upload/v1708092472/icons8-menu-32_ixhdzw.png",
+      ],
     },
 
     hero: {
@@ -125,8 +133,8 @@ const templateSlice18 = createSlice({
     },
 
     cta1: {
-      title: "What Our Clients Say About Us",
-      description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis iure consectetur tempora amet.",
+      title: "Get Started with our app",
+      description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique magnam harum accusantium odit?",
       bannerImg: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1708098410/pattern_t0naia.jpg",
       appStoreImg: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707090485/app_store_s6wzhh.png",
       playStoreImg: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707090481/play_store_nmzfln.png",
@@ -198,7 +206,7 @@ const templateSlice18 = createSlice({
     },
 
     colors: {
-      templateColors: ["#fff", "#cda274", "#292f36", "#f4f0ec", "#777777"],
+      templateColors: ["#ffc727", "#fad46d", "#E2E2D5", "#888883", "#111111"],
     },
   },
 

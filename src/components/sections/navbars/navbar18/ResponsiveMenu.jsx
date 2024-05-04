@@ -25,8 +25,8 @@ const ResponsiveMenu = ({ showMenu }) => {
           <ul className="space-y-4 text-xl">
             {navbar.links.map((data) => (
               <li>
-                <a href={data.link} className="mb-5 inline-block hover:text-[--primary18-color]">
-                  {data.name}
+                <a href={data.url} className="mb-5 inline-block hover:text-[--website-18-color-1] cursor-pointer">
+                  {data.title}
                 </a>
               </li>
             ))}

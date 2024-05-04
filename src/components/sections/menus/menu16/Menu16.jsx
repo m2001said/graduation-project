@@ -12,6 +12,7 @@ const Menu16 = () => {
       </h2>
       <div className="menu__grid16 container16 grid16">
         {Menu.Menu.map(({ image, title, description, price }, index) => {
+        {Menu.menus.map(({ img, title, description, price }, index) => {
           return (
             <div className="menu__item16 grid16" key={index}>
               <div className="menu__img-wrapper16">

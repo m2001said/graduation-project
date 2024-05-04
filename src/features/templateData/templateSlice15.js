@@ -2,6 +2,12 @@ import { createSlice } from "@reduxjs/toolkit";
 import { addElement, addElementToArray, addSubElement, deleteElement, deleteSection, editElement, reorder, reorderSections } from "./actions";
 const templateSlice15 = createSlice({
   initialState: {
+    templateInfo: {
+      id: 15,
+      title: "",
+      description: "",
+      imgUrl: "",
+    },
     navbar: {
       logo: "https://res.cloudinary.com/duc04fwdb/image/upload/v1706799023/jammal_photos/wz8vakvjdjio0wcqhnfe.svg",
       links: [
@@ -385,7 +391,7 @@ const templateSlice15 = createSlice({
     },
 
     colors: {
-      templateColors: ["#fff", "#cda274", "#292f36", "#f4f0ec", "#777777"],
+      templateColors: ["red", "red", "red", "red", "red"],
     },
   },
   name: "templateSlice15",

@@ -16,7 +16,7 @@ const Features = () => {
   });
 
   return (
-    <div className="dark:bg-[--dark18] bg-slate-100 sm:min-h-[600px] sm:grid sm:place-items-center duration-300">
+    <div className="dark:bg-[--website-18-color-5] bg-[--website-18-color-2] sm:min-h-[600px] sm:grid sm:place-items-center duration-300">
       <div className="container18">
         <div className="grid grid-cols-1 sm:grid-cols-2 place-items-center">
           <div>

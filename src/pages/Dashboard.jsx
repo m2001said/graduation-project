@@ -87,19 +87,10 @@ const Dashboard = () => {
     default:
       break;
   }
-
   const screen = useSelector((state) => state.screen);
-  const colors = template.colors;
-
-  useEffect(() => {
-    for (let index = 0; index < colors.templateColors.length; index++) {
-      document.documentElement.style.setProperty(`--website-color-${index + 1}`, colors.templateColors[index]);
-    }
-  }, []);
-
   return (
     <section className="dashboard-container mx-auto relative">
-      <TopSide />
+      <TopSide schema={template}/>
       <div className="w-full flex-between flex-col md:flex-row dashboard-subContainer overflow-hidden">
         <LeftSide targetTemplate={template} updateAllRef={updateAllRef} />
         <div className="max-md:w-full md:w-70 flex-auto  flex justify-start flex-col items-center text-black p-2" style={{ height: "calc(100vh - 56px)" }}>

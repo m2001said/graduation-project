@@ -16,7 +16,7 @@ const Projects = () => {
   });
   // const { projects } = useSelector((state) => state.template18);
   return (
-    <div className="pb-24 bg-white dark:bg-black">
+    <div className="pb-24 bg-[--website-18-color-6] dark:bg-black">
       <div className="container18">
         {/* Heading */}
         <h1 className="text-3xl sm:text-4xl font-semibold font-serif mb-3">{projects.title}</h1>
@@ -25,12 +25,12 @@ const Projects = () => {
         <div>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-16">
             {projects.projects.map((data) => (
-              <div className="space-y-3 border-2 border-gray-300 hover:border-[--primary18-color] p-3 rounded-xl relative group">
+              <div className="space-y-3 border-2 border-gray-300 hover:border-[--website-18-color-1] p-3 rounded-xl relative group">
                 <div className="w-full h-[120px]">
                   <img src={data.imgUrl} alt="" className="w-full h-[120px] object-contain sm:translate-x-8 group-hover:sm:translate-x-16 duration-700" />
                 </div>
                 <div className="space-y-2">
-                  <h1 className="text-[--primary18-color] font-semibold">{data.title}</h1>
+                  <h1 className="text-[--website-18-color-1] font-semibold">{data.title}</h1>
                   <div className="flex justify-between items-center text-xl font-semibold">
                     <p>{data.price}</p>
                     <a href="/#">{data.buttonText}</a>

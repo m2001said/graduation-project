@@ -2,6 +2,12 @@ import { createSlice } from "@reduxjs/toolkit";
 import { addElement, addElementToArray, addSubElement, deleteElement, deleteSection, editElement, reorder, reorderSections } from "./actions";
 const templateSlice12 = createSlice({
   initialState: {
+    templateInfo: {
+      id: 12,
+      title: "",
+      description: "",
+      imgUrl: "",
+    },
     hero: {
       title: "Play With Electric Nike",
       sub_title: "Adapt 2.0 Sneakers",

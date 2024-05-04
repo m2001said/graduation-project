@@ -17,7 +17,7 @@ const Feature10 = () => {
 
   return (
     <>
-      <div className="py-10 bg-[--white10] dark:bg-gray-900">
+      <div className="py-10 bg-[--website-10-color-2] dark:bg-gray-900">
         <div className="items-center py-6 px-10 sm:p-30">
           <div className="grid grid-cols-1 sm:grid-cols-2 items-center gap-6">
             {/* image sec */}
@@ -34,7 +34,7 @@ const Feature10 = () => {
                     <div className={`feature10-divIcon`}>
                       <img src={data.icon} alt="" className="w-full rounded-full" />
                     </div>
-                    <p className="text-base font-sans">{data.text}</p>
+                    <p className="text-base font-sans">{data.title}</p>
                   </div>
                 ))}
               </div>

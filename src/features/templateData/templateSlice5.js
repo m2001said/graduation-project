@@ -2,9 +2,16 @@ import { createSlice } from "@reduxjs/toolkit";
 import { addElement, addElementToArray, addSubElement, deleteElement, deleteSection, editElement, reorder, reorderSections } from "./actions";
 const templateSlice5 = createSlice({
   initialState: {
+    templateInfo: {
+      id: 5,
+      title: "",
+      description: "",
+      imgUrl: "",
+    },
     navbar: {
+      imgUrl: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1703101139/logo_ytwn3z.jpg",
       menuIcon: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1703106705/menu-svgrepo-com_mgpt72.svg",
-      icon: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1703101139/logo_ytwn3z.jpg",
+      buttonText: "contact",
       links: [
         {
           title: "Home",
@@ -27,7 +34,6 @@ const templateSlice5 = createSlice({
           url: "#",
         },
       ],
-      buttonTxt: "contact",
     },
 
     hero: {
@@ -40,27 +46,27 @@ const templateSlice5 = createSlice({
       title: "Plan your travel with confidence",
       subtitle: "travel support",
       description: "find help with booking and travel plans, see what to expect the journey",
+      imgUrl: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1703111688/R_aejs2k.jpg",
       features: [
         {
           title: "Travel requirement for Dubai",
           description: "Find help with booking and travel plans, see what to expect during the journey.",
-          duration: 2500,
+          // duration: 2500,
           number: "01",
         },
         {
           title: "Travel requirement for Dubai",
           description: "Find help with booking and travel plans, see what to expect during the journey.",
-          duration: 3500,
+          // duration: 3500,
           number: "02",
         },
         {
           title: "Travel requirement for Dubai",
           description: "Find help with booking and travel plans, see what to expect during the journey.",
-          duration: 4500,
+          // duration: 4500,
           number: "03",
         },
       ],
-      imgUrl: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1703111688/R_aejs2k.jpg",
     },
 
     services: {
@@ -110,7 +116,7 @@ const templateSlice5 = createSlice({
 
     team: {
       title: "Top travelers of this month!",
-      teams: [
+      members: [
         {
           travelerName: "IsraTech",
           destinationImage: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1703118167/paris_w35pqv.jpg",

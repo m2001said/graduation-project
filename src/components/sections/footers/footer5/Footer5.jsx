@@ -26,7 +26,7 @@ const Footer5 = () => {
             <img src={footer.imgUrl} className="footer5-logo" alt="" />
           </div>
           <p>{footer.description}</p>
-          <div className="socialIcon design5-flex">
+          <div className="socialIcon5 design5-flex">
             {footer.medias.map((icon) => (
               <a href={icon.url} key={icon.url}>
                 <img src={icon.icon} alt="" className="footer5-singleIcon" />
