@@ -16,7 +16,7 @@ const Hero10 = ({ handleOrderPopup }) => {
   return (
     <>
       <div
-        className="min-h-[550px] sm:min-h-[650px] bg-[--website-10-color-5] flex justify-center items-center dark:bg-gray-950 dark:text-white duration-200"
+        className="min-h-[550px] sm:min-h-[650px] bg-[--graybg] flex justify-center items-center dark:bg-gray-950 dark:text-white duration-200"
         style={{
           backgroundImage: `url(${hero.images[0]})`,
           backgroundPosition: "center",
@@ -65,8 +65,3 @@ const Hero10 = ({ handleOrderPopup }) => {
 };
 
 export default Hero10;
-
-
-
-
-

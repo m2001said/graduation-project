@@ -30,7 +30,7 @@ const Teams1 = () => {
                   <h2>{member.name}</h2>
                   <p>{member.location}</p>
                   <div className="team-media-icon">
-                    {member.mediaIcons.map((icon) => (
+                    {member.medias.map((icon) => (
                       <a href={icon.url} key={icon.url} target="_blank" rel="noreferrer">
                         <img src={icon.icon} alt="" style={{maxWidth:"20px"}}/> 
                         {/* style={{maxWidth:"20px"}} */}

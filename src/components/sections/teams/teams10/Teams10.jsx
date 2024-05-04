@@ -14,7 +14,7 @@ const Teams10 = () => {
   });
   return (
     <>
-      <div className="pt-10 bg-[--website-10-color-2] dark:bg-gray-900">
+      <div className="pt-10 bg-[--white10] dark:bg-gray-900">
         <div className="items-center p-7 sm:p-30">
           {/* head sec */}
           <div className="text-center mb-10 max-w-[600px] mx-auto">
@@ -24,7 +24,7 @@ const Teams10 = () => {
           </div>
           {/* card sec */}
           <div>
-            <div className="flex flex-wrap justify-center items-center gap-10">
+            <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 place-items-center gap-5">
               {team.members.map((data) => (
                 <div className="space-y-3">
                   <img src={data.imgUrl} alt="" className="h-[220px] w-[150px] object-cover rounded-md " />
@@ -40,7 +40,7 @@ const Teams10 = () => {
               ))}
             </div>
             <div className="flex justify-center">
-              <button className="text-center mt-10 cursor-pointer btnBg10 btnTxt10 py-1 px-5 rounded-full">{team.buttonText}</button>
+              <button className="text-center mt-10 cursor-pointer  btnBg10 btnTxt10 py-1 px-5 rounded-full">{team.buttonText}</button>
             </div>
           </div>
         </div>

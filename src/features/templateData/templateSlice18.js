@@ -2,6 +2,12 @@ import { createSlice } from "@reduxjs/toolkit";
 import { addElement, addElementToArray, addSubElement, deleteElement, deleteSection, editElement, reorder, reorderSections } from "./actions";
 const templateSlice18 = createSlice({
   initialState: {
+    templateInfo: {
+      id: 18,
+      title: "",
+      description: "",
+      imgUrl: "",
+    },
     navbar: {
       title: "Car Rental",
       links: [
@@ -200,7 +206,7 @@ const templateSlice18 = createSlice({
     },
 
     colors: {
-      templateColors: ["#fff", "#cda274", "#292f36", "#f4f0ec", "#777777"],
+      templateColors: ["#ffc727", "#fad46d", "#E2E2D5", "#888883", "#111111"],
     },
   },
 

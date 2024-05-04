@@ -7,8 +7,17 @@ import Testimonials2 from "../components/sections/testimonials/testimonials2/Tes
 import ContactUs2 from "../components/sections/contacts/contact2/Contact2";
 import Footer2 from "../../src/components/sections/footers/footer2/Footer2";
 import { useSelector } from "react-redux";
+import { useEffect } from "react";
 const TrialDesign2 = () => {
   const state = useSelector((state) => state.template2);
+  const colors = state.colors;
+
+  useEffect(() => {
+    document.documentElement.style = "";
+    for (let index = 0; index < colors.templateColors.length; index++) {
+      document.documentElement.style.setProperty(`--website-color-${index + 1}`, colors.templateColors[index]);
+    }
+  }, []);
   const reorderedComponents = Object.keys(state);
 
   const componentMapping = {

@@ -42,7 +42,6 @@ export const editElement = (state, action) => {
 //  for example add card to cards element
 export const addElement = (state, action) => {
   const { section, blockName } = action.payload;
-
   const fields = Object.keys(state[section][blockName][0]);
   const newElement = {};
   const pattern = /\.(jpg|gif|png|svg)$/i;
@@ -77,13 +76,12 @@ export const addElement = (state, action) => {
           }
           return obj;
         }, {});
-        console.log(newObj);
-        console.log(field);
-
         newElement[field] = newObj;
       }
     } else {
-      if (pattern.test(state[section][blockName][0][field])) newElement[field] = "/assets/icons/picture3.svg";
+      if (field === "id") {
+        newElement[field] = uuidv4();
+      } else if (pattern.test(state[section][blockName][0][field])) newElement[field] = "/assets/icons/picture3.svg";
       else newElement[field] = `Enter ${capitalizeFirstLetter(field)}`;
     }
   });
@@ -107,7 +105,6 @@ export const addElementToArray = (state, action) => {
 export const addSubElement = (state, action) => {
   const { section, blockName, cardIndex, subBlockName } = action.payload;
   const pattern = /\.(jpg|gif|png|svg)$/i;
-
   const newObj = Object.keys(state[section][blockName][cardIndex][subBlockName][0]).reduce((obj, key) => {
     if (key === "id") {
       obj[key] = uuidv4();

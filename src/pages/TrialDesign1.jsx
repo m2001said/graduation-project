@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Navbar1 from "../components/sections/navbars/navbar1/Navbar1";
 import Hero1 from "../components/sections/heros/hero1/Hero1";
 import Services1 from "../components/sections/services/services1/Services1";
@@ -16,12 +16,20 @@ import "../assets/css/globals1.css";
 import { useSelector } from "react-redux";
 const TrialDesign1 = () => {
   const state = useSelector((state) => state.template1);
+  const colors = state.colors;
+
+  useEffect(() => {
+    document.documentElement.style = "";
+    for (let index = 0; index < colors.templateColors.length; index++) {
+      document.documentElement.style.setProperty(`--website-color-${index + 1}`, colors.templateColors[index]);
+    }
+  }, []);
+
   const reorderedComponents = Object.keys(state);
   const componentMapping = {
     services: Services1,
     features: Featrue1,
     testimonials: Testimonials1,
-    features: Featrue1,
     logos: Logos1,
     projects: Project1,
     statistics: Statistics1,

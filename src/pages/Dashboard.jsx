@@ -87,16 +87,7 @@ const Dashboard = () => {
     default:
       break;
   }
-
   const screen = useSelector((state) => state.screen);
-  const colors = template.colors;
-
-  useEffect(() => {
-    for (let index = 0; index < colors.templateColors.length; index++) {
-      document.documentElement.style.setProperty(`--website-color-${index + 1}`, colors.templateColors[index]);
-    }
-  }, []);
-
   return (
     <section className="dashboard-container mx-auto relative">
       <TopSide schema={template}/>

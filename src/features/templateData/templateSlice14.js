@@ -2,6 +2,12 @@ import { createSlice } from "@reduxjs/toolkit";
 import { addElement, addElementToArray, addSubElement, deleteElement, deleteSection, editElement, reorder, reorderSections } from "./actions";
 const templateSlice14 = createSlice({
   initialState: {
+    templateInfo: {
+      id: 14,
+      title: "",
+      description: "",
+      imgUrl: "",
+    },
     navbar: {
       title: "Eshop",
       logo: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707601954/logo_xtzffr.png",
@@ -24,11 +30,9 @@ const templateSlice14 = createSlice({
         },
       ],
       buttonText: "!",
-      icons: [
-        "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707775619/icons8-shopping-cart-24_w0vwvt.png",
-        "https://res.cloudinary.com/dmcdea0b9/image/upload/v1706805795/dark-mode-button_e9kiqi.png",
-        "https://res.cloudinary.com/dmcdea0b9/image/upload/v1706805773/light-mode-button_ermmq3.png",
-      ],
+      buttonIcon: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707775619/icons8-shopping-cart-24_w0vwvt.png",
+      darkPng: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1706805795/dark-mode-button_e9kiqi.png",
+      lightPng: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1706805773/light-mode-button_ermmq3.png",
     },
 
     hero: {
@@ -56,40 +60,30 @@ const templateSlice14 = createSlice({
     },
 
     items: {
+      title: "Enjoy",
+      subtitle: "With",
       items: [
         {
-          firstTitle: "Enjoy",
-          secondTitle: "With",
           title: "Earph",
           imgUrl: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707777277/earphone_pgistv.png",
         },
         {
-          firstTitle: "Enjoy",
-          secondTitle: "With",
           title: "Gadget",
           imgUrl: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707777305/watch_dn63md.png",
         },
         {
-          firstTitle: "Enjoy",
-          secondTitle: "With",
           title: "Laptop",
           imgUrl: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707602295/macbook_dxcdn8.png",
         },
         {
-          firstTitle: "Enjoy",
-          secondTitle: "With",
           title: "Laptop",
           imgUrl: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707777316/gaming_zceuxk.png",
         },
         {
-          firstTitle: "Enjoy",
-          secondTitle: "With",
           title: "Gadget",
           imgUrl: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707602303/vr_zzinjy.png",
         },
         {
-          firstTitle: "Enjoy",
-          secondTitle: "With",
           title: "Earph",
           imgUrl: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707777323/speaker_wqwmry.png",
         },
@@ -138,42 +132,42 @@ const templateSlice14 = createSlice({
         {
           img: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707604733/p-1_mqzmix.jpg",
           title: "Boat Headphone",
-          price: "$120",
+          price: "120",
         },
         {
           img: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707604737/p-2_qc3prb.jpg",
           title: "Rocky Mountain",
-          price: "$420",
+          price: "420",
         },
         {
           img: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707604741/p-3_gfoj4a.jpg",
           title: "Goggles",
-          price: "$320",
+          price: "320",
         },
         {
           img: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707604745/p-4_hkawqn.jpg",
           title: "Printed ",
-          price: "$220",
+          price: "220",
         },
         {
           img: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707604748/p-5_lbyuxu.jpg",
           title: "Boat Headphone",
-          price: "$120",
+          price: "120",
         },
         {
           img: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707604761/p-7_fkl1tb.jpg",
           title: "Rocky Mountain",
-          price: "$420",
+          price: "420",
         },
         {
           img: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707604765/p-9_bypahb.jpg",
           title: "Goggles",
-          price: "$320",
+          price: "320",
         },
         {
           img: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707604748/p-5_lbyuxu.jpg",
           title: "Printed ",
-          price: "$220",
+          price: "220",
         },
       ],
       buttonText: "Add to cart",
@@ -267,7 +261,6 @@ const templateSlice14 = createSlice({
           ],
         },
       ],
-      
       contacts: [
         {
           value: "Noida, Uttar Pradesh",
@@ -281,7 +274,7 @@ const templateSlice14 = createSlice({
     },
 
     colors: {
-      templateColors: ["#fff", "#cda274", "#292f36", "#f4f0ec", "#777777"],
+      templateColors: ["#f42c37", "fdc62e", "#34cc73", "#1376f4", "#acabab9c", "#eeeeee"],
     },
   },
 
