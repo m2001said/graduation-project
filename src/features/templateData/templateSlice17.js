@@ -159,7 +159,7 @@ const templateSlice17 = createSlice({
       title: "Login",
       buttonTitle: "Login",
       other: "or log in with",
-      login: "Login",
+      login: "or log in with",
 
       icons:[
         {

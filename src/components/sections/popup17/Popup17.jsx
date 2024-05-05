@@ -10,7 +10,7 @@ const Popup = ({ showPopup, setShowPopup }) => {
       {showPopup && (
         <div>
           <div className="h-screen w-screen fixed top-0 left-0 bg-black/50 backdrop-blur-sm">
-            <div className="fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 p- shadow-md bg-[var(--color17-white)] rounded-md duration-200 w-[300px] z-20">
+            <div className="fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 p- shadow-md bg-[var(--color17-primary)] rounded-md duration-200 w-[300px] z-20">
               {/* header section */}
               <div className="flex items-center justify-between">
                 <div>
@@ -42,7 +42,7 @@ const Popup = ({ showPopup, setShowPopup }) => {
                 {/* Login button section */}
                 <div>
                   <button
-                    className="w-full bg-primary text-[var(--color17-white)] px-3 p-2 rounded-md"
+                    className="w-full  text-[var(--color17-dark)]  bg-slate-900 px-3 p-2 rounded-md"
                     onClick={() => setShowPopup(false)}
                   >
                     {popup.buttonTitle}
@@ -51,7 +51,7 @@ const Popup = ({ showPopup, setShowPopup }) => {
 
                 {/* Social login */}
                 <div className="mt-4">
-                  <p className="text-center">{popup.other}</p>
+                  <p className="text-center text-[var(--color17-dark)]">{popup.other}</p>
                   <div className="flex justify-center gap-2 mt-2">
                     {popup.icons.map((icon) => (
                       <img
