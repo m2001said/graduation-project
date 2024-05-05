@@ -1,6 +1,4 @@
 import React, { useEffect } from "react";
-import AOS from "aos";
-import "aos/dist/aos.css";
 import { useSelector } from "react-redux";
 import { useLocation } from "react-router";
 
@@ -13,14 +11,10 @@ const Services8 = () => {
       return state.template8.services;
     }
   });
+
   useEffect(() => {
-    AOS.init({
-      duration: 800,
-      once: true,
-      mirror: false,
-    });
-    AOS.refresh();
-    return () => AOS.refreshHard();
+    // AOS initialization and refresh removed
+    return () => {};
   }, []);
 
   return (
@@ -30,22 +24,19 @@ const Services8 = () => {
           {/* text & Image*/}
           <div
             className="flex-1  lg:bg-bottom bg-no-repeat mix-blend-lighten mb-12 lg:mb-0"
-            data-aos="fade-right"
-            data-aos-duration="1200"
-            data-aos-offset="300"
             style={{
-              backgroundImage: `url(${Services.UrlImg})`,
+              backgroundImage: `url(${Services.imgUrl})`,
             }}
           >
             <h2 className="h2 text-accent mb-6 serviceC">{Services.title}</h2>
-            <h3 className="h3 max-w-[455px] mb-16 serviceC">{Services.titleDescription}</h3>
-            <button className="btn btn-sm serviceC">{Services.btnText}</button>
+            <h3 className="h3 max-w-[455px] mb-16 serviceC">{Services.sub_title}</h3>
+            <button className="btn btn-sm serviceC">{Services.buttonText}</button>
           </div>
           {/* services */}
-          <div className="flex-1 " data-aos="fade-left" data-aos-duration="1200" data-aos-offset="300">
+          <div className="flex-1 ">
             {/* services list */}
             <div className="">
-              {Services.Data.map((service, index) => {
+              {Services.services.map((service, index) => {
                 // Destructure
 
                 return (

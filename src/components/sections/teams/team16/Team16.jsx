@@ -11,9 +11,9 @@ const Team16 = () => {
         {Teams.title}
       </h2>
       <div className="team__grid16 grid16 container16">
-        {Teams.teamMembers.map((member, index) => (
+        {Teams.Teams.map((member, index) => (
           <div className="team__item16" key={index}>
-            <img src={member.img} alt={member.name} className="team__img16" />
+            <img src={member.image} alt={member.name} className="team__img16" />
             <div className="team__data16">
               <h3 className="team__title16">{member.name}</h3>
               <p className="team__job16">{member.job}</p>
