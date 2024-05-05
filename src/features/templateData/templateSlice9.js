@@ -2,49 +2,64 @@ import { createSlice } from "@reduxjs/toolkit";
 import { addElement, addElementToArray, addSubElement, deleteElement, deleteSection, editElement, reorder, reorderSections } from "./actions";
 const templateSlice9 = createSlice({
   initialState: {
-hero: {
-  title: "REAL ESTATE",
-  subtitle: "Find a perfect home you love..!",
-  description: "Etiam eget elementum elit. Anean dignissim dapibus vestibulum...",
-  form: {
-    inputPlaceholders: {
-      location: "New York, San Francisco, etc",
-      propertyType: "Select Property Type",
-      rooms: "Select Rooms",
-    },
-    options: {
-      propertyType: ["eee", "eee", "eeee"],
-      rooms: ["eee", "eee", "eeee"],
-    },
- 
-  },
-  carouselImages: [
-    "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707329624/realestate/image_10_ska1vi.jpg",
-    "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707329589/realestate/image_1_oxzq9f.jpg",
-    "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707330235/realestate/image_4_o8ggty.jpg",
-    "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707329692/realestate/image_16_lalqm2.jpg",
-  ],
-  otherImages: {
-    plusIcon: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707347077/icons8-plus-64_pwlv7r.png",
-    logos: [
-      "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707329688/realestate/logo6_ddaq6y.png",
-      "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707329688/realestate/logo5_iwqjl7.png",
-      "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707329687/realestate/logo4_xbf3fz.png",
-      "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707329687/realestate/logo3_fzmko0.png",
-      "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707329685/realestate/logo2_z1jb8d.png",
-    ],
-    customerImage: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1703124941/samples/people/kitchen-bar.jpg",
-  },
-  customerStats: {
-    count: "72k+",
-    description: "72k+ Happy Customers",
-  },
-  newListingStats: {
-    description: "200+ new Listings Everyday",
-  },
-},
+    hero: {
+      title: "REAL ESTATE",
+      subtitle: "Find a perfect home you love..!",
+      description: "Etiam eget elementum elit. Anean dignissim dapibus vestibulum...",
 
+      placeholder: "New York, San Francisco, etc",
 
+      options: [
+        {
+          id: 1,
+          text: "Option 1",
+        },
+        {
+          id: 2,
+          text: "Option 2",
+        },
+        {
+          id: 3,
+          text: "Option 3",
+        },
+      ],
+      imgs: [
+        "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707329624/realestate/image_10_ska1vi.jpg",
+        "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707329589/realestate/image_1_oxzq9f.jpg",
+        "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707330235/realestate/image_4_o8ggty.jpg",
+        "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707329692/realestate/image_16_lalqm2.jpg",
+      ],
+      otherImages: {
+        imgUrl: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707347077/icons8-plus-64_pwlv7r.png",
+        title: "Trusted by 100+ companies across the global",
+
+      },
+      customerStats: {
+        count: "72k+",
+        description: "72k+ Happy Customers",
+      },
+      newListingStats: {
+        description: "200+ new Listings Everyday",
+      },
+      logos: [
+        { logo: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707329688/realestate/logo6_ddaq6y.png" },
+        { logo: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707329688/realestate/logo5_iwqjl7.png" },
+
+        { logo: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707329687/realestate/logo4_xbf3fz.png" },
+
+        { logo: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707329687/realestate/logo3_fzmko0.png" },
+
+        { logo: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707329685/realestate/logo2_z1jb8d.png" },
+      ],
+      person: [
+        "https://res.cloudinary.com/dowtlcpxj/image/upload/v1703142400/me-about_pobewn.jpg",
+        "https://res.cloudinary.com/dowtlcpxj/image/upload/v1703134021/avatar4_tn7dyv.jpg",
+        "https://res.cloudinary.com/dowtlcpxj/image/upload/v1703134020/avatar3_pbztwn.jpg",
+        "https://res.cloudinary.com/dowtlcpxj/image/upload/v1703124966/samples/smile.jpg",
+      ],
+    },
+  
+  
     services: {
       title: "Our Services",
       service: [
@@ -109,7 +124,6 @@ hero: {
 
     about: {
       title: "WHO WE ARE ",
-      heading: "Assisting individuals in locationg the appropriatee real estate ",
       description: " donecdfkjustify-content- sd fkds ks dfs j sfdnkfskdn fsfksnfixed-top klmdfsl klsdmf lkmdsfm mlksdfl m lms",
       more: " donecdfkjustify-content- sd fkds ks dfs j sfdnkfskdn fsfksnfixed-top klmdfsl klsdmf lkmdsfm mlksdfl m lmsd mklfdkm , dfsmf, dsmkld lmkdsf sklmf",
       img1: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707329619/realestate/image_8_dlne2y.jpg",
@@ -182,8 +196,7 @@ hero: {
           price: "$ 1,970",
           view: "Serene Retreat by the Lake",
           Address: "103 st, right to ksdka WA 918168",
-          buttonColor: "red", // Example color value
-          buttonBgColor: "blue", // Example color value
+        
           features: [
             {
               icon: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707345078/realestate/home_553416_pdjise.png",
@@ -287,7 +300,6 @@ hero: {
       ],
     },
     //*********************** == pricing == **********************/
-
 
     //******************** contact ********************
 

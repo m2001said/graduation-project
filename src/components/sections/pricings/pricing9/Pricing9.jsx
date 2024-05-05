@@ -77,7 +77,7 @@ const Pricing9 = () => {
                 />
                 {/* Button with feature icon */}
                 <button
-                  className={`px-5 py-2 flex gap-x-2 items-center ${card.buttonColor}-button ${card.buttonBgColor}-background rounded-full absolute bottom-10 left-10`}
+                  className={`px-5 py-2 flex gap-x-2 items-center bg-[var(--website-9-color-3)]  rounded-full absolute bottom-10 left-10`}
                 >
                   <img src={card.features[0].icon} className="w-6 h-6" alt={card.features[0].text} />
                   {card.features[0].text}
