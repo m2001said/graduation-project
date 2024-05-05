@@ -124,7 +124,7 @@ const templateSlice16 = createSlice({
       ],
     },
     Menu: {
-      Menu: [
+      Menus: [
         {
           id: 1,
           image: "https://res.cloudinary.com/duc04fwdb/image/upload/v1708539082/jammal_photos/fk4qk2x6enbuflmobk3f.jpg",
