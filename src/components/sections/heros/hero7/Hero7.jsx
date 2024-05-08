@@ -1,7 +1,6 @@
 
 import React from "react";
 import styles from "../../heros/hero7/styles7/style";
-import Services7 from "../../services/services7/Services7";
 import { useSelector } from "react-redux";
 import { useLocation } from "react-router";
 
@@ -28,17 +27,35 @@ const Hero7 = () => {
         </h1>
 
         <div className="ss:flex hidden md:mr-4 mr-0">
-          <Services7 />
+          <div className={`${styles.flexCenter} w-[140px] h-[140px] rounded-full bg-black-gradient p-[2px] cursor-pointer`}>
+            <div className={`${styles.flexCenter} flex-col  w-[100%] h-[100%] rounded-full`}>
+              <div className={`${styles.flexStart} flex-row`}>
+                <p className="font-poppins font-medium text-[18px] leading-[23.4px]">
+                  <span className="text-gradient7">{hero.buttonText}</span>
+                </p>
+                <img src={hero.images[2]} alt="arrow-up" className="w-[23px] h-[23px] object-contain " />
+              </div>
+            </div>
+          </div>
         </div>
         <p className={`${styles.paragraph} max-w-[470px] mt-5`} style={{ color: "var(--website-7-color-2)" }}>
           {hero.paragraf}
         </p>
       </div>
       <div className={`ss:hidden ${styles.flexCenter} md:flex`}>
-        <Services7 />
+        <div className={`${styles.flexCenter} w-[140px] h-[140px] rounded-full bg-black-gradient p-[2px] cursor-pointer`}>
+          <div className={`${styles.flexCenter} flex-col  w-[100%] h-[100%] rounded-full`}>
+            <div className={`${styles.flexStart} flex-row`}>
+              <p className="font-poppins font-medium text-[18px] leading-[23.4px]">
+                <span className="text-gradient7">{hero.buttonText}</span>
+              </p>
+              <img src={hero.images[2]} alt="arrow-up" className="w-[23px] h-[23px] object-contain " />
+            </div>
+          </div>
+        </div>
       </div>
       <div className={`flex-1 flex ${styles.flexCenter} md:my-0 my-10 relative`}>
-        <img src={hero.imgUrl[1]} alt="billing" className="w-[100%] h-[100%] relative z-[5]" />
+        <img src={hero.images[1]} alt="billing" className="w-[100%] h-[100%] relative z-[5]" />
         <div className="absolute z-[0] w-[40%] h-[35%] top-0 pink__gradient" />
         <div className="absolute z-[1] w-[80%] h-[80%] rounded-full white__gradient bottom-40" />
         <div className="absolute z-[0] w-[50%] h-[50%] right-20 bottom-20 blue__gradient" />

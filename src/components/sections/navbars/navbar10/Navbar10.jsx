@@ -20,9 +20,9 @@ const Navbar10 = ({ handleOrderPopup }) => {
           <div className="flex justify-between items-center">
             <div className="font-bold text-2xl sm:text-3xl flex gap-2">
               <a href="# ">
-                <img src={navbar.icon} alt="" className="w-10" />
+                <img src={navbar.imgUrl} alt="" className="w-10" />
               </a>
-              {navbar.title}
+              {navbar.logo}
             </div>
             <div className="flex justify-between items-center gap-4">
               <div>
@@ -36,28 +36,6 @@ const Navbar10 = ({ handleOrderPopup }) => {
                     </a>
                   </li>
                 ))}
-
-                {/* drop sec */}
-                {/* <li className="group relative cursor-pointer">
-                  <div className="textHover flex h-[72px] items-center gap-[2px]">
-                    {navbar10.DropdownTxt}
-                    <a href="/#">
-                      <img src={navbar10.DropdownIcon} alt="" className="w-5 transition-all duration-200 group-hover:rotate-180" />
-                    </a>
-                  </div>
-
-                  <div className="absolute -left-9 z-[9999] hidden w-[150px] rounded-md bg-white p-2 text-black group-hover:block  ">
-                    <ul className="space-y-3">
-                      {navbar10.DropdownLinks.map((data, index) => (
-                        <li key={index}>
-                          <a href={data.link} className="inline-block w-full rounded-md p-2 bgHover">
-                            {data.name}
-                          </a>
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-                </li> */}
               </ul>
               <button
                 className="btnBg10 btnTxt10 hover:scale-105 duration-200 py-1 px-4 rounded-full flex items-center gap-3"
@@ -65,7 +43,7 @@ const Navbar10 = ({ handleOrderPopup }) => {
               >
                 {navbar.buttonText}
                 <a href="/#">
-                  <img src={navbar.buttonIcon} alt="" className="w-7 drop-shadow-sm cursor-pointer" />
+                  <img src={navbar.icons[0]} alt="" className="w-7 drop-shadow-sm cursor-pointer" />
                 </a>
               </button>
             </div>

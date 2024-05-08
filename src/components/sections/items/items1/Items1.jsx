@@ -26,7 +26,7 @@ const Items1 = () => {
           <div className="article1-card" key={cards.title}>
             <div className="article1-card-img">
               <img src={cards.imgUrl} alt="Article 1" />
-              <p className="article1-card-caption">{cards.caption}</p>
+              <p className="article1-card-caption">{cards.subtitle}</p>
             </div>
             <div className="article1-card-info">
               <h1>{cards.title}</h1>

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import TopSide from "./../components/dashboard/sections/TopSide";
 import LeftSide from "../components/dashboard/sections/LeftSide";
 import { useSelector } from "react-redux";
@@ -29,6 +29,22 @@ const OwnPage = () => {
   const location = useLocation();
   const selectedData = location.state || {};
   const ownTemplate = useSelector((state) => state.ownTemplate);
+
+  const colors = ownTemplate.colors;
+  useEffect(() => {
+    // const styleAttributeValue = document.documentElement.getAttribute("style");
+    // const styleDeclarations = styleAttributeValue?.split(";");
+    // styleDeclarations?.pop();
+    // styleDeclarations?.forEach((declaration, index) => {
+    //   const [property, value] = declaration.trim().split(":");
+    //   document.documentElement.style.setProperty(property.trim(),  colors.templateColors[index]);
+    // });
+
+    // for (let index = 0; index < colors.templateColors.length; index++) {
+    //   document.documentElement.style.setProperty(`--color${index + 1}`, colors.templateColors[index]);
+    // }
+  }, []);
+
   const reorderedComponents = Object.keys(ownTemplate);
   const renderComponent = (type, index) => {
     const Component = importComponent(type, index);

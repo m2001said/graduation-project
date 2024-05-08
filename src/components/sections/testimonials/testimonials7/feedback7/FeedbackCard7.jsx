@@ -1,7 +1,7 @@
 import React from "react";
 import "../feedback7/feedback7.css";
 
-const FeedbackCard = ({ content, name, title, imgUrl }) => (
+const FeedbackCard = ({  title,name , description, imgUrl }) => (
   <div className="flex justify-between flex-col px-10 py-12 rounded-[20px] max-w-[370px] md:mr-10 sm:mr-5 mr-0 my-5 feedback-card">
     <div className="clip-path">
       <div className="clip-path-container1" style={{ backgroundColor: "var(--website-7-color-5)" }}></div>

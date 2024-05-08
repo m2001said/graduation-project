@@ -4,7 +4,7 @@ import styles, { layout } from "../../heros/hero7/styles7/style";
 import Button7 from "../feature7/Button7";
 import { useLocation } from "react-router";
 
-const FeatureCard = ({ imgUrl, title, content, index }) => {
+const FeatureCard = ({ title, description, imgUrl, index }) => {
   return (
     <div className={`flex flex-row p-6 rounded-[20px] ${index !== 2 ? "mb-6" : "mb-0"} feature-card`}>
       <div className="w-[64px] h-[64px] rounded-full bg-dimBlue">
@@ -30,7 +30,7 @@ const Business7 = () => {
     }
   });
 
-  const { actionButton, title, items: features } = feature; // Change feature to items
+  const { buttonText, title, features } = feature; // Change feature to items
   return (
     <section id="features" className={layout.section}>
       <div className={layout.sectionInfo}>

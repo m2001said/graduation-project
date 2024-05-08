@@ -17,7 +17,7 @@
   --primary-color2-dark: #7a4179;
   --website-filed-title: #1a2345;
 
-  --website-color-1: #fff;
+  --website-color-1: #ffffff;
   --website-color-2: #cda274;
   --website-color-3: #292f36;
   --website-color-4: #f4f0ec;
@@ -292,7 +292,6 @@ ul {
 .controller-btn-add.inner {
   margin-left: 0.25rem;
   margin-top: 0.25rem;
-
 }
 .input-controller {
   @apply text-black  p-2 h-auto outline-none w-full custom-scrollbar;
@@ -315,6 +314,42 @@ ul {
     border-radius: 4px;
   }
 }
+
+/* .dashboard-color-generate {
+  margin-right: 4px;
+  border: none;
+  background: url(assets/images/deploy.jpg);
+  height: auto;
+  width: auto;
+  outline: none;
+  &::-webkit-color-swatch-wrapper {
+    height: 20px;
+    width: 20px;
+    padding: 0;
+  }
+  &::-webkit-color-swatch {
+    border: none;
+    border-radius: 4px;
+  }
+} */
+.dashboard-color-generate {
+  margin-right: 4px;
+  border: none;
+  background: url('assets/images/deploy.jpg');
+  height: auto;
+  width: auto;
+  outline: none;
+}
+.dashboard-color-generate::-webkit-color-swatch-wrapper {
+  height: 20px;
+  width: 20px;
+  padding: 0;
+}
+.dashboard-color-generate::-webkit-color-swatch {
+  border: none;
+  border-radius: 4px;
+}
+
 .card_img {
   @apply h-64  lg:h-[450px] w-full rounded-[24px] object-cover mb-5;
 }

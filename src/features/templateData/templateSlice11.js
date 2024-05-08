@@ -2,6 +2,12 @@ import { createSlice } from "@reduxjs/toolkit";
 import { addElement, addElementToArray, addSubElement, deleteElement, deleteSection, editElement, reorder, reorderSections } from "./actions";
 const templateSlice11 = createSlice({
   initialState: {
+    templateInfo: {
+      id: 11,
+      title: "",
+      description: "",
+      imgUrl: "",
+    },
     navbar: {
       logo: "https://res.cloudinary.com/duc04fwdb/image/upload/v1707525696/jammal_photos/wmm8wc8r2ijrtguljwaa.svg",
       links: [
@@ -68,7 +74,8 @@ const templateSlice11 = createSlice({
         },
       ],
     },
-    about: {
+
+    services: {
       imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1707529935/jammal_photos/qkowgxkdtneaviwup0dv.svg",
       title: "About Me",
       content:
@@ -89,9 +96,7 @@ const templateSlice11 = createSlice({
           value: "66%",
         },
       ],
-    },
-    services: {
-      services: [
+      datas: [
         {
           id: 1,
           imgUrl: " https://res.cloudinary.com/duc04fwdb/image/upload/v1707530832/jammal_photos/fjodtcpjr0admhaoxbs3.svg",

@@ -29,6 +29,17 @@ const TrialDesign18 = () => {
   }, [theme]);
   /////////////////////////
   const state = useSelector((state) => state.template18);
+  const colors = state.colors;
+  useEffect(() => {
+    document.documentElement.style = "";
+      document.documentElement.style.setProperty("--primary18-color", colors.templateColors[0]);
+      document.documentElement.style.setProperty("--primary18-color-80", colors.templateColors[1]);
+      document.documentElement.style.setProperty("--secondary18-1-color", colors.templateColors[2]);
+      document.documentElement.style.setProperty("--secondary18-2-color", colors.templateColors[3]);
+      document.documentElement.style.setProperty("--dark18", colors.templateColors[4]);
+
+  }, []);
+
   const reorderedComponents = Object.keys(state);
   const componentMapping = {
     features: Feature18,

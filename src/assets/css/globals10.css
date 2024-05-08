@@ -5,52 +5,62 @@
 
 
 :root {
-  --primary10: rgb(19, 141, 197);
-  --white10: rgb(255, 255, 255);
-  --black10: rgb(0, 0, 0);
-  --grey10: #777777;
-  --graybg:#eeeeee;
-  --website10-color-1: rgb(228, 240, 247);
+ --website-10-color-1: rgb(19, 141, 197);
+ --website-10-color-2: rgb(255, 255, 255);
+ --website-10-color-3: rgb(0, 0, 0);
+ --website-10-color-4: #777777;
+ --website-10-color-5: #eeeeee;
+ --website-10-color-6:rgb(228, 240, 247);
 }
+
+
 /* txt style */
 .textHover10:hover {
-  color: var(--primary10);
+  color: var(--website-10-color-1);
 }
+
 
 .textColor10 {
-  color:var(--black10);
+  color:var(--website-10-color-3);
 }
 
-.textColor2 {
-  color:var(--white10);
+
+.textColor10-2 {
+  color:var(--website-10-color-2);
 }
+
 
 .paraColor10 {
-  color:var(--grey10);
+  color:var( --website-10-color-4);
 }
+
 
 .smHeader10 {
-  background-color: var(--primary10);
+  background-color: var( --website-10-color-1);
 }
 
+
 .bgHover10:hover {
-  background-color: var(--primary10);
+  background-color: var( --website-10-color-1);
 }
+
 /* ////////// */
 
 .testimonailBg10 {
-  background-color: var(--website10-color-1);
+  background-color: var( --website-10-color-6);
 }
+
 
 /* button style */
 
 .btnBg10 {
-  background-color: var(--primary10);
+  background-color: var( --website-10-color-1);
 }
 
 .btnTxt10 {
-  color: rgb(255, 255, 255);
+  color:var(--website-10-color-2);
 }
+
 /* /////////////// */
 
 /* for feature10 style */
@@ -62,6 +72,7 @@
   padding: 4px;
   border-radius: 50%;
 }
+
 
 /* .divIcon1 {
   background-color: var(--website10-color-3);

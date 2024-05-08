@@ -14,7 +14,7 @@ const Services = () => {
   return (
     <>
       <span id="about"></span>
-      <div className="bg-white dark:bg-black dark:text-white py-14 sm:min-h-[600px] sm:grid sm:place-items-center">
+      <div className="bg-[--website-18-color-6] dark:bg-black dark:text-white py-14 sm:min-h-[600px] sm:grid sm:place-items-center">
         <div className="container18">
           <div className="pb-12">
             <h1 className="text-3xl font-semibold text-center sm:text-4xl font-serif">{services.title}</h1>
@@ -23,14 +23,14 @@ const Services = () => {
             {services.services.map((data) => (
               <div
                 key={data.title}
-                className="card text-center group space-y-3 sm:space-y-6 p-4 sm:py-16 bg-[--dark18]  hover:bg-[--primary18-color] duration-300 text-white hover:text-black rounded-lg"
+                className="card text-center group space-y-3 sm:space-y-6 p-4 sm:py-16 bg-[--website-18-color-5]  hover:bg-[--website-18-color-1] duration-300 text-white hover:text-black rounded-lg"
               >
                 <div className="grid place-items-center">
                   <img src={data.icon} alt="" className="w-8" />
                 </div>
                 <h1 className="text-xl font-bold">{data.name}</h1>
                 <p>{data.description}</p>
-                <a href={data.url} className="inline-block text-lg font-semibold py-3 text-primary group-hover:text-black duration-300">
+                <a href={data.url} className="inline-block text-lg font-semibold py-3 text-[--website-18-color-1] group-hover:text-black duration-300">
                   {data.buttonText}
                 </a>
               </div>

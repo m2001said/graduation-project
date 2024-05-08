@@ -13,14 +13,14 @@ const Footer14 = () => {
     }
   });
   return (
-    <div className="bg-white dark:bg-gray-950">
+    <div className="bg-[--website-14-color-6] dark:bg-gray-950">
       <div className="container14">
         <div className="grid md:grid-cols-3 pb-20 pt-5">
           {/* company details */}
           <div className="py-8 px-4">
             <div className="flex gap-4">
               <img src={footer.logo} alt="logo" className="w-10 cursor-pointer" />
-              <span className="text-[--primary14-color] font-semibold tracking-widest text-2xl uppercase sm:text-3xl cursor-pointer">{footer.title}</span>
+              <span className="text-[--website-14-color-1] font-semibold tracking-widest text-2xl uppercase sm:text-3xl cursor-pointer">{footer.title}</span>
             </div>
             <p className="text-sm text-gray-600 dark:text-white/70 lg:pr-24 pt-7">{footer.description}</p>
           </div>
