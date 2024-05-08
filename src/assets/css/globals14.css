@@ -20,12 +20,12 @@
 
 
 :root {
-  --primary14-color: #f42c37;
-  --brand14-yellow: #fdc62e;
-  --brand14-green: #34cc73;
-  --brand14-blue: #1376f4;
-  --brand14-gray: #acabab9c;
-  --brand14-white: #eeeeee;
+  --website-14-color-1:  #f42c37;
+  --website-14-color-2:  #fdc62e;
+  --website-14-color-3: #34cc73;
+  --website-14-color-4: #1376f4;
+  --website-14-color-5: #acabab9c;
+  --website-14-color-6: #ffffff;
 }
 
 .container14 {

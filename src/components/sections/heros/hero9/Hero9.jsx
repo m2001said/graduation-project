@@ -18,7 +18,7 @@ const CustomDot = ({ onClick, active }) => {
   );
 };
 
-const Hero = () => {
+const Hero9 = () => {
   const { pathname } = useLocation();
   const hero = useSelector((state) => {
     if (pathname.includes("own-page")) {
@@ -148,4 +148,4 @@ const Hero = () => {
   );
 };
 
-export default Hero;
+export default Hero9;

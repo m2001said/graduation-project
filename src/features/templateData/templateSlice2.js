@@ -3,6 +3,12 @@ import { addElement, addElementToArray, addSubElement, deleteElement, deleteSect
 
 const templateSlice2 = createSlice({
   initialState: {
+    templateInfo: {
+      id: 2,
+      title: "",
+      description: "",
+      imgUrl: "",
+    },
     navbar: [
       {
         imgUrl: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1703134252/home-1-svgrepo-com_axgckp.svg",

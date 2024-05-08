@@ -1,11 +1,8 @@
 import React, { useState, useEffect } from "react";
-import AOS from "aos";
-import "aos/dist/aos.css";
 import { useSelector } from "react-redux";
 import { useLocation } from "react-router";
 
 const About8 = () => {
-  // const { about } = useSelector((state) => state.template8);
   const { pathname } = useLocation();
   const about = useSelector((state) => {
     if (pathname.includes("own-page")) {
@@ -15,18 +12,6 @@ const About8 = () => {
     }
   });
   const [inView, setInView] = useState(false);
-  useEffect(() => {
-    AOS.init({
-      duration: 800,
-      once: true,
-      mirror: false,
-    });
-
-    AOS.refresh();
-
-    // Clean up AOS when the component unmounts
-    return () => AOS.refreshHard();
-  }, []);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -50,19 +35,11 @@ const About8 = () => {
       <div className="container mx-auto">
         <div className="flex flex-col gap-y-10 lg:flex-row lg:items-center lg:gap-x-20 lg:gap-y-0 h-screen">
           {/* image */}
-          <div
-            data-aos="fade-right"
-            data-aos-duration="1200"
-            data-aos-offset="300"
-            className="flex-1  bg-contain bg-no-repeat h-[640px] mix-blend-lighten bg-top"
-            style={{
-              backgroundImage: `url(${about.UrlImg})`,
-            }}
-          ></div>
+          <div className="flex-1  bg-contain bg-no-repeat h-[640px] mix-blend-lighten bg-top" style={{ backgroundImage: `url(${about.imgUrl})` }}></div>
           {/* text */}
-          <div className="flex-1 " data-aos="fade-left" data-aos-duration="1200" data-aos-offset="300">
+          <div className="flex-1">
             <h2 className="h2 text-accent">{about.title}</h2>
-            <h3 className="h3 mb-4">{about.jopTitle}</h3>
+            <h3 className="h3 mb-4">{about.sub_title}</h3>
             <p className="mb-6">{about.description}</p>
             {/* stats */}
             <div className="flex gap-x-6 lg:gap-x-10 mb-12">
@@ -89,7 +66,7 @@ const About8 = () => {
               </div>
             </div>
             <div className="flex gap-x-8 items-center">
-              <button className="btn btn-lg">{about.btnText}</button>
+              <button className="btn btn-lg">{about.buttonText}</button>
               <a href="#" className="text-gradient btn-link">
                 {about.linktext}
               </a>

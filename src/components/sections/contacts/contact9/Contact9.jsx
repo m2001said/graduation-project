@@ -3,8 +3,14 @@ import { useSelector } from "react-redux";
 import { useLocation } from "react-router";
 
 const Contact9 = () => {
-  const { imgUrl, title, description ,button} = useSelector((state) => state.template9.contact);
-
+  const { pathname } = useLocation();
+  const { imgUrl, title, description,button }  = useSelector((state) => {
+    if (pathname.includes("own-page")) {
+      return state.ownTemplate.contact;
+    } else {
+      return state.template9.contact;
+    }
+  });
   const renderImage = imgUrl ? <img src={imgUrl} alt="" className="h-15 w-60 sm:h-27 sm:w-24 lg:h-40 lg:w-40 mr-40 img-9" /> : null;
 
   return (
@@ -26,8 +32,8 @@ const Contact9 = () => {
             <a href={button.url}></a>
           </button>
         </div>
-        <button className="bg-gradient-to-b from-[var(--website-9-color-1)] to-[var(--button-hover-bg-color)] opacity-40 rounded-full h-20 w-20 cursor-auto absolute -top-6 right-10 z-10"></button>
-        <button className="bg-gradient-to-r from-[var(--website-9-color-6)] to-[var(--website-9-color-6)] w-20 cursor-auto absolute xl:bottom-10 bottom-20 lg:left-[19rem] left-8 z-10"></button>
+        <button className="bg-gradient-to-b from-[var(--website-9-color-1)] to-[var(--website-9-color-3)] opacity-40 rounded-full h-20 w-20 cursor-auto absolute -top-6 right-10 z-10"></button>
+        <button className="bg-gradient-to-r from-[var(--website-9-color-6)] to-[var(--website-9-color-3)] w-20 cursor-auto absolute xl:bottom-10 bottom-20 lg:left-[19rem] left-8 z-10"></button>
       </div>
     </main>
   );

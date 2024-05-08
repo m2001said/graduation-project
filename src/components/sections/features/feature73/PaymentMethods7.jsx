@@ -12,7 +12,7 @@ const CardDeal = () => {
           {paymentMethods.title} <br className="sm:block hidden" /> {paymentMethods.subtitle}
         </h2>
         <p className={`${styles.paragraph} max-w-[470px] mt-5`} style={{ color: "var(--color5)" }}>
-          {paymentMethods.content}
+          {paymentMethods.description}
         </p>
         <Button7 text="Find a Deal" styles={`px-4 py-5 mt-6 text-[var(--color2)] rounded-full bg-[var(--color3)]`} />
       </div>

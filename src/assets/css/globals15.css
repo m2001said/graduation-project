@@ -7,11 +7,11 @@
   /* --color2: #1f2937; */
   /* --color5: white; */
   /* --color4: #808080; */
-  --color1: #1f2937;
-  --color2: #262626;
-  --color3: #29a587;
-  --color4: #808080;
-  --color5: white;
+  --color1: red;
+  --color2: red;
+  --color3: red;
+  --color4: red;
+  --color5: red;
 
   font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   line-height: 1.5;

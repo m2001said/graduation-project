@@ -1,7 +1,6 @@
 import React from "react";
-import "../assets/css/globals17.css"
-import  {useState, useEffect } from "react";
-import AOS from "aos";
+import "../assets/css/globals17.css";
+import { useState, useEffect } from "react";
 import "aos/dist/aos.css";
 import Navbar17 from "../components/sections/navbars/navbar17/Navbar17";
 import Hero17 from "../components/sections/heros/hero17/Hero17";
@@ -15,25 +14,18 @@ const TrialDesign17 = () => {
   const HandlePopup = () => {
     setShowPopup(true);
   };
-  useEffect(() => {
-    AOS.init({
-      offset:100,
-      duration:800,
-      eaasing:'ease-in-sine',
-      delay:100,
-    });
-    AOS.refresh();
-  },[]);
-  return <div>
-    
-    <Navbar17 HandlePopup={HandlePopup} />
+
+  return (
+    <div>
+      <Navbar17 HandlePopup={HandlePopup} />
       <Hero17 />
       <Services17 />
       <About17 HandlePopup={HandlePopup} />
       <Banner17 />
       <Footer17 />
       <Popup17 showPopup={showPopup} setShowPopup={setShowPopup} />
-  </div>;
+    </div>
+  );
 };
 
 export default TrialDesign17;

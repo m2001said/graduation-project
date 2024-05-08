@@ -2,6 +2,12 @@ import { createSlice } from "@reduxjs/toolkit";
 import { addElement, addElementToArray, addSubElement, deleteElement, deleteSection, editElement, reorder, reorderSections } from "./actions";
 const templateSlice13 = createSlice({
   initialState: {
+    templateInfo: {
+      id: 13,
+      title: "",
+      description: "",
+      imgUrl: "",
+    },
     navbar: {
       logo: {
         src: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707951170/lighting_o2dsku.png",
@@ -57,6 +63,52 @@ const templateSlice13 = createSlice({
         secondary: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707937130/4_rjddpl.jpg",
       },
     },
+    services: {
+      blocks: [
+        {
+          icon: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707553370/klipartz.com_z2zhsv.png",
+          title: "Buy a New Home",
+          description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        },
+        {
+          icon: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707345078/realestate/home_553416_pdjise.png",
+          title: "Sell a House",
+          description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        },
+        {
+          icon: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707345078/realestate/bed_dsmu39.png",
+          title: "Rent a House",
+          description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        },
+      ],
+    },
+    feature: {
+      title: "We Create The Art Of Stylish Living Stylishly",
+      description:
+        "It is a long established fact that a reader will be distracted by the of readable content of a page when looking at its layouts the points of using that it has a more-or-less normal.",
+      phone: "012345678",
+      buttonText: "Get Free Estimate",
+
+      icons: [
+        {
+          icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701813236/templates/template_one/Call_gqvv4l.svg",
+        },
+        {
+          icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701813389/templates/template_one/Vector_5_vvvt2o.svg",
+        },
+      ],
+
+      test: [
+        {
+          subTest: [
+            "https://res.cloudinary.com/duc04fwdb/image/upload/v1701813236/templates/template_one/Call_gqvv4l.svg",
+            "https://res.cloudinary.com/duc04fwdb/image/upload/v1701813389/templates/template_one/Vector_5_vvvt2o.svg",
+            "https://res.cloudinary.com/duc04fwdb/image/upload/v1701813389/templates/template_one/Vector_5_vvvt2o.svg",
+          ],
+        },
+      ],
+      imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701813388/templates/template_one/Photo_sonnlx.jpg",
+    },
 
     //***************** **********  feature ********* **************** */
 
@@ -84,10 +136,10 @@ const templateSlice13 = createSlice({
           description: "Icon 3 Description",
         },
         {
-          id: 4,
-          icon: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707969311/diamond_zuwa12.png",
-          title: "Icon 4 Title",
-          description: "Icon 4 Description",
+          id: "3",
+          name: "Kareem",
+          imgUrl: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707329700/realestate/p1_sfvfe2.jpg",
+          job: "Buyer's Agent",
         },
       ],
     },

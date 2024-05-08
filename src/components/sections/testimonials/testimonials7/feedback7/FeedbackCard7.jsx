@@ -1,13 +1,13 @@
 import React from "react";
 import "../feedback7/feedback7.css";
 
-const FeedbackCard = ({ content, name, title, imgUrl }) => (
+const FeedbackCard = ({  title,name , description, imgUrl }) => (
   <div className="flex justify-between flex-col px-10 py-12 rounded-[20px] max-w-[370px] md:mr-10 sm:mr-5 mr-0 my-5 feedback-card">
     <div className="clip-path">
       <div className="clip-path-container1" style={{ backgroundColor: "var(--color5)" }}></div>
       <div className="clip-path-container1" style={{ backgroundColor: "var(--color5)" }}></div>
     </div>
-    <p className="font-poppins font-normal text-[18px] leading-[32.4px] text-[var(--color6)] my-10">{content}</p>
+    <p className="font-poppins font-normal text-[18px] leading-[32.4px] text-[var(--color6)] my-10">{description}</p>
     <div className="flex flex-row">
       <img src={imgUrl} alt={name} className="w-[48px] h-[48px] rounded-full" />
       <div className="flex flex-col ml-4">

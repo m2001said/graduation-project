@@ -37,7 +37,7 @@ const Navbar5 = () => {
     <div className={noBg}>
       <div className="navbar5-logoDiv">
         <a href=" #">
-          <img src={navbar.icon} alt="" className="navbar5-logo" />
+          <img src={navbar.imgUrl} alt="" className="navbar5-logo" />
         </a>
       </div>
       <div className={active}>
@@ -52,7 +52,7 @@ const Navbar5 = () => {
         </ul>
 
         <button onClick={removeNavbar} className="navbarMenu-btnOne">
-          {navbar.buttonTxt}
+          {navbar.buttonText}
         </button>
       </div>
 

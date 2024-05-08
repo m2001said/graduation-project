@@ -5,7 +5,7 @@ import { useSelector } from "react-redux";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
-import { Pagination } from "swiper/modules";
+import { Navigation, Pagination, Autoplay } from "swiper/modules";
 import { useLocation } from "react-router";
 
 
@@ -22,19 +22,12 @@ const Hero14 = ({ handleOrderPopup }) => {
     }
   });
   return (
-    <div className="bg-white dark:bg-gray-900">
+    <div className="bg-[--website-14-color-6] dark:bg-gray-900">
       <div className="container14">
         <div className="overflow-hidden rounded-3xl min-h-[550px] sm:min-h-[650px] hero14-bg-color flex justify-center items-center">
           <div className="container14 pb-8 sm:pb-0">
             {/* hero section */}
-            <Swiper
-              spaceBetween={200}
-              pagination={{
-                clickable: true,
-              }}
-              modules={[Pagination]}
-              className="mySwiper"
-            >
+            <Swiper modules={[Navigation, Pagination, Autoplay]} spaceBetween={500} slidesPerView={1} autoplay={{ delay: 3000 }} className="mySwiper">
               {hero.heros.map((data, index) => (
                 <SwiperSlide key={index}>
                   <div className="grid grid-cols-1 sm:grid-cols-2">
@@ -48,7 +41,7 @@ const Hero14 = ({ handleOrderPopup }) => {
                       <div>
                         <button
                           onClick={handleOrderPopup}
-                          className={`bg-[--primary14-color] text-white cursor-pointer hover:scale-105 duration-300 py-2 px-8 rounded-full relative z-10`}
+                          className={`bg-[--website-14-color-1] text-white cursor-pointer hover:scale-105 duration-300 py-2 px-8 rounded-full relative z-10`}
                         >
                           {hero.buttonText}
                         </button>

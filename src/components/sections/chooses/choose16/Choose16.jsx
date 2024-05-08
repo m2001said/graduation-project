@@ -15,10 +15,10 @@ const Choose16 = () => {
           <p className="choose_description16">{Choose.description}</p>
           <div className="choose__details16 grid16">
             {Choose.details &&
-              Choose.details.map((detail, index) => (
+              Choose.Choose.map((detail, index) => (
                 <div className="choose__details-item16" key={index}>
                   <div className="choose__details-img-wrapper16">
-                    <img src={detail.img} alt="" className="choose_details-img16" />
+                    <img src={detail.image} alt="" className="choose_details-img16" />
                   </div>
                   <div>
                     <h3 className="choose_details-title16">{detail.title}</h3>

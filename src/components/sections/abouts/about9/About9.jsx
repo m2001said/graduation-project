@@ -1,6 +1,7 @@
 import { useSelector } from "react-redux";
 const About9 = () => {
   const about = useSelector((state) => state.template9.about);
+  const aboutcont = useSelector((state) => state.template9.aboutcont);
 
   return (
     <main className="container mx-auto lg:flex px-3 mb-12  pt-20 about-9">

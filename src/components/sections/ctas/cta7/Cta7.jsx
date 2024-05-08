@@ -17,7 +17,7 @@ const Cta7 = () => {
       <div className="flex-1 flex flex-col">
         <h2 className={styles.heading2}>{cta.subtitle}</h2>
         <p className={`${styles.paragraph} max-w-[470px] mt-5`} style={{ color: "var(--color5)" }}>
-          {cta.content}
+          {cta.description}
         </p>
       </div>
       <div className={`${styles.flexCenter} sm:ml-10 ml-0 sm:mt-0 mt-10`}>

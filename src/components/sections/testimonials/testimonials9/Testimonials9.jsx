@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import { useState } from "react";
+import React from "react";
 import { useSelector } from "react-redux";
 import { useLocation } from "react-router";
 
@@ -63,10 +64,10 @@ const Testimonials9 = () => {
 
       <div className="relative rounded-2xl shadow-2xl lg:w-2/5 lg:p-16 p-6 lg:mt-0 mt-8">
         <img src={testimonialsData.quotation} alt="quote" className="text-[#ffe999] text-3xl logo-9" />
-        <p className="font-medium pt-2 text-[var(--website-9-color-3)] pb-8">
+        <p className="font-medium pt-2 text-[var(--website-9-color-5)] pb-8">
           {currentTestimonial.quote}
         </p>
-        <div className="border-t border-[var(--grey-9)] flex items-center py-4">
+        <div className="border-t border-[var(--website-9-color-5)] flex items-center py-4">
           <img
             src={currentTestimonial.imgUrl}
             alt={currentTestimonial.author}
@@ -75,6 +76,7 @@ const Testimonials9 = () => {
           <span className="lg:flex items-center justify-between w-full gap-x-4 font-medium pl-3">
             <p className="text-[var(--website-9-color-3)]">{currentTestimonial.author}</p>
             <div className="flex flex-row">
+              {" "}
               {[...Array(5)].map((_, index) => (
                 <img
                   key={index}
@@ -86,9 +88,11 @@ const Testimonials9 = () => {
             </div>
           </span>
         </div>
+        <button className="bg-gradient-to-r from-[var(--website-9-color-5)] to-[var(--website-9-color-2)] rounded-full h-16 w-16 cursor-auto absolute -top-6 left-6"></button>
       </div>
     </main>
   );
 };
 
 export default Testimonials9;
+// bg-gradient-to-r from-[#8bd3ce] to-[#eff9f9]

@@ -16,7 +16,7 @@ const Services9 = () => {
         <p className="uppercase text-xl py-8">{services.title}</p>
 
         <div className="flex lg:flex-row flex-col gap-x-16 gap-y-8 py-20">
-          {services.service.map((service, index) => (
+        {services.service.map((service, index) => (
             <div
               key={index}
               className="bg-[var(--website-9-color-1)] rounded-[var(--border-radius-lg-9)] lg:h-96 h-80 flex flex-col justify-center items-center lg:w-1/3 shadow-2xl"

@@ -27,13 +27,11 @@ const TrialDesign9 = () => {
  return (
   <div className="TrialDesign9">
       <main>
-        <Hero9 className="trialdesign9" />
-
+      <Hero9 className="trialdesign9"/>
         {reorderedComponents.map((_component) => {
-        const Component = componentMapping[_component];
-        return Component && <Component key={_component} />;
-     
- })}
+          const Component = componentMapping[_component];
+          return Component && <Component key={_component} className="trialdesign9" />;
+        })}
       </main>
       
       <Footer9 className="trialdesign9" />
