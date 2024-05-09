@@ -8,7 +8,7 @@
   gap: 3rem;
 }
 .service {
-  background: var(--color-2-bg-variant);
+  background: var(--website-2-color-2);
   border-radius: 0 0 2rem 2rem;
   border: 1px solid var(--color-2-primary);
   height: fit-content;
@@ -16,17 +16,17 @@
 }
 .service:hover {
   background: transparent;
-  border-color: var(--color-2-primary-variant);
+  border-color: var(--website-2-color-4);
   cursor: default;
 }
 .service__head {
-  background: var(--color-2-primary);
+  background: var(--website-2-color-3);
   padding: 2rem;
   border-radius: 0 0 2rem 2rem;
   box-shadow: 0 2rem 1rem rgba(0, 0, 0, 0.1);
 }
 .service__head h3 {
-  color: var(--color-2-bg);
+  color: var(--website-2-color-1);
   font-size: 1rem;
   text-align: center;
 }
@@ -61,11 +61,17 @@ article.service img.service__list-icon {
   .service {
     height: auto;
   }
+  #services2  {
+    padding-bottom: 2rem;
+  }
 }
 
 @media screen and (max-width: 600px) {
   .services__container {
     grid-template-columns: 1fr;
     gap: 1.5rem;
+  }
+  #services2  {
+    padding-bottom: 2rem;
   }
 }

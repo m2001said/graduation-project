@@ -15,45 +15,50 @@ const templateSlice13 = createSlice({
       },
       menuItems: [
         {
-          text: "Design",
+          title: "Design",
+          link: "#about13",
+        },
+        {
+          title: "About us",
           link: "#",
         },
         {
-          text: "About us",
+          title: "Projects",
           link: "#",
         },
         {
-          text: "Projects",
+          title: "Contact team",
           link: "#",
         },
         {
-          text: "Contact team",
-          link: "#",
-        },
-        {
-          text: "Reviews",
-          link: "#",
+          title: "Reviews",
+          link: "#testimonials13",
         },
       ],
-      language: "EN",
-      languageDropdownIcon: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707347079/mdmaximize_prmvgd.png",
+
       profileIcon: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707951170/menu-bar_q4qwbp.png",
       close: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707347076/icons8-close_ozpkst.svg",
       bars: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707951170/menu-bar_q4qwbp.png",
-      contactButton: {
-        text: "Contact us",
-        dropdownIcon: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707346109/realestate/next_2989988_stvovd.png",
+      button: {
+        title: "Contact us",
+        icon: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707346109/realestate/next_2989988_stvovd.png",
       },
     },
+
+    //****************** hero */
 
     hero: {
       title: "Architects with different approach",
       subtitle: "Architecture is the art & technique of designing and building, as distinguished from the skills",
-      servicesButtonText: "Our Services",
-      projectsButtonText: "View Projects",
-      num: "+75.8%",
+
+      buttons: [
+        { title: "view projects", url: "#projects13" },
+        { title: "our Services", url: "#services13" },
+      ],
+
       icon: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707952901/right-arrow_1_y7iz2i.png",
-      images: {
+      imgs: {
+        title: "+75.8%",
         main: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707937284/3_tx6g05.jpg",
         secondary: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707937130/4_rjddpl.jpg",
       },
@@ -105,140 +110,30 @@ const templateSlice13 = createSlice({
       imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701813388/templates/template_one/Photo_sonnlx.jpg",
     },
 
-    testimonials: {
-      heading1: "What our  ",
-      heading2: "Clients",
-      heading3: "say's",
-      arrowR: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707952901/right-arrow_1_y7iz2i.png",
-      arrowL: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707977502/leftArrow_w76yfj.png",
-      person1: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1703134020/avatar3_pbztwn.jpg",
-      person2: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1703134020/avatar3_pbztwn.jpg",
-      person3: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1703134020/avatar2_lgwr3o.jpg",
-      person4: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1703134020/avatar3_pbztwn.jpg",
+    //***************** **********  feature ********* **************** */
 
-      name1: "ahmed",
-      name2: "nader",
-      name3: "shiko",
-      name4: "body",
-
-      title1: "CEO at AST",
-      title2: "CEO at AST",
-      title3: "CEO at AST",
-      title4: "CEO at AST",
-
-      description1: "We would like to take the opportunity to express our delights with the ways things are progressing.",
-      description2: "We would like to take the opportunity to express our delights with the ways things are progressing.",
-      description3: "We would like to take the opportunity to express our delights with the ways things are progressing.",
-      description4: "We would like to take the opportunity to express our delights with the ways things are progressing.",
-    },
-
-    logos: {
-      companies: [
-        { imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701808448/templates/template_one/01_p78hjd.svg" },
-        { imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701808448/templates/template_one/02_mnw1ps.svg" },
-        { imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701808448/templates/template_one/03_fiplpx.svg" },
-        { imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701808449/templates/template_one/04_pg8flc.svg" },
-        { imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701808449/templates/template_one/05_prt3gi.svg" },
-      ],
-    },
-    projects: {
-      title: "Follow Our Projects",
-      description: "It is a long established fact that a reader will be distracted by the of readable content of page  lookings at its layouts  points.",
-      cards: [
+    feature: {
+      title: "welcome to lighting",
+      subtitle: "The Art Of ARCHITECTURE ",
+      description: "you will meet your taste",
+      icons: [
         {
-          imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701808451/templates/template_one/Photo_2_w7jdep.jpg",
-          title: "Modern Kitchan",
-          description: "Decor / Artchitecture",
-          icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701718889/templates/template_one/Vector_5_nzmfwn.svg",
+          id: 1,
+          icon: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707959654/tree_qh0bvu.png",
+          title: "Icon 1 Title",
+          description: "Icon 1 Description",
         },
         {
-          imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701808451/templates/template_one/Photo_3_wig9kc.jpg",
-          title: "Modern Kitchan",
-          description: "Decor / Artchitecture",
-          icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701718889/templates/template_one/Vector_5_nzmfwn.svg",
+          id: 2,
+          icon: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707959653/holding-hand_1_ip0t5r.png",
+          title: "Icon 2 Title",
+          description: "Icon 2 Description",
         },
         {
-          imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701808452/templates/template_one/Photo_iojikc.jpg",
-          title: "Modern Kitchan",
-          description: "Decor / Artchitecture",
-          icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701718889/templates/template_one/Vector_5_nzmfwn.svg",
-        },
-        {
-          imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701808450/templates/template_one/Photo_1_njncs1.jpg",
-          title: "Modern Kitchan",
-          description: "Decor / Artchitecture",
-          icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701718889/templates/template_one/Vector_5_nzmfwn.svg",
-        },
-      ],
-    },
-    statistic: {
-      statistics: [
-        {
-          title: "Years Of Experience",
-          value: "12",
-        },
-        {
-          title: "Success Projects",
-          value: "85",
-        },
-        {
-          title: "Active Projects",
-          value: "15",
-        },
-        {
-          title: "Happy Customers",
-          value: "95",
-        },
-      ],
-    },
-    items: {
-      title: "Articles & News",
-      description:
-        "It is a long established fact that a reader will be distracted by the of readable content of a page when lookings at its layouts the points of using.",
-      cards: [
-        {
-          title: "Let’s Get Solution For Building Construction Work",
-          description: "26 December,2022 ",
-          imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701718041/templates/template_one/article1.f88f54e6a4cdbf340b36_l3ujjw.png",
-          icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701718889/templates/template_one/Vector_5_nzmfwn.svg",
-          caption: "Kitchan Design",
-        },
-        {
-          title: "Low Cost Latest Invented Interior Designing Ideas.",
-          description: "22 December,2022 ",
-          icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701718889/templates/template_one/Vector_5_nzmfwn.svg",
-          imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701718042/templates/template_one/article2.43be768543cb8cfeaf07_atvwjd.png",
-          caption: "Living Design",
-        },
-        {
-          title: "Best For Any Office & Business Interior Solution",
-          description: "25 December,2022 ",
-          icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701718889/templates/template_one/Vector_5_nzmfwn.svg",
-          imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701718042/templates/template_one/article3.f759fde0c85f3fb92b22_c2tqkv.png",
-          caption: "Interior Design",
-        },
-      ],
-    },
-    team: {
-      title: "Hello from",
-      cards: [
-        {
-          id: "0",
-          name: "Mohammed",
-          imgUrl: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707329705/realestate/p4_drgvax.jpg",
-          job: "CEO",
-        },
-        {
-          id: "1",
-          name: "Ahmed",
-          imgUrl: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707329708/realestate/p3_khftcr.jpg",
-          job: "Real Estate Developer",
-        },
-        {
-          id: "2",
-          name: "Ali",
-          imgUrl: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707329705/realestate/p2_ixjwav.jpg",
-          job: "Listing Agent",
+          id: 3,
+          icon: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707601512/star_qhtqlz.png",
+          title: "Icon 3 Title",
+          description: "Icon 3 Description",
         },
         {
           id: "3",
@@ -249,97 +144,165 @@ const templateSlice13 = createSlice({
       ],
     },
 
+    // ********************  about  **************************
+    about: {
+      title: "Welcome to our company",
+      subtitles: [{ title: "Our Journey" }, { title: "since 2010" }],
+      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      imgUrl: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707937162/5_ookc7e.jpg",
+      infos: [
+        { title: "years of experience", description: 10 },
+        { title: "projects done", description: 50 },
+        { title: "awards gained ", description: 20 },
+      ],
+      icons: [
+        {
+          icon: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707952901/right-arrow_1_y7iz2i.png",
+        },
+        {
+          icon: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707959810/up-arrow_dfq1o8.png",
+        },
+      ],
+      buttons: [
+        {
+          title: "Get started",
+          link: "#contact13",
+          icon: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707952901/right-arrow_1_y7iz2i.png",
+        },
+
+        {
+          title: "learn more",
+          link: "#feature13",
+          icon: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707952901/right-arrow_1_y7iz2i.png",
+        },
+      ],
+    },
+
+    //*********************** projects ********************** */ */                                 projects: {
     projects: {
       title: "Our recent works",
-      heading: "Our completed projects",
-      img1: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707937447/pexels-ben-neale-380337_yuphlv.jpg",
-      title1: "lorem epsum dolor",
-      desc1: "New Cairo",
+      subtitle: "Our completed projects",
 
-      img2: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707937141/pexels-nubia-navarro-_nubikini_-3221215_wtzq4w.jpg",
-      title2: "lorem epsum dolor",
-      desc2: "Luxor",
-
-      img3: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707937146/pexels-pixabay-262367_b0ixae.jpg",
-      title3: "lorem epsum dolor",
-      desc3: "New Giza",
-
-      arrup: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707959810/up-arrow_dfq1o8.png",
-      arrR: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707952901/right-arrow_1_y7iz2i.png",
-      load: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707553370/klipartz.com_z2zhsv.png",
-      OurNewsletter: "Our Newsletter",
-      Subscribeourdaily: "Subscribe our daily",
-      Newsletter: "Newsletter",
-      forupdate: "for update",
-      Subs: "Subscribe",
-      subsdesc: "lorem epsum dolor es ma affection ad as as dsa",
-
-      logo1: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707938679/lightning_h1zfze.png",
-      logo1talk: "zizozizo ",
-      logo2: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707975425/icons8-bird-64_kofuu5.png",
-      logo2talk: "mm eee ",
-      logo4: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707975425/icons8-bird-64_kofuu5.png",
-      logo4talk: "daasdng",
-      logo3: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707975424/sphere_dfb95n.png",
-      logo3talk: "hng",
-      logo5: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1703129091/icons8-stars-50_o1lg9s.png",
-      logo5talk: "swdng",
+      icon: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707553370/klipartz.com_z2zhsv.png",
+      project: [
+        {
+          img: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707937447/pexels-ben-neale-380337_yuphlv.jpg",
+          title: "lorem epsum dolor",
+          description: "New Cairo",
+          icon: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707553370/klipartz.com_z2zhsv.png",
+        },
+        {
+          img: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707937141/pexels-nubia-navarro-_nubikini_-3221215_wtzq4w.jpg",
+          title: "lorem epsum dolor",
+          description: "Luxor",
+          icon: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707553370/klipartz.com_z2zhsv.png",
+        },
+        {
+          img: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707937146/pexels-pixabay-262367_b0ixae.jpg",
+          title: "lorem epsum dolor",
+          description: "New Giza",
+          icon: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707553370/klipartz.com_z2zhsv.png",
+        },
+      ],
+      buttons: [{ title: "load more", url: "#" }],
     },
 
-    about1: {
-      title: "What we do",
-      subtitle: "Bringing new life to old ",
-      subdecorated: " processes",
-      icon1: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707959654/tree_qh0bvu.png",
-      icon1title: "Interior design",
-      icon1description: "Interior design is the art and science of enhancing vision",
+    //******************************** contact ************ ********************** */
 
-      icon2: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707959653/holding-hand_1_ip0t5r.png",
-      icon2title: "Construction",
-      icon2description: " The technique , procedure , and materials used during ",
+    contact: {
+      title: "Subscribe to our newsletter",
+      subtitle: "Get our e-mail updates about our latest shops and special offers.",
+      description: "Newsletter",
 
-      icon3: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707601512/star_qhtqlz.png",
-      icon3title: "Decoration",
-      icon3description: " The technique , procedure , and materials used during ",
-      icon4: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707969311/diamond_zuwa12.png",
-      icon4title: "Architectural",
-      icon4description: " lorem ipsum dolor aas asaas est mi ",
+      button: [{ title: "Subscribe", url: "#", icon: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707952901/right-arrow_1_y7iz2i.png" }],
+      imgUrl: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707937141/pexels-nubia-navarro-_nubikini_-3221215_wtzq4w.jpg",
     },
-    about2: {
-      image: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707937162/5_ookc7e.jpg",
-      arrow: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707959810/up-arrow_dfq1o8.png",
-      arrowR: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707952901/right-arrow_1_y7iz2i.png",
-      title: "Our architects journey",
-      heading: " Beautiful acoustics &",
-      headingcont: "Achievements",
-      subtitle:
-        "  Studying Architecture is demanding and is rated as one of the most challenging courses at the university. It requires long hours, commitment, and a seven-year study period",
-      awards: "10",
-      experience: "14",
-      projects: "142",
+
+    //************************    logos  *************************      */
+    logos: [
+      {
+        logo: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707329688/realestate/logo6_ddaq6y.png",
+        title: "lorem ipsum dolor",
+      },
+      {
+        logo: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707329687/realestate/logo3_fzmko0.png",
+        title: "lighting",
+      },
+      {
+        logo: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707975425/icons8-bird-64_kofuu5.png",
+        title: "lighting",
+      },
+      {
+        logo: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707329685/realestate/logo2_z1jb8d.png",
+        title: "lighting",
+      },
+      {
+        logo: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1703129091/icons8-stars-50_o1lg9s.png",
+        title: "lighting",
+      },
+    ],
+
+    //****************** testimonials */
+    testimonials: {
+      title: "What our  ",
+      subtitle: "Clients",
+      description: "say's",
+   
+
+      testimonial: [
+        {
+          imgUrl: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1703134020/avatar3_pbztwn.jpg",
+          title: "ahmed",
+          subtitle: "CEO at AST",
+          description: "We would like to take the opportunity to express our delights with the ways things are progressing.",
+        },
+        {
+          imgUrl: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1703134020/avatar3_pbztwn.jpg",
+          title: "ahmed",
+          subtitle: "CEO at AST",
+          description: "We would like to take the opportunity to express our delights with the ways things are progressing.",
+        },
+        {
+          imgUrl: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1703134020/avatar3_pbztwn.jpg",
+          title: "ahmed",
+          subtitle: "CEO at AST",
+          description: "We would like to take the opportunity to express our delights with the ways things are progressing.",
+        },
+        {
+          imgUrl: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1703134020/avatar3_pbztwn.jpg",
+          title: "ahmed",
+          subtitle: "CEO at AST",
+          description: "We would like to take the opportunity to express our delights with the ways things are progressing.",
+        },
+      ],
     },
+
+    //*********************   footer     ********* */
+
     footer: {
-      facbeook: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1703134255/meta-logo-facebook-svgrepo-com_zom99z.svg",
-      linked: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1703134254/linkedin-svgrepo-com_dpxquk.svg",
-      instagram: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1703134255/socialmedia-svgrepo-com_na36wp.svg",
-      twitter: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707987495/icons8-twitterx-50_1_ggrau2.png",
-      bolt: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707938679/lightning_h1zfze.png",
-      ArrR: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707346109/realestate/next_2989988_stvovd.png",
-      Name: "Soly.io ",
-      desc: "Architecture with understanding people minds",
-      connectp1: "Get in touch",
-      connectp2: "Contact us",
+      title: "Soly.io ",
+      description: "Architecture with understanding people minds",
+      logo: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707938679/lightning_h1zfze.png",
+      icon: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707346109/realestate/next_2989988_stvovd.png",
 
-      privacy: "privacy policy",
-      rights: "All rights reserved ®",
-      conditions: "Terms & conditions ®",
+      subtitle: "get in touch by .. ",
+      button: [{ title: "contact us", url: "#", icon: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707952901/right-arrow_1_y7iz2i.png" }],
 
-      home: "home",
-      design: "Design",
-      projects: "Projects",
-      Follow: "Follow us ",
-      about: "About us",
-      award: "Award",
+      urls: [
+        { icon: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1703134255/meta-logo-facebook-svgrepo-com_zom99z.svg", url: "https://facebook.com" },
+        { icon: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1703134254/linkedin-svgrepo-com_dpxquk.svg", url: "https://linkedin.com" },
+        { icon: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1703134255/socialmedia-svgrepo-com_na36wp.svg", url: "https://instagram.com" },
+        { icon: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707987495/icons8-twitterx-50_1_ggrau2.png", url: "https://twitter.com" },
+      ],
+      sections: [
+        { title: "Home", url: "#" },
+        { title: "Projects", url: "#" },
+        { title: "design", url: "#" },
+        { title: "follow", url: "#" },
+        { title: "award", url: "#" },
+      ],
+
+      footerSection: [{ title: "privacy policy" }, { title: "All rights reserved ®" }, { title: "Terms & conditions ®" }],
     },
 
     colors: {

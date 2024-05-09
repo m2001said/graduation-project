@@ -13,60 +13,82 @@ const Testimonials9 = () => {
     }
   });
 
-  const { block9 } = useSelector((state) => state.template9);
+  const testimonials = useSelector((state) => state.template9.testimonials.testimonial);
 
   const [currentTestimonialIndex, setCurrentTestimonialIndex] = useState(0);
 
   const handleNextTestimonial = () => {
-    setCurrentTestimonialIndex((prevIndex) => (prevIndex === testimonialsData.length - 1 ? 0 : prevIndex + 1));
+    setCurrentTestimonialIndex((prevIndex) =>
+      prevIndex === testimonials.length - 1 ? 0 : prevIndex + 1
+    );
   };
 
   const handlePrevTestimonial = () => {
-    setCurrentTestimonialIndex((prevIndex) => (prevIndex === 0 ? testimonialsData.length - 1 : prevIndex - 1));
+    setCurrentTestimonialIndex((prevIndex) =>
+      prevIndex === 0 ? testimonials.length - 1 : prevIndex - 1
+    );
   };
 
-  const currentTestimonial = testimonialsData[currentTestimonialIndex];
+  const currentTestimonial = testimonials[currentTestimonialIndex];
+
+  if (!testimonialsData || testimonialsData.length === 0 || !currentTestimonial) {
+    return <div>Loading testimonials...</div>; // Handle loading state or error gracefully
+  }
 
   return (
-    <main className="container mx-auto px-3 lg:flex justify-between pt-20 testimonial-9">
+    <main className="container mx-auto px-3 lg:flex justify-between pt-20 pb-20 testimonial-9">
+      
       <div className="lg:w-1/3 flex flex-col">
-        <p className="text-[va(--primary-text-color-9)] uppercase md:text-xl text-lg">Testimonials</p>
-        <h1 className="lg:text-4xl text-3xl font-medium capitalize py-3">Look What Our Customers Say!</h1>
-        <p className="text-[var(--black-9)] text-sm">{block9.speach}.</p>
+        <p className="text-[var(--website-9-color-3)] uppercase md:text-xl text-lg">
+          {testimonialsData.title}
+        </p>
+        <h1 className="lg:text-4xl text-3xl font-medium capitalize py-3">
+          {testimonialsData.subtitle}
+        </h1>
+        <p className="text-[var(--website-9-color-3)] text-sm">{testimonialsData.text}</p>
         <div className="lg:flex hidden gap-x-12 mt-16">
           <button
             onClick={handlePrevTestimonial}
-            className="w-12 h-12 rounded-full border border-[var(--button-text-color-9)] flex justify-center items-center text-2xl text-[var(--button-text-color-9)] focus:text-[var(--white-9)] hover:text-[var(--white-9)]"
+            className="w-12 h-12 rounded-full border border-[var(--website-9-color-2)] flex justify-center items-center text-2xl text-[var(--website-9-color-2)] focus:text-[var(--website-9-color-1)] hover:text-[var(--website-9-color-1)]"
           >
-            <img src={block9.arrowb} className="cursor-9  " />
+            <img src={testimonialsData.previous} alt="Previous" />
           </button>
           <button
             onClick={handleNextTestimonial}
-            className="w-12 h-12 rounded-full border border-[var(--button-text-color-9)] flex justify-center items-center text-2xl text-[var(--button-text-color-9)] focus:text-[var(--white-9)] hover:text-[var(--white-9)]"
+            className="w-12 h-12 rounded-full border border-[var(--website-9-color-2)] flex justify-center items-center text-2xl text-[var(--website-9-color-2)] focus:text-[var(--website-9-color-1)] hover:text-[var(--website-9-color-1)]"
           >
-            <img src={block9.arrowf} className="cursor-9" />
+            <img src={testimonialsData.next} alt="Next" />
           </button>
         </div>
       </div>
 
       <div className="relative rounded-2xl shadow-2xl lg:w-2/5 lg:p-16 p-6 lg:mt-0 mt-8">
-        <img src={block9.qot} className="text-[#ffe999] text-3xl logo-9" />
-        <p className="font-medium pt-2 text-[var(--black-9)] pb-8">{currentTestimonial.quote}</p>
-        <div className="border-t border-[var(--d4d4d4-9)] flex items-center py-4">
-          <img src={currentTestimonial.imageUrl} alt="" className="rounded-full h-12 w-12 object-cover" />
+        <img src={testimonialsData.quotation} alt="quote" className="text-[#ffe999] text-3xl logo-9" />
+        <p className="font-medium pt-2 text-[var(--website-9-color-5)] pb-8">
+          {currentTestimonial.quote}
+        </p>
+        <div className="border-t border-[var(--website-9-color-5)] flex items-center py-4">
+          <img
+            src={currentTestimonial.imgUrl}
+            alt={currentTestimonial.author}
+            className="rounded-full h-12 w-12 object-cover"
+          />
           <span className="lg:flex items-center justify-between w-full gap-x-4 font-medium pl-3">
-            <p className="text-[var(--secondary-text-color-9)]">{currentTestimonial.author}</p>
+            <p className="text-[var(--website-9-color-3)]">{currentTestimonial.author}</p>
             <div className="flex flex-row">
               {" "}
               {[...Array(5)].map((_, index) => (
-                <button key={index} className="cursor-auto text-[var(--ffe999-9)] last:text-[var(--d4d4d4-9)]">
-                  <img src={block9.star} className="w-6 h-6 mr-1" />
-                </button>
+                <img
+                  key={index}
+                  src={testimonialsData.star}
+                  alt="star"
+                  className="w-6 h-6 mr-1"
+                />
               ))}
             </div>
           </span>
         </div>
-        <button className="bg-gradient-to-r from-[var(--button-bg-gradient-from-9)] to-[var(--button-bg-gradient-to-9)] rounded-full h-16 w-16 cursor-auto absolute -top-6 left-6"></button>
+        <button className="bg-gradient-to-r from-[var(--website-9-color-5)] to-[var(--website-9-color-2)] rounded-full h-16 w-16 cursor-auto absolute -top-6 left-6"></button>
       </div>
     </main>
   );

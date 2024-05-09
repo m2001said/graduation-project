@@ -9,12 +9,12 @@ const Popup = ({ showPopup, setShowPopup }) => {
     <>
       {showPopup && (
         <div>
-          <div className="h-screen w-screen fixed top-0 left-0 bg-black/50 backdrop-blur-sm">
-            <div className="fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 p- shadow-md bg-[var(--color17-white)] rounded-md duration-200 w-[300px] z-20">
+          <div className="h-screen w-screen fixed top-0 left-0 bg-[var(--website-17-color-4)]backdrop-blur-sm">
+            <div className="fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 p- shadow-md bg-[var(--website-17-color-1)] rounded-md duration-200 w-[300px] z-20">
               {/* header section */}
               <div className="flex items-center justify-between">
                 <div>
-                  <h1 className="text-2xl font-bold text-[var(--color17-dark)]">{popup.title}</h1>
+                  <h1 className="text-2xl font-bold text-[var(--website-17-color-4)]">{popup.title}</h1>
                 </div>
                 <div>
                   <img
@@ -27,22 +27,22 @@ const Popup = ({ showPopup, setShowPopup }) => {
               </div>
 
               {/* Login form section */}
-              <div className="mt-4 z-20">
+              <div className="mt-4 z-20 px-2">
                 <input
                   type="email"
                   placeholder="Enter email"
-                  className="w-full rounded-md border border-gray-300 dark:border-gray-500 px-2 py-1 mb-4"
+                  className="w-full rounded-md border border-[var(--website-17-color-4)] dark:border-[var(--website-17-color-6)] px-2 py-1 mb-4"
                 />
                 <input
                   type="password"
                   placeholder="Enter password"
-                  className="w-full rounded-md border border-gray-300 dark:border-gray-500 px-2"
+                  className="w-full rounded-md border border-[var(--website-17-color-4)] dark:border-[var(--website-17-color-6)] px-2"
                 />
 
                 {/* Login button section */}
-                <div>
+                <div className="pt-2 px-4">
                   <button
-                    className="w-full bg-primary text-[var(--color17-white)] px-3 p-2 rounded-md"
+                    className=" w-full h-auto bg-[var(--website-17-color-3)] text-dark px-3  rounded-md" // Changed padding here
                     onClick={() => setShowPopup(false)}
                   >
                     {popup.buttonTitle}
@@ -51,7 +51,7 @@ const Popup = ({ showPopup, setShowPopup }) => {
 
                 {/* Social login */}
                 <div className="mt-4">
-                  <p className="text-center">{popup.other}</p>
+                  <p className="text-center text-[var(--website-17-color-4)]">{popup.other}</p>
                   <div className="flex justify-center gap-2 mt-2">
                     {popup.icons.map((icon) => (
                       <img

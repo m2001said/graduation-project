@@ -12,37 +12,31 @@ const Footer2 = () => {
       return state.template2.footer;
     }
   });
+
   return (
     <footer className="footer2">
       <a href="#" className="footer2__logo">
-        {footer.logo}{" "}
+        {footer.title}{" "}
       </a>
 
       <ul className="permalinks2">
-        <li>
-          <a href="#hero2">Home</a>
-        </li>
-
-        <li>
-          <a href="#services2">Services</a>
-        </li>
-
-        <li>
-          <a href="#testimonials2">Testimonials</a>
-        </li>
-        <li>
-          <a href="#contactUs2">Contact</a>
-        </li>
+        {footer.menuItems.map((menuItem) => (
+          <li key={menuItem.id}>
+            <a href={menuItem.link}>{menuItem.title}</a>
+          </li>
+        ))}
       </ul>
+      
       <div className="footer2__socials">
-        {footer.medias.map((icon) => (
-          <a href={icon.url}>
+        {footer.medias.map((icon, index) => (
+          <a key={index} href={icon.url}>
             <img src={icon.icon} alt="" className="footer2-image" />{" "}
           </a>
         ))}
       </div>
+      
       <div className="footer2__copyright">
-        <small>&copy; {footer.rights}</small>
+        <small>&copy; {footer.subtitle}</small>
       </div>
     </footer>
   );
