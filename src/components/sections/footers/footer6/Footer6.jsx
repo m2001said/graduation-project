@@ -22,8 +22,8 @@ const Footer6 = () => {
             </div>
             <p className="footer-description">{footer.description}</p>
           </div>
-          {footer.footerSections.map((section) => (
-            <div className="footer__links">
+          {footer.footerSections.map((section, index) => (
+            <div className="footer__links" key={index}>
               <h5 className="footer__link-title">{section.title}</h5>
               <div>
                 {section.links.map((item, index) => (
@@ -37,8 +37,8 @@ const Footer6 = () => {
           <div className="footer__links">
             <h5 className="footer__link-title">Contact</h5>
             <div>
-              {footer.contacts.map((item) => (
-                <div className="link__item  flex items-center gap-3 my-3">
+              {footer.contacts.map((item, index) => (
+                <div className="link__item  flex items-center gap-3 my-3" key={index}>
                   <img src={item.icon} alt="" className="ico" />
                   {item.value}
                 </div>

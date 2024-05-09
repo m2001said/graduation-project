@@ -24,7 +24,7 @@ function App() {
       <MainNav toggleModal={toggleModal} />
       <div style={{ marginTop: "77px" }}>
         <Routes>
-          <Route path="/" element={<MainPage toggleModal={toggleModal} isModalOpen={isModalOpen}/>} />
+          <Route path="/" element={<MainPage toggleModal={toggleModal} isModalOpen={isModalOpen} />} />
           <Route path="/designs" element={
             <ProtectedRoute>
               <DesignsPage />
@@ -43,11 +43,15 @@ function App() {
           } />
 
           {trialDesignComponents.map((Component, index) => (
-            <Route key={`preview-trial-design${index}`} path={`/preview-trial-design${index + 1}`} element={<Component />} />
+            <Route key={`preview-trial-design${index}`} path={`/preview-trial-design${index + 1}`} element={
+              <ProtectedRoute>
+                <Component />
+              </ProtectedRoute>
+            } />
           ))}
-          <Route element={<Dashboard/>}>
+          <Route element={<Dashboard />}>
             {trialDesignComponents.map((Component, index) => (
-              <Route key={`build-trial-design${index}`} path={`/build-trial-design${index + 1}`} element={<Component />} />
+              <Route key={`build-trial-design${index}`} path={`/build-trial-design${index + 1}/:pageId`} element={<Component />} />
             ))}
           </Route>
           <Route path="*" element={<NotFound />} />
