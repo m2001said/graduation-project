@@ -53,6 +53,7 @@ const templateSlice2 = createSlice({
     },
     testimonials: {
       title: "What the People Thinks About Us",
+      subtitle: "Testimonials",
       cards: [
         {
           avatar: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1703134021/avatar4_tn7dyv.jpg",
@@ -204,8 +205,14 @@ const templateSlice2 = createSlice({
     },
     
     footer: {
-      logo: "CSE",
-      rights: "ssssssssssssssssssssss all rights reserved.",
+      title: "CSE",
+      subtitle: "ssssssssssssssssssssss all rights reserved.",
+      menuItems: [
+        { id: 1, title: "Home", link: "#hero2" },
+        { id: 2, title: "Services", link: "#services2" },
+        { id: 3, title: "Testimonials", link: "#testimonials2" },
+        { id: 4, title: "Contact", link: "#contactUs2" }
+      ],
       medias: [
         {
           icon: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1703129090/icons8-facebook-50_xfbimo.png",
@@ -229,6 +236,7 @@ const templateSlice2 = createSlice({
         },
       ],
     },
+    
 
     colors: {
       templateColors: ["#fff", "#cda274", "#292f36", "#f4f0ec", "#777777"],

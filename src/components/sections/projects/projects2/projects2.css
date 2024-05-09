@@ -7,14 +7,14 @@
   gap: 2.5rem;
 }
 .projects2__item {
-  background: var(--color-2-bg-variant);
+  background: var(--website-2-color-2);
   padding: 1.2rem;
   border-radius: 2rem;
   border: 1px solid transparent;
   transition: var(--transition2);
 }
 .projects2__item:hover {
-  border-color: var(--color-2-primary-variant);
+  border-color: var(--website-2-color-4);
   background: transparent;
 }
 

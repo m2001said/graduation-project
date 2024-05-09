@@ -20,7 +20,7 @@ const Testimonials2 = () => {
   });
   return (
     <section id="testimonials2">
-      <h5>Review from Clients</h5>
+      <h5>{testimonial.subtitle}s</h5>
       <h2>{testimonial.title}</h2>
       <Swiper
         className="container testimonials2__container"
@@ -36,7 +36,7 @@ const Testimonials2 = () => {
             </div>
 
             <h5 className="client__name">{testimonial.name}</h5>
-            <small className="client__review">{testimonial.review}</small>
+            <p className="client__review ">{testimonial.review}</p>
           </SwiperSlide>
         ))}
       </Swiper>
