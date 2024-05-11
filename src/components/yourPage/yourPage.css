@@ -1,3 +1,4 @@
+
 .own-page {
     background: #481b91;
 }
@@ -7,8 +8,8 @@
 }
 
 .own-page textarea {
-    background-color: white !important;
-    color: #373737 !important;
+    background-color: white;
+    color: #373737;
 }
 
 .own-page .group {
@@ -16,7 +17,7 @@
     width: 80%;
     margin: 5px auto 20px;
     gap: 10px;
-    border: solid 1px var(--color-3);
+    border: 1px solid var(--color-3);
     padding: 10px;
     position: relative;
     background: white;
@@ -28,7 +29,7 @@
 }
 
 .show-btn:checked+.group {
-    display: grid !important;
+    display: grid;
 }
 
 .show-section {
@@ -64,43 +65,10 @@
     transform: translate(-50%, -100%);
     border-radius: 5px 5px 0px 0px;
     font-weight: bold;
-    font-size: 17px;
 }
 
 .group input {
     display: none;
-}
-
-.group label {
-    display: flex;
-    transition: 0.4s;
-    outline: solid 2px #00000000;
-    outline-offset: 1px;
-    position: relative;
-}
-
-.own-page .check-icon {
-    background: var(--color-3);
-    position: absolute;
-    top: 0;
-    right: 0;
-    transform: translate(-50%, -50%) scale(0);
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 30px;
-    height: 30px;
-    transition: 0.4s;
-    padding: 8px;
-}
-
-.group input[type="radio"]:checked+label {
-    outline: solid 2px var(--color-3);
-}
-
-.group input[type="radio"]:checked+label .check-icon {
-    transform: translate(-50%, -50%) scale(1) rotate(360deg);
 }
 
 .group.text {
@@ -110,13 +78,13 @@
 
 .own-page textarea {
     width: 100%;
-    resize: none !important;
+    resize: none;
     outline: none;
     padding: 10px;
     line-height: 1.5;
-    border: solid 1px #C5C5C5;
+    border: 1px solid #C5C5C5;
     border-radius: 3px;
-    color: #373737 !important;
+    color: #373737;
 }
 
 .own-page textarea:focus {
@@ -134,8 +102,7 @@
     border-radius: 7px;
     color: white;
     transition: 0.4s;
-    font-size: 17px;
-    outline: solid 1px var(--color-3);
+    outline: 1px solid var(--color-3);
     margin-block: 45px;
 }
 
@@ -150,21 +117,6 @@
     text-align: center;
 }
 
-.section-poster {
-    object-fit: cover;
-    width: 100%;
-}
-
-.section--poster-container.Hero--section {
-    height: 180px;
-    width: 100%;
-}
-
-.section--poster-container:not(.Navbar--section) {
-    min-height: 150px;
-    background-color: var(--appcolor15);
-}
-
 .own-page .error-message {
     max-width: 330px;
     padding: 20px;
@@ -173,31 +125,17 @@
     color: #373737;
     border-radius: 8px;
     box-shadow: 0 5px 6px #3613702f;
-    opacity: 0%;
+    opacity: 0;
     transform: translateY(20px);
     transition: 0.2s;
 }
 
 .own-page .error-message.active {
-    opacity: 100%;
-    transform: translateY(0px);
+    opacity: 1;
+    transform: translateY(0);
 }
 
 .own-page .error-message .important {
     color: var(--color-3);
     cursor: help;
-}
-
-span.section-id-num {
-    z-index: 5;
-    color: white;
-    width: 50px;
-    height: 35px;
-    position: absolute;
-    top: 0px;
-    left: 0;
-    background: cadetblue;
-    display: flex;
-    justify-content: center;
-    font-size: 23px;
 }

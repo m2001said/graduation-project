@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import TopSide from "./../components/dashboard/sections/TopSide";
+// import TopSide from "./../components/dashboard/sections/TopSide";
 import LeftSide from "../components/dashboard/sections/LeftSide";
 import RightSide from "../components/dashboard/sections/RightSide";
 import { useSelector } from "react-redux";
@@ -90,7 +90,7 @@ const Dashboard = () => {
   const screen = useSelector((state) => state.screen);
   return (
     <section className="dashboard-container mx-auto relative">
-      <TopSide schema={template}/>
+      {/* <TopSide schema={template}/> */}
       <div className="w-full flex-between flex-col md:flex-row dashboard-subContainer overflow-hidden">
         <LeftSide targetTemplate={template} updateAllRef={updateAllRef} />
         <div className="max-md:w-full md:w-70 flex-auto  flex justify-start flex-col items-center text-black p-2" style={{ height: "calc(100vh - 56px)" }}>

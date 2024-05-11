@@ -35,15 +35,8 @@ const Navbar6 = () => {
                 ))}
               </ul>
 
-              <div className="menu__right">
-                <div className="custom__search ">
-                  <input type="text" placeholder="search item...." />
-                  <span>
-                    <img src={navbar.searchIcon} alt="" className="ico" />
-                  </span>
-                </div>
-              </div>
             </div>
+
           </div>
 
           <div>
