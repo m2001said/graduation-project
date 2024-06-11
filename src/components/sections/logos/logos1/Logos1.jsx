@@ -13,7 +13,7 @@ const Logos1 = () => {
     }
   });
   return (
-    <div className="logos-1">
+    <div className="logos-1 flex">
       {logos.companies.map((logo, index) => (
         <img key={index} src={logo.imgUrl} alt={`Logo ${index + 1}`} />
       ))}

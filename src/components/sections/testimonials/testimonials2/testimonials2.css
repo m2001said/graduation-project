@@ -4,9 +4,11 @@
 
 .container .testimonials2__container {
   width: 40%;
-  padding-bottom: 4rem;
-  /* align-items: center;
-  justify-content: center; */
+  padding-bottom: 4rem; 
+  display: flex;
+
+  /* align-items: center; */
+  justify-content: center;
 }
 .client__avatar {
   width: 4rem;
@@ -14,26 +16,44 @@
   overflow: hidden;
   border-radius: 50%;
   margin: 0 auto 1rem;
-  border: 0.4rem solid var(--color-2-primary-variant);
+  border: 0.4rem solid var(--website-2-color-4);
 }
 
-.testimonial {
-  background: var(--color-2-bg-variant);
-  text-align: center;
+.testimonial2 {
+  background: var(--website-2-color-2);
+  text-align: start;
   padding: 1rem;
   border-radius: 2rem;
   user-select: none;
   display: flex;
   flex-direction: column;
-  max-width: 80%;
+  /* max-width: 80%; */
 }
+#testimonials2 .swiper {
+  width: 240px;
+  height: auto;
+  padding: 0.1rem;
+}
+#testimonials2 .swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 18px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+}
+
 .client__review {
-  color: var(--color-2-light);
+  color: var(--website-2-color-5);
   font-weight: 300;
-  display: block;
+  word-wrap: break-word; /* For older browsers */
+  overflow-wrap: break-word; /* For modern browsers */
   width: 80%;
   margin: 0.8rem auto 0;
 }
+
+
 
 /******************************** tablets     *** *** **** * * ***/
 
@@ -44,13 +64,13 @@
   .client__avatar {
     justify-content: center;
     align-items: center;
-    width: 10%;
+    /* width: 100%; */
     margin-top: 1rem;
     padding: auto;
     overflow: visible;
   }
   .client__avatar img {
-    max-width: fit-content;
+    max-width: max-content;
     border-radius: 50%;
   }
 }
@@ -73,7 +93,7 @@
     overflow: visible;
   }
   .client__avatar img {
-    max-width: fit-content;
+    max-width:fit-content;
     border-radius: 50%;
   }
   .testimonial {

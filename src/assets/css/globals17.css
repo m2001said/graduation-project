@@ -15,13 +15,21 @@ html {
 }
 
 :root {
-  --color17-primary: #ff0c00;
-  --color17-primaryDark: #bb2c51;
-  --color17-secondary: #21d4b9;
-  --color17-white: #ffffff;
-  --color17-dark: rgb(0, 0, 0);
-  --color17-light: rgb(160, 157, 157);
-  --color17-light2: rgba(255, 255, 255, 0.7);
+  --website-17-color-1: #ff0c00;
+  /* --color17-primary: #ff0c00; */
+  /* --color17-primaryDark: #; */
+  --website-17-color-2: #bb2c51;
+  /* --color17-secondary: #21d4b9; */
+  --website-17-color-3: #21d4b9;
+  /* --color17-white: #ffffff; */
+  --website-17-color-4: #ffffff;
+  /* --color17-dark: rgb(0, 0, 0); */
+--website-17-color-5: rgb(0, 0, 0);
+  
+/* --color17-light: rgb(160, 157, 157); */
+--website-17-color-6: rgb(160, 157, 157);
+/* --color17-light2: rgba(255, 255, 255, 0.7); */
+
 
   /***** fonts /***/
   --font17-: "Ephesis", "cursive";
@@ -82,4 +90,3 @@ html {
     max-width: 1318px; 
   }
 } */
-

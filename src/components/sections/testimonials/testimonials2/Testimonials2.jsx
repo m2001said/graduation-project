@@ -20,7 +20,7 @@ const Testimonials2 = () => {
   });
   return (
     <section id="testimonials2">
-      <h5>Review from Clients</h5>
+      <h5>{testimonial.subtitle}s</h5>
       <h2>{testimonial.title}</h2>
       <Swiper
         className="container testimonials2__container"
@@ -30,13 +30,13 @@ const Testimonials2 = () => {
         modules={[EffectCards]}
       >
         {testimonial.cards.map((testimonial, index) => (
-          <SwiperSlide className="testimonial" key={index}>
+          <SwiperSlide className="testimonial2" key={index}>
             <div className="client__avatar">
               <img src={testimonial.avatar} alt="" />
             </div>
 
             <h5 className="client__name">{testimonial.name}</h5>
-            <small className="client__review">{testimonial.review}</small>
+            <p className="client__review ">{testimonial.review}</p>
           </SwiperSlide>
         ))}
       </Swiper>

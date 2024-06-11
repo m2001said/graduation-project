@@ -1,12 +1,13 @@
 .nav2 {
-  background: var(--color-2-nav);
+  background: var(--website-2-color-3) round;
   display: block;
-  padding: 0.7rem 1.7rem;
+  /* padding: 0.7rem 1.7rem; */
+
   z-index: 2;
   position: fixed;
   left: 50%;
   transform: translateX(-50%);
-
+  padding: space-around;
   bottom: 2.5rem;
   gap: 0.8rem;
   display: flex;
@@ -18,15 +19,16 @@
   padding: 0.9rem;
   background: transparent;
   display: flex;
-  color: var(--color-2-light);
+  color: var(--website-2-color-5);
   font-size: 1.1rem;
 }
 .nav2 a:hover {
-  background-color: var(--color-2-grey);
+  background-color: var(--website-2-color-6) ;
+  
 }
 
 .nav2 a.active {
-  background: var(--color-2-primary-variant);
+  background: var(--website-2-color-5);
   border-radius: 50%;
 }
 
@@ -35,7 +37,7 @@
     padding: 0%;
   }
   .nav2 a:hover {
-    background-color: var(--color-2-white);
+    background-color: var(--website-2-color-5);
   }
   .nav2 a.active {
     background: var(--color-2-primary);

@@ -4,9 +4,11 @@ import "aos/dist/aos.css";
 import "./header.css";
 import { Link } from "react-router-dom";
 import hero from "../../../assets/images/mainPageAssets/hero-min.svg";
-
+import { useSelector } from 'react-redux';
 
 const Header = ({ toggleModal }) => {
+  const authState = useSelector(state => state.auth);
+
   useEffect(() => {
     AOS.init({
       duration: 1000,
@@ -25,9 +27,19 @@ const Header = ({ toggleModal }) => {
                 At Zagazig Easy Website Builder, we’re pioneering a new era in the design process. Our intelligent AI website builder turns your digital vision
                 into reality in just a few clicks. From abstract concepts to fully developed websites, the future of web design starts here.
               </p>
-              <button className="info-btn" onClick={toggleModal}>
-                Generate your website
-              </button>
+              {
+                authState.status === "succeeded" ? (
+                  <Link to={"/designs"}>
+                    <button className="info-btn">
+                      Generate your website
+                    </button>
+                  </Link>
+                ) : (
+                  <button className="info-btn" onClick={toggleModal}>
+                    Generate your website
+                  </button>
+                )
+              }
             </div>
             <div className="main-hero-image">
               <img src={hero} alt="hero" />

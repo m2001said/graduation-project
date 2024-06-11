@@ -70,7 +70,7 @@
 .modal-content {
   margin: auto;
   padding: 15px;
-  padding-top: 70px;
+  padding-top: 20px;
   width: 85%;
   max-width: 330px;
   flex-direction: column;
@@ -82,20 +82,22 @@
   font-size: 31px;
   text-align: center;
   color: var(--modal-button) !important;
+  margin-top: 45px;
 }
 
 .modal-form {
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: 7px;
   color: #494949;
 }
 
-.modal-form .sub-button {
+.modal-content .sub-button {
   text-align: center;
+  color: #494949;
 }
 
-.modal-form .sub-button button {
+.modal-content .sub-button button {
   color: var(--color-3);
 }
 
@@ -122,6 +124,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 125px;
   border: none;
 }
 
@@ -134,4 +137,29 @@
 }
 .message-error{
   color:#d71616e3 ;
+}
+
+.verification-message{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 17px;
+}
+.verification-message p{
+  color: #222222de;
+  text-align: center;
+}
+
+/*  spin loader animation */
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-spin-slow {
+  width: 20px;
+  height: 20px;
+  animation: spin 2s linear infinite;
 }

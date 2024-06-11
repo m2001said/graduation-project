@@ -12,43 +12,35 @@
 }
 
 :root {
-  --button-text-color-9: #0ca39a;
-  --e5e5e5-9: #e5e5e5;
-  --button-text-colo-r-9: #0ca39a;
-  --d4d4d4-9: #d4d4d4;
-  --color-f6-9: #f6f6f6;
-  --aaaaaa-color-9: #aaaaaa;
-  --f2f2f2-color-9: #f2f2f2;
-  --primary-next-9-color: rgb(255, 163, 4);
-  --ffe999-9: #ffe999;
-  --e6edeb-9: #e6edeb;
-  --primary-text-color: #0c4f37;
-  --primary-text-color-9: #0c4f37;
-  --black-9: rgb(0, 0, 0);
-  --color-808080-color-9: #808080;
-  --secondary-text-color-9: #0c4d37;
+  --website-9-color-1: rgb(255, 255, 255);
+  /* --white-9 - */
+  --website-9-color-2: #0ca39a;
+  /*--button-text-color-9 */
+  /* --grey-9*/
+  /* مثلا website-15-color-1-- */
+  --website-9-color-3: #0c4f37;
+  /* --primary-text-color-9 */
+
+  --website-9-color-4: #808080;
+  /* --color-808080-color-9 */
+
+  /* مثلا website-15-color-1-- */
+
+ 
+
+  --website-9-color-5: #646cffaa;
+  /* --logo-hover-shadow-color */
+
+  --website-9-color-6: #74cac5;
+  /* --icon-hover-color-9 */
+
+  /******************/
   --font-size-md-9: 2rem;
-  --white-9: rgb(255, 255, 255);
-  --text-9-color: #a5a5a5;
+
   --font-size-base-9: 1.25rem;
-  --bg-color-9: #cbcbc9;
   --border-radius-lg-9: 1.5rem;
   --border-radius-md: 0.5rem;
-  --color-color-blue-9: #f8fdfe;
-  --button-bg-gradient-from: #8bd3ce;
-  --button-bg-gradient-from-9: #8bd3ce;
-  --button-bg-gradient-to: #eff9f9;
-  --button-bg-gradient-to-9: #eff9f9;
   --transition9: all 400ms ease;
-  --color-bce6e4-9: #bce6e4;
-  /* Add extracted colors and fonts */
-  --logo-hover-shadow-color: #646cffaa;
-  --logo-react-hover-shadow-color: #61dafbaa;
-
-  --button-hover-bg-color: #4abab4;
-  --icon-bg-color-9: #fff;
-  --icon-hover-color-9: #74cac5;
-  --icon-active-color-9: #26ada5;
 
   /* Fonts */
   --font-size-lg: 2.25rem;
@@ -61,6 +53,17 @@
   --font-weight-bold: 700;
 
   /****/
+}
+
+.hero9 {
+  padding-bottom: 1.5rem;
+}
+.feature-9 {
+  padding-bottom: 1.5rem;
+  padding-top: 1rem;
+}
+.team9 {
+  padding-bottom: 1.5rem;
 }
 .trialdesign9 {
   max-width: 100%;
@@ -78,7 +81,7 @@
 }
 
 .uppercase {
-  color: var(--primary-text-color);
+  color: var(--website-9-color-3);
 }
 
 .rounded-full {
@@ -129,7 +132,7 @@
 }
 .capitalize,
 .realestateh {
-  color: var(--black-9);
+  color: var(--website-9-color-3);
 }
 
 .read-the-docs {
@@ -141,38 +144,27 @@
   border-radius: 0 0 560px 560px;
 }
 .about-9:hover {
-  background: var(--button-bg-gradient-from);
+  background: var(--website-9-color-6);
+}
+
+
+
+.about-9 {
+  transition: var(--transition9);
+  /* padding-top: 1rem; */
+  padding-bottom: 3rem;
 }
 .about-9 {
   /* display: flex; */
   justify-content: center;
+
   /* align-items: center; */
 }
-.pricing-9 {
-  display: flex;
-  flex-direction: column;
-  /* justify-content: center; */
-  /* gap: 2rem; */
-}
-.pricing-9:hover {
-  background: var(--button-bg-gradient-from);
-  background: linear-gradient(to right, var(--primary-text-color-9), var(--white-9));
-  transition: var(--transition9);
-  color: var(--black-9);
-  /* background-size: cover; */
-}
-.pricing-9:hover h1,
-.pricing-9:hover p,
-.pricing-9:hover button {
-  color: var(--black-9);
-}
-.about-9 {
-  transition: var(--transition9);
-}
 
-.service-9:hover {
-  background: linear-gradient(to right, var(--primary-next-9-color), var(--white-9));
-  background-size: contain;
+.service-99 {
+  background: var(--website-9-color-3);
+  /* background-size: contain; */
+  padding-bottom: 2rem;
 }
 
 .cusror-9 {
@@ -185,7 +177,7 @@
   background: linear-gradient(to right, #8bd3ce, #eff9f9);
 }
 .footer9:hover {
-  background: #0c4d37;
+  background: var(--website-9-color-3);
   height: 10px;
 }
 

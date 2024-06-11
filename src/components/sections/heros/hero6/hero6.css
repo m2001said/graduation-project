@@ -1,14 +1,14 @@
 .design-6 .slider__content .design-6-slider-btn {
   padding: 7px 25px;
   border-radius: 5px;
-  background: var(--color3);
-  color: var(--color5);
+  background: var(--website-6-color3);
+  color: var(--website-6-color5);
   font-size: 0.9rem;
   margin-top: 30px;
   transition: 0.4s;
 }
 .design-6 .slider__content .design-6-slider-btn:active {
-  color: var(--color6);
+  color: var(--website-6-color6);
 }
 
 @media only screen and (max-width: 992px) {

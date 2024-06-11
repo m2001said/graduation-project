@@ -53,6 +53,7 @@ const templateSlice2 = createSlice({
     },
     testimonials: {
       title: "What the People Thinks About Us",
+      subtitle: "Testimonials",
       cards: [
         {
           avatar: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1703134021/avatar4_tn7dyv.jpg",
@@ -121,6 +122,8 @@ const templateSlice2 = createSlice({
       ],
     },
     contact: {
+      title: "Get in Touch",
+      subtitle: "Reach out to us",
       options: [
         {
           title: "Email",
@@ -141,8 +144,47 @@ const templateSlice2 = createSlice({
           logo: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1703134203/whatsapp-whats-app-svgrepo-com_ug4dbt.svg", // Replace with your WhatsApp link
         },
       ],
+      send: {
+        title: "Send",
+        action: "sendEmail",
+      },
+      sendMessage: {
+        title: "Send a message",
+        action: "sendWhatsAppMessage",
+      },
     },
+    
+    // items: {
+    //   title: "Articles & News",
+    //   description:
+    //     "It is a long established fact that a reader will be distracted by the of readable content of a page when lookings at its layouts the points of using.",
+    //   cards: [
+    //     {
+    //       title: "Let’s Get Solution For Building Construction Work",
+    //       description: "26 December,2022 ",
+    //       imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701718041/templates/template_one/article1.f88f54e6a4cdbf340b36_l3ujjw.png",
+    //       icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701718889/templates/template_one/Vector_5_nzmfwn.svg",
+    //       caption: "Kitchan Design",
+    //     },
+    //     {
+    //       title: "Low Cost Latest Invented Interior Designing Ideas.",
+    //       description: "22 December,2022 ",
+    //       icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701718889/templates/template_one/Vector_5_nzmfwn.svg",
+    //       imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701718042/templates/template_one/article2.43be768543cb8cfeaf07_atvwjd.png",
+    //       caption: "Living Design",
+    //     },
+    //     {
+    //       title: "Best For Any Office & Business Interior Solution",
+    //       description: "25 December,2022 ",
+    //       icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701718889/templates/template_one/Vector_5_nzmfwn.svg",
+    //       imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701718042/templates/template_one/article3.f759fde0c85f3fb92b22_c2tqkv.png",
+    //       caption: "Interior Design",
+    //     },
+    //   ],
+    // },
     services: {
+      title: "What We Offer",
+      subtitle: "Services",
       services: [
         {
           title: "UI/UX Design",
@@ -150,7 +192,7 @@ const templateSlice2 = createSlice({
           icon: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1703134251/correct-signal-svgrepo-com_vvf3sw.svg",
         },
         {
-          title: "WebDevelopment",
+          title: "Web Development",
           items: ["lorem ipsum,", "Llorem ipsuma,", "Blorem ipsumm,", "Dilorem ipsumll,", "lorem ipsum"],
           icon: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1703134251/correct-signal-svgrepo-com_vvf3sw.svg",
         },
@@ -161,9 +203,16 @@ const templateSlice2 = createSlice({
         },
       ],
     },
+    
     footer: {
-      logo: "CSE",
-      rights: "ssssssssssssssssssssss all rights reserved.",
+      title: "CSE",
+      subtitle: "ssssssssssssssssssssss all rights reserved.",
+      menuItems: [
+        { id: 1, title: "Home", link: "#hero2" },
+        { id: 2, title: "Services", link: "#services2" },
+        { id: 3, title: "Testimonials", link: "#testimonials2" },
+        { id: 4, title: "Contact", link: "#contactUs2" }
+      ],
       medias: [
         {
           icon: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1703129090/icons8-facebook-50_xfbimo.png",
@@ -187,6 +236,7 @@ const templateSlice2 = createSlice({
         },
       ],
     },
+    
 
     colors: {
       templateColors: ["#fff", "#cda274", "#292f36", "#f4f0ec", "#777777"],

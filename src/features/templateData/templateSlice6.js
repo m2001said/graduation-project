@@ -59,12 +59,15 @@ const templateSlice6 = createSlice({
         },
       ],
     },
-    cardIcon: {
-      shoppingIcon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703095842/jammal_photos/gehvutbyftfxemvoqmu8.svg",
-    },
+
     menu: {
-      title: "Popular food menu",
-      menus: [
+      Title: "Popular food menu",
+      Card: {
+        shoppingIcon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703095842/jammal_photos/gehvutbyftfxemvoqmu8.svg",
+        rateIcon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1706352872/jammal_photos/v02eynmgkqv3wkrbhnda.svg",
+        valueName: "Price: $",
+      },
+      Menus: [
         {
           id: "01",
           title: "Vegetable",
@@ -95,6 +98,11 @@ const templateSlice6 = createSlice({
     },
     products: {
       menuTitle: "Our Menu Pack",
+      Card: {
+        shoppingIcon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703095842/jammal_photos/gehvutbyftfxemvoqmu8.svg",
+        rateIcon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1706352872/jammal_photos/v02eynmgkqv3wkrbhnda.svg",
+        valueName: "Price: $",
+      },
       filterContent: [
         {
           title: "FAST FOOD",

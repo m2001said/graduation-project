@@ -15,14 +15,14 @@
 }
 .hero2__icon:hover {
   transition: var(--transition2);
-  background: var(--color-2-bg-variant);
+  background: var(--website-2-color-2);
   border-radius: 50%;
 }
 .hero2__me {
   width: 100%;
   aspect-ratio: 0/1;
   border-radius: 2rem;
-  background: linear-gradient(120deg, transparent, var(--color-2-golden), transparent);
+  background: linear-gradient(120deg, transparent, var(--website-2-color-3), transparent);
   display: grid;
   place-items: center;
 }
@@ -45,7 +45,7 @@
 }
 
 .hero2__card {
-  background: var(--color-2-bg-variant);
+  background: var(--website-2-color-2);
   border: 1px solid transparent;
   border-radius: 1rem;
   padding: 2rem;
@@ -55,7 +55,7 @@
 
 .hero2__card:hover {
   background: transparent;
-  border-color: var(--color-2-primary-variant);
+  border-color: var(--website-2-color-4);
   cursor: default;
 }
 
@@ -72,12 +72,12 @@
 
 .hero2__card small {
   font-size: 0.7rem;
-  color: var(--color-2-light);
+  color: var(--website-2-color-5);
 }
 
 .hero2__content p {
   margin: 2rem 0 2.6rem;
-  color: var(--color-2-light);
+  color: var(--website-2-color-5);
 }
 
 /* Media Queries for Tablets */

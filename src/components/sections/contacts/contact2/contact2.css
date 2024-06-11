@@ -7,15 +7,15 @@
   padding-top: 2rem;
 }
 #contactUs2 h2 {
-  color: var(--color-2-primary);
+  color: var(--website-2-color-3);
 }
 .contactUs2__options .contactUs2__option a {
-  color: var(--color-2-2-white);
+  color: var(--website-2-color-5);
   text-decoration: none;
 }
 
 .contactUs2__options .contactUs2__option a:hover {
-  color: var(--color-2-primary);
+  color: var(--website-2-color-3);
   text-decoration: underline;
   font-weight: bold;
 }
@@ -33,7 +33,7 @@
   gap: 1.2rem;
 }
 .contactUs2__options {
-  background: var(--color-2-bg-variant);
+  background: var(--website-2-color-2);
   padding: 1.2rem;
   border-radius: 1.2rem;
   text-align: center;
@@ -42,7 +42,7 @@
 }
 .contactUs2__option:hover {
   background: transparent;
-  border-color: var(--color-2-primary-variant);
+  border-color: var(--website-2-color-4);
 }
 .contactUs2__option-icon {
   font-size: 1.5rem;
@@ -78,9 +78,9 @@ textarea {
   width: 100%;
   padding: 1.5rem;
   border-radius: 0.5rem;
-  border: 2px solid var(--color-2-primary-variant);
+  border: 2px solid var(--website-2-color-4);
   resize: none;
-  color: var(--color-2-2-white);
+  color: var(--website-2-color-5);
   background: transparent;
 }
 
