@@ -124,7 +124,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 125px;
   border: none;
 }
 
@@ -151,15 +150,3 @@
   text-align: center;
 }
 
-/*  spin loader animation */
-@keyframes spin {
-  100% {
-    transform: rotate(360deg);
-  }
-}
-
-.animate-spin-slow {
-  width: 20px;
-  height: 20px;
-  animation: spin 2s linear infinite;
-}
