@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_BASE_URL = 'https://zweb.up.railway.app';
+const API_BASE_URL = 'https://websitebuilderbackend-production-716e.up.railway.app';
 
 // Function to create a new user
 export const createUser = async (name, email, password) => {
