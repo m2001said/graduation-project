@@ -1,33 +1,41 @@
-
 .pricing_plans {
-    background: linear-gradient(to bottom , #e6e0e0 58%, #c9bcd6 100%);
-  }
-  
-  .free_plan .free_plan_btn {
-    background: #231d4f8c;
-  }
-  
-  .free_plan p,
-  .free_plan li {
-    color: #231d4f8c;
-  }
-  
-  .premium_plan {
-    background: #231D4F;
-    box-shadow: 0px 54px 77px #231d4f59;
-  }
-  
-  .premium_plan .premium_plan_btn {
-    background: #BB6BD9;
-  }
-  
-  .premium_plan .premium_plan_badge {
-    color: #BB6BD9;
-    background: #403879;
-  }
-  
-  .free_plan .check-icon {
-    background: #5243c269;
-    fill: #BB6BD9;
-  }
-  
+  background: linear-gradient(to bottom, #e6e0e0 58%, #c9bcd6 100%);
+}
+
+.free_plan .free_plan_btn {
+  background: #231d4f8c;
+  transition: 0.4s;
+}
+
+.free_plan .free_plan_btn:active {
+  background: #1814358c;
+}
+
+.free_plan p,
+.free_plan li {
+  color: #231d4f8c;
+}
+
+.premium_plan {
+  background: #231d4f;
+  box-shadow: 0px 54px 77px #231d4f59;
+}
+
+.premium_plan .premium_plan_btn {
+  background: #bb6bd9;
+  transition: 0.4s;
+}
+
+.premium_plan .premium_plan_btn:active {
+  background: #9d59b6;
+}
+
+.premium_plan .premium_plan_badge {
+  color: #bb6bd9;
+  background: #403879;
+}
+
+.free_plan .check-icon {
+  background: #5243c269;
+  fill: #bb6bd9;
+}
