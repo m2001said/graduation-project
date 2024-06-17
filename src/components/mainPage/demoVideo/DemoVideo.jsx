@@ -3,7 +3,6 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import "./demoVideo.css";
 import demo from "../../../assets/videos/demo.mp4";
-import Loader from "../../Loader/Loader.jsx"
 
 const DemoVideo = () => {
   useEffect(() => {

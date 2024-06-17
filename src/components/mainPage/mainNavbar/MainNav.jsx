@@ -28,7 +28,12 @@ const MainNav = ({ toggleModal }) => {
           </Link>
           <div className="nav-controls flex  justify-between items-center gap-4">
             {authState.status === "succeeded" && authState.user && (
-              <div className="user-name">{authState.user.name}</div>
+              <div className="user-name">
+                <Link to={"/user-information"}>
+                  {authState.user.name}
+                </Link>
+
+              </div>
             )}
             <button className="signIn-btn" onClick={authState.status === "succeeded" && authState.user ? handleSignOut : toggleModal}>
               {authState.status === "succeeded" && authState.user ? "Sign Out" : "Sign In"}

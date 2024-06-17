@@ -9,7 +9,6 @@ const PricingPlans = () => {
           <h1 className="text-4xl font-normal text-center mb-20 text-black">Plans & Pricing</h1>
   
           <div className="flex md:flex-row flex-col justify-center items-center gap-10 md:gap-0">
-            {/* Free Plan */}
             <div className="bg-white/50 p-8 px-10 rounded-3xl shadow-lg w-72 flex flex-col  free_plan">
               <h2 className="text-3xl font-extrabold mb-4 text-black">FREE</h2>
               <p className="mb-6 font-medium">Advanced tools to take your work to the next level.</p>
@@ -42,7 +41,6 @@ const PricingPlans = () => {
               <button className="text-white py-2 px-4 font-medium rounded-3xl free_plan_btn">Choose plan</button>
             </div>
   
-            {/* Premium Plan */}
             <div className="p-8 rounded-3xl w-72 flex flex-col text-white premium_plan">
               <div className="self-end bg-pink-500 text-xs px-4 py-1 rounded-3xl font-medium premium_plan_badge">MOST POPULAR</div>
               <h2 className="text-3xl my-4"><span className="font-extrabold">$20</span>/month</h2>

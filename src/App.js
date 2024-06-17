@@ -7,6 +7,7 @@ import DesignsPage from "./pages/DesignsPage";
 import BuildYourPage from "./pages/BuildYourPage";
 import NotFound from "./pages/NotFoundPage";
 import OwnPage from "./pages/OwnPage.jsx";
+import UserInformation from "./pages/UserInformation.jsx";
 import ProtectedRoute from "./pages/ProtectedRoute";
 
 import YourWebsites from "./pages/YourWebsites.jsx";
@@ -25,20 +26,29 @@ function App() {
       <div style={{ marginTop: "77px" }}>
         <Routes>
           <Route path="/" element={<MainPage toggleModal={toggleModal} isModalOpen={isModalOpen} />} />
+
           <Route path="/designs" element={
             <ProtectedRoute>
               <DesignsPage />
             </ProtectedRoute>
           } />
           <Route path="/websites" element={<YourWebsites />} />
+
           <Route path="/page-craft" element={
             <ProtectedRoute>
               <BuildYourPage />
             </ProtectedRoute>
           } />
+
           <Route path="/own-page" element={
             <ProtectedRoute>
               <OwnPage />
+            </ProtectedRoute>
+          } />
+
+          <Route path="/user-information" element={
+            <ProtectedRoute>
+              <UserInformation />
             </ProtectedRoute>
           } />
 
