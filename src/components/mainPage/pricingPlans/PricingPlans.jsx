@@ -6,9 +6,9 @@ const PricingPlans = () => {
       <div className="pricing_plans">
         <div className="container mx-auto px-4 py-4 flex flex-col items-center justify-center min-h-screen">
   
-          <h1 className="text-4xl font-normal text-center mb-20 text-black">Plans & Pricing</h1>
+          <h1 className="text-4xl font-normal text-center my-20 text-black">Plans & Pricing</h1>
   
-          <div className="flex md:flex-row flex-col justify-center items-center gap-10 md:gap-0">
+          <div className="flex md:flex-row flex-col justify-center items-center gap-24 md:gap-0">
             <div className="bg-white/50 p-8 px-10 rounded-3xl shadow-lg w-72 flex flex-col  free_plan">
               <h2 className="text-3xl font-extrabold mb-4 text-black">FREE</h2>
               <p className="mb-6 font-medium">Advanced tools to take your work to the next level.</p>
