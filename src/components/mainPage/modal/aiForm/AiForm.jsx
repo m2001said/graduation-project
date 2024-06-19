@@ -1,5 +1,5 @@
 import React from "react";
-import axios from 'axios';
+import axios from "axios";
 import "./aiForm.css";
 import { useNavigate } from "react-router";
 import { useSelector } from "react-redux";
@@ -10,28 +10,29 @@ const AiForm = ({ index }) => {
 
   const openDesign = async () => {
     try {
-      const response = await axios.post('https://zweb.up.railway.app/page', template, {
+      const response = await axios.post("https://websitebuilderbackend-production-716e.up.railway.app/page", template, {
         headers: {
-          'Content-Type': 'application/json',
-          'Authorization': `Bearer ${localStorage.getItem('token')}`
-        }
+          "Content-Type": "application/json",
+          Authorization: `Bearer ${localStorage.getItem("token")}`,
+        },
       });
-  
+
       const pageId = response.data.savedPage["_id"];
       console.log(response.data);
-      navigate(`/build-trial-design${index}/${pageId}`); 
-  
+      navigate(`/build-trial-design${index}/${pageId}`);
     } catch (error) {
-      console.error('Error:', error.response ? error.response.data : error.message);
+      console.error("Error:", error.response ? error.response.data : error.message);
     }
-  }
+  };
 
   return (
     <>
       <h3 className="ai-form-title">create your website quickly with artificial intelligence </h3>
       <p className="ai-form-description">write an overview of your project idea in 3 lines</p>
       <textarea name="overview" id="websiteOverview" required autoFocus cols="30" rows="10" placeholder="website overview"></textarea>
-      <button className="form-button button-2" onClick={openDesign}>Build your website now</button>
+      <button className="form-button button-2" onClick={openDesign}>
+        Build your website now
+      </button>
     </>
   );
 };
