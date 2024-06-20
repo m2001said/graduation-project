@@ -10,11 +10,11 @@ const AiForm = ({ index }) => {
 
   const openDesign = async () => {
     try {
-      const response = await axios.post('https://zweb.up.railway.app/page', template, {
+      const response = await axios.post("https://websitebuilderbackend-production-716e.up.railway.app/page", template, {
         headers: {
-          'Content-Type': 'application/json',
-          'Authorization': `Bearer ${localStorage.getItem('token')}`
-        }
+          "Content-Type": "application/json",
+          Authorization: `Bearer ${localStorage.getItem("token")}`,
+        },
       });
   
       const pageId = response.data.savedPage["_id"];
