@@ -1,9 +1,7 @@
 import React, { useState } from "react";
-import UpdatePassword from "../components/userInformation/ UpdatePassword";
-
+import UpdatePassword from "../components/userInformation/UpdatePassword";
+import UpdateEmail from "../components/userInformation/UpdateUserName";
 const UserInformation = () => {
-  // const [email, setEmail] = useState("");
-  // const [username, setUsername] = useState("");
   // const [selectedFile, setSelectedFile] = useState(null); // State to hold the selected file
 
   // const handleFileChange = (e) => {
@@ -87,32 +85,6 @@ const UserInformation = () => {
           )} */}
         </div>
 
-        <div className="flex flex-col md:flex-row my-4 justify-between gap-4 items-center w-1/2">
-          {/* <label className="text-white w-1/4" htmlFor="email">
-            Email
-          </label>
-          <input
-            type="email"
-            id="email"
-            className="p-2 outline-none md:w-3/4rounded border-solid border-1 border-white bg-white text-black"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-          /> */}
-        </div>
-
-        <div className="flex flex-col md:flex-row my-4 justify-between gap-4 items-center w-1/2">
-          {/* <label className="text-white  w-1/4" htmlFor="username">
-            User Name
-          </label>
-          <input
-            type="text"
-            id="username"
-            className="p-2 outline-none md:w-3/4rounded border-solid border-1 border-white bg-white text-black"
-            value={username}
-            onChange={(e) => setUsername(e.target.value)}
-          /> */}
-        </div>
-
         {/* <button
           style={{ backgroundColor: "var(--color-3)" }}
           className="text-center my-4 rounded bg-gray-500 px-4 py-2 text-white w-1/2"
@@ -121,6 +93,7 @@ const UserInformation = () => {
           Update Information
         </button> */}
 
+        <UpdateEmail></UpdateEmail>
         <UpdatePassword></UpdatePassword>
       </div>
     </div>
