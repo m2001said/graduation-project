@@ -2,18 +2,24 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./mainNav.css";
 import logo from "../../../assets/images/mainPageAssets/logo.svg";
-import { useSelector, useDispatch } from 'react-redux';
-import { logoutUserAsync } from '../../../features/auth/authSlice';
-import { useNavigate } from 'react-router-dom';
+import { useSelector, useDispatch } from "react-redux";
+import { logoutUserAsync } from "../../../features/auth/authSlice";
+import { useNavigate } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 const MainNav = ({ toggleModal }) => {
   const Navigate = useNavigate();
-  const authState = useSelector(state => state.auth);
+  const authState = useSelector((state) => state.auth);
   const dispatch = useDispatch();
+  const { i18n } = useTranslation("main");
+
+  const changeLanguage = (lng) => {
+    i18n.changeLanguage(lng);
+  };
 
   const handleSignOut = () => {
     dispatch(logoutUserAsync());
-    Navigate('/');
+    Navigate("/");
   };
 
   return (
@@ -27,12 +33,14 @@ const MainNav = ({ toggleModal }) => {
             </div>
           </Link>
           <div className="nav-controls flex  justify-between items-center gap-4">
-            {authState.status === "succeeded" && authState.user && (
-              <div className="user-name">{authState.user.name}</div>
-            )}
+            {authState.status === "succeeded" && authState.user && <div className="user-name">{authState.user.name}</div>}
             <button className="signIn-btn" onClick={authState.status === "succeeded" && authState.user ? handleSignOut : toggleModal}>
               {authState.status === "succeeded" && authState.user ? "Sign Out" : "Sign In"}
             </button>
+            <div>
+              {i18n.language === "ar" && <button onClick={() => changeLanguage("en")}>En</button>}
+              {i18n.language === "en" && <button onClick={() => changeLanguage("ar")}>Ar</button>}
+            </div>
           </div>
         </div>
       </div>

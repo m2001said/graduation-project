@@ -2,7 +2,7 @@
 /* for mainPages and dashboard and for root-colors and root-fonts of all */
 /* root-colors and root-fonts ----all team will use them */
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -45,7 +45,7 @@ html {
 }
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
 }
 
 /* Global Rules */
@@ -55,6 +55,17 @@ body {
   margin: 0;
 }
 
+/* RTL Styles */
+.rtl {
+  direction: rtl;
+  text-align: right;
+}
+
+/* LTR Styles */
+.ltr {
+  direction: ltr;
+  text-align: left;
+}
 html {
   scroll-behavior: smooth;
 }
@@ -197,7 +208,7 @@ ul {
   position: relative;
 }
 .controller-name::after {
-  content: '';
+  content: "";
   position: absolute;
   left: 0;
   top: 57px;
@@ -335,7 +346,7 @@ ul {
 .dashboard-color-generate {
   margin-right: 4px;
   border: none;
-  background: url('assets/images/deploy.jpg');
+  background: url("assets/images/deploy.jpg");
   height: auto;
   width: auto;
   outline: none;
