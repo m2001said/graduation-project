@@ -34,7 +34,7 @@ export const loginUser = async (email, password) => {
 // Function to logout a user
 export const logoutUser = async () => {
   try {
-    // Optionally, you can remove the token from local storage upon logout
+
     const token = localStorage.getItem('token');
     const response = await axios.get(`${API_BASE_URL}/user/logout-user`, {
       headers: {
@@ -44,9 +44,8 @@ export const logoutUser = async () => {
     localStorage.removeItem('token');
     return response.data;
   } catch (error) {
-    // Log the error to the console
     console.error('Logout failed:', error);
-    throw error; // Rethrow the error so it can be handled elsewhere
+    throw error; 
   }
 };
 
