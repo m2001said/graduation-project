@@ -1,10 +1,13 @@
 import React, { useState } from "react";
 import axios from "axios";
+import { useDispatch } from "react-redux";
+import { updateUserName } from "../../features/auth/authSlice";
 
 const UpdateName = () => {
   const [newName, setNewName] = useState("");
   const [responseMessage, setResponseMessage] = useState("");
   const [loading, setLoading] = useState(false);
+  const dispatch = useDispatch();
   const token = localStorage.getItem("token");
 
   const handleUpdateName = async () => {
@@ -24,6 +27,7 @@ const UpdateName = () => {
         }
       );
       setResponseMessage("Name updated successfully!");
+      dispatch(updateUserName(newName));
       console.log("Name update response:", response.data);
     } catch (error) {
       setResponseMessage("Error updating name. Please try again.");

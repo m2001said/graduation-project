@@ -1,14 +1,13 @@
 import React from "react";
 import UpdatePassword from "../components/userInformation/UpdatePassword";
-import UpdateEmail from "../components/userInformation/UpdateUserName";
+import UpdateName from "../components/userInformation/UpdateUserName";
+import UpdateUserPicture from "../components/userInformation/UpdateUserPicture";
+
 const UserInformation = () => {
-  
   return (
     <div className="demo-section bg-gradient-to-r from-[#481b91] to-[#240d55] min-h-screen">
       <div className="container flex flex-col px-4 py-10 mx-auto items-center">
-        <div className="img-box flex flex-col md:flex-row items-center gap-4 mb-8">
-        
-        </div>
+        <div className="img-box flex flex-col md:flex-row items-center gap-4 mb-8"></div>
 
         {/* <button
           style={{ backgroundColor: "var(--color-3)" }}
@@ -17,8 +16,8 @@ const UserInformation = () => {
         >
           Update Information
         </button> */}
-
-        <UpdateEmail></UpdateEmail>
+        <UpdateUserPicture></UpdateUserPicture>
+        <UpdateName></UpdateName>
         <UpdatePassword></UpdatePassword>
       </div>
     </div>
