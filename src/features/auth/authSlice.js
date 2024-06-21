@@ -1,9 +1,10 @@
-import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
-import { createUser, loginUser, logoutUser } from './authApi';
+import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
+import { createUser, loginUser, logoutUser, fetchUserAvatar } from "./authApi";
 
 const initialState = {
   user: null,
   userName: "",
+  userAvatar: "",
   status: "idle",
   error: null,
 };
@@ -20,30 +21,34 @@ export const registerUserAsync = createAsyncThunk("auth/registerUser", async ({ 
 });
 
 // Thunk for user login
-export const loginUserAsync = createAsyncThunk(
-  'auth/loginUser',
-  async ({ email, password }, { rejectWithValue }) => {
-    try {
-      const response = await loginUser(email, password);
-      return response;
-    } catch (error) {
-      return rejectWithValue(JSON.stringify(error));
-    }
+export const loginUserAsync = createAsyncThunk("auth/loginUser", async ({ email, password }, { rejectWithValue }) => {
+  try {
+    const response = await loginUser(email, password);
+    return response;
+  } catch (error) {
+    return rejectWithValue(JSON.stringify(error));
   }
-);
+});
 
 // Thunk for user logout
-export const logoutUserAsync = createAsyncThunk(
-  'auth/logoutUser',
-  async (token, { rejectWithValue }) => {
-    try {
-      const response = await logoutUser(token);
-      return response;
-    } catch (error) {
-      return rejectWithValue(JSON.stringify(error));
-    }
+export const logoutUserAsync = createAsyncThunk("auth/logoutUser", async (token, { rejectWithValue }) => {
+  try {
+    const response = await logoutUser(token);
+    return response;
+  } catch (error) {
+    return rejectWithValue(JSON.stringify(error));
   }
-);
+});
+
+export const fetchUserAvatarAsync = createAsyncThunk("auth/fetchUserAvatar", async (_, thunkAPI) => {
+  try {
+    const response = await fetchUserAvatar();
+    thunkAPI.dispatch(updateUserAvatar(response.avatar));
+    return response.avatar;
+  } catch (error) {
+    return thunkAPI.rejectWithValue(JSON.stringify(error));
+  }
+});
 
 
 const authSlice = createSlice({
@@ -56,6 +61,9 @@ const authSlice = createSlice({
     },
     updateUserName(state, action) {
       state.userName = action.payload;
+    },
+    updateUserAvatar(state, action) {
+      state.userAvatar = action.payload;
     },
   },
   extraReducers: (builder) => {
@@ -92,9 +100,21 @@ const authSlice = createSlice({
       .addCase(logoutUserAsync.rejected, (state, action) => {
         state.status = "failed";
         state.error = action.payload;
+      })
+      .addCase(fetchUserAvatarAsync.pending, (state) => {
+        state.status = "loading";
+      })
+      .addCase(fetchUserAvatarAsync.fulfilled, (state, action) => {
+        state.status = "succeeded";
+        // Assuming the response structure contains `avatar` field
+        state.user.avatar = action.payload;
+      })
+      .addCase(fetchUserAvatarAsync.rejected, (state, action) => {
+        state.status = "failed";
+        state.error = action.payload;
       });
   },
 });
 
-export const { logout, updateUserName } = authSlice.actions;
+export const { logout, updateUserName, updateUserAvatar } = authSlice.actions;
 export default authSlice.reducer;

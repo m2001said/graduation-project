@@ -50,6 +50,20 @@ export const logoutUser = async () => {
   }
 };
 
+export const fetchUserAvatar = async () => {
+  try {
+    const token = localStorage.getItem("token");
+    const response = await axios.get(`${API_BASE_URL}/user/avatar`, {
+      headers: {
+        Authorization: `Bearer ${token}`,
+      },
+    });
+    return response.data;
+  } catch (error) {
+    throw Error(error.response.data.error);
+  }
+};
+
 // Function to forget password
 export const forgetPassword = async (email) => {
   try {

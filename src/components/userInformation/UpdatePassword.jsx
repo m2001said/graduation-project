@@ -11,7 +11,7 @@ const UpdatePassword = () => {
 
   const handleUpdatePassword = async () => {
     setLoading(true);
-    setResponseMessage(""); 
+    setResponseMessage("");
     try {
       const response = await axios.post(
         "https://websitebuilderbackend-production-716e.up.railway.app/user/update-password",
@@ -67,7 +67,7 @@ const UpdatePassword = () => {
 
       <button
         style={{ backgroundColor: "var(--color-3)" }}
-        className="text-center my-4 rounded bg-gray-500 px-4 py-2 text-white w-1/2"
+        className="text-center my-4 rounded bg-gray-500 px-4 py-2 text-white w-full md:w-1/2 "
         onClick={handleUpdatePassword}
         disabled={loading}
       >

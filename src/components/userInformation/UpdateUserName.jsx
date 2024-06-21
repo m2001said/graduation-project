@@ -55,7 +55,7 @@ const UpdateName = () => {
 
       <button
         style={{ backgroundColor: "var(--color-3)" }}
-        className="text-center my-4 rounded bg-gray-500 px-4 py-2 text-white w-1/2"
+        className="text-center my-4 rounded bg-gray-500 px-4 py-2 text-white w-full md:w-1/2 "
         onClick={handleUpdateName}
         disabled={loading}
       >
