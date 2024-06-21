@@ -15,7 +15,7 @@ const Hero7 = () => {
   return (
     <section id="home" className={`flex md:flex-row flex-col ${styles.paddingY} ئ`}>
       <div className={`flex-1 ${styles.flexStart} flex-col xl:px-0 sm:px-16 px-6`}>
-        <div className={`flex flex-row items-center py-[6px] px-4 rounded-[10px]  ${styles.primary}`} style={{ backgroundColor: "var(--color4)" }}>
+        <div className={`flex flex-row items-center py-[6px] px-4 rounded-[10px]  ${styles.primary}`} style={{ backgroundColor: "var(--website-7-color-6)" }}>
           <img src={hero.images[0]} alt="discount" className="w-[32px] h-[32px]" />
           <p className={`${styles.paragraph} ml-2 text-white`}>{hero.subtitle}</p>
         </div>
@@ -37,7 +37,7 @@ const Hero7 = () => {
             </div>
           </div>
         </div>
-        <p className={`${styles.paragraph} max-w-[470px] mt-5`} style={{ color: "var(--color5)" }}>
+        <p className={`${styles.paragraph} max-w-[470px] mt-5`} style={{ color: "var(--website-7-color-3)" }}>
           {hero.description}
         </p>
       </div>

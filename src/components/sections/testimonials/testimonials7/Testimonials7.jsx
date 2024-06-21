@@ -20,7 +20,7 @@ const Testimonials7 = () => {
           {testimonials.title} <br className="sm:block hidden" /> {testimonials.subtitle}
         </h2>
         <div className="w-full md:mt-0 mt-6">
-          <p className={`${styles.paragraph} text-left max-w-[450px]`} style={{ color: "var(--color5)" }}>
+          <p className={`${styles.paragraph} text-left max-w-[450px]`} style={{ color: "var(--website-7-color-5)" }}>
             {testimonials.description}
           </p>
         </div>

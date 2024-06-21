@@ -1,29 +1,35 @@
 .contact11.section {
   padding-bottom: 6.25rem;
 }
+
 .contact__container11 {
   grid-template-columns: 1fr;
   column-gap: 1.875rem;
-  background-color: var(--color22);
+  background-color: var(--website-11-color-2);
 }
+
 .contact__title11 {
   font-size: var(--h3-font-size);
   margin-bottom: 0.5rem;
 }
+
 .contact__form-group11 {
   display: grid;
   grid-template-columns: 1fr;
   column-gap: 1.5rem;
   margin-left: 350px;
 }
+
 .contact__form-div11 {
   position: relative;
   margin-bottom: 1.875rem;
   height: 3.75rem;
 }
+
 .contact__form-input11_0 {
   display: flex;
 }
+
 .contact__form-input11_1 {
   position: relative;
   top: 0;
@@ -31,14 +37,15 @@
   width: 20rem;
   height: 90%;
   box-shadow: var(--shadow);
-  background-color: var(--color22);
-  color: var(--color5);
+  background-color: var(--website-11-color-2);
+  color: var(--website-11-color-5);
   border: none;
   outline: none;
   border-radius: 1.875rem;
   padding: 0.625rem 1.875rem;
   z-index: 1;
 }
+
 .contact__form-input11_2 {
   position: relative;
   top: 0;
@@ -46,8 +53,8 @@
   width: 20rem;
   height: 90%;
   box-shadow: var(--shadow);
-  background-color: var(--color22);
-  color: var(--color5);
+  background-color: var(--website-11-color-2);
+  color: var(--website-11-color-5);
   border: none;
   outline: none;
   border-radius: 1.875rem;
@@ -55,6 +62,7 @@
   margin-left: 50px;
   z-index: 1;
 }
+
 .contact__form-input11_3 {
   position: relative;
   top: 0;
@@ -62,14 +70,15 @@
   width: 43rem;
   height: 90%;
   box-shadow: var(--shadow);
-  background-color: var(--color22);
-  color: var(--color5);
+  background-color: var(--website-11-color-2);
+  color: var(--website-11-color-5);
   border: none;
   outline: none;
   border-radius: 1.875rem;
   padding: 0.625rem 1.875rem;
   z-index: 1;
 }
+
 .contact__form-input11_4 {
   position: relative;
   top: 0;
@@ -77,8 +86,8 @@
   width: 43rem;
   height: 100%;
   box-shadow: var(--shadow);
-  background-color: var(--color22);
-  color: var(--color5);
+  background-color: var(--website-11-color-2);
+  color: var(--website-11-color-5);
   border: none;
   outline: none;
   border-radius: 1.875rem;
@@ -89,29 +98,36 @@
 .contact__form_area11 {
   height: 10.25rem;
 }
+
 .contact__form_area11 textarea {
   resize: none;
 }
+
 .contact__form11 {
   margin-bottom: 2rem;
 }
+
 .btn11.btn11_1 {
   width: 150px;
   margin-top: 100px;
 }
+
 @media screen and (max-width: 1024px) {
   .contact__container11 {
     justify-content: center;
     margin-left: 0;
     grid-template-columns: 1fr;
   }
+
   .contact__form-group11 {
     margin-left: 0;
   }
+
   .contact__form-input11_2 {
     margin-left: 0;
   }
 }
+
 .contact11.section {
   padding-bottom: 6.25rem;
 }
@@ -155,8 +171,8 @@
   width: 100%;
   height: 3.75rem;
   box-shadow: var(--shadow);
-  background-color: var(--color22);
-  color: var(--color5);
+  background-color: var(--website-11-color-2);
+  color: var(--website-11-color-5);
   border: none;
   outline: none;
   border-radius: 1.875rem;

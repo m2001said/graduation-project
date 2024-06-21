@@ -15,19 +15,18 @@ const Navbar7 = () => {
   const [toggle, setToggle] = useState(false);
 
   return (
-    <nav className="w-full flex py-6 justify-between items-center navbar" style={{ color: "var(--color3)" }}>
+    <nav className="w-full flex py-6 justify-between items-center navbar" style={{ color: "var(--website-7-color-3)" }}>
       <img src={navbar.imgUrl} alt="hoobank" className="w-[124px] h-[32px]" />
 
       <ul className="list-none sm:flex hidden justify-end items-center flex-1">
         {navbar.links.map((nav, index) => (
           <li
             key={index}
-            className={`font-poppins font-normal cursor-pointer text-[16px] ${active === nav.title ? "text-white" : "text-dimWhite"} ${
-              index === navbar.links.length - 1 ? "mr-0" : "mr-10"
-            }`}
+            className={`font-poppins font-normal cursor-pointer text-[16px] ${active === nav.title ? "text-white" : "text-dimWhite"} ${index === navbar.links.length - 1 ? "mr-0" : "mr-10"
+              }`}
             onClick={() => setActive(nav.title)}
           >
-            <a href={nav.url} style={{ color: active === nav.title ? "var(--color6)" : "var(--color3)" }}>
+            <a href={nav.url} style={{ color: active === nav.title ? "var(--website-7-color-6)" : "var(--website-7-color-5)" }} className="navbar-link hover:text-[var(--website-7-color-5)]">
               {nav.title}
             </a>
           </li>
@@ -40,12 +39,11 @@ const Navbar7 = () => {
             {navbar.links.map((nav, index) => (
               <li
                 key={index}
-                className={`font-poppins font-medium cursor-pointer text-[16px] ${active === nav.title ? "text-white" : "text-dimWhite"} ${
-                  index === navbar.links.length - 1 ? "mb-0" : "mb-4"
-                }`}
+                className={`font-poppins font-medium cursor-pointer text-[16px] ${active === nav.title ? "text-white" : "text-dimWhite"} ${index === navbar.links.length - 1 ? "mb-0" : "mb-4"
+                  }`}
                 onClick={() => setActive(nav.title)}
               >
-                <a href={nav.url} style={{ color: active === nav.title ? "var(--color6)" : "var(--color3)" }}>
+                <a href={nav.url} style={{ color: active === nav.title ? "var(--website-7-color-6)" : "var(--website-7-color-5)" }} className="navbar-link hover:text-[var(--website-7-color-5)]">
                   {nav.title}
                 </a>
               </li>

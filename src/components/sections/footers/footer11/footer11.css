@@ -6,7 +6,7 @@
   text-align: center;
   padding: 1.875rem;
   width: 100%;
-  background-color: var(--color22);
+  background-color: var(--website-11-color-2);
 }
 
 .blog__card11 {
@@ -26,6 +26,7 @@
     flex: 0 0 calc(100% - 1.875rem);
   }
 }
+
 .blog__container11 {
   display: flex;
   flex-wrap: wrap;

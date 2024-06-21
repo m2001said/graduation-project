@@ -2,37 +2,41 @@
   position: absolute;
   left: 0;
   top: 9%;
-  background: var(--color22);
-  border-right: 1px solid var(--color5);
+  background: var(--website-11-color-2);
+  border-right: 1px solid var(--website-11-color-5);
   padding: 2.5rem;
   width: 110px;
   min-height: 89.5vh;
-  /* 101.8 */
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   z-index: 10;
 }
+
 .nav11__list {
   display: flex;
   flex-direction: column;
   row-gap: 1rem;
 }
+
 .nav11__link {
   font-size: 1.5rem;
-  color: var(--color5);
+  color: var(--website-11-color-5);
   font-weight: var(--font-bold);
   transition: 0.3s;
 }
+
 .nav11__link:hover {
-  color: var(--color3);
+  color: var(--website-11-color-3);
 }
+
 .copyright11 {
-  color: var(--color4);
+  color: var(--website-11-color-4);
   font-size: var(--small-font-size);
   transform: rotate(-180deg);
   writing-mode: vertical-rl;
 }
+
 .nav__toggle11 {
   position: fixed;
   top: 1.25rem;
@@ -40,26 +44,31 @@
   cursor: pointer;
   height: 40px;
   width: 45px;
-  background-color: var(--color22);
-  border: 1px solid var(--color22);
+  background-color: var(--website-11-color-2);
+  border: 1px solid var(--website-11-color-2);
   display: none;
   justify-content: center;
   align-items: center;
   z-index: 1;
 }
+
 @media screen and (max-width: 1024px) {
   .aside11 {
     left: -110px;
   }
+
   .nav__toggle11 {
     display: flex;
   }
+
   .nav__toggle11-open {
     left: 140px;
   }
+
   .show-menu11 {
     left: 0;
   }
+
   .nav11__item {
     margin-top: 0.9rem;
     width: 20px;
