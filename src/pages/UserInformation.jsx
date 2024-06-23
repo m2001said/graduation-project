@@ -6,16 +6,8 @@ import UpdateUserPicture from "../components/userInformation/UpdateUserPicture";
 const UserInformation = () => {
   return (
     <div className="demo-section bg-gradient-to-r from-[#481b91] to-[#240d55] min-h-screen">
+      <h1 className="text-3xl font-bold tracking-tighter mb-10 text-center text-white sm:text-4xl md:text-5xl lg:text-6xl/none">Update Your Information</h1>
       <div className="container flex flex-col px-4 py-10 mx-auto items-center">
-        <div className="img-box flex flex-col md:flex-row items-center gap-4 mb-8"></div>
-
-        {/* <button
-          style={{ backgroundColor: "var(--color-3)" }}
-          className="text-center my-4 rounded bg-gray-500 px-4 py-2 text-white w-1/2"
-          onClick={handleUpdateInformation}
-        >
-          Update Information
-        </button> */}
         <UpdateUserPicture></UpdateUserPicture>
         <UpdateName></UpdateName>
         <UpdatePassword></UpdatePassword>

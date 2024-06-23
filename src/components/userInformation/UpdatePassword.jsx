@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 import LoadingButton from "../loadingButton/LoadingButton";
+import FormInput from "./FormInput";
 
 const UpdatePassword = () => {
   const [newPassword, setNewPassword] = useState("");
@@ -39,31 +40,10 @@ const UpdatePassword = () => {
 
   return (
     <>
-      <div className="flex flex-col md:flex-row my-4 justify-between gap-4 items-center w-full md:w-1/2 mx-auto">
-        <label className="text-white w-full md:w-1/4" htmlFor="oldPassword">
-          Old Password
-        </label>
-        <input
-          type="password"
-          id="oldPassword"
-          className="p-2 outline-none w-full md:w-3/4 rounded border-solid border-1 border-white bg-white text-black"
-          value={oldPassword}
-          onChange={(e) => setOldPassword(e.target.value)}
-        />
-      </div>
+      <FormInput label="Old Password" id="oldPassword" type="password" value={oldPassword} onChange={(e) => setOldPassword(e.target.value)} />
 
-      <div className="flex flex-col md:flex-row my-4 justify-between gap-4 items-center w-full md:w-1/2 mx-auto">
-        <label className="text-white w-full md:w-1/4" htmlFor="newPassword">
-          New Password
-        </label>
-        <input
-          type="password"
-          id="newPassword"
-          className="p-2 outline-none w-full md:w-3/4 rounded border-solid border-1 border-white bg-white text-black"
-          value={newPassword}
-          onChange={(e) => setNewPassword(e.target.value)}
-        />
-      </div>
+      <FormInput label="New Password" id="newPassword" type="password" value={newPassword} onChange={(e) => setNewPassword(e.target.value)} />
+
       {responseMessage && <span className="text-center my-4 block">{responseMessage}</span>}
 
       <LoadingButton
@@ -71,7 +51,7 @@ const UpdatePassword = () => {
         onClick={handleUpdatePassword}
         style={{ backgroundColor: "var(--color-3)" }}
         className="text-center my-4 rounded bg-gray-500 px-4 py-2 text-white w-full md:w-1/2 "
-        btnText="Update Name"
+        btnText="Update Password"
       />
     </>
   );

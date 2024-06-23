@@ -3,6 +3,7 @@ import axios from "axios";
 import { useDispatch } from "react-redux";
 import { updateUserName } from "../../features/auth/authSlice";
 import LoadingButton from "../loadingButton/LoadingButton";
+import FormInput from "./FormInput";
 
 const UpdateName = () => {
   const [newName, setNewName] = useState("");
@@ -40,26 +41,14 @@ const UpdateName = () => {
 
   return (
     <>
-      <div className="flex flex-col md:flex-row my-4 justify-between gap-4 items-center w-full md:w-1/2 mx-auto">
-        <label className="text-white w-full md:w-1/4" htmlFor="newName">
-          New Name
-        </label>
-        <input
-          type="text"
-          id="newName"
-          className="p-2 outline-none w-full md:w-3/4 rounded border-solid border-1 border-white bg-white text-black"
-          value={newName}
-          onChange={(e) => setNewName(e.target.value)}
-        />
-      </div>
+      <FormInput label="New Name" id="newName" type="text" value={newName} onChange={(e) => setNewName(e.target.value)} />
       {responseMessage && <span className="text-center my-4 block">{responseMessage}</span>}
-
       <LoadingButton
         loading={loading}
         onClick={handleUpdateName}
         style={{ backgroundColor: "var(--color-3)" }}
         className="text-center my-4 rounded bg-gray-500 px-4 py-2 text-white w-full md:w-1/2 "
-        btnText="Update Name" 
+        btnText="Update Name"
       />
     </>
   );
