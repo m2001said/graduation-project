@@ -4,7 +4,7 @@ import { useSelector } from "react-redux";
 const Blog15 = () => {
   const blog = useSelector((state) => state.template15.blogs);
 
-  const Card = ({ data, title, imgUrl ,description}) => {
+  const Card = ({ data, title, imgUrl, description }) => {
     return (
       <div className="hoverBtn">
         <div className="blog15_4 rounded-[20px] py-[30px] px-[35px] relative overflow-hidden">
@@ -12,7 +12,7 @@ const Blog15 = () => {
           <p className="text-2xl blog15_6 font-bold hover:text-[#29a587] my-[15px]">{title}</p>
           <p className="blog15_5 opacity-80 leading-[1.7rem]">{description} </p>
           <span className="pt-[10px]">
-            <a href="#" className="font-bold flex items-center gap-x-2 no-underline text-[var(--color2)] hover:text-[var(--color3)]">
+            <a href="#" className="font-bold flex items-center gap-x-2 no-underline text-[var(--website-15-color-2)] hover:text-[var(--website-15-color-5)]">
               {blog.Buttons.actionButton}
               <img src={blog.imgUrl} style={{ width: "30px", height: "30px" }} alt="icon" />
             </a>

@@ -19,7 +19,7 @@ const Services15 = () => {
         <p className="text-[13px] title15_5 font-bold pb-12">{title}</p>
         <h1 className="text-2xl font-bold title15_5">{sub_title}</h1>
         <p className="opacity-80 min-h-[125px] leading-[1.7rem] title15_6">{text}</p>
-        <a href="#pricing" className="font-bold flex items-center gap-x-2 no-underline ml-20 title15_7 hover:text-[var(--color3)]">
+        <a href="#pricing" className="font-bold flex items-center gap-x-2 no-underline ml-20 title15_7 hover:text-[var(--website-15-color-5)]">
           {services.actionButton}
           <img src={services.imgUrl} alt="" style={{ width: "30px", height: "30px" }} />
         </a>

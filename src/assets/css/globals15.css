@@ -1,17 +1,18 @@
 :root {
-  /* --appcolor15: #1f2937; */
-  /* --background-color15: #9b650d; */
-  /* --color5: #f0ebe3; */
-  /* --color2: #262626; */
-  /* --color3: #29a587; */
-  /* --color2: #1f2937; */
-  /* --color5: white; */
-  /* --color4: #808080; */
-  --color1: red;
-  --color2: red;
-  --color3: red;
-  --color4: red;
-  --color5: red;
+  --website-15-color-1: #1f2937;
+  --website-15-color-2: #9b650d;
+  --website-15-color-4: #262626;
+  --website-15-color-5: #29a587;
+  --website-15-color-6: #808080;
+  --website-15-color-3: #f0ebe3;
+  /* //////////////////////////////////////////// */
+  /* --website-15-color-1: #1f2937;
+  --website-15-color-2: #9b650d;
+  --website-15-color-3: #f0ebe3;
+  --website-15-color-4: #262626;
+  --website-15-color-5: #29a587;
+  --website-15-color-6: #808080; */
+
 
   font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   line-height: 1.5;
@@ -25,291 +26,372 @@
 }
 
 .backgroundcolor15 {
-  color: var(--background-color15);
+  color: var(--website-15-color-2);
 }
 
 .textColor15 {
-  color: var(--color5);
+  color: var(--website-15-color-3);
 }
 
 .darkTextColor15 {
-  color: var(--color2);
+  color: var(--website-15-color-4);
 }
 
 .btnHoverColor15 {
-  color: var(--color3);
+  color: var(--website-15-color-5);
 }
 
 .darkModeTextColor15 {
-  color: var(--color5);
+  color: var(--website-15-color-3);
 }
 
 .darkModeColor15 {
-  color: var(--color2);
+  color: var(--website-15-color-4);
 }
+
 .nav15 {
-  background-color: var(--color1);
+  background-color: var(--website-15-color-1);
 }
+
 .hero15 {
-  background-color: var(--color1);
+  background-color: var(--website-15-color-1);
 }
+
 /* serve15 */
 .serve15 {
-  background-color: var(--color1);
+  background-color: var(--website-15-color-1);
 }
 
 .title15_1 {
-  color: var(--color5);
+  color: var(--website-15-color-3);
 }
+
 .title15_2 {
-  color: var(--color3);
+  color: var(--website-15-color-5);
 }
+
 .title15_3 {
-  color: var(--color5);
+  color: var(--website-15-color-3);
 }
+
 .title15_4 {
-  background-color: var(--color5);
+  background-color: var(--website-15-color-3);
 }
+
 .title15_5 {
-  color: var(--color2);
+  color: var(--website-15-color-4);
 }
+
 .title15_6 {
-  color: var(--color4);
+  color: var(--website-15-color-6);
 }
+
 .title15_7 {
-  color: var(--color2);
+  color: var(--website-15-color-4);
 }
+
 /* feat15 */
 .feat15 {
-  background-color: var(--color1);
+  background-color: var(--website-15-color-1);
 }
+
 .feat15_1 {
-  color: var(--color5);
+  color: var(--website-15-color-3);
 }
+
 .feat15_2 {
-  color: var(--color3);
+  color: var(--website-15-color-5);
 }
+
 .feat15_3 {
-  color: var(--color5);
+  color: var(--website-15-color-3);
 }
+
 .feat15_4 {
-  color: var(--color3);
+  color: var(--website-15-color-5);
 }
+
 .feat15_5 {
-  color: var(--color5);
+  color: var(--website-15-color-3);
 }
+
 .feat15_6 {
-  color: var(--color3);
+  color: var(--website-15-color-5);
 }
+
 .feat15_7 {
-  color: var(--color4);
+  color: var(--website-15-color-6);
 }
+
 /* proj15 */
 .proj15 {
-  background-color: var(--color1);
+  background-color: var(--website-15-color-1);
 }
+
 .proj15_1 {
-  color: var(--color5);
+  color: var(--website-15-color-3);
 }
+
 .proj15_2 {
-  color: var(--color3);
+  color: var(--website-15-color-5);
 }
+
 .proj15_3 {
-  color: var(--color5);
+  color: var(--website-15-color-3);
 }
 
 .proj15_4 {
-  color: var(--color5);
+  color: var(--website-15-color-3);
 }
+
 .proj15_5 {
-  background-color: var(--color5);
+  background-color: var(--website-15-color-3);
 }
+
 .proj15_6 {
-  color: var(--color5);
+  color: var(--website-15-color-3);
 }
+
 .proj15_7 {
-  color: var(--color4);
+  color: var(--website-15-color-6);
 }
+
 .proj15_8 {
-  color: var(--color2);
+  color: var(--website-15-color-4);
 }
+
 .proj15_9 {
-  color: var(--color4);
+  color: var(--website-15-color-6);
 }
+
 .proj15_10 {
-  color: var(--color2);
+  color: var(--website-15-color-4);
 }
+
 /* cta15 */
 .cta15 {
-  background-color: var(--color1);
+  background-color: var(--website-15-color-1);
 }
+
 .cta15_1 {
-  color: var(--color5);
+  color: var(--website-15-color-3);
 }
+
 .cta15_2 {
-  color: var(--color3);
+  color: var(--website-15-color-5);
 }
+
 .cta15_3 {
-  color: var(--color5);
+  color: var(--website-15-color-3);
 }
+
 .cta15_4 {
-  color: var(--color3);
+  color: var(--website-15-color-5);
 }
+
 .cta15_5 {
-  color: var(--color3);
+  color: var(--website-15-color-5);
 }
+
 .cta15_6 {
-  color: var(--color4);
+  color: var(--website-15-color-6);
 }
+
 .cta15_7 {
-  color: var(--color5);
+  color: var(--website-15-color-3);
 }
+
 .cta15_8 {
-  color: var(--color4);
+  color: var(--website-15-color-6);
 }
+
 .cta15_9 {
-  color: var(--color5);
+  color: var(--website-15-color-3);
 }
+
 /* test15 */
 .test15 {
-  background-color: var(--color1);
+  background-color: var(--website-15-color-1);
 }
+
 .test15_1 {
-  color: var(--color5);
+  color: var(--website-15-color-3);
 }
+
 .test15_2 {
-  color: var(--color3);
+  color: var(--website-15-color-5);
 }
+
 .test15_3 {
-  color: var(--color5);
+  color: var(--website-15-color-3);
 }
+
 .test15_4 {
-  background-color: var(--color5);
+  background-color: var(--website-15-color-3);
 }
+
 .test15_5 {
-  color: var(--color4);
+  color: var(--website-15-color-6);
 }
+
 .test15_6 {
-  color: var(--color3);
+  color: var(--website-15-color-5);
 }
 
 .test15_7 {
-  color: var(--color2);
+  color: var(--website-15-color-4);
 }
+
 /* pricn15 */
 .pricn15 {
-  background-color: var(--color1);
+  background-color: var(--website-15-color-1);
 }
+
 .pricin15_1 {
-  color: var(--color5);
+  color: var(--website-15-color-3);
 }
+
 .pricin15_2 {
-  color: var(--color3);
+  color: var(--website-15-color-5);
 }
+
 .pricin15_3 {
-  color: var(--color5);
+  color: var(--website-15-color-3);
 }
+
 .pricin15_4 {
-  background-color: var(--color5);
+  background-color: var(--website-15-color-3);
 }
+
 .pricin15_5 {
-  color: var(--color4);
+  color: var(--website-15-color-6);
 }
+
 .pricin15_6 {
-  color: var(--color2);
+  color: var(--website-15-color-4);
 }
+
 .pricin15_7 {
-  background-color: var(--color3);
+  background-color: var(--website-15-color-5);
 }
+
 .pricin15_8 {
-  color: var(--color5);
+  color: var(--website-15-color-3);
 }
+
 .pricin15_9 {
-  color: var(--color2);
+  color: var(--website-15-color-4);
 }
+
 .pricin15_10 {
-  color: var(--color3);
+  color: var(--website-15-color-5);
 }
+
 .pricin15_11 {
-  color: var(--color2);
+  color: var(--website-15-color-4);
 }
+
 /* blog15 */
 .blog15 {
-  background-color: var(--color1);
+  background-color: var(--website-15-color-1);
 }
+
 .blog15_1 {
-  color: var(--color5);
+  color: var(--website-15-color-3);
 }
+
 .blog15_2 {
-  color: var(--color3);
+  color: var(--website-15-color-5);
 }
+
 .blog15_3 {
-  color: var(--color5);
+  color: var(--website-15-color-3);
 }
+
 .blog15_4 {
-  background-color: var(--color5);
+  background-color: var(--website-15-color-3);
 }
+
 .blog15_5 {
-  color: var(--color4);
+  color: var(--website-15-color-6);
 }
+
 .blog15_6 {
-  color: var(--color2);
+  color: var(--website-15-color-4);
 }
+
 .blog15_7 {
-  color: var(--color4);
+  color: var(--website-15-color-6);
 }
+
 .blog15_8 {
-  background-color: var(--color3);
+  background-color: var(--website-15-color-5);
 }
+
 .blog15_9 {
-  color: var(--color5);
+  color: var(--website-15-color-3);
 }
+
 /* cont15 */
 .cont15 {
-  background-color: var(--color1);
+  background-color: var(--website-15-color-1);
 }
+
 .cont15_1 {
-  color: var(--color5);
+  color: var(--website-15-color-3);
 }
+
 .cont15_2 {
-  color: var(--color3);
+  color: var(--website-15-color-5);
 }
+
 .cont15_3 {
-  color: var(--color5);
+  color: var(--website-15-color-3);
 }
+
 .cont15_4 {
-  color: var(--color5);
+  color: var(--website-15-color-3);
 }
+
 .cont15_5 {
-  background-color: var(--color3);
+  background-color: var(--website-15-color-5);
 }
+
 .cont15_6 {
-  color: var(--color5);
+  color: var(--website-15-color-3);
 }
+
 .cont15_7 {
-  color: var(--color4);
+  color: var(--website-15-color-6);
 }
+
 .cont15_8 {
-  color: var(--color5);
+  color: var(--website-15-color-3);
 }
+
 /* foot15 */
 .foot15 {
-  background-color: var(--color1);
+  background-color: var(--website-15-color-1);
 }
+
 .foot15_1 {
-  color: var(--color5);
+  color: var(--website-15-color-3);
 }
+
 .foot15_2 {
-  color: var(--color3);
+  color: var(--website-15-color-5);
 }
+
 .foot15_3 {
-  color: var(--color5);
+  color: var(--website-15-color-3);
 }
+
 .foot15_4 {
-  color: var(--color5);
+  color: var(--website-15-color-3);
 }
+
 .foot15_5 {
-  color: var(--color3);
+  color: var(--website-15-color-5);
 }
 
 .accordion-border {

@@ -17,8 +17,9 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-left: 3.125rem;
+  /* padding-left: 2.125rem; */
   padding-bottom: 3.125rem;
+  margin-right: 70%;
 }
 
 .timeline__item11:last-child {
