@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { useSelector, useDispatch } from "react-redux";
 import { updateUserAvatar } from "../../features/auth/authSlice";
@@ -10,6 +10,12 @@ const UpdateUserPicture = () => {
   const token = localStorage.getItem("token");
   const userAvatar = useSelector((state) => state.auth.userAvatar);
   const dispatch = useDispatch();
+
+  useEffect(() => {
+    if (userAvatar) {
+      setUploadedImage(userAvatar);
+    }
+  }, [userAvatar]);
 
   const handleUpload = async (event) => {
     setLoading(true);

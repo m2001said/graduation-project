@@ -1,3 +1,4 @@
+
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 import { createUser, loginUser, logoutUser, fetchUserAvatar } from "./authApi";
 
@@ -21,28 +22,22 @@ export const registerUserAsync = createAsyncThunk("auth/registerUser", async ({ 
 });
 
 // Thunk for user login
-export const loginUserAsync = createAsyncThunk("auth/loginUser", async ({ email, password }, { rejectWithValue }) => {
+export const loginUserAsync = createAsyncThunk("auth/loginUser", async ({ email, password }, { dispatch, rejectWithValue }) => {
   try {
     const response = await loginUser(email, password);
+    dispatch(updateUserName(response.user.name));
+    await dispatch(fetchUserAvatarAsync());
     return response;
   } catch (error) {
     return rejectWithValue(JSON.stringify(error));
   }
 });
 
-// Thunk for user logout
-export const logoutUserAsync = createAsyncThunk("auth/logoutUser", async (token, { rejectWithValue }) => {
-  try {
-    const response = await logoutUser(token);
-    return response;
-  } catch (error) {
-    return rejectWithValue(JSON.stringify(error));
-  }
-});
-
+// Thunk for fetching user avatar
 export const fetchUserAvatarAsync = createAsyncThunk("auth/fetchUserAvatar", async (_, thunkAPI) => {
   try {
-    const response = await fetchUserAvatar();
+    const token = localStorage.getItem("token");
+    const response = await fetchUserAvatar(token);
     thunkAPI.dispatch(updateUserAvatar(response.avatar));
     return response.avatar;
   } catch (error) {
@@ -50,6 +45,16 @@ export const fetchUserAvatarAsync = createAsyncThunk("auth/fetchUserAvatar", asy
   }
 });
 
+// Thunk for user logout
+export const logoutUserAsync = createAsyncThunk("auth/logoutUser", async (token, { dispatch, rejectWithValue }) => {
+  try {
+    const response = await logoutUser(token);
+    dispatch(clearUserData());
+    return response;
+  } catch (error) {
+    return rejectWithValue(JSON.stringify(error));
+  }
+});
 
 const authSlice = createSlice({
   name: "auth",
@@ -58,12 +63,18 @@ const authSlice = createSlice({
     logout(state) {
       state.status = "idle";
       state.user = null;
+      state.userName = "";
+      state.userAvatar = "";
     },
     updateUserName(state, action) {
       state.userName = action.payload;
     },
     updateUserAvatar(state, action) {
       state.userAvatar = action.payload;
+    },
+    clearUserData(state) {
+      state.userName = "";
+      state.userAvatar = "";
     },
   },
   extraReducers: (builder) => {
@@ -74,6 +85,7 @@ const authSlice = createSlice({
       .addCase(registerUserAsync.fulfilled, (state, action) => {
         state.status = "succeeded";
         state.user = action.payload;
+        state.userName = action.payload.name;
       })
       .addCase(registerUserAsync.rejected, (state, action) => {
         state.status = "failed";
@@ -85,6 +97,7 @@ const authSlice = createSlice({
       .addCase(loginUserAsync.fulfilled, (state, action) => {
         state.status = "succeeded";
         state.user = action.payload.user;
+        state.userName = action.payload.user.name;
       })
       .addCase(loginUserAsync.rejected, (state, action) => {
         state.status = "failed";
@@ -96,6 +109,8 @@ const authSlice = createSlice({
       .addCase(logoutUserAsync.fulfilled, (state) => {
         state.status = "succeeded";
         state.user = null;
+        state.userName = "";
+        state.userAvatar = "";
       })
       .addCase(logoutUserAsync.rejected, (state, action) => {
         state.status = "failed";
@@ -106,8 +121,7 @@ const authSlice = createSlice({
       })
       .addCase(fetchUserAvatarAsync.fulfilled, (state, action) => {
         state.status = "succeeded";
-        // Assuming the response structure contains `avatar` field
-        state.user.avatar = action.payload;
+        state.userAvatar = action.payload;
       })
       .addCase(fetchUserAvatarAsync.rejected, (state, action) => {
         state.status = "failed";
@@ -116,5 +130,5 @@ const authSlice = createSlice({
   },
 });
 
-export const { logout, updateUserName, updateUserAvatar } = authSlice.actions;
+export const { logout, updateUserName, updateUserAvatar, clearUserData } = authSlice.actions;
 export default authSlice.reducer;
