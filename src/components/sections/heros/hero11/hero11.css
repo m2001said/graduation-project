@@ -43,10 +43,12 @@
 }
 
 .scroll__down11 {
-  position: absolute;
+  position: relative;
   bottom: 10rem;
   left: 0;
   width: 100%;
+  margin-top: 12rem;
+  color: var(--website-11-color-5);
 }
 
 .mouse11 {

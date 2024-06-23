@@ -10,6 +10,8 @@
   cursor: pointer;
   font-weight: var(--font-bold);
   transition: 0.3s;
+  color: var(--website-11-color-5);
+
 }
 
 .work__item11:hover {
