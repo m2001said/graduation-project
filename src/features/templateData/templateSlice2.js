@@ -1,249 +1,29 @@
-import { createSlice } from "@reduxjs/toolkit";
+import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 import { addElement, addElementToArray, addSubElement, deleteElement, deleteSection, editElement, reorder, reorderSections } from "./actions";
+import i18next from "i18next";
+import enTemplateSlice2 from "../../locales/en/templateSlice2.json";
+import arTemplateSlice2 from "../../locales/ar/templateSlice2.json";
+
+export const fetchInitialTemplate = createAsyncThunk("template/fetchInitialTemplate", async () => {
+  try {
+    const language = i18next.language;
+
+    if (language === "ar") {
+      return arTemplateSlice2;
+    } else {
+      return enTemplateSlice2;
+    }
+  } catch (error) {
+    console.error("Error fetching initial template:", error);
+    throw error;
+  }
+});
+
+const initialState = {};
 
 const templateSlice2 = createSlice({
-  initialState: {
-    templateInfo: {
-      id: 2,
-      title: "",
-      description: "",
-      imgUrl: "",
-    },
-    navbar: [
-      {
-        imgUrl: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1703134252/home-1-svgrepo-com_axgckp.svg",
-        url: "hero2",
-      },
-      {
-        imgUrl: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1703134253/info-circle-svgrepo-com_a6q6z3.svg",
-        url: "services2",
-      },
-      {
-        imgUrl: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1703134396/project-svgrepo-com_qjvqow.svg",
-        url: "projects2",
-      },
-      {
-        imgUrl: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1703134251/customer-testimonial-svgrepo-com_vdnnre.svg",
-        url: "testimonials2",
-      },
-      {
-        imgUrl: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1703134254/message-circle-lines-alt-svgrepo-com_iotcwk.svg",
-        url: "contactUs2",
-      },
-    ],
-    hero: {
-      title: "Get to know",
-      subtitle: "Hero",
-      image: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1703142400/me-about_pobewn.jpg",
-      cards: [
-        { icon: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1703134251/book-svgrepo-com_f62qre.svg", title: "Experience", content: "3+ Years Working" },
-        {
-          icon: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1703134396/users-svgrepo-com_acna7b.svg",
-          title: "Clients",
-          content: "300+ Clients Worldwide",
-        },
-        {
-          icon: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1703134396/project-svgrepo-com_qjvqow.svg",
-          title: "Projects",
-          content: "80+ completed projects",
-        },
-      ],
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...",
-    },
-    testimonials: {
-      title: "What the People Thinks About Us",
-      subtitle: "Testimonials",
-      cards: [
-        {
-          avatar: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1703134021/avatar4_tn7dyv.jpg",
-          name: "Ernest Achiever",
-          review:
-            "Lorem ipsum doloripsum doloripsum doloripsum doloripsum doloripsum doloripsum dolor ipsum doloripsumdoloripsumdoloripsumdoloripsumdoloripsum doloripsum doloripsum doloripsum dolor",
-        },
-        {
-          avatar: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1703134020/avatar3_pbztwn.jpg",
-          name: "Ernest Achiever",
-          review:
-            "Lorem ipsum doloripsum doloripsum doloripsum doloripsum doloripsum doloripsum dolor ipsum doloripsumdoloripsumdoloripsumdoloripsumdoloripsum doloripsum doloripsum doloripsum dolor",
-        },
-        {
-          avatar: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1703134020/avatar2_lgwr3o.jpg",
-          name: "Ernest Achiever",
-          review:
-            "Lorem ipsum doloripsum doloripsum doloripsum doloripsum doloripsum doloripsum dolor ipsum doloripsumdoloripsumdoloripsumdoloripsumdoloripsum doloripsum doloripsum doloripsum dolor",
-        },
-        {
-          avatar: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1703134020/avatar1_g7wm1r.jpg",
-          name: "Ernest Achiever",
-          review:
-            "Lorem ipsum doloripsum doloripsum doloripsum doloripsum doloripsum doloripsum dolor ipsum doloripsumdoloripsumdoloripsumdoloripsumdoloripsum doloripsum doloripsum doloripsum dolor",
-        },
-      ],
-    },
-    projects: {
-      cards: [
-        {
-          image: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1703134068/portfolio3_rzhjvk.jpg",
-          title: "projects2 Item 1",
-          githubLink: "https://github.com",
-          demoLink: "https://dribbble.com/Alien_pixels",
-        },
-        {
-          image: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1703134049/portfolio4_ibgd9o.jpg",
-          title: "projects2 Item 2",
-          githubLink: "https://github.com",
-          demoLink: "https://dribbble.com/Alien_pixels",
-        },
-        {
-          image: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1703134068/portfolio3_rzhjvk.jpg",
-          title: "projects2 Item 3",
-          githubLink: "https://github.com",
-          demoLink: "https://dribbble.com/Alien_pixels",
-        },
-        {
-          image: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1703134049/portfolio4_ibgd9o.jpg",
-          title: "projects2 Item 4",
-          githubLink: "https://github.com",
-          demoLink: "https://dribbble.com/Alien_pixels",
-        },
-        {
-          image: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1703134029/portfolio5_cugtet.png",
-          title: "projects2 Item 5",
-          githubLink: "https://github.com",
-          demoLink: "https://dribbble.com/Alien_pixels",
-        },
-        {
-          image: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1703134049/portfolio4_ibgd9o.jpg",
-          title: "projects2 Item 6",
-          githubLink: "https://github.com",
-          demoLink: "https://dribbble.com/Alien_pixels",
-        },
-      ],
-    },
-    contact: {
-      title: "Get in Touch",
-      subtitle: "Reach out to us",
-      options: [
-        {
-          title: "Email",
-          subtitle: "ahmed.solimanth57@gmail.com",
-          link: "mailto:ahmed.solimanth57@gmail.com",
-          logo: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1703134252/gmail-svgrepo-com_xppy7f.svg",
-        },
-        {
-          title: "Messenger",
-          subtitle: "Ahmed soliman Gohnaim",
-          link: "https://m.me/ahmed.soliman.3591267",
-          logo: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1703134252/facebook-svgrepo-com_lmghnk.svg",
-        },
-        {
-          title: "WhatsApp",
-          subtitle: "___________",
-          link: "https://wa.me/1234567890",
-          logo: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1703134203/whatsapp-whats-app-svgrepo-com_ug4dbt.svg", // Replace with your WhatsApp link
-        },
-      ],
-      send: {
-        title: "Send",
-        action: "sendEmail",
-      },
-      sendMessage: {
-        title: "Send a message",
-        action: "sendWhatsAppMessage",
-      },
-    },
-    
-    // items: {
-    //   title: "Articles & News",
-    //   description:
-    //     "It is a long established fact that a reader will be distracted by the of readable content of a page when lookings at its layouts the points of using.",
-    //   cards: [
-    //     {
-    //       title: "Let’s Get Solution For Building Construction Work",
-    //       description: "26 December,2022 ",
-    //       imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701718041/templates/template_one/article1.f88f54e6a4cdbf340b36_l3ujjw.png",
-    //       icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701718889/templates/template_one/Vector_5_nzmfwn.svg",
-    //       caption: "Kitchan Design",
-    //     },
-    //     {
-    //       title: "Low Cost Latest Invented Interior Designing Ideas.",
-    //       description: "22 December,2022 ",
-    //       icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701718889/templates/template_one/Vector_5_nzmfwn.svg",
-    //       imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701718042/templates/template_one/article2.43be768543cb8cfeaf07_atvwjd.png",
-    //       caption: "Living Design",
-    //     },
-    //     {
-    //       title: "Best For Any Office & Business Interior Solution",
-    //       description: "25 December,2022 ",
-    //       icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701718889/templates/template_one/Vector_5_nzmfwn.svg",
-    //       imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701718042/templates/template_one/article3.f759fde0c85f3fb92b22_c2tqkv.png",
-    //       caption: "Interior Design",
-    //     },
-    //   ],
-    // },
-    services: {
-      title: "What We Offer",
-      subtitle: "Services",
-      services: [
-        {
-          title: "UI/UX Design",
-          items: ["lorem ipsum,", "Llorem ipsuma,", "Blorem ipsumm,", "Dilorem ipsumll,", "lorem ipsum"],
-          icon: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1703134251/correct-signal-svgrepo-com_vvf3sw.svg",
-        },
-        {
-          title: "Web Development",
-          items: ["lorem ipsum,", "Llorem ipsuma,", "Blorem ipsumm,", "Dilorem ipsumll,", "lorem ipsum"],
-          icon: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1703134251/correct-signal-svgrepo-com_vvf3sw.svg",
-        },
-        {
-          title: "Content Creation",
-          items: ["lorem ipsum,", "Llorem ipsuma,", "Blorem ipsumm,", "Dilorem ipsumll,", "lorem ipsum"],
-          icon: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1703134251/correct-signal-svgrepo-com_vvf3sw.svg",
-        },
-      ],
-    },
-    
-    footer: {
-      title: "CSE",
-      subtitle: "ssssssssssssssssssssss all rights reserved.",
-      menuItems: [
-        { id: 1, title: "Home", link: "#hero2" },
-        { id: 2, title: "Services", link: "#services2" },
-        { id: 3, title: "Testimonials", link: "#testimonials2" },
-        { id: 4, title: "Contact", link: "#contactUs2" }
-      ],
-      medias: [
-        {
-          icon: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1703129090/icons8-facebook-50_xfbimo.png",
-          url: "https://facebook.com",
-        },
-        {
-          icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701809142/templates/template_one/x_yp3y5n.svg",
-          url: "https://x.com",
-        },
-        {
-          icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701809142/templates/template_one/linkedin_itbvp5.svg",
-          url: "https://linkedin.com",
-        },
-        {
-          icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701809141/templates/template_one/instagram_dlrab9.svg",
-          url: "https://instagram.com",
-        },
-        {
-          icon: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1703129090/icons8-facebook-50_xfbimo.png",
-          url: "https://facebook.com",
-        },
-      ],
-    },
-    
-
-    colors: {
-      templateColors: ["#fff", "#cda274", "#292f36", "#f4f0ec", "#777777"],
-    },
-  },
-
   name: "templateSlice2",
+  initialState,
   reducers: {
     updateTemplate: (state, action) => {
       editElement(state, action);
@@ -269,8 +49,15 @@ const templateSlice2 = createSlice({
     deleteSection: (state, action) => {
       return deleteSection(state, action);
     },
+    resetState: (state) => initialState,
+  },
+  extraReducers: (builder) => {
+    builder.addCase(fetchInitialTemplate.fulfilled, (state, action) => {
+      return { ...state, ...action.payload };
+    });
   },
 });
 
+export const { resetState2 } = templateSlice2.actions;
 export const templateActions2 = templateSlice2.actions;
 export default templateSlice2.reducer;

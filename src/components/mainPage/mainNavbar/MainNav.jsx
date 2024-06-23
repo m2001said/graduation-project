@@ -6,9 +6,11 @@ import { useSelector, useDispatch } from "react-redux";
 import { logoutUserAsync } from "../../../features/auth/authSlice";
 import { useNavigate } from "react-router-dom";
 import { useTranslation } from "react-i18next";
+import { persistor } from "../../../app/store";
+import { resetState } from "../../../features/templateData/templateSlice";
 
 const MainNav = ({ toggleModal }) => {
-  const Navigate = useNavigate();
+  const navigate = useNavigate();
   const authState = useSelector((state) => state.auth);
   const dispatch = useDispatch();
   const { i18n } = useTranslation("main");
@@ -19,7 +21,11 @@ const MainNav = ({ toggleModal }) => {
 
   const handleSignOut = () => {
     dispatch(logoutUserAsync());
-    Navigate("/");
+    // todo reset all state not one only
+    dispatch(resetState());
+    persistor.purge().then(() => {
+      navigate("/");
+    });
   };
 
   return (

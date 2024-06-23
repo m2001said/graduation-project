@@ -37,7 +37,7 @@ const TrialDesign5 = () => {
         const Component = componentMapping[_component];
         return Component && <Component key={_component} />;
       })}
-      <Footer5/>
+      <Footer5 />
     </div>
   );
 };

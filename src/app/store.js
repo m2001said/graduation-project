@@ -81,15 +81,13 @@ const persistConfig = {
 
 const persistedReducer = persistReducer(persistConfig, rootReducer);
 
-const customizedMiddleware = getDefaultMiddleware({
-  serializableCheck: false, // Disable serializable check middleware
-  immutableCheck: false, // Disable immutable check middleware
-});
-
-
 export const store = configureStore({
   reducer: persistedReducer,
-  middleware: customizedMiddleware,
+  middleware: (getDefaultMiddleware) =>
+    getDefaultMiddleware({
+      serializableCheck: false,
+      immutableCheck: false,
+    }),
 });
 
 export const persistor = persistStore(store);

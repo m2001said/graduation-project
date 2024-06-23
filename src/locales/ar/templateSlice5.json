@@ -1,0 +1,202 @@
+{
+  "initialState": {
+    "templateInfo": {
+      "id": 5,
+      "title": "",
+      "description": "",
+      "imgUrl": ""
+    },
+    "navbar": {
+      "imgUrl": "https://res.cloudinary.com/dmcdea0b9/image/upload/v1703101139/logo_ytwn3z.jpg",
+      "menuIcon": "https://res.cloudinary.com/dmcdea0b9/image/upload/v1703106705/menu-svgrepo-com_mgpt72.svg",
+      "buttonText": "اتصل",
+      "links": [
+        {
+          "title": "الصفحة الرئيسية",
+          "url": "#"
+        },
+        {
+          "title": "حول",
+          "url": "#"
+        },
+        {
+          "title": "عروض",
+          "url": "#"
+        },
+        {
+          "title": "المقاعد",
+          "url": "#"
+        },
+        {
+          "title": "الوجهات",
+          "url": "#"
+        }
+      ]
+    },
+    "hero": {
+      "title": "اصنع ذكريات دائمة معنا",
+      "imgUrl": "https://res.cloudinary.com/dmcdea0b9/image/upload/v1703110738/takeOff_znaedp.png",
+      "videoUrl": "https://res.cloudinary.com/dmcdea0b9/video/upload/v1703110566/heroVideo_z23a38.mp4"
+    },
+    "features1": {
+      "title": "خطط لرحلتك بثقة",
+      "subtitle": "دعم السفر",
+      "description": "ابحث عن المساعدة في حجز وخطط السفر، اكتشف ما يمكن توقعه أثناء الرحلة",
+      "imgUrl": "https://res.cloudinary.com/dmcdea0b9/image/upload/v1703111688/R_aejs2k.jpg",
+      "features": [
+        {
+          "title": "متطلبات السفر إلى دبي",
+          "description": "ابحث عن المساعدة في حجز وخطط السفر، اكتشف ما يمكن توقعه أثناء الرحلة.",
+          "number": "01"
+        },
+        {
+          "title": "متطلبات السفر إلى دبي",
+          "description": "ابحث عن المساعدة في حجز وخطط السفر، اكتشف ما يمكن توقعه أثناء الرحلة.",
+          "number": "02"
+        },
+        {
+          "title": "متطلبات السفر إلى دبي",
+          "description": "ابحث عن المساعدة في حجز وخطط السفر، اكتشف ما يمكن توقعه أثناء الرحلة.",
+          "number": "03"
+        }
+      ]
+    },
+    "services": {
+      "title": "سافر لصنع الذكريات حول العالم",
+      "buttonTxt": "عرض الكل",
+      "services": [
+        {
+          "title": "احجز واسترح",
+          "description": "يمكنك أيضًا الاتصال بشركات الطيران من هاتفك وحجز تذكرة طيران",
+          "icon": "https://res.cloudinary.com/dmcdea0b9/image/upload/v1703114489/calendar_ry8vjw.svg"
+        },
+        {
+          "title": "قائمة ذكية",
+          "description": "يمكنك أيضًا الاتصال بشركات الطيران من هاتفك وحجز تذكرة طيران",
+          "icon": "https://res.cloudinary.com/dmcdea0b9/image/upload/v1703114500/ShieldCheck_tmepkt.svg"
+        },
+        {
+          "title": "توفير أكثر",
+          "description": "يمكنك أيضًا الاتصال بشركات الطيران من هاتفك وحجز تذكرة طيران",
+          "icon": "https://res.cloudinary.com/dmcdea0b9/image/upload/v1703114509/BookmarkCheckFill_jwdtcd.svg"
+        }
+      ]
+    },
+    "features2": {
+      "title": "صالة القاصرين غير المصحوبين",
+      "imgUrl": "https://res.cloudinary.com/dmcdea0b9/image/upload/v1703116246/fea5-2_q5na0z.jpg",
+      "features": [
+        {
+          "title": "المساعدة في المطار",
+          "description": "يمكنك أيضًا الاتصال بشركات الطيران من هاتفك وحجز تذكرة طيران إلى واحدة من وجهاتك المفضلة"
+        },
+        {
+          "title": "أولوية الصعود",
+          "description": "يمكنك أيضًا الاتصال بشركات الطيران من هاتفك وحجز تذكرة طيران إلى واحدة من وجهاتك المفضلة"
+        },
+        {
+          "title": "الرعاية في الرحلة",
+          "description": "يمكنك أيضًا الاتصال بشركات الطيران من هاتفك وحجز تذكرة طيران إلى واحدة من وجهاتك المفضلة"
+        },
+        {
+          "title": "خدمة السائق",
+          "description": "يمكنك أيضًا الاتصال بشركات الطيران من هاتفك وحجز تذكرة طيران إلى واحدة من وجهاتك المفضلة"
+        }
+      ]
+    },
+    "team": {
+      "title": "أفضل المسافرين لهذا الشهر!",
+      "members": [
+        {
+          "travelerName": "IsraTech",
+          "destinationImage": "https://res.cloudinary.com/dmcdea0b9/image/upload/v1703118167/paris_w35pqv.jpg",
+          "travelerImage": "https://res.cloudinary.com/dmcdea0b9/image/upload/v1703118040/user1_tjx7hg.jpg",
+          "socialLink": "@Isratech"
+        },
+        {
+          "travelerName": "IsraTech",
+          "destinationImage": "https://res.cloudinary.com/dmcdea0b9/image/upload/v1703118212/dubia_tegcrp.jpg",
+          "travelerImage": "https://res.cloudinary.com/dmcdea0b9/image/upload/v1703118040/user1_tjx7hg.jpg",
+          "socialLink": "@Isratech"
+        },
+        {
+          "travelerImage": "https://res.cloudinary.com/dmcdea0b9/image/upload/v1703118040/user1_tjx7hg.jpg",
+          "destinationImage": "https://res.cloudinary.com/dmcdea0b9/image/upload/v1703118235/newYork_k8j1t0.jpg",
+          "travelerName": "IsraTech",
+          "socialLink": "@Isratech"
+        },
+        {
+          "travelerName": "IsraTech",
+          "destinationImage": "https://res.cloudinary.com/dmcdea0b9/image/upload/v1703118167/paris_w35pqv.jpg",
+          "travelerImage": "https://res.cloudinary.com/dmcdea0b9/image/upload/v1703118040/user1_tjx7hg.jpg",
+          "socialLink": "@Isratech"
+        }
+      ]
+    },
+    "cta": {
+      "title": "اشترك في النشرة الإخبارية واحصل على آخر الأخبار",
+      "inputPlaceholder": "أدخل عنوان بريدك الإلكتروني",
+      "buttonText": "اشتراك"
+    },
+    "footer": {
+      "imgUrl": "https://res.cloudinary.com/dmcdea0b9/image/upload/v1703101139/logo_ytwn3z.jpg",
+      "description": "يجب أن يكون عقلك أقوى من مشاعرك، طير!",
+      "medias": [
+        {
+          "icon": "https://res.cloudinary.com/duc04fwdb/image/upload/v1701809141/templates/template_one/facebook_td263x.svg",
+          "url": "https://facebook.com"
+        },
+        {
+          "icon": "https://res.cloudinary.com/duc04fwdb/image/upload/v1701809142/templates/template_one/x_yp3y5n.svg",
+          "url": "https://x.com"
+        },
+        {
+          "icon": "https://res.cloudinary.com/duc04fwdb/image/upload/v1701809142/templates/template_one/linkedin_itbvp5.svg",
+          "url": "https://linkedin.com"
+        },
+        {
+          "icon": "https://res.cloudinary.com/duc04fwdb/image/upload/v1701809141/templates/template_one/instagram_dlrab9.svg",
+          "url": "https://instagram.com"
+        }
+      ],
+      "footerSections": [
+        {
+          "title": "معلومات",
+          "links": [
+            { "title": "الصفحة الرئيسية", "url": "#" },
+            { "title": "استكشاف", "url": "#" },
+            { "title": "حالة الرحلة", "url": "#" },
+            { "title": "سفر", "url": "#" },
+            { "title": "تسجيل الوصول", "url": "#" },
+            { "title": "إدارة حجزك", "url": "#" }
+          ]
+        },
+        {
+          "title": "دليل سريع",
+          "links": [
+            { "title": "الأسئلة الشائعة", "url": "#" },
+            { "title": "كيفية", "url": "#" },
+            { "title": "الميزات", "url": "#" },
+            { "title": "الأمتعة", "url": "#" },
+            { "title": "خريطة المسار", "url": "#" },
+            { "title": "مجتمعاتنا", "url": "#" }
+          ]
+        },
+        {
+          "title": "معلومات",
+          "links": [
+            { "title": "خدمة السائق", "url": "#" },
+            { "title": "شركاؤنا", "url": "#" },
+            { "title": "الوجهة", "url": "#" },
+            { "title": "الوظائف", "url": "#" },
+            { "title": "النقل", "url": "#" },
+            { "title": "قواعد البرنامج", "url": "#" }
+          ]
+        }
+      ]
+    },
+    "colors": {
+      "templateColors": ["#fff", "#cda274", "#292f36", "#f4f0ec", "#777777"]
+    }
+  }
+}

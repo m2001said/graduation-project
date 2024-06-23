@@ -10,7 +10,7 @@ const Navbar2 = () => {
     if (pathname.includes("own-page")) {
       return state.ownTemplate.navbar;
     } else {
-      return state.template2.navbar;
+      return state.template1.navbar;
     }
   });
   return (

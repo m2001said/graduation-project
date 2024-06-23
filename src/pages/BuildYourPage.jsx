@@ -28,7 +28,7 @@ const BuildYourPage = () => {
   const dispatch = useDispatch();
   const templates = useSelector((state) => ({
     1: state.template1,
-    2: state.template2,
+    2: state.template1,
     3: state.template3,
     4: state.template4,
     5: state.template5,
@@ -111,7 +111,7 @@ const BuildYourPage = () => {
               <img src="https://res.cloudinary.com/duc04fwdb/image/upload/v1709052019/jammal_photos/vdybrjarzdlo6x9fdwga.svg" alt="down-icon" />
             </label>
             <input type="checkbox" name="show" className="show-btn" id={`show${index}`} onChange={removeIndexChange(section)} />
-              <InputOption item={getSectionData(section)} section={section} handleIndexChange={handleIndexChange} />
+            <InputOption item={getSectionData(section)} section={section} handleIndexChange={handleIndexChange} />
           </div>
         ))}
 

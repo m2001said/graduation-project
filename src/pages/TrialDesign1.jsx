@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import Navbar1 from "../components/sections/navbars/navbar1/Navbar1";
 import Hero1 from "../components/sections/heros/hero1/Hero1";
 import Services1 from "../components/sections/services/services1/Services1";
@@ -13,17 +13,26 @@ import Pricing1 from "../components/sections/pricings/pricing1/Pricing1";
 import Cta1 from "../components/sections/ctas/cta1/Cta1";
 import Footer1 from "../components/sections/footers/footer1/Footer1";
 import "../assets/css/globals1.css";
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
+import { fetchInitialTemplate } from "../features/templateData/templateSlice";
+
 const TrialDesign1 = () => {
+  const dispatch = useDispatch();
   const state = useSelector((state) => state.template1);
-  const colors = state.colors;
+  console.log(state);
+  // const colors = state.colors;
 
   useEffect(() => {
-    document.documentElement.style = "";
-    for (let index = 0; index < colors.templateColors.length; index++) {
-      document.documentElement.style.setProperty(`--website-color-${index + 1}`, colors.templateColors[index]);
-    }
-  }, []);
+    dispatch(fetchInitialTemplate(1));
+    console.log(state);
+  }, [dispatch]);
+
+  // useEffect(() => {
+  //   document.documentElement.style = "";
+  //   for (let index = 0; index < colors.templateColors.length; index++) {
+  //     document.documentElement.style.setProperty(`--website-color-${index + 1}`, colors.templateColors[index]);
+  //   }
+  // }, []);
 
   const reorderedComponents = Object.keys(state);
   const componentMapping = {
@@ -41,13 +50,17 @@ const TrialDesign1 = () => {
 
   return (
     <div>
-      <Navbar1 />
-      <Hero1 />
-      {reorderedComponents.map((_component) => {
-        const Component = componentMapping[_component];
-        return Component && <Component key={_component} />;
-      })}
-      <Footer1 />
+      {state.templateInfo.id === 1 && (
+        <>
+          <Navbar1 />
+          <Hero1 />
+          {reorderedComponents.map((_component) => {
+            const Component = componentMapping[_component];
+            return Component && <Component key={_component} />;
+          })}
+          <Footer1 />
+        </>
+      )}
     </div>
   );
 };

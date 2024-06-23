@@ -9,7 +9,7 @@ const Footer2 = () => {
     if (pathname.includes("own-page")) {
       return state.ownTemplate.footer;
     } else {
-      return state.template2.footer;
+      return state.template1.footer;
     }
   });
 
@@ -26,7 +26,7 @@ const Footer2 = () => {
           </li>
         ))}
       </ul>
-      
+
       <div className="footer2__socials">
         {footer.medias.map((icon, index) => (
           <a key={index} href={icon.url}>
@@ -34,7 +34,7 @@ const Footer2 = () => {
           </a>
         ))}
       </div>
-      
+
       <div className="footer2__copyright">
         <small>&copy; {footer.subtitle}</small>
       </div>

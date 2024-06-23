@@ -11,7 +11,7 @@ const ContactUs2 = () => {
     if (pathname.includes("own-page")) {
       return state.ownTemplate.contact;
     } else {
-      return state.template2.contact;
+      return state.template1.contact;
     }
   });
 

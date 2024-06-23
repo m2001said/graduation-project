@@ -15,7 +15,7 @@ const Testimonials2 = () => {
     if (pathname.includes("own-page")) {
       return state.ownTemplate.testimonials;
     } else {
-      return state.template2.testimonials;
+      return state.template1.testimonials;
     }
   });
   return (
