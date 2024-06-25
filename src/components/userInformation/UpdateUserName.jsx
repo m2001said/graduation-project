@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import axios from "axios";
+import axiosInstance from "../../features/auth/axiosInstance";
 import { useDispatch } from "react-redux";
 import { updateUserName } from "../../features/auth/authSlice";
 import LoadingButton from "../loadingButton/LoadingButton";
@@ -10,24 +10,14 @@ const UpdateName = () => {
   const [responseMessage, setResponseMessage] = useState("");
   const [loading, setLoading] = useState(false);
   const dispatch = useDispatch();
-  const token = localStorage.getItem("token");
 
   const handleUpdateName = async () => {
     setLoading(true);
     setResponseMessage("");
     try {
-      const response = await axios.put(
-        "https://websitebuilderbackend-production-716e.up.railway.app/user/update-username",
-        {
-          name: newName,
-        },
-        {
-          headers: {
-            Authorization: `Bearer ${token}`,
-            "Content-Type": "application/json",
-          },
-        }
-      );
+       const response = await axiosInstance.put("/user/update-username", {
+         name: newName,
+       });
       setResponseMessage("Name updated successfully!");
       dispatch(updateUserName(newName));
       console.log("Name update response:", response.data);

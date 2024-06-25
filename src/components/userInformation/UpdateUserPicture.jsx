@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import axios from "axios";
+import axiosInstance from "../../features/auth/axiosInstance";
 import { useSelector, useDispatch } from "react-redux";
 import { updateUserAvatar } from "../../features/auth/authSlice";
 
@@ -8,6 +8,7 @@ const UpdateUserPicture = () => {
   const [status, setStatus] = useState("");
   const [loading, setLoading] = useState(false);
   const token = localStorage.getItem("token");
+
   const userAvatar = useSelector((state) => state.auth.userAvatar);
   const dispatch = useDispatch();
 
@@ -25,24 +26,23 @@ const UpdateUserPicture = () => {
       const formData = new FormData();
       formData.append("avatar", file);
 
-      const backendResponse = await axios.post("https://websitebuilderbackend-production-716e.up.railway.app/user/upload", formData, {
+      const backendResponse = await axiosInstance.post("/user/upload", formData, {
         headers: {
           Authorization: `Bearer ${token}`,
           "Content-Type": "multipart/form-data",
         },
       });
-
       if (backendResponse.status === 200) {
         const imageUrl = backendResponse.data.avatar;
         setUploadedImage(imageUrl);
         setStatus("File uploaded successfully!");
         dispatch(updateUserAvatar(imageUrl));
       } else {
-        setStatus("File upload to backend failed.");
+        setStatus("File upload failed.");
       }
     } catch (error) {
-      console.error("Error uploading to backend:", error);
-      setStatus("Error uploading to backend.");
+      console.error("Error uploading :", error);
+      setStatus("File upload failed.");
     } finally {
       setLoading(false);
     }

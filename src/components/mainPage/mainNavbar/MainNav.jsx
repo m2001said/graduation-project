@@ -20,7 +20,6 @@ const MainNav = ({ toggleModal }) => {
       console.error("Logout error:", error);
     }
   };
-  console.log(authState.user);
 
   return (
     <>

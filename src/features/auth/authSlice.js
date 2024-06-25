@@ -1,4 +1,3 @@
-
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 import { createUser, loginUser, logoutUser, fetchUserAvatar } from "./authApi";
 

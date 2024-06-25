@@ -23,8 +23,11 @@ export const loginUser = async (email, password) => {
       email,
       password,
     });
+    console.log(response)
     const accessToken = response.data.accessToken;
+    const refreshToken = response.data.refreshToken;
     localStorage.setItem("token", accessToken);
+    localStorage.setItem("refresh_token", refreshToken);
     return response.data;
   } catch (error) {
     throw error; // Handle error in a meaningful way
@@ -42,6 +45,7 @@ export const logoutUser = async () => {
       },
     });
     localStorage.removeItem("token");
+    localStorage.removeItem("refresh_token");
     return response.data;
   } catch (error) {
     // Log the error to the console
@@ -50,6 +54,7 @@ export const logoutUser = async () => {
   }
 };
 
+// Function to fetch user avatar
 export const fetchUserAvatar = async () => {
   try {
     const token = localStorage.getItem("token");
@@ -85,5 +90,22 @@ export const resetPassword = async (token, password) => {
     return response.data;
   } catch (error) {
     throw error; // Handle error in a meaningful way
+  }
+};
+
+// Function to refresh access token
+export const refreshToken = async () => {
+  try {
+    const refresh_token = localStorage.getItem("refresh_token");
+    const response = await axios.get(`${API_BASE_URL}/user/refresh-token`, {
+      headers: {
+        Authorization: `Bearer ${refresh_token}`,
+      },
+    });
+    const newAccessToken = response.data.accessToken;
+    localStorage.setItem("token", newAccessToken);
+    return newAccessToken;
+  } catch (error) {
+    throw error;
   }
 };

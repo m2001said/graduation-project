@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import axios from "axios";
+import axiosInstance from "../../features/auth/axiosInstance";
 import LoadingButton from "../loadingButton/LoadingButton";
 import FormInput from "./FormInput";
 
@@ -9,25 +9,15 @@ const UpdatePassword = () => {
   const [responseMessage, setResponseMessage] = useState("");
   const [loading, setLoading] = useState(false);
 
-  const token = localStorage.getItem("token");
 
   const handleUpdatePassword = async () => {
     setLoading(true);
     setResponseMessage("");
     try {
-      const response = await axios.post(
-        "https://websitebuilderbackend-production-716e.up.railway.app/user/update-password",
-        {
-          oldPassword: oldPassword,
-          newPassword: newPassword,
-        },
-        {
-          headers: {
-            Authorization: `Bearer ${token}`,
-            "Content-Type": "application/json",
-          },
-        }
-      );
+    const response = await axiosInstance.post("/user/update-password", {
+      oldPassword: oldPassword,
+      newPassword: newPassword,
+    });
       setResponseMessage("Password updated successfully!");
       console.log("Password update response:", response.data);
     } catch (error) {
