@@ -19,12 +19,12 @@ import { fetchInitialTemplate } from "../features/templateData/templateSlice";
 const TrialDesign1 = () => {
   const dispatch = useDispatch();
   const state = useSelector((state) => state.template1);
-  console.log(state);
+  console.log("state in trialDesign1", state);
   // const colors = state.colors;
 
   useEffect(() => {
     dispatch(fetchInitialTemplate(1));
-    console.log(state);
+    console.log("state in trialDesign1 after fetchInitialTemplate1", state);
   }, [dispatch]);
 
   // useEffect(() => {
