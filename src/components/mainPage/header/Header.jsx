@@ -24,15 +24,15 @@ const Header = ({ toggleModal }) => {
         <div className="container mx-auto px-4">
           <div className="info-section flex gap-5 justify-between items-center py-8">
             <div className="hero-info" data-aos="fade-right" data-aos-duration="1000">
-              <h1 className="info-title"> {t("hero.title")}</h1>
-              <p className="info-description"> {t("hero.description")} </p>
+              <h1 className="info-title"> {t("HERO.TITLE")}</h1>
+              <p className="info-description"> {t("HERO.DESCRIPTION")} </p>
               {authState.status === "succeeded" ? (
                 <Link to={"/designs"}>
-                  <button className="info-btn"> {t("hero.buttonText")}</button>
+                  <button className="info-btn"> {t("HERO.BUTTONTEXT")}</button>
                 </Link>
               ) : (
                 <button className="info-btn" onClick={toggleModal}>
-                  {t("hero.buttonText")}
+                  {t("HERO.BUTTONTEXT")}
                 </button>
               )}
             </div>

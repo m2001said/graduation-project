@@ -2,8 +2,10 @@ import React, { useState } from "react";
 import Contact from "../../../assets/images/Contact.svg";
 import "./contactForm.css";
 import axios from "axios";
+import { useTranslation } from "react-i18next";
 
 const ContactForm = () => {
+  const { t } = useTranslation();
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
@@ -41,7 +43,7 @@ const ContactForm = () => {
       </div>
 
       <div className="Contact_info md:ml-10 w-full">
-        <h1 className="text-5xl font-bold mb-8 text-center">Contact Us</h1>
+        <h1 className="text-5xl font-bold mb-8 text-center"> {t("CONTACT.TTIEL")}</h1>
 
         <div className="Contact_form">
           {responseMessage && <div className="text-green-600 text-center mb-4">{responseMessage}</div>}
@@ -49,7 +51,7 @@ const ContactForm = () => {
 
           <form onSubmit={handleSubmit}>
             <label htmlFor="email" className="block text-lg mb-2 font-bold text-gray-500">
-              Email
+              {t("CONTACT.EMIAL")}
             </label>
             <input
               type="email"
@@ -61,7 +63,7 @@ const ContactForm = () => {
             />
 
             <label htmlFor="name" className="block text-lg mb-2 font-bold text-gray-500">
-              Name
+              {t("CONTACT.NAME")}
             </label>
             <input
               type="text"
@@ -73,7 +75,7 @@ const ContactForm = () => {
             />
 
             <label htmlFor="message" className="block text-lg mb-2 font-bold text-gray-500">
-              Message
+              {t("CONTACT.NAME")}
             </label>
             <textarea
               id="message"
@@ -106,10 +108,10 @@ const ContactForm = () => {
                       fill="currentColor"
                     />
                   </svg>
-                  Sending...
+                  <p> {t("CONTACT.LOADING_SEND")}</p>
                 </>
               ) : (
-                "Send Message"
+                <p> {t("CONTACT.SEND")}</p>
               )}
             </button>
           </form>

@@ -13,7 +13,7 @@ const MainNav = ({ toggleModal }) => {
   const navigate = useNavigate();
   const authState = useSelector((state) => state.auth);
   const dispatch = useDispatch();
-  const { i18n } = useTranslation("main");
+  const { i18n, t } = useTranslation("main");
 
   const changeLanguage = (lng) => {
     i18n.changeLanguage(lng);
@@ -41,7 +41,7 @@ const MainNav = ({ toggleModal }) => {
           <div className="nav-controls flex  justify-between items-center gap-4">
             {authState.status === "succeeded" && authState.user && <div className="user-name">{authState.user.name}</div>}
             <button className="signIn-btn" onClick={authState.status === "succeeded" && authState.user ? handleSignOut : toggleModal}>
-              {authState.status === "succeeded" && authState.user ? "Sign Out" : "Sign In"}
+              {authState.status === "succeeded" && authState.user ? t("USER.LOG_OUT") : t("USER.SIGN_IN")}
             </button>
             <div>
               {i18n.language === "ar" && <button onClick={() => changeLanguage("en")}>En</button>}
