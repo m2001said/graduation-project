@@ -9,7 +9,7 @@ const Pricing3 = () => {
     if (pathname.includes("own-page")) {
       return state.ownTemplate.pricing;
     } else {
-      return state.template3.pricing;
+      return state.template1.pricing;
     }
   });
   return (

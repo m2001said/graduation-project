@@ -4,13 +4,13 @@ import { useSelector } from "react-redux";
 import { useLocation } from "react-router";
 
 const Testimonials3 = () => {
-  // const { testimonial } = useSelector((state) => state.template3);
+  // const { testimonial } = useSelector((state) => state.template1);
   const { pathname } = useLocation();
   const testimonial = useSelector((state) => {
     if (pathname.includes("own-page")) {
       return state.ownTemplate.testimonials;
     } else {
-      return state.template3.testimonials;
+      return state.template1.testimonials;
     }
   });
 

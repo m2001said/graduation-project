@@ -16,7 +16,7 @@ const Hero3 = () => {
     if (pathname.includes("own-page")) {
       return state.ownTemplate.hero;
     } else {
-      return state.template3.hero;
+      return state.template1.hero;
     }
   });
 

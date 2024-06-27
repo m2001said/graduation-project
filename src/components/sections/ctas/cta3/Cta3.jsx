@@ -8,7 +8,7 @@ const Cta3 = () => {
     if (pathname.includes("own-page")) {
       return state.ownTemplate.cta;
     } else {
-      return state.template3.cta;
+      return state.template1.cta;
     }
   });
   const firstGroup = cta.title.slice(0, 2);

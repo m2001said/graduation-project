@@ -9,7 +9,7 @@ const Navbar3 = () => {
     if (pathname.includes("own-page")) {
       return state.ownTemplate.navbar;
     } else {
-      return state.template3.navbar;
+      return state.template1.navbar;
     }
   });
   const [menuOpened, setMenuOpened] = useState(false);

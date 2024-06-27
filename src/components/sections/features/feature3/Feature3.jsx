@@ -3,7 +3,7 @@
 // import { useSelector } from "react-redux";
 
 // const Feature3 = () => {
-//   const { feature } = useSelector((state) => state.template3);
+//   const { feature } = useSelector((state) => state.template1);
 
 //   return (
 //     <div className="Reasons3" id="Why us">
@@ -53,7 +53,7 @@
 // import { useSelector } from "react-redux";
 
 // const Feature3 = () => {
-//   const { feature } = useSelector((state) => state.template3);
+//   const { feature } = useSelector((state) => state.template1);
 
 //   return (
 //     <div className="Reasons3" id="Why us">
@@ -98,7 +98,7 @@ const Feature3 = () => {
     if (pathname.includes("own-page")) {
       return state.ownTemplate.features;
     } else {
-      return state.template3.features;
+      return state.template1.features;
     }
   });
   return (

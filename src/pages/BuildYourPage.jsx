@@ -29,7 +29,7 @@ const BuildYourPage = () => {
   const templates = useSelector((state) => ({
     1: state.template1,
     2: state.template1,
-    3: state.template3,
+    3: state.template1,
     4: state.template4,
     5: state.template5,
     6: state.template1,

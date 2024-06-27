@@ -9,7 +9,7 @@ const Project3 = () => {
     if (pathname.includes("own-page")) {
       return state.ownTemplate.projects;
     } else {
-      return state.template3.projects;
+      return state.template1.projects;
     }
   });
   return (
