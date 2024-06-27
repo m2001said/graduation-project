@@ -6,7 +6,7 @@ import ChangeImageController from "../ChangeImageController";
 import SubFieldControllerIsObject from "./SubFieldControllerIsObject";
 import { Reorder } from "../shared/Reorder";
 const FieldControllerIsArrayOfObjects = ({ targetSection, cardIndex, sectionName, subName, blockName, dispatchRef, numOfFields }) => {
-  // const targetSection = useSelector((state) => state.template6[sectionName]);
+  // const targetSection = useSelector((state) => state.template1[sectionName]);
   const dispatch = useDispatch();
   const dispatchedRefForImg = (target, result) =>
     dispatchRef.updateTemplate({ section: sectionName, variable: target, value: result?.info?.secure_url, i: cardIndex, blockName: blockName });

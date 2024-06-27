@@ -4,13 +4,13 @@ import ProductCard from "../../cartItems/cartItems6/product-card/ProductCard";
 import { useSelector } from "react-redux";
 
 const FilterItems = () => {
-  const { menuTitle, Card, filterContent } = useSelector((state) => state.template6.products);
+  const { menuTitle, Card, filterContent } = useSelector((state) => state.template1.products);
 
   const [filter, setFilter] = useState(filterContent[0].title); // Set initial filter to the first category
-  const [products, setProducts] = useState(filterContent.find(category => category.title === filter)?.content || []);
+  const [products, setProducts] = useState(filterContent.find((category) => category.title === filter)?.content || []);
 
   useEffect(() => {
-    const selectedCategory = filterContent.find(category => category.title === filter);
+    const selectedCategory = filterContent.find((category) => category.title === filter);
     setProducts(selectedCategory?.content || []);
   }, [filter, filterContent]);
 

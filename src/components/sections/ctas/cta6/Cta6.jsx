@@ -9,7 +9,7 @@ const Cta6 = () => {
     if (pathname.includes("own-page")) {
       return state.ownTemplate.cta;
     } else {
-      return state.template6.cta;
+      return state.template1.cta;
     }
   });
   return (

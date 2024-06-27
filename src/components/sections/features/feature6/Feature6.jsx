@@ -9,7 +9,7 @@ const Feature6 = () => {
     if (pathname.includes("own-page")) {
       return state.ownTemplate.features;
     } else {
-      return state.template6.features;
+      return state.template1.features;
     }
   });
   return (

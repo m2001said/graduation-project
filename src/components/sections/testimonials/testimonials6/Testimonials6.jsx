@@ -12,7 +12,7 @@ const Testimonials6 = () => {
     if (pathname.includes("own-page")) {
       return state.ownTemplate.testimonials;
     } else {
-      return state.template6.testimonials;
+      return state.template1.testimonials;
     }
   });
   return (

@@ -9,7 +9,7 @@ const Footer6 = () => {
     if (pathname.includes("own-page")) {
       return state.ownTemplate.footer;
     } else {
-      return state.template6.footer;
+      return state.template1.footer;
     }
   });
   return (

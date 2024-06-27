@@ -4,7 +4,7 @@ import "./cartItems6.css";
 import { useSelector } from "react-redux";
 
 const CartItems6 = () => {
-  const { menu } = useSelector((state) => state.template6);
+  const { menu } = useSelector((state) => state.template1);
   const CartItems = menu;
 
   return (

@@ -32,7 +32,7 @@ const BuildYourPage = () => {
     3: state.template3,
     4: state.template4,
     5: state.template5,
-    6: state.template6,
+    6: state.template1,
     7: state.template7,
     8: state.template8,
     9: state.template9,
