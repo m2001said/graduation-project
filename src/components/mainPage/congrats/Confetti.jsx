@@ -27,6 +27,8 @@ const Confetti = () => {
     };
 
     Confettiful.prototype._renderConfetti = function () {
+      let startTime = Date.now();
+
       this.confettiInterval = setInterval(() => {
         const confettiEl = document.createElement("div");
         const confettiSize = Math.floor(Math.random() * 3) + 7 + "px";
@@ -40,11 +42,17 @@ const Confetti = () => {
         confettiEl.style.height = confettiSize;
         confettiEl.style.backgroundColor = confettiBackground;
 
-        confettiEl.removeTimeout = setTimeout(function () {
-          confettiEl.parentNode.removeChild(confettiEl);
-        }, 3000);
-
         this.containerEl.appendChild(confettiEl);
+
+        setTimeout(() => {
+          confettiEl.remove();
+        }, 30000); // Remove confetti after 30 seconds
+
+        // Stop confetti after 30 seconds
+        if (Date.now() - startTime > 30000) {
+          clearInterval(this.confettiInterval);
+          this.containerEl.innerHTML = ""; // Clear all confetti elements
+        }
       }, 25);
     };
 
@@ -52,6 +60,7 @@ const Confetti = () => {
 
     return () => {
       clearInterval(window.confettiful.confettiInterval);
+      window.confettiful.containerEl.innerHTML = ""; // Ensure container is emptied on unmount
     };
   }, []);
 

@@ -20,7 +20,6 @@ const UpdateName = () => {
        });
       setResponseMessage("Name updated successfully!");
       dispatch(updateUserName(newName));
-      console.log("Name update response:", response.data);
     } catch (error) {
       setResponseMessage("Error updating name. Please try again.");
       console.error("Name update error:", error);

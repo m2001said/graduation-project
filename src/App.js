@@ -9,6 +9,9 @@ import NotFound from "./pages/NotFoundPage";
 import OwnPage from "./pages/OwnPage.jsx";
 import UserInformation from "./pages/UserInformation.jsx";
 import ProtectedRoute from "./pages/ProtectedRoute";
+import SuccessVerified from "./pages/SuccessVerified.jsx";
+import FailedVerified from "./pages/FailedVerified.jsx";
+import ResetPassword from "./pages/ResetPassword.jsx";
 
 import YourWebsites from "./pages/YourWebsites.jsx";
 const trialDesignComponents = Array.from({ length: 18 }, (_, i) => require(`./pages/TrialDesign${i + 1}`).default);
@@ -25,39 +28,54 @@ function App() {
       <MainNav toggleModal={toggleModal} />
       <div style={{ marginTop: "77px" }}>
         <Routes>
+          <Route path="/success-verified" element={<SuccessVerified />} />
+          <Route path="/failed-verified" element={<FailedVerified />} />
+          <Route path="/reset-password/:token" element={<ResetPassword />} />
+
           <Route path="/" element={<MainPage toggleModal={toggleModal} isModalOpen={isModalOpen} />} />
-
-          <Route path="/designs" element={
-            <ProtectedRoute>
-              <DesignsPage />
-            </ProtectedRoute>
-          } />
-          <Route path="/websites" element={<YourWebsites />} />
-
-          <Route path="/page-craft" element={
-            <ProtectedRoute>
-              <BuildYourPage />
-            </ProtectedRoute>
-          } />
-
-          <Route path="/own-page" element={
-            <ProtectedRoute>
-              <OwnPage />
-            </ProtectedRoute>
-          } />
-
-          <Route path="/user-information" element={
-            <ProtectedRoute>
-              <UserInformation />
-            </ProtectedRoute>
-          } />
-
-          {trialDesignComponents.map((Component, index) => (
-            <Route key={`preview-trial-design${index}`} path={`/preview-trial-design${index + 1}`} element={
+          <Route
+            path="/designs"
+            element={
               <ProtectedRoute>
-                <Component />
+                <DesignsPage />
               </ProtectedRoute>
-            } />
+            }
+          />
+          <Route path="/websites" element={<YourWebsites />} />
+          <Route
+            path="/page-craft"
+            element={
+              <ProtectedRoute>
+                <BuildYourPage />
+              </ProtectedRoute>
+            }
+          />
+          <Route
+            path="/own-page"
+            element={
+              <ProtectedRoute>
+                <OwnPage />
+              </ProtectedRoute>
+            }
+          />
+          <Route
+            path="/user-information"
+            element={
+              <ProtectedRoute>
+                <UserInformation />
+              </ProtectedRoute>
+            }
+          />
+          {trialDesignComponents.map((Component, index) => (
+            <Route
+              key={`preview-trial-design${index}`}
+              path={`/preview-trial-design${index + 1}`}
+              element={
+                <ProtectedRoute>
+                  <Component />
+                </ProtectedRoute>
+              }
+            />
           ))}
           <Route element={<Dashboard />}>
             {trialDesignComponents.map((Component, index) => (

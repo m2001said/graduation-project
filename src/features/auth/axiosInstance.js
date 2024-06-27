@@ -36,9 +36,7 @@ axiosInstance.interceptors.response.use(
 
       try {
         const newAccessToken = await refreshToken();
-
         originalRequest.headers["Authorization"] = `Bearer ${newAccessToken}`;
-
         return axiosInstance(originalRequest);
       } catch (err) {
         console.error("Token refresh failed", err);

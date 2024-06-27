@@ -19,7 +19,6 @@ const UpdatePassword = () => {
       newPassword: newPassword,
     });
       setResponseMessage("Password updated successfully!");
-      console.log("Password update response:", response.data);
     } catch (error) {
       setResponseMessage("Error updating password. Please try again.");
       console.error("Password update error:", error);
