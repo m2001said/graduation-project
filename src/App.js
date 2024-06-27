@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import { Route, Routes } from "react-router";
+import React, { useState, useEffect } from "react";
+import { Route, Routes, useNavigate, useLocation } from "react-router";
 import MainNav from "./components/mainPage/mainNavbar/MainNav";
 import Dashboard from "./pages/Dashboard";
 import MainPage from "./pages/MainPage";
@@ -10,35 +10,46 @@ import OwnPage from "./pages/OwnPage.jsx";
 import YourWebsites from "./pages/YourWebsites.jsx";
 import ProtectedRoute from "./pages/ProtectedRoute";
 import { useRightToLeft } from "./utils/rightToLeft.js";
+import { useTranslation } from "react-i18next";
 
 const trialDesignComponents = Array.from({ length: 18 }, (_, i) => require(`./pages/TrialDesign${i + 1}`).default);
 
 function App() {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const isRightToLeft = useRightToLeft();
+  const { i18n } = useTranslation();
+  const language = i18n.language;
+  const navigate = useNavigate();
+  const location = useLocation();
+
+  useEffect(() => {
+    // Redirect root URL to the current language
+    if (location.pathname === "/") {
+      navigate(`/${language}`);
+    }
+  }, [language, location.pathname, navigate]);
 
   const toggleModal = () => {
     setIsModalOpen(!isModalOpen);
   };
 
-  //   todo : should we make all routes dynamic , ar/designs , en/designs ? or not , if yes we must add functionality for all links
   return (
     <div className={isRightToLeft ? "rtl" : "ltr"}>
       <MainNav toggleModal={toggleModal} />
       <div style={{ marginTop: "77px" }}>
         <Routes>
-          <Route path="/" element={<MainPage toggleModal={toggleModal} isModalOpen={isModalOpen} />} />
+          <Route path={`/${language}`} element={<MainPage toggleModal={toggleModal} isModalOpen={isModalOpen} />} />
           <Route
-            path="/designs"
+            path={`/${language}/designs`}
             element={
               <ProtectedRoute>
                 <DesignsPage />
               </ProtectedRoute>
             }
           />
-          <Route path="/websites" element={<YourWebsites />} />
+          <Route path={`/${language}/websites`} element={<YourWebsites />} />
           <Route
-            path="/page-craft"
+            path={`/${language}/page-craft`}
             element={
               <ProtectedRoute>
                 <BuildYourPage />
@@ -46,7 +57,7 @@ function App() {
             }
           />
           <Route
-            path="/own-page"
+            path={`/${language}/own-page`}
             element={
               <ProtectedRoute>
                 <OwnPage />
@@ -57,7 +68,7 @@ function App() {
           {trialDesignComponents.map((Component, index) => (
             <Route
               key={`preview-trial-design${index}`}
-              path={`/preview-trial-design${index + 1}`}
+              path={`/${language}/preview-trial-design${index + 1}`}
               element={
                 <ProtectedRoute>
                   <Component />
@@ -67,7 +78,7 @@ function App() {
           ))}
           <Route element={<Dashboard />}>
             {trialDesignComponents.map((Component, index) => (
-              <Route key={`build-trial-design${index}`} path={`/build-trial-design${index + 1}/:pageId`} element={<Component />} />
+              <Route key={`build-trial-design${index}`} path={`/${language}/build-trial-design${index + 1}/:pageId`} element={<Component />} />
             ))}
           </Route>
           <Route path="*" element={<NotFound />} />

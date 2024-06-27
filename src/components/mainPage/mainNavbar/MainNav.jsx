@@ -15,10 +15,6 @@ const MainNav = ({ toggleModal }) => {
   const dispatch = useDispatch();
   const { i18n, t } = useTranslation("main");
 
-  const changeLanguage = (lng) => {
-    i18n.changeLanguage(lng);
-  };
-
   const handleSignOut = () => {
     dispatch(logoutUserAsync());
     // todo reset all state not one only
@@ -28,11 +24,19 @@ const MainNav = ({ toggleModal }) => {
     });
   };
 
+  const changeLanguage = (lng) => {
+    const currentPath = window.location.pathname;
+    const newPath = currentPath.replace(/^\/(en|ar)/, `/${lng}`);
+    i18n.changeLanguage(lng);
+    localStorage.setItem("language", lng);
+    navigate(newPath);
+  };
+
   return (
     <>
       <div className="main-nav ">
         <div className="container mx-auto px-4 flex  justify-between items-center py-4">
-          <Link to={"/"}>
+          <Link to={`/${i18n.language}`}>
             <div className="main-logo flex items-center">
               <img src={logo} alt="logo" />
               <span>WEB</span>

@@ -8,7 +8,7 @@ import { useSelector } from "react-redux";
 import { useTranslation } from "react-i18next";
 
 const Header = ({ toggleModal }) => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
   const authState = useSelector((state) => state.auth);
 
   useEffect(() => {
@@ -27,7 +27,7 @@ const Header = ({ toggleModal }) => {
               <h1 className="info-title"> {t("HERO.TITLE")}</h1>
               <p className="info-description"> {t("HERO.DESCRIPTION")} </p>
               {authState.status === "succeeded" ? (
-                <Link to={"/designs"}>
+                <Link to={`/${i18n.language}/designs`}>
                   <button className="info-btn"> {t("HERO.BUTTONTEXT")}</button>
                 </Link>
               ) : (
