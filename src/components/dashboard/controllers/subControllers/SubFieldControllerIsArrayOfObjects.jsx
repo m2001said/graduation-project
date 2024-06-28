@@ -73,7 +73,7 @@ const SubFieldControllerIsArrayOfObjects = ({
             {open ? <img src="/assets/icons/down.svg" width={14} alt="down" /> : <img src="/assets/icons/up.svg" width={14} alt="down" />}
           </label>
           {fields.map((field) => {
-            if (field === "id") {
+            if (field === "id" || field === "_id") {
               return null;
             }
             return (

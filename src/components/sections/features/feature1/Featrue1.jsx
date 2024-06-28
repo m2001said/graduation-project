@@ -1,16 +1,7 @@
 import React from "react";
 import "./feature.css";
-import { useSelector } from "react-redux";
-import { useLocation } from "react-router";
-const Featrue1 = () => {
-  const { pathname } = useLocation();
-  const feature = useSelector((state) => {
-    if (pathname.includes("own-page")) {
-      return state.ownTemplate.features;
-    } else {
-      return state.template1.features;
-    }
-  });
+const Featrue1 = ({ template }) => {
+  const feature = template.features;
   return (
     <div className="feature1-layout design-1">
       <div className="feature-image-container1">

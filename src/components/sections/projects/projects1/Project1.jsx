@@ -1,26 +1,15 @@
 import React from "react";
 import "./project1.css";
-import { useSelector } from "react-redux";
-import { useLocation } from "react-router";
 
-const Project1 = () => {
-  // const { projects } = useSelector((state) => state.template1);
-  const { pathname } = useLocation();
-  const projects = useSelector((state) => {
-    if (pathname.includes("own-page")) {
-      return state.ownTemplate.projects;
-    } else {
-      return state.template1.projects;
-    }
-  });
+const Project1 = ({template}) => {
   return (
     <div className="projects1 design-1">
       <div className="projects1-header">
-        <p className="title-1">{projects.title}</p>
-        <p className="description-1">{projects.description}</p>
+        <p className="title-1">{template.projects.title}</p>
+        <p className="description-1">{template.projects.description}</p>
       </div>
       <div className="projects1-cards">
-        {projects.projects.map((cards , index) => (
+        {template.projects.projects.map((cards , index) => (
           <div className="projects1-card" key={cards.title + index}>
             <div className="projects1-card-img">
               <img src={cards.imgUrl} alt="Article 1" />

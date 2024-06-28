@@ -31,16 +31,12 @@
 } */
 
 /* Header */
-header {
-  position: absolute;
-  top: 0;
-  left: 0;
+header.template1 {
   width: 100%;
-  z-index: 2;
   background-color: var(--website-color-1);
 }
 
-header .Nav-container {
+header.template1 .Nav-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -48,18 +44,18 @@ header .Nav-container {
   min-height: 80px;
 }
 
-header .logo img {
+header.template1 .logo img {
   height: 30px;
 }
 
-header nav {
+header.template1 nav {
   flex: 1;
   display: flex;
   align-items: center;
   justify-content: flex-end;
 }
 
-header nav .toggle-menu {
+header.template1 nav .toggle-menu {
   color: var(--website-color-3);
   font-size: 22px;
   cursor: pointer;
@@ -88,20 +84,20 @@ header nav .toggle-menu {
 }
 
 @media (min-width: 668px) {
-  header nav .toggle-menu {
+  header.template1 nav .toggle-menu {
     display: none;
   }
-  header nav ul li a {
+  header.template1 nav ul li a {
     padding: 15px !important;
   }
 }
 
-header nav ul {
+header.template1 nav ul {
   display: flex;
 }
 
 @media (max-width: 667px) {
-  header nav ul {
+  header.template1 nav ul {
     display: none;
     flex-direction: column;
     position: absolute;
@@ -111,15 +107,15 @@ header nav ul {
     opacity: 0.7;
     box-shadow: 0 2px 4px var(--website-color-2);
   }
-  header nav ul li a:hover {
+  header.template1 nav ul li a:hover {
     color: var(--website-color-2);
   }
 
-  header nav ul.show {
+  header.template1 nav ul.show {
     display: flex;
     width: 170px;
   }
-  header nav ul.show li a {
+  header.template1 nav ul.show li a {
     text-transform: capitalize;
     padding: 10px 30px;
     color: var(--website-color-3);
@@ -127,7 +123,7 @@ header nav ul {
     font-size: 18px;
     border-bottom: 0.5px solid var(--website-color-2);
   }
-  header nav ul.show li a:hover {
+  header.template1 nav ul.show li a:hover {
     background-color: var(--website-color-3);
     color: var(--website-color-2);
     border-radius: 0;
@@ -135,7 +131,7 @@ header nav ul {
   }
 }
 
-header nav ul li a {
+header.template1 nav ul li a {
   padding: 20px 35px;
   display: block;
   color: var(--website-color-3);
@@ -146,7 +142,7 @@ header nav ul li a {
   position: relative;
   z-index: 2;
 }
-header nav ul li a:hover {
+header.template1 nav ul li a:hover {
   background-color: var(--website-color-3);
   color: var(--website-color-2);
   border-radius: 8px;

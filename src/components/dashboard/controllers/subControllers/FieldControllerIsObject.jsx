@@ -6,13 +6,13 @@ const FieldControllerIsObject = ({ targetSection, sectionName, blockName, dispat
   const fields = Object.keys(targetSection[blockName]);
   const pattern = /\.(jpg|gif|png|svg)$/i;
   const dispatchedRefForImg = (target, result) =>
-  dispatchRef.updateTemplate({ section: sectionName, variable: null, value: result?.info?.secure_url, blockName: blockName, objKey: target });
+    dispatchRef.updateTemplate({ section: sectionName, variable: null, value: result?.info?.secure_url, blockName: blockName, objKey: target });
 
   return (
     <div className="controller-field">
       <label className=" controller-label">{blockName}</label>
       {fields.map((field, index) => {
-        if (field === "id") {
+        if (field === "id" || field === "_id") {
           return null;
         }
         return (
