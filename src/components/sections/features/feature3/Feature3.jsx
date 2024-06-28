@@ -87,45 +87,81 @@
 // };
 
 // export default Feature3;
+// import React from "react";
+// import "./feature3.css";
+// import { useSelector } from "react-redux";
+// import { useLocation } from "react-router";
+
+// const Feature3 = () => {
+//   const { pathname } = useLocation();
+//   const feature = useSelector((state) => {
+//     if (pathname.includes("own-page")) {
+//       return state.ownTemplate.features;
+//     } else {
+//       return state.template3.features;
+//     }
+//   });
+//   return (
+//     <div className="Reasons3" id="Why us">
+//       <div className="left-r3">
+//         {feature.imgUrl.slice(0, 4).map((url, index) => (
+//           <img key={index} src={url} alt="" />
+//         ))}
+//       </div>
+//       <div className="right-r3">
+//         <span>{feature.Subtitle}</span>
+//         <div>
+//           <span className="stroke-text">{feature.title}</span>
+//         </div>
+//         <div className="details-r3">
+//           {feature.statistics.map((item, index) => (
+//             <div key={index}>
+//               <img src={feature.imgUrl[5]} alt="" />
+//               <span>{item.description}</span>
+//             </div>
+//           ))}
+//         </div>
+//         <span style={{ color: "#808080", fontWeight: "normal" }}>{feature.statistics[4].description}</span>
+//         <div className="partners3">
+//           <img src={feature.imgUrl[4]} alt="" />
+//           <img src={feature.imgUrl[7]} alt="" />
+//           <img src={feature.imgUrl[6]} alt="" />
+//         </div>
+//       </div>
+//     </div>
+//   );
+// };
+
+// export default Feature3;
 import React from "react";
 import "./feature3.css";
-import { useSelector } from "react-redux";
-import { useLocation } from "react-router";
 
-const Feature3 = () => {
-  const { pathname } = useLocation();
-  const feature = useSelector((state) => {
-    if (pathname.includes("own-page")) {
-      return state.ownTemplate.features;
-    } else {
-      return state.template3.features;
-    }
-  });
+const Feature3 = ({ template }) => {
   return (
-    <div className="Reasons3" id="Why us">
+    <div className="Reasons3" id="WhyUs">
       <div className="left-r3">
-        {feature.imgUrl.slice(0, 4).map((url, index) => (
-          <img key={index} src={url} alt="" />
+        {template.feature.imgUrl.slice(0, 4).map((url, index) => (
+          <img key={`image-${index}`} src={url} alt="" />
         ))}
       </div>
       <div className="right-r3">
-        <span>{feature.Subtitle}</span>
+        <span>{template.feature.Subtitle}</span>
         <div>
-          <span className="stroke-text">{feature.title}</span>
+          <span className="stroke-text">{template.feature.title}</span>
         </div>
         <div className="details-r3">
-          {feature.statistics.map((item, index) => (
-            <div key={index}>
-              <img src={feature.imgUrl[5]} alt="" />
+          {template.feature.statistics.map((item, index) => (
+            <div key={`stat-${index}`}>
+              <img src={template.feature.imgUrl[5]} alt="" />
               <span>{item.description}</span>
             </div>
           ))}
         </div>
-        <span style={{ color: "#808080", fontWeight: "normal" }}>{feature.statistics[4].description}</span>
+        <span style={{ color: "#808080", fontWeight: "normal" }}>{template.feature.statistics[4].description}</span>
         <div className="partners3">
-          <img src={feature.imgUrl[4]} alt="" />
-          <img src={feature.imgUrl[7]} alt="" />
-          <img src={feature.imgUrl[6]} alt="" />
+          <img src={template.feature.imgUrl[4]} alt="" />
+          <img src={template.feature.imgUrl[7]} alt="" />
+          <img src={template.feature.imgUrl[6]} alt="" />
         </div>
       </div>
     </div>
@@ -133,3 +169,4 @@ const Feature3 = () => {
 };
 
 export default Feature3;
+

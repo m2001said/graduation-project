@@ -18,14 +18,14 @@ const TrialDesign15 = () => {
   const colors = state.colors;
   useEffect(() => {
     document.documentElement.style = "";
-      document.documentElement.style.setProperty("--color1", colors.templateColors[0]);
-      document.documentElement.style.setProperty("--color2", colors.templateColors[1]);
-      document.documentElement.style.setProperty("--color3", colors.templateColors[2]);
-      document.documentElement.style.setProperty("--color4", colors.templateColors[3]);
-      document.documentElement.style.setProperty("--color5", colors.templateColors[4]);
+    document.documentElement.style.setProperty("--color1", colors.templateColors[0]);
+    document.documentElement.style.setProperty("--color2", colors.templateColors[1]);
+    document.documentElement.style.setProperty("--color3", colors.templateColors[2]);
+    document.documentElement.style.setProperty("--color4", colors.templateColors[3]);
+    document.documentElement.style.setProperty("--color5", colors.templateColors[4]);
 
   }, []);
-  const reorderedComponents = Object.keys(state);
+  // const reorderedComponents = Object.keys(state);
   const componentMapping = {
     services: Services15,
     features: Feature15,
@@ -38,14 +38,17 @@ const TrialDesign15 = () => {
   };
 
   return (
+    // <div className="TrialDesign15">
+    //   <Navbar15 />
+    //   <Hero15 />
+    //   {reorderedComponents.map((_component) => {
+    //     const Component = componentMapping[_component];
+    //     return Component && <Component key={_component} />;
+    //   })}
+    //   <Footer15 />
+    // </div>
     <div className="TrialDesign15">
-      <Navbar15 />
-      <Hero15 />
-      {reorderedComponents.map((_component) => {
-        const Component = componentMapping[_component];
-        return Component && <Component key={_component} />;
-      })}
-      <Footer15 />
+      <TrialDesign15 componentMapping={componentMapping} HeroComponent={Hero15} NavbarComponent={Navbar15} footerComponent={Footer15} template={"template15"} />;
     </div>
   );
 };
