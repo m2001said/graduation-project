@@ -2,27 +2,29 @@ import React from "react";
 import axios from "axios";
 import "./aiForm.css";
 import { useNavigate } from "react-router";
-import { useSelector } from "react-redux";
+// import { useSelector } from "react-redux";
 
 const AiForm = ({ index }) => {
   const navigate = useNavigate();
-  const template = useSelector((state) => state[`template${index}`]);
+  // const template = useSelector((state) => state[`template${index}`]);
 
   const openDesign = async () => {
-    try {
-      const response = await axios.post("https://websitebuilderbackend-production-716e.up.railway.app/page", template, {
-        headers: {
-          "Content-Type": "application/json",
-          Authorization: `Bearer ${localStorage.getItem("token")}`,
-        },
-      });
+    // try {
+    //   const response = await axios.post("https://websitebuilderbackend-production-716e.up.railway.app/page", template, {
+    //     headers: {
+    //       "Content-Type": "application/json",
+    //       Authorization: `Bearer ${localStorage.getItem("token")}`,
+    //     },
+    //   });
 
-      const pageId = response.data.savedPage["_id"];
-      console.log(response.data);
-      navigate(`/build-trial-design${index}/${pageId}`);
-    } catch (error) {
-      console.error("Error:", error.response ? error.response.data : error.message);
-    }
+    //   const pageId = response.data.savedPage["_id"];
+    //   console.log(response.data);
+    //   navigate(`/build-trial-design${index}/${pageId}`);
+    // } catch (error) {
+    //   console.error("Error:", error.response ? error.response.data : error.message);
+    // }
+      navigate(`/build-trial-design${index}`);
+
   };
 
   return (

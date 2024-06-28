@@ -7,20 +7,9 @@ import FilterItems6 from "../components/sections/filterItems/filterItem6/FilterI
 import Testimonials6 from "../components/sections/testimonials/testimonials6/Testimonials6";
 import Cta6 from "../components/sections/ctas/cta6/Cta6";
 import Footer6 from "../components/sections/footers/footer6/Footer6";
-import { useSelector } from "react-redux";
-import { useEffect } from "react";
+import TrialDesign from "./TrialDesign";
 
 const TrialDesign6 = () => {
-  const state = useSelector((state) => state.template6);
-  const colors = state.colors;
-  useEffect(() => {
-    document.documentElement.style = "";
-
-    for (let index = 0; index < colors.templateColors.length; index++) {
-      document.documentElement.style.setProperty(`--color${index + 1}`, colors.templateColors[index]);
-    }
-  }, []);
-  const reorderedComponents = Object.keys(state);
   const componentMapping = {
     features: Feature6,
     testimonials: Testimonials6,
@@ -30,13 +19,7 @@ const TrialDesign6 = () => {
   };
   return (
     <>
-      <Navbar6 />
-      <Hero6 />
-      {reorderedComponents.map((_component) => {
-        const Component = componentMapping[_component];
-        return Component && <Component key={_component} />;
-      })}
-      <Footer6 />
+      <TrialDesign componentMapping={componentMapping} HeroComponent={Hero6} NavbarComponent={Navbar6} footerComponent={Footer6} template={"template6"} />;
     </>
   );
 };

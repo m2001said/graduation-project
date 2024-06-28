@@ -4,6 +4,14 @@ function capitalizeFirstLetter(string) {
   return string.charAt(0).toUpperCase() + string.slice(1);
 }
 
+export const updateSchema = (state, action) => {
+  delete action.payload.owner;
+  delete action.payload._id
+  delete action.payload.__v
+  Object.keys(action.payload).forEach((key) => {
+    state[key] = action.payload[key];
+  });
+};
 export const editElement = (state, action) => {
   const { section, variable, value, i, blockName, subBlockName, subIndex, objKey } = action.payload;
   // sub means level 2 of fields

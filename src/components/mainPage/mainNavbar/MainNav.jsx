@@ -18,7 +18,7 @@ const MainNav = ({ toggleModal }) => {
 
   return (
     <>
-      <div className="main-nav ">
+      <div className="main-nav" id="main-nav">
         <div className="container mx-auto px-4 flex  justify-between items-center py-4">
           <Link to={"/"}>
             <div className="main-logo flex items-center">

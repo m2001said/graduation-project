@@ -1,24 +1,14 @@
 import React from "react";
 import "./pricing1.css";
-import { useSelector } from "react-redux";
-import { useLocation } from "react-router";
-const Pricing1 = () => {
-  const { pathname } = useLocation();
-  const pricing = useSelector((state) => {
-    if (pathname.includes("own-page")) {
-      return state.ownTemplate.pricing;
-    } else {
-      return state.template1.pricing;
-    }
-  });
+const Pricing1 = ({template}) => {
   return (
     <div className="pricing1 design-1">
       <div className="pricing1-head">
-        <h1>{pricing.title}</h1>
-        <p>{pricing.description}</p>
+        <h1>{template.pricing.title}</h1>
+        <p>{template.pricing.description}</p>
       </div>
       <div className="pricing1-mainCards">
-        {pricing.plans.map((card, index) => (
+        {template.pricing.plans.map((card, index) => (
           // <div key={index} className={`pricing1-card${index}`}>
           <div key={index} className={index % 2 === 0 ? "pricing1-even-card" : "pricing1-odd-card"}>
             <h3 className="pricing1-card-title">{card.title}</h3>

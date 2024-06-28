@@ -29,7 +29,7 @@ const Hero9 = () => {
   });
 
   return (
-    <main className="mb-12 pt-4">
+    <main className="trialdesign9 mb-12 pt-4">
       <div className="bg-gradient-to-t from-[var(--website-9-color-3)] to-[var(--website-9-color-1)]  rounded-[560px] rounded-t-none hero9">
         <div className="container mx-auto px-3 lg:flex justify-between items-center lg:h-screen">
           <div className="lg:w-2/5">
