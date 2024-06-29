@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./mainNav.css";
 import logo from "../../../assets/images/mainPageAssets/logo.svg";
-import user from "../../../assets/images/mainPageAssets/user.svg";
+// import user from "../../../assets/images/mainPageAssets/user.svg";
 import { useSelector, useDispatch } from "react-redux";
 import { logoutUserAsync } from "../../../features/auth/authSlice";
 import { useNavigate } from "react-router-dom";
@@ -11,6 +11,7 @@ import LoadingButton from "../../loadingButton/LoadingButton";
 const MainNav = ({ toggleModal }) => {
   const Navigate = useNavigate();
   const authState = useSelector((state) => state.auth);
+  const userAvatar = useSelector((state) => state.auth.userAvatar);
   const dispatch = useDispatch();
 
   const handleSignOut = () => {
@@ -34,7 +35,7 @@ const MainNav = ({ toggleModal }) => {
               <Link to={"/user-information"} className="flex items-center gap-2 ">
                 <p className="text-base md:text-lg hidden md:block">{authState.user.name}</p>
 
-                <img className="w-6" src={user} alt="logo" />
+                <img src={userAvatar} alt="logo" className="w-10 h-10 rounded-full" />
               </Link>
             )}
 
