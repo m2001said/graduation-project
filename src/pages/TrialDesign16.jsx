@@ -5,7 +5,7 @@ import Hero16 from "../components/sections/heros/hero16/Hero16";
 import About16 from "../components/sections/abouts/about16/About16";
 import Feature16 from "../components/sections/features/feature16/Feature16";
 import Gallery16 from "../components/sections/gallerys/gallery16/Gallery16";
-import Menu16 from "../components/sections/menus/menu16/Menu16";
+// import Menu16 from "../components/sections/menus/menu16/Menu16";
 import Choose16 from "../components/sections/chooses/choose16/Choose16";
 import Statistics16 from "../components/sections/statistics/statistics16/Statistics16";
 import Offer16 from "../components/sections/offers/offer16/Offer16";
@@ -20,7 +20,7 @@ const TrialDesign16 = () => {
     about: About16,
     Feature: Feature16,
     Gallery: Gallery16,
-    Menu: Menu16,
+    // Menu: Menu16,
     Choose: Choose16,
     Statistics: Statistics16,
     Offer: Offer16,

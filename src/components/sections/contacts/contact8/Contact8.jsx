@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 
 const Contact8 = ({ template }) => {
-  const Contact = template.Contact;
+  const contact = template.contact;
 
   useEffect(() => {
     // AOS initialization and refresh removed
@@ -15,8 +15,8 @@ const Contact8 = ({ template }) => {
           {/* text */}
           <div className="flex-1 flex justify-center items-center">
             <div className="">
-              <h4 className="text-xl uppercase text-accent font-medium mb-2 tracking-wide">{Contact.sub_title}</h4>
-              <h2 className="text-[45px] lg:text-[90px] leading-none mb-12">{Contact.title}</h2>
+              <h4 className="text-xl uppercase text-accent font-medium mb-2 tracking-wide">{contact.sub_title}</h4>
+              <h2 className="text-[45px] lg:text-[90px] leading-none mb-12">{contact.title}</h2>
             </div>
           </div>
           {/* form */}
@@ -35,7 +35,7 @@ const Contact8 = ({ template }) => {
               className="bg-transparent border-b py-12 outline-none w-full placeholder:text-white focus:border-accent transition-all resize-none mb-12"
               placeholder="Your message"
             ></textarea>
-            <button className="btn btn-lg">{Contact.buttonText}</button>
+            <button className="btn btn-lg">{contact.buttonText}</button>
           </form>
         </div>
       </div>

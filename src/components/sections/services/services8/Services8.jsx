@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 
 const Services8 = ({ template }) => {
-  const Services = template.Services;
+  const services = template.services;
 
   useEffect(() => {
     // AOS initialization and refresh removed
@@ -16,18 +16,18 @@ const Services8 = ({ template }) => {
           <div
             className="flex-1  lg:bg-bottom bg-no-repeat mix-blend-lighten mb-12 lg:mb-0"
             style={{
-              backgroundImage: `url(${Services.imgUrl})`,
+              backgroundImage: `url(${services.imgUrl})`,
             }}
           >
-            <h2 className="h2 text-accent mb-6 serviceC">{Services.title}</h2>
-            <h3 className="h3 max-w-[455px] mb-16 serviceC">{Services.sub_title}</h3>
-            <button className="btn btn-sm serviceC">{Services.buttonText}</button>
+            <h2 className="h2 text-accent mb-6 serviceC">{services.title}</h2>
+            <h3 className="h3 max-w-[455px] mb-16 serviceC">{services.sub_title}</h3>
+            <button className="btn btn-sm serviceC">{services.buttonText}</button>
           </div>
           {/* services */}
           <div className="flex-1 ">
             {/* services list */}
             <div className="">
-              {Services.services.map((service, index) => {
+              {services.services.map((service, index) => {
                 // Destructure
 
                 return (

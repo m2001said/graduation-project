@@ -1,7 +1,6 @@
 import React, { useEffect } from "react";
-
 const Project8 = ({ template }) => {
-  const work = template.project;
+  const projects = template.projects;
   useEffect(() => {
     // AOS initialization and refresh removed
     return () => {};
@@ -11,12 +10,12 @@ const Project8 = ({ template }) => {
     <section className="section8" id="work">
       <div className="container mx-auto">
         <div>
-          <h2 className="h2 leading-tight text-accent">{work.title}</h2>
-          <p className="max-w-sm mb-16">{work.description}</p>
-          <button className="btn btn-sm mb-4">{work.buttonText}</button>
+          <h2 className="h2 leading-tight text-accent">{projects.title}</h2>
+          <p className="max-w-sm mb-16">{projects.description}</p>
+          <button className="btn btn-sm mb-4">{projects.buttonText}</button>
         </div>
         <div className="flex flex-col lg:flex-row gap-x-10">
-          {work.projects.map((project, index) => (
+          {projects.projects.map((project, index) => (
             <div key={index} className={`flex flex-1 flex-col gap-y-12 mb-10 lg:mb-0 ${index % 2 === 0 ? "lg:flex-1" : "lg:flex-1 lg:order-2"}`}>
               {/* text */}
 
