@@ -1,10 +1,10 @@
 import React from "react";
 import "./services1Card.css";
 
-const Services1Card = ({ image, title, description }) => {
+const Services1Card = ({ imgUrl, title, description }) => {
   return (
     <div className="srv-box">
-      <img src={image} alt={`image of ${title}`} />
+      <img alt="" src={imgUrl} />
       <div className="text">
         <h3>{title}</h3>
         <p>{description}</p>

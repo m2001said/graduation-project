@@ -102,7 +102,7 @@ const FieldControllerIsArrayOfObjects = ({ targetSection, cardIndex, sectionName
                     />
                   );
               }
-              if (field === "id") {
+              if (field === "id" || field === "_id") {
                 return null;
               }
               return show ? (

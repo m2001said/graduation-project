@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Route, Routes } from "react-router";
 import MainNav from "./components/mainPage/mainNavbar/MainNav";
 import Dashboard from "./pages/Dashboard";
@@ -15,10 +15,10 @@ import ResetPassword from "./pages/ResetPassword.jsx";
 
 import YourWebsites from "./pages/YourWebsites.jsx";
 const trialDesignComponents = Array.from({ length: 18 }, (_, i) => require(`./pages/TrialDesign${i + 1}`).default);
+const websites = Array.from({ length: 18 }, (_, i) => require(`./pages/TrialDesign${i + 1}`).default);
 
 function App() {
   const [isModalOpen, setIsModalOpen] = useState(false);
-
   const toggleModal = () => {
     setIsModalOpen(!isModalOpen);
   };
@@ -26,7 +26,7 @@ function App() {
   return (
     <>
       <MainNav toggleModal={toggleModal} />
-      <div style={{ marginTop: "77px" }}>
+      <div style={{ marginTop: "77px" }} id="template-container">
         <Routes>
           <Route path="/success-verified" element={<SuccessVerified />} />
           <Route path="/failed-verified" element={<FailedVerified />} />
@@ -58,14 +58,7 @@ function App() {
               </ProtectedRoute>
             }
           />
-          <Route
-            path="/user-information"
-            element={
-              <ProtectedRoute>
-                <UserInformation />
-              </ProtectedRoute>
-            }
-          />
+
           {trialDesignComponents.map((Component, index) => (
             <Route
               key={`preview-trial-design${index}`}
@@ -77,9 +70,47 @@ function App() {
               }
             />
           ))}
+
+          {/* websites */}
+          {websites.map((Component, index) => (
+            <Route
+              key={`zwep${index}`}
+              path={`/zweb${index + 1}`}
+              element={
+                <ProtectedRoute>
+                  <Component />
+                </ProtectedRoute>
+              }
+            />
+          ))}
+          <Route element={<Dashboard />}>
+            {websites.map((Component, index) => (
+              <Route
+                key={`edit-zweb${index}`}
+                path={`/edit-zweb${index + 1}`}
+                element={
+                  <ProtectedRoute>
+                    <Component />
+                  </ProtectedRoute>
+                }
+              />
+            ))}
+          </Route>
+
+
+
           <Route element={<Dashboard />}>
             {trialDesignComponents.map((Component, index) => (
-              <Route key={`build-trial-design${index}`} path={`/build-trial-design${index + 1}/:pageId`} element={<Component />} />
+              // <Route key={`build-trial-design${index}`} path={`/build-trial-design${index + 1}/:pageId`} element={<Component />} />
+              <Route
+                key={`build-trial-design${index}`}
+                path={`/build-trial-design${index + 1}`}
+                element={
+                  <ProtectedRoute>
+                    <Component />
+                  </ProtectedRoute>
+                }
+              />
             ))}
           </Route>
           <Route path="*" element={<NotFound />} />

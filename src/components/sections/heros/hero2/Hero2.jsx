@@ -1,17 +1,8 @@
 import React from "react";
 import "./hero2.css";
-import { useSelector } from "react-redux";
-import { useLocation } from "react-router";
 
-const Hero2 = () => {
-  const { pathname } = useLocation();
-  const hero = useSelector((state) => {
-    if (pathname.includes("own-page")) {
-      return state.ownTemplate.hero;
-    } else {
-      return state.template2.hero;
-    }
-  });
+const Hero2 = ({ template }) => {
+  const hero = template.hero;
   return (
     <section id="hero2">
       <h5>{hero.title}</h5>

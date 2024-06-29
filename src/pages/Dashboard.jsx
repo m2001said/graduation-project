@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from "react";
-// import TopSide from "./../components/dashboard/sections/TopSide";
+import React from "react";
+import TopSide from "./../components/dashboard/sections/TopSide";
 import LeftSide from "../components/dashboard/sections/LeftSide";
 import RightSide from "../components/dashboard/sections/RightSide";
 import { useSelector } from "react-redux";
@@ -24,10 +24,11 @@ import { templateActions17 } from "../features/templateData/templateSlice17";
 import { templateActions18 } from "../features/templateData/templateSlice18";
 
 const Dashboard = () => {
-  const { pathname } = useLocation();
+  const { pathname  } = useLocation();
   const regex = /\d+/;
   const templateId = pathname.match(regex)[0];
-  const template = useSelector((state) => state[`template${templateId}`]);
+  let template = useSelector((state) => state[`template${templateId}`]);
+
   let updateAllRef;
   switch (templateId) {
     case "1":
@@ -87,10 +88,13 @@ const Dashboard = () => {
     default:
       break;
   }
+
+
+
   const screen = useSelector((state) => state.screen);
-  return (
+  return template && (
     <section className="dashboard-container mx-auto relative">
-      {/* <TopSide schema={template}/> */}
+      <TopSide schema={template} />
       <div className="w-full flex-between flex-col md:flex-row dashboard-subContainer overflow-hidden">
         <LeftSide targetTemplate={template} updateAllRef={updateAllRef} />
         <div className="max-md:w-full md:w-70 flex-auto  flex justify-start flex-col items-center text-black p-2" style={{ height: "calc(100vh - 56px)" }}>
