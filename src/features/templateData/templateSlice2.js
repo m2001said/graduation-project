@@ -49,36 +49,33 @@ const templateSlice2 = createSlice({
           title: "Projects",
           content: "80+ completed projects",
         },
-      ],
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...",
-    },
+      ],},
     testimonials: {
       title: "What the People Thinks About Us",
       subtitle: "Testimonials",
       cards: [
         {
-          avatar: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1703134021/avatar4_tn7dyv.jpg",
+          imgUrl: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1703134021/avatar4_tn7dyv.jpg",
           name: "Ernest Achiever",
-          review:
+          opinion:
             "Lorem ipsum doloripsum doloripsum doloripsum doloripsum doloripsum doloripsum dolor ipsum doloripsumdoloripsumdoloripsumdoloripsumdoloripsum doloripsum doloripsum doloripsum dolor",
         },
         {
-          avatar: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1703134020/avatar3_pbztwn.jpg",
+          imgUrl: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1703134020/avatar3_pbztwn.jpg",
           name: "Ernest Achiever",
-          review:
+          opinion:
             "Lorem ipsum doloripsum doloripsum doloripsum doloripsum doloripsum doloripsum dolor ipsum doloripsumdoloripsumdoloripsumdoloripsumdoloripsum doloripsum doloripsum doloripsum dolor",
         },
         {
-          avatar: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1703134020/avatar2_lgwr3o.jpg",
+          imgUrl: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1703134020/avatar2_lgwr3o.jpg",
           name: "Ernest Achiever",
-          review:
+          opinion:
             "Lorem ipsum doloripsum doloripsum doloripsum doloripsum doloripsum doloripsum dolor ipsum doloripsumdoloripsumdoloripsumdoloripsumdoloripsum doloripsum doloripsum doloripsum dolor",
         },
         {
-          avatar: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1703134020/avatar1_g7wm1r.jpg",
+          imgUrl: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1703134020/avatar1_g7wm1r.jpg",
           name: "Ernest Achiever",
-          review:
+          opinion:
             "Lorem ipsum doloripsum doloripsum doloripsum doloripsum doloripsum doloripsum dolor ipsum doloripsumdoloripsumdoloripsumdoloripsumdoloripsum doloripsum doloripsum doloripsum dolor",
         },
       ],

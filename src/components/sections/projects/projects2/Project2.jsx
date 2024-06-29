@@ -28,7 +28,7 @@ const Projects2 = () => {
 
             <div className="projects2__item-cta">
               <a href={item.githubLink} className="btn">
-                Github
+                go to {item.title}
               </a>
               <a href={item.demoLink} className="btn btn-primary" target="_blank" rel="noopener noreferrer">
                 Live Demo
