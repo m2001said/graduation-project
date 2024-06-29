@@ -52,18 +52,17 @@ const MainNav = ({ toggleModal }) => {
             <button className="signIn-btn p-1 md:p-2" onClick={authState.status === "succeeded" && authState.user ? handleSignOut : toggleModal}>
               {authState.status === "succeeded" && authState.user ? t("USER.LOG_OUT") : t("USER.SIGN_IN")}
             </button>
-            <div>
-              {i18n.language === "ar" && (
-                <button onClick={() => changeLanguage("en")}>
-                  <img className="w-8" src={translateArabic} alt="translateArabic" />
-                </button>
-              )}
-              {i18n.language === "en" && (
-                <button onClick={() => changeLanguage("ar")}>
-                  <img className="w-8" src={translateEnglish} alt="translateEnglish" />
-                </button>
-              )}
-            </div>
+
+            {i18n.language === "ar" && (
+              <button onClick={() => changeLanguage("en")} className="hover:opacity-90">
+                <img className="w-8" src={translateArabic} alt="translateArabic" />
+              </button>
+            )}
+            {i18n.language === "en" && (
+              <button onClick={() => changeLanguage("ar")} className="hover:opacity-90">
+                <img className="w-8" src={translateEnglish} alt="translateEnglish" />
+              </button>
+            )}
           </div>
         </div>
       </div>

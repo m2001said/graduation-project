@@ -23,8 +23,7 @@ const AiForm = ({ index }) => {
     // } catch (error) {
     //   console.error("Error:", error.response ? error.response.data : error.message);
     // }
-      navigate(`/build-trial-design${index}`);
-
+    navigate(`/build-trial-design${index}`);
   };
 
   return (
