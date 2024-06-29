@@ -1,17 +1,9 @@
 import React from "react";
-import { useSelector } from "react-redux";
-import { useLocation } from "react-router";
 
-const Projects21 = () => {
-  const { pathname } = useLocation();
-  const projects2 = useSelector((state) => {
-    if (pathname.includes("own-page")) {
-      return state.ownTemplate.blogs;
-    } else {
-      return state.template14.blogs;
-    }
-  });
-  // const projects2 = useSelector((state) => state.template14.blogs);
+
+const Projects21 = ({template}) => {
+    const projects2 = template.blogs;
+
 
   return (
     <div className="my-12 bg-[--website-14-color-6] dark:bg-gray-900">

@@ -51,6 +51,7 @@ const initialState = {
     buttonText: "Get Started",
     imgUrl: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1708094582/car1_yzpkby.png",
   },
+  
   services: {
     title: "Why Choose Us",
     services: [

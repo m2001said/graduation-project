@@ -1,17 +1,9 @@
 import React, { useState } from "react";
-import { useSelector } from "react-redux";
 import "../../../../assets/css/globals10.css";
-import { useLocation } from "react-router";
 
-const Hero10 = ({ handleOrderPopup }) => {
-  const { pathname } = useLocation();
-  const hero = useSelector((state) => {
-    if (pathname.includes("own-page")) {
-      return state.ownTemplate.hero;
-    } else {
-      return state.template10.hero;
-    }
-  });
+const Hero10 = ({template}) => {
+  const hero = template.hero;
+
   const [id, setId] = useState(0);
   return (
     <>
@@ -32,7 +24,7 @@ const Hero10 = ({ handleOrderPopup }) => {
               <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold">{hero.heros[id].title}</h1>
               <p className="text-sm mt-4">{hero.heros[id].description}</p>
               <div>
-                <button onClick={handleOrderPopup} className="btnBg10 btnTxt10 px-4 py-2 rounded-full mt-4 hover:scale-105 duration-200 ">
+                <button  className="btnBg10 btnTxt10 px-4 py-2 rounded-full mt-4 hover:scale-105 duration-200 ">
                   {hero.buttonText}
                 </button>
               </div>

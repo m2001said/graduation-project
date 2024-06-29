@@ -1,17 +1,9 @@
 import React from "react";
-import { useSelector } from "react-redux";
-import { useLocation } from "react-router";
 
-const Footer14 = () => {
-  // const { footer } = useSelector((state) => state.template14);
-  const { pathname } = useLocation();
-  const footer = useSelector((state) => {
-    if (pathname.includes("own-page")) {
-      return state.ownTemplate.footer;
-    } else {
-      return state.template14.footer;
-    }
-  });
+
+const Footer14 = ({template}) => {
+    const footer = template.footer;
+
   return (
     <div className="bg-[--website-14-color-6] dark:bg-gray-950">
       <div className="container14">

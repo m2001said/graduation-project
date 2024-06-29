@@ -1,17 +1,9 @@
 import React from "react";
-import { useSelector } from "react-redux";
-import { useLocation } from "react-router";
 
-const Projects14 = () => {
-  const { pathname } = useLocation();
-  const projects1 = useSelector((state) => {
-    if (pathname.includes("own-page")) {
-      return state.ownTemplate.products;
-    } else {
-      return state.template14.products;
-    }
-  });
-  // const projects1 = useSelector((state) => state.template14.products);
+
+const Projects14 = ({template}) => {
+    const projects1 = template.products;
+
   return (
     <div className="bg-[--website-14-color-6] dark:bg-gray-900">
       <div className="container14">

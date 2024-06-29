@@ -1,18 +1,10 @@
 import React from "react";
-import { useSelector } from "react-redux";
 import "../../../../assets/css/globals10.css";
 import DarkMode from "./DarkMode";
-import { useLocation } from "react-router";
 
-const Navbar10 = ({ handleOrderPopup }) => {
-  const { pathname } = useLocation();
-  const navbar = useSelector((state) => {
-    if (pathname.includes("own-page")) {
-      return state.ownTemplate.navbar;
-    } else {
-      return state.template10.navbar;
-    }
-  });
+const Navbar10 = ({template}) => {
+  const navbar = template.navbar;
+
   return (
     <>
       <div className="shadow-lg bg-white dark:bg-gray-900 dark:text-white duration-200 ">
@@ -39,7 +31,7 @@ const Navbar10 = ({ handleOrderPopup }) => {
               </ul>
               <button
                 className="btnBg10 btnTxt10 hover:scale-105 duration-200 py-1 px-4 rounded-full flex items-center gap-3"
-                onClick={() => handleOrderPopup()}
+                
               >
                 {navbar.buttonText}
                 <a href="/#">

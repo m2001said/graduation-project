@@ -50,19 +50,16 @@ const initialState = {
       {
         title: "Travel requirement for Dubai",
         description: "Find help with booking and travel plans, see what to expect during the journey.",
-        // duration: 2500,
         number: "01",
       },
       {
         title: "Travel requirement for Dubai",
         description: "Find help with booking and travel plans, see what to expect during the journey.",
-        // duration: 3500,
         number: "02",
       },
       {
         title: "Travel requirement for Dubai",
         description: "Find help with booking and travel plans, see what to expect during the journey.",
-        // duration: 4500,
         number: "03",
       },
     ],
@@ -70,7 +67,6 @@ const initialState = {
 
   services: {
     title: "Travel to make memories all around the world",
-    buttonTxt: "View all",
     services: [
       {
         title: "Book & Relax",
@@ -129,9 +125,9 @@ const initialState = {
         socialLink: "@Isratech",
       },
       {
-        travelerImage: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1703118040/user1_tjx7hg.jpg",
+        travelerName: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1703118040/user1_tjx7hg.jpg",
         destinationImage: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1703118235/newYork_k8j1t0.jpg",
-        travelerName: "IsraTech",
+        travelerImage: "IsraTech",
         socialLink: "@Isratech",
       },
       {

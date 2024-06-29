@@ -13,23 +13,10 @@ import Footer10 from "../components/sections/footers/footer10/Footer10";
 // import OrderPopup10 from "../components/sections/orderPopups/orderPopup10/OrderPopup10";
 import TrialDesign from "./TrialDesign";
 
-// import AOS from "aos";
-// import "aos/dist/aos.css";
+
 
 const TrialDesign10 = () => {
-  // const [orderPopup, setOrderPopup] = React.useState(false);
-  // const handleOrderPopup = () => {
-  //   setOrderPopup(!orderPopup);
-  // };
-  //   React.useEffect(() => {
-  //     AOS.init({
-  //       offset: 100,
-  //       duration: 800,
-  //       easing: "ease-in-sine",
-  //       delay: 100,
-  //     });
-  //     AOS.refresh();
-  //   }, []);
+ 
 
   const state = useSelector((state) => state.template10);
   const componentMapping = {
@@ -59,3 +46,31 @@ const TrialDesign10 = () => {
 };
 
 export default TrialDesign10;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ // const [orderPopup, setOrderPopup] = React.useState(false);
+  // const handleOrderPopup = () => {
+  //   setOrderPopup(!orderPopup);
+  // };
+  //   React.useEffect(() => {
+  //     AOS.init({
+  //       offset: 100,
+  //       duration: 800,
+  //       easing: "ease-in-sine",
+  //       delay: 100,
+  //     });
+  //     AOS.refresh();
+  //   }, []);

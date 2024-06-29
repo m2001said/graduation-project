@@ -9,7 +9,7 @@ const initialState = {
   },
   navbar: {
     title: "Eshop",
-    logo: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707601954/logo_xtzffr.png",
+    // logo: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707601954/logo_xtzffr.png",
     links: [
       {
         title: "Home",
@@ -124,6 +124,7 @@ const initialState = {
     title3: "Winter Sale",
     title4: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque reiciendis",
   },
+
   products: {
     title: "Our Products",
     description: "Explore Our Products",

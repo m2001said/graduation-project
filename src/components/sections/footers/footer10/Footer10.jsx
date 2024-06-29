@@ -1,17 +1,11 @@
 import React from "react";
-import { useSelector } from "react-redux";
 import "../../../../assets/css/globals10.css";
-import { useLocation } from "react-router";
 
-const Footer10 = () => {
-  const { pathname } = useLocation();
-  const footer = useSelector((state) => {
-    if (pathname.includes("own-page")) {
-      return state.ownTemplate.footer;
-    } else {
-      return state.template10.footer;
-    }
-  });
+
+
+const Footer10 = ({ template }) => {
+  const footer = template.footer;
+
   return (
     <div className="bg-[--website-10-color-5] dark:bg-gray-950">
       <section className="items-center p-10 sm:p-30">

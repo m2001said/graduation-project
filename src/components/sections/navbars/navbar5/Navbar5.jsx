@@ -1,17 +1,9 @@
 import React, { useState } from "react";
-import { useSelector } from "react-redux";
 import "./navbar5.css";
-import { useLocation } from "react-router";
 
-const Navbar5 = () => {
-  const { pathname } = useLocation();
-  const navbar = useSelector((state) => {
-    if (pathname.includes("own-page")) {
-      return state.ownTemplate.navbar;
-    } else {
-      return state.template5.navbar;
-    }
-  });
+const Navbar5 = ({template}) => {
+  const navbar = template.navbar;
+
 
   const [active, setActive] = useState("navbarMenu");
   const showNavbar = () => {
