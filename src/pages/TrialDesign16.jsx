@@ -13,9 +13,10 @@ import Team16 from "../components/sections/teams/team16/Team16";
 import Reservation16 from "../components/sections/reservations/reservation16/Reservation16";
 import Testimonials16 from "../components/sections/testimonials/testimonials16/Testimonials16";
 import Footer16 from "../components/sections/footers/footer16/Footer16";
+import TrialDesign from "./TrialDesign";
 
 const TrialDesign16 = () => {
-  const componentMapping1 = {
+  const componentMapping = {
     about: About16,
     Feature: Feature16,
     Gallery: Gallery16,
