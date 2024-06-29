@@ -15,24 +15,21 @@ import Testimonials16 from "../components/sections/testimonials/testimonials16/T
 import Footer16 from "../components/sections/footers/footer16/Footer16";
 
 const TrialDesign16 = () => {
+  const componentMapping1 = {
+    about: About16,
+    Feature: Feature16,
+    Gallery: Gallery16,
+    Menu: Menu16,
+    Choose: Choose16,
+    Statistics: Statistics16,
+    Offer: Offer16,
+    Team: Team16,
+    Reservation: Reservation16,
+    Testimonials: Testimonials16,
+  };
   return (
     <div className="body16 ">
-      <Navbar16 />
-      <Hero16 />
-      <About16 />
-      <Feature16 />
-
-      <Menu16 />
-      <Choose16 />
-      <Statistics16 />
-      <Gallery16 />
-
-      <Offer16 />
-      <Team16 />
-      <Reservation16 />
-      <Testimonials16 />
-
-      <Footer16 />
+      <TrialDesign componentMapping={componentMapping} HeroComponent={Hero16} NavbarComponent={Navbar16} FooterComponent={Footer16} template={"template16"} />
     </div>
   );
 };
