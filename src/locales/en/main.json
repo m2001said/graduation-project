@@ -1,0 +1,81 @@
+{
+  "USER": {
+    "LOG_OUT": "Log out",
+    "SIGN_IN": "Sign In"
+  },
+  "ERROR": {
+    "GO_BACK": "Go back home",
+    "MESSAGE_1": "Oops! Page not found.",
+    "MESSAGE_2": "The page you're looking for doesn't exist or has been moved."
+  },
+  "HERO": {
+    "TITLE": "Welcome To ZWEB Where Your Websites Dreams Take Flight With Ai",
+    "DESCRIPTION": "At Zagazig Easy Website Builder, we’re pioneering a new era in the design process. Our intelligent AI website builder turns your digital vision into reality in just a few clicks. From abstract concepts to fully developed websites, the future of web design starts here.",
+    "BUTTONTEXT": "Generate Your website"
+  },
+  "STEPS": {
+    "TITLE_1": "Sign In",
+    "DESCRIPTION_1": "To embark on your website creation journey, sign in to unlock the potential of crafting your own personalized web space. This process is your gateway to a free website page that remains at your fingertips.",
+    "TITLE_2": "Choose Your Design",
+    "DESCRIPTION_2": "Personalize your website with two design options. Blank Page: Start from scratch, choosing from our wide array of designs. AI-Generated: Select a design and let our AI create text and appropriate images for you.",
+    "TITLE_3": "Ai generator",
+    "DESCRIPTION_3": "Select your preferred design and let our AI do the rest. It will generate relevant text and choose suitable images based on your selection. Our AI ensures the content aligns with your design and purpose.",
+    "TITLE_4": "Revise Your Data",
+    "DESCRIPTION_4": "Feel free to review and modify your texts as needed. Once you’re satisfied, save your changes. The revised content is now ready for deployment. Remember, your data is in your control. Make the most of it!"
+  },
+
+  "DEMOLIVE": {
+    "TITLE": "How to Use Our Website",
+    "DESCRIPTION": "Watch the video below to understand how to navigate and use our website effectively."
+  },
+  "CONTACT": {
+    "TTIEL": "Contact Us",
+    "EMIAL": "Email",
+    "NAME": "Name",
+    "MESSAGE": "Message",
+    "LOADING_SEND": "Sending...",
+    "SEND": "Send Message"
+  },
+  "DESIGNS": {
+    "TITLE_1": "Your Websites",
+    "DESCRIPTION_1": "Discover the incredible websites you've created.",
+    "TITLE_2": "Start From Scratch",
+    "DESCRIPTION_2": "Craft a page that reflects your professionalism",
+    "TITLE_3": "Unique Homes",
+    "DESCRIPTION_3": "Explore diverse design and project updates for personalized living.",
+    "TITLE_4": "Web Dev Portfolio",
+    "DESCRIPTION_4": "Showcase your web dev skills and impressive projects in one place.",
+    "TITLE_5": "FitClub Pro",
+    "DESCRIPTION_5": "Shape your ideal body with expert coaches, diverse programs.",
+    "TITLE_6": "Home Finder Pro",
+    "DESCRIPTION_6": "Find your dream home among 9000+ options with 2000+ happy customers.",
+    "TITLE_7": "Memorable Journeys",
+    "DESCRIPTION_7": "Explore travel tips, assistance, and create lasting global memories.",
+    "TITLE_8": "Chef Food",
+    "DESCRIPTION_8": "Discover diverse flavors with our menu and satisfied testimonials.",
+    "TITLE_9": "Secure Money Solutions",
+    "DESCRIPTION_9": "Discover Hoobank - Your secure and efficient next-gen payment solution.",
+    "TITLE_10": "Portfolio Hub",
+    "DESCRIPTION_10": "Experience frontend and captivating UI/UX designs in our portfolio.",
+    "TITLE_11": "HomeHub",
+    "DESCRIPTION_11": "Discover your dream home in an immersive and user-friendly e-commerce platform.",
+    "TITLE_12": "Bookstore Bliss",
+    "DESCRIPTION_12": "Explore top books, reviews, and a virtual library experience.",
+    "TITLE_13": "Digital Portfolio Showcase",
+    "DESCRIPTION_13": "Explore Bolby Doe's impressive web design and development portfolio.",
+    "TITLE_14": "Nike Ecommerce",
+    "DESCRIPTION_14": "Innovative Nike e-commerce for a stylish and seamless shopping experience.",
+    "TITLE_15": "Architecture Showcase",
+    "DESCRIPTION_15": "Innovative portfolio highlighting architectural expertise and diverse, creative projects.",
+    "TITLE_16": "Gadget Store Hub",
+    "DESCRIPTION_16": "Explore our curated collection of headphones, laptops in our store.",
+    "TITLE_17": "Developer Portfolio",
+    "DESCRIPTION_17": "Explore innovative app development with our software developer portfolio.",
+    "TITLE_18": "Coffero's Café",
+    "DESCRIPTION_18": "Savor the essence of coffee at our store. Check our menu, book a table.",
+    "TITLE_19": "Personal Portfolio",
+    "DESCRIPTION_19": "Dynamic web portfolio emphasizing frontend and UI/UX design expertise.",
+    "TITLE_20": "DriveWise Autos",
+    "DESCRIPTION_20": "Choose us for the best prices, fast and secure, and skilled drivers."
+  }
+}
