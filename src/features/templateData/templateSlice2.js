@@ -9,28 +9,30 @@ const templateSlice2 = createSlice({
       description: "",
       imgUrl: "",
     },
-    navbar: [
-      {
-        imgUrl: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1703134252/home-1-svgrepo-com_axgckp.svg",
-        url: "hero2",
-      },
-      {
-        imgUrl: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1703134253/info-circle-svgrepo-com_a6q6z3.svg",
-        url: "services2",
-      },
-      {
-        imgUrl: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1703134396/project-svgrepo-com_qjvqow.svg",
-        url: "projects2",
-      },
-      {
-        imgUrl: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1703134251/customer-testimonial-svgrepo-com_vdnnre.svg",
-        url: "testimonials2",
-      },
-      {
-        imgUrl: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1703134254/message-circle-lines-alt-svgrepo-com_iotcwk.svg",
-        url: "contactUs2",
-      },
-    ],
+    navbar: {
+      links: [
+        {
+          imgUrl: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1703134252/home-1-svgrepo-com_axgckp.svg",
+          url: "#hero2",
+        },
+        {
+          imgUrl: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1703134253/info-circle-svgrepo-com_a6q6z3.svg",
+          url: "#services2",
+        },
+        {
+          imgUrl: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1703134396/project-svgrepo-com_qjvqow.svg",
+          url: "#projects2",
+        },
+        {
+          imgUrl: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1703134251/customer-testimonial-svgrepo-com_vdnnre.svg",
+          url: "#testimonials2",
+        },
+        {
+          imgUrl: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1703134254/message-circle-lines-alt-svgrepo-com_iotcwk.svg",
+          url: "#contactUs2",
+        },
+      ],
+    },
     hero: {
       title: "Get to know",
       subtitle: "Hero",
@@ -153,7 +155,7 @@ const templateSlice2 = createSlice({
         action: "sendWhatsAppMessage",
       },
     },
-    
+
     // items: {
     //   title: "Articles & News",
     //   description:
@@ -203,7 +205,7 @@ const templateSlice2 = createSlice({
         },
       ],
     },
-    
+
     footer: {
       title: "CSE",
       subtitle: "ssssssssssssssssssssss all rights reserved.",
@@ -211,7 +213,7 @@ const templateSlice2 = createSlice({
         { id: 1, title: "Home", link: "#hero2" },
         { id: 2, title: "Services", link: "#services2" },
         { id: 3, title: "Testimonials", link: "#testimonials2" },
-        { id: 4, title: "Contact", link: "#contactUs2" }
+        { id: 4, title: "Contact", link: "#contactUs2" },
       ],
       medias: [
         {
@@ -236,7 +238,6 @@ const templateSlice2 = createSlice({
         },
       ],
     },
-    
 
     colors: {
       templateColors: ["#fff", "#cda274", "#292f36", "#f4f0ec", "#777777"],
