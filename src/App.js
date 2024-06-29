@@ -41,6 +41,14 @@ function App() {
               </ProtectedRoute>
             }
           />
+          <Route
+            path="/user-information"
+            element={
+              <ProtectedRoute>
+                <UserInformation />
+              </ProtectedRoute>
+            }
+          />
           <Route path="/websites" element={<YourWebsites />} />
           <Route
             path="/page-craft"
@@ -96,8 +104,6 @@ function App() {
               />
             ))}
           </Route>
-
-
 
           <Route element={<Dashboard />}>
             {trialDesignComponents.map((Component, index) => (

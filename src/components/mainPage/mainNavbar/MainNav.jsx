@@ -6,9 +6,6 @@ import user from "../../../assets/images/mainPageAssets/user.svg";
 import { useSelector, useDispatch } from "react-redux";
 import { logoutUserAsync } from "../../../features/auth/authSlice";
 import { useNavigate } from "react-router-dom";
-import { useSelector, useDispatch } from "react-redux";
-import { logoutUserAsync } from "../../../features/auth/authSlice";
-import { useNavigate } from "react-router-dom";
 import LoadingButton from "../../loadingButton/LoadingButton";
 
 const MainNav = ({ toggleModal }) => {
@@ -34,7 +31,7 @@ const MainNav = ({ toggleModal }) => {
 
           <div className="nav-controls flex justify-between items-center gap-2 md:gap-6">
             {authState.status === "succeeded" && authState.user && (
-              <Link to={"/"} className="flex items-center gap-2 ">
+              <Link to={"/user-information"} className="flex items-center gap-2 ">
                 <p className="text-base md:text-lg hidden md:block">{authState.user.name}</p>
 
                 <img className="w-6" src={user} alt="logo" />
