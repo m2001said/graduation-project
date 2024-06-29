@@ -1,19 +1,12 @@
 import React from "react";
-import { useSelector } from "react-redux";
+
 import { Swiper, SwiperSlide, useSwiper } from "swiper/react";
 import "swiper/css";
 import "./project4.css";
 import { sliderSettings } from "./common";
-import { useLocation } from "react-router";
-const Project4 = () => {
-  const { pathname } = useLocation();
-  const projects = useSelector((state) => {
-    if (pathname.includes("own-page")) {
-      return state.ownTemplate.projects;
-    } else {
-      return state.template4.projects;
-    }
-  });
+
+const Project4 = ({ template }) => {
+  const projects = template.projects;
   return (
     <div id="residencies" className="r-wrapper">
       <div className="paddings innerWidth r-container">

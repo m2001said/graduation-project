@@ -1,11 +1,12 @@
 import React, { useState } from "react";
-import { useSelector } from "react-redux";
+
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "./testimonials16.css";
 
-const Testimonials16 = () => {
-  const { testimonial } = useSelector((state) => state.template16);
+const Testimonials16 = ({ template }) => {
+  const testimonial = template.testimonial;
+
   const [activeIndex, setActiveIndex] = useState(0);
 
   const handleSlideChange = (swiper) => {

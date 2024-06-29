@@ -1,10 +1,8 @@
 import React from "react";
 import "./gallery16.css";
-import { useSelector } from "react-redux";
 
-const Gallery16 = () => {
-  const { Gallary } = useSelector((state) => state.template16);
-
+const Gallery16 = ({ template }) => {
+  const Gallary = template.Gallary;
   return (
     <section className="gallery16 section16" id="gallery">
       <h2 className="section__title16" data-title="Gallery">

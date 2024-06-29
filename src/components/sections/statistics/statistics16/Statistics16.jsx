@@ -1,9 +1,8 @@
 import React from "react";
-import { useSelector } from "react-redux";
 import "./statistics16.css";
 
-const Statistics16 = () => {
-  const { Statistics } = useSelector((state) => state.template16);
+const Statistics16 = ({ template }) => {
+  const Statistics = template.Statistics;
 
   return (
     <section className="stats16 section16">

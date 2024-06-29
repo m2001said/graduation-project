@@ -1,9 +1,8 @@
 import React from "react";
 import "./menu16.css";
-import { useSelector } from "react-redux";
 
-const Menu16 = () => {
-  const { Menu } = useSelector((state) => state.template16);
+const Menu16 = ({ template }) => {
+  const Menu = template.Menu;
 
   return (
     <section className="menu16 section16" id="menu">

@@ -1,9 +1,8 @@
 import React, { useEffect, useState } from "react";
-import { useSelector } from "react-redux";
 import "./navbar16.css";
 
-const Navbar16 = () => {
-  const { navbar } = useSelector((state) => state.template16);
+const Navbar16 = ({ template }) => {
+  const navbar = template.navbar;
   const [showMenu, setShowMenu] = useState(false);
 
   // Remove the changeHeader function and the useEffect block

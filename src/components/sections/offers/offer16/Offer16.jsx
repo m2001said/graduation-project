@@ -1,11 +1,10 @@
 import React from "react";
-import { useSelector } from "react-redux";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css"; // Import Swiper styles
 import "./offer16.css";
 
-const Offer16 = () => {
-  const { Offer } = useSelector((state) => state.template16);
+const Offer16 = ({ template }) => {
+  const Offer = template.Offer;
 
   return (
     <section className="offer16 section16" id="offer">

@@ -1,16 +1,7 @@
 import React, { useEffect } from "react";
-import { useSelector } from "react-redux";
-import { useLocation } from "react-router";
 
-const Services8 = () => {
-  const { pathname } = useLocation();
-  const Services = useSelector((state) => {
-    if (pathname.includes("own-page")) {
-      return state.ownTemplate.services;
-    } else {
-      return state.template8.services;
-    }
-  });
+const Services8 = ({ template }) => {
+  const Services = template.Services;
 
   useEffect(() => {
     // AOS initialization and refresh removed

@@ -1,17 +1,7 @@
 import React, { useEffect } from "react";
-import { useSelector } from "react-redux";
-import { useLocation } from "react-router";
 
-const Project8 = () => {
-  const { pathname } = useLocation();
-  const work = useSelector((state) => {
-    if (pathname.includes("own-page")) {
-      return state.ownTemplate.projects;
-    } else {
-      return state.template8.projects;
-    }
-  });
-
+const Project8 = ({ template }) => {
+  const work = template.project;
   useEffect(() => {
     // AOS initialization and refresh removed
     return () => {};

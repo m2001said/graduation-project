@@ -1,19 +1,10 @@
 import Header from "./Header";
 import React, { useEffect, useRef } from "react";
-import { useSelector } from "react-redux";
-import { useLocation } from "react-router";
 
 // ... other imports ...
 
-const Hero8 = () => {
-  const { pathname } = useLocation();
-  const hero = useSelector((state) => {
-    if (pathname.includes("own-page")) {
-      return state.ownTemplate.hero;
-    } else {
-      return state.template8.hero;
-    }
-  });
+const Hero8 = ({ template }) => {
+  const hero = template.hero;
   const scrollDirection = useRef("down");
 
   useEffect(() => {

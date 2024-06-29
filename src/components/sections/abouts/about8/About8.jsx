@@ -1,16 +1,8 @@
 import React, { useState, useEffect } from "react";
-import { useSelector } from "react-redux";
-import { useLocation } from "react-router";
 
-const About8 = () => {
-  const { pathname } = useLocation();
-  const about = useSelector((state) => {
-    if (pathname.includes("own-page")) {
-      return state.ownTemplate.about;
-    } else {
-      return state.template8.about;
-    }
-  });
+const About8 = ({ template }) => {
+  const about = template.about;
+
   const [inView, setInView] = useState(false);
 
   useEffect(() => {

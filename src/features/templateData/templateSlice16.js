@@ -252,9 +252,9 @@ const initialState = {
       },
     ],
   },
-  Teams: {
+  team: {
     title: "Meet Our Experts",
-    Teams: [
+    team: [
       {
         name: "Melissa Fie",
         job: "Senior Chef",

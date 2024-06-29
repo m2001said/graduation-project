@@ -1,10 +1,10 @@
 import React from "react";
-import { useSelector } from "react-redux";
 
 import "./choose16.css";
 
-const Choose16 = () => {
-  const { Choose } = useSelector((state) => state.template16);
+const Choose16 = ({ template }) => {
+  const Choose = template.Choose;
+
   return (
     <section className="choose16 section16">
       <div className="choose__grid16 container16 grid16">

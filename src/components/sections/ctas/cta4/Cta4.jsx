@@ -1,16 +1,9 @@
 import React from "react";
-import { useSelector } from "react-redux";
+
 import "./cta4.css";
-import { useLocation } from "react-router";
-const Cta4 = () => {
-  const { pathname } = useLocation();
-  const cta = useSelector((state) => {
-    if (pathname.includes("own-page")) {
-      return state.ownTemplate.cta;
-    } else {
-      return state.template4.cta;
-    }
-  });
+
+const Cta4 = ({ template }) => {
+  const cta = template.cta;
   return (
     <div id="get-started" className="g-wrapper">
       <div className="paddings innerWidth g-container">

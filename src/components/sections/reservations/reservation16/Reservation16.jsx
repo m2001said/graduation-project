@@ -1,9 +1,9 @@
 import React from "react";
-import { useSelector } from "react-redux";
+
 import "./reservation16.css";
 
-const Reservation16 = () => {
-  const { Reservation } = useSelector((state) => state.template16);
+const Reservation16 = ({ template }) => {
+  const Reservation = template.Reservation;
 
   return (
     <section className="reservation16 container16" id="reservation16">
