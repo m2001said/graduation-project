@@ -33,7 +33,7 @@ const MainNav = ({ toggleModal }) => {
           <div className="nav-controls flex justify-between items-center gap-2 md:gap-6">
             {authState.status === "succeeded" && authState.user && (
               <Link to={"/user-information"} className="flex items-center gap-2 ">
-                <p className="text-base md:text-lg hidden md:block">{authState.user.name}</p>
+                <p className="text-base md:text-lg hidden md:block">{authState.userName || authState.user.name}</p>
 
                 <img src={userAvatar} alt="logo" className="w-10 h-10 rounded-full" />
               </Link>
