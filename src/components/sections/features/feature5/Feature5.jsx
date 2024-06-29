@@ -4,7 +4,7 @@ import "./feature5_1.css";
 
 
 const Feature5 = ({template}) => {
-const feature1 = template.features1;
+const feature1 = template.features;
 
 return(
   <div className="feature5_1 design5-section design5">

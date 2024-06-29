@@ -1,18 +1,10 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
-import { useSelector } from "react-redux";
-import { useLocation } from "react-router";
 
-const Cta21 = () => {
-  const { pathname } = useLocation();
-  const cta2 = useSelector((state) => {
-    if (pathname.includes("own-page")) {
-      return state.ownTemplate.cta2;
-    } else {
-      return state.template18.cta2;
-    }
-  });
-  // const { cta2 } = useSelector((state) => state.template18);
+
+const Cta21 = ({template}) => {
+ const cta2 = template.cta2;
+
   return (
     <>
       <span id="contact"></span>

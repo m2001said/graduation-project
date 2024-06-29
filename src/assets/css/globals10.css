@@ -2,7 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-
+ body{
+  @apply bg-white dark:bg-gray-900 dark:text-white duration-200
+ }
 
 :root {
  --website-10-color-1: rgb(19, 141, 197);

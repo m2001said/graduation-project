@@ -1,29 +1,29 @@
 import React from "react";
 
-const Feature14 = ({ data, bgColor }) => {
+const Feature14 = ({ template }) => {
+ const featuers = template.featuers;
+
   return (
     <div className="bg-[--website-14-color-6] min-h-[550px] flex justify-center items-center py-12 bg-white dark:bg-gray-900">
       <div className="container14">
-        <div style={{ backgroundColor: bgColor }} className="grid grid-cols-1 md:grid-cols-3 gap-6 items-center text-white rounded-3xl">
+        <div className="bg-[--website-14-color-1] grid grid-cols-1 md:grid-cols-3 gap-6 items-center text-white rounded-3xl">
           {/* first col */}
           <div className="p-6 sm:p-8">
-            <p className="text-sm">{data.discount}</p>
-            <h1 className="uppercase text-4xl lg:text-7xl font-bold">{data.title}</h1>
-            <p className="text-sm">{data.date}</p>
+            <p className="text-sm">{featuers.discount}</p>
+            <h1 className="uppercase text-4xl lg:text-7xl font-bold">{featuers.title}</h1>
+            <p className="text-sm">{featuers.date}</p>
           </div>
           {/* second col */}
           <div className="h-full flex items-center">
-            <img src={data.image} alt="" className="scale-125 w-[250px] md:w-[340px] mx-auto drop-shadow-[-10px_10px_12px_rgba(0,0,0,.6)] object-cover" />
+            <img src={featuers.image} alt="" className="scale-125 w-[250px] md:w-[340px] mx-auto drop-shadow-[-10px_10px_12px_rgba(0,0,0,.6)] object-cover" />
           </div>
           {/* third col */}
           <div className="flex flex-col justify-center gap-4 p-6 sm:p-8">
-            <p className="font-bold text-xl">{data.title2}</p>
-            <p className=" text-3xl sm:text-5xl font-bold">{data.title3}</p>
-            <p className="text-sm tracking-wide leading-5">{data.title4}</p>
+            <p className="font-bold text-xl">{featuers.title2}</p>
+            <p className=" text-3xl sm:text-5xl font-bold">{featuers.title3}</p>
+            <p className="text-sm tracking-wide leading-5">{featuers.title4}</p>
             <div>
-              <button style={{ color: bgColor }} className="bg-[--website-14-color-6] py-2 px-4 rounded-full">
-                Shop Now
-              </button>
+              <button className="bg-[--website-14-color-6] text-[--website-14-color-1] py-2 px-4 rounded-full">Shop Now</button>
             </div>
           </div>
         </div>

@@ -1,19 +1,10 @@
 // eslint-disable-next-line no-unused-vars
 import React from "react";
-import { useSelector } from "react-redux";
-import { useLocation } from "react-router";
 
 
-const Features = () => {
-  // const feature = useSelector((state) => state.template18.features);
-  const { pathname } = useLocation();
-  const feature = useSelector((state) => {
-    if (pathname.includes("own-page")) {
-      return state.ownTemplate.features;
-    } else {
-      return state.template18.features;
-    }
-  });
+const Features = ({template}) => {
+const feature = template.features;
+
 
   return (
     <div className="dark:bg-[--website-18-color-5] bg-[--website-18-color-2] sm:min-h-[600px] sm:grid sm:place-items-center duration-300">

@@ -1,5 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
-import { addElement, addElementToArray, addSubElement, deleteElement, deleteSection, editElement, reorder, reorderSections } from "./actions";
+import { addElement, addElementToArray, addSubElement, deleteElement, deleteSection, editElement, reorder, reorderSections, updateSchema } from "./actions";
 const initialState = {
   templateInfo: {
     id: 14,
@@ -115,7 +115,7 @@ const initialState = {
     ],
   },
 
-  offer1: {
+  featuers: {
     discount: "30% OFF",
     title: "Fine Smile",
     date: "10 Jan to 28 Jan",
@@ -173,15 +173,15 @@ const initialState = {
     buttonText: "Add to cart",
   },
 
-  offer2: {
-    discount: "30% OFF",
-    title: "Happy Hours",
-    date: "14 Jan to 28 Jan",
-    image: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707603374/smartwatch2-removebg-preview_ivyg4p.png",
-    title2: "Smart Solo",
-    title3: "Winter Sale",
-    title4: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque reiciendis",
-  },
+  // offer2: {
+  //   discount: "30% OFF",
+  //   title: "Happy Hours",
+  //   date: "14 Jan to 28 Jan",
+  //   image: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707603374/smartwatch2-removebg-preview_ivyg4p.png",
+  //   title2: "Smart Solo",
+  //   title3: "Winter Sale",
+  //   title4: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque reiciendis",
+  // },
 
   blogs: {
     title: "Recent News",
@@ -304,6 +304,9 @@ const templateSlice14 = createSlice({
     },
     deleteSection: (state, action) => {
       return deleteSection(state, action);
+    },
+    updateSchema: (state, action) => {
+      return updateSchema(state, action);
     },
   },
 });

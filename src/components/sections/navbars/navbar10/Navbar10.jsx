@@ -18,7 +18,7 @@ const Navbar10 = ({template}) => {
             </div>
             <div className="flex justify-between items-center gap-4">
               <div>
-                <DarkMode />
+                <DarkMode template= {template}/>
               </div>
               <ul className="items-center gap-4 hidden sm:flex">
                 {navbar.links.map((link, index) => (

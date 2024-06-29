@@ -15,11 +15,9 @@ import TrialDesign from "./TrialDesign";
 
 
 
-const TrialDesign10 = () => {
  
 
-  const state = useSelector((state) => state.template10);
-  const componentMapping = {
+  const componentMapping10 = {
     services: Services10,
     features: Feature10,
     team: Teams10,
@@ -27,22 +25,8 @@ const TrialDesign10 = () => {
     cta: Cta10,
   };
 
-  return (
-    <>
-      <div className="bg-white dark:bg-gray-900 dark:text-white duration-200">
-        {/* <Navbar10 handleOrderPopup={handleOrderPopup} />
-        <Hero10  handleOrderPopup={handleOrderPopup} />
-
-        {reorderedComponents.map((_component) => {
-          const Component = componentMapping[_component];
-          return Component && <Component key={_component} handleOrderPopup={handleOrderPopup} />;
-        })}
-        <Footer10 />
-        <OrderPopup10 orderPopup={orderPopup} setOrderPopup={setOrderPopup} /> */}
-         <TrialDesign componentMapping={componentMapping} HeroComponent={Hero10} NavbarComponent={Navbar10} footerComponent={Footer10} template={"template10"} />;
-      </div>
-    </>
-  );
+  const TrialDesign10 = () => {
+  return <TrialDesign componentMapping={componentMapping10} HeroComponent={Hero10} NavbarComponent={Navbar10} FooterComponent={Footer10} template={"template10"} />;
 };
 
 export default TrialDesign10;
@@ -58,7 +42,21 @@ export default TrialDesign10;
 
 
 
+  //   <>
+  //     <div className="bg-white dark:bg-gray-900 dark:text-white duration-200">
+  //       <Navbar10 handleOrderPopup={handleOrderPopup} />
+  //       <Hero10  handleOrderPopup={handleOrderPopup} />
 
+  //       {reorderedComponents.map((_component) => {
+  //         const Component = componentMapping[_component];
+  //         return Component && <Component key={_component} handleOrderPopup={handleOrderPopup} />;
+  //       })}
+  //       <Footer10 />
+  //       <OrderPopup10 orderPopup={orderPopup} setOrderPopup={setOrderPopup} />
+  //        <TrialDesign componentMapping={componentMapping} HeroComponent={Hero10} NavbarComponent={Navbar10} footerComponent={Footer10} template={"template10"} />;
+  //     </div>
+  //   </>
+  // );
 
 
  // const [orderPopup, setOrderPopup] = React.useState(false);

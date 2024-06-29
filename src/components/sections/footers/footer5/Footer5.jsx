@@ -1,7 +1,6 @@
 import React, { useEffect } from "react";
 import "./footer5.css";
-import { useSelector } from "react-redux";
-import { useLocation } from "react-router";
+
 
 
 

@@ -14,7 +14,7 @@ const Cta10 = ({template}) => {
           backgroundPosition: "center",
           backgroundRepeat: "no-repeat",
           backgroundSize: "cover",
-          height: "100%",
+          height: "250px",
           width: "100%",
         }}
       >

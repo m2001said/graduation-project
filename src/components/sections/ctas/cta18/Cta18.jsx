@@ -1,18 +1,10 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
-import { useSelector } from "react-redux";
-import { useLocation } from "react-router";
 
-const Cta18 = () => {
-  // const { cta1 } = useSelector((state) => state.template18);
-  const { pathname } = useLocation();
-  const cta1 = useSelector((state) => {
-    if (pathname.includes("own-page")) {
-      return state.ownTemplate.cta1;
-    } else {
-      return state.template18.cta1;
-    }
-  });
+
+const Cta18 = ({template}) => {
+const cta1 = template.cta1;
+
   return (
     <div className="container18 bg-[--website-18-color-6] dark:bg-black">
       <div
