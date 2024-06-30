@@ -15,7 +15,7 @@ html {
   }
 }
  body{
-  @apply bg-white dark:bg-black dark:text-white duration-200 overflow-hidden
+  @apply bg-white dark:bg-black dark:text-white duration-200;
  }
 :root {
   --website-18-color-1:#ffc727;
