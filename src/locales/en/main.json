@@ -1,7 +1,21 @@
 {
   "USER": {
     "LOG_OUT": "Log out",
-    "SIGN_IN": "Sign In"
+    "SIGN_IN": "Sign In",
+    "LOGIN": "Login",
+    "EMAIL": "Email",
+    "PASSWORD": "Password",
+    "NAME": "Name",
+    "NO_ACCOUNT": "Don't have an account?",
+    "HAVE_ACCOUNT": "Already have an account? ",
+    "CREATE_ACCOUNT": "Create Account",
+    "SUCCESSFUL": "successfully created",
+    "CHECK_EMAIL": "Please check your email to verify your account before logging in.",
+    "GO_LOGIN": "Go to Login",
+    "CREATE_WEBSITE": "create your website quickly with artificial intelligence",
+    "WEBSITE_OVERVIEW": "write an overview of your project idea in 3 lines",
+    "OVERVIEW": "website overview",
+    "BUILD": "Build your website now"
   },
   "ERROR": {
     "GO_BACK": "Go back home",

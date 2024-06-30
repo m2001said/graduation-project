@@ -2,9 +2,11 @@ import React from "react";
 import axios from "axios";
 import "./aiForm.css";
 import { useNavigate } from "react-router";
+import { useTranslation } from "react-i18next";
 // import { useSelector } from "react-redux";
 
 const AiForm = ({ index }) => {
+  const { t, i18n } = useTranslation();
   const navigate = useNavigate();
   // const template = useSelector((state) => state[`template${index}`]);
 
@@ -23,16 +25,16 @@ const AiForm = ({ index }) => {
     // } catch (error) {
     //   console.error("Error:", error.response ? error.response.data : error.message);
     // }
-    navigate(`/build-trial-design${index}`);
+    navigate(`/${i18n.language}/build-trial-design${index}`);
   };
 
   return (
     <>
-      <h3 className="ai-form-title">create your website quickly with artificial intelligence </h3>
-      <p className="ai-form-description">write an overview of your project idea in 3 lines</p>
-      <textarea name="overview" id="websiteOverview" required autoFocus cols="30" rows="10" placeholder="website overview"></textarea>
+      <h3 className="ai-form-title">{t("USER.CREATE_WEBSITE")} </h3>
+      <p className="ai-form-description">{t("USER.WEBSITE_OVERVIEW")}</p>
+      <textarea name="overview" id="websiteOverview" required autoFocus cols="30" rows="10" placeholder={t("USER.OVERVIEW")}></textarea>
       <button className="form-button button-2" onClick={openDesign}>
-        Build your website now
+        {t("USER.BUILD")}
       </button>
     </>
   );

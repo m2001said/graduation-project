@@ -9,7 +9,6 @@ import { useSelector, useDispatch } from "react-redux";
 import { logoutUserAsync } from "../../../features/auth/authSlice";
 import { useNavigate } from "react-router-dom";
 import { useTranslation } from "react-i18next";
-import { persistor } from "../../../app/store";
 
 const MainNav = ({ toggleModal }) => {
   const navigate = useNavigate();
