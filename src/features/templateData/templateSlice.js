@@ -37,6 +37,7 @@ const initialState = {
     ],
   },
   hero: {
+    
     title: "Let Your Home Be Unique",
     description: "There are many variations of the passages of lorem Ipsum from available, variations of the passages.",
     buttonText: "Get Started",

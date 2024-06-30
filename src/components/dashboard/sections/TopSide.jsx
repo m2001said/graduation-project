@@ -5,7 +5,6 @@ import { useLocation, useNavigate } from "react-router";
 import { fetchTemplates } from "../../../features/templates/templatesSlice";
 import { useSearchParams } from "react-router-dom";
 import { initialState, templateActions1 } from "../../../features/templateData/templateSlice";
-import { updateSchema } from "../../../features/templateData/actions";
 
 const TopSide = ({ schema }) => {
   const websitesActions = Array.from({ length: 17 }, (_, i) => require(`../../../features/templateData/templateSlice${i + 2}`)[`templateActions${i + 2}`]);
@@ -94,6 +93,9 @@ const TopSide = ({ schema }) => {
   ];
 
   const handleUpdateSchema = () => {
+    console.log(initalStateWebsites[templateNum - 1]);
+    console.log(initalStateWebsites);
+    console.log(templateNum);
     dispatch(websitesActions[templateNum - 1].updateSchema(initalStateWebsites[templateNum - 1]));
   };
   return isGenerating ? (
