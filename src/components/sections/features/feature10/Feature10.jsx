@@ -1,23 +1,14 @@
-/* eslint-disable react-hooks/rules-of-hooks */
 import React from "react";
-import { useSelector } from "react-redux";
 import "../../../../assets/css/globals10.css";
-import { useLocation } from "react-router";
 
-const Feature10 = () => {
-  
-  const { pathname } = useLocation();
-  const feature = useSelector((state) => {
-    if (pathname.includes("own-page")) {
-      return state.ownTemplate.features;
-    } else {
-      return state.template10.features;
-    }
-  });
+const Feature10 = ({template}) => {
+    const feature = template.features;
+
+
 
   return (
     <>
-      <div className="py-10 bg-[--website-10-color-2] dark:bg-gray-900">
+      <div className="py-10 bg-[--website-10-color-2] dark:bg-gray-900 dark:text-white">
         <div className="items-center py-6 px-10 sm:p-30">
           <div className="grid grid-cols-1 sm:grid-cols-2 items-center gap-6">
             {/* image sec */}

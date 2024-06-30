@@ -1,17 +1,10 @@
 import React from "react";
-import { useSelector } from "react-redux";
-import { useLocation } from "react-router";
 
 
-const Testimonial = () => {
-  const { pathname } = useLocation();
-  const testimonial = useSelector((state) => {
-    if (pathname.includes("own-page")) {
-      return state.ownTemplate.testimonials;
-    } else {
-      return state.template18.testimonials;
-    }
-  });
+
+const Testimonial = ({template}) => {
+const testimonial = template.testimonials;
+;
   return (
     <>
       <span id="about"></span>

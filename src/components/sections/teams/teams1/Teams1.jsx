@@ -14,14 +14,14 @@ const Teams1 = ({template}) => {
           {template.team.members.map((member, index) => (
             <div className="team1-Card-main-show" key={index} onClick={() => handleCardClick(member)}>
               <img className="team1-Card-main-img" src={member.imgUrl} alt={member.name} />
-              {selectedMember && selectedMember.id === member.id && (
+              {selectedMember && selectedMember.memberId === member.memberId && (
                 <div className="team1-Card-main-info slideUp">
                   <h2>{member.name}</h2>
                   <p>{member.location}</p>
                   <div className="team-media-icon">
                     {member.medias.map((icon) => (
                       <a href={icon.url} key={icon.url} target="_blank" rel="noreferrer">
-                        <img src={icon.icon} alt="" style={{maxWidth:"20px"}}/> 
+                        <img src={icon.icon} alt="" style={{ maxWidth: "20px" }} />
                         {/* style={{maxWidth:"20px"}} */}
                       </a>
                     ))}

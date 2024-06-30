@@ -11,7 +11,7 @@ const TopSide = ({ schema }) => {
   const initalStateWebsites = Array.from({ length: 17 }, (_, i) => require(`../../../features/templateData/templateSlice${i + 2}`).initialState);
   websitesActions.unshift(templateActions1);
   initalStateWebsites.unshift(initialState);
-  const { pathname  } = useLocation();
+  const { pathname } = useLocation();
   const regex = /\d+/;
   const templateNum = pathname.match(regex)[0];
 

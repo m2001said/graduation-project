@@ -1,26 +1,17 @@
 import React from "react";
-import { useSelector } from "react-redux";
 import "../../../../assets/css/globals10.css";
-
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/free-mode";
 import "swiper/css/pagination";
 import { Navigation, Pagination, Autoplay } from "swiper/modules";
-import { useLocation } from "react-router";
 
-const Testimonials10 = () => {
-  const { pathname } = useLocation();
-  const testimonial = useSelector((state) => {
-    if (pathname.includes("own-page")) {
-      return state.ownTemplate.testimonials;
-    } else {
-      return state.template10.testimonials;
-    }
-  });
+
+const Testimonials10 = ({template}) => {
+    const testimonial = template.testimonials;
 
   return (
-    <div className="pb-4 bg-[--white10] dark:bg-gray-900">
+    <div className="pb-4 bg-[--white10] dark:bg-gray-900 dark:text-white">
       <div className="items-center p-10 sm:p-20">
         {/* header sec*/}
         <div className="text-center mb-10 max-w-[600px] mx-auto">

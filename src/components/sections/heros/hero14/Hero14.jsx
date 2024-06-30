@@ -10,17 +10,8 @@ import { useLocation } from "react-router";
 
 
 
-const Hero14 = ({ handleOrderPopup }) => {
-  
-  // const { hero } = useSelector((state) => state.template14);
-  const { pathname } = useLocation();
-  const hero = useSelector((state) => {
-    if (pathname.includes("own-page")) {
-      return state.ownTemplate.hero;
-    } else {
-      return state.template14.hero;
-    }
-  });
+const Hero14 = ({ template }) => {
+  const hero = template.hero;
   return (
     <div className="bg-[--website-14-color-6] dark:bg-gray-900">
       <div className="container14">
@@ -40,7 +31,6 @@ const Hero14 = ({ handleOrderPopup }) => {
                       </h1>
                       <div>
                         <button
-                          onClick={handleOrderPopup}
                           className={`bg-[--website-14-color-1] text-white cursor-pointer hover:scale-105 duration-300 py-2 px-8 rounded-full relative z-10`}
                         >
                           {hero.buttonText}
@@ -51,7 +41,7 @@ const Hero14 = ({ handleOrderPopup }) => {
                     <div className="order-1 sm:order-2">
                       <div>
                         <img
-                          src={data.img}
+                          src={data.imgUrl}
                           alt=""
                           className="w-[300px] sm:w-[450px] h-[300px] sm:h-[450px] sm:scale-105 lg:scale-120 object-contain mx-auto drop-shadow-[-8px_4px_6px_rgba(0,0,0,.4)] relative z-40"
                         />

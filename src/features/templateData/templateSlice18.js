@@ -1,5 +1,6 @@
 import { createSlice } from "@reduxjs/toolkit";
-import { addElement, addElementToArray, addSubElement, deleteElement, deleteSection, editElement, reorder, reorderSections } from "./actions";
+import { addElement, addElementToArray, addSubElement, deleteElement, deleteSection, editElement, reorder, reorderSections, updateSchema } from "./actions";
+
 
 const initialState = {
   templateInfo: {
@@ -37,8 +38,8 @@ const initialState = {
 
   hero: {
     title: "Car Rental",
-    smTitle: "Effortless",
-    Description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione veritatis explicabo quibusdam quae reprehenderit ab",
+    subTitle: "Effortless",
+    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione veritatis explicabo quibusdam quae reprehenderit ab",
     buttonText: "Get Started",
     lightImage: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1708094043/banner-car_nzxi5c.png",
     darkImage: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1708094046/car_wnmkfa.png",
@@ -46,11 +47,12 @@ const initialState = {
 
   features: {
     title: "About us",
-    description1: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, magnam! Tenetur odio quo et maxime?",
-    description2: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, tempora.",
+    subTitle: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, magnam! Tenetur odio quo et maxime?",
+    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, tempora.",
     buttonText: "Get Started",
     imgUrl: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1708094582/car1_yzpkby.png",
   },
+
   services: {
     title: "Why Choose Us",
     services: [
@@ -132,18 +134,22 @@ const initialState = {
     ],
   },
 
-  cta1: {
+  cta: {
     title: "Get Started with our app",
     description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique magnam harum accusantium odit?",
-    bannerImg: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1708098410/pattern_t0naia.jpg",
-    appStoreImg: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707090485/app_store_s6wzhh.png",
-    playStoreImg: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707090481/play_store_nmzfln.png",
+    imgs: [ "https://res.cloudinary.com/dmcdea0b9/image/upload/v1708098410/pattern_t0naia.jpg",
+            "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707090485/app_store_s6wzhh.png",
+             "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707090481/play_store_nmzfln.png",
+    ],
+    // bannerImg: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1708098410/pattern_t0naia.jpg",
+    // appStoreImg: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707090485/app_store_s6wzhh.png",
+    // playStoreImg: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707090481/play_store_nmzfln.png",
   },
 
-  cta2: {
+  contact: {
     title: "Let's collaborate on your upcoming car rental venture",
     description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem necessitatibus quasi et vel,",
-    linkText: "Contact",
+    buttonText: "Contact",
     url: "#",
   },
 
@@ -237,6 +243,9 @@ const templateSlice18 = createSlice({
     },
     deleteSection: (state, action) => {
       return deleteSection(state, action);
+    },
+    updateSchema: (state,action)=>{
+      return updateSchema(state, action);
     },
   },
 });
