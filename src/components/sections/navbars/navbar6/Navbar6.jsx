@@ -1,17 +1,8 @@
 import React, { useRef } from "react";
 import "./navbar6.css";
-import { useSelector } from "react-redux";
-import { useLocation } from "react-router";
 
-const Navbar6 = () => {
-  const { pathname } = useLocation();
-  const navbar = useSelector((state) => {
-    if (pathname.includes("own-page")) {
-      return state.ownTemplate.navbar;
-    } else {
-      return state.template6.navbar;
-    }
-  });
+const Navbar6 = ({ template }) => {
+  const navbar = template.navbar;
   const menuRef = useRef();
   const menuToggle = () => menuRef.current.classList.toggle("active__menu");
 
@@ -19,9 +10,9 @@ const Navbar6 = () => {
     <header className="nav-6">
       <div className="container mx-auto px-8 py-2">
         <div className="navigation">
-            <div className="logo flex items-center gap-1">
-              <img src={navbar.logo} alt="" className="design6-logo" />
-            </div>
+          <div className="logo flex items-center gap-1">
+            <img src={navbar.logo} alt="" className="design6-logo" />
+          </div>
 
           <div className="nav__menu " ref={menuRef}>
             <div className="nav__list__wrapper flex items-center gap-5">
@@ -34,9 +25,7 @@ const Navbar6 = () => {
                   </li>
                 ))}
               </ul>
-
             </div>
-
           </div>
 
           <div>

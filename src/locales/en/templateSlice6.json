@@ -369,27 +369,27 @@
     "title": "Who we are?",
     "imgUrl": "https://res.cloudinary.com/duc04fwdb/image/upload/v1703103180/jammal_photos/afcfogeancctcy4nhsfn.png",
     "description": "Take a look at the benefits we offer you",
-    "info": "we prioritize your satisfaction. Our commitment to excellence is evident in the benefits we offer.",
+    "info": "we prioritize your satisfaction. Our commitment to excellence is evident in the benefits we offer. ",
     "cards": [
       {
         "icon": "https://res.cloudinary.com/duc04fwdb/image/upload/v1703103379/jammal_photos/wvvtn9lgn5k84md2jhtm.svg",
         "title": "Free Home Delivery",
-        "description": "Enjoy free and timely home delivery."
+        "description": "Enjoy free and timely home delivery. "
       },
       {
         "icon": "https://res.cloudinary.com/duc04fwdb/image/upload/v1703103489/jammal_photos/rihmvtglekzcmjdavtbm.svg",
         "title": "Return & Refund",
-        "description": "We guarantee a hassle-free return and refund process."
+        "description": "We guarantee a hassle-free return and refund process. "
       },
       {
         "icon": "https://res.cloudinary.com/duc04fwdb/image/upload/v1703103560/jammal_photos/k3irnc1fhkmugeekjbol.svg",
         "title": "Secure Payment",
-        "description": "Your transactions are securely processed."
+        "description": "Your transactions are securely processed. "
       },
       {
         "icon": "https://res.cloudinary.com/duc04fwdb/image/upload/v1703103423/jammal_photos/legalyoxmyba3arp5n3p.svg",
         "title": "24/7 Hours Support",
-        "description": "We are here for you round the clock."
+        "description": "We are here for you round the clock. "
       }
     ]
   },
@@ -416,8 +416,8 @@
   },
   "cta": {
     "title": "Download our app",
-    "description": "Never Feel Hungry! Download Our Mobile App Order Delicious Food",
-    "info": "Experience the convenience of our mobile app, ensuring you never go hungry, Download now to order delicious food anytime, anywhere.",
+    "description": " Never Feel Hungry! Download Our Mobile App Order Delicious Food",
+    "info": "Experience the convenience of our mobile app, ensuring you never go hungry, Download now to order delicious food anytime, anywhere. ",
     "imgUrl": "https://res.cloudinary.com/duc04fwdb/image/upload/v1703105732/jammal_photos/lldrbchcloecmarn2bep.png",
     "googleButton": {
       "title": "Google Play",
