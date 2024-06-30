@@ -10,6 +10,8 @@ import { logoutUserAsync } from "../../../features/auth/authSlice";
 import { useNavigate } from "react-router-dom";
 import LoadingButton from "../../loadingButton/LoadingButton";
 import { useTranslation } from "react-i18next";
+import { persistor } from "../../../app/store";
+import { resetState } from "../../../features/templateData/templateSlice";
 
 const MainNav = ({ toggleModal }) => {
   const navigate = useNavigate();
@@ -20,7 +22,10 @@ const MainNav = ({ toggleModal }) => {
 
   const handleSignOut = () => {
     dispatch(logoutUserAsync());
-    navigate("/");
+    dispatch(resetState());
+    persistor.purge().then(() => {
+      navigate("/");
+    });
   };
 
   const changeLanguage = (lng) => {

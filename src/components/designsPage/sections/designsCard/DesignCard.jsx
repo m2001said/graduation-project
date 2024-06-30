@@ -34,7 +34,7 @@ const DesignCard = ({ Designdata, index }) => {
           </div>
           <div className="button-container p-4 flex justify-between gap-4">
             <button
-              class="flex items-center gap-4 bg-[#ce79cc] text-white font-bold py-2 px-4 hover:shadow-lg rounded-full w-full hover:bg-[#b568b8]"
+              className="flex items-center gap-4 bg-[#ce79cc] text-white font-bold py-2 px-4 hover:shadow-lg rounded-full w-full hover:bg-[#b568b8]"
               onClick={() => toggleModal(index)}
             >
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" className="w-5 h-5">
@@ -46,7 +46,7 @@ const DesignCard = ({ Designdata, index }) => {
               {t("USER.BUILD_1")}
             </button>
 
-            <Link class=" py-2 px-4 w-20" to={`/${i18n.language}/preview-trial-design${index - 1}`}>
+            <Link className=" py-2 px-4 w-20" to={`/${i18n.language}/preview-trial-design${index - 1}`}>
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
                 <path
                   fill="#ce79cc"

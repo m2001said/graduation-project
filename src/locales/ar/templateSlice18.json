@@ -1,31 +1,238 @@
 {
   "templateInfo": {
-    "id": 6,
+    "id": 18,
     "title": "",
     "description": "",
     "imgUrl": ""
   },
   "navbar": {
-    "imgUrl": "https://res.cloudinary.com/duc04fwdb/image/upload/v1703193372/jammal_photos/eygwjnnq4d9scpxd9unv.png",
+    "title": "تأجير السيارات",
     "links": [
       {
-        "title": "Residencies",
+        "title": "الرئيسية",
         "url": "#"
       },
       {
-        "title": "Our Value",
+        "title": "السيارات",
         "url": "#"
       },
       {
-        "title": "Contact Us",
-        "url": "#"
+        "title": "حول",
+        "url": "#about"
       },
       {
-        "title": "Get Started",
+        "title": "الحجز",
         "url": "#"
       }
     ],
-    "email4": "mailto:zainkeepscode@gmail.com",
-    "buttonText": "Contact"
+    "icons": [
+      "https://res.cloudinary.com/dmcdea0b9/image/upload/v1708092466/icons8-sun-24_oonunj.png",
+      "https://res.cloudinary.com/dmcdea0b9/image/upload/v1708092459/icons8-moon-symbol-30_chxqrj.png",
+      "https://res.cloudinary.com/dmcdea0b9/image/upload/v1708092472/icons8-menu-32_ixhdzw.png"
+    ]
+  },
+  "hero": {
+    "title": "تأجير السيارات",
+    "subTitle": "بسهولة",
+    "description": "لوريم إيبسوم دولور سيت أميت كونسيكتيتور أديبيسشينج إيليت. راشون فيراتيس إكسبليتابو كويبسدام كوي ريخريهينديريت أب",
+    "buttonText": "ابدأ الآن",
+    "lightImage": "https://res.cloudinary.com/dmcdea0b9/image/upload/v1708094043/banner-car_nzxi5c.png",
+    "darkImage": "https://res.cloudinary.com/dmcdea0b9/image/upload/v1708094046/car_wnmkfa.png"
+  },
+  "features": {
+    "title": "من نحن",
+    "subTitle": "لوريم، إيبسوم دولور سيت أميت كونسيكتيتور أديبيسشينج إيليت. أسبرناتور، ماجنام! تينيتور أوديو كو إت ماكسيم؟",
+    "description": "لوريم إيبسوم دولور سيت أميت كونسيكتيتور أديبيسشينج إيليت. سيكوي، تمبورا.",
+    "buttonText": "ابدأ الآن",
+    "imgUrl": "https://res.cloudinary.com/dmcdea0b9/image/upload/v1708094582/car1_yzpkby.png"
+  },
+  "services": {
+    "title": "لماذا تختارنا",
+    "services": [
+      {
+        "title": "أفضل الأسعار",
+        "description": "لوريم إيبسوم دولور سيت أميت كونسيكتيتور، أديبيسشينج إيليت.",
+        "buttonText": "تعرف على المزيد",
+        "url": "#",
+        "icon": "https://res.cloudinary.com/dmcdea0b9/image/upload/v1708095320/icons8-compact-camera-24_sbvw3e.png"
+      },
+      {
+        "title": "سريع وآمن",
+        "description": "لوريم إيبسوم دولور سيت أميت كونسيكتيتور، أديبيسشينج إيليت.",
+        "buttonText": "تعرف على المزيد",
+        "url": "#",
+        "icon": "https://res.cloudinary.com/dmcdea0b9/image/upload/v1708095302/icons8-notebook-32_wp5emo.png"
+      },
+      {
+        "title": "سائقون ذو خبرة",
+        "description": "لوريم إيبسوم دولور سيت أميت كونسيكتيتور، أديبيسشينج إيليت.",
+        "buttonText": "تعرف على المزيد",
+        "url": "#",
+        "icon": "https://res.cloudinary.com/dmcdea0b9/image/upload/v1708095310/icons8-microsoft-onenote-24_jrkmre.png"
+      }
+    ]
+  },
+  "projects": {
+    "title": "لوريم إيبسوم دولور",
+    "description": "لوريم إيبسوم دولور سيت أميت، كونسيكتيتور أديبيسشينج إيليت. دولور يوري نيمو أب؟",
+    "projects": [
+      {
+        "title": "بي ام دبليو UX",
+        "price": "$100/يوم",
+        "space": "12 كم",
+        "buttonText": "التفاصيل",
+        "imgUrl": "https://res.cloudinary.com/dmcdea0b9/image/upload/v1708097455/white-car_vfl2mw.png"
+      },
+      {
+        "title": "كيا UX",
+        "price": "$140/يوم",
+        "space": "12 كم",
+        "buttonText": "التفاصيل",
+        "imgUrl": "https://res.cloudinary.com/dmcdea0b9/image/upload/v1708097459/car5_gini6n.png"
+      },
+      {
+        "title": "بي ام دبليو UX",
+        "price": "$100/يوم",
+        "space": "12 كم",
+        "buttonText": "التفاصيل",
+        "imgUrl": "https://res.cloudinary.com/dmcdea0b9/image/upload/v1708097461/car6_ohp1ia.png"
+      }
+    ],
+    "buttonText": "ابدأ الآن"
+  },
+  "testimonials": {
+    "title": "ماذا يقول عملاؤنا عنا",
+    "description": "لوريم إيبسوم دولور سيت أميت كونسيكتيتور أديبيسشينج إيليت. بيرفيرينديس يوري كونسيكتيتور تمبورا أميت.",
+    "testimonials": [
+      {
+        "name": "دلشاد",
+        "star": "⭐⭐⭐⭐⭐",
+        "description": "لوريم إيبسوم دولور سيت أميت كونسيكتيتور، أديبيسشينج إيليت.",
+        "imgUrl": "https://picsum.photos/200.jpg"
+      },
+      {
+        "name": "ساتيا",
+        "star": "⭐⭐⭐⭐⭐",
+        "description": "لوريم إيبسوم دولور سيت أميت كونسيكتيتور، أديبيسشينج إيليت.",
+        "imgUrl": "https://picsum.photos/200.jpg"
+      },
+      {
+        "name": "صبير",
+        "star": "⭐⭐⭐⭐⭐",
+        "description": "لوريم إيبسوم دولور سيت أميت كونسيكتيتور، أديبيسشينج إيليت.",
+        "imgUrl": "https://picsum.photos/200.jpg"
+      }
+    ]
+  },
+  "cta": {
+    "title": "ابدأ مع تطبيقنا",
+    "description": "لوريم إيبسوم دولور سيت أميت كونسيكتيتور أديبيسشينج إيليت. سي ميليك ماغنام هاروم أكوسانتيوم أوديت؟",
+    "imgs": [
+      "https://res.cloudinary.com/dmcdea0b9/image/upload/v1708098410/pattern_t0naia.jpg",
+      "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707090485/app_store_s6wzhh.png",
+      "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707090481/play_store_nmzfln.png"
+    ]
+  },
+  "contact": {
+    "title": "دعنا نتعاون في مشروع تأجير السيارات القادم",
+    "description": "لوريم إيبسوم دولور سيت أميت كونسيكتيتور أديبيسشينج إيليت. إكسرسيتاتيونيم نيكيستاتيبوس كواسي إت فيل،",
+    "buttonText": "اتصل",
+    "url": "#"
+  },
+  "footer": {
+    "title": "تأجير السيارات",
+    "description": "لوريم إيبسوم دولور سيت أميت كونسيكتيتور. لوريم إيبسوم دولور سيت أميت كونسيكتيتور أديبيسشينج إيليت. بوسيموس، وولبوتات.",
+    "contacts": [
+      {
+        "value": "55 شارع بيرشوود الشرقي. بروكلين، نيويورك 11201",
+        "icon": "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707781362/icons8-location-arrow-24_mwjabu.png"
+      },
+      {
+        "value": "(123) 125-858",
+        "icon": "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707781365/icons8-mobile-navigator-50_xvqski.png"
+      }
+    ],
+    "medias": [
+      {
+        "icon": "https://res.cloudinary.com/duc04fwdb/image/upload/v1701809141/templates/template_one/facebook_td263x.svg",
+        "url": "https://facebook.com"
+      },
+      {
+        "icon": "https://res.cloudinary.com/duc04fwdb/image/upload/v1701809142/templates/template_one/x_yp3y5n.svg",
+        "url": "https://x.com"
+      },
+      {
+        "icon": "https://res.cloudinary.com/duc04fwdb/image/upload/v1701809142/templates/template_one/linkedin_itbvp5.svg",
+        "url": "https://linkedin.com"
+      }
+    ],
+    "footerSections": [
+      {
+        "title": "روابط مهمة",
+        "links": [
+          {
+            "title": "الرئيسية",
+            "url": "#"
+          },
+          {
+            "title": "حول",
+            "url": "#"
+          },
+          {
+            "title": "اتصل",
+            "url": "#"
+          },
+          {
+            "title": "مدونة",
+            "url": "#"
+          }
+        ]
+      },
+      {
+        "title": "روابط",
+        "links": [
+          {
+            "title": "الرئيسية",
+            "url": "#"
+          },
+          {
+            "title": "حول",
+            "url": "#"
+          },
+          {
+            "title": "اتصل",
+            "url": "#"
+          },
+          {
+            "title": "مدونة",
+            "url": "#"
+          }
+        ]
+      },
+      {
+        "title": "الموقع",
+        "links": [
+          {
+            "title": "الرئيسية",
+            "url": "#"
+          },
+          {
+            "title": "حول",
+            "url": "#"
+          },
+          {
+            "title": "اتصل",
+            "url": "#"
+          },
+          {
+            "title": "مدونة",
+            "url": "#"
+          }
+        ]
+      }
+    ]
+  },
+  "colors": {
+    "templateColors": ["#ffc727", "#fad46d", "#E2E2D5", "#888883", "#111111"]
   }
 }

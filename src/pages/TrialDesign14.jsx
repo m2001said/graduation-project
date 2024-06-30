@@ -13,27 +13,20 @@ import Logos14 from "../components/sections/logos/logos14/Logos14";
 import Footer14 from "../components/sections/footers/footer14/Footer14";
 // import Popup14 from "../components/sections/orderPopups/orderPopups14/OrderPopups14";
 
-
-  const componentMapping14 = {
-    items: Items14,
-    services: Services14,
-    featuers: Features14,
-    products: Projects14,
-    // offer2: Features14,
-    blogs: Projects21,
-    logos: Logos14,
-  };
+const componentMapping14 = {
+  items: Items14,
+  services: Services14,
+  featuers: Features14,
+  products: Projects14,
+  // offer2: Features14,
+  blogs: Projects21,
+  logos: Logos14,
+};
 const TrialDesign14 = () => {
-  return <TrialDesign componentMapping={componentMapping14} HeroComponent={Hero14} NavbarComponent={Navbar14} FooterComponent={Footer14} template={"template14"} />;
+  return <TrialDesign componentMapping={componentMapping14} HeroComponent={Hero14} NavbarComponent={Navbar14} FooterComponent={Footer14} template={14} />;
 };
 
-
-
 export default TrialDesign14;
-
-
-
-
 
 // const TrialDesign14 = () => {
 //   const feature1 = useSelector((state) => state.template14.offer1);
@@ -84,4 +77,3 @@ export default TrialDesign14;
 //     </div>
 //   );
 // };
-

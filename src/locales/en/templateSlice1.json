@@ -1,9 +1,9 @@
 {
   "templateInfo": {
     "id": 1,
-    "title": "",
-    "description": "",
-    "imgUrl": ""
+    "title": "Unique Homes",
+    "description": "Explore diverse design and project updates for personalized living.",
+    "imgUrl": "/static/media/design1.02d5c4e3717cab54eb4f.jpg"
   },
   "navbar": {
     "imgUrl": "https://res.cloudinary.com/duc04fwdb/image/upload/v1701811960/templates/template_one/Logo_mj7rvw.png",
@@ -199,7 +199,7 @@
     "title": "Our Team Members",
     "members": [
       {
-        "id": "1",
+        "memberId": "1",
         "name": "Nattasha",
         "email": "julie@email.com",
         "location": "Design, Australia",
@@ -224,7 +224,7 @@
         ]
       },
       {
-        "id": "2",
+        "memberId": "2",
         "name": "Julie",
         "email": "julie@email.com",
         "location": "Design, Australia",
@@ -249,7 +249,7 @@
         ]
       },
       {
-        "id": "3",
+        "memberId": "3",
         "name": "Alex",
         "email": "julie@email.com",
         "location": "Design, Australia",
@@ -274,7 +274,7 @@
         ]
       },
       {
-        "id": "4",
+        "memberId": "4",
         "name": "John",
         "email": "julie@email.com",
         "location": "Design, Australia",

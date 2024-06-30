@@ -1,395 +1,182 @@
-import { createSlice } from "@reduxjs/toolkit";
 import { addElement, addElementToArray, addSubElement, deleteElement, deleteSection, editElement, reorder, reorderSections, updateSchema } from "./actions";
+import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
+import i18next from "i18next";
+import enTemplateSlice1 from "../../locales/en/templateSlice1.json";
+import arTemplateSlice1 from "../../locales/ar/templateSlice1.json";
+import enTemplateSlice2 from "../../locales/en/templateSlice2.json";
+import arTemplateSlice2 from "../../locales/ar/templateSlice2.json";
+import enTemplateSlice3 from "../../locales/en/templateSlice3.json";
+import arTemplateSlice3 from "../../locales/ar/templateSlice3.json";
+import enTemplateSlice4 from "../../locales/en/templateSlice4.json";
+import arTemplateSlice4 from "../../locales/ar/templateSlice4.json";
+import enTemplateSlice5 from "../../locales/en/templateSlice5.json";
+import arTemplateSlice5 from "../../locales/ar/templateSlice5.json";
+import enTemplateSlice6 from "../../locales/en/templateSlice6.json";
+import arTemplateSlice6 from "../../locales/ar/templateSlice6.json";
+import enTemplateSlice7 from "../../locales/en/templateSlice7.json";
+import arTemplateSlice7 from "../../locales/ar/templateSlice7.json";
+import enTemplateSlice8 from "../../locales/en/templateSlice8.json";
+import arTemplateSlice8 from "../../locales/ar/templateSlice8.json";
+import enTemplateSlice9 from "../../locales/en/templateSlice9.json";
+import arTemplateSlice9 from "../../locales/ar/templateSlice9.json";
+import enTemplateSlice10 from "../../locales/en/templateSlice10.json";
+import arTemplateSlice10 from "../../locales/ar/templateSlice10.json";
+import enTemplateSlice11 from "../../locales/en/templateSlice11.json";
+import arTemplateSlice11 from "../../locales/ar/templateSlice11.json";
+import enTemplateSlice12 from "../../locales/en/templateSlice12.json";
+import arTemplateSlice12 from "../../locales/ar/templateSlice12.json";
+import enTemplateSlice13 from "../../locales/en/templateSlice13.json";
+import arTemplateSlice13 from "../../locales/ar/templateSlice13.json";
+import enTemplateSlice14 from "../../locales/en/templateSlice14.json";
+import arTemplateSlice14 from "../../locales/ar/templateSlice14.json";
+import enTemplateSlice15 from "../../locales/en/templateSlice15.json";
+import arTemplateSlice15 from "../../locales/ar/templateSlice15.json";
+import enTemplateSlice16 from "../../locales/en/templateSlice16.json";
+import arTemplateSlice16 from "../../locales/ar/templateSlice16.json";
+import enTemplateSlice17 from "../../locales/en/templateSlice17.json";
+import arTemplateSlice17 from "../../locales/ar/templateSlice17.json";
+import enTemplateSlice18 from "../../locales/en/templateSlice18.json";
+import arTemplateSlice18 from "../../locales/ar/templateSlice18.json";
+
+export const fetchInitialTemplate = createAsyncThunk("template/fetchInitialTemplate", async (id) => {
+  try {
+    const language = i18next.language;
+    let templateData = {};
+    console.log("language in fetchInitialTemplate", language);
+
+    if (language === "ar") {
+      switch (id) {
+        case 1:
+          templateData = arTemplateSlice1;
+          break;
+        case 2:
+          templateData = arTemplateSlice2;
+          break;
+        case 3:
+          templateData = arTemplateSlice3;
+          break;
+        case 4:
+          templateData = arTemplateSlice4;
+          break;
+        case 5:
+          templateData = arTemplateSlice5;
+          break;
+        case 6:
+          templateData = arTemplateSlice6;
+          break;
+        case 7:
+          templateData = arTemplateSlice7;
+          break;
+        case 8:
+          templateData = arTemplateSlice8;
+          break;
+        case 9:
+          templateData = arTemplateSlice9;
+          break;
+        case 10:
+          templateData = arTemplateSlice10;
+          break;
+        case 11:
+          templateData = arTemplateSlice11;
+          break;
+        case 12:
+          templateData = arTemplateSlice12;
+          break;
+        case 13:
+          templateData = arTemplateSlice13;
+          break;
+        case 14:
+          templateData = arTemplateSlice14;
+          break;
+        case 15:
+          templateData = arTemplateSlice15;
+          break;
+        case 16:
+          templateData = arTemplateSlice16;
+          break;
+        case 17:
+          templateData = arTemplateSlice17;
+          break;
+        case 18:
+          templateData = arTemplateSlice18;
+          break;
+        default:
+          throw new Error(`Template with id ${id} not found`);
+      }
+    } else {
+      switch (id) {
+        case 1:
+          templateData = enTemplateSlice1;
+          break;
+        case 2:
+          templateData = enTemplateSlice2;
+          break;
+        case 3:
+          templateData = enTemplateSlice3;
+          break;
+        case 4:
+          templateData = enTemplateSlice4;
+          break;
+        case 5:
+          templateData = enTemplateSlice5;
+          break;
+        case 6:
+          templateData = enTemplateSlice6;
+          break;
+        case 7:
+          templateData = enTemplateSlice7;
+          break;
+        case 8:
+          templateData = enTemplateSlice8;
+          break;
+        case 9:
+          templateData = enTemplateSlice9;
+          break;
+        case 10:
+          templateData = enTemplateSlice10;
+          break;
+        case 11:
+          templateData = enTemplateSlice11;
+          break;
+        case 12:
+          templateData = enTemplateSlice12;
+          break;
+        case 13:
+          templateData = enTemplateSlice13;
+          break;
+        case 14:
+          templateData = enTemplateSlice14;
+          break;
+        case 15:
+          templateData = enTemplateSlice15;
+          break;
+        case 16:
+          templateData = enTemplateSlice16;
+          break;
+        case 17:
+          templateData = enTemplateSlice17;
+          break;
+        case 18:
+          templateData = enTemplateSlice18;
+          break;
+        default:
+          throw new Error(`Template with id ${id} not found`);
+      }
+    }
+    console.log("templateData in fetchInitialTemplate", templateData);
+    return templateData;
+  } catch (error) {
+    console.error("Error fetching initial template:", error);
+    throw error;
+  }
+});
+
 const initialState = {
   templateInfo: {
-    id: 1,
-    title: "Unique Homes",
-    description: "Explore diverse design and project updates for personalized living.",
-    imgUrl: "/static/media/design1.02d5c4e3717cab54eb4f.jpg",
-  },
-  navbar: {
-    imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701811960/templates/template_one/Logo_mj7rvw.png",
-    links: [
-      {
-        title: "home",
-        url: "#",
-      },
-      {
-        title: "pages",
-        url: "#",
-      },
-      {
-        title: "services",
-        url: "#",
-      },
-      {
-        title: "projects",
-        url: "#",
-      },
-      {
-        title: "blog",
-        url: "#",
-      },
-      {
-        title: "contact",
-        url: "#",
-      },
-    ],
-  },
-  hero: {
-    title: "Let Your Home Be Unique",
-    description: "There are many variations of the passages of lorem Ipsum from available, variations of the passages.",
-    buttonText: "Get Started",
-    icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701813389/templates/template_one/Vector_5_vvvt2o.svg",
-    imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701808857/templates/template_one/Photo_3_jpjtdv.jpg",
-  },
-  services: {
-    services: [
-      {
-        title: "Project Plan",
-        description: "There are many variations of the passages of lorem Ipsum from available, majority.",
-        icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701808099/templates/template_one/icon_one_xvd7d6.svg",
-      },
-      {
-        title: "Interior Work",
-        description: "There are many variations of the passages of lorem Ipsum from available, majority.",
-        icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701808099/templates/template_one/icon_two_dptua1.svg",
-      },
-      {
-        title: "Realization",
-        description: "There are many variations of the passages of lorem Ipsum from available, majority.",
-        icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701808099/templates/template_one/icon_three_v71ltg.svg",
-      },
-    ],
-  },
-
-  features: {
-    title: "We Create The Art Of Stylish Living Stylishly",
-    description:
-      "It is a long established fact that a reader will be distracted by the of readable content of a page when looking at its layouts the points of using that it has a more-or-less normal.",
-    phone: "012345678",
-    buttonText: "Get Free Estimate",
-    icons: [
-      "https://res.cloudinary.com/duc04fwdb/image/upload/v1701813236/templates/template_one/Call_gqvv4l.svg",
-      "https://res.cloudinary.com/duc04fwdb/image/upload/v1701813389/templates/template_one/Vector_5_vvvt2o.svg",
-    ],
-
-    imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701813388/templates/template_one/Photo_sonnlx.jpg",
-  },
-  testimonials: {
-    title: "What the People Thinks About Us",
-    testimonials: [
-      {
-        name: "Nattasha Mith",
-        location: "Sydney, USA",
-        imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701808853/templates/template_one/Photo_1_zsyklb.jpg",
-        opinion: "Lorem Ipsum is simply dummy text of the typesetting industry. Ipsum has been.",
-      },
-      {
-        name: "Raymond Galario",
-        location: "Sydney, Australia",
-        imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701808853/templates/template_one/Photo_1_zsyklb.jpg",
-        opinion: "Lorem Ipsum is simply dummy text of the typesetting industry. Ipsum has been scrambled it to make a type book.",
-      },
-      {
-        name: "Benny Roll ",
-        location: "Sydney, New York",
-        imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701808853/templates/template_one/Photo_1_zsyklb.jpg",
-        opinion: "Lorem Ipsum is simply dummy text of the typesetting industry. Ipsum has been scrambled.",
-      },
-    ],
-  },
-  logos: {
-    companies: [
-      { imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701808448/templates/template_one/01_p78hjd.svg", url: "https://x.com" },
-      { imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701808448/templates/template_one/02_mnw1ps.svg", url: "https://x.com" },
-      { imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701808448/templates/template_one/03_fiplpx.svg", url: "https://x.com" },
-      { imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701808449/templates/template_one/04_pg8flc.svg", url: "https://x.com" },
-      { imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701808449/templates/template_one/05_prt3gi.svg", url: "https://x.com" },
-    ],
-  },
-  projects: {
-    title: "Follow Our Projects",
-    description: "It is a long established fact that a reader will be distracted by the of readable content of page  lookings at its layouts  points.",
-    projects: [
-      {
-        title: "Modern Kitchan",
-        description: "Decor / Artchitecture",
-        imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701808451/templates/template_one/Photo_2_w7jdep.jpg",
-        icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701718889/templates/template_one/Vector_5_nzmfwn.svg",
-      },
-      {
-        title: "Modern Kitchan",
-        description: "Decor / Artchitecture",
-        imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701808451/templates/template_one/Photo_3_wig9kc.jpg",
-        icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701718889/templates/template_one/Vector_5_nzmfwn.svg",
-      },
-      {
-        title: "Modern Kitchan",
-        description: "Decor / Artchitecture",
-        imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701808452/templates/template_one/Photo_iojikc.jpg",
-        icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701718889/templates/template_one/Vector_5_nzmfwn.svg",
-      },
-      {
-        title: "Modern Kitchan",
-        description: "Decor / Artchitecture",
-        imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701808450/templates/template_one/Photo_1_njncs1.jpg",
-        icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701718889/templates/template_one/Vector_5_nzmfwn.svg",
-      },
-    ],
-  },
-  statistics: {
-    statistics: [
-      {
-        title: "Years Of Experience",
-        value: "12",
-      },
-      {
-        title: "Success Projects",
-        value: "85",
-      },
-      {
-        title: "Active Projects",
-        value: "15",
-      },
-      {
-        title: "Happy Customers",
-        value: "95",
-      },
-    ],
-  },
-  items: {
-    title: "Articles & News",
-    description:
-      "It is a long established fact that a reader will be distracted by the of readable content of a page when lookings at its layouts the points of using.",
-    items: [
-      {
-        title: "Let’s Get Solution For Building Construction Work",
-        subtitle: "Kitchan Design",
-        description: "26 December,2022 ",
-        imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701718041/templates/template_one/article1.f88f54e6a4cdbf340b36_l3ujjw.png",
-        icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701718889/templates/template_one/Vector_5_nzmfwn.svg",
-      },
-      {
-        title: "Low Cost Latest Invented Interior Designing Ideas.",
-        subtitle: "Living Design",
-        description: "22 December,2022 ",
-        icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701718889/templates/template_one/Vector_5_nzmfwn.svg",
-        imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701718042/templates/template_one/article2.43be768543cb8cfeaf07_atvwjd.png",
-      },
-      {
-        title: "Best For Any Office & Business Interior Solution",
-        subtitle: "Interior Design",
-        description: "25 December,2022 ",
-        icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701718889/templates/template_one/Vector_5_nzmfwn.svg",
-        imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701718042/templates/template_one/article3.f759fde0c85f3fb92b22_c2tqkv.png",
-      },
-    ],
-  },
-  team: {
-    title: "Our Team Members",
-    members: [
-      {
-        memberId: "1",
-        name: "Nattasha",
-        email: "julie@email.com",
-        location: "Design, Australia",
-        imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701808855/templates/template_one/Photo_fz8cuc.jpg",
-        medias: [
-          {
-            icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701809141/templates/template_one/facebook_td263x.svg",
-            url: "https://facebook.com",
-          },
-          {
-            icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701809142/templates/template_one/x_yp3y5n.svg",
-            url: "https://x.com",
-          },
-          {
-            icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701809142/templates/template_one/linkedin_itbvp5.svg",
-            url: "https://linkedin.com",
-          },
-          {
-            icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701809141/templates/template_one/instagram_dlrab9.svg",
-            url: "https://instagram.com",
-          },
-        ],
-      },
-      {
-        memberId: "2",
-        name: "Julie",
-        email: "julie@email.com",
-        location: "Design, Australia",
-        imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701808855/templates/template_one/Photo_fz8cuc.jpg",
-        medias: [
-          {
-            icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701809141/templates/template_one/facebook_td263x.svg",
-            url: "https://facebook.com",
-          },
-          {
-            icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701809142/templates/template_one/x_yp3y5n.svg",
-            url: "https://x.com",
-          },
-          {
-            icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701809142/templates/template_one/linkedin_itbvp5.svg",
-            url: "https://linkedin.com",
-          },
-          {
-            icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701809141/templates/template_one/instagram_dlrab9.svg",
-            url: "https://instagram.com",
-          },
-        ],
-      },
-      {
-        memberId: "3",
-        name: "Alex",
-        email: "julie@email.com",
-        location: "Design, Australia",
-        imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701808855/templates/template_one/Photo_fz8cuc.jpg",
-        medias: [
-          {
-            icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701809141/templates/template_one/facebook_td263x.svg",
-            url: "https://facebook.com",
-          },
-          {
-            icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701809142/templates/template_one/x_yp3y5n.svg",
-            url: "https://x.com",
-          },
-          {
-            icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701809142/templates/template_one/linkedin_itbvp5.svg",
-            url: "https://linkedin.com",
-          },
-          {
-            icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701809141/templates/template_one/instagram_dlrab9.svg",
-            url: "https://instagram.com",
-          },
-        ],
-      },
-      {
-        memberId: "4",
-        name: "John",
-        email: "julie@email.com",
-        location: "Design, Australia",
-        imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701808855/templates/template_one/Photo_fz8cuc.jpg",
-        medias: [
-          {
-            icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701809141/templates/template_one/facebook_td263x.svg",
-            url: "https://facebook.com",
-          },
-          {
-            icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701809142/templates/template_one/x_yp3y5n.svg",
-            url: "https://x.com",
-          },
-          {
-            icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701809142/templates/template_one/linkedin_itbvp5.svg",
-            url: "https://linkedin.com",
-          },
-          {
-            icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701809141/templates/template_one/instagram_dlrab9.svg",
-            url: "https://instagram.com",
-          },
-        ],
-      },
-    ],
-  },
-  pricing: {
-    title: "Pricing & Plan",
-    description: "Home / Priceing",
-    plans: [
-      {
-        title: "Design advices",
-        price: "29",
-        timeUnit: "month",
-        moneyUnit: "$",
-        features: ["General living space advices", "Renovation advices", "Interior design advices", "Furniture reorganization", "Up to 5 hours meetings"],
-        buttonText: "Get Started",
-        icon: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1709586475/Vector_urtrep.svg",
-      },
-      {
-        title: "Design advices",
-        price: "39",
-        timeUnit: "month",
-        moneyUnit: "$",
-        features: ["Complete home redesign", "Interior and exterior works", "Modular interior planning", "Kitchen design", "Garages organization"],
-        buttonText: "Get Started",
-        icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701813389/templates/template_one/Vector_5_vvvt2o.svg",
-      },
-      {
-        title: "Furniture design",
-        price: "59",
-        timeUnit: "month",
-        moneyUnit: "$",
-        features: ["Furniture for living room", "Furniture refurbishment", "Sofas and armchairs", "Tables and chairs", "Kitchens"],
-        buttonText: "Get Started",
-        icon: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1709586475/Vector_urtrep.svg",
-      },
-    ],
-  },
-  cta: {
-    title: "Wanna join the interno?",
-    description: "It is a long established fact  will be distracted.",
-    buttonText: "Contact With Us",
-    icon: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1709586475/Vector_urtrep.svg",
-  },
-  footer: {
-    imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701811960/templates/template_one/Logo_mj7rvw.png",
-    description: "It is a long established fact that a reader will be distracted lookings.",
-    medias: [
-      {
-        icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701809141/templates/template_one/facebook_td263x.svg",
-        url: "https://facebook.com",
-      },
-      {
-        icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701809142/templates/template_one/x_yp3y5n.svg",
-        url: "https://x.com",
-      },
-      {
-        icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701809142/templates/template_one/linkedin_itbvp5.svg",
-        url: "https://linkedin.com",
-      },
-      {
-        icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701809141/templates/template_one/instagram_dlrab9.svg",
-        url: "https://instagram.com",
-      },
-    ],
-    footerSections: [
-      {
-        title: "Services",
-        links: [
-          { title: "Kitchan", url: "#" },
-          { title: "Living Area", url: "#" },
-          { title: "Bathroom", url: "#" },
-          { title: "Dinning Hall", url: "#" },
-          { title: "Bedroom", url: "#" },
-        ],
-      },
-      {
-        title: "Sections",
-        links: [
-          { title: "About Us", url: "#" },
-          { title: "Projects", url: "#" },
-          { title: "Our Team", url: "#" },
-          { title: "Contact Us", url: "#" },
-          { title: "Services", url: "#" },
-        ],
-      },
-    ],
-    contacts: [
-      {
-        value: "55 East Birchwood Ave. Brooklyn, New York 11201",
-      },
-      {
-        value: "contact@interno.com",
-      },
-      {
-        value: "(123) 125-858",
-      },
-    ],
-  },
-
-  colors: {
-    templateColors: ["#ffffff", "#cda274", "#292f36", "#f4f0ec", "#777777"],
+    id: null,
   },
 };
+
 const templateSlice = createSlice({
   initialState,
   name: "templateSlice",
@@ -421,9 +208,16 @@ const templateSlice = createSlice({
     updateSchema: (state, action) => {
       updateSchema(state, action);
     },
+    resetState: (state) => initialState,
+  },
+  extraReducers: (builder) => {
+    builder.addCase(fetchInitialTemplate.fulfilled, (state, action) => {
+      return { ...state, ...action.payload };
+    });
   },
 });
 
+export const { resetState } = templateSlice.actions;
 export const templateActions1 = templateSlice.actions;
 export { initialState };
 export default templateSlice.reducer;

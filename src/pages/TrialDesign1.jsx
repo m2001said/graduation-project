@@ -1,4 +1,3 @@
-
 // TrialDesign1.jsx
 import React from "react";
 import TrialDesign from "./TrialDesign";
@@ -30,7 +29,7 @@ const componentMapping1 = {
 };
 
 const TrialDesign1 = () => {
-  return <TrialDesign componentMapping={componentMapping1} HeroComponent={Hero1} NavbarComponent={Navbar1} footerComponent={Footer1} template={"template1"} />;
+  return <TrialDesign componentMapping={componentMapping1} HeroComponent={Hero1} NavbarComponent={Navbar1} footerComponent={Footer1} template={1} />;
 };
 
 export default TrialDesign1;

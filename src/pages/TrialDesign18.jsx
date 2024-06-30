@@ -15,44 +15,35 @@ import { useSelector } from "react-redux";
 
 import TrialDesign from "./TrialDesign";
 
-
-
-  const componentMapping18 = {
-    features: Feature18,
-    services: Services18,
-    projects: Projects18,
-    testimonials: Testimonial18,
-    cta: Cta18,
-    contact: Cta21,
-  };
-
+const componentMapping18 = {
+  features: Feature18,
+  services: Services18,
+  projects: Projects18,
+  testimonials: Testimonial18,
+  cta: Cta18,
+  contact: Cta21,
+};
 
 const TrialDesign18 = () => {
-  return (
-    <TrialDesign componentMapping={componentMapping18} HeroComponent={Hero18} NavbarComponent={Navbar18} FooterComponent={Footer18} template={"template18"} />
-  );
+  return <TrialDesign componentMapping={componentMapping18} HeroComponent={Hero18} NavbarComponent={Navbar18} FooterComponent={Footer18} template={18} />;
 };
 
 export default TrialDesign18;
-
-
-
-
 
 // const TrialDesign18 = () => {
 //   ////  dark mode   ////////
 //   const [theme, setTheme] = useState(localStorage.getItem("theme") ? localStorage.getItem("theme") : "light");
 //   const element = document.documentElement;
 
-  // useEffect(() => {
-  //   if (theme === "dark") {
-  //     element.classList.add("dark");
-  //     localStorage.setItem("theme", "dark");
-  //   } else {
-  //     element.classList.remove("dark");
-  //     localStorage.setItem("theme", "light");
-  //   }
-  // }, [theme]);
+// useEffect(() => {
+//   if (theme === "dark") {
+//     element.classList.add("dark");
+//     localStorage.setItem("theme", "dark");
+//   } else {
+//     element.classList.remove("dark");
+//     localStorage.setItem("theme", "light");
+//   }
+// }, [theme]);
 //   /////////////////////////
 //   const state = useSelector((state) => state.template18);
 //   const colors = state.colors;
