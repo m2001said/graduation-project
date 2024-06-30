@@ -1,5 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
-import { addElement, addElementToArray, addSubElement, deleteElement, deleteSection, editElement, reorder, reorderSections } from "./actions";
+import { addElement, addElementToArray, addSubElement, deleteElement, deleteSection, editElement, reorder, reorderSections, updateSchema } from "./actions";
 const initialState = {
   templateInfo: {
     id: 10,
@@ -8,7 +8,7 @@ const initialState = {
     imgUrl: "",
   },
   navbar: {
-    logo: "Books",
+    title: "Books",
     imgUrl: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1706798279/logo_rcge0a.png",
     buttonText: "Order",
     links: [
@@ -32,7 +32,7 @@ const initialState = {
     title: "His Life will forever be Changed",
     description: "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     buttonText: "Order Now",
-    images: [
+    imgs: [
       "https://res.cloudinary.com/dmcdea0b9/image/upload/v1706805805/blue-pattern_d1mb2e.png",
       "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707067713/book1_a7epcd.jpg",
     ],
@@ -60,7 +60,7 @@ const initialState = {
     title: "Best Books",
     description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit Distinctio consectetur",
     subtitle: "Trending Books",
-    starIcon: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707083776/Star_lqpaao.svg",
+    icon: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707083776/Star_lqpaao.svg",
     services: [
       {
         title: "His Life",
@@ -109,14 +109,14 @@ const initialState = {
 
   cta: {
     title: "Read Books at Your Fingertips",
-    images: [
+    imgs: [
       "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707090472/board_hqttt2.png",
       "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707090485/app_store_s6wzhh.png",
       "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707090481/play_store_nmzfln.png",
     ],
-    bannerImg: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707090472/board_hqttt2.png",
-    AppStoreImg: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707090485/app_store_s6wzhh.png",
-    PlayStoreImg: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707090481/play_store_nmzfln.png",
+    // bannerImg: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707090472/board_hqttt2.png",
+    // AppStoreImg: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707090485/app_store_s6wzhh.png",
+    // PlayStoreImg: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707090481/play_store_nmzfln.png",
   },
 
   team: {
@@ -318,6 +318,9 @@ const templateSlice10 = createSlice({
     },
     deleteSection: (state, action) => {
       return deleteSection(state, action);
+    },
+    updateSchema: (state, action) => {
+      return updateSchema(state, action);
     },
   },
 });

@@ -1,25 +1,17 @@
 import React from "react";
-import { useSelector } from "react-redux";
-import { useLocation } from "react-router";
 
-const Footer14 = () => {
-  // const { footer } = useSelector((state) => state.template14);
-  const { pathname } = useLocation();
-  const footer = useSelector((state) => {
-    if (pathname.includes("own-page")) {
-      return state.ownTemplate.footer;
-    } else {
-      return state.template14.footer;
-    }
-  });
+
+const Footer14 = ({template}) => {
+    const footer = template.footer;
+
   return (
-    <div className="bg-[--website-14-color-6] dark:bg-gray-950">
+    <div className="bg-[--website-14-color-6] dark:bg-gray-950 dark:text-white">
       <div className="container14">
         <div className="grid md:grid-cols-3 pb-20 pt-5">
           {/* company details */}
           <div className="py-8 px-4">
             <div className="flex gap-4">
-              <img src={footer.logo} alt="logo" className="w-10 cursor-pointer" />
+              <img src={footer.imgUrl} alt="logo" className="w-10 cursor-pointer" />
               <span className="text-[--website-14-color-1] font-semibold tracking-widest text-2xl uppercase sm:text-3xl cursor-pointer">{footer.title}</span>
             </div>
             <p className="text-sm text-gray-600 dark:text-white/70 lg:pr-24 pt-7">{footer.description}</p>

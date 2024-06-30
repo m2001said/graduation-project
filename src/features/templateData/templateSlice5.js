@@ -1,5 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
-import { addElement, addElementToArray, addSubElement, deleteElement, deleteSection, editElement, reorder, reorderSections } from "./actions";
+import { addElement, addElementToArray, addSubElement, deleteElement, deleteSection, editElement, reorder, reorderSections, updateSchema } from "./actions";
 const initialState = {
   templateInfo: {
     id: 5,
@@ -9,7 +9,7 @@ const initialState = {
   },
   navbar: {
     imgUrl: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1703101139/logo_ytwn3z.jpg",
-    menuIcon: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1703106705/menu-svgrepo-com_mgpt72.svg",
+    icon: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1703106705/menu-svgrepo-com_mgpt72.svg",
     buttonText: "contact",
     links: [
       {
@@ -41,7 +41,7 @@ const initialState = {
     videoUrl: "https://res.cloudinary.com/dmcdea0b9/video/upload/v1703110566/heroVideo_z23a38.mp4",
   },
 
-  features1: {
+  features: {
     title: "Plan your travel with confidence",
     subtitle: "travel support",
     description: "find help with booking and travel plans, see what to expect the journey",
@@ -50,19 +50,16 @@ const initialState = {
       {
         title: "Travel requirement for Dubai",
         description: "Find help with booking and travel plans, see what to expect during the journey.",
-        // duration: 2500,
         number: "01",
       },
       {
         title: "Travel requirement for Dubai",
         description: "Find help with booking and travel plans, see what to expect during the journey.",
-        // duration: 3500,
         number: "02",
       },
       {
         title: "Travel requirement for Dubai",
         description: "Find help with booking and travel plans, see what to expect during the journey.",
-        // duration: 4500,
         number: "03",
       },
     ],
@@ -70,7 +67,6 @@ const initialState = {
 
   services: {
     title: "Travel to make memories all around the world",
-    buttonTxt: "View all",
     services: [
       {
         title: "Book & Relax",
@@ -117,25 +113,25 @@ const initialState = {
     title: "Top travelers of this month!",
     members: [
       {
-        travelerName: "IsraTech",
+        name: "IsraTech",
         destinationImage: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1703118167/paris_w35pqv.jpg",
         travelerImage: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1703118040/user1_tjx7hg.jpg",
         socialLink: "@Isratech",
       },
       {
-        travelerName: "IsraTech",
+        name: "IsraTech",
         destinationImage: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1703118212/dubia_tegcrp.jpg",
         travelerImage: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1703118040/user1_tjx7hg.jpg",
         socialLink: "@Isratech",
       },
       {
-        travelerImage: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1703118040/user1_tjx7hg.jpg",
+        name: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1703118040/user1_tjx7hg.jpg",
         destinationImage: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1703118235/newYork_k8j1t0.jpg",
-        travelerName: "IsraTech",
+        travelerImage: "IsraTech",
         socialLink: "@Isratech",
       },
       {
-        travelerName: "IsraTech",
+        name: "IsraTech",
         destinationImage: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1703118167/paris_w35pqv.jpg",
         travelerImage: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1703118040/user1_tjx7hg.jpg",
         socialLink: "@Isratech",
@@ -239,6 +235,9 @@ const templateSlice5 = createSlice({
     },
     deleteSection: (state, action) => {
       return deleteSection(state, action);
+    },
+    updateSchema: (state, action) => {
+      return updateSchema(state, action);
     },
   },
 });

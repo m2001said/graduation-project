@@ -1,24 +1,16 @@
 import React from "react";
-import { useSelector } from "react-redux";
-import { useLocation } from "react-router";
 
-const Projects21 = () => {
-  const { pathname } = useLocation();
-  const projects2 = useSelector((state) => {
-    if (pathname.includes("own-page")) {
-      return state.ownTemplate.blogs;
-    } else {
-      return state.template14.blogs;
-    }
-  });
-  // const projects2 = useSelector((state) => state.template14.blogs);
+
+const Projects21 = ({template}) => {
+    const projects2 = template.blogs;
+
 
   return (
-    <div className="my-12 bg-[--website-14-color-6] dark:bg-gray-900">
+    <div className="pb-10 bg-[--website-14-color-6] dark:bg-gray-900 dark:text-white">
       <div className="container14">
         {/* head sec */}
         <div className="text-center mb-10 max-w-[600px] mx-auto space-y-2">
-          <h1 className="text-3xl font-bold lg:text-4xl">{projects2.title}</h1>
+          <h1 className="pt-12 text-3xl font-bold lg:text-4xl">{projects2.title}</h1>
           <p className="text-xs text-gray-400">{projects2.description}</p>
         </div>
 
@@ -29,7 +21,7 @@ const Projects21 = () => {
             <div key={data.title} className="bg-[--website-14-color-6] dark:bg-gray-900">
               {/* img sec */}
               <div className="overflow-hidden rounded-2xl mb-2">
-                <img src={data.image} alt="" className="w-full h-[220px] object-cover rounded-2xl hover:scale-105 duration-500" />
+                <img src={data.imgUrl} alt="" className="w-full h-[220px] object-cover rounded-2xl hover:scale-105 duration-500" />
               </div>
               {/* content sec */}
               <div className="space-y-2">

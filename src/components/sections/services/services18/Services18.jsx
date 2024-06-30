@@ -1,16 +1,9 @@
 import React from "react";
-import { useSelector } from "react-redux";
-import { useLocation } from "react-router";
 
-const Services = () => {
-  const { pathname } = useLocation();
-  const services = useSelector((state) => {
-    if (pathname.includes("own-page")) {
-      return state.ownTemplate.services;
-    } else {
-      return state.template18.services;
-    }
-  });
+
+const Services = ({template}) => {
+const services = template.services;
+
   return (
     <>
       <span id="about"></span>

@@ -3,9 +3,9 @@
 @tailwind utilities;
 
 @layer components {
-  .search14-bar {
+  /* .search14-bar {
     @apply w-0 group-hover:w-[200px] transition-all duration-300 rounded-full group-hover:border group-hover:border-gray-500 px-3 py-1 focus:outline-none dark:border-gray-800 dark:bg-gray-900 group-hover:dark:bg-gray-800;
-  }
+  } */
 }
 
 @layer utilities {
@@ -18,6 +18,9 @@
   }
 }
 
+body{
+  @apply bg-white dark:bg-gray-900 dark:text-white duration-200;
+ }
 
 :root {
   --website-14-color-1:  #f42c37;
@@ -58,4 +61,6 @@
     max-width: 1318px; 
   }
 }
+
+/*  */
 
