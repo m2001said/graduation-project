@@ -5,6 +5,7 @@
     "LOGIN": "Login",
     "EMAIL": "Email",
     "PASSWORD": "Password",
+    "FORGET_PASSWORD": "Forgot Password?",
     "NAME": "Name",
     "NO_ACCOUNT": "Don't have an account?",
     "HAVE_ACCOUNT": "Already have an account? ",
@@ -15,6 +16,7 @@
     "CREATE_WEBSITE": "create your website quickly with artificial intelligence",
     "WEBSITE_OVERVIEW": "write an overview of your project idea in 3 lines",
     "OVERVIEW": "website overview",
+    "BUILD_1": "Build",
     "BUILD": "Build your website now"
   },
   "ERROR": {

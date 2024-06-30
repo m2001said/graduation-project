@@ -4,9 +4,11 @@ import "../components/yourPage/yourPage.css";
 import InputOption from "../components/yourPage/ChooseOption";
 import { getSectionData } from "../components/yourPage/getSectionData";
 import { useDispatch, useSelector } from "react-redux";
-
+import { useTranslation } from "react-i18next";
 import { ownTemplateActions } from "../features/templateData/ownTemplateSlice";
+
 const BuildYourPage = () => {
+  const { i18n } = useTranslation();
   const sectionNames = [
     "navbar",
     "hero",
@@ -91,7 +93,7 @@ const BuildYourPage = () => {
       });
       dispatch(ownTemplateActions.insertSections({ data: userSchema }));
 
-      navigate("/own-page", { state: selectedSections });
+      navigate(`/${i18n.language}/own-page`, { state: selectedSections });
     }
   };
 
@@ -111,7 +113,7 @@ const BuildYourPage = () => {
               <img src="https://res.cloudinary.com/duc04fwdb/image/upload/v1709052019/jammal_photos/vdybrjarzdlo6x9fdwga.svg" alt="down-icon" />
             </label>
             <input type="checkbox" name="show" className="show-btn" id={`show${index}`} onChange={removeIndexChange(section)} />
-              <InputOption item={getSectionData(section)} section={section} handleIndexChange={handleIndexChange} />
+            <InputOption item={getSectionData(section)} section={section} handleIndexChange={handleIndexChange} />
           </div>
         ))}
 

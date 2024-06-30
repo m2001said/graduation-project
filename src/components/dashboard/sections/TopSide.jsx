@@ -5,13 +5,15 @@ import { useLocation, useNavigate } from "react-router";
 import { fetchTemplates } from "../../../features/templates/templatesSlice";
 import { useSearchParams } from "react-router-dom";
 import { initialState, templateActions1 } from "../../../features/templateData/templateSlice";
+import { useTranslation } from "react-i18next";
 
 const TopSide = ({ schema }) => {
+  const { i18n } = useTranslation();
   const websitesActions = Array.from({ length: 17 }, (_, i) => require(`../../../features/templateData/templateSlice${i + 2}`)[`templateActions${i + 2}`]);
   const initalStateWebsites = Array.from({ length: 17 }, (_, i) => require(`../../../features/templateData/templateSlice${i + 2}`).initialState);
   websitesActions.unshift(templateActions1);
   initalStateWebsites.unshift(initialState);
-  const { pathname  } = useLocation();
+  const { pathname } = useLocation();
   const regex = /\d+/;
   const templateNum = pathname.match(regex)[0];
 
@@ -63,7 +65,7 @@ const TopSide = ({ schema }) => {
       });
       setIsGenerating(false);
       dispatch(fetchTemplates());
-      navigate("/websites");
+      navigate(`/${i18n.language}/websites`);
       dispatch(websitesActions[templateNum - 1].updateSchema(initalStateWebsites[templateNum - 1]));
     } catch (error) {
       setIsGenerating(false);

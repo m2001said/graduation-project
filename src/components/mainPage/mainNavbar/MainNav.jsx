@@ -8,11 +8,13 @@ import translateEnglish from "../../../assets/images/mainPageAssets/translateEng
 import { useSelector, useDispatch } from "react-redux";
 import { logoutUserAsync } from "../../../features/auth/authSlice";
 import { useNavigate } from "react-router-dom";
+import LoadingButton from "../../loadingButton/LoadingButton";
 import { useTranslation } from "react-i18next";
 
 const MainNav = ({ toggleModal }) => {
   const navigate = useNavigate();
   const authState = useSelector((state) => state.auth);
+  const userAvatar = useSelector((state) => state.auth.userAvatar);
   const dispatch = useDispatch();
   const { i18n, t } = useTranslation("main");
 
@@ -42,15 +44,18 @@ const MainNav = ({ toggleModal }) => {
 
           <div className="nav-controls flex justify-between items-center gap-2 md:gap-6">
             {authState.status === "succeeded" && authState.user && (
-              <Link to={"/"} className="flex items-center gap-2 ">
-                <p className="text-base md:text-lg hidden md:block">{authState.user.name}</p>
-
-                <img className="w-6" src={user} alt="logo" />
+              <Link to={`/${i18n.language}/user-information`} className="flex items-center gap-2 ">
+                <p className="text-base md:text-lg hidden md:block">{authState.userName || authState.user.name}</p>
+                {userAvatar ? <img src={userAvatar} alt="logo" className="w-10 h-10 rounded-full" /> : <img className="w-6" src={user} alt="logo" />}
               </Link>
             )}
-            <button className="signIn-btn p-1 md:p-2" onClick={authState.status === "succeeded" && authState.user ? handleSignOut : toggleModal}>
-              {authState.status === "succeeded" && authState.user ? t("USER.LOG_OUT") : t("USER.SIGN_IN")}
-            </button>
+
+            <LoadingButton
+              loading={authState.status === "loading"}
+              onClick={authState.status === "succeeded" && authState.user ? handleSignOut : toggleModal}
+              className="signIn-btn p-1 md:p-2"
+              btnText={authState.status === "succeeded" && authState.user ? t("USER.LOG_OUT") : t("USER.SIGN_IN")}
+            />
 
             {i18n.language === "ar" && (
               <button onClick={() => changeLanguage("en")} className="hover:opacity-90">
