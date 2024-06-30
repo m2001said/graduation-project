@@ -19,7 +19,7 @@
 }
 
 body{
-  @apply bg-white dark:bg-gray-900 dark:text-white duration-200 overflow-hidden
+  @apply bg-white dark:bg-gray-900 dark:text-white duration-200;
  }
 
 :root {
