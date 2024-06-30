@@ -9,7 +9,7 @@ const initialState = {
   },
   navbar: {
     imgUrl: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1703101139/logo_ytwn3z.jpg",
-    menuIcon: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1703106705/menu-svgrepo-com_mgpt72.svg",
+    icon: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1703106705/menu-svgrepo-com_mgpt72.svg",
     buttonText: "contact",
     links: [
       {
@@ -113,25 +113,25 @@ const initialState = {
     title: "Top travelers of this month!",
     members: [
       {
-        travelerName: "IsraTech",
+        name: "IsraTech",
         destinationImage: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1703118167/paris_w35pqv.jpg",
         travelerImage: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1703118040/user1_tjx7hg.jpg",
         socialLink: "@Isratech",
       },
       {
-        travelerName: "IsraTech",
+        name: "IsraTech",
         destinationImage: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1703118212/dubia_tegcrp.jpg",
         travelerImage: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1703118040/user1_tjx7hg.jpg",
         socialLink: "@Isratech",
       },
       {
-        travelerName: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1703118040/user1_tjx7hg.jpg",
+        name: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1703118040/user1_tjx7hg.jpg",
         destinationImage: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1703118235/newYork_k8j1t0.jpg",
         travelerImage: "IsraTech",
         socialLink: "@Isratech",
       },
       {
-        travelerName: "IsraTech",
+        name: "IsraTech",
         destinationImage: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1703118167/paris_w35pqv.jpg",
         travelerImage: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1703118040/user1_tjx7hg.jpg",
         socialLink: "@Isratech",

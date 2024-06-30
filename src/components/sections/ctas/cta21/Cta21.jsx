@@ -3,7 +3,7 @@ import React from "react";
 
 
 const Cta21 = ({template}) => {
- const cta2 = template.cta2;
+ const cta2 = template.contact;
 
   return (
     <>
@@ -20,7 +20,7 @@ const Cta21 = ({template}) => {
                 href={cta2.url}
                 className="inline-block font-semibold py-2 px-6 bg-[--website-18-color-1] text-white hover:opacity-[0.8] duration-200 tracking-widest uppercase "
               >
-                {cta2.linkText}
+                {cta2.buttonText}
               </a>
             </div>
           </div>

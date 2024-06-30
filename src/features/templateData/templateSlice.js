@@ -190,7 +190,7 @@ const initialState = {
     title: "Our Team Members",
     members: [
       {
-        id: "1",
+        memberId: "1",
         name: "Nattasha",
         email: "julie@email.com",
         location: "Design, Australia",
@@ -215,7 +215,7 @@ const initialState = {
         ],
       },
       {
-        id: "2",
+        memberId: "2",
         name: "Julie",
         email: "julie@email.com",
         location: "Design, Australia",
@@ -240,7 +240,7 @@ const initialState = {
         ],
       },
       {
-        id: "3",
+        memberId: "3",
         name: "Alex",
         email: "julie@email.com",
         location: "Design, Australia",
@@ -265,7 +265,7 @@ const initialState = {
         ],
       },
       {
-        id: "4",
+        memberId: "4",
         name: "John",
         email: "julie@email.com",
         location: "Design, Australia",

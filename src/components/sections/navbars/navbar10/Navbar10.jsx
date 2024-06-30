@@ -14,7 +14,7 @@ const Navbar10 = ({template}) => {
               <a href="# ">
                 <img src={navbar.imgUrl} alt="" className="w-10" />
               </a>
-              {navbar.logo}
+              {navbar.title}
             </div>
             <div className="flex justify-between items-center gap-4">
               <div>

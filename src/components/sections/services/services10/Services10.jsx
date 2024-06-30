@@ -6,7 +6,7 @@ const Services10 = ({ template }) => {
 
   return (
     <>
-      <div className="py-10 bg-[--website-10-color-2] dark:bg-gray-900 ">
+      <div className="py-10 bg-[--website-10-color-2] dark:bg-gray-900 dark:text-white">
         <div className="items-center p-7 sm:p-30">
           {/* head sec */}
           <div className="text-center mb-20 max-w-[400px] mx-auto">
@@ -28,10 +28,10 @@ const Services10 = ({ template }) => {
                 </div>
                 <div className="p-4 text-center">
                   <div className="w-full flex items-center justify-center gap-0">
-                    <img src={services.starIcon} alt="" className="w-6" />
-                    <img src={services.starIcon} alt="" className="w-6" />
-                    <img src={services.starIcon} alt="" className="w-6" />
-                    <img src={services.starIcon} alt="" className="w-6" />
+                    <img src={services.icon} alt="" className="w-6" />
+                    <img src={services.icon} alt="" className="w-6" />
+                    <img src={services.icon} alt="" className="w-6" />
+                    <img src={services.icon} alt="" className="w-6" />
                   </div>
                   <h1 className="text-xl font-bold">{service.title}</h1>
                   <p className="text-gray-500 group-hover:text-white duration-300 text-sm line-clamp-2">{service.description}</p>

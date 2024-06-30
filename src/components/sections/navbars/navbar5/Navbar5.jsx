@@ -50,7 +50,7 @@ const Navbar5 = ({template}) => {
 
       <div className="toggleIcon" onClick={showNavbar}>
         <a href=" #">
-          <img src={navbar.menuIcon} alt="" className="navbar5-two-icon" />
+          <img src={navbar.icon} alt="" className="navbar5-two-icon" />
         </a>
       </div>
     </div>

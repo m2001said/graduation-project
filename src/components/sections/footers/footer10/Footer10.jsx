@@ -7,7 +7,7 @@ const Footer10 = ({ template }) => {
   const footer = template.footer;
 
   return (
-    <div className="bg-[--website-10-color-5] dark:bg-gray-950">
+    <div className="bg-[--website-10-color-5] dark:bg-gray-950 dark:text-white">
       <section className="items-center p-10 sm:p-30">
         <div className=" grid md:grid-cols-3">
           <div className=" py-8 px-4 ">

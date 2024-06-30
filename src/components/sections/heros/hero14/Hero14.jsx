@@ -31,7 +31,6 @@ const Hero14 = ({ template }) => {
                       </h1>
                       <div>
                         <button
-                          
                           className={`bg-[--website-14-color-1] text-white cursor-pointer hover:scale-105 duration-300 py-2 px-8 rounded-full relative z-10`}
                         >
                           {hero.buttonText}
@@ -42,7 +41,7 @@ const Hero14 = ({ template }) => {
                     <div className="order-1 sm:order-2">
                       <div>
                         <img
-                          src={data.img}
+                          src={data.imgUrl}
                           alt=""
                           className="w-[300px] sm:w-[450px] h-[300px] sm:h-[450px] sm:scale-105 lg:scale-120 object-contain mx-auto drop-shadow-[-8px_4px_6px_rgba(0,0,0,.4)] relative z-40"
                         />

@@ -25,25 +25,20 @@ const Navbar14 = ({template}) => {
                     </a>
                   </li>
                 ))}
-               
               </ul>
             </div>
           </div>
 
           {/* Nav right sec */}
           <div className="flex justify-between items-center gap-4">
-
-
             {/* Order-button */}
             <button className="relative p-3">
-              <img src={navbar.buttonIcon} alt="" className="w-6" />
-              <div className="w-4 h-4 bg-[--website-14-color-1] text-white rounded-full absolute top-0 right-0 flex items-center justify-center text-xs">
-                {navbar.buttonText}
-              </div>
+              <img src={navbar.icon} alt="" className="w-6" />
+              <div className="w-4 h-4 bg-[--website-14-color-1] text-white rounded-full absolute top-0 right-0 flex items-center justify-center text-xs">!</div>
             </button>
             {/* Dark Mode sec */}
             <div>
-              <DarkMode14 />
+              <DarkMode14 template={template} />
             </div>
           </div>
         </div>

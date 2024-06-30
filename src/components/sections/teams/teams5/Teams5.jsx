@@ -23,7 +23,7 @@ const Teams5 = ({template}) => {
                 <img src={Card.travelerImage} className="travelerImage" alt="" />
               </div>
               <div className="travelerName">
-                <span>{Card.travelerName}</span>
+                <span>{Card.name}</span>
                 <p>{Card.socialLink}</p>
               </div>
             </div>

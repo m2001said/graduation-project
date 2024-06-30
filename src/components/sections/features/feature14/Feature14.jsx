@@ -15,15 +15,15 @@ const Feature14 = ({ template }) => {
           </div>
           {/* second col */}
           <div className="h-full flex items-center">
-            <img src={featuers.image} alt="" className="scale-125 w-[250px] md:w-[340px] mx-auto drop-shadow-[-10px_10px_12px_rgba(0,0,0,.6)] object-cover" />
+            <img src={featuers.imgUrl} alt="" className="scale-125 w-[250px] md:w-[340px] mx-auto drop-shadow-[-10px_10px_12px_rgba(0,0,0,.6)] object-cover" />
           </div>
           {/* third col */}
           <div className="flex flex-col justify-center gap-4 p-6 sm:p-8">
-            <p className="font-bold text-xl">{featuers.title2}</p>
-            <p className=" text-3xl sm:text-5xl font-bold">{featuers.title3}</p>
-            <p className="text-sm tracking-wide leading-5">{featuers.title4}</p>
+            <p className="font-bold text-xl">{featuers.subTitle}</p>
+            <p className=" text-3xl sm:text-5xl font-bold">{featuers.session}</p>
+            <p className="text-sm tracking-wide leading-5">{featuers.description}</p>
             <div>
-              <button className="bg-[--website-14-color-6] text-[--website-14-color-1] py-2 px-4 rounded-full">Shop Now</button>
+              <button className="bg-[--website-14-color-6] text-[--website-14-color-1] py-2 px-4 rounded-full">{featuers.buttonText}</button>
             </div>
           </div>
         </div>

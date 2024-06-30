@@ -22,13 +22,9 @@ import TrialDesign from "./TrialDesign";
     services: Services18,
     projects: Projects18,
     testimonials: Testimonial18,
-    cta1: Cta18,
-    cta2: Cta21,
-
+    cta: Cta18,
+    contact: Cta21,
   };
-
-
-
 
 
 const TrialDesign18 = () => {
@@ -40,20 +36,23 @@ const TrialDesign18 = () => {
 export default TrialDesign18;
 
 
+
+
+
 // const TrialDesign18 = () => {
 //   ////  dark mode   ////////
 //   const [theme, setTheme] = useState(localStorage.getItem("theme") ? localStorage.getItem("theme") : "light");
 //   const element = document.documentElement;
 
-//   useEffect(() => {
-//     if (theme === "dark") {
-//       element.classList.add("dark");
-//       localStorage.setItem("theme", "dark");
-//     } else {
-//       element.classList.remove("dark");
-//       localStorage.setItem("theme", "light");
-//     }
-//   }, [theme]);
+  // useEffect(() => {
+  //   if (theme === "dark") {
+  //     element.classList.add("dark");
+  //     localStorage.setItem("theme", "dark");
+  //   } else {
+  //     element.classList.remove("dark");
+  //     localStorage.setItem("theme", "light");
+  //   }
+  // }, [theme]);
 //   /////////////////////////
 //   const state = useSelector((state) => state.template18);
 //   const colors = state.colors;

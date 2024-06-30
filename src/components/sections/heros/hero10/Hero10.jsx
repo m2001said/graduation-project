@@ -10,7 +10,7 @@ const Hero10 = ({template}) => {
       <div
         className="min-h-[550px] sm:min-h-[650px] bg-[--graybg] flex justify-center items-center dark:bg-gray-950 dark:text-white duration-200"
         style={{
-          backgroundImage: `url(${hero.images[0]})`,
+          backgroundImage: `url(${hero.imgs[0]})`,
           backgroundPosition: "center",
           backgroundRepeat: "no-repeat",
           backgroundSize: "cover",
@@ -24,9 +24,7 @@ const Hero10 = ({template}) => {
               <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold">{hero.heros[id].title}</h1>
               <p className="text-sm mt-4">{hero.heros[id].description}</p>
               <div>
-                <button  className="btnBg10 btnTxt10 px-4 py-2 rounded-full mt-4 hover:scale-105 duration-200 ">
-                  {hero.buttonText}
-                </button>
+                <button className="btnBg10 btnTxt10 px-4 py-2 rounded-full mt-4 hover:scale-105 duration-200 ">{hero.buttonText}</button>
               </div>
             </div>
             {/* image sec */}

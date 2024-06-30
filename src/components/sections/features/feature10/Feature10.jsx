@@ -8,7 +8,7 @@ const Feature10 = ({template}) => {
 
   return (
     <>
-      <div className="py-10 bg-[--website-10-color-2] dark:bg-gray-900">
+      <div className="py-10 bg-[--website-10-color-2] dark:bg-gray-900 dark:text-white">
         <div className="items-center py-6 px-10 sm:p-30">
           <div className="grid grid-cols-1 sm:grid-cols-2 items-center gap-6">
             {/* image sec */}

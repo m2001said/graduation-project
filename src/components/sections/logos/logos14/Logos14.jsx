@@ -8,7 +8,7 @@ const Logos14 = ({template}) => {
     const logos = template.logos;
 
   return (
-    <div className="py-8 mt-24 hidden md:block bg-[--website-14-color-5] dark:bg-white/10">
+    <div className="py-8 pt-12 hidden md:block bg-[--website-14-color-5] dark:bg-[--website-14-color-5]">
       <div className="container14">
         <div className="flex flex-wrap justify-center gap-20 opacity-50">
           {logos.companies.map((logo, index) => (
