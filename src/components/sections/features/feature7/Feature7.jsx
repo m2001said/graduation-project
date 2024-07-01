@@ -1,8 +1,6 @@
 import React from "react";
-import { useSelector } from "react-redux";
 import styles, { layout } from "../../heros/hero7/styles7/style";
-import Button7 from "../feature7/Button7";
-import { useLocation } from "react-router";
+import Button7 from "./Button7";
 
 const FeatureCard = ({ title, description, imgUrl, index }) => {
   return (
@@ -12,7 +10,7 @@ const FeatureCard = ({ title, description, imgUrl, index }) => {
       </div>
       <div className="flex-1 flex flex-col ml-3">
         <h4 className="font-poppins font-semibold text-white text-[18px] leading-[23.4px] mb-1">{title}</h4>
-        <p className="font-poppins font-normal text-dimWhite text-[16px] leading-[24px]" style={{ color: "var(--color5)" }}>
+        <p className="font-poppins font-normal text-dimWhite text-[16px] leading-[24px]" style={{ color: "var(--website-7-color-5)" }}>
           {description}
         </p>
       </div>
@@ -20,29 +18,22 @@ const FeatureCard = ({ title, description, imgUrl, index }) => {
   );
 };
 
-const Business7 = () => {
-  const { pathname } = useLocation();
-  const feature = useSelector((state) => {
-    if (pathname.includes("own-page")) {
-      return state.ownTemplate.features;
-    } else {
-      return state.template7.features;
-    }
-  });
+const Business7 = ({ template }) => {
+  const feature = template.features;
 
-  const { buttonText, title, features } = feature; // Change feature to items
+  const { buttonText, title, subtitle, description, features } = feature; // Change feature to items
   return (
     <div className={`bg-primary ${styles.paddingX} ${styles.flexStart}`}>
       <div className={`${styles.boxWidth}`}>
         <section id="features" className={layout.section}>
           <div className={layout.sectionInfo}>
             <h2 className={styles.heading2}>
-              {title.title} <br className="sm:block hidden" /> {title.subtitle}
+              {title} <br className="sm:block hidden" /> {subtitle}
             </h2>
-            <p className={`${styles.paragraph} max-w-[470px] mt-5`} style={{ color: "var(--color6)" }}>
-              {title.content}
+            <p className={`${styles.paragraph} max-w-[470px] mt-5`} style={{ color: "var(--website-7-color-6)" }}>
+              {description}
             </p>
-            <Button7 text={buttonText} styles={`px-4 py-5 mt-6 text-[var(--color2)] rounded-full bg-[var(--color3)]`} />
+            <Button7 styles={`px-4 py-5 mt-6 text-[var(--website-7-color-1)] rounded-full bg-[var(--website-7-color-5)]`} buttonText={buttonText} />
           </div>
           <div className={`${layout.sectionImg} flex-col`}>
             {features.map((f, index) => (

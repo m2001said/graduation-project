@@ -20,7 +20,7 @@
   gap: 4rem;
   z-index: 1;
 }
-.scoil-links-f3 > img {
+.scoil-links-f3 img {
   width: 2rem;
   height: 2rem;
   cursor: pointer;
@@ -46,6 +46,11 @@
   filter: blur(200px);
   background: var(--website-3-color-1);
 }
+.scoil-links-f3 a {
+  display: inline-block;
+  margin: 0 5px;
+}
+
 @media screen and (max-width: 1024px) {
   .blur-f-1,
   .blur-f-2 {

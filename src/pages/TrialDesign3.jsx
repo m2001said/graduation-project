@@ -18,7 +18,7 @@ const TrialDesign3 = () => {
   };
   return (
     <div className="TrialDesign3">
-      <TrialDesign componentMapping={componentMapping} HeroComponent={Hero3} NavbarComponent={Navbar3} footerComponent={Footer3} template={"template3"} />;
+      <TrialDesign componentMapping={componentMapping} HeroComponent={Hero3} NavbarComponent={Navbar3} FooterComponent={Footer3} template={"template3"} />;
     </div>
   );
 };

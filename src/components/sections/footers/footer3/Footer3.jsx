@@ -43,7 +43,9 @@ const Footer3 = ({ template }) => {
       <div className="footer3">
         <div className="scoil-links-f3">
           {template.footer.medias.map((icon, index) => (
-            <img key={`icon-${index}`} src={icon.icon} alt="" />
+            <a key={`icon-${index}`} href={icon.url} target="_blank" rel="noopener noreferrer">
+              <img key={`icon-${index}`} src={icon.icon} alt="" />
+            </a>
           ))}
         </div>
         <div className="logo-f3">
@@ -57,4 +59,3 @@ const Footer3 = ({ template }) => {
 };
 
 export default Footer3;
-

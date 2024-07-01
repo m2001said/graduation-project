@@ -14,7 +14,7 @@
 //         <img src={feature.imgUrl[3]} alt="" />
 //       </div>
 //       <div className="right-r3">
-//         <span>{feature.Subtitle}</span>
+//         <span>{feature.subtitle}</span>
 //         <div>
 //           <span className="stroke-text">{feature.title} </span>
 //         </div>
@@ -63,7 +63,7 @@
 //         ))}
 //       </div>
 //       <div className="right-r3">
-//         <span>{feature.Subtitle}</span>
+//         <span>{feature.subtitle}</span>
 //         <div>
 //           <span className="stroke-text">{feature.title}</span>
 //         </div>
@@ -109,19 +109,19 @@
 //         ))}
 //       </div>
 //       <div className="right-r3">
-//         <span>{feature.Subtitle}</span>
+//         <span>{feature.subtitle}</span>
 //         <div>
 //           <span className="stroke-text">{feature.title}</span>
 //         </div>
 //         <div className="details-r3">
-//           {feature.statistics.map((item, index) => (
+//           {feature.features.map((item, index) => (
 //             <div key={index}>
 //               <img src={feature.imgUrl[5]} alt="" />
 //               <span>{item.description}</span>
 //             </div>
 //           ))}
 //         </div>
-//         <span style={{ color: "#808080", fontWeight: "normal" }}>{feature.statistics[4].description}</span>
+//         <span style={{ color: "#808080", fontWeight: "normal" }}>{feature.features[4].description}</span>
 //         <div className="partners3">
 //           <img src={feature.imgUrl[4]} alt="" />
 //           <img src={feature.imgUrl[7]} alt="" />
@@ -137,31 +137,32 @@ import React from "react";
 import "./feature3.css";
 
 const Feature3 = ({ template }) => {
+  const feature = template.features;
   return (
     <div className="Reasons3" id="WhyUs">
       <div className="left-r3">
-        {template.feature.imgUrl.slice(0, 4).map((url, index) => (
+        {feature.imgs.slice(0, 4).map((url, index) => (
           <img key={`image-${index}`} src={url} alt="" />
         ))}
       </div>
       <div className="right-r3">
-        <span>{template.feature.Subtitle}</span>
+        <span>{feature.subtitle}</span>
         <div>
-          <span className="stroke-text">{template.feature.title}</span>
+          <span className="stroke-text">{feature.title}</span>
         </div>
         <div className="details-r3">
-          {template.feature.statistics.map((item, index) => (
+          {feature.features.map((item, index) => (
             <div key={`stat-${index}`}>
-              <img src={template.feature.imgUrl[5]} alt="" />
+              <img src={feature.imgs[5]} alt="" />
               <span>{item.description}</span>
             </div>
           ))}
         </div>
-        <span style={{ color: "#808080", fontWeight: "normal" }}>{template.feature.statistics[4].description}</span>
+        <span style={{ color: "#808080", fontWeight: "normal" }}>{feature.features[4].description}</span>
         <div className="partners3">
-          <img src={template.feature.imgUrl[4]} alt="" />
-          <img src={template.feature.imgUrl[7]} alt="" />
-          <img src={template.feature.imgUrl[6]} alt="" />
+          <img src={feature.imgs[4]} alt="" />
+          <img src={feature.imgs[7]} alt="" />
+          <img src={feature.imgs[6]} alt="" />
         </div>
       </div>
     </div>
@@ -169,4 +170,3 @@ const Feature3 = ({ template }) => {
 };
 
 export default Feature3;
-

@@ -1,8 +1,8 @@
 import React from "react";
-import { useSelector } from "react-redux";
 
-const ServicesBox11 = () => {
-  const { statistics } = useSelector((state) => state.template11);
+const ServicesBox11 = ({ template }) => {
+  const statistics = template.statistics;
+  // const { statistics } = useSelector((state) => state.template11);
   return (
     <div className="about___boxes11 grid11">
       {statistics.statistics.map((stat, index) => (

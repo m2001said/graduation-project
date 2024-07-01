@@ -1,5 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
-import { addElement, addElementToArray, addSubElement, deleteElement, deleteSection, editElement, reorder, reorderSections } from "./actions";
+import { addElement, addElementToArray, addSubElement, deleteElement, deleteSection, editElement, reorder, reorderSections, updateSchema } from "./actions";
 const initialState = {
   templateInfo: {
     id: 7,
@@ -9,10 +9,7 @@ const initialState = {
   },
   navbar: {
     imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1706799023/jammal_photos/wz8vakvjdjio0wcqhnfe.svg",
-    icons: [
-      "https://res.cloudinary.com/duc04fwdb/image/upload/v1706799683/jammal_photos/msugi233fn6vkrra5x9f.svg",
-      "https://res.cloudinary.com/duc04fwdb/image/upload/v1706799720/jammal_photos/jx9bn26thzu46apznikl.svg",
-    ],
+
     links: [
       {
         title: "Home",
@@ -39,7 +36,7 @@ const initialState = {
     description:
       "Our team of experts uses a methodology to identify the credit cards most likely to fit your needs. We examine annual percentage rates, annual fees.",
     buttonText: "Get Started",
-    images: [
+    imgs: [
       "https://res.cloudinary.com/duc04fwdb/image/upload/v1706800273/jammal_photos/vt6gwourfyjs74j4ldmf.svg",
       "https://res.cloudinary.com/duc04fwdb/image/upload/v1706800322/jammal_photos/tujqyyrsfqmtnjcn6fef.png",
       "https://res.cloudinary.com/duc04fwdb/image/upload/v1706801327/jammal_photos/pu1mdivlop5zpuugkqn9.svg",
@@ -87,24 +84,28 @@ const initialState = {
       },
     ],
   },
-  characteristics: {
+
+  items: {
     title: "Easily control your",
     subtitle: " billing & invoicing",
     description:
       " Elit enim sed massa etiam. Mauris eu adipiscing ultrices ametodio aenean neque. Fusce ipsum orci rhoncus aliporttitor integer platea placerat.",
-    images: [
+
+    imgs: [
       "https://res.cloudinary.com/duc04fwdb/image/upload/v1706814018/jammal_photos/nkxtdvx0jakzuplwtoa6.svg",
       "https://res.cloudinary.com/duc04fwdb/image/upload/v1706814088/jammal_photos/auq2y4agfhj8byap3omh.svg",
       "https://res.cloudinary.com/duc04fwdb/image/upload/v1706814053/jammal_photos/vwwyntauf0akzyaef7e5.png",
     ],
   },
 
-  paymentMethods: {
+  services: {
     title: " Find a better card deal",
     subtitle: "in few easy steps.",
     description: " Arcu tortor, purus in mattis at sed integer faucibus. Aliquet quis aliquet eget mauris tortor.ç Aliquet ultrices ac, ametau.",
     imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1706814478/jammal_photos/na4dc3msncykyboct0nu.png",
+    buttonText: " Get Started",
   },
+
   testimonials: {
     title: "What People are",
     subtitle: "saying about us",
@@ -141,11 +142,9 @@ const initialState = {
   cta: {
     title: "Let’s try our service now!",
     description: "Everything you need to accept card payments and grow your business anywhere on the planet.",
+    buttonText: " Get Started",
   },
   footer: {
-    title: "Copyright Ⓒ 2022 HooBank. All Rights Reserved.",
-    Subtitle: "A new way to make the payments easy, reliable and secure.",
-    imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1706816362/jammal_photos/res7beki52yf4cbmuix3.svg",
     footerSections: [
       {
         title: "Useful Links",
@@ -211,6 +210,9 @@ const initialState = {
         ],
       },
     ],
+    title: "Copyright Ⓒ 2022 HooBank. All Rights Reserved.",
+    subtitle: "A new way to make the payments easy, reliable and secure.",
+    imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1706816362/jammal_photos/res7beki52yf4cbmuix3.svg",
     medias: [
       {
         icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1706818177/jammal_photos/zqz9nmo0tqfpnhunvfgl.svg",
@@ -269,6 +271,9 @@ const templateSlice7 = createSlice({
     },
     deleteSection: (state, action) => {
       return deleteSection(state, action);
+    },
+    updateSchema: (state, action) => {
+      return updateSchema(state, action);
     },
   },
 });
