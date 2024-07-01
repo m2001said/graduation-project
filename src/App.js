@@ -14,6 +14,7 @@ import FailedVerified from "./pages/FailedVerified.jsx";
 import ResetPassword from "./pages/ResetPassword.jsx";
 
 import YourWebsites from "./pages/YourWebsites.jsx";
+import Admin from "./pages/Admin";
 const trialDesignComponents = Array.from({ length: 18 }, (_, i) => require(`./pages/TrialDesign${i + 1}`).default);
 const websites = Array.from({ length: 18 }, (_, i) => require(`./pages/TrialDesign${i + 1}`).default);
 
@@ -119,6 +120,7 @@ function App() {
               />
             ))}
           </Route>
+          <Route path="/admin" element={<Admin />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </div>
