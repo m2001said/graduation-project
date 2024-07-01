@@ -114,9 +114,6 @@ const initialState = {
       "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707090485/app_store_s6wzhh.png",
       "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707090481/play_store_nmzfln.png",
     ],
-    // bannerImg: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707090472/board_hqttt2.png",
-    // AppStoreImg: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707090485/app_store_s6wzhh.png",
-    // PlayStoreImg: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707090481/play_store_nmzfln.png",
   },
 
   team: {

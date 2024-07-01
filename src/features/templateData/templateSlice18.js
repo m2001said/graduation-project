@@ -41,8 +41,7 @@ const initialState = {
     subTitle: "Effortless",
     description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione veritatis explicabo quibusdam quae reprehenderit ab",
     buttonText: "Get Started",
-    lightImage: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1708094043/banner-car_nzxi5c.png",
-    darkImage: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1708094046/car_wnmkfa.png",
+    imgUrl: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1708094043/banner-car_nzxi5c.png",
   },
 
   features: {
@@ -141,10 +140,7 @@ const initialState = {
             "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707090485/app_store_s6wzhh.png",
              "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707090481/play_store_nmzfln.png",
     ],
-    // bannerImg: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1708098410/pattern_t0naia.jpg",
-    // appStoreImg: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707090485/app_store_s6wzhh.png",
-    // playStoreImg: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707090481/play_store_nmzfln.png",
-  },
+    },
 
   contact: {
     title: "Let's collaborate on your upcoming car rental venture",

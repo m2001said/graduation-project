@@ -24,7 +24,7 @@ const Hero = ({ template }) => {
           <div className="order-1 sm:order-2">
             <img
               // src={theme === "dark" ? hero.darkImage : hero.lightImage}
-              src={hero.lightImage}
+              src={hero.imgUrl}
               alt=""
               className="sm:scale-125 max-h-[500px] drop-shadow-[2px_20px_6px_rgba(0,0,0,0.50)]"
             />
