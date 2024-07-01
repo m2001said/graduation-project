@@ -92,12 +92,6 @@ const TopSide = ({ schema }) => {
     },
   ];
 
-  const handleUpdateSchema = () => {
-    console.log(initalStateWebsites[templateNum - 1]);
-    console.log(initalStateWebsites);
-    console.log(templateNum);
-    dispatch(websitesActions[templateNum - 1].updateSchema(initalStateWebsites[templateNum - 1]));
-  };
   return isGenerating ? (
     <div className="fixed top-0 left-0 w-full h-full bg-gray-900 opacity-70 z-50 flex items-center justify-center">
       <div className="p-5 bg-red-900 rounded-lg shadow-lg">
@@ -118,12 +112,9 @@ const TopSide = ({ schema }) => {
         );
       })}
       <div className="absolute right-6">
-        <div className="flex">
-          <button className="bg-blue-500 px-4 rounded-lg h-10 flex-center" onClick={handleSubmit}>
-            {pathname.includes("edit-zweb") ? "Update" : "Save"}
-          </button>
-          <button onClick={handleUpdateSchema}>Update Schema</button>
-        </div>
+        <button className="bg-blue-500 px-4 rounded-lg h-10 flex-center" onClick={handleSubmit}>
+          {pathname.includes("edit-zweb") ? "Update" : "Save"}
+        </button>
       </div>
     </div>
   );
