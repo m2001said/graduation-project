@@ -35,7 +35,7 @@ const AdminMessages = () => {
 
   return (
     <div className="p-6 border rounded-md shadow-md">
-      <h2 className="text-2xl font-bold text-[##BB5CB9] mb-4">Admins Accounts</h2>
+      <h2 className="text-2xl font-bold text-[#BB5CB9] mb-4 mt-12 border-b-4 border-[#BB5CB9] w-fit pb-1">Users' messages</h2>
       {loading && !error && <Loader />}
       {error && <p className="mt-24 text-2xl text-red-700">Some Error Occured</p>}
       {!loading && !error && (
