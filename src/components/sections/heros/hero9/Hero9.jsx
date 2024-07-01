@@ -3,6 +3,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Autoplay } from "swiper/modules";
 import "swiper/css";
 import { useLocation } from "react-router";
+
 const responsive = {
   module: {
     breakpoint: { max: 4000, min: 0 },
@@ -18,18 +19,12 @@ const CustomDot = ({ onClick, active }) => {
   );
 };
 
-const Hero9 = () => {
-  const { pathname } = useLocation();
-  const hero = useSelector((state) => {
-    if (pathname.includes("own-page")) {
-      return state.ownTemplate.hero;
-    } else {
-      return state.template9.hero;
-    }
-  });
+const Hero9 = ({ template }) => {
+  const hero = template.hero;
+  const reviews = template.reviews;
 
   return (
-    <main className="mb-12 pt-4">
+    <main className="trialdesign9 mb-12 pt-4">
       <div className="bg-gradient-to-t from-[var(--website-9-color-3)] to-[var(--website-9-color-1)]  rounded-[560px] rounded-t-none hero9">
         <div className="container mx-auto px-3 lg:flex justify-between items-center lg:h-screen">
           <div className="lg:w-2/5">
@@ -59,19 +54,17 @@ const Hero9 = () => {
               <div className="py-12 flex flex-col gap-8 px-4">
                 <input
                   type="text"
-                  placeholder={hero.placeholder}
+                  placeholder={hero.inputPlaceHolder}
                   className="h-16 outline-none rounded-3xl bg-[var(--website-9-color-1)] border border-[var(--website-9-color-1)] px-6"
                 />
-              <select
-  placeholder={hero.placeholder} // Add ?. to ensure safe access
-  className="h-16 outline-none rounded-3xl bg-[var(--website-9-color-1)] border border-[var(--website-9-color-1)] px-6"
->
-  {hero.options && hero.options.map(option => (
-    <option key={option.id}>{option.text}</option>
-  ))}
-</select>
-
-                
+                <select
+                  placeholder={hero.inputPlaceHolder}
+                  className="h-16 outline-none rounded-3xl bg-[var(--website-9-color-1)] border border-[var(--website-9-color-1)] px-6"
+                >
+                  {hero.heros && hero.heros.map((option, index) => (
+                    <option key={index}>{option.text}</option>
+                  ))}
+                </select>
               </div>
               <button className="bg-gradient-to-r from-[var(--website-9-color-6)] to-[var(--website-9-color-1)] rounded-full h-12 w-12 cursor-auto absolute -top-2 -right-2"></button>
             </div>
@@ -80,68 +73,53 @@ const Hero9 = () => {
       </div>
       <div className="lg: container mx-auto px-3 py-8">
         <span className="lg:flex items-end gap-x-60 lg:text-left text-center">
-          <button className="lg:block  bg-gradient-to-r from-[var(--website-9-color-6)] to-[var(--website-9-color-1)] rounded-full h-24 w-24 cursor-auto">
+          <button className="lg:block bg-gradient-to-r from-[var(--website-9-color-6)] to-[var(--website-9-color-1)] rounded-full h-24 w-24 cursor-auto">
             {" "}
           </button>
-          <p className="text-[var(--website-9-color-4)] ">{hero.otherImages.title}</p>
+          <p className="text-[var(--website-9-color-4)]">{reviews.subtitle}</p>
         </span>
         <div className="py-12">
           <Swiper modules={[Navigation, Autoplay]} slidesPerView={2} spaceBetween={2} speed={5000} autoplay={{ delay: 100 }} direction="horizontal">
-            {hero.logos &&
-              hero.logos.map((logoObj, index) => (
+            {reviews.logos &&
+              reviews.logos.map((logo, index) => (
                 <SwiperSlide key={index}>
-                  <img src={logoObj.logo} alt="Company Logo" className="mr-4 h-8" /> {/* Access logo URL from nested object */}
+                  <img src={logo.imgUrl} alt="Company Logo" className="mr-4 h-8" />
                 </SwiperSlide>
               ))}
           </Swiper>
         </div>
       </div>
-      <div className="lg:flex justify-center lg:mt-16  gap-x-8 lg:px-0 px-3 ">
-        <div className="bg-[var(--website-9-color-3)] rounded-full py-4 lg:px-8 px-3 flex items-center justify-center gap-x-4 shadow-2xl ">
+      <div className="lg:flex justify-center lg:mt-16 gap-x-8 lg:px-0 px-3">
+        <div className="bg-[var(--website-9-color-3)] rounded-full py-4 lg:px-8 px-3 flex items-center justify-center gap-x-4 shadow-2xl">
           <span className="flex items-center relative h-10 w-44">
-            {hero.otherImages &&
-              hero.imgs &&
-              Array.isArray(hero.person) &&
-              hero.person.map((img, index) => (
+            {reviews.reviews &&
+              Array.isArray(reviews.reviews) &&
+              reviews.reviews.map((review, index) => (
                 <div key={index} className="lg:mr-7 mr-5 h-full">
                   <img
-                    src={img}
+                    src={review.imgUrl}
                     alt="Customer Image"
                     className="w-10 h-10 rounded-full object-cover absolute bg-[var(--website-9-color-1)] border border-[var(--website-9-color-1)]"
                   />
                 </div>
               ))}
-            {hero.otherImages && (
-              <button className=" w-8 h-8 rounded-full text-[var(--website-9-color-1)] relative flex items-center justify-center">
-                <img src={hero.otherImages.imgUrl} alt="Plus Icon" className="logo-9" />
+            {reviews.icon && (
+              <button className="w-8 h-8 rounded-full text-[var(--website-9-color-1)] relative flex items-center justify-center">
+                <img src={reviews.icon} alt="Plus Icon" className="logo-9" />
               </button>
             )}
           </span>
-          <p className="w-36 md:text-xl font-medium">{hero.customerStats && hero.customerStats.description}</p>
+          <p className="w-36 md:text-xl font-medium">{reviews.title}</p>
         </div>
         <div className="bg-[var(--website-9-color-6)] rounded-full py-4 lg:px-8 px-3 flex items-center justify-center gap-x-4 shadow-2xl">
           <span className="flex items-center relative h-10 w-44">
-          
-            {hero.otherImages && (
-              <button className=" w-8 h-8 rounded-full text-[var(--website-9-color-1)] relative flex items-center justify-center">
-                <img src={hero.otherImages.imgUrl} alt="Plus Icon" />
+            {reviews.icon && (
+              <button className="w-8 h-8 rounded-full text-[var(--website-9-color-1)] relative flex items-center justify-center">
+                <img src={reviews.icon} alt="Plus Icon" />
               </button>
             )}
           </span>
-          <p className="w-36 md:text-xl font-medium">{hero.newListingStats && hero.newListingStats.description}</p>
-        </div>
-      </div>
-      <div className="container mx-auto px-3 py-16">
-        <h1 className="text-center lg:text-4xl text-2xl font-medium pb-8">{hero.subHeading}</h1>
-        <div className="flex gap-x-20 justify-center">
-          {hero.services &&
-            hero.services.map((service, index) => (
-              <div key={index} className="w-[240px]">
-                <img src={service.image} alt="ServiceImage" className="w-full h-[200px] object-cover rounded-lg" />
-                <h3 className="text-lg font-semibold pt-4 pb-2">{service.heading}</h3>
-                <p className="text-[var(--website-9-color-4)]">{service.description}</p>
-              </div>
-            ))}
+          <p className="w-36 md:text-xl font-medium">{reviews.description}</p>
         </div>
       </div>
     </main>

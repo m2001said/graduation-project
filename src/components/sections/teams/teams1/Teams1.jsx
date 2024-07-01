@@ -1,17 +1,6 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import "./teams1.css";
-import { useSelector } from "react-redux";
-import { useLocation } from "react-router";
-
-const Teams1 = () => {
-  const { pathname } = useLocation();
-  const team = useSelector((state) => {
-    if (pathname.includes("own-page")) {
-      return state.ownTemplate.team;
-    } else {
-      return state.template1.team;
-    }
-  });
+const Teams1 = ({template}) => {
   const [selectedMember, setSelectedMember] = useState(null);
 
   const handleCardClick = (member) => {
@@ -19,10 +8,10 @@ const Teams1 = () => {
   };
   return (
     <div className="team1 design-1">
-      <h2 className="team1-head">{team.title}</h2>
+      <h2 className="team1-head">{template.team.title}</h2>
       <div className="team1-Card">
         <div className="team1-Card-main">
-          {team.members.map((member, index) => (
+          {template.team.members.map((member, index) => (
             <div className="team1-Card-main-show" key={index} onClick={() => handleCardClick(member)}>
               <img className="team1-Card-main-img" src={member.imgUrl} alt={member.name} />
               {selectedMember && selectedMember.id === member.id && (

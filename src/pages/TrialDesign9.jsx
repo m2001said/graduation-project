@@ -9,12 +9,9 @@ import Teams9 from "../components/sections/teams/teams9/Teams9";
 import Feature9 from "../components/sections/features/feature9/Feature9";
 import Contact9 from "../components/sections/contacts/contact9/Contact9";
 import Pricing9 from "../components/sections/pricings/pricing9/Pricing9";
-import { useSelector } from "react-redux";
+import TrialDesign from "./TrialDesign";
 const TrialDesign9 = () => {
-  const state = useSelector((state) => state.template9);
-  const reorderedComponents = Object.keys(state);
   const componentMapping = {
-    
     about: About9,
     projects: Pricing9,
     services: Services9,
@@ -22,21 +19,13 @@ const TrialDesign9 = () => {
     team: Teams9,
     testimonials: Testimonials9,
     contact: Contact9,
-
   };
- return (
-  <div className="TrialDesign9">
+  return (
+    <div className="TrialDesign9">
       <main>
-      <Hero9 className="trialdesign9"/>
-        {reorderedComponents.map((_component) => {
-          const Component = componentMapping[_component];
-          return Component && <Component key={_component} className="trialdesign9" />;
-        })}
+        <TrialDesign componentMapping={componentMapping} HeroComponent={Hero9} FooterComponent={Footer9} template={"template9"} />;
       </main>
-      
-      <Footer9 className="trialdesign9" />
     </div>
-    
   );
 };
 

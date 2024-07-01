@@ -1,68 +1,57 @@
-/* eslint-disable import/first */
-
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import SwiperCore from 'swiper/core'; // Import core Swiper library
-import { useSelector } from 'react-redux';
-// Import required modules from 'swiper/modules'
 import { Navigation, Pagination, Autoplay } from 'swiper/modules';
-
-// Register modules with SwiperCore
-SwiperCore.use([Navigation, Pagination, Autoplay]);
-
-import 'swiper/css'; // Import Swiper styles
+import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 
-const Testimonials13 = () => {
-  const testimonials = useSelector((state) => state.template13.testimonials);
+const Testimonials13 = ({ template }) => {
+  const testimonials = template.testimonials;
 
   const Card = ({ testimonial }) => {
-    const { title, subtitle, imgUrl, description } = testimonial;
+    const { name, location, imgUrl, opinion } = testimonial;
     return (
-      <div className="testimonial-card justify-center px-5 py-8">
-        <div className="testimonial-content justify-between items-center px-2 hover:bg-[var(--website-13-color-5)] hover:text-[var(--website-13-color-1)]">
-          <img src={imgUrl} alt={title} className="testimonial-avatar rounded-full border-4 border-[var(--website-13-color-2)] hover:border-[var(--website-13-color-4)]" />
-          <p className="testimonial-name">{title}</p>
-          <p className="testimonial-title">{subtitle}</p>
-          <hr />
-          <p className="testimonial-description">{description}</p>
-        </div>
+      <div className="bg-[var(--website-13-color-5)] hover:bg-[var(--website-13-color-2)] text-[var(--website-13-color-1)] p-6 rounded-lg shadow-lg transition-all duration-300">
+        <img
+          src={imgUrl}
+          alt={name}
+          className="rounded-full border-4 border-[var(--website-13-color-2)] hover:border-[var(--website-13-color-4)] mx-auto mb-4 w-24 h-24"
+        />
+        <p className="text-center font-bold text-lg">{name}</p>
+        <p className="text-center text-[var(--website-13-color-6)]">{location}</p>
+        <hr className="my-4 border-[var(--website-13-color-2)]" />
+        <p className="text-center text-sm transition-colors duration-300 hover:text-[var(--website-13-color-5)]">{opinion}</p>
       </div>
     );
   };
 
-  // Use a state variable to track window width
-  const [windowWidth, setWindowWidth] = React.useState(window.innerWidth);
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
-  React.useEffect(() => {
+  useEffect(() => {
     const handleResize = () => setWindowWidth(window.innerWidth);
     window.addEventListener('resize', handleResize);
-
     return () => window.removeEventListener('resize', handleResize);
   }, []);
 
-  // Determine slidesPerView based on window width
-  const slidesPerView = windowWidth > 768 ? 3 : 1; // Adjust breakpoint as needed
+  const slidesPerView = windowWidth > 768 ? 3 : 1;
 
   return (
-    <div className="testimonial-container13 hover:bg-[var(--website-13-color-2)] px-6 items-center justify-around ">
-      <p>{testimonials.title}</p>
-      <h1 className="testimonial-heading">
-        {testimonials.title}{" "}
-        <span className="testimonial-highlight">{testimonials.subtitle}</span>{" "}
-        {testimonials.description}
+    <div className="px-6 py-8 bg-[var(--website-13-color-3)] text-center">
+      <p className="text-[var(--website-13-color-4)]">{testimonials.title}</p>
+      <h1 className="text-[var(--website-13-color-2)] text-3xl font-semibold mb-8">
+        {testimonials.subtitle}
+        <span className="block text-[var(--website-13-color-4)]">{testimonials.description}</span>
       </h1>
       <Swiper
-        spaceBetween={20} // Adjust spacing between slides
-        slidesPerView={slidesPerView} // Dynamically set based on window width
-        autoplay={{ delay: 3000 }} // Enable autoplay with 3-second delay
-        navigation // Enable navigation arrows
-        pagination={{ clickable: true }} // Enable pagination dots
+        spaceBetween={20}
+        slidesPerView={slidesPerView}
+        autoplay={{ delay: 3000 }}
+        navigation
+        pagination={{ clickable: true }}
       >
-        {testimonials.testimonial.map((testimonial, index) => (
-          <SwiperSlide key={index}>
-            <Card testimonial={testimonial}  />
+        {testimonials.testimonials.map((testimonial, index) => (
+          <SwiperSlide key={index}>
+            <Card testimonial={testimonial} />
           </SwiperSlide>
         ))}
       </Swiper>

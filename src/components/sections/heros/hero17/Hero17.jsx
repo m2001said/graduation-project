@@ -30,7 +30,7 @@ const Hero17 = () => {
 
               {/* button section */}
               <div>
-                <PrimaryButton17 className="order-3" />
+            
               </div>
             </div>
             {/* image section */}

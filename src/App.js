@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Route, Routes } from "react-router";
 import MainNav from "./components/mainPage/mainNavbar/MainNav";
 import Dashboard from "./pages/Dashboard";
@@ -11,10 +11,10 @@ import ProtectedRoute from "./pages/ProtectedRoute";
 
 import YourWebsites from "./pages/YourWebsites.jsx";
 const trialDesignComponents = Array.from({ length: 18 }, (_, i) => require(`./pages/TrialDesign${i + 1}`).default);
+const websites = Array.from({ length: 18 }, (_, i) => require(`./pages/TrialDesign${i + 1}`).default);
 
 function App() {
   const [isModalOpen, setIsModalOpen] = useState(false);
-
   const toggleModal = () => {
     setIsModalOpen(!isModalOpen);
   };
@@ -22,36 +22,87 @@ function App() {
   return (
     <>
       <MainNav toggleModal={toggleModal} />
-      <div style={{ marginTop: "77px" }}>
+      <div style={{ marginTop: "77px" }} id="template-container">
         <Routes>
           <Route path="/" element={<MainPage toggleModal={toggleModal} isModalOpen={isModalOpen} />} />
-          <Route path="/designs" element={
-            <ProtectedRoute>
-              <DesignsPage />
-            </ProtectedRoute>
-          } />
+          <Route
+            path="/designs"
+            element={
+              <ProtectedRoute>
+                <DesignsPage />
+              </ProtectedRoute>
+            }
+          />
           <Route path="/websites" element={<YourWebsites />} />
-          <Route path="/page-craft" element={
-            <ProtectedRoute>
-              <BuildYourPage />
-            </ProtectedRoute>
-          } />
-          <Route path="/own-page" element={
-            <ProtectedRoute>
-              <OwnPage />
-            </ProtectedRoute>
-          } />
+          <Route
+            path="/page-craft"
+            element={
+              <ProtectedRoute>
+                <BuildYourPage />
+              </ProtectedRoute>
+            }
+          />
+          <Route
+            path="/own-page"
+            element={
+              <ProtectedRoute>
+                <OwnPage />
+              </ProtectedRoute>
+            }
+          />
 
           {trialDesignComponents.map((Component, index) => (
-            <Route key={`preview-trial-design${index}`} path={`/preview-trial-design${index + 1}`} element={
-              <ProtectedRoute>
-                <Component />
-              </ProtectedRoute>
-            } />
+            <Route
+              key={`preview-trial-design${index}`}
+              path={`/preview-trial-design${index + 1}`}
+              element={
+                <ProtectedRoute>
+                  <Component />
+                </ProtectedRoute>
+              }
+            />
+          ))}
+
+          {/* websites */}
+          {websites.map((Component, index) => (
+            <Route
+              key={`zwep${index}`}
+              path={`/zweb${index + 1}`}
+              element={
+                <ProtectedRoute>
+                  <Component />
+                </ProtectedRoute>
+              }
+            />
           ))}
           <Route element={<Dashboard />}>
+            {websites.map((Component, index) => (
+              <Route
+                key={`edit-zweb${index}`}
+                path={`/edit-zweb${index + 1}`}
+                element={
+                  <ProtectedRoute>
+                    <Component />
+                  </ProtectedRoute>
+                }
+              />
+            ))}
+          </Route>
+
+
+
+          <Route element={<Dashboard />}>
             {trialDesignComponents.map((Component, index) => (
-              <Route key={`build-trial-design${index}`} path={`/build-trial-design${index + 1}/:pageId`} element={<Component />} />
+              // <Route key={`build-trial-design${index}`} path={`/build-trial-design${index + 1}/:pageId`} element={<Component />} />
+              <Route
+                key={`build-trial-design${index}`}
+                path={`/build-trial-design${index + 1}`}
+                element={
+                  <ProtectedRoute>
+                    <Component />
+                  </ProtectedRoute>
+                }
+              />
             ))}
           </Route>
           <Route path="*" element={<NotFound />} />

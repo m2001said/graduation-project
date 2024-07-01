@@ -32,22 +32,26 @@ const Business7 = () => {
 
   const { buttonText, title, features } = feature; // Change feature to items
   return (
-    <section id="features" className={layout.section}>
-      <div className={layout.sectionInfo}>
-        <h2 className={styles.heading2}>
-          {title.title} <br className="sm:block hidden" /> {title.subtitle}
-        </h2>
-        <p className={`${styles.paragraph} max-w-[470px] mt-5`} style={{ color: "var(--color6)" }}>
-          {title.content}
-        </p>
-        <Button7 text={buttonText} styles={`px-4 py-5 mt-6 text-[var(--color2)] rounded-full bg-[var(--color3)]`} />
+    <div className={`bg-primary ${styles.paddingX} ${styles.flexStart}`}>
+      <div className={`${styles.boxWidth}`}>
+        <section id="features" className={layout.section}>
+          <div className={layout.sectionInfo}>
+            <h2 className={styles.heading2}>
+              {title.title} <br className="sm:block hidden" /> {title.subtitle}
+            </h2>
+            <p className={`${styles.paragraph} max-w-[470px] mt-5`} style={{ color: "var(--color6)" }}>
+              {title.content}
+            </p>
+            <Button7 text={buttonText} styles={`px-4 py-5 mt-6 text-[var(--color2)] rounded-full bg-[var(--color3)]`} />
+          </div>
+          <div className={`${layout.sectionImg} flex-col`}>
+            {features.map((f, index) => (
+              <FeatureCard key={index} {...f} index={index} />
+            ))}
+          </div>
+        </section>
       </div>
-      <div className={`${layout.sectionImg} flex-col`}>
-        {features.map((f, index) => (
-          <FeatureCard key={index} {...f} index={index} />
-        ))}
-      </div>
-    </section>
+    </div>
   );
 };
 

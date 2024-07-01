@@ -2,10 +2,10 @@
   /* these are temporary colors , you should change it  */
 
   /* --color-2-bg: #1f1f38; */
---website-2-color-1: #1f1f38;
+  --website-2-color-1: #1f1f38;
   /* --color-2-bg-variant: #2c2c6c; */
- --website-2-color-2: #2c2c6c;
- 
+  --website-2-color-2: #2c2c6c;
+
   /* --website-2-color-3: #4db5ff; */
   --website-2-color-3: #4db5ff;
   /* --website-2-color-3-variant: rgba(77, 181, 255, 0.4); */
@@ -16,10 +16,9 @@
   /* --color-2-golden: rgba(255, 223, 0, 0.8); */
   /* --color-2-nav: rgba(86, 170, 188, 0.8); */
   /* --color-2-grey: rgba(81, 90, 89, 0.965); */
---website-2-color-6: rgba(81, 90, 89, 0.965);
+  --website-2-color-6: rgba(81, 90, 89, 0.965);
 
-
-/******/
+  /******/
   --container2-width-lg: 75%;
   --container2-width-md: 86%;
   --container2-width-sm: 90%;
@@ -28,7 +27,19 @@
   /* and add your */
 }
 
-
+.btn-2 {
+  width: 70%;
+  background-color: var(--website-2-color-3) !important;
+  color: var(--website-2-color-5) !important;
+  border: 1px solid var(--website-2-color-3) !important;
+  border-radius:  0.5rem !important;
+  width: max-content; /*to make it fit exactly its content*/
+  display: inline-block;
+  color: var(--website-2-color-3);
+  padding: 0.75rem 1.2rem; /*top-bottom   left-right**/
+  border-radius: 0.4rem;
+  cursor: pointer;
+}
 .trialdesign2 {
   font-family: "Poppins", sans-serif;
   background: var(--website-2-color-1) url("https://res.cloudinary.com/dowtlcpxj/image/upload/v1703134021/bg-texture_up9ylo.png");

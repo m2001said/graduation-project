@@ -1,8 +1,9 @@
 import React from "react";
 import { useSelector } from "react-redux";
 
-const Footer17 = () => {
-  const footer = useSelector((state) => state.template17.footer);
+
+const Footer17 = ({ template }) => {
+  const footer = template.footer;
 
   return (
     <>
@@ -15,7 +16,7 @@ const Footer17 = () => {
 
           {/* grid section */}
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-14 border-b-2 border-[var(--website-17-color-4)] pb-6">
-            {footer.icons.map((item, index) => (
+            {footer.medias.map((item, index) => (
               <div key={index} className="text-center space-y-4">
                 <div className="flex justify-center">
                   <img src={item.icon} className="text-5xl icon-17" alt={`Icon ${index}`} />
@@ -23,18 +24,18 @@ const Footer17 = () => {
                 {/* Rendering different icon types based on item properties */}
                 <p className="font-bold">{item.title}</p>
                 <p>{item.subtitle}</p>
-                {item.description && <p>{item.description}</p>}
-              </div>
+               </div>
             ))}
           </div>
 
           {/* footer section */}
           <div className="flex justify-between p-4 items-center">
-            {footer.footerSection.map((item, index) => (
-              <a key={index} href="#" className="text-[var(--website-17-color-4)]">
-                {item.title}
+             <a href="#" className="text-[var(--website-17-color-4)]">
+                {footer.description}
               </a>
-            ))}
+               <a href="" className="text-[var(--website-17-color-4)]">Terms of Service</a>
+              <a href="" className="text-[var(--website-17-color-4)]">Privacy Policy</a>
+            
           </div>
         </div>
       </div>
