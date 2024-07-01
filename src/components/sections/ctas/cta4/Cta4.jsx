@@ -10,9 +10,9 @@ const Cta4 = ({ template }) => {
         <div className="flexColCenter inner-container">
           <span className="primaryText">{cta.title}</span>
           <span className="secondaryText">
-            {cta.description1}
+            {cta.description}
             <br />
-            {cta.description2}
+            {cta.text}
           </span>
           <button className="button">
             <a href={cta.email}> {cta.buttonText}</a>

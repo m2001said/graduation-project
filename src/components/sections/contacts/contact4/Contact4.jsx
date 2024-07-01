@@ -9,7 +9,7 @@ const Contact4 = ({ template }) => {
         {/* left side */}
         <div className="flexColStart c-left">
           <span className="orangeText">{contact.title}</span>
-          <span className="primaryText">{contact.sub_title}</span>
+          <span className="primaryText">{contact.subtitle}</span>
           <span className="secondaryText">{contact.description} </span>
 
           <div className="flexColStart contactModes">
@@ -25,7 +25,7 @@ const Contact4 = ({ template }) => {
                     <span className="secondaryText">{contact.contacts[0].phone}</span>
                   </div>
                 </div>
-                <div className="flexCenter button">{contact.contacts[0].btn_contact}</div>
+                <div className="flexCenter button">{contact.contacts[0].buttonText}</div>
               </div>
 
               <div className="flexColCenter mode">
@@ -38,7 +38,7 @@ const Contact4 = ({ template }) => {
                     <span className="secondaryText">{contact.contacts[1].phone}</span>
                   </div>
                 </div>
-                <div className="flexCenter button">{contact.contacts[1].btn_contact}</div>
+                <div className="flexCenter button">{contact.contacts[1].buttonText}</div>
               </div>
             </div>
 
@@ -54,7 +54,7 @@ const Contact4 = ({ template }) => {
                     <span className="secondaryText">{contact.contacts[2].phone}</span>
                   </div>
                 </div>
-                <div className="flexCenter button">{contact.contacts[2].btn_contact}</div>
+                <div className="flexCenter button">{contact.contacts[2].buttonText}</div>
               </div>
 
               <div className="flexColCenter mode">
@@ -67,7 +67,7 @@ const Contact4 = ({ template }) => {
                     <span className="secondaryText">{contact.contacts[3].phone}</span>
                   </div>
                 </div>
-                <div className="flexCenter button">{contact.contacts[3].btn_contact}</div>
+                <div className="flexCenter button">{contact.contacts[3].buttonText}</div>
               </div>
             </div>
           </div>
@@ -76,7 +76,7 @@ const Contact4 = ({ template }) => {
         {/* right side */}
         <div className="flexEnd c-right">
           <div className="image-container">
-            <img src={contact.UrlImage} alt="" />
+            <img src={contact.imgUrl} alt="" />
           </div>
         </div>
       </div>

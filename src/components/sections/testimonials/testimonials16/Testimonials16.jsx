@@ -32,7 +32,7 @@ const Testimonials16 = ({ template }) => {
           },
         }}
       >
-        {testimonial.testimonial.map(({ image, title, service, description }, index) => {
+        {testimonial.testimonial.map(({ imgUrl, title, subtitle, description }, index) => {
           return (
             <SwiperSlide className="testimonials__item16" key={index}>
               <div className="testimonial__qoute16">
@@ -43,11 +43,11 @@ const Testimonials16 = ({ template }) => {
               </div>
               <div className="testimonial__content16">
                 <div className="testimonial__img-wrapper16">
-                  <img src={image} alt="" className="testimonial__img16" />
+                  <img src={imgUrl} alt="" className="testimonial__img16" />
                 </div>
                 <div>
                   <h3 className="testimonial__title16">{title}</h3>
-                  <p className="testimonial__service16">{service}</p>
+                  <p className="testimonial__service16">{subtitle}</p>
                 </div>
               </div>
             </SwiperSlide>

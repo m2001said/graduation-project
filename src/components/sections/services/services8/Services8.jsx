@@ -20,7 +20,7 @@ const Services8 = ({ template }) => {
             }}
           >
             <h2 className="h2 text-accent mb-6 serviceC">{services.title}</h2>
-            <h3 className="h3 max-w-[455px] mb-16 serviceC">{services.sub_title}</h3>
+            <h3 className="h3 max-w-[455px] mb-16 serviceC">{services.subtitle}</h3>
             <button className="btn btn-sm serviceC">{services.buttonText}</button>
           </div>
           {/* services */}
@@ -33,7 +33,7 @@ const Services8 = ({ template }) => {
                 return (
                   <div className="border-b border-white/20 h-[146px] mb-[36px] flex" key={index}>
                     <div className="max-w-[476px]">
-                      <h4 className="text-[20px] tracking-wider font-primary font-semibold mb-6">{service.name}</h4>
+                      <h4 className="text-[20px] tracking-wider font-primary font-semibold mb-6">{service.title}</h4>
                       <p className="font-secondary leading-tight">{service.description}</p>
                     </div>
                     <div className="flex flex-col flex-1 items-end">
@@ -41,7 +41,7 @@ const Services8 = ({ template }) => {
                         (/){/* Unicode arrow character */}
                       </a>
                       <a href="#" className="text-gradient text-sm">
-                        {service.link}
+                        {service.linktext}
                       </a>
                     </div>
                   </div>

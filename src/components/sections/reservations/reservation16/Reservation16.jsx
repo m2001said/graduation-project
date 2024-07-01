@@ -33,7 +33,7 @@ const Reservation16 = ({ template }) => {
           <textarea placeholder="Your Message" className="form__input16"></textarea>
         </div>
         <button className="btn16 btn--flex16 reservation__btn16">
-          &#x1F516; {Reservation.btnTable}
+          &#x1F516; {Reservation.buttonText}
           {/* Unicode character for bookmark */}
         </button>
       </form>

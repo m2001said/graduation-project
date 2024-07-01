@@ -33,7 +33,7 @@ const About8 = ({ template }) => {
           {/* text */}
           <div className="flex-1">
             <h2 className="h2 text-accent">{about.title}</h2>
-            <h3 className="h3 mb-4">{about.sub_title}</h3>
+            <h3 className="h3 mb-4">{about.subtitle}</h3>
             <p className="mb-6">{about.description}</p>
             {/* stats */}
             <div className="flex gap-x-6 lg:gap-x-10 mb-12">

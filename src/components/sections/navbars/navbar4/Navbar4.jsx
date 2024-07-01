@@ -27,7 +27,7 @@ const Navbar4 = ({ template }) => {
             </a>
           ))}
           <button className="button">
-            <a href={navbar.mail}>{navbar.buttonText}</a>
+            <a href={navbar.email}>{navbar.buttonText}</a>
           </button>
         </div>
 

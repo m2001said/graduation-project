@@ -12,7 +12,7 @@ const Project4 = ({ template }) => {
       <div className="paddings innerWidth r-container">
         <div className="flexColStart r-head">
           <span className="orangeText">{projects.title}</span>
-          <span className="primaryText">{projects.sub_title}</span>
+          <span className="primaryText">{projects.subtitle}</span>
         </div>
         <Swiper {...sliderSettings}>
           <SlideNextButton />
@@ -20,14 +20,14 @@ const Project4 = ({ template }) => {
           {projects.projects.map((card, i) => (
             <SwiperSlide key={i}>
               <div className="flexColStart r-card">
-                <img src={card.image} alt="home" />
+                <img src={card.imgUrl} alt="home" />
 
                 <span className="secondaryText r-price">
                   <span className="sign">$</span>
                   <span>{card.price}</span>
                 </span>
                 <span className="primaryText">{card.name}</span>
-                <span className="secondaryText">{card.detail}</span>
+                <span className="secondaryText">{card.description}</span>
               </div>
             </SwiperSlide>
           ))}

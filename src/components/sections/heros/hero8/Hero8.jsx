@@ -41,12 +41,12 @@ const Hero8 = ({ template }) => {
           <div className="flex flex-col lg:flex-row gap-y-8 lg:gap-x-14 lg:items-center">
             <div className="flex-1 text-center font-secondary lg:text-left">
               <h1 className="text-[55px] font-bold leading-[0.8] lg:text-[110px]">
-                {hero.Name[0]} <span>{hero.Name[1]}</span>
+                {hero.name} <span>{hero.title}</span>
               </h1>
               <div className="mb-6 text-[36px] lg:text-[60px] font-secondary font-semibold uppercase leading-[1]">
-                <span className="text-white mr-4">{hero.sub_title[0]} </span>
+                <span className="text-white mr-4">{hero.subtitle} </span>
                 <span className="text-accent">
-                  <span>{hero.sub_title[1]}</span>
+                  <span>{hero.jop}</span>
                 </span>
               </div>
               <p className="mb-8 max-w-lg mx-auto lg:mx-0">{hero.description}</p>

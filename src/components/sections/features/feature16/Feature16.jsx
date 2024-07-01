@@ -12,10 +12,10 @@ const Feature16 = ({ template }) => {
         {feature.title}
       </h2>
       <div className="features__grid16 container16 grid16">
-        {feature.feature.map(({ image, title, description }, index) => {
+        {feature.feature.map(({ imgUrl, title, description }, index) => {
           return (
             <div className="features__item16" key={index}>
-              <img src={image} alt="" className="feature__img16" />
+              <img src={imgUrl} alt="" className="feature__img16" />
               <h3 className="feature__title16">{title}</h3>
               <p className="feature__description16">{description}</p>
               <img src={feature.imgUrl} alt="" className="feature__shape16" />

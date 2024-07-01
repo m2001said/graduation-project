@@ -8,7 +8,7 @@ const Hero16 = ({ template }) => {
     <section className="home16" id="home">
       <div className="home__container16 container16">
         <div className="home__content16">
-          <span className="home__sub_title16">{hero.sub_title}</span>
+          <span className="home__sub_title16">{hero.subtitle}</span>
           <h1 className="home__title16">{hero.title}</h1>
           <p className="home__description16">{hero.description}</p>
           <div className="home__btns16">

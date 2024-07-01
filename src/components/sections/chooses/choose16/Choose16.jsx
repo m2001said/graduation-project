@@ -18,7 +18,7 @@ const Choose16 = ({ template }) => {
               Choose.Choose.map((detail, index) => (
                 <div className="choose__details-item16" key={index}>
                   <div className="choose__details-img-wrapper16">
-                    <img src={detail.image} alt="" className="choose_details-img16" />
+                    <img src={detail.imgUrl} alt="" className="choose_details-img16" />
                   </div>
                   <div>
                     <h3 className="choose_details-title16">{detail.title}</h3>
@@ -28,7 +28,7 @@ const Choose16 = ({ template }) => {
               ))}
           </div>
         </div>
-        <img src={Choose.chooseImg} alt="" className="choose__img16" />
+        <img src={Choose.imgUrl} alt="" className="choose__img16" />
       </div>
     </section>
   );

@@ -15,17 +15,17 @@ const Offer16 = ({ template }) => {
         <button className="swiper-button16" onClick={() => window.swiper.slidePrev()}>
           &lt; Prev
         </button>
-        {Offer.Offer.map(({ image, title, discount, description }, index) => (
+        {Offer.Offer.map(({ imgUrl, title, discount, description }, index) => (
           <SwiperSlide className="offer__item16" key={index}>
             <div className="offer__img-wrapper16">
-              <img src={image} alt="" className="offer_img16" />
+              <img src={imgUrl} alt="" className="offer_img16" />
             </div>
             <div className="offer__content16">
               <h3 className="offer__title16">{title}</h3>
               <span className="offer_discount16">{discount}</span>
               <p className="offer__description16">{description}</p>
               <a href="/" className="btn16">
-                {Offer.btnOffer}
+                {Offer.buttonText}
               </a>
             </div>
           </SwiperSlide>

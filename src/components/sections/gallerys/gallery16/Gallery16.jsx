@@ -9,10 +9,10 @@ const Gallery16 = ({ template }) => {
         Our Photo Gallery
       </h2>
       <div className="gallery__grid16 container16 grid16">
-        {Gallary.Gallary.map(({ title, image }, index) => {
+        {Gallary.Gallary.map(({ title, imgUrl }, index) => {
           return (
             <div className="gallery__item16" key={index}>
-              <img src={image} alt="" className="gallery_img16" />
+              <img src={imgUrl} alt="" className="gallery_img16" />
               <a href="/" className="gallery__icon16">
                 {/* Replace react-icons with Unicode character */}
                 &#43;

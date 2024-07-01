@@ -10,11 +10,11 @@ const Menu16 = ({ template }) => {
         Let's Check Our Menu
       </h2>
       <div className="menu__grid16 container16 grid16">
-        {Menu.menus.map(({ image, title, description, price }, index) => {
+        {Menu.Menus.map(({ imgUrl, title, description, price }, index) => {
           return (
             <div className="menu__item16 grid16" key={index}>
               <div className="menu__img-wrapper16">
-                <img src={image} alt="" className="menu__img16" />
+                <img src={imgUrl} alt="" className="menu__img16" />
               </div>
               <div className="menu__data16">
                 <div>

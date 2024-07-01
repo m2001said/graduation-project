@@ -38,8 +38,8 @@ const Hero4 = ({ template }) => {
             <h1>{hero.title}</h1>
           </div>
           <div className="flexColStart secondaryText flexhero-des">
-            <span>{hero.description1}</span>
-            <span>{hero.description2}</span>
+            <span>{hero.description}</span>
+            <span>{hero.text}</span>
           </div>
 
           <div className="flexCenter search-bar">

@@ -10,7 +10,7 @@ const Statistics16 = ({ template }) => {
         {Statistics.Statistics.map((stat, index) => (
           <div className="stats__item16" key={index}>
             <div className="stats__img-wrapper16">
-              <img src={stat.image} alt="" className="stats__img16" />
+              <img src={stat.imgUrl} alt="" className="stats__img16" />
             </div>
             <div>
               <p className="stats__no16">{stat.number}</p>
