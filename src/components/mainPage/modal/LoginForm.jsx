@@ -16,9 +16,14 @@ const LoginForm = ({ toggleForm, toggleModal }) => {
 
   const handleSignInClick = async () => {
     try {
-      await dispatch(loginUserAsync({ email, password }));
+      const user = await dispatch(loginUserAsync({ email, password }));
       toggleModal();
-      navigate("/designs");
+
+      if (user.payload.user.role === "admin" || user.payload.user.role === "super-admin") {
+        navigate("/admin");
+      } else {
+        navigate("/designs");
+      }
     } catch (error) {
       console.error("Login failed:", error);
       setLoginError("Invalid login credentials. Please try again.");
