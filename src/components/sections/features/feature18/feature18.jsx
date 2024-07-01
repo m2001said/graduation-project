@@ -16,7 +16,7 @@ const feature = template.features;
           <div>
             <div className="space-y-5 sm:p-12 pb-6">
               <h1 className="text-3xl sm:text-4xl font-bold font-serif">{feature.title}</h1>
-              <p className="leading-8 tracking-wide text-base">{feature.subTitle}</p>
+              <p className="leading-8 tracking-wide text-base">{feature.subtitle}</p>
               <p className="text-base">{feature.description}</p>
               <button className="button-outline ">{feature.buttonText}</button>
             </div>

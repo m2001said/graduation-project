@@ -22,7 +22,7 @@ const Teams10 = ({template}) => {
                   <img src={data.imgUrl} alt="" className="h-[220px] w-[150px] object-cover rounded-md " />
                   <div>
                     <h2 className="font-semibold">{data.title}</h2>
-                    <p className="text-sm text-gray-700 dark:text-gray-400">{data.author}</p>
+                    <p className="text-sm text-gray-700 dark:text-gray-400">{data.name}</p>
                     <div className="flex items-center gap-1">
                       <img src={data.icon} alt="" className="w-6" />
                       <span>{data.rating}</span>

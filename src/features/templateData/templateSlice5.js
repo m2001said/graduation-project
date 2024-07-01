@@ -86,10 +86,10 @@ const initialState = {
     ],
   },
 
-  features2: {
+  blogs: {
     title: "Unaccompanied minor lounge",
     imgUrl: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1703116246/fea5-2_q5na0z.jpg",
-    features: [
+    blogs: [
       {
         title: "Help through the airport",
         description: "You can also call airlines from your phone and book aflight ticket to one of your faverite destinations",
