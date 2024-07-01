@@ -23,7 +23,7 @@ const services = template.services;
                 </div>
                 <h1 className="text-xl font-bold">{data.name}</h1>
                 <p>{data.description}</p>
-                <a href={data.url} className="inline-block text-lg font-semibold py-3 text-[--website-18-color-1] group-hover:text-black duration-300">
+                <a href={data.linkText} className="inline-block text-lg font-semibold py-3 text-[--website-18-color-1] group-hover:text-black duration-300">
                   {data.buttonText}
                 </a>
               </div>

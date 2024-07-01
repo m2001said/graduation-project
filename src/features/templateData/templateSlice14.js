@@ -40,19 +40,19 @@ const initialState = {
         imgUrl: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707602286/headphone_qbcak3.png",
         subtitle: "Beats Solo",
         title: "Wireless",
-        title2: "Headphone",
+        description: "Headphone",
       },
       {
         imgUrl: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707602303/vr_zzinjy.png",
         subtitle: "Beats Solo",
         title: "Wireless",
-        title2: "Virtual",
+        description: "Virtual",
       },
       {
         imgUrl: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707602295/macbook_dxcdn8.png",
         subtitle: "Beats Solo",
         title: "Branded",
-        title2: "Laptops",
+        description: "Laptops",
       },
     ],
     buttonText: "Shop By Category",
@@ -120,16 +120,16 @@ const initialState = {
     title: "Fine Smile",
     date: "10 Jan to 28 Jan",
     imgUrl: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707603385/headphone_pkjxnj.png",
-    subTitle: "Air Solo Bass",
-    session: "Winter Sale",
+    subtitle: "Air Solo Bass",
+    text: "Winter Sale",
     description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque reiciendis",
     buttonText: "Shop Now",
   },
 
-  products: {
+  projects: {
     title: "Our Products",
     description: "Explore Our Products",
-    products: [
+    projects: [
       {
         imgUrl: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707604733/p-1_mqzmix.jpg",
         title: "Boat Headphone",
@@ -181,19 +181,19 @@ const initialState = {
       {
         title: "How to choose perfect smartwatch",
         subtitle: "minima facere deserunt vero illo beatae deleniti eius dolores consequuntur, eligendi corporis maiores molestiae Porro?",
-        published: "Jan 20, 2024 by Dilshad",
+        description: "Jan 20, 2024 by Dilshad",
         imgUrl: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707604612/blog-1_n5jvci.jpg",
       },
       {
         title: "How to choose perfect gadget",
         subtitle: "minima facere deserunt vero illo beatae deleniti eius dolores consequuntur, eligendi corporis maiores molestiae Porro?",
-        published: "Jan 20, 2024 by Satya",
+        description: "Jan 20, 2024 by Satya",
         imgUrl: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707604616/blog-2_nmxkbb.jpg",
       },
       {
         title: "How to choose perfect VR headset",
         subtitle: "minima facere deserunt vero illo beatae deleniti eius dolores consequuntur, eligendi corporis maiores molestiae Porro?",
-        published: "Jan 20, 2024 by Sabir",
+        description: "Jan 20, 2024 by Sabir",
         imgUrl: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707604621/blog-3_ko9kq9.jpg",
       },
     ],

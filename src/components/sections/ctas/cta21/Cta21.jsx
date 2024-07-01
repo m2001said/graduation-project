@@ -17,7 +17,7 @@ const Cta21 = ({template}) => {
             </div>
             <div className="sm:grid sm:place-items-center">
               <a
-                href={cta2.url}
+                href={cta2.linkText}
                 className="inline-block font-semibold py-2 px-6 bg-[--website-18-color-1] text-white hover:opacity-[0.8] duration-200 tracking-widest uppercase "
               >
                 {cta2.buttonText}

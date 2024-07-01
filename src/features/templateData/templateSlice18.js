@@ -38,7 +38,7 @@ const initialState = {
 
   hero: {
     title: "Car Rental",
-    subTitle: "Effortless",
+    subtitle: "Effortless",
     description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione veritatis explicabo quibusdam quae reprehenderit ab",
     buttonText: "Get Started",
     imgUrl: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1708094043/banner-car_nzxi5c.png",
@@ -46,7 +46,7 @@ const initialState = {
 
   features: {
     title: "About us",
-    subTitle: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, magnam! Tenetur odio quo et maxime?",
+    subtitle: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, magnam! Tenetur odio quo et maxime?",
     description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, tempora.",
     buttonText: "Get Started",
     imgUrl: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1708094582/car1_yzpkby.png",
@@ -59,21 +59,21 @@ const initialState = {
         title: "Best Price",
         description: "Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
         buttonText: "Learn more",
-        url: "#",
+        linkText: "#",
         icon: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1708095320/icons8-compact-camera-24_sbvw3e.png",
       },
       {
         title: "Fast and Safe",
         description: "Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
         buttonText: "Learn more",
-        url: "#",
+        linkText: "#",
         icon: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1708095302/icons8-notebook-32_wp5emo.png",
       },
       {
         title: "Experience Drivers",
         description: "Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
         buttonText: "Learn more",
-        url: "#",
+        linkText: "#",
         icon: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1708095310/icons8-microsoft-onenote-24_jrkmre.png",
       },
     ],
@@ -136,17 +136,18 @@ const initialState = {
   cta: {
     title: "Get Started with our app",
     description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique magnam harum accusantium odit?",
-    imgs: [ "https://res.cloudinary.com/dmcdea0b9/image/upload/v1708098410/pattern_t0naia.jpg",
-            "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707090485/app_store_s6wzhh.png",
-             "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707090481/play_store_nmzfln.png",
+    imgs: [
+      "https://res.cloudinary.com/dmcdea0b9/image/upload/v1708098410/pattern_t0naia.jpg",
+      "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707090485/app_store_s6wzhh.png",
+      "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707090481/play_store_nmzfln.png",
     ],
-    },
+  },
 
   contact: {
     title: "Let's collaborate on your upcoming car rental venture",
     description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem necessitatibus quasi et vel,",
     buttonText: "Contact",
-    url: "#",
+    linkText: "#",
   },
 
   footer: {
