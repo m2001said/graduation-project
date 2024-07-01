@@ -22,7 +22,7 @@ const Hero15 = ({ template }) => {
             </div>
             <div className="flex items-center w-fit text-[13px] font-bold pt-4">
               <span className="block rounded-full h-14 border border-black border-solid shadowbtn">
-                <button className="bg-transparenent darkModeTextColor15 h-full font-bold px-10 rounded-full hover:border-2 border-solid bg-[var(--color3)]">
+                <button className="bg-transparenent darkModeTextColor15 h-full font-bold px-10 rounded-full hover:border-2 border-solid bg-[var(--website-15-color-5)]">
                   {hero.buttonText}
                 </button>
               </span>

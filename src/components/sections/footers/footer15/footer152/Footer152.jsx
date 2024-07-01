@@ -11,7 +11,7 @@ const Blog15 = ({ template }) => {
           <p className="text-2xl blog15_6 font-bold hover:text-[#29a587] my-[15px]">{title}</p>
           <p className="blog15_5 opacity-80 leading-[1.7rem]">{description} </p>
           <span className="pt-[10px]">
-            <a href="#" className="font-bold flex items-center gap-x-2 no-underline text-[var(--website-15-color-2)] hover:text-[var(--website-15-color-3)]">
+            <a href="#" className="font-bold flex items-center gap-x-2 no-underline text-[var(--website-15-color-5)] hover:text-[var(--website-15-color-2)]">
               {blog.buttonText}
               <img src={blog.imgUrl} style={{ width: "30px", height: "30px" }} alt="icon" />
             </a>

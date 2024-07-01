@@ -4,7 +4,7 @@ import Hero7 from "../components/sections/heros/hero7/Hero7";
 import Stats7 from "../components/sections/statistics/statistics7/Statistics7";
 import Feature7 from "../components/sections/features/feature7/Feature7";
 import Items7 from "../components/sections/items/items7/Items7";
-import Services7 from "../components/sections/services/services7/Services11";
+import Services7 from "../components/sections/services/services7/Services7";
 import Testimonials7 from "../components/sections/testimonials/testimonials7/Testimonials7";
 import Logos7 from "../components/sections/logos/logos7/Logos7";
 import Cta7 from "../components/sections/ctas/cta7/Cta7";

@@ -1,14 +1,14 @@
 import React from "react";
 import "./feature11.css";
 
-const Footer11 = ({ template }) => {
-  const footer = template.footer;
+const Feature11 = ({ template }) => {
+  const features = template.features;
 
   return (
     <section className="blog11 container section11" id="blog">
-      <h2 className="section__title11">{footer.title}</h2>
+      <h2 className="section__title11">{features.title}</h2>
       <div className="blog__container11 grid11">
-        {footer.cards.map((card, index) => (
+        {features.features.map((card, index) => (
           <div className="blog__card11" key={index}>
             <div className="blog__thumb11">
               <a href="#">
@@ -33,4 +33,4 @@ const Footer11 = ({ template }) => {
   );
 };
 
-export default Footer11;
+export default Feature11;
