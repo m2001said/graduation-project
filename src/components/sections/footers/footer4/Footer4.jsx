@@ -1,23 +1,13 @@
 import React from "react";
-import { useSelector } from "react-redux";
 import "./footer4.css";
-import { useLocation } from "react-router";
 
-const Footer4 = () => {
-  const { pathname } = useLocation();
-  const footer = useSelector((state) => {
-    if (pathname.includes("own-page")) {
-      return state.ownTemplate.footer;
-    } else {
-      return state.template4.footer;
-    }
-  });
-
+const Footer4 = ({ template }) => {
+  const footer = template.footer;
   return (
     <div className="f-wrapper">
       <div className="paddings innerWidth flexCenter f-container">
         <div className="flexColStart f-left">
-          <img src={footer.logo} alt="" width={120} />
+          <img src={footer.imgUrl} alt="" width={120} />
           <span className="secondaryText">{footer.description}</span>
         </div>
 

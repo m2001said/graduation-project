@@ -1,16 +1,7 @@
 import React, { useEffect } from "react";
-import { useSelector } from "react-redux";
-import { useLocation } from "react-router";
 
-const Contact8 = () => {
-  const { pathname } = useLocation();
-  const Contact = useSelector((state) => {
-    if (pathname.includes("own-page")) {
-      return state.ownTemplate.contact;
-    } else {
-      return state.template8.contact;
-    }
-  });
+const Contact8 = ({ template }) => {
+  const contact = template.contact;
 
   useEffect(() => {
     // AOS initialization and refresh removed
@@ -24,8 +15,8 @@ const Contact8 = () => {
           {/* text */}
           <div className="flex-1 flex justify-center items-center">
             <div className="">
-              <h4 className="text-xl uppercase text-accent font-medium mb-2 tracking-wide">{Contact.sub_title}</h4>
-              <h2 className="text-[45px] lg:text-[90px] leading-none mb-12">{Contact.title}</h2>
+              <h4 className="text-xl uppercase text-accent font-medium mb-2 tracking-wide">{contact.subtitle}</h4>
+              <h2 className="text-[45px] lg:text-[90px] leading-none mb-12">{contact.title}</h2>
             </div>
           </div>
           {/* form */}
@@ -44,7 +35,7 @@ const Contact8 = () => {
               className="bg-transparent border-b py-12 outline-none w-full placeholder:text-white focus:border-accent transition-all resize-none mb-12"
               placeholder="Your message"
             ></textarea>
-            <button className="btn btn-lg">{Contact.buttonText}</button>
+            <button className="btn btn-lg">{contact.buttonText}</button>
           </form>
         </div>
       </div>

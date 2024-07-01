@@ -1,16 +1,8 @@
 import React, { useState, useEffect } from "react";
-import { useSelector } from "react-redux";
-import { useLocation } from "react-router";
 
-const About8 = () => {
-  const { pathname } = useLocation();
-  const about = useSelector((state) => {
-    if (pathname.includes("own-page")) {
-      return state.ownTemplate.about;
-    } else {
-      return state.template8.about;
-    }
-  });
+const About8 = ({ template }) => {
+  const about = template.about;
+
   const [inView, setInView] = useState(false);
 
   useEffect(() => {
@@ -35,11 +27,13 @@ const About8 = () => {
       <div className="container mx-auto">
         <div className="flex flex-col gap-y-10 lg:flex-row lg:items-center lg:gap-x-20 lg:gap-y-0 h-screen">
           {/* image */}
-          <div className="flex-1  bg-contain bg-no-repeat h-[640px] mix-blend-lighten bg-top" style={{ backgroundImage: `url(${about.imgUrl})` }}></div>
+          <div className="flex-1  bg-contain bg-no-repeat h-[640px] mix-blend-lighten bg-top" style={{ backgroundImage: `url(${about.imgUrl})` }}>
+            <img src={about.imgUrl} />
+          </div>
           {/* text */}
           <div className="flex-1">
             <h2 className="h2 text-accent">{about.title}</h2>
-            <h3 className="h3 mb-4">{about.sub_title}</h3>
+            <h3 className="h3 mb-4">{about.subtitle}</h3>
             <p className="mb-6">{about.description}</p>
             {/* stats */}
             <div className="flex gap-x-6 lg:gap-x-10 mb-12">
@@ -68,7 +62,7 @@ const About8 = () => {
             <div className="flex gap-x-8 items-center">
               <button className="btn btn-lg">{about.buttonText}</button>
               <a href="#" className="text-gradient btn-link">
-                {about.linktext}
+                {about.linkText}
               </a>
             </div>
           </div>

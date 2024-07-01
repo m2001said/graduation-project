@@ -1,7 +1,7 @@
 import React, { useState, useRef, useEffect } from "react";
 import "./navbar1.css";
 
-const Navbar1 = ({template}) => {
+const Navbar1 = ({ template }) => {
   const [openMenu, setOpenMenu] = useState(false);
   const [isSmallScreen, setIsSmallScreen] = useState(window.innerWidth <= 667);
   const menuRef = useRef(null);
