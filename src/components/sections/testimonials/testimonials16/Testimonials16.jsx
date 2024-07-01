@@ -5,7 +5,7 @@ import "swiper/css";
 import "./testimonials16.css";
 
 const Testimonials16 = ({ template }) => {
-  const testimonial = template.testimonial;
+  const testimonials = template.testimonials;
 
   const [activeIndex, setActiveIndex] = useState(0);
 
@@ -32,7 +32,7 @@ const Testimonials16 = ({ template }) => {
           },
         }}
       >
-        {testimonial.testimonial.map(({ imgUrl, title, subtitle, description }, index) => {
+        {testimonials.testimonials.map(({ imgUrl, title, subtitle, description }, index) => {
           return (
             <SwiperSlide className="testimonials__item16" key={index}>
               <div className="testimonial__qoute16">

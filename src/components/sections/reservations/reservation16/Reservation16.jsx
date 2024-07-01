@@ -3,12 +3,12 @@ import React from "react";
 import "./reservation16.css";
 
 const Reservation16 = ({ template }) => {
-  const Reservation = template.Reservation;
+  const reservation = template.reservation;
 
   return (
     <section className="reservation16 container16" id="reservation16">
       <h2 className="section__title16 " data-title="Reservation">
-        {Reservation.title}
+        {reservation.title}
       </h2>
       <form action="" className="reservation__form16 grid16">
         <div className="form__input-div16">
@@ -33,12 +33,12 @@ const Reservation16 = ({ template }) => {
           <textarea placeholder="Your Message" className="form__input16"></textarea>
         </div>
         <button className="btn16 btn--flex16 reservation__btn16">
-          &#x1F516; {Reservation.buttonText}
+          &#x1F516; {reservation.buttonText}
           {/* Unicode character for bookmark */}
         </button>
       </form>
-      <img src={Reservation.shape1} alt="" className="shape__two16" />
-      <img src={Reservation.shape2} alt="" className="shape__three16" />
+      <img src={reservation.imgUrl} alt="" className="shape__two16" />
+      <img src={reservation.shape} alt="" className="shape__three16" />
     </section>
   );
 };

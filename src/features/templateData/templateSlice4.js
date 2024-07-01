@@ -38,7 +38,7 @@ const initialState = {
     description: "Find a variety of properties that suit you very easilty",
     text: " Forget all difficulties in finding a residence for you",
     buttonText: "Search",
-    stats: [
+    heros: [
       {
         title: "Premium Product",
         start: "8880",
@@ -170,7 +170,7 @@ const initialState = {
   },
 
   footer: {
-    logo: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703209942/jammal_photos/xd2ugq6yopzvjkw37qc7.png",
+    imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703209942/jammal_photos/xd2ugq6yopzvjkw37qc7.png",
     description: "Our vision is to make all people the best place to live for them.",
     footerSections: [
       {

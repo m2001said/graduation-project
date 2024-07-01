@@ -41,7 +41,7 @@ const Hero8 = ({ template }) => {
           <div className="flex flex-col lg:flex-row gap-y-8 lg:gap-x-14 lg:items-center">
             <div className="flex-1 text-center font-secondary lg:text-left">
               <h1 className="text-[55px] font-bold leading-[0.8] lg:text-[110px]">
-                {hero.name} <span>{hero.title}</span>
+                {hero.text} <span>{hero.title}</span>
               </h1>
               <div className="mb-6 text-[36px] lg:text-[60px] font-secondary font-semibold uppercase leading-[1]">
                 <span className="text-white mr-4">{hero.subtitle} </span>
@@ -53,13 +53,13 @@ const Hero8 = ({ template }) => {
               <div className="flex max-w-max items-center gap-x-6 mb-12 mx-auto lg:mx-0">
                 <button className="btn btn-lg">{hero.buttonText}</button>
                 <a href="#" className="text-gradient btn-link">
-                  {hero.linktext}
+                  {hero.linkText}
                 </a>
               </div>
               <div className="flex text-[20px] gap-x-6 max-w-max mx-auto lg:mx-0">
-                {hero.soialContact.map((socialContact, index) => (
+                {hero.icons.map((icons, index) => (
                   <a key={index} href="#" style={{ cursor: "pointer" }}>
-                    {socialContact}
+                    {icons}
                   </a>
                 ))}
               </div>

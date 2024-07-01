@@ -2,14 +2,14 @@ import React from "react";
 import "./gallery16.css";
 
 const Gallery16 = ({ template }) => {
-  const Gallary = template.Gallary;
+  const galary = template.galary;
   return (
     <section className="gallery16 section16" id="gallery">
       <h2 className="section__title16" data-title="Gallery">
         Our Photo Gallery
       </h2>
       <div className="gallery__grid16 container16 grid16">
-        {Gallary.Gallary.map(({ title, imgUrl }, index) => {
+        {galary.galary.map(({ title, imgUrl }, index) => {
           return (
             <div className="gallery__item16" key={index}>
               <img src={imgUrl} alt="" className="gallery_img16" />

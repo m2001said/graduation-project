@@ -1,7 +1,7 @@
 import React from "react";
-import "./menu16.css";
+import "./items16.css";
 
-const Menu16 = ({ template }) => {
+const Items16 = ({ template }) => {
   const items = template.items;
 
   return (
@@ -31,4 +31,4 @@ const Menu16 = ({ template }) => {
   );
 };
 
-export default Menu16;
+export default Items16;

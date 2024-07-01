@@ -7,7 +7,7 @@ const Footer4 = ({ template }) => {
     <div className="f-wrapper">
       <div className="paddings innerWidth flexCenter f-container">
         <div className="flexColStart f-left">
-          <img src={footer.logo} alt="" width={120} />
+          <img src={footer.imgUrl} alt="" width={120} />
           <span className="secondaryText">{footer.description}</span>
         </div>
 

@@ -41,7 +41,7 @@ const Services8 = ({ template }) => {
                         (/){/* Unicode arrow character */}
                       </a>
                       <a href="#" className="text-gradient text-sm">
-                        {service.linktext}
+                        {service.linkText}
                       </a>
                     </div>
                   </div>

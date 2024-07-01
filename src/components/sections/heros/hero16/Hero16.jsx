@@ -13,10 +13,10 @@ const Hero16 = ({ template }) => {
           <p className="home__description16">{hero.description}</p>
           <div className="home__btns16">
             <a href="#menu16" className="btn16">
-              {hero.Link1}
+              {hero.buttonText}
             </a>
             <a href="#reservation16" className="btn16 home__btn16">
-              {hero.Link2}
+              {hero.linkText}
             </a>
           </div>
         </div>

@@ -51,23 +51,23 @@ const Hero4 = ({ template }) => {
           <div className="flexCenter stats">
             <div className="flexColCenter stat">
               <span>
-                {hero.stats[0].end} <span>{hero.icon}</span>
+                {hero.heros[0].end} <span>{hero.icon}</span>
               </span>
-              <span className="secondaryText">{hero.stats[0].title}</span>
+              <span className="secondaryText">{hero.heros[0].title}</span>
             </div>
 
             <div className="flexColCenter stat">
               <span>
-                {hero.stats[1].end} <span>{hero.icon}</span>
+                {hero.heros[1].end} <span>{hero.icon}</span>
               </span>
-              <span className="secondaryText">{hero.stats[1].title}</span>
+              <span className="secondaryText">{hero.heros[1].title}</span>
             </div>
 
             <div className="flexColCenter stat">
               <span>
-                {hero.stats[2].end} <span>{hero.icon}</span>
+                {hero.heros[2].end} <span>{hero.icon}</span>
               </span>
-              <span className="secondaryText">{hero.stats[2].title}</span>
+              <span className="secondaryText">{hero.heros[2].title}</span>
             </div>
           </div>
         </div>

@@ -10,7 +10,7 @@ const Team16 = ({ template }) => {
         {team.title}
       </h2>
       <div className="team__grid16 grid16 container16">
-        {team.team.map((member, index) => (
+        {team.members.map((member, index) => (
           <div className="team__item16" key={index}>
             <img src={member.imgUrl} alt={member.name} className="team__img16" />
             <div className="team__data16">
@@ -18,7 +18,7 @@ const Team16 = ({ template }) => {
               <p className="team__job16">{member.job}</p>
             </div>
             <div className="team__socials16">
-              {team.socials.map((social, sIndex) => (
+              {team.medias.map((social, sIndex) => (
                 <a key={sIndex} href={social.url} className="team__social-link16" target="_blank" rel="noopener noreferrer">
                   {social.icon}
                 </a>
