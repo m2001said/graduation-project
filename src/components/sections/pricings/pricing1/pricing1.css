@@ -122,12 +122,13 @@
 .even-card-button span {
   font-size: 18px;
   font-weight: 200;
-  color: var(--white);
+  color: white;
 }
 .odd-card-button span {
   font-size: 18px;
   font-weight: 200;
-  color: var(--white);
+  color: white;
+;
 }
 
 .even-card-button img,

@@ -90,7 +90,6 @@ function App() {
           </Route>
 
 
-
           <Route element={<Dashboard />}>
             {trialDesignComponents.map((Component, index) => (
               // <Route key={`build-trial-design${index}`} path={`/build-trial-design${index + 1}/:pageId`} element={<Component />} />
