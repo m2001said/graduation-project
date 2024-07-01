@@ -38,17 +38,22 @@ const initialState = {
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...",
     imgUrl: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1703142400/me-about_pobewn.jpg",
-    cards: [
-      { icon: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1703134251/book-svgrepo-com_f62qre.svg", title: "Experience", content: "3+ Years Working" },
+
+    heros: [
+      {
+        icon: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1703134251/book-svgrepo-com_f62qre.svg",
+        title: "Experience",
+        description: "3+ Years Working",
+      },
       {
         icon: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1703134396/users-svgrepo-com_acna7b.svg",
         title: "Clients",
-        content: "300+ Clients Worldwide",
+        description: "300+ Clients Worldwide",
       },
       {
         icon: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1703134396/project-svgrepo-com_qjvqow.svg",
         title: "Projects",
-        content: "80+ completed projects",
+        description: "80+ completed projects",
       },
     ],
   },
@@ -132,58 +137,35 @@ const initialState = {
 
     contacts: [
       {
-        title: "Email",
-        subtitle: "ahmed.solimanth57@gmail.com",
-        mail: "mailto:ahmed.solimanth57@gmail.com",
+        type: " email",
+        title: "ahmed@gmail.com",
+        email: "mailto:ahmed.solimanth57@gmail.com",
+        buttonText: "connect",
         imgUrl: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1703134252/gmail-svgrepo-com_xppy7f.svg",
       },
       {
-        title: "Messenger",
-        subtitle: "Ahmed soliman Gohnaim",
-        mail: "https://m.me/ahmed.soliman.3591267",
+        type: " facebook",
+        title: "Ahmed soliman  ",
+        email: "mailto:ahmed.solimanth57@gmail.com",
+        buttonText: "connect",
+
         imgUrl: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1703134252/facebook-svgrepo-com_lmghnk.svg",
       },
       {
-        title: "WhatsApp",
-        subtitle: "___________",
-        mail: "https://wa.me/1234567890",
+        type: "whatsapp",
+        title: "___________",
+        email: "mailto:ahmed.solimanth57@gmail.com",
+        buttonText: "connect",
+
         imgUrl: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1703134203/whatsapp-whats-app-svgrepo-com_ug4dbt.svg",
       },
     ],
-    button: {
-      buttonText: "Send",
-      url: "send message",
-    },
+  
+    buttonText: "Send",
+ linkText :'send message' ,
   },
 
-  // items: {
-  //   title: "Articles & News",
-  //   description:
-  //     "It is a long established fact that a reader will be distracted by the of readable content of a page when lookings at its layouts the points of using.",
-  //   cards: [
-  //     {
-  //       title: "Let’s Get Solution For Building Construction Work",
-  //       description: "26 December,2022 ",
-  //       imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701718041/templates/template_one/article1.f88f54e6a4cdbf340b36_l3ujjw.png",
-  //       icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701718889/templates/template_one/Vector_5_nzmfwn.svg",
-  //       caption: "Kitchan Design",
-  //     },
-  //     {
-  //       title: "Low Cost Latest Invented Interior Designing Ideas.",
-  //       description: "22 December,2022 ",
-  //       icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701718889/templates/template_one/Vector_5_nzmfwn.svg",
-  //       imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701718042/templates/template_one/article2.43be768543cb8cfeaf07_atvwjd.png",
-  //       caption: "Living Design",
-  //     },
-  //     {
-  //       title: "Best For Any Office & Business Interior Solution",
-  //       description: "25 December,2022 ",
-  //       icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701718889/templates/template_one/Vector_5_nzmfwn.svg",
-  //       imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1701718042/templates/template_one/article3.f759fde0c85f3fb92b22_c2tqkv.png",
-  //       caption: "Interior Design",
-  //     },
-  //   ],
-  // },
+ 
   services: {
     title: "What We Offer",
     description: "Services",

@@ -1,7 +1,6 @@
 import React from "react";
 
-
-const Footer9 =  ({ template }) => {
+const Footer9 = ({ template }) => {
   const footer = template.footer;
 
   return (
@@ -58,8 +57,8 @@ const Footer9 =  ({ template }) => {
         <div className="container mx-auto px-3 lg:flex justify-between items-center lg:h-14 lg:text-left text-center">
           <p>{footer.description}</p>
           <ul className="flex lg:flex-row flex-wrap lg:justify-normal justify-center items-center gap-x-4 ">
-            {footer.additionalLinks.map((link, index) => (
-              <li key={index} className="cursor-pointer">
+            {footer.links.map((link, index) => (
+              <li key={index} className="cursor-pointer text-[var(--website-9-color-1)]">
                 {link}
               </li>
             ))}

@@ -7,34 +7,50 @@ const initialState = {
     description: "",
     imgUrl: "",
   },
-  // navbar: {
-  //   words: {
-  //     title: "CSE",
-  //     menuItems: ["Home", "About", "Listings", "Services", "Features", "Login/Register", "Add Listings"],
-  //   },
-  //   images: {
-  //     menuIcon: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707347075/icons8-bars-64_uzkog5.png",
-  //     closeIcon: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707347076/icons8-close_ozpkst.svg",
-  //     homeIcon: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707345078/realestate/home_553416_pdjise.png",
-  //     personIcon: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707347076/icons8-person-64_ppr9e8.png",
-  //   },
-  // },
+
+
+  navbar: {
+    title: "Soliii",
+     links: [
+      {
+        title: "Design",
+        url: "#about13",
+      },
+      {
+        title: "About us",
+        url: "#",
+      },
+      {
+        title: "Projects",
+        url: "#",
+      },
+      {
+        title: "Contact team",
+        url: "#",
+      },
+      {
+        title: "Reviews",
+        url: "#testimonials13",
+      },
+    ],
+    
+  },
   hero: {
     title: "REAL ESTATE",
     subtitle: "Find a perfect home you love..!",
     description: "Etiam eget elementum elit. Anean dignissim dapibus vestibulum...",
 
-    inputPlaceHolder: "New York, San Francisco, etc",
+    inputPlaceholder: "New York, San Francisco, etc",
 
     heros: [
       {
-        text: "Option 1",
+        title: "CSE",
       },
       {
-        text: "Option 2",
+        title: "ece",
       },
       {
-        text: "Option 3",
+        title: "eee",
       },
     ],
     imgs: [
@@ -45,8 +61,7 @@ const initialState = {
     ],
   },
 
-  /******************** reviews */
-  reviews: {
+   reviews: {
     title: "72k+ Happy Customers+",
     description: "200+ new Listings Everyday",
     subtitle: "Trusted by 100+ companies across the global",
@@ -54,23 +69,20 @@ const initialState = {
     icon: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707347077/icons8-plus-64_pwlv7r.png",
 
     reviews: [
-      { imgUrl: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1703142400/me-about_pobewn.jpg" },
-      { imgUrl: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1703134021/avatar4_tn7dyv.jpg" },
-      { imgUrl: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1703134020/avatar3_pbztwn.jpg" },
-      { imgUrl: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1703124966/samples/smile.jpg" },
+      "https://res.cloudinary.com/dowtlcpxj/image/upload/v1703142400/me-about_pobewn.jpg",
+      "https://res.cloudinary.com/dowtlcpxj/image/upload/v1703134021/avatar4_tn7dyv.jpg",
+      "https://res.cloudinary.com/dowtlcpxj/image/upload/v1703134020/avatar3_pbztwn.jpg",
+      "https://res.cloudinary.com/dowtlcpxj/image/upload/v1703124966/samples/smile.jpg",
     ],
-
     logos: [
-      { imgUrl: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707329688/realestate/logo6_ddaq6y.png" },
-      { imgUrl: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707329688/realestate/logo5_iwqjl7.png" },
-      { imgUrl: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707329687/realestate/logo4_xbf3fz.png" },
-      { imgUrl: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707329687/realestate/logo3_fzmko0.png" },
-
-      { imgUrl: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707329685/realestate/logo2_z1jb8d.png" },
+      "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707329688/realestate/logo6_ddaq6y.png",
+      "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707329688/realestate/logo5_iwqjl7.png",
+      "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707329687/realestate/logo4_xbf3fz.png",
+      "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707329687/realestate/logo3_fzmko0.png",
+      "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707329685/realestate/logo2_z1jb8d.png",
     ],
   },
-  //*** services */
-  services: {
+   services: {
     title: "Our Services",
 
     services: [
@@ -98,31 +110,33 @@ const initialState = {
     features: [
       {
         imgUrl: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707329684/realestate/image_18_dklo4u.jpg",
-        title: 216,
+        number: 216,
         subtitle: "New York City",
         description: "NY",
       },
       {
         imgUrl: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707329683/realestate/image_17_my9jpm.jpg",
-        title: 216,
+        number: 216,
         subtitle: "New York City",
         description: "NY",
       },
       {
         imgUrl: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707329665/realestate/image_14_z4orcy.jpg",
-        title: 216,
+        number: 216,
         subtitle: "New York City",
         description: "NY",
       },
       {
         imgUrl: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707329658/realestate/image_15_qctpm4.jpg",
-        title: 216,
+        number: 216,
         subtitle: "New York City",
         description: "NY",
       },
       {
         imgUrl: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707329593/realestate/image_2_ugvuoz.jpg",
-        title: 216,
+
+        number: 216,
+
         subtitle: "New York City",
         description: "NY",
       },
@@ -131,13 +145,12 @@ const initialState = {
 
   about: {
     title: "WHO WE ARE ",
-    description: " donecdfkjustify-content- sd fkds ks dfs j sfdnkfskdn fsfksnfixed-top klmdfsl klsdmf lkmdsfm mlksdfl m lms",
+    description: "  d-top klmdfsl klsdmf lkmdsfm mlksdfl m lms",
 
-    subtitle: "done porttier eusiod",
     icon: {
-      title: "done porttier eusiod",
-      subtitle: "nullam a lanica ipsum dignissim purus ",
-      url: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707345078/realestate/home_553416_pdjise.png",
+      text: "done porttier eusiod",
+      linkText: "nullam a lanica ipsum dignissim purus",
+      imgUrl: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707345078/realestate/home_553416_pdjise.png",
     },
 
     imgs: [
@@ -147,8 +160,7 @@ const initialState = {
     ],
   },
 
-  //*************** ===  testimonials     ==== **********************/
-
+ 
   testimonials: {
     title: "Testimonials",
     subtitle: "What Our Clients Say",
@@ -176,13 +188,12 @@ const initialState = {
     ],
   },
 
-  //*********************** == projects == **********************/
-
+ 
   projects: {
     title: "checkout our new",
     description: "Latest Listed Properties",
     subtitle: "asda asd dadc dad",
-    category: ["All", "Sell", "Rent"],
+    categories: ["All", "Sell", "Rent"],
 
     projects: [
       {
@@ -273,8 +284,7 @@ const initialState = {
     ],
   },
 
-  //*********************** == team == **********************/
-
+ 
   team: {
     title: "Hello from",
     description: "Our Team of Experts",
@@ -307,18 +317,16 @@ const initialState = {
     ],
   },
 
-  //******************** contact ********************
-
+ 
   contact: {
     imgUrl: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707540053/tower_qajd1k.png",
     title: "Become an Agent.",
     description: "Contact asdadsa mksldm asmkdsalk asdmkl .",
     buttonText: "Register now",
-    url: "https://www.google.com",
+    linkText: "https://www.google.com",
   },
 
-  //******************** footer ******************** */
-  footer: {
+   footer: {
     title: "Cse",
     subtitle: "227 st zagazig",
     description: "2024 soly cse all rights reserved",
@@ -367,7 +375,7 @@ const initialState = {
       { icon: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1703134202/socialmedia-svgrepo-com_xqlljo.svg", url: "https://instagram.com" },
     ],
 
-    additionalLinks: ["terms and and conditions", "Privacy Policy", "Disclaimer"],
+     links: ["terms and and conditions", "Privacy Policy", "Disclaimer"],
   },
 
   colors: {

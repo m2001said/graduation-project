@@ -13,37 +13,26 @@
 
 :root {
   --website-9-color-1: rgb(255, 255, 255);
-  /* --white-9 - */
-  --website-9-color-2: #0ca39a;
-  /*--button-text-color-9 */
-  /* --grey-9*/
-  /* مثلا website-15-color-1-- */
-  --website-9-color-3: #0c4f37;
-  /* --primary-text-color-9 */
-
+   --website-9-color-2: #0ca39a;
+   --website-9-color-3: #0c4f37;
+ 
   --website-9-color-4: #808080;
-  /* --color-808080-color-9 */
-
-  /* مثلا website-15-color-1-- */
-
+ 
+ 
  
 
   --website-9-color-5: #646cffaa;
-  /* --logo-hover-shadow-color */
-
+ 
   --website-9-color-6: #74cac5;
-  /* --icon-hover-color-9 */
-
-  /******************/
-  --font-size-md-9: 2rem;
+ 
+   --font-size-md-9: 2rem;
 
   --font-size-base-9: 1.25rem;
   --border-radius-lg-9: 1.5rem;
   --border-radius-md: 0.5rem;
   --transition9: all 400ms ease;
 
-  /* Fonts */
-  --font-size-lg: 2.25rem;
+   --font-size-lg: 2.25rem;
   --font-size-md: 1.875rem;
   --font-size-sm: 1.5rem;
   --font-size-base: 1.25rem;
@@ -52,8 +41,7 @@
   --font-weight-medium: 500;
   --font-weight-bold: 700;
 
-  /****/
-}
+ }
 
 .hero9 {
   padding-bottom: 1.5rem;

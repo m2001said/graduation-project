@@ -13,22 +13,22 @@ const ContactUs2 = ({ template }) => {
         <div id="contactUs2" className="contactUs2__options">
           {contact.contacts.map((contacts, index) => (
             <article className="contactUs2__option" key={index}>
-              <img src={contacts.imgUrl} alt={`${contacts.title} Logo`} className="contactUs2__option-logo" />
-              <h4>{contacts.title}</h4>
-              <h5>{contacts.subtitle}</h5>
-              <a href={contacts.mail} target="_blank" rel="noopener noreferrer">
-                {contacts.title === "Send a message" ? contact.button.url : contacts.title}
+              <img src={contacts.imgUrl} alt={`${contacts.type} Logo`} className="contactUs2__option-logo" />
+              <h4>{contacts.type}</h4>
+              <h5>{contacts.title}</h5>
+              <a href={contacts.email} target="_blank" rel="noopener noreferrer">
+                {contacts.buttonText === "Send a message" ? contact.button.url : contacts.buttonText}
               </a>
             </article>
           ))}
         </div>
 
-        <form className="form2" onSubmit={contact.button.url}>
+        <form className="form2" onSubmit={contact.linkText}>
           <input type="text" name="name" placeholder="Your Full Name" className="input2" required />
           <input type="email" name="email" placeholder="Your email" className="input2" required />
           <textarea name="message" placeholder="Your Message" rows="7" className="txt-area2" required></textarea>
           <button type="submit" className="btn-2 color-[var(--website-2-color-2)]">
-            {contact.button.buttonText}
+            {contact.buttonText}
           </button>
         </form>
       </div>

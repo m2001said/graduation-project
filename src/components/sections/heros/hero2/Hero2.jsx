@@ -16,11 +16,11 @@ const Hero2 = ({ template }) => {
 
         <div className="hero2__content">
           <div className="hero2__cards">
-            {hero.cards.map((card, index) => (
+            {hero.heros.map((heros, index) => (
               <article className="hero2__card" key={index}>
-                <img className="hero2__icon" src={card.icon} alt={card.title} />
-                <h5>{card.title}</h5>
-                <small>{card.content}</small>
+                <img className="hero2__icon" src={heros.icon} alt={heros.title} />
+                <h5>{heros.title}</h5>
+                <small>{heros.description}</small>
               </article>
             ))}
           </div>

@@ -1,9 +1,9 @@
-import React, { useState, useEffect } from 'react';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation, Pagination, Autoplay } from 'swiper/modules';
-import 'swiper/css';
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
+import React, { useState, useEffect } from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation, Pagination, Autoplay } from "swiper/modules";
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
 
 const Testimonials13 = ({ template }) => {
   const testimonials = template.testimonials;
@@ -29,8 +29,8 @@ const Testimonials13 = ({ template }) => {
 
   useEffect(() => {
     const handleResize = () => setWindowWidth(window.innerWidth);
-    window.addEventListener('resize', handleResize);
-    return () => window.removeEventListener('resize', handleResize);
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
   }, []);
 
   const slidesPerView = windowWidth > 768 ? 3 : 1;
@@ -42,11 +42,13 @@ const Testimonials13 = ({ template }) => {
         {testimonials.subtitle}
         <span className="block text-[var(--website-13-color-4)]">{testimonials.description}</span>
       </h1>
+      {/* Register Autoplay, Navigation, and Pagination modules */}
       <Swiper
+        modules={[Autoplay, Navigation, Pagination]}
         spaceBetween={20}
         slidesPerView={slidesPerView}
-        autoplay={{ delay: 3000 }}
-        navigation
+        autoplay={{ delay: 1000 }}
+        navigation={{ disableOnInteraction: true }} // Fix button interference
         pagination={{ clickable: true }}
       >
         {testimonials.testimonials.map((testimonial, index) => (

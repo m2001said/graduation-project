@@ -12,13 +12,13 @@ const About9 = ({ template }) => {
               <button>
                 {" "}
                 <img
-                  src={about.icon.url}
+                  src={about.icon.imgUrl}
                   alt=""
                   className="  m-auto bg-[var(--transparent)] hover:bg-[var(--icon-hover-color)] active:bg-[var(--icon-active-color) about9_logo "
                 />
               </button>{" "}
-              <h1 className="text-[var(--website-9-color-3)] text-lg font-medium">{about.subtitle}</h1>
-              <p className="flex items-center  text-[var(--website-9-color-3)] w-4/5">{about.icon.title}</p>
+              <h1 className="text-[var(--website-9-color-3)] text-lg font-medium">{about.icon.linkText}</h1>
+              <p className="flex items-center  text-[var(--website-9-color-3)] w-4/5">{about.icon.text}</p>
             </span>
           </div>
           {/* <div className="bg-white shadow-2xl px-4 py-6 rounded-3xl flex items-center gap-x-3 lg:w-4/5 mt-6">
@@ -41,10 +41,7 @@ const About9 = ({ template }) => {
       <div className="lg:hidden block pt-4 py-16 ">
         <div className=" bg-[var(--website-9-color-1)] shadow-2xl px-4 py-6 rounded-3xl flex items-center gap-x-3 lg:w-4/5 mt-6">
           <img src={about.icon} className="md:w-10 h-10 text-4xl text-[var(--website-9-color-3)]" />
-          <span>
-            <h1 className="text-[var(--website-9-color-3)] text-lg font-medium">{about.icon.title}</h1>
-            <p className="text-[var(--website-9-color-4)]">{about.icon.subtitle} </p>
-          </span>
+          <span></span>
         </div>
       </div>
     </main>

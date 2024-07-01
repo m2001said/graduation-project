@@ -24,7 +24,7 @@ const Projects13 = ({ template }) => {
       <div className="xl:w-[1200px] max-w-[75%] mx-auto px-3 pt-8">
         <section className="relative lg:py-0 py-8">
           <p className="text-center text-[var(--website-13-color-4)]">{projects.title}</p>
-          <h1 className="text-center text-[#054130] primary-font lg:text-5xl text-xl font-semibold">{projects.description}</h1>
+          <h1 className="text-center text-[var(--website-13-color-1)] primary-font lg:text-5xl text-xl font-semibold">{projects.description}</h1>
           <div className="md:flex items-center justify-between lg:pt-20 pt-8 gap-x-16">
             {projects.projects &&
               projects.projects.map((project, index) => (
@@ -32,15 +32,14 @@ const Projects13 = ({ template }) => {
               ))}
           </div>
           <div className="flex justify-center gap-2 flex-wrap ">
-            {projects.buttons &&
-              projects.buttons.map((button, index) => (
+        
                 <button
-                  key={index}
+                  
                   className="rounded-full mx-auto mt-12 px-4 py-2 items-center text-sm bg-[var(--website-13-color-4)] text-[var(--website-13-color-1)] gap-2 transition ease-out duration-300 hover:scale-110"
                 >
-                  <p className="text-[var(--website-13-color-1)]">{button.buttonText}</p>
+                  <p className="text-[var(--website-13-color-1)]">{projects.buttonText}</p>
                 </button>
-              ))}
+           
           </div>
           {[1, 2, 3, 4].map((_, index) => (
             <img

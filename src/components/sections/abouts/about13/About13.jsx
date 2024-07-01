@@ -15,7 +15,7 @@ const About13 = ({ template }) => {
             <div className="lg:w-1/2">
               <p className="text-[var(--website-13-color-4)] text-center lg:text-left">{about.title}</p>
               <h1 className="text-[var(--website-13-color-2)] lg:text-5xl text-xl primary-font font-semibold pt-4 pb-6 text-center lg:text-left">
-                {about.subtitles[0].title} <span className="underline decoration-[var(--website-13-color-4)]">{about.subtitles[1].title}</span>
+                {about.subtitle} <span className="underline decoration-[var(--website-13-color-4)]">{about.text}</span>
               </h1>
               <p className="text-[var(--website-13-color-1)] leading-8 text-center lg:text-left">{about.description}</p>
               <div className="flex flex-wrap justify-center lg:justify-start mt-8">
@@ -38,7 +38,7 @@ const About13 = ({ template }) => {
           <div className="lg:hidden mt-12 p-8">
             {about.abouts.map((about, index) => (
               <div key={index} className="flex flex-col items-center mb-4">
-                <h1 className="text-[var(--website-13-color-2)] primary-font text-3xl font-semibold">{about.description}</h1>
+                <h1 className="text-[var(--website-13-color-3)] primary-font text-3xl font-semibold">{about.value}</h1>
                 <p className="text-sm text-[var(--website-13-color-1)]">{about.title}</p>
               </div>
             ))}
@@ -47,7 +47,7 @@ const About13 = ({ template }) => {
           <div className="hidden lg:flex justify-between mt-12 lg:p-8">
             {about.abouts.map((about, index) => (
               <div key={index} className="flex flex-col items-center">
-                <h1 className="text-[var(--website-13-color-2)] primary-font text-4xl font-semibold">{about.description}</h1>
+                <h1 className="text-[var(--website-13-color-2)] primary-font text-4xl font-semibold">{about.value}</h1>
                 <p className="lg:text-base text-sm text-[var(--website-13-color-1)]">{about.title}</p>
               </div>
             ))}

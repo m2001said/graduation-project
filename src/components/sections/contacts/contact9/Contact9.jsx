@@ -21,7 +21,7 @@ const Contact9 =  ({ template }) => {
           </span>
           <button className="bg-[var(--website-9-color-6)] text-[var(--website-9-color-3)] px-8 py-3 rounded-full lg:mt-0 mt-8">
             {contact.buttonText}{" "} 
-            <a href={contact.url}></a>
+            <a href={contact.linkText}></a>
           </button>
         </div>
         <button className="bg-gradient-to-b from-[var(--website-9-color-1)] to-[var(--website-9-color-3)] opacity-40 rounded-full h-20 w-20 cursor-auto absolute -top-6 right-10 z-10"></button>

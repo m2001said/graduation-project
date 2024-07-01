@@ -1,7 +1,7 @@
 import React from "react";
 
 const Hero13 = ({ template }) => {
-  const { title, description, buttons, icon, mainImage, secondaryImage } = template.hero;
+  const { title, description, buttons, icon, imgUrl, imageUrl } = template.hero;
 
   return (
     <div id="hero13" className="relative overflow-hidden bg-[var(--website-13-color-1)] lg:py-20 py-8">
@@ -22,9 +22,9 @@ const Hero13 = ({ template }) => {
           </div>
         </div>
         <div className="lg:w-[35%] w-72 relative lg:mx-0 mx-auto justify-end lg:py-0 py-8">
-          <img src={mainImage} alt={`Image 1`} className="lg:w-full mb-4 rounded-lg shadow-lg" style={{ maxWidth: "100%", height: "auto" }} />
+          <img src={imgUrl} alt={`Image 1`} className="lg:w-full mb-4 rounded-lg shadow-lg" style={{ maxWidth: "100%", height: "auto" }} />
           <img
-            src={secondaryImage}
+            src={imageUrl}
             alt={`Image 2`}
             className="sm:block hidden lg:w-40 w-1/4 absolute bottom-16 lg:-left-20 -left-10"
             style={{ maxWidth: "100%", height: "auto" }}

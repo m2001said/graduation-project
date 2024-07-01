@@ -38,7 +38,7 @@ const Navbar17 = ({ template }) => {
                 {/* dropdown section */}
                 <div className="absolute z-[9999] hidden group-hover:block w-[200px] bg-[var(--website-17-color-3)] text-[var(--website-17-color-4)] shadow-md p-2">
                   <ul>
-                    {navbar.dropDownLinks.map(({ index, title, url }) => (
+                    {navbar.dropDown.map(({ index, title, url }) => (
                       <li key={index}>
                         <a
                           href={url}

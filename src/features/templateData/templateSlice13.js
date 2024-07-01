@@ -40,8 +40,6 @@ const initialState = {
     ],
   },
 
-  //****************** hero */
-
   hero: {
     title: "Architects with different approach",
     description: "Architecture is the art & technique of designing and building, as distinguished from the skills",
@@ -50,12 +48,11 @@ const initialState = {
       { buttonText: "our Services", url: "#services13" },
     ],
 
-    mainImage: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707937284/3_tx6g05.jpg",
-    secondaryImage: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707937130/4_rjddpl.jpg",
+    imgUrl: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707937284/3_tx6g05.jpg",
+    imageUrl: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707937130/4_rjddpl.jpg",
+
     icon: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707952901/right-arrow_1_y7iz2i.png",
   },
-
-  //***************** **********  feature ********* **************** */
 
   feature: {
     title: "welcome to lighting",
@@ -80,17 +77,19 @@ const initialState = {
     ],
   },
 
-  // ********************  about  **************************
   about: {
     title: "Welcome to our company",
-    subtitles: [{ title: "Our Journey" }, { title: "since 2010" }],
+
+    subtitle: "our JOURNEY",
+    text: "since 2010",
+
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     imgUrl: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707937162/5_ookc7e.jpg",
 
     abouts: [
-      { title: "years of experience", description: 10 },
-      { title: "projects done", description: 50 },
-      { title: "awards gained ", description: 20 },
+      { title: "years of experience", value: 10 },
+      { title: "projects done", value: 50 },
+      { title: "awards gained ", value: 20 },
     ],
     icon: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707959810/up-arrow_dfq1o8.png",
 
@@ -109,13 +108,12 @@ const initialState = {
     ],
   },
 
-  //*********************** projects ********************** */ */                                 projects: {
   projects: {
     title: "Our recent works",
     subtitle: "Our completed projects",
     description: "Our completed projects",
-    buttons: [{ url: "#", buttonText: "load more" }],
-
+    buttonText: "load more",
+    linkText: "#",
     projects: [
       {
         imgUrl: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707937447/pexels-ben-neale-380337_yuphlv.jpg",
@@ -139,8 +137,6 @@ const initialState = {
     icon: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707553370/klipartz.com_z2zhsv.png",
   },
 
-  //******************************** contact ************ ********************** */
-
   contact: {
     title: "Subscribe to our newsletter",
     subtitle: "Get our e-mail updates about our latest shops and special offers.",
@@ -148,8 +144,6 @@ const initialState = {
     buttonText: "Register now",
     icon: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707952901/right-arrow_1_y7iz2i.png",
   },
-
-  //************************    logos  *************************      */
 
   logos: {
     companies: [
@@ -176,7 +170,6 @@ const initialState = {
     ],
   },
 
-  //****************** testimonials */
   testimonials: {
     title: "What our  ",
     subtitle: "Clients",
@@ -206,62 +199,22 @@ const initialState = {
         location: "CEO at AST",
         opinion: "We would like to take the opportunity to express our delights with the ways things are progressing.",
       },
+      {
+        imgUrl: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1703134020/avatar3_pbztwn.jpg",
+        name: "ahmed",
+        location: "CEO at AST",
+        opinion: "We would like to take the opportunity to express our delights with the ways things are progressing.",
+      },
+      {
+        imgUrl: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1703134020/avatar3_pbztwn.jpg",
+        name: "ahmed",
+        location: "CEO at AST",
+        opinion: "We would like to take the opportunity to express our delights with the ways things are progressing.",
+      },
     ],
   },
-
-  //*********************   footer     ********* */
 
   footer: {
-    title: "Soly.io ",
-    subtitle: "get in touch by .. ",
-    description: "Architecture with understanding people minds",
-    logo: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707938679/lightning_h1zfze.png", //delete
-    imgUrl: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707938679/lightning_h1zfze.png",
-
-    icon: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707346109/realestate/next_2989988_stvovd.png",
-
-    button: [{ title: "contact us", url: "#", icon: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707952901/right-arrow_1_y7iz2i.png" }],
-    buttonText: "contact us",
-    url: "#",
-    urls: [
-      { icon: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1703134255/meta-logo-facebook-svgrepo-com_zom99z.svg", url: "https://facebook.com" },
-      { icon: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1703134254/linkedin-svgrepo-com_dpxquk.svg", url: "https://linkedin.com" },
-      { icon: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1703134255/socialmedia-svgrepo-com_na36wp.svg", url: "https://instagram.com" },
-      { icon: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707987495/icons8-twitterx-50_1_ggrau2.png", url: "https://twitter.com" },
-    ],
-    sections: [
-      { title: "Home", url: "#" },
-      { title: "Projects", url: "#" },
-      { title: "design", url: "#" },
-      { title: "follow", url: "#" },
-      { title: "award", url: "#" },
-    ],
-    medias: [
-      { icon: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1703134255/meta-logo-facebook-svgrepo-com_zom99z.svg", url: "https://facebook.com" },
-      { icon: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1703134254/linkedin-svgrepo-com_dpxquk.svg", url: "https://linkedin.com" },
-      { icon: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1703134255/socialmedia-svgrepo-com_na36wp.svg", url: "https://instagram.com" },
-      { icon: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707987495/icons8-twitterx-50_1_ggrau2.png", url: "https://twitter.com" },
-    ],
-footerSections:[
-
-  {
-    title: "Services",
-    links: [
-      { title: "Home", url: "#" },
-      { title: "About", url: "#" },
-      { title: "Listings", url: "#" },
-      { title: "blogs", url: "#" },
-      { title: "become an agent", url: "#" },
-    ],
-  },
-  
-  
-  [{ title: "privacy policy" }, { title: "All rights reserved ®" }, { title: "Terms & conditions ®" }],
-],
-
-    footerSection: [{ title: "privacy policy" }, { title: "All rights reserved ®" }, { title: "Terms & conditions ®" }],
-  },
-    footer : {
     imgUrl: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707938679/lightning_h1zfze.png",
     description: "Architecture with understanding people minds",
     medias: [
@@ -292,11 +245,7 @@ footerSections:[
         ],
       },
     ],
-    contacts: [
-      { value: "55 East Birchwood Ave. Brooklyn, New York 11201" },
-      { value: "contact@interno.com" },
-      { value: "(123) 125-858" },
-    ],
+    contacts: [{ value: 55 }, { value: 14 }, { value: 141 }],
   },
   colors: {
     templateColors: ["#fff", "#cda274", "#292f36", "#f4f0ec", "#777777"],

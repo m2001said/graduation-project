@@ -1,23 +1,6 @@
-import { useSelector } from "react-redux";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Autoplay } from "swiper/modules";
 import "swiper/css";
-import { useLocation } from "react-router";
-
-const responsive = {
-  module: {
-    breakpoint: { max: 4000, min: 0 },
-    items: 1,
-  },
-};
-
-const CustomDot = ({ onClick, active }) => {
-  return (
-    <li className={active ? "" : "text-[var(--website-9-color-1)]"} onClick={() => onClick()}>
-      {/* <img src="" className="text-5xl" /> */}
-    </li>
-  );
-};
 
 const Hero9 = ({ template }) => {
   const hero = template.hero;
@@ -25,11 +8,11 @@ const Hero9 = ({ template }) => {
 
   return (
     <main className="trialdesign9 mb-12 pt-4">
-      <div className="bg-gradient-to-t from-[var(--website-9-color-3)] to-[var(--website-9-color-1)]  rounded-[560px] rounded-t-none hero9">
+      <div className="bg-gradient-to-t from-[var(--website-9-color-3)] to-[var(--website-9-color-1)] rounded-[560px] rounded-t-none hero9">
         <div className="container mx-auto px-3 lg:flex justify-between items-center lg:h-screen">
           <div className="lg:w-2/5">
             <p className="text-[var(--website-9-color-3)] md:text-xl text-lg font-medium">{hero.title}</p>
-            <h1 className="lg:text-3xl text-3xl font-medium pt-3 pb-12 realestateh">{hero.subtitle}</h1>
+            <h1 className="lg:text-3xl text-3xl font-medium pt-3 pb-8 realestateh">{hero.subtitle}</h1>
             <p className="text-[var(--website-9-color-4)] lg:text-base text-sm pb-8 realestateh">{hero.description}</p>
             <div className="w-full lg:w-2/3">
               <Swiper
@@ -38,7 +21,7 @@ const Hero9 = ({ template }) => {
                 slidesPerView={1}
                 autoplay={{ delay: 3000 }}
                 direction="horizontal"
-                className="z-30 w-full"
+                className=" w-full"
               >
                 {hero.imgs.map((img, index) => (
                   <SwiperSlide key={index}>
@@ -48,21 +31,21 @@ const Hero9 = ({ template }) => {
               </Swiper>
             </div>
           </div>
-          <form className="shadow-2xl rounded-3xl py-8 lg:w-1/3 relative lg:mt-0 mt-12 w-full">
+          <form className="shadow-2xl rounded-3xl py-8 lg:w-1/3 relative lg:mt-0 mt-6 lg:ml-12">
             <div className="bg-[var(--website-9-color-3)] shadow-2xl rounded-3xl py-8">
               <div className="flex justify-between border-b border-[var(--text-9-color)] h-12 px-3"></div>
-              <div className="py-12 flex flex-col gap-8 px-4">
+              <div className="py-8 flex flex-col gap-6 px-4">
                 <input
                   type="text"
-                  placeholder={hero.inputPlaceHolder}
+                  placeholder={hero.inputPlaceholder}
                   className="h-16 outline-none rounded-3xl bg-[var(--website-9-color-1)] border border-[var(--website-9-color-1)] px-6"
                 />
                 <select
-                  placeholder={hero.inputPlaceHolder}
+                  placeholder={hero.inputPlaceholder}
                   className="h-16 outline-none rounded-3xl bg-[var(--website-9-color-1)] border border-[var(--website-9-color-1)] px-6"
                 >
                   {hero.heros && hero.heros.map((option, index) => (
-                    <option key={index}>{option.text}</option>
+                    <option key={index}>{option.title}</option>
                   ))}
                 </select>
               </div>
@@ -71,7 +54,7 @@ const Hero9 = ({ template }) => {
           </form>
         </div>
       </div>
-      <div className="lg: container mx-auto px-3 py-8">
+      <div className="lg:container mx-auto px-3 py-8">
         <span className="lg:flex items-end gap-x-60 lg:text-left text-center">
           <button className="lg:block bg-gradient-to-r from-[var(--website-9-color-6)] to-[var(--website-9-color-1)] rounded-full h-24 w-24 cursor-auto">
             {" "}
@@ -83,13 +66,13 @@ const Hero9 = ({ template }) => {
             {reviews.logos &&
               reviews.logos.map((logo, index) => (
                 <SwiperSlide key={index}>
-                  <img src={logo.imgUrl} alt="Company Logo" className="mr-4 h-8" />
+                  <img src={logo} alt="Company Logo" className="mr-4 h-8" />
                 </SwiperSlide>
               ))}
           </Swiper>
         </div>
       </div>
-      <div className="lg:flex justify-center lg:mt-16 gap-x-8 lg:px-0 px-3">
+      <div className="lg:flex justify-center lg:mt-12 gap-x-8 lg:px-0 px-3">
         <div className="bg-[var(--website-9-color-3)] rounded-full py-4 lg:px-8 px-3 flex items-center justify-center gap-x-4 shadow-2xl">
           <span className="flex items-center relative h-10 w-44">
             {reviews.reviews &&
@@ -97,7 +80,7 @@ const Hero9 = ({ template }) => {
               reviews.reviews.map((review, index) => (
                 <div key={index} className="lg:mr-7 mr-5 h-full">
                   <img
-                    src={review.imgUrl}
+                    src={review}
                     alt="Customer Image"
                     className="w-10 h-10 rounded-full object-cover absolute bg-[var(--website-9-color-1)] border border-[var(--website-9-color-1)]"
                   />
