@@ -128,8 +128,8 @@ const DesignsContainer = () => {
     <>
       <div className="designs-section">
         <div className="container mx-auto px-4  py-4">
-          <h1 className="text-3xl font-bold tracking-tighter mb-4 text-center text-white sm:text-4xl md:text-5xl lg:text-6xl/none">Our Designs</h1>
-          <p className="mx-auto max-w-[700px] text-gray-200 md:text-xl text-center">Explore our latest and greatest designs.</p>
+          <h1 className="text-3xl font-bold tracking-tighter mb-4 text-center text-white sm:text-4xl md:text-5xl lg:text-6xl/none">{t("DESIGNS.TITLE")}</h1>
+          <p className="mx-auto max-w-[700px] text-gray-200 md:text-xl text-center">{t("DESIGNS.DESCRIPTION")}</p>
           <div className="designs-container flex flex-wrap gap-8 justify-center">
             {designsData.map((design, index) => (
               <DesignCard key={index} Designdata={design} index={index}></DesignCard>
