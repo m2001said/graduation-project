@@ -32,7 +32,8 @@
   --border-radius-md: 0.5rem;
   --transition9: all 400ms ease;
 
-   --font-size-lg: 2.25rem;
+  /* Fonts */
+  --font-size-lg: 2.25rem;
   --font-size-md: 1.875rem;
   --font-size-sm: 1.5rem;
   --font-size-base: 1.25rem;
@@ -41,7 +42,8 @@
   --font-weight-medium: 500;
   --font-weight-bold: 700;
 
- }
+  /****/
+}
 
 .hero9 {
   padding-bottom: 1.5rem;
