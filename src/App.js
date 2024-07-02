@@ -95,6 +95,19 @@ function App() {
               }
             />
           ))}
+          <Route element={<Dashboard />}>
+            {trialDesignComponents.map((Component, index) => (
+              <Route
+                key={`build-trial-design${index}`}
+                path={`/${language}/build-trial-design${index + 1}`}
+                element={
+                  <ProtectedRoute>
+                    <Component />
+                  </ProtectedRoute>
+                }
+              />
+            ))}
+          </Route>
 
           {/* websites */}
           {websites.map((Component, index) => (
@@ -122,19 +135,6 @@ function App() {
             ))}
           </Route>
 
-          <Route element={<Dashboard />}>
-            {trialDesignComponents.map((Component, index) => (
-              <Route
-                key={`build-trial-design${index}`}
-                path={`/${language}/build-trial-design${index + 1}`}
-                element={
-                  <ProtectedRoute>
-                    <Component />
-                  </ProtectedRoute>
-                }
-              />
-            ))}
-          </Route>
           <Route path={`/${language}/admin`} element={<Admin />} />
           <Route path="*" element={<NotFound />} />
         </Routes>

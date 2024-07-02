@@ -1,4 +1,3 @@
-// TrialDesign.jsx (generic)
 import React, { useEffect, useState } from "react";
 import { useLocation } from "react-router";
 import axios from "axios";
@@ -18,14 +17,15 @@ const TrialDesign = ({ componentMapping, FooterComponent, NavbarComponent, HeroC
     if (url.pathname.includes("own-page")) {
       return state.ownTemplate;
     } else {
-      // return state[template];
       return state.template1;
     }
   });
 
   useEffect(() => {
-    dispatch(fetchInitialTemplate(template));
-    console.log(`state in TrialDesign after fetchInitialTemplate${template}`, state);
+    if (url.pathname.includes("preview") || url.pathname.includes("build")) {
+      dispatch(fetchInitialTemplate(template));
+      console.log(`state in TrialDesign after fetchInitialTemplate${template}`, state);
+    }
   }, [dispatch]);
 
   useEffect(() => {
@@ -68,7 +68,6 @@ const TrialDesign = ({ componentMapping, FooterComponent, NavbarComponent, HeroC
   }
   const reorderedComponents = state && Object.keys(state);
 
-  console.log(state);
   return state.templateInfo.id === template ? (
     <>
       {/* Render Navbar component */}

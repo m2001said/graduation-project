@@ -16,8 +16,6 @@ import { useTranslation } from "react-i18next";
 
 const YourWebsites = () => {
   const { i18n } = useTranslation();
-  const websitesActions = Array.from({ length: 17 }, (_, i) => require(`../features/templateData/templateSlice${i + 2}`)[`templateActions${i + 2}`]);
-  websitesActions.unshift(templateActions1);
   const dispatch = useDispatch();
   const templates = useSelector((state) => state.templates.templates);
   const status = useSelector((state) => state.templates.status);
@@ -104,7 +102,8 @@ const YourWebsites = () => {
           Authorization: "Bearer " + localStorage.getItem("token"),
         },
       });
-      dispatch(websitesActions[templateNum - 1].updateSchema(res.data));
+      console.log("res.data", res.data);
+      dispatch(templateActions1.updateSchema(res.data));
       setIsLoading(false);
       navigate(`/${i18n.language}/edit-zweb${templateNum}?id=${templateId}`);
       document.documentElement.style = "";

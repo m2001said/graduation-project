@@ -28,19 +28,16 @@ const MainNav = ({ toggleModal }) => {
     });
   };
 
+  const currentPath = window.location.pathname;
   const changeLanguage = (lng) => {
-    const currentPath = window.location.pathname;
     const newPath = currentPath.replace(/^\/(en|ar)/, `/${lng}`);
     i18n.changeLanguage(lng);
     localStorage.setItem("language", lng);
     navigate(newPath);
   };
 
-  const currentPath = window.location.pathname;
-  console.log("currentPath", currentPath);
   const showchangelanguage = () => {
-    const adminRoutes = ["admin", "user-information", "designs", "reset-password", "failed-verified", "success-verified"];
-    // Remove language prefix if present
+    const adminRoutes = ["admin", "user-information", "designs", "reset-password", "failed-verified", "success-verified", "websites"];
     const pathWithoutLang = currentPath.replace(/^\/(en|ar)/, "");
     return pathWithoutLang === "" || adminRoutes.some((route) => pathWithoutLang === `/${route}`);
   };
