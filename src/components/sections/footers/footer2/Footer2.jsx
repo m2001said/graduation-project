@@ -1,17 +1,9 @@
 import React from "react";
 import "./footer2.css";
-import { useSelector } from "react-redux";
-import { useLocation } from "react-router";
 
-const Footer2 = () => {
-  const { pathname } = useLocation();
-  const footer = useSelector((state) => {
-    if (pathname.includes("own-page")) {
-      return state.ownTemplate.footer;
-    } else {
-      return state.template2.footer;
-    }
-  });
+
+const Footer2 = ({ template }) => {
+  const footer = template.footer;
 
   return (
     <footer className="footer2">
@@ -20,9 +12,9 @@ const Footer2 = () => {
       </a>
 
       <ul className="permalinks2">
-        {footer.menuItems.map((menuItem) => (
-          <li key={menuItem.id}>
-            <a href={menuItem.link}>{menuItem.title}</a>
+        {footer.footerSections.map((item,index) => (
+          <li key={index}>
+            <a href={item.url}>{item.title}</a>
           </li>
         ))}
       </ul>
@@ -36,7 +28,7 @@ const Footer2 = () => {
       </div>
       
       <div className="footer2__copyright">
-        <small>&copy; {footer.subtitle}</small>
+        <small>&copy; {footer.description}</small>
       </div>
     </footer>
   );

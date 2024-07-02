@@ -10,22 +10,22 @@ import Projects13 from "../components/sections/projects/projects13/Projects13";
 import Testimonials13 from "../components/sections/testimonials/testimonials13/Testimonials13";
 import Logos13 from "../components/sections/logos/logos13/Logos13";
 import Contact13 from "../components/sections/contacts/contact13/Contact13";
+import TrialDesign from "./TrialDesign";
 
 const TrialDesign13 = () => {
+  const componentMapping = {
+    about: About13,
+    projects: Projects13,
+    testimonials: Testimonials13,
+    contact: Contact13,
+    logos: Logos13,
+    feature: Feature13,
+  };
   return (
     <div className="trialdesign13">
-      <Navbar13 className="trialdesign13" />
       <main>
-        <Hero13 className="trialdesign13" />
-        <Feature13 className="trialdesign13" />
-        <About13 className="trialdesign13" />
-        <Testimonials13 className="trialdesign13" />
-
-        <Projects13 className="trialdesign13" />
-        <Contact13 className="trialdesign13" />
-        <Logos13 className="trialdesign13" />
+        <TrialDesign componentMapping={componentMapping} HeroComponent={Hero13} NavbarComponent={Navbar13} FooterComponent={Footer13} template={"template13"} />;
       </main>
-      <Footer13 className="trialdesign13" />
     </div>
   );
 };
