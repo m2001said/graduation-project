@@ -1,17 +1,9 @@
 import React from "react";
 import "./cta6.css";
-import { useSelector } from "react-redux";
-import { useLocation } from "react-router";
 
-const Cta6 = () => {
-  const { pathname } = useLocation();
-  const cta = useSelector((state) => {
-    if (pathname.includes("own-page")) {
-      return state.ownTemplate.cta;
-    } else {
-      return state.template6.cta;
-    }
-  });
+const Cta6 = ({ template }) => {
+  const cta = template.cta;
+
   return (
     <section className="design-6" id="Contact">
       <div className="container mx-auto px-4">

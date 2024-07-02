@@ -1,0 +1,298 @@
+{
+  "templateInfo": {
+    "id": 11,
+    "title": "",
+    "description": "",
+    "imgUrl": ""
+  },
+  "navbar": {
+    "imgUrl": "https://res.cloudinary.com/duc04fwdb/image/upload/v1707525696/jammal_photos/wmm8wc8r2ijrtguljwaa.svg",
+    "links": [
+      {
+        "icon": "https://res.cloudinary.com/duc04fwdb/image/upload/v1707525736/jammal_photos/bchiolwka0mnwvxo4hyb.svg",
+        "url": "home"
+      },
+      {
+        "icon": "https://res.cloudinary.com/duc04fwdb/image/upload/v1707525829/jammal_photos/tswsmtson7odglvqpal7.png",
+        "url": "items"
+      },
+      {
+        "icon": "https://res.cloudinary.com/duc04fwdb/image/upload/v1707525877/jammal_photos/o0wp66kvooi2ko10robo.png",
+        "url": "resume"
+      },
+      {
+        "icon": "https://res.cloudinary.com/duc04fwdb/image/upload/v1707526376/jammal_photos/bzy6y1qtnk4jv90timxl.png",
+        "url": "portfolio"
+      },
+      {
+        "icon": "https://res.cloudinary.com/duc04fwdb/image/upload/v1707526425/jammal_photos/fvk0ywqqxdfrtefnu1bf.png",
+        "url": "layers"
+      },
+      {
+        "icon": "https://res.cloudinary.com/duc04fwdb/image/upload/v1707525780/jammal_photos/ysgiu27fi7lneuiyn3le.png",
+        "url": "testimonials"
+      },
+      {
+        "icon": "https://res.cloudinary.com/duc04fwdb/image/upload/v1707526505/jammal_photos/iri11hg4ko9cfycfuwul.png",
+        "url": "contact"
+      }
+    ]
+  },
+  "hero": {
+    "title": "بولبي دو",
+    "subtitle": "أنا مطور واجهات أمامية",
+    "imgUrl": "https://res.cloudinary.com/duc04fwdb/image/upload/v1707528928/jammal_photos/vtflccswxqzvklifgnrp.svg",
+    "buttonText": "استئجرني",
+    "text": "قم بالتمرير لأسفل",
+    "heros": [
+      {
+        "icon": "https://res.cloudinary.com/duc04fwdb/image/upload/v1707527618/jammal_photos/qxpmecvimok1s04rvjaf.svg",
+        "url": "https://www.instagram.com/"
+      },
+      {
+        "icon": "https://res.cloudinary.com/duc04fwdb/image/upload/v1707527652/jammal_photos/furgxu5bmhp4dytyau0d.png",
+        "url": "https://www.twitter.com/"
+      },
+      {
+        "icon": "https://res.cloudinary.com/duc04fwdb/image/upload/v1707527691/jammal_photos/uzwvjddnc8yk20x9w0vt.svg",
+        "url": "https://www.behance.com/"
+      },
+      {
+        "icon": "https://res.cloudinary.com/duc04fwdb/image/upload/v1707527724/jammal_photos/c2acr5tb8dswk7nmuzjt.svg",
+        "url": "https://www.dribble.com/"
+      },
+      {
+        "icon": "https://res.cloudinary.com/duc04fwdb/image/upload/v1707527760/jammal_photos/fizcisutwa4soxzeng3u.svg",
+        "url": "https://www.pinterest.com/"
+      }
+    ]
+  },
+  "services": {
+    "imgUrl": "https://res.cloudinary.com/duc04fwdb/image/upload/v1707529935/jammal_photos/qkowgxkdtneaviwup0dv.svg",
+    "description": "أنا بولبي دو، مطور مواقع ويب من لندن، المملكة المتحدة. لدي خبرة غنية في تصميم وتطوير المواقع وتخصيصها، وأنا جيد أيضًا في ووردبريس.",
+    "buttonText": "تحميل السيرة الذاتية",
+    "services": [
+      {
+        "title": "تصميم واجهات المستخدم وتجربة المستخدم",
+        "value": "97%"
+      },
+      {
+        "title": "التطوير",
+        "value": "84%"
+      },
+      {
+        "title": "التصوير الفوتوغرافي",
+        "value": "66%"
+      }
+    ]
+  },
+  "statistics": {
+    "statistics": [
+      {
+        "title": "المشاريع المكتملة",
+        "value": "198",
+        "imgUrl": "https://res.cloudinary.com/duc04fwdb/image/upload/v1707529254/jammal_photos/spnh089rxrr416y4kbgi.png"
+      },
+      {
+        "title": "أكواب القهوة",
+        "value": "5670",
+        "imgUrl": "https://res.cloudinary.com/duc04fwdb/image/upload/v1707529311/jammal_photos/pz1rrv85kzajkutewxab.png"
+      },
+      {
+        "title": "العملاء الراضون",
+        "value": "427",
+        "imgUrl": "https://res.cloudinary.com/duc04fwdb/image/upload/v1707529342/jammal_photos/pk7qb56mjpspx8tbppt2.png"
+      },
+      {
+        "title": "الجوائز الفائزة",
+        "value": "35",
+        "imgUrl": "https://res.cloudinary.com/duc04fwdb/image/upload/v1707529377/jammal_photos/ke93bwvdtgnwajajiguq.png"
+      }
+    ]
+  },
+  "items": {
+    "title": "العناصر",
+    "items": [
+      {
+        "imgUrl": " https://res.cloudinary.com/duc04fwdb/image/upload/v1707530832/jammal_photos/fjodtcpjr0admhaoxbs3.svg",
+        "title": "تصميم واجهات المستخدم وتجربة المستخدم",
+        "description": "لوريم إيبسوم هو نص شكلي بمعنى أن الغاية هي الشكل وليس المحتوى."
+      },
+      {
+        "imgUrl": " https://res.cloudinary.com/duc04fwdb/image/upload/v1707530891/jammal_photos/fc5s2yfsxeciyqkrhh5q.svg",
+        "title": "تطوير الويب",
+        "description": "لوريم إيبسوم هو نص شكلي بمعنى أن الغاية هي الشكل وليس المحتوى."
+      },
+      {
+        "imgUrl": "https://res.cloudinary.com/duc04fwdb/image/upload/v1707530933/jammal_photos/m9ni1apwvt80sgdcuisn.svg",
+        "title": "التصوير الفوتوغرافي",
+        "description": "لوريم إيبسوم هو نص شكلي بمعنى أن الغاية هي الشكل وليس المحتوى."
+      }
+    ]
+  },
+  "cta": {
+    "title": "الخبرة",
+    "educations": [
+      {
+        "imgUrl": "https://res.cloudinary.com/duc04fwdb/image/upload/v1707315263/jammal_photos/e8txoexg8c3isadzrzl4.png",
+        "year": "2019 - الحاضر",
+        "title": "درجة أكاديمية",
+        "description": "لوريم إيبسوم هو نص شكلي بمعنى أن الغاية هي الشكل وليس المحتوى."
+      },
+      {
+        "imgUrl": "https://res.cloudinary.com/duc04fwdb/image/upload/v1707315263/jammal_photos/e8txoexg8c3isadzrzl4.png",
+        "year": "2013 - 2017",
+        "title": "درجة البكالوريوس",
+        "description": "لوريم إيبسوم هو نص شكلي بمعنى أن الغاية هي الشكل وليس المحتوى."
+      },
+      {
+        "imgUrl": "https://res.cloudinary.com/duc04fwdb/image/upload/v1707315263/jammal_photos/e8txoexg8c3isadzrzl4.png",
+        "year": "2009 - 2013",
+        "title": "درجة الشرف",
+        "description": "لوريم إيبسوم هو نص شكلي بمعنى أن الغاية هي الشكل وليس المحتوى."
+      }
+    ],
+    "experiences": [
+      {
+        "imgUrl": "https://res.cloudinary.com/duc04fwdb/image/upload/v1707315138/jammal_photos/jjusigmt6zz4eo7i00rm.svg",
+        "year": "2019 - الحاضر",
+        "title": "مصمم مواقع ويب",
+        "description": "لوريم إيبسوم هو نص شكلي بمعنى أن الغاية هي الشكل وليس المحتوى."
+      },
+      {
+        "imgUrl": "https://res.cloudinary.com/duc04fwdb/image/upload/v1707315138/jammal_photos/jjusigmt6zz4eo7i00rm.svg",
+        "year": "2013 - 2017",
+        "title": "مطور واجهات أمامية",
+        "description": "لوريم إيبسوم هو نص شكلي بمعنى أن الغاية هي الشكل وليس المحتوى."
+      },
+      {
+        "imgUrl": "https://res.cloudinary.com/duc04fwdb/image/upload/v1707315138/jammal_photos/jjusigmt6zz4eo7i00rm.svg",
+        "year": "2009 - 2013",
+        "title": "مطور خلفيات",
+        "description": "لوريم إيبسوم هو نص شكلي بمعنى أن الغاية هي الشكل وليس المحتوى."
+      }
+    ]
+  },
+  "projects": {
+    "title": "المشاريع",
+    "imgUrl": "https://res.cloudinary.com/duc04fwdb/image/upload/v1707532366/jammal_photos/j8mhijwgfitdt7jodrfo.png",
+    "categories": ["كل شيء", "إبداعي", "فن", "تصميم", "علامة تجارية"],
+    "projects": [
+      {
+        "title": "توضيح إدارة المشاريع",
+        "category": "تصميم",
+        "imgUrl": "https://res.cloudinary.com/duc04fwdb/image/upload/v1707531996/jammal_photos/d6bkxalscogk4dh51xbn.svg"
+      },
+      {
+        "title": "شاشات تطبيق الضيف",
+        "category": "فن",
+        "imgUrl": "https://res.cloudinary.com/duc04fwdb/image/upload/v1707532031/jammal_photos/vbmrao9xbughuacemn8z.svg"
+      },
+      {
+        "title": "إطار عمل تطبيق التوصيل",
+        "category": "علامة تجارية",
+        "imgUrl": "https://res.cloudinary.com/duc04fwdb/image/upload/v1707532063/jammal_photos/poxem7ymkahfv9brke6k.svg"
+      },
+      {
+        "title": "تحفيز الإعداد",
+        "category": "تصميم",
+        "imgUrl": "https://res.cloudinary.com/duc04fwdb/image/upload/v1707532105/jammal_photos/zuzgoospnw8rkchet8uz.svg"
+      },
+      {
+        "title": "تصميم نموذج iMac",
+        "category": "إبداعي",
+        "imgUrl": "https://res.cloudinary.com/duc04fwdb/image/upload/v1707532139/jammal_photos/a902sheq3oxkzwplffbt.svg"
+      },
+      {
+        "title": "مفهوم تطبيق متجر الألعاب",
+        "category": "فن",
+        "imgUrl": "https://res.cloudinary.com/duc04fwdb/image/upload/v1707532169/jammal_photos/gp1h7hcnbvmjfew99gr6.svg"
+      }
+    ]
+  },
+  "pricing": {
+    "title": "خطط التسعير",
+    "plans": [
+      {
+        "title": "أساسي",
+        "subtitle": "دعم عبر البريد الإلكتروني",
+        "description": "خيار بسيط ولكنه قوي لإدارة عملك",
+        "currencySymbol": "$",
+        "price": "9",
+        "timeUnit": "شهر",
+        "imgUrl": "https://res.cloudinary.com/duc04fwdb/image/upload/v1707533563/jammal_photos/d7f3hwuspkhzrd4gixml.svg"
+      },
+      {
+        "title": "النهائي",
+        "subtitle": "دعم من الإثنين إلى الجمعة",
+        "description": "منتج غير محدود بما في ذلك تكامل التطبيقات والمزيد من الميزات",
+        "currencySymbol": "$",
+        "price": "9",
+        "timeUnit": "شهر",
+        "imgUrl": "https://res.cloudinary.com/duc04fwdb/image/upload/v1707533646/jammal_photos/ecwgh1geup2tlrbkywss.svg"
+      },
+      {
+        "title": "المميز",
+        "subtitle": "دعم على مدار الساعة",
+        "description": "خيار حكيم للشركات الكبيرة والأفراد",
+        "currencySymbol": "$",
+        "price": "9",
+        "timeUnit": "شهر",
+        "imgUrl": "https://res.cloudinary.com/duc04fwdb/image/upload/v1707533677/jammal_photos/iefwt1dhzkcm1t9qsik0.svg"
+      }
+    ],
+    "buttonText": "ابدأ الآن"
+  },
+  "testimonials": {
+    "title": "العملاء والتقييمات",
+    "testimonials": [
+      {
+        "imgUrl": "https://res.cloudinary.com/duc04fwdb/image/upload/v1707536339/jammal_photos/ygo3scdgrqd9e8wnp7hd.svg",
+        "name": "أحمد محمد",
+        "subtitle": "مصمم منتجات في Dribble",
+        "description": "أستمتع بالعمل مع الثيم وأتعلم الكثير. تجعلون العملية ممتعة ومثيرة للاهتمام. حظا طيبا! 👍"
+      },
+      {
+        "imgUrl": "https://res.cloudinary.com/duc04fwdb/image/upload/v1707536399/jammal_photos/ahs4v2ti9ltcukn9awnn.svg",
+        "name": "محمد أحمد",
+        "subtitle": "مصمم منتجات في Dribble",
+        "description": "أستمتع بالعمل مع الثيم وأتعلم الكثير. تجعلون العملية ممتعة ومثيرة للاهتمام. حظا طيبا! 👍"
+      }
+    ]
+  },
+  "features": {
+    "title": "أحدث المنشورات",
+    "features": [
+      {
+        "title": "التقييمات",
+        "name": "Bolby",
+        "date": "09 فبراير، 2024",
+        "description": "أفضل 5 أدوات تطوير تطبيقات لمشاريعك",
+        "imgUrl": "https://res.cloudinary.com/duc04fwdb/image/upload/v1707536629/jammal_photos/pmgnbkfrkxuhmwom4fdx.svg"
+      },
+      {
+        "title": "تعليمات",
+        "description": "المفاهيم الخاطئة الشائعة حول الدفع",
+        "name": "Bolby",
+        "date": "07 فبراير، 2024",
+        "imgUrl": "https://res.cloudinary.com/duc04fwdb/image/upload/v1707536689/jammal_photos/zurrd2gqiqn3hovkigki.svg"
+      },
+      {
+        "title": "الأعمال",
+        "name": "Bolby",
+        "date": "05 فبراير، 2024",
+        "description": "3 أشياء يجب معرفتها عن بدء الأعمال التجارية",
+        "imgUrl": "https://res.cloudinary.com/duc04fwdb/image/upload/v1707536723/jammal_photos/mm847mrsdrh7xfbfq3ff.svg"
+      }
+    ]
+  },
+  "contact": {
+    "title": "تواصل معنا",
+    "subtitle": "دعنا نتحدث عن كل شيء!",
+    "description": "لا تحب النماذج؟ أرسل لي بريدًا إلكترونيًا. 👋",
+    "buttonText": "أرسل رسالة"
+  },
+  "colors": {
+    "templateColors": ["#fff", "#cda274", "#292f36", "#f4f0ec", "#777777"]
+  }
+}

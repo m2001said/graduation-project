@@ -1,16 +1,16 @@
-
-  .designs-section {
-    padding-top: 85px;
-    padding-bottom: 55px;
-    background-image: linear-gradient(to right, #481b91, #240d55), radial-gradient(circle at center left,#f1d7b2f5 -69%, transparent 15%), radial-gradient(circle at center right ,#b2b3f1d1 -27%, transparent 21%);
-    min-height: 100vh;
-    background-size: 100% 100%, 100% 162% , 100% 781px;
-    background-position-y: 0 , -698px , 25px;
-    background-blend-mode: overlay;
-    background-repeat: no-repeat;
-    img{
-      transition: 0.4s;
-    }
+.designs-section {
+  padding-top: 85px;
+  padding-bottom: 55px;
+  background-image: linear-gradient(to right, #481b91, #240d55), radial-gradient(circle at center left, #f1d7b2f5 -69%, transparent 15%),
+    radial-gradient(circle at center right, #b2b3f1d1 -27%, transparent 21%);
+  min-height: 100vh;
+  background-size: 100% 100%, 100% 162%, 100% 781px;
+  background-position-y: 0, -698px, 25px;
+  background-blend-mode: overlay;
+  background-repeat: no-repeat;
+  img {
+    transition: 0.4s;
+  }
 }
 /*.designs-section::before {
   content: "";

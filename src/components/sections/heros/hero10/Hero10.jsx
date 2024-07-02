@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "../../../../assets/css/globals10.css";
 
-const Hero10 = ({template}) => {
+const Hero10 = ({ template }) => {
   const hero = template.hero;
 
   const [id, setId] = useState(0);
@@ -37,6 +37,7 @@ const Hero10 = ({template}) => {
               <div className="flex lg:flex-col  overflow-y-scroll lg:top-1/2 lg:-translate-y-1/2 lg:py-2 justify-start gap-4 absolute -bottom-[40px] lg:-right-1 bg-white rounded-full">
                 {hero.heros.map((data, index) => (
                   <img
+                    key={index}
                     src={data.imgUrl}
                     alt=""
                     className="w-[80px] h-[100px] object-contain inline-block hover:scale-110 duration-200"

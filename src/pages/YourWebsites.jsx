@@ -12,9 +12,10 @@ import { templateActions1 } from "../features/templateData/templateSlice";
 import { CopyToClipboard } from "react-copy-to-clipboard";
 import axios from "axios";
 import "../globals.css";
+import { useTranslation } from "react-i18next";
+
 const YourWebsites = () => {
-  const websitesActions = Array.from({ length: 17 }, (_, i) => require(`../features/templateData/templateSlice${i + 2}`)[`templateActions${i + 2}`]);
-  websitesActions.unshift(templateActions1);
+  const { i18n, t } = useTranslation();
   const dispatch = useDispatch();
   const templates = useSelector((state) => state.templates.templates);
   const status = useSelector((state) => state.templates.status);
@@ -27,6 +28,7 @@ const YourWebsites = () => {
   const [url, setUrl] = useState("");
   const [isLoading, setIsLoading] = useState(false);
   const navigate = useNavigate();
+
   const handleCopy = () => {
     setCopied(true);
     setTimeout(() => {
@@ -101,9 +103,10 @@ const YourWebsites = () => {
           Authorization: "Bearer " + localStorage.getItem("token"),
         },
       });
-      dispatch(websitesActions[templateNum - 1].updateSchema(res.data));
+      console.log("res.data", res.data);
+      dispatch(templateActions1.updateSchema(res.data));
       setIsLoading(false);
-      navigate(`/edit-zweb${templateNum}?id=${templateId}`);
+      navigate(`/${i18n.language}/edit-zweb${templateNum}?id=${templateId}`);
       document.documentElement.style = "";
       for (let index = 0; index < res.data.colors.templateColors.length; index++) {
         document.documentElement.style.setProperty(`--website-color-${index + 1}`, res.data.colors.templateColors[index]);
@@ -188,11 +191,11 @@ const YourWebsites = () => {
       )}
       <div className="designs-section">
         <div className="container mx-auto px-4  py-4">
-          <h1 className="text-3xl font-bold tracking-tighter mb-4 text-center text-white sm:text-4xl md:text-5xl lg:text-6xl/none">Your Websites</h1>
+          <h1 className="text-3xl font-bold tracking-tighter mb-4 text-center text-white sm:text-4xl md:text-5xl lg:text-6xl/none"> {t("WEBSITES.TITLE")}</h1>
           {status === "succeeded" && templates.length >= 1 ? (
             <>
               {isCelebrityBirthday && <Confetti width={window.innerWidth} height={window.innerHeight} />}
-              <p className="mx-auto max-w-[700px] text-gray-200 md:text-xl text-center">Discover the incredible websites you've created.</p>
+              <p className="mx-auto max-w-[700px] text-gray-200 md:text-xl text-center"> {t("WEBSITES.DESCRIPTION")}</p>
               <div className="designs-container flex flex-wrap gap-8 justify-center">
                 {versions(templates).map((template, index) => (
                   <div className="websites design-card rounded-lg overflow-hidden shadow-lg flex flex-column  relative" key={template._id} id={template._id}>
@@ -221,7 +224,7 @@ const YourWebsites = () => {
                     </div>
 
                     <div className="design-info px4 py-2">
-                      <h2 className="designs-title font-bold text-xl text-center font-semibold">{template.templateInfo.title}</h2>
+                      <h2 className="designs-title font-bold text-xl text-center">{template.templateInfo.title}</h2>
                       <p className="designs-description text-gray-600 text-sm  text-center ">{template.templateInfo.description}</p>
                     </div>
                     <div className="button-container px-4 flex justify-between gap-4">
@@ -252,9 +255,9 @@ const YourWebsites = () => {
           ) : (
             <div>
               <p className="mx-auto max-w-[700px] text-gray-200 md:text-xl text-center">
-                No Websites has been created by you{" "}
+                {t("WEBSITES.NO_WEBSITES")}
                 <Link to="/designs" className="text-gray-400">
-                  Create One
+                  {t("WEBSITES.CREATE")}
                 </Link>
               </p>
             </div>

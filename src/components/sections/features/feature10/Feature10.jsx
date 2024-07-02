@@ -1,10 +1,8 @@
 import React from "react";
 import "../../../../assets/css/globals10.css";
 
-const Feature10 = ({template}) => {
-    const feature = template.features;
-
-
+const Feature10 = ({ template }) => {
+  const feature = template.features;
 
   return (
     <>
@@ -21,7 +19,7 @@ const Feature10 = ({template}) => {
               <p className="text-sm text-gray-500 tracking-wide leading-5">{feature.description} </p>
               <div className="flex flex-col gap-4">
                 {feature.features.map((data, index) => (
-                  <div className="flex items-center gap-4">
+                  <div className="flex items-center gap-4" key={index}>
                     <div className={`feature10-divIcon`}>
                       <img src={data.icon} alt="" className="w-full rounded-full" />
                     </div>

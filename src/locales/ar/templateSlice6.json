@@ -1,0 +1,498 @@
+{
+  "templateInfo": {
+    "id": 6,
+    "title": "",
+    "description": "",
+    "imgUrl": ""
+  },
+  "navbar": {
+    "logo": "https://res.cloudinary.com/duc04fwdb/image/upload/v1706351943/jammal_photos/jicfizb2xdqr8hcgkmc4.png",
+    "searchIcon": "https://res.cloudinary.com/duc04fwdb/image/upload/v1703095771/jammal_photos/kedw9coptwqkovrsssd1.svg",
+    "shoppingIcon": "https://res.cloudinary.com/duc04fwdb/image/upload/v1703095842/jammal_photos/gehvutbyftfxemvoqmu8.svg",
+    "menuIcon": "https://res.cloudinary.com/duc04fwdb/image/upload/v1703095877/jammal_photos/rwbeynsg3bftgrjqaqnf.svg",
+    "links": [
+      {
+        "title": "الصفحة الرئيسية",
+        "url": "#"
+      },
+      {
+        "title": "من نحن",
+        "url": "#"
+      },
+      {
+        "title": "القائمة",
+        "url": "#"
+      },
+      {
+        "title": "الوصفات",
+        "url": "#"
+      },
+      {
+        "title": "اتصل بنا",
+        "url": "#"
+      }
+    ]
+  },
+  "hero": {
+    "buttonText": "استكشف الطعام",
+    "heros": [
+      {
+        "id": "01",
+        "title": "استمتع بالنكهات الأصيلة",
+        "description": "انغمس في أطباقنا البسيطة واللذيذة المصنوعة من أجود المكونات. ستحبها براعم التذوق الخاصة بك!",
+        "imgUrl": "https://res.cloudinary.com/duc04fwdb/image/upload/v1703096681/jammal_photos/eukd4unr2l7mwyllvmi9.png"
+      },
+      {
+        "id": "02",
+        "title": "اجلب السعادة لبراعم التذوق الخاصة بك",
+        "description": "في مطعمنا، نعتقد أن الطعام الجيد يؤدي إلى ابتسامات رائعة. استكشف قائمتنا واكتشف عالماً من البهجة الطهوية.",
+        "imgUrl": "https://res.cloudinary.com/duc04fwdb/image/upload/v1703096719/jammal_photos/j7y2zx8aolnucnu25dl4.png"
+      },
+      {
+        "id": "03",
+        "title": "استمتع بكل لقمة، اصنع ذكريات",
+        "description": "التقِ، كلْ، واستمتع بالطعم الحقيقي للسعادة. تضمن قائمتنا المتنوعة أن هناك شيئًا لكل شخص ليستمتع به ويتذكره.",
+        "imgUrl": "https://res.cloudinary.com/duc04fwdb/image/upload/v1703096745/jammal_photos/j97dbol3pzuleeccxwdt.png"
+      }
+    ]
+  },
+  "menu": {
+    "Title": "قائمة الطعام الشعبية",
+    "Card": {
+      "shoppingIcon": "https://res.cloudinary.com/duc04fwdb/image/upload/v1703095842/jammal_photos/gehvutbyftfxemvoqmu8.svg",
+      "rateIcon": "https://res.cloudinary.com/duc04fwdb/image/upload/v1706352872/jammal_photos/v02eynmgkqv3wkrbhnda.svg",
+      "valueName": "السعر: $"
+    },
+    "Menus": [
+      {
+        "id": "01",
+        "title": "الخضروات",
+        "price": 25,
+        "imgUrl": "https://res.cloudinary.com/duc04fwdb/image/upload/v1703098596/jammal_photos/n4r8kzctvhbymxmmydhq.png"
+      },
+      {
+        "id": "02",
+        "title": "دجاج",
+        "price": 250,
+        "imgUrl": "https://res.cloudinary.com/duc04fwdb/image/upload/v1703098694/jammal_photos/rbtige8oucnpqluq3b5j.png"
+      },
+      {
+        "id": "03",
+        "title": "كريمة مخفوقة",
+        "price": 45,
+        "imgUrl": "https://res.cloudinary.com/duc04fwdb/image/upload/v1703098853/jammal_photos/zuclkds0uufzktzfeien.png"
+      },
+      {
+        "id": "04",
+        "title": "بيتزا",
+        "price": 75,
+        "imgUrl": "https://res.cloudinary.com/duc04fwdb/image/upload/v1703098919/jammal_photos/bvipjezk42alazv5roew.png"
+      }
+    ]
+  },
+  "products": {
+    "menuTitle": "حزمة قائمتنا",
+    "Card": {
+      "shoppingIcon": "https://res.cloudinary.com/duc04fwdb/image/upload/v1703095842/jammal_photos/gehvutbyftfxemvoqmu8.svg",
+      "rateIcon": "https://res.cloudinary.com/duc04fwdb/image/upload/v1706352872/jammal_photos/v02eynmgkqv3wkrbhnda.svg",
+      "valueName": "السعر: $"
+    },
+    "filterContent": [
+      {
+        "title": "الوجبات السريعة",
+        "content": [
+          {
+            "id": "05",
+            "title": "برجر",
+            "price": 95,
+            "imgUrl": "https://res.cloudinary.com/duc04fwdb/image/upload/v1703099049/jammal_photos/nw1126s6ntsb3o2ohs3s.png"
+          },
+          {
+            "id": "06",
+            "title": "دجاج",
+            "price": 250,
+            "imgUrl": "https://res.cloudinary.com/duc04fwdb/image/upload/v1703099049/jammal_photos/nw1126s6ntsb3o2ohs3s.png"
+          },
+          {
+            "id": "07",
+            "title": "دجاج مشوي",
+            "price": 195,
+            "imgUrl": "https://res.cloudinary.com/duc04fwdb/image/upload/v1703099049/jammal_photos/nw1126s6ntsb3o2ohs3s.png"
+          },
+          {
+            "id": "08",
+            "title": "باربيكيو",
+            "price": 275,
+            "imgUrl": "https://res.cloudinary.com/duc04fwdb/image/upload/v1703099049/jammal_photos/nw1126s6ntsb3o2ohs3s.png"
+          },
+          {
+            "id": "09",
+            "title": "بيتزا",
+            "price": 275,
+            "imgUrl": "https://res.cloudinary.com/duc04fwdb/image/upload/v1703099049/jammal_photos/nw1126s6ntsb3o2ohs3s.png"
+          },
+          {
+            "id": "10",
+            "title": "برجر",
+            "price": 95,
+            "imgUrl": "https://res.cloudinary.com/duc04fwdb/image/upload/v1703099049/jammal_photos/nw1126s6ntsb3o2ohs3s.png"
+          },
+          {
+            "id": "11",
+            "title": "دجاج",
+            "price": 250,
+            "imgUrl": "https://res.cloudinary.com/duc04fwdb/image/upload/v1703099049/jammal_photos/nw1126s6ntsb3o2ohs3s.png"
+          },
+          {
+            "id": "12",
+            "title": "دجاج مشوي",
+            "price": 195,
+            "imgUrl": "https://res.cloudinary.com/duc04fwdb/image/upload/v1703099049/jammal_photos/nw1126s6ntsb3o2ohs3s.png"
+          }
+        ]
+      },
+      {
+        "title": "قائمة الأرز",
+        "content": [
+          {
+            "id": "12",
+            "title": "أرز مقلي",
+            "price": 95,
+            "imgUrl": "https://res.cloudinary.com/duc04fwdb/image/upload/v1703099126/jammal_photos/t6olygisps4ufz02fezk.png"
+          },
+          {
+            "id": "14",
+            "title": "خضروات",
+            "price": 250,
+            "imgUrl": "https://res.cloudinary.com/duc04fwdb/image/upload/v1703099126/jammal_photos/t6olygisps4ufz02fezk.png"
+          },
+          {
+            "id": "15",
+            "title": "خضروات",
+            "price": 195,
+            "imgUrl": "https://res.cloudinary.com/duc04fwdb/image/upload/v1703099126/jammal_photos/t6olygisps4ufz02fezk.png"
+          },
+          {
+            "id": "16",
+            "title": "وجبة",
+            "price": 275,
+            "imgUrl": "https://res.cloudinary.com/duc04fwdb/image/upload/v1703099126/jammal_photos/t6olygisps4ufz02fezk.png"
+          },
+          {
+            "id": "17",
+            "title": "أرز مقلي",
+            "price": 95,
+            "imgUrl": "https://res.cloudinary.com/duc04fwdb/image/upload/v1703099126/jammal_photos/t6olygisps4ufz02fezk.png"
+          },
+          {
+            "id": "18",
+            "title": "خضروات",
+            "price": 250,
+            "imgUrl": "https://res.cloudinary.com/duc04fwdb/image/upload/v1703099126/jammal_photos/t6olygisps4ufz02fezk.png"
+          },
+          {
+            "id": "19",
+            "title": "خضروات",
+            "price": 195,
+            "imgUrl": "https://res.cloudinary.com/duc04fwdb/image/upload/v1703099126/jammal_photos/t6olygisps4ufz02fezk.png"
+          },
+          {
+            "id": "20",
+            "title": "وجبة",
+            "price": 275,
+            "imgUrl": "https://res.cloudinary.com/duc04fwdb/image/upload/v1703099126/jammal_photos/t6olygisps4ufz02fezk.png"
+          }
+        ]
+      },
+      {
+        "title": "الحلويات",
+        "content": [
+          {
+            "id": "21",
+            "title": "كريمة مخفوقة",
+            "price": 50,
+            "imgUrl": "https://res.cloudinary.com/duc04fwdb/image/upload/v1703099235/jammal_photos/mwphxi7ujoec1c2krana.png"
+          },
+          {
+            "id": "22",
+            "title": "كريمة الكعكة",
+            "price": 50,
+            "imgUrl": "https://res.cloudinary.com/duc04fwdb/image/upload/v1703098853/jammal_photos/zuclkds0uufzktzfeien.png"
+          },
+          {
+            "id": "23",
+            "title": "كعكة",
+            "price": 50,
+            "imgUrl": "https://res.cloudinary.com/duc04fwdb/image/upload/v1703099235/jammal_photos/mwphxi7ujoec1c2krana.png"
+          },
+          {
+            "id": "24",
+            "title": "كب كيك",
+            "price": 275,
+            "imgUrl": "https://res.cloudinary.com/duc04fwdb/image/upload/v1703099335/jammal_photos/why415hwonyxffn1cyon.png"
+          },
+          {
+            "id": "25",
+            "title": "كريمة مخفوقة",
+            "price": 50,
+            "imgUrl": "https://res.cloudinary.com/duc04fwdb/image/upload/v1703099235/jammal_photos/mwphxi7ujoec1c2krana.png"
+          },
+          {
+            "id": "26",
+            "title": "كريمة الكعكة",
+            "price": 50,
+            "imgUrl": "https://res.cloudinary.com/duc04fwdb/image/upload/v1703098853/jammal_photos/zuclkds0uufzktzfeien.png"
+          },
+          {
+            "id": "27",
+            "title": "كعكة",
+            "price": 50,
+            "imgUrl": "https://res.cloudinary.com/duc04fwdb/image/upload/v1703099235/jammal_photos/mwphxi7ujoec1c2krana.png"
+          },
+          {
+            "id": "28",
+            "title": "كب كيك",
+            "price": 275,
+            "imgUrl": "https://res.cloudinary.com/duc04fwdb/image/upload/v1703099335/jammal_photos/why415hwonyxffn1cyon.png"
+          }
+        ]
+      },
+      {
+        "title": "بيتزا",
+        "content": [
+          {
+            "id": "29",
+            "title": "بيتزا",
+            "price": 95,
+            "imgUrl": "https://res.cloudinary.com/duc04fwdb/image/upload/v1703098919/jammal_photos/bvipjezk42alazv5roew.png"
+          },
+          {
+            "id": "30",
+            "title": "بيتزا",
+            "price": 95,
+            "imgUrl": "https://res.cloudinary.com/duc04fwdb/image/upload/v1703098919/jammal_photos/bvipjezk42alazv5roew.png"
+          },
+          {
+            "id": "31",
+            "title": "بيتزا",
+            "price": 95,
+            "imgUrl": "https://res.cloudinary.com/duc04fwdb/image/upload/v1703098919/jammal_photos/bvipjezk42alazv5roew.png"
+          },
+          {
+            "id": "32",
+            "title": "بيتزا",
+            "price": 95,
+            "imgUrl": "https://res.cloudinary.com/duc04fwdb/image/upload/v1703098919/jammal_photos/bvipjezk42alazv5roew.png"
+          },
+          {
+            "id": "33",
+            "title": "بيتزا",
+            "price": 95,
+            "imgUrl": "https://res.cloudinary.com/duc04fwdb/image/upload/v1703098919/jammal_photos/bvipjezk42alazv5roew.png"
+          },
+          {
+            "id": "34",
+            "title": "بيتزا",
+            "price": 95,
+            "imgUrl": "https://res.cloudinary.com/duc04fwdb/image/upload/v1703098919/jammal_photos/bvipjezk42alazv5roew.png"
+          },
+          {
+            "id": "35",
+            "title": "بيتزا",
+            "price": 95,
+            "imgUrl": "https://res.cloudinary.com/duc04fwdb/image/upload/v1703098919/jammal_photos/bvipjezk42alazv5roew.png"
+          },
+          {
+            "id": "36",
+            "title": "بيتزا",
+            "price": 95,
+            "imgUrl": "https://res.cloudinary.com/duc04fwdb/image/upload/v1703098919/jammal_photos/bvipjezk42alazv5roew.png"
+          }
+        ]
+      },
+      {
+        "title": "القهوة",
+        "content": [
+          {
+            "id": "37",
+            "title": "قهوة ساخنة",
+            "price": 20,
+            "imgUrl": "https://res.cloudinary.com/duc04fwdb/image/upload/v1703099401/jammal_photos/tb2lmnbq0imabiyxzsub.png"
+          },
+          {
+            "id": "38",
+            "title": "قهوة باردة",
+            "price": 20,
+            "imgUrl": "https://res.cloudinary.com/duc04fwdb/image/upload/v1703099401/jammal_photos/tb2lmnbq0imabiyxzsub.png"
+          },
+          {
+            "id": "39",
+            "title": "قهوة سوداء",
+            "price": 20,
+            "imgUrl": "https://res.cloudinary.com/duc04fwdb/image/upload/v1703099401/jammal_photos/tb2lmnbq0imabiyxzsub.png"
+          },
+          {
+            "id": "40",
+            "title": "قهوة بيضاء",
+            "price": 95,
+            "imgUrl": "https://res.cloudinary.com/duc04fwdb/image/upload/v1703099401/jammal_photos/tb2lmnbq0imabiyxzsub.png"
+          },
+          {
+            "id": "41",
+            "title": "قهوة ساخنة",
+            "price": 20,
+            "imgUrl": "https://res.cloudinary.com/duc04fwdb/image/upload/v1703099401/jammal_photos/tb2lmnbq0imabiyxzsub.png"
+          },
+          {
+            "id": "42",
+            "title": "قهوة باردة",
+            "price": 20,
+            "imgUrl": "https://res.cloudinary.com/duc04fwdb/image/upload/v1703099401/jammal_photos/tb2lmnbq0imabiyxzsub.png"
+          },
+          {
+            "id": "43",
+            "title": "قهوة سوداء",
+            "price": 20,
+            "imgUrl": "https://res.cloudinary.com/duc04fwdb/image/upload/v1703099401/jammal_photos/tb2lmnbq0imabiyxzsub.png"
+          },
+          {
+            "id": "44",
+            "title": "قهوة بيضاء",
+            "price": 95,
+            "imgUrl": "https://res.cloudinary.com/duc04fwdb/image/upload/v1703099401/jammal_photos/tb2lmnbq0imabiyxzsub.png"
+          }
+        ]
+      }
+    ]
+  },
+  "features": {
+    "title": "من نحن؟",
+    "imgUrl": "https://res.cloudinary.com/duc04fwdb/image/upload/v1703103180/jammal_photos/afcfogeancctcy4nhsfn.png",
+    "description": "ألقِ نظرة على الفوائد التي نقدمها لك",
+    "info": "نحن نولي اهتمامًا لرضاك. التزامنا بالتميز واضح في الفوائد التي نقدمها.",
+    "cards": [
+      {
+        "icon": "https://res.cloudinary.com/duc04fwdb/image/upload/v1703103379/jammal_photos/wvvtn9lgn5k84md2jhtm.svg",
+        "title": "توصيل مجاني إلى المنزل",
+        "description": "استمتع بالتوصيل المنزلي المجاني وفي الوقت المحدد."
+      },
+      {
+        "icon": "https://res.cloudinary.com/duc04fwdb/image/upload/v1703103489/jammal_photos/rihmvtglekzcmjdavtbm.svg",
+        "title": "الاسترجاع والاسترداد",
+        "description": "نضمن لك عملية استرجاع واسترداد خالية من المتاعب."
+      },
+      {
+        "icon": "https://res.cloudinary.com/duc04fwdb/image/upload/v1703103560/jammal_photos/k3irnc1fhkmugeekjbol.svg",
+        "title": "دفع آمن",
+        "description": "تتم معالجة معاملاتك بأمان."
+      },
+      {
+        "icon": "https://res.cloudinary.com/duc04fwdb/image/upload/v1703103423/jammal_photos/legalyoxmyba3arp5n3p.svg",
+        "title": "دعم على مدار الساعة",
+        "description": "نحن هنا من أجلك على مدار الساعة."
+      }
+    ]
+  },
+  "testimonials": {
+    "title": "ماذا يقول عملاؤنا",
+    "imgUrl": "https://res.cloudinary.com/duc04fwdb/image/upload/v1703093874/jammal_photos/dwbzkjuoel7mlgqohppt.png",
+    "cards": [
+      {
+        "content": "أنا معجب بالاحترافية وجودة الخدمة. الفريق تجاوز توقعاتي!",
+        "name": "أليس جونسون",
+        "role": "مدير التسويق"
+      },
+      {
+        "content": "تجربة رائعة في العمل مع هذه الشركة. الاهتمام بالتفاصيل وتفاني الفريق لا يصدق.",
+        "name": "بوب سميث",
+        "role": "صاحب عمل"
+      },
+      {
+        "content": "الموقع الذي طوروه لنا ليس فقط يبدو رائعًا بل يعمل بشكل ممتاز أيضًا. موصى به بشدة!",
+        "name": "إميلي ديفيس",
+        "role": "مصمم تجربة المستخدم"
+      }
+    ]
+  },
+  "cta": {
+    "title": "حمل تطبيقنا",
+    "description": "لا تشعر بالجوع أبداً! حمل تطبيقنا للهواتف المحمولة واطلب الطعام اللذيذ",
+    "info": "جرب راحة تطبيقنا المحمول، مما يضمن لك ألا تشعر بالجوع، حمل الآن لطلب الطعام اللذيذ في أي وقت وأي مكان.",
+    "imgUrl": "https://res.cloudinary.com/duc04fwdb/image/upload/v1703105732/jammal_photos/lldrbchcloecmarn2bep.png",
+    "googleButton": {
+      "title": "جوجل بلاي",
+      "icon": "https://res.cloudinary.com/duc04fwdb/image/upload/v1703106187/jammal_photos/bm7fqpnzrwtkawffbci3.svg"
+    },
+    "appleButton": {
+      "title": "آبل ستور",
+      "icon": "https://res.cloudinary.com/duc04fwdb/image/upload/v1703106097/jammal_photos/gmyir4uguaz6ejvw3s3t.svg"
+    }
+  },
+  "footer": {
+    "logo": "https://res.cloudinary.com/duc04fwdb/image/upload/v1706351943/jammal_photos/jicfizb2xdqr8hcgkmc4.png",
+    "imgUrl": "https://res.cloudinary.com/duc04fwdb/image/upload/v1703095423/jammal_photos/x22ihnvjg9i0i40xtbo5.svg",
+    "description": "من الحقائق الثابتة منذ فترة طويلة أن القارئ سيتشتت أثناء النظر.",
+    "copyright": "حقوق الطبع والنشر 2022، تم التطوير بواسطة ana. جميع الحقوق محفوظة",
+    "footerSections": [
+      {
+        "title": "روابط المعلومات",
+        "links": [
+          {
+            "title": "الشروط والأحكام",
+            "url": "#"
+          },
+          {
+            "title": "سياسة الخصوصية",
+            "url": "#"
+          },
+          {
+            "title": "الاسترجاع والاسترداد",
+            "url": "#"
+          },
+          {
+            "title": "طريقة الدفع",
+            "url": "#"
+          }
+        ]
+      },
+      {
+        "title": "روابط سريعة",
+        "links": [
+          {
+            "title": "من نحن",
+            "url": "#"
+          },
+          {
+            "title": "القائمة",
+            "url": "#"
+          },
+          {
+            "title": "الوصفات",
+            "url": "#"
+          },
+          {
+            "title": "اتصل بنا",
+            "url": "#"
+          }
+        ]
+      }
+    ],
+    "contacts": [
+      {
+        "value": "سيلهيت، بنغلاديش",
+        "icon": "https://res.cloudinary.com/duc04fwdb/image/upload/v1703108316/jammal_photos/oe8rjvrg0ckgohix2b6v.svg"
+      },
+      {
+        "value": "example@gmail.com",
+        "icon": "https://res.cloudinary.com/duc04fwdb/image/upload/v1703108228/jammal_photos/opdhewds9do1znaaj5li.svg"
+      },
+      {
+        "value": "+880 123 456 7890",
+        "icon": "https://res.cloudinary.com/duc04fwdb/image/upload/v1703108367/jammal_photos/y2583eh76th902gnzlje.svg"
+      }
+    ]
+  },
+  "colors": {
+    "templateColors": ["#0a071a", "#141124", "#f76e11", "#f5b70a", "#fff", "#c4c4c4b5"]
+  }
+}

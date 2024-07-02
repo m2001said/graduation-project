@@ -4,9 +4,34 @@ import "../components/yourPage/yourPage.css";
 import InputOption from "../components/yourPage/ChooseOption";
 import { getSectionData } from "../components/yourPage/getSectionData";
 import { useDispatch, useSelector } from "react-redux";
-
+import { useTranslation } from "react-i18next";
 import { ownTemplateActions } from "../features/templateData/ownTemplateSlice";
+
+const palettes = [
+  ["#FFFAF3", "#F1C40F", "#E67E22", "#E74C3C", "#8E44AD"],
+  ["#D1E8E4", "#A3D5D3", "#69BEB9", "#3C787E", "#27476E"],
+  ["#F5F3BB", "#C7F0BD", "#7DBBC3", "#607196", "#5C3C92"],
+  ["#F8F4E3", "#F1DCA7", "#F9A870", "#E68364", "#966C6C"],
+  ["#E1F7E7", "#A9E5BB", "#74C6A5", "#56A6A6", "#405D64"],
+  ["#F4EDE8", "#D9B5B5", "#A28A8A", "#6C6461", "#5A5351"],
+  ["#FAF9F6", "#F2E9E1", "#EAD5D5", "#B7B2A7", "#837D7A"],
+  ["#FEFBE7", "#F3DFA2", "#E8A87C", "#C38D9E", "#8E7C93"],
+  ["#FFFBF5", "#E1ECE5", "#C1DED1", "#AAC8C6", "#80746D"],
+  ["#FFFDFD", "#F4C2C2", "#E9A9A9", "#B6B6A6", "#7B7B7B"],
+  ["#F0F8FF", "#ACE5EE", "#8DD3C7", "#60B6B8", "#3B7A82"],
+  ["#FFFAF0", "#F3EACB", "#E2CFC4", "#C7B198", "#A67C67"],
+  ["#FFF5EE", "#FFD1B3", "#FFA07A", "#CD5C5C", "#8B4513"],
+  ["#E6E6FA", "#D8BFD8", "#DDA0DD", "#EE82EE", "#BA55D3"],
+  ["#F5F5F5", "#D3D3D3", "#A9A9A9", "#696969", "#2F4F4F"],
+  ["#FFE4C4", "#DEB887", "#D2B48C", "#BC8F8F", "#A0522D"],
+  ["#FDF5E6", "#FAEBD7", "#FFEFDB", "#FFEBCD", "#FFE4C4"],
+  ["#FFF8DC", "#FFEFD5", "#FFE4B5", "#FFDAB9", "#FFD700"],
+  ["#F5FFFA", "#E0FFFF", "#AFEEEE", "#40E0D0", "#20B2AA"],
+  ["#FFF0F5", "#FFB6C1", "#FF69B4", "#FF1493", "#DB7093"],
+];
+
 const BuildYourPage = () => {
+  const { i18n } = useTranslation();
   const sectionNames = [
     "navbar",
     "hero",
@@ -24,8 +49,9 @@ const BuildYourPage = () => {
     "footer",
   ];
 
-  //   //  for handle dashboard
   const dispatch = useDispatch();
+
+  // todo edit this to be  const templates = state.template1; ----- > said
   const templates = useSelector((state) => ({
     1: state.template1,
     2: state.template2,
@@ -82,6 +108,7 @@ const BuildYourPage = () => {
     } else {
       let userSchema = {};
       userSectionSelection.map((state) => {
+        // todo edit this to be one template  ----- > said
         for (const key in templates) {
           if (state.templateId.toString() === key.toString()) {
             userSchema[state.sectionName] = templates[key][state.sectionName];
@@ -91,12 +118,29 @@ const BuildYourPage = () => {
       });
       dispatch(ownTemplateActions.insertSections({ data: userSchema }));
 
-      navigate("/own-page", { state: selectedSections });
+      navigate(`/${i18n.language}/own-page`, { state: selectedSections });
     }
   };
 
   return (
-    <div className="own-page ">
+    <div className="own-page">
+      <div className="flex gap-4 flex-wrap">
+        {palettes.map((palette, paletteIndex) => (
+          <div key={paletteIndex} className="flex flex-col">
+            {palette.map((color, index) => (
+              <div
+                key={index}
+                style={{
+                  width: "150px",
+                  height: "30px",
+                  backgroundColor: color,
+                }}
+              />
+            ))}
+          </div>
+        ))}
+      </div>
+
       <div className="container mx-auto px-4 py-4">
         <h1 className="text-3xl font-bold tracking-tighter py-8 text-center text-white sm:text-4xl md:text-5xl lg:text-6xl/none">Build Your Own Page</h1>
         {/*  <div className="group text">

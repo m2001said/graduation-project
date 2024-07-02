@@ -1,8 +1,6 @@
 import React from "react";
 import "../../../../assets/css/globals10.css";
 
-
-
 const Footer10 = ({ template }) => {
   const footer = template.footer;
 
@@ -18,8 +16,8 @@ const Footer10 = ({ template }) => {
             <p className="">{footer.description}</p>
             <br />
             <div className="flex flex-col gap-3">
-              {footer.contacts.map((contact) => (
-                <div className="flex items-center gap-3">
+              {footer.contacts.map((contact, index) => (
+                <div className="flex items-center gap-3" key={index}>
                   <img src={contact.icon} alt="" className="w-5" />
                   <p>{contact.value}</p>
                 </div>

@@ -1,0 +1,303 @@
+{
+  "templateInfo": {
+    "id": 13,
+    "title": "",
+    "description": "",
+    "imgUrl": ""
+  },
+  "navbar": {
+    "imgUrl": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707951170/lighting_o2dsku.png",
+    "title": "سوليي",
+    "subtitle": "تواصل معنا",
+    "links": [
+      {
+        "title": "التصميم",
+        "url": "#about13"
+      },
+      {
+        "title": "من نحن",
+        "url": "#"
+      },
+      {
+        "title": "المشاريع",
+        "url": "#"
+      },
+      {
+        "title": "فريق الاتصال",
+        "url": "#"
+      },
+      {
+        "title": "التقييمات",
+        "url": "#testimonials13"
+      }
+    ],
+    "icons": [
+      "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707951170/menu-bar_q4qwbp.png",
+      "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707346109/realestate/next_2989988_stvovd.png",
+      "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707347076/icons8-close_ozpkst.svg"
+    ]
+  },
+  "hero": {
+    "title": "المعماريون بنهج مختلف",
+    "description": "الهندسة المعمارية هي فن وتقنية التصميم والبناء، متميزة عن المهارات",
+    "buttons": [
+      {
+        "buttonText": "عرض المشاريع",
+        "url": "#projects13"
+      },
+      {
+        "buttonText": "خدماتنا",
+        "url": "#services13"
+      }
+    ],
+    "imgUrl": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707937284/3_tx6g05.jpg",
+    "imageUrl": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707937130/4_rjddpl.jpg",
+    "icon": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707952901/right-arrow_1_y7iz2i.png"
+  },
+  "feature": {
+    "title": "مرحبًا بكم في الإضاءة",
+    "subtitle": "فن العمارة",
+    "description": "ستجد ذوقك هنا",
+    "features": [
+      {
+        "icon": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707959654/tree_qh0bvu.png",
+        "title": "عنوان الرمز 1",
+        "description": "وصف الرمز 1"
+      },
+      {
+        "icon": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707959653/holding-hand_1_ip0t5r.png",
+        "title": "عنوان الرمز 2",
+        "description": "وصف الرمز 2"
+      },
+      {
+        "icon": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707601512/star_qhtqlz.png",
+        "title": "عنوان الرمز 3",
+        "description": "وصف الرمز 3"
+      }
+    ]
+  },
+  "about": {
+    "title": "مرحبًا بكم في شركتنا",
+    "subtitle": "رحلتنا",
+    "text": "منذ 2010",
+    "description": "لوريم إيبسوم هو نص شكلي (بمعنى أن الغاية هي الشكل وليس المحتوى) ويُستخدم في صناعات المطابع ودور النشر.",
+    "imgUrl": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707937162/5_ookc7e.jpg",
+    "abouts": [
+      {
+        "title": "سنوات من الخبرة",
+        "value": 10
+      },
+      {
+        "title": "المشاريع المنجزة",
+        "value": 50
+      },
+      {
+        "title": "الجوائز المكتسبة",
+        "value": 20
+      }
+    ],
+    "icon": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707959810/up-arrow_dfq1o8.png",
+    "buttons": [
+      {
+        "buttonText": "ابدأ الآن",
+        "icon": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707952901/right-arrow_1_y7iz2i.png",
+        "url": "#contact13"
+      },
+      {
+        "buttonText": "تعرف على المزيد",
+        "icon": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707952901/right-arrow_1_y7iz2i.png",
+        "url": "#feature13"
+      }
+    ]
+  },
+  "projects": {
+    "title": "أعمالنا الأخيرة",
+    "subtitle": "مشاريعنا المكتملة",
+    "description": "مشاريعنا المكتملة",
+    "buttonText": "تحميل المزيد",
+    "linkText": "#",
+    "projects": [
+      {
+        "imgUrl": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707937447/pexels-ben-neale-380337_yuphlv.jpg",
+        "title": "لوريم إيبسوم دولور",
+        "description": "القاهرة الجديدة",
+        "icon": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707553370/klipartz.com_z2zhsv.png"
+      },
+      {
+        "imgUrl": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707937141/pexels-nubia-navarro-_nubikini_-3221215_wtzq4w.jpg",
+        "title": "لوريم إيبسوم دولور",
+        "description": "الأقصر",
+        "icon": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707553370/klipartz.com_z2zhsv.png"
+      },
+      {
+        "imgUrl": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707937146/pexels-pixabay-262367_b0ixae.jpg",
+        "title": "لوريم إيبسوم دولور",
+        "description": "الجيزة الجديدة",
+        "icon": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707553370/klipartz.com_z2zhsv.png"
+      }
+    ],
+    "icon": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707553370/klipartz.com_z2zhsv.png"
+  },
+  "contact": {
+    "title": "اشترك في نشرتنا الإخبارية",
+    "subtitle": "احصل على تحديثات البريد الإلكتروني لدينا حول أحدث المتاجر والعروض الخاصة.",
+    "description": "النشرة الإخبارية",
+    "buttonText": "سجل الآن",
+    "icon": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707952901/right-arrow_1_y7iz2i.png"
+  },
+  "logos": {
+    "companies": [
+      {
+        "imgUrl": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707329688/realestate/logo6_ddaq6y.png",
+        "title": "لوريم إيبسوم دولور"
+      },
+      {
+        "imgUrl": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707329687/realestate/logo3_fzmko0.png",
+        "title": "الإضاءة"
+      },
+      {
+        "imgUrl": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707975425/icons8-bird-64_kofuu5.png",
+        "title": "الإضاءة"
+      },
+      {
+        "imgUrl": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707329685/realestate/logo2_z1jb8d.png",
+        "title": "الإضاءة"
+      },
+      {
+        "imgUrl": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1703129091/icons8-stars-50_o1lg9s.png",
+        "title": "الإضاءة"
+      }
+    ]
+  },
+  "testimonials": {
+    "title": "ما الذي ",
+    "subtitle": "يقولونه عملائنا",
+    "description": "",
+    "testimonials": [
+      {
+        "imgUrl": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1703134020/avatar3_pbztwn.jpg",
+        "name": "أحمد",
+        "location": "الرئيس التنفيذي في AST",
+        "opinion": "نود أن ننتهز هذه الفرصة للتعبير عن سعادتنا بالطريقة التي تسير بها الأمور."
+      },
+      {
+        "imgUrl": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1703134020/avatar3_pbztwn.jpg",
+        "name": "أحمد",
+        "location": "الرئيس التنفيذي في AST",
+        "opinion": "نود أن ننتهز هذه الفرصة للتعبير عن سعادتنا بالطريقة التي تسير بها الأمور."
+      },
+      {
+        "imgUrl": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1703134020/avatar3_pbztwn.jpg",
+        "name": "أحمد",
+        "location": "الرئيس التنفيذي في AST",
+        "opinion": "نود أن ننتهز هذه الفرصة للتعبير عن سعادتنا بالطريقة التي تسير بها الأمور."
+      },
+      {
+        "imgUrl": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1703134020/avatar3_pbztwn.jpg",
+        "name": "أحمد",
+        "location": "الرئيس التنفيذي في AST",
+        "opinion": "نود أن ننتهز هذه الفرصة للتعبير عن سعادتنا بالطريقة التي تسير بها الأمور."
+      },
+      {
+        "imgUrl": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1703134020/avatar3_pbztwn.jpg",
+        "name": "أحمد",
+        "location": "الرئيس التنفيذي في AST",
+        "opinion": "نود أن ننتهز هذه الفرصة للتعبير عن سعادتنا بالطريقة التي تسير بها الأمور."
+      },
+      {
+        "imgUrl": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1703134020/avatar3_pbztwn.jpg",
+        "name": "أحمد",
+        "location": "الرئيس التنفيذي في AST",
+        "opinion": "نود أن ننتهز هذه الفرصة للتعبير عن سعادتنا بالطريقة التي تسير بها الأمور."
+      }
+    ]
+  },
+  "footer": {
+    "imgUrl": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707938679/lightning_h1zfze.png",
+    "description": "الهندسة المعمارية مع فهم عقول الناس",
+    "medias": [
+      {
+        "icon": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1703134255/meta-logo-facebook-svgrepo-com_zom99z.svg",
+        "url": "https://facebook.com"
+      },
+      {
+        "icon": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707987495/icons8-twitterx-50_1_ggrau2.png",
+        "url": "https://twitter.com"
+      },
+      {
+        "icon": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1703134254/linkedin-svgrepo-com_dpxquk.svg",
+        "url": "https://linkedin.com"
+      },
+      {
+        "icon": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1703134255/socialmedia-svgrepo-com_na36wp.svg",
+        "url": "https://instagram.com"
+      }
+    ],
+    "footerSections": [
+      {
+        "title": "الخدمات",
+        "links": [
+          {
+            "title": "المطبخ",
+            "url": "#"
+          },
+          {
+            "title": "منطقة المعيشة",
+            "url": "#"
+          },
+          {
+            "title": "الحمام",
+            "url": "#"
+          },
+          {
+            "title": "قاعة الطعام",
+            "url": "#"
+          },
+          {
+            "title": "غرفة النوم",
+            "url": "#"
+          }
+        ]
+      },
+      {
+        "title": "الأقسام",
+        "links": [
+          {
+            "title": "الرئيسية",
+            "url": "#"
+          },
+          {
+            "title": "المشاريع",
+            "url": "#"
+          },
+          {
+            "title": "التصميم",
+            "url": "#"
+          },
+          {
+            "title": "تابعنا",
+            "url": "#"
+          },
+          {
+            "title": "الجوائز",
+            "url": "#"
+          }
+        ]
+      }
+    ],
+    "contacts": [
+      {
+        "value": 55
+      },
+      {
+        "value": 14
+      },
+      {
+        "value": 141
+      }
+    ]
+  },
+  "colors": {
+    "templateColors": ["#fff", "#cda274", "#292f36", "#f4f0ec", "#777777"]
+  }
+}

@@ -2,7 +2,7 @@ import React from "react";
 import "../../../../assets/css/globals10.css";
 
 const Services10 = ({ template }) => {
-    const services = template.services;
+  const services = template.services;
 
   return (
     <>
@@ -17,8 +17,11 @@ const Services10 = ({ template }) => {
           {/* card sec */}
           {/* <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-20 md:gap-5 place-items-center"> */}
           <div className="flex flex-wrap place-content-center gap-20 md:gap-5">
-            {services.services.map((service) => (
-              <div className="my-7 rounded-2xl bg-white bgHover10 dark:bg-gray-800 dark:hover:bg-blue-600 hover:text-white relative shadow-xl duration-high group max-w-[300px] min-w-[300px]">
+            {services.services.map((service, index) => (
+              <div
+                key={index}
+                className="my-7 rounded-2xl bg-white bgHover10 dark:bg-gray-800 dark:hover:bg-blue-600 hover:text-white relative shadow-xl duration-high group max-w-[300px] min-w-[300px]"
+              >
                 <div className="h-[100px]">
                   <img
                     src={service.imgUrl}

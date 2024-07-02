@@ -1,9 +1,8 @@
 import React from "react";
-import { useSelector } from "react-redux";
 
-const Header = () => {
-  const { header } = useSelector((state) => state.template8);
-  console.log(header);
+const Header = ({ template }) => {
+  const header = template.header;
+
   return (
     <div className="py-8">
       <div className="container mx-auto">

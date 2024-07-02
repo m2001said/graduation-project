@@ -12,33 +12,16 @@ import Testimonials10 from "../components/sections/testimonials/testimonials10/T
 import Footer10 from "../components/sections/footers/footer10/Footer10";
 import TrialDesign from "./TrialDesign";
 
+const componentMapping10 = {
+  services: Services10,
+  features: Feature10,
+  team: Teams10,
+  testimonials: Testimonials10,
+  cta: Cta10,
+};
 
-
- 
-
-  const componentMapping10 = {
-    services: Services10,
-    features: Feature10,
-    team: Teams10,
-    testimonials: Testimonials10,
-    cta: Cta10,
-  };
-
-  const TrialDesign10 = () => {
-  return <TrialDesign componentMapping={componentMapping10} HeroComponent={Hero10} NavbarComponent={Navbar10} FooterComponent={Footer10} template={"template10"} />;
+const TrialDesign10 = () => {
+  return <TrialDesign componentMapping={componentMapping10} HeroComponent={Hero10} NavbarComponent={Navbar10} FooterComponent={Footer10} template={10} />;
 };
 
 export default TrialDesign10;
-
-
-
-
-
-
-
-
-
-
-
-
-  
