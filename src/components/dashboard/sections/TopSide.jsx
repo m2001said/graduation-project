@@ -121,4 +121,3 @@ const TopSide = ({ schema }) => {
 };
 
 export default TopSide;
-
