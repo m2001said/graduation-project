@@ -1,5 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
-import { addElement, addElementToArray, addSubElement, deleteElement, deleteSection, editElement, reorder, reorderSections } from "./actions";
+import { addElement, addElementToArray, addSubElement, deleteElement, deleteSection, editElement, reorder, reorderSections, updateSchema } from "./actions";
 const initialState = {
   templateInfo: {
     id: 10,
@@ -8,7 +8,7 @@ const initialState = {
     imgUrl: "",
   },
   navbar: {
-    logo: "Books",
+    title: "Books",
     imgUrl: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1706798279/logo_rcge0a.png",
     buttonText: "Order",
     links: [
@@ -32,7 +32,7 @@ const initialState = {
     title: "His Life will forever be Changed",
     description: "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     buttonText: "Order Now",
-    images: [
+    imgs: [
       "https://res.cloudinary.com/dmcdea0b9/image/upload/v1706805805/blue-pattern_d1mb2e.png",
       "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707067713/book1_a7epcd.jpg",
     ],
@@ -60,7 +60,7 @@ const initialState = {
     title: "Best Books",
     description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit Distinctio consectetur",
     subtitle: "Trending Books",
-    starIcon: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707083776/Star_lqpaao.svg",
+    icon: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707083776/Star_lqpaao.svg",
     services: [
       {
         title: "His Life",
@@ -109,14 +109,11 @@ const initialState = {
 
   cta: {
     title: "Read Books at Your Fingertips",
-    images: [
+    imgs: [
       "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707090472/board_hqttt2.png",
       "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707090485/app_store_s6wzhh.png",
       "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707090481/play_store_nmzfln.png",
     ],
-    bannerImg: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707090472/board_hqttt2.png",
-    AppStoreImg: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707090485/app_store_s6wzhh.png",
-    PlayStoreImg: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707090481/play_store_nmzfln.png",
   },
 
   team: {
@@ -128,35 +125,35 @@ const initialState = {
       {
         title: "Who's there",
         rating: "5.0",
-        author: "Someone",
+        name: "Someone",
         imgUrl: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707067713/book1_a7epcd.jpg",
         icon: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707083776/Star_lqpaao.svg",
       },
       {
         title: "His Life",
         rating: "4.5",
-        author: "John",
+        name: "John",
         imgUrl: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707067750/book2_fjsnwn.jpg",
         icon: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707083776/Star_lqpaao.svg",
       },
       {
         title: "Lost boys",
         rating: "4.7",
-        author: "Lost Girl",
+        name: "Lost Girl",
         imgUrl: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707067757/book3_fkzdr7.jpg",
         icon: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707083776/Star_lqpaao.svg",
       },
       {
         title: "His Life",
         rating: "4.4",
-        author: "Someone",
+        name: "Someone",
         imgUrl: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707067750/book2_fjsnwn.jpg",
         icon: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707083776/Star_lqpaao.svg",
       },
       {
         title: "Who's There",
         imgUrl: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707067713/book1_a7epcd.jpg",
-        author: "Someone",
+        name: "Someone",
         rating: "4.5",
         icon: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707083776/Star_lqpaao.svg",
       },
@@ -169,17 +166,17 @@ const initialState = {
     description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis delectus architecto error nesciunt",
     testimonials: [
       {
-        title: "Victor",
+        name: "Victor",
         description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque reiciendis inventore iste ratione ex alias quis magni at optio",
         imgUrl: "https://picsum.photos/101/101.jpg",
       },
       {
-        title: "Satya Narayan",
+        name: "Satya Narayan",
         description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque reiciendis inventore iste ratione ex alias quis magni at optio",
         imgUrl: "https://picsum.photos/102/102.jpg",
       },
       {
-        title: "Sachin Tendulkar",
+        name: "Sachin Tendulkar",
         description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque reiciendis inventore iste ratione ex alias quis magni at optio",
         imgUrl: "https://picsum.photos/103/103.jpg",
       },
@@ -318,6 +315,9 @@ const templateSlice10 = createSlice({
     },
     deleteSection: (state, action) => {
       return deleteSection(state, action);
+    },
+    updateSchema: (state, action) => {
+      return updateSchema(state, action);
     },
   },
 });

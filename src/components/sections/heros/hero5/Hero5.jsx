@@ -1,26 +1,12 @@
-import React,{useEffect} from 'react';
-import { useSelector } from "react-redux";
+import React from 'react';
 import "./hero5.css";
-import { useLocation } from 'react-router';
-
-// import Aos from 'aos'
-// import "aos/dist/aos.css"
 
 
-const Hero5 = () => {
 
-  // useEffect(()=>{
-  //   Aos.init({duration: 2000})
-  // },[])
 
-  const { pathname } = useLocation();
-  const hero = useSelector((state) => {
-    if (pathname.includes("own-page")) {
-      return state.ownTemplate.hero;
-    } else {
-      return state.template5.hero;
-    }
-  });
+const Hero5 = ({ template }) => {
+  const hero = template.hero;
+
   return (
     <div className="hero5 design5">
       <div className="hero5-mainText">
@@ -34,6 +20,6 @@ const Hero5 = () => {
       </div>
     </div>
   );
-}
+};
 
 export default Hero5

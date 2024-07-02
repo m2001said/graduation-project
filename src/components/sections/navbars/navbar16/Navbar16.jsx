@@ -1,9 +1,8 @@
-import React, { useEffect, useState } from "react";
-import { useSelector } from "react-redux";
+import React, { useState } from "react";
 import "./navbar16.css";
 
-const Navbar16 = () => {
-  const { navbar } = useSelector((state) => state.template16);
+const Navbar16 = ({ template }) => {
+  const navbar = template.navbar;
   const [showMenu, setShowMenu] = useState(false);
 
   // Remove the changeHeader function and the useEffect block
@@ -19,13 +18,13 @@ const Navbar16 = () => {
     <header className="header16">
       <nav className="nav16 container16">
         <a href="/" onClick={scrollTop} className="nav__logo16">
-          <img src={navbar.logo} alt="" className="nav__logo-img16" />
+          <img src={navbar.imgUrl} alt="" className="nav__logo-img16" />
         </a>
         <div className={`${showMenu ? "show-menu16" : ""} nav__menu16`}>
           <ul className="nav__list16">
-            {navbar.links.map(({ name, path }, index) => (
+            {navbar.links.map(({ name, url }, index) => (
               <li className="nav__item16" key={index}>
-                <a href={`#${path}`} className="nav__link16" onClick={() => setShowMenu(!showMenu)}>
+                <a href={`#${url}`} className="nav__link16" onClick={() => setShowMenu(!showMenu)}>
                   {name}
                 </a>
               </li>

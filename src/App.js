@@ -7,9 +7,14 @@ import DesignsPage from "./pages/DesignsPage";
 import BuildYourPage from "./pages/BuildYourPage";
 import NotFound from "./pages/NotFoundPage";
 import OwnPage from "./pages/OwnPage.jsx";
+import UserInformation from "./pages/UserInformation.jsx";
 import ProtectedRoute from "./pages/ProtectedRoute";
+import SuccessVerified from "./pages/SuccessVerified.jsx";
+import FailedVerified from "./pages/FailedVerified.jsx";
+import ResetPassword from "./pages/ResetPassword.jsx";
 
 import YourWebsites from "./pages/YourWebsites.jsx";
+import Admin from "./pages/Admin";
 const trialDesignComponents = Array.from({ length: 18 }, (_, i) => require(`./pages/TrialDesign${i + 1}`).default);
 const websites = Array.from({ length: 18 }, (_, i) => require(`./pages/TrialDesign${i + 1}`).default);
 
@@ -24,12 +29,24 @@ function App() {
       <MainNav toggleModal={toggleModal} />
       <div style={{ marginTop: "77px" }} id="template-container">
         <Routes>
+          <Route path="/success-verified" element={<SuccessVerified />} />
+          <Route path="/failed-verified" element={<FailedVerified />} />
+          <Route path="/reset-password/:token" element={<ResetPassword />} />
+
           <Route path="/" element={<MainPage toggleModal={toggleModal} isModalOpen={isModalOpen} />} />
           <Route
             path="/designs"
             element={
               <ProtectedRoute>
                 <DesignsPage />
+              </ProtectedRoute>
+            }
+          />
+          <Route
+            path="/user-information"
+            element={
+              <ProtectedRoute>
+                <UserInformation />
               </ProtectedRoute>
             }
           />
@@ -89,8 +106,6 @@ function App() {
             ))}
           </Route>
 
-
-
           <Route element={<Dashboard />}>
             {trialDesignComponents.map((Component, index) => (
               // <Route key={`build-trial-design${index}`} path={`/build-trial-design${index + 1}/:pageId`} element={<Component />} />
@@ -105,6 +120,7 @@ function App() {
               />
             ))}
           </Route>
+          <Route path="/admin" element={<Admin />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </div>

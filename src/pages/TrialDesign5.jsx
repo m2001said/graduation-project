@@ -10,16 +10,16 @@ import Footer5 from "../components/sections/footers/footer5/Footer5";
 import TrialDesign from "./TrialDesign";
 const TrialDesign5 = () => {
   const componentMapping = {
-    features1: Feature5,
+    features: Feature5,
     services: Services5,
-    features2: Feature21,
+    blogs: Feature21,
     team: Teams5,
     cta: Cta5,
   };
 
   return (
     <div className="design5">
-      <TrialDesign componentMapping={componentMapping} HeroComponent={Hero5} NavbarComponent={Navbar5} footerComponent={Footer5} template={"template5"} />;
+      <TrialDesign componentMapping={componentMapping} HeroComponent={Hero5} NavbarComponent={Navbar5} FooterComponent={Footer5} template={"template5"} />;
     </div>
   );
 };
