@@ -35,27 +35,27 @@ const AdminAccounts = () => {
         setLoading(false);
       }
     };
-    const superAdmin = async () => {
-      try {
-        setLoading(true);
-        setError(false);
-        const data = await axios.get(`${API_BASE_URL}/user/superadmin?super3-admin`, {
-          headers: {
-            Authorization: "Bearer " + token,
-          },
-        });
-         console.log(data);
-        setAdmins(data.data.users);
-      } catch (error) {
-        console.log(error);
-        setError(true);
-      } finally {
-        setLoading(false);
-      }
-    };
+    // const superAdmin = async () => {
+    //   try {
+    //     setLoading(true);
+    //     setError(false);
+    //     const data = await axios.get(`${API_BASE_URL}/user/superadmin?super-admin`, {
+    //       headers: {
+    //         Authorization: "Bearer " + token,
+    //       },
+    //     });
+    //      console.log(data);
+    //     setAdmins(data.data.users);
+    //   } catch (error) {
+    //     console.log(error);
+    //     setError(true);
+    //   } finally {
+    //     setLoading(false);
+    //   }
+    // };
     
     fetchAdmins();
-    superAdmin();
+    // superAdmin();
   }, []);
 
   return (
