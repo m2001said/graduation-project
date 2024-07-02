@@ -38,8 +38,8 @@ const TrialDesign = ({ componentMapping, FooterComponent, NavbarComponent, HeroC
         });
         setTemplateData(res.data);
         document.documentElement.style = "";
-        for (let index = 0; index < res.data.colors.templateColors.length; index++) {
-          document.documentElement.style.setProperty(`--website-color-${index + 1}`, res.data.colors.templateColors[index]);
+        for (let index = 0; index < res.data.colors?.templateColors.length; index++) {
+          document.documentElement.style.setProperty(`--website-color-${index + 1}`, res.data.colors?.templateColors[index]);
         }
       } catch (error) {
         console.error("Error fetching template data:", error);
@@ -57,8 +57,8 @@ const TrialDesign = ({ componentMapping, FooterComponent, NavbarComponent, HeroC
       }
     } else {
       document.documentElement.style = "";
-      for (let index = 0; index < state.colors.templateColors.length; index++) {
-        document.documentElement.style.setProperty(`--website-color-${index + 1}`, state.colors.templateColors[index]);
+      for (let index = 0; index < state.colors?.templateColors.length; index++) {
+        document.documentElement.style.setProperty(`--website-color-${index + 1}`, state.colors?.templateColors[index]);
       }
     }
   }, []);
