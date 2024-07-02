@@ -99,11 +99,11 @@ const BuildYourPage = () => {
     <div className="own-page ">
       <div className="container mx-auto px-4 py-4">
         <h1 className="text-3xl font-bold tracking-tighter py-8 text-center text-white sm:text-4xl md:text-5xl lg:text-6xl/none">Build Your Own Page</h1>
-        <div className="group text">
+        {/*  <div className="group text">
           <p className="title">Website description</p>
-          <textarea name="text" id="text"></textarea>
-        </div>
-
+        <textarea name="text" id="text"></textarea> 
+             </div>
+*/}
         {sectionNames.map((section, index) => (
           <div key={section}>
             <label htmlFor={`show${index}`} className="show-section">
@@ -111,7 +111,7 @@ const BuildYourPage = () => {
               <img src="https://res.cloudinary.com/duc04fwdb/image/upload/v1709052019/jammal_photos/vdybrjarzdlo6x9fdwga.svg" alt="down-icon" />
             </label>
             <input type="checkbox" name="show" className="show-btn" id={`show${index}`} onChange={removeIndexChange(section)} />
-              <InputOption item={getSectionData(section)} section={section} handleIndexChange={handleIndexChange} />
+            <InputOption item={getSectionData(section)} section={section} handleIndexChange={handleIndexChange} />
           </div>
         ))}
 
