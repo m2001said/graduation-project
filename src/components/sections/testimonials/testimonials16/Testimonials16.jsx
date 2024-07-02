@@ -1,11 +1,12 @@
 import React, { useState } from "react";
-import { useSelector } from "react-redux";
+
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "./testimonials16.css";
 
-const Testimonials16 = () => {
-  const { testimonial } = useSelector((state) => state.template16);
+const Testimonials16 = ({ template }) => {
+  const testimonials = template.testimonials;
+
   const [activeIndex, setActiveIndex] = useState(0);
 
   const handleSlideChange = (swiper) => {
@@ -31,7 +32,7 @@ const Testimonials16 = () => {
           },
         }}
       >
-        {testimonial.testimonial.map(({ image, title, service, description }, index) => {
+        {testimonials.testimonials.map(({ imgUrl, title, subtitle, description }, index) => {
           return (
             <SwiperSlide className="testimonials__item16" key={index}>
               <div className="testimonial__qoute16">
@@ -42,11 +43,11 @@ const Testimonials16 = () => {
               </div>
               <div className="testimonial__content16">
                 <div className="testimonial__img-wrapper16">
-                  <img src={image} alt="" className="testimonial__img16" />
+                  <img src={imgUrl} alt="" className="testimonial__img16" />
                 </div>
                 <div>
                   <h3 className="testimonial__title16">{title}</h3>
-                  <p className="testimonial__service16">{service}</p>
+                  <p className="testimonial__service16">{subtitle}</p>
                 </div>
               </div>
             </SwiperSlide>

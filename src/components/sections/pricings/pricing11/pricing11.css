@@ -3,13 +3,13 @@
   flex-wrap: wrap;
   justify-content: center;
   gap: 1.875rem;
-  background-color: var(--color22);
+  background-color: var(--website-11-color-2);
 }
 
 .pricing__item11 {
   flex: 0 0 calc(33.333% - 1.875rem);
   padding: 1.875rem 2.5rem;
-  background-color: var(--color22);
+  background-color: var(--website-11-color-2);
   text-align: center;
   border-radius: var(--border-radius);
   box-shadow: var(--shadow);

@@ -1,9 +1,8 @@
 import React from "react";
 import "./menu16.css";
-import { useSelector } from "react-redux";
 
-const Menu16 = () => {
-  const { Menu } = useSelector((state) => state.template16);
+const Menu16 = ({ template }) => {
+  const items = template.items;
 
   return (
     <section className="menu16 section16" id="menu">
@@ -11,11 +10,11 @@ const Menu16 = () => {
         Let's Check Our Menu
       </h2>
       <div className="menu__grid16 container16 grid16">
-        {Menu.menus.map(({ image, title, description, price }, index) => {
+        {items.items.map(({ imgUrl, title, description, price }, index) => {
           return (
             <div className="menu__item16 grid16" key={index}>
               <div className="menu__img-wrapper16">
-                <img src={image} alt="" className="menu__img16" />
+                <img src={imgUrl} alt="" className="menu__img16" />
               </div>
               <div className="menu__data16">
                 <div>

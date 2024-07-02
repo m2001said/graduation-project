@@ -20,11 +20,9 @@
 
 // export default ServicesBox11;
 import React from "react";
-import { useSelector } from "react-redux";
 
-const ServicesBox11 = () => {
-  const { statistics } = useSelector((state) => state.template11);
-  const statistic = statistics;
+const ServicesBox11 = ({ template }) => {
+  const statistic = template.statistics;
   return (
     <div className="about___boxes11 grid11">
       {statistic.statistics.map((stat, index) => (

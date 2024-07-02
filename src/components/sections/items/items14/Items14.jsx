@@ -1,9 +1,8 @@
 import React from "react";
 import "./items14.css";
-import { useSelector } from "react-redux";
 
-const Items14 = () => {
-  const { items } = useSelector((state) => state.template14);
+const Items14 = ({template}) => {
+    const items = template.items;
 
   return (
     <div className="py-10 bg-[--website-14-color-6] dark:bg-gray-900">

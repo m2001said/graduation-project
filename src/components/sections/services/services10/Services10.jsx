@@ -1,20 +1,12 @@
 import React from "react";
-import { useSelector } from "react-redux";
 import "../../../../assets/css/globals10.css";
-import { useLocation } from "react-router";
 
-const Services10 = ({ handleOrderPopup }) => {
-  const { pathname } = useLocation();
-  const services = useSelector((state) => {
-    if (pathname.includes("own-page")) {
-      return state.ownTemplate.services;
-    } else {
-      return state.template10.services;
-    }
-  });
+const Services10 = ({ template }) => {
+    const services = template.services;
+
   return (
     <>
-      <div className="py-10 bg-[--website-10-color-2] dark:bg-gray-900 ">
+      <div className="py-10 bg-[--website-10-color-2] dark:bg-gray-900 dark:text-white">
         <div className="items-center p-7 sm:p-30">
           {/* head sec */}
           <div className="text-center mb-20 max-w-[400px] mx-auto">
@@ -36,17 +28,14 @@ const Services10 = ({ handleOrderPopup }) => {
                 </div>
                 <div className="p-4 text-center">
                   <div className="w-full flex items-center justify-center gap-0">
-                    <img src={services.starIcon} alt="" className="w-6" />
-                    <img src={services.starIcon} alt="" className="w-6" />
-                    <img src={services.starIcon} alt="" className="w-6" />
-                    <img src={services.starIcon} alt="" className="w-6" />
+                    <img src={services.icon} alt="" className="w-6" />
+                    <img src={services.icon} alt="" className="w-6" />
+                    <img src={services.icon} alt="" className="w-6" />
+                    <img src={services.icon} alt="" className="w-6" />
                   </div>
                   <h1 className="text-xl font-bold">{service.title}</h1>
                   <p className="text-gray-500 group-hover:text-white duration-300 text-sm line-clamp-2">{service.description}</p>
-                  <button
-                    onClick={handleOrderPopup}
-                    className="btnBg10 btnTxt10 hover:scale-105 duration-300 py-1 px-4 rounded-full mt-4 group-hover:bg-white group-hover:text-blue-600"
-                  >
+                  <button className="btnBg10 btnTxt10 hover:scale-105 duration-300 py-1 px-4 rounded-full mt-4 group-hover:bg-white group-hover:text-blue-600">
                     {service.buttonText}
                   </button>
                 </div>

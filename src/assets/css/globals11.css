@@ -2,28 +2,12 @@
 
 /* ===========Variables CSS======== */
 :root {
-  /* --first-color11: hsl(353, 100%, 65%);
-  --second-color11: hsl(244, 100%, 65%);
-  --title-color11: hsl(244, 24%, 26%);
-  --text-color11: hsl(244, 16%, 43%);
-  --body-color11: hsl(258, 60%, 98%);
-  --container-color11: #fff;
-  --orange11: #f48915;
-  --move11: #8b88b1;
-  --hsl111: hsl(43, 100%, 68%);
-  --hsl211: hsl(245, 15%, 65%);
-  --gray11: #454360;
-  --black011: rgba(0, 0, 0, 0.05);
-  --whiteMove11: #e8dfec;
-  --Banf11: #6c6ce5;
-  --white0011: #f1f1f1; */
-
-  --color1: hsl(353, 100%, 65%);
-  --color22: #fff;
-  --color3: #f48915;
-  --color4: hsl(245, 15%, 65%);
-  --color5: hsl(244, 24%, 26%);
-  --color6: #6c6ce5;
+  --website-11-color-1: hsl(353, 100%, 65%);
+  --website-11-color-2: #fff;
+  --website-11-color-3: #f48915;
+  --website-11-color-4: hsl(245, 15%, 65%);
+  --website-11-color-5: hsl(244, 24%, 26%);
+  --website-11-color-6: #6c6ce5;
   /* ======================Font and Typography================== */
   /* .5rem = 8px | 1rem = 16px ...*/
   --body-font: "Rubik", sans-serif;
@@ -44,35 +28,35 @@
   --border-radius: 20px;
 }
 .nav11_background {
-  background-color: var(--color1);
+  background-color: var(--website-11-color-1);
 }
 
 .serv11_background {
-  background-color: var(--color1);
+  background-color: var(--website-11-color-1);
 }
 .static11_background {
-  background-color: var(--color1);
+  background-color: var(--website-11-color-1);
 }
 .hero11_background {
-  background-color: var(--color1);
+  background-color: var(--website-11-color-1);
 }
 .hero11_background {
-  background-color: var(--color1);
+  background-color: var(--website-11-color-1);
 }
 .hero11_background {
-  background-color: var(--color1);
+  background-color: var(--website-11-color-1);
 }
 .hero11_background {
-  background-color: var(--color1);
+  background-color: var(--website-11-color-1);
 }
 .hero11_background {
-  background-color: var(--color1);
+  background-color: var(--website-11-color-1);
 }
 .hero11_background {
-  background-color: var(--color1);
+  background-color: var(--website-11-color-1);
 }
 .hero11_background {
-  background-color: var(--color1);
+  background-color: var(--website-11-color-1);
 }
 /* =========== Responsive ============= */
 @media screen and (max-width: 1024px) {
@@ -150,9 +134,9 @@ img {
   border-radius: 1.875rem;
   box-shadow: 0 0 1px rgba(0, 0, 0, 0);
   border: 1px solid transparent;
-  color: var(--color22);
+  color: var(--website-11-color-2);
   display: inline-block;
-  background-color: var(--color1);
+  background-color: var(--website-11-color-1);
   font-weight: var(--font-bold);
 }
 

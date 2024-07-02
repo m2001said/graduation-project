@@ -1,11 +1,11 @@
 import "./hero4.css";
 import { useEffect } from "react";
-import { useSelector } from "react-redux";
+
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { useLocation } from "react-router";
 
-const Hero4 = () => {
+const Hero4 = ({ template }) => {
+  const hero = template.hero;
   useEffect(() => {
     AOS.init({
       duration: 1000,
@@ -29,14 +29,6 @@ const Hero4 = () => {
     };
   }, []);
 
-  const { pathname } = useLocation();
-  const hero = useSelector((state) => {
-    if (pathname.includes("own-page")) {
-      return state.ownTemplate.hero;
-    } else {
-      return state.template4.hero;
-    }
-  });
   return (
     <section className="hero-wrapper" data-aos="fade-up">
       <div className="paddings innerWidth flexCenter hero-container">
@@ -46,8 +38,8 @@ const Hero4 = () => {
             <h1>{hero.title}</h1>
           </div>
           <div className="flexColStart secondaryText flexhero-des">
-            <span>{hero.description1}</span>
-            <span>{hero.description2}</span>
+            <span>{hero.description}</span>
+            <span>{hero.text}</span>
           </div>
 
           <div className="flexCenter search-bar">
@@ -59,23 +51,23 @@ const Hero4 = () => {
           <div className="flexCenter stats">
             <div className="flexColCenter stat">
               <span>
-                {hero.stats[0].end} <span>{hero.icon}</span>
+                {hero.heros[0].end} <span>{hero.icon}</span>
               </span>
-              <span className="secondaryText">{hero.stats[0].title}</span>
+              <span className="secondaryText">{hero.heros[0].title}</span>
             </div>
 
             <div className="flexColCenter stat">
               <span>
-                {hero.stats[1].end} <span>{hero.icon}</span>
+                {hero.heros[1].end} <span>{hero.icon}</span>
               </span>
-              <span className="secondaryText">{hero.stats[1].title}</span>
+              <span className="secondaryText">{hero.heros[1].title}</span>
             </div>
 
             <div className="flexColCenter stat">
               <span>
-                {hero.stats[2].end} <span>{hero.icon}</span>
+                {hero.heros[2].end} <span>{hero.icon}</span>
               </span>
-              <span className="secondaryText">{hero.stats[2].title}</span>
+              <span className="secondaryText">{hero.heros[2].title}</span>
             </div>
           </div>
         </div>

@@ -1,17 +1,10 @@
 import React from "react";
 import styles from "../../heros/hero7/styles7/style";
-import { useSelector } from "react-redux";
-import { useLocation } from "react-router";
 
-const Stats7 = () => {
-  const { pathname } = useLocation();
-  const statistics = useSelector((state) => {
-    if (pathname.includes("own-page")) {
-      return state.ownTemplate.statistics;
-    } else {
-      return state.template7.statistics;
-    }
-  });
+const Stats7 = ({ template }) => {
+  const statistics = template.statistics;
+  console.log(statistics);
+
   return (
     <div className={`bg-primary ${styles.paddingX} ${styles.flexStart}`}>
       <div className={`${styles.boxWidth}`}>

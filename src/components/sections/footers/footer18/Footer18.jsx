@@ -1,19 +1,11 @@
 import React from "react";
-import { useSelector } from "react-redux";
-import { useLocation } from "react-router";
 
-const Footer18 = () => {
-  // const { footer } = useSelector((state) => state.template18);
-  const { pathname } = useLocation();
-  const footer = useSelector((state) => {
-    if (pathname.includes("own-page")) {
-      return state.ownTemplate.footer;
-    } else {
-      return state.template18.footer;
-    }
-  });
+
+const Footer18 = ({template}) => {
+const footer = template.footer;
+
   return (
-    <div className="bg-gray-100 dark:bg-[--dark18] mt-14 rounded-t-3xl">
+    <div className="bg-gray-100 dark:bg-black dark:text-white duration-300">
       <section className="container18">
         <div className=" grid md:grid-cols-3 py-5">
           {/* company Details */}

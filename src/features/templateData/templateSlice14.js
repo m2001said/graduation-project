@@ -1,5 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
-import { addElement, addElementToArray, addSubElement, deleteElement, deleteSection, editElement, reorder, reorderSections } from "./actions";
+import { addElement, addElementToArray, addSubElement, deleteElement, deleteSection, editElement, reorder, reorderSections, updateSchema } from "./actions";
 const initialState = {
   templateInfo: {
     id: 14,
@@ -9,50 +9,50 @@ const initialState = {
   },
   navbar: {
     title: "Eshop",
-    logo: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707601954/logo_xtzffr.png",
     links: [
       {
         title: "Home",
-        url: "/#",
+        url: "#",
       },
       {
         title: "Shop",
-        url: "/#shop",
+        url: "#",
       },
       {
         title: "About",
-        url: "/#about",
+        url: "#",
       },
       {
         title: "Blogs",
-        url: "/#blog",
+        url: "#",
       },
     ],
-    buttonText: "!",
-    buttonIcon: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707775619/icons8-shopping-cart-24_w0vwvt.png",
-    darkPng: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1706805795/dark-mode-button_e9kiqi.png",
-    lightPng: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1706805773/light-mode-button_ermmq3.png",
+    icon: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707775619/icons8-shopping-cart-24_w0vwvt.png",
+    icons: [
+      "https://res.cloudinary.com/dmcdea0b9/image/upload/v1706805795/dark-mode-button_e9kiqi.png",
+      "https://res.cloudinary.com/dmcdea0b9/image/upload/v1706805773/light-mode-button_ermmq3.png",
+    ],
   },
 
   hero: {
     heros: [
       {
-        img: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707602286/headphone_qbcak3.png",
+        imgUrl: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707602286/headphone_qbcak3.png",
         subtitle: "Beats Solo",
         title: "Wireless",
-        title2: "Headphone",
+        description: "Headphone",
       },
       {
-        img: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707602303/vr_zzinjy.png",
+        imgUrl: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707602303/vr_zzinjy.png",
         subtitle: "Beats Solo",
         title: "Wireless",
-        title2: "Virtual",
+        description: "Virtual",
       },
       {
-        img: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707602295/macbook_dxcdn8.png",
+        imgUrl: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707602295/macbook_dxcdn8.png",
         subtitle: "Beats Solo",
         title: "Branded",
-        title2: "Laptops",
+        description: "Laptops",
       },
     ],
     buttonText: "Shop By Category",
@@ -93,93 +93,85 @@ const initialState = {
   services: {
     services: [
       {
-        imgUrl: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707602721/icons8-sedan-30_zecew1.png",
+        icon: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707602721/icons8-sedan-30_zecew1.png",
         title: "Free Shipping",
         description: "Free Shipping On All Order",
       },
       {
-        imgUrl: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707602913/icons8-checkmark-64_kxv4x8.png",
+        icon: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707602913/icons8-checkmark-64_kxv4x8.png",
         title: "Safe Money ",
         description: "30 Days Money Back",
       },
       {
-        imgUrl: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707602989/icons8-wallet-30_prjgk8.png",
+        icon: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707602989/icons8-wallet-30_prjgk8.png",
         title: "Secure Payment",
         description: "All Payment Secure",
       },
       {
-        imgUrl: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707603085/icons8-headphones-30_xandnm.png",
+        icon: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707603085/icons8-headphones-30_xandnm.png",
         title: "Online Supoort 24/7",
         description: "Technical Support 24/7",
       },
     ],
   },
 
-  offer1: {
+  featuers: {
     discount: "30% OFF",
     title: "Fine Smile",
     date: "10 Jan to 28 Jan",
-    image: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707603385/headphone_pkjxnj.png",
-    title2: "Air Solo Bass",
-    title3: "Winter Sale",
-    title4: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque reiciendis",
+    imgUrl: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707603385/headphone_pkjxnj.png",
+    subtitle: "Air Solo Bass",
+    text: "Winter Sale",
+    description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque reiciendis",
+    buttonText: "Shop Now",
   },
-  products: {
+
+  projects: {
     title: "Our Products",
     description: "Explore Our Products",
-    products: [
+    projects: [
       {
-        img: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707604733/p-1_mqzmix.jpg",
+        imgUrl: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707604733/p-1_mqzmix.jpg",
         title: "Boat Headphone",
         price: "120",
       },
       {
-        img: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707604737/p-2_qc3prb.jpg",
+        imgUrl: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707604737/p-2_qc3prb.jpg",
         title: "Rocky Mountain",
         price: "420",
       },
       {
-        img: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707604741/p-3_gfoj4a.jpg",
+        imgUrl: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707604741/p-3_gfoj4a.jpg",
         title: "Goggles",
         price: "320",
       },
       {
-        img: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707604745/p-4_hkawqn.jpg",
+        imgUrl: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707604745/p-4_hkawqn.jpg",
         title: "Printed ",
         price: "220",
       },
       {
-        img: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707604748/p-5_lbyuxu.jpg",
+        imgUrl: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707604748/p-5_lbyuxu.jpg",
         title: "Boat Headphone",
         price: "120",
       },
       {
-        img: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707604761/p-7_fkl1tb.jpg",
+        imgUrl: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707604761/p-7_fkl1tb.jpg",
         title: "Rocky Mountain",
         price: "420",
       },
       {
-        img: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707604765/p-9_bypahb.jpg",
+        imgUrl: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707604765/p-9_bypahb.jpg",
         title: "Goggles",
         price: "320",
       },
       {
-        img: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707604748/p-5_lbyuxu.jpg",
+        imgUrl: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707604748/p-5_lbyuxu.jpg",
         title: "Printed ",
         price: "220",
       },
     ],
     buttonText: "Add to cart",
-  },
-
-  offer2: {
-    discount: "30% OFF",
-    title: "Happy Hours",
-    date: "14 Jan to 28 Jan",
-    image: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707603374/smartwatch2-removebg-preview_ivyg4p.png",
-    title2: "Smart Solo",
-    title3: "Winter Sale",
-    title4: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque reiciendis",
   },
 
   blogs: {
@@ -189,20 +181,20 @@ const initialState = {
       {
         title: "How to choose perfect smartwatch",
         subtitle: "minima facere deserunt vero illo beatae deleniti eius dolores consequuntur, eligendi corporis maiores molestiae Porro?",
-        published: "Jan 20, 2024 by Dilshad",
-        image: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707604612/blog-1_n5jvci.jpg",
+        description: "Jan 20, 2024 by Dilshad",
+        imgUrl: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707604612/blog-1_n5jvci.jpg",
       },
       {
         title: "How to choose perfect gadget",
         subtitle: "minima facere deserunt vero illo beatae deleniti eius dolores consequuntur, eligendi corporis maiores molestiae Porro?",
-        published: "Jan 20, 2024 by Satya",
-        image: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707604616/blog-2_nmxkbb.jpg",
+        description: "Jan 20, 2024 by Satya",
+        imgUrl: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707604616/blog-2_nmxkbb.jpg",
       },
       {
         title: "How to choose perfect VR headset",
         subtitle: "minima facere deserunt vero illo beatae deleniti eius dolores consequuntur, eligendi corporis maiores molestiae Porro?",
-        published: "Jan 20, 2024 by Sabir",
-        image: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707604621/blog-3_ko9kq9.jpg",
+        description: "Jan 20, 2024 by Sabir",
+        imgUrl: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707604621/blog-3_ko9kq9.jpg",
       },
     ],
   },
@@ -219,7 +211,7 @@ const initialState = {
 
   footer: {
     title: "Eshop",
-    logo: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707601954/logo_xtzffr.png",
+    imgUrl: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707601954/logo_xtzffr.png",
     description: "Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, voluptate.",
     medias: [
       {
@@ -303,6 +295,9 @@ const templateSlice14 = createSlice({
     },
     deleteSection: (state, action) => {
       return deleteSection(state, action);
+    },
+    updateSchema: (state, action) => {
+      return updateSchema(state, action);
     },
   },
 });

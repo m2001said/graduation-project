@@ -1,5 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
-import { addElement, addElementToArray, addSubElement, deleteElement, deleteSection, editElement, reorder, reorderSections } from "./actions";
+import { addElement, addElementToArray, addSubElement, deleteElement, deleteSection, editElement, reorder, reorderSections, updateSchema } from "./actions";
 const initialState = {
   templateInfo: {
     id: 3,
@@ -8,65 +8,84 @@ const initialState = {
     imgUrl: "",
   },
   navbar: {
-    logos: [
-      "https://res.cloudinary.com/duc04fwdb/image/upload/v1705928879/jammal_photos/vqliep1jh8zlgkmwkewx.png",
-      "https://res.cloudinary.com/duc04fwdb/image/upload/v1705931744/jammal_photos/fbb4rdapofxl04oewfc3.png",
+    imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1705928879/jammal_photos/vqliep1jh8zlgkmwkewx.png",
+
+    links: [
+      {
+        title: "Home",
+        url: "home",
+      },
+      {
+        title: "Programs",
+        url: "programs",
+      },
+      {
+        title: "Why us",
+        url: "WhyUs",
+      },
+      {
+        title: "Plans",
+        url: "Plans",
+      },
+      {
+        title: "Testimonials",
+        url: "Testimonials",
+      },
     ],
-    links: ["Home", "Programs", "Why us", "Plans", "Testimonials"],
   },
   hero: {
-    Subtitle: "the best fitness club in the town",
-    imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703609517/jammal_photos/neoqh0j4yjexem6j9ozp.png",
     title: "shape your ideal body",
+    subtitle: "the best fitness club in the town",
+    imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703609517/jammal_photos/neoqh0j4yjexem6j9ozp.png",
     description: "In here we will help you to shape and build your ideal body and live up your life to fullest..",
-    statistics: [
+    heros: [
       {
-        count: "+140",
-        description: "EXPORT COACHS",
+        title: "+140",
+        subtitle: "EXPORT COACHS",
       },
       {
-        count: "+978",
-        description: "MEMBERS JOINED",
+        title: "+978",
+        subtitle: "MEMBERS JOINED",
       },
       {
-        count: "+50",
-        description: "FITNESS PROGRAMS",
+        title: "+50",
+        subtitle: "FITNESS PROGRAMS",
       },
     ],
-    Button: {
-      primaryButton: "Get Started",
-      secondaryButton: "Learn More",
-      actionButton: "Join now",
-    },
+    buttonText: "Get Started",
+    linkText: "Learn More",
+    text: "Join now",
   },
 
   projects: {
-    title: [{ Subtitle: "EXPLORE OUR" }, { Subtitle: "PROGRAMS" }, { Subtitle: "TO SHAPE YOU" }],
-    actionButton: "Join Now",
+    title: "EXPLORE OUR",
+    subtitle: "PROGRAMS",
+    description: "TO SHAPE YOU",
+    buttonText: "Join Now",
     imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1702986510/jammal_photos/pouffwm6ffmtztpisvjv.png",
-    descriptions: [
+    projects: [
       {
-        heading: "Strength Training",
-        details: "In this program, you are trained to improve your strength through many exercises.",
+        title: "Strength Training",
+        description: "In this program, you are trained to improve your strength through many exercises.",
       },
       {
-        heading: "Cardio Training",
-        details: "In this program, you are trained to do sequential moves in range of 20 until 30 minutes.",
+        title: "Cardio Training",
+        description: "In this program, you are trained to do sequential moves in range of 20 until 30 minutes.",
       },
       {
-        heading: "Fat Burning",
-        details: "This program is suitable for you who wants to get rid of your fat and lose their weight.",
+        title: "Fat Burning",
+        description: "This program is suitable for you who wants to get rid of your fat and lose their weight.",
       },
       {
-        heading: "Health Fitness",
-        details: "This programs is designed for those who exercises only for their body fitness not body building.",
+        title: "Health Fitness",
+        description: "This programs is designed for those who exercises only for their body fitness not body building.",
       },
     ],
   },
   features: {
-    Subtitle: "SOME REASONS",
     title: "WHY CHOOSE US ?",
-    imgUrl: [
+    subtitle: "SOME REASONS",
+    imgs: [
       "https://res.cloudinary.com/duc04fwdb/image/upload/v1702989257/jammal_photos/ywgmvzeed0ebb7myfvyw.png",
       "https://res.cloudinary.com/duc04fwdb/image/upload/v1702989314/jammal_photos/coh8z8kfvjla5xurgg2p.png",
       "https://res.cloudinary.com/duc04fwdb/image/upload/v1702989351/jammal_photos/azgv09qa1amwje8gu9ms.png",
@@ -77,7 +96,7 @@ const initialState = {
       "https://res.cloudinary.com/duc04fwdb/image/upload/v1702989514/jammal_photos/blcyycnc06jda0rwtuol.png", //adadis
     ],
 
-    statistics: [
+    features: [
       {
         description: "OVER 140+ EXPERT COACHS",
       },
@@ -96,23 +115,15 @@ const initialState = {
     ],
   },
   pricing: {
-    title: [
-      {
-        Subtitle: "READY TO START",
-      },
-      {
-        Subtitle: "YOUR JOURNEY",
-      },
-      {
-        Subtitle: "NOW WITHUS",
-      },
-    ],
+    title: "READY TO START",
+    subtitle: "YOUR JOURNEY",
+    text: "NOW WITHUS",
     description: "See more benefits",
-    actionButton: "join Now",
+    buttonText: "join Now",
     imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1702988784/jammal_photos/vrqn7t4vmruj1drgmpdb.png",
     plans: [
       {
-        name: "BASIC PLAN",
+        title: "BASIC PLAN",
         price: "25",
         features: ["2 hours of excercises", "Free consultaion to coaches", "Access to The Community"],
       },
@@ -129,62 +140,59 @@ const initialState = {
     ],
   },
   testimonials: {
-    title: {
-      mainTitle: "TESTIMONIALS",
-      primaryTitle: "WHAT THE PEOPLE THINK ABOUT US",
-      secondaryTitle: "WHAT THEY SAY ABOUT US",
-    },
+    title: "TESTIMONIALS",
+    subtitle: "WHAT THE PEOPLE THINK ABOUT US",
+    description: "WHAT THEY SAY ABOUT US",
 
-    imgUrl: [
+    imgs: [
       "https://res.cloudinary.com/duc04fwdb/image/upload/v1702987916/jammal_photos/pt96uext4dvfv3op3khc.png",
       "https://res.cloudinary.com/duc04fwdb/image/upload/v1702987950/jammal_photos/rkwjn9zqa9jgcp1dhzsb.png",
     ],
     testimonials: [
       {
-        imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1702986897/jammal_photos/xbinalf2qg4aqqhhpeif.png",
-        review: "I made the right choice by choosing the Fitclub and by choosing the right plan and program I already achieved my ideal body!",
         name: "MATHEW HENDRICKSON",
-        status: "ENTREPRENEUR",
+        subtitle: "ENTREPRENEUR",
+        description: "I made the right choice by choosing the Fitclub and by choosing the right plan and program I already achieved my ideal body!",
+        imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1702986897/jammal_photos/xbinalf2qg4aqqhhpeif.png",
       },
       {
-        imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1702986859/jammal_photos/cwtimzgptwqccvycipw0.jpg",
-        review: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi ipsam, ab itaque nam perferendis impedit sint ",
         name: "JOHN KEVIN",
-        status: "COACH",
+        subtitle: "COACH",
+        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi ipsam, ab itaque nam perferendis impedit sint ",
+        imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1702986859/jammal_photos/cwtimzgptwqccvycipw0.jpg",
       },
       {
-        imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1702986807/jammal_photos/pnlbsd6lankxv5xc9px5.jpg",
-        review: " Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima aspernatur quod voluptatem",
         name: "FRANKLIN",
-        status: "CUSTOMER",
+        subtitle: "CUSTOMER",
+        description: " Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima aspernatur quod voluptatem",
+        imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1702986807/jammal_photos/pnlbsd6lankxv5xc9px5.jpg",
       },
     ],
   },
 
   cta: {
-    title: [
-      {
-        Subtitle: "READY TO",
-      },
-      {
-        Subtitle: "LEVEL UP",
-      },
-      {
-        Subtitle: "YOUR BODY ",
-      },
-      {
-        Subtitle: "WITH US?",
-      },
-    ],
-    actionButton: "join Now",
+    title: "READY TO",
+    subtitle: "LEVEL UP",
+    description: "YOUR BODY ",
+    text: "WITH US?",
+    buttonText: "join Now",
   },
 
   footer: {
     imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1702990991/jammal_photos/isxpadjx12ja5wqaqzsk.png", //logo
     medias: [
-      { icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1702990946/jammal_photos/op32ysn37afrbyyvzlpo.png", url: "https://githup.com" }, //githup
-      { icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1702991031/jammal_photos/ttvjziej5llydncutm9u.png", url: "https://linked.com" }, //linkedIn
-      { icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1702991055/jammal_photos/mt2lapqflvpafmnfpree.png", url: "https://instagram.com" }, //insta
+      {
+        icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1702990946/jammal_photos/op32ysn37afrbyyvzlpo.png",
+        url: "https://github.com/login?client_id=45872a44c0e55c462eed&return_to=%2Flogin%2Foauth%2Fauthorize%3Fclient_id%3D45872a44c0e55c462eed%26scope%3Duser%253Aemail%252Cread%253Aorg%26state%3Dgithub",
+      }, //githup
+      {
+        icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1702991031/jammal_photos/ttvjziej5llydncutm9u.png",
+        url: "https://www.linkedin.com/login/ar",
+      }, //linkedIn
+      {
+        icon: "https://res.cloudinary.com/duc04fwdb/image/upload/v1702991055/jammal_photos/mt2lapqflvpafmnfpree.png",
+        url: "https://instagram.com",
+      }, //insta
     ],
   },
   colors: {
@@ -218,6 +226,9 @@ const templateSlice3 = createSlice({
     },
     deleteSection: (state, action) => {
       return deleteSection(state, action);
+    },
+    updateSchema: (state, action) => {
+      return updateSchema(state, action);
     },
   },
 });

@@ -1,10 +1,9 @@
 import React from "react";
 import "./services11.css";
 import ServicesBox11 from "./ServicesBox11_1";
-import { useSelector } from "react-redux";
 
-const Services11 = () => {
-  const { services } = useSelector((state) => state.template11);
+const Services11 = ({ template }) => {
+  const services = template.services;
   return (
     <section className="about container section11" id="about">
       <h2 className="section__title11">{services.title}</h2>
@@ -12,13 +11,13 @@ const Services11 = () => {
         <img src={services.imgUrl} alt="" className="aboutImg11" />
         <div className="about__data11 grid11">
           <div className="about__info11">
-            <p className="about__description11">{services.content}</p>
+            <p className="about__description11">{services.description}</p>
             <a href="" className="btn11" id="btn11_1">
-              {services.actionButton}
+              {services.buttonText}
             </a>
           </div>
           <div className="about__skills11 grid11">
-            {services.statistics.map((statistic, index) => (
+            {services.services.map((statistic, index) => (
               <div key={index} className="skills__data11">
                 <div className="skills__titles11">
                   <h3 className="skills__name11">{statistic.title}</h3>
@@ -32,7 +31,7 @@ const Services11 = () => {
           </div>
         </div>
       </div>
-      <ServicesBox11 />
+      <ServicesBox11 template={template} />
     </section>
   );
 };

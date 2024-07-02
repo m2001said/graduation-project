@@ -1,6 +1,6 @@
 import React from "react";
 import "./pricing1.css";
-const Pricing1 = ({template}) => {
+const Pricing1 = ({ template }) => {
   return (
     <div className="pricing1 design-1">
       <div className="pricing1-head">
