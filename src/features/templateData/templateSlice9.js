@@ -146,7 +146,7 @@ const initialState = {
   about: {
     title: "WHO WE ARE ",
     description: "  d-top klmdfsl klsdmf lkmdsfm mlksdfl m lms",
-
+imgUrl:"https://res.cloudinary.com/dowtlcpxj/image/upload/v1719892980/e0c167ecaf94e55e76cb89c8e9ef896f_ibw9le.png",
     icon: {
       text: "done porttier eusiod",
       linkText: "nullam a lanica ipsum dignissim purus",

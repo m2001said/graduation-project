@@ -1,7 +1,7 @@
 import React from "react";
 
 const ProjectCard = ({ project }) => (
-  <div className="bg-[var(--website-9-color-1)]  rounded-lg overflow-hidden shadow-lg">
+  <div className="bg- bg-gradient-to-r from-[var(--website-9-color-6)] to-[var(--website-9-color-1)]  rounded-lg overflow-hidden shadow-lg">
     <img
       src={project.imgUrl}
       onError={(e) => {
@@ -31,7 +31,7 @@ const Pricing9 = ({ template }) => {
 
   return (
     <main className="container mx-auto pt-8 px-3">
-      <div className="lg:flex justify-between items-center hover:bg-[var(--website-9-color-2)] ease-in-out duration-300 p-4 rounded-lg">
+      <div className="lg:flex justify-between items-center bg- bg-gradient-to-r from-[var(--website-9-color-6)] to-[var(--website-9-color-5)] hover:bg-[var(--website-9-color-5)] ease-in-out duration-300 p-4 rounded-lg">
         <div className="lg:w-3/5">
           <h1 className="text-[var(--website-9-color-3)]  hover:text-[var(--website-9-color-1)] ease-in-out duration-300 text-2xl font-bold">{template.projects.title}</h1>
           <p className="text-lg text-[var(--website-9-color-3)] hover:text-[var(--website-9-color-1)] ease-in-out duration-300 ">{template.projects.description}</p>

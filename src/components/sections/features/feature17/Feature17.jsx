@@ -6,7 +6,7 @@ const Feature17 = ({ template }) => {
   return (
     <>
       <div className="container17 py-14 relative">
-        <div className="relative z-20">
+        <div className="relative  ">
           <h1 className="py-8 tracking-wider text-4xl  text-[var(--website-17-color-3)] ephesis 	text-center">{title}</h1>
 
           <div className="space-y-10">

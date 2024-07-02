@@ -9,7 +9,7 @@ const Navbar9 = ({ template }) => {
   };
 
   return (
-    <nav className="sticky top-20  bg-gradient-to-r from-[var(--website-9-color-3)] to-[var(--website-9-color-5)] shadow-lg py-4 z-50">
+    <nav className="sticky top-16  bg-gradient-to-r from-[var(--website-9-color-3)] to-[var(--website-9-color-5)] shadow-lg py-4 z-10">
       <div className="container mx-auto flex justify-between items-center px-4">
         <div className="text-[var(--website-9-color-6)] text-xl font-bold">
           {navbar.title}

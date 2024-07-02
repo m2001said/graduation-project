@@ -9,7 +9,7 @@ const Navbar13 = ({ template }) => {
   };
 
   return (
-    <nav className="sticky top-20 z-50 bg-[var(--website-13-color-2)] nav13">
+    <nav className="sticky top-16 z-50 bg-[var(--website-13-color-2)] nav13">
       <div className="container mx-auto lg:flex flex-wrap items-center justify-between px-3 border-b border-[var(--website-13-color-22)]">
         <div className="lg:w-1/5 sticky top-0 flex justify-between lg:static lg:justify-start h-[10vh] items-center">
           <a href="/" className="font-medium tracking-wider transition-colors cursor-pointer">

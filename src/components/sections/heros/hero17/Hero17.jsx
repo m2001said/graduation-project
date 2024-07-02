@@ -3,7 +3,7 @@
 const Hero17 = ({ template }) => {
   const hero = template.hero;
   const BgStyle = {
-    backgroundImage: `url(${hero.backgroundImg})`, 
+    backgroundImage: `url(${hero.imgUrl})`, 
     backgroundPosition: "center",
     backgroundSize: "cover",
     backgroundRepeat: "no-repeat",
@@ -30,7 +30,7 @@ const Hero17 = ({ template }) => {
             
               </div>
             </div>
-             <div className="relative z-30 order-2 sm:order-1">
+             <div className="relative  order-2 sm:order-1">
               <img src={hero.imageUrl} alt="" className="w-full sm:scale-125 sm:translate-y-16" />  
             </div>
           </div>

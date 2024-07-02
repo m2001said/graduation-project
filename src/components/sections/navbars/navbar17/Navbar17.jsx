@@ -5,7 +5,7 @@ const Navbar17 = ({ template }) => {
 
   return (
     <>
-      <div className="container17 bg-[var(--website-17-color-2)] shadow-sm sticky top-20 z-50">
+      <div className="container17 bg-[var(--website-17-color-2)] shadow-sm sticky top-16 z-30">
         <div className="flex justify-between py-4 sm:py-3">
           {/* logo section */}
           <div className="font-bold text-3xl text-[var(--website-17-color-4)]">{navbar.title}</div>

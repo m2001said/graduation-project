@@ -4,7 +4,7 @@ const Hero13 = ({ template }) => {
   const { title, description, buttons, icon, imgUrl, imageUrl } = template.hero;
 
   return (
-    <div id="hero13" className="relative overflow-hidden bg-[var(--website-13-color-1)] lg:py-20 py-8">
+    <div id="hero13" className="relative overflow-hidden bg-[var(--website-13-color-1)]   lg:py-20 py-8">
       <div className="h-[50px] bg-[var(--website-13-color-6)] absolute -bottom-7 -left-[30px] -right-[-30px] py-3 px-[30px] rounded-[50%]"></div>
       <div className="xl:w-[1200px] mx-auto px-3 lg:flex items-center justify-between">
         <div className="text-[var(--website-13-color-3)] lg:w-1/2 relative">
@@ -21,12 +21,12 @@ const Hero13 = ({ template }) => {
             ))}
           </div>
         </div>
-        <div className="lg:w-[35%] w-72 relative lg:mx-0 mx-auto justify-end lg:py-0 py-8">
-          <img src={imgUrl} alt={`Image 1`} className="lg:w-full mb-4 rounded-lg shadow-lg" style={{ maxWidth: "100%", height: "auto" }} />
+        <div className="lg:w-[35%] w-72 relative lg:mx-0 mx-auto justify-end lg:py-0 py-8 hover:translate-x-28 hover:-translate-y-4 transition-transform duration-1000">
+          <img src={imgUrl} alt={`Image 1`} className="lg:w-full mb-4 rounded-lg shadow-lg " style={{ maxWidth: "100%", height: "auto" }} />
           <img
             src={imageUrl}
             alt={`Image 2`}
-            className="sm:block hidden lg:w-40 w-1/4 absolute bottom-16 lg:-left-20 -left-10"
+            className="sm:block hidden lg:w-40 w-1/4 absolute bottom-16 lg:-left-20 -left-10 hover:-translate-x-20 hover:w-3/4 transition-transform duration-1000"
             style={{ maxWidth: "100%", height: "auto" }}
           />
         </div>

@@ -38,7 +38,7 @@ const Hero9 = ({ template }) => {
                 <input
                   type="text"
                   placeholder={hero.inputPlaceholder}
-                  className="h-16 outline-none rounded-3xl bg-[var(--website-9-color-1)] border border-[var(--website-9-color-1)] px-6"
+                  className="h-16 outline-none rounded-3xl bg-[var(--website-9-color-1)] text-[var(--website-9-color-3)] border border-[var(--website-9-color-1)] px-6"
                 />
                 <select
                   placeholder={hero.inputPlaceholder}

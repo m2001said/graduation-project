@@ -129,13 +129,11 @@
   color: #888;
 }
 .gradient-background {
-  background: linear-gradient(to top, #bce6e4, #f8fdfe);
+  background: linear-gradient(to top, var(--website-9-color-2), var(--website-9-color-1));
   border-radius: 560px;
   border-radius: 0 0 560px 560px;
 }
-.about-9:hover {
-  background: var(--website-9-color-6);
-}
+ 
 
 
 
@@ -164,7 +162,7 @@
   transition: filter 300ms;
 }
 .testimonial-9:hover {
-  background: linear-gradient(to right, #8bd3ce, #eff9f9);
+  background: linear-gradient(to right, var(--website-9-color-2), var(--website-9-color-1));
 }
 .footer9:hover {
   background: var(--website-9-color-3);
@@ -186,3 +184,17 @@
     width: 100%;
   }
 } */
+/* styles.css or your component's CSS file */
+@keyframes slideBackground {
+  0%{
+    background-position-x: 0%;
+  }
+  100% {
+    background-position-x: 100%;
+  }
+}
+
+.animate-slideBackground {
+  animation: slideBackground 20s linear infinite;
+  background-color: var(--website-9-color-2)
+ }

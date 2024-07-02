@@ -8,7 +8,7 @@ const Teams9 = ({ template }) => {
         {team.members.map((member) => (
           <div
             key={member.id}
-            className="lg:w-1/4 bg-[var(--website-9-color-1)] rounded-lg shadow-lg overflow-hidden transition-transform transform hover:-translate-y-2 hover:shadow-2xl"
+            className="lg:w-1/4 bg-[var(--website-9-color-1)] rounded-lg shadow-lg overflow-hidden transition-transform transform hover:-translate-y-2 hover:shadow-2xl shadow-[var(--website-9-color-3)] hover:shadow-[var(--website-9-color-5)]"
           >
             <img
               src={member.imgUrl}

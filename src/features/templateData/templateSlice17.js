@@ -45,7 +45,7 @@ import { addElement, addElementToArray, addSubElement, deleteElement, deleteSect
     subtitle: "DeliveryRestaurant fresh and healthy meal plan  in Cairo",
     description: "Discover delicious dishes that will satisfy your cravings Door from 132.95 per week",
     imageUrl: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1710989808/hero_b7quav.png",
-    backgroundImg: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1710989607/heroBg_vahqtb.png",
+    imgUrl: "https://res.cloudinary.com/dowtlcpxj/image/upload/v1710989607/heroBg_vahqtb.png",
 
   },
 
