@@ -33,15 +33,14 @@
   },
   "hero": {
     "title": "Car Rental",
-    "subTitle": "Effortless",
+    "subtitle": "Effortless",
     "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione veritatis explicabo quibusdam quae reprehenderit ab",
     "buttonText": "Get Started",
-    "lightImage": "https://res.cloudinary.com/dmcdea0b9/image/upload/v1708094043/banner-car_nzxi5c.png",
-    "darkImage": "https://res.cloudinary.com/dmcdea0b9/image/upload/v1708094046/car_wnmkfa.png"
+    "imgUrl": "https://res.cloudinary.com/dmcdea0b9/image/upload/v1708094043/banner-car_nzxi5c.png"
   },
   "features": {
     "title": "About us",
-    "subTitle": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, magnam! Tenetur odio quo et maxime?",
+    "subtitle": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, magnam! Tenetur odio quo et maxime?",
     "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, tempora.",
     "buttonText": "Get Started",
     "imgUrl": "https://res.cloudinary.com/dmcdea0b9/image/upload/v1708094582/car1_yzpkby.png"
@@ -53,21 +52,21 @@
         "title": "Best Price",
         "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
         "buttonText": "Learn more",
-        "url": "#",
+        "linkText": "#",
         "icon": "https://res.cloudinary.com/dmcdea0b9/image/upload/v1708095320/icons8-compact-camera-24_sbvw3e.png"
       },
       {
         "title": "Fast and Safe",
         "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
         "buttonText": "Learn more",
-        "url": "#",
+        "linkText": "#",
         "icon": "https://res.cloudinary.com/dmcdea0b9/image/upload/v1708095302/icons8-notebook-32_wp5emo.png"
       },
       {
         "title": "Experience Drivers",
         "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
         "buttonText": "Learn more",
-        "url": "#",
+        "linkText": "#",
         "icon": "https://res.cloudinary.com/dmcdea0b9/image/upload/v1708095310/icons8-microsoft-onenote-24_jrkmre.png"
       }
     ]
@@ -137,7 +136,7 @@
     "title": "Let's collaborate on your upcoming car rental venture",
     "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem necessitatibus quasi et vel,",
     "buttonText": "Contact",
-    "url": "#"
+    "linkText": "#"
   },
   "footer": {
     "title": "Car Rental",

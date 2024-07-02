@@ -1,31 +1,367 @@
 {
   "templateInfo": {
-    "id": 6,
+    "id": 15,
     "title": "",
     "description": "",
     "imgUrl": ""
   },
   "navbar": {
-    "imgUrl": "https://res.cloudinary.com/duc04fwdb/image/upload/v1703193372/jammal_photos/eygwjnnq4d9scpxd9unv.png",
+    "imgUrl": "https://res.cloudinary.com/duc04fwdb/image/upload/v1706799023/jammal_photos/wz8vakvjdjio0wcqhnfe.svg",
     "links": [
       {
-        "title": "Residencies",
-        "url": "#"
+        "title": "الرئيسية",
+        "url": "#home"
       },
       {
-        "title": "Our Value",
-        "url": "#"
+        "title": "الخدمات",
+        "url": "#services"
       },
       {
-        "title": "Contact Us",
-        "url": "#"
+        "title": "المهارات",
+        "url": "#skills"
       },
       {
-        "title": "Get Started",
-        "url": "#"
+        "title": "التقييمات",
+        "url": "#testimonials"
+      },
+      {
+        "title": "تواصل معنا",
+        "url": "#contact"
+      }
+    ]
+  },
+  "hero": {
+    "imgUrl": ["https://res.cloudinary.com/duc04fwdb/image/upload/v1708017251/jammal_photos/z8h6g9lv2sxmywvygcts.png"],
+    "text": "مرحبًا اسمي",
+    "name": "زوي ميلر",
+    "subtitle": "أنا مطورة ويب",
+    "description": "من فرنسا، باريس. لدي الخبرة المناسبة في تصميم الويب، وأنا أيضًا جيدة في ووردبريس. أحب التحدث معك حول ميزتنا الفريدة.",
+    "medias": [
+      {
+        "icon": "https://res.cloudinary.com/duc04fwdb/image/upload/v1708017487/jammal_photos/dov4re8wizaegdj3jiza.svg",
+        "url": "https://example.com"
+      },
+      {
+        "icon": "https://res.cloudinary.com/duc04fwdb/image/upload/v1708017404/jammal_photos/ihzghh1idyxmj1u4vk9r.svg",
+        "url": "https://example.com"
+      },
+      {
+        "icon": "https://res.cloudinary.com/duc04fwdb/image/upload/v1708017568/jammal_photos/hpyyah3zyuwxvydg7dnw.png",
+        "url": "https://example.com"
       }
     ],
-    "email4": "mailto:zainkeepscode@gmail.com",
-    "buttonText": "Contact"
+    "title": "12+ سنوات من الخبرة",
+    "jop": "330 مشروع مكتمل",
+    "buttonText": "تحميل السيرة الذاتية",
+    "linkText": "مهاراتي"
+  },
+  "services": {
+    "title": "ماذا أفعل",
+    "subtitle": "خدماتي",
+    "buttonText": "انظر الأسعار",
+    "imgUrl": "https://res.cloudinary.com/duc04fwdb/image/upload/v1708020289/jammal_photos/yd48mthnmtr9zswrqrms.png",
+    "services": [
+      {
+        "title": "تطوير الويب",
+        "subtitle": "تصميم الويب والشعارات",
+        "description": "يصمم مصممو الويب الرؤية العامة والخطة لتخطيط الموقع. تطوير الشعارات الاحترافية: للأعمال التجارية، الشركات أو الشخصية."
+      },
+      {
+        "title": "تطوير التطبيقات",
+        "subtitle": "iOS و Android",
+        "description": "تصميم تطبيقات البرامج لتشغيلها على الأجهزة المحمولة. تطبيقات حديثة وجاهزة للهواتف المحمولة تساعدك في الوصول إلى جميع أهدافك التسويقية."
+      },
+      {
+        "title": "تطوير الألعاب",
+        "subtitle": "Unity و Unreal Engine",
+        "description": "إنشاء الألعاب وتوصيف التصميم والتطوير وإطلاق اللعبة. تطوير ألعاب فريدة لأجهزة الأندرويد و iOS."
+      }
+    ]
+  },
+  "features": {
+    "title": "المهارات المهنية",
+    "subtitle": "موهبتي",
+    "features": [
+      {
+        "title": "PHP",
+        "number": "85",
+        "description": "لوريم إيبسوم هو نص شكلي (بمعنى أن الغاية هي الشكل وليس المحتوى) ويُستخدم في صناعات المطابع ودور النشر."
+      },
+      {
+        "title": "JavaScript",
+        "number": "65",
+        "description": "لوريم إيبسوم هو نص شكلي (بمعنى أن الغاية هي الشكل وليس المحتوى) ويُستخدم في صناعات المطابع ودور النشر."
+      },
+      {
+        "title": "WordPress",
+        "number": "60",
+        "description": "لوريم إيبسوم هو نص شكلي (بمعنى أن الغاية هي الشكل وليس المحتوى) ويُستخدم في صناعات المطابع ودور النشر."
+      },
+      {
+        "title": "Python",
+        "number": "50",
+        "description": "لوريم إيبسوم هو نص شكلي (بمعنى أن الغاية هي الشكل وليس المحتوى) ويُستخدم في صناعات المطابع ودور النشر."
+      },
+      {
+        "title": "React",
+        "number": "70",
+        "description": "لوريم إيبسوم هو نص شكلي (بمعنى أن الغاية هي الشكل وليس المحتوى) ويُستخدم في صناعات المطابع ودور النشر."
+      },
+      {
+        "title": "Adobe XD",
+        "number": "85",
+        "description": "لوريم إيبسوم هو نص شكلي (بمعنى أن الغاية هي الشكل وليس المحتوى) ويُستخدم في صناعات المطابع ودور النشر."
+      }
+    ]
+  },
+  "projects": {
+    "title": "المحفظة",
+    "subtitle": "حالاتي",
+    "buttonText": "انظر الأسعار",
+    "linkText": "عرض المزيد",
+    "imgUrl": "https://res.cloudinary.com/duc04fwdb/image/upload/v1708020289/jammal_photos/yd48mthnmtr9zswrqrms.png",
+    "categories": ["الكل", "فيديو", "تصوير فوتوغرافي", "علامة تجارية"],
+    "projects": [
+      {
+        "title": "العلامة التجارية",
+        "subtitle": "زوررو",
+        "description": "لوريم إيبسوم هو نص شكلي (بمعنى أن الغاية هي الشكل وليس المحتوى) ويُستخدم في صناعات المطابع ودور النشر.",
+        "imgUrl": "https://res.cloudinary.com/duc04fwdb/image/upload/v1707863903/jammal_photos/rnu0jaturksoviadcjr6.jpg"
+      },
+      {
+        "title": "العلامة التجارية",
+        "subtitle": "جوير",
+        "description": "لوريم إيبسوم هو نص شكلي (بمعنى أن الغاية هي الشكل وليس المحتوى) ويُستخدم في صناعات المطابع ودور النشر.",
+        "imgUrl": "https://res.cloudinary.com/duc04fwdb/image/upload/v1707863903/jammal_photos/rnu0jaturksoviadcjr6.jpg"
+      },
+      {
+        "title": "الفيديو",
+        "subtitle": "استكشاف",
+        "description": "لوريم إيبسوم هو نص شكلي (بمعنى أن الغاية هي الشكل وليس المحتوى) ويُستخدم في صناعات المطابع ودور النشر.",
+        "imgUrl": "https://res.cloudinary.com/duc04fwdb/image/upload/v1707863903/jammal_photos/rnu0jaturksoviadcjr6.jpg"
+      },
+      {
+        "title": "الفيديو",
+        "subtitle": "ابقى لائقًا",
+        "description": "لوريم إيبسوم هو نص شكلي (بمعنى أن الغاية هي الشكل وليس المحتوى) ويُستخدم في صناعات المطابع ودور النشر.",
+        "imgUrl": "https://res.cloudinary.com/duc04fwdb/image/upload/v1707863903/jammal_photos/rnu0jaturksoviadcjr6.jpg"
+      },
+      {
+        "title": "التصوير الفوتوغرافي",
+        "subtitle": "كانا",
+        "description": "لوريم إيبسوم هو نص شكلي (بمعنى أن الغاية هي الشكل وليس المحتوى) ويُستخدم في صناعات المطابع ودور النشر.",
+        "imgUrl": "https://res.cloudinary.com/duc04fwdb/image/upload/v1707863903/jammal_photos/rnu0jaturksoviadcjr6.jpg"
+      },
+      {
+        "title": "التصوير الفوتوغرافي",
+        "subtitle": "موزار",
+        "description": "لوريم إيبسوم هو نص شكلي (بمعنى أن الغاية هي الشكل وليس المحتوى) ويُستخدم في صناعات المطابع ودور النشر.",
+        "imgUrl": "https://res.cloudinary.com/duc04fwdb/image/upload/v1707863903/jammal_photos/rnu0jaturksoviadcjr6.jpg"
+      }
+    ]
+  },
+  "cta": {
+    "title": "السيرة الذاتية",
+    "subtitle": "قصتي",
+    "imgs": [
+      "https://res.cloudinary.com/duc04fwdb/image/upload/v1708028064/jammal_photos/dxfncgzlnm5uoeyhugkf.svg",
+      "https://res.cloudinary.com/duc04fwdb/image/upload/v1708027950/jammal_photos/suloncptxwohoete98cr.png"
+    ],
+    "educations": [
+      {
+        "title": "دورات CoderHouse",
+        "subtitle": "برمجة الواجهة الخلفية",
+        "year": "2014 - 2016",
+        "description": "لوريم إيبسوم هو نص شكلي (بمعنى أن الغاية هي الشكل وليس المحتوى) ويُستخدم في صناعات المطابع ودور النشر.",
+        "category": "التعليم"
+      },
+      {
+        "title": "أكاديمية لفيف الوطنية للفنون",
+        "subtitle": "كلية التصميم",
+        "year": "2012 - 2014",
+        "description": "لوريم إيبسوم هو نص شكلي (بمعنى أن الغاية هي الشكل وليس المحتوى) ويُستخدم في صناعات المطابع ودور النشر.",
+        "category": "التعليم"
+      },
+      {
+        "title": "مستقبل تكنولوجيا المعلومات",
+        "subtitle": "المدرسة الثانوية",
+        "year": "2010 - 2012",
+        "description": "لوريم إيبسوم هو نص شكلي (بمعنى أن الغاية هي الشكل وليس المحتوى) ويُستخدم في صناعات المطابع ودور النشر.",
+        "category": "التعليم"
+      }
+    ],
+    "experiences": [
+      {
+        "title": "رئيس واجهة المستخدم ومدير",
+        "subtitle": "Soft Tech Inc.",
+        "year": "2020 - 2022",
+        "description": "لوريم إيبسوم هو نص شكلي (بمعنى أن الغاية هي الشكل وليس المحتوى) ويُستخدم في صناعات المطابع ودور النشر.",
+        "category": "الخبرة"
+      },
+      {
+        "title": "أخصائي واجهة المستخدم / تجربة المستخدم",
+        "subtitle": "Kana Design Studio",
+        "year": "2018 - 2020",
+        "description": "لوريم إيبسوم هو نص شكلي (بمعنى أن الغاية هي الشكل وليس المحتوى) ويُستخدم في صناعات المطابع ودور النشر.",
+        "category": "الخبرة"
+      },
+      {
+        "title": "مطور الإضافات",
+        "subtitle": "Fiverr.com",
+        "year": "2016 - 2018",
+        "description": "لوريم إيبسوم هو نص شكلي (بمعنى أن الغاية هي الشكل وليس المحتوى) ويُستخدم في صناعات المطابع ودور النشر.",
+        "category": "الخبرة"
+      }
+    ]
+  },
+  "testimonials": {
+    "title": "التقييمات",
+    "subtitle": "ماذا يقول العملاء",
+    "description": "لوريم إيبسوم هو نص شكلي (بمعنى أن الغاية هي الشكل وليس المحتوى) ويُستخدم في صناعات المطابع ودور النشر.",
+    "testimonials": [
+      {
+        "name": "باربرا ويلسون",
+        "subtitle": "الرئيس التنفيذي للشركة",
+        "description": "لوريم إيبسوم هو نص شكلي (بمعنى أن الغاية هي الشكل وليس المحتوى) ويُستخدم في صناعات المطابع ودور النشر.",
+        "imgUrl": "https://res.cloudinary.com/duc04fwdb/image/upload/v1707919266/jammal_photos/sq5wudx05l26l781sjgf.jpg"
+      },
+      {
+        "name": "تشارلي سميث",
+        "subtitle": "مصمم",
+        "description": "لوريم إيبسوم هو نص شكلي (بمعنى أن الغاية هي الشكل وليس المحتوى) ويُستخدم في صناعات المطابع ودور النشر.",
+        "imgUrl": "https://res.cloudinary.com/duc04fwdb/image/upload/v1707919266/jammal_photos/sq5wudx05l26l781sjgf.jpg"
+      },
+      {
+        "name": "روي وانغ",
+        "subtitle": "مدير الصالة الرياضية",
+        "description": "لوريم إيبسوم هو نص شكلي (بمعنى أن الغاية هي الشكل وليس المحتوى) ويُستخدم في صناعات المطابع ودور النشر.",
+        "imgUrl": "https://res.cloudinary.com/duc04fwdb/image/upload/v1707919266/jammal_photos/sq5wudx05l26l781sjgf.jpg"
+      },
+      {
+        "name": "جينيفر سميث",
+        "subtitle": "الرئيس التنفيذي والمؤسس",
+        "description": "لوريم إيبسوم هو نص شكلي (بمعنى أن الغاية هي الشكل وليس المحتوى) ويُستخدم في صناعات المطابع ودور النشر.",
+        "imgUrl": "https://res.cloudinary.com/duc04fwdb/image/upload/v1707919266/jammal_photos/sq5wudx05l26l781sjgf.jpg"
+      },
+      {
+        "name": "روي وانغ",
+        "title": "بول فريمان",
+        "subtitle": "مصور",
+        "description": "لوريم إيبسوم هو نص شكلي (بمعنى أن الغاية هي الشكل وليس المحتوى) ويُستخدم في صناعات المطابع ودور النشر.",
+        "imgUrl": "https://res.cloudinary.com/duc04fwdb/image/upload/v1707919266/jammal_photos/sq5wudx05l26l781sjgf.jpg"
+      }
+    ]
+  },
+  "pricing": {
+    "title": "الأسعار",
+    "subtitle": "لوحة أسعاري",
+    "plans": [
+      {
+        "title": "على أساس الساعة",
+        "price": "39",
+        "description": "لوريم إيبسوم هو نص شكلي (بمعنى أن الغاية هي الشكل وليس المحتوى) ويُستخدم في صناعات المطابع ودور النشر. كويز إيبسوم ساسبنديسي أولتراسيز غرافيدا.",
+        "timeUnit": "الساعة",
+        "features": ["تصميم العلامة التجارية", "تطوير الويب", "الإعلان", "التصوير الفوتوغرافي"]
+      },
+      {
+        "title": "فريلانسينغ",
+        "price": "259",
+        "description": "لوريم إيبسوم هو نص شكلي (بمعنى أن الغاية هي الشكل وليس المحتوى) ويُستخدم في صناعات المطابع ودور النشر. كويز إيبسوم ساسبنديسي أولتراسيز غرافيدا.",
+        "timeUnit": "الأسبوع",
+        "features": ["تصميم العلامة التجارية", "تطوير الويب", "الإعلان", "التصوير الفوتوغرافي"]
+      },
+      {
+        "title": "بدوام كامل",
+        "price": "1.249",
+        "description": "لوريم إيبسوم هو نص شكلي (بمعنى أن الغاية هي الشكل وليس المحتوى) ويُستخدم في صناعات المطابع ودور النشر. كويز إيبسوم ساسبنديسي أولتراسيز غرافيدا.",
+        "timeUnit": "الشهر",
+        "features": ["تصميم العلامة التجارية", "تطوير الويب", "الإعلان", "التصوير الفوتوغرافي"]
+      }
+    ],
+    "buttonText": "ابدأ المشروع",
+    "imgs": [
+      "https://res.cloudinary.com/duc04fwdb/image/upload/v1708030355/jammal_photos/px8o2t9qtet1pumt2yip.svg",
+      "https://res.cloudinary.com/duc04fwdb/image/upload/v1708030465/jammal_photos/capby7kt0b8mwxgzf3hs.png"
+    ]
+  },
+  "blogs": {
+    "title": "أحدث المدونات",
+    "subtitle": "مقالاتي ونصائحي",
+    "description": "فيفاموس إينتردم سوسيببيت لاكوس. نونك أولتراسيز أكومسان ماتيس. أليغام فيل سيم فيل فيليت إيفيسير ماليسودا. دونيك أركو لاكوس، أورنار ريجيت...",
+    "imgUrl": "https://res.cloudinary.com/duc04fwdb/image/upload/v1708030465/jammal_photos/capby7kt0b8mwxgzf3hs.png",
+    "buttonText": "اقرأ المزيد",
+    "linkText": "عرض المدونة",
+    "blogs": [
+      {
+        "title": "الشيء الرئيسي للمصمم",
+        "date": "31 أكتوبر 2022",
+        "description": "فيفاموس إينتردم سوسيببيت لاكوس. نونك أولتراسيز أكومسان ماتيس. أليغام فيل سيم فيل فيليت إيفيسير ماليسودا. دونيك أركو لاكوس، أورنار ريجيت...",
+        "imgUrl": "https://res.cloudinary.com/duc04fwdb/image/upload/v1707942658/jammal_photos/lyixvtrnvyazsfa5yuje.jpg"
+      },
+      {
+        "title": "اتبع عملية التصميم الخاصة بك",
+        "date": "31 أكتوبر 2022",
+        "description": "فيفاموس إينتردم سوسيببيت لاكوس. نونك أولتراسيز أكومسان ماتيس. أليغام فيل سيم فيل فيليت إيفيسير ماليسودا. دونيك أركو لاكوس، أورنار ريجيت...",
+        "imgUrl": "https://res.cloudinary.com/duc04fwdb/image/upload/v1707942696/jammal_photos/yjikp3c1msirossmsu3d.jpg"
+      },
+      {
+        "title": "أسرار الاستخدام لإنشاء واجهات أفضل",
+        "date": "28 نوفمبر 2021",
+        "description": "فيفاموس إينتردم سوسيببيت لاكوس. نونك أولتراسيز أكومسان ماتيس. أليغام فيل سيم فيل فيليت إيفيسير ماليسودا. دونيك أركو لاكوس، أورنار ريجيت...",
+        "imgUrl": "https://res.cloudinary.com/duc04fwdb/image/upload/v1707942724/jammal_photos/fiysz2n20varciifews5.jpg"
+      }
+    ]
+  },
+  "contact": {
+    "title": "تواصل معي",
+    "subtitle": "دعنا نتحدث عن الأفكار",
+    "name": "اسمك الكامل *",
+    "address": "بريدك الإلكتروني *",
+    "subject": "موضوعك *",
+    "message": "رسالتك *",
+    "contacts": [
+      {
+        "type": "العنوان",
+        "address": "برج الشمال، تورونتو، كندا",
+        "imgUrl": "https://res.cloudinary.com/duc04fwdb/image/upload/v1707946243/jammal_photos/mc5lc3k5hntokrcqgvgq.png"
+      },
+      {
+        "type": "فريلانسر",
+        "address": "متاح الآن",
+        "imgUrl": "https://res.cloudinary.com/duc04fwdb/image/upload/v1707946243/jammal_photos/mc5lc3k5hntokrcqgvgq.png"
+      },
+      {
+        "type": "البريد الإلكتروني",
+        "address": "Zoe.miller@mydomain.com",
+        "imgUrl": "https://res.cloudinary.com/duc04fwdb/image/upload/v1707946243/jammal_photos/mc5lc3k5hntokrcqgvgq.png"
+      },
+      {
+        "type": "الهاتف",
+        "address": "+1 900 - 900 - 9000",
+        "imgUrl": "https://res.cloudinary.com/duc04fwdb/image/upload/v1707946243/jammal_photos/mc5lc3k5hntokrcqgvgq.png"
+      }
+    ],
+    "buttonText": "إرسال الرسالة"
+  },
+  "footer": {
+    "title": "حقوق الطبع والنشر Ⓒ 2022 LUIQUE . جميع الحقوق محفوظة",
+    "subtitle": "تم التطوير بواسطة BSLTHEMES",
+    "medias": [
+      {
+        "icon": "https://res.cloudinary.com/duc04fwdb/image/upload/v1708017487/jammal_photos/dov4re8wizaegdj3jiza.svg",
+        "url": "https://x.com/?lang-en="
+      },
+      {
+        "icon": "https://res.cloudinary.com/duc04fwdb/image/upload/v1708017404/jammal_photos/ihzghh1idyxmj1u4vk9r.svg",
+        "url": "https://x.com/?lang-en="
+      },
+      {
+        "icon": "https://res.cloudinary.com/duc04fwdb/image/upload/v1708017568/jammal_photos/hpyyah3zyuwxvydg7dnw.png",
+        "url": "https://x.com/?lang-en="
+      }
+    ]
+  },
+  "colors": {
+    "templateColors": ["red", "red", "red", "red", "red"]
   }
 }

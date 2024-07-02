@@ -33,15 +33,14 @@
   },
   "hero": {
     "title": "تأجير السيارات",
-    "subTitle": "بسهولة",
+    "subtitle": "بسهولة",
     "description": "لوريم إيبسوم دولور سيت أميت كونسيكتيتور أديبيسشينج إيليت. راشون فيراتيس إكسبليتابو كويبسدام كوي ريخريهينديريت أب",
     "buttonText": "ابدأ الآن",
-    "lightImage": "https://res.cloudinary.com/dmcdea0b9/image/upload/v1708094043/banner-car_nzxi5c.png",
-    "darkImage": "https://res.cloudinary.com/dmcdea0b9/image/upload/v1708094046/car_wnmkfa.png"
+    "imgUrl": "https://res.cloudinary.com/dmcdea0b9/image/upload/v1708094046/car_wnmkfa.png"
   },
   "features": {
     "title": "من نحن",
-    "subTitle": "لوريم، إيبسوم دولور سيت أميت كونسيكتيتور أديبيسشينج إيليت. أسبرناتور، ماجنام! تينيتور أوديو كو إت ماكسيم؟",
+    "subtitle": "لوريم، إيبسوم دولور سيت أميت كونسيكتيتور أديبيسشينج إيليت. أسبرناتور، ماجنام! تينيتور أوديو كو إت ماكسيم؟",
     "description": "لوريم إيبسوم دولور سيت أميت كونسيكتيتور أديبيسشينج إيليت. سيكوي، تمبورا.",
     "buttonText": "ابدأ الآن",
     "imgUrl": "https://res.cloudinary.com/dmcdea0b9/image/upload/v1708094582/car1_yzpkby.png"
@@ -53,21 +52,21 @@
         "title": "أفضل الأسعار",
         "description": "لوريم إيبسوم دولور سيت أميت كونسيكتيتور، أديبيسشينج إيليت.",
         "buttonText": "تعرف على المزيد",
-        "url": "#",
+        "linkText": "#",
         "icon": "https://res.cloudinary.com/dmcdea0b9/image/upload/v1708095320/icons8-compact-camera-24_sbvw3e.png"
       },
       {
         "title": "سريع وآمن",
         "description": "لوريم إيبسوم دولور سيت أميت كونسيكتيتور، أديبيسشينج إيليت.",
         "buttonText": "تعرف على المزيد",
-        "url": "#",
+        "linkText": "#",
         "icon": "https://res.cloudinary.com/dmcdea0b9/image/upload/v1708095302/icons8-notebook-32_wp5emo.png"
       },
       {
         "title": "سائقون ذو خبرة",
         "description": "لوريم إيبسوم دولور سيت أميت كونسيكتيتور، أديبيسشينج إيليت.",
         "buttonText": "تعرف على المزيد",
-        "url": "#",
+        "linkText": "#",
         "icon": "https://res.cloudinary.com/dmcdea0b9/image/upload/v1708095310/icons8-microsoft-onenote-24_jrkmre.png"
       }
     ]
@@ -137,7 +136,7 @@
     "title": "دعنا نتعاون في مشروع تأجير السيارات القادم",
     "description": "لوريم إيبسوم دولور سيت أميت كونسيكتيتور أديبيسشينج إيليت. إكسرسيتاتيونيم نيكيستاتيبوس كواسي إت فيل،",
     "buttonText": "اتصل",
-    "url": "#"
+    "linkText": "#"
   },
   "footer": {
     "title": "تأجير السيارات",

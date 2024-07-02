@@ -1,8 +1,6 @@
 import Header from "./Header";
 import React, { useEffect, useRef } from "react";
 
-// ... other imports ...
-
 const Hero8 = ({ template }) => {
   const hero = template.hero;
   const scrollDirection = useRef("down");
@@ -35,7 +33,7 @@ const Hero8 = ({ template }) => {
 
   return (
     <>
-      <Header />
+      <Header template={template} />
       <section className="min-h-[85vh] lg:min-h-[78vh] flex items-center" id="home">
         <div className="container mx-auto">
           <div className="flex flex-col lg:flex-row gap-y-8 lg:gap-x-14 lg:items-center">

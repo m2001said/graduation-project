@@ -80,10 +80,10 @@
       }
     ]
   },
-  "features2": {
+  "blogs": {
     "title": "صالة الأطفال غير المصحوبين بذويهم",
     "imgUrl": "https://res.cloudinary.com/dmcdea0b9/image/upload/v1703116246/fea5-2_q5na0z.jpg",
-    "features": [
+    "blogs": [
       {
         "title": "المساعدة في المطار",
         "description": "يمكنك أيضًا الاتصال بشركات الطيران من هاتفك وحجز تذكرة طيران إلى أحد وجهاتك المفضلة"

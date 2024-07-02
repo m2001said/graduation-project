@@ -1,31 +1,401 @@
 {
   "templateInfo": {
-    "id": 6,
+    "id": 16,
     "title": "",
     "description": "",
     "imgUrl": ""
   },
   "navbar": {
-    "imgUrl": "https://res.cloudinary.com/duc04fwdb/image/upload/v1703193372/jammal_photos/eygwjnnq4d9scpxd9unv.png",
+    "imgUrl": "https://res.cloudinary.com/duc04fwdb/image/upload/v1708464166/jammal_photos/pzfqcxfrr2cw4mvelbjd.png",
     "links": [
       {
-        "title": "Residencies",
-        "url": "#"
+        "name": "الصفحة الرئيسية",
+        "url": "home"
       },
       {
-        "title": "Our Value",
-        "url": "#"
+        "name": "من نحن",
+        "url": "about"
       },
       {
-        "title": "Contact Us",
-        "url": "#"
+        "name": "الميزات",
+        "url": "features"
       },
       {
-        "title": "Get Started",
-        "url": "#"
+        "name": "القائمة",
+        "url": "menu"
+      },
+      {
+        "name": "المعرض",
+        "url": "gallery"
+      },
+      {
+        "name": "الطهاة",
+        "url": "team"
+      },
+      {
+        "name": "الشهادات",
+        "url": "testimonials"
+      }
+    ]
+  },
+  "hero": {
+    "title": "اكتشف مقهى مذهل واحصل على الطاقة",
+    "subtitle": "مرحبًا بكم في كوفيرو!",
+    "description": "هناك العديد من الاختلافات في النصوص المتاحة ولكن الأغلبية تعرضت لتغيير بشكل ما بواسطة الفكاهة المدخلة أو الكلمات العشوائية.",
+    "buttonText": "تحقق من القائمة",
+    "linkText": "احجز طاولة"
+  },
+  "about": {
+    "imgUrl": "https://res.cloudinary.com/duc04fwdb/image/upload/v1708549637/jammal_photos/xg3omldwwfpdgfrmhzub.jpg",
+    "title": "جودة طازجة وقهوة عضوية لذيذة لك",
+    "description": "هناك العديد من الاختلافات في نصوص لوريم إيبسوم المتاحة، ولكن الأغلبية تعرضت لتغيير بشكل ما بواسطة الفكاهة المدخلة أو الكلمات العشوائية التي لا تبدو حتى قريبة من الواقع.",
+    "details": [
+      "حقًا والأدوات والكتب هنا في بعض الأحيان تنتمي إلى ذلك.",
+      "حقيقة مثبتة أن القارئ سوف يشتت انتباهه بواسطة التخطيط.",
+      "لكن في الحقيقة هي الحقيقة أن هذه الحقائق المتعلقة بشيء مختلف."
+    ],
+    "buttonText": "خبراؤنا"
+  },
+  "features": {
+    "title": "أفضل ميزاتنا",
+    "imgUrl": "https://res.cloudinary.com/duc04fwdb/image/upload/v1708479391/jammal_photos/wscmwomccmc5jdnbwidf.png",
+    "features": [
+      {
+        "imgUrl": "https://res.cloudinary.com/duc04fwdb/image/upload/v1708478670/jammal_photos/ozb5izm9qn6poltumpwv.svg",
+        "title": "الشحن المجاني",
+        "description": "إنها حقيقة معروفة أن القارئ سيشتت انتباهه بواسطة المحتوى القابل للقراءة من الصفحة عند النظر إلى تخطيطها."
+      },
+      {
+        "imgUrl": "https://res.cloudinary.com/duc04fwdb/image/upload/v1708478739/jammal_photos/leroe6brdemdsshw6dkw.svg",
+        "title": "معتمد عضويًا",
+        "description": "إنها حقيقة معروفة أن القارئ سيشتت انتباهه بواسطة المحتوى القابل للقراءة من الصفحة عند النظر إلى تخطيطها."
+      },
+      {
+        "imgUrl": "https://res.cloudinary.com/duc04fwdb/image/upload/v1708478826/jammal_photos/ohmjqysziwtxnl2vn7it.svg",
+        "title": "جودة عالية",
+        "description": "إنها حقيقة معروفة أن القارئ سيشتت انتباهه بواسطة المحتوى القابل للقراءة من الصفحة عند النظر إلى تخطيطها."
+      },
+      {
+        "imgUrl": "https://res.cloudinary.com/duc04fwdb/image/upload/v1708478897/jammal_photos/q8ejj4bvar3fmxom1yft.svg",
+        "title": "تحميص مناسب",
+        "description": "إنها حقيقة معروفة أن القارئ سيشتت انتباهه بواسطة المحتوى القابل للقراءة من الصفحة عند النظر إلى تخطيطها."
+      }
+    ]
+  },
+  "galary": {
+    "galary": [
+      {
+        "imgUrl": "https://res.cloudinary.com/duc04fwdb/image/upload/v1708538315/jammal_photos/vma52kyndc9kydhebbww.jpg",
+        "title": "كابتشينو عربيكا"
+      },
+      {
+        "imgUrl": "https://res.cloudinary.com/duc04fwdb/image/upload/v1708538390/jammal_photos/v0my6mfbimgsggvwl8bk.jpg",
+        "title": "كابتشينو عربيكا"
+      },
+      {
+        "imgUrl": "https://res.cloudinary.com/duc04fwdb/image/upload/v1708538453/jammal_photos/v6l5xiezr7nzs69nufwf.jpg",
+        "title": "كابتشينو عربيكا"
+      },
+      {
+        "imgUrl": "https://res.cloudinary.com/duc04fwdb/image/upload/v1708538524/jammal_photos/qtouornendbwkjyambyg.jpg",
+        "title": "كابتشينو عربيكا"
+      },
+      {
+        "imgUrl": "https://res.cloudinary.com/duc04fwdb/image/upload/v1708538585/jammal_photos/vteshmmqcgso0krkoaev.jpg",
+        "title": "كابتشينو عربيكا"
+      },
+      {
+        "imgUrl": "https://res.cloudinary.com/duc04fwdb/image/upload/v1708538453/jammal_photos/v6l5xiezr7nzs69nufwf.jpg",
+        "title": "كابتشينو عربيكا"
+      }
+    ]
+  },
+  "items": {
+    "items": [
+      {
+        "imgUrl": "https://res.cloudinary.com/duc04fwdb/image/upload/v1708539082/jammal_photos/fk4qk2x6enbuflmobk3f.jpg",
+        "title": "قهوة أمريكانو",
+        "description": "حليب بنكهة الفانيليا",
+        "price": 50.25
+      },
+      {
+        "imgUrl": "https://res.cloudinary.com/duc04fwdb/image/upload/v1708539149/jammal_photos/vxty3khh0dg6diuvtkyr.jpg",
+        "title": "كابتشينو عربيكا",
+        "description": "حليب بنكهة الفانيليا",
+        "price": 70.25
+      },
+      {
+        "imgUrl": "https://res.cloudinary.com/duc04fwdb/image/upload/v1708539214/jammal_photos/nhy4fuc3aprted46zsri.jpg",
+        "title": "قهوة بالحليب والكريمة",
+        "description": "حليب بنكهة الفانيليا",
+        "price": 30.25
+      },
+      {
+        "imgUrl": "https://res.cloudinary.com/duc04fwdb/image/upload/v1708539264/jammal_photos/t7lekgob4ens8rp487ml.jpg",
+        "title": "قهوة خام خاصة",
+        "description": "حليب بنكهة الفانيليا",
+        "price": 80.25
+      },
+      {
+        "imgUrl": "https://res.cloudinary.com/duc04fwdb/image/upload/v1708539326/jammal_photos/awnuzrxfhs0mkm8rsiyb.jpg",
+        "title": "قهوة سوداء طازجة",
+        "description": "حليب بنكهة الفانيليا",
+        "price": 90.25
+      },
+      {
+        "imgUrl": "https://res.cloudinary.com/duc04fwdb/image/upload/v1708539385/jammal_photos/kwk22ufefvalgr2xc8c7.jpg",
+        "title": "كابتشينو عربيكا",
+        "description": "حليب بنكهة الفانيليا",
+        "price": 70.25
+      },
+      {
+        "imgUrl": "https://res.cloudinary.com/duc04fwdb/image/upload/v1708539589/jammal_photos/rfuzwhd1kjps1urpjbhd.jpg",
+        "title": "قهوة بالحليب والكريمة",
+        "description": "حليب بنكهة الفانيليا",
+        "price": 120.25
+      },
+      {
+        "imgUrl": "https://res.cloudinary.com/duc04fwdb/image/upload/v1708539796/jammal_photos/t1rctyrr8uszseyror1n.jpg",
+        "title": "قهوة باردة",
+        "description": "حليب بنكهة الفانيليا",
+        "price": 40.25
+      }
+    ]
+  },
+  "Choose": {
+    "title": "كوفيرو أكثر من مقهى مفضل لذيذ",
+    "description": "هناك العديد من الاختلافات في نصوص لوريم إيبسوم المتاحة ولكن الأغلبية تعرضت لتغيير بشكل ما بواسطة الفكاهة المدخلة أو الكلمات العشوائية التي لا تبدو حتى قريبة من الواقع.",
+    "Choose": [
+      {
+        "imgUrl": "https://res.cloudinary.com/duc04fwdb/image/upload/v1708544662/jammal_photos/vmpmyjso1fy8iwc2mxzv.svg",
+        "title": "رائحة رائعة",
+        "description": "هناك العديد من الاختلافات في نصوص لوريم إيبسوم المتاحة ولكن الأغلبية تعرضت لتغيير بشكل ما بواسطة الفكاهة المدخلة."
+      },
+      {
+        "imgUrl": "https://res.cloudinary.com/duc04fwdb/image/upload/v1708544732/jammal_photos/og60dt6hamluqmlyyi5u.svg",
+        "title": "درجات نقية",
+        "description": "هناك العديد من الاختلافات في نصوص لوريم إيبسوم المتاحة ولكن الأغلبية تعرضت لتغيير بشكل ما بواسطة الفكاهة المدخلة."
+      },
+      {
+        "imgUrl": "https://res.cloudinary.com/duc04fwdb/image/upload/v1708544772/jammal_photos/dy9d7lt86x0uykpf3fdk.svg",
+        "title": "قهوة صحية",
+        "description": "هناك العديد من الاختلافات في نصوص لوريم إيبسوم المتاحة ولكن الأغلبية تعرضت لتغيير بشكل ما بواسطة الفكاهة المدخلة."
       }
     ],
-    "email4": "mailto:zainkeepscode@gmail.com",
-    "buttonText": "Contact"
+    "imgUrl": "https://res.cloudinary.com/duc04fwdb/image/upload/v1708544842/jammal_photos/s39yk1hre9kt36flguug.jpg"
+  },
+  "statistics": {
+    "statistics": [
+      {
+        "imgUrl": "https://res.cloudinary.com/duc04fwdb/image/upload/v1708549772/jammal_photos/cdulhjzrscft50xc9qpq.svg",
+        "value": "1500+",
+        "title": "إجمالي الفروع"
+      },
+      {
+        "imgUrl": "https://res.cloudinary.com/duc04fwdb/image/upload/v1708549772/jammal_photos/cdulhjzrscft50xc9qpq.svg",
+        "number": "250+",
+        "title": "عملاء سعداء"
+      },
+      {
+        "imgUrl": "https://res.cloudinary.com/duc04fwdb/image/upload/v1708549859/jammal_photos/fxwoqrv32nrigcejyzl9.svg",
+        "value": "120+",
+        "title": "طهاة محترفين"
+      },
+      {
+        "imgUrl": "https://res.cloudinary.com/duc04fwdb/image/upload/v1708549982/jammal_photos/lh9hadm3hvwv9zduqhm3.svg",
+        "value": "50+",
+        "title": "سنوات الخبرة"
+      }
+    ]
+  },
+  "offer": {
+    "title": "عرض خاص لك",
+    "buttonText": "اطلب الآن",
+    "offer": [
+      {
+        "imgUrl": "https://res.cloudinary.com/duc04fwdb/image/upload/v1708546231/jammal_photos/oeale2ff1q06wkwmxled.jpg",
+        "title": "كابتشينو عربيكا",
+        "discount": "احصل على عرض 40%",
+        "description": "إنها حقيقة معروفة أن القارئ سيشتت انتباهه بواسطة المحتوى القابل للقراءة من الصفحة عند النظر إلى تخطيطها العادي."
+      },
+      {
+        "imgUrl": "https://res.cloudinary.com/duc04fwdb/image/upload/v1708546311/jammal_photos/a0mnlnag2gk47lndpv94.jpg",
+        "title": "كابتشينو عربيكا",
+        "discount": "احصل على عرض 40%",
+        "description": "إنها حقيقة معروفة أن القارئ سيشتت انتباهه بواسطة المحتوى القابل للقراءة من الصفحة عند النظر إلى تخطيطها العادي."
+      }
+    ]
+  },
+  "team": {
+    "title": "قابل خبرائنا",
+    "members": [
+      {
+        "name": "ميليسا فيي",
+        "job": "طاهية رئيسية",
+        "imgUrl": "https://res.cloudinary.com/duc04fwdb/image/upload/v1708549637/jammal_photos/xg3omldwwfpdgfrmhzub.jpg"
+      },
+      {
+        "name": "تشاد سميث",
+        "job": "طاه رئيسي",
+        "imgUrl": "https://res.cloudinary.com/duc04fwdb/image/upload/v1708549709/jammal_photos/nbrapiqruszc048xe8rx.jpg"
+      },
+      {
+        "name": "أرون رودري",
+        "job": "طاه رئيسي",
+        "imgUrl": "https://res.cloudinary.com/duc04fwdb/image/upload/v1708549637/jammal_photos/xg3omldwwfpdgfrmhzub.jpg"
+      },
+      {
+        "name": "آني بينتو",
+        "job": "طاهية رئيسية",
+        "imgUrl": "https://res.cloudinary.com/duc04fwdb/image/upload/v1708549709/jammal_photos/nbrapiqruszc048xe8rx.jpg"
+      }
+    ],
+    "medias": [
+      {
+        "icon": "🌐",
+        "url": "https://facebook.com"
+      },
+      {
+        "icon": "🐦",
+        "url": "https://twitter.com"
+      },
+      {
+        "icon": "🔗",
+        "url": "https://linkedin.com"
+      },
+      {
+        "icon": "▶️",
+        "url": "https://youtube.com"
+      }
+    ]
+  },
+  "reservation": {
+    "title": "احجز طاولة",
+    "buttonText": "احجز طاولة",
+    "imgUrl": "https://res.cloudinary.com/duc04fwdb/image/upload/v1708555056/jammal_photos/irqxlw9ph3hzp28ipfv9.png",
+    "shape": "https://res.cloudinary.com/duc04fwdb/image/upload/v1708555103/jammal_photos/vsurnwxgmf1bvfbgr5hu.png"
+  },
+  "testimonials": {
+    "testimonials": [
+      {
+        "imgUrl": "https://res.cloudinary.com/duc04fwdb/image/upload/v1708545949/jammal_photos/kjcpvqovfxziihn6firi.jpg",
+        "title": "ريد إي بوت",
+        "subtitle": "عميل",
+        "description": "هناك العديد من الاختلافات في النصوص المتاحة ولكن الأغلبية تعرضت لتغيير بشكل ما بواسطة الفكاهة المدخلة أو الكلمات العشوائية."
+      },
+      {
+        "imgUrl": "https://res.cloudinary.com/duc04fwdb/image/upload/v1708546033/jammal_photos/lut9zyvwnctqytyriih9.jpg",
+        "title": "باركر جيمينيز",
+        "subtitle": "عميل",
+        "description": "هناك العديد من الاختلافات في النصوص المتاحة ولكن الأغلبية تعرضت لتغيير بشكل ما بواسطة الفكاهة المدخلة أو الكلمات العشوائية."
+      },
+      {
+        "imgUrl": "https://res.cloudinary.com/duc04fwdb/image/upload/v1708546089/jammal_photos/o9shd85cnsznypdcrf6k.jpg",
+        "title": "سيلفيا إتش جرين",
+        "subtitle": "عميل",
+        "description": "هناك العديد من الاختلافات في النصوص المتاحة ولكن الأغلبية تعرضت لتغيير بشكل ما بواسطة الفكاهة المدخلة أو الكلمات العشوائية."
+      },
+      {
+        "imgUrl": "https://res.cloudinary.com/duc04fwdb/image/upload/v1708546154/jammal_photos/gxevdg3quyvcmcnrqoxh.jpg",
+        "title": "جوردون دي نوفاك",
+        "subtitle": "عميل",
+        "description": "هناك العديد من الاختلافات في النصوص المتاحة ولكن الأغلبية تعرضت لتغيير بشكل ما بواسطة الفكاهة المدخلة أو الكلمات العشوائية."
+      }
+    ]
+  },
+  "footer": {
+    "description": "هناك العديد من الاختلافات في النصوص المتاحة ولكن الأغلبية تعرضت لتغيير بشكل ما بواسطة الفكاهة المدخلة أو الكلمات العشوائية التي لا تبدو حتى قريبة من الواقع.",
+    "imgUrl": "https://res.cloudinary.com/duc04fwdb/image/upload/v1708556947/jammal_photos/ddhmuvn3h3rycioxyiyd.png",
+    "contacts": [
+      {
+        "value": "+2 123 654 7898",
+        "icon": "☎"
+      },
+      {
+        "value": "25/B طريق ميلفورد، نيويورك",
+        "icon": "📍"
+      },
+      {
+        "value": "info@example.com",
+        "icon": "✉"
+      }
+    ],
+    "footerSections": [
+      {
+        "title": "روابط سريعة",
+        "links": [
+          {
+            "title": "من نحن",
+            "url": "#about"
+          },
+          {
+            "title": "القائمة",
+            "url": "#menu"
+          },
+          {
+            "title": "الميزات",
+            "url": "#features"
+          },
+          {
+            "title": "المعرض",
+            "url": "#gallery"
+          },
+          {
+            "title": "الفريق",
+            "url": "#team"
+          },
+          {
+            "title": "الحجز",
+            "url": "#reservation"
+          }
+        ]
+      },
+      {
+        "title": "ساعات العمل",
+        "links": [
+          {
+            "title": "من نحن",
+            "url": "#"
+          },
+          {
+            "title": "المشاريع",
+            "url": "#"
+          },
+          {
+            "title": "فريقنا",
+            "url": "#"
+          },
+          {
+            "title": "اتصل بنا",
+            "url": "#"
+          },
+          {
+            "title": "الخدمات",
+            "url": "#"
+          }
+        ]
+      }
+    ],
+    "medias": [
+      {
+        "icon": "📱",
+        "url": "https://www.facebook.com/"
+      },
+      {
+        "icon": "📷",
+        "url": "https://www.instagram.com/"
+      },
+      {
+        "icon": "🐦",
+        "url": "https://twitter.com/"
+      },
+      {
+        "icon": "🔗",
+        "url": "https://www.linkedin.com/"
+      }
+    ]
+  },
+  "colors": {
+    "templateColors": ["#fff", "#cda274", "#292f36", "#f4f0ec", "#777777"]
   }
 }

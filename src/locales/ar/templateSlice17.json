@@ -1,31 +1,115 @@
 {
   "templateInfo": {
-    "id": 6,
+    "id": 17,
     "title": "",
     "description": "",
     "imgUrl": ""
   },
   "navbar": {
-    "imgUrl": "https://res.cloudinary.com/duc04fwdb/image/upload/v1703193372/jammal_photos/eygwjnnq4d9scpxd9unv.png",
+    "title": "الشعار",
+    "subtitle": "العنوان الفرعي",
+    "description": "القائمة المنسدلة",
     "links": [
       {
-        "title": "Residencies",
-        "url": "#"
+        "title": "الرئيسية",
+        "url": "/#"
       },
       {
-        "title": "Our Value",
-        "url": "#"
+        "title": "من نحن",
+        "url": "/#"
       },
       {
-        "title": "Contact Us",
-        "url": "#"
-      },
-      {
-        "title": "Get Started",
-        "url": "#"
+        "title": "اتصل بنا",
+        "url": "/#"
       }
     ],
-    "email4": "mailto:zainkeepscode@gmail.com",
-    "buttonText": "Contact"
+    "dropDown": [
+      {
+        "title": "الخضروات",
+        "url": "/#"
+      },
+      {
+        "title": "الفواكه",
+        "url": "/#"
+      },
+      {
+        "title": "الحبوب",
+        "url": "/#"
+      }
+    ]
+  },
+  "hero": {
+    "title": "سليمان",
+    "subtitle": "مطعم توصيل وجبات طازجة وصحية في القاهرة",
+    "description": "اكتشف أطباقًا لذيذة ستلبي رغباتك من 132.95 في الأسبوع",
+    "imageUrl": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1710989808/hero_b7quav.png",
+    "imgUrl": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1710989607/heroBg_vahqtb.png"
+  },
+  "services": {
+    "title": "لماذا تختارنا",
+    "services": [
+      {
+        "icon": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1711094091/fast-delivery-fast-svgrepo-com_fr05yy.svg",
+        "description": "نص افتراضي يستخدم في صناعة الطباعة والتنضيد"
+      },
+      {
+        "icon": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1711094092/burger-huge-svgrepo-com_rpo63l.svg",
+        "description": "نص افتراضي يستخدم في صناعة الطباعة والتنضيد"
+      },
+      {
+        "icon": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1711094091/discount-svgrepo-com_j3jgfu.svg",
+        "description": "نص افتراضي يستخدم في صناعة الطباعة والتنضيد"
+      },
+      {
+        "icon": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707959653/holding-hand_1_ip0t5r.png",
+        "description": "نص افتراضي يستخدم في صناعة الطباعة والتنضيد"
+      }
+    ]
+  },
+  "about": {
+    "title": "من نحن",
+    "subtitle": "نص افتراضي يستخدم في صناعة الطباعة والتنضيد. النص البديل هنا لتعريف المشروع بشكل موجز.",
+    "imgs": [
+      "https://res.cloudinary.com/dowtlcpxj/image/upload/v1710989609/polygon_yiwc6q.png",
+      "https://res.cloudinary.com/dowtlcpxj/image/upload/v1710989607/vector-wave_gperhf.png"
+    ],
+    "buttonText": "حسابي",
+    "buttonIcon": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707347076/icons8-person-64_ppr9e8.png"
+  },
+  "features": {
+    "title": "طعم مختلف وصحي.",
+    "subtitle": "نص افتراضي يستخدم في صناعة الطباعة والتنضيد. النص البديل هنا لتعريف المشروع بشكل موجز.",
+    "description": "نحن نعلم أن الوقت هو أكبر قيمة في العالم الحديث. خدمة توصيل وجبات الطعام الصحية لدينا هي الحل لأولئك الذين يرغبون في تناول الطعام الصحي وتوفير الوقت والمال.",
+    "imgs": [
+      "https://res.cloudinary.com/dowtlcpxj/image/upload/v1710989602/apple_cyue6o.png",
+      "https://res.cloudinary.com/dowtlcpxj/image/upload/v1710989602/kiwi_oenfrv.png",
+      "https://res.cloudinary.com/dowtlcpxj/image/upload/v1710989612/lemon_xp4xcd.png",
+      "https://res.cloudinary.com/dowtlcpxj/image/upload/v1710989612/leaf_ik3yan.png",
+      "https://res.cloudinary.com/dowtlcpxj/image/upload/v1710989607/tomato_wxdrmr.png"
+    ]
+  },
+  "footer": {
+    "title": "اتصل بنا",
+    "description": "حقوق النشر © 2024 سولغودفود. جميع الحقوق محفوظة.",
+    "contacts": [
+      {
+        "title": "20، شارع المحلة",
+        "value": 53456789,
+        "icon": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1711080161/location_535239_clqbiz.png"
+      },
+      {
+        "title": "mkmk@goodFood.com",
+        "value": 2123456789,
+        "icon": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1703129088/icons8-gmail-50_u4sqv0.png"
+      },
+      {
+        "title": "+20123456789 - المبيعات والخدمات",
+        "value": 123456789,
+        "icon": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1703129088/icons8-whatsapp-50_knru7l.png"
+      }
+    ]
+  },
+  "colors": {
+    "templateColors": ["#fff", "#cda274", "#292f36", "#f4f0ec", "#777777"]
   }
 }

@@ -37,19 +37,19 @@
         "imgUrl": "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707602286/headphone_qbcak3.png",
         "subtitle": "بيتس سولو",
         "title": "لاسلكي",
-        "title2": "سماعات"
+        "description": "سماعات"
       },
       {
         "imgUrl": "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707602303/vr_zzinjy.png",
         "subtitle": "بيتس سولو",
         "title": "لاسلكي",
-        "title2": "الواقع الافتراضي"
+        "description": "الواقع الافتراضي"
       },
       {
         "imgUrl": "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707602295/macbook_dxcdn8.png",
         "subtitle": "بيتس سولو",
         "title": "علامة تجارية",
-        "title2": "أجهزة الكمبيوتر المحمولة"
+        "description": "أجهزة الكمبيوتر المحمولة"
       }
     ],
     "buttonText": "تسوق حسب الفئة"
@@ -114,15 +114,15 @@
     "title": "ابتسامة جميلة",
     "date": "10 يناير إلى 28 يناير",
     "imgUrl": "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707603385/headphone_pkjxnj.png",
-    "subTitle": "سماعات Air Solo Bass",
-    "session": "تخفيضات الشتاء",
+    "subtitle": "سماعات Air Solo Bass",
+    "text": "تخفيضات الشتاء",
     "description": "لوريم إيبسوم، دولور سيت أميت كونسيكتيتور أديبيسشينج إيليت. إعادة اختراع إيست راشون إكس ألياس كويز ماجني في أوبتيو",
     "buttonText": "تسوق الآن"
   },
-  "products": {
+  "projects": {
     "title": "منتجاتنا",
     "description": "استكشف منتجاتنا",
-    "products": [
+    "projects": [
       {
         "imgUrl": "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707604733/p-1_mqzmix.jpg",
         "title": "سماعات Boat",
@@ -173,19 +173,19 @@
       {
         "title": "كيفية اختيار الساعة الذكية المثالية",
         "subtitle": "مينيميا فاكر ديسيرونت فيرو إلو بيتا ديلينتي إيوس دولوريس كونسكونتور، إيليجندي كوربوس مايويس مولستيا بوررو؟",
-        "published": "20 يناير 2024 بواسطة دلشاد",
+        "description": "20 يناير 2024 بواسطة دلشاد",
         "imgUrl": "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707604612/blog-1_n5jvci.jpg"
       },
       {
         "title": "كيفية اختيار الأداة المثالية",
         "subtitle": "مينيميا فاكر ديسيرونت فيرو إلو بيتا ديلينتي إيوس دولوريس كونسكونتور، إيليجندي كوربوس مايويس مولستيا بوررو؟",
-        "published": "20 يناير 2024 بواسطة ساتيا",
+        "description": "20 يناير 2024 بواسطة ساتيا",
         "imgUrl": "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707604616/blog-2_nmxkbb.jpg"
       },
       {
         "title": "كيفية اختيار سماعة الواقع الافتراضي المثالية",
         "subtitle": "مينيميا فاكر ديسيرونت فيرو إلو بيتا ديلينتي إيوس دولوريس كونسكونتور، إيليجندي كوربوس مايويس مولستيا بوررو؟",
-        "published": "20 يناير 2024 بواسطة صابر",
+        "description": "20 يناير 2024 بواسطة صابر",
         "imgUrl": "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707604621/blog-3_ko9kq9.jpg"
       }
     ]

@@ -1,5 +1,3 @@
-/* eslint-disable react/jsx-pascal-case */
-/* eslint-disable react-hooks/exhaustive-deps */
 import React, { useEffect, useState } from "react";
 import "../assets/css/globals18.css";
 import Navbar18 from "../components/sections/navbars/navbar18/Navbar18";
@@ -11,8 +9,6 @@ import Testimonial18 from "../components/sections/testimonials/testimonials18/Te
 import Cta18 from "../components/sections/ctas/cta18/Cta18";
 import Cta21 from "../components/sections/ctas/cta21/Cta21";
 import Footer18 from "../components/sections/footers/footer18/Footer18";
-import { useSelector } from "react-redux";
-
 import TrialDesign from "./TrialDesign";
 
 const componentMapping18 = {
