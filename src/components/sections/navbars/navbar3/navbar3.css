@@ -2,13 +2,11 @@
   display: flex;
   justify-content: space-between;
   background-color: var(--website-3-color-2);
-
 }
 
 .logo3 {
   width: 10rem;
   height: 3rem;
-
 }
 
 .navbar3-menu {
@@ -34,7 +32,7 @@
 
 /* res mobile */
 @media screen and (max-width: 768px) {
-  .navbar3> :nth-child(2) {
+  .navbar3 > :nth-child(2) {
     right: 1rem;
     z-index: 2;
   }
@@ -45,6 +43,5 @@
     position: fixed;
     right: 0.5rem;
     margin-right: 0;
-
   }
 }

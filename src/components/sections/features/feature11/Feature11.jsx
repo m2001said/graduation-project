@@ -1,23 +1,14 @@
 import React from "react";
-import "../footer11/footer11.css";
-import { useSelector } from "react-redux";
-import { useLocation } from "react-router";
+import "./feature11.css";
 
-const Footer11 = () => {
-  // const { footer } = useSelector((state) => state.template11);
-  const { pathname } = useLocation();
-  const footer = useSelector((state) => {
-    if (pathname.includes("own-page")) {
-      return state.ownTemplate.footer;
-    } else {
-      return state.template11.footer;
-    }
-  });
+const Feature11 = ({ template }) => {
+  const features = template.features;
+
   return (
     <section className="blog11 container section11" id="blog">
-      <h2 className="section__title11">{footer.title}</h2>
+      <h2 className="section__title11">{features.title}</h2>
       <div className="blog__container11 grid11">
-        {footer.cards.map((card, index) => (
+        {features.features.map((card, index) => (
           <div className="blog__card11" key={index}>
             <div className="blog__thumb11">
               <a href="#">
@@ -28,9 +19,9 @@ const Footer11 = () => {
               </a>
             </div>
             <div className="blog__details11">
-              <h3 className="blog__title11">{card.content}</h3>
+              <h3 className="blog__title11">{card.description}</h3>
               <div className="blog__meta11">
-                <span>{card.data}</span>
+                <span>{card.date}</span>
                 <span className="blog__dot">.</span>
                 <span>{card.name}</span>
               </div>
@@ -42,4 +33,4 @@ const Footer11 = () => {
   );
 };
 
-export default Footer11;
+export default Feature11;
