@@ -36,6 +36,15 @@ const MainNav = ({ toggleModal }) => {
     navigate(newPath);
   };
 
+  const currentPath = window.location.pathname;
+  console.log("currentPath", currentPath);
+  const showchangelanguage = () => {
+    const adminRoutes = ["admin", "user-information", "designs", "reset-password", "failed-verified", "success-verified"];
+    // Remove language prefix if present
+    const pathWithoutLang = currentPath.replace(/^\/(en|ar)/, "");
+    return pathWithoutLang === "" || adminRoutes.some((route) => pathWithoutLang === `/${route}`);
+  };
+
   return (
     <>
       <div className="main-nav" id="main-nav">
@@ -62,15 +71,19 @@ const MainNav = ({ toggleModal }) => {
               btnText={authState.status === "succeeded" && authState.user ? t("USER.LOG_OUT") : t("USER.SIGN_IN")}
             />
 
-            {i18n.language === "ar" && (
-              <button onClick={() => changeLanguage("en")} className="hover:opacity-90">
-                <img className="w-8" src={translateArabic} alt="translateArabic" />
-              </button>
-            )}
-            {i18n.language === "en" && (
-              <button onClick={() => changeLanguage("ar")} className="hover:opacity-90">
-                <img className="w-8" src={translateEnglish} alt="translateEnglish" />
-              </button>
+            {showchangelanguage() && (
+              <div className=" flex justify-between items-center">
+                {i18n.language === "ar" && (
+                  <button onClick={() => changeLanguage("en")} className="hover:opacity-90">
+                    <img className="w-8" src={translateArabic} alt="translateArabic" />
+                  </button>
+                )}
+                {i18n.language === "en" && (
+                  <button onClick={() => changeLanguage("ar")} className="hover:opacity-90">
+                    <img className="w-8" src={translateEnglish} alt="translateEnglish" />
+                  </button>
+                )}
+              </div>
             )}
           </div>
         </div>
