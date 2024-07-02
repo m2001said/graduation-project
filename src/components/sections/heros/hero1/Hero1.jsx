@@ -1,7 +1,12 @@
 import React from "react";
 import "./hero.css";
+import { useTranslation } from "react-i18next";
+
 const Hero1 = ({ template }) => {
   const hero = template.hero;
+  const { i18n } = useTranslation();
+  const language = i18n.language;
+
   return (
     <div className="landing design-1 " style={{ backgroundImage: `url(${hero.imgUrl})` }}>
       <div className="overlay"></div>
@@ -11,7 +16,7 @@ const Hero1 = ({ template }) => {
           <p>{hero.description}</p>
           <button className="landing-btn flex-center gap-2">
             <span>{hero.buttonText}</span>
-            <img src={hero.icon} alt="icon" />
+            <img className={language === "ar" ? "transform rotate-180" : ""} src={hero.icon} alt="icon" />
           </button>
         </div>
       </div>
