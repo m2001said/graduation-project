@@ -42,7 +42,7 @@ const Hero9 = ({ template }) => {
                 />
                 <select
                   placeholder={hero.inputPlaceholder}
-                  className="h-16 outline-none rounded-3xl bg-[var(--website-9-color-1)] border border-[var(--website-9-color-1)] px-6"
+                  className="h-16 outline-none rounded-3xl text-[var(--website-9-color-3)] bg-[var(--website-9-color-1)] border border-[var(--website-9-color-1)] px-6"
                 >
                   {hero.heros && hero.heros.map((option, index) => (
                     <option key={index}>{option.title}</option>

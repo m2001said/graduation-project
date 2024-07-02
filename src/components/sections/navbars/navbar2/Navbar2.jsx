@@ -6,7 +6,7 @@ const Navbar2 = ({ template }) => {
   const navbar = template.navbar;
 
   return (
-    <nav className="nav2">
+    <nav className="nav2 mb-5">
       {navbar.links.map((item) => (
         <a
           key={item.url}

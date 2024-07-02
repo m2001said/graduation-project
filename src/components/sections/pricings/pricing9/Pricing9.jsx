@@ -12,7 +12,7 @@ const ProjectCard = ({ project }) => (
       className="w-full h-64 object-cover"
     />
     <div className="p-4 hover:bg-[var(--website-9-color-2)] ease-in-out duration-300">
-      <h2 className="text-xl font-bold mb-2">{project.description}</h2>
+      <h2 className="text-xl text-[var(--website-9-color-3)] font-bold mb-2">{project.description}</h2>
       <p className="text-[var(--website-9-color-3)]  mb-2">{project.subtitle}</p>
       <div className="flex items-center gap-2 mb-4">
         {project.icons.map((icon, index) => (
@@ -34,7 +34,7 @@ const Pricing9 = ({ template }) => {
       <div className="lg:flex justify-between items-center hover:bg-[var(--website-9-color-2)] ease-in-out duration-300 p-4 rounded-lg">
         <div className="lg:w-3/5">
           <h1 className="text-[var(--website-9-color-3)]  hover:text-[var(--website-9-color-1)] ease-in-out duration-300 text-2xl font-bold">{template.projects.title}</h1>
-          <p className="text-lg text-[var(--website-9-color-4)] hover:text-[var(--website-9-color-1)] ease-in-out duration-300 ">{template.projects.description}</p>
+          <p className="text-lg text-[var(--website-9-color-3)] hover:text-[var(--website-9-color-1)] ease-in-out duration-300 ">{template.projects.description}</p>
           <p className="text-sm text-[var(--website-9-color-4)] hover:text-[var(--website-9-color-1)] ease-in-out duration-300">{template.projects.subtitle}</p>
         </div>
         <div className="flex gap-4 lg:w-2/5 lg:pt-0 pt-6">
