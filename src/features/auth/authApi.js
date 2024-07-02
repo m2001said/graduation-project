@@ -23,8 +23,11 @@ export const loginUser = async (email, password) => {
       email,
       password,
     });
+    console.log(response);
     const accessToken = response.data.accessToken;
+    const refreshToken = response.data.refreshToken;
     localStorage.setItem("token", accessToken);
+    localStorage.setItem("refresh_token", refreshToken);
     return response.data;
   } catch (error) {
     throw error; // Handle error in a meaningful way
@@ -34,7 +37,6 @@ export const loginUser = async (email, password) => {
 // Function to logout a user
 export const logoutUser = async () => {
   try {
-    // Optionally, you can remove the token from local storage upon logout
     const token = localStorage.getItem("token");
     const response = await axios.get(`${API_BASE_URL}/user/logout-user`, {
       headers: {
@@ -42,11 +44,26 @@ export const logoutUser = async () => {
       },
     });
     localStorage.removeItem("token");
+    localStorage.removeItem("refresh_token");
     return response.data;
   } catch (error) {
-    // Log the error to the console
     console.error("Logout failed:", error);
-    throw error; // Rethrow the error so it can be handled elsewhere
+    throw error;
+  }
+};
+
+// Function to fetch user avatar
+export const fetchUserAvatar = async () => {
+  try {
+    const token = localStorage.getItem("token");
+    const response = await axios.get(`${API_BASE_URL}/user/avatar`, {
+      headers: {
+        Authorization: `Bearer ${token}`,
+      },
+    });
+    return response.data;
+  } catch (error) {
+    throw Error(error.response.data.error);
   }
 };
 
@@ -58,7 +75,7 @@ export const forgetPassword = async (email) => {
     });
     return response.data;
   } catch (error) {
-    throw error; // Handle error in a meaningful way
+    throw error;
   }
 };
 
@@ -70,6 +87,26 @@ export const resetPassword = async (token, password) => {
     });
     return response.data;
   } catch (error) {
-    throw error; // Handle error in a meaningful way
+    throw error;
+  }
+};
+
+// Function to refresh access token
+export const refreshToken = async () => {
+  const refresh_token = localStorage.getItem("refresh_token");
+
+  try {
+    const response = await axios.get(`${API_BASE_URL}/user/refresh-token`, {
+      headers: {
+        Authorization: `Bearer ${refresh_token}`,
+      },
+    });
+
+    const newAccessToken = response.data.accessToken;
+    localStorage.setItem("token", newAccessToken);
+    return newAccessToken; // Return the new access token
+  } catch (error) {
+    console.error("Token refresh failed", error);
+    throw error;
   }
 };
