@@ -2,7 +2,7 @@ import React,{useEffect} from "react";
 import "./feature5_2.css";
 
 const Feature5_2 = ({ template }) => {
-  const feature2 = template.features2;
+  const feature2 = template.blogs;
 
   return (
     <div className="feature5_2 design5 design5-container design5-section">
@@ -15,7 +15,7 @@ const Feature5_2 = ({ template }) => {
           <h2>{feature2.title}</h2>
 
           <div className="feature5_2-cards design5-grid">
-            {feature2.features.map((content, index) => (
+            {feature2.blogs.map((content, index) => (
               <div key={index} className="feature5_2-singleCard">
                 <span className="singleCard-title">{content.title}</span>
                 <p>{content.description}</p>

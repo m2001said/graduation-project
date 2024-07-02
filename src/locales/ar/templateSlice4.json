@@ -9,44 +9,45 @@
     "imgUrl": "https://res.cloudinary.com/duc04fwdb/image/upload/v1703193372/jammal_photos/eygwjnnq4d9scpxd9unv.png",
     "links": [
       {
-        "title": "Residencies",
+        "title": "الإقامات",
         "url": "#"
       },
       {
-        "title": "Our Value",
+        "title": "قيمتنا",
         "url": "#"
       },
       {
-        "title": "Contact Us",
+        "title": "اتصل بنا",
         "url": "#"
       },
       {
-        "title": "Get Started",
+        "title": "ابدأ الآن",
         "url": "#"
       }
     ],
-    "email4": "mailto:zainkeepscode@gmail.com",
-    "buttonText": "Contact"
+    "email": "mailto:zainkeepscode@gmail.com",
+    "buttonText": "اتصل"
   },
   "hero": {
+    "name": "أحمد",
     "imgUrl": "https://res.cloudinary.com/duc04fwdb/image/upload/v1703196080/jammal_photos/taiu0lj7gzq6ew6srqsz.png",
-    "title": "Discover Most Suitable Property",
-    "description1": "Find a variety of properties that suit you very easily",
-    "description2": "Forget all difficulties in finding a residence for you",
-    "buttonText": "Search",
-    "stats": [
+    "title": "اكتشف العقار الأنسب",
+    "description": "اعثر على مجموعة متنوعة من العقارات التي تناسبك بسهولة تامة",
+    "text": "انس كل الصعوبات في العثور على مسكن لك",
+    "buttonText": "ابحث",
+    "heros": [
       {
-        "title": "Premium Product",
+        "title": "منتج مميز",
         "start": "8880",
         "end": "9000"
       },
       {
-        "title": "Happy Customer",
+        "title": "عملاء سعداء",
         "start": "1950",
         "end": "2000"
       },
       {
-        "title": "Awards Winning",
+        "title": "جوائز الفوز",
         "start": "0",
         "end": "28"
       }
@@ -55,125 +56,137 @@
     "icon": "+"
   },
   "features": {
-    "title": "Our Value",
-    "sub_title": "Value We Give to You",
-    "description1": "We are always ready to help by providing the best services for you.",
-    "description2": "We believe a good place to live can make your life better",
+    "title": "قيمتنا",
+    "subtitle": "القيمة التي نقدمها لك",
+    "description": "نحن دائمًا جاهزون للمساعدة من خلال تقديم أفضل الخدمات لك.",
+    "text": "نعتقد أن مكانًا جيدًا للعيش يمكن أن يجعل حياتك أفضل",
     "features": [
       {
         "icon": "💧",
-        "heading": "Best interest rates on the market",
-        "detail": "Exercitation in fugiat est ut ad ea cupidatat ut in cupidatat occaecat ut occaecat consequat est minim minim esse tempor laborum consequat esse adipisicing eu reprehenderit enim."
+        "title": "أفضل معدلات الفائدة في السوق",
+        "description": "Exercitation in fugiat est ut ad ea cupidatat ut in cupidatat occaecat ut occaecat consequat est minim minim esse tempor laborum consequat esse adipisicing eu reprehenderit enim."
       },
       {
         "icon": "🩲",
-        "heading": "Prevent unstable prices",
-        "detail": "Exercitation in fugiat est ut ad ea cupidatat ut in cupidatat occaecat ut occaecat consequat est minim minim esse tempor laborum consequat esse adipisicing eu reprehenderit enim."
+        "title": "منع الأسعار غير المستقرة",
+        "description": "Exercitation in fugiat est ut ad ea cupidatat ut in cupidatat occaecat ut occaecat consequat est minim minim esse tempor laborum consequat esse adipisicing eu reprehenderit enim."
       },
       {
         "icon": "✔",
-        "heading": "Best price on the market",
-        "detail": "Exercitation in fugiat est ut ad ea cupidatat ut in cupidatat occaecat ut occaecat consequat est minim minim esse tempor laborum consequat esse adipisicing eu reprehenderit enim."
+        "title": "أفضل الأسعار في السوق",
+        "description": "Exercitation in fugiat est ut ad ea cupidatat ut in cupidatat occaecat ut occaecat consequat est minim minim esse tempor laborum consequat esse adipisicing eu reprehenderit enim."
       }
     ],
     "imgUrl": "https://res.cloudinary.com/duc04fwdb/image/upload/v1703203417/jammal_photos/if4uayalbxuh6enjdenm.png"
   },
   "projects": {
-    "title": "Best Choices",
-    "sub_title": "Popular Residencies",
+    "title": "أفضل الخيارات",
+    "subtitle": "الإقامات الشعبية",
     "projects": [
       {
-        "image": "https://res.cloudinary.com/duc04fwdb/image/upload/v1703197994/jammal_photos/v4fz1ap7aa3lnz6f3cqo.png",
+        "imgUrl": "https://res.cloudinary.com/duc04fwdb/image/upload/v1703197994/jammal_photos/v4fz1ap7aa3lnz6f3cqo.png",
         "name": "Aliva Priva Jardin",
         "price": "47,043",
-        "detail": "Jakarta Garden City Street, Cakung. Pulo Gadung, Jakarta Timur, DKI Jakarta"
+        "description": "شارع جاكرتا جاردن سيتي، كاكوم. بولو جادونغ، جاكرتا تيمور، دي كاي آي جاكرتا"
       },
       {
-        "image": "https://res.cloudinary.com/duc04fwdb/image/upload/v1703198149/jammal_photos/m4s3ppbfcwgwoanctetr.png",
+        "imgUrl": "https://res.cloudinary.com/duc04fwdb/image/upload/v1703198149/jammal_photos/m4s3ppbfcwgwoanctetr.png",
         "name": "Asatti Garden City",
         "price": "66,353",
-        "detail": "Pahlawan Street XVII No.215, Cinangka, Sawangan, Depok, Jawa Barat"
+        "description": "شارع بطل ستريت السابع عشر رقم 215، سينانغكا، ساوانغان، ديبوك، جاوة الغربية"
       },
       {
-        "image": "https://res.cloudinary.com/duc04fwdb/image/upload/v1703198230/jammal_photos/sy4citkq8uqg3qpgtvj7.png",
+        "imgUrl": "https://res.cloudinary.com/duc04fwdb/image/upload/v1703198230/jammal_photos/sy4citkq8uqg3qpgtvj7.png",
         "name": "Citralan Puri Serang",
         "price": "35,853",
-        "detail": "Ruko Puri Indah Residence Block A7, Lingkar Street, Ciracas, Serang, Banten"
+        "description": "روكو بوري إنداه ريزيدنس بلوك A7، شارع لينكار، سيراكاس، سيرانغ، بانتن"
       },
       {
-        "image": "https://res.cloudinary.com/duc04fwdb/image/upload/v1703197994/jammal_photos/v4fz1ap7aa3lnz6f3cqo.png",
+        "imgUrl": "https://res.cloudinary.com/duc04fwdb/image/upload/v1703197994/jammal_photos/v4fz1ap7aa3lnz6f3cqo.png",
         "name": "Aliva Priva Jardin",
         "price": "47,043",
-        "detail": "Jakarta Garden City Street, Cakung. Pulo Gadung, Jakarta Timur, DKI Jakarta"
+        "description": "شارع جاكرتا جاردن سيتي، كاكوم. بولو جادونغ، جاكرتا تيمور، دي كاي آي جاكرتا"
       },
       {
-        "image": "https://res.cloudinary.com/duc04fwdb/image/upload/v1703198149/jammal_photos/m4s3ppbfcwgwoanctetr.png",
+        "imgUrl": "https://res.cloudinary.com/duc04fwdb/image/upload/v1703198149/jammal_photos/m4s3ppbfcwgwoanctetr.png",
         "name": "Asatti Garden City",
         "price": "66,353",
-        "detail": "Pahlawan Street XVII No.215, Cinangka, Sawangan, Depok, Jawa Barat"
+        "description": "شارع بطل ستريت السابع عشر رقم 215، سينانغكا، ساوانغان، ديبوك، جاوة الغربية"
       },
       {
-        "image": "https://res.cloudinary.com/duc04fwdb/image/upload/v1703198230/jammal_photos/sy4citkq8uqg3qpgtvj7.png",
+        "imgUrl": "https://res.cloudinary.com/duc04fwdb/image/upload/v1703198230/jammal_photos/sy4citkq8uqg3qpgtvj7.png",
         "name": "Citralan Puri Serang",
         "price": "35,853",
-        "detail": "Ruko Puri Indah Residence Block A7, Lingkar Street, Ciracas, Serang, Banten"
+        "description": "روكو بوري إنداه ريزيدنس بلوك A7، شارع لينكار، سيراكاس، سيرانغ، بانتن"
       }
     ]
   },
   "contact": {
-    "title": "Contact Us",
-    "sub_title": "Easy to contact us",
-    "description": "We are always ready to help by providing the best services for you. We believe a good place to live can make your life better",
+    "title": "اتصل بنا",
+    "subtitle": "سهولة الاتصال بنا",
+    "description": "نحن دائمًا جاهزون للمساعدة من خلال تقديم أفضل الخدمات لك. نحن نؤمن بأن المكان الجيد للعيش يمكن أن يجعل حياتك أفضل",
     "email": "contact@interno.com",
     "phone": "(123) 125-858",
-    "UrlImage": "https://res.cloudinary.com/duc04fwdb/image/upload/v1703206872/jammal_photos/hqcx6ikyfgeuqe0vcset.jpg",
+    "imgUrl": "https://res.cloudinary.com/duc04fwdb/image/upload/v1703206872/jammal_photos/hqcx6ikyfgeuqe0vcset.jpg",
     "contacts": [
       {
-        "type": "Call",
+        "type": "اتصال",
         "phone": "021 123 145 14",
-        "btn_contact": "Call now"
+        "buttonText": "اتصل الآن"
       },
       {
-        "type": "Chat",
+        "type": "دردشة",
         "phone": "021 123 145 14",
-        "btn_contact": "Chat now"
+        "buttonText": "دردشة الآن"
       },
       {
-        "type": "Video Call",
+        "type": "مكالمة فيديو",
         "phone": "021 123 145 14",
-        "btn_contact": "Video Call now"
+        "buttonText": "مكالمة فيديو الآن"
       },
       {
-        "type": "Message",
+        "type": "رسالة",
         "phone": "021 123 145 14",
-        "btn_contact": "Message now"
+        "buttonText": "أرسل رسالة الآن"
       }
     ]
   },
   "cta": {
-    "title": "Get started with Homyz",
-    "description1": "Subscribe and find super attractive price quotes from us.",
-    "description2": "Find your residence soon",
-    "buttonText": "Get Started",
+    "title": "ابدأ مع Homyz",
+    "description": "اشترك واحصل على عروض أسعار جذابة منا.",
+    "text": "ابحث عن مسكنك قريبًا",
+    "buttonText": "ابدأ الآن",
     "email": "mailto:zainkeepscode@gmail.com"
   },
   "footer": {
-    "logo": "https://res.cloudinary.com/duc04fwdb/image/upload/v1703209942/jammal_photos/xd2ugq6yopzvjkw37qc7.png",
-    "description": "Our vision is to make all people the best place to live for them.",
+    "imgUrl": "https://res.cloudinary.com/duc04fwdb/image/upload/v1703209942/jammal_photos/xd2ugq6yopzvjkw37qc7.png",
+    "description": "رؤيتنا هي جعل كل الناس يعيشون في أفضل مكان يناسبهم.",
     "footerSections": [
       {
-        "title": "Services",
+        "title": "الخدمات",
         "links": [
-          { "title": "Property", "url": "#" },
-          { "title": "Services", "url": "#" },
-          { "title": "Product", "url": "#" },
-          { "title": "About Us", "url": "#" }
+          {
+            "title": "العقارات",
+            "url": "#"
+          },
+          {
+            "title": "الخدمات",
+            "url": "#"
+          },
+          {
+            "title": "المنتجات",
+            "url": "#"
+          },
+          {
+            "title": "معلومات عنا",
+            "url": "#"
+          }
         ]
       }
     ],
     "contacts": [
       {
-        "value": "145 New York, FL 5467, USA"
+        "value": "145 نيويورك، فلوريدا 5467، الولايات المتحدة الأمريكية"
       }
     ]
   },

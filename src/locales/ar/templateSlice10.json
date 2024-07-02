@@ -117,35 +117,35 @@
       {
         "title": "من هناك",
         "rating": "5.0",
-        "author": "شخص ما",
+        "name": "شخص ما",
         "imgUrl": "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707067713/book1_a7epcd.jpg",
         "icon": "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707083776/Star_lqpaao.svg"
       },
       {
         "title": "حياته",
         "rating": "4.5",
-        "author": "جون",
+        "name": "جون",
         "imgUrl": "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707067750/book2_fjsnwn.jpg",
         "icon": "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707083776/Star_lqpaao.svg"
       },
       {
         "title": "الأولاد الضائعون",
         "rating": "4.7",
-        "author": "الفتاة الضائعة",
+        "name": "الفتاة الضائعة",
         "imgUrl": "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707067757/book3_fkzdr7.jpg",
         "icon": "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707083776/Star_lqpaao.svg"
       },
       {
         "title": "حياته",
         "rating": "4.4",
-        "author": "شخص ما",
+        "name": "شخص ما",
         "imgUrl": "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707067750/book2_fjsnwn.jpg",
         "icon": "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707083776/Star_lqpaao.svg"
       },
       {
         "title": "من هناك",
         "imgUrl": "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707067713/book1_a7epcd.jpg",
-        "author": "شخص ما",
+        "name": "شخص ما",
         "rating": "4.5",
         "icon": "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707083776/Star_lqpaao.svg"
       }
@@ -157,17 +157,17 @@
     "description": "لوريم إيبسوم دولور سيت أميت، كونسيكتيتور أديبيسشينج إيليت. بيرسبيسشياتيس ديليكتوس أركيتيكتو إيرور نيسكيونت",
     "testimonials": [
       {
-        "title": "فيكتور",
+        "name": "فيكتور",
         "description": "لوريم إيبسوم دولور سيت أميت كونسيكتيتور أديبيسشينج إيليت. إعادة اختراع إيست راشون إكس ألياس كويز ماجني في أوبتيو",
         "imgUrl": "https://picsum.photos/101/101.jpg"
       },
       {
-        "title": "ساتيا ناراين",
+        "name": "ساتيا ناراين",
         "description": "لوريم إيبسوم دولور سيت أميت كونسيكتيتور أديبيسشينج إيليت. إعادة اختراع إيست راشون إكس ألياس كويز ماجني في أوبتيو",
         "imgUrl": "https://picsum.photos/102/102.jpg"
       },
       {
-        "title": "ساشين تندولكار",
+        "name": "ساشين تندولكار",
         "description": "لوريم إيبسوم دولور سيت أميت كونسيكتيتور أديبيسشينج إيليت. إعادة اختراع إيست راشون إكس ألياس كويز ماجني في أوبتيو",
         "imgUrl": "https://picsum.photos/103/103.jpg"
       }

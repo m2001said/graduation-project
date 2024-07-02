@@ -19,8 +19,8 @@ const Feature14 = ({ template }) => {
           </div>
           {/* third col */}
           <div className="flex flex-col justify-center gap-4 p-6 sm:p-8">
-            <p className="font-bold text-xl">{featuers.subTitle}</p>
-            <p className=" text-3xl sm:text-5xl font-bold">{featuers.session}</p>
+            <p className="font-bold text-xl">{featuers.subtitle}</p>
+            <p className=" text-3xl sm:text-5xl font-bold">{featuers.text}</p>
             <p className="text-sm tracking-wide leading-5">{featuers.description}</p>
             <div>
               <button className="bg-[--website-14-color-6] text-[--website-14-color-1] py-2 px-4 rounded-full">{featuers.buttonText}</button>

@@ -117,35 +117,35 @@
       {
         "title": "Who's there",
         "rating": "5.0",
-        "author": "Someone",
+        "name": "Someone",
         "imgUrl": "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707067713/book1_a7epcd.jpg",
         "icon": "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707083776/Star_lqpaao.svg"
       },
       {
         "title": "His Life",
         "rating": "4.5",
-        "author": "John",
+        "name": "John",
         "imgUrl": "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707067750/book2_fjsnwn.jpg",
         "icon": "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707083776/Star_lqpaao.svg"
       },
       {
         "title": "Lost boys",
         "rating": "4.7",
-        "author": "Lost Girl",
+        "name": "Lost Girl",
         "imgUrl": "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707067757/book3_fkzdr7.jpg",
         "icon": "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707083776/Star_lqpaao.svg"
       },
       {
         "title": "His Life",
         "rating": "4.4",
-        "author": "Someone",
+        "name": "Someone",
         "imgUrl": "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707067750/book2_fjsnwn.jpg",
         "icon": "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707083776/Star_lqpaao.svg"
       },
       {
         "title": "Who's There",
         "imgUrl": "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707067713/book1_a7epcd.jpg",
-        "author": "Someone",
+        "name": "Someone",
         "rating": "4.5",
         "icon": "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707083776/Star_lqpaao.svg"
       }
@@ -157,17 +157,17 @@
     "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis delectus architecto error nesciunt",
     "testimonials": [
       {
-        "title": "Victor",
+        "name": "Victor",
         "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque reiciendis inventore iste ratione ex alias quis magni at optio",
         "imgUrl": "https://picsum.photos/101/101.jpg"
       },
       {
-        "title": "Satya Narayan",
+        "name": "Satya Narayan",
         "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque reiciendis inventore iste ratione ex alias quis magni at optio",
         "imgUrl": "https://picsum.photos/102/102.jpg"
       },
       {
-        "title": "Sachin Tendulkar",
+        "name": "Sachin Tendulkar",
         "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque reiciendis inventore iste ratione ex alias quis magni at optio",
         "imgUrl": "https://picsum.photos/103/103.jpg"
       }

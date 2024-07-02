@@ -1,31 +1,114 @@
 {
   "templateInfo": {
-    "id": 6,
+    "id": 12,
     "title": "",
     "description": "",
     "imgUrl": ""
   },
   "navbar": {
-    "imgUrl": "https://res.cloudinary.com/duc04fwdb/image/upload/v1703193372/jammal_photos/eygwjnnq4d9scpxd9unv.png",
+    "imgUrl": "https://res.cloudinary.com/duc04fwdb/image/upload/v1719850710/jammal_photos/vh9x6ll6nixpsybvxe5q.png",
+    "icon": "https://res.cloudinary.com/duc04fwdb/image/upload/v1719850811/jammal_photos/brginprtncegbiyr3wqf.png",
     "links": [
       {
-        "title": "Residencies",
+        "title": "الرئيسية",
         "url": "#"
       },
       {
-        "title": "Our Value",
+        "title": "الميزات",
         "url": "#"
       },
       {
-        "title": "Contact Us",
+        "title": "من نحن",
         "url": "#"
       },
       {
-        "title": "Get Started",
+        "title": "الفريق",
+        "url": "#"
+      },
+      {
+        "title": "تواصل معنا",
         "url": "#"
       }
+    ]
+  },
+  "hero": {
+    "title": "نحن نضمن تعليمًا أفضل لعالم أفضل",
+    "description": "تم تصميم منهجنا المتطور لتمكين الطلاب بالمعرفة والمهارات والخبرات اللازمة للتميز في مجال التعليم الديناميكي.",
+    "buttonText": "استكشاف المزيد",
+    "icon": "https://res.cloudinary.com/duc04fwdb/image/upload/v1719850606/jammal_photos/cela2eggopmbbsfgcylq.png",
+    "imgUrl": ""
+  },
+  "features": {
+    "title": "ماذا نقدم",
+    "features": [
+      {
+        "title": "درجة التخرج",
+        "icon": "https://res.cloudinary.com/duc04fwdb/image/upload/v1719830119/jammal_photos/bya9nzubv9jbt5aukuax.png",
+        "imgUrl": "https://res.cloudinary.com/duc04fwdb/image/upload/v1719827222/jammal_photos/ei4ppt3gybkh7l98hapt.png"
+      },
+      {
+        "title": "درجة الماجستير",
+        "icon": "https://res.cloudinary.com/duc04fwdb/image/upload/v1719850422/jammal_photos/rarjoggq9u01wohrff7f.png",
+        "imgUrl": "https://res.cloudinary.com/duc04fwdb/image/upload/v1719827442/jammal_photos/qpz2eidko6xewm7arggi.png"
+      },
+      {
+        "title": "الدراسات العليا",
+        "icon": "https://res.cloudinary.com/duc04fwdb/image/upload/v1719850494/jammal_photos/x0bevimtd0kdrjap1acf.png",
+        "imgUrl": "https://res.cloudinary.com/duc04fwdb/image/upload/v1719827597/jammal_photos/bxmfbv8zmfjw7kbuewiu.png"
+      }
+    ]
+  },
+  "about": {
+    "title": "عن الجامعة",
+    "subtitle": "رعاية قادة الغد اليوم",
+    "description": "ابدأ رحلة تعليمية تحويلية مع برامج التعليم الشاملة لجامعتنا. تم تصميم منهجنا المتطور لتمكين الطلاب بالمعرفة والمهارات والخبرات اللازمة للتميز في مجال التعليم الديناميكي. مع التركيز على الابتكار والتعلم العملي والإرشاد الشخصي، تعد برامجنا المعلمين الطموحين لإحداث تأثير ملموس في الفصول الدراسية والمدارس والمجتمعات. سواء كنت تطمح لأن تصبح معلمًا أو إداريًا أو مستشارًا أو قائدًا تعليميًا، فإن مجموعتنا المتنوعة من البرامج توفر المسار المثالي لتحقيق أهدافك وإطلاق إمكانياتك الكاملة في تشكيل مستقبل التعليم.",
+    "imgUrl": "https://res.cloudinary.com/duc04fwdb/image/upload/v1719851473/jammal_photos/u1ctmph7rkswr6sofwye.png"
+  },
+  "team": {
+    "title": "فريقنا",
+    "members": [
+      {
+        "imgUrl": "https://res.cloudinary.com/di8kjrflu/image/upload/v1719854981/gallery-1_zlobfm.png"
+      },
+      {
+        "imgUrl": "https://res.cloudinary.com/di8kjrflu/image/upload/v1719855072/gallery-2_igw8bc.png"
+      },
+      {
+        "imgUrl": "https://res.cloudinary.com/di8kjrflu/image/upload/v1719855120/gallery-3_aicntt.png"
+      },
+      {
+        "imgUrl": "https://res.cloudinary.com/di8kjrflu/image/upload/v1719855148/gallery-4_b9x6qt.png"
+      }
     ],
-    "email4": "mailto:zainkeepscode@gmail.com",
-    "buttonText": "Contact"
+    "buttonText": "شاهد المزيد هنا",
+    "icon": "https://res.cloudinary.com/di8kjrflu/image/upload/v1719855189/white-arrow_bmhias.png"
+  },
+  "contact": {
+    "icons": [
+      "https://res.cloudinary.com/di8kjrflu/image/upload/v1719855279/msg-icon_admjx1.png",
+      "https://res.cloudinary.com/di8kjrflu/image/upload/v1719855301/mail-icon_cfnj5m.png",
+      "https://res.cloudinary.com/di8kjrflu/image/upload/v1719855333/phone-icon_ct28v1.png",
+      "https://res.cloudinary.com/di8kjrflu/image/upload/v1719855417/location-icon_ytfm0b.png",
+      "https://res.cloudinary.com/di8kjrflu/image/upload/v1719855189/white-arrow_bmhias.png"
+    ],
+    "title": "أرسل لنا رسالة",
+    "description": "لا تتردد في التواصل معنا من خلال نموذج الاتصال أو العثور على معلومات الاتصال الخاصة بنا أدناه. ملاحظاتك وأسئلتك واقتراحاتك مهمة بالنسبة لنا ونحن نسعى جاهدين لتقديم خدمة استثنائية لمجتمع جامعتنا.",
+    "contacts": [
+      {
+        "icon": 1,
+        "text": "Contact@edusite.dev"
+      },
+      {
+        "icon": 2,
+        "text": "+1 123-456-7890"
+      },
+      {
+        "icon": 3,
+        "text": "77 Massachusetts Ave, Cambridge\nMA 02139, الولايات المتحدة"
+      }
+    ]
+  },
+  "colors": {
+    "templateColors": ["#ffffff", "#cda274", "#292f36", "#f4f0ec", "#777777"]
   }
 }

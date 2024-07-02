@@ -1,0 +1,27 @@
+.campus12 {
+  margin: 80px auto;
+  width: 90%;
+  text-align: center;
+}
+.gallery12 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+.gallery12 img {
+  width: 23%;
+  border-radius: 10px;
+}
+
+/* ----------------------Media query------------- */
+
+@media (max-width: 800px) {
+  .gallery12 {
+    flex-wrap: wrap;
+  }
+  .gallery12 img {
+    width: 48%;
+    margin-bottom: 25px;
+  }
+}

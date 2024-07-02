@@ -7,6 +7,7 @@ import { useTranslation } from "react-i18next";
 
 const LoginForm = ({ toggleForm, toggleModal }) => {
   const { t, i18n } = useTranslation();
+  const language = i18n.language;
   const navigate = useNavigate();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -18,9 +19,14 @@ const LoginForm = ({ toggleForm, toggleModal }) => {
 
   const handleSignInClick = async () => {
     try {
-      await dispatch(loginUserAsync({ email, password }));
+      const user = await dispatch(loginUserAsync({ email, password }));
       toggleModal();
-      navigate(`/${i18n.language}/designs`);
+
+      if (user.payload.user.role === "admin" || user.payload.user.role === "super-admin") {
+        navigate(`/${language}/admin`);
+      } else {
+        navigate(`/${language}/designs`);
+      }
     } catch (error) {
       console.error("Login failed:", error);
       setLoginError("Invalid login credentials. Please try again.");

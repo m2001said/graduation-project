@@ -1,16 +1,7 @@
 import React from "react";
-import { useSelector } from "react-redux";
-import { useLocation } from "react-router";
 
-const Navbar8 = () => {
-  const { pathname } = useLocation();
-  const navbar = useSelector((state) => {
-    if (pathname.includes("own-page")) {
-      return state.ownTemplate.navbar;
-    } else {
-      return state.template8.navbar;
-    }
-  });
+const Navbar8 = ({ template }) => {
+  const navbar = template.navbar;
 
   // Define the map for linking section IDs with offsets
   const sectionMap = {

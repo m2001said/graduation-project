@@ -2,7 +2,7 @@ import React from "react";
 
 
 const Projects14 = ({template}) => {
-    const projects1 = template.products;
+    const projects1 = template.projects;
 
   return (
     <div className="bg-[--website-14-color-6] dark:bg-gray-900 dark:text-white">
@@ -16,7 +16,7 @@ const Projects14 = ({template}) => {
         <div className="Pb-10">
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-5 place-items-center">
             {/* card section */}
-            {projects1.products.map((data, index) => (
+            {projects1.projects.map((data, index) => (
               <div className="group" key={index}>
                 <div className="relative">
                   <img src={data.imgUrl} alt="" className="h-[180px] w-[260px] object-cover rounded-md" />

@@ -18,9 +18,7 @@
   }
 }
 
-body{
-  @apply bg-white dark:bg-gray-900 dark:text-white duration-200;
- }
+
 
 :root {
   --website-14-color-1:  #f42c37;

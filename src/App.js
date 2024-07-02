@@ -14,6 +14,7 @@ import FailedVerified from "./pages/FailedVerified.jsx";
 import ResetPassword from "./pages/ResetPassword.jsx";
 
 import YourWebsites from "./pages/YourWebsites.jsx";
+import Admin from "./pages/Admin";
 import { useRightToLeft } from "./utils/rightToLeft.js";
 import { useTranslation } from "react-i18next";
 
@@ -134,6 +135,7 @@ function App() {
               />
             ))}
           </Route>
+          <Route path={`/${language}/admin`} element={<Admin />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </div>

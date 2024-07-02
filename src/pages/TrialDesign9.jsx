@@ -10,6 +10,7 @@ import Feature9 from "../components/sections/features/feature9/Feature9";
 import Contact9 from "../components/sections/contacts/contact9/Contact9";
 import Pricing9 from "../components/sections/pricings/pricing9/Pricing9";
 import TrialDesign from "./TrialDesign";
+import Navbar9 from "../components/sections/navbars/navbar9/Navbar9";
 const TrialDesign9 = () => {
   const componentMapping = {
     about: About9,
@@ -23,7 +24,7 @@ const TrialDesign9 = () => {
   return (
     <div className="TrialDesign9">
       <main>
-        <TrialDesign componentMapping={componentMapping} HeroComponent={Hero9} footerComponent={Footer9} template={"template9"} />;
+        <TrialDesign componentMapping={componentMapping} HeroComponent={Hero9} NavbarComponent={Navbar9} FooterComponent={Footer9} template={9} />;
       </main>
     </div>
   );

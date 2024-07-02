@@ -12,7 +12,7 @@ const TrialDesign5 = () => {
   const componentMapping = {
     features: Feature5,
     services: Services5,
-    features2: Feature21,
+    blogs: Feature21,
     team: Teams5,
     cta: Cta5,
   };

@@ -1,31 +1,117 @@
 {
   "templateInfo": {
-    "id": 6,
+    "id": 8,
     "title": "",
     "description": "",
     "imgUrl": ""
   },
   "navbar": {
-    "imgUrl": "https://res.cloudinary.com/duc04fwdb/image/upload/v1703193372/jammal_photos/eygwjnnq4d9scpxd9unv.png",
     "links": [
       {
-        "title": "Residencies",
-        "url": "#"
+        "title": "Home",
+        "url": "#home"
       },
       {
-        "title": "Our Value",
-        "url": "#"
+        "title": "About",
+        "url": "#about"
       },
       {
-        "title": "Contact Us",
-        "url": "#"
+        "title": "Services",
+        "url": "#services"
       },
       {
-        "title": "Get Started",
-        "url": "#"
+        "title": "Work",
+        "url": "#work"
+      },
+      {
+        "title": "Contact",
+        "url": "#contact"
+      }
+    ]
+  },
+  "header": {
+    "imgUrl": "https://res.cloudinary.com/duc04fwdb/image/upload/v1708041079/jammal_photos/kafyeopqrooe1smkwiec.svg",
+    "buttonText": "Work with me"
+  },
+  "hero": {
+    "text": "Abdo",
+    "title": "HOSNI",
+    "subtitle": "I Am a ",
+    "jop": "DEVELOPER",
+    "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia sequi vel tempora aut voluptatibus accusantium est voluptate perspiciatis omnis assumenda.",
+    "buttonText": "contact me",
+    "linkText": "My portofolio",
+    "imgUrl": "\thttps://res.cloudinary.com/duc04fwdb/image/upload/v1708040859/jammal_photos/h7mk6aclys26ylh20hxk.svg",
+    "icons": ["🚀", "💻", "🎨"]
+  },
+  "about": {
+    "title": "About",
+    "subtitle": "I'm a Freelance Frontend Developer with over 5 years of experience.",
+    "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora accusamus porro tempore quibusdam ab nesciunt voluptatum magnam doloribus corrupti molestiae.",
+    "numbers": ["13", "15", "12"],
+    "sign": ["+", "+", "+"],
+    "type": ["Years of", "Projects", "Satisfied"],
+    "typeOfExpericnce": ["Experience", "Completed", "Clients"],
+    "buttonText": "Contact me",
+    "linkText": "My portofolio",
+    "imgUrl": "https://res.cloudinary.com/duc04fwdb/image/upload/v1708042892/jammal_photos/ui2jxaq52dfjtffndkjq.png"
+  },
+  "services": {
+    "title": "WHAT I DO.",
+    "subtitle": "I'm a Freelance Frontend Developer with over 5 years of experience.",
+    "buttonText": "see my work ",
+    "services": [
+      {
+        "title": "UI/UX Design",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui recusandae commodi obcaecati minus quibusdam laudantium sunt doloribus dicta quidem quas!",
+        "linkText": "Learn more"
+      },
+      {
+        "title": "Development",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui recusandae commodi obcaecati minus quibusdam laudantium sunt doloribus dicta quidem quas!",
+        "linkText": "Learn more"
+      },
+      {
+        "title": "Digital Marketing",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui recusandae commodi obcaecati minus quibusdam laudantium sunt doloribus dicta quidem quas!",
+        "linkText": "Learn more"
+      },
+      {
+        "title": "Product Branding",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui recusandae commodi obcaecati minus quibusdam laudantium sunt doloribus dicta quidem quas!",
+        "linkText": "Learn more"
       }
     ],
-    "email4": "mailto:zainkeepscode@gmail.com",
-    "buttonText": "Contact"
+    "imgUrl": "https://res.cloudinary.com/duc04fwdb/image/upload/v1708031587/jammal_photos/lidxpp6o8dtr95ajdv5t.png"
+  },
+  "projects": {
+    "projects": [
+      {
+        "imgUrl": "\thttps://res.cloudinary.com/duc04fwdb/image/upload/v1708272971/jammal_photos/w5rnjea8huwe5pgrazeg.png",
+        "subtitle": "UI/UX Design",
+        "title": "Project Title"
+      },
+      {
+        "imgUrl": "https://res.cloudinary.com/duc04fwdb/image/upload/v1708273069/jammal_photos/exhaactq1fplnnapxrwc.png",
+        "subtitle": "UI/UX Design",
+        "title": "Project Title"
+      },
+      {
+        "imgUrl": "https://res.cloudinary.com/duc04fwdb/image/upload/v1708273131/jammal_photos/eww7hd9cpv5mkxwkasyy.png",
+        "subtitle": "UI/UX Design",
+        "title": "Project Title"
+      }
+    ],
+    "title": "MY WORK.",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi laborum eius qui recusandae possimus. Dolorem quam illo impedit sunt fugiat",
+    "buttonText": "View all projects"
+  },
+  "contact": {
+    "title": "  Let's work  together!",
+    "subtitle": "Get in touch",
+    "buttonText": "Send message"
+  },
+  "colors": {
+    "templateColors": ["#fff", "#cda274", "#292f36", "#f4f0ec", "#777777"]
   }
 }
