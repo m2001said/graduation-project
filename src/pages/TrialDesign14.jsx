@@ -12,25 +12,16 @@ import Projects21 from "../components/sections/projects/projects21/Projects21";
 import Logos14 from "../components/sections/logos/logos14/Logos14";
 import Footer14 from "../components/sections/footers/footer14/Footer14";
 
-
-  const componentMapping14 = {
-    items: Items14,
-    services: Services14,
-    featuers: Features14,
-    projects: Projects14,
-    blogs: Projects21,
-    logos: Logos14,
-  };
+const componentMapping14 = {
+  items: Items14,
+  services: Services14,
+  featuers: Features14,
+  projects: Projects14,
+  blogs: Projects21,
+  logos: Logos14,
+};
 const TrialDesign14 = () => {
-  return <TrialDesign componentMapping={componentMapping14} HeroComponent={Hero14} NavbarComponent={Navbar14} FooterComponent={Footer14} template={"template14"} />;
+  return <TrialDesign componentMapping={componentMapping14} HeroComponent={Hero14} NavbarComponent={Navbar14} FooterComponent={Footer14} template={14} />;
 };
 
-
-
 export default TrialDesign14;
-
-
-
-
-
-

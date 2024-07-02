@@ -1,17 +1,14 @@
-
 import React, { useState } from "react";
 import "../../../../assets/css/globals10.css";
 import DarkMode from "./DarkMode18";
 import ResponsiveMenu from "./ResponsiveMenu";
 
-
-
-const Navbar18 = ({template}) => {
-const navbar = template.navbar;
+const Navbar18 = ({ template }) => {
+  const navbar = template.navbar;
   const [showMenu, setShowMenu] = useState(false);
-      const toggleMenu = () => {
-         setShowMenu(!showMenu);
-       };
+  const toggleMenu = () => {
+    setShowMenu(!showMenu);
+  };
   return (
     <>
       <div className="relative z-10 shadow-md w-full bg-[--website-18-color-6] dark:bg-black dark:text-white duration-300 ">
@@ -48,22 +45,10 @@ const navbar = template.navbar;
             </div>
           </div>
         </div>
-        <ResponsiveMenu showMenu={showMenu} />
+        <ResponsiveMenu showMenu={showMenu} template={template} />
       </div>
     </>
   );
 };
 
 export default Navbar18;
-
-
-
-
-
-
-
-
-
-
-
-

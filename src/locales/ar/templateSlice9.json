@@ -1,0 +1,380 @@
+{
+  "templateInfo": {
+    "id": 9,
+    "title": "",
+    "description": "",
+    "imgUrl": ""
+  },
+  "navbar": {
+    "title": "Soliii",
+    "links": [
+      {
+        "title": "التصميم",
+        "url": "#about13"
+      },
+      {
+        "title": "من نحن",
+        "url": "#"
+      },
+      {
+        "title": "المشاريع",
+        "url": "#"
+      },
+      {
+        "title": "تواصل مع الفريق",
+        "url": "#"
+      },
+      {
+        "title": "التقييمات",
+        "url": "#testimonials13"
+      }
+    ]
+  },
+  "hero": {
+    "title": "العقارات",
+    "subtitle": "اعثر على المنزل المثالي الذي تحبه..!",
+    "description": "اعثر على المنزل المثالي الذي تحبه..!",
+    "inputPlaceholder": "نيويورك، سان فرانسيسكو، إلخ",
+    "heros": [
+      {
+        "title": "CSE"
+      },
+      {
+        "title": "ECE"
+      },
+      {
+        "title": "EEE"
+      }
+    ],
+    "imgs": [
+      "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707329624/realestate/image_10_ska1vi.jpg",
+      "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707329589/realestate/image_1_oxzq9f.jpg",
+      "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707330235/realestate/image_4_o8ggty.jpg",
+      "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707329692/realestate/image_16_lalqm2.jpg"
+    ]
+  },
+  "reviews": {
+    "title": "72k+ عملاء سعداء",
+    "description": "200+ قوائم جديدة كل يوم",
+    "subtitle": "موثوق به من قبل 100+ شركة حول العالم",
+    "imgUrl": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1703134020/avatar3_pbztwn.jpg",
+    "icon": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707347077/icons8-plus-64_pwlv7r.png",
+    "reviews": [
+      "https://res.cloudinary.com/dowtlcpxj/image/upload/v1703142400/me-about_pobewn.jpg",
+      "https://res.cloudinary.com/dowtlcpxj/image/upload/v1703134021/avatar4_tn7dyv.jpg",
+      "https://res.cloudinary.com/dowtlcpxj/image/upload/v1703134020/avatar3_pbztwn.jpg",
+      "https://res.cloudinary.com/dowtlcpxj/image/upload/v1703124966/samples/smile.jpg"
+    ],
+    "logos": [
+      "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707329688/realestate/logo6_ddaq6y.png",
+      "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707329688/realestate/logo5_iwqjl7.png",
+      "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707329687/realestate/logo4_xbf3fz.png",
+      "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707329687/realestate/logo3_fzmko0.png",
+      "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707329685/realestate/logo2_z1jb8d.png"
+    ]
+  },
+  "services": {
+    "title": "خدماتنا",
+    "services": [
+      {
+        "icon": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707553370/klipartz.com_z2zhsv.png",
+        "title": "شراء منزل جديد",
+        "description": "لوريم إيبسوم هو نص شكلي (بمعنى أن الغاية هي الشكل وليس المحتوى) ويُستخدم في صناعات المطابع ودور النشر."
+      },
+      {
+        "icon": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707345078/realestate/home_553416_pdjise.png",
+        "title": "بيع منزل",
+        "description": "لوريم إيبسوم هو نص شكلي (بمعنى أن الغاية هي الشكل وليس المحتوى) ويُستخدم في صناعات المطابع ودور النشر."
+      },
+      {
+        "icon": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707345078/realestate/bed_dsmu39.png",
+        "title": "تأجير منزل",
+        "description": "لوريم إيبسوم هو نص شكلي (بمعنى أن الغاية هي الشكل وليس المحتوى) ويُستخدم في صناعات المطابع ودور النشر."
+      }
+    ]
+  },
+  "features": {
+    "title": "مناطق عبر المدينة",
+    "subtitle": "عقارات الأحياء",
+    "description": "عقارات الأحياء",
+    "features": [
+      {
+        "imgUrl": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707329684/realestate/image_18_dklo4u.jpg",
+        "number": 216,
+        "subtitle": "مدينة نيويورك",
+        "description": "NY"
+      },
+      {
+        "imgUrl": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707329683/realestate/image_17_my9jpm.jpg",
+        "number": 216,
+        "subtitle": "مدينة نيويورك",
+        "description": "NY"
+      },
+      {
+        "imgUrl": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707329665/realestate/image_14_z4orcy.jpg",
+        "number": 216,
+        "subtitle": "مدينة نيويورك",
+        "description": "NY"
+      },
+      {
+        "imgUrl": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707329658/realestate/image_15_qctpm4.jpg",
+        "number": 216,
+        "subtitle": "مدينة نيويورك",
+        "description": "NY"
+      },
+      {
+        "imgUrl": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707329593/realestate/image_2_ugvuoz.jpg",
+        "number": 216,
+        "subtitle": "مدينة نيويورك",
+        "description": "NY"
+      }
+    ]
+  },
+  "about": {
+    "title": "من نحن",
+    "description": "d-top klmdfsl klsdmf lkmdsfm mlksdfl m lms",
+    "imgUrl": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1719892980/e0c167ecaf94e55e76cb89c8e9ef896f_ibw9le.png",
+    "icon": {
+      "text": "تم الإنجاز",
+      "linkText": "nullam a lanica ipsum dignissim purus",
+      "imgUrl": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707345078/realestate/home_553416_pdjise.png"
+    },
+    "imgs": [
+      "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707329619/realestate/image_8_dlne2y.jpg",
+      "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707329624/realestate/image_10_ska1vi.jpg",
+      "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707329653/realestate/image_13_eajsxm.jpg"
+    ]
+  },
+  "testimonials": {
+    "title": "آراء العملاء",
+    "subtitle": "ماذا يقول عملاؤنا",
+    "description": "as as dn djjn etoua mon chanm",
+    "icons": [
+      "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707346109/realestate/next_2989988_stvovd.png",
+      "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707345931/realestate/back-arrow_340_m9e0hp.png",
+      "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707599138/quote-icon-png-15_c5hrkg.png",
+      "https://res.cloudinary.com/dowtlcpxj/image/upload/v1719713267/Pngtree_star_line_black_icon_3751309_hyth8w.png"
+    ],
+    "testimonials": [
+      {
+        "opinion": "أنصح بشدة بعلي. كان متابعًا لاحتياجاتنا وعمل بلا كلل للعثور على المنزل المثالي لنا. لا يمكن أن نكون أكثر سعادة بمكاننا الجديد!",
+        "name": "سام محمود",
+        "imgUrl": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1703134020/avatar3_pbztwn.jpg"
+      },
+      {
+        "opinion": "جامد موتتتتتتتتتتتتتتتتتتت.",
+        "name": "علاء كمال",
+        "imgUrl": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1703134021/avatar4_tn7dyv.jpg"
+      }
+    ]
+  },
+  "projects": {
+    "title": "تحقق من",
+    "description": "أحدث العقارات المدرجة",
+    "subtitle": "asda asd dadc dad",
+    "categories": ["الكل", "بيع", "إيجار"],
+    "projects": [
+      {
+        "title": "نصائح التصميم",
+        "subtitle": "$5,970",
+        "description": "ملاذ هادئ في الغابة",
+        "icons": [
+          {
+            "icon": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707345079/realestate/fire_785116_tltbyw.png",
+            "title": "شائع"
+          },
+          {
+            "icon": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707345078/realestate/bed_dsmu39.png",
+            "title": "4 أسرة"
+          },
+          {
+            "icon": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707345932/realestate/bath_13666908_apgirk.png",
+            "title": "3 حمامات"
+          }
+        ],
+        "imgUrl": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707329665/realestate/image_14_z4orcy.jpg"
+      },
+      {
+        "title": "نصائح التصميم",
+        "subtitle": "$5,970",
+        "description": "ملاذ هادئ في الغابة",
+        "icons": [
+          {
+            "icon": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707345079/realestate/fire_785116_tltbyw.png",
+            "title": "شائع"
+          },
+          {
+            "icon": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707345078/realestate/bed_dsmu39.png",
+            "title": "4 أسرة"
+          },
+          {
+            "icon": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707345932/realestate/bath_13666908_apgirk.png",
+            "title": "3 حمامات"
+          }
+        ],
+        "imgUrl": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707330235/realestate/image_4_o8ggty.jpg"
+      },
+      {
+        "title": "نصائح التصميم",
+        "subtitle": "$5,970",
+        "description": "ملاذ هادئ في الغابة",
+        "icons": [
+          {
+            "icon": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707345079/realestate/fire_785116_tltbyw.png",
+            "title": "شائع"
+          },
+          {
+            "icon": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707345078/realestate/bed_dsmu39.png",
+            "title": "4 أسرة"
+          },
+          {
+            "icon": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707345932/realestate/bath_13666908_apgirk.png",
+            "title": "3 حمامات"
+          }
+        ],
+        "imgUrl": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707329665/realestate/image_14_z4orcy.jpg"
+      },
+      {
+        "title": "نصائح التصميم",
+        "subtitle": "$5,970",
+        "description": "ملاذ هادئ في الغابة",
+        "icons": [
+          {
+            "icon": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707345079/realestate/fire_785116_tltbyw.png",
+            "title": "شائع"
+          },
+          {
+            "icon": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707345078/realestate/bed_dsmu39.png",
+            "title": "4 أسرة"
+          },
+          {
+            "icon": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707345932/realestate/bath_13666908_apgirk.png",
+            "title": "3 حمامات"
+          }
+        ],
+        "imgUrl": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707329665/realestate/image_14_z4orcy.jpg"
+      }
+    ]
+  },
+  "team": {
+    "title": "تحية من",
+    "description": "فريقنا من الخبراء",
+    "members": [
+      {
+        "name": "محمد",
+        "imgUrl": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707329705/realestate/p4_drgvax.jpg",
+        "title": "الرئيس التنفيذي"
+      },
+      {
+        "name": "أحمد",
+        "imgUrl": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707329708/realestate/p3_khftcr.jpg",
+        "title": "مطوّر عقارات"
+      },
+      {
+        "name": "علي",
+        "imgUrl": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707329705/realestate/p2_ixjwav.jpg",
+        "title": "وكيل قوائم"
+      },
+      {
+        "name": "كريس",
+        "imgUrl": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707329700/realestate/p1_sfvfe2.jpg",
+        "title": "وكيل المشترين"
+      }
+    ]
+  },
+  "contact": {
+    "imgUrl": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707540053/tower_qajd1k.png",
+    "title": "كن وكيلاً.",
+    "description": "اتصل بـ asdadsa mksldm asmkdsalk asdmkl.",
+    "buttonText": "سجل الآن",
+    "linkText": "https://www.google.com"
+  },
+  "footer": {
+    "title": "Cse",
+    "subtitle": "227  الزقازيق",
+    "description": "2024 كل الحقوق محفوظة",
+    "imgUrl": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707345078/realestate/home_553416_pdjise.png",
+    "medias": [
+      {
+        "title": "support@soly.com",
+        "icon": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707346108/realestate/mail_646135_dviglt.png"
+      },
+      {
+        "title": "01010351108",
+        "icon": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707346109/realestate/telephone_126523_woh61t.png"
+      }
+    ],
+    "icon": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707346109/realestate/next_2989988_stvovd.png",
+
+    "footerSections": [
+      {
+        "title": "الخدمات",
+        "links": [
+          {
+            "title": "الرئيسية",
+            "url": "#"
+          },
+          {
+            "title": "من نحن",
+            "url": "#"
+          },
+          {
+            "title": "القوائم",
+            "url": "#"
+          },
+          {
+            "title": "المدونات",
+            "url": "#"
+          },
+          {
+            "title": "كن وكيلاً",
+            "url": "#"
+          }
+        ]
+      },
+      {
+        "title": "الاكتشاف",
+        "links": [
+          {
+            "title": "مصر",
+            "url": "#"
+          },
+          {
+            "title": "الولايات المتحدة",
+            "url": "#"
+          },
+          {
+            "title": "الإمارات",
+            "url": "#"
+          },
+          {
+            "title": "المملكة المتحدة",
+            "url": "#"
+          },
+          {
+            "title": "كندا",
+            "url": "#"
+          }
+        ]
+      }
+    ],
+    "contacts": [
+      {
+        "icon": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1703134200/linkedin-svgrepo-com_wzswlo.svg",
+        "url": "https://linkedin.com"
+      },
+      {
+        "icon": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1703134252/facebook-svgrepo-com_lmghnk.svg",
+        "url": "https://facebook.com"
+      },
+      {
+        "icon": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1703134202/socialmedia-svgrepo-com_xqlljo.svg",
+        "url": "https://instagram.com"
+      }
+    ],
+    "links": ["terms and and conditions", "Privacy Policy", "Disclaimer"]
+  },
+  "colors": {
+    "templateColors": ["#fff", "#cda274", "#292f36", "#f4f0ec", "#777777"]
+  }
+}

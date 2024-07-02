@@ -1,0 +1,193 @@
+{
+  "templateInfo": {
+    "id": 3,
+    "title": "",
+    "description": "",
+    "imgUrl": ""
+  },
+  "navbar": {
+    "imgUrl": "https://res.cloudinary.com/duc04fwdb/image/upload/v1705928879/jammal_photos/vqliep1jh8zlgkmwkewx.png",
+    "links": [
+      {
+        "title": "الصفحة الرئيسية",
+        "url": "home"
+      },
+      {
+        "title": "البرامج",
+        "url": "programs"
+      },
+      {
+        "title": "لماذا نحن",
+        "url": "WhyUs"
+      },
+      {
+        "title": "الخطط",
+        "url": "Plans"
+      },
+      {
+        "title": "الشهادات",
+        "url": "Testimonials"
+      }
+    ]
+  },
+  "hero": {
+    "title": "شكل جسمك المثالي",
+    "subtitle": "أفضل نادي للياقة البدنية في المدينة",
+    "imgUrl": "https://res.cloudinary.com/duc04fwdb/image/upload/v1703609517/jammal_photos/neoqh0j4yjexem6j9ozp.png",
+    "description": "هنا سنساعدك على تشكيل وبناء جسمك المثالي والعيش بأقصى درجات حياتك.",
+    "heros": [
+      {
+        "title": "+140",
+        "subtitle": "مدربون خبراء"
+      },
+      {
+        "title": "+978",
+        "subtitle": "أعضاء انضموا"
+      },
+      {
+        "title": "+50",
+        "subtitle": "برامج اللياقة البدنية"
+      }
+    ],
+    "buttonText": "ابدأ الآن",
+    "linkText": "تعرف على المزيد",
+    "text": "انضم الآن"
+  },
+  "projects": {
+    "title": "اكتشف برامجنا",
+    "subtitle": "البرامج",
+    "description": "لتشكيلك",
+    "buttonText": "انضم الآن",
+    "imgUrl": "https://res.cloudinary.com/duc04fwdb/image/upload/v1702986510/jammal_photos/pouffwm6ffmtztpisvjv.png",
+    "projects": [
+      {
+        "title": "تدريب القوة",
+        "description": "في هذا البرنامج، يتم تدريبك على تحسين قوتك من خلال العديد من التمارين."
+      },
+      {
+        "title": "تدريب القلب",
+        "description": "في هذا البرنامج، يتم تدريبك على القيام بحركات متتالية تتراوح بين 20 إلى 30 دقيقة."
+      },
+      {
+        "title": "حرق الدهون",
+        "description": "هذا البرنامج مناسب لمن يرغب في التخلص من الدهون وفقدان الوزن."
+      },
+      {
+        "title": "لياقة الصحة",
+        "description": "هذا البرنامج مخصص لأولئك الذين يمارسون الرياضة فقط من أجل لياقتهم البدنية وليس لبناء الأجسام."
+      }
+    ]
+  },
+  "features": {
+    "title": "لماذا تختارنا؟",
+    "subtitle": "بعض الأسباب",
+    "imgs": [
+      "https://res.cloudinary.com/duc04fwdb/image/upload/v1702989257/jammal_photos/ywgmvzeed0ebb7myfvyw.png",
+      "https://res.cloudinary.com/duc04fwdb/image/upload/v1702989314/jammal_photos/coh8z8kfvjla5xurgg2p.png",
+      "https://res.cloudinary.com/duc04fwdb/image/upload/v1702989351/jammal_photos/azgv09qa1amwje8gu9ms.png",
+      "https://res.cloudinary.com/duc04fwdb/image/upload/v1702989376/jammal_photos/imnhgmjpih33ckqouqrh.png",
+      "https://res.cloudinary.com/duc04fwdb/image/upload/v1702989402/jammal_photos/f7m5xctam3rj268lkvel.png",
+      "https://res.cloudinary.com/duc04fwdb/image/upload/v1702989442/jammal_photos/spxtwugfwuvbemwjyzd9.png",
+      "https://res.cloudinary.com/duc04fwdb/image/upload/v1702989477/jammal_photos/b2ysy0kvgjgcz1r2r3ty.png",
+      "https://res.cloudinary.com/duc04fwdb/image/upload/v1702989514/jammal_photos/blcyycnc06jda0rwtuol.png"
+    ],
+    "features": [
+      {
+        "description": "أكثر من 140+ مدرب خبير"
+      },
+      {
+        "description": "تدريب أكثر ذكاءً وأسرع من قبل"
+      },
+      {
+        "description": "برنامج مجاني واحد لأعضاء الجدد"
+      },
+      {
+        "description": "شركاء موثوقون"
+      },
+      {
+        "description": "شركاؤنا"
+      }
+    ]
+  },
+  "pricing": {
+    "title": "جاهز للبدء",
+    "subtitle": "رحلتك",
+    "text": "الآن معنا",
+    "description": "شاهد المزيد من الفوائد",
+    "buttonText": "انضم الآن",
+    "imgUrl": "https://res.cloudinary.com/duc04fwdb/image/upload/v1702988784/jammal_photos/vrqn7t4vmruj1drgmpdb.png",
+    "plans": [
+      {
+        "title": "الخطة الأساسية",
+        "price": "25",
+        "features": ["ساعتان من التمارين", "استشارة مجانية للمدربين", "الوصول إلى المجتمع"]
+      },
+      {
+        "name": "الخطة المميزة",
+        "price": "30",
+        "features": ["5 ساعات من التمارين", "استشارة مجانية للمدربين", "الوصول إلى الميني بار"]
+      },
+      {
+        "name": "خطة المحترفين",
+        "price": "45",
+        "features": ["8 ساعات من التمارين", "استشارة مدرب خاص", "هدايا لياقة بدنية مجانية"]
+      }
+    ]
+  },
+  "testimonials": {
+    "title": "الشهادات",
+    "subtitle": "ماذا يعتقد الناس عنا",
+    "description": "ماذا يقولون عنا",
+    "imgs": [
+      "https://res.cloudinary.com/duc04fwdb/image/upload/v1702987916/jammal_photos/pt96uext4dvfv3op3khc.png",
+      "https://res.cloudinary.com/duc04fwdb/image/upload/v1702987950/jammal_photos/rkwjn9zqa9jgcp1dhzsb.png"
+    ],
+    "testimonials": [
+      {
+        "name": "ماثيو هندريكسون",
+        "subtitle": "رائد أعمال",
+        "description": "لقد اتخذت الخيار الصحيح باختيار Fitclub وباختيار الخطة والبرنامج المناسبين، لقد حققت بالفعل جسدي المثالي!",
+        "imgUrl": "https://res.cloudinary.com/duc04fwdb/image/upload/v1702986897/jammal_photos/xbinalf2qg4aqqhhpeif.png"
+      },
+      {
+        "name": "جون كيفن",
+        "subtitle": "مدرب",
+        "description": "لوريم إيبسوم هو نص شكلي بمعنى أن الغاية هي الشكل وليس المحتوى ويستخدم في صناعات المطابع ودور النشر.",
+        "imgUrl": "https://res.cloudinary.com/duc04fwdb/image/upload/v1702986859/jammal_photos/cwtimzgptwqccvycipw0.jpg"
+      },
+      {
+        "name": "فرانكلين",
+        "subtitle": "عميل",
+        "description": "لوريم إيبسوم هو نص شكلي بمعنى أن الغاية هي الشكل وليس المحتوى ويستخدم في صناعات المطابع ودور النشر.",
+        "imgUrl": "https://res.cloudinary.com/duc04fwdb/image/upload/v1702986807/jammal_photos/pnlbsd6lankxv5xc9px5.jpg"
+      }
+    ]
+  },
+  "cta": {
+    "title": "جاهز لـ",
+    "subtitle": "مستوى أعلى",
+    "description": "لجسمك",
+    "text": "معنا؟",
+    "buttonText": "انضم الآن"
+  },
+  "footer": {
+    "imgUrl": "https://res.cloudinary.com/duc04fwdb/image/upload/v1702990991/jammal_photos/isxpadjx12ja5wqaqzsk.png",
+    "medias": [
+      {
+        "icon": "https://res.cloudinary.com/duc04fwdb/image/upload/v1702990946/jammal_photos/op32ysn37afrbyyvzlpo.png",
+        "url": "https://github.com/login?client_id=45872a44c0e55c462eed&return_to=%2Flogin%2Foauth%2Fauthorize%3Fclient_id%3D45872a44c0e55c462eed%26scope%3Duser%253Aemail%252Cread%253Aorg%26state%3Dgithub"
+      },
+      {
+        "icon": "https://res.cloudinary.com/duc04fwdb/image/upload/v1702991031/jammal_photos/ttvjziej5llydncutm9u.png",
+        "url": "https://www.linkedin.com/login/ar"
+      },
+      {
+        "icon": "https://res.cloudinary.com/duc04fwdb/image/upload/v1702991055/jammal_photos/mt2lapqflvpafmnfpree.png",
+        "url": "https://instagram.com"
+      }
+    ]
+  },
+  "colors": {
+    "templateColors": ["#fff", "#cda274", "#292f36", "#f4f0ec", "#777777"]
+  }
+}

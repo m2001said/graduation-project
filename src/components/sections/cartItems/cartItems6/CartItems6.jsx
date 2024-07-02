@@ -1,11 +1,9 @@
 import React from "react";
 import ProductCard from "./product-card/ProductCard";
 import "./cartItems6.css";
-import { useSelector } from "react-redux";
 
-const CartItems6 = () => {
-  const { menu } = useSelector((state) => state.template6);
-  const CartItems = menu;
+const CartItems6 = ({ template }) => {
+  const CartItems = template.menu;
 
   return (
     <section className="pt-0 design-6" id="Menu">

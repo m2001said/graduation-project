@@ -1,8 +1,8 @@
 import React from "react";
 import "../../../../assets/css/globals10.css";
 
-const Teams10 = ({template}) => {
-    const team = template.team;
+const Teams10 = ({ template }) => {
+  const team = template.team;
 
   return (
     <>
@@ -17,8 +17,8 @@ const Teams10 = ({template}) => {
           {/* card sec */}
           <div>
             <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 place-items-center gap-5">
-              {team.members.map((data) => (
-                <div className="space-y-3">
+              {team.members.map((data, index) => (
+                <div className="space-y-3" key={index}>
                   <img src={data.imgUrl} alt="" className="h-[220px] w-[150px] object-cover rounded-md " />
                   <div>
                     <h2 className="font-semibold">{data.title}</h2>

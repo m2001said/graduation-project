@@ -1,5 +1,3 @@
-/* eslint-disable react/jsx-pascal-case */
-/* eslint-disable react-hooks/exhaustive-deps */
 import React, { useEffect, useState } from "react";
 import "../assets/css/globals18.css";
 import Navbar18 from "../components/sections/navbars/navbar18/Navbar18";
@@ -11,32 +9,19 @@ import Testimonial18 from "../components/sections/testimonials/testimonials18/Te
 import Cta18 from "../components/sections/ctas/cta18/Cta18";
 import Cta21 from "../components/sections/ctas/cta21/Cta21";
 import Footer18 from "../components/sections/footers/footer18/Footer18";
-import { useSelector } from "react-redux";
-
 import TrialDesign from "./TrialDesign";
 
-
-
-  const componentMapping18 = {
-    features: Feature18,
-    services: Services18,
-    projects: Projects18,
-    testimonials: Testimonial18,
-    cta: Cta18,
-    contact: Cta21,
-  };
-
+const componentMapping18 = {
+  features: Feature18,
+  services: Services18,
+  projects: Projects18,
+  testimonials: Testimonial18,
+  cta: Cta18,
+  contact: Cta21,
+};
 
 const TrialDesign18 = () => {
-  return (
-    <TrialDesign componentMapping={componentMapping18} HeroComponent={Hero18} NavbarComponent={Navbar18} FooterComponent={Footer18} template={"template18"} />
-  );
+  return <TrialDesign componentMapping={componentMapping18} HeroComponent={Hero18} NavbarComponent={Navbar18} FooterComponent={Footer18} template={18} />;
 };
 
 export default TrialDesign18;
-
-
-
-
-
-

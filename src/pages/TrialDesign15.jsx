@@ -27,7 +27,7 @@ const componentMapping = {
 const TrialDesign15 = () => {
   return (
     <div className="TrialDesign15">
-      <TrialDesign componentMapping={componentMapping} HeroComponent={Hero15} NavbarComponent={Navbar15} FooterComponent={Footer15} template={"template15"} />;
+      <TrialDesign componentMapping={componentMapping} HeroComponent={Hero15} NavbarComponent={Navbar15} FooterComponent={Footer15} template={15} />;
     </div>
   );
 };

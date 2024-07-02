@@ -1,0 +1,196 @@
+{
+  "templateInfo": {
+    "id": 4,
+    "title": "",
+    "description": "",
+    "imgUrl": ""
+  },
+  "navbar": {
+    "imgUrl": "https://res.cloudinary.com/duc04fwdb/image/upload/v1703193372/jammal_photos/eygwjnnq4d9scpxd9unv.png",
+    "links": [
+      {
+        "title": "Residencies",
+        "url": "#"
+      },
+      {
+        "title": "Our Value",
+        "url": "#"
+      },
+      {
+        "title": "Contact Us",
+        "url": "#"
+      },
+      {
+        "title": "Get Started",
+        "url": "#"
+      }
+    ],
+    "email": "mailto:zainkeepscode@gmail.com",
+    "buttonText": "Contact"
+  },
+  "hero": {
+    "name": "ahmed",
+    "imgUrl": "https://res.cloudinary.com/duc04fwdb/image/upload/v1703196080/jammal_photos/taiu0lj7gzq6ew6srqsz.png",
+    "title": " Discover Most Suitable Property",
+    "description": "Find a variety of properties that suit you very easilty",
+    "text": " Forget all difficulties in finding a residence for you",
+    "buttonText": "Search",
+    "heros": [
+      {
+        "title": "Premium Product",
+        "start": "8880",
+        "end": "9000"
+      },
+      {
+        "title": "Happy Customer",
+        "start": "1950",
+        "end": "2000"
+      },
+      {
+        "title": "Awards Winning",
+        "start": "0",
+        "end": "28"
+      }
+    ],
+    "duration": "6",
+    "icon": "+"
+  },
+  "features": {
+    "title": "Our Value",
+    "subtitle": "Value We Give to You",
+    "description": " We are always ready to help by providing the best services for you.",
+    "text": " We believe a good place to live can make your life better",
+    "features": [
+      {
+        "icon": "💧",
+        "title": "Best interest rates on the market",
+        "description": "Exercitation in fugiat est ut ad ea cupidatat ut in cupidatat occaecat ut occaecat consequat est minim minim esse tempor laborum consequat esse adipisicing eu reprehenderit enim."
+      },
+      {
+        "icon": "🩲",
+        "title": "Prevent unstable prices",
+        "description": "Exercitation in fugiat est ut ad ea cupidatat ut in cupidatat occaecat ut occaecat consequat est minim minim esse tempor laborum consequat esse adipisicing eu reprehenderit enim."
+      },
+      {
+        "icon": "✔",
+        "title": "Best price on the market",
+        "description": "Exercitation in fugiat est ut ad ea cupidatat ut in cupidatat occaecat ut occaecat consequat est minim minim esse tempor laborum consequat esse adipisicing eu reprehenderit enim."
+      }
+    ],
+    "imgUrl": "https://res.cloudinary.com/duc04fwdb/image/upload/v1703203417/jammal_photos/if4uayalbxuh6enjdenm.png"
+  },
+  "projects": {
+    "title": "Best Choices",
+    "subtitle": "Popular Residencies",
+    "projects": [
+      {
+        "imgUrl": "https://res.cloudinary.com/duc04fwdb/image/upload/v1703197994/jammal_photos/v4fz1ap7aa3lnz6f3cqo.png",
+        "name": "Aliva Priva Jardin",
+        "price": "47,043",
+        "description": "Jakarta Garden City Street, Cakung. Pulo Gadung, Jakarta Timur, DKI Jakarta"
+      },
+      {
+        "imgUrl": "https://res.cloudinary.com/duc04fwdb/image/upload/v1703198149/jammal_photos/m4s3ppbfcwgwoanctetr.png",
+        "name": "Asatti Garden City",
+        "price": "66,353",
+        "description": "Pahlawan Street XVII No.215, Cinangka, Sawangan, Depok, Jawa Barat"
+      },
+      {
+        "imgUrl": "https://res.cloudinary.com/duc04fwdb/image/upload/v1703198230/jammal_photos/sy4citkq8uqg3qpgtvj7.png",
+        "name": "Citralan Puri Serang",
+        "price": "35,853",
+        "description": "Ruko Puri Indah Residence Block A7, Lingkar Street, Ciracas, Serang, Banten"
+      },
+      {
+        "imgUrl": "https://res.cloudinary.com/duc04fwdb/image/upload/v1703197994/jammal_photos/v4fz1ap7aa3lnz6f3cqo.png",
+        "name": "Aliva Priva Jardin",
+        "price": "47,043",
+        "description": "Jakarta Garden City Street, Cakung. Pulo Gadung, Jakarta Timur, DKI Jakarta"
+      },
+      {
+        "imgUrl": "https://res.cloudinary.com/duc04fwdb/image/upload/v1703198149/jammal_photos/m4s3ppbfcwgwoanctetr.png",
+        "name": "Asatti Garden City",
+        "price": "66,353",
+        "description": "Pahlawan Street XVII No.215, Cinangka, Sawangan, Depok, Jawa Barat"
+      },
+      {
+        "imgUrl": "https://res.cloudinary.com/duc04fwdb/image/upload/v1703198230/jammal_photos/sy4citkq8uqg3qpgtvj7.png",
+        "name": "Citralan Puri Serang",
+        "price": "35,853",
+        "description": "Ruko Puri Indah Residence Block A7, Lingkar Street, Ciracas, Serang, Banten"
+      }
+    ]
+  },
+  "contact": {
+    "title": "Our Contact Us",
+    "subtitle": "Easy to contact us",
+    "description": " We always ready to help by providijng the best services for you. We beleive a good blace to live can make your life better",
+    "email": "contact@interno.com",
+    "phone": "(123) 125-858",
+    "imgUrl": "https://res.cloudinary.com/duc04fwdb/image/upload/v1703206872/jammal_photos/hqcx6ikyfgeuqe0vcset.jpg",
+    "contacts": [
+      {
+        "type": "Call",
+        "phone": "021 123 145 14",
+        "buttonText": "Call now"
+      },
+      {
+        "type": "Chat",
+        "phone": "021 123 145 14",
+        "buttonText": "Chat now"
+      },
+      {
+        "type": "Video Call",
+        "phone": "021 123 145 14",
+        "buttonText": "Video Call now"
+      },
+      {
+        "type": "Message",
+        "phone": "021 123 145 14",
+        "buttonText": "Message now"
+      }
+    ]
+  },
+  "cta": {
+    "title": "Get started with Homyz",
+    "description": " Subscribe and find super attractive price quotes from us.",
+    "text": " Find your residence soon",
+    "buttonText": "Get Started",
+    "email": "mailto:zainkeepscode@gmail.com"
+  },
+  "footer": {
+    "imgUrl": "https://res.cloudinary.com/duc04fwdb/image/upload/v1703209942/jammal_photos/xd2ugq6yopzvjkw37qc7.png",
+    "description": "Our vision is to make all people the best place to live for them.",
+    "footerSections": [
+      {
+        "title": "Services",
+        "links": [
+          {
+            "title": "Property",
+            "url": "#"
+          },
+          {
+            "title": "Services",
+            "url": "#"
+          },
+          {
+            "title": "Product",
+            "url": "#"
+          },
+          {
+            "title": "About Us",
+            "url": "#"
+          }
+        ]
+      }
+    ],
+    "contacts": [
+      {
+        "value": "145 New York, FL 5467, USA"
+      }
+    ]
+  },
+  "colors": {
+    "templateColors": ["#fff", "#cda274", "#292f36", "#f4f0ec", "#777777"]
+  }
+}

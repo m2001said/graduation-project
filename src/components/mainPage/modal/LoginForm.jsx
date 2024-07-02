@@ -3,8 +3,11 @@ import { useDispatch, useSelector } from "react-redux";
 import { loginUserAsync } from "../../../features/auth/authSlice";
 import { useNavigate } from "react-router-dom";
 import ForgetPasswordForm from "./ForgetPasswordForm";
+import { useTranslation } from "react-i18next";
 
 const LoginForm = ({ toggleForm, toggleModal }) => {
+  const { t, i18n } = useTranslation();
+  const language = i18n.language;
   const navigate = useNavigate();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -20,9 +23,9 @@ const LoginForm = ({ toggleForm, toggleModal }) => {
       toggleModal();
 
       if (user.payload.user.role === "admin" || user.payload.user.role === "super-admin") {
-        navigate("/admin");
+        navigate(`/${language}/admin`);
       } else {
-        navigate("/designs");
+        navigate(`/${language}/designs`);
       }
     } catch (error) {
       console.error("Login failed:", error);
@@ -32,17 +35,17 @@ const LoginForm = ({ toggleForm, toggleModal }) => {
 
   return (
     <>
-      <h1>Login</h1>
+      <h1>{t("USER.LOGIN")}</h1>
       <div className="modal-form">
         {isForgetPassword ? (
           <ForgetPasswordForm></ForgetPasswordForm>
         ) : (
           <>
-            <label htmlFor="email">Email</label>
+            <label htmlFor="email">{t("USER.EMAIL")}</label>
             <input type="email" id="email" value={email} onChange={(e) => setEmail(e.target.value)} />
-            <label htmlFor="password">Password</label>
+            <label htmlFor="password">{t("USER.PASSWORD")}</label>
             <input type="password" id="password" value={password} onChange={(e) => setPassword(e.target.value)} />
-            <button onClick={() => setIsForgetPassword(true)}>Forgot Password?</button>
+            <button onClick={() => setIsForgetPassword(true)}>{t("USER.FORGET_PASSWORD")}</button>
             <div className="message-error">{loginError}</div>
             <button className={`form-button `} onClick={handleSignInClick} disabled={status === "loading"}>
               {status === "loading" && (
@@ -63,15 +66,15 @@ const LoginForm = ({ toggleForm, toggleModal }) => {
                     fill="currentColor"
                   />
                 </svg>
-              )}{" "}
-              Login
-            </button>{" "}
+              )}
+              {t("USER.LOGIN")}
+            </button>
           </>
         )}
 
         <div className="sub-button">
-          <span> Don't have an account? </span>
-          <button onClick={toggleForm}>Create Account</button>
+          <span> {t("USER.NO_ACCOUNT")} </span>
+          <button onClick={toggleForm}>{t("USER.CREATE_ACCOUNT")}</button>
         </div>
       </div>
     </>

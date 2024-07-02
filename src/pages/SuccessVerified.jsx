@@ -6,8 +6,8 @@ const SuccessVerified = () => {
   return (
     <>
       <Confetti></Confetti>
-      <div class="bg-gradient-to-r from-[#481b91] to-[#240d55]">
-        <section class="container mx-auto px-4 md:px-6 flex flex-col justify-center items-center min-h-screen">
+      <div className="bg-gradient-to-r from-[#481b91] to-[#240d55]">
+        <section className="container mx-auto px-4 md:px-6 flex flex-col justify-center items-center min-h-screen">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" className="w-auto h-48">
             <path
               fill="#B197FC"
@@ -18,7 +18,7 @@ const SuccessVerified = () => {
           <p className="mx-auto max-w-[700px] text-gray-200 md:text-xl text-center">
             Your email has been successfully verified. Please return to the login page.
           </p>
-          <Link class="rounded-md text-sm font-medium h-10 my-6 px-4 py-2 bg-white text-gray-900 hover:text-black" to={"/"}>
+          <Link className="rounded-md text-sm font-medium h-10 my-6 px-4 py-2 bg-white text-gray-900 hover:text-black" to={"/"}>
             Go back home
           </Link>
         </section>

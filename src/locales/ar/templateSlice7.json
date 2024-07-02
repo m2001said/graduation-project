@@ -1,0 +1,244 @@
+{
+  "templateInfo": {
+    "id": 7,
+    "title": "",
+    "description": "",
+    "imgUrl": ""
+  },
+  "navbar": {
+    "imgUrl": "https://res.cloudinary.com/duc04fwdb/image/upload/v1706799023/jammal_photos/wz8vakvjdjio0wcqhnfe.svg",
+    "links": [
+      {
+        "title": "الرئيسية",
+        "url": "#home"
+      },
+      {
+        "title": "المميزات",
+        "url": "#features"
+      },
+      {
+        "title": "المنتجات",
+        "url": "#product"
+      },
+      {
+        "title": "العملاء",
+        "url": "#clients"
+      }
+    ]
+  },
+  "hero": {
+    "title": "طريقة الدفع للجيل القادم",
+    "subtitle": "خصم 20% لحساب الشهر الأول",
+    "description": "يستخدم فريق الخبراء لدينا منهجية لتحديد بطاقات الائتمان الأكثر احتمالًا لتلبية احتياجاتك. نقوم بفحص معدلات النسبة المئوية السنوية، والرسوم السنوية.",
+    "buttonText": "ابدأ الآن",
+    "imgs": [
+      "https://res.cloudinary.com/duc04fwdb/image/upload/v1706800273/jammal_photos/vt6gwourfyjs74j4ldmf.svg",
+      "https://res.cloudinary.com/duc04fwdb/image/upload/v1706800322/jammal_photos/tujqyyrsfqmtnjcn6fef.png",
+      "https://res.cloudinary.com/duc04fwdb/image/upload/v1706801327/jammal_photos/pu1mdivlop5zpuugkqn9.svg"
+    ]
+  },
+  "statistics": {
+    "statistics": [
+      {
+        "title": "المستخدمون النشطون",
+        "value": "3800+"
+      },
+      {
+        "title": "موثوق به من قبل الشركات",
+        "value": "230+"
+      },
+      {
+        "title": "المعاملات",
+        "value": "$230M+"
+      }
+    ]
+  },
+  "features": {
+    "title": "أنت تقوم بالأعمال،",
+    "subtitle": "ونحن سنتولى المال.",
+    "description": "مع بطاقة الائتمان المناسبة، يمكنك تحسين حياتك المالية من خلال بناء الائتمان، وكسب المكافآت وتوفير المال. ولكن مع مئات بطاقات الائتمان في السوق.",
+    "buttonText": "ابدأ الآن",
+    "features": [
+      {
+        "title": "المكافآت",
+        "description": "أفضل بطاقات الائتمان تقدم بعض التركيبات المثيرة للاهتمام من العروض والجوائز",
+        "imgUrl": "https://res.cloudinary.com/duc04fwdb/image/upload/v1706818805/jammal_photos/opfgv1t07ehs8byamptk.svg"
+      },
+      {
+        "title": "100% مؤمنة",
+        "description": "نحن نتخذ خطوات استباقية للتأكد من أن معلوماتك ومعاملاتك آمنة.",
+        "imgUrl": "https://res.cloudinary.com/duc04fwdb/image/upload/v1706818830/jammal_photos/a036fafyfqgkex3saivx.svg"
+      },
+      {
+        "title": "تحويل الرصيد",
+        "description": "يمكن أن توفر لك بطاقة تحويل الرصيد الكثير من المال في رسوم الفائدة.",
+        "imgUrl": "https://res.cloudinary.com/duc04fwdb/image/upload/v1706818747/jammal_photos/j85xs9b1jkx1v8ulmpff.svg"
+      }
+    ]
+  },
+  "items": {
+    "title": "تحكم بسهولة في",
+    "subtitle": "الفواتير والفوترة",
+    "description": "النخبة حتى يتم أيضًا. موريس eu زيادة عرض أماتوديو أيني نيك. Fusce ipsum orci rhoncus aliporttitor integer platea placerat.",
+    "imgs": [
+      "https://res.cloudinary.com/duc04fwdb/image/upload/v1706814018/jammal_photos/nkxtdvx0jakzuplwtoa6.svg",
+      "https://res.cloudinary.com/duc04fwdb/image/upload/v1706814088/jammal_photos/auq2y4agfhj8byap3omh.svg",
+      "https://res.cloudinary.com/duc04fwdb/image/upload/v1706814053/jammal_photos/vwwyntauf0akzyaef7e5.png"
+    ]
+  },
+  "services": {
+    "title": "اعثر على صفقة بطاقة أفضل",
+    "subtitle": "في خطوات سهلة قليلة.",
+    "description": "قوس التورتة، بوروس في ماتيس في سد انتجر faucibus. Aliquet quis aliquet eget mauris tortor.ç Aliquet ultrices ac, ametau.",
+    "imgUrl": "https://res.cloudinary.com/duc04fwdb/image/upload/v1706814478/jammal_photos/na4dc3msncykyboct0nu.png",
+    "buttonText": "ابدأ الآن"
+  },
+  "testimonials": {
+    "title": "ما يقوله الناس",
+    "subtitle": "عنا",
+    "description": "كل ما تحتاجه لقبول المدفوعات بالبطاقات وتنمية عملك في أي مكان على الكوكب.",
+    "testimonials": [
+      {
+        "title": "المؤسس والقائد",
+        "name": "هيرمان جنسن",
+        "description": "المال هو مجرد أداة. سوف يأخذك إلى أي مكان تريده، لكنه لن يحل محلك كسائق.",
+        "imgUrl": "https://res.cloudinary.com/duc04fwdb/image/upload/v1706815168/jammal_photos/tk0xejban2yc4ag4antf.png"
+      },
+      {
+        "title": "المؤسس والقائد",
+        "name": "ستيف مارك",
+        "description": "المال يجعل حياتك أسهل. إذا كنت محظوظًا بالحصول عليه، فأنت محظوظ.",
+        "imgUrl": "https://res.cloudinary.com/duc04fwdb/image/upload/v1706815301/jammal_photos/hesjjos1rgosxe48tawa.png"
+      },
+      {
+        "title": "المؤسس والقائد",
+        "name": "كين غالاغر",
+        "description": "عادة ما يكون الأشخاص في الأعمال المالية، والتمويل، والتجارة الدولية هم الأكثر ثراءً.",
+        "imgUrl": "https://res.cloudinary.com/duc04fwdb/image/upload/v1706815330/jammal_photos/xc3vlzv96mohozyawmnq.png"
+      }
+    ]
+  },
+  "logos": {
+    "companies": [
+      {
+        "imgUrl": "https://res.cloudinary.com/duc04fwdb/image/upload/v1706817792/jammal_photos/yt3cnulaigujjqu1upxq.png",
+        "url": ""
+      },
+      {
+        "imgUrl": "https://res.cloudinary.com/duc04fwdb/image/upload/v1706818009/jammal_photos/ko4qgfctz14jgqygtuaj.png",
+        "url": ""
+      },
+      {
+        "imgUrl": "https://res.cloudinary.com/duc04fwdb/image/upload/v1706818009/jammal_photos/ko4qgfctz14jgqygtuaj.png",
+        "url": ""
+      },
+      {
+        "imgUrl": "https://res.cloudinary.com/duc04fwdb/image/upload/v1706818069/jammal_photos/uioypquvjmbkcoxpb4rv.png",
+        "url": ""
+      }
+    ]
+  },
+  "cta": {
+    "title": "دعنا نجرب خدمتنا الآن!",
+    "description": "كل ما تحتاجه لقبول المدفوعات بالبطاقات وتنمية عملك في أي مكان على الكوكب.",
+    "buttonText": "ابدأ الآن"
+  },
+  "footer": {
+    "footerSections": [
+      {
+        "title": "روابط مفيدة",
+        "links": [
+          {
+            "title": "المحتوى",
+            "url": "https://www.hoobank.com/content/"
+          },
+          {
+            "title": "كيف يعمل",
+            "url": "https://www.hoobank.com/how-it-works/"
+          },
+          {
+            "title": "إنشاء",
+            "url": "https://www.hoobank.com/create/"
+          },
+          {
+            "title": "استكشاف",
+            "url": "https://www.hoobank.com/explore/"
+          },
+          {
+            "title": "الشروط والخدمات",
+            "url": "https://www.hoobank.com/terms-and-services/"
+          }
+        ]
+      },
+      {
+        "title": "المجتمع",
+        "links": [
+          {
+            "title": "مركز المساعدة",
+            "url": "https://www.hoobank.com/help-center/"
+          },
+          {
+            "title": "الشركاء",
+            "url": "https://www.hoobank.com/partners/"
+          },
+          {
+            "title": "اقتراحات",
+            "url": "https://www.hoobank.com/suggestions/"
+          },
+          {
+            "title": "مدونة",
+            "url": "https://www.hoobank.com/blog/"
+          },
+          {
+            "title": "النشرات الإخبارية",
+            "url": "https://www.hoobank.com/newsletters/"
+          }
+        ]
+      },
+      {
+        "title": "الشريك",
+        "links": [
+          {
+            "title": "شريكنا",
+            "url": "https://www.hoobank.com/our-partner/"
+          },
+          {
+            "title": "كن شريكًا",
+            "url": "https://www.hoobank.com/become-a-partner/"
+          }
+        ]
+      }
+    ],
+    "title": "حقوق النشر Ⓒ 2022 HooBank. جميع الحقوق محفوظة.",
+    "subtitle": "طريقة جديدة لجعل المدفوعات سهلة وموثوقة وآمنة.",
+    "imgUrl": "https://res.cloudinary.com/duc04fwdb/image/upload/v1706816362/jammal_photos/res7beki52yf4cbmuix3.svg",
+    "medias": [
+      {
+        "icon": "https://res.cloudinary.com/duc04fwdb/image/upload/v1706818177/jammal_photos/zqz9nmo0tqfpnhunvfgl.svg",
+        "url": "https://www.instagram.com/"
+      },
+      {
+        "icon": "https://res.cloudinary.com/duc04fwdb/image/upload/v1706818209/jammal_photos/h6rtmonyzmpckvur3o9g.svg",
+        "url": "https://www.facebook.com/"
+      },
+      {
+        "icon": "https://res.cloudinary.com/duc04fwdb/image/upload/v1706818240/jammal_photos/ornmyj05cwnoca5hkljl.svg",
+        "url": "https://www.twitter.com/"
+      },
+      {
+        "icon": "https://res.cloudinary.com/duc04fwdb/image/upload/v1706818264/jammal_photos/rno8zcfzwccx9gczoks5.svg",
+        "url": "https://www.linkedin.com/"
+      }
+    ]
+  },
+  "colors": {
+    "templateColors": [
+      "#0b132b",
+      "radial-gradient(64.18% 64.18% at 71.16% 35.69%, #def9fa 0.89%, #bef3f5 17.23%, #9dedf0 42.04%, #7de7eb 55.12%, #5ce1e6 71.54%, #33bbcf 100%)",
+      "linear-gradient(90deg, #f4c4f3 0%, #fc67fa 100%)",
+      " linear-gradient(157.81deg, #def9fa -43.27%, #bef3f5 -21.24%, #9dedf0 12.19%, #7de7eb 29.82%, #5ce1e6 51.94%, #33bbcf 90.29%)",
+      "#00f6ff",
+      "rgba(255, 255, 255, 0.7)"
+    ]
+  }
+}
