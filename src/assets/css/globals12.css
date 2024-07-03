@@ -1,3 +1,14 @@
+:root {
+  /*===============
+     * Colors
+    ===============*/
+  --website-12-color-1: #000f38;
+  --website-12-color-2: #212ea0;
+  --website-12-color-3: rgba(0, 15, 152, 0.3);
+
+  --website-12-color-6: #212ea0;
+}
+
 .logo12 {
   height: 6em;
   padding: 1.5em;
@@ -26,8 +37,8 @@ a {
   padding-right: 10%;
 }
 .btn12 {
-  background: #fff;
-  color: #212121;
+  background: var(--website-color-1);
+  color: var(--title-dark);
   padding: 12px 22px;
   font-size: 16px;
   border-radius: 30px;
@@ -44,11 +55,11 @@ a {
 }
 
 .btn12.dark-btn12 {
-  background: #212ea0;
-  color: #fff;
+  background: var(--website-12-color-6);
+  color: var(--website-color-1);
 }
 .btn12:hover {
-  color: #212121;
+  color: var(--website-color-3);
 }
 .container12 {
   padding-left: 10%;
@@ -87,5 +98,5 @@ a {
 }
 
 .read-the-docs12 {
-  color: #888;
+  color: var(--title-dark);
 }
