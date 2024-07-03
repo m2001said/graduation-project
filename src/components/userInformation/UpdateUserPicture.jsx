@@ -58,7 +58,7 @@ const UpdateUserPicture = () => {
           <input type="file" accept="image/*" onChange={handleUpload} disabled={loading} style={{ display: "none" }} id="fileInput" />
           <label
             htmlFor="fileInput"
-            className={`text-center my-4 rounded bg-gray-500 px-4 py-2 text-white ${loading && "opacity-50 cursor-not-allowed"}`}
+            className={`text-center my-4 rounded px-4 py-2 text-white ${loading && "opacity-50 cursor-not-allowed"}`}
             style={{ backgroundColor: "var(--color-3)", cursor: loading ? "not-allowed" : "pointer" }}
           >
             {loading ? (
