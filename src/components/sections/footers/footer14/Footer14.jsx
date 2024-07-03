@@ -1,8 +1,7 @@
 import React from "react";
 
-
-const Footer14 = ({template}) => {
-    const footer = template.footer;
+const Footer14 = ({ template }) => {
+  const footer = template.footer;
 
   return (
     <div className="bg-[--website-14-color-6] dark:bg-gray-950 dark:text-white">
@@ -37,8 +36,8 @@ const Footer14 = ({template}) => {
               <h1 className="text-xl font-bold sm:text-left mb-3">Contact</h1>
               <div>
                 <div className="flex flex-col gap-3">
-                  {footer.contacts.map((item) => (
-                    <div className="flex items-center gap-3 ">
+                  {footer.contacts.map((item, index) => (
+                    <div className="flex items-center gap-3 " key={index}>
                       <img src={item.icon} alt="" className="w-6" />
                       <p>{item.value}</p>
                     </div>

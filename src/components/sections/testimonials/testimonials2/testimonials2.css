@@ -24,7 +24,7 @@
   text-align: start;
   padding: 1rem;
   border-radius: 2rem;
-  user-select: none;
+  /* user-select: none; */
   display: flex;
   flex-direction: column;
   /* max-width: 80%; */
@@ -93,7 +93,8 @@
     overflow: visible;
   }
   .client__avatar img {
-    max-width:fit-content;
+    /* if error occurs remove comment  */
+    /* max-width:fit-content; */
     border-radius: 50%;
   }
   .testimonial {

@@ -1,88 +1,81 @@
-import { useState } from "react";
-import React from "react";
-import { useSelector } from "react-redux";
-import { useLocation } from "react-router";
+import React, { useState } from "react";
 
-const Testimonials9 = () => {
-  const { pathname } = useLocation();
-  const testimonialsData = useSelector((state) => {
-    if (pathname.includes("own-page")) {
-      return state.ownTemplate.testimonials;
-    } else {
-      return state.template9.testimonials;
-    }
-  });
-
-  const testimonials = useSelector((state) => state.template9.testimonials.testimonial);
-
+const Testimonials9 = ({ template }) => {
+  const testimonialsData = template.testimonials;
   const [currentTestimonialIndex, setCurrentTestimonialIndex] = useState(0);
+  const [rating, setRating] = useState(0);
 
   const handleNextTestimonial = () => {
     setCurrentTestimonialIndex((prevIndex) =>
-      prevIndex === testimonials.length - 1 ? 0 : prevIndex + 1
+      prevIndex === testimonialsData.testimonials.length - 1 ? 0 : prevIndex + 1
     );
   };
 
   const handlePrevTestimonial = () => {
     setCurrentTestimonialIndex((prevIndex) =>
-      prevIndex === 0 ? testimonials.length - 1 : prevIndex - 1
+      prevIndex === 0 ? testimonialsData.testimonials.length - 1 : prevIndex - 1
     );
   };
 
-  const currentTestimonial = testimonials[currentTestimonialIndex];
+  const handleRating = (index) => {
+    setRating(index + 1);
+  };
 
-  if (!testimonialsData || testimonialsData.length === 0 || !currentTestimonial) {
-    return <div>Loading testimonials...</div>; // Handle loading state or error gracefully
+  const currentTestimonial = testimonialsData.testimonials[currentTestimonialIndex];
+
+  if (!testimonialsData || testimonialsData.testimonials.length === 0 || !currentTestimonial) {
+    return <div>Loading testimonials...</div>;
   }
 
   return (
-    <main className="container mx-auto px-3 lg:flex justify-between pt-20 pb-20 testimonial-9">
-      
-      <div className="lg:w-1/3 flex flex-col">
-        <p className="text-[var(--website-9-color-3)] uppercase md:text-xl text-lg">
+    <main className="container mx-auto px-4 py-12 flex flex-col lg:flex-row justify-between items-center space-y-8 lg:space-y-0 lg:space-x-8 testimonial-9">
+      <div className="w-full lg:w-1/3 flex flex-col items-start space-y-4">
+        <p className="text-[var(--website-9-color-3)] uppercase text-lg lg:text-xl">
           {testimonialsData.title}
         </p>
-        <h1 className="lg:text-4xl text-3xl font-medium capitalize py-3">
+        <h1 className="text-2xl lg:text-4xl font-medium capitalize">
           {testimonialsData.subtitle}
         </h1>
-        <p className="text-[var(--website-9-color-3)] text-sm">{testimonialsData.text}</p>
-        <div className="lg:flex hidden gap-x-12 mt-16">
+        <p className="text-[var(--website-9-color-3)] text-sm">{testimonialsData.description}</p>
+        <div className="flex gap-x-4 mt-6">
           <button
             onClick={handlePrevTestimonial}
-            className="w-12 h-12 rounded-full border border-[var(--website-9-color-2)] flex justify-center items-center text-2xl text-[var(--website-9-color-2)] focus:text-[var(--website-9-color-1)] hover:text-[var(--website-9-color-1)]"
+            className="w-10 h-10 lg:w-12 lg:h-12 rounded-full border border-[var(--website-9-color-2)] flex justify-center items-center"
           >
-            <img src={testimonialsData.previous} alt="Previous" />
+            <img src={testimonialsData.icons[1]} alt="Previous" />
           </button>
           <button
             onClick={handleNextTestimonial}
-            className="w-12 h-12 rounded-full border border-[var(--website-9-color-2)] flex justify-center items-center text-2xl text-[var(--website-9-color-2)] focus:text-[var(--website-9-color-1)] hover:text-[var(--website-9-color-1)]"
+            className="w-10 h-10 lg:w-12 lg:h-12 rounded-full border border-[var(--website-9-color-2)] flex justify-center items-center"
           >
-            <img src={testimonialsData.next} alt="Next" />
+            <img src={testimonialsData.icons[0]} alt="Next" />
           </button>
         </div>
       </div>
 
-      <div className="relative rounded-2xl shadow-2xl lg:w-2/5 lg:p-16 p-6 lg:mt-0 mt-8">
-        <img src={testimonialsData.quotation} alt="quote" className="text-[#ffe999] text-3xl logo-9" />
+      <div className="relative rounded-2xl shadow-2xl w-full lg:w-2/5 p-6 lg:p-16">
+        <img src={testimonialsData.icons[2]} alt="quote" className="text-[#ffe999] text-3xl logo-9" />
         <p className="font-medium pt-2 text-[var(--website-9-color-5)] pb-8">
-          {currentTestimonial.quote}
+          {currentTestimonial.opinion}
         </p>
         <div className="border-t border-[var(--website-9-color-5)] flex items-center py-4">
           <img
             src={currentTestimonial.imgUrl}
-            alt={currentTestimonial.author}
+            alt={currentTestimonial.name}
             className="rounded-full h-12 w-12 object-cover"
           />
-          <span className="lg:flex items-center justify-between w-full gap-x-4 font-medium pl-3">
-            <p className="text-[var(--website-9-color-3)]">{currentTestimonial.author}</p>
-            <div className="flex flex-row">
-              {" "}
+          <span className="flex items-center justify-between w-full gap-x-4 font-medium pl-3">
+            <p className="text-[var(--website-9-color-3)]">{currentTestimonial.name}</p>
+            <div className="flex">
               {[...Array(5)].map((_, index) => (
                 <img
                   key={index}
-                  src={testimonialsData.star}
+                  src={testimonialsData.icons[3]}
                   alt="star"
-                  className="w-6 h-6 mr-1"
+                  className={`w-6 h-6 mr-1 cursor-pointer ${
+                    index < rating ? 'text-yellow-500' : 'text-gray-300'
+                  }`}
+                  onClick={() => handleRating(index)}
                 />
               ))}
             </div>
@@ -95,4 +88,3 @@ const Testimonials9 = () => {
 };
 
 export default Testimonials9;
-// bg-gradient-to-r from-[#8bd3ce] to-[#eff9f9]

@@ -5,8 +5,10 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import axios from "axios";
 import LoadingButton from "../../loadingButton/LoadingButton";
+import { useTranslation } from "react-i18next";
 
 const ContactForm = () => {
+  const { t } = useTranslation();
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
@@ -52,7 +54,7 @@ const ContactForm = () => {
 
       <div className="Contact_info md:ml-10 w-full">
         <h1 data-aos="fade-down" data-aos-duration="1000" className="text-5xl font-bold mb-8 text-center">
-          Contact Us
+          {t("CONTACT.TTIEL")}
         </h1>
 
         <div className="Contact_form">
@@ -61,7 +63,7 @@ const ContactForm = () => {
 
           <form onSubmit={handleSubmit}>
             <label htmlFor="email" className="block text-lg mb-2 font-bold text-gray-500">
-              Email
+              {t("CONTACT.EMIAL")}
             </label>
             <input
               type="email"
@@ -73,7 +75,7 @@ const ContactForm = () => {
             />
 
             <label htmlFor="name" className="block text-lg mb-2 font-bold text-gray-500">
-              Name
+              {t("CONTACT.NAME")}
             </label>
             <input
               type="text"
@@ -85,7 +87,7 @@ const ContactForm = () => {
             />
 
             <label htmlFor="message" className="block text-lg mb-2 font-bold text-gray-500">
-              Message
+              {t("CONTACT.NAME")}
             </label>
             <textarea
               id="message"
@@ -99,7 +101,7 @@ const ContactForm = () => {
               loading={isLoading}
               type="submit"
               className="Contact_btn hover:bg-purple-600 text-white font-bold w-full py-2 px-4 mt-8 rounded focus:outline-none focus:shadow-outline"
-              btnText="Send Message"
+              btnText={t("CONTACT.SEND")}
             />
           </form>
         </div>

@@ -1,30 +1,24 @@
 import React, { useState } from "react";
 import "./testimonials3.css";
-import { useSelector } from "react-redux";
-import { useLocation } from "react-router";
 
-const Testimonials3 = () => {
-  // const { testimonial } = useSelector((state) => state.template3);
-  const { pathname } = useLocation();
-  const testimonial = useSelector((state) => {
-    if (pathname.includes("own-page")) {
-      return state.ownTemplate.testimonials;
-    } else {
-      return state.template3.testimonials;
-    }
-  });
+const Testimonials3 = ({ template }) => {
+  const testimonial = template.testimonials;
 
-  const [selected, setselected] = useState(0);
+  const [selected, setSelected] = useState(0);
   const tLength = testimonial.testimonials.length;
+
+  const prevImgUrl = testimonial.imgs && testimonial.imgs[1] ? testimonial.imgs[1] : "";
+  const nextImgUrl = testimonial.imgs && testimonial.imgs[0] ? testimonial.imgs[0] : "";
+
   return (
     <div className="testimonials3" id="Testimonials">
       <div className="left-t3">
-        <span>{testimonial.title.mainTitle}</span>
-        <span className="stroke-text">{testimonial.title.primaryTitle}</span>
-        <span>{testimonial.title.secondaryTitle}</span>
-        <span>{testimonial.testimonials[selected].review}</span>
+        <span>{testimonial.title}</span>
+        <span className="stroke-text">{testimonial.subtitle}</span>
+        <span>{testimonial.description}</span>
+        <span>{testimonial.testimonials[selected].description}</span>
         <span>
-          <span style={{ color: "var(--orange)" }}>{testimonial.testimonials[selected].name}</span>- {testimonial.testimonials[selected].status}
+          <span style={{ color: "var(--orange)" }}>{testimonial.testimonials[selected].name}</span> - {testimonial.testimonials[selected].subtitle}
         </span>
       </div>
 
@@ -36,16 +30,16 @@ const Testimonials3 = () => {
         <div className="t3-arrows">
           <img
             onClick={() => {
-              selected === 0 ? setselected(tLength - 1) : setselected((prev) => prev - 1);
+              setSelected(selected === 0 ? tLength - 1 : selected - 1);
             }}
-            src={testimonial.imgUrl[1]}
+            src={prevImgUrl}
             alt=""
           />
           <img
             onClick={() => {
-              selected === tLength - 1 ? setselected(0) : setselected((prev) => prev + 1);
+              setSelected(selected === tLength - 1 ? 0 : selected + 1);
             }}
-            src={testimonial.imgUrl[0]}
+            src={nextImgUrl}
             alt=""
           />
         </div>

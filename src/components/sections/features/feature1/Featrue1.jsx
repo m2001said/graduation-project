@@ -1,7 +1,11 @@
 import React from "react";
 import "./feature.css";
+import { useTranslation } from "react-i18next";
 const Featrue1 = ({ template }) => {
   const feature = template.features;
+  const { i18n } = useTranslation();
+  const language = i18n.language;
+
   return (
     <div className="feature1-layout design-1">
       <div className="feature-image-container1">
@@ -30,7 +34,7 @@ const Featrue1 = ({ template }) => {
 
           <button className="feature-btn1">
             <p className="text-[var(--website-color-1)] btn-txt">{feature.buttonText}</p>
-            <img src={feature.icons[1]} alt="" />
+            <img src={feature.icons[1]} className={language === "ar" ? "transform rotate-180" : ""} alt="" />
           </button>
         </div>
       </div>

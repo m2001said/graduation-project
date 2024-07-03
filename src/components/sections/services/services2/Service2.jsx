@@ -1,21 +1,12 @@
 import React from "react";
 import "./services2.css";
-import { useSelector } from "react-redux";
-import { useLocation } from "react-router";
-
-const Services = () => {
-  const { pathname } = useLocation();
-  const services = useSelector((state) => {
-    if (pathname.includes("own-page")) {
-      return state.ownTemplate.services;
-    } else {
-      return state.template2.services;
-    }
-  });
+ 
+const Services2 = ({ template }) => {
+  const services = template.services;
   return (
     <section id="services2">
       <h5>{services.title}</h5>
-      <h2>{services.subtitle}</h2>
+      <h2>{services.description}</h2>
 
       <div className="container services__container">
         {services.services.map((services, index) => (
@@ -39,4 +30,4 @@ const Services = () => {
   );
 };
 
-export default Services;
+export default Services2;

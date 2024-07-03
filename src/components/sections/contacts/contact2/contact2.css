@@ -73,6 +73,9 @@ form {
 /* .btn-primary {
   background: var(--color-2-primary);
 } */
+.btn-2 {
+  background-color: var(--website-2-color-3);
+}
 input,
 textarea {
   width: 100%;

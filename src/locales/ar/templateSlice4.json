@@ -1,0 +1,196 @@
+{
+  "templateInfo": {
+    "id": 4,
+    "title": "",
+    "description": "",
+    "imgUrl": ""
+  },
+  "navbar": {
+    "imgUrl": "https://res.cloudinary.com/duc04fwdb/image/upload/v1703193372/jammal_photos/eygwjnnq4d9scpxd9unv.png",
+    "links": [
+      {
+        "title": "الإقامات",
+        "url": "#"
+      },
+      {
+        "title": "قيمتنا",
+        "url": "#"
+      },
+      {
+        "title": "اتصل بنا",
+        "url": "#"
+      },
+      {
+        "title": "ابدأ الآن",
+        "url": "#"
+      }
+    ],
+    "email": "mailto:zainkeepscode@gmail.com",
+    "buttonText": "اتصل"
+  },
+  "hero": {
+    "name": "أحمد",
+    "imgUrl": "https://res.cloudinary.com/duc04fwdb/image/upload/v1703196080/jammal_photos/taiu0lj7gzq6ew6srqsz.png",
+    "title": "اكتشف العقار الأنسب",
+    "description": "اعثر على مجموعة متنوعة من العقارات التي تناسبك بسهولة تامة",
+    "text": "انس كل الصعوبات في العثور على مسكن لك",
+    "buttonText": "ابحث",
+    "heros": [
+      {
+        "title": "منتج مميز",
+        "start": "8880",
+        "end": "9000"
+      },
+      {
+        "title": "عملاء سعداء",
+        "start": "1950",
+        "end": "2000"
+      },
+      {
+        "title": "جوائز الفوز",
+        "start": "0",
+        "end": "28"
+      }
+    ],
+    "duration": "6",
+    "icon": "+"
+  },
+  "features": {
+    "title": "قيمتنا",
+    "subtitle": "القيمة التي نقدمها لك",
+    "description": "نحن دائمًا جاهزون للمساعدة من خلال تقديم أفضل الخدمات لك.",
+    "text": "نعتقد أن مكانًا جيدًا للعيش يمكن أن يجعل حياتك أفضل",
+    "features": [
+      {
+        "icon": "💧",
+        "title": "أفضل معدلات الفائدة في السوق",
+        "description": "Exercitation in fugiat est ut ad ea cupidatat ut in cupidatat occaecat ut occaecat consequat est minim minim esse tempor laborum consequat esse adipisicing eu reprehenderit enim."
+      },
+      {
+        "icon": "🩲",
+        "title": "منع الأسعار غير المستقرة",
+        "description": "Exercitation in fugiat est ut ad ea cupidatat ut in cupidatat occaecat ut occaecat consequat est minim minim esse tempor laborum consequat esse adipisicing eu reprehenderit enim."
+      },
+      {
+        "icon": "✔",
+        "title": "أفضل الأسعار في السوق",
+        "description": "Exercitation in fugiat est ut ad ea cupidatat ut in cupidatat occaecat ut occaecat consequat est minim minim esse tempor laborum consequat esse adipisicing eu reprehenderit enim."
+      }
+    ],
+    "imgUrl": "https://res.cloudinary.com/duc04fwdb/image/upload/v1703203417/jammal_photos/if4uayalbxuh6enjdenm.png"
+  },
+  "projects": {
+    "title": "أفضل الخيارات",
+    "subtitle": "الإقامات الشعبية",
+    "projects": [
+      {
+        "imgUrl": "https://res.cloudinary.com/duc04fwdb/image/upload/v1703197994/jammal_photos/v4fz1ap7aa3lnz6f3cqo.png",
+        "name": "Aliva Priva Jardin",
+        "price": "47,043",
+        "description": "شارع جاكرتا جاردن سيتي، كاكوم. بولو جادونغ، جاكرتا تيمور، دي كاي آي جاكرتا"
+      },
+      {
+        "imgUrl": "https://res.cloudinary.com/duc04fwdb/image/upload/v1703198149/jammal_photos/m4s3ppbfcwgwoanctetr.png",
+        "name": "Asatti Garden City",
+        "price": "66,353",
+        "description": "شارع بطل ستريت السابع عشر رقم 215، سينانغكا، ساوانغان، ديبوك، جاوة الغربية"
+      },
+      {
+        "imgUrl": "https://res.cloudinary.com/duc04fwdb/image/upload/v1703198230/jammal_photos/sy4citkq8uqg3qpgtvj7.png",
+        "name": "Citralan Puri Serang",
+        "price": "35,853",
+        "description": "روكو بوري إنداه ريزيدنس بلوك A7، شارع لينكار، سيراكاس، سيرانغ، بانتن"
+      },
+      {
+        "imgUrl": "https://res.cloudinary.com/duc04fwdb/image/upload/v1703197994/jammal_photos/v4fz1ap7aa3lnz6f3cqo.png",
+        "name": "Aliva Priva Jardin",
+        "price": "47,043",
+        "description": "شارع جاكرتا جاردن سيتي، كاكوم. بولو جادونغ، جاكرتا تيمور، دي كاي آي جاكرتا"
+      },
+      {
+        "imgUrl": "https://res.cloudinary.com/duc04fwdb/image/upload/v1703198149/jammal_photos/m4s3ppbfcwgwoanctetr.png",
+        "name": "Asatti Garden City",
+        "price": "66,353",
+        "description": "شارع بطل ستريت السابع عشر رقم 215، سينانغكا، ساوانغان، ديبوك، جاوة الغربية"
+      },
+      {
+        "imgUrl": "https://res.cloudinary.com/duc04fwdb/image/upload/v1703198230/jammal_photos/sy4citkq8uqg3qpgtvj7.png",
+        "name": "Citralan Puri Serang",
+        "price": "35,853",
+        "description": "روكو بوري إنداه ريزيدنس بلوك A7، شارع لينكار، سيراكاس، سيرانغ، بانتن"
+      }
+    ]
+  },
+  "contact": {
+    "title": "اتصل بنا",
+    "subtitle": "سهولة الاتصال بنا",
+    "description": "نحن دائمًا جاهزون للمساعدة من خلال تقديم أفضل الخدمات لك. نحن نؤمن بأن المكان الجيد للعيش يمكن أن يجعل حياتك أفضل",
+    "email": "contact@interno.com",
+    "phone": "(123) 125-858",
+    "imgUrl": "https://res.cloudinary.com/duc04fwdb/image/upload/v1703206872/jammal_photos/hqcx6ikyfgeuqe0vcset.jpg",
+    "contacts": [
+      {
+        "type": "اتصال",
+        "phone": "021 123 145 14",
+        "buttonText": "اتصل الآن"
+      },
+      {
+        "type": "دردشة",
+        "phone": "021 123 145 14",
+        "buttonText": "دردشة الآن"
+      },
+      {
+        "type": "مكالمة فيديو",
+        "phone": "021 123 145 14",
+        "buttonText": "مكالمة فيديو الآن"
+      },
+      {
+        "type": "رسالة",
+        "phone": "021 123 145 14",
+        "buttonText": "أرسل رسالة الآن"
+      }
+    ]
+  },
+  "cta": {
+    "title": "ابدأ مع Homyz",
+    "description": "اشترك واحصل على عروض أسعار جذابة منا.",
+    "text": "ابحث عن مسكنك قريبًا",
+    "buttonText": "ابدأ الآن",
+    "email": "mailto:zainkeepscode@gmail.com"
+  },
+  "footer": {
+    "imgUrl": "https://res.cloudinary.com/duc04fwdb/image/upload/v1703209942/jammal_photos/xd2ugq6yopzvjkw37qc7.png",
+    "description": "رؤيتنا هي جعل كل الناس يعيشون في أفضل مكان يناسبهم.",
+    "footerSections": [
+      {
+        "title": "الخدمات",
+        "links": [
+          {
+            "title": "العقارات",
+            "url": "#"
+          },
+          {
+            "title": "الخدمات",
+            "url": "#"
+          },
+          {
+            "title": "المنتجات",
+            "url": "#"
+          },
+          {
+            "title": "معلومات عنا",
+            "url": "#"
+          }
+        ]
+      }
+    ],
+    "contacts": [
+      {
+        "value": "145 نيويورك، فلوريدا 5467، الولايات المتحدة الأمريكية"
+      }
+    ]
+  },
+  "colors": {
+    "templateColors": ["#fff", "#cda274", "#292f36", "#f4f0ec", "#777777"]
+  }
+}

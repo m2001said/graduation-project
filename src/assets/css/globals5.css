@@ -17,8 +17,8 @@
   /* and add your */
 }
 
-.design5{
-  background:var(--website-5-color-5);
+.design5 {
+  background: var(--website-5-color-5);
 }
 
 .design5-section {
@@ -40,16 +40,14 @@
   align-items: center;
 }
 
-
-
-@media screen and (min-width: 1024px){
+@media screen and (min-width: 1024px) {
   .design5-section {
     padding: 6rem 0 4rem;
   }
-  
+
   .design5-container {
     width: 75%;
-    margin:auto;
+    margin: auto;
   }
 }
 

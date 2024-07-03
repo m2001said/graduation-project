@@ -7,14 +7,14 @@
   font-size: 2.2rem;
   margin-bottom: 40px;
   margin-right: 845px;
-  color: var(--color3);
+  color: var(--website-11-color-3);
 }
 .aboutImg11 {
   margin-left: 200px;
 }
 .about__data11 {
   padding: 1.875rem;
-  background-color: var(--color22);
+  background-color: var(--website-11-color-2);
   box-shadow: var(--shadow);
   border-radius: var(--border-radius);
   grid-template-columns: repeat(4, 3fr);
@@ -35,7 +35,7 @@
   height: 0;
   border-top: 10px solid transparent;
   border-bottom: 10px solid transparent;
-  border-right: 15px solid var(--color22);
+  border-right: 15px solid var(--website-11-color-2);
   position: absolute;
   left: -0.93rem;
   top: 20%;
@@ -75,23 +75,23 @@
   border-radius: 0.25rem;
 }
 .skills__bar11 {
-  background-color: var(--color22);
+  background-color: var(--website-11-color-2);
 }
 .skills__percentage11 {
   display: block;
-  background-color: var(--color1);
+  background-color: var(--website-11-color-1);
 }
 .development {
   width: 90%;
-  background-color: var(--color3);
+  background-color: var(--website-11-color-3);
 }
 .ui__design {
   width: 80%;
-  background-color: var(--color1);
+  background-color: var(--website-11-color-1);
 }
 .photography {
   width: 60%;
-  background-color: var(--color6);
+  background-color: var(--website-11-color-6);
 }
 .about___boxes11 {
   grid-template-columns: repeat(4, 1fr);
@@ -137,7 +137,7 @@
     height: 0;
     border-top: 10px solid transparent;
     border-bottom: 10px solid transparent;
-    border-right: 15px solid var(--color22);
+    border-right: 15px solid var(--website-11-color-2);
     position: absolute;
     left: -0.93rem;
     top: 20%;
