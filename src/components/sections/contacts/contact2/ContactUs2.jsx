@@ -1,6 +1,6 @@
-import React, { useRef } from "react";
-import "./contact2.css";
-
+ import "./contact2.css";
+import { useTranslation } from "react-i18next";
+const isRTL = true;  
 const ContactUs2 = ({ template }) => {
   const contact = template.contact;
 
@@ -24,9 +24,9 @@ const ContactUs2 = ({ template }) => {
         </div>
 
         <form className="form2" onSubmit={contact.linkText}>
-          <input type="text" name="name" placeholder="Your Full Name" className="input2" required />
-          <input type="email" name="email" placeholder="Your email" className="input2" required />
-          <textarea name="message" placeholder="Your Message" rows="7" className="txt-area2" required></textarea>
+          <input type="text" name="name" placeholder={isRTL ? "ادخل اسمك" : "Enter your name"}className="input2" required />
+          <input type="email" name="email" placeholder={isRTL ? "ادخل بريدك الالكتروني" : "Your email"} className="input2" required />
+          <textarea name="message" placeholder={isRTL ? "ادخل رسالتك" : "Your message"} rows="7" className="txt-area2" required></textarea>
           <button type="submit" className="btn-2 color-[var(--website-2-color-2)]">
             {contact.buttonText}
           </button>

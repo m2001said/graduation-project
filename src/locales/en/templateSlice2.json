@@ -33,7 +33,7 @@
   "hero": {
     "title": "Get to know",
     "subtitle": "Hero",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...",
+    "description": "I create stunning and responsive websites to help businesses grow online. With a passion for design and coding, I ensure each project is unique and tailored to client needs.",
     "imgUrl": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1719964924/done/Happy-man-in-blue-background_n0ghiz.webp",
     "heros": [
       {
@@ -60,22 +60,22 @@
       {
         "imgUrl": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1719966175/done/avatar3_pbztwn_ggzr8x.webp",
         "name": "Ernest Achiever",
-        "opinion": "Lorem ipsum doloripsum doloripsum doloripsum doloripsum doloripsum doloripsum dolor ipsum doloripsumdoloripsumdoloripsumdoloripsumdoloripsum doloripsum doloripsum doloripsum dolor"
+        "opinion": "Working with Ahmed has been a fantastic experience. His skills in web development are top-notch, and he delivered everything on time."
       },
       {
         "imgUrl": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1719966175/done/avatar4_tn7dyv_ilzqxz.webp",
         "name": "Ernest Achiever",
-        "opinion": "Lorem ipsum doloripsum doloripsum doloripsum doloripsum doloripsum doloripsum dolor ipsum doloripsumdoloripsumdoloripsumdoloripsumdoloripsum doloripsum doloripsum doloripsum dolor"
+        "opinion": "Ahmed transformed our website with his creative designs. Our clients love the new look and feel, and we've seen a significant increase in engagement."
       },
       {
         "imgUrl": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1719966174/done/avatar1_g7wm1r_cfw4bw.webp",
         "name": "Ernest Achiever",
-        "opinion": "Lorem ipsum doloripsum doloripsum doloripsum doloripsum doloripsum doloripsum dolor ipsum doloripsumdoloripsumdoloripsumdoloripsumdoloripsum doloripsum doloripsum doloripsum dolor"
+        "opinion": "Highly recommend Ahmed for any web development project. His attention to detail and dedication are truly commendable."
       },
       {
         "imgUrl": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1719966174/done/avatar2_lgwr3o_pl5tsq.webp",
         "name": "Ernest Achiever",
-        "opinion": "Lorem ipsum doloripsum doloripsum doloripsum doloripsum doloripsum doloripsum dolor ipsum doloripsumdoloripsumdoloripsumdoloripsumdoloripsum doloripsum doloripsum doloripsum dolor"
+        "opinion": "Ahmed exceeded our expectations with his outstanding service and support. Our new website is beautiful and functional."
       }
     ]
   },
@@ -85,13 +85,13 @@
     "projects": [
       {
         "imgUrl": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1719966782/done/portfolio4_ibgd9o_tkrlwr.webp",
-        "title": "projects2 Item 1",
+        "title": "E-commerce Platform",
         "url": "https://github.com",
         "link": "https://dribbble.com/Alien_pixels"
       },
       {
         "imgUrl": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1719966782/done/portfolio3_rzhjvk_hy2soz.webp",
-        "title": "projects2 Item 2",
+        "title": "Portfolio Website",
         "url": "https://github.com",
         "link": "https://dribbble.com/Alien_pixels"
       },
@@ -103,19 +103,19 @@
       },
       {
         "imgUrl": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1719966782/done/portfolio4_ibgd9o_tkrlwr.webp",
-        "title": "projects2 Item 4",
+        "title": "Business Landing Page",
         "url": "https://github.com",
         "link": "https://dribbble.com/Alien_pixels"
       },
       {
         "imgUrl": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1719966924/done/portfolio5_cugtet_1_klwv58.webp",
-        "title": "projects2 Item 5",
+        "title": "Blog Platform",
         "url": "https://github.com",
         "link": "https://dribbble.com/Alien_pixels"
       },
       {
         "imgUrl": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1719966782/done/portfolio4_ibgd9o_tkrlwr.webp",
-        "title": "projects2 Item 6",
+        "title": "Social Media App",
         "url": "https://github.com",
         "link": "https://dribbble.com/Alien_pixels"
       }
@@ -152,28 +152,27 @@
   },
   "services": {
     "title": "What We Offer",
-    "description": "Services",
+    "description": "Our Services",
     "services": [
       {
         "title": "UI/UX Design",
-        "items": ["lorem ipsum,", "Llorem ipsuma,", "Blorem ipsumm,", "Dilorem ipsumll,", "lorem ipsum"],
+        "items": ["User Interface Design", "User Experience Optimization", "Prototyping", "Usability Testing", "Responsive Design"],
         "icon": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1719967616/done/crrsvgrepo-com_ug4dbt_bwklfn.webp"
-      },
-      {
+      },  {
         "title": "Web Development",
-        "items": ["lorem ipsum,", "Llorem ipsuma,", "Blorem ipsumm,", "Dilorem ipsumll,", "lorem ipsum"],
+        "items": ["Front-End Development", "Back-End Development", "API Integration", "Database Management", "Performance Optimization"],
         "icon": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1719967616/done/crrsvgrepo-com_ug4dbt_bwklfn.webp"
       },
       {
         "title": "Content Creation",
-        "items": ["lorem ipsum,", "Llorem ipsuma,", "Blorem ipsumm,", "Dilorem ipsumll,", "lorem ipsum"],
+        "items": ["Content Strategy", "Copywriting", "Graphic Design", "SEO Optimization", "Social Media Integration"],
         "icon": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1719967616/done/crrsvgrepo-com_ug4dbt_bwklfn.webp"
       }
     ]
   },
   "footer": {
     "title": "CSE",
-    "description": "ssssssssssssssssssssss all rights reserved.",
+    "description": "Stay connected with us. All rights reserved.",
     "footerSections": [
       {
         "title": "Home",
