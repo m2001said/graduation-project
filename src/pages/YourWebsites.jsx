@@ -25,6 +25,7 @@ const YourWebsites = () => {
   const templates = useSelector((state) => state.templates.templates);
   const status = useSelector((state) => state.templates.status);
   const error = useSelector((state) => state.templates.error);
+  const userId = useSelector((state) => state.auth.user._id);
   const [isCelebrityBirthday, setIsCelebrityBirthday] = useState(false);
   const [copied, setCopied] = useState(false);
   const [url, setUrl] = useState("");
@@ -94,17 +95,14 @@ const YourWebsites = () => {
   const fetchData = async (templateNum, templateId) => {
     try {
       setIsLoading(true);
-      const res = await axios.get(`https://websitebuilderbackend-production-716e.up.railway.app/page/${templateId}`, {
-        headers: {
-          Authorization: "Bearer " + localStorage.getItem("token"),
-        },
-      });
+      const res = await axios.get(`https://websitebuilderbackend-production-716e.up.railway.app/page/${userId}/${templateId}`);
+      console.log("res.data", res.data);
       dispatch(templateActions1.updateSchema(res.data));
       setIsLoading(false);
       navigate(`/${i18n.language}/edit-zweb${templateNum}?id=${templateId}`);
       document.documentElement.style = "";
-      for (let index = 0; index < res.data.colors.templateColors.length; index++) {
-        document.documentElement.style.setProperty(`--website-color-${index + 1}`, res.data.colors.templateColors[index]);
+      for (let index = 0; index < res.data.colors?.templateColors.length; index++) {
+        document.documentElement.style.setProperty(`--website-color-${index + 1}`, res.data.colors?.templateColors[index]);
       }
     } catch (error) {
       console.error("Error fetching template data:", error);
@@ -250,24 +248,16 @@ const YourWebsites = () => {
                       <p className="designs-description text-gray-600 text-sm  text-center ">{template.templateInfo.description}</p>
                     </div>
                     <div className="button-container px-4 flex justify-between gap-4">
-                      {/* {btnTxt ? ( */}
-                        <button
-                          className="flex justify-center gap-4 items-center w-full py-2 Build-button design-btn"
-                          onClick={() => {
-                            setUrl(`http://localhost:3000/${language}/zweb${template.templateInfo.id}?id=${template._id}`);
-                            toggleModal();
-                            // setBtnTxt(!btnTxt);
-                          }}
-                        >
-                          <span>Deploy</span>
-                          <img src={build} alt="build-icon" className="btn-icon" />
-                        </button>
-                      {/* ) : (
-                        <Link to={`http://localhost:3000/${language}/zweb${template.templateInfo.id}?id=${template._id}`} className="flex justify-center gap-4 items-center w-full py-2 Build-button design-btn">
-                          <span>Preview</span>
-                          <img src={build} alt="build-icon" className="btn-icon" />
-                        </Link>
-                      )} */}
+                      <button
+                        className="flex justify-center gap-4 items-center w-full py-2 Build-button design-btn"
+                        onClick={() => {
+                          setUrl(`http://localhost:3000/zweb${template.templateInfo.id}?userId=${userId}&templateId=${template._id}/${domain}`);
+                          setChooseDomain(true);
+                        }}
+                      >
+                        <span>Deploy</span>
+                        <img src={build} alt="build-icon" className="btn-icon" />
+                      </button>
                       <button
                         className="Preview-button flex justify-center gap-4 items-center  w-full py-2 design-btn"
                         onClick={() => {
@@ -286,7 +276,7 @@ const YourWebsites = () => {
             <div>
               <p className="mx-auto max-w-[700px] text-gray-200 md:text-xl text-center">
                 {t("WEBSITES.NO_WEBSITES")}
-                <Link to={`/${language}/designs`} className="text-gray-400">
+                <Link to={`/${i18n.language}/designs`} className="text-gray-400">
                   {t("WEBSITES.CREATE")}
                 </Link>
               </p>

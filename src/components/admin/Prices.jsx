@@ -25,7 +25,7 @@ function Prices() {
   };
 
   return (
-    <div>
+    <div className="p-6 border-b-2 rounded-md border-[#BB5CB9]">
       <h2 className="text-2xl font-bold text-[#BB5CB9] mb-4 mt-12 border-b-4 border-[#BB5CB9] w-fit pb-1">Set Prices</h2>
 
       <div>

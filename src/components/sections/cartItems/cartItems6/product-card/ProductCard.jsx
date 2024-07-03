@@ -20,10 +20,10 @@ const ProductCard = ({ item, content }) => {
 
         <div className=" flex items-center justify-between">
           <span className="price flex items-center">
-            {content.valueName} <span>{item.price}</span>
+            {content.subtitle} <span>{item.price}</span>
           </span>
           <span className="shopping__icon">
-            <img src={content.shoppingIcon} alt="" className="ico" />
+            <img src={content.icon} alt="" className="ico" />
           </span>
         </div>
       </div>
