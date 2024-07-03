@@ -57,27 +57,38 @@ const BuildYourPage = () => {
   };
 
   // todo edit this to be  const templates = state.template1; ----- > said
-  const templates = useSelector((state) => ({
-    1: state.template1,
-    2: state.template2,
-    3: state.template3,
-    4: state.template4,
-    5: state.template5,
-    6: state.template6,
-    7: state.template7,
-    8: state.template8,
-    9: state.template9,
-    10: state.template10,
-    11: state.template11,
-    12: state.template12,
-    13: state.template13,
-    14: state.template14,
-    15: state.template15,
-    16: state.template16,
-    17: state.template17,
-    18: state.template18,
-  }));
-  const [selectedIndices, setSelectedIndices] = useState(Object.fromEntries(sectionNames.map((name) => [name, undefined])));
+  const templates = useSelector((state) => state.templateSlice);
+
+  // const templates = useSelector((state) => ({
+  //   1: state.template1,
+  //   2: state.template2,
+  //   3: state.template3,
+  //   4: state.template4,
+  //   5: state.template5,
+  //   6: state.template6,
+  //   7: state.template7,
+  //   8: state.template8,
+  //   9: state.template9,
+  //   10: state.template10,
+  //   11: state.template11,
+  //   12: state.template12,
+  //   13: state.template13,
+  //   14: state.template14,
+  //   15: state.template15,
+  //   16: state.template16,
+  //   17: state.template17,
+  //   18: state.template18,
+  // }));
+
+
+  // const [selectedIndices, setSelectedIndices] = useState(Object.fromEntries(sectionNames.map((name) => [name, undefined])));
+
+  const initialSelectedValues = Object.fromEntries(sectionNames.map((name) => [name, undefined]));
+  initialSelectedValues["navbar"] = 1;
+  initialSelectedValues["hero"] = 1;
+  initialSelectedValues["footer"] = 1;
+
+  const [selectedIndices, setSelectedIndices] = useState(initialSelectedValues);
 
   const [checkError, setCheckError] = useState(false);
   const navigate = useNavigate();
@@ -93,6 +104,7 @@ const BuildYourPage = () => {
     setSelectedIndices((prevState) => ({ ...prevState, [section]: selectedIndex }));
   };
 
+  
   const handleSubmit = () => {
     const selectedSections = {};
     const userSectionSelection = [];
