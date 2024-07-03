@@ -11,7 +11,7 @@ const Navbar6 = ({ template }) => {
       <div className="container mx-auto px-8 py-2">
         <div className="navigation">
           <div className="logo flex items-center gap-1">
-            <img src={navbar.logo} alt="" className="design6-logo" />
+            <img src={navbar.title} alt="" className="design6-logo" />
           </div>
 
           <div className="nav__menu " ref={menuRef}>
@@ -37,7 +37,7 @@ const Navbar6 = ({ template }) => {
 
           <div className="mobile__menu">
             <span>
-              <img src={navbar.menuIcon} alt="" onClick={menuToggle} className="ico" />
+              <img src={navbar.icon} alt="" onClick={menuToggle} className="ico" />
             </span>
           </div>
         </div>
