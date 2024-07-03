@@ -164,3 +164,22 @@ ColorController.jsx:27 #ffffff
 
 
 done until trialdesign8
+
+____________________________________________________________________________________
+rageb  template6
+    menu 
+        change this section to (services)
+        services : {
+            title 
+
+            * subtitle
+            * icon
+            * rateIcon
+            services : [
+                {
+                    title
+                    price
+                    imgUrl
+                }
+            ]
+        }

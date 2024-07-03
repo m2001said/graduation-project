@@ -19,7 +19,7 @@ const TrialDesign6 = () => {
   };
   return (
     <>
-      <TrialDesign componentMapping={componentMapping} HeroComponent={Hero6} NavbarComponent={Navbar6} footerComponent={Footer6} template={6} />;
+      <TrialDesign componentMapping={componentMapping} HeroComponent={Hero6} NavbarComponent={Navbar6} FooterComponent={Footer6} template={6} />;
     </>
   );
 };
