@@ -31,7 +31,7 @@ const TrialDesign = ({ componentMapping, FooterComponent, NavbarComponent, HeroC
   }, [dispatch]);
 
   useEffect(() => {
-    console.log('herrrrrrrrrrrrrrrrrrre')
+    console.log("herrrrrrrrrrrrrrrrrrre");
     const fetchData = async () => {
       console.log("fetchData in trialDesign");
       try {
@@ -67,7 +67,8 @@ const TrialDesign = ({ componentMapping, FooterComponent, NavbarComponent, HeroC
     state = templateData;
   }
   const reorderedComponents = state && Object.keys(state);
-//  return state.templateInfo.id === template ? (
+  //  return state.templateInfo.id === template ? (
+  console.log("state in trail", state);
   return state ? (
     <>
       {NavbarComponent && <NavbarComponent template={state} />}

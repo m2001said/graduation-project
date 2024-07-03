@@ -19,7 +19,6 @@ import BaseModal from "../components/mainPage/modal/BaseModal/BaseModal";
 
 const YourWebsites = () => {
   const { i18n, t } = useTranslation();
-  const language = i18n.language;
   const [isModalOpen, setIsModalOpen] = useState(false);
   const dispatch = useDispatch();
   const templates = useSelector((state) => state.templates.templates);
@@ -251,8 +250,7 @@ const YourWebsites = () => {
                       <button
                         className="flex justify-center gap-4 items-center w-full py-2 Build-button design-btn"
                         onClick={() => {
-                          setUrl(`http://localhost:3000/zweb${template.templateInfo.id}?userId=${userId}&templateId=${template._id}/${domain}`);
-                          setChooseDomain(true);
+                          setUrl(`http://localhost:3000/zweb${template.templateInfo.id}?userId=${userId}&templateId=${template._id}`);
                         }}
                       >
                         <span>Deploy</span>
