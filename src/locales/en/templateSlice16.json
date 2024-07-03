@@ -189,7 +189,7 @@
       },
       {
         "imgUrl": "https://res.cloudinary.com/duc04fwdb/image/upload/v1708549772/jammal_photos/cdulhjzrscft50xc9qpq.svg",
-        "number": "250",
+        "value": "250",
         "title": "+ Happy Customers"
       },
       {
@@ -302,6 +302,7 @@
   "footer": {
     "description": "We are many variations of passages available, but the majority have suffered alteration in some form by injected humour words which don't look even slightly believable.",
     "imgUrl": "\thttps://res.cloudinary.com/duc04fwdb/image/upload/v1708556947/jammal_photos/ddhmuvn3h3rycioxyiyd.png",
+    "subtitle": " Copyright 2023 Coffero  All Right Reserved.",
     "contacts": [
       {
         "value": "+2 123 654 7898",

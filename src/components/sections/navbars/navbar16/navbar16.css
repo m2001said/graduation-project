@@ -3,7 +3,7 @@
   top: 0;
   width: 100%;
   z-index: 100;
-  background-color: var(--bg-color);
+  background-color: var(--website-16-color-5);
 }
 
 .nav16 {
@@ -26,7 +26,7 @@
 
 .nav__link16,
 .nav__toggle16 {
-  color: var(--title-color);
+  color: var(--website-16-color-3);
   cursor: pointer;
 }
 
@@ -42,7 +42,7 @@
 
 .scroll-header16 {
   position: fixed;
-  background-color: var(--container-color);
+  background-color: var(--website-16-color-6);
   animation: slide-down 0.7s;
 }
 
@@ -58,7 +58,7 @@
 
 .active16,
 .nav__link16:hover {
-  color: var(--first-color) !important;
+  color: var(--website-16-color-1) !important;
 }
 
 /* MEDIA QUERY */
@@ -74,7 +74,7 @@
     position: absolute;
     top: 100%;
     inset-inline: 0.75rem;
-    background-color: var(--title-color);
+    background-color: var(--website-16-color-3);
     max-height: 0;
     overflow: scroll;
     transition: 0.3s var(--transition);
@@ -90,7 +90,7 @@
   }
 
   .nav__link16 {
-    color: var(--bg-color);
+    color: var(--website-16-color-5);
   }
 
   .nav__toggle16 {

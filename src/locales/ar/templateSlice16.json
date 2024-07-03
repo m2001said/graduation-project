@@ -193,7 +193,7 @@
       },
       {
         "imgUrl": "https://res.cloudinary.com/duc04fwdb/image/upload/v1708549772/jammal_photos/cdulhjzrscft50xc9qpq.svg",
-        "number": "250+",
+        "value": "250+",
         "title": "عملاء سعداء"
       },
       {
@@ -305,6 +305,7 @@
   },
   "footer": {
     "description": "هناك العديد من الاختلافات في النصوص المتاحة ولكن الأغلبية تعرضت لتغيير بشكل ما بواسطة الفكاهة المدخلة أو الكلمات العشوائية التي لا تبدو حتى قريبة من الواقع.",
+    "subtitle": "حقوق الطبع والنشر 2023 Coffero جميع الحقوق محفوظة.",
     "imgUrl": "https://res.cloudinary.com/duc04fwdb/image/upload/v1708556947/jammal_photos/ddhmuvn3h3rycioxyiyd.png",
     "contacts": [
       {
@@ -323,6 +324,7 @@
     "footerSections": [
       {
         "title": "روابط سريعة",
+
         "links": [
           {
             "title": "من نحن",

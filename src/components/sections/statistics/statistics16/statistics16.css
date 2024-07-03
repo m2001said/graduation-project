@@ -1,5 +1,5 @@
 .stats16 {
-  background: var(--container-color);
+  background: var(--website-16-color-6);
 }
 
 .stats__grid16 {
@@ -27,7 +27,7 @@
   width: 100%;
   height: 100%;
   border-radius: 50%;
-  background-color: var(--first-color);
+  background-color: var(--website-16-color-1);
   opacity: 0.2;
   transition: 0.5s var(--transition);
 }
@@ -37,14 +37,14 @@
 }
 
 .stats__no16 {
-  color: var(--title-color);
+  color: var(--website-16-color-3);
   font-size: var(--bigger-font-size);
   font-weight: var(--weight-600);
   margin-block: 1rem 0.75rem;
 }
 
 .stats__title16 {
-  color: var(--first-color);
+  color: var(--website-16-color-1);
   font-size: var(--larger-font-size);
 }
 

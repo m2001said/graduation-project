@@ -17,22 +17,22 @@ const Navbar4 = ({ template }) => {
   };
 
   return (
-    <section className="h-wrapper">
-      <div className="flexCenter innerWidth paddings h-container">
+    <section className="h-wrapper4">
+      <div className="flexCenter4 innerWidth4 paddings4 h-container4">
         <img src={navbar.imgUrl} alt="logo" width={100} />
-        <div className="flexCenter h-menu" style={getMenuStyles(menuOpened)}>
+        <div className="flexCenter4 h-menu4" style={getMenuStyles(menuOpened)}>
           {navbar.links.map((link, index) => (
             <a key={index} href={link.url} onClick={handleLinkClick}>
               {link.title}
             </a>
           ))}
-          <button className="button">
+          <button className="button4">
             <a href={navbar.email}>{navbar.buttonText}</a>
           </button>
         </div>
 
-        <div className="menu-icon" onClick={handleMenuToggle}>
-          <div className="bar">Ξ </div>
+        <div className="menu-icon4" onClick={handleMenuToggle}>
+          <div className="bar4">Ξ </div>
         </div>
       </div>
     </section>
