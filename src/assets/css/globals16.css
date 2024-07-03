@@ -8,14 +8,12 @@
   /*===============
      * Colors
     ===============*/
-
-  --first-color: hsl(27, 34%, 59%);
-  --first-color-light: hsl(42, 13%, 34%);
-  --title-color: hsl(0, 0%, 100%);
-  --text-color: hsl(0, 0%, 67%);
-  --bg-color: hsl(0, 0%, 8%);
-  --container-color: hsl(0, 0%, 6%);
-  --hsla: hsl(0, 0%, 0%, 0.75);
+  --website-16-color-1: hsl(27, 34%, 59%);
+  --website-16-color-2: hsl(42, 13%, 34%);
+  --website-16-color-3: hsl(0, 0%, 100%);
+  --website-16-color-4: hsl(0, 0%, 67%);
+  --website-16-color-5: hsl(0, 0%, 8%);
+  --website-16-color-6: hsl(0, 0%, 6%);
 
   /*===============
      * Typography
@@ -59,8 +57,8 @@
 ===================================*/
 
 .body16 {
-  color: var(--text-color);
-  background: var(--bg-color) !important;
+  color: var(--website-16-color-4);
+  background: var(--website-16-color-5) !important;
 }
 
 /*=================================== 
@@ -80,16 +78,16 @@
 
 .btn16 {
   display: inline-block;
-  color: var(--title-color);
-  background: var(--first-color);
-  border: 2px solid var(--first-color);
+  color: var(--website-16-color-3);
+  background: var(--website-16-color-1);
+  border: 2px solid var(--website-16-color-1);
   padding: 1rem 1.5rem;
   border-radius: var(--radius);
 }
 
 .btn16:hover {
   background-color: transparent;
-  color: var(--first-color);
+  color: var(--website-16-color-1);
 }
 
 .btn--flex16 {
@@ -111,7 +109,7 @@
 .section__title16::before {
   content: attr(data-title);
   display: block;
-  color: var(--first-color);
+  color: var(--website-16-color-1);
   font-family: var(--second-font);
   font-size: var(--h2-font-size);
   letter-spacing: 2px;
