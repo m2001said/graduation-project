@@ -16,11 +16,11 @@ const Feature6 = ({ template }) => {
             <div className="choose__content">
               <h4>{features.title}</h4>
               <h2>{features.description}</h2>
-              <p>{features.info}</p>
+              <p>{features.text}</p>
             </div>
             <div className="features mt-4">
               <div className="grid grid-cols-2 gap-5">
-                {features.cards.map((card, index) => (
+                {features.features.map((card, index) => (
                   <div key={index} className="single__feature">
                     <span>
                       <img src={card.icon} alt="" className="ico" />
