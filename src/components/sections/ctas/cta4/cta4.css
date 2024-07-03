@@ -1,21 +1,22 @@
-.inner-container {
+.inner-container4 {
   gap: 1.5rem;
-  background: var(--blue);
+  background: var(--website-4-color-4);
   padding: 2rem;
   border-radius: 10px;
-  border: 6px solid var(--blue);
+  border: 6px solid var(--website-4-color-4);
   text-align: center;
+  color: var(--website-4-color-1);
 }
 
-.inner-container .primaryText {
+.inner-container4 .primaryText4 {
   color: var(--white);
   font-weight: 600;
 }
-.inner-container .secondaryText {
+.inner-container4 .secondaryText4 {
   color: var(--white);
 }
-.inner-container .button {
-  background: var(--blue);
+.inner-container4 .button4 {
+  background: var(--website-4-color-4);
   border: 2px solid var(--white);
   box-shadow: var(--shadow);
   border-radius: 10px;

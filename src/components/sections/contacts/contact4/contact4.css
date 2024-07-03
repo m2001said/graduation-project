@@ -1,85 +1,88 @@
-.c-container {
+.c-container4 {
   justify-content: space-between;
 }
-.c-container > div {
+.c-container4 > div {
   flex: 1;
 }
-.c-right {
+.c-right4 {
   width: 100%;
 }
-.c-left {
+.c-left4 {
   gap: 0.5rem;
 }
-.contactModes {
+.contactModes4 {
   margin-top: 2rem;
   gap: 1rem;
 }
-.contactModes .row {
+.contactModes4 .row4 {
   gap: 1.5rem;
 }
-.mode {
+.mode4 {
   width: 16rem;
   padding: 1rem;
   border-radius: 5px;
   gap: 1rem;
   transition: all 200ms ease-in;
 }
-.mode .button {
+.mode4 .button4 {
   width: 100%;
   background: var(--lightBlue);
-  color: var(--blue);
+  color: var(--website-4-color-4);
   font-size: 0.9rem;
   font-weight: 600;
 }
-.mode > :nth-child(1) {
+.mode4 > :nth-child(1) {
   width: 100%;
   gap: 1.6rem;
 }
-.mode .detail .primaryText {
+.mode4 .detail4 .primaryText4 {
   font-size: 1.1rem;
   font-weight: 600;
+  color: var(--website-4-color-1);
+  font-size: 20px;
 }
 
-.mode:hover {
+.mode4:hover {
   scale: 1.1;
   box-shadow: var(--shadow);
 }
 
-.mode .button:hover {
-  background: var(--blue-gradient);
-  color: var(--white);
+.mode4 .button4:hover {
+  background: var(--website-4-color-4-gradient);
+  color: var(--website-4-color-1);
+
   scale: 0.8;
 }
-.button {
+.button4 {
   font-weight: 500;
   padding: 0.6rem 1.4rem;
   color: var(--white);
-  background: var(--blue-gradient);
+  background: var(--website-4-color-4-gradient);
   border: none;
   border-radius: 4px;
   transition: all 200ms ease-in;
 }
-.button:hover {
+.button4:hover {
   cursor: pointer;
   transform: scale(1.1);
 }
 @media (max-width: 1024px) {
-  .c-container {
+  .c-container4 {
     flex-direction: column;
   }
-  .c-right {
+  .c-right4 {
     justify-content: center;
   }
 }
 @media (max-width: 1024px) {
-  .contactModes {
+  .contactModes4 {
     width: 100%;
   }
-  .row {
+  .row4 {
     flex-direction: column;
     width: 100%;
   }
-  .mode {
+  .mode4 {
     width: 100%;
   }
 }

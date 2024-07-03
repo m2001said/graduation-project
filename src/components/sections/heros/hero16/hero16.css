@@ -14,7 +14,7 @@
 
 .home__subtitle16,
 .home__description16 {
-  color: var(--title-color);
+  color: var(--website-16-color-3);
 }
 
 .home__subtitle16 {
@@ -42,8 +42,8 @@
   background: transparent;
 }
 .home__btn16:hover {
-  background: var(--first-color);
-  color: var(--title-color);
+  background: var(--website-16-color-1);
+  color: var(--website-16-color-3);
 }
 
 @media only screen and (max-width: 992px) {

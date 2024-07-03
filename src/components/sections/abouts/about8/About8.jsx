@@ -27,8 +27,10 @@ const About8 = ({ template }) => {
       <div className="container mx-auto">
         <div className="flex flex-col gap-y-10 lg:flex-row lg:items-center lg:gap-x-20 lg:gap-y-0 h-screen">
           {/* image */}
-          <div className="flex-1  bg-contain bg-no-repeat h-[640px] mix-blend-lighten bg-top" style={{ backgroundImage: `url(${about.imgUrl})` }}>
-            <img src={about.imgUrl} />
+          <div className="flex-1   h-[640px]  bg-top">
+            <div className="">
+              <img src={about.imgUrl} alt="About Image" />
+            </div>
           </div>
           {/* text */}
           <div className="flex-1">

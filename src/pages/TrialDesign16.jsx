@@ -8,7 +8,6 @@ import Gallery16 from "../components/sections/gallerys/gallery16/Gallery16";
 import Items16 from "../components/sections/items/items16/Items16";
 import Choose16 from "../components/sections/chooses/choose16/Choose16";
 import Statistics16 from "../components/sections/statistics/statistics16/Statistics16";
-import Offer16 from "../components/sections/offers/offer16/Offer16";
 import Team16 from "../components/sections/teams/team16/Team16";
 import Reservation16 from "../components/sections/reservations/reservation16/Reservation16";
 import Testimonials16 from "../components/sections/testimonials/testimonials16/Testimonials16";
@@ -18,15 +17,14 @@ import TrialDesign from "./TrialDesign";
 const TrialDesign16 = () => {
   const componentMapping = {
     about: About16,
-    Feature: Feature16,
-    Gallery: Gallery16,
+    feature: Feature16,
+    galary: Gallery16,
     items: Items16,
-    Choose: Choose16,
-    Statistics: Statistics16,
-    Offer: Offer16,
-    Team: Team16,
-    Reservation: Reservation16,
-    Testimonials: Testimonials16,
+    choose: Choose16,
+    statistics: Statistics16,
+    team: Team16,
+    reservation: Reservation16,
+    testimonials: Testimonials16,
   };
   return (
     <div className="body16 ">

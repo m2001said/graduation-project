@@ -1,7 +1,7 @@
 .nav12 {
   width: 100%;
-  background: #455880;
-  color: white;
+  background: var(--website-12-color-1);
+  color: var(--website-color-1);
   padding: 4px 0;
   top: 0;
   left: 0;
@@ -22,7 +22,7 @@
   font-size: 16px;
 }
 .dark-n12 {
-  background: #212ea0;
+  background: var(--website-12-color-2);
   transition: 0.5s;
 }
 .menu-icon12 {
@@ -48,7 +48,7 @@
     top: 0;
     right: 0px;
     bottom: 0;
-    background: #212ea0;
+    background: var(--website-12-color-2);
     z-index: -1;
     width: 200px;
     padding-top: 70px;

@@ -1,5 +1,5 @@
 .reservation16 {
-  background: var(--container-color);
+  background: var(--website-16-color-6);
   padding: 2.5rem;
 }
 
@@ -20,9 +20,9 @@
 
 .form__input16 {
   width: 100%;
-  color: var(--title-color);
-  background-color: var(--bg-color);
-  border: 1px solid var(--first-color-light);
+  color: var(--website-16-color-3);
+  background-color: var(--website-16-color-5);
+  border: 1px solid var(--website-16-color-2);
   padding: 1rem 1.25rem;
 }
 
@@ -32,7 +32,7 @@
 }
 
 .form__input16::placeholder {
-  color: var(--first-color-light);
+  color: var(--website-16-color-2);
 }
 
 .form__input-textarea16 .form__input16 {
