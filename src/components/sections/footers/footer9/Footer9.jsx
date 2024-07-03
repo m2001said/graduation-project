@@ -45,7 +45,7 @@ const Footer9 = ({ template }) => {
               <span className="text-[var(--website-9-color-2)] flex  items-center gap-4 text-3xl lg:justify-normal justify-center ">
                 {footer.contacts.map((item, index) => (
                   <a href={item.url} key={index}>
-                    <img src={item.icon} className="cursor-pointer logo-9" alt={item.url} />
+                    <img src={item.icon} className="cursor-pointer w-1/3" alt={item.url} />
                   </a>
                 ))}
               </span>

@@ -6,9 +6,6 @@
   .link {
     @apply cursor-pointer hover:underline;
   }
-  .button-outline {
-    @apply rounded-md border-2 border-[#ffc727] hover:bg-[#fcca40] hover:text-black duration-500 py-2 px-6 text-[#ffc727] tracking-wider;
-  }
 }
 html {
   scroll-behavior: smooth;
@@ -24,12 +21,11 @@ html {
   /* --color17-white: #ffffff; */
   --website-17-color-4: #ffffff;
   /* --color17-dark: rgb(0, 0, 0); */
---website-17-color-5: rgb(0, 0, 0);
-  
-/* --color17-light: rgb(160, 157, 157); */
---website-17-color-6: rgb(160, 157, 157);
-/* --color17-light2: rgba(255, 255, 255, 0.7); */
+  --website-17-color-5: rgb(255, 225, 0);
 
+  /* --color17-light: rgb(160, 157, 157); */
+  --website-17-color-6: rgb(160, 157, 157);
+  /* --color17-light2: rgba(255, 255, 255, 0.7); */
 
   /***** fonts /***/
   --font17-: "Ephesis", "cursive";
@@ -90,3 +86,7 @@ html {
     max-width: 1318px; 
   }
 } */
+* {
+  padding: 0;
+  margin: 0;
+}

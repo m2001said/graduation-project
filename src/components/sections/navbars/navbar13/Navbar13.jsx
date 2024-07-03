@@ -1,12 +1,16 @@
 import React, { useState } from "react";
+import { useTranslation } from "react-i18next";
 
 const Navbar13 = ({ template }) => {
+  const { t, i18n } = useTranslation();
   const navbar = template.navbar;
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
+
+  const direction = i18n.dir();
 
   return (
     <nav className="sticky top-16 z-50 bg-[var(--website-13-color-2)] nav13">
@@ -50,7 +54,7 @@ const Navbar13 = ({ template }) => {
 
         {/* Desktop Menu */}
         <div className={`lg:flex flex-grow lg:items-center items-baseline lg:h-auto justify-center lg:w-4/5 ${isOpen ? "block" : "hidden"}`}>
-          <ul className="flex flex-col lg:flex-row items-center justify-between w-full gap-x-4 list-none lg:ml-auto lg:transform-none lg:translate-y-[-50%]">
+          <ul className={`flex flex-col lg:flex-row items-center justify-between w-full gap-x-4 list-none lg:ml-auto lg:transform-none lg:translate-y-[-50%] ${direction === 'rtl' ? 'rtl' : ''}`}>
             {navbar.links.map((link, index) => (
               <li key={index} className="py-2 flex text-[var(--website-13-color-3)] font-medium items-center leading-snug hover:opacity-40">
                 <a href={link.url} className="menu-link">
@@ -67,12 +71,12 @@ const Navbar13 = ({ template }) => {
               />
             </li>
             <li>
-              <button className="rounded-full px-1 flex items-center bg-[var(--website-13-color-4)] text-[var(--website-13-color-2)] gap-1 transition ease-out duration-300 transform hover:scale-110 py-auto contact-button13">
-                <p className="text-[var(--website-13-color-3)]">{navbar.subtitle}</p>
+              <button className={`rounded-full px-1 flex items-center bg-[var(--website-13-color-4)] text-[var(--website-13-color-2)] gap-1 transition ease-out duration-300 transform hover:scale-110 py-auto contact-button13 ${direction === 'rtl' ? 'rtl' : ''}`}>
+                <p className={`text-[var(--website-13-color-3)] ${direction === 'rtl' ? 'order-2 ml-2' : 'order-1'}`}>{navbar.subtitle}</p>
                 <img
                   src={navbar.icons[1]} // Assuming icons[1] is the contact button icon
                   alt="contact dropdown"
-                  className="text-xl lg:w-6 lg:h-6 w-8 h-8 sm:w-10 sm:h-10"
+                  className={`text-xl lg:w-6 lg:h-6 w-8 h-8 sm:w-10 sm:h-10 ${direction === 'rtl' ? 'order-1 mr-2' : 'order-2 ml-2'}`} // Adjust margin and order for icon placement in RTL
                   style={{ filter: "invert(100%)" }}
                 />
               </button>
