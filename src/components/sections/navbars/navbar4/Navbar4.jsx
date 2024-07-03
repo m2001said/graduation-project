@@ -38,7 +38,7 @@ const Navbar4 = () => {
             </a>
           ))}
           <button className="button">
-            <a href={navbar.email4}>{navbar.buttonText}</a>
+            <a href={navbar.mail}>{navbar.buttonText}</a>
           </button>
         </div>
 

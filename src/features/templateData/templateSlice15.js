@@ -355,6 +355,7 @@ const initialState = {
       subject: "YOUR SUBJECT *",
       message: "YOUR MESSAGE *",
     },
+
     contacts: [
       {
         title: "Address",
@@ -379,6 +380,9 @@ const initialState = {
     ],
     actionButton: "SEND MESSAGE",
   },
+
+
+  
   footer: {
     rights: "Copyright Ⓒ 2022 LUIQUE . ALL RIGHTS RESERVED",
     author: "DEVELOPED BY BSLTHEMES",

@@ -1,5 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
-import { addElement, addElementToArray, addSubElement, deleteElement, deleteSection, editElement, reorder, reorderSections } from "./actions";
+import { addElement, addElementToArray, addSubElement, deleteElement, deleteSection, editElement, reorder, reorderSections, updateSchema } from "./actions";
 const initialState = {
   templateInfo: {
     id: 7,
@@ -39,11 +39,12 @@ const initialState = {
     description:
       "Our team of experts uses a methodology to identify the credit cards most likely to fit your needs. We examine annual percentage rates, annual fees.",
     buttonText: "Get Started",
-    images: [
+    imgUrl: [
       "https://res.cloudinary.com/duc04fwdb/image/upload/v1706800273/jammal_photos/vt6gwourfyjs74j4ldmf.svg",
       "https://res.cloudinary.com/duc04fwdb/image/upload/v1706800322/jammal_photos/tujqyyrsfqmtnjcn6fef.png",
       "https://res.cloudinary.com/duc04fwdb/image/upload/v1706801327/jammal_photos/pu1mdivlop5zpuugkqn9.svg",
     ],
+
   },
 
   statistics: {
@@ -105,6 +106,7 @@ const initialState = {
     description: " Arcu tortor, purus in mattis at sed integer faucibus. Aliquet quis aliquet eget mauris tortor.ç Aliquet ultrices ac, ametau.",
     imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1706814478/jammal_photos/na4dc3msncykyboct0nu.png",
   },
+
   testimonials: {
     title: "What People are",
     subtitle: "saying about us",
@@ -269,6 +271,9 @@ const templateSlice7 = createSlice({
     },
     deleteSection: (state, action) => {
       return deleteSection(state, action);
+    },
+    updateSchema: (state, action) => {
+      return updateSchema(state, action);
     },
   },
 });

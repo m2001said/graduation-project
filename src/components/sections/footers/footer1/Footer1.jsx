@@ -1,6 +1,7 @@
 import React from "react";
 import "./footer1.css";
 const Footer = ({template}) => {
+  console.log(template.footer)
   return (
     <div className="footer1 design-1">
       <div className="footer1-icons">

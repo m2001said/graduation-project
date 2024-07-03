@@ -59,6 +59,31 @@ const initialState = {
     ],
   },
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
   menu: {
     Title: "Popular food menu",
     Card: {
@@ -95,6 +120,9 @@ const initialState = {
       },
     ],
   },
+
+
+
   products: {
     menuTitle: "Our Menu Pack",
     Card: {
@@ -372,6 +400,14 @@ const initialState = {
       },
     ],
   },
+
+
+
+
+
+
+
+
   features: {
     title: "Who we are?",
     imgUrl: "https://res.cloudinary.com/duc04fwdb/image/upload/v1703103180/jammal_photos/afcfogeancctcy4nhsfn.png",
@@ -421,6 +457,7 @@ const initialState = {
       },
     ],
   },
+
   cta: {
     title: "Download our app",
     description: " Never Feel Hungry! Download Our Mobile App Order Delicious Food",

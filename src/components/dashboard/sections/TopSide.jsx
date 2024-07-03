@@ -11,10 +11,11 @@ const TopSide = ({ schema }) => {
   const initalStateWebsites = Array.from({ length: 17 }, (_, i) => require(`../../../features/templateData/templateSlice${i + 2}`).initialState);
   websitesActions.unshift(templateActions1);
   initalStateWebsites.unshift(initialState);
-  const { pathname  } = useLocation();
+  const { pathname } = useLocation();
   const regex = /\d+/;
   const templateNum = pathname.match(regex)[0];
-
+  console.log(websitesActions)
+  console.log(templateNum)
   const [viewportWidth, setViewportWidth] = useState(window.innerWidth);
   const screen = useSelector((state) => state.screen);
   const dispatch = useDispatch();
@@ -47,13 +48,14 @@ const TopSide = ({ schema }) => {
 
   const handleSubmit = async () => {
     const isUpdating = pathname.includes("edit");
+    console.log(schema)
     const url = isUpdating
       ? `https://websitebuilderbackend-production-716e.up.railway.app/page/update/${id}`
       : "https://websitebuilderbackend-production-716e.up.railway.app/page";
     try {
       setIsGenerating(true);
       setWaitingMsg(isUpdating ? "Please waite for updating your website" : "Please waite for genrating your website");
-      await fetch(url, {
+      const res = await fetch(url, {
         method: isUpdating ? "PATCH" : "POST",
         body: JSON.stringify(schema),
         headers: {
@@ -61,6 +63,8 @@ const TopSide = ({ schema }) => {
           Authorization: "Bearer " + token,
         },
       });
+    console.log(res.data)
+
       setIsGenerating(false);
       dispatch(fetchTemplates());
       navigate("/websites");
@@ -92,6 +96,9 @@ const TopSide = ({ schema }) => {
     },
   ];
 
+  const handleUpdateSchema = () => {
+    dispatch(websitesActions[templateNum - 1].updateSchema(initalStateWebsites[templateNum - 1]));
+  };
   return isGenerating ? (
     <div className="fixed top-0 left-0 w-full h-full bg-gray-900 opacity-70 z-50 flex items-center justify-center">
       <div className="p-5 bg-red-900 rounded-lg shadow-lg">
@@ -112,9 +119,12 @@ const TopSide = ({ schema }) => {
         );
       })}
       <div className="absolute right-6">
-        <button className="bg-blue-500 px-4 rounded-lg h-10 flex-center" onClick={handleSubmit}>
-          {pathname.includes("edit-zweb") ? "Update" : "Save"}
-        </button>
+        <div className="flex">
+          <button className="bg-blue-500 px-4 rounded-lg h-10 flex-center" onClick={handleSubmit}>
+            {pathname.includes("edit-zweb") ? "Update" : "Save"}
+          </button>
+          <button onClick={handleUpdateSchema}>Update Schema</button>
+        </div>
       </div>
     </div>
   );

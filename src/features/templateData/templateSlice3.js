@@ -1,5 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
-import { addElement, addElementToArray, addSubElement, deleteElement, deleteSection, editElement, reorder, reorderSections } from "./actions";
+import { addElement, addElementToArray, addSubElement, deleteElement, deleteSection, editElement, reorder, reorderSections, updateSchema } from "./actions";
 const initialState = {
   templateInfo: {
     id: 3,
@@ -218,6 +218,9 @@ const templateSlice3 = createSlice({
     },
     deleteSection: (state, action) => {
       return deleteSection(state, action);
+    },
+    updateSchema: (state, action) => {
+      updateSchema(state, action);
     },
   },
 });

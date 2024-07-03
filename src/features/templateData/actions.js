@@ -6,8 +6,8 @@ function capitalizeFirstLetter(string) {
 
 export const updateSchema = (state, action) => {
   delete action.payload.owner;
-  delete action.payload._id
-  delete action.payload.__v
+  delete action.payload._id;
+  delete action.payload.__v;
   Object.keys(action.payload).forEach((key) => {
     state[key] = action.payload[key];
   });
@@ -99,13 +99,22 @@ export const addElement = (state, action) => {
 
 //  for example add feature to array of features
 export const addElementToArray = (state, action) => {
+  const pattern = /\.(jpg|gif|png|svg)$/i;
   const { section, blockName, cardIndex, subBlockName } = action.payload;
   if (subBlockName) {
-    const txt = capitalizeFirstLetter(subBlockName.slice(0, -1));
-    state[section][blockName][cardIndex][subBlockName].push(`Enter ${txt}'s Details`);
+    if (pattern.test(state[section][blockName][cardIndex][subBlockName][0])) {
+      state[section][blockName][cardIndex][subBlockName].push("/assets/icons/picture3.svg");
+    } else {
+      const txt = capitalizeFirstLetter(subBlockName.slice(0, -1));
+      state[section][blockName][cardIndex][subBlockName].push(`Enter ${txt}'s Details`);
+    }
   } else {
-    const txt = capitalizeFirstLetter(blockName.slice(0, -1));
-    state[section][blockName].push(`Enter ${txt}'s Details`);
+    if (pattern.test(state[section][blockName][0])) {
+      state[section][blockName].push("/assets/icons/picture3.svg");
+    } else {
+      const txt = capitalizeFirstLetter(blockName.slice(0, -1));
+      state[section][blockName].push(`Enter ${txt}'s Details`);
+    }
   }
 };
 

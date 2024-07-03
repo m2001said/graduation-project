@@ -1,5 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
-import { addElement, addElementToArray, addSubElement, deleteElement, deleteSection, editElement, reorder, reorderSections } from "./actions";
+import { addElement, addElementToArray, addSubElement, deleteElement, deleteSection, editElement, reorder, reorderSections, updateSchema } from "./actions";
 const initialState = {
   templateInfo: {
     id: 5,
@@ -91,6 +91,8 @@ const initialState = {
   },
 
   features2: {
+    age:'50',
+    name:'ahmed',
     title: "Unaccompanied minor lounge",
     imgUrl: "https://res.cloudinary.com/dmcdea0b9/image/upload/v1703116246/fea5-2_q5na0z.jpg",
     features: [
@@ -239,6 +241,9 @@ const templateSlice5 = createSlice({
     },
     deleteSection: (state, action) => {
       return deleteSection(state, action);
+    },
+    updateSchema: (state, action) => {
+      updateSchema(state, action);
     },
   },
 });
