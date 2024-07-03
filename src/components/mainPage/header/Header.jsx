@@ -18,6 +18,11 @@ const Header = ({ toggleModal }) => {
       once: true,
     });
   }, []);
+
+  const user = JSON.parse(localStorage.getItem("persist:root"));
+
+  const userData = JSON.parse(user.auth);
+
   return (
     <>
       <header className="main-header">
@@ -27,13 +32,20 @@ const Header = ({ toggleModal }) => {
               <h1 className="info-title"> {t("HERO.TITLE")}</h1>
               <p className="info-description"> {t("HERO.DESCRIPTION")} </p>
               {authState.status === "succeeded" ? (
-                <Link to={`/${i18n.language}/designs`}>
-                  <button className="info-btn"> {t("HERO.BUTTONTEXT")}</button>
-                </Link>
+                <div className="flex flex-col gap-8">
+                  <Link to={`/${i18n.language}/designs`}>
+                    <button className="info-btn"> {t("HERO.BUTTONTEXT")}</button>
+                  </Link>
+                  <Link to={`/${i18n.language}/admin`}>
+                    <button className="info-btn"> {t("HERO.BUTTONTEXTADMIN")}</button>
+                  </Link>
+                </div>
               ) : (
-                <button className="info-btn" onClick={toggleModal}>
-                  {t("HERO.BUTTONTEXT")}
-                </button>
+                <>
+                  <button className="info-btn" onClick={toggleModal}>
+                    {t("HERO.BUTTONTEXT")}
+                  </button>
+                </>
               )}
             </div>
             <div className="main-hero-image">

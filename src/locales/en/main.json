@@ -27,7 +27,8 @@
   "HERO": {
     "TITLE": "Welcome To ZWEB Where Your Websites Dreams Take Flight With Ai",
     "DESCRIPTION": "At Zagazig Easy Website Builder, we’re pioneering a new era in the design process. Our intelligent AI website builder turns your digital vision into reality in just a few clicks. From abstract concepts to fully developed websites, the future of web design starts here.",
-    "BUTTONTEXT": "Generate Your website"
+    "BUTTONTEXT": "Generate Your website",
+    "BUTTONTEXTADMIN": "Go To Your Dashboard"
   },
   "STEPS": {
     "TITLE_1": "Sign In",

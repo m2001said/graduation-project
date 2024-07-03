@@ -162,6 +162,7 @@ const BuildYourPage = () => {
         <button className="generate-own-btn" onClick={handleSubmit}>
           Generate your website
         </button>
+
         <div className={`error-message ${checkError ? "active" : ""}  flex justify-center items-center gap-4`}>
           <img src="https://res.cloudinary.com/dvp3nyulf/image/upload/v1710190698/warning.png" alt="" />
           <p>
