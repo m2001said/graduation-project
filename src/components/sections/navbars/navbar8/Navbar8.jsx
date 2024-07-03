@@ -24,7 +24,7 @@ const Navbar8 = ({ template }) => {
   };
 
   return (
-    <nav className="fixed bottom-2 lg:bottom-8 overflow-hidden x-50 w-full z-50">
+    <nav className="fixed bottom-2 lg:bottom-8 nav8 x-50 w-full z-50">
       <div className="container mx-auto">
         <div className="w-full rounded-full max-w-[460px] bg-black/20 h-[96px] backdrop-blur-2xl mx-auto px-5 flex justify-between text-2xl text-white/50 items-center">
           {navbar.links.map((link, index) => (

@@ -1,7 +1,8 @@
 .hero12 {
   width: 100%;
   min-height: 100vh;
-  background: linear-gradient(rgba(8, 0, 58, 0.7), rgba(8, 0, 58, 0.7)), url("https://res.cloudinary.com/di8kjrflu/image/upload/v1719861313/hero_x4v03p.png");
+  background: linear-gradient(rgba(8, 0, 58, 0.7), rgba(8, 0, 58, 0.7)),
+    url("https://res.cloudinary.com/di8kjrflu/image/upload/v1720023586/background1_fwarbl.jpg");
   background-size: cover;
   background-position: center;
   color: var(--website-color-1);

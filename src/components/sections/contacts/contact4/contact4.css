@@ -38,6 +38,8 @@
 .mode4 .detail4 .primaryText4 {
   font-size: 1.1rem;
   font-weight: 600;
+  color: var(--website-4-color-1);
+  font-size: 20px;
 }
 
 .mode4:hover {

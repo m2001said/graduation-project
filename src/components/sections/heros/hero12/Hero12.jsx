@@ -1,6 +1,5 @@
 import React from "react";
 import "./hero12.css";
-// import darkArrow from "https://res.cloudinary.com/duc04fwdb/image/upload/v1719850606/jammal_photos/cela2eggopmbbsfgcylq.png";
 
 const Hero12 = ({ template }) => {
   const hero = template.hero;

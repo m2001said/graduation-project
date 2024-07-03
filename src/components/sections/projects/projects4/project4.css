@@ -32,7 +32,7 @@
   width: 15rem;
 }
 .r-price4 .sign4 {
-  color: var(--orange);
+  color: var(--website-4-color-5);
   padding-right: 2px;
 }
 .r-card4:hover {
@@ -55,14 +55,18 @@
   color: var(--website-4-color-4);
   border: none;
   border-radius: 5px;
-  background-color: var(--white);
+  background-color: var(--website-color-1);
   cursor: pointer;
 }
 .r-buttons4 > :nth-child(1) {
-  background-color: var(--white);
+  background-color: var(--website-4-color-4);
+  font-size: 20px;
+  color: var(--website-4-color-1);
 }
 .r-buttons4 > :nth-child(2) {
   box-shadow: 0px 0px 5px 1px var(--website-4-color-1);
+  background-color: var(--website-4-color-1);
+  font-size: 20px;
 }
 /* project4.css */
 .r-card4 img {
