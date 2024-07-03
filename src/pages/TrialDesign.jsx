@@ -9,8 +9,10 @@ const TrialDesign = ({ componentMapping, FooterComponent, NavbarComponent, HeroC
   const dispatch = useDispatch();
   const url = useLocation();
   const searchParams = new URLSearchParams(url.search);
-  const id = searchParams.get("id");
-  const templateId = id ? id.split("/")[0] : null;
+  const userId = useSelector((state) => state.auth.user._id) || searchParams.get("userId");
+  const templateId = searchParams.get("templateId") || null;
+  console.log("templateId", templateId);
+  console.log("userId", userId);
   const [templateData, setTemplateData] = useState(null);
 
   let state = useSelector((state) => {
@@ -30,12 +32,9 @@ const TrialDesign = ({ componentMapping, FooterComponent, NavbarComponent, HeroC
 
   useEffect(() => {
     const fetchData = async () => {
+      console.log("fetchData in trialDesign");
       try {
-        const res = await axios.get(`https://websitebuilderbackend-production-716e.up.railway.app/page/${templateId}`, {
-          headers: {
-            Authorization: "Bearer " + localStorage.getItem("token"),
-          },
-        });
+        const res = await axios.get(`https://websitebuilderbackend-production-716e.up.railway.app/page/${userId}/${templateId}`);
         setTemplateData(res.data);
         document.documentElement.style = "";
         for (let index = 0; index < res.data.colors?.templateColors.length; index++) {
@@ -70,17 +69,12 @@ const TrialDesign = ({ componentMapping, FooterComponent, NavbarComponent, HeroC
 
   return state.templateInfo.id === template ? (
     <>
-      {/* Render Navbar component */}
       {NavbarComponent && <NavbarComponent template={state} />}
-      {/* Render Hero component */}
       {HeroComponent && <HeroComponent template={state} />}
-      {/* Render components based on mapping */}
-
       {reorderedComponents.map((_component) => {
         const Component = componentMapping[_component];
         return Component && <Component key={_component} template={state} />;
       })}
-      {/* Render footer component */}
       {FooterComponent && <FooterComponent template={state} />}
     </>
   ) : (
