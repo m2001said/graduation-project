@@ -38,7 +38,7 @@ const Hero17 = ({ template }) => {
               <img
                 src={hero.imageUrl}
                 alt=""
-                className="w-full sm:scale-125 sm:translate-y-16"
+                className="w-2/3 sm:scale-125 sm:translate-y-16"
                 onLoad={handleImageLoad}
               />
             </div>

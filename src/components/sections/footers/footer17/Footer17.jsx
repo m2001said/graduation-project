@@ -8,7 +8,7 @@ const Footer17 = ({ template }) => {
 
   return (
     <>
-      <div className="text-[var(--website-17-color-4)] mt-20">
+      <div className="text-[var(--website-17-color-4)] ">
         <div className="container17 bg-gradient-to-b from-[var(--website-17-color-1)] to-[var(--website-17-color-2)] rounded-t-3xl">
           <h1 className="py-10 text-3xl font-bold text-yellow text-center">{footer.title}</h1>
 
