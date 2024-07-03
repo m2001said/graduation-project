@@ -1,28 +1,20 @@
 import React from "react";
-import { useSelector } from "react-redux";
 import "../../../../assets/css/globals10.css";
-import { useLocation } from "react-router";
 
-const Cta10 = () => {
-  const { pathname } = useLocation();
-  const cta = useSelector((state) => {
-    if (pathname.includes("own-page")) {
-      return state.ownTemplate.cta;
-    } else {
-      return state.template10.cta;
-    }
-  });
+const Cta10 = ({template}) => {
+  const cta = template.cta;
+
   return (
     <>
-    {/* cta */}
+      {/* cta */}
       <div
         className="bg-gray-100 dark:bg-gray-800 textColor10-2 py-10"
         style={{
-          backgroundImage: `url(${cta.images[0]})`,
+          backgroundImage: `url(${cta.imgs[0]})`,
           backgroundPosition: "center",
           backgroundRepeat: "no-repeat",
           backgroundSize: "cover",
-          height: "100%",
+          height: "250px",
           width: "100%",
         }}
       >
@@ -31,10 +23,10 @@ const Cta10 = () => {
             <h1 className="text-2xl text-center sm:text-4xl font-semibold ">{cta.title}</h1>
             <div className="flex flex-wrap justify-center items-center">
               <a href="https://www.apple.com/store">
-                <img src={cta.images[1]} alt="" className="max-w-[150px] sm:max-w-[120px] md:max-w-[200px]" />
+                <img src={cta.imgs[1]} alt="" className="max-w-[150px] sm:max-w-[120px] md:max-w-[200px]" />
               </a>
               <a href="https://play.google.com">
-                <img src={cta.images[2]} alt="" className="max-w-[150px] sm:max-w-[120px] md:max-w-[200px]" />
+                <img src={cta.imgs[2]} alt="" className="max-w-[150px] sm:max-w-[120px] md:max-w-[200px]" />
               </a>
             </div>
           </div>

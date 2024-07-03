@@ -6,16 +6,16 @@ const Navbar2 = ({ template }) => {
   const navbar = template.navbar;
 
   return (
-    <nav className="nav2">
-      {navbar.map((item) => (
-        <a key={item.url} href={`#${item.url}`} onClick={() => setActiveNav(`#${item.url}`)} className={activeNav === `#${item.url}` ? "active" : ""}>
-          <img src={item.imgUrl} alt="" />
-
-          {item.url === "home"}
-          {item.url === "services2"}
-          {item.url === "projects2"}
-          {item.url === "testimonials2"}
-          {item.url === "contactUs2"}
+    <nav className="nav2 mb-5">
+      {navbar.links.map((item) => (
+        <a
+          key={item.url}
+          href={item.url}
+          onClick={() => setActiveNav(item.url)}
+          className={activeNav === item.url ? "active" : ""}
+        >
+          <img src={item.imgUrl} alt="" className="nav-icon" />
+          <span className="nav-text">{item.text}</span>
         </a>
       ))}
     </nav>

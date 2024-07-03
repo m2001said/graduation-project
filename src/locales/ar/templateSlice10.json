@@ -1,0 +1,277 @@
+{
+  "templateInfo": {
+    "id": 10,
+    "title": "",
+    "description": "",
+    "imgUrl": ""
+  },
+  "navbar": {
+    "title": "الكتب",
+    "imgUrl": "https://res.cloudinary.com/dmcdea0b9/image/upload/v1706798279/logo_rcge0a.png",
+    "buttonText": "اطلب الآن",
+    "links": [
+      {
+        "title": "الرئيسية",
+        "url": "#"
+      },
+      {
+        "title": "الأكثر مبيعًا",
+        "url": "#"
+      }
+    ],
+    "icons": [
+      "https://res.cloudinary.com/dmcdea0b9/image/upload/v1706806477/cart-shopping-shop-svgrepo-com_oxwiez.svg",
+      "https://res.cloudinary.com/dmcdea0b9/image/upload/v1706805795/dark-mode-button_e9kiqi.png",
+      "https://res.cloudinary.com/dmcdea0b9/image/upload/v1706805773/light-mode-button_ermmq3.png"
+    ]
+  },
+  "hero": {
+    "title": "ستتغير حياته إلى الأبد",
+    "description": "لوريم إيبسوم دولور سيت أميت، كونسيكتيتور أديبيسشينج إيليت، سيد دو إيوسمد تيمبور إنسيديدونت أوت لابور إت دولور ماجنا أليكوا.",
+    "buttonText": "اطلب الآن",
+    "imgs": [
+      "https://res.cloudinary.com/dmcdea0b9/image/upload/v1706805805/blue-pattern_d1mb2e.png",
+      "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707067713/book1_a7epcd.jpg"
+    ],
+    "heros": [
+      {
+        "title": "ستتغير حياته إلى الأبد",
+        "description": "لوريم حياته ستتغير إلى الأبد دولور سيت أميت، كونسيكتيتور أديبيسشينج إيليت، سيد دو إيوسمد تيمبور إنسيديدونت أوت لابور إت دولور ماجنا أليكوا.",
+        "imgUrl": "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707067713/book1_a7epcd.jpg"
+      },
+      {
+        "title": "من هناك",
+        "description": "من هناك لوريم إيبسوم دولور سيت أميت، كونسيكتيتور أديبيسشينج إيليت، سيد دو إيوسمد تيمبور إنسيديدونت أوت لابور إت دولور ماجنا أليكوا.",
+        "imgUrl": "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707067750/book2_fjsnwn.jpg"
+      },
+      {
+        "title": "الولد الضائع",
+        "description": "الولد الضائع، كونسيكتيتور أديبيسشينج إيليت، سيد دو إيوسمد تيمبور إنسيديدونت أوت لابور إت دولور ماجنا أليكوا.",
+        "imgUrl": "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707067757/book3_fkzdr7.jpg"
+      }
+    ]
+  },
+  "services": {
+    "title": "أفضل الكتب",
+    "description": "لوريم إيبسوم، دولور سيت أميت كونسيكتيتور أديبيسشينج إيليت تمييز كونسيكتيتور",
+    "subtitle": "الكتب الشائعة",
+    "icon": "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707083776/Star_lqpaao.svg",
+    "services": [
+      {
+        "title": "حياته",
+        "description": "لوريم إيبسوم دولور سيت أميت، كونسيكتيتور أديبيسشينج إيليت، سيد دو إيوسمد تيمبور إنسيديدونت أوت لابور إت دولور ماجنا أليكوا.",
+        "imgUrl": "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707067713/book1_a7epcd.jpg",
+        "buttonText": "اطلب الآن"
+      },
+      {
+        "title": "من هناك",
+        "description": "لوريم إيبسوم دولور سيت أميت، كونسيكتيتور أديبيسشينج إيليت، سيد دو إيوسمد تيمبور إنسيديدونت أوت لابور إت دولور ماجنا أليكوا.",
+        "imgUrl": "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707067750/book2_fjsnwn.jpg",
+        "buttonText": "اطلب الآن"
+      },
+      {
+        "title": "الولد الضائع",
+        "description": "لوريم إيبسوم دولور سيت أميت، كونسيكتيتور أديبيسشينج إيليت، سيد دو إيوسمد تيمبور إنسيديدونت أوت لابور إت دولور ماجنا أليكوا.",
+        "imgUrl": "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707067757/book3_fkzdr7.jpg",
+        "buttonText": "اطلب الآن"
+      }
+    ]
+  },
+  "features": {
+    "title": "مكتبة في متناول يدك",
+    "description": "لوريم إيبسوم، دولور سيت أميت كونسيكتيتور أديبيسشينج إيليت. إعادة اختراع إيست راشون إكس ألياس كويز ماجني في أوبتيو",
+    "imgUrl": "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707084593/library_ww1bzg.jpg",
+    "features": [
+      {
+        "title": "كتب ذات جودة عالية",
+        "icon": "https://res.cloudinary.com/dmcdea0b9/image/upload/v1709902864/icons8-secure-50_yn2jxx.png"
+      },
+      {
+        "title": "توصيل سريع",
+        "icon": "https://res.cloudinary.com/dmcdea0b9/image/upload/v1709903151/icons8-food-truck-64_lr5ghp.png"
+      },
+      {
+        "title": "طريقة دفع سهلة",
+        "icon": "https://res.cloudinary.com/dmcdea0b9/image/upload/v1709902985/icons8-fast-food-32_kjo9ui.png"
+      },
+      {
+        "title": "احصل على عروض على الكتب",
+        "icon": "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707085765/icons8-food-bar-48_ghpah5.png"
+      }
+    ]
+  },
+  "cta": {
+    "title": "اقرأ الكتب في متناول يدك",
+    "imgs": [
+      "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707090472/board_hqttt2.png",
+      "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707090485/app_store_s6wzhh.png",
+      "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707090481/play_store_nmzfln.png"
+    ]
+  },
+  "team": {
+    "title": "أفضل الكتب",
+    "subtitle": "أفضل الكتب لك",
+    "description": "لوريم إيبسوم دولور سيت أميت، كونسيكتيتور أديبيسشينج إيليت. بيرسبيسشياتيس ديليكتوس أركيتيكتو إيرور نيسكيونت",
+    "buttonText": "عرض جميع الكتب",
+    "members": [
+      {
+        "title": "من هناك",
+        "rating": "5.0",
+        "name": "شخص ما",
+        "imgUrl": "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707067713/book1_a7epcd.jpg",
+        "icon": "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707083776/Star_lqpaao.svg"
+      },
+      {
+        "title": "حياته",
+        "rating": "4.5",
+        "name": "جون",
+        "imgUrl": "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707067750/book2_fjsnwn.jpg",
+        "icon": "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707083776/Star_lqpaao.svg"
+      },
+      {
+        "title": "الأولاد الضائعون",
+        "rating": "4.7",
+        "name": "الفتاة الضائعة",
+        "imgUrl": "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707067757/book3_fkzdr7.jpg",
+        "icon": "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707083776/Star_lqpaao.svg"
+      },
+      {
+        "title": "حياته",
+        "rating": "4.4",
+        "name": "شخص ما",
+        "imgUrl": "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707067750/book2_fjsnwn.jpg",
+        "icon": "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707083776/Star_lqpaao.svg"
+      },
+      {
+        "title": "من هناك",
+        "imgUrl": "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707067713/book1_a7epcd.jpg",
+        "name": "شخص ما",
+        "rating": "4.5",
+        "icon": "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707083776/Star_lqpaao.svg"
+      }
+    ]
+  },
+  "testimonials": {
+    "title": "آراء العملاء",
+    "subtitle": "ما يقوله عملاؤنا",
+    "description": "لوريم إيبسوم دولور سيت أميت، كونسيكتيتور أديبيسشينج إيليت. بيرسبيسشياتيس ديليكتوس أركيتيكتو إيرور نيسكيونت",
+    "testimonials": [
+      {
+        "name": "فيكتور",
+        "description": "لوريم إيبسوم دولور سيت أميت كونسيكتيتور أديبيسشينج إيليت. إعادة اختراع إيست راشون إكس ألياس كويز ماجني في أوبتيو",
+        "imgUrl": "https://picsum.photos/101/101.jpg"
+      },
+      {
+        "name": "ساتيا ناراين",
+        "description": "لوريم إيبسوم دولور سيت أميت كونسيكتيتور أديبيسشينج إيليت. إعادة اختراع إيست راشون إكس ألياس كويز ماجني في أوبتيو",
+        "imgUrl": "https://picsum.photos/102/102.jpg"
+      },
+      {
+        "name": "ساشين تندولكار",
+        "description": "لوريم إيبسوم دولور سيت أميت كونسيكتيتور أديبيسشينج إيليت. إعادة اختراع إيست راشون إكس ألياس كويز ماجني في أوبتيو",
+        "imgUrl": "https://picsum.photos/103/103.jpg"
+      }
+    ]
+  },
+  "footer": {
+    "title": "متجر الكتب",
+    "description": "لوريم إيبسوم دولور سيت أميت كونسيكتيتور. لوريم إيبسوم دولور سيت أميت كونسيكتيتور أديبيسشينج إيليت. بوسيموس، وولبوتات.",
+    "imgUrl": "https://res.cloudinary.com/dmcdea0b9/image/upload/v1706798279/logo_rcge0a.png",
+    "contacts": [
+      {
+        "value": "نويدا، أوتار براديش",
+        "icon": "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707781362/icons8-location-arrow-24_mwjabu.png"
+      },
+      {
+        "value": "+20 123456789",
+        "icon": "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707781365/icons8-mobile-navigator-50_xvqski.png"
+      }
+    ],
+    "medias": [
+      {
+        "icon": "https://res.cloudinary.com/duc04fwdb/image/upload/v1701809141/templates/template_one/facebook_td263x.svg",
+        "url": "https://facebook.com"
+      },
+      {
+        "icon": "https://res.cloudinary.com/duc04fwdb/image/upload/v1701809142/templates/template_one/x_yp3y5n.svg",
+        "url": "https://x.com"
+      },
+      {
+        "icon": "https://res.cloudinary.com/duc04fwdb/image/upload/v1701809142/templates/template_one/linkedin_itbvp5.svg",
+        "url": "https://linkedin.com"
+      },
+      {
+        "icon": "https://res.cloudinary.com/duc04fwdb/image/upload/v1701809141/templates/template_one/instagram_dlrab9.svg",
+        "url": "https://instagram.com"
+      }
+    ],
+    "footerSections": [
+      {
+        "title": "روابط مهمة",
+        "links": [
+          {
+            "title": "الرئيسية",
+            "url": "#"
+          },
+          {
+            "title": "حول",
+            "url": "#"
+          },
+          {
+            "title": "اتصل بنا",
+            "url": "#"
+          },
+          {
+            "title": "المدونة",
+            "url": "#"
+          }
+        ]
+      },
+      {
+        "title": "روابط",
+        "links": [
+          {
+            "title": "الرئيسية",
+            "url": "#"
+          },
+          {
+            "title": "حول",
+            "url": "#"
+          },
+          {
+            "title": "اتصل بنا",
+            "url": "#"
+          },
+          {
+            "title": "المدونة",
+            "url": "#"
+          }
+        ]
+      },
+      {
+        "title": "الموقع",
+        "links": [
+          {
+            "title": "الرئيسية",
+            "url": "#"
+          },
+          {
+            "title": "حول",
+            "url": "#"
+          },
+          {
+            "title": "اتصل بنا",
+            "url": "#"
+          },
+          {
+            "title": "المدونة",
+            "url": "#"
+          }
+        ]
+      }
+    ]
+  },
+  "colors": {
+    "templateColors": ["#fff", "#cda274", "#292f36", "#f4f0ec", "#777777"]
+  }
+}

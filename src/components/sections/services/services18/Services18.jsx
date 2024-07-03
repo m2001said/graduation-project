@@ -1,16 +1,9 @@
 import React from "react";
-import { useSelector } from "react-redux";
-import { useLocation } from "react-router";
 
-const Services = () => {
-  const { pathname } = useLocation();
-  const services = useSelector((state) => {
-    if (pathname.includes("own-page")) {
-      return state.ownTemplate.services;
-    } else {
-      return state.template18.services;
-    }
-  });
+
+const Services = ({template}) => {
+const services = template.services;
+
   return (
     <>
       <span id="about"></span>
@@ -30,7 +23,7 @@ const Services = () => {
                 </div>
                 <h1 className="text-xl font-bold">{data.name}</h1>
                 <p>{data.description}</p>
-                <a href={data.url} className="inline-block text-lg font-semibold py-3 text-[--website-18-color-1] group-hover:text-black duration-300">
+                <a href={data.linkText} className="inline-block text-lg font-semibold py-3 text-[--website-18-color-1] group-hover:text-black duration-300">
                   {data.buttonText}
                 </a>
               </div>

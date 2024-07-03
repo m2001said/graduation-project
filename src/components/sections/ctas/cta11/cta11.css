@@ -6,7 +6,7 @@
 }
 
 .timeline11 {
-  background-color: var(--container-color11);
+  background-color: var(--website-11-color-2);
   padding: 1.875rem;
   border-radius: var(--border-radius);
   position: relative;
@@ -29,7 +29,7 @@
   content: "";
   width: 1px;
   height: 100%;
-  background-color: var(--first-color11);
+  background-color: var(--website-11-color-1);
   position: absolute;
   left: 0.25rem;
   top: 0;
@@ -37,13 +37,13 @@
 
 .timeline__icon11 {
   width: 25px;
-  color: var(--first-color11);
-  background-color: var(--container-color11);
+  color: var(--website-11-color-1);
+  background-color: var(--website-11-color-2);
   padding: 0.4375rem 0;
 }
 
 .timeline__data11 {
-  color: var(--move11);
+  color: var(--website-11-color-4);
   font-size: var(--small-font-size);
 }
 

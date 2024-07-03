@@ -10,32 +10,30 @@ import Loader from "../components/Loader/Loader";
 import Confetti from "react-confetti";
 import { templateActions1 } from "../features/templateData/templateSlice";
 import { CopyToClipboard } from "react-copy-to-clipboard";
+import aiPoster from "../assets/images/mainPageAssets/hero-min.svg";
+
 import axios from "axios";
 import "../globals.css";
+import { useTranslation } from "react-i18next";
+import BaseModal from "../components/mainPage/modal/BaseModal/BaseModal";
+
 const YourWebsites = () => {
-  const websitesActions = Array.from({ length: 17 }, (_, i) => require(`../features/templateData/templateSlice${i + 2}`)[`templateActions${i + 2}`]);
-  websitesActions.unshift(templateActions1);
+  const { i18n, t } = useTranslation();
+  const language = i18n.language;
+  const [isModalOpen, setIsModalOpen] = useState(false);
   const dispatch = useDispatch();
   const templates = useSelector((state) => state.templates.templates);
   const status = useSelector((state) => state.templates.status);
   const error = useSelector((state) => state.templates.error);
   const [isCelebrityBirthday, setIsCelebrityBirthday] = useState(false);
-  const [chooseDomain, setChooseDomain] = useState(false);
-  const [domain, setDomain] = useState("");
   const [copied, setCopied] = useState(false);
-  const [show, setShow] = useState(false);
   const [url, setUrl] = useState("");
   const [isLoading, setIsLoading] = useState(false);
+  // const [btnTxt, setBtnTxt] = useState(true);
   const navigate = useNavigate();
+
   const handleCopy = () => {
     setCopied(true);
-    setTimeout(() => {
-      setIsCelebrityBirthday(false);
-      setCopied(false);
-      setChooseDomain(false);
-      setShow(false);
-      setDomain("");
-    }, 2000);
   };
   useEffect(() => {
     if (status === "idle") {
@@ -101,9 +99,9 @@ const YourWebsites = () => {
           Authorization: "Bearer " + localStorage.getItem("token"),
         },
       });
-      dispatch(websitesActions[templateNum - 1].updateSchema(res.data));
+      dispatch(templateActions1.updateSchema(res.data));
       setIsLoading(false);
-      navigate(`/edit-zweb${templateNum}?id=${templateId}`);
+      navigate(`/${i18n.language}/edit-zweb${templateNum}?id=${templateId}`);
       document.documentElement.style = "";
       for (let index = 0; index < res.data.colors.templateColors.length; index++) {
         document.documentElement.style.setProperty(`--website-color-${index + 1}`, res.data.colors.templateColors[index]);
@@ -112,16 +110,43 @@ const YourWebsites = () => {
       console.error("Error fetching template data:", error);
     }
   };
-
+  const toggleModal = () => {
+    setIsModalOpen(!isModalOpen);
+    setIsCelebrityBirthday(!isCelebrityBirthday);
+  };
   return isLoading ? (
     <div className="designs-section flex items-center justify-center">
       <Loader />
     </div>
   ) : (
     <>
-      {chooseDomain && (
-        <>
-          <div
+      {/* {chooseDomain && (
+        <> */}
+      {isModalOpen && (
+        <BaseModal poster={aiPoster} toggleModal={toggleModal}>
+          <div className="max-w-md mx-auto bg-white shadow-lg rounded-lg overflow-hidden">
+            <div className="p-4">
+              <div className="flex items-center justify-between bg-gray-100 p-2 rounded-md mb-2">
+                <input readOnly className="flex-grow bg-transparent border-none focus:outline-none" type="text" value={url} />
+                <CopyToClipboard text={url} onCopy={handleCopy}>
+                  <button className="ml-2 py-1 px-3 bg-indigo-500 text-white rounded-md focus:outline-none" onClick={handleCopy}>
+                    {copied ? <span>Copied!</span> : <span>Copy</span>}
+                  </button>
+                </CopyToClipboard>
+              </div>
+              <p className="text-gray-500 text-sm">Click the Copy button to copy the URL.</p>
+              <p className="text-gray-800 mt-5 p-1 text-sm ">
+                For custom domains, please reach out to{" "}
+                <a className="text-blue-500 hover:underline hover:text-blue-800" href="/support">
+                  Support
+                </a>
+                .
+              </p>
+            </div>
+          </div>
+        </BaseModal>
+      )}
+      {/* <div
             className="fixed top-0 left-0 w-full h-full bg-gray-900 opacity-60 z-40 "
             id="confetti"
             onClick={() => {
@@ -183,16 +208,16 @@ const YourWebsites = () => {
                 </div>
               )}
             </div>
-          </div>
-        </>
-      )}
+          </div> */}
+      {/* </>
+      )} */}
       <div className="designs-section">
         <div className="container mx-auto px-4  py-4">
-          <h1 className="text-3xl font-bold tracking-tighter mb-4 text-center text-white sm:text-4xl md:text-5xl lg:text-6xl/none">Your Websites</h1>
+          <h1 className="text-3xl font-bold tracking-tighter mb-4 text-center text-white sm:text-4xl md:text-5xl lg:text-6xl/none"> {t("WEBSITES.TITLE")}</h1>
           {status === "succeeded" && templates.length >= 1 ? (
             <>
               {isCelebrityBirthday && <Confetti width={window.innerWidth} height={window.innerHeight} />}
-              <p className="mx-auto max-w-[700px] text-gray-200 md:text-xl text-center">Discover the incredible websites you've created.</p>
+              <p className="mx-auto max-w-[700px] text-gray-200 md:text-xl text-center"> {t("WEBSITES.DESCRIPTION")}</p>
               <div className="designs-container flex flex-wrap gap-8 justify-center">
                 {versions(templates).map((template, index) => (
                   <div className="websites design-card rounded-lg overflow-hidden shadow-lg flex flex-column  relative" key={template._id} id={template._id}>
@@ -221,20 +246,28 @@ const YourWebsites = () => {
                     </div>
 
                     <div className="design-info px4 py-2">
-                      <h2 className="designs-title font-bold text-xl text-center font-semibold">{template.templateInfo.title}</h2>
+                      <h2 className="designs-title font-bold text-xl text-center">{template.templateInfo.title}</h2>
                       <p className="designs-description text-gray-600 text-sm  text-center ">{template.templateInfo.description}</p>
                     </div>
                     <div className="button-container px-4 flex justify-between gap-4">
-                      <button
-                        className="flex justify-center gap-4 items-center w-full py-2 Build-button design-btn"
-                        onClick={() => {
-                          setUrl(`http://localhost:3000/zweb${template.templateInfo.id}?id=${template._id}/${domain}`);
-                          setChooseDomain(true);
-                        }}
-                      >
-                        <span>Deploy</span>
-                        <img src={build} alt="build-icon" className="btn-icon" />
-                      </button>
+                      {/* {btnTxt ? ( */}
+                        <button
+                          className="flex justify-center gap-4 items-center w-full py-2 Build-button design-btn"
+                          onClick={() => {
+                            setUrl(`http://localhost:3000/${language}/zweb${template.templateInfo.id}?id=${template._id}`);
+                            toggleModal();
+                            // setBtnTxt(!btnTxt);
+                          }}
+                        >
+                          <span>Deploy</span>
+                          <img src={build} alt="build-icon" className="btn-icon" />
+                        </button>
+                      {/* ) : (
+                        <Link to={`http://localhost:3000/${language}/zweb${template.templateInfo.id}?id=${template._id}`} className="flex justify-center gap-4 items-center w-full py-2 Build-button design-btn">
+                          <span>Preview</span>
+                          <img src={build} alt="build-icon" className="btn-icon" />
+                        </Link>
+                      )} */}
                       <button
                         className="Preview-button flex justify-center gap-4 items-center  w-full py-2 design-btn"
                         onClick={() => {
@@ -252,9 +285,9 @@ const YourWebsites = () => {
           ) : (
             <div>
               <p className="mx-auto max-w-[700px] text-gray-200 md:text-xl text-center">
-                No Websites has been created by you{" "}
-                <Link to="/designs" className="text-gray-400">
-                  Create One
+                {t("WEBSITES.NO_WEBSITES")}
+                <Link to={`/${language}/designs`} className="text-gray-400">
+                  {t("WEBSITES.CREATE")}
                 </Link>
               </p>
             </div>

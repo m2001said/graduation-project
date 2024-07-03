@@ -55,6 +55,18 @@ body {
   margin: 0;
 }
 
+/* RTL Styles */
+.rtl {
+  direction: rtl;
+  text-align: right;
+}
+
+/* LTR Styles */
+.ltr {
+  direction: ltr;
+  text-align: left;
+}
+
 html {
   scroll-behavior: smooth;
 }

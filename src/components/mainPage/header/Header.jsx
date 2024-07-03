@@ -4,10 +4,12 @@ import "aos/dist/aos.css";
 import "./header.css";
 import { Link } from "react-router-dom";
 import hero from "../../../assets/images/mainPageAssets/hero-min.svg";
-import { useSelector } from 'react-redux';
+import { useSelector } from "react-redux";
+import { useTranslation } from "react-i18next";
 
 const Header = ({ toggleModal }) => {
-  const authState = useSelector(state => state.auth);
+  const { t, i18n } = useTranslation();
+  const authState = useSelector((state) => state.auth);
 
   useEffect(() => {
     AOS.init({
@@ -20,26 +22,19 @@ const Header = ({ toggleModal }) => {
     <>
       <header className="main-header">
         <div className="container mx-auto px-4">
-          <div className="info-section flex gap-5 justify-between items-center py-8" >
-            <div className="hero-info" data-aos="fade-right" data-aos-duration="1000" >
-              <h1 className="info-title"> welcome to ZWEB where your websites dreams take flight with ai</h1>
-              <p className="info-description">
-                At Zagazig Easy Website Builder, we’re pioneering a new era in the design process. Our intelligent AI website builder turns your digital vision
-                into reality in just a few clicks. From abstract concepts to fully developed websites, the future of web design starts here.
-              </p>
-              {
-                authState.status === "succeeded" ? (
-                  <Link to={"/designs"}>
-                    <button className="info-btn">
-                      Generate your website
-                    </button>
-                  </Link>
-                ) : (
-                  <button className="info-btn" onClick={toggleModal}>
-                    Generate your website
-                  </button>
-                )
-              }
+          <div className="info-section flex gap-5 justify-between items-center py-8">
+            <div className="hero-info" data-aos="fade-right" data-aos-duration="1000">
+              <h1 className="info-title"> {t("HERO.TITLE")}</h1>
+              <p className="info-description"> {t("HERO.DESCRIPTION")} </p>
+              {authState.status === "succeeded" ? (
+                <Link to={`/${i18n.language}/designs`}>
+                  <button className="info-btn"> {t("HERO.BUTTONTEXT")}</button>
+                </Link>
+              ) : (
+                <button className="info-btn" onClick={toggleModal}>
+                  {t("HERO.BUTTONTEXT")}
+                </button>
+              )}
             </div>
             <div className="main-hero-image">
               <img src={hero} alt="hero" />

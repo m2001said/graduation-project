@@ -5,24 +5,18 @@ import { useLocation, useNavigate } from "react-router";
 import { fetchTemplates } from "../../../features/templates/templatesSlice";
 import { useSearchParams } from "react-router-dom";
 import { initialState, templateActions1 } from "../../../features/templateData/templateSlice";
+import { useTranslation } from "react-i18next";
 
 const TopSide = ({ schema }) => {
-  const websitesActions = Array.from({ length: 17 }, (_, i) => require(`../../../features/templateData/templateSlice${i + 2}`)[`templateActions${i + 2}`]);
-  const initalStateWebsites = Array.from({ length: 17 }, (_, i) => require(`../../../features/templateData/templateSlice${i + 2}`).initialState);
-  websitesActions.unshift(templateActions1);
-  initalStateWebsites.unshift(initialState);
+  const { i18n } = useTranslation();
   const { pathname } = useLocation();
-  const regex = /\d+/;
-  const templateNum = pathname.match(regex)[0];
-  console.log(websitesActions)
-  console.log(templateNum)
   const [viewportWidth, setViewportWidth] = useState(window.innerWidth);
   const screen = useSelector((state) => state.screen);
   const dispatch = useDispatch();
   const token = localStorage.getItem("token");
   const [isGenerating, setIsGenerating] = useState(false);
   const [waitingMsg, setWaitingMsg] = useState("");
-  const navigate = useNavigate(); // Initialize navigate hook
+  const navigate = useNavigate();
   let [searchParams] = useSearchParams();
   const id = searchParams.get("id");
   useEffect(() => {
@@ -67,8 +61,8 @@ const TopSide = ({ schema }) => {
 
       setIsGenerating(false);
       dispatch(fetchTemplates());
-      navigate("/websites");
-      dispatch(websitesActions[templateNum - 1].updateSchema(initalStateWebsites[templateNum - 1]));
+      navigate(`/${i18n.language}/websites`);
+      dispatch(templateActions1.updateSchema(initialState));
     } catch (error) {
       setIsGenerating(false);
       console.error("Error:", error);
@@ -96,9 +90,9 @@ const TopSide = ({ schema }) => {
     },
   ];
 
-  const handleUpdateSchema = () => {
-    dispatch(websitesActions[templateNum - 1].updateSchema(initalStateWebsites[templateNum - 1]));
-  };
+  // const handleUpdateSchema = () => {
+  //   dispatch(websitesActions[templateNum - 1].updateSchema(initalStateWebsites[templateNum - 1]));
+  // };
   return isGenerating ? (
     <div className="fixed top-0 left-0 w-full h-full bg-gray-900 opacity-70 z-50 flex items-center justify-center">
       <div className="p-5 bg-red-900 rounded-lg shadow-lg">
@@ -119,12 +113,12 @@ const TopSide = ({ schema }) => {
         );
       })}
       <div className="absolute right-6">
-        <div className="flex">
+        {/* <div className="flex"> */}
           <button className="bg-blue-500 px-4 rounded-lg h-10 flex-center" onClick={handleSubmit}>
             {pathname.includes("edit-zweb") ? "Update" : "Save"}
           </button>
-          <button onClick={handleUpdateSchema}>Update Schema</button>
-        </div>
+          {/* <button onClick={handleUpdateSchema}>Update Schema</button>
+        </div> */}
       </div>
     </div>
   );

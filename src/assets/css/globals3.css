@@ -1,24 +1,6 @@
 /* add here your website colors with start  --website-3   */
 
 :root {
-  /* these are temporary colors , you should change it  */
-  /* --website-3-color-1: #fff;
-  --website-3-color-2: #cda274;
-  --website-3-color-3: #292f36;
-  --website-3-color-4: #f4f0ec;
-  --website-3-hover-1: #f4f0ec; */
-
-  /* and add your */
-  /* --lightgray3: #d9d9d9;
-  --gray3: #9c9c9c;
-  --balck3: #000;
-  --orange3: #f48915;
-  --darkGrey3: #464d53;
-  --caloryCard3: #656565;
-  --planCard3: lineِar-gradient(210.41deg, #fa5042 1.14%, #ffa739 100.75%);
-  --planCard13: linear-gradient(left to right, #fa5042 1.14%, #ffa739 100.75%);
-  --darkOrange3: rgba(253, 120, 43, 0.69);
-  --appColor3: #3c3f45; */
   --website-3-color-1: #f48915;
   --website-3-color-2: #3c3f45;
   --website-3-color-3: linear-gradient(210.41deg, #fa5042 1.14%, #ffa739 100.75%);

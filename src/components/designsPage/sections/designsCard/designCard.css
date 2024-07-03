@@ -34,12 +34,15 @@ h2.designs-title {
   width: 100%;
 }
 
-.design-btn:first-child {
+.ltr .design-btn:first-child {
   border-right: solid 1px #22222247;
+}
+.rtl .design-btn:first-child {
+  border-left: solid 1px #22222247;
 }
 
 .button-container {
-  border-top: solid 1px #22222247;
+  /* border-top: solid 1px #22222247; */
   margin-top: 15px;
   font-weight: 700;
 }

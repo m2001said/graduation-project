@@ -1,28 +1,14 @@
 import React,{useEffect} from 'react';
 import "./teams5.css";
-import { useSelector } from "react-redux";
-import { useLocation } from 'react-router';
-
-// import Aos from 'aos'
-// import "aos/dist/aos.css"
 
 
 
-const Teams5 = () => {
 
-  // useEffect(()=>{
-  //   Aos.init({duration: 2000})
-  // },[])
+const Teams5 = ({template}) => {
+   const team = template.team;
 
 
-  const { pathname } = useLocation();
-  const team = useSelector((state) => {
-    if (pathname.includes("own-page")) {
-      return state.ownTemplate.team;
-    } else {
-      return state.template5.team;
-    }
-  });
+
   return (
     <div className="teams5 design5 design5-container design5-section">
       <div className="teams5-mainSectiom">
@@ -37,7 +23,7 @@ const Teams5 = () => {
                 <img src={Card.travelerImage} className="travelerImage" alt="" />
               </div>
               <div className="travelerName">
-                <span>{Card.travelerName}</span>
+                <span>{Card.name}</span>
                 <p>{Card.socialLink}</p>
               </div>
             </div>

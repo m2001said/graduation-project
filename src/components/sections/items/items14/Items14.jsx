@@ -1,16 +1,15 @@
 import React from "react";
 import "./items14.css";
-import { useSelector } from "react-redux";
 
-const Items14 = () => {
-  const { items } = useSelector((state) => state.template14);
+const Items14 = ({ template }) => {
+  const items = template.items;
 
   return (
     <div className="py-10 bg-[--website-14-color-6] dark:bg-gray-900">
       <div className="container14">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {items.items.map((item, index) => (
-            <div className={`item14-card${index} py-10 pl-5 text-white rounded-3xl relative h-[320px] flex items-end `}>
+            <div key={index} className={`item14-card${index} py-10 pl-5 text-white rounded-3xl relative h-[320px] flex items-end `}>
               <div>
                 <div className="mb-4">
                   <p className="mb-[2px] text-gray-200">{items.title}</p>

@@ -1,24 +1,16 @@
 import React, { useState } from "react";
-import { useSelector } from "react-redux";
 import "../../../../assets/css/globals10.css";
-import { useLocation } from "react-router";
 
-const Hero10 = ({ handleOrderPopup }) => {
-  const { pathname } = useLocation();
-  const hero = useSelector((state) => {
-    if (pathname.includes("own-page")) {
-      return state.ownTemplate.hero;
-    } else {
-      return state.template10.hero;
-    }
-  });
+const Hero10 = ({ template }) => {
+  const hero = template.hero;
+
   const [id, setId] = useState(0);
   return (
     <>
       <div
         className="min-h-[550px] sm:min-h-[650px] bg-[--graybg] flex justify-center items-center dark:bg-gray-950 dark:text-white duration-200"
         style={{
-          backgroundImage: `url(${hero.images[0]})`,
+          backgroundImage: `url(${hero.imgs[0]})`,
           backgroundPosition: "center",
           backgroundRepeat: "no-repeat",
           backgroundSize: "cover",
@@ -32,9 +24,7 @@ const Hero10 = ({ handleOrderPopup }) => {
               <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold">{hero.heros[id].title}</h1>
               <p className="text-sm mt-4">{hero.heros[id].description}</p>
               <div>
-                <button onClick={handleOrderPopup} className="btnBg10 btnTxt10 px-4 py-2 rounded-full mt-4 hover:scale-105 duration-200 ">
-                  {hero.buttonText}
-                </button>
+                <button className="btnBg10 btnTxt10 px-4 py-2 rounded-full mt-4 hover:scale-105 duration-200 ">{hero.buttonText}</button>
               </div>
             </div>
             {/* image sec */}
@@ -47,6 +37,7 @@ const Hero10 = ({ handleOrderPopup }) => {
               <div className="flex lg:flex-col  overflow-y-scroll lg:top-1/2 lg:-translate-y-1/2 lg:py-2 justify-start gap-4 absolute -bottom-[40px] lg:-right-1 bg-white rounded-full">
                 {hero.heros.map((data, index) => (
                   <img
+                    key={index}
                     src={data.imgUrl}
                     alt=""
                     className="w-[80px] h-[100px] object-contain inline-block hover:scale-110 duration-200"

@@ -34,7 +34,7 @@ const BaseModal = ({ poster, children, toggleModal }) => {
         <div className="modal-poster flex justify-center items-center">
           <img src={poster} alt="modal-poster" />
         </div>
-        <div className="modal-content flex justify-between">{children}</div>
+        <div className="modal-content flex justify-around">{children}</div>
       </div>
     </div>
   );

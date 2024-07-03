@@ -1,20 +1,12 @@
 import React from "react";
-import { useSelector } from "react-redux";
 import "../../../../assets/css/globals10.css";
-import { useLocation } from "react-router";
 
-const Teams10 = () => {
-  const { pathname } = useLocation();
-  const team = useSelector((state) => {
-    if (pathname.includes("own-page")) {
-      return state.ownTemplate.team;
-    } else {
-      return state.template10.team;
-    }
-  });
+const Teams10 = ({ template }) => {
+  const team = template.team;
+
   return (
     <>
-      <div className="pt-10 bg-[--white10] dark:bg-gray-900">
+      <div className="pt-10 bg-[--white10] dark:bg-gray-900 dark:text-white">
         <div className="items-center p-7 sm:p-30">
           {/* head sec */}
           <div className="text-center mb-10 max-w-[600px] mx-auto">
@@ -25,12 +17,12 @@ const Teams10 = () => {
           {/* card sec */}
           <div>
             <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 place-items-center gap-5">
-              {team.members.map((data) => (
-                <div className="space-y-3">
+              {team.members.map((data, index) => (
+                <div className="space-y-3" key={index}>
                   <img src={data.imgUrl} alt="" className="h-[220px] w-[150px] object-cover rounded-md " />
                   <div>
                     <h2 className="font-semibold">{data.title}</h2>
-                    <p className="text-sm text-gray-700 dark:text-gray-400">{data.author}</p>
+                    <p className="text-sm text-gray-700 dark:text-gray-400">{data.name}</p>
                     <div className="flex items-center gap-1">
                       <img src={data.icon} alt="" className="w-6" />
                       <span>{data.rating}</span>

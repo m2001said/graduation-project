@@ -1,24 +1,35 @@
-// TrialDesign.jsx (generic)
 import React, { useEffect, useState } from "react";
-import { useSelector } from "react-redux";
 import { useLocation } from "react-router";
 import axios from "axios";
 import Loader from "../components/Loader/Loader";
+import { useDispatch, useSelector } from "react-redux";
+import { fetchInitialTemplate } from "../features/templateData/templateSlice";
 
 const TrialDesign = ({ componentMapping, FooterComponent, NavbarComponent, HeroComponent, template }) => {
+  const dispatch = useDispatch();
   const url = useLocation();
   const searchParams = new URLSearchParams(url.search);
   const id = searchParams.get("id");
   const templateId = id ? id.split("/")[0] : null;
   const [templateData, setTemplateData] = useState(null);
+
   let state = useSelector((state) => {
     if (url.pathname.includes("own-page")) {
       return state.ownTemplate;
     } else {
-      return state[template];
+      return state.template1;
     }
   });
+
   useEffect(() => {
+    if (url.pathname.includes("preview") || url.pathname.includes("build")) {
+      dispatch(fetchInitialTemplate(template));
+      console.log(`state in TrialDesign after fetchInitialTemplate${template}`, state);
+    }
+  }, [dispatch]);
+
+  useEffect(() => {
+    console.log('herrrrrrrrrrrrrrrrrrre')
     const fetchData = async () => {
       try {
         const res = await axios.get(`https://websitebuilderbackend-production-716e.up.railway.app/page/${templateId}`, {
@@ -26,10 +37,11 @@ const TrialDesign = ({ componentMapping, FooterComponent, NavbarComponent, HeroC
             Authorization: "Bearer " + localStorage.getItem("token"),
           },
         });
+        console.log(res.data)
         setTemplateData(res.data);
         document.documentElement.style = "";
-        for (let index = 0; index < res.data.colors.templateColors.length; index++) {
-          document.documentElement.style.setProperty(`--website-color-${index + 1}`, res.data.colors.templateColors[index]);
+        for (let index = 0; index < res.data.colors?.templateColors.length; index++) {
+          document.documentElement.style.setProperty(`--website-color-${index + 1}`, res.data.colors?.templateColors[index]);
         }
       } catch (error) {
         console.error("Error fetching template data:", error);
@@ -47,8 +59,8 @@ const TrialDesign = ({ componentMapping, FooterComponent, NavbarComponent, HeroC
       }
     } else {
       document.documentElement.style = "";
-      for (let index = 0; index < state.colors.templateColors.length; index++) {
-        document.documentElement.style.setProperty(`--website-color-${index + 1}`, state.colors.templateColors[index]);
+      for (let index = 0; index < state.colors?.templateColors.length; index++) {
+        document.documentElement.style.setProperty(`--website-color-${index + 1}`, state.colors?.templateColors[index]);
       }
     }
   }, []);
@@ -57,8 +69,7 @@ const TrialDesign = ({ componentMapping, FooterComponent, NavbarComponent, HeroC
     state = templateData;
   }
   const reorderedComponents = state && Object.keys(state);
-
-  console.log(state)
+//  return state.templateInfo.id === template ? (
   return state ? (
     <>
       {/* Render Navbar component */}

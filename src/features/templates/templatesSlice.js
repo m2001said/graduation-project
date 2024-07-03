@@ -8,6 +8,7 @@ export const fetchTemplates = createAsyncThunk("templates/fetchTemplates", async
       Authorization: "Bearer " + localStorage.getItem("token"),
     },
   });
+  console.log(response.data.pages)
   return response.data.pages;
 });
 export const deleteTemplate = createAsyncThunk("templates/deleteTemplate", async (templateId, thunkAPI) => {

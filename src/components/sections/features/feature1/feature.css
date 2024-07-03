@@ -10,9 +10,14 @@
 }
 
 .feature-content1 {
-  text-align: left;
   gap: 33px;
   width: 472px;
+}
+.ltr .feature-content1 {
+  text-align: left;
+}
+.rtl .feature-content1 {
+  text-align: right;
 }
 .feature-img-background1 {
   border-top-right-radius: 326.5px;

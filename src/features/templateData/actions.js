@@ -5,6 +5,7 @@ function capitalizeFirstLetter(string) {
 }
 
 export const updateSchema = (state, action) => {
+  console.log("action.payload in updateSchema", action.payload);
   delete action.payload.owner;
   delete action.payload._id;
   delete action.payload.__v;

@@ -1,0 +1,221 @@
+{
+  "templateInfo": {
+    "id": 2,
+    "title": "محفظة تطوير الويب",
+    "description": "محفظة تطوير الويب",
+    "imgUrl": "/static/media/design2.4d950d7e86b76ce66e28.jpg",
+    "ahmed": "أحمد"
+  },
+  "navbar": {
+    "links": [
+      {
+        "imgUrl": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1703134252/home-1-svgrepo-com_axgckp.svg",
+        "url": "hero2"
+      },
+      {
+        "imgUrl": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1703134253/info-circle-svgrepo-com_a6q6z3.svg",
+        "url": "services2"
+      },
+      {
+        "imgUrl": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1703134396/project-svgrepo-com_qjvqow.svg",
+        "url": "projects2"
+      },
+      {
+        "imgUrl": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1703134251/customer-testimonial-svgrepo-com_vdnnre.svg",
+        "url": "testimonials2"
+      },
+      {
+        "imgUrl": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1703134254/message-circle-lines-alt-svgrepo-com_iotcwk.svg",
+        "url": "contactUs2"
+      }
+    ]
+  },
+  "hero": {
+    "title": "تعرف علينا",
+    "subtitle": "البطل",
+    "description": "لوريم إيبسوم هو نص شكلي (بمعنى أن الغاية هي الشكل وليس المحتوى) ويُستخدم في صناعات المطابع ودور النشر. كان لوريم إيبسوم ولا يزال المعيار للنص الشكلي منذ القرن الخامس عشر عندما قامت مطبعة مجهولة بتجميع مجموعة من النصوص",
+    "imgUrl": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1703142400/me-about_pobewn.jpg",
+    "heros": [
+      {
+        "icon": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1703134251/book-svgrepo-com_f62qre.svg",
+        "title": "الخبرة",
+        "description": "3+ سنوات من العمل"
+      },
+      {
+        "icon": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1703134396/users-svgrepo-com_acna7b.svg",
+        "title": "العملاء",
+        "description": "300+ عميل حول العالم"
+      },
+      {
+        "icon": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1703134396/project-svgrepo-com_qjvqow.svg",
+        "title": "المشاريع",
+        "description": "80+ مشروع مكتمل"
+      }
+    ]
+  },
+  "testimonials": {
+    "title": "ماذا يعتقد الناس عنا",
+    "subtitle": "الشهادات",
+    "testimonials": [
+      {
+        "imgUrl": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1703134021/avatar4_tn7dyv.jpg",
+        "name": "إرنست أتشيفر",
+        "opinion": "لوريم إيبسوم هو نص شكلي (بمعنى أن الغاية هي الشكل وليس المحتوى) ويُستخدم في صناعات المطابع ودور النشر. كان لوريم إيبسوم ولا يزال المعيار للنص الشكلي منذ القرن الخامس عشر عندما قامت مطبعة مجهولة بتجميع مجموعة من النصوص"
+      },
+      {
+        "imgUrl": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1703134020/avatar3_pbztwn.jpg",
+        "name": "إرنست أتشيفر",
+        "opinion": "لوريم إيبسوم هو نص شكلي (بمعنى أن الغاية هي الشكل وليس المحتوى) ويُستخدم في صناعات المطابع ودور النشر. كان لوريم إيبسوم ولا يزال المعيار للنص الشكلي منذ القرن الخامس عشر عندما قامت مطبعة مجهولة بتجميع مجموعة من النصوص"
+      },
+      {
+        "imgUrl": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1703134020/avatar2_lgwr3o.jpg",
+        "name": "إرنست أتشيفر",
+        "opinion": "لوريم إيبسوم هو نص شكلي (بمعنى أن الغاية هي الشكل وليس المحتوى) ويُستخدم في صناعات المطابع ودور النشر. كان لوريم إيبسوم ولا يزال المعيار للنص الشكلي منذ القرن الخامس عشر عندما قامت مطبعة مجهولة بتجميع مجموعة من النصوص"
+      },
+      {
+        "imgUrl": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1703134020/avatar1_g7wm1r.jpg",
+        "name": "إرنست أتشيفر",
+        "opinion": "لوريم إيبسوم هو نص شكلي (بمعنى أن الغاية هي الشكل وليس المحتوى) ويُستخدم في صناعات المطابع ودور النشر. كان لوريم إيبسوم ولا يزال المعيار للنص الشكلي منذ القرن الخامس عشر عندما قامت مطبعة مجهولة بتجميع مجموعة من النصوص"
+      }
+    ]
+  },
+  "projects": {
+    "title": "أعمالي الأخيرة",
+    "description": "المشاريع",
+    "projects": [
+      {
+        "imgUrl": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1703134068/portfolio3_rzhjvk.jpg",
+        "title": "عنصر المشاريع 1",
+        "url": "https://github.com",
+        "link": "https://dribbble.com/Alien_pixels"
+      },
+      {
+        "imgUrl": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1703134049/portfolio4_ibgd9o.jpg",
+        "title": "عنصر المشاريع 2",
+        "url": "https://github.com",
+        "link": "https://dribbble.com/Alien_pixels"
+      },
+      {
+        "imgUrl": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1703134068/portfolio3_rzhjvk.jpg",
+        "title": "عنصر المشاريع 3",
+        "url": "https://github.com",
+        "link": "https://dribbble.com/Alien_pixels"
+      },
+      {
+        "imgUrl": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1703134049/portfolio4_ibgd9o.jpg",
+        "title": "عنصر المشاريع 4",
+        "url": "https://github.com",
+        "link": "https://dribbble.com/Alien_pixels"
+      },
+      {
+        "imgUrl": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1703134029/portfolio5_cugtet.png",
+        "title": "عنصر المشاريع 5",
+        "url": "https://github.com",
+        "link": "https://dribbble.com/Alien_pixels"
+      },
+      {
+        "imgUrl": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1703134049/portfolio4_ibgd9o.jpg",
+        "title": "عنصر المشاريع 6",
+        "url": "https://github.com",
+        "link": "https://dribbble.com/Alien_pixels"
+      }
+    ]
+  },
+  "contact": {
+    "title": "تواصل معنا",
+    "description": "تواصل معنا",
+    "contacts": [
+      {
+        "type": "بريد إلكتروني",
+        "title": "ahmed@gmail.com",
+        "email": "mailto:ahmed.solimanth57@gmail.com",
+        "buttonText": "اتصل",
+        "imgUrl": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1703134252/gmail-svgrepo-com_xppy7f.svg"
+      },
+      {
+        "type": "فيسبوك",
+        "title": "Ahmed soliman",
+        "email": "mailto:ahmed.solimanth57@gmail.com",
+        "buttonText": "اتصل",
+        "imgUrl": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1703134252/facebook-svgrepo-com_lmghnk.svg"
+      },
+      {
+        "type": "واتساب",
+        "title": "___________",
+        "email": "mailto:ahmed.solimanth57@gmail.com",
+        "buttonText": "اتصل",
+        "imgUrl": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1703134203/whatsapp-whats-app-svgrepo-com_ug4dbt.svg"
+      }
+    ],
+    "buttonText": "إرسال",
+    "linkText": "إرسال رسالة"
+  },
+  "services": {
+    "title": "ما نقدمه",
+    "description": "الخدمات",
+    "services": [
+      {
+        "title": "تصميم واجهات المستخدم وتجربة المستخدم",
+        "items": ["لوريم إيبسوم,", "لوريم إيبسوما,", "لوريم إيبسومم,", "لوريم إيبسومل,", "لوريم إيبسوم"],
+        "icon": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1703134251/correct-signal-svgrepo-com_vvf3sw.svg"
+      },
+      {
+        "title": "تطوير الويب",
+        "items": ["لوريم إيبسوم,", "لوريم إيبسوما,", "لوريم إيبسومم,", "لوريم إيبسومل,", "لوريم إيبسوم"],
+        "icon": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1703134251/correct-signal-svgrepo-com_vvf3sw.svg"
+      },
+      {
+        "title": "إنشاء المحتوى",
+        "items": ["لوريم إيبسوم,", "لوريم إيبسوما,", "لوريم إيبسومم,", "لوريم إيبسومل,", "لوريم إيبسوم"],
+        "icon": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1703134251/correct-signal-svgrepo-com_vvf3sw.svg"
+      }
+    ]
+  },
+  "footer": {
+    "title": "CSE",
+    "description": "جميع الحقوق محفوظة.",
+    "footerSections": [
+      {
+        "title": "الصفحة الرئيسية",
+        "url": "#hero2"
+      },
+      {
+        "title": "الخدمات",
+        "url": "#services2"
+      },
+      {
+        "title": "الشهادات",
+        "url": "#testimonials2"
+      },
+      {
+        "title": "اتصل بنا",
+        "url": "#contactUs2"
+      }
+    ],
+    "medias": [
+      {
+        "icon": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1703129090/icons8-facebook-50_xfbimo.png",
+        "url": "https://facebook.com"
+      },
+      {
+        "icon": "https://res.cloudinary.com/duc04fwdb/image/upload/v1701809142/templates/template_one/x_yp3y5n.svg",
+        "url": "https://x.com"
+      },
+      {
+        "icon": "https://res.cloudinary.com/duc04fwdb/image/upload/v1701809142/templates/template_one/linkedin_itbvp5.svg",
+        "url": "https://linkedin.com"
+      },
+      {
+        "icon": "https://res.cloudinary.com/duc04fwdb/image/upload/v1701809141/templates/template_one/instagram_dlrab9.svg",
+        "url": "https://instagram.com"
+      },
+      {
+        "icon": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1703129090/icons8-facebook-50_xfbimo.png",
+        "url": "https://facebook.com"
+      }
+    ]
+  },
+  "colors": {
+    "templateColors": ["#fff", "#cda274", "#292f36", "#f4f0ec", "#777777"]
+  }
+}
