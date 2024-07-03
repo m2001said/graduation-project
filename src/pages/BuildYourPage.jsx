@@ -53,7 +53,7 @@ const BuildYourPage = () => {
   const [selectedColor, setSelectedColor] = useState(0);
 
   const handleColorChange = (paletteIndex) => {
-    setSelectedColor((prevSelected) => (prevSelected === paletteIndex ? 0 : paletteIndex));
+    setSelectedColor(paletteIndex);
   };
 
   // todo edit this to be  const templates = state.template1; ----- > said
@@ -151,9 +151,9 @@ const BuildYourPage = () => {
               <div
                 key={paletteIndex}
                 className={`flex flex-col`}
-                style={{ border: selectedColor === paletteIndex ? "solid 2px var(--color-3)" : "solid 2px transparent" }}
+                style={{ position: "relative", border: selectedColor === paletteIndex ? "solid 2px var(--color-3)" : "solid 2px transparent" }}
               >
-                {selectedColor === paletteIndex && (
+                {selectedColor == paletteIndex && (
                   <div className="check-icon">
                     <img src="https://res.cloudinary.com/duc04fwdb/image/upload/v1708037268/jammal_photos/nme9bdbxqehtul4yzmd7.svg" alt="check-icon" />
                   </div>
