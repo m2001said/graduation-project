@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "../../../../assets/css/globals10.css";
+import "./hero10.css";
 
 const Hero10 = ({ template }) => {
   const hero = template.hero;
@@ -20,7 +21,7 @@ const Hero10 = ({ template }) => {
         <div className="items-center p-10 sm:p-30 pb-8 sm:pb-0">
           <div className="grid grid-cols-1 sm:grid-cols-2">
             {/* txt sec */}
-            <div className="flex flex-col justify-center gap-4 pt-12 sm:pt-0 text-center sm:text-left order-2 sm:order-1">
+            <div className="hero10-textContent flex flex-col justify-center gap-4 pt-12 sm:pt-0 text-center sm:text-left order-2 sm:order-1">
               <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold">{hero.heros[id].title}</h1>
               <p className="text-sm mt-4">{hero.heros[id].description}</p>
               <div>

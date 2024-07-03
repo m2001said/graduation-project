@@ -90,8 +90,7 @@ const AdminUsers = () => {
                 <div className="flex items-center justify-between w-1/6 mb-2 border border-inherit rounded-lg shadow ">
                   <p className="text-[#350E5C]  text-base p-2">{user?.status}</p>
                   <button
-                    onClick={() => {
-                    }}
+                    onClick={() => {}}
                     className="text-[#350E5C] font-semibold text-base bg-[#D095CF] py-1 px-1 rounded-lg transition-colors hover:bg-[#b963b8]"
                   >
                     {user.status === "active" ? "block" : "Unblock"}
@@ -100,7 +99,7 @@ const AdminUsers = () => {
                 <div>
                   <button
                     onClick={() => {}}
-                    className="text-[#FFFFFF] font-semibold text-base bg-[#350E5C] py-1 px-1 rounded-lg transition-colors hover:bg-[#350E5a]"
+                    className="text-[#FFFFFF] font-semibold text-base bg-[#000000] py-1 px-1 rounded-lg transition-colors hover:bg-[#350E5a]"
                   >
                     Get user pages
                   </button>

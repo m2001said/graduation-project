@@ -69,7 +69,7 @@ const AdminMessages = () => {
                           <p className="text-[#350E5C] border border-inherit text-xl p-2 rounded-lg shadow">{message?.name}</p>
                         </div>
                         <div className="w-5/12 mb-2">
-                          <p className="text-[#350E5C] border border-inherit text-xl p-2 rounded-lg shadow">{message?.message}</p>
+                          <p className="text-[#350E5C] border border-inherit text-base p-2 rounded-lg shadow">{message?.message}</p>
                         </div>
                       </div>
                     </div>

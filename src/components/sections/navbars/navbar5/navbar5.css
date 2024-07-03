@@ -42,6 +42,7 @@
   align-items: center;
   justify-content: right;
   gap: 2.5rem;
+  
 }
 
 .navbarMenu-list {
@@ -49,6 +50,7 @@
   flex-direction: row;
   align-items: center;
   gap: 2.5rem;
+  
 }
 .navbarMenu-list li {
   list-style: none;

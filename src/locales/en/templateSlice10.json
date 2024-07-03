@@ -35,12 +35,12 @@
     ],
     "heros": [
       {
-        "title": "His Life will forever be Changed",
+        "title": "Who's there",
         "description": "lorem His Life will forever be Changed dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
         "imgUrl": "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707067713/book1_a7epcd.jpg"
       },
       {
-        "title": "Who's there",
+        "title": "His Life will forever be Changed",
         "description": "Who's there lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
         "imgUrl": "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707067750/book2_fjsnwn.jpg"
       },

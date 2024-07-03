@@ -1,0 +1,8 @@
+/* footer10-sectionTitle */
+
+.ltr .footer10-sectionTitle {
+  text-align: left;
+}
+.rtl .footer10-sectionTitle {
+    text-align: right;
+}
