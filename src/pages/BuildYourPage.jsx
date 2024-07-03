@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import "../components/yourPage/yourPage.css";
 import InputOption from "../components/yourPage/ChooseOption";
@@ -6,6 +6,7 @@ import { getSectionData } from "../components/yourPage/getSectionData";
 import { useDispatch, useSelector } from "react-redux";
 import { useTranslation } from "react-i18next";
 import { ownTemplateActions } from "../features/templateData/ownTemplateSlice";
+import { fetchInitialTemplate } from "../features/templateData/templateSlice";
 
 const palettes = [
   ["#FFFAF3", "#F1C40F", "#E67E22", "#E74C3C", "#8E44AD"],
@@ -56,30 +57,18 @@ const BuildYourPage = () => {
     setSelectedColor(paletteIndex);
   };
 
-  // todo edit this to be  const templates = state.template1; ----- > said
-  const templates = useSelector((state) => state.templateSlice);
-
-  // const templates = useSelector((state) => ({
-  //   1: state.template1,
-  //   2: state.template2,
-  //   3: state.template3,
-  //   4: state.template4,
-  //   5: state.template5,
-  //   6: state.template6,
-  //   7: state.template7,
-  //   8: state.template8,
-  //   9: state.template9,
-  //   10: state.template10,
-  //   11: state.template11,
-  //   12: state.template12,
-  //   13: state.template13,
-  //   14: state.template14,
-  //   15: state.template15,
-  //   16: state.template16,
-  //   17: state.template17,
-  //   18: state.template18,
-  // }));
-
+  const [templates, setTemplates] = useState({});
+  useEffect(() => {
+    const fetchTemplates = async () => {
+      const templatesData = {};
+      for (let i = 1; i <= 18; i++) {
+        const template = await dispatch(fetchInitialTemplate(i)).unwrap();
+        templatesData[i] = template;
+      }
+      setTemplates(templatesData);
+    };
+    fetchTemplates();
+  }, [dispatch]);
 
   // const [selectedIndices, setSelectedIndices] = useState(Object.fromEntries(sectionNames.map((name) => [name, undefined])));
 
@@ -104,7 +93,6 @@ const BuildYourPage = () => {
     setSelectedIndices((prevState) => ({ ...prevState, [section]: selectedIndex }));
   };
 
-  
   const handleSubmit = () => {
     const selectedSections = {};
     const userSectionSelection = [];
@@ -125,7 +113,6 @@ const BuildYourPage = () => {
     } else {
       let userSchema = {};
       userSectionSelection.map((state) => {
-        // todo edit this to be one template  ----- > said
         for (const key in templates) {
           if (state.templateId.toString() === key.toString()) {
             userSchema[state.sectionName] = templates[key][state.sectionName];
