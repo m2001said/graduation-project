@@ -2,29 +2,25 @@
 @tailwind components;
 @tailwind utilities;
 
-html {
-  scroll-behavior: smooth;
-}
-
 @layer components {
-  .link {
+  .design-18 .link {
     @apply cursor-pointer hover:underline;
   }
-  .button-outline {
+  .design-18 .button-outline {
     @apply rounded-md border-2 border-[--website-18-color-1] hover:bg-[--website-18-color-1] hover:text-black duration-500 py-2 px-6 text-[--website-18-color-1] tracking-wider;
   }
 }
 
 :root {
-  --website-18-color-1:#ffc727;
+  --website-18-color-1: #ffc727;
   --website-18-color-2: #e9f1f5;
   --website-18-color-3: #d5dae2;
-  --website-18-color-4:#888883;
-  --website-18-color-5:#111111;
-  --website-18-color-6:#ffffff;
+  --website-18-color-4: #888883;
+  --website-18-color-5: #111111;
+  --website-18-color-6: #ffffff;
 }
 
-.container18 {
+.design-18 .container18 {
   width: 100%;
   margin-right: auto;
   margin-left: auto;
@@ -33,24 +29,24 @@ html {
 }
 
 @media (min-width: 640px) {
-  .container18 {
-    max-width: 640px; 
+  .design-18 .container18 {
+    max-width: 640px;
   }
 }
 
 @media (min-width: 768px) {
-  .container18 {
-    max-width: 768px; 
+  .design-18 .container18 {
+    max-width: 768px;
   }
 }
 
 @media (min-width: 1024px) {
-  .container18 {
-    max-width: 1024px; 
+  .design-18 .container18 {
+    max-width: 1024px;
   }
 }
 @media (min-width: 1318px) {
-  .container18 {
-    max-width: 1318px; 
+  .design-18 .container18 {
+    max-width: 1318px;
   }
 }

@@ -6,7 +6,7 @@
 
 .section--poster-container {
   position: relative;
-  border: solid 2px transparent;
+  border: solid 3px transparent;
   max-height: 200px;
   display: flex;
   align-items: center;
@@ -15,7 +15,7 @@
 }
 
 .section--poster-container.selected {
-  border: solid 2px var(--color-3);
+  border: solid 3px var(--color-3);
 }
 
 .own-page .check-icon {

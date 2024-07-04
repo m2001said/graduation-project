@@ -1,38 +1,23 @@
-.red-button {
-  color: rgb(244, 136, 136);
-}
-
-.blue-background {
-  background-color: rgb(216, 216, 236);
-}
-
-.plus-9 {
+.TrialDesign9 .plus-9 {
   height: 13px;
   width: 13px;
 }
 
 :root {
   --website-9-color-1: rgb(255, 255, 255);
-   --website-9-color-2: #0ca39a;
-   --website-9-color-3: #0c4f37;
- 
+  --website-9-color-2: #0ca39a;
+  --website-9-color-3: #0c4f37;
   --website-9-color-4: #808080;
- 
- 
- 
-
   --website-9-color-5: #646cffaa;
- 
   --website-9-color-6: #74cac5;
- 
-   --font-size-md-9: 2rem;
+
+  --font-size-md-9: 2rem;
 
   --font-size-base-9: 1.25rem;
   --border-radius-lg-9: 1.5rem;
   --border-radius-md: 0.5rem;
   --transition9: all 400ms ease;
 
-  /* Fonts */
   --font-size-lg: 2.25rem;
   --font-size-md: 1.875rem;
   --font-size-sm: 1.5rem;
@@ -41,8 +26,6 @@
   --font-weight-regular: 400;
   --font-weight-medium: 500;
   --font-weight-bold: 700;
-
-  /****/
 }
 
 .hero9 {
@@ -63,34 +46,33 @@
   align-items: center;
   justify-content: center;
 }
-.text-xl {
+.TrialDesign9 .text-xl {
   font-size: var(--font-size-md);
 }
-.text-lg {
+.TrialDesign9 .text-lg {
   font-size: var(--font-size-base);
 }
 
-.uppercase {
+.TrialDesign9 .uppercase {
   color: var(--website-9-color-3);
 }
 
-.rounded-full {
+.TrialDesign9 .rounded-full {
   border-radius: 9999px;
 }
 
-.pb-12 {
+.TrialDesign9 .pb-12 {
   padding-bottom: 3rem;
 }
 
-.logo-9 {
+.TrialDesign9 .logo-9 {
   height: 6em;
   padding: 1.5em;
   will-change: filter;
   transition: filter 300ms;
 }
-.about9_logo {
+.TrialDesign9 .about9_logo {
   width: 30%;
-
   padding: 2rem;
   will-change: filter;
   transition: filter 300ms;
@@ -105,11 +87,11 @@
   }
 }
 
-.img-9:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+.TrialDesign9 .img-9:hover {
+  filter: drop-shadow(0 0 2em var(--website-9-color-5));
 }
-.img-9.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.TrialDesign9 .img-9.react:hover {
+  filter: drop-shadow(0 0 2em var(--website-9-color-6));
 }
 
 @import "tailwindcss/base";
@@ -120,81 +102,60 @@
     animation: logo-spin infinite 20s linear;
   }
 }
-.capitalize,
-.realestateh {
+.TrialDesign9 .capitalize,
+.TrialDesign9 .realestateh {
   color: var(--website-9-color-3);
 }
-
-.read-the-docs {
-  color: #888;
+.TrialDesign9 .read-the-docs {
+  color: var(--website-9-color-4);
 }
-.gradient-background {
+.TrialDesign9 .gradient-background {
   background: linear-gradient(to top, var(--website-9-color-2), var(--website-9-color-1));
   border-radius: 560px;
   border-radius: 0 0 560px 560px;
 }
- 
-
-
-
-.about-9 {
+.TrialDesign9 .about-9 {
   transition: var(--transition9);
-  /* padding-top: 1rem; */
   padding-bottom: 3rem;
 }
-.about-9 {
-  /* display: flex; */
+.TrialDesign9 .about-9 {
   justify-content: center;
-
-  /* align-items: center; */
 }
-
-.service-99 {
+.TrialDesign9 .service-99 {
   background: var(--website-9-color-3);
-  /* background-size: contain; */
   padding-bottom: 2rem;
 }
-
-.cusror-9 {
+.TrialDesign9 .cusror-9 {
   height: 6em;
   padding: 1.5em;
   will-change: filter;
   transition: filter 300ms;
 }
-.testimonial-9:hover {
+.TrialDesign9 .testimonial-9:hover {
   background: linear-gradient(to right, var(--website-9-color-2), var(--website-9-color-1));
 }
-.footer9:hover {
+.TrialDesign9 .footer9:hover {
   background: var(--website-9-color-3);
   height: 10px;
 }
-
-.footer9 {
+.TrialDesign9 .footer9 {
   justify-content: center;
   align-items: center;
   margin: 0 auto;
 }
-
-.loogo-9 {
+.TrialDesign9 .loogo-9 {
   width: 10%;
 }
 
-/* @media screen and (max-width: 600px) {
-  .swiper-container {
-    width: 100%;
-  }
-} */
-/* styles.css or your component's CSS file */
 @keyframes slideBackground {
-  0%{
+  0% {
     background-position-x: 0%;
   }
   100% {
     background-position-x: 100%;
   }
 }
-
-.animate-slideBackground {
-  animation: slideBackground 20s linear infinite;
-  background-color: var(--website-9-color-2)
- }
+.TrialDesign9 .animate-slideBackground {
+  animation: slideBackground 6s linear infinite;
+  background-color: var(--website-9-color-2);
+}

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import axiosInstance from "../../features/auth/axiosInstance";
+import axios from "axios";
 import LoadingButton from "../loadingButton/LoadingButton";
 import FormInput from "./FormInput";
 
@@ -14,7 +14,7 @@ const UpdatePassword = () => {
     setLoading(true);
     setResponseMessage("");
     try {
-    const response = await axiosInstance.post("/user/update-password", {
+    const response = await axios.post("/user/update-password", {
       oldPassword: oldPassword,
       newPassword: newPassword,
     });

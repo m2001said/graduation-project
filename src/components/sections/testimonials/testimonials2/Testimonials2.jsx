@@ -13,7 +13,7 @@ const Testimonials2 = ({ template }) => {
  
   return (
     <section id="testimonials2">
-      <h5>{testimonials.subtitle}s</h5>
+      <h5>{testimonials.subtitle}</h5>
       <h2>{testimonials.title}</h2>
       <Swiper
         className="container testimonials2__container"

@@ -21,7 +21,16 @@ const componentMapping14 = {
   logos: Logos14,
 };
 const TrialDesign14 = () => {
-  return <TrialDesign componentMapping={componentMapping14} HeroComponent={Hero14} NavbarComponent={Navbar14} FooterComponent={Footer14} template={14} />;
+  return (
+    <TrialDesign
+      className="design-14"
+      componentMapping={componentMapping14}
+      HeroComponent={Hero14}
+      NavbarComponent={Navbar14}
+      FooterComponent={Footer14}
+      template={14}
+    />
+  );
 };
 
 export default TrialDesign14;

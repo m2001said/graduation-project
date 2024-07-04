@@ -1,0 +1,17 @@
+.fadeIn17 {
+    animation: flyingAnimation17 2s ease-in-out infinite;
+  }
+  
+  @keyframes flyingAnimation17 {
+    0%, 100% {
+      transform: translateY(50px);
+      transform: translateX(20px);
+
+    }
+    50% {
+      transform: translateY(-80px);
+      transform: translateX(-20px); /* Adjust the distance it moves */
+      /* Adjust the distance it moves */
+    }
+  }
+ 
