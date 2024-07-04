@@ -23,11 +23,7 @@ const TrialDesign11 = () => {
     features: Feature11,
     contact: Contact11,
   };
-  return (
-    <div className="TrialDesign11">
-      <TrialDesign componentMapping={componentMapping} HeroComponent={Hero11} NavbarComponent={Navbar11} template={11} />;
-    </div>
-  );
+  return <TrialDesign className="TrialDesign11" componentMapping={componentMapping} HeroComponent={Hero11} NavbarComponent={Navbar11} template={11} />;
 };
 
 export default TrialDesign11;

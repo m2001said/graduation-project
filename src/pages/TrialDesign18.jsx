@@ -21,7 +21,16 @@ const componentMapping18 = {
 };
 
 const TrialDesign18 = () => {
-  return <TrialDesign componentMapping={componentMapping18} HeroComponent={Hero18} NavbarComponent={Navbar18} FooterComponent={Footer18} template={18} />;
+  return (
+    <TrialDesign
+      className="design-18"
+      componentMapping={componentMapping18}
+      HeroComponent={Hero18}
+      NavbarComponent={Navbar18}
+      FooterComponent={Footer18}
+      template={18}
+    />
+  );
 };
 
 export default TrialDesign18;

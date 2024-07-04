@@ -15,9 +15,14 @@ const TrialDesign4 = () => {
     cta: Cta4,
   };
   return (
-    <div>
-      <TrialDesign componentMapping={componentMapping} HeroComponent={Hero4} NavbarComponent={Navbar4} FooterComponent={Footer4} template={4} />;
-    </div>
+    <TrialDesign
+      className="design-4"
+      componentMapping={componentMapping}
+      HeroComponent={Hero4}
+      NavbarComponent={Navbar4}
+      FooterComponent={Footer4}
+      template={4}
+    />
   );
 };
 

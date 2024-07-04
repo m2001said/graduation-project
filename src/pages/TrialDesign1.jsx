@@ -14,6 +14,7 @@ import Team1 from "../components/sections/teams/teams1/Teams1";
 import Pricing1 from "../components/sections/pricings/pricing1/Pricing1";
 import Cta1 from "../components/sections/ctas/cta1/Cta1";
 import Footer1 from "../components/sections/footers/footer1/Footer1";
+import "../assets/css/globals1.css";
 
 const componentMapping1 = {
   services: Services1,
@@ -29,7 +30,16 @@ const componentMapping1 = {
 };
 
 const TrialDesign1 = () => {
-  return <TrialDesign componentMapping={componentMapping1} HeroComponent={Hero1} NavbarComponent={Navbar1} footerComponent={Footer1} template={1} />;
+  return (
+    <TrialDesign
+      className="design-1"
+      componentMapping={componentMapping1}
+      HeroComponent={Hero1}
+      NavbarComponent={Navbar1}
+      footerComponent={Footer1}
+      template={1}
+    />
+  );
 };
 
 export default TrialDesign1;

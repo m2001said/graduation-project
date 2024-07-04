@@ -14,11 +14,7 @@ const TrialDesign8 = () => {
     projects: Project8,
     contact: Contact8,
   };
-  return (
-    <div className="site-container8">
-      <TrialDesign componentMapping={componentMapping} HeroComponent={Hero8} NavbarComponent={Navbar8} template={8} />;
-    </div>
-  );
+  return <TrialDesign className="design-8 " componentMapping={componentMapping} HeroComponent={Hero8} NavbarComponent={Navbar8} template={8} />;
 };
 
 export default TrialDesign8;

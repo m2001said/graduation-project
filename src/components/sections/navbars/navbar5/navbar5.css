@@ -138,7 +138,7 @@
     transform: translate(50%);
     z-index: 2000;
     box-shadow: rgb(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
-    border-radius: 3px solid hsl(0, 0%, 100%);;
+    border-radius: 3px solid hsl(0, 0%, 100%);
     transition: 0.4s ease-in-out;
   }
 
@@ -153,7 +153,7 @@
   .navbarMenu-listItem {
     padding: 0.5rem 0;
     cursor: pointer;
-    /* color: var(--website-5-black); */
+    color: var(--website-5-color-5);
   }
   .navbarMenu-listItem:hover {
     color: var(--website-5-color-1);
@@ -174,7 +174,7 @@
   .navbar5-two-icon {
     display: flex;
     font-size: 30px;
-    /* color: var(--website-5-black); */
+    color: var(--website-5-color-5);
   }
 
   .showNavbar {

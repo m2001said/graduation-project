@@ -1,68 +1,67 @@
-.feature5_2{
-    width: 100%;
-    margin: auto;
-    padding: 1rem;
-    padding-left: 4rem;
+.feature5_2 {
+  width: 100%;
+  margin: auto;
+  padding: 1rem;
+  padding-left: 4rem;
 }
 
-.featue5_2-main{
-    display: grid;
-    align-items: center;
-    gap: 1.5rem;
-
+.featue5_2-main {
+  display: grid;
+  align-items: center;
+  gap: 1.5rem;
 }
 
-.feature5_2-imgDiv{
-    margin: auto;
-    width: 55%;
-    height: 85%;
-    padding: 2rem;
+.feature5_2-imgDiv {
+  margin: auto;
+  width: 55%;
+  height: 85%;
+  padding: 2rem;
 }
-.feature5_2-imgDiv img{
-    border-radius: 10rem;
-    width: 90%;
-    height: auto;
-    max-width: 480px;
-    max-height: 500px;
+.feature5_2-imgDiv img {
+  border-radius: 10rem;
+  width: 90%;
+  height: auto;
+  max-width: 480px;
+  max-height: 500px;
 }
-.feature5_2-text h2{
-    padding: 1rem 0;
-    /* color: var(--website-5-black); */
-    font-size: 25px;
-    font-weight: 600;
+.feature5_2-text h2 {
+  padding: 1rem 0;
+  color: var(--website-5-color-5);
+  font-size: 25px;
+  font-weight: 600;
 }
-.feature5_2-cards{
-    margin-top: 1rem;
-    gap: 1.5rem;
-}
-
-.singleCard-title{
-    display: block;
-    padding-bottom: .5rem;
-    font-weight: 500;
-    /* color: var(--website-5-black); */
+.feature5_2-cards {
+  margin-top: 1rem;
+  gap: 1.5rem;
 }
 
-.feature5_2-singleCard p{
-    font-size: 13px;
-    color: var(--website-5-color-6);
-    line-height: 22px;
+.singleCard-title {
+  display: block;
+  padding-bottom: 0.5rem;
+  font-weight: 500;
+  color: var(--website-5-color-5);
 }
 
-@media screen and (min-width: 570px){
-    .feature5_2-cards{
-        grid-template-columns: repeat(2,1fr);
-    }
+.feature5_2-singleCard p {
+  font-size: 13px;
+  color: var(--website-5-color-6);
+  line-height: 22px;
 }
-@media screen and (min-width: 768px){
-    .featue5_2-main{
-        grid-template-columns: repeat(2,1fr);
-    }
 
-    .feature5_2-text{
-        grid-area: 1;
-    }
-    .feature5_2-cards{
-        grid-template-columns: repeat(2,1fr);
-    }
+@media screen and (min-width: 570px) {
+  .feature5_2-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (min-width: 768px) {
+  .featue5_2-main {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .feature5_2-text {
+    grid-area: 1;
+  }
+  .feature5_2-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }

@@ -2,63 +2,54 @@
 @tailwind components;
 @tailwind utilities;
 
-
-
 :root {
- --website-10-color-1: rgb(19, 141, 197);
- --website-10-color-2: rgb(255, 255, 255);
- --website-10-color-3: rgb(0, 0, 0);
- --website-10-color-4: #777777;
- --website-10-color-5: #eeeeee;
- --website-10-color-6:rgb(228, 240, 247);
+  --website-10-color-1: rgb(19, 141, 197);
+  --website-10-color-2: rgb(255, 255, 255);
+  --website-10-color-3: rgb(0, 0, 0);
+  --website-10-color-4: #777777;
+  --website-10-color-5: #eeeeee;
+  --website-10-color-6: rgb(228, 240, 247);
 }
-
 
 /* txt style */
 .textHover10:hover {
   color: var(--website-10-color-1);
 }
 
-
 .textColor10 {
-  color:var(--website-10-color-3);
+  color: var(--website-10-color-3);
 }
-
 
 .textColor10-2 {
-  color:var(--website-10-color-2);
+  color: var(--website-10-color-2);
 }
-
 
 .paraColor10 {
-  color:var( --website-10-color-4);
+  color: var(--website-10-color-4);
 }
-
 
 .smHeader10 {
-  background-color: var( --website-10-color-1);
+  background-color: var(--website-10-color-1);
 }
 
-
 .bgHover10:hover {
-  background-color: var( --website-10-color-1);
+  background-color: var(--website-10-color-1);
 }
 
 /* ////////// */
 
 .testimonailBg10 {
-  background-color: var( --website-10-color-6);
+  background-color: var(--website-10-color-6);
 }
-
 
 /* button style */
 
 .btnBg10 {
-  background-color: var( --website-10-color-1);
+  background-color: var(--website-10-color-1);
 }
 
 .btnTxt10 {
-  color:var(--website-10-color-2);
+  color: var(--website-10-color-2);
 }
 
 /* /////////////// */
@@ -72,38 +63,3 @@
   padding: 4px;
   border-radius: 50%;
 }
-
-
-/* .divIcon1 {
-  background-color: var(--website10-color-3);
-  display: flex;
-  justify-content: center;
-  width: 50px;
-  height: 50px;
-  padding: 4px;
-  border-radius: 50%;
-}
-
-.divIcon2 {
-  background-color: var(--website10-color-4);
-  display: flex;
-  justify-content: center;
-  width: 50px;
-  height: 50px;
-  padding: 4px;
-  border-radius: 50%;
-}
-
-.divIcon3 {
-  background-color: var(--website10-color-5);
-  display: flex;
-  justify-content: center;
-  width: 50px;
-  height: 50px;
-  padding: 4px;
-  border-radius: 50%;
-} */
-/* //////// */
-
-
-

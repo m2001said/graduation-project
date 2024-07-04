@@ -2,25 +2,23 @@
 @tailwind components;
 @tailwind utilities;
 @import url("https://fonts.googleapis.com/css2?family=Ephesis&display=swap");
+
 @layer components {
-  .link {
+  .design-17 .link {
     @apply cursor-pointer hover:underline;
   }
-}
-html {
-  scroll-behavior: smooth;
 }
 
 :root {
   --website-17-color-1: #ff0c00;
-    --website-17-color-2: #bb2c51;
-   --website-17-color-3: #21d4b9;
-   --website-17-color-4: #ffffff;
-   --website-17-color-5: rgb(255, 225, 0);
+  --website-17-color-2: #bb2c51;
+  --website-17-color-3: #21d4b9;
+  --website-17-color-4: #ffffff;
+  --website-17-color-5: rgb(255, 225, 0);
 
-   --website-17-color-6: rgb(160, 157, 157);
- 
-   --font17-: "Ephesis", "cursive";
+  --website-17-color-6: rgb(160, 157, 157);
+
+  --font17-: "Ephesis", "cursive";
 }
 .icon-17 {
   width: 30px;
@@ -51,8 +49,4 @@ html {
   font-size: 16px;
   font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-weight: 400;
-}
-* {
-  padding: 0 auto;
-  margin: 0   auto;
 }
