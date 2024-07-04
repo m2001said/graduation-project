@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import axiosInstance from "../../features/auth/axiosInstance";
+import axios from "axios";
 import { useDispatch } from "react-redux";
 import { updateUserName } from "../../features/auth/authSlice";
 import LoadingButton from "../loadingButton/LoadingButton";
@@ -15,7 +15,7 @@ const UpdateName = () => {
     setLoading(true);
     setResponseMessage("");
     try {
-       const response = await axiosInstance.put("/user/update-username", {
+       const response = await axios.put("/user/update-username", {
          name: newName,
        });
       setResponseMessage("Name updated successfully!");
