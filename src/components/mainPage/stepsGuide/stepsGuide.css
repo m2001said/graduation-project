@@ -62,7 +62,7 @@
   align-items: center;
   z-index: 3;
   border-radius: 50%;
-  outline: solid 10px white;
+  outline: solid 10px #f8f4f4;
   position: absolute;
   top: 0;
   left: 50%;

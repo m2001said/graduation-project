@@ -12,12 +12,12 @@ import ProtectedRoute from "./pages/ProtectedRoute";
 import SuccessVerified from "./pages/SuccessVerified.jsx";
 import FailedVerified from "./pages/FailedVerified.jsx";
 import ResetPassword from "./pages/ResetPassword.jsx";
-
 import YourWebsites from "./pages/YourWebsites.jsx";
 import Admin from "./pages/Admin";
 import { useRightToLeft } from "./utils/rightToLeft.js";
 import { useTranslation } from "react-i18next";
-
+import AdminUserPage from "./pages/AdminUserPage";
+import SessionChecker from "./components/mainPage/SessionChecker.jsx";
 const trialDesignComponents = Array.from({ length: 18 }, (_, i) => require(`./pages/TrialDesign${i + 1}`).default);
 const websites = Array.from({ length: 18 }, (_, i) => require(`./pages/TrialDesign${i + 1}`).default);
 
@@ -43,6 +43,7 @@ function App() {
   return (
     <div className={isRightToLeft ? "rtl" : "ltr"}>
       <MainNav toggleModal={toggleModal} />
+      <SessionChecker />
       <div style={{ marginTop: "77px" }} id="template-container">
         <Routes>
           <Route path={`/${language}/success-verified`} element={<SuccessVerified />} />
@@ -136,6 +137,7 @@ function App() {
           </Route>
 
           <Route path={`/${language}/admin`} element={<Admin />} />
+          <Route path={`/${language}/admin-user-page/:userId/:pageId`} element={<AdminUserPage />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </div>

@@ -47,49 +47,49 @@
       }
     ],
     "imgs": [
-      "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707329624/realestate/image_10_ska1vi.jpg",
-      "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707329589/realestate/image_1_oxzq9f.jpg",
-      "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707330235/realestate/image_4_o8ggty.jpg",
-      "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707329692/realestate/image_16_lalqm2.jpg"
+      "https://res.cloudinary.com/dowtlcpxj/image/upload/v1720022847/done/image_10_ska1vi_mwniwc.webp",
+      "https://res.cloudinary.com/dowtlcpxj/image/upload/v1720022848/done/image_4_o8ggty_cevxrn.webp",
+      "https://res.cloudinary.com/dowtlcpxj/image/upload/v1720022848/done/image_1_oxzq9f_xflri5.webp",
+      "https://res.cloudinary.com/dowtlcpxj/image/upload/v1720022857/done/image_16_lalqm2_qkofs9.webp"
     ]
   },
   "reviews": {
     "title": "72k+ Happy Customers+",
     "description": "200+ new Listings Everyday",
     "subtitle": "Trusted by 100+ companies across the global",
-    "imgUrl": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1703134020/avatar3_pbztwn.jpg",
+    "imgUrl": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1719966175/done/avatar3_pbztwn_ggzr8x.webp",
     "icon": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707347077/icons8-plus-64_pwlv7r.png",
     "reviews": [
-      "https://res.cloudinary.com/dowtlcpxj/image/upload/v1703142400/me-about_pobewn.jpg",
-      "https://res.cloudinary.com/dowtlcpxj/image/upload/v1703134021/avatar4_tn7dyv.jpg",
-      "https://res.cloudinary.com/dowtlcpxj/image/upload/v1703134020/avatar3_pbztwn.jpg",
-      "https://res.cloudinary.com/dowtlcpxj/image/upload/v1703124966/samples/smile.jpg"
+      "https://res.cloudinary.com/dowtlcpxj/image/upload/v1720023641/done/me-about_pobewn_slzevi.webp",
+      "https://res.cloudinary.com/dowtlcpxj/image/upload/v1719966175/done/avatar4_tn7dyv_ilzqxz.webp",
+      "https://res.cloudinary.com/dowtlcpxj/image/upload/v1719966175/done/avatar3_pbztwn_ggzr8x.webp",
+      "https://res.cloudinary.com/dowtlcpxj/image/upload/v1720023640/done/smile_1_yfcyoh.webp"
     ],
-    "logos": [
-      "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707329688/realestate/logo6_ddaq6y.png",
-      "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707329688/realestate/logo5_iwqjl7.png",
-      "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707329687/realestate/logo4_xbf3fz.png",
-      "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707329687/realestate/logo3_fzmko0.png",
-      "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707329685/realestate/logo2_z1jb8d.png"
+    "logos":  [
+      "https://res.cloudinary.com/dowtlcpxj/image/upload/v1720023922/done/logo5_iwqjl7_h9r76r.webp",
+      "https://res.cloudinary.com/dowtlcpxj/image/upload/v1720023921/done/logo6_ddaq6y_rkqshl.webp",
+      "https://res.cloudinary.com/dowtlcpxj/image/upload/v1720023920/done/logo2_z1jb8d_ez6dwd.webp",
+      "https://res.cloudinary.com/dowtlcpxj/image/upload/v1720023918/done/logo3_fzmko0_sprysc.webp",
+      "https://res.cloudinary.com/dowtlcpxj/image/upload/v1720023917/done/logo4_xbf3fz_tms7cn.webp"
     ]
   },
   "services": {
     "title": "Our Services",
     "services": [
       {
-        "icon": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707553370/klipartz.com_z2zhsv.png",
+        "icon": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1720026704/done/klipartz.com_z2zhsv_plibn8.webp",
         "title": "Buy a New Home",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+        "description": "we intend to help you to buy a new home as you wish ."
       },
       {
-        "icon": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707345078/realestate/home_553416_pdjise.png",
+        "icon": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1720026705/done/home_553416_pdjise_fq8lty.webp",
         "title": "Sell a House",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+        "description": "we also can help you sell a house !."
       },
       {
-        "icon": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707345078/realestate/bed_dsmu39.png",
+        "icon": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1720026707/done/bed_dsmu39_fy9h25.webp",
         "title": "Rent a House",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+        "description": "rent a house with us as you wish."
       }
     ]
   },
@@ -99,31 +99,31 @@
     "description": "Neighborhood Properties",
     "features": [
       {
-        "imgUrl": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707329684/realestate/image_18_dklo4u.jpg",
+        "imgUrl": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1720027036/done/image_18_dklo4u_c6ephp.webp",
         "number": 216,
         "subtitle": "New York City",
         "description": "NY"
       },
       {
-        "imgUrl": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707329683/realestate/image_17_my9jpm.jpg",
+        "imgUrl": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1720027051/done/image_2_ugvuoz_znfcts.webp",
         "number": 216,
         "subtitle": "New York City",
         "description": "NY"
       },
       {
-        "imgUrl": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707329665/realestate/image_14_z4orcy.jpg",
+        "imgUrl": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1720027039/done/image_17_my9jpm_amgbht.webp",
         "number": 216,
         "subtitle": "New York City",
         "description": "NY"
       },
       {
-        "imgUrl": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707329658/realestate/image_15_qctpm4.jpg",
+        "imgUrl": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1720027038/done/image_15_qctpm4_nxtb0p.webp",
         "number": 216,
         "subtitle": "New York City",
         "description": "NY"
       },
       {
-        "imgUrl": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707329593/realestate/image_2_ugvuoz.jpg",
+        "imgUrl": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1720027036/done/image_18_dklo4u_c6ephp.webp",
         "number": 216,
         "subtitle": "New York City",
         "description": "NY"
@@ -132,123 +132,123 @@
   },
   "about": {
     "title": "WHO WE ARE ",
-    "description": "  d-top klmdfsl klsdmf lkmdsfm mlksdfl m lms",
-    "imgUrl": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1719892980/e0c167ecaf94e55e76cb89c8e9ef896f_ibw9le.png",
+    "description": " we are a team of experts in real estate.",
+    "imgUrl": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1720027426/done/e0c167ecaf94e55e76cb89c8e9ef896f_ibw9le_ggxkoi.webp",
     "icon": {
-      "text": "done porttier eusiod",
-      "linkText": "nullam a lanica ipsum dignissim purus",
+      "text": "done already",
+      "linkText": "unique designs!",
       "imgUrl": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707345078/realestate/home_553416_pdjise.png"
     },
     "imgs": [
-      "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707329619/realestate/image_8_dlne2y.jpg",
-      "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707329624/realestate/image_10_ska1vi.jpg",
-      "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707329653/realestate/image_13_eajsxm.jpg"
+      "https://res.cloudinary.com/dowtlcpxj/image/upload/v1720027636/done/image_8_dlne2y_z4ivvf.webp",
+      "https://res.cloudinary.com/dowtlcpxj/image/upload/v1720027710/done/image_10_ska1vi_1_ejyzvt.webp",
+      "https://res.cloudinary.com/dowtlcpxj/image/upload/v1720027635/done/image_13_eajsxm_ymybsi.webp"
     ]
   },
   "testimonials": {
     "title": "Testimonials",
     "subtitle": "What Our Clients Say",
-    "description": "as as dn djjn etoua mon chanm",
-    "icons": [
-      "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707346109/realestate/next_2989988_stvovd.png",
-      "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707345931/realestate/back-arrow_340_m9e0hp.png",
-      "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707599138/quote-icon-png-15_c5hrkg.png",
-      "https://res.cloudinary.com/dowtlcpxj/image/upload/v1719713267/Pngtree_star_line_black_icon_3751309_hyth8w.png"
+    "description": "they also found there purpose",
+    "icons":  [
+      "https://res.cloudinary.com/dowtlcpxj/image/upload/v1720028408/done/next_2989988_stvovd_r4wozp.webp",
+      "https://res.cloudinary.com/dowtlcpxj/image/upload/v1720028391/done/back-arrow_340_m9e0hp_toc5d5.webp",
+      "https://res.cloudinary.com/dowtlcpxj/image/upload/v1720028498/done/quote-icon-png-15_c5hrkg_ctlve8.webp",
+      "https://res.cloudinary.com/dowtlcpxj/image/upload/v1720028390/done/Pngtree_star_line_black_icon_3751309_hyth8w_fdsqng.webp"
     ],
     "testimonials": [
       {
-        "opinion": "I highly recommend Ali. He was attentive to our needs and worked tirelessly to find us the perfect home. We could not be happier with our new place!",
+        "opinion": "I highly recommend it. it was attentive to our needs and worked tirelessly to find us the perfect home. We could not be happier with our new place!",
         "name": "Sam Mahmoud",
-        "imgUrl": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1703134020/avatar3_pbztwn.jpg"
+        "imgUrl": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1720023640/done/smile_1_yfcyoh.webp"
       },
       {
-        "opinion": "جامد موتتتتتتتتتتتتتتتتتتت.",
-        "name": "A'laa kamal",
-        "imgUrl": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1703134021/avatar4_tn7dyv.jpg"
+        "opinion": "it was a great experience. I would recommend them  to anyone.",
+        "name": "nada kamal",
+        "imgUrl": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1719966175/done/avatar4_tn7dyv_ilzqxz.webp"
       }
     ]
   },
   "projects": {
     "title": "checkout our new",
     "description": "Latest Listed Properties",
-    "subtitle": "asda asd dadc dad",
+    "subtitle": "make a wish",
     "categories": ["All", "Sell", "Rent"],
     "projects": [
       {
-        "title": "Design advices",
+        "title": "details",
         "subtitle": "$ 5,970",
         "description": "Tranquil Haven in Woods",
         "icons": [
           {
-            "icon": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707345079/realestate/fire_785116_tltbyw.png",
+            "icon": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1720028734/done/fire_785116_tltbyw_ele9fg.webp",
             "title": "Popular"
           },
           {
-            "icon": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707345078/realestate/bed_dsmu39.png",
+            "icon": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1720026707/done/bed_dsmu39_fy9h25.webp",
             "title": "4 Beds"
           },
           {
-            "icon": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707345932/realestate/bath_13666908_apgirk.png",
+            "icon": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1720028739/done/bath_13666908_apgirk_jhm5yy.webp",
             "title": "3 Bath"
           }
         ],
-        "imgUrl": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707329665/realestate/image_14_z4orcy.jpg"
+        "imgUrl": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1720027036/done/image_18_dklo4u_c6ephp.webp"
       },
       {
-        "title": "Design advices",
+        "title": "details",
         "subtitle": "$ 5,970",
-        "description": "Tranquil Haven in Woods",
+        "description": "modern house in middle of the city",
         "icons": [
           {
-            "icon": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707345079/realestate/fire_785116_tltbyw.png",
+            "icon": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1720028734/done/fire_785116_tltbyw_ele9fg.webp",
             "title": "Popular"
           },
           {
-            "icon": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707345078/realestate/bed_dsmu39.png",
+            "icon": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1720026707/done/bed_dsmu39_fy9h25.webp",
             "title": "4 Beds"
           },
           {
-            "icon": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707345932/realestate/bath_13666908_apgirk.png",
+            "icon": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1720028739/done/bath_13666908_apgirk_jhm5yy.webp",
             "title": "3 Bath"
           }
         ],
         "imgUrl": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707330235/realestate/image_4_o8ggty.jpg"
       },
       {
-        "title": "Design advices",
+        "title": "details",
         "subtitle": "$ 5,970",
-        "description": "Tranquil Haven in Woods",
+        "description": " A large house with its own garden in the middle of the city",
         "icons": [
           {
-            "icon": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707345079/realestate/fire_785116_tltbyw.png",
+            "icon": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1720028734/done/fire_785116_tltbyw_ele9fg.webp",
             "title": "Popular"
           },
           {
-            "icon": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707345078/realestate/bed_dsmu39.png",
+            "icon": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1720026707/done/bed_dsmu39_fy9h25.webp",
             "title": "4 Beds"
           },
           {
-            "icon": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707345932/realestate/bath_13666908_apgirk.png",
+            "icon": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1720028739/done/bath_13666908_apgirk_jhm5yy.webp",
             "title": "3 Bath"
           }
         ],
         "imgUrl": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707329665/realestate/image_14_z4orcy.jpg"
       },
       {
-        "title": "Design advices",
+        "title": "details",
         "subtitle": "$ 5,970",
         "description": "Tranquil Haven in Woods",
         "icons": [
           {
-            "icon": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707345079/realestate/fire_785116_tltbyw.png",
+            "icon": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1720028734/done/fire_785116_tltbyw_ele9fg.webp",
             "title": "Popular"
           },
           {
-            "icon": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707345078/realestate/bed_dsmu39.png",
+            "icon": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1720026707/done/bed_dsmu39_fy9h25.webp",
             "title": "4 Beds"
           },
           {
-            "icon": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707345932/realestate/bath_13666908_apgirk.png",
+            "icon": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1720028739/done/bath_13666908_apgirk_jhm5yy.webp",
             "title": "3 Bath"
           }
         ],
@@ -262,49 +262,49 @@
     "members": [
       {
         "name": "Mohammed",
-        "imgUrl": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707329705/realestate/p4_drgvax.jpg",
+        "imgUrl": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1720029996/done/p4_drgvax_wp5ry0.webp",
         "title": "CEO"
       },
       {
         "name": "Ahmed",
-        "imgUrl": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707329708/realestate/p3_khftcr.jpg",
+        "imgUrl": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1720029995/done/p3_khftcr_ecszhd.webp",
         "title": "Real Estate Developer"
       },
       {
         "name": "Ali",
-        "imgUrl": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707329705/realestate/p2_ixjwav.jpg",
+        "imgUrl": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1720029989/done/p2_ixjwav_sy7hpi.webp",
         "title": "Listing Agent"
       },
       {
-        "name": "Kareessssssssss dasd m",
-        "imgUrl": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707329700/realestate/p1_sfvfe2.jpg",
+        "name": "Kareem ",
+        "imgUrl": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1720029987/done/p1_sfvfe2_ch2hpz.webp",
         "title": "Buyer's Agent"
       }
     ]
   },
   "contact": {
-    "imgUrl": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707540053/tower_qajd1k.png",
+    "imgUrl": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1720030973/done/tower_qajd1k_robuyn.webp",
     "title": "Become an Agent.",
-    "description": "Contact asdadsa mksldm asmkdsalk asdmkl .",
+    "description": "Contact us  .",
     "buttonText": "Register now",
     "linkText": "https://www.google.com"
   },
   "footer": {
-    "title": "Cse",
+    "title": "computers engineering",
     "subtitle": "227 st zagazig",
     "description": "2024 soly cse all rights reserved",
-    "imgUrl": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707345078/realestate/home_553416_pdjise.png",
+    "imgUrl": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1720026705/done/home_553416_pdjise_fq8lty.webp",
     "medias": [
       {
         "title": "support@soly.com",
-        "icon": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707346108/realestate/mail_646135_dviglt.png"
+        "icon": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1720031261/done/mail_646135_dviglt_1_z9opmr.webp"
       },
       {
         "title": "01010351108",
-        "icon": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707346109/realestate/telephone_126523_woh61t.png"
+        "icon": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1720031251/done/telephone_126523_woh61t_ljnqiw.webp"
       }
     ],
-    "icon": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707346109/realestate/next_2989988_stvovd.png",
+    "icon": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1720028408/done/next_2989988_stvovd_r4wozp.webp",
     "footerSections": [
       {
         "title": "Services",
@@ -359,15 +359,15 @@
     ],
     "contacts": [
       {
-        "icon": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1703134200/linkedin-svgrepo-com_wzswlo.svg",
+        "icon": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1720031579/done/linkedin-svgrepo-com_wzswlo_gq6eg9.webp",
         "url": "https://linkedin.com"
       },
       {
-        "icon": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1703134252/facebook-svgrepo-com_lmghnk.svg",
+        "icon": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1720031581/done/facebook-svgrepo-com_lmghnk_adhnbh.webp",
         "url": "https://facebook.com"
       },
       {
-        "icon": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1703134202/socialmedia-svgrepo-com_xqlljo.svg",
+        "icon": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1720031576/done/socialmedia-svgrepo-com_xqlljo_rtp4s7.webp",
         "url": "https://instagram.com"
       }
     ],

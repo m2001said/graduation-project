@@ -7,18 +7,12 @@
 }
 
 :root {
-  /* these are temporary colors , you should change it  */
   --website-5-color-1: hsl(255, 50%, 48%);
   --website-5-color-2: hsl(180, 17%, 95%);
   --website-5-color-3: hsl(15, 74%, 70%);
   --website-5-color-4: hsl(28, 92%, 76%);
-  --website-5-color-5: hsl(0, 0%, 100%);
+  --website-5-color-5: black;
   --website-5-color-6: rgb(145, 145, 145);
-  /* and add your */
-}
-
-.design5 {
-  background: var(--website-5-color-5);
 }
 
 .design5-section {
@@ -50,16 +44,3 @@
     margin: auto;
   }
 }
-
-/* ::selection {
-  background: var(--website-5-color-1);
-  color: var(--website-5-white);
-}
-::-webkit-scrollbar {
-  width: 10px;
-  background: var(--website-5-greyBg);
-}
-::-webkit-scrollbar-thumb {
-  background: var(--website-5-color-1);
-  border-radius: 10px;
-} */

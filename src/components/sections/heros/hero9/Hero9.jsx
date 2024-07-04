@@ -1,20 +1,42 @@
+import React from 'react';
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Autoplay } from "swiper/modules";
 import "swiper/css";
+
+import './hero9.css'; // Import your CSS file for styles
 
 const Hero9 = ({ template }) => {
   const hero = template.hero;
   const reviews = template.reviews;
 
+  const handleHover = (event) => {
+    const starsContainer = event.currentTarget;
+    const rect = starsContainer.getBoundingClientRect();
+    const mouseX = event.clientX - rect.left;
+    const mouseY = event.clientY - rect.top;
+
+    // Create stars dynamically at the mouse position
+    const star = document.createElement('div');
+    star.classList.add('star');
+    star.style.left = `${mouseX}px`;
+    star.style.top = `${mouseY}px`;
+    starsContainer.appendChild(star);
+
+    // Clean up after animation completes
+    setTimeout(() => {
+      star.remove();
+    }, 1000); // Adjust timing to match your animation duration 
+  };
+
   return (
     <main className="trialdesign9 mb-12 pt-4">
       <div className="bg-gradient-to-t from-[var(--website-9-color-3)] to-[var(--website-9-color-1)] rounded-[560px] rounded-t-none hero9">
-        <div className="container mx-auto px-3 lg:flex justify-between items-center lg:h-screen">
+        <div className="container mx-auto px-3 lg:flex justify-between items-center lg:h-screen relative">
           <div className="lg:w-2/5">
             <p className="text-[var(--website-9-color-3)] md:text-xl text-lg font-medium">{hero.title}</p>
             <h1 className="lg:text-3xl text-3xl font-medium pt-3 pb-8 realestateh">{hero.subtitle}</h1>
             <p className="text-[var(--website-9-color-4)] lg:text-base text-sm pb-8 realestateh">{hero.description}</p>
-            <div className="w-full lg:w-2/3">
+            <div className="w-full lg:w-2/3 relative" onMouseMove={handleHover}>
               <Swiper
                 modules={[Navigation, Pagination, Autoplay]}
                 spaceBetween={50}

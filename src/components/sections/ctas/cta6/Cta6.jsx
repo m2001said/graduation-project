@@ -23,12 +23,12 @@ const Cta6 = ({ template }) => {
 
                 <div className="app__btns flex items-center gap-5 mt-4">
                   <button className="btn__apple flex items-center gap-3">
-                    <img src={cta.appleButton.icon} alt="" className="ico" />
-                    <a href="https://www.apple.com/store">{cta.appleButton.title}</a>
+                    <img src={cta.appleButton.buttonIcon} alt="" className="ico" />
+                    <a href="https://www.apple.com/store">{cta.appleButton.buttonText}</a>
                   </button>
 
                   <button className="btn__google flex items-center gap-3">
-                    <img src={cta.googleButton.icon} alt="" className="ico" /> <a href="https://play.google.com">{cta.googleButton.title}</a>
+                    <img src={cta.googleButton.buttonIcon} alt="" className="ico" /> <a href="https://play.google.com">{cta.googleButton.buttonText}</a>
                   </button>
                 </div>
               </div>

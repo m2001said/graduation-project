@@ -1,0 +1,10 @@
+/* Services9.css */
+
+.service-image {
+    transition: transform .5s ease;
+  }
+  
+  .card:hover .service-image {
+    transform: translateX(-30px);
+  }
+  

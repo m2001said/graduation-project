@@ -17,11 +17,7 @@ const TrialDesign6 = () => {
     menu: CartItems6,
     cta: Cta6,
   };
-  return (
-    <>
-      <TrialDesign componentMapping={componentMapping} HeroComponent={Hero6} NavbarComponent={Navbar6} footerComponent={Footer6} template={6} />;
-    </>
-  );
+  return <TrialDesign componentMapping={componentMapping} HeroComponent={Hero6} NavbarComponent={Navbar6} FooterComponent={Footer6} template={6} />;
 };
 
 export default TrialDesign6;

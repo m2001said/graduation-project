@@ -19,11 +19,10 @@ const Projects2 = ({ template }) => {
 
             <div className="projects2__item-cta">
               <a href={item.url} className="btn">
-                go to {item.title}
+                 {item.title}
               </a>
               <a href={item.link} className="btn btn-primary" target="_blank" rel="noopener noreferrer">
-                click
-              </a>
++              </a>
             </div>
           </article>
         ))}

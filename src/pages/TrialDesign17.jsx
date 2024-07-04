@@ -16,9 +16,14 @@ const componentMapping = {
 
 const TrialDesign17 = () => {
   return (
-    <div>
-      <TrialDesign componentMapping={componentMapping} HeroComponent={Hero17} NavbarComponent={Navbar17} FooterComponent={Footer17} template={17} />;
-    </div>
+    <TrialDesign
+      className="design-17"
+      componentMapping={componentMapping}
+      HeroComponent={Hero17}
+      NavbarComponent={Navbar17}
+      FooterComponent={Footer17}
+      template={17}
+    />
   );
 };
 

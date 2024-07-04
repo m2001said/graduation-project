@@ -6,7 +6,7 @@ const ProjectCard = ({ project }) => (
       src={project.imgUrl}
       onError={(e) => {
         e.target.onerror = null;
-        e.target.src = "/path/to/fallback-image.jpg"; // Fallback image path
+        e.target.src = "/path/to/fallback-image.jpg";  
       }}
       alt={project.description}
       className="w-full h-64 object-cover"
@@ -37,7 +37,7 @@ const Pricing9 = ({ template }) => {
           <p className="text-lg text-[var(--website-9-color-3)] hover:text-[var(--website-9-color-1)] ease-in-out duration-300 ">{template.projects.description}</p>
           <p className="text-sm text-[var(--website-9-color-4)] hover:text-[var(--website-9-color-1)] ease-in-out duration-300">{template.projects.subtitle}</p>
         </div>
-        <div className="flex gap-4 lg:w-2/5 lg:pt-0 pt-6">
+        <div className="flex gap-4  w-full lg:pt-0 pt-6">
           {template.projects.categories.map((category, index) => (
             <button
               key={index}
@@ -48,7 +48,7 @@ const Pricing9 = ({ template }) => {
           ))}
         </div>
       </div>
-      <section className="mt-8 grid gap-6 lg:grid-cols-3 md:grid-cols-2 grid-cols-1">
+      <section className="mt-8 grid gap-4 lg:grid-cols-4 w-full md:grid-cols-2 grid-cols-1">
         {projects.map((project, index) => (
           <ProjectCard key={index} project={project} />
         ))}

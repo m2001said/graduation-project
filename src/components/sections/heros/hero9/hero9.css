@@ -1,0 +1,21 @@
+@keyframes flying-stars {
+    0% {
+      transform: translateY(0) translateX(0) scale(1);
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(-100px) translateX(100px) scale(0.5);
+      opacity: 0;
+    }
+  }
+  
+  .star {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: var(--website-9-color-3); 
+    border-radius: 50%;
+    animation: flying-stars 1s linear forwards;
+    pointer-events: none;  
+  }
+  

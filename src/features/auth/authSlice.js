@@ -1,5 +1,5 @@
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
-import { createUser, loginUser, logoutUser, fetchUserAvatar } from "./authApi";
+import { createUser, loginUser, logoutUser, fetchUserAvatar, refreshToken } from "./authApi";
 
 const initialState = {
   user: null,
@@ -50,6 +50,16 @@ export const logoutUserAsync = createAsyncThunk("auth/logoutUser", async (token,
     const response = await logoutUser(token);
     dispatch(clearUserData());
     return response;
+  } catch (error) {
+    return rejectWithValue(JSON.stringify(error));
+  }
+});
+
+// Thunk for refreshing the token
+export const refreshTokenAsync = createAsyncThunk("auth/refreshToken", async (_, { rejectWithValue }) => {
+  try {
+    const newAccessToken = await refreshToken();
+    return newAccessToken;
   } catch (error) {
     return rejectWithValue(JSON.stringify(error));
   }

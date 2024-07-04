@@ -14,10 +14,10 @@ const Testimonials6 = ({ template }) => {
           <div className="md:w-1/2">
             <h2 className="mb-4 ps-3">{testimonials.title}</h2>
             <Swiper modules={[Navigation, Pagination, Autoplay]} spaceBetween={50} slidesPerView={1} autoplay={{ delay: 3000 }} className="mySwiper">
-              {testimonials.cards.map((data, index) => (
+              {testimonials.testimonials.map((data, index) => (
                 <SwiperSlide key={index}>
                   <div className="single__testimonial">
-                    <p className="review__content">{data.content}</p>
+                    <p className="review__content">{data.opinion}</p>
                     <h6>{data.name}</h6>
                     <p>{data.role}</p>
                   </div>

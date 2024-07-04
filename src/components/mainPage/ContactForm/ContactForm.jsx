@@ -47,7 +47,7 @@ const ContactForm = () => {
     });
   }, []);
   return (
-    <div className="main_page_contactForm container mx-auto my-4 px-4 py-4 flex flex-col justify-center md:flex-row md:justify-between items-center min-h-screen">
+    <div className="main_page_contactForm container mx-auto my-4 px-4 py-4 flex flex-col justify-center md:flex-row md:justify-between items-center min-h-screen gap-8">
       <div data-aos="fade-right" data-aos-duration="1000" className="Contact_img mb-4 md:mb-0 w-full hidden md:block">
         <img src={Contact} alt="Contact" />
       </div>
