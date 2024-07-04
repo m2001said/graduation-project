@@ -1,6 +1,8 @@
 import React, { useState } from "react";
+import { useTranslation } from "react-i18next";
 
 const Testimonials9 = ({ template }) => {
+  const { t, i18n } = useTranslation();
   const testimonialsData = template.testimonials;
   const [currentTestimonialIndex, setCurrentTestimonialIndex] = useState(0);
   const [rating, setRating] = useState(0);
@@ -42,20 +44,26 @@ const Testimonials9 = ({ template }) => {
             onClick={handlePrevTestimonial}
             className="w-10 h-10 lg:w-12 lg:h-12 rounded-full border border-[var(--website-9-color-2)] flex justify-center items-center"
           >
-            <img src={testimonialsData.icons[1]} alt="Previous" />
+            <img
+              src={i18n.language === "ar" ? testimonialsData.icons[0] : testimonialsData.icons[1]}
+              alt="Previous"
+            />
           </button>
           <button
             onClick={handleNextTestimonial}
             className="w-10 h-10 lg:w-12 lg:h-12 rounded-full border border-[var(--website-9-color-2)] flex justify-center items-center"
           >
-            <img src={testimonialsData.icons[0]} alt="Next" />
+            <img
+              src={i18n.language === "ar" ? testimonialsData.icons[1] : testimonialsData.icons[0]}
+              alt="Next"
+            />
           </button>
         </div>
       </div>
 
       <div className="relative rounded-2xl shadow-2xl w-full lg:w-2/5 p-6 lg:p-16">
-        <img src={testimonialsData.icons[2]} alt="quote" className="text-[#ffe999] text-3xl logo-9" />
-        <p className="font-medium pt-2 text-[var(--website-9-color-5)] pb-8">
+        <img src={testimonialsData.icons[2]} alt="quote" className="text-[var(--website-9-color-3)] text-3xl logo-9" />
+        <p className="font-medium pt-2 text-[var(--website-9-color-3)] text-2xl pb-8">
           {currentTestimonial.opinion}
         </p>
         <div className="border-t border-[var(--website-9-color-5)] flex items-center py-4">
@@ -73,7 +81,7 @@ const Testimonials9 = ({ template }) => {
                   src={testimonialsData.icons[3]}
                   alt="star"
                   className={`w-6 h-6 mr-1 cursor-pointer ${
-                    index < rating ? 'text-yellow-500' : 'text-gray-300'
+                    index < rating ? 'text-[var(--website-9-color-2)]' : 'text-[var(--website-9-color-5)]'
                   }`}
                   onClick={() => handleRating(index)}
                 />

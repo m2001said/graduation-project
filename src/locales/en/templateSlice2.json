@@ -9,23 +9,23 @@
   "navbar": {
     "links": [
       {
-        "imgUrl": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1703134252/home-1-svgrepo-com_axgckp.svg",
+        "imgUrl": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1719963637/done/otfppm5rfnnwzupynj8u.webp",
         "url": "hero2"
       },
       {
-        "imgUrl": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1703134253/info-circle-svgrepo-com_a6q6z3.svg",
+        "imgUrl": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1719963637/done/ftnddz78dytnqfnusxj8.jpg",
         "url": "services2"
       },
       {
-        "imgUrl": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1703134396/project-svgrepo-com_qjvqow.svg",
+        "imgUrl": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1719963637/done/yyfzpdydh2bsorlrmvdc.webp",
         "url": "projects2"
       },
       {
-        "imgUrl": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1703134251/customer-testimonial-svgrepo-com_vdnnre.svg",
+        "imgUrl": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1719963636/done/xka4pmu6tteq7gk2ul33.webp",
         "url": "testimonials2"
       },
       {
-        "imgUrl": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1703134254/message-circle-lines-alt-svgrepo-com_iotcwk.svg",
+        "imgUrl": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1719963637/done/fxeg0yobcvboxerrhxdy.webp",
         "url": "contactUs2"
       }
     ]
@@ -33,21 +33,21 @@
   "hero": {
     "title": "Get to know",
     "subtitle": "Hero",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...",
-    "imgUrl": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1703142400/me-about_pobewn.jpg",
+    "description": "I create stunning and responsive websites to help businesses grow online. With a passion for design and coding, I ensure each project is unique and tailored to client needs.",
+    "imgUrl": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1719964924/done/Happy-man-in-blue-background_n0ghiz.webp",
     "heros": [
       {
-        "icon": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1703134251/book-svgrepo-com_f62qre.svg",
+        "icon": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1719966175/done/project-svgrepo-com_qjvqow_1_1_vrtckf.webp",
         "title": "Experience",
         "description": "3+ Years Working"
       },
       {
-        "icon": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1703134396/users-svgrepo-com_acna7b.svg",
+        "icon": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1719966175/done/users-svgrepo-com_acna7b_2_e337nq.webp",
         "title": "Clients",
         "description": "300+ Clients Worldwide"
       },
       {
-        "icon": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1703134396/project-svgrepo-com_qjvqow.svg",
+        "icon": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1719966175/done/book-svgrepo-com_f62qre_xl61k3.webp",
         "title": "Projects",
         "description": "80+ completed projects"
       }
@@ -55,27 +55,27 @@
   },
   "testimonials": {
     "title": "What the People Thinks About Us",
-    "subtitle": "Testimonials",
+    "subtitle": "Clients Testimonials",
     "testimonials": [
       {
-        "imgUrl": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1703134021/avatar4_tn7dyv.jpg",
+        "imgUrl": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1719966175/done/avatar3_pbztwn_ggzr8x.webp",
         "name": "Ernest Achiever",
-        "opinion": "Lorem ipsum doloripsum doloripsum doloripsum doloripsum doloripsum doloripsum dolor ipsum doloripsumdoloripsumdoloripsumdoloripsumdoloripsum doloripsum doloripsum doloripsum dolor"
+        "opinion": "Working with Ahmed has been a fantastic experience. His skills in web development are top-notch, and he delivered everything on time."
       },
       {
-        "imgUrl": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1703134020/avatar3_pbztwn.jpg",
+        "imgUrl": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1719966175/done/avatar4_tn7dyv_ilzqxz.webp",
         "name": "Ernest Achiever",
-        "opinion": "Lorem ipsum doloripsum doloripsum doloripsum doloripsum doloripsum doloripsum dolor ipsum doloripsumdoloripsumdoloripsumdoloripsumdoloripsum doloripsum doloripsum doloripsum dolor"
+        "opinion": "Ahmed transformed our website with his creative designs. Our clients love the new look and feel, and we've seen a significant increase in engagement."
       },
       {
-        "imgUrl": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1703134020/avatar2_lgwr3o.jpg",
+        "imgUrl": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1719966174/done/avatar1_g7wm1r_cfw4bw.webp",
         "name": "Ernest Achiever",
-        "opinion": "Lorem ipsum doloripsum doloripsum doloripsum doloripsum doloripsum doloripsum dolor ipsum doloripsumdoloripsumdoloripsumdoloripsumdoloripsum doloripsum doloripsum doloripsum dolor"
+        "opinion": "Highly recommend Ahmed for any web development project. His attention to detail and dedication are truly commendable."
       },
       {
-        "imgUrl": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1703134020/avatar1_g7wm1r.jpg",
+        "imgUrl": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1719966174/done/avatar2_lgwr3o_pl5tsq.webp",
         "name": "Ernest Achiever",
-        "opinion": "Lorem ipsum doloripsum doloripsum doloripsum doloripsum doloripsum doloripsum dolor ipsum doloripsumdoloripsumdoloripsumdoloripsumdoloripsum doloripsum doloripsum doloripsum dolor"
+        "opinion": "Ahmed exceeded our expectations with his outstanding service and support. Our new website is beautiful and functional."
       }
     ]
   },
@@ -84,38 +84,38 @@
     "description": "projects",
     "projects": [
       {
-        "imgUrl": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1703134068/portfolio3_rzhjvk.jpg",
-        "title": "projects2 Item 1",
+        "imgUrl": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1719966782/done/portfolio4_ibgd9o_tkrlwr.webp",
+        "title": "E-commerce Platform",
         "url": "https://github.com",
         "link": "https://dribbble.com/Alien_pixels"
       },
       {
-        "imgUrl": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1703134049/portfolio4_ibgd9o.jpg",
-        "title": "projects2 Item 2",
+        "imgUrl": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1719966782/done/portfolio3_rzhjvk_hy2soz.webp",
+        "title": "Portfolio Website",
         "url": "https://github.com",
         "link": "https://dribbble.com/Alien_pixels"
       },
       {
-        "imgUrl": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1703134068/portfolio3_rzhjvk.jpg",
+        "imgUrl": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1719966782/done/portfolio3_rzhjvk_hy2soz.webp",
         "title": "projects2 Item 3",
         "url": "https://github.com",
         "link": "https://dribbble.com/Alien_pixels"
       },
       {
-        "imgUrl": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1703134049/portfolio4_ibgd9o.jpg",
-        "title": "projects2 Item 4",
+        "imgUrl": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1719966782/done/portfolio4_ibgd9o_tkrlwr.webp",
+        "title": "Business Landing Page",
         "url": "https://github.com",
         "link": "https://dribbble.com/Alien_pixels"
       },
       {
-        "imgUrl": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1703134029/portfolio5_cugtet.png",
-        "title": "projects2 Item 5",
+        "imgUrl": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1719966924/done/portfolio5_cugtet_1_klwv58.webp",
+        "title": "Blog Platform",
         "url": "https://github.com",
         "link": "https://dribbble.com/Alien_pixels"
       },
       {
-        "imgUrl": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1703134049/portfolio4_ibgd9o.jpg",
-        "title": "projects2 Item 6",
+        "imgUrl": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1719966782/done/portfolio4_ibgd9o_tkrlwr.webp",
+        "title": "Social Media App",
         "url": "https://github.com",
         "link": "https://dribbble.com/Alien_pixels"
       }
@@ -130,21 +130,21 @@
         "title": "ahmed@gmail.com",
         "email": "mailto:ahmed.solimanth57@gmail.com",
         "buttonText": "connect",
-        "imgUrl": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1703134252/gmail-svgrepo-com_xppy7f.svg"
+        "imgUrl": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1719967309/done/gmail-svgrepo-com_xppy7f_mc1t5o.webp"
       },
       {
         "type": " facebook",
         "title": "Ahmed soliman  ",
         "email": "mailto:ahmed.solimanth57@gmail.com",
         "buttonText": "connect",
-        "imgUrl": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1703134252/facebook-svgrepo-com_lmghnk.svg"
+        "imgUrl": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1719967309/done/facebook-svgrepo-com_lmghnk_1_zzkzoy.webp"
       },
       {
         "type": "whatsapp",
         "title": "___________",
         "email": "mailto:ahmed.solimanth57@gmail.com",
         "buttonText": "connect",
-        "imgUrl": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1703134203/whatsapp-whats-app-svgrepo-com_ug4dbt.svg"
+        "imgUrl": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1719967308/done/whatsapp-whats-app-svgrepo-com_ug4dbt_svxnjo.webp"
       }
     ],
     "buttonText": "Send",
@@ -152,28 +152,27 @@
   },
   "services": {
     "title": "What We Offer",
-    "description": "Services",
+    "description": "Our Services",
     "services": [
       {
         "title": "UI/UX Design",
-        "items": ["lorem ipsum,", "Llorem ipsuma,", "Blorem ipsumm,", "Dilorem ipsumll,", "lorem ipsum"],
-        "icon": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1703134251/correct-signal-svgrepo-com_vvf3sw.svg"
-      },
-      {
+        "items": ["User Interface Design", "User Experience Optimization", "Prototyping", "Usability Testing", "Responsive Design"],
+        "icon": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1719967616/done/crrsvgrepo-com_ug4dbt_bwklfn.webp"
+      },  {
         "title": "Web Development",
-        "items": ["lorem ipsum,", "Llorem ipsuma,", "Blorem ipsumm,", "Dilorem ipsumll,", "lorem ipsum"],
-        "icon": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1703134251/correct-signal-svgrepo-com_vvf3sw.svg"
+        "items": ["Front-End Development", "Back-End Development", "API Integration", "Database Management", "Performance Optimization"],
+        "icon": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1719967616/done/crrsvgrepo-com_ug4dbt_bwklfn.webp"
       },
       {
         "title": "Content Creation",
-        "items": ["lorem ipsum,", "Llorem ipsuma,", "Blorem ipsumm,", "Dilorem ipsumll,", "lorem ipsum"],
-        "icon": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1703134251/correct-signal-svgrepo-com_vvf3sw.svg"
+        "items": ["Content Strategy", "Copywriting", "Graphic Design", "SEO Optimization", "Social Media Integration"],
+        "icon": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1719967616/done/crrsvgrepo-com_ug4dbt_bwklfn.webp"
       }
     ]
   },
   "footer": {
     "title": "CSE",
-    "description": "ssssssssssssssssssssss all rights reserved.",
+    "description": "Stay connected with us. All rights reserved.",
     "footerSections": [
       {
         "title": "Home",
@@ -194,23 +193,23 @@
     ],
     "medias": [
       {
-        "icon": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1703129090/icons8-facebook-50_xfbimo.png",
+        "icon": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1719967955/done/icons8-facebook-50_xfbimo_cwwo9j.webp",
         "url": "https://facebook.com"
       },
       {
-        "icon": "https://res.cloudinary.com/duc04fwdb/image/upload/v1701809142/templates/template_one/x_yp3y5n.svg",
+        "icon": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1719967952/done/x_yp3y5n_v9a8lr.webp",
         "url": "https://x.com"
       },
       {
-        "icon": "https://res.cloudinary.com/duc04fwdb/image/upload/v1701809142/templates/template_one/linkedin_itbvp5.svg",
+        "icon": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1719967952/done/linkedin_itbvp5_nndidk.webp",
         "url": "https://linkedin.com"
       },
       {
-        "icon": "https://res.cloudinary.com/duc04fwdb/image/upload/v1701809141/templates/template_one/instagram_dlrab9.svg",
+        "icon": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1719967953/done/instagram_dlrab9_qntrvm.webp",
         "url": "https://instagram.com"
       },
       {
-        "icon": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1703129090/icons8-facebook-50_xfbimo.png",
+        "icon": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1719967955/done/icons8-facebook-50_xfbimo_cwwo9j.webp",
         "url": "https://facebook.com"
       }
     ]

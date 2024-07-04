@@ -50,8 +50,8 @@
         "url": "#services13"
       }
     ],
-    "imgUrl": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707937284/3_tx6g05.jpg",
-    "imageUrl": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707937130/4_rjddpl.jpg",
+    "imgUrl": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1720033596/done/3_tx6g05_kcssey.webp",
+    "imageUrl": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1720033592/done/4_rjddpl_ivwbng.webp",
     "icon": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707952901/right-arrow_1_y7iz2i.png"
   },
   "feature": {
@@ -60,84 +60,86 @@
     "description": "ستجد ذوقك هنا",
     "features": [
       {
-        "icon": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707959654/tree_qh0bvu.png",
+        "icon": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1720033776/done/tree_qh0bvu_bwagdg.webp",
         "title": "عنوان الرمز 1",
         "description": "وصف الرمز 1"
       },
       {
-        "icon": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707959653/holding-hand_1_ip0t5r.png",
+        "icon": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1720033773/done/holding-hand_1_ip0t5r_m9ytdn.webp",
         "title": "عنوان الرمز 2",
         "description": "وصف الرمز 2"
       },
       {
-        "icon": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707601512/star_qhtqlz.png",
+        "icon": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1720033771/done/star_qhtqlz_gx4apr.webp",
         "title": "عنوان الرمز 3",
         "description": "وصف الرمز 3"
       }
     ]
   },
   "about": {
-    "title": "مرحبًا بكم في شركتنا",
-    "subtitle": "رحلتنا",
-    "text": "منذ 2010",
-    "description": "لوريم إيبسوم هو نص شكلي (بمعنى أن الغاية هي الشكل وليس المحتوى) ويُستخدم في صناعات المطابع ودور النشر.",
-    "imgUrl": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707937162/5_ookc7e.jpg",
-    "abouts": [
-      {
-        "title": "سنوات من الخبرة",
-        "value": 10
-      },
-      {
-        "title": "المشاريع المنجزة",
-        "value": 50
-      },
-      {
-        "title": "الجوائز المكتسبة",
-        "value": 20
-      }
-    ],
-    "icon": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707959810/up-arrow_dfq1o8.png",
-    "buttons": [
-      {
-        "buttonText": "ابدأ الآن",
-        "icon": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707952901/right-arrow_1_y7iz2i.png",
-        "url": "#contact13"
-      },
-      {
-        "buttonText": "تعرف على المزيد",
-        "icon": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707952901/right-arrow_1_y7iz2i.png",
-        "url": "#feature13"
-      }
-    ]
-  },
-  "projects": {
-    "title": "أعمالنا الأخيرة",
-    "subtitle": "مشاريعنا المكتملة",
-    "description": "مشاريعنا المكتملة",
-    "buttonText": "تحميل المزيد",
-    "linkText": "#",
-    "projects": [
-      {
-        "imgUrl": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707937447/pexels-ben-neale-380337_yuphlv.jpg",
-        "title": "لوريم إيبسوم دولور",
-        "description": "القاهرة الجديدة",
-        "icon": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707553370/klipartz.com_z2zhsv.png"
-      },
-      {
-        "imgUrl": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707937141/pexels-nubia-navarro-_nubikini_-3221215_wtzq4w.jpg",
-        "title": "لوريم إيبسوم دولور",
-        "description": "الأقصر",
-        "icon": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707553370/klipartz.com_z2zhsv.png"
-      },
-      {
-        "imgUrl": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707937146/pexels-pixabay-262367_b0ixae.jpg",
-        "title": "لوريم إيبسوم دولور",
-        "description": "الجيزة الجديدة",
-        "icon": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707553370/klipartz.com_z2zhsv.png"
-      }
-    ],
-    "icon": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707553370/klipartz.com_z2zhsv.png"
-  },
+  "title": "مرحبا بكم في شركتنا",
+  "subtitle": "رحلتنا",
+  "text": "منذ 2010",
+  "description": "استخدم إبداعنا وخبرتنا.",
+  "imgUrl": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1720033936/done/5_ookc7e_1_tv94g8.webp",
+  "abouts": [
+    {
+      "title": "سنوات من الخبرة",
+      "value": 10
+    },
+    {
+      "title": "مشاريع مُنجزة",
+      "value": 50
+    },
+    {
+      "title": "الجوائز المكتسبة",
+      "value": 20
+    }
+  ],
+  "icon": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1720034053/done/up-arrow_dfq1o8_yxtfu0.webp",
+  "buttons": [
+    {
+      "buttonText": "ابدأ الآن",
+      "icon": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707952901/right-arrow_1_y7iz2i.png",
+      "url": "#contact13"
+    },
+    {
+      "buttonText": "تعرف على المزيد",
+      "icon": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707952901/right-arrow_1_y7iz2i.png",
+      "url": "#feature13"
+    }
+  ]
+}
+,
+"projects": {
+  "title": "أعمالنا الأخيرة",
+  "subtitle": "مشاريعنا المكتملة",
+  "description": "مشاريعنا المكتملة",
+  "buttonText": "عرض المزيد",
+  "linkText": "#",
+  "projects": [
+    {
+      "imgUrl": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1720034298/done/pexels-ben-neale-380337_yuphlv_hohox7.webp",
+      "title": "تصميم مثالي لشخص مثالي",
+      "description": "القاهرة الجديدة",
+      "icon": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707553370/klipartz.com_z2zhsv.png"
+    },
+    {
+      "imgUrl": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1720034296/done/pexels-pixabay-262367_b0ixae_wxu7yq.webp",
+      "title": "عمارة رائعة من تصميمنا مع الحب",
+      "description": "الأقصر",
+      "icon": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707553370/klipartz.com_z2zhsv.png"
+    },
+    {
+      "imgUrl": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1720034293/done/pexels-nubia-navarro-_nubikini_-3221215_wtzq4w_epg7cm.webp",
+      "title": "أعجبك هذا التصميم! فريقنا سيصممه لك",
+      "description": "الجيزة الجديدة",
+      "icon": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707553370/klipartz.com_z2zhsv.png"
+    }
+  ],
+  "icon": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707553370/klipartz.com_z2zhsv.png"
+}
+,
   "contact": {
     "title": "اشترك في نشرتنا الإخبارية",
     "subtitle": "احصل على تحديثات البريد الإلكتروني لدينا حول أحدث المتاجر والعروض الخاصة.",
@@ -145,30 +147,31 @@
     "buttonText": "سجل الآن",
     "icon": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707952901/right-arrow_1_y7iz2i.png"
   },
-  "logos": {
-    "companies": [
-      {
-        "imgUrl": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707329688/realestate/logo6_ddaq6y.png",
-        "title": "لوريم إيبسوم دولور"
-      },
-      {
-        "imgUrl": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707329687/realestate/logo3_fzmko0.png",
-        "title": "الإضاءة"
-      },
-      {
-        "imgUrl": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707975425/icons8-bird-64_kofuu5.png",
-        "title": "الإضاءة"
-      },
-      {
-        "imgUrl": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707329685/realestate/logo2_z1jb8d.png",
-        "title": "الإضاءة"
-      },
-      {
-        "imgUrl": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1703129091/icons8-stars-50_o1lg9s.png",
-        "title": "الإضاءة"
-      }
-    ]
-  },
+ "logos": {
+  "companies": [
+    {
+      "imgUrl": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1720023921/done/logo6_ddaq6y_rkqshl.webp",
+      "title": "جوجل"
+    },
+    {
+      "imgUrl": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1720023920/done/logo2_z1jb8d_ez6dwd.webp",
+      "title": "يوتيوب"
+    },
+    {
+      "imgUrl": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1720023918/done/logo3_fzmko0_sprysc.webp",
+      "title": "توكوبيديا"
+    },
+    {
+      "imgUrl": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1720023922/done/logo5_iwqjl7_h9r76r.webp",
+      "title": "سامسونج"
+    },
+    {
+      "imgUrl": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1720023917/done/logo4_xbf3fz_tms7cn.webp",
+      "title": "سبوتيفاي"
+    }
+  ]
+}
+,
   "testimonials": {
     "title": "ما الذي ",
     "subtitle": "يقولونه عملائنا",

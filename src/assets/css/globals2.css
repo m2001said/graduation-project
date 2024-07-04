@@ -1,5 +1,4 @@
 :root {
-
   --website-2-color-1: #1f1f38;
   --website-2-color-2: #2c2c6c;
 
@@ -13,10 +12,9 @@
   --container2-width-md: 86%;
   --container2-width-sm: 90%;
   --transition2: all 400ms ease;
-
 }
 .nav2 a {
-  color: #fff; /* Default text color */
+  color: var(--website-2-color-5);
   transition: all 0.3s ease;
 }
 
@@ -35,11 +33,11 @@
   background-color: var(--website-2-color-3) !important;
   color: var(--website-2-color-5) !important;
   border: 1px solid var(--website-2-color-3) !important;
-  border-radius:  0.5rem !important;
-  width: max-content; /*to make it fit exactly its content*/
+  border-radius: 0.5rem !important;
+  width: max-content;
   display: inline-block;
   color: var(--website-2-color-3);
-  padding: 0.75rem 1.2rem; /*top-bottom   left-right**/
+  padding: 0.75rem 1.2rem;
   border-radius: 0.4rem;
   cursor: pointer;
 }
@@ -48,8 +46,7 @@
   background: var(--website-2-color-1) url("https://res.cloudinary.com/dowtlcpxj/image/upload/v1703134021/bg-texture_up9ylo.png");
   color: var(--website-2-color-5);
   line-height: 1.7;
-  /* display: flex;
-  flex-direction: column; */
+
   align-items: center;
   justify-content: center;
   min-height: 100vh;
@@ -59,7 +56,7 @@
 
 .trialdesign2 .container {
   width: var(--container2-width-lg);
-  margin: 0 auto; /*to posisition it in middle hoirzontally*/
+  margin: 0 auto;
   justify-content: center;
   align-items: center;
 }
@@ -75,7 +72,6 @@ h1 {
   font-size: 2.5rem;
 }
 
-/*direct childs of sction */
 section > h2,
 section > h5 {
   text-align: center;
@@ -96,10 +92,10 @@ a:hover {
   color: var(--website-2-color-5);
 }
 .trialdesign2 .btn {
-  width: max-content; /*to make it fit exactly its content*/
+  width: max-content;
   display: inline-block;
   color: var(--website-2-color-3);
-  padding: 0.75rem 1.2rem; /*top-bottom   left-right**/
+  padding: 0.75rem 1.2rem;
   border-radius: 0.4rem;
   cursor: pointer;
   border: 1px solid var(--website-2-color-3);
@@ -109,7 +105,7 @@ a:hover {
 .trialdesign2 .btn:hover {
   background: var(--website-2-color-5);
   color: var(--website-2-color-1);
-  border-color: transparent; /*will change from color primary to transparent*/
+  border-color: transparent;
 }
 .trialdesign2 .btn-primary {
   background: var(--website-2-color-3);
@@ -121,7 +117,6 @@ a:hover {
   object-fit: cover;
 }
 
-/******************************** Media Query for "tablets"     *** *** **** * * ***/
 @media screen and (max-width: 1024px) {
   .container {
     width: var(--container2-width-md);
@@ -130,7 +125,6 @@ a:hover {
     /* margin-top: 1rem; */
   }
 }
-/******************************** Media Query for "phones"     *** *** **** * * ***/
 
 @media screen and (max-width: 600px) {
   .trialdesign2 .container {

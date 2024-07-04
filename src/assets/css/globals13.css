@@ -1,48 +1,13 @@
-.red-button {
-  color: rgb(244, 136, 136);
-}
-/************/
-.blue-background {
-  background-color: rgb(216, 216, 236);
-}
-
-.plus-9 {
-  height: 13px;
-  width: 13px;
-}
-
 :root {
-    /* --color-13-green: #003b29; */
+  --website-13-color-1: #003629;
 
-  /* --color-darkG-13: #;  */
---website-13-color-1: #003629;
+  --website-13-color-2: #154b3b;
 
-
-
-
-
-  /* --green-13: #054130; */
-  /* --color-g-13-g: ; */
---website-13-color-2: #154b3b;
-
-
-
-  /* --white-13: rgb(255, 255, 255); */
   --website-13-color-3: rgb(255, 255, 255);
 
-
-  /* --color-13-yel: ; */
   --website-13-color-4: #fbba24;
 
-
-  /* --fff6ed  : #fff6ed; */
   --website-13-color-5: #fff6ed;
 
-
-
-  /* --c616161: #616161; */
   --website-13-color-6: #616161;
- 
 }
-
-
