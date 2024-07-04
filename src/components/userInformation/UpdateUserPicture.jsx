@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import axiosInstance from "../../features/auth/axiosInstance";
+import axios from "axios";
 import { useSelector, useDispatch } from "react-redux";
 import { updateUserAvatar } from "../../features/auth/authSlice";
 
@@ -26,7 +26,7 @@ const UpdateUserPicture = () => {
       const formData = new FormData();
       formData.append("avatar", file);
 
-      const backendResponse = await axiosInstance.post("/user/upload", formData, {
+      const backendResponse = await axios.post("/user/upload", formData, {
         headers: {
           Authorization: `Bearer ${token}`,
           "Content-Type": "multipart/form-data",
