@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import "../components/yourPage/yourPage.css";
 import InputOption from "../components/yourPage/ChooseOption";
@@ -6,6 +6,7 @@ import { getSectionData } from "../components/yourPage/getSectionData";
 import { useDispatch, useSelector } from "react-redux";
 import { useTranslation } from "react-i18next";
 import { ownTemplateActions } from "../features/templateData/ownTemplateSlice";
+import { fetchInitialTemplate } from "../features/templateData/templateSlice";
 
 const palettes = [
   ["#FFFAF3", "#F1C40F", "#E67E22", "#E74C3C", "#8E44AD"],
@@ -50,29 +51,33 @@ const BuildYourPage = () => {
   ];
 
   const dispatch = useDispatch();
+  const [selectedColor, setSelectedColor] = useState(0);
 
-  // todo edit this to be  const templates = state.template1; ----- > said
-  const templates = useSelector((state) => ({
-    1: state.template1,
-    2: state.template2,
-    3: state.template3,
-    4: state.template4,
-    5: state.template5,
-    6: state.template6,
-    7: state.template7,
-    8: state.template8,
-    9: state.template9,
-    10: state.template10,
-    11: state.template11,
-    12: state.template12,
-    13: state.template13,
-    14: state.template14,
-    15: state.template15,
-    16: state.template16,
-    17: state.template17,
-    18: state.template18,
-  }));
-  const [selectedIndices, setSelectedIndices] = useState(Object.fromEntries(sectionNames.map((name) => [name, undefined])));
+  const handleColorChange = (paletteIndex) => {
+    setSelectedColor(paletteIndex);
+  };
+
+  const [templates, setTemplates] = useState({});
+  useEffect(() => {
+    const fetchTemplates = async () => {
+      const templatesData = {};
+      for (let i = 1; i <= 18; i++) {
+        const template = await dispatch(fetchInitialTemplate(i)).unwrap();
+        templatesData[i] = template;
+      }
+      setTemplates(templatesData);
+    };
+    fetchTemplates();
+  }, [dispatch]);
+
+  // const [selectedIndices, setSelectedIndices] = useState(Object.fromEntries(sectionNames.map((name) => [name, undefined])));
+
+  const initialSelectedValues = Object.fromEntries(sectionNames.map((name) => [name, undefined]));
+  initialSelectedValues["navbar"] = 1;
+  initialSelectedValues["hero"] = 1;
+  initialSelectedValues["footer"] = 1;
+
+  const [selectedIndices, setSelectedIndices] = useState(initialSelectedValues);
 
   const [checkError, setCheckError] = useState(false);
   const navigate = useNavigate();
@@ -108,7 +113,6 @@ const BuildYourPage = () => {
     } else {
       let userSchema = {};
       userSectionSelection.map((state) => {
-        // todo edit this to be one template  ----- > said
         for (const key in templates) {
           if (state.templateId.toString() === key.toString()) {
             userSchema[state.sectionName] = templates[key][state.sectionName];
@@ -124,33 +128,12 @@ const BuildYourPage = () => {
 
   return (
     <div className="own-page">
-      <div className="flex gap-4 flex-wrap">
-        {palettes.map((palette, paletteIndex) => (
-          <div key={paletteIndex} className="flex flex-col">
-            {palette.map((color, index) => (
-              <div
-                key={index}
-                style={{
-                  width: "150px",
-                  height: "30px",
-                  backgroundColor: color,
-                }}
-              />
-            ))}
-          </div>
-        ))}
-      </div>
-
-      <div className="container mx-auto px-4 py-4">
+      <div className="container mx-auto px-4 py-4 flex flex-col items-center">
         <h1 className="text-3xl font-bold tracking-tighter py-8 text-center text-white sm:text-4xl md:text-5xl lg:text-6xl/none">Build Your Own Page</h1>
-        <div className="group text">
-          <p className="title">Website description</p>
-          <textarea name="text" id="text"></textarea>
-        </div>
 
         {sectionNames.map((section, index) => (
-          <div key={section}>
-            <label htmlFor={`show${index}`} className="show-section">
+          <div key={index} className="w-full">
+            <label htmlFor={`show${index}`} className="show-section justify-between">
               <p className="title">{`${section} sections`}</p>
               <img src="https://res.cloudinary.com/duc04fwdb/image/upload/v1709052019/jammal_photos/vdybrjarzdlo6x9fdwga.svg" alt="down-icon" />
             </label>
@@ -159,16 +142,53 @@ const BuildYourPage = () => {
           </div>
         ))}
 
-        <button className="generate-own-btn" onClick={handleSubmit}>
+        <p className="show-section title">choose website colors</p>
+
+        <div className="show-section flex gap-4 flex-wrap justify-between">
+          {palettes.map((palette, paletteIndex) => (
+            <>
+              <div
+                key={paletteIndex}
+                className={`flex flex-col`}
+                style={{ position: "relative", border: selectedColor === paletteIndex ? "solid 2px var(--color-3)" : "solid 2px transparent" }}
+              >
+                {selectedColor == paletteIndex && (
+                  <div className="check-icon">
+                    <img src="https://res.cloudinary.com/duc04fwdb/image/upload/v1708037268/jammal_photos/nme9bdbxqehtul4yzmd7.svg" alt="check-icon" />
+                  </div>
+                )}
+                {palette.map((color, colorIndex) => (
+                  <div
+                    key={colorIndex}
+                    style={{
+                      width: "150px",
+                      height: "30px",
+                      backgroundColor: color,
+                      cursor: "pointer",
+                    }}
+                    onClick={() => handleColorChange(paletteIndex)}
+                  />
+                ))}
+              </div>
+            </>
+          ))}
+        </div>
+
+        <button
+          className="flex-none rounded-md bg-indigo-500 px-3.5 my-4 mx-auto py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500"
+          onClick={handleSubmit}
+        >
           Generate your website
         </button>
-        <div className={`error-message ${checkError ? "active" : ""}  flex justify-center items-center gap-4`}>
+        {/*
+    <div className={`error-message ${checkError ? "active" : ""}  flex justify-center items-center gap-4`}>
           <img src="https://res.cloudinary.com/dvp3nyulf/image/upload/v1710190698/warning.png" alt="" />
           <p>
             Select a minimum of<span className="important"> 3 </span>sections, including
             <span className="important"> Navbar</span>,<span className="important"> Hero</span>,<span className="important"> Footer</span>,
           </p>
-        </div>
+    </div>
+    */}
       </div>
     </div>
   );

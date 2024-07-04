@@ -17,6 +17,7 @@ import YourWebsites from "./pages/YourWebsites.jsx";
 import Admin from "./pages/Admin";
 import { useRightToLeft } from "./utils/rightToLeft.js";
 import { useTranslation } from "react-i18next";
+import AdminUserPage from "./pages/AdminUserPage";
 
 const trialDesignComponents = Array.from({ length: 18 }, (_, i) => require(`./pages/TrialDesign${i + 1}`).default);
 const websites = Array.from({ length: 18 }, (_, i) => require(`./pages/TrialDesign${i + 1}`).default);
@@ -136,6 +137,7 @@ function App() {
           </Route>
 
           <Route path={`/${language}/admin`} element={<Admin />} />
+          <Route path={`/${language}/admin-user-page/:userId/:pageId`} element={<AdminUserPage />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </div>

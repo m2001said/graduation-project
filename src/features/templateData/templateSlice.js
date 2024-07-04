@@ -42,7 +42,6 @@ export const fetchInitialTemplate = createAsyncThunk("template/fetchInitialTempl
   try {
     const language = i18next.language;
     let templateData = {};
-    console.log("language in fetchInitialTemplate", language);
 
     if (language === "ar") {
       switch (id) {
@@ -163,7 +162,7 @@ export const fetchInitialTemplate = createAsyncThunk("template/fetchInitialTempl
           throw new Error(`Template with id ${id} not found`);
       }
     }
-    console.log("templateData in fetchInitialTemplate", templateData);
+    console.log(`templateData in fetchInitialTemplate(${id})`, templateData);
     return templateData;
   } catch (error) {
     console.error("Error fetching initial template:", error);

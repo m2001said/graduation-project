@@ -10,7 +10,7 @@ const Footer6 = ({ template }) => {
         <div className="container mx-auto px-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
           <div className="logo">
             <div className=" d-flex align-items-center gap-1 mb-4">
-              <img src={footer.logo} alt="" className="design6-logo" />
+              <img src={footer.icon} alt="" className="design6-logo" />
             </div>
             <p className="footer-description">{footer.description}</p>
           </div>
@@ -43,7 +43,7 @@ const Footer6 = ({ template }) => {
       <div className="footer__bottom">
         <div className="container mx-auto">
           <div className="text-center">
-            <p className="footer-copyright">{footer.copyright}</p>
+            <p className="footer-copyright">{footer.title}</p>
           </div>
         </div>
       </div>

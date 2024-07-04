@@ -1,12 +1,20 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+:root {
+  /*===============
+     * Colors
+    ===============*/
+  --website-8-color-1: black;
+  --website-8-color-2: #212ea0;
+  --website-8-color-3: rgba(0, 15, 152, 0.3);
 
+  --website-8-color-6: #212ea0;
+}
 .site-container8 {
-  /* background-image: var(--background-image); */
-  background-size: cover;
-  overflow: hidden;
-  color: var(--black);
+  /* background-size: cover; */
+  /* overflow: hidden; */
+  background-color: var(--website-8-color-1);
 }
 .serviceC {
   color: var(--white);

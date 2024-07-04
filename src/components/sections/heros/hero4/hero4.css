@@ -1,93 +1,103 @@
-.hero-wrapper {
+.hero-wrapper4 {
   color: var(--white);
   position: relative;
   z-index: 1;
   padding-bottom: 2rem;
 }
 
-.hero-container {
+.hero-container4 {
   justify-content: space-around;
   align-items: flex-end;
-  background-color: var(--black);
+  background-color: var(--website-4-color-1);
 }
 
-.hero-left {
+.hero-left4 {
   gap: 3rem;
 }
-.hero-title {
+.hero-title4 {
   position: relative;
   z-index: 1;
   width: 400px;
 }
-.hero-title > h1 {
+.hero-title4 > h1 {
   font-weight: 600;
   font-size: 3.8rem;
   line-height: 4rem;
 }
-.orange-circle {
+.orange-circle4 {
   height: 4rem;
   width: 4rem;
-  background: var(--orange-gradient);
+  background: var(--website-4-color-3);
   border-radius: 999px;
   position: absolute;
   right: 28%;
   top: -10%;
   z-index: -1;
 }
-.search-bar {
+.search-bar4 {
   background-color: var(--white);
   border-radius: 5px;
-  border: 3px solid var(--black);
+  border: 3px solid var(--website-4-color-1);
   padding: 0.5rem 1rem;
   width: 100%;
   justify-content: space-between;
+  row-gap: 0;
 }
-.search-bar > input {
-  border: none;
+.search-bar4 > input {
+  border: solid;
+  border-color: var(--website-color-1);
   outline: none;
+  padding: 4px;
+  background-color: var(--website-color-1);
+  color: var(--website-4-color-1);
 }
-.stats {
+.stats4 {
   width: 100%;
   justify-content: space-between;
 }
-.stat > :nth-child(1) {
+.stat4 > :nth-child(1) {
   font-size: 2rem;
 }
-.stat > :nth-child(1) > :last-child {
-  color: var(--orange-gradient);
+.stat4 > :nth-child(1) > :last-child {
+  color: var(--website-4-color-3);
 }
 
-.image-container {
+.image-container4 {
   width: 30rem;
   height: 35rem;
   overflow: hidden;
   border-radius: 15rem 15rem 0 0;
-  border: 8px solid var(--black);
+  border: 8px solid var(--website-4-color-1);
 }
-.image-container > img {
+.image-container4 > img {
   width: 100%;
   height: 100%;
+}
+.button4 {
+  background-color: var(--website-4-color-3);
+  padding: 4px 12px;
+  border-radius: 5px;
 }
 
 /* mobile screens */
 @media (max-width: 640px) {
-  .hero-title > h1 {
+  .hero-title4 > h1 {
     font-size: 2.5rem;
     line-height: 3rem;
   }
-  .image-container {
+  .image-container4 {
     width: 95%;
     height: 25rem;
   }
-  .stats {
+  .stats4 {
     justify-content: center;
     gap: 1.5rem;
     font-weight: wrap;
   }
-  .stat > :nth-child(1) {
+  .stat4 > :nth-child(1) {
     font-size: 1.5rem;
   }
-  .stat > :nth-child(2) {
+  .stat4 > :nth-child(2) {
     font-size: 0.8rem;
   }
 }

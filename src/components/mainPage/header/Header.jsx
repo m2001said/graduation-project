@@ -10,6 +10,7 @@ import { useTranslation } from "react-i18next";
 const Header = ({ toggleModal }) => {
   const { t, i18n } = useTranslation();
   const authState = useSelector((state) => state.auth);
+  const user = useSelector((state) => state.auth.user);
 
   useEffect(() => {
     AOS.init({
@@ -18,6 +19,7 @@ const Header = ({ toggleModal }) => {
       once: true,
     });
   }, []);
+
   return (
     <>
       <header className="main-header">
@@ -27,13 +29,22 @@ const Header = ({ toggleModal }) => {
               <h1 className="info-title"> {t("HERO.TITLE")}</h1>
               <p className="info-description"> {t("HERO.DESCRIPTION")} </p>
               {authState.status === "succeeded" ? (
-                <Link to={`/${i18n.language}/designs`}>
-                  <button className="info-btn"> {t("HERO.BUTTONTEXT")}</button>
-                </Link>
+                <div className="flex flex-wrap gap-8">
+                  <Link to={`/${i18n.language}/designs`}>
+                    <button className="info-btn"> {t("HERO.BUTTONTEXT")}</button>
+                  </Link>
+                  {user?.role === "admin" && (
+                    <Link to={`/${i18n.language}/admin`}>
+                      <button className="info-btn admin-btn"> {t("HERO.BUTTONTEXTADMIN")}</button>
+                    </Link>
+                  )}
+                </div>
               ) : (
-                <button className="info-btn" onClick={toggleModal}>
-                  {t("HERO.BUTTONTEXT")}
-                </button>
+                <>
+                  <button className="info-btn" onClick={toggleModal}>
+                    {t("HERO.BUTTONTEXT")}
+                  </button>
+                </>
               )}
             </div>
             <div className="main-hero-image">
