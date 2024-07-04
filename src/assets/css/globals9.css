@@ -1,10 +1,3 @@
-.red-button {
-  color: rgb(244, 136, 136);
-}
-
-.blue-background {
-  background-color: rgb(216, 216, 236);
-}
 
 .plus-9 {
   height: 13px;
@@ -13,27 +6,23 @@
 
 :root {
   --website-9-color-1: rgb(255, 255, 255);
-   --website-9-color-2: #0ca39a;
-   --website-9-color-3: #0c4f37;
- 
+  --website-9-color-2: #0ca39a;
+  --website-9-color-3: #0c4f37;
+
   --website-9-color-4: #808080;
- 
- 
- 
 
   --website-9-color-5: #646cffaa;
- 
+
   --website-9-color-6: #74cac5;
- 
-   --font-size-md-9: 2rem;
+
+  --font-size-md-9: 2rem;
 
   --font-size-base-9: 1.25rem;
   --border-radius-lg-9: 1.5rem;
   --border-radius-md: 0.5rem;
   --transition9: all 400ms ease;
 
-  /* Fonts */
-  --font-size-lg: 2.25rem;
+   --font-size-lg: 2.25rem;
   --font-size-md: 1.875rem;
   --font-size-sm: 1.5rem;
   --font-size-base: 1.25rem;
@@ -41,8 +30,6 @@
   --font-weight-regular: 400;
   --font-weight-medium: 500;
   --font-weight-bold: 700;
-
-  /****/
 }
 
 .hero9 {
@@ -106,10 +93,10 @@
 }
 
 .img-9:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+  filter: drop-shadow(0 0 2em var(--website-9-color-5));
 }
 .img-9.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+  filter: drop-shadow(0 0 2em var(--website-9-color-6));
 }
 
 @import "tailwindcss/base";
@@ -126,32 +113,24 @@
 }
 
 .read-the-docs {
-  color: #888;
+  color: var(--website-9-color-4);
 }
 .gradient-background {
   background: linear-gradient(to top, var(--website-9-color-2), var(--website-9-color-1));
   border-radius: 560px;
   border-radius: 0 0 560px 560px;
 }
- 
-
-
 
 .about-9 {
   transition: var(--transition9);
-  /* padding-top: 1rem; */
   padding-bottom: 3rem;
 }
 .about-9 {
-  /* display: flex; */
   justify-content: center;
-
-  /* align-items: center; */
 }
 
 .service-99 {
   background: var(--website-9-color-3);
-  /* background-size: contain; */
   padding-bottom: 2rem;
 }
 
@@ -179,14 +158,8 @@
   width: 10%;
 }
 
-/* @media screen and (max-width: 600px) {
-  .swiper-container {
-    width: 100%;
-  }
-} */
-/* styles.css or your component's CSS file */
 @keyframes slideBackground {
-  0%{
+  0% {
     background-position-x: 0%;
   }
   100% {
@@ -195,6 +168,6 @@
 }
 
 .animate-slideBackground {
-  animation: slideBackground 20s linear infinite;
-  background-color: var(--website-9-color-2)
- }
+  animation: slideBackground 6s linear infinite;
+  background-color: var(--website-9-color-2);
+}

@@ -17,16 +17,17 @@ const Contact13 = ({ template }) => {
             {t(contact.subtitle)}
             <span className="underline decoration-[var(--website-13-color-4)]"> {t(contact.description)}</span>{" "}
           </h1>
-          <div className="relative flex items-center pt-8">
-            <button className="absolute md:left-4 left-1 rounded-full md:px-8 flex items-center md:text-sm text-xs bg-[var(--website-13-color-4)] text-[var(--website-13-color-1)] gap-2 transition ease-out duration-300 transform hover:scale-110 ">
-              <img src={contact.icon} alt="right arrow" className="text-xl h-12" />
-              <p className="text-[var(--website-13-color-1)]">{t(contact.buttonText)}</p>
-            </button>
+          <div className={`relative flex items-center pt-8 ${isRTL ? 'flex-row-reverse' : ''}`}>
             <input
               type="email"
               placeholder={isRTL ? t("ادخل بريدك الالكتروني") : t("enter your email")}
-              className="bg-[var(--website-13-color-1)] rounded-full w-full md:pl-6 pl-2 h-16 outline-none text-right"
+              className={`bg-[var(--website-13-color-1)] rounded-full w-full md:pl-6 pl-2 h-16 outline-none ${isRTL ? 'text-right' : ''}`}
             />
+            <button 
+              className={`absolute ${isRTL ? 'left-1 md:left-4' : 'right-1 md:right-4'} rounded-full md:px-8 flex items-center md:text-sm text-xs bg-[var(--website-13-color-4)] text-[var(--website-13-color-1)] gap-2 transition ease-out duration-300 transform hover:scale-110`}>
+              <img src={contact.icon} alt="right arrow" className="text-xl h-12" />
+              <p className="text-[var(--website-13-color-1)]">{t(contact.buttonText)}</p>
+            </button>
           </div>
         </div>
         <div className="lg:py-0 py-8 flex justify-center">
