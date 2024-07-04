@@ -13,22 +13,23 @@
   --container2-width-sm: 90%;
   --transition2: all 400ms ease;
 }
-.nav2 a {
+
+.trialdesign2 .nav2 a {
   color: var(--website-2-color-5);
   transition: all 0.3s ease;
 }
 
-.nav2 a.active {
+.trialdesign2 .nav2 a.active {
   background-color: var(--website-2-color-3);
   color: var(--website-2-color-1);
 }
 
-.nav2 a:hover {
+.trialdesign2 .nav2 a:hover {
   background-color: var(--website-2-color-4);
   color: var(--website-2-color-1);
 }
 
-.btn-2 {
+.trialdesign2 .btn-2 {
   width: 70%;
   background-color: var(--website-2-color-3) !important;
   color: var(--website-2-color-5) !important;
@@ -60,35 +61,35 @@
   justify-content: center;
   align-items: center;
 }
-h1,
-h2,
-h3,
-h4,
-h5 {
+.trialdesign2 h1,
+.trialdesign2 h2,
+.trialdesign2 h3,
+.trialdesign2 h4,
+.trialdesign2 h5 {
   font-weight: 500;
 }
 
-h1 {
+.trialdesign2 h1 {
   font-size: 2.5rem;
 }
 
-section > h2,
-section > h5 {
+.trialdesign2 section > h2,
+.trialdesign2 section > h5 {
   text-align: center;
   color: var(--website-2-color-5);
 }
-section > h2 {
+.trialdesign2 section > h2 {
   color: var(--website-2-color-3);
   margin-bottom: 3rem;
 }
-.text-light {
+.trialdesign2 .text-light {
   color: var(--website-2-color-5);
 }
-a {
+.trialdesign2 a {
   color: var(--website-2-color-3);
   transition: var(--transition2);
 }
-a:hover {
+.trialdesign2 a:hover {
   color: var(--website-2-color-5);
 }
 .trialdesign2 .btn {
@@ -118,11 +119,8 @@ a:hover {
 }
 
 @media screen and (max-width: 1024px) {
-  .container {
+  .trialdesign2 .container {
     width: var(--container2-width-md);
-  }
-  section {
-    /* margin-top: 1rem; */
   }
 }
 
@@ -130,7 +128,7 @@ a:hover {
   .trialdesign2 .container {
     max-width: 70%;
   }
-  section > h2 {
+  .trialdesign2 section > h2 {
     margin-bottom: 2rem;
   }
 }

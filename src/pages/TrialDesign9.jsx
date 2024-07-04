@@ -22,11 +22,14 @@ const TrialDesign9 = () => {
     contact: Contact9,
   };
   return (
-    <div className="TrialDesign9">
-      <main>
-        <TrialDesign componentMapping={componentMapping} HeroComponent={Hero9} NavbarComponent={Navbar9} FooterComponent={Footer9} template={9} />;
-      </main>
-    </div>
+    <TrialDesign
+      className="TrialDesign9"
+      componentMapping={componentMapping}
+      HeroComponent={Hero9}
+      NavbarComponent={Navbar9}
+      FooterComponent={Footer9}
+      template={9}
+    />
   );
 };
 

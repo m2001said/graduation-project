@@ -1,11 +1,14 @@
-/* all sections should be the same with padding, title size, subtitle, description and other same styling data */
-body {
-  max-width: 1600px;
-  margin: 0 auto !important;
+:root {
+  --website-color-1: #ffffff;
+  --website-color-2: #cda274;
+  --website-color-3: #292f36;
+  --website-color-4: #f4f0ec;
+  --website-color-5: #777777;
 }
 
 .design-1 {
   padding: 30px;
+  margin: 0 auto !important;
 }
 
 .title-1 {
@@ -14,8 +17,7 @@ body {
   margin-bottom: 10px;
   font-weight: 700;
 }
-.subTitle-1 {
-}
+
 .description-1 {
   color: var(--website-color-5);
   line-height: 1.3;
@@ -31,8 +33,7 @@ body {
   .title-1 {
     font-size: 25px;
   }
-  .subTitle-1 {
-  }
+
   .description-1 {
     font-size: 18px;
     margin-bottom: 20px;

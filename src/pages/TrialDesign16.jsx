@@ -27,9 +27,14 @@ const TrialDesign16 = () => {
     testimonials: Testimonials16,
   };
   return (
-    <div className="body16 ">
-      <TrialDesign componentMapping={componentMapping} HeroComponent={Hero16} NavbarComponent={Navbar16} FooterComponent={Footer16} template={16} />
-    </div>
+    <TrialDesign
+      className="body16 "
+      componentMapping={componentMapping}
+      HeroComponent={Hero16}
+      NavbarComponent={Navbar16}
+      FooterComponent={Footer16}
+      template={16}
+    />
   );
 };
 

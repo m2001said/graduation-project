@@ -1,8 +1,5 @@
-import React from 'react';
+import React from "react";
 import "./hero5.css";
-
-
-
 
 const Hero5 = ({ template }) => {
   const hero = template.hero;
@@ -22,4 +19,4 @@ const Hero5 = ({ template }) => {
   );
 };
 
-export default Hero5
+export default Hero5;
