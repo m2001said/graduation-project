@@ -128,7 +128,7 @@
 .design-4 .flexCenter4 {
   display: flex;
   row-gap: 2rem;
-  justify-content: center;
+  /* justify-content: center; */
   align-items: center;
   flex-wrap: wrap;
 }
