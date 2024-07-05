@@ -393,10 +393,8 @@
 }
 
 .TrialDesign15 {
-  /* margin: 0;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh; */
+  max-width: 1700px;
+  margin: 0 auto;
 }
 
 .hoverBtn {
