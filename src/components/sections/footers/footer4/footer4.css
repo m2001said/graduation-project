@@ -1,24 +1,27 @@
-.f-container {
+.f-container4 {
   justify-content: space-between;
+  color: var(--website-4-color-1);
 }
-.f-left {
+.f-left4 {
   gap: 1rem;
   width: 14rem;
+  color: (var(--website-4-color-1));
 }
-.f-menu {
+.f-menu4 {
   gap: 1.5rem;
   margin-top: 1.5rem;
   font-weight: 500;
+  color: var(--website-4-color-1);
 }
 @media (max-width: 768px) {
-  .f-container {
+  .f-container4 {
     justify-content: center;
   }
-  .f-container > div {
+  .f-container4 > div {
     align-items: center !important;
     text-align: center;
   }
-  .f-right {
+  .f-right4 {
     justify-content: center;
   }
 }

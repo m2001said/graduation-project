@@ -1,17 +1,17 @@
-.v-container .image-container {
+.v-container4 .image-container4 {
   border: 8px solid rgb(232 232 232 / 93%);
 }
-.v-container > div {
+.v-container4 > div {
   flex: 1;
 }
-.v-right {
+.v-right4 {
   gap: 0.5rem;
 }
-.accordion {
-  margin-top: 2rem;
+.accordion4 {
+  margin-top: 1rem;
   border: none;
 }
-.accordionItem {
+.accordionItem4 {
   background: white;
   border: 0.8px solid rgba(128, 128, 128, 0.143);
   border-radius: 8px;
@@ -19,11 +19,11 @@
   margin-bottom: 20px;
 }
 
-.accordionItem.expanded {
+.accordionItem4 .expanded4 {
   box-shadow: var(--shadow);
   border-radius: 6px;
 }
-.accordionButton {
+.accordionButton4 {
   background: white;
   padding: 1rem;
   width: 100%;
@@ -31,28 +31,37 @@
   cursor: pointer;
 }
 
-.icon {
+.icon4 {
   padding: 10px;
   background: var(--white);
+  color: var(--website-4-color-1);
   border-radius: 5px;
   box-shadow: 0 0 3px rgb(190, 154, 154);
 }
-.icon svg {
-  fill: var(--blue);
+.icon4 svg {
+  fill: var(--website-4-color-4);
 }
 
-.accordionButton .primaryText {
+.accordionButton4 .primaryText4 {
   font-size: 1.1rem;
+}
+.text-m-des4 {
+  color: var(--website-4-color-1);
+  font-size: 18px;
+}
+.feature-des4 {
+  padding: 1rem;
+  font-size: 16px;
 }
 
 @media (max-width: 1024px) {
-  .v-container {
+  .v-container4 {
     flex-direction: column;
   }
 }
 
 @media (max-width: 768px) {
-  .accordionButton .primaryText {
+  .accordionButton4 .primaryText4 {
     font-size: 0.8rem;
   }
 }

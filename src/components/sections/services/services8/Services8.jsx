@@ -9,12 +9,12 @@ const Services8 = ({ template }) => {
   }, []);
 
   return (
-    <section className="section8 lg:mb-24" id="services">
+    <section className=" section8 lg:mb-24" id="services">
       <div className="container mx-auto">
         <div className="flex flex-col lg:flex-row">
           {/* text & Image*/}
           <div
-            className="flex-1  lg:bg-bottom bg-no-repeat mix-blend-lighten mb-12 lg:mb-0"
+            className="flex-1  lg:bg-bottom bg-no-repeat  mb-12 lg:mb-0"
             style={{
               backgroundImage: `url(${services.imgUrl})`,
             }}

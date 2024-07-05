@@ -1,29 +1,4 @@
 :root {
-  /* --appColor7: #0b132b;
- --website-7-color-4: linear-gradient(144.39deg, #ffffff -278.56%, #6d6d6d -78.47%, #11101d 91.61%);
-  --card-shadow: 0px 20px 100px -10px rgba(66, 71, 91, 0.1);
-  --website-7-color-2: radial-gradient(
-    64.18% 64.18% at 71.16% 35.69%,
-    #def9fa 0.89%,
-    #bef3f5 17.23%,
-    #9dedf0 42.04%,
-    #7de7eb 55.12%,
-    #5ce1e6 71.54%,
-    #33bbcf 100%
-  ); */
-  /* --website-7-color-2: linear-gradient(157.81deg, #def9fa -43.27%, #bef3f5 -21.24%, #9dedf0 12.19%, #7de7eb 29.82%, #5ce1e6 51.94%, #33bbcf 90.29%); */
-  /*--website-7-color-4: linear-gradient(144.39deg, #ffffff -278.56%, #6d6d6d -78.47%, #11101d 91.61%); */
-  /*--website-7-color-4-2: linear-gradient(-168.39deg, #ffffff -278.56%, #6d6d6d -78.47%, #11101d 91.61%); */
-  /* --gray-gradient: linear-gradient(153.47deg, rgba(255, 255, 255, 0) -341.94%, #14101d 95.11%); */
-  /* --website-7-color-1: linear-gradient(125.17deg, #272727 0%, #11101d 100%); */
-  /* --pink__gradient: linear-gradient(90deg, #f4c4f3 0%, #fc67fa 100%); */
-  /* --website-7-color-6: rgba(255, 255, 255, 0.6); */
-  /* --website-7-color-1: #000f04; */
-  /* --website-7-color-5: #00f6ff; */
-  /* --website-7-color-6: rgba(255, 255, 255, 0.7); */
-  /* --website-7-color-1: rgba(9, 151, 124, 0.1); */
-
-  /* --------------- */
   --website-7-color-1: #232c47;
   --website-7-color-2: linear-gradient(90deg, #318a8c 0%, #5ce1e6 51.94%);
   --website-7-color-3: linear-gradient(90deg, #c014bd 0%, #fc67fa 100%);
@@ -35,24 +10,20 @@
 .TrialDesign7 {
   background: var(--website-7-color-1);
 }
-
-.primary {
+.TrialDesign7 .primary {
   color: var(--website-7-color-1);
 }
-
-.secondary {
+.TrialDesign7 .secondary {
   color: var(--website-7-color-5);
 }
-
-.dimWhite {
+.TrialDesign7 .dimWhite {
   color: var(--website-7-color-6);
 }
-
-.dimBlue {
+.TrialDesign7 .dimBlue {
   color: var(--website-7-color-1);
 }
 
-::-webkit-scrollbar {
+.TrialDesign7 ::-webkit-scrollbar {
   display: none;
 }
 
@@ -61,10 +32,6 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-* {
-  scroll-behavior: smooth;
-}
 
 .footerhover7:hover {
   color: var(--website-7-color-6);
@@ -80,32 +47,25 @@
   font-style: italic;
   text-fill-color: transparent;
 }
-
-.bg-blue-gradient {
+.TrialDesign7 .bg-blue-gradient {
   background: var(--website-7-color-2);
 }
-
-.bg-black-gradient {
+.TrialDesign7 .bg-black-gradient {
   background: var(--website-7-color-4);
 }
-
-.bg-black-gradient-2 {
+.TrialDesign7 .bg-black-gradient-2 {
   background: var(--website-7-color-2);
 }
-
-.bg-gray-gradient {
+.TrialDesign7 .bg-gray-gradient {
   background: var(--website-7-color-6);
 }
-
-.bg-discount-gradient {
+.TrialDesign7 .bg-discount-gradient {
   background: var(--website-7-color-5);
 }
-
-.box-shadow {
+.TrialDesign7 .box-shadow {
   box-shadow: 0px 20px 100px -10px rgba(66, 71, 91, 0.1);
 }
-
-.sidebar {
+.TrialDesign7 .sidebar {
   -webkit-animation: slide-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   animation: slide-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
@@ -133,35 +93,28 @@
     transform: translateY(0);
   }
 }
-
-.feature-card:hover {
+.TrialDesign7 .feature-card:hover {
   background: var(--website-7-color-4);
   box-shadow: var(--card-shadow);
 }
-
-.feedback-container .feedback-card:last-child {
+.TrialDesign7 .feedback-container .feedback-card:last-child {
   margin-right: 0px;
 }
-
-.feedback-card {
+.TrialDesign7 .feedback-card {
   background: transparent;
 }
-
-.feedback-card:hover {
+.TrialDesign7 .feedback-card:hover {
   background: var(--website-7-color-4);
 }
-
-.blue__gradient {
+.TrialDesign7 .blue__gradient {
   background: var(--website-7-color-2);
   filter: blur(123px);
 }
-
-.pink__gradient {
+.TrialDesign7 .pink__gradient {
   background: var(--website-7-color-3);
   filter: blur(900px);
 }
-
-.white__gradient {
+.TrialDesign7 .white__gradient {
   background: var(--website-7-color-6);
   filter: blur(750px);
 }

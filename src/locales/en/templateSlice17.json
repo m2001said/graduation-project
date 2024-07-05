@@ -6,7 +6,7 @@
     "imgUrl": ""
   },
   "navbar": {
-    "title": "Logo",
+    "title": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1720037236/done/fast-delivery-fast-svgrepo-com_fr05yy_2_lxmgwl.webp",
     "subtitle": "Subtitle",
     "description": "Dropdown",
     "links": [
@@ -39,53 +39,53 @@
     ]
   },
   "hero": {
-    "title": "Soliman",
-    "subtitle": "DeliveryRestaurant fresh and healthy meal plan  in Cairo",
+    "title": "Tayer",
+    "subtitle": "Delivery services and fresh and healthy meal plan  in Cairo",
     "description": "Discover delicious dishes that will satisfy your cravings Door from 132.95 per week",
-    "imageUrl": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1710989808/hero_b7quav.png",
-    "imgUrl": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1710989607/heroBg_vahqtb.png"
+    "imageUrl": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1720036257/done/hero_b7quav_lulhhm.webp",
+    "imgUrl": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1720036255/done/heroBg_vahqtb_czftpx.webp"
   },
   "services": {
     "title": "Why Choose Us",
     "services": [
       {
-        "icon": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1711094091/fast-delivery-fast-svgrepo-com_fr05yy.svg",
-        "description": "Lorem ipsum dolor, sit amet consectetur adipisicing"
+        "icon": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1720037236/done/fast-delivery-fast-svgrepo-com_fr05yy_2_lxmgwl.webp",
+        "description": "fast delivery"
       },
       {
-        "icon": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1711094092/burger-huge-svgrepo-com_rpo63l.svg",
-        "description": "Lorem ipsum dolor, sit amet consectetur adipisicing"
+        "icon": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1720037234/done/burger-huge-svgrepo-com_rpo63l_1_uyfzsl.webp",
+        "description": "special taste"
       },
       {
-        "icon": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1711094091/discount-svgrepo-com_j3jgfu.svg",
-        "description": "lorem ipsum dolor, sit amet consectetur adipisicing"
+        "icon": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1720037231/done/discount-svgrepo-com_j3jgfu_si89uf.webp",
+        "description": "high quality low price"
       },
       {
-        "icon": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707959653/holding-hand_1_ip0t5r.png",
-        "description": "Lorem ipsum dolor, sit amet consectetur adipisicing"
+        "icon": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1720037229/done/holding-hand_1_ip0t5r_1_gnjnxd.webp",
+        "description": "kindness in services"
       }
     ]
   },
   "about": {
     "title": "About Us",
-    "subtitle": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi itaque aperiam in doloribus corporis quasi quia praesentium deserunt dolor at ducimus accusamus alias magnam tenetur voluptatem, atque qui iusto nesciunt?",
+    "subtitle": " We source only the freshest, high-quality ingredients to prepare our meals. Our produce is locally sourced and organic whenever possible, ensuring that every bite is packed with nutrients and flavor. Our menu is designed with health in mind. From balanced meals to vegan and gluten-free options, we cater to a variety of dietary needs and preferences. Each meal is crafted to provide the perfect balance of protein, carbs, and healthy fats, helping you maintain a healthy lifestyle effortlessly.",
     "imgs": [
-      "https://res.cloudinary.com/dowtlcpxj/image/upload/v1710989609/polygon_yiwc6q.png",
-      "https://res.cloudinary.com/dowtlcpxj/image/upload/v1710989607/vector-wave_gperhf.png"
+      "https://res.cloudinary.com/dowtlcpxj/image/upload/v1720038987/done/polygon_yiwc6q_1_c2ngxe.webp",
+      "https://res.cloudinary.com/dowtlcpxj/image/upload/v1720038988/done/vector-wave_gperhf_1_fighu3.webp"
     ],
     "buttonText": "My Account",
-    "buttonIcon": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707347076/icons8-person-64_ppr9e8.png"
+    "buttonIcon": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1720039330/done/icons8-person-64_ppr9e8_e6w8z3.webp"
   },
   "features": {
     "title": "Tastes difference and healthy.",
     "subtitle": "That time is the greatest value in the modern world . our healthy meal plan delivery service good food in cairo is the answer for those who want to eat healthy and save time and money .",
     "description": "We Know That time is the greatest value in the modern world . our healthy meal plan delivery service good food in cairo is the answer for those who want to eat healthy and save time and money .",
     "imgs": [
-      "https://res.cloudinary.com/dowtlcpxj/image/upload/v1710989602/apple_cyue6o.png",
-      "https://res.cloudinary.com/dowtlcpxj/image/upload/v1710989602/kiwi_oenfrv.png",
-      " https://res.cloudinary.com/dowtlcpxj/image/upload/v1710989612/lemon_xp4xcd.png",
-      "https://res.cloudinary.com/dowtlcpxj/image/upload/v1710989612/leaf_ik3yan.png",
-      "https://res.cloudinary.com/dowtlcpxj/image/upload/v1710989607/tomato_wxdrmr.png"
+      "https://res.cloudinary.com/dowtlcpxj/image/upload/v1720036877/done/apple_cyue6o_fvgmrz.webp",
+      "https://res.cloudinary.com/dowtlcpxj/image/upload/v1720036879/done/kiwi_oenfrv_asxivz.webp",
+      "https://res.cloudinary.com/dowtlcpxj/image/upload/v1720036884/done/lemon_xp4xcd_becbbt.webp",
+      "https://res.cloudinary.com/dowtlcpxj/image/upload/v1720036882/done/leaf_ik3yan_ir6x0k.webp",
+      "https://res.cloudinary.com/dowtlcpxj/image/upload/v1720036875/done/tomato_wxdrmr_rnbmnx.webp"
     ]
   },
   "footer": {
@@ -95,17 +95,17 @@
       {
         "title": "20, Al-Mahalla Street",
         "value": 53456789,
-        "icon": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1711080161/location_535239_clqbiz.png"
+        "icon": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1720039153/done/location_535239_clqbiz_1_wt7ihc.webp"
       },
       {
         "title": "mkmk@goodFood.com",
         "value": 2123456789,
-        "icon": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1703129088/icons8-gmail-50_u4sqv0.png"
+        "icon": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1720039146/done/icons8-gmail-50_u4sqv0_rva7gb.webp"
       },
       {
         "title": "+20123456789 - Sales and Services",
         "value": 123456789,
-        "icon": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1703129088/icons8-whatsapp-50_knru7l.png"
+        "icon": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1720039149/done/icons8-whatsapp-50_knru7l_vfec37.webp"
       }
     ]
   },

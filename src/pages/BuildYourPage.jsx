@@ -167,7 +167,7 @@ const BuildYourPage = () => {
                 className={`flex flex-col`}
                 style={{ position: "relative", border: selectedColor === paletteIndex ? "solid 2px var(--color-3)" : "solid 2px transparent" }}
               >
-                {selectedColor === paletteIndex && (
+                {selectedColor == paletteIndex && (
                   <div className="check-icon">
                     <img src="https://res.cloudinary.com/duc04fwdb/image/upload/v1708037268/jammal_photos/nme9bdbxqehtul4yzmd7.svg" alt="check-icon" />
                   </div>

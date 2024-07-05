@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import axiosInstance from "../../features/auth/axiosInstance";
+import axios from "axios";
 import { useSelector, useDispatch } from "react-redux";
 import { updateUserAvatar } from "../../features/auth/authSlice";
 
@@ -26,7 +26,7 @@ const UpdateUserPicture = () => {
       const formData = new FormData();
       formData.append("avatar", file);
 
-      const backendResponse = await axiosInstance.post("/user/upload", formData, {
+      const backendResponse = await axios.post("/user/upload", formData, {
         headers: {
           Authorization: `Bearer ${token}`,
           "Content-Type": "multipart/form-data",
@@ -58,7 +58,7 @@ const UpdateUserPicture = () => {
           <input type="file" accept="image/*" onChange={handleUpload} disabled={loading} style={{ display: "none" }} id="fileInput" />
           <label
             htmlFor="fileInput"
-            className={`text-center my-4 rounded bg-gray-500 px-4 py-2 text-white ${loading && "opacity-50 cursor-not-allowed"}`}
+            className={`text-center my-4 rounded px-4 py-2 text-white ${loading && "opacity-50 cursor-not-allowed"}`}
             style={{ backgroundColor: "var(--color-3)", cursor: loading ? "not-allowed" : "pointer" }}
           >
             {loading ? (

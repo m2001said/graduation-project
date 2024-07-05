@@ -50,8 +50,8 @@
         "url": "#services13"
       }
     ],
-    "imgUrl": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707937284/3_tx6g05.jpg",
-    "imageUrl": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707937130/4_rjddpl.jpg",
+    "imgUrl": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1720033596/done/3_tx6g05_kcssey.webp",
+    "imageUrl": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1720033592/done/4_rjddpl_ivwbng.webp",
     "icon": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707952901/right-arrow_1_y7iz2i.png"
   },
   "feature": {
@@ -60,17 +60,17 @@
     "description": "you will meet your taste",
     "features": [
       {
-        "icon": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707959654/tree_qh0bvu.png",
+        "icon": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1720033776/done/tree_qh0bvu_bwagdg.webp",
         "title": "Icon 1 Title",
         "description": "Icon 1 Description"
       },
       {
-        "icon": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707959653/holding-hand_1_ip0t5r.png",
+        "icon": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1720033773/done/holding-hand_1_ip0t5r_m9ytdn.webp",
         "title": "Icon 2 Title",
         "description": "Icon 2 Description"
       },
       {
-        "icon": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707601512/star_qhtqlz.png",
+        "icon": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1720033771/done/star_qhtqlz_gx4apr.webp",
         "title": "Icon 3 Title",
         "description": "Icon 3 Description"
       }
@@ -80,8 +80,8 @@
     "title": "Welcome to our company",
     "subtitle": "our JOURNEY",
     "text": "since 2010",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    "imgUrl": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707937162/5_ookc7e.jpg",
+    "description": "  make use of our creativity and experience .",
+    "imgUrl": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1720033936/done/5_ookc7e_1_tv94g8.webp",
     "abouts": [
       {
         "title": "years of experience",
@@ -96,7 +96,7 @@
         "value": 20
       }
     ],
-    "icon": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707959810/up-arrow_dfq1o8.png",
+    "icon": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1720034053/done/up-arrow_dfq1o8_yxtfu0.webp",
     "buttons": [
       {
         "buttonText": "Get started",
@@ -118,20 +118,20 @@
     "linkText": "#",
     "projects": [
       {
-        "imgUrl": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707937447/pexels-ben-neale-380337_yuphlv.jpg",
-        "title": "lorem epsum dolor",
+        "imgUrl": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1720034298/done/pexels-ben-neale-380337_yuphlv_hohox7.webp",
+        "title": "a perfect designe for a perfect person",
         "description": "New Cairo",
         "icon": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707553370/klipartz.com_z2zhsv.png"
       },
       {
-        "imgUrl": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707937141/pexels-nubia-navarro-_nubikini_-3221215_wtzq4w.jpg",
-        "title": "lorem epsum dolor",
+        "imgUrl": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1720034296/done/pexels-pixabay-262367_b0ixae_wxu7yq.webp",
+        "title": "amazing architecture of ours made with love",
         "description": "Luxor",
         "icon": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707553370/klipartz.com_z2zhsv.png"
       },
       {
-        "imgUrl": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707937146/pexels-pixabay-262367_b0ixae.jpg",
-        "title": "lorem epsum dolor",
+        "imgUrl": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1720034293/done/pexels-nubia-navarro-_nubikini_-3221215_wtzq4w_epg7cm.webp",
+        "title": "you like it right! our team will make it for",
         "description": "New Giza",
         "icon": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707553370/klipartz.com_z2zhsv.png"
       }
@@ -148,24 +148,24 @@
   "logos": {
     "companies": [
       {
-        "imgUrl": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707329688/realestate/logo6_ddaq6y.png",
-        "title": "lorem ipsum dolor"
+        "imgUrl": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1720023921/done/logo6_ddaq6y_rkqshl.webp",
+        "title": "google"
       },
       {
-        "imgUrl": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707329687/realestate/logo3_fzmko0.png",
-        "title": "lighting"
+        "imgUrl": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1720023920/done/logo2_z1jb8d_ez6dwd.webp",
+        "title": "youtube"
       },
       {
-        "imgUrl": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707975425/icons8-bird-64_kofuu5.png",
-        "title": "lighting"
+        "imgUrl": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1720023918/done/logo3_fzmko0_sprysc.webp",
+        "title": "tokopedia"
       },
       {
-        "imgUrl": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707329685/realestate/logo2_z1jb8d.png",
-        "title": "lighting"
+        "imgUrl": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1720023922/done/logo5_iwqjl7_h9r76r.webp",
+        "title": "samsung"
       },
       {
-        "imgUrl": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1703129091/icons8-stars-50_o1lg9s.png",
-        "title": "lighting"
+        "imgUrl": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1720023917/done/logo4_xbf3fz_tms7cn.webp",
+        "title": "spotify"
       }
     ]
   },

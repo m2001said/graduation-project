@@ -1,33 +1,42 @@
-.logo12 {
+:root {
+  /*===============
+     * Colors
+    ===============*/
+  --website-12-color-1: #000f38;
+  --website-12-color-2: #212ea0;
+  --website-12-color-3: rgba(0, 15, 152, 0.3);
+
+  --website-12-color-6: #212ea0;
+}
+.design-12 .logo12 {
   height: 6em;
   padding: 1.5em;
   will-change: filter;
   transition: filter 300ms;
 }
-.logo12:hover {
+.design-12 .logo12:hover {
   filter: drop-shadow(0 0 2em #646cffaa);
 }
-.logo12.react12:hover {
+.design-12 .logo12.react12:hover {
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
-
-body {
+.design-12 .body12 {
   background: #f5f5f5;
 }
 
-a {
+.design-12 a {
   text-decoration: none;
   color: inherit;
   line-height: 1;
   cursor: pointer;
 }
-.container12 {
+.design-12 .container12 {
   padding-left: 10%;
   padding-right: 10%;
 }
-.btn12 {
-  background: #fff;
-  color: #212121;
+.design-12 .btn12 {
+  background: var(--website-color-1);
+  color: var(--title-dark);
   padding: 12px 22px;
   font-size: 16px;
   border-radius: 30px;
@@ -38,30 +47,29 @@ a {
   align-items: center;
   justify-content: center;
 }
-.btn12 img {
+.design-12 .btn12 img {
   width: 20px;
   margin-left: 10px;
 }
-
-.btn12.dark-btn12 {
-  background: #212ea0;
-  color: #fff;
+.design-12 .btn12.dark-btn12 {
+  background: var(--website-12-color-6);
+  color: var(--website-color-1);
 }
-.btn12:hover {
-  color: #212121;
+.design-12 .btn12:hover {
+  color: var(--website-color-3);
 }
-.container12 {
+.design-12 .container12 {
   padding-left: 10%;
   padding-right: 10%;
 }
 /* ----------------------Media query------------- */
 
 @media (max-width: 1200px) {
-  .container12 {
+  .design-12 .container12 {
     padding-left: 5%;
     padding-right: 5%;
   }
-  .btn12 {
+  .design-12 .btn12 {
     padding: 14px 22px;
     /* font-size: 10px; */
   }
@@ -77,15 +85,13 @@ a {
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo12 {
+  .design-12 a:nth-of-type(2) .logo12 {
     animation: logo-spin infinite 20s linear;
   }
 }
-
-.card12 {
+.design-12 .card12 {
   padding: 2em;
 }
-
-.read-the-docs12 {
-  color: #888;
+.design-12 .read-the-docs12 {
+  color: var(--title-dark);
 }

@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 import "./hero5.css";
 import { useSelector } from 'react-redux';
 
@@ -20,4 +20,4 @@ const Hero5 = ({ template }) => {
   );
 };
 
-export default Hero5
+export default Hero5;

@@ -22,11 +22,14 @@ const TrialDesign13 = () => {
     feature: Feature13,
   };
   return (
-    <div className="trialdesign13">
-      <main>
-        <TrialDesign componentMapping={componentMapping} HeroComponent={Hero13} NavbarComponent={Navbar13} FooterComponent={Footer13} template={13} />;
-      </main>
-    </div>
+    <TrialDesign
+      className="design-13"
+      componentMapping={componentMapping}
+      HeroComponent={Hero13}
+      NavbarComponent={Navbar13}
+      FooterComponent={Footer13}
+      template={13}
+    />
   );
 };
 

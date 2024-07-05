@@ -3,47 +3,49 @@ import "./feature4.css";
 
 const Feature4 = ({ template }) => {
   const features = template.features;
-  const [expandedIndex, setExpandedIndex] = useState(null);
+  const [expandedIndex, setExpandedIndex] = useState(0); // Default to first item being open
 
   const handleAccordionState = (index) => {
-    setExpandedIndex((prevIndex) => (prevIndex === index ? null : index));
+    if (expandedIndex !== index) {
+      setExpandedIndex(index);
+    }
   };
 
   return (
-    <section id="value" className="v-wrapper">
-      <div className="paddings innerWidth flexCenter v-container">
+    <section id="value4" className="v-wrapper4">
+      <div className="paddings4 innerWidth4 flexCenter4 v-container4">
         {/* left side */}
-        <div className="v-left">
-          <div className="image-container">
+        <div className="v-left4">
+          <div className="image-container4">
             <img src={features.imgUrl} alt="loading" />
           </div>
         </div>
 
         {/* right */}
-        <div className="flexColStart v-right">
-          <span className="orangeText">{features.title}</span>
+        <div className="flexColStart4 v-right4">
+          <span className="orangeText4">{features.title}</span>
 
-          <span className="primaryText">{features.subtitle}</span>
+          <span className="primaryText4">{features.subtitle}</span>
 
-          <span className="secondaryText">
+          <span className="secondaryText4 text-m-des4">
             {features.description}
             <br />
             {features.text}
           </span>
 
-          <div className="accordion">
+          <div className="accordion4 text4">
             {features.features.map((item, i) => (
-              <div className={`accordionItem ${expandedIndex === i ? "expanded" : "collapsed"}`} key={i}>
-                <div className="accordionItemHeading">
-                  <button className="flexCenter accordionButton" onClick={() => handleAccordionState(i)}>
-                    <div className="flexCenter icon">✔</div>
-                    <span className="primaryText">{item.title}</span>
-                    <div className="flexCenter icon">{expandedIndex === i ? "🔺" : "🔻"}</div>
+              <div className={`accordionItem4 ${expandedIndex === i ? "expanded4" : "collapsed4"}`} key={i}>
+                <div className="accordionItemHeading4">
+                  <button className="flexCenter4 accordionButton4" onClick={() => handleAccordionState(i)}>
+                    <div className="flexCenter4 icon4">✔</div>
+                    <span className="primaryText4">{item.title}</span>
+                    <div className="flexCenter4 icon4 text4">{expandedIndex === i ? "🔺" : "🔻"}</div>
                   </button>
                 </div>
                 {expandedIndex === i && (
-                  <div className="accordionItemPanel">
-                    <p className="secondaryText">{item.description}</p>
+                  <div className="accordionItemPanel4">
+                    <p className="secondaryText4 feature-des4">{item.description}</p>
                   </div>
                 )}
               </div>

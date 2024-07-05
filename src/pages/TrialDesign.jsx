@@ -5,7 +5,7 @@ import Loader from "../components/Loader/Loader";
 import { useDispatch, useSelector } from "react-redux";
 import { fetchInitialTemplate } from "../features/templateData/templateSlice";
 
-const TrialDesign = ({ componentMapping, FooterComponent, NavbarComponent, HeroComponent, template }) => {
+const TrialDesign = ({ componentMapping, FooterComponent, NavbarComponent, HeroComponent, template, className }) => {
   const dispatch = useDispatch();
   const url = useLocation();
   const templateNumber = parseInt(url.pathname.match(/\d+/)) 
@@ -73,7 +73,7 @@ const TrialDesign = ({ componentMapping, FooterComponent, NavbarComponent, HeroC
   const reorderedComponents = state && Object.keys(state);
   console.log(state)
   return state && state.templateInfo.id === template ? (
-    <>
+    <div className={className}>
       {NavbarComponent && <NavbarComponent template={state} />}
       {HeroComponent && <HeroComponent template={state} />}
       {reorderedComponents.map((_component) => {
@@ -81,7 +81,7 @@ const TrialDesign = ({ componentMapping, FooterComponent, NavbarComponent, HeroC
         return Component && <Component key={_component} template={state} />;
       })}
       {FooterComponent && <FooterComponent template={state} />}
-    </>
+    </div>
   ) : (
     <div className="fixed top-0 left-0 w-full h-full d-flex items-center justify-center">
       <Loader />

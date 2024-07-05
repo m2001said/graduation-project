@@ -68,9 +68,7 @@ const Footer16 = ({ template }) => {
           </div>
         </div>
       </div>
-      <p className="copyright__text">
-        &copy; Copyright 2023 <span>Coffero</span> All Right Reserved.
-      </p>
+      <p className="copyright__text">&copy; {footer.subtitle}</p>
     </footer>
   );
 };

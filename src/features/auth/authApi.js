@@ -104,6 +104,7 @@ export const refreshToken = async () => {
 
     const newAccessToken = response.data.accessToken;
     localStorage.setItem("token", newAccessToken);
+    console.log(" refresh access token");
     return newAccessToken; // Return the new access token
   } catch (error) {
     console.error("Token refresh failed", error);

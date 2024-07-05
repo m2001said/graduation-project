@@ -3,8 +3,8 @@
 }
 
 .team__item16 {
-  border-bottom: 3px solid var(--first-color);
-  background-color: var(--container-color);
+  border-bottom: 3px solid var(--website-16-color-1);
+  background-color: var(--website-16-color-6);
   padding: 0.5rem;
   position: relative;
   transition: 0.5s var(--transition);
@@ -21,7 +21,7 @@
 }
 
 .team__job16 {
-  color: var(--first-color);
+  color: var(--website-16-color-1);
   font-weight: var(--weight-500);
 }
 
@@ -37,8 +37,8 @@
 }
 
 .team__social-link16 {
-  background-color: var(--bg-color);
-  color: var(--title-color);
+  background-color: var(--website-16-color-5);
+  color: var(--website-16-color-3);
   width: 40px;
   height: 40px;
   border-radius: 50px;

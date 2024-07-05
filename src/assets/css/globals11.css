@@ -27,37 +27,7 @@
 
   --border-radius: 20px;
 }
-.nav11_background {
-  background-color: var(--website-11-color-1);
-}
 
-.serv11_background {
-  background-color: var(--website-11-color-1);
-}
-.static11_background {
-  background-color: var(--website-11-color-1);
-}
-.hero11_background {
-  background-color: var(--website-11-color-1);
-}
-.hero11_background {
-  background-color: var(--website-11-color-1);
-}
-.hero11_background {
-  background-color: var(--website-11-color-1);
-}
-.hero11_background {
-  background-color: var(--website-11-color-1);
-}
-.hero11_background {
-  background-color: var(--website-11-color-1);
-}
-.hero11_background {
-  background-color: var(--website-11-color-1);
-}
-.hero11_background {
-  background-color: var(--website-11-color-1);
-}
 /* =========== Responsive ============= */
 @media screen and (max-width: 1024px) {
   :root {
@@ -70,47 +40,44 @@
   }
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
 .TrialDesign11 {
   line-height: 1.7;
   font-family: var(--body-font11);
   font-size: var(--normal-font-size);
 }
+.TrialDesign11 h3,
+.TrialDesign11 h1 {
+  color: var(--website-11-color-6);
+  font-weight: 600;
+}
+.TrialDesign11 p,
+.TrialDesign11 span {
+  color: var(--website-11-color-5);
+}
 
-img {
+/* .TrialDesign11 img {
   max-width: 100%;
   height: auto;
   vertical-align: middle;
   display: flex;
-}
+} */
 
 /* ==============Reusable CSS Classes============ */
-.container11 {
+.TrialDesign11 .container11 {
   max-width: 1080px;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
 }
 
-.grid11 {
+.TrialDesign11 .grid11 {
   display: grid;
 }
-
-.section11 {
+.TrialDesign11 .section11 {
   padding-top: 7rem;
   padding-bottom: 2rem;
 }
-
-.section__title11 {
+.TrialDesign11 .section__title11 {
   font-size: var(--h1-font-size);
   margin-left: 0.875rem;
   font-weight: var(--font-bold);
@@ -118,8 +85,7 @@ img {
   margin-bottom: 1.75rem;
   margin-top: 1.5rem;
 }
-
-.section__title11::before {
+.TrialDesign11 .section__title11::before {
   content: "";
   height: 2.25rem;
   width: 2.25rem;
@@ -127,8 +93,7 @@ img {
   left: -0.875rem;
   top: -0.875rem;
 }
-
-.btn11 {
+.TrialDesign11 .btn11 {
   padding: 0.75rem 2rem;
   line-height: 1;
   border-radius: 1.875rem;
@@ -148,17 +113,15 @@ img {
     transform: scale(1);
   }
 }
-
-.btn11:hover {
+.TrialDesign11 .btn11:hover {
   animation: button-push 0.3s linear 1;
 }
-
-.main {
+.TrialDesign11 .main {
   margin-left: 110px;
 }
 
 @media screen and (max-width: 1024px) {
-  .main {
+  .TrialDesign11 .main {
     margin-left: 0;
   }
 }

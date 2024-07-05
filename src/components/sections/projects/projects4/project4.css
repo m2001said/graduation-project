@@ -1,13 +1,13 @@
-.r-container {
+.r-container4 {
   gap: 2rem;
   position: relative;
   overflow: hidden;
 }
 
-.r-head {
+.r-head4 {
   margin-bottom: 2rem;
 }
-.r-card {
+.r-card4 {
   gap: 0.6rem;
   padding: 1rem;
   border-radius: 10px;
@@ -16,66 +16,79 @@
   transition: all 300ms ease-in;
 }
 
-.r-card > img {
+.r-card4 > img {
   width: 100%;
   max-width: 15rem;
 }
-.r-card > :nth-child(2) {
+.r-card4 > :nth-child(2) {
   font-size: 1.2rem;
   font-weight: 600;
 }
-.r-card > :nth-child(3) {
+.r-card4 > :nth-child(3) {
   font-size: 1.5rem;
 }
-.r-card > :nth-child(4) {
+.r-card4 > :nth-child(4) {
   font-size: 0.7rem;
   width: 15rem;
 }
-.r-price .sign {
-  color: var(--orange);
+.r-price4 .sign4 {
+  color: var(--website-4-color-5);
   padding-right: 2px;
 }
-.r-card:hover {
+.r-card4:hover {
   scale: 1.025;
   cursor: pointer;
   background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(136, 160, 255, 0.46) 217.91%);
   box-shadow: 0px 72px 49px -51px rgba(136, 160, 255, 0.21);
 }
-#residencies .swiper-horizontal {
-  overflow: visible;/* change selector */
+#residencies4 .swiper-horizontal4 {
+  overflow: visible; /* change selector */
 }
-.r-buttons {
-  position: absolute;
-  gap: 1rem;
-  top: -4rem;
-  right: 0;
+.r-buttons4 {
+  gap: 1.5rem;
+  top: 2rem;
+  margin-top: 10px;
 }
-.r-buttons button {
+.r-buttons4 .button4 {
   font-size: 1.2rem;
   padding: 0.2rem 0.8rem;
-  color: var(--blue);
+  color: var(--website-4-color-4);
   border: none;
   border-radius: 5px;
-  background-color: var(--white);
+  background-color: var(--website-color-1);
   cursor: pointer;
 }
-.r-buttons > :nth-child(1) {
-  background-color: var(--white);
+.r-buttons4 > :nth-child(1) {
+  background-color: var(--website-4-color-4);
+  font-size: 20px;
+  color: var(--website-4-color-1);
 }
-.r-buttons > :nth-child(2) {
-  box-shadow: 0px 0px 5px 1px var(--black);
+.r-buttons4 > :nth-child(2) {
+  box-shadow: 0px 0px 5px 1px var(--website-4-color-1);
+  background-color: var(--website-4-color-1);
+  font-size: 20px;
 }
 /* project4.css */
-.r-card img {
+.r-card4 img {
   max-width: 100%;
   height: auto;
 }
+.text4 {
+  color: var(--website-4-color-1);
+  font-size: 22px;
+  margin-right: 2px;
+}
+.price-text4 {
+  color: var(--website-4-color-1);
+  font-size: 24px;
+  font-weight: bold;
+}
 
 @media (max-width: 640px) {
-  .r-head {
+  .r-head4 {
     align-items: center;
   }
-  .r-buttons {
+  .r-buttons4 {
     position: initial;
   }
 }

@@ -1,5 +1,5 @@
 .footer16 {
-  background-color: var(--container-color);
+  background-color: var(--website-16-color-6);
 }
 
 .footer__grid16 {
@@ -28,7 +28,7 @@
 }
 
 .footer__contact_item16 .icon16 {
-  color: var(--first-color);
+  color: var(--website-16-color-1);
   font-size: var(--larger-font-size);
 }
 
@@ -46,7 +46,7 @@
   bottom: 0;
   height: 2px;
 
-  background-color: var(--first-color);
+  background-color: var(--website-16-color-1);
 }
 
 .footer__title16::before {
@@ -70,17 +70,17 @@
 }
 
 .footer__link16 {
-  color: var(--title-color);
+  color: var(--website-16-color-3);
   align-items: center;
   column-gap: 0.25rem;
 }
 
 .footer__link16 .icon16 {
-  color: var(--first-color);
+  color: var(--website-16-color-1);
 }
 
 .footer__opening-hour16 {
-  background-color: var(--bg-color);
+  background-color: var(--website-16-color-5);
   padding: 2rem 1.5rem;
   position: relative;
 }
@@ -89,7 +89,7 @@
   content: "";
   position: absolute;
   inset: 0.5rem;
-  border: 2px dashed var(--first-color);
+  border: 2px dashed var(--website-16-color-1);
 }
 
 .opening_hour-item16 {
@@ -102,11 +102,11 @@
 }
 
 .subscribe__input16 {
-  border: 2px solid var(--title-color);
+  border: 2px solid var(--website-16-color-3);
 }
 
 .subscribe__input16::placeholder {
-  color: var(--title-color);
+  color: var(--website-16-color-3);
 }
 
 .subscribe__btn16 {
@@ -129,26 +129,26 @@
   width: 38px;
   height: 38px;
   border-radius: 50%;
-  color: var(--title-color);
-  border: 2px solid var(--first-color);
+  color: var(--website-16-color-3);
+  border: 2px solid var(--website-16-color-1);
   display: grid;
   place-items: center;
   transition: 0.5s var(--transition);
 }
 
 .footer__social-link16:hover {
-  background-color: var(--first-color);
+  background-color: var(--website-16-color-1);
 }
 
 .copyright__text16 {
   padding-block: 1.25rem;
   border-top: 2px dashed hsla(0, 0%, 100%, 0.1);
   text-align: center;
-  color: var(--title-color);
+  color: var(--website-16-color-3);
 }
 
 .copyright__text16 span16 {
-  color: var(--first-color);
+  color: var(--website-16-color-1);
 }
 
 /* MEDIA QUERY */

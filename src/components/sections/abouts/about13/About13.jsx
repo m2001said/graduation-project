@@ -1,9 +1,15 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 
 const About13 = ({ template }) => {
+  const { t, i18n } = useTranslation();
   const about = template.about;
+
+  // Check if the current language is RTL (e.g., Arabic, Hebrew)
+  const isRtl = i18n.dir() === "rtl";
+
   return (
-    <div id="about13" className="relative overflow-hidden bg-[var(--website-13-color-6)] lg:py-20 py-8">
+    <div id="about13" className="relative overflow-hidden bg-gradient-to-t from-[var(--website-13-color-5)] to-[var(--website-13-color-1)] lg:py-20 py-8">
       <div className="h-[50px] bg-[var(--website-13-color-1)] absolute -bottom-7 -left-[30px]-right-[30px] py-3 px-[30px] rounded-[50%]"></div>
 
       <div className="xl:w-[1200px] mx-auto px-3 pt-8">
@@ -14,8 +20,8 @@ const About13 = ({ template }) => {
             </div>
             <div className="lg:w-1/2">
               <p className="text-[var(--website-13-color-4)] text-center lg:text-left">{about.title}</p>
-              <h1 className="text-[var(--website-13-color-2)] lg:text-5xl text-xl primary-font font-semibold pt-4 pb-6 text-center lg:text-left">
-                {about.subtitle} <span className="underline decoration-[var(--website-13-color-4)]">{about.text}</span>
+              <h1 className="text-[var(--website-13-color-2)] lg:text-7xl text-4xl primary-font font-semibold pt-4 pb-6 text-center lg:text-left ephesis">
+                {about.subtitle} <span className="underline decoration-[var(--website-13-color-4)] text-5xl  ">{about.text}</span>
               </h1>
               <p className="text-[var(--website-13-color-1)] leading-8 text-center lg:text-left">{about.description}</p>
               <div className="flex flex-wrap justify-center lg:justify-start mt-8">
@@ -27,8 +33,17 @@ const About13 = ({ template }) => {
                       index !== about.buttons.length - 1 ? "mr-2 mb-2" : "mb-2"
                     }`}
                   >
-                    <p className="text-[var(--website-13-color-1)]">{buttons.buttonText}</p>
-                    <img src={buttons.icon} className="w-6" alt={buttons.buttonText} />
+                    {isRtl ? (
+                      <>
+                        <img src={buttons.icon} className="w-6" alt={buttons.buttonText} />
+                        <p className="text-[var(--website-13-color-1)]">{buttons.buttonText}</p>
+                      </>
+                    ) : (
+                      <>
+                        <p className="text-[var(--website-13-color-1)]">{buttons.buttonText}</p>
+                        <img src={buttons.icon} className="w-6" alt={buttons.buttonText} />
+                      </>
+                    )}
                   </a>
                 ))}
               </div>
@@ -38,7 +53,7 @@ const About13 = ({ template }) => {
           <div className="lg:hidden mt-12 p-8">
             {about.abouts.map((about, index) => (
               <div key={index} className="flex flex-col items-center mb-4">
-                <h1 className="text-[var(--website-13-color-3)] primary-font text-3xl font-semibold">{about.value}</h1>
+                <h1 className="text-[var(--website-13-color-1)] primary-font text-3xl font-semibold">{about.value}</h1>
                 <p className="text-sm text-[var(--website-13-color-1)]">{about.title}</p>
               </div>
             ))}
@@ -53,7 +68,6 @@ const About13 = ({ template }) => {
             ))}
           </div>
           {/* Repeated arrow images */}
-
           <img src={about.icon} className="text-[var(--website-13-color-4)] text-4xl absolute top-0 left-0 rotate-[315deg] w-10" />
         </section>
       </div>
