@@ -37,7 +37,7 @@
   padding-right: 10%;
 }
 .design-12 .btn12 {
-  background: var(--website-color-1);
+  background: var(--website-1-color-1);
   color: var(--title-dark);
   padding: 12px 22px;
   font-size: 16px;
@@ -55,10 +55,10 @@
 }
 .design-12 .btn12.dark-btn12 {
   background: var(--website-12-color-6);
-  color: var(--website-color-1);
+  color: var(--website-1-color-1);
 }
 .design-12 .btn12:hover {
-  color: var(--website-color-3);
+  color: var(--website-1-color-3);
 }
 .design-12 .container12 {
   padding-left: 10%;

@@ -1,10 +1,10 @@
 .team1 {
-  background: var(--website-color-4);
+  background: var(--website-1-color-4);
   padding: 40px;
 }
 
 .team1 h2 {
-  color: var(--website-color-3);
+  color: var(--website-1-color-3);
 }
 
 .team1-head {
@@ -50,7 +50,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: var(--website-color-1);
+  background: var(--website-1-color-1);
   padding: 20px;
   transition: bottom 0.5s ease-in-out;
   border-radius: 6px;
@@ -60,7 +60,7 @@
 .team1-Card-main-info h2 {
   font-size: 20px;
   font-weight: bold;
-  color: var(--website-color-3);
+  color: var(--website-1-color-3);
 }
 .team1-Card-main-info p {
   font-size: 14px;
@@ -69,7 +69,7 @@
 }
 
 .team1-Card-main-info h4 {
-  color: var(--website-color-3);
+  color: var(--website-1-color-3);
 }
 
 .slideUp {
@@ -82,7 +82,7 @@
   margin-top: 40px;
   margin-bottom: 60px;
   padding: 15px;
-  color: var(--website-color-3);
+  color: var(--website-1-color-3);
   border-radius: 50%;
   display: flex;
   flex-direction: row;

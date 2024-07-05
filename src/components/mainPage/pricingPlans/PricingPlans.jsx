@@ -86,8 +86,8 @@ const PricingPlans = () => {
                   </li> */}
                 </ul>
                 <button className="text-white py-2 px-4 font-medium rounded-3xl free_plan_btn">Choose plan</button>
-                {user.role === "admin" ||
-                  (user.role === "super-admin" && (
+                {user?.role === "admin" ||
+                  (user?.role === "super-admin" && (
                     <button className="text-white py-2 px-4 font-medium rounded-3xl free_plan_btn mt-4" onClick={() => deletePlan(plan._id)}>
                       Delete plan
                     </button>

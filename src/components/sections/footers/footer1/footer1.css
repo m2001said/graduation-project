@@ -1,5 +1,5 @@
 .footer1 {
-  background: var(--website-color-1);
+  background: var(--website-1-color-1);
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -17,7 +17,7 @@
   flex-direction: column;
 }
 
-.footer1-icons p{
+.footer1-icons p {
   color: var(--grey);
 }
 
@@ -41,15 +41,13 @@
 }
 
 .footer1-section h4,
-.footer1-contact h4{
- color: var(--website-color-3);
+.footer1-contact h4 {
+  color: var(--website-1-color-3);
 }
 
-
-.footer1-element p{
- color: var(--grey);
+.footer1-element p {
+  color: var(--grey);
 }
-
 
 .footer1-services {
   display: flex;
@@ -74,7 +72,7 @@
   text-transform: capitalize;
 }
 .footer1 p {
-  color: var(--website-color-5);
+  color: var(--website-1-color-5);
 }
 
 @media screen and (max-width: 980px) {
