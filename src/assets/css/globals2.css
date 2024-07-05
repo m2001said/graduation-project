@@ -13,23 +13,22 @@
   --container2-width-sm: 90%;
   --transition2: all 400ms ease;
 }
-
-.trialdesign2 .nav2 a {
+.nav2 a {
   color: var(--website-2-color-5);
   transition: all 0.3s ease;
 }
 
-.trialdesign2 .nav2 a.active {
+.nav2 a.active {
   background-color: var(--website-2-color-3);
   color: var(--website-2-color-1);
 }
 
-.trialdesign2 .nav2 a:hover {
+.nav2 a:hover {
   background-color: var(--website-2-color-4);
   color: var(--website-2-color-1);
 }
 
-.trialdesign2 .btn-2 {
+.btn2 {
   width: 70%;
   background-color: var(--website-2-color-3) !important;
   color: var(--website-2-color-5) !important;
@@ -55,44 +54,44 @@
   padding: 2rem;
 }
 
-.trialdesign2 .container {
+.trialdesign2 .container2 {
   width: var(--container2-width-lg);
   margin: 0 auto;
   justify-content: center;
   align-items: center;
 }
-.trialdesign2 h1,
-.trialdesign2 h2,
-.trialdesign2 h3,
-.trialdesign2 h4,
-.trialdesign2 h5 {
+/* h1,
+h2,
+h3,
+h4,
+h5 {
   font-weight: 500;
 }
 
-.trialdesign2 h1 {
+h1 {
   font-size: 2.5rem;
-}
+} */
 
-.trialdesign2 section > h2,
-.trialdesign2 section > h5 {
+.section2 > h2,
+.section2 > h5 {
   text-align: center;
   color: var(--website-2-color-5);
 }
-.trialdesign2 section > h2 {
+.section2 > h2 {
   color: var(--website-2-color-3);
   margin-bottom: 3rem;
 }
-.trialdesign2 .text-light {
+.text-light {
   color: var(--website-2-color-5);
 }
-.trialdesign2 a {
+.a2 {
   color: var(--website-2-color-3);
   transition: var(--transition2);
 }
-.trialdesign2 a:hover {
+.a2:hover {
   color: var(--website-2-color-5);
 }
-.trialdesign2 .btn {
+.trialdesign2 .btn2 {
   width: max-content;
   display: inline-block;
   color: var(--website-2-color-3);
@@ -103,12 +102,12 @@
   transition: var(--transition2);
 }
 
-.trialdesign2 .btn:hover {
-  background: var(--website-2-color-5);
-  color: var(--website-2-color-1);
+.btn2:hover {
+  background: var(--website-2-color-1);
+  color: var(--website-2-color-2);
   border-color: transparent;
 }
-.trialdesign2 .btn-primary {
+.btn-primary2 {
   background: var(--website-2-color-3);
   color: var(--website-2-color-1);
 }
@@ -119,8 +118,11 @@
 }
 
 @media screen and (max-width: 1024px) {
-  .trialdesign2 .container {
+  .container2 {
     width: var(--container2-width-md);
+  }
+  .section2 {
+    /* margin-top: 1rem; */
   }
 }
 
@@ -128,7 +130,7 @@
   .trialdesign2 .container {
     max-width: 70%;
   }
-  .trialdesign2 section > h2 {
+  .section2 > h2 {
     margin-bottom: 2rem;
   }
 }

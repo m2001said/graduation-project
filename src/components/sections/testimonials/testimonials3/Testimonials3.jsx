@@ -1,7 +1,10 @@
 import React, { useState } from "react";
 import "./testimonials3.css";
+import { useTranslation } from "react-i18next";
 
 const Testimonials3 = ({ template }) => {
+  const { i18n } = useTranslation();
+  const language = i18n.language;
   const testimonial = template.testimonials;
 
   const [selected, setSelected] = useState(0);
@@ -34,6 +37,7 @@ const Testimonials3 = ({ template }) => {
             }}
             src={prevImgUrl}
             alt=""
+            className={language === "ar" ? "transform rotate-180" : ""}
           />
           <img
             onClick={() => {
@@ -41,6 +45,7 @@ const Testimonials3 = ({ template }) => {
             }}
             src={nextImgUrl}
             alt=""
+            className={language === "ar" ? "transform rotate-180" : ""}
           />
         </div>
       </div>

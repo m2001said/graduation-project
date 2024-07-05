@@ -22,7 +22,7 @@ const Testimonials15 = ({ template }) => {
   };
 
   return (
-    <main className="pb-5 pt-52 px-3 test15" id="testimonials">
+    <main className="pb-5 pt-16 px-3 test15" id="testimonials">
       <div className="container max-w-[1300px] mx-auto">
         <h1 className="sm:text-[44px] text-[26px] text-center m-0 test15_1">{testimonial.title}</h1>
         <p className="font-bold text-sm text-[#29a37] flex items-center text-center justify-center gap-x-4 text-4xl test15_2">{testimonial.subtitle}</p>

@@ -3,52 +3,47 @@ import { useNavigate } from "react-router-dom";
 import "../components/yourPage/yourPage.css";
 import InputOption from "../components/yourPage/ChooseOption";
 import { getSectionData } from "../components/yourPage/getSectionData";
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
 import { useTranslation } from "react-i18next";
 import { ownTemplateActions } from "../features/templateData/ownTemplateSlice";
 import { fetchInitialTemplate } from "../features/templateData/templateSlice";
 
 const palettes = [
-  ["#FFFAF3", "#F1C40F", "#E67E22", "#E74C3C", "#8E44AD"],
-  ["#D1E8E4", "#A3D5D3", "#69BEB9", "#3C787E", "#27476E"],
-  ["#F5F3BB", "#C7F0BD", "#7DBBC3", "#607196", "#5C3C92"],
-  ["#F8F4E3", "#F1DCA7", "#F9A870", "#E68364", "#966C6C"],
-  ["#E1F7E7", "#A9E5BB", "#74C6A5", "#56A6A6", "#405D64"],
-  ["#F4EDE8", "#D9B5B5", "#A28A8A", "#6C6461", "#5A5351"],
-  ["#FAF9F6", "#F2E9E1", "#EAD5D5", "#B7B2A7", "#837D7A"],
-  ["#FEFBE7", "#F3DFA2", "#E8A87C", "#C38D9E", "#8E7C93"],
-  ["#FFFBF5", "#E1ECE5", "#C1DED1", "#AAC8C6", "#80746D"],
-  ["#FFFDFD", "#F4C2C2", "#E9A9A9", "#B6B6A6", "#7B7B7B"],
-  ["#F0F8FF", "#ACE5EE", "#8DD3C7", "#60B6B8", "#3B7A82"],
-  ["#FFFAF0", "#F3EACB", "#E2CFC4", "#C7B198", "#A67C67"],
-  ["#FFF5EE", "#FFD1B3", "#FFA07A", "#CD5C5C", "#8B4513"],
-  ["#E6E6FA", "#D8BFD8", "#DDA0DD", "#EE82EE", "#BA55D3"],
-  ["#F5F5F5", "#D3D3D3", "#A9A9A9", "#696969", "#2F4F4F"],
-  ["#FFE4C4", "#DEB887", "#D2B48C", "#BC8F8F", "#A0522D"],
-  ["#FDF5E6", "#FAEBD7", "#FFEFDB", "#FFEBCD", "#FFE4C4"],
-  ["#FFF8DC", "#FFEFD5", "#FFE4B5", "#FFDAB9", "#FFD700"],
-  ["#F5FFFA", "#E0FFFF", "#AFEEEE", "#40E0D0", "#20B2AA"],
-  ["#FFF0F5", "#FFB6C1", "#FF69B4", "#FF1493", "#DB7093"],
+  ["#FFFAF3", "#F1C40F", "#E67E22", "#E74C3C", "#8E44AD", "#3498DB"],
+  ["#F5F3BB", "#C7F0BD", "#7DBBC3", "#607196", "#5C3C92", "#4A256D"],
+  ["#F8F4E3", "#F1DCA7", "#F9A870", "#E68364", "#966C6C", "#684A4A"],
+  ["#F4EDE8", "#D9B5B5", "#A28A8A", "#6C6461", "#5A5351", "#3F3735"],
+  ["#9C27B0", "#BA68C8", "#CE93D8", "#F48FB1", "#FFCDD2", "#D81B60"],
+  ["#FFFBF5", "#E1ECE5", "#C1DED1", "#AAC8C6", "#80746D", "#5A514D"],
+  ["#FFFDFD", "#F4C2C2", "#E9A9A9", "#B6B6A6", "#7B7B7B", "#535353"],
+  ["#F0F8FF", "#ACE5EE", "#8DD3C7", "#60B6B8", "#3B7A82", "#265466"],
+  ["#FFFAF0", "#F3EACB", "#E2CFC4", "#C7B198", "#A67C67", "#70564A"],
+  ["#FFF5EE", "#FFD1B3", "#FFA07A", "#CD5C5C", "#8B4513", "#602E1A"],
+  ["#E6E6FA", "#D8BFD8", "#DDA0DD", "#EE82EE", "#BA55D3", "#8A2BE2"],
+  ["#F5F5F5", "#D3D3D3", "#A9A9A9", "#696969", "#2F4F4F", "#1C1C1C"],
+  ["#FFE4C4", "#DEB887", "#D2B48C", "#BC8F8F", "#A0522D", "#8B4513"],
+  ["#FDF5E6", "#FAEBD7", "#FFEFDB", "#FFEBCD", "#FFE4C4", "#FFDAB9"],
+  ["#FFF8DC", "#FFEFD5", "#FFE4B5", "#FFDAB9", "#FFD700", "#FFC700"],
+  ["#FFD700", "#FFA500", "#FF8C00", "#FF4500", "#DC143C", "#B22222"],
+  ["#87CEFA", "#4682B4", "#1E90FF", "#4169E1", "#0000CD", "#00008B"],
+  ["#FFDAB9", "#FFE4B5", "#FFA07A", "#FA8072", "#E9967A", "#FF6347"],
+  ["#FFFACD", "#FAFAD2", "#FFEFD5", "#FFDAB9", "#FFE4B5", "#FFD700"],
+  ["#8B4A39", "#A0613D", "#D8CAB3", "#B7B094", "#73715F", "#EFE5CE"],
+  ["#FC6A57", "#F9BFAF", "#FFF6F3", "#268A91", "#024E5C", "#F9BF3D"],
+  ["#FCD4CE", "#FAD3CF", "#FCE8E6", "#EFF5F4", "#D1D8D3", "#E0E0D7"],
+  ["#C1BAAE", "#E4DFCF", "#D6D2C3", "#8A8E75", "#A8B090", "#CFA174"],
+  ["#C9B39B", "#E9DDC7", "#CFB395", "#A68A6A", "#704C35", "#60492D"],
+  ["#FF69B4", "#FF6EB4", "#FFAEB9", "#ADDFE0", "#7CC0D8", "#34B1BF"],
+  ["#4C2C3C", "#B0A8B9", "#CCA9B7", "#E1BF8A", "#D6A474", "#E1C8B5"],
+  ["#FC6C57", "#D9E5CC", "#FAEDDE", "#A2D7D5", "#868F77", "#2C593F"],
+  ["#B4AEBA", "#8A7B7D", "#BDB7B3", "#E6DDD7", "#ADADAD", "#D1CFCA"],
+  ["#E14B4B", "#D8A768", "#FFD87B", "#76C39A", "#4DBEA1", "#0C5E4C"],
+  ["#FF6F61", "#FFB7B2", "#FFD1BA", "#FFC107", "#FFEB3B", "#F4E04D"],
 ];
 
 const BuildYourPage = () => {
   const { i18n } = useTranslation();
-  const sectionNames = [
-    "navbar",
-    "hero",
-    "features",
-    "projects",
-    "services",
-    "contact",
-    "team",
-    "testimonials",
-    "statistics",
-    "logos",
-    "items",
-    "pricing",
-    "cta",
-    "footer",
-  ];
+  const sectionNames = ["navbar", "hero", "features", "projects", "services", "contact", "team", "testimonials", "footer"];
 
   const dispatch = useDispatch();
   const [selectedColor, setSelectedColor] = useState(0);
@@ -161,8 +156,8 @@ const BuildYourPage = () => {
                   <div
                     key={colorIndex}
                     style={{
-                      width: "150px",
-                      height: "30px",
+                      width: "120px",
+                      height: "25px",
                       backgroundColor: color,
                       cursor: "pointer",
                     }}
@@ -180,15 +175,13 @@ const BuildYourPage = () => {
         >
           Generate your website
         </button>
-        {/*
-    <div className={`error-message ${checkError ? "active" : ""}  flex justify-center items-center gap-4`}>
+        <div className={`error-message ${checkError ? "active" : ""}  flex justify-center items-center gap-4`}>
           <img src="https://res.cloudinary.com/dvp3nyulf/image/upload/v1710190698/warning.png" alt="" />
           <p>
             Select a minimum of<span className="important"> 3 </span>sections, including
             <span className="important"> Navbar</span>,<span className="important"> Hero</span>,<span className="important"> Footer</span>,
           </p>
-    </div>
-    */}
+        </div>
       </div>
     </div>
   );

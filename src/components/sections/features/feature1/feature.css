@@ -1,5 +1,5 @@
 .feature1-layout {
-  background: var(--website-color-1);
+  background: var(--website-1-color-1);
 
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: auto;
@@ -45,7 +45,7 @@
   gap: 6px;
   text-align: center;
   align-items: center;
-  background-color: var(--website-color-3);
+  background-color: var(--website-1-color-3);
   background-blend-mode: difference;
   width: 230px;
   justify-content: center;
@@ -65,7 +65,7 @@
 }
 
 .feature-title-1 {
-  color: var(--website-color-3);
+  color: var(--website-1-color-3);
   font-size: 50px;
   font-weight: 700;
 }
@@ -78,7 +78,7 @@
 }
 .featue1-icon-cover {
   display: flex;
-  background: var(--website-color-4);
+  background: var(--website-1-color-4);
   background-size: cover;
   border-radius: 50%;
   align-items: center;
@@ -104,7 +104,7 @@
     width: 80%;
   }
   .feature-title-1 {
-    color: var(--website-color-3);
+    color: var(--website-1-color-3);
     font-size: 30px;
     font-weight: 400;
   }

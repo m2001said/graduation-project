@@ -30,7 +30,7 @@ const Hero9 = ({ template }) => {
 
   return (
     <main className="trialdesign9 mb-12 pt-4">
-      <div className="bg-gradient-to-t from-[var(--website-9-color-3)] to-[var(--website-9-color-1)] rounded-[560px] rounded-t-none hero9">
+      <div className="bg-gradient-to-t from-[var(--website-9-color-3)] to-[var(--website-9-color-1)]  hero9">
         <div className="container mx-auto px-3 lg:flex justify-between items-center lg:h-screen relative">
           <div className="lg:w-2/5">
             <p className="text-[var(--website-9-color-3)] md:text-xl text-lg font-medium">{hero.title}</p>

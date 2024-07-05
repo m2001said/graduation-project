@@ -5,7 +5,7 @@ const Contact11 = ({ template }) => {
   const contact = template.contact;
 
   return (
-    <section className="contact11 container scetion" id="contact">
+    <section className="contact11 flex flex-col items-center justify-center text-center" id="contact">
       <h2 className="section__title11">{contact.title}</h2>
       <div className="contact__container11 grid11">
         <div className="contact__info11">

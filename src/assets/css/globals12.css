@@ -5,8 +5,10 @@
   --website-12-color-1: #000f38;
   --website-12-color-2: #212ea0;
   --website-12-color-3: rgba(0, 15, 152, 0.3);
+  --website-12-color-4: #676767;
+  --website-12-color-5: #ebecfe;
 
-  --website-12-color-6: #212ea0;
+  --website-12-color-6: #474b6e;
 }
 .design-12 .logo12 {
   height: 6em;
@@ -35,7 +37,7 @@
   padding-right: 10%;
 }
 .design-12 .btn12 {
-  background: var(--website-color-1);
+  background: var(--website-1-color-1);
   color: var(--title-dark);
   padding: 12px 22px;
   font-size: 16px;
@@ -53,10 +55,10 @@
 }
 .design-12 .btn12.dark-btn12 {
   background: var(--website-12-color-6);
-  color: var(--website-color-1);
+  color: var(--website-1-color-1);
 }
 .design-12 .btn12:hover {
-  color: var(--website-color-3);
+  color: var(--website-1-color-3);
 }
 .design-12 .container12 {
   padding-left: 10%;

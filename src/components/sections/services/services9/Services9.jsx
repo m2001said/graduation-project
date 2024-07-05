@@ -25,7 +25,7 @@ const Services9 = ({ template }) => {
         onMouseEnter={() => handleCardHover(index)}
         onMouseLeave={() => setHoveredIndex(null)}
       >
-              <button className="bg-[var(--website-9-color-2)] text-[var(--website-9-color-3)] rounded-full flex justify-center items-center w-20 h-20 shadow-2xl mb-4">
+              <button className="bg-[var(--website-9-color-6)] text-[var(--website-9-color-3)] rounded-full flex justify-center items-center w-20 h-20 shadow-2xl mb-4">
                 <img
                   src={service.icon}
                   alt={service.title}

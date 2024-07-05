@@ -83,31 +83,60 @@
     "buttonText": "شاهد المزيد هنا",
     "icon": "https://res.cloudinary.com/di8kjrflu/image/upload/v1719855189/white-arrow_bmhias.png"
   },
-  "contact": {
-    "icons": [
-      "https://res.cloudinary.com/di8kjrflu/image/upload/v1719855279/msg-icon_admjx1.png",
-      "https://res.cloudinary.com/di8kjrflu/image/upload/v1719855301/mail-icon_cfnj5m.png",
-      "https://res.cloudinary.com/di8kjrflu/image/upload/v1719855333/phone-icon_ct28v1.png",
-      "https://res.cloudinary.com/di8kjrflu/image/upload/v1719855417/location-icon_ytfm0b.png",
-      "https://res.cloudinary.com/di8kjrflu/image/upload/v1719855189/white-arrow_bmhias.png"
-    ],
-    "title": "أرسل لنا رسالة",
-    "description": "لا تتردد في التواصل معنا من خلال نموذج الاتصال أو العثور على معلومات الاتصال الخاصة بنا أدناه. ملاحظاتك وأسئلتك واقتراحاتك مهمة بالنسبة لنا ونحن نسعى جاهدين لتقديم خدمة استثنائية لمجتمع جامعتنا.",
-    "contacts": [
+  "testimonials": {
+    "testimonials": [
       {
-        "icon": 1,
-        "text": "Contact@edusite.dev"
+        "imgUrl": "https://res.cloudinary.com/duc04fwdb/image/upload/v1719827222/jammal_photos/ei4ppt3gybkh7l98hapt.png",
+        "name": "ويليام جاكسون",
+        "location": "إيدوسيتي، الولايات المتحدة الأمريكية",
+        "opinion": "اختيار متابعة دراستي في إيدوسيتي كان من أفضل القرارات التي اتخذتها في حياتي. المجتمع الداعم، المرافق الحديثة، والالتزام بالتميز الأكاديمي قد فاق توقعاتي."
       },
       {
-        "icon": 2,
-        "text": "+1 123-456-7890"
+        "imgUrl": "https://res.cloudinary.com/duc04fwdb/image/upload/v1719827597/jammal_photos/bxmfbv8zmfjw7kbuewiu.png",
+        "name": "ويليام جاكسون",
+        "location": "إيدوسيتي، الولايات المتحدة الأمريكية",
+        "opinion": "اختيار متابعة دراستي في إيدوسيتي كان من أفضل القرارات التي اتخذتها في حياتي. المجتمع الداعم، المرافق الحديثة، والالتزام بالتميز الأكاديمي قد فاق توقعاتي."
       },
       {
-        "icon": 3,
-        "text": "77 Massachusetts Ave, Cambridge\nMA 02139, الولايات المتحدة"
+        "imgUrl": "https://res.cloudinary.com/duc04fwdb/image/upload/v1708546089/jammal_photos/o9shd85cnsznypdcrf6k.jpg",
+        "name": "ويليام جاكسون",
+        "location": "إيدوسيتي، الولايات المتحدة الأمريكية",
+        "opinion": "اختيار متابعة دراستي في إيدوسيتي كان من أفضل القرارات التي اتخذتها في حياتي. المجتمع الداعم، المرافق الحديثة، والالتزام بالتميز الأكاديمي قد فاق توقعاتي."
+      },
+      {
+        "imgUrl": "https://res.cloudinary.com/duc04fwdb/image/upload/v1719827597/jammal_photos/bxmfbv8zmfjw7kbuewiu.png",
+        "name": "ويليام جاكسون",
+        "location": "إيدوسيتي، الولايات المتحدة الأمريكية",
+        "opinion": "اختيار متابعة دراستي في إيدوسيتي كان من أفضل القرارات التي اتخذتها في حياتي. المجتمع الداعم، المرافق الحديثة، والالتزام بالتميز الأكاديمي قد فاق توقعاتي."
       }
     ]
   },
+  "contact": {
+    "title": "أرسل لنا رسالة",
+    "description": "لا تتردد في التواصل معنا عبر نموذج الاتصال أو ابحث عن معلومات الاتصال بنا أدناه. ملاحظاتك، وأسئلتك، واقتراحاتك مهمة بالنسبة لنا بينما نسعى لتقديم خدمة استثنائية لمجتمع جامعتنا.",
+    "icon": "https://res.cloudinary.com/di8kjrflu/image/upload/v1719855279/msg-icon_admjx1.png",
+    "imgUrl": "https://res.cloudinary.com/di8kjrflu/image/upload/v1719855189/white-arrow_bmhias.png",
+    "contacts": [
+      {
+        "icon": "https://res.cloudinary.com/di8kjrflu/image/upload/v1719855301/mail-icon_cfnj5m.png",
+        "text": "Contact@edusite.dev"
+      },
+      {
+        "icon": "https://res.cloudinary.com/di8kjrflu/image/upload/v1719855333/phone-icon_ct28v1.png",
+        "text": "+1 123-456-7890"
+      },
+      {
+        "icon": "https://res.cloudinary.com/di8kjrflu/image/upload/v1719855417/location-icon_ytfm0b.png",
+        "text": "77 شارع ماساتشوستس، كامبريدج\nMA 02139، الولايات المتحدة الأمريكية"
+      }
+    ]
+  },
+  "footer": {
+    "title": "© 2024 user002. جميع الحقوق محفوظة.",
+    "description": "شروط الخدمة",
+    "subtitle": "سياسة الخصوصية"
+  },
+
   "colors": {
     "templateColors": ["#ffffff", "#cda274", "#292f36", "#f4f0ec", "#777777"]
   }

@@ -16,7 +16,7 @@ const Feature15 = ({ template }) => {
   const feature = template.features;
 
   return (
-    <main className="pt-52 px-3 feat15" id="skills">
+    <main className="pt-16 px-3 feat15" id="skills">
       <div className="container mx-auto max-w-7xl">
         <h1 className="text-44px text-3xl text-center m-0 feat15_1">{feature.title}</h1>
         <p className="font-bold text-sm flex items-center justify-center gap-4 mb-15px ml-auto mt-5 mb-5 text-90px feat15_2">{feature.subtitle}</p>

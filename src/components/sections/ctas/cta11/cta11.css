@@ -3,6 +3,7 @@
   grid-template-columns: repeat(2, 1fr);
   column-gap: 1.875rem;
   width: 70rem;
+  margin: 0 auto;
 }
 
 .timeline11 {
