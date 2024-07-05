@@ -107,13 +107,8 @@ const createData = (type, data) => {
 };
 
 export const navData = createData("Navbar", [
-  { id: 2, imgUrl: nav2 },
-  { id: 8, imgUrl: nav8 },
-  { id: 9, imgUrl: nav9 },
   { id: 12, imgUrl: nav12 },
-  { id: 13, imgUrl: nav13 },
   { id: 16, imgUrl: nav16 },
-  { id: 17, imgUrl: nav17 },
   { id: 18, imgUrl: nav18 },
   { id: 14, imgUrl: nav14 },
   { id: 4, imgUrl: nav4 },
