@@ -63,13 +63,13 @@ const AdminMessages = () => {
                     <div key={message._id}>
                       <div className="flex items-center w-full gap-4">
                         <div className="w-1/4 mb-2">
-                          <p className="text-[#350E5C] border border-inherit text-xl p-2 rounded-lg shadow">{message?.email}</p>
+                          <p className="text-[#350E5C] border border-inherit p-2 rounded-lg shadow max-w-full break-words">{message?.email}</p>
                         </div>
                         <div className="w-1/4 mb-2">
-                          <p className="text-[#350E5C] border border-inherit text-xl p-2 rounded-lg shadow">{message?.name}</p>
+                          <p className="text-[#350E5C] border border-inherit p-2 rounded-lg shadow max-w-full break-words">{message?.name}</p>
                         </div>
                         <div className="w-5/12 mb-2">
-                          <p className="text-[#350E5C] border border-inherit text-xl p-2 rounded-lg shadow">{message?.message}</p>
+                          <p className="text-[#350E5C] border border-inherit p-2 rounded-lg shadow max-w-full break-words">{message?.message}</p>
                         </div>
                       </div>
                     </div>

@@ -1,12 +1,16 @@
+.blog11 {
+  background-color: var(--website-11-color-2);
+}
+
 .blog__container11 {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  align-items: center;
   gap: 1.875rem;
   text-align: center;
   padding: 1.875rem;
   width: 100%;
-  background-color: var(--website-11-color-2);
 }
 
 .blog__card11 {

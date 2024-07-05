@@ -7,11 +7,14 @@
 .section--poster-container {
   position: relative;
   border: solid 3px transparent;
-  max-height: 200px;
+  max-height: 150px;
   display: flex;
   align-items: center;
   justify-content: center;
   overflow: hidden;
+}
+.Navbar--section {
+  max-height: 30px;
 }
 
 .section--poster-container.selected {
@@ -33,6 +36,10 @@
   padding: 4px;
   animation: icon 0.3s ease 1 forwards;
   transform: scale(0);
+}
+.Navbar--section .check-icon {
+  position: absolute;
+  top: 2px;
 }
 
 @keyframes icon {

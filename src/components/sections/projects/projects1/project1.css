@@ -1,5 +1,5 @@
 .projects1 {
-  background: var(--website-color-1);
+  background: var(--website-1-color-1);
 }
 .projects1-header {
   text-align: center;
@@ -69,20 +69,20 @@
   width: calc(100% - 50px);
 }
 .projects1-card-info h1 {
-  color: var(--website-color-3);
+  color: var(--website-1-color-3);
   font-size: 1.2em;
   font-weight: 700;
   line-height: 1.4;
   margin-bottom: 8px;
 }
 .projects1-card-info p {
-  color: var(--website-color-5);
+  color: var(--website-1-color-5);
 }
 
 .projects1-card-link {
   text-decoration: none;
-  background: var(--website-color-4);
-  color: var(--website-color-3);
+  background: var(--website-1-color-4);
+  color: var(--website-1-color-3);
   border-radius: 50%;
   display: flex;
   justify-content: center;

@@ -1,5 +1,5 @@
 import React from "react";
-import { useSelector } from "react-redux";
+import "./footer18.css"import { useSelector } from "react-redux";
 
 
 const Footer18 = ({template}) => {
@@ -36,7 +36,7 @@ const Footer18 = ({template}) => {
           <div className="grid grid-cols-2 sm:grid-cols-3 col-span-2 md:pl-10 ">
             {footer.footerSections.map((item) => (
               <div className="py-8 px-4 " key={item.title}>
-                <h1 className="sm:text-xl text-xl font-bold sm:text-left text-justify mb-3">{item.title}</h1>
+                <h1 className="footer18-sectionTitle sm:text-xl text-xl font-bold sm:text-left text-justify mb-3">{item.title}</h1>
                 <ul className={`flex flex-col gap-3`}>
                   {item.links.map((link) => (
                     <a href=" " key={link.title}>

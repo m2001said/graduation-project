@@ -4,7 +4,7 @@
   /* height: auto; */
 }
 .testimonials {
-  background-color: var(--website-color-4);
+  background-color: var(--website-1-color-4);
   text-align: center;
   max-width: 1300px;
   margin: 0.5rem auto;
@@ -15,7 +15,7 @@
   flex-direction: column;
 }
 .Testimonials__title {
-  color: var(--website-color-3);
+  color: var(--website-1-color-3);
   text-align: center;
   /* font-family: "DM Serif Display"; */
   font-size: 60px;
@@ -34,7 +34,7 @@
   height: 300ppx;
 }
 .testimonials-card {
-  background-color: var(--website-color-1);
+  background-color: var(--website-1-color-1);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -43,7 +43,7 @@
   border-radius: 20px;
   padding: 58px 37px 85px 37px;
   gap: 25px;
-  border: 0.5px solid var(--website-color-2);
+  border: 0.5px solid var(--website-1-color-2);
   height: 339px;
 }
 
@@ -62,7 +62,7 @@
   border-radius: 50%;
 }
 .testimonials-card-body {
-  color: var(--website-color-3);
+  color: var(--website-1-color-3);
   /* font-family: Jost; */
   font-size: 22px;
   font-style: normal;

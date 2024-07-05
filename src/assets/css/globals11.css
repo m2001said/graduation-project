@@ -3,7 +3,7 @@
 /* ===========Variables CSS======== */
 :root {
   --website-11-color-1: hsl(353, 100%, 65%);
-  --website-11-color-2: #fff;
+  --website-11-color-2: #fcf5ee;
   --website-11-color-3: #f48915;
   --website-11-color-4: hsl(245, 15%, 65%);
   --website-11-color-5: hsl(244, 24%, 26%);
@@ -44,6 +44,8 @@
   line-height: 1.7;
   font-family: var(--body-font11);
   font-size: var(--normal-font-size);
+  max-width: 1700px;
+  margin: 0 auto;
 }
 .TrialDesign11 h3,
 .TrialDesign11 h1 {
@@ -79,11 +81,10 @@
 }
 .TrialDesign11 .section__title11 {
   font-size: var(--h1-font-size);
-  margin-left: 0.875rem;
   font-weight: var(--font-bold);
   position: relative;
-  margin-bottom: 1.75rem;
-  margin-top: 1.5rem;
+  margin: 2rem auto 1.5rem auto;
+  text-align: center;
 }
 .TrialDesign11 .section__title11::before {
   content: "";

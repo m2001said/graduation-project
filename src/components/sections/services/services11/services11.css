@@ -9,9 +9,7 @@
   margin-right: 845px;
   color: var(--website-11-color-3);
 }
-.aboutImg11 {
-  margin-left: 200px;
-}
+
 .about__data11 {
   padding: 1.875rem;
   background-color: var(--website-11-color-2);
@@ -21,7 +19,6 @@
   column-gap: 1.875rem;
   align-items: flex-start;
   position: relative;
-  margin-left: 150px;
   grid-template-columns: 1fr 2fr;
   width: 70%;
   height: 100%;
@@ -143,11 +140,6 @@
     top: 20%;
   }
 
-  .aboutImg11 {
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-  }
   #btn11_1 {
     margin-bottom: 2rem;
     margin-left: 2rem;

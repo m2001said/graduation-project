@@ -2,6 +2,7 @@
   display: flex;
   justify-content: space-between;
   background-color: var(--website-3-color-2);
+  padding: 10px 20px;
 }
 
 .logo3 {
@@ -12,20 +13,17 @@
 .navbar3-menu {
   color: var(--website-3-color-5);
   margin-top: 10px;
-  margin-right: 260px;
   z-index: 2;
   list-style: none;
   display: flex;
   gap: 6rem;
   margin-top: 10px;
-  margin-right: 350px;
 }
 
 .menu-icon {
-  position: fixed;
+  /* position: fixed; */
   width: 30px;
   height: 20px;
-  position: fixed;
   right: 1rem;
   z-index: 2;
 }
@@ -33,15 +31,33 @@
 /* res mobile */
 @media screen and (max-width: 768px) {
   .navbar3 > :nth-child(2) {
-    right: 1rem;
     z-index: 2;
+  }
+  .ltr .navbar3 > :nth-child(2) {
+    right: 1rem;
+    left: auto;
+  }
+  .rtl .navbar3 > :nth-child(2) {
+    left: 1rem;
+    right: auto;
   }
 
   .navbar3-menu {
     flex-direction: column;
-    padding: 2rem;
     position: fixed;
-    right: 0.5rem;
     margin-right: 0;
+    gap: 2rem;
+  }
+
+  .ltr .navbar3-menu {
+    right: 0.5rem;
+  }
+  .rtl .navbar3-menu {
+    left: 0.5rem;
+  }
+
+  .navbar3-menu-mobile {
+    background: var(--website-3-color-2);
+    padding: 2rem;
   }
 }

@@ -36,9 +36,16 @@
   display: grid;
   /* justify-content: center; */
   align-items: center;
-  margin: auto;
+  /* margin: auto; */
   margin-top: 2rem;
   gap: 3rem;
+}
+
+.ltr .feature5_1-info {
+  padding:0px 40px;
+}
+.rtl .feature5_1-info {
+   padding: 0px 70px;
 }
 
 .feature5_1-info-text {

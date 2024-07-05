@@ -33,7 +33,7 @@
 /* Header */
 header.template1 {
   width: 100%;
-  background-color: var(--website-color-1);
+  background-color: var(--website-1-color-1);
 }
 
 header.template1 .Nav-container {
@@ -56,7 +56,7 @@ header.template1 nav {
 }
 
 header.template1 nav .toggle-menu {
-  color: var(--website-color-3);
+  color: var(--website-1-color-3);
   font-size: 22px;
   cursor: pointer;
 }
@@ -66,12 +66,12 @@ header.template1 nav .toggle-menu {
   display: flex;
   flex-direction: column;
   transition: transform 0.3s ease-in-out;
-  color: var(--website-color-2);
+  color: var(--website-1-color-2);
   font-size: 22px;
 }
 
 .bar {
-  background-color: var(--website-color-3);
+  background-color: var(--website-1-color-3);
   height: 2px;
   width: 21px;
   margin: 3px 0;
@@ -105,10 +105,10 @@ header.template1 nav ul {
     right: 0;
     width: 40%;
     opacity: 0.7;
-    box-shadow: 0 2px 4px var(--website-color-2);
+    box-shadow: 0 2px 4px var(--website-1-color-2);
   }
   header.template1 nav ul li a:hover {
-    color: var(--website-color-2);
+    color: var(--website-1-color-2);
   }
 
   header.template1 nav ul.show {
@@ -118,14 +118,14 @@ header.template1 nav ul {
   header.template1 nav ul.show li a {
     text-transform: capitalize;
     padding: 10px 30px;
-    color: var(--website-color-3);
-    background-color: var(--website-color-1);
+    color: var(--website-1-color-3);
+    background-color: var(--website-1-color-1);
     font-size: 18px;
-    border-bottom: 0.5px solid var(--website-color-2);
+    border-bottom: 0.5px solid var(--website-1-color-2);
   }
   header.template1 nav ul.show li a:hover {
-    background-color: var(--website-color-3);
-    color: var(--website-color-2);
+    background-color: var(--website-1-color-3);
+    color: var(--website-1-color-2);
     border-radius: 0;
     font-weight: bold;
   }
@@ -134,7 +134,7 @@ header.template1 nav ul {
 header.template1 nav ul li a {
   padding: 20px 35px;
   display: block;
-  color: var(--website-color-3);
+  color: var(--website-1-color-3);
   text-decoration: none;
   font-size: 18px;
   transition: 0.2s;
@@ -143,8 +143,8 @@ header.template1 nav ul li a {
   z-index: 2;
 }
 header.template1 nav ul li a:hover {
-  background-color: var(--website-color-3);
-  color: var(--website-color-2);
+  background-color: var(--website-1-color-3);
+  color: var(--website-1-color-2);
   border-radius: 8px;
 }
 

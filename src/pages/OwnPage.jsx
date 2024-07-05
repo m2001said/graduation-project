@@ -171,11 +171,6 @@ const OwnPage = () => {
     "contact",
     "team",
     "testimonials",
-    "statistics",
-    "logos",
-    "items",
-    "pricing",
-    "cta",
     "footer",
   ];
   const sectionTypes = [
@@ -187,11 +182,6 @@ const OwnPage = () => {
     "contact",
     "team",
     "testimonial",
-    "statistic",
-    "logo",
-    "item",
-    "pricing",
-    "cta",
     "footer",
   ];
 

@@ -9,7 +9,7 @@ const Items14 = ({ template }) => {
       <div className="container14">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {items.items.map((item, index) => (
-            <div key={index} className={`item14-card${index} py-10 pl-5 text-white rounded-3xl relative h-[320px] flex items-end `}>
+            <div key={index} className={`item14-allCard item14-card${index} py-10 pl-5 text-white rounded-3xl relative h-[320px] flex items-end `}>
               <div>
                 <div className="mb-4">
                   <p className="mb-[2px] text-gray-200">{items.title}</p>
@@ -22,7 +22,9 @@ const Items14 = ({ template }) => {
                   </button>
                 </div>
               </div>
-              <img src={item.imgUrl} alt="" />
+              <div>
+                <img src={item.imgUrl} alt="" />
+              </div>
             </div>
           ))}
         </div>

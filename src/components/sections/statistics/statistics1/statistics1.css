@@ -1,5 +1,5 @@
 .statistics1 {
-  background: var(--website-color-4);
+  background: var(--website-1-color-4);
 }
 .statistics1-cards {
   display: flex;
@@ -14,19 +14,19 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  border-right: solid 1px var(--website-color-2);
+  border-right: solid 1px var(--website-1-color-2);
 }
 .statistics1-card:last-child {
   border: none;
 }
 .statistics1-card-value {
   font-weight: 600;
-  color: var(--website-color-2);
+  color: var(--website-1-color-2);
   margin-bottom: 10px;
   font-size: 6em;
 }
 .statistics1-card-title {
-  color: var(--website-color-5);
+  color: var(--website-1-color-5);
   font-weight: 400;
   letter-spacing: 0.22px;
   text-align: center;
@@ -39,10 +39,10 @@
   }
   .statistics1-card {
     padding: 15px;
-    border: solid 1px var(--website-color-2);
+    border: solid 1px var(--website-1-color-2);
     border-radius: 5px;
   }
   .statistics1-card:last-child {
-    border: solid 1px var(--website-color-2);
+    border: solid 1px var(--website-1-color-2);
   }
 }

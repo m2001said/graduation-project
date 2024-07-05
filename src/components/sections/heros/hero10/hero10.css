@@ -1,0 +1,11 @@
+
+
+.ltr .hero10-textContent {
+  padding:0px 40px;
+  text-align: left;
+}
+.rtl .hero10-textContent {
+   padding: 0px 80px 0px 50px;
+     text-align: right;
+}
+

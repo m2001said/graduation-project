@@ -1,0 +1,19 @@
+/* footer14-sectionTitle */
+
+.ltr .footer14-sectionTitle {
+  text-align: left;
+}
+.rtl .footer14-sectionTitle {
+    text-align: right;
+}
+
+
+/* footer14-descrption */
+
+.ltr .footer14-descrption {
+  text-align: left;
+}
+.rtl .footer14-descrption {
+    text-align: right;
+    padding: 10px 0px 10px 90px;
+}

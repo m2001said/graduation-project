@@ -6,19 +6,19 @@ const Navbar5 = ({template}) => {
   const ownNavbar = useSelector((state) => state.ownTemplate.navbar);
   const navbar = template ? template.navbar : ownNavbar;
 
-  const [active, setActive] = useState("navbarMenu");
-  const showNavbar = () => {
-    setActive("navbarMenu showNavbar");
+  const [active, setActive] = useState("navbar-5-Menu");
+  const showNavbar5 = () => {
+    setActive("navbar-5-Menu showNavbar5");
   };
   const removeNavbar = () => {
-    setActive("navbarMenu");
+    setActive("navbar-5-Menu");
   };
 
   const [noBg, addBg] = useState("navbar5-two");
 
   const addBgColor = () => {
     if (window.scrollY >= 10) {
-      addBg("navbar5-two navbar-with_Bg");
+      addBg("navbar5-two navbar5-with_Bg");
     } else {
       addBg("navbar5-two");
     }
@@ -34,9 +34,9 @@ const Navbar5 = ({template}) => {
         </a>
       </div>
       <div className={active}>
-        <ul className="navbarMenu-list">
+        <ul className="navbarMenu5-list">
           {navbar.links.map((link, index) => (
-            <li key={index} className="navbarMenu-listItem">
+            <li key={index} className="navbarMenu-5-listItem">
               <a href={link.url} onClick={() => removeNavbar()}>
                 {link.title}
               </a>
@@ -44,12 +44,12 @@ const Navbar5 = ({template}) => {
           ))}
         </ul>
 
-        <button onClick={removeNavbar} className="navbarMenu-btnOne">
+        <button onClick={removeNavbar} className="navbarMenu-5-btnOne">
           {navbar.buttonText}
         </button>
       </div>
 
-      <div className="toggleIcon" onClick={showNavbar}>
+      <div className="toggleIcon" onClick={showNavbar5}>
         <a href=" #">
           <img src={navbar.icon} alt="" className="navbar5-two-icon" />
         </a>
