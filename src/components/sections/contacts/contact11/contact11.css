@@ -1,10 +1,11 @@
-.contact11.section {
-  padding-bottom: 6.25rem;
+.contact11 {
+  padding-bottom: 2rem;
+  margin-top: 2rem;
+  background-color: var(--website-11-color-2);
 }
 .contact__container11 {
   grid-template-columns: 1fr;
   column-gap: 1.875rem;
-  background-color: var(--website-11-color-2);
 }
 .contact__title11 {
   font-size: var(--h3-font-size);

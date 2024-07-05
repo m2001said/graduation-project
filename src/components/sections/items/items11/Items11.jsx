@@ -3,9 +3,9 @@ import "./items11.css";
 
 const Items11 = ({ template }) => {
   return (
-    <section className="services11 container section" id="items">
+    <section className="services11 pt-10 md:pt-16" id="items">
       <h2 className="section__title11">{template.items.title}</h2>
-      <div className="services__container11_2 grid11">
+      <div className="flex items-center justify-around gap-10 flex-wrap">
         {template.items.items.map((item, index) => (
           <div className="services__card11_2" key={index}>
             <img src={item.imgUrl} alt="" className="services__img11_2" />
