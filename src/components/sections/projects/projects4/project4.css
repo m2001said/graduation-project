@@ -55,7 +55,7 @@
   color: var(--website-4-color-4);
   border: none;
   border-radius: 5px;
-  background-color: var(--website-color-1);
+  background-color: var(--website-1-color-1);
   cursor: pointer;
 }
 .r-buttons4 > :nth-child(1) {

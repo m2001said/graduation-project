@@ -5,7 +5,7 @@
 .h-container4 {
   padding-top: 1rem;
   padding-bottom: 1rem;
-  color: var(--website-color-1);
+  color: var(--website-1-color-1);
   justify-content: space-between;
   background-color: var(--website-4-color-1);
 }
@@ -36,7 +36,7 @@
     padding-bottom: 2rem;
   }
   .h-menu4 {
-    color: var(--website-color-1);
+    color: var(--website-1-color-1);
     position: absolute;
     gap: 2rem;
     font-weight: 500;

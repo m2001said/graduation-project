@@ -26,7 +26,7 @@ const Navbar3 = ({ template }) => {
       <img src={template.navbar.imgUrl} alt="" className="logo3" />
       <div className="navbar3-menu">
         {mobile ? (
-          <div className="closed-mobile-menu" onClick={toggleMenu}>
+          <div className="menu-icon" onClick={toggleMenu}>
             <img src={"https://res.cloudinary.com/duc04fwdb/image/upload/v1706799720/jammal_photos/jx9bn26thzu46apznikl.svg"} alt="" className="menu-icon" />
           </div>
         ) : (
@@ -39,7 +39,7 @@ const Navbar3 = ({ template }) => {
         )}
       </div>
       {menuOpened && mobile && (
-        <div className="navbar3-menu">
+        <div className="navbar3-menu navbar3-menu-mobile">
           {template.navbar.links &&
             template.navbar.links.map((link, index) => (
               <a className="hoverlink3" key={index} href={`#${link.url}`} onClick={() => setMenuOpened(false)}>

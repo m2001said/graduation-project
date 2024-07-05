@@ -40,7 +40,7 @@ const Pricing15 = ({ template }) => {
   };
 
   return (
-    <main className="pb-5 pt-52 px-3 pricn15" id="pricing">
+    <main className="-5 pt-16 px-3 pricn15" id="pricing">
       <div className="flex flex-col items-center container max-w-[1300px] mx-auto">
         <h1 className="sm:text-[44px] text-[26px] text-center m-0 pricin15_1">{pricing.title}</h1>
         <p className="font-bold text-sm text-[#29a587] flex items-center text-center gap-x-4 pricin15_2">{pricing.subtitle}</p>
