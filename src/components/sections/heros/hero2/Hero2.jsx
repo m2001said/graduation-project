@@ -4,10 +4,10 @@ import "./hero2.css";
 const Hero2 = ({ template }) => {
   const hero = template.hero;
   return (
-    <section id="hero2">
+    <section id="hero2" className="section2">
       <h5>{hero.title}</h5>
       <h2>{hero.subtitle}</h2>
-      <div className="container hero2__container">
+      <div className="container2 hero2__container">
         <div className="hero2__me">
           <div className="hero2__me-image">
             <img src={hero.imgUrl} alt="" />
@@ -25,7 +25,7 @@ const Hero2 = ({ template }) => {
             ))}
           </div>
           <p>{hero.description}</p>
-          <a href="#contactUs2" className="btn btn-letstalk">
+          <a href="#contactUs2" className="a2 btn2 btn-primary2">
             Let's Talk
           </a>
         </div>

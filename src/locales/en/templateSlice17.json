@@ -6,7 +6,7 @@
     "imgUrl": ""
   },
   "navbar": {
-    "title": "Logo",
+    "title": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1720037236/done/fast-delivery-fast-svgrepo-com_fr05yy_2_lxmgwl.webp",
     "subtitle": "Subtitle",
     "description": "Dropdown",
     "links": [
@@ -39,8 +39,8 @@
     ]
   },
   "hero": {
-    "title": "Soliman",
-    "subtitle": "DeliveryRestaurant fresh and healthy meal plan  in Cairo",
+    "title": "Tayer",
+    "subtitle": "Delivery services and fresh and healthy meal plan  in Cairo",
     "description": "Discover delicious dishes that will satisfy your cravings Door from 132.95 per week",
     "imageUrl": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1720036257/done/hero_b7quav_lulhhm.webp",
     "imgUrl": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1720036255/done/heroBg_vahqtb_czftpx.webp"
@@ -68,7 +68,7 @@
   },
   "about": {
     "title": "About Us",
-    "subtitle": "we are a team of highly skilled individuals with years of experience in the field of food delivery. we are committed to providing our customers with the best quality food and service.",
+    "subtitle": " We source only the freshest, high-quality ingredients to prepare our meals. Our produce is locally sourced and organic whenever possible, ensuring that every bite is packed with nutrients and flavor. Our menu is designed with health in mind. From balanced meals to vegan and gluten-free options, we cater to a variety of dietary needs and preferences. Each meal is crafted to provide the perfect balance of protein, carbs, and healthy fats, helping you maintain a healthy lifestyle effortlessly.",
     "imgs": [
       "https://res.cloudinary.com/dowtlcpxj/image/upload/v1720038987/done/polygon_yiwc6q_1_c2ngxe.webp",
       "https://res.cloudinary.com/dowtlcpxj/image/upload/v1720038988/done/vector-wave_gperhf_1_fighu3.webp"

@@ -15,11 +15,11 @@ const Services17 = ({ template }) => {
 
   return (
     <div
-      className="py-14 md:py-28 bg-gradient-to-b from-[var(--website-17-color-5)] to-[var(--website-17-color-3)]"
+      className="py-16 md:py-28 bg-gradient-to-b from-[var(--website-17-color-4)] to-[var(--website-17-color-6)]  "
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
     >
-      <div className="container17">
+      <div className="container17 py-16    rounded-3xl">
         <h1 className="pb-16 tracking-wider text-8xl ephesis font-semibold text-[var(--website-17-color-2)] text-center">{services.title}</h1>
 
         <div className="grid grid-cols-2 md:grid-cols-4 gap-14 sm:gap-4">

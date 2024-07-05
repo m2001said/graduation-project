@@ -28,7 +28,7 @@ const Hero17 = ({ template }) => {
                   {hero.title}
                   <br />
                 </span>
-                <span className="text-[var(--website-17-color-3)] lg:text-5xl sm:text-xl sm:text-wrap ephesis">
+                <span className="text-[var(--website-17-color-5)] lg:text-5xl sm:text-xl sm:text-wrap ephesis">
                   {hero.subtitle}
                 </span>
               </h1>

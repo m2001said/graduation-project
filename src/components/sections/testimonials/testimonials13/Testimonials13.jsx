@@ -11,7 +11,7 @@ const Testimonials13 = ({ template }) => {
   const Card = ({ testimonial }) => {
     const { name, location, imgUrl, opinion } = testimonial;
     return (
-      <div className="bg-[var(--website-13-color-5)] hover:bg-[var(--website-13-color-2)] text-[var(--website-13-color-1)] p-6 rounded-lg shadow-lg transition-all duration-300">
+      <div className="bg-[var(--website-13-color-5)]  text-[var(--website-13-color-1)]  p-6 rounded-lg shadow-lg transition-all duration-300">
         <img
           src={imgUrl}
           alt={name}
@@ -20,7 +20,7 @@ const Testimonials13 = ({ template }) => {
         <p className="text-center font-bold text-lg">{name}</p>
         <p className="text-center text-[var(--website-13-color-6)]">{location}</p>
         <hr className="my-4 border-[var(--website-13-color-2)]" />
-        <p className="text-center text-sm transition-colors duration-300 hover:text-[var(--website-13-color-5)]">{opinion}</p>
+        <p className="text-center text-sm transition-colors duration-300 h-auto overflow-hidden  ">{opinion}</p>
       </div>
     );
   };
@@ -36,7 +36,7 @@ const Testimonials13 = ({ template }) => {
   const slidesPerView = windowWidth > 768 ? 3 : 1;
 
   return (
-    <div className="px-6 py-8 bg-[var(--website-13-color-3)] text-center">
+    <div className="px-6 py-8 bg-gradient-to-t from-[var(--website-13-color-2)] to-[var(--website-13-color-5)] text-center">
       <p className="text-[var(--website-13-color-4)]">{testimonials.title}</p>
       <h1 className="text-[var(--website-13-color-2)] text-3xl font-semibold mb-8">
         {testimonials.subtitle}
@@ -47,7 +47,7 @@ const Testimonials13 = ({ template }) => {
         modules={[Autoplay, Navigation, Pagination]}
         spaceBetween={20}
         slidesPerView={slidesPerView}
-        autoplay={{ delay: 1000 }}
+        autoplay={{ delay: 3000 }}
         navigation={{ disableOnInteraction: true }} // Fix button interference
         pagination={{ clickable: true }}
       >
