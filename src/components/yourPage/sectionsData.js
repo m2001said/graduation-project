@@ -57,13 +57,10 @@ import feature5 from "../../assets/images/sections/feature5.webp";
 import feature10 from "../../assets/images/sections/feature10.webp";
 
 // Footer
-import footer2 from "../../assets/images/sections/footer2.png";
 import footer13 from "../../assets/images/sections/footer13.png";
 import footer16 from "../../assets/images/sections/footer16.webp";
-import footer17 from "../../assets/images/sections/footer17.png";
 import footer18 from "../../assets/images/sections/footer18.webp";
 import footer14 from "../../assets/images/sections/footer14.webp";
-import footer4 from "../../assets/images/sections/footer4.webp";
 import footer5 from "../../assets/images/sections/footer5.webp";
 import footer10 from "../../assets/images/sections/footer10.webp";
 
@@ -72,9 +69,7 @@ import footer10 from "../../assets/images/sections/footer10.webp";
 import services2 from "../../assets/images/sections/services2.png";
 import services8 from "../../assets/images/sections/services8.webp";
 import services9 from "../../assets/images/sections/services9.png";
-import services17 from "../../assets/images/sections/services17.png";
 import services18 from "../../assets/images/sections/services18.webp";
-import services14 from "../../assets/images/sections/services14.webp";
 import services5 from "../../assets/images/sections/services5.webp";
 import services10 from "../../assets/images/sections/services10.webp";
 
@@ -87,7 +82,6 @@ import team10 from "../../assets/images/sections/team10.webp";
 // Testimonials
 import testimonials2 from "../../assets/images/sections/testimonials2.png";
 import testimonials9 from "../../assets/images/sections/testimonials9.png";
-import testimonials13 from "../../assets/images/sections/testimonials13.png";
 import testimonials16 from "../../assets/images/sections/testimonials16.webp";
 import testimonials18 from "../../assets/images/sections/testimonials18.webp";
 import testimonials10 from "../../assets/images/sections/testimonials10.webp";
@@ -153,9 +147,7 @@ export const serviceData = createData("Service", [
   { id: 2, imgUrl: services2 },
   { id: 8, imgUrl: services8 },
   { id: 9, imgUrl: services9 },
-  { id: 17, imgUrl: services17 },
   { id: 18, imgUrl: services18 },
-  { id: 14, imgUrl: services14 },
   { id: 5, imgUrl: services5 },
   { id: 10, imgUrl: services10 },
 ]);
@@ -180,13 +172,10 @@ export const aboutData = createData("About", [
 ]);
 
 export const footerData = createData("Footer", [
-  { id: 2, imgUrl: footer2 },
   { id: 13, imgUrl: footer13 },
   { id: 16, imgUrl: footer16 },
-  { id: 17, imgUrl: footer17 },
   { id: 18, imgUrl: footer18 },
   { id: 14, imgUrl: footer14 },
-  { id: 4, imgUrl: footer4 },
   { id: 5, imgUrl: footer5 },
   { id: 10, imgUrl: footer10 },
 ]);
@@ -204,7 +193,6 @@ export const teamData = createData("Team", [
 export const testimonialData = createData("Testimonial", [
   { id: 2, imgUrl: testimonials2 },
   { id: 9, imgUrl: testimonials9 },
-  { id: 13, imgUrl: testimonials13 },
   { id: 16, imgUrl: testimonials16 },
   { id: 18, imgUrl: testimonials18 },
   { id: 10, imgUrl: testimonials10 },
