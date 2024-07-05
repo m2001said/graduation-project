@@ -3,7 +3,6 @@ import React from "react";
 const Services15 = ({ template }) => {
   const services = template.services;
 
-
   const Card = ({ title, subtitle, description }) => (
     <div className="w-full hoverBtn">
       <div className="title15_4 rounded-[18px] py-[20px] px-10 relative overflow-hidden">
@@ -20,7 +19,7 @@ const Services15 = ({ template }) => {
   );
 
   return (
-    <div className="pt-52 backgroundcolor15 darkModeColor15 px-3 serve15" id="services">
+    <div className="pt-16 backgroundcolor15 darkModeColor15 px-3 serve15" id="services">
       <div className="container max-w-[1300px] w-full mx-auto">
         <h1 className="sm:text-[44px] text-[26px] text-center m-0 title15_1">{services.title}</h1>
         <p className="font-bold text-sm textColor flex items-center text-center justify-center gap-x-4 title15_2">{services.subtitle}</p>
