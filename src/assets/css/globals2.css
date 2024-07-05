@@ -17,6 +17,9 @@
   color: var(--website-2-color-5);
   transition: all 0.3s ease;
 }
+.contactUs2__option-logo2 {
+  width: 1.5rem;
+}
 
 .nav2 a.active {
   background-color: var(--website-2-color-3);

@@ -6,8 +6,8 @@
     "imgUrl": ""
   },
   "navbar": {
-    "title": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1720037236/done/fast-delivery-fast-svgrepo-com_fr05yy_2_lxmgwl.webp",
-    "subtitle": "Subtitle",
+    "imgUrl": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1720037236/done/fast-delivery-fast-svgrepo-com_fr05yy_2_lxmgwl.webp",
+    "title": "title",
     "description": "Dropdown",
     "links": [
       {

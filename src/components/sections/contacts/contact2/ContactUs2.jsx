@@ -15,7 +15,7 @@ const ContactUs2 = ({ template }) => {
         <div id="contactUs2" className="contactUs2__options">
           {contact.contacts.map((contacts, index) => (
             <article className="contactUs2__option" key={index}>
-              <img src={contacts.imgUrl} alt={`${contacts.type} Logo`} className="contactUs2__option-logo" />
+              <img src={contacts.imgUrl} alt={`${contacts.type} Logo`} className="contactUs2__option-logo2" />
               <h4>{contacts.type}</h4>
               <h5>{contacts.title}</h5>
               <a href={contacts.email} target="_blank" className="a2" rel="noopener noreferrer">
