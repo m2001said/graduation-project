@@ -23,7 +23,7 @@ const Blog15 = ({ template }) => {
   };
 
   return (
-    <main className="-5 pt-16 px-3 blog15" id="blog">
+    <main className="pb-5 pt-16 px-3 blog15" id="blog">
       <div className="flex flex-col items-center container max-w-[1300px] mx-auto">
         <h1 className="sm:text-[44px] text-[26px] text-center m-0 blog15_1">{blog.title} </h1>
         <p className="font-bold text-sm blog15_2 flex items-center text-center gap-x-4">{blog.subtitle}</p>

@@ -3,7 +3,7 @@ import { useLocation } from "react-router";
 import axios from "axios";
 import Loader from "../components/Loader/Loader";
 import { useDispatch, useSelector } from "react-redux";
-import { fetchInitialTemplate } from "../features/templateData/templateSlice";
+import { fetchInitialTemplate, resetState } from "../features/templateData/templateSlice";
 
 const TrialDesign = ({ componentMapping, FooterComponent, NavbarComponent, HeroComponent, template, className }) => {
   const dispatch = useDispatch();
@@ -23,8 +23,11 @@ const TrialDesign = ({ componentMapping, FooterComponent, NavbarComponent, HeroC
     }
   });
 
+  const persist = JSON.parse(localStorage.getItem("persist:root"));
+  const template1 = JSON.parse(persist.template1);
   useEffect(() => {
-    if (url.pathname.includes("preview") || url.pathname.includes("build")) {
+    if (template1.templateInfo.id !== template && (url.pathname.includes("preview") || url.pathname.includes("build"))) {
+      dispatch(resetState());
       dispatch(fetchInitialTemplate(template));
       console.log(`state in TrialDesign after fetchInitialTemplate${template}`, state);
     }
