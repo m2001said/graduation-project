@@ -18,7 +18,7 @@ const AdminUsers = () => {
   const [error, setError] = useState(false);
   const [loading, setLoading] = useState(false);
   const [blockUseLoading, setBlockUserLoading] = useState(false);
-  const [showPages, setShowPages] = useState(false);
+  const [currentUserId, setCurrentUserId] = useState(null);
   const [pages, setPages] = useState([]);
 
   useEffect(() => {
@@ -62,7 +62,7 @@ const AdminUsers = () => {
   // const toggleStatus = (user._id) => {
   //   users[user._id].status = users[user._id].status === "active" ? "blocked" : "active";
   // };
-  
+
   const language = i18next.language;
 
   return (
@@ -76,7 +76,7 @@ const AdminUsers = () => {
             <div className="w-1/4 text-[#350E5C] text-xl font-bold">Email</div>
             <div className="w-1/6 text-[#350E5C] text-xl font-bold ml-2">User name</div>
             <div className="w-1/6 text-[#350E5C] text-xl font-bold ml-2">Role</div>
-            <div className="w-1/6  text-[#350E5C] text-xl font-bold ml-2">Status</div>
+            <div className="w-1/6 text-[#350E5C] text-xl font-bold ml-2">Status</div>
           </div>
           {users?.map((user) => (
             <div key={user?._id}>
@@ -110,7 +110,7 @@ const AdminUsers = () => {
                   <button
                     className="text-[#FFFFFF] text-xs bg-[#350E5C] py-1 px-1 rounded-lg transition-colors hover:bg-[#350E5a]"
                     onClick={async () => {
-                      setShowPages(true);
+                      setCurrentUserId(user?._id); // Set the current user ID
                       setPages(await getUserPages(user?._id));
                     }}
                   >
@@ -142,7 +142,7 @@ const AdminUsers = () => {
                 </svg>
               </div>
 
-              {showPages && (
+              {currentUserId === user?._id && (
                 <div className="text-[#350E5C] border border-inherit p-2 rounded-lg shadow max-w-full break-words mb-2">
                   {pages &&
                     pages?.pages?.map((page) => (
@@ -186,7 +186,7 @@ const AdminUsers = () => {
                     </button>
                   )}
                   {pages?.pages?.length === 0 && <div>There is no pages for this user </div>}
-                  <button onClick={() => setShowPages(false)} className="text-[#350E5C] border border-inherit px-1 rounded-lg ml-2 mr-2">
+                  <button onClick={() => setCurrentUserId(null)} className="text-[#350E5C] border border-inherit px-1 rounded-lg ml-2 mr-2">
                     Show less
                   </button>
                 </div>
