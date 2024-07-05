@@ -1,5 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
-import { addElement, addElementToArray, addSubElement, deleteElement, deleteSection, editElement, reorder, reorderSections } from "./actions";
+import { addElement, addElementToArray, addSubElement, deleteElement, deleteSection, editElement, reorder, reorderSections, updateSchema } from "./actions";
 const ownTemplateSlice = createSlice({
   initialState: {},
 
@@ -30,12 +30,24 @@ const ownTemplateSlice = createSlice({
       return deleteSection(state, action);
     },
     insertSections: (state, action) => {
+      state = {};
       const { data } = action.payload;
-      const colors = {
-        templateColors: ["#fff", "#cda274", "#292f36", "#f4f0ec", "#777777"],
-      };
-      data.colors = colors;
+      delete data.owner;
+      delete data._id;
+      delete data.__v;
+      console.log(data);
+      // const colors = {
+      //   templateColors: ["#fff", "#cda274", "#292f36", "#f4f0ec", "#777777"],
+      // };
+      // data.colors = colors;
       return data;
+    },
+    deleteSchema: (state, action) => {
+      return {};
+    },
+    updateSchema: (state, action) => {
+      console.log(state);
+      return updateSchema(state, action);
     },
   },
 });

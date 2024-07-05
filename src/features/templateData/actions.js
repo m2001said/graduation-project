@@ -27,8 +27,16 @@ export const editElement = (state, action) => {
   } else {
     if (subIndex === undefined) {
       // edit array filed with index
-      if (variable === null) state[section][blockName][i] = value;
-      else {
+      console.log(value);
+      if (variable === null) {
+        console.log(blockName);
+        if (blockName === "templateColors") {
+          for (let index = 1; index <= 18; index++) {
+            document.documentElement.style.setProperty(`--website-${index}-color-${i + 1}`, value);
+          }
+        }
+        state[section][blockName][i] = value;
+      } else {
         if (subBlockName === undefined) {
           // edit obj in array of objects
           state[section][blockName][i][variable] = value;

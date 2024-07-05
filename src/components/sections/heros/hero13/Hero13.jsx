@@ -1,7 +1,9 @@
 import React from "react";
+import { useSelector } from "react-redux";
 
 const Hero13 = ({ template }) => {
-  const { title, description, buttons, icon, imgUrl, imageUrl } = template.hero;
+  const ownHero = useSelector((state) => state.ownTemplate.hero);
+  const { title, description, buttons, icon, imgUrl, imageUrl } = template ? template.hero : ownHero;
 
   return (
     <div id="hero13" className="relative overflow-hidden bg-[var(--website-13-color-1)]   lg:py-20 py-8">

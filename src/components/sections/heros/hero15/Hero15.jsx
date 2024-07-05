@@ -1,8 +1,9 @@
 import React from "react";
+import { useSelector } from "react-redux";
 
 const Hero15 = ({ template }) => {
-  const hero = template.hero;
-
+  const ownHero = useSelector((state) => state.ownTemplate.hero);
+  const hero = template ? template.hero : ownHero;
   return (
     <main className="min-h-screen flex xl:pt-0 pt-36 hero15" id="home">
       <div className="xl:flex items-center container max-w-[1300px] mx-auto lg:px-3">

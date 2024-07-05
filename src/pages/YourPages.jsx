@@ -8,7 +8,7 @@ import build from "../assets/images/deploy.jpg";
 import { Link, useNavigate } from "react-router-dom";
 import Loader from "../components/Loader/Loader";
 import Confetti from "react-confetti";
-import { templateActions1 } from "../features/templateData/templateSlice";
+import { ownTemplateActions } from "../features/templateData/ownTemplateSlice";
 import { CopyToClipboard } from "react-copy-to-clipboard";
 import aiPoster from "../assets/images/mainPageAssets/hero-min.svg";
 
@@ -17,7 +17,7 @@ import "../globals.css";
 import { useTranslation } from "react-i18next";
 import BaseModal from "../components/mainPage/modal/BaseModal/BaseModal";
 
-const YourWebsites = () => {
+const YourPages = () => {
   const { i18n, t } = useTranslation();
   const [isModalOpen, setIsModalOpen] = useState(false);
   const dispatch = useDispatch();
@@ -80,6 +80,20 @@ const YourWebsites = () => {
     });
   };
 
+  function removeEmptyArrays(obj) {
+    for (let prop in obj) {
+      if (Array.isArray(obj[prop])) {
+        if (obj[prop].length === 0) {
+          delete obj[prop];
+        }
+      } else if (typeof obj[prop] === "object") {
+        removeEmptyArrays(obj[prop]);
+        if (Object.keys(obj[prop]).length === 0) {
+          delete obj[prop];
+        }
+      }
+    }
+  }
   const handleDeleteTemplate = async (templateId) => {
     dispatch(deleteTemplate(templateId))
       .unwrap()
@@ -91,14 +105,45 @@ const YourWebsites = () => {
       });
   };
 
-  const fetchData = async (templateNum, templateId) => {
+          // excute in update page case
+  const fetchData = async (templateId) => {
     try {
       setIsLoading(true);
       const res = await axios.get(`https://websitebuilderbackend-production-716e.up.railway.app/page/${userId}/${templateId}`);
       console.log("res.data", res.data);
-      dispatch(templateActions1.updateSchema(res.data));
+      removeEmptyArrays(res.data);
+      const schema = {
+        ...res.data,
+        templateInfo: {
+          id: 1,
+          title: "Unique Homes",
+          description: "Explore diverse design and project updates for personalized living.",
+          imgUrl: "/static/media/design1.02d5c4e3717cab54eb4f.jpg",
+          selectedSections: {
+            navbarIndexSelected: 4,
+            heroIndexSelected: 2,
+            // featuresIndexSelected: 1,
+            // projectsIndexSelected: 1,
+            // servicesIndexSelected: 1,
+            // contactIndexSelected: 1,
+            // teamIndexSelected: 1,
+            // testimonialsIndexSelected: 1,
+            // statisticsIndexSelected: 1,
+            // logosIndexSelected: 1,
+            // itemsIndexSelected: 1,
+            // pricingIndexSelected: 1,
+            // ctaIndexSelected: 1,
+            footerIndexSelected: 3,
+          },
+        },
+      };
+      console.log(schema);
+
+      dispatch(ownTemplateActions.insertSections({ data: schema }));
+      //dispatch(ownTemplateActions.updateSchema(schema));
+
       setIsLoading(false);
-      navigate(`/edit-zweb${templateNum}?id=${templateId}`);
+      navigate(`/edit-zweb?id=${templateId}`);
       document.documentElement.style = "";
       for (let index = 0; index < res.data.colors?.templateColors.length; index++) {
         document.documentElement.style.setProperty(`--website-color-${index + 1}`, res.data.colors?.templateColors[index]);
@@ -117,8 +162,6 @@ const YourWebsites = () => {
     </div>
   ) : (
     <>
-      {/* {chooseDomain && (
-        <> */}
       {isModalOpen && (
         <BaseModal poster={aiPoster} toggleModal={toggleModal}>
           <div className="max-w-md mx-auto bg-white shadow-lg rounded-lg overflow-hidden">
@@ -143,78 +186,14 @@ const YourWebsites = () => {
           </div>
         </BaseModal>
       )}
-      {/* <div
-            className="fixed top-0 left-0 w-full h-full bg-gray-900 opacity-60 z-40 "
-            id="confetti"
-            onClick={() => {
-              setChooseDomain(false);
-              setShow(false);
-              setDomain("");
-              setIsCelebrityBirthday(false);
-            }}
-          ></div>
-          <div className="fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-50  flex items-center justify-center">
-            <div className="bg-white p-6 rounded-lg shadow-lg text-black max-w-l">
-              <h2 className="text-2xl font-bold mb-4">Create shared URL</h2>
-              {!show && (
-                <>
-                  <input
-                    type="text"
-                    value={domain}
-                    placeholder="Please enter your domain name!"
-                    className="w-full px-4 py-2 mb-4 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-400"
-                    onChange={(e) => {
-                      setDomain(e.target.value);
-                    }}
-                  />
-                  <button
-                    className="w-full bg-indigo-600 hover:bg-indigo-700 text-white py-2 rounded-md transition duration-300 ease-in-out"
-                    style={{ backgroundColor: !domain && "indigo", cursor: !domain && "not-allowed" }}
-                    onClick={() => {
-                      if (domain) {
-                        setShow(true);
-                        setIsCelebrityBirthday(true);
-                        document.getElementById("confetti").style.opacity = "0.1";
-                      }
-                    }}
-                  >
-                    Save
-                  </button>
-                  <p className="text-gray-800 mt-3 p-1 text-xl">
-                    For custom domains, please reach out to{" "}
-                    <a className="text-blue-500 hover:underline hover:text-blue-800" href="/support">
-                      Support
-                    </a>
-                    .
-                  </p>
-                </>
-              )}
-              {show && (
-                <div className="max-w-md mx-auto bg-white shadow-lg rounded-lg overflow-hidden">
-                  <div className="p-4">
-                    <div className="flex items-center justify-between bg-gray-100 p-2 rounded-md mb-2">
-                      <input readOnly className="flex-grow bg-transparent border-none focus:outline-none" type="text" value={url + domain} />
-                      <CopyToClipboard text={url + domain} onCopy={handleCopy}>
-                        <button className="ml-2 py-1 px-3 bg-indigo-500 text-white rounded-md focus:outline-none" onClick={handleCopy}>
-                          {copied ? <span>Copied!</span> : <span>Copy</span>}
-                        </button>
-                      </CopyToClipboard>
-                    </div>
-                    <p className="text-gray-500 text-sm">Click the Copy button to copy the URL.</p>
-                  </div>
-                </div>
-              )}
-            </div>
-          </div> */}
-      {/* </>
-      )} */}
+
       <div className="designs-section">
         <div className="container mx-auto px-4  py-4">
-          <h1 className="text-3xl font-bold tracking-tighter mb-4 text-center text-white sm:text-4xl md:text-5xl lg:text-6xl/none"> {t("WEBSITES.TITLE")}</h1>
+          <h1 className="text-3xl font-bold tracking-tighter mb-4 text-center text-white sm:text-4xl md:text-5xl lg:text-6xl/none"> {t("PAGES.TITLE")}</h1>
           {status === "succeeded" && templates.length >= 1 ? (
             <>
               {isCelebrityBirthday && <Confetti width={window.innerWidth} height={window.innerHeight} />}
-              <p className="mx-auto max-w-[700px] text-gray-200 md:text-xl text-center"> {t("WEBSITES.DESCRIPTION")}</p>
+              <p className="mx-auto max-w-[700px] text-gray-200 md:text-xl text-center"> {t("PAGES.DESCRIPTION")}</p>
               <div className="designs-container flex flex-wrap gap-8 justify-center">
                 {versions(templates).map((template, index) => (
                   <div className="websites design-card rounded-lg overflow-hidden shadow-lg flex flex-column  relative" key={template._id} id={template._id}>
@@ -250,8 +229,8 @@ const YourWebsites = () => {
                       <button
                         className="flex justify-center gap-4 items-center w-full py-2 Build-button design-btn"
                         onClick={() => {
-                          setUrl(`http://localhost:3000/zweb${template.templateInfo.id}?userId=${userId}&templateId=${template._id}`);
-                          toggleModal()
+                          setUrl(`http://localhost:3000/zweb?userId=${userId}&templateId=${template._id}`);
+                          toggleModal();
                         }}
                       >
                         <span>Deploy</span>
@@ -260,7 +239,7 @@ const YourWebsites = () => {
                       <button
                         className="Preview-button flex justify-center gap-4 items-center  w-full py-2 design-btn"
                         onClick={() => {
-                          fetchData(template.templateInfo.id, template._id);
+                          fetchData(template._id);
                         }}
                       >
                         <span>Edit</span>
@@ -274,9 +253,9 @@ const YourWebsites = () => {
           ) : (
             <div>
               <p className="mx-auto max-w-[700px] text-gray-200 md:text-xl text-center">
-                {t("WEBSITES.NO_WEBSITES")}
+                {t("PAGES.NO_PAGES")}
                 <Link to={`/${i18n.language}/designs`} className="text-gray-400">
-                  {t("WEBSITES.CREATE")}
+                  {t("PAGES.CREATE")}
                 </Link>
               </p>
             </div>
@@ -287,4 +266,4 @@ const YourWebsites = () => {
   );
 };
 
-export default YourWebsites;
+export default YourPages;

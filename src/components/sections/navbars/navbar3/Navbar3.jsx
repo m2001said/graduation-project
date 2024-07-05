@@ -1,7 +1,10 @@
 import React, { useState, useEffect } from "react";
 import "./navbar3.css";
+import { useSelector } from "react-redux";
 
 const Navbar3 = ({ template }) => {
+  const ownNavbar = useSelector((state) => state.ownTemplate.navbar);
+  const navbar = template ? template.navbar : ownNavbar;
   const [menuOpened, setMenuOpened] = useState(false);
   const [mobile, setMobile] = useState(window.innerWidth <= 768);
 
@@ -23,15 +26,15 @@ const Navbar3 = ({ template }) => {
 
   return (
     <div className="navbar3">
-      <img src={template.navbar.imgUrl} alt="" className="logo3" />
+      <img src={navbar.imgUrl} alt="" className="logo3" />
       <div className="navbar3-menu">
         {mobile ? (
           <div className="closed-mobile-menu" onClick={toggleMenu}>
             <img src={"https://res.cloudinary.com/duc04fwdb/image/upload/v1706799720/jammal_photos/jx9bn26thzu46apznikl.svg"} alt="" className="menu-icon" />
           </div>
         ) : (
-          template.navbar.links &&
-          template.navbar.links.map((link, index) => (
+          navbar.links &&
+          navbar.links.map((link, index) => (
             <a className="hoverlink3" key={index} href={`#${link.url}`} onClick={() => setMenuOpened(false)}>
               {link.title}
             </a>
@@ -40,8 +43,8 @@ const Navbar3 = ({ template }) => {
       </div>
       {menuOpened && mobile && (
         <div className="navbar3-menu">
-          {template.navbar.links &&
-            template.navbar.links.map((link, index) => (
+          {navbar.links &&
+            navbar.links.map((link, index) => (
               <a className="hoverlink3" key={index} href={`#${link.url}`} onClick={() => setMenuOpened(false)}>
                 {link.title}
               </a>

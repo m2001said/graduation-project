@@ -55,8 +55,10 @@
   "DESIGNS": {
     "TITLE": "Our Designs",
     "DESCRIPTION": "Explore our latest and greatest designs.",
-    "TITLE_1": "Your Websites",
-    "DESCRIPTION_1": "Discover the incredible websites you've created.",
+    "TITLE_0": "Your Websites",
+    "DESCRIPTION_0": "Discover the incredible websites you've created.",
+    "TITLE_1": "Your Pages",
+    "DESCRIPTION_1": "Create your pages from scratch.",
     "TITLE_2": "Start From Scratch",
     "DESCRIPTION_2": "Craft a page that reflects your professionalism",
     "TITLE_3": "Unique Homes",
@@ -100,6 +102,12 @@
     "TITLE": "Your Websites",
     "DESCRIPTION": "Discover the incredible websites you've created.",
     "NO_WEBSITES": "No Websites has been created by you",
+    "CREATE": "Create One"
+  },
+  "PAGES": {
+    "TITLE": "Your Pages",
+    "DESCRIPTION": "Discover the incredible pages you've created.",
+    "NO_PAGES": "No Pages has been created by you",
     "CREATE": "Create One"
   }
 }

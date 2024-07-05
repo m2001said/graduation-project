@@ -6,6 +6,7 @@ import { fetchTemplates } from "../../../features/templates/templatesSlice";
 import { useSearchParams } from "react-router-dom";
 import { initialState, templateActions1 } from "../../../features/templateData/templateSlice";
 import { useTranslation } from "react-i18next";
+import { ownTemplateActions } from "../../../features/templateData/ownTemplateSlice";
 
 const TopSide = ({ schema }) => {
   const { i18n } = useTranslation();
@@ -42,7 +43,8 @@ const TopSide = ({ schema }) => {
 
   const handleSubmit = async () => {
     const isUpdating = pathname.includes("edit");
-    console.log(schema)
+    const inOwnPage = pathname.includes("own-page");
+    console.log(schema);
     const url = isUpdating
       ? `https://websitebuilderbackend-production-716e.up.railway.app/page/update/${id}`
       : "https://websitebuilderbackend-production-716e.up.railway.app/page";
@@ -57,12 +59,18 @@ const TopSide = ({ schema }) => {
           Authorization: "Bearer " + token,
         },
       });
-    console.log(res.data)
-
       setIsGenerating(false);
-      dispatch(fetchTemplates());
-      navigate(`/${i18n.language}/websites`);
-      dispatch(templateActions1.updateSchema(initialState));
+      if (inOwnPage) {
+        // get pages in pages page
+        dispatch(fetchTemplates());       // need edit
+        navigate(`/${i18n.language}/pages`);
+        dispatch(ownTemplateActions.deleteSchema());        // remove data in ownpage slice
+      } else {
+        // get websites in websites page
+        dispatch(fetchTemplates());
+        navigate(`/${i18n.language}/websites`);
+        dispatch(templateActions1.updateSchema(initialState));
+      }
     } catch (error) {
       setIsGenerating(false);
       console.error("Error:", error);
@@ -114,10 +122,10 @@ const TopSide = ({ schema }) => {
       })}
       <div className="absolute right-6">
         {/* <div className="flex"> */}
-          <button className="bg-blue-500 px-4 rounded-lg h-10 flex-center" onClick={handleSubmit}>
-            {pathname.includes("edit-zweb") ? "Update" : "Save"}
-          </button>
-          {/* <button onClick={handleUpdateSchema}>Update Schema</button>
+        <button className="bg-blue-500 px-4 rounded-lg h-10 flex-center" onClick={handleSubmit}>
+          {pathname.includes("edit-zweb") ? "Update" : "Save"}
+        </button>
+        {/* <button onClick={handleUpdateSchema}>Update Schema</button>
         </div> */}
       </div>
     </div>

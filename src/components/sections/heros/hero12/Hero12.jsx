@@ -1,9 +1,11 @@
 import React from "react";
 import "./hero12.css";
+import { useSelector } from "react-redux";
 // import darkArrow from "https://res.cloudinary.com/duc04fwdb/image/upload/v1719850606/jammal_photos/cela2eggopmbbsfgcylq.png";
 
 const Hero12 = ({ template }) => {
-  const hero = template.hero;
+  const ownHero = useSelector((state) => state.ownTemplate.hero);
+  const hero = template ? template.hero : ownHero; 
   return (
     <div className="hero12 container12">
       <div className="hero-text12">

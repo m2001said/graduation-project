@@ -1,9 +1,12 @@
 import React, { useState } from "react";
 import "./navbar4.css";
 import { getMenuStyles } from "./common";
+import { useSelector } from "react-redux";
+import { Link } from "react-router-dom";
 
 const Navbar4 = ({ template }) => {
-  const navbar = template.navbar;
+  const ownNavbar = useSelector((state) => state.ownTemplate.navbar);
+  const navbar = template ? template.navbar : ownNavbar;
   const [menuOpened, setMenuOpened] = useState(false);
 
   const handleMenuToggle = () => {
@@ -22,9 +25,9 @@ const Navbar4 = ({ template }) => {
         <img src={navbar.imgUrl} alt="logo" width={100} />
         <div className="flexCenter h-menu" style={getMenuStyles(menuOpened)}>
           {navbar.links.map((link, index) => (
-            <a key={index} href={link.url} onClick={handleLinkClick}>
+            <Link to={link.url} key={index} onClick={handleLinkClick}>
               {link.title}
-            </a>
+            </Link>
           ))}
           <button className="button">
             <a href={navbar.email}>{navbar.buttonText}</a>

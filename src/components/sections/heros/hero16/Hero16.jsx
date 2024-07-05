@@ -1,9 +1,10 @@
 import React from "react";
 import "./hero16.css";
+import { useSelector } from "react-redux";
 
 const Hero16 = ({ template }) => {
-  const hero = template.hero;
-
+  const ownHero = useSelector((state) => state.ownTemplate.hero);
+  const hero = template ? template.hero : ownHero;
   return (
     <section className="home16" id="home">
       <div className="home__container16 container16">

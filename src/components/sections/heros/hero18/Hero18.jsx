@@ -1,6 +1,9 @@
+import { useSelector } from "react-redux";
+
 const Hero = ({ template }) => {
-  const hero = template.hero;
-  return (
+  const ownHero = useSelector((state) => state.ownTemplate.hero);
+  const hero = template ? template.hero : ownHero;
+    return (
     <div className="pb-3 bg-[--website-18-color-6] dark:bg-black dark:text-white duration-300">
       <div className="container18 min-h-[620px] flex">
         <div className="grid grid-cols-1 sm:grid-cols-2 place-items-center">

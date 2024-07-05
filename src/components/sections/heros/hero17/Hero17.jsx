@@ -1,8 +1,10 @@
+import { useSelector } from "react-redux";
 
 
 const Hero17 = ({ template }) => {
-  const hero = template.hero;
-  const BgStyle = {
+  const ownHero = useSelector((state) => state.ownTemplate.hero);
+  const hero = template ? template.hero : ownHero;
+    const BgStyle = {
     backgroundImage: `url(${hero.imgUrl})`, 
     backgroundPosition: "center",
     backgroundSize: "cover",
