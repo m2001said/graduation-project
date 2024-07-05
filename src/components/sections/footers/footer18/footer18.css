@@ -1,0 +1,8 @@
+/* footer18-sectionTitle */
+
+.ltr .footer18-sectionTitle {
+  text-align: left;
+}
+.rtl .footer18-sectionTitle {
+    text-align: right;
+}
