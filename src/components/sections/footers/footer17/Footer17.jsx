@@ -24,7 +24,7 @@ const Footer17 = ({ template }) => {
             ))}
           </div>
 
-          <div className="flex justify-between p-4 items-center">
+          <div className="flex justify-space-around p-4  items-center flex-wrap">
             <a href="#" className="text-[var(--website-17-color-4)]">
               {footer.description}
             </a>

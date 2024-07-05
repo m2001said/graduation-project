@@ -1,59 +1,78 @@
-import React from "react";
+import React, { useState } from "react";
 
 const Navbar17 = ({ template }) => {
   const navbar = template.navbar;
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
+  const toggleDropdown = () => {
+    setIsDropdownOpen(!isDropdownOpen);
+  };
 
   return (
-    <>
-      <div className="container17 bg-[var(--website-17-color-2)] shadow-sm sticky top-16 z-30">
-        <div className="flex justify-between py-4 sm:py-3">
-          {/* logo section */}
-          <div className="font-bold text-3xl text-[var(--website-17-color-4)]">{navbar.title}</div>
-          {/* navlinks */}
-          <div className="font-bold">
-            <ul className="flex items-center gap-10">
-              {navbar.links.map(({ index, title, url }) => (
-                <li key={index}>
-                  <a
-                    href={url}
-                    className="hidden sm:inline-block text-[var(--website-17-color-4)] hover:text-[var(--website-17-color-1)] text-xl font-semibold"
-                  >
-                    {title}
-                  </a>{" "}
-                </li>
-              ))}
-              {/* simple dropdown and links */}
-              <li className="hidden md:block cursor-pointer group">
-                <a href="/#" className="inline-block text-[var(--website-17-color-1)] hover:text-[var(--website-17-color-2)] text-xl font-semibold">
-                  <div className="flex items-center gap-[2px] py-2">
-                    {navbar.description}
-                    <span></span>
-                  </div>
-                </a>{" "}
-                {/* dropdown section */}
-                <div className="absolute z-[9999] hidden group-hover:block w-[200px] bg-[var(--website-17-color-3)] text-[var(--website-17-color-4)] shadow-md p-2">
-                  <ul>
-                    {navbar.dropDown.map(({ index, title, url }) => (
-                      <li key={index}>
-                        <a href={url} className="text-xl inline-block w-full rounded-md p-2 hover:bg-[var(--website-17-color-1)]">
-                          {title}
-                        </a>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
+    <div className="container17 bg-[var(--website-17-color-2)] shadow-sm sticky top-16 z-30">
+      <div className="flex justify-between items-center py-4 sm:py-3 px-4 sm:px-8">
+        {/* Logo section */}
+        <img src={navbar.title} className="" style={{ width: "50px", height: "50px" }} alt="" />
+        {/* Toggle button for small screens */}
+        <div className="sm:hidden">
+          <button onClick={toggleMenu} className="text-[var(--website-17-color-4)] focus:outline-none">
+            <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d={isMenuOpen ? "M6 18L18 6M6 6l12 12" : "M4 6h16M4 12h16M4 18h16"}></path>
+            </svg>
+          </button>
+        </div>
+
+        {/* Navigation links */}
+        <div className={`sm:flex items-center ${isMenuOpen ? "block" : "hidden"}`}>
+          <ul className="flex flex-col sm:flex-row items-center gap-4 sm:gap-10">
+            {navbar.links.map(({ index, title, url }) => (
+              <li key={index}>
+                <a
+                  href={url}
+                  className="text-[var(--website-17-color-4)] hover:text-[var(--website-17-color-1)] text-xl font-semibold"
+                >
+                  {title}
+                </a>
               </li>
-              {/* login button section */}
-              <li>
-                <button className="flex justify-center items-center gap-2 bg-[var(--website-17-color-3)] text-xl h-[40px] text-[var(--website-17-color-4)] px-2 md:px-5 py-2 hover:scale-105 duration-300">
-                  {navbar.subtitle}
-                </button>
-              </li>
-            </ul>
-          </div>
+            ))}
+
+            {/* Simple dropdown and links */}
+            <li className="relative cursor-pointer">
+              <button onClick={toggleDropdown} className="flex items-center gap-2 text-[var(--website-17-color-4)] hover:text-[var(--website-17-color-1)] text-xl font-semibold focus:outline-none">
+                {navbar.description}
+                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"></path>
+                </svg>
+              </button>
+              {/* Dropdown section */}
+              <div className={`absolute z-50 mt-2 w-[200px] bg-[var(--website-17-color-3)] text-[var(--website-17-color-4)] shadow-md p-2 rounded-md ${isDropdownOpen ? "block" : "hidden"}`}>
+                <ul>
+                  {navbar.dropDown.map(({ index, title, url }) => (
+                    <li key={index}>
+                      <a href={url} className="text-xl inline-block w-full rounded-md p-2 hover:bg-[var(--website-17-color-1)]">
+                        {title}
+                      </a>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </li>
+
+            {/* Login button section */}
+            <li>
+              <button className="flex justify-center items-center gap-2 bg-gradient-to-t from-[var(--website-17-color-1)] to-[var(--website-17-color-2)] rounded-3xl px-2 md:px-5 py-2 hover:scale-105 duration-300">
+                {navbar.subtitle}
+              </button>
+            </li>
+          </ul>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

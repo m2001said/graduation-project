@@ -4,23 +4,17 @@ const About9 = ({ template }) => {
   const about = template.about;
 
   return (
-    <main className="relative overflow-hidden">
+    <main className="relative overflow-hidden bg-gradient-to-r from-[var(--website-9-color-1)] to-[var(--website-9-color-3)]">
       {/* Background Image with Animation */}
-      <div
-        className="absolute inset-0 bg-center z-0 animate-slideBackground"
-        style={{
-          backgroundImage: `url(${about.imgUrl})`,
-          backgroundRepeat: "no-repeat",
-          backgroundSize: "cover", // Adjusted to cover the container
-        }}
-      ></div>
+     
       
       {/* Content */}
-      <div className="container mx-auto lg:flex px-3 mb-12  pt-20 about-9 relative">
-        <div className="lg:w-2/5">
+      <div className="container mx-auto lg:flex px-3 mb-12   pt-20 about-9 relative">
+        <div className="lg:w-2/5 " >
+          <div className="bg-[var(--website-9-color-1)] shadow-2xl px-4 py-6 rounded-3xl  items-start gap-x-3 lg:w-4/5 mt-6">
           <p className="text-[var(--website-9-color-3)] md:text-xl text-lg font-medium">{about.title}</p>
           <h1 className="lg:text-4xl text-2xl text-[var(--website-9-color-3)] font-medium py-3">{about.description}</h1>
-          <div className="lg:block">
+          </div><div className="lg:block">
             <div className="bg-[var(--website-9-color-1)] shadow-2xl px-4 py-6 rounded-3xl flex items-start gap-x-3 lg:w-4/5 mt-6">
               <button>
                 <img

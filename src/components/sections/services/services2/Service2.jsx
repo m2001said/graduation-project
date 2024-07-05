@@ -4,11 +4,11 @@ import "./services2.css";
 const Services2 = ({ template }) => {
   const services = template.services;
   return (
-    <section id="services2">
+    <section id="services2" className="section2">
       <h5>{services.title}</h5>
       <h2>{services.description}</h2>
 
-      <div className="container services__container">
+      <div className="container2 services__container">
         {services.services.map((services, index) => (
           <article className="service" key={index}>
             <div className="service__head">
