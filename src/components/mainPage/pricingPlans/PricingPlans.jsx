@@ -24,11 +24,13 @@ const PricingPlans = () => {
       try {
         const res = await axios.get(`${API_BASE_URL}/plan`);
         setPlans(res.data);
-      } catch (err) {}
+      } catch (err) {
+        console.error(err);
+      }
     };
 
     getPlans();
-  });
+  }, []); // Added an empty dependency array to avoid multiple calls
 
   const user = useSelector((state) => state.auth.user);
 
@@ -39,7 +41,9 @@ const PricingPlans = () => {
           Authorization: "Bearer " + token,
         },
       });
-    } catch (err) {}
+    } catch (err) {
+      console.error(err);
+    }
   };
 
   return (
@@ -53,7 +57,7 @@ const PricingPlans = () => {
           {plans?.map((plan) => (
             <div key={plan._id} className="flex">
               <div data-aos="fade-right" data-aos-duration="1000" className="bg-white/50 p-8 px-10 rounded-3xl shadow-lg w-72 flex flex-col  free_plan">
-                <h2 className="text-3xl font-extrabold mb-4 text-black">{plan.name}</h2>
+                <h2 className="text-3xl font-extrabold mb-4 text-black">{plan.price === 0 ? "Free" : "premium"}</h2>
                 <p className="mb-6 text-2xl font-medium">$ {plan.price} / month</p>
                 <ul className="mb-6 font-medium">
                   {plan?.description?.map((feature) => (
@@ -66,7 +70,6 @@ const PricingPlans = () => {
                       {feature}
                     </li>
                   ))}
-
                   {/* <li></li>
                   <li className="flex items-center mb-2 gap-2">
                     <span className="p-1 rounded-full check-icon">
@@ -86,14 +89,12 @@ const PricingPlans = () => {
                   </li> */}
                 </ul>
                 <button className="text-white py-2 px-4 font-medium rounded-3xl free_plan_btn">Choose plan</button>
-                {user.role === "admin" ||
-                  (user.role === "super-admin" && (
-                    <button className="text-white py-2 px-4 font-medium rounded-3xl free_plan_btn mt-4" onClick={() => deletePlan(plan._id)}>
-                      Delete plan
-                    </button>
-                  ))}
+                {(user?.role === "admin" || user?.role === "super-admin") && (
+                  <button className="text-white py-2 px-4 font-medium rounded-3xl free_plan_btn mt-4" onClick={() => deletePlan(plan._id)}>
+                    Delete plan
+                  </button>
+                )}
               </div>
-
               {/* <div data-aos="fade-left" data-aos-duration="1000" className="p-8 rounded-3xl w-72 flex flex-col text-white premium_plan">
                 <div className="self-end bg-pink-500 text-xs px-4 py-1 rounded-3xl font-medium premium_plan_badge">MOST POPULAR</div>
                 <h2 className="text-3xl my-4">
@@ -145,3 +146,7 @@ const PricingPlans = () => {
 };
 
 export default PricingPlans;
+
+
+
+
