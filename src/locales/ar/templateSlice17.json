@@ -39,8 +39,8 @@
     ]
   },
   "hero": {
-    "title": "سليمان",
-    "subtitle": "مطعم توصيل وجبات طازجة وصحية في القاهرة",
+    "title": "طاير",
+    "subtitle": "خدمة توصيل  و نظام وجبات صحية طازجة",
     "description": "اكتشف أطباقًا لذيذة ستلبي رغباتك من 132.95 في الأسبوع",
     "imageUrl": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1720036257/done/hero_b7quav_lulhhm.webp",
     "imgUrl": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1720036255/done/heroBg_vahqtb_czftpx.webp"
@@ -48,30 +48,27 @@
   "services": {
     "title": "لماذا تختارنا",
     "services": [
-      
-        {
-          "icon": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1720037236/done/fast-delivery-fast-svgrepo-com_fr05yy_2_lxmgwl.webp",
-          "description": "توصيل سريع"
-        },
-        {
-          "icon": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1720037234/done/burger-huge-svgrepo-com_rpo63l_1_uyfzsl.webp",
-          "description": "طعم خاص"
-        },
-        {
-          "icon": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1720037231/done/discount-svgrepo-com_j3jgfu_si89uf.webp",
-          "description": "جودة عالية بسعر منخفض"
-        },
-        {
-          "icon": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1720037229/done/holding-hand_1_ip0t5r_1_gnjnxd.webp",
-          "description": "لطف في الخدمات"
-        }
-      ]
-      
-    
+      {
+        "icon": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1720037236/done/fast-delivery-fast-svgrepo-com_fr05yy_2_lxmgwl.webp",
+        "description": "توصيل سريع"
+      },
+      {
+        "icon": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1720037234/done/burger-huge-svgrepo-com_rpo63l_1_uyfzsl.webp",
+        "description": "طعم خاص"
+      },
+      {
+        "icon": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1720037231/done/discount-svgrepo-com_j3jgfu_si89uf.webp",
+        "description": "جودة عالية بسعر منخفض"
+      },
+      {
+        "icon": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1720037229/done/holding-hand_1_ip0t5r_1_gnjnxd.webp",
+        "description": "لطف في الخدمات"
+      }
+    ]
   },
   "about": {
     "title": "من نحن",
-    "subtitle": "نحن فريق من الأفراد ذوي المهارات العالية والخبرة الطويلة في مجال توصيل الطعام. نحن ملتزمون بتقديم أفضل جودة من الطعام والخدمة لعملائنا.",
+    "subtitle": " نحن نستخدم فقط المكونات الطازجة والعالية الجودة لإعداد وجباتنا. يتم الحصول على منتجاتنا محليًا وتكون عضوية كلما أمكن ذلك، مما يضمن أن كل لقمة مليئة بالعناصر الغذائية والنكهة تم تصميم قائمتنا مع الأخذ في الاعتبار الصحة. من الوجبات المتوازنة إلى الخيارات النباتية والخالية من الغلوتين، نلبي مجموعة متنوعة من الاحتياجات والتفضيلات الغذائية. كل وجبة مصممة لتوفير التوازن المثالي بين البروتينات والكربوهيدرات والدهون الصحية، مما يساعدك على الحفاظ على نمط حياة صحي بكل سهولة",
     "imgs": [
       "https://res.cloudinary.com/dowtlcpxj/image/upload/v1720038987/done/polygon_yiwc6q_1_c2ngxe.webp",
       "https://res.cloudinary.com/dowtlcpxj/image/upload/v1720038988/done/vector-wave_gperhf_1_fighu3.webp"

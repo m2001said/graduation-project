@@ -7,8 +7,8 @@ const Footer9 = ({ template }) => {
   const isRTL = i18n.dir() === "rtl";
 
   return (
-    <footer className="footer9 text-[var(--website-9-color-3)]">
-      <section className="flex flex-col bg-[var(--website-9-color-2)] pt-8">
+    <footer className="footer9 text-[var(--website-9-color-2)]">
+      <section className="flex flex-col bg-[var(--website-9-color-3)] pt-8">
         <div className="container mx-auto lg:flex items-start justify-between pb-8">
           <div className="lg:flex justify-between w-full px-3 py-12">
             <div className="flex flex-col items-start lg:items-start lg:w-1/3">
@@ -45,10 +45,10 @@ const Footer9 = ({ template }) => {
                 <input
                   type="email"
                   placeholder={isRTL ? "ادخل بريدك الالكتروني" : "Enter your email"}
-                  className="h-full w-full rounded-full px-3"
+                  className="h-full w-full rounded-full bg-[var(--website-9-color-1)] text-[var(--website-9-color-2)] placeholder:text-[var(--website-9-color-2)] px-3"
                 />
                 <button
-                  className={`bg-[var(--website-9-color-2)] text-[var(--website-9-color-1)] rounded-full w-12 h-12 flex justify-center items-center text-xl absolute ${isRTL ? 'left-1' : 'right-1'}`}
+                  className={`bg-[var(--website-9-color-1)] text-[var(--website-9-color-4)] rounded-full w-12 h-12 flex justify-center items-center text-xl absolute ${isRTL ? 'left-1' : 'right-1'}`}
                 >
                   <img src={footer.icon} className={isRTL ? 'transform rotate-180' : ''} alt="Subscribe" />
                 </button>

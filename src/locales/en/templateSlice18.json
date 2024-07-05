@@ -32,16 +32,16 @@
     ]
   },
   "hero": {
-    "title": "Car Rental",
+    "title": "RentCar",
     "subtitle": "Effortless",
-    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione veritatis explicabo quibusdam quae reprehenderit ab",
+    "description": "Travel in style and comfort with a wide selection of cars to suit all your needs. Whether you’re looking for an economical car",
     "buttonText": "Get Started",
     "imgUrl": "https://res.cloudinary.com/dmcdea0b9/image/upload/v1708094043/banner-car_nzxi5c.png"
   },
   "features": {
     "title": "About us",
-    "subtitle": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, magnam! Tenetur odio quo et maxime?",
-    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, tempora.",
+    "subtitle": "We are a dedicated car rental service provider offering high-quality and diverse car rental solutions to meet the varied needs of our clients?",
+    "description": "Our company was founded on the principle of providing an exceptional driving experience that combines comfort, safety, and competitive pricing..",
     "buttonText": "Get Started",
     "imgUrl": "https://res.cloudinary.com/dmcdea0b9/image/upload/v1708094582/car1_yzpkby.png"
   },
@@ -50,21 +50,21 @@
     "services": [
       {
         "title": "Best Price",
-        "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
+        "description": "We offer a wide variety of cars to suit all your needs and budgets",
         "buttonText": "Learn more",
         "linkText": "#",
         "icon": "https://res.cloudinary.com/dmcdea0b9/image/upload/v1708095320/icons8-compact-camera-24_sbvw3e.png"
       },
       {
         "title": "Fast and Safe",
-        "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
+        "description": "All our cars are new, clean, and equipped with the latest comfort and safety features.",
         "buttonText": "Learn more",
         "linkText": "#",
         "icon": "https://res.cloudinary.com/dmcdea0b9/image/upload/v1708095302/icons8-notebook-32_wp5emo.png"
       },
       {
         "title": "Experience Drivers",
-        "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
+        "description": "We provide a seamless and easy online booking experience, saving you time and effort.",
         "buttonText": "Learn more",
         "linkText": "#",
         "icon": "https://res.cloudinary.com/dmcdea0b9/image/upload/v1708095310/icons8-microsoft-onenote-24_jrkmre.png"
@@ -72,8 +72,8 @@
     ]
   },
   "projects": {
-    "title": "Lorem ipsum dolor",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor iure nemo ab?",
+    "title": " Explore Our Wide Range of Cars",
+    "description": "we offer a diverse selection of cars to meet all your needs and expectations.?",
     "projects": [
       {
         "title": "BMW UX",
@@ -101,37 +101,29 @@
   },
   "testimonials": {
     "title": "What Our Clients Say About Us",
-    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis iure consectetur tempora amet.",
+    "description": " we are proud to serve a diverse range of clients who trust us to meet their car rental needs.",
     "testimonials": [
       {
         "name": "Dilshad",
         "star": "⭐⭐⭐⭐⭐",
-        "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
+        "description": "Renting a car from was an amazing experience.",
         "imgUrl": "https://picsum.photos/200.jpg"
       },
       {
         "name": "Satya",
         "star": "⭐⭐⭐⭐⭐",
-        "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
+        "description": "The best car rental service I've ever had. The staff was helpful.",
         "imgUrl": "https://picsum.photos/200.jpg"
       },
       {
         "name": "Sabir",
         "star": "⭐⭐⭐⭐⭐",
-        "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
+        "description": "Professional service and easy booking.",
         "imgUrl": "https://picsum.photos/200.jpg"
       }
     ]
   },
-  "cta": {
-    "title": "Get Started with our app",
-    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique magnam harum accusantium odit?",
-    "imgs": [
-      "https://res.cloudinary.com/dmcdea0b9/image/upload/v1708098410/pattern_t0naia.jpg",
-      "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707090485/app_store_s6wzhh.png",
-      "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707090481/play_store_nmzfln.png"
-    ]
-  },
+  
   "contact": {
     "title": "Let's collaborate on your upcoming car rental venture",
     "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem necessitatibus quasi et vel,",
@@ -140,7 +132,7 @@
   },
   "footer": {
     "title": "Car Rental",
-    "description": "Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, voluptate.",
+    "description": "Travel in style and comfort with a wide selection of cars to suit all your needs. ",
     "contacts": [
       {
         "value": "55 East Birchwood Ave. Brooklyn, New York 11201",

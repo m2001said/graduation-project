@@ -1,4 +1,5 @@
 import React from "react";
+import "./footer14.css"
 
 const Footer14 = ({ template }) => {
   const footer = template.footer;
@@ -13,14 +14,14 @@ const Footer14 = ({ template }) => {
               <img src={footer.imgUrl} alt="logo" className="w-10 cursor-pointer" />
               <span className="text-[--website-14-color-1] font-semibold tracking-widest text-2xl uppercase sm:text-3xl cursor-pointer">{footer.title}</span>
             </div>
-            <p className="text-sm text-gray-600 dark:text-white/70 lg:pr-24 pt-7">{footer.description}</p>
+            <p className="footer14-descrption text-sm text-gray-600 dark:text-white/70 lg:pr-24 pt-7">{footer.description}</p>
           </div>
 
           {/* Footer links */}
           <div className="col-span-2 grid grid-cols-2 sm:grid-cols-3 md:pl-10">
             {footer.footerSections.map((item) => (
               <div className="py-8 px-4 " key={item.title}>
-                <h1 className="text-xl font-bold sm:text-left mb-3">{item.title}</h1>
+                <h1 className="footer14-sectionTitle text-xl font-bold sm:text-left mb-3">{item.title}</h1>
                 <ul className={`flex flex-col gap-3`}>
                   {item.links.map((link) => (
                     <a href={link.url} key={link.title}>
@@ -33,7 +34,7 @@ const Footer14 = ({ template }) => {
 
             {/* Company Address */}
             <div className="py-8 px-4 col-span-2 sm:col-auto">
-              <h1 className="text-xl font-bold sm:text-left mb-3">Contact</h1>
+              <h1 className="footer14-sectionTitle text-xl font-bold sm:text-left mb-3">Contact</h1>
               <div>
                 <div className="flex flex-col gap-3">
                   {footer.contacts.map((item, index) => (

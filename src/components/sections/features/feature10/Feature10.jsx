@@ -1,6 +1,7 @@
 import React from "react";
 import "../../../../assets/css/globals10.css";
 
+
 const Feature10 = ({ template }) => {
   const feature = template.features;
 

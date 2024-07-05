@@ -35,7 +35,7 @@ const Testimonials10 = ({template}) => {
                         <h1 className="text-xl font-bold text-black/80 dark:text-white">{data.title}</h1>
                       </div>
                     </div>
-                    <p className="text-black/30 text-9xl font-serif absolute top-0 right-0">,,</p>
+                    {/* <p className="text-black/30 text-9xl font-serif absolute top-0 right-0">,,</p> */}
                   </div>
                 </div>
               </SwiperSlide>
