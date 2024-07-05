@@ -1,10 +1,11 @@
 import React from "react";
 import "../../../../assets/css/globals10.css";
 import DarkMode from "./DarkMode";
+import { useSelector } from "react-redux";
 
 const Navbar10 = ({template}) => {
-  const navbar = template.navbar;
-
+  const ownNavbar = useSelector((state) => state.ownTemplate.navbar);
+  const navbar = template ? template.navbar : ownNavbar;
   return (
     <>
       <div className="shadow-lg bg-white dark:bg-gray-900 dark:text-white duration-200 ">

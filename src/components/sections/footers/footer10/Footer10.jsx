@@ -1,9 +1,11 @@
 import React from "react";
 import "../../../../assets/css/globals10.css";
+import { useSelector } from "react-redux";
 
 const Footer10 = ({ template }) => {
-  const footer = template.footer;
-
+  const ownFooter = useSelector((state) => state.ownTemplate.footer);
+  const footer = template ? template.footer : ownFooter;
+  
   return (
     <div className="bg-[--website-10-color-5] dark:bg-gray-950 dark:text-white">
       <section className="items-center p-10 sm:p-30">

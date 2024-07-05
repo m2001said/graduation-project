@@ -3,23 +3,7 @@
     "id": 1,
     "title": "Unique Homes",
     "description": "Explore diverse design and project updates for personalized living.",
-    "imgUrl": "/static/media/design1.02d5c4e3717cab54eb4f.jpg",
-    "selectedSections" : {
-      "navbarIndexSelected" : 1,
-      "heroIndexSelected" : 1,
-      "featuresIndexSelected" : 1,
-      "projectsIndexSelected" : 1,
-      "servicesIndexSelected" : 1,
-      "contactIndexSelected" : 1,
-      "teamIndexSelected" : 1,
-      "testimonialsIndexSelected" : 1,
-      "statisticsIndexSelected" : 1,
-      "logosIndexSelected" : 1,
-      "itemsIndexSelected" : 1,
-      "pricingIndexSelected" : 1,
-      "ctaIndexSelected" : 1,
-      "footerIndexSelected" : 1
-    }
+    "imgUrl": "/static/media/design1.02d5c4e3717cab54eb4f.jpg"
   },
   "navbar": {
     "imgUrl": "https://res.cloudinary.com/duc04fwdb/image/upload/v1701811960/templates/template_one/Logo_mj7rvw.png",

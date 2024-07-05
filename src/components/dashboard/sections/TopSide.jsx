@@ -44,13 +44,22 @@ const TopSide = ({ schema }) => {
   const handleSubmit = async () => {
     const isUpdating = pathname.includes("edit");
     const inOwnPage = pathname.includes("own-page");
-    console.log(schema);
-    const url = isUpdating
-      ? `https://websitebuilderbackend-production-716e.up.railway.app/page/update/${id}`
-      : "https://websitebuilderbackend-production-716e.up.railway.app/page";
+    let url;
+    if (inOwnPage) {
+      url = isUpdating
+        ? `https://websitebuilderbackend-production-716e.up.railway.app/page/update/${id}`
+        : "https://websitebuilderbackend-production-716e.up.railway.app/page";
+    } else {
+      url = isUpdating
+        ? `https://websitebuilderbackend-production-716e.up.railway.app/website/update/${id}`
+        : "https://websitebuilderbackend-production-716e.up.railway.app/website";
+    }
+    const text = inOwnPage ? "page" : "website";
+    console.log(url);
+
     try {
       setIsGenerating(true);
-      setWaitingMsg(isUpdating ? "Please waite for updating your website" : "Please waite for genrating your website");
+      setWaitingMsg(isUpdating ? `Please waite for updating your ${text}` : `Please waite for genrating your ${text}`);
       const res = await fetch(url, {
         method: isUpdating ? "PATCH" : "POST",
         body: JSON.stringify(schema),
@@ -59,15 +68,18 @@ const TopSide = ({ schema }) => {
           Authorization: "Bearer " + token,
         },
       });
+      const result = await res.json();
+
+      console.log(result.data);
       setIsGenerating(false);
       if (inOwnPage) {
         // get pages in pages page
-        dispatch(fetchTemplates());       // need edit
+        dispatch(fetchTemplates("page")); // need edit
         navigate(`/${i18n.language}/pages`);
-        dispatch(ownTemplateActions.deleteSchema());        // remove data in ownpage slice
+        dispatch(ownTemplateActions.deleteSchema()); // remove data in ownpage slice
       } else {
         // get websites in websites page
-        dispatch(fetchTemplates());
+        dispatch(fetchTemplates("website"));
         navigate(`/${i18n.language}/websites`);
         dispatch(templateActions1.updateSchema(initialState));
       }

@@ -39,7 +39,7 @@ const TrialDesign = ({ componentMapping, FooterComponent, NavbarComponent, HeroC
     const fetchData = async () => {
       console.log("fetchData in trialDesign");
       try {
-        const res = await axios.get(`https://websitebuilderbackend-production-716e.up.railway.app/page/${userId}/${templateId}`);
+        const res = await axios.get(`https://websitebuilderbackend-production-716e.up.railway.app/website/${userId}/${templateId}`);
         setTemplateData(res.data);
         document.documentElement.style = "";
         for (let index = 0; index < res.data.colors?.templateColors.length; index++) {
@@ -71,7 +71,6 @@ const TrialDesign = ({ componentMapping, FooterComponent, NavbarComponent, HeroC
     state = templateData;
   }
   const reorderedComponents = state && Object.keys(state);
-  console.log(state)
   return state && state.templateInfo.id === template ? (
     <div className={className}>
       {NavbarComponent && <NavbarComponent template={state} />}

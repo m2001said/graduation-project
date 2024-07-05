@@ -1,9 +1,10 @@
 import React from "react";
 import "./footer1.css";
 import { useSelector } from "react-redux";
-const Footer = ({template}) => {
+const Footer = ({ template }) => {
   const ownFooter = useSelector((state) => state.ownTemplate.footer);
   const footer = template ? template.footer : ownFooter;
+
   return (
     <div className="footer1 design-1">
       <div className="footer1-icons">

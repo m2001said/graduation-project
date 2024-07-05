@@ -38,7 +38,7 @@ const YourPages = () => {
   useEffect(() => {
     if (status === "idle") {
       try {
-        dispatch(fetchTemplates());
+        dispatch(fetchTemplates("page"));
       } catch (error) {
         console.error("Error fetching templates:", error);
       }
@@ -95,7 +95,7 @@ const YourPages = () => {
     }
   }
   const handleDeleteTemplate = async (templateId) => {
-    dispatch(deleteTemplate(templateId))
+    dispatch(deleteTemplate(templateId, "page"))
       .unwrap()
       .then((result) => {
         console.log(`Template with ID ${result} deleted successfully.`);
@@ -105,7 +105,7 @@ const YourPages = () => {
       });
   };
 
-          // excute in update page case
+  // excute in update page case
   const fetchData = async (templateId) => {
     try {
       setIsLoading(true);
@@ -116,9 +116,9 @@ const YourPages = () => {
         ...res.data,
         templateInfo: {
           id: 1,
-          title: "Unique Homes",
-          description: "Explore diverse design and project updates for personalized living.",
-          imgUrl: "/static/media/design1.02d5c4e3717cab54eb4f.jpg",
+          title: "first page",
+          description: "Explore your page now.",
+          imgUrl: "/static/media/websites.e727c8df38c2ab85f83b.jpg",
           selectedSections: {
             navbarIndexSelected: 4,
             heroIndexSelected: 2,

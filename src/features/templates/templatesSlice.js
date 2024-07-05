@@ -2,18 +2,28 @@
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 import axios from "axios";
 
-export const fetchTemplates = createAsyncThunk("templates/fetchTemplates", async () => {
-  const response = await axios.get("https://websitebuilderbackend-production-716e.up.railway.app/page/pages", {
+export const fetchTemplates = createAsyncThunk("templates/fetchTemplates", async (type) => {
+  console.log('type',type)
+  const url =
+    type === "page"
+      ? "https://websitebuilderbackend-production-716e.up.railway.app/page/pages"
+      : "https://websitebuilderbackend-production-716e.up.railway.app/website/websites";
+      console.log(url)
+  const response = await axios.get(url, {
     headers: {
       Authorization: "Bearer " + localStorage.getItem("token"),
     },
   });
-  console.log(response.data.pages)
+  console.log(response.data);
   return response.data.pages;
 });
-export const deleteTemplate = createAsyncThunk("templates/deleteTemplate", async (templateId, thunkAPI) => {
+export const deleteTemplate = createAsyncThunk("templates/deleteTemplate", async (templateId, type, thunkAPI) => {
+  const url =
+    type === "page"
+      ? `https://websitebuilderbackend-production-716e.up.railway.app/page/${templateId}`
+      : `https://websitebuilderbackend-production-716e.up.railway.app/website/${templateId}`;
   try {
-    const response = await axios.delete(`https://websitebuilderbackend-production-716e.up.railway.app/page/${templateId}`, {
+    const response = await axios.delete(url, {
       headers: {
         Authorization: "Bearer " + localStorage.getItem("token"),
       },

@@ -3,8 +3,7 @@
     "id": 2,
     "title": "Web Dev Protofolio",
     "description": "Web Dev Protofolio",
-    "imgUrl": "/static/media/design2.4d950d7e86b76ce66e28.jpg",
-    "ahmed": "ahmed"
+    "imgUrl": "/static/media/design2.4d950d7e86b76ce66e28.jpg"
   },
   "navbar": {
     "links": [
@@ -215,6 +214,6 @@
     ]
   },
   "colors": {
-    "templateColors": ["#fff", "#cda274", "#292f36", "#f4f0ec", "#777777"]
+    "templateColors": ["linear-gradient(90deg, #318a8c 0%, #5ce1e6 51.94%)", "#2c2c6c", "#4db5ff", "#4db5ff66", "#FFFFFF" , "#515a59"]
   }
 }

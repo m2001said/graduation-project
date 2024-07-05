@@ -38,7 +38,7 @@ const YourWebsites = () => {
   useEffect(() => {
     if (status === "idle") {
       try {
-        dispatch(fetchTemplates());
+        dispatch(fetchTemplates('website'));
       } catch (error) {
         console.error("Error fetching templates:", error);
       }
@@ -81,7 +81,7 @@ const YourWebsites = () => {
   };
 
   const handleDeleteTemplate = async (templateId) => {
-    dispatch(deleteTemplate(templateId))
+    dispatch(deleteTemplate(templateId , 'website'))
       .unwrap()
       .then((result) => {
         console.log(`Template with ID ${result} deleted successfully.`);
@@ -94,7 +94,7 @@ const YourWebsites = () => {
   const fetchData = async (templateNum, templateId) => {
     try {
       setIsLoading(true);
-      const res = await axios.get(`https://websitebuilderbackend-production-716e.up.railway.app/page/${userId}/${templateId}`);
+      const res = await axios.get(`https://websitebuilderbackend-production-716e.up.railway.app/website/${userId}/${templateId}`);
       console.log("res.data", res.data);
       dispatch(templateActions1.updateSchema(res.data));
       setIsLoading(false);

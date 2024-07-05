@@ -1,8 +1,9 @@
 import React, { useState } from "react";
+import { useSelector } from "react-redux";
 
 const Navbar15 = ({ template }) => {
-  const navbar = template.navbar;
-
+  const ownNavbar = useSelector((state) => state.ownTemplate.navbar);
+  const navbar = template ? template.navbar : ownNavbar;
   // const { navbar } = useSelector((state) => state.template15);
   const [active, setActive] = useState("Home");
   const [toggle, setToggle] = useState(false);

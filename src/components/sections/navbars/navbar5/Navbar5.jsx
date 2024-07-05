@@ -1,9 +1,10 @@
 import React, { useState } from "react";
 import "./navbar5.css";
+import { useSelector } from "react-redux";
 
 const Navbar5 = ({template}) => {
-  const navbar = template.navbar;
-
+  const ownNavbar = useSelector((state) => state.ownTemplate.navbar);
+  const navbar = template ? template.navbar : ownNavbar;
 
   const [active, setActive] = useState("navbarMenu");
   const showNavbar = () => {

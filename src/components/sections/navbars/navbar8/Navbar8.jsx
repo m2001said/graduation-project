@@ -1,8 +1,9 @@
 import React from "react";
+import { useSelector } from "react-redux";
 
 const Navbar8 = ({ template }) => {
-  const navbar = template.navbar;
-
+  const ownNavbar = useSelector((state) => state.ownTemplate.navbar);
+  const navbar = template ? template.navbar : ownNavbar;
   // Define the map for linking section IDs with offsets
   const sectionMap = {
     home: -200,

@@ -63,6 +63,24 @@ const ColorController = ({ targetTemplate, updateAll }) => {
     // document.documentElement.style.setProperty(`--website-${targetTemplate.templateInfo.id}-color${index + 1}`, e.target.value);
   };
 
+  const palettes = [
+    colors.templateColors,
+    ["#D1E8E4", "#A3D5D3", "#69BEB9", "#3C787E", "#27476E"],
+    ["#F5F3BB", "#C7F0BD", "#7DBBC3", "#607196", "#5C3C92"],
+    ["#F8F4E3", "#F1DCA7", "#F9A870", "#E68364", "#966C6C"],
+    ["#FAF9F6", "#F2E9E1", "#EAD5D5", "#B7B2A7", "#837D7A"],
+    ["#FEFBE7", "#F3DFA2", "#E8A87C", "#C38D9E", "#8E7C93"],
+    ["#FFFBF5", "#E1ECE5", "#C1DED1", "#AAC8C6", "#80746D"],
+    ["#FFFDFD", "#F4C2C2", "#E9A9A9", "#B6B6A6", "#7B7B7B"],
+    ["#F0F8FF", "#ACE5EE", "#8DD3C7", "#60B6B8", "#3B7A82"],
+    ["#FFFAF0", "#F3EACB", "#E2CFC4", "#C7B198", "#A67C67"],
+    ["#FFF5EE", "#FFD1B3", "#FFA07A", "#CD5C5C", "#8B4513"],
+    ["#E6E6FA", "#D8BFD8", "#DDA0DD", "#EE82EE", "#BA55D3"],
+  ];
+  const [selectedColor, setSelectedColor] = useState(0);
+  const handleColorChange = (paletteIndex) => {
+    setSelectedColor(paletteIndex);
+  };
   return (
     <div className="controller">
       <div className="flex-between cursor-pointer" onClick={() => setOpen(!open)}>
@@ -71,20 +89,8 @@ const ColorController = ({ targetTemplate, updateAll }) => {
       </div>
       {open && (
         <div className="px-2">
-          <div className="flex-between mb-3 pb-1 border-b border-blue-200">
-            <div className="flex-between" style={{ marginTop: "0" }}>
-              <p className=" text-black font-semibold cursor-pointer" onClick={() => document.getElementById("colorInput").click()}>Palette </p>
-              <input type="color"  id="colorInput" onChange={(e) => generatePlate(e)} style={{ display: "none" }} />
-              <img src={db} width={20} height={20} alt="Color Picker" className="cursor-pointer" onClick={() => document.getElementById("colorInput").click()} />
-            </div>
-            <div className="flex-center">
-              {webColors.map((c, i) => (
-                <div key={i} className="w-6 h-6" style={{ background: c }}></div>
-              ))}
-            </div>
-          </div>
-
           {colors[templateColors].map((color, index) => {
+            console.log(color);
             return (
               <div key={index} className="flex-between" style={{ marginTop: "0" }}>
                 <p className=" text-black font-semibold">Color-{index + 1}</p>
@@ -92,6 +98,37 @@ const ColorController = ({ targetTemplate, updateAll }) => {
               </div>
             );
           })}
+          <div className="flex-between mt-3 pb-1 border-t border-blue-200">
+            <div className="flex-col" style={{ marginTop: "0" }}>
+              <p className="text-bolder cursor-pointer my-1" style={{ color: "#1a2345" , fontSize:'18px' }} onClick={() => document.getElementById("colorInput").click()}>
+                Palettes
+              </p>
+              <div className="w-full flex gap-1 flex-wrap justify-between">
+                {palettes.map((palette, paletteIndex) => (
+                  <>
+                    <div
+                      key={paletteIndex}
+                      className={`flex flex-col`}
+                      style={{ position: "relative", border: selectedColor === paletteIndex ? "solid 3px #ce79cc" : "solid 2px transparent" }}
+                    >
+                      {palette.map((color, colorIndex) => (
+                        <div
+                          key={colorIndex}
+                          style={{
+                            width: "70px",
+                            height: "15px",
+                            backgroundColor: color,
+                            cursor: "pointer",
+                          }}
+                          onClick={() => handleColorChange(paletteIndex)}
+                        />
+                      ))}
+                    </div>
+                  </>
+                ))}
+              </div>
+            </div>
+          </div>
         </div>
       )}
     </div>
