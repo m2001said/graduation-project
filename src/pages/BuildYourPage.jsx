@@ -43,22 +43,7 @@ const palettes = [
 
 const BuildYourPage = () => {
   const { i18n } = useTranslation();
-  const sectionNames = [
-    "navbar",
-    "hero",
-    "features",
-    "projects",
-    "services",
-    "contact",
-    "team",
-    "testimonials",
-    "statistics",
-    "logos",
-    "items",
-    "pricing",
-    "cta",
-    "footer",
-  ];
+  const sectionNames = ["navbar", "hero", "features", "projects", "services", "contact", "team", "testimonials", "footer"];
 
   const dispatch = useDispatch();
   const [selectedColor, setSelectedColor] = useState(0);
@@ -190,15 +175,13 @@ const BuildYourPage = () => {
         >
           Generate your website
         </button>
-        {/*
-    <div className={`error-message ${checkError ? "active" : ""}  flex justify-center items-center gap-4`}>
+        <div className={`error-message ${checkError ? "active" : ""}  flex justify-center items-center gap-4`}>
           <img src="https://res.cloudinary.com/dvp3nyulf/image/upload/v1710190698/warning.png" alt="" />
           <p>
             Select a minimum of<span className="important"> 3 </span>sections, including
             <span className="important"> Navbar</span>,<span className="important"> Hero</span>,<span className="important"> Footer</span>,
           </p>
-    </div>
-    */}
+        </div>
       </div>
     </div>
   );

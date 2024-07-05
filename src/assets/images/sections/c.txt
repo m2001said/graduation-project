@@ -1,0 +1,2 @@
+2,8,9,12,13,16,17,18,19,14,4,5,10
+hero, nav, projects, about, contact, feature, footer, cta, services, team, testimonials
