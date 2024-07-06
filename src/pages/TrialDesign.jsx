@@ -27,10 +27,11 @@ const TrialDesign = ({ componentMapping, FooterComponent, NavbarComponent, HeroC
   const persist = JSON.parse(localStorage.getItem("persist:root"));
   const template1 = JSON.parse(persist.template1);
   useEffect(() => {
-    if (template1.templateInfo.id !== template && (url.pathname.includes("preview") || url.pathname.includes("build"))) {
+    if (template1.templateInfo.id !== template && url.pathname.includes("build")) {
       dispatch(resetState());
       dispatch(fetchInitialTemplate(template));
-      console.log(`state in TrialDesign after fetchInitialTemplate${template}`, state);
+    } else if (url.pathname.includes("preview")) {
+      dispatch(fetchInitialTemplate(template));
     }
   }, [dispatch]);
 
