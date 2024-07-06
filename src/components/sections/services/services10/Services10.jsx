@@ -1,9 +1,10 @@
 import React from "react";
 import "../../../../assets/css/globals10.css";
+import { useSelector } from "react-redux";
 
 const Services10 = ({ template }) => {
-  const services = template.services;
-
+  const ownServices = useSelector((state) => state.ownTemplate.services);
+  const services = template ? template.services : ownServices;
   return (
     <>
       <div className="py-10 bg-[--website-10-color-2] dark:bg-gray-900 dark:text-white">

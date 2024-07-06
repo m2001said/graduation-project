@@ -1,8 +1,9 @@
 import React from "react";
+import { useSelector } from "react-redux";
 
 const Testimonials15 = ({ template }) => {
-  const testimonial = template.testimonials;
-
+  const ownTestimonials= useSelector((state) => state.ownTemplate.testimonials);
+  const testimonial = template ? template.testimonials : ownTestimonials;
   const Card = ({ name, subtitle, imgUrl, description }) => {
     return (
       <div className="hoverBtn">

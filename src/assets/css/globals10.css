@@ -3,12 +3,12 @@
 @tailwind utilities;
 
 :root {
-  --website-10-color-1: rgb(19, 141, 197);
-  --website-10-color-2: rgb(255, 255, 255);
-  --website-10-color-3: rgb(0, 0, 0);
+  --website-10-color-1: #138dc5;
+  --website-10-color-2: #ffffff;
+  --website-10-color-3: #000000;
   --website-10-color-4: #777777;
   --website-10-color-5: #eeeeee;
-  --website-10-color-6: rgb(228, 240, 247);
+  --website-10-color-6: #e4f0f7;
 }
 
 /* txt style */

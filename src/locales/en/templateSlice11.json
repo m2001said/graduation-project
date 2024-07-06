@@ -293,6 +293,6 @@
     "buttonText": "Send Message"
   },
   "colors": {
-    "templateColors": ["#fff", "#cda274", "#292f36", "#f4f0ec", "#777777"]
+    "templateColors": ["#ff4d61", "#fcf5ee", "#f48915", "#9b98b3", "#353252", "#6c6ce5"]
   }
 }

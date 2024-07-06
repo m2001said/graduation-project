@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
-import { deleteTemplate, fetchTemplates } from "../features/templates/templatesSlice";
 import "../components/designsPage/sections/designsContainer.css";
 import "../components/designsPage/sections/designsCard/designCard.css";
 import preview from "../assets/images/show.png";
@@ -16,14 +15,15 @@ import axios from "axios";
 import "../globals.css";
 import { useTranslation } from "react-i18next";
 import BaseModal from "../components/mainPage/modal/BaseModal/BaseModal";
+import { deleteWebsite, fetchWebsites } from "../features/templates/websitesSlice";
 
 const YourWebsites = () => {
   const { i18n, t } = useTranslation();
   const [isModalOpen, setIsModalOpen] = useState(false);
   const dispatch = useDispatch();
-  const templates = useSelector((state) => state.templates.templates);
-  const status = useSelector((state) => state.templates.status);
-  const error = useSelector((state) => state.templates.error);
+  const templates = useSelector((state) => state.websites.websites);
+  const status = useSelector((state) => state.websites.status);
+  const error = useSelector((state) => state.websites.error);
   const userId = useSelector((state) => state.auth.user._id);
   const [isCelebrityBirthday, setIsCelebrityBirthday] = useState(false);
   const [copied, setCopied] = useState(false);
@@ -38,7 +38,7 @@ const YourWebsites = () => {
   useEffect(() => {
     if (status === "idle") {
       try {
-        dispatch(fetchTemplates('website'));
+        dispatch(fetchWebsites());
       } catch (error) {
         console.error("Error fetching templates:", error);
       }
@@ -81,7 +81,7 @@ const YourWebsites = () => {
   };
 
   const handleDeleteTemplate = async (templateId) => {
-    dispatch(deleteTemplate(templateId , 'website'))
+    dispatch(deleteWebsite(templateId))
       .unwrap()
       .then((result) => {
         console.log(`Template with ID ${result} deleted successfully.`);

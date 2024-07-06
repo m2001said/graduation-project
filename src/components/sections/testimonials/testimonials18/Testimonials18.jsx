@@ -1,10 +1,11 @@
 import React from "react";
+import { useSelector } from "react-redux";
 
 
 
 const Testimonial = ({template}) => {
-const testimonial = template.testimonials;
-;
+  const ownTestimonials= useSelector((state) => state.ownTemplate.testimonials);
+  const testimonial = template ? template.testimonials : ownTestimonials;
   return (
     <>
       <span id="about"></span>

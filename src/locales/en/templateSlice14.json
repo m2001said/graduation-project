@@ -292,6 +292,6 @@
     ]
   },
   "colors": {
-    "templateColors": ["#f42c37", "fdc62e", "#34cc73", "#1376f4", "#acabab9c", "#eeeeee"]
+    "templateColors": ["#f42c37", "fdc62e", "#34cc73", "#1376f4", "#acabab9c", "#ffffff"]
   }
 }

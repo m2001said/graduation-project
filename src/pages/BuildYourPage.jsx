@@ -44,7 +44,8 @@ const palettes = [
 const BuildYourPage = () => {
   const { i18n } = useTranslation();
   const sectionNames = ["navbar", "hero", "features", "projects", "services", "contact", "team", "testimonials", "footer"];
-
+  const [title, setTitle] = useState("");
+  const [description, setDescription] = useState("");
   const dispatch = useDispatch();
   const [selectedColor, setSelectedColor] = useState(0);
 
@@ -116,9 +117,9 @@ const BuildYourPage = () => {
         }
         return null;
       });
-      console.log("data in build your page", userSchema);
-      console.log(userSectionSelection);
-      console.log("selected sections", selectedSections);
+      // console.log("data in build your page", userSchema);
+      // console.log(userSectionSelection);
+      // console.log("selected sections", selectedSections);
 
       const colors = {
         templateColors: palettes[selectedColor],
@@ -126,11 +127,12 @@ const BuildYourPage = () => {
       userSchema.colors = colors;
       userSchema.templateInfo = {
         id: 0,
-        title: "Unique Homes",
-        description: "Explore diverse design and project updates for personalized living.",
-        imgUrl: "/static/media/design1.02d5c4e3717cab54eb4f.jpg",
+        title: title,
+        description: description,
+        imgUrl: "https://res.cloudinary.com/dvp3nyulf/image/upload/v1709490323/create-with-you-self.jpg",
         selectedSections: selectedSections,
       };
+      console.log("user schema", userSchema);
       dispatch(ownTemplateActions.insertSections({ data: userSchema }));
       navigate(`/${i18n.language}/own-page`, { state: selectedSections });
     }
@@ -140,6 +142,33 @@ const BuildYourPage = () => {
     <div className="own-page">
       <div className="container mx-auto px-4 py-4 flex flex-col items-center">
         <h1 className="text-3xl font-bold tracking-tighter py-8 text-center text-white sm:text-4xl md:text-5xl lg:text-6xl/none">Build Your Own Page</h1>
+
+        <div className="flex flex-col items-start w-full text-ce ">
+          <input
+            type="text"
+            name="title"
+            id="title"
+            value={title}
+            placeholder="Please Enter Title Of Page"
+            className="show-section"
+            style={{ outlineColor: "#512797" }}
+            onChange={(e) => {
+              setTitle(e.target.value);
+            }}
+          />
+          <input
+            type="text"
+            name="description"
+            id="descrptions"
+            placeholder="Please Enter Description Of Page"
+            className="show-section"
+            style={{ outlineColor: "#512797" }}
+            value={description}
+            onChange={(e) => {
+              setDescription(e.target.value);
+            }}
+          />
+        </div>
 
         {sectionNames.map((section, index) => (
           <div key={index} className="w-full">

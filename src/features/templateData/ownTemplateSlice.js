@@ -38,7 +38,7 @@ const ownTemplateSlice = createSlice({
       delete data.owner;
       delete data._id;
       delete data.__v;
-      console.log(data);
+      console.log('data in own slice',data);
       // const colors = {
       //   templateColors: ["#fff", "#cda274", "#292f36", "#f4f0ec", "#777777"],
       // };

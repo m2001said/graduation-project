@@ -191,6 +191,6 @@
     ]
   },
   "colors": {
-    "templateColors": ["#fff", "#cda274", "#292f36", "#f4f0ec", "#777777"]
+    "templateColors": ["#000000", "#00ffff", "#23dfb9c6", "#40dfffa5", "#ffa500" , "#88a0ff40"]
   }
 }

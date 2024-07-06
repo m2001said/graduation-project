@@ -1,7 +1,9 @@
 import React from "react";
+import { useSelector } from "react-redux";
 
-const Feature14 = ({ template }) => {
- const featuers = template.featuers;
+const Feature14 = ({ template }) => { 
+ const ownFooter = useSelector((state) => state.ownTemplate.features);
+ const featuers = template ? template.features : ownFooter;
 
   return (
     <div className="bg-[--website-14-color-6] min-h-[550px] flex justify-center items-center py-12 bg-white dark:bg-gray-900">

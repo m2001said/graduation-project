@@ -5,11 +5,14 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/effect-cards";
  import { EffectCards } from "swiper/modules";
+import { useSelector } from "react-redux";
  
 
 const Testimonials2 = ({ template }) => {
-  const testimonials = template.testimonials;
- 
+
+  const ownTestimonials= useSelector((state) => state.ownTemplate.testimonials);
+  const testimonials = template ? template.testimonials : ownTestimonials;
+   
   return (
     <section id="testimonials2" className="section2">
       <h5>{testimonials.subtitle}</h5>

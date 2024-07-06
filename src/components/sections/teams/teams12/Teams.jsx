@@ -1,8 +1,10 @@
 import React from "react";
 import "./teams.css";
+import { useSelector } from "react-redux";
 
 const Teams12 = ({ template }) => {
-  const team = template.team;
+  const ownTeam= useSelector((state) => state.ownTemplate.team);
+  const team = template ? template.team : ownTeam;  
   return (
     <div className="container12">
       <h2 className="title12 section__title16">{team.title}</h2>

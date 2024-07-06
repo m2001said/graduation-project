@@ -1,8 +1,10 @@
 import React from "react";
 import "../contact11/contact11.css";
+import { useSelector } from "react-redux";
 
 const Contact11 = ({ template }) => {
-  const contact = template.contact;
+  const ownContact= useSelector((state) => state.ownTemplate.contact);
+  const contact = template ? template.contact : ownContact;
 
   return (
     <section className="contact11 flex flex-col items-center justify-center text-center" id="contact">

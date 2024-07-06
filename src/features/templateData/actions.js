@@ -17,13 +17,14 @@ export const updateSchema = (state, action) => {
 export const changePalletes = (state, action) => {
   console.log(state.templateInfo.id);
 
+  console.log(action.payload)
   for (let index = 1; index <= action.payload.length; index++) {
     if (state.templateInfo.id === 0) {
       for (let i = 1; i <= 18; i++) {
-        document.documentElement.style.setProperty(`--website-${i}-color-${index}`, action.payload[index]);
+        document.documentElement.style.setProperty(`--website-${i}-color-${index}`, action.payload[index - 1]);
       }
     } else {
-      document.documentElement.style.setProperty(`--website-${state.templateInfo.id}-color-${index}`, action.payload[index]);
+      document.documentElement.style.setProperty(`--website-${state.templateInfo.id}-color-${index}`, action.payload[index - 1]);
     }
   }
   state.colors.templateColors = action.payload;
@@ -46,9 +47,15 @@ export const editElement = (state, action) => {
       // edit array filed with index
       console.log(value);
       if (variable === null) {
-        //  i think need edit
+        //  i think need edit ****************************************************************
         if (blockName === "templateColors") {
-          document.documentElement.style.setProperty(`--website-${state.templateInfo.id}-color-${i + 1}`, value);
+          if (state.templateInfo.id === 0) {
+            for (let index = 1; index <= 18; index++) {
+              document.documentElement.style.setProperty(`--website-${index}-color-${i + 1}`, value);
+            }
+          } else {
+            document.documentElement.style.setProperty(`--website-${state.templateInfo.id}-color-${i + 1}`, value);
+          }
         }
         state[section][blockName][i] = value;
       } else {
