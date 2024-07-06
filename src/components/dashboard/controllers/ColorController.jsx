@@ -80,6 +80,8 @@ const ColorController = ({ targetTemplate, updateAll }) => {
   const [selectedColor, setSelectedColor] = useState(0);
   const handleColorChange = (paletteIndex) => {
     setSelectedColor(paletteIndex);
+    console.log(updateAll)
+    dispatch(updateAll.changePalletes(palettes[paletteIndex]));
   };
   return (
     <div className="controller">
@@ -100,7 +102,11 @@ const ColorController = ({ targetTemplate, updateAll }) => {
           })}
           <div className="flex-between mt-3 pb-1 border-t border-blue-200">
             <div className="flex-col" style={{ marginTop: "0" }}>
-              <p className="text-bolder cursor-pointer my-1" style={{ color: "#1a2345" , fontSize:'18px' }} onClick={() => document.getElementById("colorInput").click()}>
+              <p
+                className="text-bolder cursor-pointer my-1"
+                style={{ color: "#1a2345", fontSize: "18px" }}
+                onClick={() => document.getElementById("colorInput").click()}
+              >
                 Palettes
               </p>
               <div className="w-full flex gap-1 flex-wrap justify-between">

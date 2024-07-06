@@ -13,7 +13,24 @@ export const updateSchema = (state, action) => {
     state[key] = action.payload[key];
   });
 };
+
+export const changePalletes = (state, action) => {
+  console.log(state.templateInfo.id);
+
+  for (let index = 1; index <= action.payload.length; index++) {
+    if (state.templateInfo.id === 0) {
+      for (let i = 1; i <= 18; i++) {
+        document.documentElement.style.setProperty(`--website-${i}-color-${index}`, action.payload[index]);
+      }
+    } else {
+      document.documentElement.style.setProperty(`--website-${state.templateInfo.id}-color-${index}`, action.payload[index]);
+    }
+  }
+  state.colors.templateColors = action.payload;
+};
 export const editElement = (state, action) => {
+  console.log(state.templateInfo.id);
+
   const { section, variable, value, i, blockName, subBlockName, subIndex, objKey } = action.payload;
   // sub means level 2 of fields
   if (i === undefined) {
@@ -29,11 +46,9 @@ export const editElement = (state, action) => {
       // edit array filed with index
       console.log(value);
       if (variable === null) {
-        console.log(blockName);
+        //  i think need edit
         if (blockName === "templateColors") {
-          for (let index = 1; index <= 18; index++) {
-            document.documentElement.style.setProperty(`--website-${index}-color-${i + 1}`, value);
-          }
+          document.documentElement.style.setProperty(`--website-${state.templateInfo.id}-color-${i + 1}`, value);
         }
         state[section][blockName][i] = value;
       } else {

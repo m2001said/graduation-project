@@ -1,5 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
-import { addElement, addElementToArray, addSubElement, deleteElement, deleteSection, editElement, reorder, reorderSections, updateSchema } from "./actions";
+import { addElement, addElementToArray, addSubElement, changePalletes, deleteElement, deleteSection, editElement, reorder, reorderSections, updateSchema } from "./actions";
 const ownTemplateSlice = createSlice({
   initialState: {},
 
@@ -7,6 +7,9 @@ const ownTemplateSlice = createSlice({
   reducers: {
     updateTemplate: (state, action) => {
       editElement(state, action);
+    },
+    changePalletes: (state, action) => {
+      changePalletes(state, action);
     },
     addNewElement: (state, action) => {
       addElement(state, action);

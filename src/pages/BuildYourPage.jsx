@@ -125,7 +125,7 @@ const BuildYourPage = () => {
       };
       userSchema.colors = colors;
       userSchema.templateInfo = {
-        id: 1,
+        id: 0,
         title: "Unique Homes",
         description: "Explore diverse design and project updates for personalized living.",
         imgUrl: "/static/media/design1.02d5c4e3717cab54eb4f.jpg",

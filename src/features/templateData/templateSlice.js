@@ -1,4 +1,15 @@
-import { addElement, addElementToArray, addSubElement, deleteElement, deleteSection, editElement, reorder, reorderSections, updateSchema } from "./actions";
+import {
+  addElement,
+  addElementToArray,
+  addSubElement,
+  changePalletes,
+  deleteElement,
+  deleteSection,
+  editElement,
+  reorder,
+  reorderSections,
+  updateSchema,
+} from "./actions";
 import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 import i18next from "i18next";
 import enTemplateSlice1 from "../../locales/en/templateSlice1.json";
@@ -182,6 +193,9 @@ const templateSlice = createSlice({
   reducers: {
     updateTemplate: (state, action) => {
       editElement(state, action);
+    },
+    changePalletes: (state, action) => {
+      changePalletes(state, action);
     },
     addNewElement: (state, action) => {
       addElement(state, action);

@@ -1,5 +1,6 @@
 import React from "react";
-import "./footer18.css"import { useSelector } from "react-redux";
+import "./footer18.css";
+import { useSelector } from "react-redux";
 
 
 const Footer18 = ({template}) => {

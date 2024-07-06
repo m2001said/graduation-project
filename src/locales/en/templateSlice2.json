@@ -215,6 +215,6 @@
     ]
   },
   "colors": {
-    "templateColors": ["linear-gradient(90deg, #318a8c 0%, #5ce1e6 51.94%)", "#2c2c6c", "#4db5ff", "#4db5ff66", "#FFFFFF" , "#515a59"]
+    "templateColors": ["#1f1f38", "#2c2c6c", "#4db5ff", "#4db5ff66", "#FFFFFF" , "#515a59"]
   }
 }
