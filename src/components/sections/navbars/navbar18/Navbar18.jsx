@@ -2,9 +2,11 @@ import React, { useState } from "react";
 import "../../../../assets/css/globals10.css";
 import DarkMode from "./DarkMode18";
 import ResponsiveMenu from "./ResponsiveMenu";
+import { useSelector } from "react-redux";
 
 const Navbar18 = ({ template }) => {
-  const navbar = template.navbar;
+  const ownNavbar = useSelector((state) => state.ownTemplate.navbar);
+  const navbar = template ? template.navbar : ownNavbar;
   const [showMenu, setShowMenu] = useState(false);
   const toggleMenu = () => {
     setShowMenu(!showMenu);

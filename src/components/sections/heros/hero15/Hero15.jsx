@@ -1,12 +1,11 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
+import { useSelector } from "react-redux";
 
 const Hero15 = ({ template }) => {
   const hero = template.hero;
   const { i18n } = useTranslation();
   const language = i18n.language;
-
-  // className={language === "ar" ? "transform rotate-180" : ""}
 
   return (
     <main className="min-h-screen flex xl:pt-0 pt-36 hero15" id="home">

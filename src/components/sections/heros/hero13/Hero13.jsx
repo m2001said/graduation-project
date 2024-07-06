@@ -1,9 +1,11 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
+import { useSelector } from "react-redux";
 
 const Hero13 = ({ template }) => {
   const { t, i18n } = useTranslation();
-  const { title, description, buttons, icon, imgUrl, imageUrl } = template.hero;
+  const ownHero = useSelector((state) => state.ownTemplate.hero);
+  const { title, description, buttons, icon, imgUrl, imageUrl } = template ? template.hero : ownHero;
 
   // Check if the current language is RTL (e.g., Arabic, Hebrew)
   const isRtl = i18n.dir() === "rtl";

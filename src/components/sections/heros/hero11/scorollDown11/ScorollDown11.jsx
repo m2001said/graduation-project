@@ -1,8 +1,9 @@
 import React from "react";
+import { useSelector } from "react-redux";
 
 const ScorollDown11 = ({ template }) => {
-  const hero = template.hero;
-
+  const ownHero = useSelector((state) => state.ownTemplate.hero);
+  const hero = template ? template.hero : ownHero;
   return (
     <div className="scroll__down11">
       <a href="#about" className="mouse11__wrapper">

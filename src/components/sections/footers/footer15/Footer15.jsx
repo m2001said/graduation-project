@@ -1,9 +1,11 @@
 import React from "react";
 import "./footer15.css";
+import { useSelector } from "react-redux";
 
 const Footer15 = ({ template }) => {
-  const footer = template.footer;
-
+  const ownFooter = useSelector((state) => state.ownTemplate.footer);
+  const footer = template ? template.footer : ownFooter;
+  
   return (
     <footer className="footer15-container ">
       <div className="container mx-auto py-[60px] footer15-container">

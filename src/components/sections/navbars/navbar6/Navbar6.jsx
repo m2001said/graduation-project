@@ -1,9 +1,11 @@
 import React, { useRef } from "react";
 import "./navbar6.css";
+import { useSelector } from "react-redux";
 
 const Navbar6 = ({ template }) => {
-  const navbar = template.navbar;
-  const menuRef = useRef();
+  const ownNavbar = useSelector((state) => state.ownTemplate.navbar);
+  const navbar = template ? template.navbar : ownNavbar; 
+   const menuRef = useRef();
   const menuToggle = () => menuRef.current.classList.toggle("active__menu");
 
   return (

@@ -8,8 +8,9 @@ import { fetchInitialTemplate, resetState } from "../features/templateData/templ
 const TrialDesign = ({ componentMapping, FooterComponent, NavbarComponent, HeroComponent, template, className }) => {
   const dispatch = useDispatch();
   const url = useLocation();
+  const templateNumber = parseInt(url.pathname.match(/\d+/)) 
   const searchParams = new URLSearchParams(url.search);
-  const userId = useSelector((state) => state.auth.user._id) || searchParams.get("userId");
+  const userId = useSelector((state) => state.auth.user && state.auth.user._id) || searchParams.get("userId");
   const templateId = searchParams.get("templateId") || null;
   console.log("templateId", templateId);
   console.log("userId", userId);
@@ -34,15 +35,19 @@ const TrialDesign = ({ componentMapping, FooterComponent, NavbarComponent, HeroC
     }
   }, [dispatch]);
 
+
+  //       // this will return to intial state if you do refresh
+
+
   useEffect(() => {
     const fetchData = async () => {
       console.log("fetchData in trialDesign");
       try {
-        const res = await axios.get(`https://websitebuilderbackend-production-716e.up.railway.app/page/${userId}/${templateId}`);
+        const res = await axios.get(`https://websitebuilderbackend-production-716e.up.railway.app/website/${userId}/${templateId}`);
         setTemplateData(res.data);
         document.documentElement.style = "";
         for (let index = 0; index < res.data.colors?.templateColors.length; index++) {
-          document.documentElement.style.setProperty(`--website-color-${index + 1}`, res.data.colors?.templateColors[index]);
+          document.documentElement.style.setProperty(`--website-${templateNumber}-color-${index + 1}`, res.data.colors?.templateColors[index]);
         }
       } catch (error) {
         console.error("Error fetching template data:", error);
@@ -70,8 +75,7 @@ const TrialDesign = ({ componentMapping, FooterComponent, NavbarComponent, HeroC
     state = templateData;
   }
   const reorderedComponents = state && Object.keys(state);
-
-  return state.templateInfo.id === template ? (
+  return state && state.templateInfo.id === template ? (
     <div className={className}>
       {NavbarComponent && <NavbarComponent template={state} />}
       {HeroComponent && <HeroComponent template={state} />}

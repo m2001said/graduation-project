@@ -78,9 +78,9 @@ const LeftSide = ({ targetTemplate, updateAllRef }) => {
       })}
     </div>
   ) : (
-    <div className="absolute top-3 left-4 bg-white rounded-sm p-1 flex-center cursor-pointer" onClick={handleClick}>
-      <p className="font-bold white mr-1">Open Dashboard</p>
-      <img src="/assets/icons/down.svg" width={18} alt="down" />
+    <div className="absolute top-3 left-4  rounded-sm p-1 flex-center cursor-pointer" onClick={handleClick}>
+      <p className="font-bold white mx-2 ">Open Dashboard</p>
+      <img src="/assets/icons/goLeft.svg" width={14} alt="down" style={{rotate:'-90deg'}}/>
     </div>
   );
 };

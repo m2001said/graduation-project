@@ -17,7 +17,8 @@ import Admin from "./pages/Admin";
 import { useRightToLeft } from "./utils/rightToLeft.js";
 import { useTranslation } from "react-i18next";
 import AdminUserPage from "./pages/AdminUserPage";
-import SessionChecker from "./components/mainPage/SessionChecker.jsx";
+import SessionChecker from "./components/mainPage/SessionChecker.jsx";import YourPages from "./pages/YourPages.jsx";
+
 const trialDesignComponents = Array.from({ length: 18 }, (_, i) => require(`./pages/TrialDesign${i + 1}`).default);
 const websites = Array.from({ length: 18 }, (_, i) => require(`./pages/TrialDesign${i + 1}`).default);
 
@@ -68,6 +69,10 @@ function App() {
             }
           />
           <Route path={`/${language}/websites`} element={<YourWebsites />} />
+
+          {/* edit here */}
+          <Route path={`/${language}/pages`} element={<YourPages />} />
+
           <Route
             path={`/${language}/page-craft`}
             element={
@@ -110,15 +115,27 @@ function App() {
             ))}
           </Route>
 
+          {/* pages */}
+          <Route key={`zweb`} path={`/zweb`} element={<OwnPage />} />
+          <Route
+            key={`edit-zweb`}
+            path={`/edit-zweb`}
+            element={
+              <ProtectedRoute>
+                <OwnPage />
+              </ProtectedRoute>
+            }
+          />
+
           {/* websites */}
           {websites.map((Component, index) => (
             <Route
-              key={`zwep${index}`}
-              path={`/${language}/zweb${index + 1}`}
+              key={`zweb${index}`}
+              path={`/zweb${index + 1}`}
               element={
-                <ProtectedRoute>
-                  <Component />
-                </ProtectedRoute>
+                // <ProtectedRoute>
+                <Component />
+                // </ProtectedRoute>
               }
             />
           ))}
@@ -126,7 +143,7 @@ function App() {
             {websites.map((Component, index) => (
               <Route
                 key={`edit-zweb${index}`}
-                path={`/${language}/edit-zweb${index + 1}`}
+                path={`/edit-zweb${index + 1}`}
                 element={
                   <ProtectedRoute>
                     <Component />

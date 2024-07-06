@@ -1,9 +1,9 @@
 {
   "templateInfo": {
     "id": 11,
-    "title": "",
-    "description": "",
-    "imgUrl": ""
+    "title": "Digital Portfolio Showcase",
+    "description": "Explore Bolby Doe's impressive web design and development portfolio.",
+    "imgUrl": "/static/media/design11.bfe36923002dc7bcf89f.jpg"
   },
   "navbar": {
     "imgUrl": "https://res.cloudinary.com/duc04fwdb/image/upload/v1707525696/jammal_photos/wmm8wc8r2ijrtguljwaa.svg",

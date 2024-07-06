@@ -1,8 +1,11 @@
-import { useState } from 'react';
-import "./hero17.css";
+import { useState } from "react";
+import { useSelector } from "react-redux";
+
+
 const Hero17 = ({ template }) => {
-  const hero = template.hero;
-  const [imageLoaded, setImageLoaded] = useState(false);
+  const ownHero = useSelector((state) => state.ownTemplate.hero);
+  const hero = template ? template.hero : ownHero;
+    const [imageLoaded, setImageLoaded] = useState(false);
 
   const BgStyle = {
     backgroundImage: `url(${hero.imgUrl})`, 

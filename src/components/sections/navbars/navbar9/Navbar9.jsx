@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
+import { useSelector } from 'react-redux';
 
 const Navbar9 = ({ template }) => {
-  const { navbar } = template;
+  const ownNavbar = useSelector((state) => state.ownTemplate.navbar);
+  const navbar = template ? template.navbar : ownNavbar;
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleMenu = () => {

@@ -1,8 +1,10 @@
 import React from "react";
 import "./hero2.css";
+import { useSelector } from "react-redux";
 
 const Hero2 = ({ template }) => {
-  const hero = template.hero;
+  const ownHero = useSelector((state) => state.ownTemplate.hero);
+  const hero = template ? template.hero : ownHero;
   return (
     <section id="hero2" className="section2">
       <h5>{hero.title}</h5>
@@ -16,13 +18,13 @@ const Hero2 = ({ template }) => {
 
         <div className="hero2__content">
           <div className="hero2__cards">
-            {hero.heros.map((heros, index) => (
+            {/* {hero.heros.map((heros, index) => (
               <article className="hero2__card" key={index}>
                 <img className="hero2__icon" src={heros.icon} alt={heros.title} />
                 <h5>{heros.title}</h5>
                 <small>{heros.description}</small>
               </article>
-            ))}
+            ))} */}
           </div>
           <p>{hero.description}</p>
           <a href="#contactUs2" className="a2 btn2 btn-primary2">

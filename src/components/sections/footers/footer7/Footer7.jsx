@@ -58,10 +58,12 @@
 // export default Footer7;
 import React from "react";
 import styles from "../../heros/hero7/styles7/style";
+import { useSelector } from "react-redux";
 
 const Footer7 = ({ template }) => {
-  const footer = template.footer;
-
+  const ownFooter = useSelector((state) => state.ownTemplate.footer);
+  const footer = template ? template.footer : ownFooter;
+  
   const socialMediaIcons = footer.medias;
 
   return (

@@ -1,10 +1,11 @@
 import React, { useState } from "react";
 import "../../../../assets/css/globals10.css";
 import "./hero10.css";
+import { useSelector } from "react-redux";
 
 const Hero10 = ({ template }) => {
-  const hero = template.hero;
-
+  const ownHero = useSelector((state) => state.ownTemplate.hero);
+  const hero = template ? template.hero : ownHero
   const [id, setId] = useState(0);
   return (
     <>
