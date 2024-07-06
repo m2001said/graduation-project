@@ -135,10 +135,11 @@
 // export default Feature3;
 import React from "react";
 import "./feature3.css";
+import { useSelector } from "react-redux";
 
 const Feature3 = ({ template }) => {
-  const feature = template.features;
-  return (
+  const ownFooter = useSelector((state) => state.ownTemplate.features);
+  const feature = template ? template.features : ownFooter;  return (
     <div className="Reasons3" id="WhyUs">
       <div className="left-r3">
         {feature.imgs.slice(0, 4).map((url, index) => (

@@ -3,9 +3,11 @@ import { useEffect } from "react";
 
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { useSelector } from "react-redux";
 
 const Hero4 = ({ template }) => {
-  const hero = template.hero;
+  const ownHero = useSelector((state) => state.ownTemplate.hero);
+  const hero = template ? template.hero : ownHero;
   useEffect(() => {
     AOS.init({
       duration: 1000,

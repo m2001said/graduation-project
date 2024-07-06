@@ -24,6 +24,11 @@ const DesignsContainer = () => {
 
   const designsData = [
     {
+      title: t("DESIGNS.TITLE_0"),
+      description: t("DESIGNS.DESCRIPTION_0"),
+      imageUrl: websites,
+    },
+    {
       title: t("DESIGNS.TITLE_1"),
       description: t("DESIGNS.DESCRIPTION_1"),
       imageUrl: websites,

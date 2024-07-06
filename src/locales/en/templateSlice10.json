@@ -1,9 +1,9 @@
 {
   "templateInfo": {
     "id": 10,
-    "title": "",
-    "description": "",
-    "imgUrl": ""
+    "title": "Bookstore Bliss",
+    "description": "Explore top books, reviews, and a virtual library experience.",
+    "imgUrl": "/static/media/design10.972593dcf0cc7d044e60.jpg"
   },
   "navbar": {
     "title": "Books",

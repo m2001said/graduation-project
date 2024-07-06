@@ -19,10 +19,10 @@ const DesignCard = ({ Designdata, index }) => {
     <>
       {isModalOpen ? (
         <BaseModal poster={aiPoster} toggleModal={toggleModal}>
-          <AiForm index={index - 1} />
+          <AiForm index={index - 2} />
         </BaseModal>
       ) : null}
-      {index > 1 && (
+      {index > 2 && (
         <div className="design-card rounded-2xl overflow-hidden shadow-lg flex flex-column">
           <div className="design-Img-container mb-2">
             <Loader src={Designdata.imageUrl} alt="design--Img" />
@@ -46,7 +46,7 @@ const DesignCard = ({ Designdata, index }) => {
               {t("USER.BUILD_1")}
             </button>
 
-            <Link className=" py-2 px-4 w-20" to={`/${i18n.language}/preview-trial-design${index - 1}`}>
+            <Link className=" py-2 px-4 w-20" to={`/${i18n.language}/preview-trial-design${index - 2}`}>
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
                 <path
                   fill="#ce79cc"
@@ -57,7 +57,8 @@ const DesignCard = ({ Designdata, index }) => {
           </div>
         </div>
       )}
-      {index === 1 && (
+
+      {index === 2 && (
         <Link to={`/${i18n.language}/page-craft`}>
           <div className="design-card rounded-lg overflow-hidden shadow-lg flex flex-column">
             <div className="design-Img-container mb-2">
@@ -66,6 +67,20 @@ const DesignCard = ({ Designdata, index }) => {
 
             <div className="design-info px4 py-2">
               <h2 className="designs-title  text-xl text-center font-semibold">{Designdata.title}</h2>
+              <p className="designs-description text-gray-600 text-sm  text-center ">{Designdata.description}</p>
+            </div>
+          </div>
+        </Link>
+      )}
+
+      {index === 1 && (
+        <Link to={`/${i18n.language}/pages`}>
+          <div className="design-card rounded-lg overflow-hidden shadow-lg flex flex-column">
+            <div className="design-Img-container mb-2">
+              <Loader src={Designdata.imageUrl} alt="design--Img" />
+            </div>
+            <div className="design-info px4 py-2">
+              <h2 className="designs-title font-bold text-xl text-center font-semibold">{Designdata.title}</h2>
               <p className="designs-description text-gray-600 text-sm  text-center ">{Designdata.description}</p>
             </div>
           </div>

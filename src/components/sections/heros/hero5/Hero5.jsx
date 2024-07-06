@@ -1,9 +1,10 @@
 import React from "react";
 import "./hero5.css";
+import { useSelector } from 'react-redux';
 
 const Hero5 = ({ template }) => {
-  const hero = template.hero;
-
+  const ownHero = useSelector((state) => state.ownTemplate.hero);
+  const hero = template ? template.hero : ownHero;
   return (
     <div className="hero5 design5">
       <div className="hero5-mainText">

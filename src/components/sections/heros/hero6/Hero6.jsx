@@ -3,10 +3,11 @@ import "./hero6.css";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Autoplay } from "swiper/modules";
 import "swiper/css";
+import { useSelector } from "react-redux";
 
 const Hero6 = ({ template }) => {
-  const hero = template.hero;
-
+  const ownHero = useSelector((state) => state.ownTemplate.hero);
+  const hero = template ? template.hero : ownHero;
   return (
     <section className="design-6" id="Home">
       <div className="container mx-auto px-4 py-2">

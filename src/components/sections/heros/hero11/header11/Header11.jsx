@@ -1,7 +1,9 @@
 import React from "react";
+import { useSelector } from "react-redux";
 
 const Header11 = ({ template }) => {
-  const hero = template.hero;
+  const ownHero = useSelector((state) => state.ownTemplate.hero);
+  const hero = template ? template.hero : ownHero;
   return (
     <div className="home11__socials">
       {hero.heros.map((icon, index) => (

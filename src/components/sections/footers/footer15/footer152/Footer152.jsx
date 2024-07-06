@@ -1,7 +1,10 @@
 import React from "react";
+import { useSelector } from "react-redux";
 
 const Blog15 = ({ template }) => {
-  const blog = template.blogs;
+  const ownFooter = useSelector((state) => state.ownTemplate.blogs);
+  const blog = template ? template.blogs : ownFooter;
+  
 
   const Card = ({ date, title, imgUrl, description }) => {
     return (

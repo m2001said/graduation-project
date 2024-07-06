@@ -1,11 +1,12 @@
 import React from "react";
 import DarkMode14 from "./DarkMode14";
+import { useSelector } from "react-redux";
 
 
 
 const Navbar14 = ({template}) => {
-    const navbar = template.navbar;
-
+  const ownNavbar = useSelector((state) => state.ownTemplate.navbar);
+  const navbar = template ? template.navbar : ownNavbar;
 
   return (
     <div className="bg-[--website-14-color-6] dark:bg-gray-900 dark:text-white duration-200 relative z-40">

@@ -1,9 +1,12 @@
 import React from "react";
-import "./footer18.css"
+import "./footer18.css";
+import { useSelector } from "react-redux";
+
 
 const Footer18 = ({template}) => {
-const footer = template.footer;
-
+  const ownFooter = useSelector((state) => state.ownTemplate.footer);
+  const footer = template ? template.footer : ownFooter;
+  
   return (
     <div className="bg-gray-100 dark:bg-black dark:text-white duration-300">
       <section className="container18">

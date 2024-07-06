@@ -1,9 +1,11 @@
 import React from "react";
 import "./footer4.css";
+import { useSelector } from "react-redux";
 
 const Footer4 = ({ template }) => {
-  const footer = template.footer;
-  return (
+  const ownFooter = useSelector((state) => state.ownTemplate.footer);
+  const footer = template ? template.footer : ownFooter;
+    return (
     <div className="f-wrapper4">
       <div className="paddings4 innerWidth4 flexCenter4 f-container4">
         <div className="flexColStart4 f-left4">

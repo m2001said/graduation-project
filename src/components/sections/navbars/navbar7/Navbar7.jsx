@@ -1,9 +1,11 @@
 import React, { useState } from "react";
 import styles from "../../heros/hero7/styles7/style";
 import { useTranslation } from "react-i18next";
+import { useSelector } from "react-redux";
 
 const Navbar7 = ({ template }) => {
-  const navbar = template.navbar;
+  const ownNavbar = useSelector((state) => state.ownTemplate.navbar);
+  const navbar = template ? template.navbar : ownNavbar;
   const [active, setActive] = useState("Home");
   const [toggle, setToggle] = useState(false);
   const { i18n } = useTranslation();
