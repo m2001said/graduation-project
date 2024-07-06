@@ -17,13 +17,6 @@ const Dashboard = () => {
   console.log("templateId in Dashboard", templateId);
   console.log("state in Dashboard", state);
 
-  useEffect(() => {
-    if (url.pathname.includes("preview") || url.pathname.includes("build")) {
-      dispatch(fetchInitialTemplate(templateId));
-      console.log(`state in TrialDesign after fetchInitialTemplate${templateId}`, state);
-    }
-  }, [dispatch]);
-
   return (
     <section className="dashboard-container mx-auto relative">
       <TopSide schema={state} />
@@ -40,17 +33,3 @@ const Dashboard = () => {
 };
 
 export default Dashboard;
-
-// this is the solution for design5 (elsayed)
-
-//  <section className="dashboard-container mx-auto relative">
-//       {/*here */}
-//       <TopSide />
-
-//       {/*this is the solution for aos li */}
-//       <div className="w-full flex-between flex-col md:flex-row dashboard-subContainer ">
-//         <LeftSide />
-//            <RightSide />
-
-//       </div>
-//     </section>

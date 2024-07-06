@@ -11,8 +11,6 @@ const TrialDesign = ({ componentMapping, FooterComponent, NavbarComponent, HeroC
   const searchParams = new URLSearchParams(url.search);
   const userId = useSelector((state) => state.auth.user._id) || searchParams.get("userId");
   const templateId = searchParams.get("templateId") || null;
-  console.log("templateId", templateId);
-  console.log("userId", userId);
   const [templateData, setTemplateData] = useState(null);
 
   let state = useSelector((state) => {

@@ -65,7 +65,7 @@ const DesignCard = ({ Designdata, index }) => {
             </div>
 
             <div className="design-info px4 py-2">
-              <h2 className="designs-title font-bold text-xl text-center font-semibold">{Designdata.title}</h2>
+              <h2 className="designs-title  text-xl text-center font-semibold">{Designdata.title}</h2>
               <p className="designs-description text-gray-600 text-sm  text-center ">{Designdata.description}</p>
             </div>
           </div>
@@ -78,7 +78,7 @@ const DesignCard = ({ Designdata, index }) => {
               <Loader src={Designdata.imageUrl} alt="design--Img" />
             </div>
             <div className="design-info px4 py-2">
-              <h2 className="designs-title font-bold text-xl text-center font-semibold">{Designdata.title}</h2>
+              <h2 className="designs-title  text-xl text-center font-semibold">{Designdata.title}</h2>
               <p className="designs-description text-gray-600 text-sm  text-center ">{Designdata.description}</p>
             </div>
           </div>
