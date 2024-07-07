@@ -133,6 +133,7 @@ const BuildYourPage = () => {
         selectedSections: selectedSections,
       };
       console.log("user schema", userSchema);
+      dispatch(ownTemplateActions.deleteSchema()); // remove data in ownpage slice
       dispatch(ownTemplateActions.insertSections({ data: userSchema }));
       navigate(`/${i18n.language}/own-page`, { state: selectedSections });
     }
@@ -148,6 +149,7 @@ const BuildYourPage = () => {
             type="text"
             name="title"
             id="title"
+            autoComplete="off"
             value={title}
             placeholder="Please Enter Title Of Page"
             className="show-section"
@@ -160,6 +162,7 @@ const BuildYourPage = () => {
             type="text"
             name="description"
             id="descrptions"
+            autoComplete="off"
             placeholder="Please Enter Description Of Page"
             className="show-section"
             style={{ outlineColor: "#512797" }}

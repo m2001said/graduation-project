@@ -4,11 +4,27 @@ import axios from "axios";
 import Loader from "../components/Loader/Loader";
 import { useDispatch, useSelector } from "react-redux";
 import { fetchInitialTemplate, resetState } from "../features/templateData/templateSlice";
+import NotFound from "./NotFoundPage";
+function removeEmptyArrays(obj) {
+  for (let prop in obj) {
+    if (Array.isArray(obj[prop])) {
+      if (obj[prop].length === 0) {
+        delete obj[prop];
+      }
+    } else if (typeof obj[prop] === "object" && obj[prop] !== null) {
+      removeEmptyArrays(obj[prop]);
+      if (Object.keys(obj[prop]).length === 0) {
+        delete obj[prop];
+      }
+    }
+  }
+}
 
 const TrialDesign = ({ componentMapping, FooterComponent, NavbarComponent, HeroComponent, template, className }) => {
   const dispatch = useDispatch();
+  const [isLoading, setIsLoading] = useState(false);
   const url = useLocation();
-  const templateNumber = parseInt(url.pathname.match(/\d+/)) 
+  const templateNumber = parseInt(url.pathname.match(/\d+/));
   const searchParams = new URLSearchParams(url.search);
   const userId = useSelector((state) => state.auth.user && state.auth.user._id) || searchParams.get("userId");
   const templateId = searchParams.get("templateId") || null;
@@ -23,36 +39,21 @@ const TrialDesign = ({ componentMapping, FooterComponent, NavbarComponent, HeroC
       return state.template1;
     }
   });
-
-  const persist = JSON.parse(localStorage.getItem("persist:root"));
-  const template1 = JSON.parse(persist.template1);
-  useEffect(() => {
-    if (template1.templateInfo.id !== template && url.pathname.includes("build")) {
-      dispatch(resetState());
-      dispatch(fetchInitialTemplate(template));
-    } else if (url.pathname.includes("preview")) {
-      dispatch(fetchInitialTemplate(template));
-    }
-  }, [dispatch]);
-
-
-  //       // this will return to intial state if you do refresh
-
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []); 
-
-
   useEffect(() => {
     const fetchData = async () => {
-      console.log("fetchData in trialDesign");
+      setIsLoading(true);
       try {
         const res = await axios.get(`https://websitebuilderbackend-production-716e.up.railway.app/website/${userId}/${templateId}`);
+        console.log(res.data);
+        removeEmptyArrays(res.data);
+        console.log(res.data);
+
         setTemplateData(res.data);
-        document.documentElement.style = "";
-        for (let index = 0; index < res.data.colors?.templateColors.length; index++) {
-          document.documentElement.style.setProperty(`--website-${templateNumber}-color-${index + 1}`, res.data.colors?.templateColors[index]);
-        }
+        setIsLoading(false);
+        // document.documentElement.style = "";
+        // for (let index = 0; index < res.data.colors?.templateColors.length; index++) {
+        //   document.documentElement.style.setProperty(`--website-${templateNumber}-color-${index + 1}`, res.data.colors?.templateColors[index]);
+        // }
       } catch (error) {
         console.error("Error fetching template data:", error);
       }
@@ -67,20 +68,46 @@ const TrialDesign = ({ componentMapping, FooterComponent, NavbarComponent, HeroC
       if (url.pathname.includes("zweb") && !url.pathname.includes("edit-zweb")) {
         fetchData();
       }
-    } else {
-      document.documentElement.style = "";
-      for (let index = 0; index < state.colors?.templateColors.length; index++) {
-        document.documentElement.style.setProperty(`--website-color-${index + 1}`, state.colors?.templateColors[index]);
-      }
     }
+    // else {
+    //   document.documentElement.style = "";
+    //   for (let index = 0; index < state.colors?.templateColors.length; index++) {
+    //     document.documentElement.style.setProperty(`--website-${templateNumber}-color-${index + 1}`, state.colors?.templateColors[index]);
+    //   }
+    // }
   }, []);
+
+
+  const persist = JSON.parse(localStorage.getItem("persist:root"));
+  const template1 = persist && JSON.parse(persist.template1);
+  useEffect(() => {
+    if (template1?.templateInfo.id !== template && url.pathname.includes("build")) {
+      dispatch(resetState());
+      dispatch(fetchInitialTemplate(template));
+    } else if (url.pathname.includes("preview")) {
+      dispatch(fetchInitialTemplate(template));
+    }
+  }, [dispatch]);
+
+  //       // this will return to intial state if you do refresh
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
 
   if (url.pathname.includes("zweb") && !url.pathname.includes("edit-zweb")) {
     state = templateData;
   }
   const reorderedComponents = state && Object.keys(state);
+  useEffect(() => {
+    document.documentElement.style = "";
+    for (let index = 0; index < state?.colors?.templateColors.length; index++) {
+      document.documentElement.style.setProperty(`--website-${templateNumber}-color-${index + 1}`, state?.colors?.templateColors[index]);
+    }
+  }, [state, templateNumber]);
 
-  console.log(state)
+  console.log(state);
   return state && state.templateInfo.id === template ? (
     <div className={className}>
       {NavbarComponent && <NavbarComponent template={state} />}
@@ -91,9 +118,13 @@ const TrialDesign = ({ componentMapping, FooterComponent, NavbarComponent, HeroC
       })}
       {FooterComponent && <FooterComponent template={state} />}
     </div>
-  ) : (
+  ) : isLoading ? (
     <div className="fixed top-0 left-0 w-full h-full d-flex items-center justify-center">
       <Loader />
+    </div>
+  ) : (
+    <div className="fixed top-0 left-0 w-full h-full d-flex items-center justify-center">
+      <NotFound />
     </div>
   );
 };

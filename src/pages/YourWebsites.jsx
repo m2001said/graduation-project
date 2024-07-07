@@ -7,7 +7,7 @@ import build from "../assets/images/deploy.jpg";
 import { Link, useNavigate } from "react-router-dom";
 import Loader from "../components/Loader/Loader";
 import Confetti from "react-confetti";
-import { templateActions1 } from "../features/templateData/templateSlice";
+import { resetState, templateActions1 } from "../features/templateData/templateSlice";
 import { CopyToClipboard } from "react-copy-to-clipboard";
 import aiPoster from "../assets/images/mainPageAssets/hero-min.svg";
 
@@ -16,6 +16,20 @@ import "../globals.css";
 import { useTranslation } from "react-i18next";
 import BaseModal from "../components/mainPage/modal/BaseModal/BaseModal";
 import { deleteWebsite, fetchWebsites } from "../features/templates/websitesSlice";
+function removeEmptyArrays(obj) {
+  for (let prop in obj) {
+    if (Array.isArray(obj[prop])) {
+      if (obj[prop].length === 0) {
+        delete obj[prop];
+      }
+    } else if (typeof obj[prop] === "object" && obj[prop] !== null) {
+      removeEmptyArrays(obj[prop]);
+      if (Object.keys(obj[prop]).length === 0) {
+        delete obj[prop];
+      }
+    }
+  }
+}
 
 const YourWebsites = () => {
   const { i18n, t } = useTranslation();
@@ -95,14 +109,15 @@ const YourWebsites = () => {
     try {
       setIsLoading(true);
       const res = await axios.get(`https://websitebuilderbackend-production-716e.up.railway.app/website/${userId}/${templateId}`);
-      console.log("res.data", res.data);
+      removeEmptyArrays(res.data);
+      dispatch(resetState());
       dispatch(templateActions1.updateSchema(res.data));
       setIsLoading(false);
       navigate(`/edit-zweb${templateNum}?id=${templateId}`);
-      document.documentElement.style = "";
-      for (let index = 0; index < res.data.colors?.templateColors.length; index++) {
-        document.documentElement.style.setProperty(`--website-color-${index + 1}`, res.data.colors?.templateColors[index]);
-      }
+      // document.documentElement.style = "";
+      // for (let index = 0; index < res.data.colors?.templateColors.length; index++) {
+      //   document.documentElement.style.setProperty(`--website-${templateNum}-color-${index + 1}`, res.data.colors?.templateColors[index]);
+      // }
     } catch (error) {
       console.error("Error fetching template data:", error);
     }
@@ -110,6 +125,7 @@ const YourWebsites = () => {
   const toggleModal = () => {
     setIsModalOpen(!isModalOpen);
     setIsCelebrityBirthday(!isCelebrityBirthday);
+    setCopied(false);
   };
   return isLoading ? (
     <div className="designs-section flex items-center justify-center">
@@ -251,7 +267,7 @@ const YourWebsites = () => {
                         className="flex justify-center gap-4 items-center w-full py-2 Build-button design-btn"
                         onClick={() => {
                           setUrl(`http://localhost:3000/zweb${template.templateInfo.id}?userId=${userId}&templateId=${template._id}`);
-                          toggleModal()
+                          toggleModal();
                         }}
                       >
                         <span>Deploy</span>

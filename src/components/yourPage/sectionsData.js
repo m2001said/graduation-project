@@ -7,8 +7,8 @@ import nav5 from "../../assets/images/sections/nav5.webp";
 import nav10 from "../../assets/images/sections/nav10.webp";
 
 import hero2 from "../../assets/images/sections/hero2.png";
-import hero8 from "../../assets/images/sections/hero8.webp";
-import hero9 from "../../assets/images/sections/hero9.png";
+import hero15 from "../../assets/images/sections/hero15.webp";
+import hero1 from "../../assets/images/sections/hero1.webp";
 import hero12 from "../../assets/images/sections/hero12.webp";
 import hero13 from "../../assets/images/sections/hero13.png";
 import hero16 from "../../assets/images/sections/hero16.webp";
@@ -22,8 +22,8 @@ import hero10 from "../../assets/images/sections/hero10.webp";
 
 // Projects
 import project8 from "../../assets/images/sections/projects8.webp";
-import project1 from "../../assets/images/sections/projects9.png";
-import project15 from "../../assets/images/sections/projects16.webp";
+import project1 from "../../assets/images/sections/projects1.webp";
+import project15 from "../../assets/images/sections/projects15.webp";
 import project18 from "../../assets/images/sections/projects18.webp";
 import project14 from "../../assets/images/sections/projects14.webp";
 import project4 from "../../assets/images/sections/projects4.webp";
@@ -48,7 +48,7 @@ import contact4 from "../../assets/images/sections/contact4.webp";
 import feature9 from "../../assets/images/sections/feature9.png";
 import feature12 from "../../assets/images/sections/feature12.webp";
 import feature13 from "../../assets/images/sections/feature13.png";
-import feature14 from "../../assets/images/sections/feature14.webp";
+import feature15 from "../../assets/images/sections/features15.webp";
 import feature16 from "../../assets/images/sections/feature16.webp";
 import feature17 from "../../assets/images/sections/feature17.png";
 import feature18 from "../../assets/images/sections/feature18.webp";
@@ -107,8 +107,8 @@ export const navData = createData("Navbar", [
 
 export const heroData = createData("Hero", [
   { id: 2, imgUrl: hero2 },
-  { id: 15, imgUrl: hero8 }, // 15 instead 8
-  { id: 1, imgUrl: hero9 }, // 1 instead 9
+  { id: 15, imgUrl: hero15 },
+  { id: 1, imgUrl: hero1 }, 
   { id: 12, imgUrl: hero12 },
   { id: 13, imgUrl: hero13 },
   { id: 16, imgUrl: hero16 },
@@ -128,7 +128,7 @@ export const featureData = createData("Feature", [
   { id: 16, imgUrl: feature16 },
   { id: 17, imgUrl: feature17 },
   { id: 18, imgUrl: feature18 },
-  { id: 15, imgUrl: feature14 }, //  will be 15 instead of 14
+  { id: 15, imgUrl: feature15 }, 
   { id: 4, imgUrl: feature4 },
   { id: 5, imgUrl: feature5 },
   { id: 10, imgUrl: feature10 },
@@ -136,8 +136,8 @@ export const featureData = createData("Feature", [
 
 export const projectData = createData("Project", [
   { id: 8, imgUrl: project8 },
-  { id: 1, imgUrl: project1 }, // 1 instead of 9
-  { id: 15, imgUrl: project15 }, //15 instead of 16 
+  { id: 1, imgUrl: project1 }, 
+  { id: 15, imgUrl: project15 }, 
   { id: 18, imgUrl: project18 },
   { id: 14, imgUrl: project14 },
   { id: 4, imgUrl: project4 },

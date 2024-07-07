@@ -10,7 +10,7 @@ import ContactUs2 from "../components/sections/contacts/contact2/ContactUs2";
 import Footer2 from "../../src/components/sections/footers/footer2/Footer2";
 import TrialDesign from "./TrialDesign";
 const componentMapping2 = {
-  services: Services2,
+  // services: Services2,
   projects: Project2,
   testimonials: Testimonials2,
   contact: ContactUs2,

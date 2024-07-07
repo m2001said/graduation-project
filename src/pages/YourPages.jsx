@@ -36,7 +36,6 @@ const YourPages = () => {
     setCopied(true);
   };
 
-  
   useEffect(() => {
     if (status === "idle") {
       try {
@@ -51,8 +50,6 @@ const YourPages = () => {
     mani_margin.style.marginTop = "77px";
   }, [dispatch, status]);
 
-
-
   if (status === "loading") {
     return (
       <div className="designs-section flex items-center justify-center">
@@ -64,7 +61,12 @@ const YourPages = () => {
   if (status === "failed") {
     return (
       <div className="designs-section">
-        <div className="container mx-auto px-4  py-4">Error: {error}</div>
+        <div className="container mx-auto px-4  py-4">
+          <h2>Error: {error}</h2>
+          <Link to={`/${i18n.language}`} className="text-gray-400">
+            Go To Home
+          </Link>
+        </div>
       </div>
     );
   }
@@ -117,42 +119,21 @@ const YourPages = () => {
       const res = await axios.get(`https://websitebuilderbackend-production-716e.up.railway.app/page/${userId}/${templateId}`);
       console.log("res.data", res.data);
       removeEmptyArrays(res.data);
-      // const schema = {
-      //   ...res.data,
-      //   templateInfo: {
-      //     id: 1,
-      //     title: "first page",
-      //     description: "Explore your page now.",
-      //     imgUrl: "/static/media/websites.e727c8df38c2ab85f83b.jpg",
-      //     selectedSections: {
-      //       navbarIndexSelected: 4,
-      //       heroIndexSelected: 2,
-      //       featuresIndexSelected: 1,
-      //       projectsIndexSelected: 1,
-      //       servicesIndexSelected: 1,
-      //       contactIndexSelected: 1,
-      //       teamIndexSelected: 1,
-      //       testimonialsIndexSelected: 1,
-      //       statisticsIndexSelected: 1,
-      //       logosIndexSelected: 1,
-      //       itemsIndexSelected: 1,
-      //       pricingIndexSelected: 1,
-      //       ctaIndexSelected: 1,
-      //       footerIndexSelected: 3,
-      //     },
-      //   },
-      // };
-      // console.log(schema);
-
+      dispatch(ownTemplateActions.deleteSchema()); // remove data in ownpage slice
       dispatch(ownTemplateActions.insertSections({ data: res.data }));
       //dispatch(ownTemplateActions.updateSchema(schema));
-
       setIsLoading(false);
       navigate(`/edit-zweb?id=${templateId}`);
       document.documentElement.style = "";
-      for (let index = 0; index < res.data.colors?.templateColors.length; index++) {
-        document.documentElement.style.setProperty(`--website-color-${index + 1}`, res.data.colors?.templateColors[index]);
-      }
+
+      // you can remove it from here or from own page
+      // for (let i = 1; i <= 18; i++) {
+      //   for (let index = 0; index < res.data.colors?.templateColors.length; index++) {
+      //     document.documentElement.style.setProperty(`--website-${i}-color-${index + 1}`, res.data.colors?.templateColors[index]);
+      //   }
+      // }
+
+
     } catch (error) {
       console.error("Error fetching template data:", error);
     }
@@ -160,6 +141,7 @@ const YourPages = () => {
   const toggleModal = () => {
     setIsModalOpen(!isModalOpen);
     setIsCelebrityBirthday(!isCelebrityBirthday);
+    setCopied(false)
   };
   return isLoading ? (
     <div className="designs-section flex items-center justify-center">

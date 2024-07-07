@@ -47,7 +47,6 @@ export const editElement = (state, action) => {
       // edit array filed with index
       console.log(value);
       if (variable === null) {
-        //  i think need edit ****************************************************************
         if (blockName === "templateColors") {
           if (state.templateInfo.id === 0) {
             for (let index = 1; index <= 18; index++) {

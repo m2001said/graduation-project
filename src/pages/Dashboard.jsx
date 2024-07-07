@@ -19,7 +19,7 @@ const Dashboard = () => {
 
   useEffect(() => {
     if (url.pathname.includes("preview") || url.pathname.includes("build")) {
-      dispatch(fetchInitialTemplate(templateId));
+      dispatch(fetchInitialTemplate(parseInt(templateId)));
       console.log(`state in TrialDesign after fetchInitialTemplate${templateId}`, state);
     }
   }, [dispatch]);
@@ -36,6 +36,8 @@ const Dashboard = () => {
     setScreenWidth(sWidth);
   }, [screen]);
 
+
+  console.log('statttttttttttttttttttttttttttttttte' , state)
 
   return (
     <section className="dashboard-container mx-auto relative">
