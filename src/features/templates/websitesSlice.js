@@ -9,12 +9,12 @@ export const fetchWebsites = createAsyncThunk("websites/fetchWebsites", async ()
       Authorization: "Bearer " + localStorage.getItem("token"),
     },
   });
-  console.log(response.data);
+  console.log("fetchWebsites", response.data);
   return response.data.pages;
 });
 
 export const deleteWebsite = createAsyncThunk("websites/deleteWebsite", async (templateId, thunkAPI) => {
-  const url =`https://websitebuilderbackend-production-716e.up.railway.app/website/${templateId}`;
+  const url = `https://websitebuilderbackend-production-716e.up.railway.app/website/${templateId}`;
   try {
     const response = await axios.delete(url, {
       headers: {

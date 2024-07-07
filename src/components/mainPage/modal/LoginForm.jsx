@@ -27,7 +27,7 @@ const LoginForm = ({ toggleForm, toggleModal }) => {
       if (user.payload.user.role === "admin" || user.payload.user.role === "super-admin") {
         navigate(`/${language}/admin`);
       } else {
-        navigate(`/${language}/designs`);
+        navigate(`/${language}/services`);
       }
     } catch (error) {
       console.error("Login failed:", error);

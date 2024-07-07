@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Route, Routes, useNavigate, useLocation } from "react-router";
 import MainNav from "./components/mainPage/mainNavbar/MainNav";
+import Footer from "./components/mainPage/footer/Footer.jsx";
 import Dashboard from "./pages/Dashboard";
 import MainPage from "./pages/MainPage";
 import DesignsPage from "./pages/DesignsPage";
@@ -17,7 +18,9 @@ import Admin from "./pages/Admin";
 import { useRightToLeft } from "./utils/rightToLeft.js";
 import { useTranslation } from "react-i18next";
 import AdminUserPage from "./pages/AdminUserPage";
-import SessionChecker from "./components/mainPage/SessionChecker.jsx";import YourPages from "./pages/YourPages.jsx";
+import SessionChecker from "./components/mainPage/SessionChecker.jsx";
+import YourPages from "./pages/YourPages.jsx";
+import Services from "./pages/Services.jsx";
 
 const trialDesignComponents = Array.from({ length: 18 }, (_, i) => require(`./pages/TrialDesign${i + 1}`).default);
 const websites = Array.from({ length: 18 }, (_, i) => require(`./pages/TrialDesign${i + 1}`).default);
@@ -61,6 +64,14 @@ function App() {
             }
           />
           <Route
+            path={`/${language}/services`}
+            element={
+              <ProtectedRoute>
+                <Services />
+              </ProtectedRoute>
+            }
+          />
+          <Route
             path={`/${language}/user-information`}
             element={
               <ProtectedRoute>
@@ -68,10 +79,24 @@ function App() {
               </ProtectedRoute>
             }
           />
-          <Route path={`/${language}/websites`} element={<YourWebsites />} />
+          <Route
+            path={`/${language}/websites`}
+            element={
+              <ProtectedRoute>
+                <YourWebsites />
+              </ProtectedRoute>
+            }
+          />
 
           {/* edit here */}
-          <Route path={`/${language}/pages`} element={<YourPages />} />
+          <Route
+            path={`/${language}/pages`}
+            element={
+              <ProtectedRoute>
+                <YourPages />
+              </ProtectedRoute>
+            }
+          />
 
           <Route
             path={`/${language}/page-craft`}
@@ -158,6 +183,7 @@ function App() {
           <Route path="*" element={<NotFound />} />
         </Routes>
       </div>
+      <Footer></Footer>
     </div>
   );
 }

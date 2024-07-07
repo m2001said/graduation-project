@@ -24,13 +24,14 @@ const PricingPlans = () => {
       try {
         const res = await axios.get(`${API_BASE_URL}/plan`);
         setPlans(res.data);
+        console.log("getPlans", res.data);
       } catch (err) {
         console.error(err);
       }
     };
 
     getPlans();
-  }, []); 
+  }, []);
 
   const user = useSelector((state) => state.auth.user);
 
@@ -89,12 +90,11 @@ const PricingPlans = () => {
                   </li> */}
                 </ul>
                 <button className="text-white py-2 px-4 font-medium rounded-3xl free_plan_btn">Choose plan</button>
-                {user?.role === "admin" ||
-                  (user?.role === "super-admin" && (
-                    <button className="text-white py-2 px-4 font-medium rounded-3xl free_plan_btn mt-4" onClick={() => deletePlan(plan._id)}>
-                      Delete plan
-                    </button>
-                  ))}
+                {(user?.role === "admin" || user?.role === "super-admin") && (
+                  <button className="text-white py-2 px-4 font-medium rounded-3xl free_plan_btn mt-4" onClick={() => deletePlan(plan._id)}>
+                    Delete plan
+                  </button>
+                )}
               </div>
               {/* <div data-aos="fade-left" data-aos-duration="1000" className="p-8 rounded-3xl w-72 flex flex-col text-white premium_plan">
                 <div className="self-end bg-pink-500 text-xs px-4 py-1 rounded-3xl font-medium premium_plan_badge">MOST POPULAR</div>
@@ -147,7 +147,3 @@ const PricingPlans = () => {
 };
 
 export default PricingPlans;
-
-
-
-

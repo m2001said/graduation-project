@@ -2,28 +2,13 @@ import React, { useEffect, useState } from "react";
 import TopSide from "./../components/dashboard/sections/TopSide";
 import LeftSide from "../components/dashboard/sections/LeftSide";
 import RightSide from "../components/dashboard/sections/RightSide";
-import { useDispatch, useSelector } from "react-redux";
-import { fetchInitialTemplate } from "../features/templateData/templateSlice";
-import { useLocation } from "react-router";
+import { useSelector } from "react-redux";
 import { templateActions1 } from "../features/templateData/templateSlice";
 
 const Dashboard = () => {
-  const dispatch = useDispatch();
-  const url = useLocation();
-  const { pathname } = useLocation();
-  const regex = /\d+/;
-  const templateId = pathname.match(regex)[0];
   const state = useSelector((state) => state.template1);
   const screen = useSelector((state) => state.screen);
   const [screenWidth, setScreenWidth] = useState(5000);
-
-  useEffect(() => {
-    if (url.pathname.includes("preview") || url.pathname.includes("build")) {
-      dispatch(fetchInitialTemplate(parseInt(templateId)));
-      console.log(`state in TrialDesign after fetchInitialTemplate${templateId}`, state);
-    }
-  }, [dispatch]);
-
   useEffect(() => {
     let sWidth;
     if (screen === "phone") {
@@ -35,9 +20,6 @@ const Dashboard = () => {
     }
     setScreenWidth(sWidth);
   }, [screen]);
-
-
-  console.log('statttttttttttttttttttttttttttttttte' , state)
 
   return (
     <section className="dashboard-container mx-auto relative">
@@ -58,17 +40,3 @@ const Dashboard = () => {
 };
 
 export default Dashboard;
-
-// this is the solution for design5 (elsayed)
-
-//  <section className="dashboard-container mx-auto relative">
-//       {/*here */}
-//       <TopSide />
-
-//       {/*this is the solution for aos li */}
-//       <div className="w-full flex-between flex-col md:flex-row dashboard-subContainer ">
-//         <LeftSide />
-//            <RightSide />
-
-//       </div>
-//     </section>

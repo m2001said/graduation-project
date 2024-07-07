@@ -28,8 +28,6 @@ const TrialDesign = ({ componentMapping, FooterComponent, NavbarComponent, HeroC
   const searchParams = new URLSearchParams(url.search);
   const userId = useSelector((state) => state.auth.user && state.auth.user._id) || searchParams.get("userId");
   const templateId = searchParams.get("templateId") || null;
-  console.log("templateId", templateId);
-  console.log("userId", userId);
   const [templateData, setTemplateData] = useState(null);
 
   let state = useSelector((state) => {
@@ -39,9 +37,29 @@ const TrialDesign = ({ componentMapping, FooterComponent, NavbarComponent, HeroC
       return state.template1;
     }
   });
+
+  const persist = JSON.parse(localStorage.getItem("persist:root"));
+  const template1 = JSON.parse(persist.template1);
+  useEffect(() => {
+    if (template1.templateInfo.id !== template && url.pathname.includes("build")) {
+      dispatch(resetState());
+      dispatch(fetchInitialTemplate(template));
+    } else if (url.pathname.includes("preview")) {
+      dispatch(fetchInitialTemplate(template));
+    }
+  }, [dispatch]);
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   useEffect(() => {
     const fetchData = async () => {
       setIsLoading(true);
+      dispatch(resetState());
+
+
+      console.log("fetchData in trialDesign");
       try {
         const res = await axios.get(`https://websitebuilderbackend-production-716e.up.railway.app/website/${userId}/${templateId}`);
         console.log(res.data);
@@ -107,7 +125,6 @@ const TrialDesign = ({ componentMapping, FooterComponent, NavbarComponent, HeroC
     }
   }, [state, templateNumber]);
 
-  console.log(state);
   return state && state.templateInfo.id === template ? (
     <div className={className}>
       {NavbarComponent && <NavbarComponent template={state} />}
