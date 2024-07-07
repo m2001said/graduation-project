@@ -4,7 +4,7 @@ import Navbar12 from "../components/sections/navbars/navbar12/Navbar12";
 import Hero12 from "../components/sections/heros/hero12/Hero12";
 import Feature12 from "../components/sections/features/feature12/Feature12";
 import About12 from "../components/sections/abouts/about12/About12";
-import Teams12 from "../components/sections/teams/teams12/Teams";
+import Teams12 from "../components/sections/teams/teams12/Teams12";
 import Footer12 from "../components/sections/footers/footer12/Footer12";
 import Contact12 from "../components/sections/contacts/contact12/Contact12";
 import Testimonials12 from "../components/sections/testimonials/testimonials12/Testimonials12";

@@ -1,10 +1,10 @@
 {
   "templateInfo": {
     "id": 13,
-    "title": "",
-    "description": "",
-    "imgUrl": ""
-  },
+  "title": "عرض الهندسة المعمارية",
+  "description": "محفظة مبتكرة تبرز الخبرة المعمارية والمشاريع الإبداعية والمتنوعة.",
+  "imgUrl": "/static/media/design13.bfb3a28c3e782dc3a64e.jpg"
+},
   "navbar": {
     "imgUrl": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707951170/lighting_o2dsku.png",
     "title": "سوليي",

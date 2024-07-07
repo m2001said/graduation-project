@@ -1,10 +1,10 @@
 {
   "templateInfo": {
     "id": 15,
-    "title": "",
-    "description": "",
-    "imgUrl": ""
-  },
+  "title": "محفظة المطور",
+  "description": "استكشاف تطوير التطبيقات الابتكاري مع محفظة مطور البرمجيات لدينا.",
+  "imgUrl": "https://res.cloudinary.com/dvp3nyulf/image/upload/v1709147870/under-work.jpg"
+},
   "navbar": {
     "imgUrl": "https://res.cloudinary.com/duc04fwdb/image/upload/v1706799023/jammal_photos/wz8vakvjdjio0wcqhnfe.svg",
     "links": [

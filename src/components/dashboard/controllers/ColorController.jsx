@@ -1,9 +1,6 @@
 import React, { useState } from "react";
-import { useSelector, useDispatch } from "react-redux";
+import { useDispatch } from "react-redux";
 import ColorPicker from "./ColorPicker";
-import chroma from "chroma-js";
-import db from "../../../assets/images/picker.jpg";
-
 const ColorController = ({ targetTemplate, updateAll }) => {
   const [open, setOpen] = useState(false);
 
@@ -11,55 +8,22 @@ const ColorController = ({ targetTemplate, updateAll }) => {
   const colors = targetTemplate.colors;
   const templateColors = Object.keys(colors)[0];
   const dispatch = useDispatch();
-  const [webColors, setWebColors] = useState(colors.templateColors);
+  // const [webColors, setWebColors] = useState(colors.templateColors);
 
   const handleChange = (e, index) => {
-    const styleAttributeValue = document.documentElement.getAttribute("style");
-    const styleDeclarations = styleAttributeValue.split(";");
-    styleDeclarations.pop();
-    let colors = [];
-    styleDeclarations.forEach((declaration) => {
-      const [property] = declaration.trim().split(":");
-      colors.push(property);
-    });
-    const copiedColors = webColors.slice();
-    copiedColors[index] = e.target.value;
-    setWebColors(copiedColors);
-    document.documentElement.style.setProperty(colors[index], e.target.value);
-    dispatch(updateAll.updateTemplate({ section: "colors", variable: null, value: e.target.value, i: index, blockName: templateColors }));
-    // document.documentElement.style.setProperty(`--website-${targetTemplate.templateInfo.id}-color${index + 1}`, e.target.value);
-  };
-
-  const generatePlate = (e) => {
-    const styleAttributeValue = document.documentElement.getAttribute("style");
-    const styleDeclarations = styleAttributeValue.split(";");
-    styleDeclarations.pop();
-    let colors = [];
-    styleDeclarations.forEach((declaration) => {
-      const [property] = declaration.trim().split(":");
-      colors.push(property);
-    });
-
-    // const colorScale = chroma.scale([e.target.value, "white"]).mode("lab").colors(colors.length);
-    const inputHSL = chroma(e.target.value).hsl();
-    const hue = inputHSL[0];
-    const saturation = inputHSL[1];
-    const lightness = inputHSL[2];
-
-    // Generate related colors with harmonious relationships
-    const colorScale = [];
-    for (let i = 0; i < colors.length; i++) {
-      const newHue = (hue + i * 60) % 360; // Adjusting hue in steps of 60 degrees
-      const newColor = chroma.hsl(newHue, saturation, lightness).hex();
-      colorScale.push(newColor);
-    }
-    setWebColors(colorScale);
-
-    colorScale.forEach((color, i) => {
-      document.documentElement.style.setProperty(colors[i], color);
-      dispatch(updateAll.updateTemplate({ section: "colors", variable: null, value: color, i: i, blockName: templateColors }));
-    });
+    // const styleAttributeValue = document.documentElement.getAttribute("style");
+    // const styleDeclarations = styleAttributeValue.split(";");
+    // styleDeclarations.pop();
+    // let colors = [];
+    // styleDeclarations.forEach((declaration) => {
+    //   const [property] = declaration.trim().split(":");
+    //   colors.push(property);
+    // });
+    // const copiedColors = webColors.slice();
+    // copiedColors[index] = e.target.value;
+    // setWebColors(copiedColors);
     // document.documentElement.style.setProperty(colors[index], e.target.value);
+    dispatch(updateAll.updateTemplate({ section: "colors", variable: null, value: e.target.value, i: index, blockName: templateColors }));
     // document.documentElement.style.setProperty(`--website-${targetTemplate.templateInfo.id}-color${index + 1}`, e.target.value);
   };
 
@@ -80,7 +44,7 @@ const ColorController = ({ targetTemplate, updateAll }) => {
   const [selectedColor, setSelectedColor] = useState(0);
   const handleColorChange = (paletteIndex) => {
     setSelectedColor(paletteIndex);
-    console.log(updateAll)
+    console.log(updateAll);
     dispatch(updateAll.changePalletes(palettes[paletteIndex]));
   };
   return (
@@ -111,26 +75,24 @@ const ColorController = ({ targetTemplate, updateAll }) => {
               </p>
               <div className="w-full flex gap-1 flex-wrap justify-center">
                 {palettes.map((palette, paletteIndex) => (
-                  <>
-                    <div
-                      key={paletteIndex}
-                      className={`flex flex-col`}
-                      style={{ position: "relative", border: selectedColor === paletteIndex ? "solid 3px #ce79cc" : "solid 2px transparent" }}
-                    >
-                      {palette.map((color, colorIndex) => (
-                        <div
-                          key={colorIndex}
-                          style={{
-                            width: "70px",
-                            height: "15px",
-                            backgroundColor: color,
-                            cursor: "pointer",
-                          }}
-                          onClick={() => handleColorChange(paletteIndex)}
-                        />
-                      ))}
-                    </div>
-                  </>
+                  <div
+                    key={paletteIndex}
+                    className={`flex flex-col`}
+                    style={{ position: "relative", border: selectedColor === paletteIndex ? "solid 3px #ce79cc" : "solid 2px transparent" }}
+                  >
+                    {palette.map((color, colorIndex) => (
+                      <div
+                        key={color}
+                        style={{
+                          width: "70px",
+                          height: "15px",
+                          backgroundColor: color,
+                          cursor: "pointer",
+                        }}
+                        onClick={() => handleColorChange(paletteIndex)}
+                      />
+                    ))}
+                  </div>
                 ))}
               </div>
             </div>

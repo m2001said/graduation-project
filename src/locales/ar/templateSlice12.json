@@ -1,10 +1,10 @@
 {
   "templateInfo": {
     "id": 12,
-    "title": "",
-    "description": "",
-    "imgUrl": ""
-  },
+  "title": "إلكترونيات نايك",
+  "description": "إلكترونيات نايك المبتكرة لتجربة تسوق أنيقة وسلسة.",
+  "imgUrl": "https://res.cloudinary.com/dvp3nyulf/image/upload/v1709147870/under-work.jpg"
+},
   "navbar": {
     "imgUrl": "https://res.cloudinary.com/duc04fwdb/image/upload/v1719850710/jammal_photos/vh9x6ll6nixpsybvxe5q.png",
     "icon": "https://res.cloudinary.com/duc04fwdb/image/upload/v1719850811/jammal_photos/brginprtncegbiyr3wqf.png",
