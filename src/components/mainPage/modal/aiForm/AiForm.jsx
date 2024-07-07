@@ -4,7 +4,7 @@ import "./aiForm.css";
 import { useNavigate } from "react-router";
 import { useTranslation } from "react-i18next";
 import { useDispatch } from "react-redux";
-import Loader from "../../../Loader/Loader";
+import BigLoader from "../../../bigLoader/BigLoader";
 import { updateTemplate, templateActions1 } from "../../../../features/templateData/templateSlice";
 
 const AiForm = ({ index }) => {
@@ -27,10 +27,10 @@ const AiForm = ({ index }) => {
         user_text: overview,
         TemplateId: index,
       });
-      console.log(AiResponse.data);
+      console.log("AiResponse.data", AiResponse.data);
       dispatch(templateActions1.updateSchema(AiResponse.data));
 
-      const backResponse = await axios.post("https://websitebuilderbackend-production-716e.up.railway.app/page", AiResponse.data, {
+      const backResponse = await axios.post("https://websitebuilderbackend-production-716e.up.railway.app/website", AiResponse.data, {
         headers: {
           "Content-Type": "application/json",
           Authorization: `Bearer ${localStorage.getItem("token")}`,
@@ -38,8 +38,8 @@ const AiForm = ({ index }) => {
       });
 
       const templateId = backResponse.data.savedPage["_id"];
-      console.log(backResponse.data);
-      navigate(`/${i18n.language}/edit-zweb${index}?id=${templateId}`);
+      console.log("backResponse.data", backResponse.data);
+      navigate(`/edit-zweb${index}?id=${templateId}`);
 
       // window.location.reload();
     } catch (error) {
@@ -51,7 +51,7 @@ const AiForm = ({ index }) => {
   };
 
   return loading ? (
-    <Loader />
+    <BigLoader />
   ) : (
     <>
       <h3 className="ai-form-title">{t("USER.CREATE_WEBSITE")} </h3>

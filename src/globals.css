@@ -241,8 +241,8 @@ ul {
   border-bottom: 4px solid var(--primary-color2);
   border-right: 4px solid var(--primary-color2);
 }
-.update-controller h3{
-  color: white
+.update-controller h3 {
+  color: white;
 }
 .controller-name {
   @apply body-bold  cursor-pointer capitalize;
@@ -266,8 +266,8 @@ ul {
   padding-left: 0.5rem;
   padding-right: 4px;
 }
-.subController label{
-  color: #1A2345;
+.subController label {
+  color: #1a2345;
 }
 .subController:not(:last-child) {
   border-bottom: 2px solid #777777;
@@ -305,13 +305,13 @@ ul {
 .controller-btn-add.inner {
   margin-left: 0.25rem;
   margin-top: 0.25rem;
-  color: white
+  color: white;
 }
 .input-controller {
   @apply text-black  p-2 h-auto outline-none w-full custom-scrollbar;
   @apply text-black  p-2 h-auto outline-none w-full custom-scrollbar;
   border-color: transparent;
-  background: #F2F2F2;
+  background: #f2f2f2;
 }
 .dashboard-color-picker {
   margin-right: 4px;

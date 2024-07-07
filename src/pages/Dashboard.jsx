@@ -9,7 +9,6 @@ const Dashboard = () => {
   const state = useSelector((state) => state.template1);
   const screen = useSelector((state) => state.screen);
   const [screenWidth, setScreenWidth] = useState(5000);
-
   useEffect(() => {
     let sWidth;
     if (screen === "phone") {

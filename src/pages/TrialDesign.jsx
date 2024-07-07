@@ -8,7 +8,7 @@ import { fetchInitialTemplate, resetState } from "../features/templateData/templ
 const TrialDesign = ({ componentMapping, FooterComponent, NavbarComponent, HeroComponent, template, className }) => {
   const dispatch = useDispatch();
   const url = useLocation();
-  const templateNumber = parseInt(url.pathname.match(/\d+/)) 
+  const templateNumber = parseInt(url.pathname.match(/\d+/));
   const searchParams = new URLSearchParams(url.search);
   const userId = useSelector((state) => state.auth.user && state.auth.user._id) || searchParams.get("userId");
   const templateId = searchParams.get("templateId") || null;
@@ -33,17 +33,13 @@ const TrialDesign = ({ componentMapping, FooterComponent, NavbarComponent, HeroC
     }
   }, [dispatch]);
 
-
-  //       // this will return to intial state if you do refresh
-
   useEffect(() => {
     window.scrollTo(0, 0);
-  }, []); 
-
+  }, []);
 
   useEffect(() => {
     const fetchData = async () => {
-      console.log("fetchData in trialDesign");
+      dispatch(resetState());
       try {
         const res = await axios.get(`https://websitebuilderbackend-production-716e.up.railway.app/website/${userId}/${templateId}`);
         setTemplateData(res.data);
@@ -78,7 +74,6 @@ const TrialDesign = ({ componentMapping, FooterComponent, NavbarComponent, HeroC
   }
   const reorderedComponents = state && Object.keys(state);
 
-  console.log(state)
   return state && state.templateInfo.id === template ? (
     <div className={className}>
       {NavbarComponent && <NavbarComponent template={state} />}

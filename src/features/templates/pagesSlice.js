@@ -3,18 +3,18 @@ import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 import axios from "axios";
 
 export const fetchPages = createAsyncThunk("pages/fetchPages", async () => {
-  const url ="https://websitebuilderbackend-production-716e.up.railway.app/page/pages"
+  const url = "https://websitebuilderbackend-production-716e.up.railway.app/page/pages";
   const response = await axios.get(url, {
     headers: {
       Authorization: "Bearer " + localStorage.getItem("token"),
     },
   });
-  console.log(response.data);
+  console.log("fetchPages", response.data);
   return response.data.pages;
 });
 
 export const deletePage = createAsyncThunk("pages/deletePage", async (templateId, thunkAPI) => {
-  const url = `https://websitebuilderbackend-production-716e.up.railway.app/page/${templateId}`
+  const url = `https://websitebuilderbackend-production-716e.up.railway.app/page/${templateId}`;
   try {
     const response = await axios.delete(url, {
       headers: {
