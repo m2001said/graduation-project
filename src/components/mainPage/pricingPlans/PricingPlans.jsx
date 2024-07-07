@@ -24,13 +24,14 @@ const PricingPlans = () => {
       try {
         const res = await axios.get(`${API_BASE_URL}/plan`);
         setPlans(res.data);
+        console.log("getPlans", res.data);
       } catch (err) {
         console.error(err);
       }
     };
 
     getPlans();
-  }, []); 
+  }, []);
 
   const user = useSelector((state) => state.auth.user);
 
@@ -147,7 +148,3 @@ const PricingPlans = () => {
 };
 
 export default PricingPlans;
-
-
-
-

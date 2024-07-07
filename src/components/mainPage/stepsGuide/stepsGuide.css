@@ -13,6 +13,9 @@
   border: dashed 1px #430c7b40;
   z-index: 1;
 }
+.main-steps.designs-section .container::after {
+  border: dashed 1px #ffffff40;
+}
 
 .main-steps .step-card {
   position: relative;
@@ -81,7 +84,6 @@
 }
 
 @media (max-width: 991px) {
-
   .step-card,
   .step-card:nth-child(odd) {
     flex-direction: column !important;
@@ -95,7 +97,7 @@
   }
 
   .step-img img {
-    width: 40%;
+    width: 90%;
     margin: auto;
   }
 
