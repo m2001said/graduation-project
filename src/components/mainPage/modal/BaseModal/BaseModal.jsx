@@ -23,7 +23,7 @@ const BaseModal = ({ poster, children, toggleModal }) => {
     <div className="modal-overlay">
       <div ref={modalRef} className={`Basemodal flex justify-between gap-2 items-center`}>
         <div className="modal-head flex px-4 py-4 justify-between">
-          <div className="main-logo flex items-center">
+          <div dir="ltr" className="main-logo flex items-center">
             <img src={logo} alt="logo" />
             <span>WEB</span>
           </div>

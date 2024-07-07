@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Route, Routes, useNavigate, useLocation } from "react-router";
 import MainNav from "./components/mainPage/mainNavbar/MainNav";
+import Footer from "./components/mainPage/footer/Footer.jsx";
 import Dashboard from "./pages/Dashboard";
 import MainPage from "./pages/MainPage";
 import DesignsPage from "./pages/DesignsPage";
@@ -182,6 +183,7 @@ function App() {
           <Route path="*" element={<NotFound />} />
         </Routes>
       </div>
+      <Footer></Footer>
     </div>
   );
 }

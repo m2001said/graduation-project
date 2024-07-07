@@ -6,7 +6,7 @@ import "./footer.css";
 import { useTranslation } from "react-i18next";
 import logo from "../../../assets/images/mainPageAssets/logo.svg";
 
-const DemoVideo = () => {
+const Footer = () => {
   const { t, i18n } = useTranslation();
   useEffect(() => {
     AOS.init({
@@ -17,7 +17,7 @@ const DemoVideo = () => {
   }, []);
   return (
     <>
-      <div className="demo-section bg-gradient-to-r from-[#481b91] to-[#240d55] flex items-center justify-center flex-col gap-5">
+      <div className="footer-section flex items-center justify-center flex-col gap-5">
         <Link to={`/${i18n.language}`}>
           <div dir="ltr" className="main-logo flex items-center">
             <img src={logo} alt="logo" />
@@ -31,4 +31,4 @@ const DemoVideo = () => {
   );
 };
 
-export default DemoVideo;
+export default Footer;

@@ -1,16 +1,31 @@
 import React, { useState, useEffect } from "react";
 import "./big-loader.css";
+import { useTranslation } from "react-i18next";
 
 const BigLoader = () => {
-  const sentences = [
-    "Generating AI content based on your input.",
-    "Creating and selecting the best images.",
-    "Choosing the most relevant text and images.",
-    "Customizing images and layout.",
-    "Optimizing text and images for best performance.",
-    "Finalizing the setup.",
-    "Reviewing and optimizing your website.",
-  ];
+  const { i18n } = useTranslation();
+  const language = i18n.language;
+
+  const sentences =
+    language === "ar"
+      ? [
+          "إنشاء محتوى الذكاء الاصطناعي بناءً على مدخلاتك.",
+          "إنشاء واختيار أفضل الصور.",
+          "اختيار النصوص والصور الأكثر صلة.",
+          "تخصيص الصور والتخطيط.",
+          "تحسين النصوص والصور للحصول على أفضل أداء.",
+          "إتمام الإعداد.",
+          "مراجعة وتحسين موقعك على الويب.",
+        ]
+      : [
+          "Generating AI content based on your input.",
+          "Creating and selecting the best images.",
+          "Choosing the most relevant text and images.",
+          "Customizing images and layout.",
+          "Optimizing text and images for best performance.",
+          "Finalizing the setup.",
+          "Reviewing and optimizing your website.",
+        ];
 
   const [status, setStatus] = useState(Array(sentences.length).fill("loading"));
 

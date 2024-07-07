@@ -4,7 +4,7 @@
   top: 0;
   background: var(--color-1);
   width: 100%;
-  z-index: 12;
+  z-index: 100;
 }
 
 .main-logo {
