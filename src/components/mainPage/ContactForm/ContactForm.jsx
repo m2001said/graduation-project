@@ -32,7 +32,7 @@ const ContactForm = () => {
     setIsLoading(true);
 
     try {
-      const response = await axios.post("https://websitebuilderbackend-production-716e.up.railway.app/message", {
+      const response = await axios.post(`${process.env.REACT_APP_BACKEND_URL}/message`, {
         name,
         email,
         message,

@@ -116,7 +116,7 @@ const YourPages = () => {
   const fetchData = async (templateId) => {
     try {
       setIsLoading(true);
-      const res = await axios.get(`https://websitebuilderbackend-production-716e.up.railway.app/page/${userId}/${templateId}`);
+      const res = await axios.get(`${process.env.REACT_APP_BACKEND_URL}/page/${userId}/${templateId}`);
       console.log("res.data", res.data);
       removeEmptyArrays(res.data);
       dispatch(ownTemplateActions.deleteSchema()); // remove data in ownpage slice

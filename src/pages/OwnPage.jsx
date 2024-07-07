@@ -93,7 +93,7 @@ const OwnPage = () => {
     const fetchData = async (tempId) => {
       setIsLoading(true);
       try {
-        const res = await axios.get(`https://websitebuilderbackend-production-716e.up.railway.app/page/${userId}/${tempId}`);
+        const res = await axios.get(`${process.env.REACT_APP_BACKEND_URL}/page/${userId}/${tempId}`);
         setTemplateData(res.data);
         removeEmptyArrays(res.data);
         dispatch(ownTemplateActions.deleteSchema()); // remove data in ownpage slice
@@ -142,7 +142,7 @@ const OwnPage = () => {
     const fetchData = async (templateId) => {
       try {
         setIsLoading(true);
-        const res = await axios.get(`https://websitebuilderbackend-production-716e.up.railway.app/page/${userId}/${templateId}`);
+        const res = await axios.get(`${process.env.REACT_APP_BACKEND_URL}/page/${userId}/${templateId}`);
         removeEmptyArrays(res.data);
         dispatch(ownTemplateActions.deleteSchema()); // remove data in ownpage slice
         dispatch(ownTemplateActions.insertSections({ data: res.data }));
@@ -155,7 +155,6 @@ const OwnPage = () => {
       fetchData(id);
     }
   }, [dispatch, userId, id]);
-
 
   const reorderedComponents = ownTemplate && Object.keys(ownTemplate).length > 0 && Object.keys(ownTemplate);
   const renderComponent = (type, index) => {

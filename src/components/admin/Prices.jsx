@@ -1,6 +1,5 @@
 import axios from "axios";
 import React, { useState } from "react";
-const API_BASE_URL = "https://websitebuilderbackend-production-716e.up.railway.app";
 const token = localStorage.getItem("token");
 
 function Prices() {
@@ -10,7 +9,7 @@ function Prices() {
 
   const handleAddPlan = async (name, price, description) => {
     const data = await axios.post(
-      `${API_BASE_URL}/plan/new`,
+      `${process.env.REACT_APP_BACKEND_URL}/plan/new`,
       {
         name: "free",
         price: price,

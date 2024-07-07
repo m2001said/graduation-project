@@ -10,7 +10,6 @@ import { getUserPages } from "./useGetUserPages";
 import i18next from "i18next";
 import { deletePage, deletePages } from "./useDeletePages";
 
-const API_BASE_URL = "https://websitebuilderbackend-production-716e.up.railway.app";
 const token = localStorage.getItem("token") || undefined;
 
 const AdminUsers = () => {
@@ -26,7 +25,7 @@ const AdminUsers = () => {
       try {
         setLoading(true);
         setError(false);
-        const data = await axios.get(`${API_BASE_URL}/user/admin-users?role=user&limit=10&offset=27`, {
+        const data = await axios.get(`${process.env.REACT_APP_BACKEND_URL}/user/admin-users?role=user&limit=10&offset=27`, {
           headers: {
             Authorization: "Bearer " + token,
           },
@@ -42,7 +41,7 @@ const AdminUsers = () => {
       try {
         setLoading(true);
         setError(false);
-        const data = await axios.get(`${API_BASE_URL}/user/admin-users?sort=premium`, {
+        const data = await axios.get(`${process.env.REACT_APP_BACKEND_URL}/user/admin-users?sort=premium`, {
           headers: {
             Authorization: "Bearer " + token,
           },

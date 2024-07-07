@@ -58,10 +58,9 @@ const TrialDesign = ({ componentMapping, FooterComponent, NavbarComponent, HeroC
       setIsLoading(true);
       dispatch(resetState());
 
-
       console.log("fetchData in trialDesign");
       try {
-        const res = await axios.get(`https://websitebuilderbackend-production-716e.up.railway.app/website/${userId}/${templateId}`);
+        const res = await axios.get(`${process.env.REACT_APP_BACKEND_URL}/website/${userId}/${templateId}`);
         console.log(res.data);
         removeEmptyArrays(res.data);
         console.log(res.data);
@@ -95,8 +94,6 @@ const TrialDesign = ({ componentMapping, FooterComponent, NavbarComponent, HeroC
     // }
   }, []);
 
-
-
   useEffect(() => {
     if (template1?.templateInfo.id !== template && url.pathname.includes("build")) {
       dispatch(resetState());
@@ -111,7 +108,6 @@ const TrialDesign = ({ componentMapping, FooterComponent, NavbarComponent, HeroC
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
-
 
   if (url.pathname.includes("zweb") && !url.pathname.includes("edit-zweb")) {
     state = templateData;

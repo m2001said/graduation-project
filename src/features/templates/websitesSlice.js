@@ -3,7 +3,7 @@ import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 import axios from "axios";
 
 export const fetchWebsites = createAsyncThunk("websites/fetchWebsites", async () => {
-  const url = "https://websitebuilderbackend-production-716e.up.railway.app/website/websites";
+  const url = `${process.env.REACT_APP_BACKEND_URL}/website/websites`;
   const response = await axios.get(url, {
     headers: {
       Authorization: "Bearer " + localStorage.getItem("token"),
@@ -14,7 +14,7 @@ export const fetchWebsites = createAsyncThunk("websites/fetchWebsites", async ()
 });
 
 export const deleteWebsite = createAsyncThunk("websites/deleteWebsite", async (templateId, thunkAPI) => {
-  const url = `https://websitebuilderbackend-production-716e.up.railway.app/website/${templateId}`;
+  const url = `${process.env.REACT_APP_BACKEND_URL}/website/${templateId}`;
   try {
     const response = await axios.delete(url, {
       headers: {

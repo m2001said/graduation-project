@@ -48,8 +48,6 @@ const MainNav = ({ toggleModal }) => {
     setIsMenuOpen(!isMenuOpen);
   };
 
-  console.log(authState.status);
-
   return (
     <>
       <div className="main-nav" id="main-nav">
