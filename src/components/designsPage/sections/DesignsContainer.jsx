@@ -13,6 +13,9 @@ import design8 from "../../../assets/images/designs/design8.jpg";
 import design9 from "../../../assets/images/designs/design9.jpg";
 import design10 from "../../../assets/images/designs/design10.jpg";
 import design11 from "../../../assets/images/designs/design11.jpg";
+import design12 from "../../../assets/images/designs/design12.webp";
+import design15 from "../../../assets/images/designs/design15.webp";
+import design17 from "../../../assets/images/designs/design17.webp";
 import design13 from "../../../assets/images/designs/design13.jpg";
 import design14 from "../../../assets/images/designs/design14.jpg";
 import design16 from "../../../assets/images/designs/design16.jpg";
@@ -80,7 +83,7 @@ const DesignsContainer = () => {
     {
       title: t("DESIGNS.TITLE_14"),
       description: t("DESIGNS.DESCRIPTION_14"),
-      imageUrl: "https://res.cloudinary.com/dvp3nyulf/image/upload/v1709147870/under-work.jpg",
+      imageUrl: design12,
     },
     {
       title: t("DESIGNS.TITLE_15"),
@@ -95,7 +98,7 @@ const DesignsContainer = () => {
     {
       title: t("DESIGNS.TITLE_17"),
       description: t("DESIGNS.DESCRIPTION_17"),
-      imageUrl: "https://res.cloudinary.com/dvp3nyulf/image/upload/v1709147870/under-work.jpg",
+      imageUrl: design15,
     },
     {
       title: t("DESIGNS.TITLE_18"),
@@ -105,7 +108,7 @@ const DesignsContainer = () => {
     {
       title: t("DESIGNS.TITLE_19"),
       description: t("DESIGNS.DESCRIPTION_19"),
-      imageUrl: "https://res.cloudinary.com/dvp3nyulf/image/upload/v1709147870/under-work.jpg",
+      imageUrl: design17,
     },
     {
       title: t("DESIGNS.TITLE_20"),
