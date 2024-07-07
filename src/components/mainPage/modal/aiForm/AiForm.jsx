@@ -5,7 +5,7 @@ import { useNavigate } from "react-router";
 import { useTranslation } from "react-i18next";
 import { useDispatch } from "react-redux";
 import BigLoader from "../../../bigLoader/BigLoader";
-import { updateTemplate, templateActions1 } from "../../../../features/templateData/templateSlice";
+import { templateActions1 } from "../../../../features/templateData/templateSlice";
 
 const AiForm = ({ index }) => {
   const dispatch = useDispatch();
@@ -20,7 +20,6 @@ const AiForm = ({ index }) => {
   };
 
   const openDesign = async () => {
-    console.log(overview);
     setLoading(true);
     try {
       const AiResponse = await axios.post("https://web-production-8c67.up.railway.app/generate-schema", {

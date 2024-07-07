@@ -7,6 +7,7 @@ import BaseModal from "../components/mainPage/modal/BaseModal/BaseModal.jsx";
 import SigninLoginToggle from "../components/mainPage/modal/SigninLoginToggle.jsx";
 import PricingPlans from "../components/mainPage/pricingPlans/PricingPlans.jsx";
 import ContactForm from "../components/mainPage/ContactForm/ContactForm.jsx";
+import Footer from "../components/mainPage/footer/Footer.jsx";
 
 const MainPage = ({ toggleModal, isModalOpen }) => {
   return (
@@ -21,6 +22,7 @@ const MainPage = ({ toggleModal, isModalOpen }) => {
       <DemoVideo></DemoVideo>
       <ContactForm></ContactForm>
       <PricingPlans></PricingPlans>
+      <Footer></Footer>
     </>
   );
 };

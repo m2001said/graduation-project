@@ -6,6 +6,7 @@ import "aos/dist/aos.css";
 import axios from "axios";
 import LoadingButton from "../../loadingButton/LoadingButton";
 import { useTranslation } from "react-i18next";
+import { useLocation } from "react-router-dom";
 
 const ContactForm = () => {
   const { t } = useTranslation();
@@ -15,6 +16,16 @@ const ContactForm = () => {
   const [isLoading, setIsLoading] = useState(false);
   const [responseMessage, setResponseMessage] = useState("");
   const [error, setError] = useState(null);
+
+  const location = useLocation();
+  useEffect(() => {
+    if (location.hash) {
+      const element = document.getElementById(location.hash.substring(1));
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth" });
+      }
+    }
+  }, [location]);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -57,7 +68,7 @@ const ContactForm = () => {
           {t("CONTACT.TTIEL")}
         </h1>
 
-        <div className="Contact_form">
+        <div className="Contact_form" id="contact-us">
           {responseMessage && <div className="text-green-600 text-center mb-4">{responseMessage}</div>}
           {error && <div className="text-red-600 text-center mb-4">{error}</div>}
 
