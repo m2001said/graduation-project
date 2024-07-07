@@ -22,14 +22,14 @@ const AiForm = ({ index }) => {
   const openDesign = async () => {
     setLoading(true);
     try {
-      const AiResponse = await axios.post("https://web-production-8c67.up.railway.app/generate-schema", {
+      const AiResponse = await axios.post(`${process.env.REACT_APP_AI_URL}/generate-schema`, {
         user_text: overview,
         TemplateId: index,
       });
       console.log("AiResponse.data", AiResponse.data);
       dispatch(templateActions1.updateSchema(AiResponse.data));
 
-      const backResponse = await axios.post("https://websitebuilderbackend-production-716e.up.railway.app/website", AiResponse.data, {
+      const backResponse = await axios.post(`${process.env.REACT_APP_BACKEND_URL}/website`, AiResponse.data, {
         headers: {
           "Content-Type": "application/json",
           Authorization: `Bearer ${localStorage.getItem("token")}`,

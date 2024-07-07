@@ -5,7 +5,6 @@ import "aos/dist/aos.css";
 import axios from "axios";
 import { useSelector } from "react-redux";
 
-const API_BASE_URL = "https://websitebuilderbackend-production-716e.up.railway.app";
 const token = localStorage.getItem("token");
 
 const PricingPlans = () => {
@@ -22,7 +21,7 @@ const PricingPlans = () => {
   useEffect(() => {
     const getPlans = async () => {
       try {
-        const res = await axios.get(`${API_BASE_URL}/plan`);
+        const res = await axios.get(`${process.env.REACT_APP_BACKEND_URL}/plan`);
         setPlans(res.data);
         console.log("getPlans", res.data);
       } catch (err) {
@@ -37,7 +36,7 @@ const PricingPlans = () => {
 
   const deletePlan = async (planId) => {
     try {
-      await axios.delete(`${API_BASE_URL}/plan/${planId}`, {
+      await axios.delete(`${process.env.REACT_APP_BACKEND_URL}/plan/${planId}`, {
         headers: {
           Authorization: "Bearer " + token,
         },

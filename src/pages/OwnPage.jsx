@@ -98,14 +98,14 @@ const OwnPage = () => {
 
   useEffect(() => {
     window.scrollTo(0, 0);
-  }, []); 
+  }, []);
 
   useEffect(() => {
     // excute in deployment case
     const fetchData = async () => {
       setIsLoading(true);
       try {
-        const res = await axios.get(`https://websitebuilderbackend-production-716e.up.railway.app/page/${userId}/${templateId}`);
+        const res = await axios.get(`${process.env.REACT_APP_BACKEND_URL}/page/${userId}/${templateId}`);
         // until edit in back end
         // const schema = {
         //   ...res.data,

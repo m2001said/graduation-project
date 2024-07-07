@@ -36,7 +36,6 @@ const YourPages = () => {
     setCopied(true);
   };
 
-  
   useEffect(() => {
     if (status === "idle") {
       try {
@@ -50,8 +49,6 @@ const YourPages = () => {
     const mani_margin = document.getElementById("template-container");
     mani_margin.style.marginTop = "77px";
   }, [dispatch, status]);
-
-
 
   if (status === "loading") {
     return (
@@ -114,7 +111,7 @@ const YourPages = () => {
   const fetchData = async (templateId) => {
     try {
       setIsLoading(true);
-      const res = await axios.get(`https://websitebuilderbackend-production-716e.up.railway.app/page/${userId}/${templateId}`);
+      const res = await axios.get(`${process.env.REACT_APP_BACKEND_URL}/page/${userId}/${templateId}`);
       console.log("res.data", res.data);
       removeEmptyArrays(res.data);
       // const schema = {

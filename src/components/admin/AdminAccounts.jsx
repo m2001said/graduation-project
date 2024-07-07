@@ -5,7 +5,6 @@ import { handleAddAdmin } from "./handleAddAdmin";
 import Loader from "../Loader/Loader";
 import deleteAdmin from "./useDeleteAdmin";
 
-const API_BASE_URL = "https://websitebuilderbackend-production-716e.up.railway.app";
 const token = localStorage.getItem("token") || undefined;
 
 const AdminAccounts = () => {
@@ -22,7 +21,7 @@ const AdminAccounts = () => {
       try {
         setLoading(true);
         setError(false);
-        const data = await axios.get(`${API_BASE_URL}/user/admin-users?role=admin`, {
+        const data = await axios.get(`${process.env.AI_URL}/user/admin-users?role=admin`, {
           headers: {
             Authorization: "Bearer " + token,
           },
@@ -35,7 +34,7 @@ const AdminAccounts = () => {
         setLoading(false);
       }
     };
-    
+
     fetchAdmins();
   }, []);
 

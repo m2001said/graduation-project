@@ -44,19 +44,15 @@ const TopSide = ({ schema }) => {
   };
 
   const handleSubmit = async () => {
-    const regex = /\d+/
+    const regex = /\d+/;
     const isUpdating = pathname.includes("edit");
     const inOwnPage = pathname.includes("own-page") || !regex.test(pathname);
-    console.log(pathname)
+    console.log(pathname);
     let url;
     if (inOwnPage) {
-      url = isUpdating
-        ? `https://websitebuilderbackend-production-716e.up.railway.app/page/update/${id}`
-        : "https://websitebuilderbackend-production-716e.up.railway.app/page";
+      url = isUpdating ? `${process.env.REACT_APP_BACKEND_URL}/page/update/${id}` : `${process.env.REACT_APP_BACKEND_URL}/page`;
     } else {
-      url = isUpdating
-        ? `https://websitebuilderbackend-production-716e.up.railway.app/website/update/${id}`
-        : "https://websitebuilderbackend-production-716e.up.railway.app/website";
+      url = isUpdating ? `${process.env.REACT_APP_BACKEND_URL}/website/update/${id}` : `${process.env.REACT_APP_BACKEND_URL}/website`;
     }
     const text = inOwnPage ? "page" : "website";
     console.log(url);

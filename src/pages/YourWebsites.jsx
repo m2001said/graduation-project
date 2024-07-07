@@ -94,7 +94,7 @@ const YourWebsites = () => {
   const fetchData = async (templateNum, templateId) => {
     try {
       setIsLoading(true);
-      const res = await axios.get(`https://websitebuilderbackend-production-716e.up.railway.app/website/${userId}/${templateId}`);
+      const res = await axios.get(`${process.env.REACT_APP_BACKEND_URL}/website/${userId}/${templateId}`);
       console.log("res.data", res.data);
       dispatch(templateActions1.updateSchema(res.data));
       setIsLoading(false);

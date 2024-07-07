@@ -41,7 +41,7 @@ const TrialDesign = ({ componentMapping, FooterComponent, NavbarComponent, HeroC
     const fetchData = async () => {
       dispatch(resetState());
       try {
-        const res = await axios.get(`https://websitebuilderbackend-production-716e.up.railway.app/website/${userId}/${templateId}`);
+        const res = await axios.get(`${process.env.REACT_APP_BACKEND_URL}/website/${userId}/${templateId}`);
         setTemplateData(res.data);
         document.documentElement.style = "";
         for (let index = 0; index < res.data.colors?.templateColors.length; index++) {
