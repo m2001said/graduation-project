@@ -54,7 +54,7 @@
     "imageUrl": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1720033592/done/4_rjddpl_ivwbng.webp",
     "icon": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707952901/right-arrow_1_y7iz2i.png"
   },
-  "feature": {
+  "features": {
     "title": "welcome to lighting",
     "subtitle": "The Art Of ARCHITECTURE ",
     "description": "you will meet your taste",
@@ -298,6 +298,6 @@
     ]
   },
   "colors": {
-    "templateColors": ["#fff", "#cda274", "#292f36", "#f4f0ec", "#777777"]
+    "templateColors": ["#003629", "#154b3b", "#ffffff", "#fbba24", "#fff6ed", "#616161"]
   }
 }

@@ -1,12 +1,15 @@
 import React, { useState } from "react";
 import "./testimonials3.css";
 import { useTranslation } from "react-i18next";
+import { useSelector } from "react-redux";
 
 const Testimonials3 = ({ template }) => {
   const { i18n } = useTranslation();
   const language = i18n.language;
-  const testimonial = template.testimonials;
 
+  const ownTestimonials= useSelector((state) => state.ownTemplate.testimonials);
+  const testimonial = template ? template.testimonials : ownTestimonials;
+  
   const [selected, setSelected] = useState(0);
   const tLength = testimonial.testimonials.length;
 

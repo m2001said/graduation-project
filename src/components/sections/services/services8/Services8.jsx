@@ -1,8 +1,9 @@
 import React, { useEffect } from "react";
+import { useSelector } from "react-redux";
 
 const Services8 = ({ template }) => {
-  const services = template.services;
-
+  const ownServices = useSelector((state) => state.ownTemplate.services);
+  const services = template ? template.services : ownServices;
   useEffect(() => {
     // AOS initialization and refresh removed
     return () => {};

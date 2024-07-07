@@ -1,17 +1,20 @@
 import React, { useState } from "react";
 import "./teams1.css";
+import { useSelector } from "react-redux";
 const Teams1 = ({template}) => {
   const [selectedMember, setSelectedMember] = useState(null);
+  const ownTeam= useSelector((state) => state.ownTemplate.team);
+  const team = template ? template.team : ownTeam;
 
   const handleCardClick = (member) => {
     setSelectedMember(member === selectedMember ? null : member);
   };
   return (
     <div className="team1 design-1">
-      <h2 className="team1-head">{template.team.title}</h2>
+      <h2 className="team1-head">{team.title}</h2>
       <div className="team1-Card">
         <div className="team1-Card-main">
-          {template.team.members.map((member, index) => (
+          {team.members.map((member, index) => (
             <div className="team1-Card-main-show" key={index} onClick={() => handleCardClick(member)}>
               <img className="team1-Card-main-img" src={member.imgUrl} alt={member.name} />
               {selectedMember && selectedMember.memberId === member.memberId && (

@@ -4,10 +4,11 @@ import { Navigation, Pagination, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
+import { useSelector } from "react-redux";
 
 const Testimonials13 = ({ template }) => {
-  const testimonials = template.testimonials;
-
+  const ownTestimonials= useSelector((state) => state.ownTemplate.testimonials);
+  const testimonials = template ? template.testimonials : ownTestimonials;
   const Card = ({ testimonial }) => {
     const { name, location, imgUrl, opinion } = testimonial;
     return (

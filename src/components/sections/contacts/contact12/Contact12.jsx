@@ -1,8 +1,10 @@
 import React from "react";
 import "./contact12.css";
+import { useSelector } from "react-redux";
 
 const Contact12 = ({ template }) => {
-  const contact = template.contact;
+  const ownContact= useSelector((state) => state.ownTemplate.contact);
+  const contact = template ? template.contact : ownContact;
   const [result, setResult] = React.useState("");
 
   const onSubmit = async (event) => {

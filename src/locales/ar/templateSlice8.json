@@ -112,6 +112,6 @@
     "buttonText": "أرسل رسالة"
   },
   "colors": {
-    "templateColors": ["#fff", "#cda274", "#292f36", "#f4f0ec", "#777777"]
+    "templateColors": ["#000000", "#212ea0", "#000f984d", "#000000", "#000000" , "#212ea0" ]
   }
 }

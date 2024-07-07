@@ -17,6 +17,7 @@ export const fetchTemplates = createAsyncThunk("templates/fetchTemplates", async
   console.log(response.data);
   return response.data.pages;
 });
+
 export const deleteTemplate = createAsyncThunk("templates/deleteTemplate", async (templateId, type, thunkAPI) => {
   const url =
     type === "page"

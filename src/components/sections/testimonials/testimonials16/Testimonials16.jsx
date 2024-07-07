@@ -3,10 +3,11 @@ import React, { useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "./testimonials16.css";
+import { useSelector } from "react-redux";
 
 const Testimonials16 = ({ template }) => {
-  const testimonials = template.testimonials;
-
+  const ownTestimonials= useSelector((state) => state.ownTemplate.testimonials);
+  const testimonials = template ? template.testimonials : ownTestimonials;
   const [activeIndex, setActiveIndex] = useState(0);
 
   const handleSlideChange = (swiper) => {
