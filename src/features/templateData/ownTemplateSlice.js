@@ -33,16 +33,10 @@ const ownTemplateSlice = createSlice({
       return deleteSection(state, action);
     },
     insertSections: (state, action) => {
-      state = {};
       const { data } = action.payload;
       delete data.owner;
       delete data._id;
       delete data.__v;
-      console.log('data in own slice',data);
-      // const colors = {
-      //   templateColors: ["#fff", "#cda274", "#292f36", "#f4f0ec", "#777777"],
-      // };
-      // data.colors = colors;
       return data;
     },
     deleteSchema: (state, action) => {

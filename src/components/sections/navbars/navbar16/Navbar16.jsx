@@ -6,7 +6,7 @@ const Navbar16 = ({ template }) => {
   const ownNavbar = useSelector((state) => state.ownTemplate.navbar);
   const navbar = template ? template.navbar : ownNavbar;
     const [showMenu, setShowMenu] = useState(false);
-
+console.log(ownNavbar)
   // Remove the changeHeader function and the useEffect block
 
   const scrollTop = () => {

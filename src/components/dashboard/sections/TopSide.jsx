@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { updateScreen } from "../../../features/screen/screenSlice";
 import { useLocation, useNavigate } from "react-router";
-import { fetchTemplates } from "../../../features/templates/templatesSlice";
 import { useSearchParams } from "react-router-dom";
 import { initialState, templateActions1 } from "../../../features/templateData/templateSlice";
 import { useTranslation } from "react-i18next";

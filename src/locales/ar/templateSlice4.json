@@ -1,10 +1,10 @@
 {
   "templateInfo": {
     "id": 4,
-    "title": "",
-    "description": "",
-    "imgUrl": ""
-  },
+  "title": "بحث عن المنزل برو",
+  "description": "ابحث عن منزل أحلامك من بين أكثر من 9000 خيار مع أكثر من 2000 عميل سعيد.",
+  "imgUrl": "/static/media/design4.28069d6461e0ed89684a.jpg"
+},
   "navbar": {
     "imgUrl": "https://res.cloudinary.com/duc04fwdb/image/upload/v1703193372/jammal_photos/eygwjnnq4d9scpxd9unv.png",
     "links": [
