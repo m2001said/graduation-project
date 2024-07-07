@@ -1,8 +1,11 @@
 import React from "react";
 import "./services2.css";
- 
+import { useSelector } from "react-redux";
+
 const Services2 = ({ template }) => {
-  const services = template.services;
+  const ownServices = useSelector((state) => state.ownTemplate.services);
+  const services = template ? template.services : ownServices;
+  console.log(services);
   return (
     <section id="services2" className="section2">
       <h5>{services.title}</h5>
@@ -14,7 +17,6 @@ const Services2 = ({ template }) => {
             <div className="service__head">
               <h3>{services.title}</h3>
             </div>
-
             <ul className="service__list">
               {services.items.map((item, itemIndex) => (
                 <li key={itemIndex}>

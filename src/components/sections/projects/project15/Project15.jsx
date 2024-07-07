@@ -1,7 +1,9 @@
 import React from "react";
+import { useSelector } from "react-redux";
 
 const Project15 = ({ template }) => {
-  const projects = template.projects;
+  const ownProjects = useSelector((state) => state.ownTemplate.projects);
+  const projects = template ? template.projects : ownProjects;
   const [selectedCategory, setSelectedCategory] = React.useState("all");
 
   const Card = ({ imgUrl, title, subtitle, description }) => {

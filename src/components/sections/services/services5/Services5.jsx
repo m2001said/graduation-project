@@ -1,12 +1,13 @@
 import React,{useEffect} from "react";
 import "./services5.css";
+import { useSelector } from "react-redux";
 
 
 
 
 const Services5 = ({template}) => {
-  const service = template.services;
-
+  const ownServices = useSelector((state) => state.ownTemplate.services);
+  const service = template ? template.services : ownServices;
 
   return (
     <div className="services5">

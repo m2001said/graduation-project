@@ -7,6 +7,8 @@ import { useSearchParams } from "react-router-dom";
 import { initialState, templateActions1 } from "../../../features/templateData/templateSlice";
 import { useTranslation } from "react-i18next";
 import { ownTemplateActions } from "../../../features/templateData/ownTemplateSlice";
+import { fetchPages } from "../../../features/templates/pagesSlice";
+import { fetchWebsites } from "../../../features/templates/websitesSlice";
 
 const TopSide = ({ schema }) => {
   const { i18n } = useTranslation();
@@ -42,8 +44,10 @@ const TopSide = ({ schema }) => {
   };
 
   const handleSubmit = async () => {
+    const regex = /\d+/
     const isUpdating = pathname.includes("edit");
-    const inOwnPage = pathname.includes("own-page");
+    const inOwnPage = pathname.includes("own-page") || !regex.test(pathname);
+    console.log(pathname)
     let url;
     if (inOwnPage) {
       url = isUpdating
@@ -57,6 +61,8 @@ const TopSide = ({ schema }) => {
     const text = inOwnPage ? "page" : "website";
     console.log(url);
 
+    console.log(schema);
+
     try {
       setIsGenerating(true);
       setWaitingMsg(isUpdating ? `Please waite for updating your ${text}` : `Please waite for genrating your ${text}`);
@@ -69,17 +75,18 @@ const TopSide = ({ schema }) => {
         },
       });
       const result = await res.json();
+      console.log(result);
 
-      console.log(result.data);
+      console.log("respone after create ", result.data);
       setIsGenerating(false);
       if (inOwnPage) {
         // get pages in pages page
-        dispatch(fetchTemplates("page")); // need edit
+        dispatch(fetchPages()); // need edit
         navigate(`/${i18n.language}/pages`);
         dispatch(ownTemplateActions.deleteSchema()); // remove data in ownpage slice
       } else {
         // get websites in websites page
-        dispatch(fetchTemplates("website"));
+        dispatch(fetchWebsites());
         navigate(`/${i18n.language}/websites`);
         dispatch(templateActions1.updateSchema(initialState));
       }

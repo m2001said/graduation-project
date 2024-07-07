@@ -9,8 +9,9 @@ import './hero9.css'; // Import your CSS file for styles
 const Hero9 = ({ template }) => {
   const ownHero = useSelector((state) => state.ownTemplate.hero);
   const hero = template ? template.hero : ownHero;
-  
-  const reviews = template.reviews;
+
+  const ownReview = useSelector((state) => state.ownTemplate.reviews);
+  const reviews = template ? template.reviews : ownReview;
 
   const handleHover = (event) => {
     const starsContainer = event.currentTarget;

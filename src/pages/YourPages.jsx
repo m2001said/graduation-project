@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
-import { deleteTemplate, fetchTemplates } from "../features/templates/templatesSlice";
 import "../components/designsPage/sections/designsContainer.css";
 import "../components/designsPage/sections/designsCard/designCard.css";
 import preview from "../assets/images/show.png";
@@ -16,14 +15,15 @@ import axios from "axios";
 import "../globals.css";
 import { useTranslation } from "react-i18next";
 import BaseModal from "../components/mainPage/modal/BaseModal/BaseModal";
+import { deletePage, fetchPages } from "../features/templates/pagesSlice";
 
 const YourPages = () => {
   const { i18n, t } = useTranslation();
   const [isModalOpen, setIsModalOpen] = useState(false);
   const dispatch = useDispatch();
-  const templates = useSelector((state) => state.templates.templates);
-  const status = useSelector((state) => state.templates.status);
-  const error = useSelector((state) => state.templates.error);
+  const templates = useSelector((state) => state.pages.pages);
+  const status = useSelector((state) => state.pages.status);
+  const error = useSelector((state) => state.pages.error);
   const userId = useSelector((state) => state.auth.user._id);
   const [isCelebrityBirthday, setIsCelebrityBirthday] = useState(false);
   const [copied, setCopied] = useState(false);
@@ -35,10 +35,12 @@ const YourPages = () => {
   const handleCopy = () => {
     setCopied(true);
   };
+
+  
   useEffect(() => {
     if (status === "idle") {
       try {
-        dispatch(fetchTemplates("page"));
+        dispatch(fetchPages());
       } catch (error) {
         console.error("Error fetching templates:", error);
       }
@@ -48,6 +50,9 @@ const YourPages = () => {
     const mani_margin = document.getElementById("template-container");
     mani_margin.style.marginTop = "77px";
   }, [dispatch, status]);
+
+
+
   if (status === "loading") {
     return (
       <div className="designs-section flex items-center justify-center">
@@ -64,7 +69,7 @@ const YourPages = () => {
     );
   }
 
-  const versions = (array) => {
+  const versions = (templates) => {
     const versionsNumber = {};
     return templates.map((template) => {
       const id = template.templateInfo.id;
@@ -95,7 +100,7 @@ const YourPages = () => {
     }
   }
   const handleDeleteTemplate = async (templateId) => {
-    dispatch(deleteTemplate(templateId, "page"))
+    dispatch(deletePage(templateId))
       .unwrap()
       .then((result) => {
         console.log(`Template with ID ${result} deleted successfully.`);
@@ -112,34 +117,34 @@ const YourPages = () => {
       const res = await axios.get(`https://websitebuilderbackend-production-716e.up.railway.app/page/${userId}/${templateId}`);
       console.log("res.data", res.data);
       removeEmptyArrays(res.data);
-      const schema = {
-        ...res.data,
-        templateInfo: {
-          id: 1,
-          title: "first page",
-          description: "Explore your page now.",
-          imgUrl: "/static/media/websites.e727c8df38c2ab85f83b.jpg",
-          selectedSections: {
-            navbarIndexSelected: 4,
-            heroIndexSelected: 2,
-            // featuresIndexSelected: 1,
-            // projectsIndexSelected: 1,
-            // servicesIndexSelected: 1,
-            // contactIndexSelected: 1,
-            // teamIndexSelected: 1,
-            // testimonialsIndexSelected: 1,
-            // statisticsIndexSelected: 1,
-            // logosIndexSelected: 1,
-            // itemsIndexSelected: 1,
-            // pricingIndexSelected: 1,
-            // ctaIndexSelected: 1,
-            footerIndexSelected: 3,
-          },
-        },
-      };
-      console.log(schema);
+      // const schema = {
+      //   ...res.data,
+      //   templateInfo: {
+      //     id: 1,
+      //     title: "first page",
+      //     description: "Explore your page now.",
+      //     imgUrl: "/static/media/websites.e727c8df38c2ab85f83b.jpg",
+      //     selectedSections: {
+      //       navbarIndexSelected: 4,
+      //       heroIndexSelected: 2,
+      //       featuresIndexSelected: 1,
+      //       projectsIndexSelected: 1,
+      //       servicesIndexSelected: 1,
+      //       contactIndexSelected: 1,
+      //       teamIndexSelected: 1,
+      //       testimonialsIndexSelected: 1,
+      //       statisticsIndexSelected: 1,
+      //       logosIndexSelected: 1,
+      //       itemsIndexSelected: 1,
+      //       pricingIndexSelected: 1,
+      //       ctaIndexSelected: 1,
+      //       footerIndexSelected: 3,
+      //     },
+      //   },
+      // };
+      // console.log(schema);
 
-      dispatch(ownTemplateActions.insertSections({ data: schema }));
+      dispatch(ownTemplateActions.insertSections({ data: res.data }));
       //dispatch(ownTemplateActions.updateSchema(schema));
 
       setIsLoading(false);
@@ -195,14 +200,14 @@ const YourPages = () => {
               {isCelebrityBirthday && <Confetti width={window.innerWidth} height={window.innerHeight} />}
               <p className="mx-auto max-w-[700px] text-gray-200 md:text-xl text-center"> {t("PAGES.DESCRIPTION")}</p>
               <div className="designs-container flex flex-wrap gap-8 justify-center">
-                {versions(templates).map((template, index) => (
+                {templates.map((template, index) => (
                   <div className="websites design-card rounded-lg overflow-hidden shadow-lg flex flex-column  relative" key={template._id} id={template._id}>
-                    <div
+                    {/* <div
                       className="absolute left-[-36px] top-[-36px] z-30 w-[100px] h-[100px] flex justify-center items-center text-2xl rounded-full"
                       style={{ padding: "2rem 0 0 2rem", backgroundColor: "rgb(67 12 123)" }}
                     >
                       V{template.versionNumber}
-                    </div>
+                    </div> */}
 
                     <div
                       className="trash absolute left-[-36px] top-[-36px] z-30 w-[100px] h-[100px] flex justify-center items-center text-2xl rounded-full"
@@ -254,7 +259,7 @@ const YourPages = () => {
             <div>
               <p className="mx-auto max-w-[700px] text-gray-200 md:text-xl text-center">
                 {t("PAGES.NO_PAGES")}
-                <Link to={`/${i18n.language}/designs`} className="text-gray-400">
+                <Link to={`/${i18n.language}/page-craft`} className="text-gray-400">
                   {t("PAGES.CREATE")}
                 </Link>
               </p>

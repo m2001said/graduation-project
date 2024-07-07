@@ -1,7 +1,9 @@
 import React from "react";
 import "./feature12.css";
+import { useSelector } from "react-redux";
 const Feature12 = ({ template }) => {
-  const features = template.features;
+  const ownFooter = useSelector((state) => state.ownTemplate.features);
+  const features = template ? template.features : ownFooter;
   return (
     <div className="container12">
       <h2 className=" title12 section__title16">{features.title}</h2>

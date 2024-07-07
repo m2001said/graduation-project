@@ -1,7 +1,9 @@
 import React, { useEffect } from "react";
+import { useSelector } from "react-redux";
 
 const Contact8 = ({ template }) => {
-  const contact = template.contact;
+  const ownContact= useSelector((state) => state.ownTemplate.contact);
+  const contact = template ? template.contact : ownContact;
 
   useEffect(() => {
     // AOS initialization and refresh removed

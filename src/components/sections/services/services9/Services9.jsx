@@ -1,9 +1,10 @@
 import React, { useState } from "react";
 import "./services9.css"; // Import your CSS file
+import { useSelector } from "react-redux";
 
 const Services9 = ({ template }) => {
-  const services = template.services;
-
+  const ownServices = useSelector((state) => state.ownTemplate.services);
+  const services = template ? template.services : ownServices;
   const [hoveredIndex, setHoveredIndex] = useState(null);
 
   const handleCardHover = (index) => {

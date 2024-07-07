@@ -1,10 +1,12 @@
-import React, { useEffect } from "react";
+import React from "react";
 import "./feature5_1.css";
+import { useSelector } from "react-redux";
 
 
 
 const Feature5 = ({template}) => {
-const feature1 = template.features;
+  const ownFooter = useSelector((state) => state.ownTemplate.features);
+  const feature1 = template ? template.features : ownFooter;
 
 return(
   <div className="feature5_1 design5-section design5">

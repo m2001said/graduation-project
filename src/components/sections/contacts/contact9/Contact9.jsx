@@ -1,9 +1,11 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
+import { useSelector } from "react-redux";
 
 const Contact9 = ({ template }) => {
   const { t, i18n } = useTranslation();
-  const contact = template.contact;
+  const ownContact= useSelector((state) => state.ownTemplate.contact);
+  const contact = template ? template.contact : ownContact;
   const isRTL = i18n.dir() === "rtl";
 
   const renderImage = contact.imgUrl ? (

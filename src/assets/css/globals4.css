@@ -1,9 +1,9 @@
 :root {
-  --website-4-color-1: black;
-  --website-4-color-2: rgb(0, 255, 255);
-  --website-4-color-3: rgba(35, 223, 185, 0.775);
+  --website-4-color-1: #000000;
+  --website-4-color-2: #00ffff;
+  --website-4-color-3: #23dfb9c6;
   --website-4-color-4: #40dfffa5;
-  --website-4-color-5: orange;
+  --website-4-color-5: #ffa500;
   --website-4-color-6: 0px 23px 21px -8px rgba(136, 160, 255, 0.25);
 }
 

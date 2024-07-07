@@ -36,6 +36,10 @@ const TrialDesign = ({ componentMapping, FooterComponent, NavbarComponent, HeroC
 
   //       // this will return to intial state if you do refresh
 
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []); 
+
 
   useEffect(() => {
     const fetchData = async () => {
@@ -73,6 +77,8 @@ const TrialDesign = ({ componentMapping, FooterComponent, NavbarComponent, HeroC
     state = templateData;
   }
   const reorderedComponents = state && Object.keys(state);
+
+  console.log(state)
   return state && state.templateInfo.id === template ? (
     <div className={className}>
       {NavbarComponent && <NavbarComponent template={state} />}

@@ -1,8 +1,10 @@
 import React from "react";
 import "./contact4.css";
+import { useSelector } from "react-redux";
 
 const Contact4 = ({ template }) => {
-  const contact = template.contact;
+  const ownContact= useSelector((state) => state.ownTemplate.contact);
+  const contact = template ? template.contact : ownContact;
   return (
     <div id="contact-us" className="c-wrapper4">
       <div className="paddings4 innerWidth4 flexCenter4 c-container4">

@@ -1,8 +1,10 @@
 import React from "react";
+import { useSelector } from "react-redux";
 
 const Services15 = ({ template }) => {
-  const services = template.services;
-
+  const ownServices = useSelector((state) => state.ownTemplate.services);
+  const services = template ? template.services : ownServices;
+  
   const Card = ({ title, subtitle, description }) => (
     <div className="w-full hoverBtn">
       <div className="title15_4 rounded-[18px] py-[20px] px-10 relative overflow-hidden">

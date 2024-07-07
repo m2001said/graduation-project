@@ -22,8 +22,8 @@ import hero10 from "../../assets/images/sections/hero10.webp";
 
 // Projects
 import project8 from "../../assets/images/sections/projects8.webp";
-import project9 from "../../assets/images/sections/projects9.png";
-import project16 from "../../assets/images/sections/projects16.webp";
+import project1 from "../../assets/images/sections/projects9.png";
+import project15 from "../../assets/images/sections/projects16.webp";
 import project18 from "../../assets/images/sections/projects18.webp";
 import project14 from "../../assets/images/sections/projects14.webp";
 import project4 from "../../assets/images/sections/projects4.webp";
@@ -107,8 +107,8 @@ export const navData = createData("Navbar", [
 
 export const heroData = createData("Hero", [
   { id: 2, imgUrl: hero2 },
-  { id: 8, imgUrl: hero8 },
-  { id: 9, imgUrl: hero9 },
+  { id: 15, imgUrl: hero8 }, // 15 instead 8
+  { id: 1, imgUrl: hero9 }, // 1 instead 9
   { id: 12, imgUrl: hero12 },
   { id: 13, imgUrl: hero13 },
   { id: 16, imgUrl: hero16 },
@@ -123,12 +123,12 @@ export const heroData = createData("Hero", [
 
 export const featureData = createData("Feature", [
   { id: 9, imgUrl: feature9 },
-  { id: 12, imgUrl: feature12 },
+  { id: 12, imgUrl: feature12 }, 
   { id: 13, imgUrl: feature13 },
   { id: 16, imgUrl: feature16 },
   { id: 17, imgUrl: feature17 },
   { id: 18, imgUrl: feature18 },
-  { id: 14, imgUrl: feature14 },
+  { id: 15, imgUrl: feature14 }, //  will be 15 instead of 14
   { id: 4, imgUrl: feature4 },
   { id: 5, imgUrl: feature5 },
   { id: 10, imgUrl: feature10 },
@@ -136,8 +136,8 @@ export const featureData = createData("Feature", [
 
 export const projectData = createData("Project", [
   { id: 8, imgUrl: project8 },
-  { id: 9, imgUrl: project9 },
-  { id: 16, imgUrl: project16 },
+  { id: 1, imgUrl: project1 }, // 1 instead of 9
+  { id: 15, imgUrl: project15 }, //15 instead of 16 
   { id: 18, imgUrl: project18 },
   { id: 14, imgUrl: project14 },
   { id: 4, imgUrl: project4 },

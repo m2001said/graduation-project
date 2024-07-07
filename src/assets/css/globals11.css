@@ -2,11 +2,11 @@
 
 /* ===========Variables CSS======== */
 :root {
-  --website-11-color-1: hsl(353, 100%, 65%);
+  --website-11-color-1: #ff4d61;
   --website-11-color-2: #fcf5ee;
   --website-11-color-3: #f48915;
-  --website-11-color-4: hsl(245, 15%, 65%);
-  --website-11-color-5: hsl(244, 24%, 26%);
+  --website-11-color-4: #9b98b3;
+  --website-11-color-5: #353252;
   --website-11-color-6: #6c6ce5;
   /* ======================Font and Typography================== */
   /* .5rem = 8px | 1rem = 16px ...*/

@@ -1,8 +1,11 @@
 import React, { useState } from "react";
 import "./feature4.css";
+import { useSelector } from "react-redux";
 
 const Feature4 = ({ template }) => {
-  const features = template.features;
+  const ownFooter = useSelector((state) => state.ownTemplate.features);
+  const features = template ? template.features : ownFooter;
+
   const [expandedIndex, setExpandedIndex] = useState(0); // Default to first item being open
 
   const handleAccordionState = (index) => {

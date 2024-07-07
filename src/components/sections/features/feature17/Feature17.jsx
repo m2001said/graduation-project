@@ -1,9 +1,11 @@
 import React from "react";
 import "./feature17.css";
 import { useTranslation } from "react-i18next";
+import { useSelector } from "react-redux";
 
 const Feature17 = ({ template }) => {
-  const { title, subtitle, description, imgs } = template.features;
+  const ownFooter = useSelector((state) => state.ownTemplate.features);
+  const { title, subtitle, description, imgs } = template ? template.features : ownFooter;
   const { t, i18n } = useTranslation();
   const isRTL = i18n.dir() === 'rtl';
 
