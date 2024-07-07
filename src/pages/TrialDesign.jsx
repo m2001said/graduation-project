@@ -39,7 +39,7 @@ const TrialDesign = ({ componentMapping, FooterComponent, NavbarComponent, HeroC
   });
 
   const persist = JSON.parse(localStorage.getItem("persist:root"));
-  const template1 = JSON.parse(persist.template1);
+  const template1 = persist && JSON.parse(persist.template1);
   useEffect(() => {
     if (template1.templateInfo.id !== template && url.pathname.includes("build")) {
       dispatch(resetState());
@@ -96,8 +96,7 @@ const TrialDesign = ({ componentMapping, FooterComponent, NavbarComponent, HeroC
   }, []);
 
 
-  const persist = JSON.parse(localStorage.getItem("persist:root"));
-  const template1 = persist && JSON.parse(persist.template1);
+
   useEffect(() => {
     if (template1?.templateInfo.id !== template && url.pathname.includes("build")) {
       dispatch(resetState());
