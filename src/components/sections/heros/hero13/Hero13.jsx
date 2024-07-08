@@ -37,15 +37,16 @@ const Hero13 = ({ template }) => {
             ))}
           </div>
         </div>
-        <div className="lg:w-[35%] w-72 relative lg:mx-0 mx-auto justify-end lg:py-0 py-8 hover:translate-x-28 hover:-translate-y-4 transition-transform duration-1000">
-          <img src={imgUrl} alt={`Image 1`} className="lg:w-full mb-4 rounded-lg shadow-lg" style={{ maxWidth: "100%", height: "auto" }} />
-          <img
-            src={imageUrl}
-            alt={`Image 2`}
-            className="sm:block hidden lg:w-40 w-1/4 absolute bottom-16 lg:-left-20 -left-10 hover:-translate-x-20 hover:w-3/4 transition-transform duration-1000"
-            style={{ maxWidth: "100%", height: "auto" }}
-          />
-        </div>
+        <div className="lg:w-[35%] w-72 relative lg:mx-0 mx-auto justify-end lg:py-0 py-8 hover:translate-x-28 hover:-translate-y-4 transition-transform duration-3000 ease-in-out">
+  <img src={imgUrl} alt='img1' className="lg:w-full mb-4 rounded-lg shadow-lg" style={{ maxWidth: "100%", height: "auto" }} />
+  <img
+    src={imageUrl}
+    alt='img2'
+    className="sm:block hidden lg:w-40 w-1/4 absolute bottom-16 lg:-left-20 -left-10 hover:-translate-x-20 hover:w-3/4 transition-transform duration-3000 ease-in-out"
+    style={{ maxWidth: "100%", height: "auto" }}
+  />
+</div>
+
       </div>
     </div>
   );
