@@ -39,7 +39,7 @@ const MainNav = ({ toggleModal }) => {
   };
 
   const showchangelanguage = () => {
-    const adminRoutes = ["admin", "user-information", "designs", "reset-password", "failed-verified", "success-verified", "websites", "services"];
+    const adminRoutes = ["admin", "user-information", "designs", "reset-password", "failed-verified", "success-verified", "websites", "services", "pages"];
     const pathWithoutLang = currentPath.replace(/^\/(en|ar)/, "");
     return pathWithoutLang === "" || adminRoutes.some((route) => pathWithoutLang === `/${route}`);
   };
