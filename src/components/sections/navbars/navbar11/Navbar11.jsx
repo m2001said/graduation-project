@@ -1,8 +1,11 @@
 import React, { useState } from "react";
 import "../navbar11/navbar11.css";
+import { useSelector } from "react-redux";
 
 const Navbar11 = ({ template }) => {
-  const navbar = template.navbar;
+  const ownNavbar = useSelector((state) => state.ownTemplate.navbar);
+  const navbar = template ? template.navbar : ownNavbar;
+  const [toggle, showMenu] = useState(false);
 
   return (
     <>

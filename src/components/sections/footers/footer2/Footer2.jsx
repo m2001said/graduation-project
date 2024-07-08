@@ -1,13 +1,15 @@
 import React from "react";
 import "./footer2.css";
+import { useSelector } from "react-redux";
+
 
 const Footer2 = ({ template }) => {
-  const footer = template.footer;
-
+  const ownFooter = useSelector((state) => state.ownTemplate.footer);
+  const footer = template ? template.footer : ownFooter;
   return (
     <footer className="footer2">
-      <a href="#" className="footer2__logo a2">
-        {footer.title}{" "}
+      <a href="#logo" className="footer2__logo a2">
+        {footer.title}
       </a>
 
       <ul className="permalinks2">

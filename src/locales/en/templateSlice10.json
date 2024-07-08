@@ -1,9 +1,9 @@
 {
   "templateInfo": {
     "id": 10,
-    "title": "",
-    "description": "",
-    "imgUrl": ""
+    "title": "Bookstore Bliss",
+    "description": "Explore top books, reviews, and a virtual library experience.",
+    "imgUrl": "/static/media/design10.972593dcf0cc7d044e60.jpg"
   },
   "navbar": {
     "title": "Books",
@@ -272,6 +272,6 @@
     ]
   },
   "colors": {
-    "templateColors": ["#fff", "#cda274", "#292f36", "#f4f0ec", "#777777"]
+    "templateColors": ["#138dc5", "#ffffff", "#000000", "#777777", "#eeeeee" , "#e4f0f7"]
   }
 }

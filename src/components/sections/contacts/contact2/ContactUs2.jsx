@@ -1,10 +1,12 @@
+import { useSelector } from "react-redux";
 import "./contact2.css";
 import { useTranslation } from "react-i18next";
 
 const ContactUs2 = ({ template }) => {
   const { t, i18n } = useTranslation();
   const isRTL = i18n.dir() === 'rtl';
-  const contact = template.contact;
+  const ownContact= useSelector((state) => state.ownTemplate.contact);
+  const contact = template ? template.contact : ownContact;
 
   return (
     <div id="contactUs2">

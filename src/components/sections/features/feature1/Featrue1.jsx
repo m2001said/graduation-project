@@ -1,8 +1,11 @@
 import React from "react";
 import "./feature.css";
 import { useTranslation } from "react-i18next";
+import { useSelector } from "react-redux";
+
 const Featrue1 = ({ template }) => {
-  const feature = template.features;
+  const ownFooter = useSelector((state) => state.ownTemplate.features);
+  const feature = template ? template.features : ownFooter;
   const { i18n } = useTranslation();
   const language = i18n.language;
 

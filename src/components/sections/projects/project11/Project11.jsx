@@ -1,8 +1,10 @@
 import React, { useState } from "react";
 import "../project11/project11.css";
+import { useSelector } from "react-redux";
 
 const Project11 = ({ template }) => {
-  const projects = template.projects;
+  const ownProjects = useSelector((state) => state.ownTemplate.projects);
+  const projects = template ? template.projects : ownProjects;
 
   const [cards, setCards] = useState(projects.projects); // Initialize state with projects.projects
 
@@ -12,7 +14,7 @@ const Project11 = ({ template }) => {
   };
 
   return (
-    <section className="" id="portfolio">
+    <section className="" id={projects.sectionId}>
       <h2 className="section__title11">{projects.title}</h2>
       <div className="work__filters11">
         {projects.categories.map((category, index) => (

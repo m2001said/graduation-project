@@ -1,9 +1,11 @@
 import React from "react";
+import { useSelector } from "react-redux";
 
 
 const Services = ({template}) => {
-const services = template.services;
-
+  const ownServices = useSelector((state) => state.ownTemplate.services);
+  const services = template ? template.services : ownServices;
+  
   return (
     <>
       <span id="about"></span>

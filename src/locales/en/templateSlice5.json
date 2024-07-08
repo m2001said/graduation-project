@@ -1,9 +1,9 @@
 {
   "templateInfo": {
     "id": 5,
-    "title": "",
-    "description": "",
-    "imgUrl": ""
+    "title": "Memorable Journeys",
+    "description": "Explore travel tips, assistance, and create lasting global memories.",
+    "imgUrl": "/static/media/design5.d6e2d7e1870232a37527.jpg"
   },
   "navbar": {
     "imgUrl": "https://res.cloudinary.com/dmcdea0b9/image/upload/v1703101139/logo_ytwn3z.jpg",
@@ -248,6 +248,6 @@
     ]
   },
   "colors": {
-    "templateColors": ["#fff", "#cda274", "#292f36", "#f4f0ec", "#777777"]
+    "templateColors": ["#5c3db8", "#f0f4f4", "#eb967a", "#fabe89", "#000000" , "#919191"]
   }
 }

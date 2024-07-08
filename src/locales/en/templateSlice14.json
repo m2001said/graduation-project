@@ -1,9 +1,9 @@
 {
   "templateInfo": {
     "id": 14,
-    "title": "",
-    "description": "",
-    "imgUrl": ""
+    "title": "Gadget Store Hub",
+    "description": "Explore our curated collection of headphones, laptops in our store.",
+    "imgUrl": "/static/media/design14.9d5c6915c21658af1b5f.jpg"
   },
   "navbar": {
     "title": "Eshop",
@@ -292,6 +292,6 @@
     ]
   },
   "colors": {
-    "templateColors": ["#f42c37", "fdc62e", "#34cc73", "#1376f4", "#acabab9c", "#eeeeee"]
+    "templateColors": ["#f42c37", "fdc62e", "#34cc73", "#1376f4", "#acabab9c", "#ffffff"]
   }
 }

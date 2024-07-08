@@ -35,21 +35,24 @@
 // export default Footer3;
 import React from "react";
 import "./footer3.css";
+import { useSelector } from "react-redux";
 
 const Footer3 = ({ template }) => {
+  const ownFooter = useSelector((state) => state.ownTemplate.footer);
+  const footer = template ? template.footer : ownFooter;
   return (
-    <div className="footer3-container">
+    <div className="footer3-container" id={footer.sectionId}>
       <hr />
       <div className="footer3">
         <div className="scoil-links-f3">
-          {template.footer.medias.map((icon, index) => (
+          {footer.medias.map((icon, index) => (
             <a key={`icon-${index}`} href={icon.url} target="_blank" rel="noopener noreferrer">
               <img key={`icon-${index}`} src={icon.icon} alt="" />
             </a>
           ))}
         </div>
         <div className="logo-f3">
-          <img src={template.footer.imgUrl} alt="" />
+          <img src={footer.imgUrl} alt="" />
         </div>
       </div>
       <div className="blur3 blur-f-1"></div>

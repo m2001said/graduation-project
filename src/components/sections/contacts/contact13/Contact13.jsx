@@ -3,7 +3,8 @@ import { useSelector } from "react-redux";
 import { useTranslation } from "react-i18next";
 
 const Contact13 = ({ template }) => {
-  const contact = template.contact;
+  const ownContact= useSelector((state) => state.ownTemplate.contact);
+  const contact = template ? template.contact : ownContact;
   const { t, i18n } = useTranslation();
   
   const isRTL = i18n.language === "ar";  // Adjust this based on your language setup
@@ -31,7 +32,7 @@ const Contact13 = ({ template }) => {
           </div>
         </div>
         <div className="lg:py-0 py-8 flex justify-center">
-          {contact.imgUrl && <img src={contact.imgUrl} alt="subscribe image" className="lg:w-100 w-80 " />}
+          {contact.imgUrl && <img src={contact.imgUrl} alt="subscribe" className="lg:w-100 w-80 " />}
         </div>
       </section>
     </div>

@@ -1,8 +1,10 @@
 import React from "react";
+import { useSelector } from "react-redux";
 
 const ResponsiveMenu = ({ showMenu, template }) => {
-  const navbar = template.navbar;
-  return (
+  const ownNavbar = useSelector((state) => state.ownTemplate.navbar);
+  const navbar = template ? template.navbar : ownNavbar;
+    return (
     <div
       className={`${
         showMenu ? "left-0" : "-left-[100%]"

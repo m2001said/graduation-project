@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { loginUserAsync } from "../../../features/auth/authSlice";
 import { useNavigate } from "react-router-dom";
+import { unwrapResult } from "@reduxjs/toolkit";
 import ForgetPasswordForm from "./ForgetPasswordForm";
 import { useTranslation } from "react-i18next";
 
@@ -20,18 +21,21 @@ const LoginForm = ({ toggleForm, toggleModal }) => {
   const handleSignInClick = async () => {
     try {
       const user = await dispatch(loginUserAsync({ email, password }));
+      const result = unwrapResult(user);
+
+      // Only toggle the modal if the login is successful
       toggleModal();
       const currentTime = new Date().getTime();
       localStorage.setItem("loginTime", currentTime);
 
-      if (user.payload.user.role === "admin" || user.payload.user.role === "super-admin") {
+      if (result.user.role === "admin" || result.user.role === "super-admin") {
         navigate(`/${language}/admin`);
       } else {
-        navigate(`/${language}/designs`);
+        navigate(`/${language}/services`);
       }
     } catch (error) {
       console.error("Login failed:", error);
-      setLoginError("Invalid login credentials. Please try again.");
+      setLoginError(error.message || "Invalid login credentials. Please try again.");
     }
   };
 
@@ -48,7 +52,7 @@ const LoginForm = ({ toggleForm, toggleModal }) => {
             <label htmlFor="password">{t("USER.PASSWORD")}</label>
             <input type="password" id="password" value={password} onChange={(e) => setPassword(e.target.value)} />
             <button onClick={() => setIsForgetPassword(true)}>{t("USER.FORGET_PASSWORD")}</button>
-            <div className="message-error">{loginError}</div>
+            {loginError && <div className="message-error">{loginError}</div>}
             <button className={`form-button `} onClick={handleSignInClick} disabled={status === "loading"}>
               {status === "loading" && (
                 <svg

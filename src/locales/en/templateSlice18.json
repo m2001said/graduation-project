@@ -1,9 +1,9 @@
 {
   "templateInfo": {
     "id": 18,
-    "title": "",
-    "description": "",
-    "imgUrl": ""
+    "title": "DriveWise Autos",
+    "description": "Choose us for the best prices, fast and secure, and skilled drivers.",
+    "imgUrl": "/static/media/design18.2aeee1b1452d06452bdb.jpg"
   },
   "navbar": {
     "title": "Car Rental",
@@ -224,6 +224,6 @@
     ]
   },
   "colors": {
-    "templateColors": ["#ffc727", "#fad46d", "#E2E2D5", "#888883", "#111111"]
+    "templateColors": ["#ffc727", "#e9f1f5", "#d5dae2", "#888883", "#111111", "#ffffff"]
   }
 }

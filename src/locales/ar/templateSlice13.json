@@ -1,10 +1,10 @@
 {
   "templateInfo": {
     "id": 13,
-    "title": "",
-    "description": "",
-    "imgUrl": ""
-  },
+  "title": "عرض الهندسة المعمارية",
+  "description": "محفظة مبتكرة تبرز الخبرة المعمارية والمشاريع الإبداعية والمتنوعة.",
+  "imgUrl": "/static/media/design13.bfb3a28c3e782dc3a64e.jpg"
+},
   "navbar": {
     "imgUrl": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707951170/lighting_o2dsku.png",
     "title": "سوليي",
@@ -54,7 +54,7 @@
     "imageUrl": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1720033592/done/4_rjddpl_ivwbng.webp",
     "icon": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707952901/right-arrow_1_y7iz2i.png"
   },
-  "feature": {
+  "features": {
     "title": "مرحبًا بكم في الإضاءة",
     "subtitle": "فن العمارة",
     "description": "ستجد ذوقك هنا",
@@ -301,6 +301,6 @@
     ]
   },
   "colors": {
-    "templateColors": ["#fff", "#cda274", "#292f36", "#f4f0ec", "#777777"]
+    "templateColors": ["#003629", "#154b3b", "#ffffff", "#fbba24", "#fff6ed", "#616161"]
   }
 }

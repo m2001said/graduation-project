@@ -1,14 +1,15 @@
 import React from "react";
 import "../testimonials11/testimonials11.css";
+import { useSelector } from "react-redux";
 
 const Testimonials11 = ({ template }) => {
-  const testimonials = template.testimonials.testimonials;
-
+  const ownTestimonials = useSelector((state) => state.ownTemplate.testimonials);
+  const testimonials = template ? template.testimonials : ownTestimonials;
   return (
-    <section className="testimonials11 " id="testimonials">
-      <h2 className="section__title11">{template.testimonials.title}</h2>
+    <section className="testimonials11 " id={testimonials.sectionId}>
+      <h2 className="section__title11">{testimonials.title}</h2>
       <div className="testimonials__container grid11">
-        {testimonials.map((testimonial, index) => (
+        {testimonials.testimonials.map((testimonial, index) => (
           <div className="testimonials__item11" key={index}>
             <div className="thumb11">
               <img src={testimonial.imgUrl} alt="" />

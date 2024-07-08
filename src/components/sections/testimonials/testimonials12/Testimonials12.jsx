@@ -1,11 +1,13 @@
 import React, { useRef } from "react";
 import "./testimonials12.css";
+import { useSelector } from "react-redux";
 var nextIcon = "https://res.cloudinary.com/di8kjrflu/image/upload/v1720131505/next-icon_qzzhmz.png";
 var backIcon = "https://res.cloudinary.com/di8kjrflu/image/upload/v1720131485/back-icon_mi8ovh.png";
 
 const Testimonials12 = ({ template }) => {
-  const testimonials = template.testimonials;
-  const slider = useRef();
+  const ownTestimonials= useSelector((state) => state.ownTemplate.testimonials);
+  const testimonials = template ? template.testimonials : ownTestimonials;
+    const slider = useRef();
   let tx = 0;
   const slideForward = () => {
     if (tx > -50) {

@@ -1,6 +1,7 @@
 import React from "react";
 import styles, { layout } from "../../heros/hero7/styles7/style";
 import Button7 from "./Button7";
+import { useSelector } from "react-redux";
 
 const FeatureCard = ({ title, description, imgUrl, index }) => {
   return (
@@ -19,13 +20,14 @@ const FeatureCard = ({ title, description, imgUrl, index }) => {
 };
 
 const Business7 = ({ template }) => {
-  const feature = template.features;
+  const ownFooter = useSelector((state) => state.ownTemplate.features);
+  const feature = template ? template.features : ownFooter;
 
   const { buttonText, title, subtitle, description, features } = feature; // Change feature to items
   return (
     <div className={`bg-primary ${styles.paddingX} ${styles.flexStart}`}>
       <div className={`${styles.boxWidth}`}>
-        <section id="features" className={layout.section}>
+        <section id={feature.sectionId} className={layout.section}>
           <div className={layout.sectionInfo}>
             <h2 className={styles.heading2}>
               {title} <br className="sm:block hidden" /> {subtitle}

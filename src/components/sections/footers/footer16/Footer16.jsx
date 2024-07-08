@@ -1,9 +1,11 @@
 import React from "react";
 import "./footer16.css";
+import { useSelector } from "react-redux";
 
 const Footer16 = ({ template }) => {
-  const footer = template.footer;
-
+  const ownFooter = useSelector((state) => state.ownTemplate.footer);
+  const footer = template ? template.footer : ownFooter;
+  
   return (
     <footer className="footer16">
       <div className="footer__grid16 container16 grid16">

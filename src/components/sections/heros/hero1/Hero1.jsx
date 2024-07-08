@@ -1,9 +1,11 @@
 import React from "react";
 import "./hero.css";
 import { useTranslation } from "react-i18next";
+import { useSelector } from "react-redux";
 
 const Hero1 = ({ template }) => {
-  const hero = template.hero;
+  const ownHero = useSelector((state) => state.ownTemplate.hero);
+  const hero = template ? template.hero : ownHero;
   const { i18n } = useTranslation();
   const language = i18n.language;
 

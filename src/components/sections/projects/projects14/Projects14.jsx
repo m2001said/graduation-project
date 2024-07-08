@@ -1,8 +1,10 @@
 import React from "react";
+import { useSelector } from "react-redux";
 
 
 const Projects14 = ({template}) => {
-    const projects1 = template.projects;
+  const ownProjects = useSelector((state) => state.ownTemplate.projects);
+  const projects1 = template ? template.projects : ownProjects;
 
   return (
     <div className="bg-[--website-14-color-6] dark:bg-gray-900 dark:text-white">

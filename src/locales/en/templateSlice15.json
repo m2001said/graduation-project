@@ -1,36 +1,37 @@
 {
   "templateInfo": {
     "id": 15,
-    "title": "",
-    "description": "",
-    "imgUrl": ""
+    "title": "Developer Portfolio",
+    "description": "Explore innovative app development with our software developer portfolio.",
+    "imgUrl": "https://res.cloudinary.com/dvp3nyulf/image/upload/v1709147870/under-work.jpg"
   },
   "navbar": {
     "imgUrl": "https://res.cloudinary.com/duc04fwdb/image/upload/v1706799023/jammal_photos/wz8vakvjdjio0wcqhnfe.svg",
     "links": [
       {
         "title": "Home",
-        "url": "#home"
+        "url": "hero"
       },
       {
         "title": "Services",
-        "url": "#services"
+        "url": "services"
       },
       {
         "title": "Skills",
-        "url": "#skills"
+        "url": "projects"
       },
       {
         "title": "Testimonials",
-        "url": "#testimonials"
+        "url": "testimonials"
       },
       {
         "title": "Contact",
-        "url": "#contact"
+        "url": "contact"
       }
     ]
   },
   "hero": {
+    "sectionId": "hero",
     "imgUrl": ["https://res.cloudinary.com/duc04fwdb/image/upload/v1708017251/jammal_photos/z8h6g9lv2sxmywvygcts.png"],
     "text": "HELLO MY NAME IS",
     "name": "ZOE MILLER",
@@ -56,6 +57,7 @@
     "linkText": "MY SKILLS"
   },
   "services": {
+    "sectionId": "services",
     "title": "WHAT I DO",
     "subtitle": "My Services",
     "buttonText": " See Pricing",
@@ -79,6 +81,7 @@
     ]
   },
   "features": {
+    "sectionId": "features",
     "title": "PROFESSIONAL SKILLS",
     "subtitle": "My Talent",
     "features": [
@@ -115,6 +118,7 @@
     ]
   },
   "projects": {
+    "sectionId": "projects",
     "title": "PROTFOLIO",
     "subtitle": "My Cases",
     "buttonText": "See Pricing",
@@ -161,6 +165,7 @@
     ]
   },
   "cta": {
+    "sectionId": "cta",
     "title": "RESUME ",
     "subtitle": "My Story",
     "imgs": [
@@ -215,6 +220,7 @@
     ]
   },
   "testimonials": {
+    "sectionId": "testimonials",
     "title": "Testimonials",
     "subtitle": " WHAT Customers Say",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
@@ -253,6 +259,7 @@
     ]
   },
   "pricing": {
+    "sectionId": "pricing",
     "title": "PRICING",
     "subtitle": "MY Price Board",
     "plans": [
@@ -285,6 +292,7 @@
     ]
   },
   "blogs": {
+    "sectionId": "blogs",
     "title": "LATEST BLOG",
     "subtitle": " MY Articles and Advice ",
     "description": "Vivamus interdum suscipit lacus. Nunc ultrices accumsan matties. Aliguam vel sem vel velit efficer malesuda. Donec arcu lacus, ornare rget...",
@@ -313,6 +321,7 @@
     ]
   },
   "contact": {
+    "sectionId": "contact",
     "title": "CONTACT ME ",
     "subtitle": "LET'S  Talk About Ideas",
     "name": "YOUR FULL NAME *",
@@ -344,6 +353,7 @@
     "buttonText": "SEND MESSAGE"
   },
   "footer": {
+    "sectionId": "footer",
     "title": "Copyright Ⓒ 2022 LUIQUE . ALL RIGHTS RESERVED",
     "subtitle": "DEVELOPED BY BSLTHEMES",
     "medias": [
@@ -362,6 +372,6 @@
     ]
   },
   "colors": {
-    "templateColors": ["red", "red", "red", "red", "red"]
+    "templateColors": ["#1f2937", "#9b650d", "#f0ebe3", "#262626", "#29a587", "#808080"]
   }
 }

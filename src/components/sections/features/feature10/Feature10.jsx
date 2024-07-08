@@ -1,9 +1,11 @@
 import React from "react";
 import "../../../../assets/css/globals10.css";
+import { useSelector } from "react-redux";
 
 
 const Feature10 = ({ template }) => {
-  const feature = template.features;
+  const ownFooter = useSelector((state) => state.ownTemplate.features);
+  const feature = template ? template.features : ownFooter;
 
   return (
     <>

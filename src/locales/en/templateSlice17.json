@@ -1,9 +1,9 @@
 {
   "templateInfo": {
     "id": 17,
-    "title": "",
-    "description": "",
-    "imgUrl": ""
+    "title": "Personal Portfolio",
+    "description": "Dynamic web portfolio emphasizing frontend and UI/UX design expertise.",
+    "imgUrl": "https://res.cloudinary.com/dvp3nyulf/image/upload/v1709147870/under-work.jpg"
   },
   "navbar": {
     "title": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1720037236/done/fast-delivery-fast-svgrepo-com_fr05yy_2_lxmgwl.webp",
@@ -110,6 +110,6 @@
     ]
   },
   "colors": {
-    "templateColors": ["#fff", "#cda274", "#292f36", "#f4f0ec", "#777777"]
+    "templateColors": ["#ff0c00", "#bb2c51", "#21d4b9", "#ffffff", "#000000", "#a09d9d"]
   }
 }

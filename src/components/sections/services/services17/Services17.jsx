@@ -1,9 +1,11 @@
 import React, { useState } from "react";
 import "./services17.css";
+import { useSelector } from "react-redux";
 
 const Services17 = ({ template }) => {
-  const services = template.services;
-  const [isHovered, setIsHovered] = useState(false);
+  const ownServices = useSelector((state) => state.ownTemplate.services);
+  const services = template ? template.services : ownServices;
+    const [isHovered, setIsHovered] = useState(false);
 
   const handleMouseEnter = () => {
     setIsHovered(true);

@@ -1,9 +1,11 @@
 import React, { useState } from "react";
 import styles from "../../heros/hero7/styles7/style";
 import { useTranslation } from "react-i18next";
+import { useSelector } from "react-redux";
 
 const Navbar7 = ({ template }) => {
-  const navbar = template.navbar;
+  const ownNavbar = useSelector((state) => state.ownTemplate.navbar);
+  const navbar = template ? template.navbar : ownNavbar;
   const [active, setActive] = useState("Home");
   const [toggle, setToggle] = useState(false);
   const { i18n } = useTranslation();
@@ -22,7 +24,7 @@ const Navbar7 = ({ template }) => {
                 className={`font-poppins font-normal cursor-pointer text-[16px] ${active === nav.title ? "text-white" : "text-dimWhite"} `}
                 onClick={() => setActive(nav.title)}
               >
-                <a href={nav.url} style={{ color: active === nav.title ? "var(--website-7-color-6)" : "var(--website-7-color-5)" }}>
+                <a href={`#${nav.url}`} style={{ color: active === nav.title ? "var(--website-7-color-6)" : "var(--website-7-color-5)" }}>
                   {nav.title}
                 </a>
               </li>
@@ -52,7 +54,7 @@ const Navbar7 = ({ template }) => {
                       setToggle(false);
                     }}
                   >
-                    <a href={nav.url} style={{ color: active === nav.title ? "var(--website-7-color-6)" : "var(--website-15-color-3)" }}>
+                    <a href={`#${nav.url}`} style={{ color: active === nav.title ? "var(--website-7-color-6)" : "var(--website-15-color-3)" }}>
                       {nav.title}
                     </a>
                   </li>

@@ -2,12 +2,13 @@ import React from "react";
 import "../hero11/hero11.css";
 import Header11 from "../hero11/header11/Header11";
 import ScorollDown11 from "../hero11/scorollDown11/ScorollDown11.jsx";
+import { useSelector } from "react-redux";
 
 const Hero11 = ({ template }) => {
-  const hero = template.hero;
-
+  const ownHero = useSelector((state) => state.ownTemplate.hero);
+  const hero = template ? template.hero : ownHero;
   return (
-    <section className="home11" id="home">
+    <section className="home11" id={hero.sectionId}>
       <div className="intro11 flex flex-col items-center">
         <img src={hero.imgUrl} alt="" className="" />
         <h1 className="home11__name">{hero.title}</h1>

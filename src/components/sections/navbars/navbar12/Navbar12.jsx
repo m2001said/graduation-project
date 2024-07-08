@@ -1,8 +1,10 @@
 import React, { useEffect, useState } from "react";
 import "./navbar12.css";
+import { useSelector } from "react-redux";
 const Navbar = ({ template }) => {
-  const navbar = template.navbar;
-  const [sticky, setSticky] = useState(false);
+  const ownNavbar = useSelector((state) => state.ownTemplate.navbar);
+  const navbar = template ? template.navbar : ownNavbar;
+    const [sticky, setSticky] = useState(false);
   const [mobileMenu, setMobileMenu] = useState(false);
 
   useEffect(() => {

@@ -4,9 +4,11 @@ import { Swiper, SwiperSlide, useSwiper } from "swiper/react";
 import "swiper/css";
 import "./project4.css";
 import { sliderSettings } from "./common";
+import { useSelector } from "react-redux";
 
 const Project4 = ({ template }) => {
-  const projects = template.projects;
+  const ownProjects = useSelector((state) => state.ownTemplate.projects);
+  const projects = template ? template.projects : ownProjects;
   return (
     <div id="residencies4" className="r-wrapper4">
       <div className="paddings4 innerWidth4 r-container4">

@@ -1,12 +1,13 @@
-import React,{useEffect} from 'react';
+import React from 'react';
 import "./teams5.css";
+import { useSelector } from 'react-redux';
 
 
 
 
 const Teams5 = ({template}) => {
-   const team = template.team;
-
+  const ownTeam= useSelector((state) => state.ownTemplate.team);
+  const team = template ? template.team : ownTeam;
 
 
   return (

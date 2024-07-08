@@ -1,8 +1,10 @@
 import React from "react";
 import "./hero12.css";
+import { useSelector } from "react-redux";
 
 const Hero12 = ({ template }) => {
-  const hero = template.hero;
+  const ownHero = useSelector((state) => state.ownTemplate.hero);
+  const hero = template ? template.hero : ownHero; 
   return (
     <div className="hero12 container12">
       <div className="hero-text12">

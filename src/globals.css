@@ -1,8 +1,9 @@
 /* this globals only for shaaban and abdelmoaty */
 /* for mainPages and dashboard and for root-colors and root-fonts of all */
 /* root-colors and root-fonts ----all team will use them */
-
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Scheherazade+New:wght@300;400;500;600;700&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -23,7 +24,7 @@
 
   /*for main Page*/
   --color-1: #430c7b;
-  --color-2: #30086b;
+  --color-2: hsl(264, 86%, 23%);
   --color-3: #ce79cc;
   --color-4: #fdc2b8;
   --color-5: #6b3974;
@@ -37,10 +38,10 @@
 }
 html {
   background-color: white;
+  scroll-behavior: smooth;
 }
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
 }
 
 /* Global Rules */
@@ -52,18 +53,16 @@ body {
 
 /* RTL Styles */
 .rtl {
+  font-family: "Scheherazade New", cursive;
   direction: rtl;
   text-align: right;
 }
 
 /* LTR Styles */
 .ltr {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   direction: ltr;
   text-align: left;
-}
-
-html {
-  scroll-behavior: smooth;
 }
 
 ul {
@@ -235,11 +234,14 @@ ul {
   }
 }
 .update-controller {
-  color: white;
+  color: white !important;
   padding: 1rem;
   background-color: var(--primary-color2-dark);
   border-bottom: 4px solid var(--primary-color2);
   border-right: 4px solid var(--primary-color2);
+}
+.update-controller h3 {
+  color: white;
 }
 .controller-name {
   @apply body-bold  cursor-pointer capitalize;
@@ -254,7 +256,7 @@ ul {
 .controller-field,
 .controller-field_without-padding {
   @apply flex flex-col border-2 rounded-lg border-solid pb-1 overflow-hidden text-black;
-  border-color: var(--website-1-color-5);
+  border-color: #777777;
 }
 .controller-field_without-padding {
   padding-bottom: 0;
@@ -263,12 +265,15 @@ ul {
   padding-left: 0.5rem;
   padding-right: 4px;
 }
+.subController label {
+  color: #1a2345;
+}
 .subController:not(:last-child) {
-  border-bottom: 2px solid var(--website-1-color-5);
+  border-bottom: 2px solid #777777;
 }
 .controller-label {
   @apply text-[14px]  capitalize px-3 py-2 border-b-2;
-  border-color: var(--website-1-color-5);
+  border-color: #777777;
   background-color: #fff0fe;
   color: var(--website-filed-title);
 }
@@ -281,12 +286,12 @@ ul {
 .controller-array {
   @apply flex flex-col rounded-lg p-1;
   gap: 1rem;
-  border: 2px solid var(--website-1-color-5);
+  border: 2px solid #777777;
 }
 .controller-btn-add {
   background: #777777;
   border: none;
-  color: white;
+  color: white !important;
   padding: 8px 16px;
   text-align: center;
   text-decoration: none;
@@ -299,10 +304,13 @@ ul {
 .controller-btn-add.inner {
   margin-left: 0.25rem;
   margin-top: 0.25rem;
+  color: white;
 }
 .input-controller {
   @apply text-black  p-2 h-auto outline-none w-full custom-scrollbar;
   @apply text-black  p-2 h-auto outline-none w-full custom-scrollbar;
+  border-color: transparent;
+  background: #f2f2f2;
 }
 .dashboard-color-picker {
   margin-right: 4px;

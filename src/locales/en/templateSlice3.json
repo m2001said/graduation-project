@@ -1,43 +1,43 @@
 {
   "templateInfo": {
     "id": 3,
-    "title": "",
-    "description": "",
-    "imgUrl": ""
+    "title": "FitClub Pro",
+    "description": "Shape your ideal body with expert coaches, diverse programs.",
+    "imgUrl": "/static/media/design3.9b6cdea6ee3807420309.jpg"
   },
   "navbar": {
     "imgUrl": "https://res.cloudinary.com/duc04fwdb/image/upload/v1705928879/jammal_photos/vqliep1jh8zlgkmwkewx.png",
     "links": [
       {
         "title": "Home",
-        "url": "home"
+        "url": "hero"
       },
       {
         "title": "Programs",
-        "url": "programs"
+        "url": "projects"
       },
       {
         "title": "Why us",
-        "url": "WhyUs"
+        "url": "features"
       },
       {
         "title": "Plans",
-        "url": "Plans"
+        "url": "pricing"
       },
       {
         "title": "Testimonials",
-        "url": "Testimonials"
+        "url": "testimonials"
       }
     ]
   },
   "hero": {
+    "sectionId": "hero",
     "title": "shape your ideal body",
     "subtitle": "the best fitness club in the town",
     "imgUrl": "https://res.cloudinary.com/duc04fwdb/image/upload/v1703609517/jammal_photos/neoqh0j4yjexem6j9ozp.png",
     "description": "In here we will help you to shape and build your ideal body and live up your life to fullest..",
     "heros": [
       {
-        "title": "+140",
         "subtitle": "EXPORT COACHS"
       },
       {
@@ -54,6 +54,7 @@
     "text": "Join now"
   },
   "projects": {
+    "sectionId": "projects",
     "title": "EXPLORE OUR",
     "subtitle": "PROGRAMS",
     "description": "TO SHAPE YOU",
@@ -79,6 +80,7 @@
     ]
   },
   "features": {
+    "sectionId": "features",
     "title": "WHY CHOOSE US ?",
     "subtitle": "SOME REASONS",
     "imgs": [
@@ -110,6 +112,7 @@
     ]
   },
   "pricing": {
+    "sectionId": "pricing",
     "title": "READY TO START",
     "subtitle": "YOUR JOURNEY",
     "text": "NOW WITHUS",
@@ -135,6 +138,7 @@
     ]
   },
   "testimonials": {
+    "sectionId": "testimonials",
     "title": "TESTIMONIALS",
     "subtitle": "WHAT THE PEOPLE THINK ABOUT US",
     "description": "WHAT THEY SAY ABOUT US",
@@ -163,14 +167,9 @@
       }
     ]
   },
-  "cta": {
-    "title": "READY TO",
-    "subtitle": "LEVEL UP",
-    "description": "YOUR BODY ",
-    "text": "WITH US?",
-    "buttonText": "join Now"
-  },
+  "cta": { "sectionId": "cta", "title": "READY TO", "subtitle": "LEVEL UP", "description": "YOUR BODY ", "text": "WITH US?", "buttonText": "join Now" },
   "footer": {
+    "sectionId": "footer",
     "imgUrl": "https://res.cloudinary.com/duc04fwdb/image/upload/v1702990991/jammal_photos/isxpadjx12ja5wqaqzsk.png",
     "medias": [
       {
@@ -188,6 +187,6 @@
     ]
   },
   "colors": {
-    "templateColors": ["#fff", "#cda274", "#292f36", "#f4f0ec", "#777777"]
+    "templateColors": ["#f48915", "#3c3f45", "linear-gradient(210.41deg, #fa5042 1.14%, #ffa739 100.75%)", "#9c9c9c", "#f4f0ec", "#656565"]
   }
 }

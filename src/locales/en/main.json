@@ -28,7 +28,12 @@
     "TITLE": "Welcome To ZWEB Where Your Websites Dreams Take Flight With Ai",
     "DESCRIPTION": "At Zagazig Easy Website Builder, we’re pioneering a new era in the design process. Our intelligent AI website builder turns your digital vision into reality in just a few clicks. From abstract concepts to fully developed websites, the future of web design starts here.",
     "BUTTONTEXT": "Generate website",
-    "BUTTONTEXTADMIN": "Admin Dashboard"
+    "BUTTONTEXTADMIN": "Admin Dashboard",
+    "SERVICES": "Services",
+    "PAGES": "Custom Webites",
+    "WEBSITES": "Ai Webites",
+    "CONTACT": "Contact us",
+    "FOOTER": "Made by love ❤️ With Zagazig CSE Students 2024"
   },
   "STEPS": {
     "TITLE_1": "Sign In",
@@ -38,7 +43,9 @@
     "TITLE_3": "Ai generator",
     "DESCRIPTION_3": "Select your preferred design and let our AI do the rest. It will generate relevant text and choose suitable images based on your selection. Our AI ensures the content aligns with your design and purpose.",
     "TITLE_4": "Revise Your Data",
-    "DESCRIPTION_4": "Feel free to review and modify your texts as needed. Once you’re satisfied, save your changes. The revised content is now ready for deployment. Remember, your data is in your control. Make the most of it!"
+    "DESCRIPTION_4": "Feel free to review and modify your texts as needed. Once you’re satisfied, save your changes. The revised content is now ready for deployment. Remember, your data is in your control. Make the most of it!",
+    "TITLE_5": "Deploy and Share",
+    "DESCRIPTION_5": "You can now deploy your website and share it with your friends. With just a few clicks, your personalized web space goes live. Spread the word and showcase your creation to the world. Enjoy your new website!"
   },
 
   "DEMOLIVE": {
@@ -54,12 +61,6 @@
     "SEND": "Send Message"
   },
   "DESIGNS": {
-    "TITLE": "Our Designs",
-    "DESCRIPTION": "Explore our latest and greatest designs.",
-    "TITLE_1": "Your Websites",
-    "DESCRIPTION_1": "Discover the incredible websites you've created.",
-    "TITLE_2": "Start From Scratch",
-    "DESCRIPTION_2": "Craft a page that reflects your professionalism",
     "TITLE_3": "Unique Homes",
     "DESCRIPTION_3": "Explore diverse design and project updates for personalized living.",
     "TITLE_4": "Web Dev Portfolio",
@@ -97,10 +98,27 @@
     "TITLE_20": "DriveWise Autos",
     "DESCRIPTION_20": "Choose us for the best prices, fast and secure, and skilled drivers."
   },
+
+  "SERVICES": {
+    "TITLE": "Our Services",
+    "DESCRIPTION": "Discover our incredible websites that you can create.",
+    "SERVICES": {
+      "TITLE_1": "AI-Generated Websites",
+      "DESCRIPTION_1": "Choose from 18 different template designs, and let our AI generate all the text and images based on your input. This service allows you to quickly create a professional website with minimal effort.",
+      "TITLE_2": "Custom Websites",
+      "DESCRIPTION_2": "Build your custom website by choosing different sections and manually changing the content. This service gives you the flexibility to create a personalized website tailored to your specific needs and preferences."
+    }
+  },
   "WEBSITES": {
-    "TITLE": "Your Websites",
-    "DESCRIPTION": "Discover the incredible websites you've created.",
+    "TITLE": "Your AI Websites",
+    "DESCRIPTION": "Discover the incredible websites you've created with AI.",
     "NO_WEBSITES": "No Websites has been created by you",
+    "CREATE": "Create One"
+  },
+  "PAGES": {
+    "TITLE": "Your Custom Websites",
+    "DESCRIPTION": "Discover the incredible Custom Websites you've created.",
+    "NO_PAGES": "No Custom Websites has been created by you",
     "CREATE": "Create One"
   }
 }

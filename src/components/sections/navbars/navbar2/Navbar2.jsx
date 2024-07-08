@@ -1,10 +1,11 @@
 import React, { useState } from "react";
 import "./navbar2.css";
+import { useSelector } from "react-redux";
 
 const Navbar2 = ({ template }) => {
   const [activeNav, setActiveNav] = useState("#");
-  const navbar = template.navbar;
-
+  const ownNavbar = useSelector((state) => state.ownTemplate.navbar);
+  const navbar = template ? template.navbar : ownNavbar;
   return (
     <nav className="nav2 mb-5">
       {navbar.links.map((item) => (

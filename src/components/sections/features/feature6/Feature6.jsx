@@ -1,8 +1,10 @@
 import React from "react";
 import "./feature6.css";
+import { useSelector } from "react-redux";
 
 const Feature6 = ({ template }) => {
-  const features = template.features;
+  const ownFooter = useSelector((state) => state.ownTemplate.features);
+  const features = template ? template.features : ownFooter;
 
   return (
     <section className="design-6" id="About">

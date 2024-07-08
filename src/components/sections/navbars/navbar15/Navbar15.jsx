@@ -1,8 +1,11 @@
 import React, { useState } from "react";
 import { useTranslation } from "react-i18next";
+import { useSelector } from "react-redux";
 
-const Navbar7 = ({ template }) => {
-  const navbar = template.navbar;
+const Navbar15 = ({ template }) => {
+  const ownNavbar = useSelector((state) => state.ownTemplate.navbar);
+  const navbar = template ? template.navbar : ownNavbar;
+  // const { navbar } = useSelector((state) => state.template15);
   const [active, setActive] = useState("Home");
   const [toggle, setToggle] = useState(false);
   const { i18n } = useTranslation();
@@ -21,7 +24,7 @@ const Navbar7 = ({ template }) => {
             } ${index === navbar.links.length - 1 ? "mr-10" : "mr-10"}`}
             onClick={() => setActive(nav.title)}
           >
-            <a className="honerlink11" href={nav.url} style={{ color: active === nav.title ? "var(--website-15-color-3)" : "var(--website-15-color-5)" }}>
+            <a className="honerlink11" href={`#${nav.url}`} style={{ color: active === nav.title ? "var(--website-15-color-3)" : "var(--website-15-color-5)" }}>
               {nav.title}
             </a>
           </li>
@@ -51,7 +54,7 @@ const Navbar7 = ({ template }) => {
                   setToggle(false);
                 }}
               >
-                <a href={nav.url} style={{ color: active === nav.title ? "var(--website-15-color-6)" : "var(--website-15-color-3)" }}>
+                <a href={`#${nav.url}`} style={{ color: active === nav.title ? "var(--website-15-color-6)" : "var(--website-15-color-3)" }}>
                   {nav.title}
                 </a>
               </li>
@@ -63,4 +66,4 @@ const Navbar7 = ({ template }) => {
   );
 };
 
-export default Navbar7;
+export default Navbar15;

@@ -70,16 +70,20 @@
 // export default Hero7;
 import React from "react";
 import styles from "../../heros/hero7/styles7/style";
+import { useSelector } from "react-redux";
 
 const Hero7 = ({ template }) => {
-  const hero = template.hero;
-
+  const ownHero = useSelector((state) => state.ownTemplate.hero);
+  const hero = template ? template.hero : ownHero;
   return (
     <div className={`bg-primary ${styles.flexStart}`}>
       <div className={`${styles.boxWidth}`}>
-        <section id="home" className={`flex md:flex-row flex-col ${styles.paddingY} ئ`}>
+        <section id={hero.sectionId} className={`flex md:flex-row flex-col ${styles.paddingY} ئ`}>
           <div className={`flex-1 ${styles.flexStart} flex-col xl:px-0 sm:px-16 px-6`}>
-            <div className={`flex flex-row items-center py-[6px] px-4 rounded-[10px]  ${styles.primary}`} style={{ backgroundColor: "var(--website-7-color-6)" }}>
+            <div
+              className={`flex flex-row items-center py-[6px] px-4 rounded-[10px]  ${styles.primary}`}
+              style={{ backgroundColor: "var(--website-7-color-6)" }}
+            >
               <img src={hero.imgs[0]} alt="discount" className="w-[32px] h-[32px]" />
               <p className={`${styles.paragraph} ml-2 text-white`}>{hero.subtitle}</p>
             </div>

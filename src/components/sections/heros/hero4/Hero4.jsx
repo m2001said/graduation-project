@@ -3,9 +3,11 @@ import { useEffect } from "react";
 
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { useSelector } from "react-redux";
 
 const Hero4 = ({ template }) => {
-  const hero = template.hero;
+  const ownHero = useSelector((state) => state.ownTemplate.hero);
+  const hero = template ? template.hero : ownHero;
   useEffect(() => {
     AOS.init({
       duration: 1000,
@@ -32,7 +34,7 @@ const Hero4 = ({ template }) => {
   return (
     <section className="hero-wrapper4" data-aos="fade-up">
       <div className="paddings4 innerWidth4 flexCenter4 hero-container4">
-        <div className="flexColStart4 hero-left4" data-aos="fade-right">
+        <div className="flexColStart4 hero-left4" data-aos="fade-up">
           <div className="hero-title4">
             <div className="orange-circle4" />
             <h1>{hero.title}</h1>

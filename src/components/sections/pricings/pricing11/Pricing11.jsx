@@ -5,7 +5,7 @@ const Pricings11 = ({ template }) => {
   const pricing = template.pricing;
 
   return (
-    <section className="pt-10 md:pt-16" id="layers">
+    <section className="pt-10 md:pt-16" id={pricing.sectionId}>
       <h2 className="section__title11">{pricing.title}</h2>
       <div className="flex items-center justify-around gap-10 flex-wrap">
         {pricing.plans.map((card, index) => (

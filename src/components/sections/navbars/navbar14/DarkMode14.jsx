@@ -1,9 +1,10 @@
 import React from "react";
+import { useSelector } from "react-redux";
 
 
 const DarkMode14 = ({template}) => {
-    const navbar = template.navbar;
-
+  const ownNavbar = useSelector((state) => state.ownTemplate.navbar);
+  const navbar = template ? template.navbar : ownNavbar;
   const [theme, setTheme] = React.useState(localStorage.getItem("theme") ? localStorage.getItem("theme") : "light");
 
   const element = document.documentElement;
