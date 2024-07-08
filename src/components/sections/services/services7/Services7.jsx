@@ -1,4 +1,3 @@
-
 import React from "react";
 import styles, { layout } from "../../heros/hero7/styles7/style"; // Adjust the path based on your project structure
 import Button7 from "../../features/feature7/Button7";
@@ -8,7 +7,7 @@ const CardDeal = ({ template }) => {
   const ownServices = useSelector((state) => state.ownTemplate.services);
   const services = template ? template.services : ownServices;
   return (
-    <div className={`bg-primary ${styles.paddingX} ${styles.flexStart}`}>
+    <div id={services.sectionId} className={`bg-primary ${styles.paddingX} ${styles.flexStart}`}>
       <div className={`${styles.boxWidth}`}>
         <section className={layout.section}>
           <div className={layout.sectionInfo}>

@@ -63,11 +63,11 @@ import { useSelector } from "react-redux";
 const Footer7 = ({ template }) => {
   const ownFooter = useSelector((state) => state.ownTemplate.footer);
   const footer = template ? template.footer : ownFooter;
-  
+
   const socialMediaIcons = footer.medias;
 
   return (
-    <div className={`bg-primary ${styles.paddingX} ${styles.flexStart}`}>
+    <div id={footer.sectionId} className={`bg-primary ${styles.paddingX} ${styles.flexStart}`}>
       <div className={`${styles.boxWidth}`}>
         <section className={`${styles.flexCenter} ${styles.paddingY} flex-col`} style={{ color: "var(--website-7-color-6)" }}>
           <div className={`${styles.flexStart} md:flex-row flex-col mb-8 w-full`}>
@@ -98,13 +98,13 @@ const Footer7 = ({ template }) => {
 
           <div className="w-full flex justify-between items-center md:flex-row flex-col pt-6 border-t-[1px] border-t-[#3F3E45]">
             <p className="font-poppins font-normal text-center text-[18px] leading-[27px] text-[var(--website-7-color-6)]">{footer.title}</p>
-            <div className="flex flex-row md:mt-0 mt-6">
+            <div className="flex flex-row gap-4 md:mt-0 mt-6">
               {socialMediaIcons.map((social, index) => (
                 <img
                   key={index}
                   src={social.icon}
                   alt={`Social Icon ${index}`}
-                  className={`w-[21px] h-[21px] object-contain cursor-pointer ${index !== socialMediaIcons.length - 1 ? "mr-6" : "mr-0"}`}
+                  className={`w-[21px] h-[21px] object-contain cursor-pointer `}
                   onClick={() => window.open(social.url)}
                 />
               ))}

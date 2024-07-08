@@ -10,7 +10,7 @@
     "links": [
       {
         "icon": "https://res.cloudinary.com/duc04fwdb/image/upload/v1707525736/jammal_photos/bchiolwka0mnwvxo4hyb.svg",
-        "url": "home"
+        "url": "hero"
       },
       {
         "icon": "https://res.cloudinary.com/duc04fwdb/image/upload/v1707525829/jammal_photos/tswsmtson7odglvqpal7.png",
@@ -18,15 +18,15 @@
       },
       {
         "icon": "https://res.cloudinary.com/duc04fwdb/image/upload/v1707525877/jammal_photos/o0wp66kvooi2ko10robo.png",
-        "url": "resume"
+        "url": "cta"
       },
       {
         "icon": "https://res.cloudinary.com/duc04fwdb/image/upload/v1707526376/jammal_photos/bzy6y1qtnk4jv90timxl.png",
-        "url": "portfolio"
+        "url": "projects"
       },
       {
         "icon": "https://res.cloudinary.com/duc04fwdb/image/upload/v1707526425/jammal_photos/fvk0ywqqxdfrtefnu1bf.png",
-        "url": "layers"
+        "url": "pricing"
       },
       {
         "icon": "https://res.cloudinary.com/duc04fwdb/image/upload/v1707525780/jammal_photos/ysgiu27fi7lneuiyn3le.png",
@@ -39,6 +39,7 @@
     ]
   },
   "hero": {
+    "sectionId": "hero",
     "title": "Bolby Doe",
     "subtitle": "I'm a Front-End developer",
     "imgUrl": "https://res.cloudinary.com/duc04fwdb/image/upload/v1707528928/jammal_photos/vtflccswxqzvklifgnrp.svg",
@@ -68,6 +69,7 @@
     ]
   },
   "services": {
+    "sectionId": "services",
     "imgUrl": "https://res.cloudinary.com/duc04fwdb/image/upload/v1707529935/jammal_photos/qkowgxkdtneaviwup0dv.svg",
     "description": "I am Bolby Doe, web developer from London, United Kingdom. I have rich experience in web site design and building and customization, also I am good at Word Press.",
     "buttonText": "Download CV",
@@ -87,6 +89,7 @@
     ]
   },
   "statistics": {
+    "sectionId": "statistics",
     "statistics": [
       {
         "title": "Project completed",
@@ -111,6 +114,7 @@
     ]
   },
   "items": {
+    "sectionId": "items",
     "title": "Items",
     "items": [
       {
@@ -131,6 +135,7 @@
     ]
   },
   "cta": {
+    "sectionId": "cta",
     "title": "Experience",
     "educations": [
       {
@@ -174,6 +179,7 @@
     ]
   },
   "projects": {
+    "sectionId": "projects",
     "title": "Projects",
     "imgUrl": "https://res.cloudinary.com/duc04fwdb/image/upload/v1707532366/jammal_photos/j8mhijwgfitdt7jodrfo.png",
     "categories": ["Everything", "Creative", "Art", "Design", "Branding"],
@@ -211,6 +217,7 @@
     ]
   },
   "pricing": {
+    "sectionId": "pricing",
     "title": "Pricing Plans",
     "plans": [
       {
@@ -244,6 +251,7 @@
     "buttonText": "Get Started"
   },
   "testimonials": {
+    "sectionId": "testimonials",
     "title": "Clients & Reviews",
     "testimonials": [
       {
@@ -261,6 +269,7 @@
     ]
   },
   "features": {
+    "sectionId": "features",
     "title": "Latest Posts",
     "features": [
       {
@@ -287,6 +296,7 @@
     ]
   },
   "contact": {
+    "sectionId": "contact",
     "title": "Get In Touch",
     "subtitle": "Let's talk about everything!",
     "description": "Don't like forms? Send me an email. 👋",

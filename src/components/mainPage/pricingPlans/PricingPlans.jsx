@@ -56,7 +56,7 @@ const PricingPlans = () => {
         <div className="flex md:flex-row flex-col justify-center items-center gap-24 md:gap-0">
           {plans?.map((plan) => (
             <div key={plan._id} className="flex">
-              <div data-aos="fade-right" data-aos-duration="1000" className="bg-white/50 p-8 px-10 rounded-3xl shadow-lg w-72 flex flex-col  free_plan">
+              <div data-aos="fade-up" data-aos-duration="1000" className="bg-white/50 p-8 px-10 rounded-3xl shadow-lg w-72 flex flex-col  free_plan">
                 <h2 className="text-3xl font-extrabold mb-4 text-black">{plan.price === 0 ? "Free" : "premium"}</h2>
                 <p className="mb-6 text-2xl font-medium">$ {plan.price} / month</p>
                 <ul className="mb-6 font-medium">
@@ -95,7 +95,7 @@ const PricingPlans = () => {
                   </button>
                 )}
               </div>
-              {/* <div data-aos="fade-left" data-aos-duration="1000" className="p-8 rounded-3xl w-72 flex flex-col text-white premium_plan">
+              {/* <div data-aos="fade-up" data-aos-duration="1000" className="p-8 rounded-3xl w-72 flex flex-col text-white premium_plan">
                 <div className="self-end bg-pink-500 text-xs px-4 py-1 rounded-3xl font-medium premium_plan_badge">MOST POPULAR</div>
                 <h2 className="text-3xl my-4">
                   <span className="font-extrabold">$20</span>/month

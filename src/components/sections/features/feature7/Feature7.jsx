@@ -27,7 +27,7 @@ const Business7 = ({ template }) => {
   return (
     <div className={`bg-primary ${styles.paddingX} ${styles.flexStart}`}>
       <div className={`${styles.boxWidth}`}>
-        <section id="features" className={layout.section}>
+        <section id={feature.sectionId} className={layout.section}>
           <div className={layout.sectionInfo}>
             <h2 className={styles.heading2}>
               {title} <br className="sm:block hidden" /> {subtitle}

@@ -42,17 +42,17 @@
 .services__title11_2 {
   font-size: var(--h3-font-size);
   margin-bottom: 1rem;
-  color: var(--website-11-color-2);
+  color: var(--website-11-color-2) !important;
 }
 .services__description11_2 {
   color: var(--website-11-color-2);
 }
-.services__card11_2:nth-child(2) .services__title11_2 {
+/* .services__card11_2:nth-child(2) .services__title11_2 {
   color: var(--website-11-color-5);
 }
 .services__card11_2:nth-child(2) .services__description11_2 {
   color: var(--website-11-color-5);
-}
+} */
 
 @media screen and (max-width: 1024px) {
   .services__card11_2 {

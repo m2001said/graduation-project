@@ -11,7 +11,7 @@ const SingleItem = ({ title, description, subtitle, year, template }) => {
     <article className="h-full flex-wrap basis-0 flex mb-2 border-0 border-b-2 border-solid border-black relative">
       <div className={`accordion-border w-full ${language === "ar" ? "ml-6" : "mr-6"}`}>
         <p className="flex justify-between relative items-center m-auto w-full pl-6">
-          <span className="items-center text-2xl font-bold py-3 cta_6">{title}</span>
+          <span className="items-center text-2xl font-bold py-3 textColor15">{title}</span>
         </p>
         {expanded && (
           <div className="pr-5 pl-3">

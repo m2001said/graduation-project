@@ -10,23 +10,24 @@
     "links": [
       {
         "title": "Home",
-        "url": "#home"
+        "url": "hero"
       },
       {
         "title": "Features",
-        "url": "#features"
+        "url": "features"
       },
       {
         "title": "Product",
-        "url": "#product"
+        "url": "items"
       },
       {
         "title": "Clients",
-        "url": "#clients"
+        "url": "testimonials"
       }
     ]
   },
   "hero": {
+    "sectionId": "hero",
     "title": "The Next Generation Payment Method.",
     "subtitle": "20% Discount For 1 Month Account",
     "description": "Our team of experts uses a methodology to identify the credit cards most likely to fit your needs. We examine annual percentage rates, annual fees.",
@@ -38,6 +39,7 @@
     ]
   },
   "statistics": {
+    "sectionId": "statistics",
     "statistics": [
       {
         "title": "User Active",
@@ -54,6 +56,7 @@
     ]
   },
   "features": {
+    "sectionId": "features",
     "title": "You do the business,",
     "subtitle": "we’ll handle the money.",
     "description": " With the right credit card, you can improve your financial life by building credit, earning rewards and saving money. But with hundreds of credit cards on the market.",
@@ -77,6 +80,7 @@
     ]
   },
   "items": {
+    "sectionId": "items",
     "title": "Easily control your",
     "subtitle": " billing & invoicing",
     "description": " Elit enim sed massa etiam. Mauris eu adipiscing ultrices ametodio aenean neque. Fusce ipsum orci rhoncus aliporttitor integer platea placerat.",
@@ -87,6 +91,7 @@
     ]
   },
   "services": {
+    "sectionId": "services",
     "title": " Find a better card deal",
     "subtitle": "in few easy steps.",
     "description": " Arcu tortor, purus in mattis at sed integer faucibus. Aliquet quis aliquet eget mauris tortor.ç Aliquet ultrices ac, ametau.",
@@ -94,6 +99,7 @@
     "buttonText": " Get Started"
   },
   "testimonials": {
+    "sectionId": "testimonials",
     "title": "What People are",
     "subtitle": "saying about us",
     "description": " Everything you need to accept card payments and grow your business anywhere on the planet.",
@@ -119,6 +125,7 @@
     ]
   },
   "logos": {
+    "sectionId": "logos",
     "companies": [
       {
         "imgUrl": "https://res.cloudinary.com/duc04fwdb/image/upload/v1706817792/jammal_photos/yt3cnulaigujjqu1upxq.png",
@@ -139,11 +146,13 @@
     ]
   },
   "cta": {
+    "sectionId": "cta",
     "title": "Let’s try our service now!",
     "description": "Everything you need to accept card payments and grow your business anywhere on the planet.",
     "buttonText": " Get Started"
   },
   "footer": {
+    "sectionId": "footer",
     "footerSections": [
       {
         "title": "Useful Links",
