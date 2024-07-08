@@ -41,7 +41,7 @@ const Footer3 = ({ template }) => {
   const ownFooter = useSelector((state) => state.ownTemplate.footer);
   const footer = template ? template.footer : ownFooter;
   return (
-    <div className="footer3-container">
+    <div className="footer3-container" id={footer.sectionId}>
       <hr />
       <div className="footer3">
         <div className="scoil-links-f3">

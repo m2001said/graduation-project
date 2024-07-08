@@ -24,7 +24,7 @@ const Navbar15 = ({ template }) => {
             } ${index === navbar.links.length - 1 ? "mr-10" : "mr-10"}`}
             onClick={() => setActive(nav.title)}
           >
-            <a className="honerlink11" href={nav.url} style={{ color: active === nav.title ? "var(--website-15-color-3)" : "var(--website-15-color-5)" }}>
+            <a className="honerlink11" href={`#${nav.url}`} style={{ color: active === nav.title ? "var(--website-15-color-3)" : "var(--website-15-color-5)" }}>
               {nav.title}
             </a>
           </li>
@@ -54,7 +54,7 @@ const Navbar15 = ({ template }) => {
                   setToggle(false);
                 }}
               >
-                <a href={nav.url} style={{ color: active === nav.title ? "var(--website-15-color-6)" : "var(--website-15-color-3)" }}>
+                <a href={`#${nav.url}`} style={{ color: active === nav.title ? "var(--website-15-color-6)" : "var(--website-15-color-3)" }}>
                   {nav.title}
                 </a>
               </li>

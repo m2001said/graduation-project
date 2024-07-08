@@ -44,6 +44,13 @@ function App() {
     setIsModalOpen(!isModalOpen);
   };
 
+  const currentPath = window.location.pathname;
+  const showFooter = () => {
+    const adminRoutes = ["admin", "user-information", "designs", "reset-password", "failed-verified", "success-verified", "websites", "services", "pages"];
+    const pathWithoutLang = currentPath.replace(/^\/(en|ar)/, "");
+    return pathWithoutLang === "" || adminRoutes.some((route) => pathWithoutLang === `/${route}`);
+  };
+
   return (
     <div className={isRightToLeft ? "rtl" : "ltr"}>
       <MainNav toggleModal={toggleModal} />
@@ -130,7 +137,7 @@ function App() {
             {trialDesignComponents.map((Component, index) => (
               <Route
                 key={`build-trial-design${index}`}
-                path={`/${language}/build-trial-design${index + 1}`}
+                path={`/build-trial-design${index + 1}`}
                 element={
                   <ProtectedRoute>
                     <Component />
@@ -183,7 +190,7 @@ function App() {
           <Route path="*" element={<NotFound />} />
         </Routes>
       </div>
-      <Footer></Footer>
+      {showFooter() && <Footer></Footer>}
     </div>
   );
 }

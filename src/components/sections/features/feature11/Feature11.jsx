@@ -7,7 +7,7 @@ const Feature11 = ({ template }) => {
   const features = template ? template.features : ownFooter;
 
   return (
-    <section className="blog11 py-4 md:py-10" id="blog">
+    <section className="blog11 py-4 md:py-10" id={features.sectionId}>
       <h2 className="section__title11">{features.title}</h2>
       <div className="blog__container11">
         {features.features.map((card, index) => (

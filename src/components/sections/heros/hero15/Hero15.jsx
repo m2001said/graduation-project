@@ -9,7 +9,7 @@ const Hero15 = ({ template }) => {
   const language = i18n.language;
 
   return (
-    <main className="min-h-screen flex xl:pt-0 pt-36 hero15" id="home">
+    <main className="min-h-screen flex xl:pt-0 pt-36 hero15" id={hero.sectionId}>
       <div className="xl:flex items-center container max-w-[1300px] mx-auto lg:px-3">
         <section className={`xl:w-1/2 text-center ${language === "ar" ? "xl:text-right" : "xl:text-left"} `}>
           <p className="text-[25px] font-bold darkModeTextColor15">

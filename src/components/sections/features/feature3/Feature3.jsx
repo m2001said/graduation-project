@@ -1,4 +1,3 @@
-
 import React from "react";
 import "./feature3.css";
 import { useSelector } from "react-redux";
@@ -7,7 +6,7 @@ const Feature3 = ({ template }) => {
   const ownFooter = useSelector((state) => state.ownTemplate.features);
   const feature = template ? template.features : ownFooter;
   return (
-    <div className="Reasons3" id="WhyUs">
+    <div className="Reasons3" id={feature.sectionId}>
       <div className="left-r3">
         {feature.imgs.slice(0, 4).map((url, index) => (
           <img key={`image-${index}`} src={url} alt="" />

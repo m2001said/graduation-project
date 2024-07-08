@@ -4,7 +4,6 @@ import { useSelector } from "react-redux";
 const Blog15 = ({ template }) => {
   const ownFooter = useSelector((state) => state.ownTemplate.blogs);
   const blog = template ? template.blogs : ownFooter;
-  
 
   const Card = ({ date, title, imgUrl, description }) => {
     return (
@@ -26,7 +25,7 @@ const Blog15 = ({ template }) => {
   };
 
   return (
-    <main className="pb-5 pt-16 px-3 blog15" id="blog">
+    <main className="pb-5 pt-16 px-3 blog15" id={blog.sectionId}>
       <div className="flex flex-col items-center container max-w-[1300px] mx-auto">
         <h1 className="sm:text-[44px] text-[26px] text-center m-0 blog15_1">{blog.title} </h1>
         <p className="font-bold text-sm blog15_2 flex items-center text-center gap-x-4">{blog.subtitle}</p>

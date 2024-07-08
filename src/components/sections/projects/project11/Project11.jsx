@@ -14,7 +14,7 @@ const Project11 = ({ template }) => {
   };
 
   return (
-    <section className="" id="portfolio">
+    <section className="" id={projects.sectionId}>
       <h2 className="section__title11">{projects.title}</h2>
       <div className="work__filters11">
         {projects.categories.map((category, index) => (

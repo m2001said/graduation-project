@@ -45,7 +45,7 @@ const Services = () => {
       <h1 className="text-3xl font-bold tracking-tighter mb-4 text-center text-white sm:text-4xl md:text-5xl lg:text-6xl/none">{t("SERVICES.TITLE")}</h1>
       <div className="container mx-auto px-6">
         {stepsData.map((item, index) => (
-          <div className="step-card flex justify-between" key={index} data-aos={index % 2 === 0 ? "fade-right" : "fade-left"} data-aos-duration="1000">
+          <div className="step-card flex justify-between" key={index} data-aos={index % 2 === 0 ? "fade-up" : "fade-up"} data-aos-duration="1000">
             <Link to={item.item} className="step-info">
               <p className="step-title text-white hover:text-purple-200">{item.title}</p>
               <p className="step-description mt-2 text-purple-100">{item.description}</p>
