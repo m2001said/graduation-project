@@ -18,7 +18,7 @@ const MainPage = ({ toggleModal, isModalOpen }) => {
       ) : null}
       <Header toggleModal={toggleModal}></Header>
       <Steps></Steps>
-      <DemoVideo></DemoVideo>
+      {/* <DemoVideo></DemoVideo> */}
       <ContactForm></ContactForm>
       {/* <PricingPlans></PricingPlans> */}
     </>

@@ -10,27 +10,28 @@
     "links": [
       {
         "title": "الصفحة الرئيسية",
-        "url": "home"
+        "url": "hero"
       },
       {
         "title": "البرامج",
-        "url": "programs"
+        "url": "projects"
       },
       {
         "title": "لماذا نحن",
-        "url": "WhyUs"
+        "url": "features"
       },
       {
         "title": "الخطط",
-        "url": "Plans"
+        "url": "pricing"
       },
       {
         "title": "الشهادات",
-        "url": "Testimonials"
+        "url": "testimonials"
       }
     ]
   },
   "hero": {
+    "sectionId": "hero",
     "title": "شكل جسمك المثالي",
     "subtitle": "أفضل نادي للياقة البدنية في المدينة",
     "imgUrl": "https://res.cloudinary.com/duc04fwdb/image/upload/v1703609517/jammal_photos/neoqh0j4yjexem6j9ozp.png",
@@ -54,6 +55,7 @@
     "text": "انضم الآن"
   },
   "projects": {
+    "sectionId": "projects",
     "title": "اكتشف برامجنا",
     "subtitle": "البرامج",
     "description": "لتشكيلك",
@@ -79,6 +81,7 @@
     ]
   },
   "features": {
+    "sectionId": "features",
     "title": "لماذا تختارنا؟",
     "subtitle": "بعض الأسباب",
     "imgs": [
@@ -110,6 +113,7 @@
     ]
   },
   "pricing": {
+    "sectionId": "pricing",
     "title": "جاهز للبدء",
     "subtitle": "رحلتك",
     "text": "الآن معنا",
@@ -135,6 +139,7 @@
     ]
   },
   "testimonials": {
+    "sectionId": "testimonials",
     "title": "الشهادات",
     "subtitle": "ماذا يعتقد الناس عنا",
     "description": "ماذا يقولون عنا",
@@ -163,14 +168,9 @@
       }
     ]
   },
-  "cta": {
-    "title": "جاهز لـ",
-    "subtitle": "مستوى أعلى",
-    "description": "لجسمك",
-    "text": "معنا؟",
-    "buttonText": "انضم الآن"
-  },
+  "cta": { "sectionId": "cta", "title": "جاهز لـ", "subtitle": "مستوى أعلى", "description": "لجسمك", "text": "معنا؟", "buttonText": "انضم الآن" },
   "footer": {
+    "sectionId": "footer",
     "imgUrl": "https://res.cloudinary.com/duc04fwdb/image/upload/v1702990991/jammal_photos/isxpadjx12ja5wqaqzsk.png",
     "medias": [
       {

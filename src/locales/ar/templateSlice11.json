@@ -1,16 +1,16 @@
 {
   "templateInfo": {
     "id": 11,
- "title": "عرض محفظة رقمية",
-  "description": "استكشاف محفظة تصميم وتطوير الويب الرائعة لـ بولبي دو.",
-  "imgUrl": "/static/media/design11.bfe36923002dc7bcf89f.jpg"
-},
+    "title": "عرض محفظة رقمية",
+    "description": "استكشاف محفظة تصميم وتطوير الويب الرائعة لـ بولبي دو.",
+    "imgUrl": "/static/media/design11.bfe36923002dc7bcf89f.jpg"
+  },
   "navbar": {
     "imgUrl": "https://res.cloudinary.com/duc04fwdb/image/upload/v1707525696/jammal_photos/wmm8wc8r2ijrtguljwaa.svg",
     "links": [
       {
         "icon": "https://res.cloudinary.com/duc04fwdb/image/upload/v1707525736/jammal_photos/bchiolwka0mnwvxo4hyb.svg",
-        "url": "home"
+        "url": "hero"
       },
       {
         "icon": "https://res.cloudinary.com/duc04fwdb/image/upload/v1707525829/jammal_photos/tswsmtson7odglvqpal7.png",
@@ -18,15 +18,15 @@
       },
       {
         "icon": "https://res.cloudinary.com/duc04fwdb/image/upload/v1707525877/jammal_photos/o0wp66kvooi2ko10robo.png",
-        "url": "resume"
+        "url": "cta"
       },
       {
         "icon": "https://res.cloudinary.com/duc04fwdb/image/upload/v1707526376/jammal_photos/bzy6y1qtnk4jv90timxl.png",
-        "url": "portfolio"
+        "url": "projects"
       },
       {
         "icon": "https://res.cloudinary.com/duc04fwdb/image/upload/v1707526425/jammal_photos/fvk0ywqqxdfrtefnu1bf.png",
-        "url": "layers"
+        "url": "pricing"
       },
       {
         "icon": "https://res.cloudinary.com/duc04fwdb/image/upload/v1707525780/jammal_photos/ysgiu27fi7lneuiyn3le.png",
@@ -39,6 +39,7 @@
     ]
   },
   "hero": {
+    "sectionId": "hero",
     "title": "بولبي دو",
     "subtitle": "أنا مطور واجهات أمامية",
     "imgUrl": "https://res.cloudinary.com/duc04fwdb/image/upload/v1707528928/jammal_photos/vtflccswxqzvklifgnrp.svg",
@@ -68,6 +69,7 @@
     ]
   },
   "services": {
+    "sectionId": "services",
     "imgUrl": "https://res.cloudinary.com/duc04fwdb/image/upload/v1707529935/jammal_photos/qkowgxkdtneaviwup0dv.svg",
     "description": "أنا بولبي دو، مطور مواقع ويب من لندن، المملكة المتحدة. لدي خبرة غنية في تصميم وتطوير المواقع وتخصيصها، وأنا جيد أيضًا في ووردبريس.",
     "buttonText": "تحميل السيرة الذاتية",
@@ -87,6 +89,7 @@
     ]
   },
   "statistics": {
+    "sectionId": "statistics",
     "statistics": [
       {
         "title": "المشاريع المكتملة",
@@ -111,6 +114,7 @@
     ]
   },
   "items": {
+    "sectionId": "items",
     "title": "العناصر",
     "items": [
       {
@@ -131,6 +135,7 @@
     ]
   },
   "cta": {
+    "sectionId": "cta",
     "title": "الخبرة",
     "educations": [
       {
@@ -174,6 +179,7 @@
     ]
   },
   "projects": {
+    "sectionId": "projects",
     "title": "المشاريع",
     "imgUrl": "https://res.cloudinary.com/duc04fwdb/image/upload/v1707532366/jammal_photos/j8mhijwgfitdt7jodrfo.png",
     "categories": ["كل شيء", "إبداعي", "فن", "تصميم", "علامة تجارية"],
@@ -211,6 +217,7 @@
     ]
   },
   "pricing": {
+    "sectionId": "pricing",
     "title": "خطط التسعير",
     "plans": [
       {
@@ -244,6 +251,7 @@
     "buttonText": "ابدأ الآن"
   },
   "testimonials": {
+    "sectionId": "testimonials",
     "title": "العملاء والتقييمات",
     "testimonials": [
       {
@@ -261,6 +269,7 @@
     ]
   },
   "features": {
+    "sectionId": "features",
     "title": "أحدث المنشورات",
     "features": [
       {
@@ -287,6 +296,7 @@
     ]
   },
   "contact": {
+    "sectionId": "contact",
     "title": "تواصل معنا",
     "subtitle": "دعنا نتحدث عن كل شيء!",
     "description": "لا تحب النماذج؟ أرسل لي بريدًا إلكترونيًا. 👋",

@@ -3,11 +3,11 @@ import "../contact11/contact11.css";
 import { useSelector } from "react-redux";
 
 const Contact11 = ({ template }) => {
-  const ownContact= useSelector((state) => state.ownTemplate.contact);
+  const ownContact = useSelector((state) => state.ownTemplate.contact);
   const contact = template ? template.contact : ownContact;
 
   return (
-    <section className="contact11 flex flex-col items-center justify-center text-center" id="contact">
+    <section className="contact11 flex flex-col items-center justify-center text-center" id={contact.sectionId}>
       <h2 className="section__title11">{contact.title}</h2>
       <div className="contact__container11 grid11">
         <div className="contact__info11">

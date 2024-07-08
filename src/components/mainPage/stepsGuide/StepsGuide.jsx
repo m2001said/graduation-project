@@ -51,7 +51,7 @@ const Steps = () => {
     <div className="main-steps">
       <div className="container mx-auto px-4 px-6">
         {stepsData.map((item, index) => (
-          <div className="step-card flex justify-between" key={index} data-aos={index % 2 === 0 ? "fade-right" : "fade-left"} data-aos-duration="1000">
+          <div className="step-card flex justify-between" key={index} data-aos={index % 2 === 0 ? "fade-up" : "fade-up"} data-aos-duration="1000">
             <div className="step-info">
               <h1 className="step-title">{item.title}</h1>
               <p className="step-description">{item.description}</p>

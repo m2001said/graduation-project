@@ -10,27 +10,28 @@
     "links": [
       {
         "title": "Home",
-        "url": "home"
+        "url": "hero"
       },
       {
         "title": "Programs",
-        "url": "programs"
+        "url": "projects"
       },
       {
         "title": "Why us",
-        "url": "WhyUs"
+        "url": "features"
       },
       {
         "title": "Plans",
-        "url": "Plans"
+        "url": "pricing"
       },
       {
         "title": "Testimonials",
-        "url": "Testimonials"
+        "url": "testimonials"
       }
     ]
   },
   "hero": {
+    "sectionId": "hero",
     "title": "shape your ideal body",
     "subtitle": "the best fitness club in the town",
     "imgUrl": "https://res.cloudinary.com/duc04fwdb/image/upload/v1703609517/jammal_photos/neoqh0j4yjexem6j9ozp.png",
@@ -53,6 +54,7 @@
     "text": "Join now"
   },
   "projects": {
+    "sectionId": "projects",
     "title": "EXPLORE OUR",
     "subtitle": "PROGRAMS",
     "description": "TO SHAPE YOU",
@@ -78,6 +80,7 @@
     ]
   },
   "features": {
+    "sectionId": "features",
     "title": "WHY CHOOSE US ?",
     "subtitle": "SOME REASONS",
     "imgs": [
@@ -109,6 +112,7 @@
     ]
   },
   "pricing": {
+    "sectionId": "pricing",
     "title": "READY TO START",
     "subtitle": "YOUR JOURNEY",
     "text": "NOW WITHUS",
@@ -134,6 +138,7 @@
     ]
   },
   "testimonials": {
+    "sectionId": "testimonials",
     "title": "TESTIMONIALS",
     "subtitle": "WHAT THE PEOPLE THINK ABOUT US",
     "description": "WHAT THEY SAY ABOUT US",
@@ -162,14 +167,9 @@
       }
     ]
   },
-  "cta": {
-    "title": "READY TO",
-    "subtitle": "LEVEL UP",
-    "description": "YOUR BODY ",
-    "text": "WITH US?",
-    "buttonText": "join Now"
-  },
+  "cta": { "sectionId": "cta", "title": "READY TO", "subtitle": "LEVEL UP", "description": "YOUR BODY ", "text": "WITH US?", "buttonText": "join Now" },
   "footer": {
+    "sectionId": "footer",
     "imgUrl": "https://res.cloudinary.com/duc04fwdb/image/upload/v1702990991/jammal_photos/isxpadjx12ja5wqaqzsk.png",
     "medias": [
       {

@@ -6,7 +6,7 @@ const Cta7 = ({ template }) => {
   const cta = template.cta;
 
   return (
-    <div className={`bg-primary ${styles.paddingX} ${styles.flexStart}`}>
+    <div id={cta.sectionId} className={`bg-primary ${styles.paddingX} ${styles.flexStart}`}>
       <div className={`${styles.boxWidth}`}>
         <section className={`${styles.flexCenter} ${styles.marginY} ${styles.padding} sm:flex-row flex-col bg-black-gradient-2 rounded-[20px] box-shadow`}>
           <div className="flex-1 flex flex-col">

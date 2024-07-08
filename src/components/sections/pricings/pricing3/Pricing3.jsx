@@ -3,7 +3,7 @@ import "./pricing3.css";
 
 const Pricing3 = ({ template }) => {
   return (
-    <div className="plans-container3" id="Plans">
+    <div className="plans-container3" id={template.pricing.sectionId}>
       <div className="blur3 plans-blur-1"></div>
       <div className="blur3 plans-blur-2"></div>
       <div className="plans-header3">
