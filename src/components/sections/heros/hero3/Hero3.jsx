@@ -20,7 +20,7 @@ const Hero3 = ({ template }) => {
       <div className="blur3 hero-blur"></div>
       <div className="left-h">
         <div className="the-best-ad">
-          <div data-aos="fade-left" data-aos-duration="3000" className="arch-left"></div>
+          <div data-aos="fade-up" data-aos-duration="3000" className="arch-left"></div>
           <span>{hero.subtitle}</span>
         </div>
 

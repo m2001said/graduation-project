@@ -34,7 +34,7 @@ const Hero4 = ({ template }) => {
   return (
     <section className="hero-wrapper4" data-aos="fade-up">
       <div className="paddings4 innerWidth4 flexCenter4 hero-container4">
-        <div className="flexColStart4 hero-left4" data-aos="fade-right">
+        <div className="flexColStart4 hero-left4" data-aos="fade-up">
           <div className="hero-title4">
             <div className="orange-circle4" />
             <h1>{hero.title}</h1>
