@@ -51,8 +51,7 @@ const AiForm = ({ index }) => {
   };
 
   return loading ? (
-    //todo time for ai version is 20000
-    <BigLoader lineLoadTime={1000} />
+    <BigLoader />
   ) : (
     <>
       <h3 className="ai-form-title">{t("USER.CREATE_WEBSITE")} </h3>
