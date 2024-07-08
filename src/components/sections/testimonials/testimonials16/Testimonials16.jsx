@@ -6,7 +6,7 @@ import "./testimonials16.css";
 import { useSelector } from "react-redux";
 
 const Testimonials16 = ({ template }) => {
-  const ownTestimonials= useSelector((state) => state.ownTemplate.testimonials);
+  const ownTestimonials = useSelector((state) => state.ownTemplate.testimonials);
   const testimonials = template ? template.testimonials : ownTestimonials;
   const [activeIndex, setActiveIndex] = useState(0);
 
@@ -15,7 +15,7 @@ const Testimonials16 = ({ template }) => {
   };
 
   return (
-    <section className="testimonials16 container16 section16" id="testimonials">
+    <section className="testimonials16 container16 section16" id={testimonials.sectionId}>
       <h2 className="section__title16 " data-title="Testimonials">
         What Client Say's
       </h2>

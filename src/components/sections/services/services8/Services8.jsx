@@ -10,7 +10,7 @@ const Services8 = ({ template }) => {
   }, []);
 
   return (
-    <section className="design-8 section8 lg:mb-24" id="services">
+    <section className="design-8 section8 lg:mb-24" id={services.sectionId}>
       <div className="container mx-auto">
         <div className="flex flex-col lg:flex-row">
           {/* text & Image*/}

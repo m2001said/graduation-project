@@ -30,8 +30,8 @@ const Navbar8 = ({ template }) => {
         <div className="w-full rounded-full max-w-[460px] bg-black/20 h-[96px] backdrop-blur-2xl mx-auto px-5 flex justify-between text-2xl text-white/50 items-center">
           {navbar.links.map((link, index) => (
             <a
-              href={link.url}
               key={index}
+              href={`#${link.url}`}
               onClick={() => scrollTo(link.title.toLowerCase())}
               className="cursor-pointer w-[60px] flex items-center justify-center"
             >

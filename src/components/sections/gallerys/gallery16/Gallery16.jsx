@@ -4,7 +4,7 @@ import "./gallery16.css";
 const Gallery16 = ({ template }) => {
   const galary = template.galary;
   return (
-    <section className="gallery16 section16" id="gallery">
+    <section className="gallery16 section16" id={galary.sectionId}>
       <h2 className="section__title16" data-title="Gallery">
         Our Photo Gallery
       </h2>

@@ -10,7 +10,7 @@ const Project4 = ({ template }) => {
   const ownProjects = useSelector((state) => state.ownTemplate.projects);
   const projects = template ? template.projects : ownProjects;
   return (
-    <div id="residencies4" className="r-wrapper4">
+    <div id="residencies4" className="r-wrapper4" id={projects.sectionId}>
       <div className="paddings4 innerWidth4 r-container4">
         <div className="flexColStart4 r-head4">
           <span className="orangeText4">{projects.title}</span>

@@ -10,7 +10,7 @@ const Hero1 = ({ template }) => {
   const language = i18n.language;
 
   return (
-    <div className="landing design-1 " style={{ backgroundImage: `url(${hero.imgUrl})` }}>
+    <div className="landing design-1 " style={{ backgroundImage: `url(${hero.imgUrl})` }} id={hero.sectionId}>
       <div className="overlay"></div>
       <div className="text">
         <div className="content">

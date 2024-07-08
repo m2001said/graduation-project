@@ -7,7 +7,7 @@ const Project1 = ({ template }) => {
   const projects = template ? template.projects : ownProjects;
 
   return (
-    <div className="projects1 design-1">
+    <div className="projects1 design-1" id={projects.sectionId}>
       <div className="projects1-header">
         <p className="title-1">{projects.title}</p>
         <p className="description-1">{projects.description}</p>

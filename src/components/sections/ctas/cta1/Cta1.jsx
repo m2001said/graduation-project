@@ -1,8 +1,9 @@
 import React from "react";
 import "./cta1.css";
-const Cta1 = ({template}) => {
+const Cta1 = ({ template }) => {
+  const cta = template.cta;
   return (
-    <div className="cta1-main design-1">
+    <div className="cta1-main design-1" id={cta.sectionId}>
       <div className="cta1">
         <h1>{template.cta.title}</h1>
         <p>{template.cta.description}</p>

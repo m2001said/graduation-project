@@ -9,36 +9,37 @@
     "imgUrl": "https://res.cloudinary.com/duc04fwdb/image/upload/v1708464166/jammal_photos/pzfqcxfrr2cw4mvelbjd.png",
     "links": [
       {
-        "name": "Home",
-        "url": "home"
+        "title": "Home",
+        "url": "hero"
       },
       {
-        "name": "About",
+        "title": "About",
         "url": "about"
       },
       {
-        "name": "Features",
+        "title": "Features",
         "url": "features"
       },
       {
-        "name": "Menu",
-        "url": "menu"
+        "title": "Menu",
+        "url": "items"
       },
       {
-        "name": "Gallery",
-        "url": "gallery"
+        "title": "Gallery",
+        "url": "galary"
       },
       {
-        "name": "Chefs",
+        "title": "Chefs",
         "url": "team"
       },
       {
-        "name": "Testimonials",
+        "title": "Testimonials",
         "url": "testimonials"
       }
     ]
   },
   "hero": {
+    "sectionId": "hero",
     "title": "Discover Amazing Coffee House & Get Energy",
     "subtitle": "Welcome To Coffero!",
     "description": "There are many variations of passages available but the majority have suffered alteration in some form by injected humour or randomised words.",
@@ -46,6 +47,7 @@
     "linkText": "Book Table"
   },
   "about": {
+    "sectionId": "about",
     "imgUrl": "https://res.cloudinary.com/duc04fwdb/image/upload/v1708549637/jammal_photos/xg3omldwwfpdgfrmhzub.jpg",
     "title": "Fresh Quality And Organic Tasty Coffee House For You",
     "description": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't have look even slightly believable.",
@@ -53,6 +55,7 @@
     "buttonText": "Our Experts"
   },
   "features": {
+    "sectionId": "features",
     "title": "Our Best Features",
     "imgUrl": "https://res.cloudinary.com/duc04fwdb/image/upload/v1708479391/jammal_photos/wscmwomccmc5jdnbwidf.png",
     "features": [
@@ -79,6 +82,7 @@
     ]
   },
   "galary": {
+    "sectionId": "galary",
     "galary": [
       {
         "imgUrl": "https://res.cloudinary.com/duc04fwdb/image/upload/v1708538315/jammal_photos/vma52kyndc9kydhebbww.jpg",
@@ -107,6 +111,7 @@
     ]
   },
   "items": {
+    "sectionId": "items",
     "items": [
       {
         "imgUrl": "https://res.cloudinary.com/duc04fwdb/image/upload/v1708539082/jammal_photos/fk4qk2x6enbuflmobk3f.jpg",
@@ -159,6 +164,7 @@
     ]
   },
   "Choose": {
+    "sectionId": "choose",
     "title": "Coffero Most Out Of Your Favorite & Tasty Coffe House",
     "description": "There ara many variations of passages of Lorem Ipsum available but the majority have suffered alteration in some form by injected humour or randomised words which don't look even slightly believable.",
     "Choose": [
@@ -181,6 +187,7 @@
     "imgUrl": "https://res.cloudinary.com/duc04fwdb/image/upload/v1708544842/jammal_photos/s39yk1hre9kt36flguug.jpg"
   },
   "statistics": {
+    "sectionId": "statistics",
     "statistics": [
       {
         "imgUrl": "https://res.cloudinary.com/duc04fwdb/image/upload/v1708549772/jammal_photos/cdulhjzrscft50xc9qpq.svg",
@@ -205,6 +212,7 @@
     ]
   },
   "offer": {
+    "sectionId": "offer",
     "title": "Special Offer For You",
     "buttonText": "Order now ",
     "offer": [
@@ -223,6 +231,7 @@
     ]
   },
   "team": {
+    "sectionId": "team",
     "title": "Meet Our Experts",
     "members": [
       {
@@ -266,12 +275,14 @@
     ]
   },
   "reservation": {
+    "sectionId": "reservation",
     "title": "Book A Table",
     "buttonText": "Book A Table",
     "imgUrl": "\thttps://res.cloudinary.com/duc04fwdb/image/upload/v1708555056/jammal_photos/irqxlw9ph3hzp28ipfv9.png",
     "shape": "https://res.cloudinary.com/duc04fwdb/image/upload/v1708555103/jammal_photos/vsurnwxgmf1bvfbgr5hu.png"
   },
   "testimonials": {
+    "sectionId": "testimonials",
     "testimonials": [
       {
         "imgUrl": "https://res.cloudinary.com/duc04fwdb/image/upload/v1708545949/jammal_photos/kjcpvqovfxziihn6firi.jpg",

@@ -5,7 +5,7 @@ const Statistics16 = ({ template }) => {
   const statistics = template.statistics;
 
   return (
-    <section className="stats16 section16">
+    <section className="stats16 section16" id={statistics.sectionId}>
       <div className="stats__grid16 container16 grid16">
         {statistics.statistics.map((stat, index) => (
           <div className="stats__item16" key={index}>

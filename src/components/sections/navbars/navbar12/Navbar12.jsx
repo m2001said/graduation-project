@@ -29,8 +29,10 @@ const Navbar = ({ template }) => {
       <img src={navbar.icon} alt="menu-icon" className="menu-icon12" onClick={toggleMenu} />
       <ul className={mobileMenu ? "mobile-menu-open" : "mobile-menu-closed"}>
         {navbar.links.map((link, index) => (
-          <li key={index}>
-            <a href={link.url}>{link.title}</a>
+          <li>
+            <a key={index} href={`#${link.url}`}>
+              {link.title}
+            </a>
           </li>
         ))}
       </ul>

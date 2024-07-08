@@ -36,7 +36,7 @@ const Hero8 = ({ template }) => {
   return (
     <>
       <Header template={template} />
-      <section className="hero8 min-h-[85vh] lg:min-h-[78vh] flex items-center" id="home">
+      <section className="hero8 min-h-[85vh] lg:min-h-[78vh] flex items-center" id={hero.sectionId}>
         <div className="container mx-auto">
           <div className="flex flex-col lg:flex-row gap-y-8 lg:gap-x-14 lg:items-center">
             <div className="flex-1 text-center font-secondary lg:text-left">

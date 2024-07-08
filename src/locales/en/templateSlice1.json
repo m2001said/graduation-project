@@ -10,31 +10,40 @@
     "links": [
       {
         "title": "home",
-        "url": "#"
+        "url": "hero"
       },
       {
-        "title": "pages",
-        "url": "#"
+        "title": "Services",
+        "url": "services"
       },
       {
-        "title": "services",
-        "url": "#"
+        "title": "features",
+        "url": "features"
+      },
+      {
+        "title": "testimonials",
+        "url": "testimonials"
+      },
+      {
+        "title": "logos",
+        "url": "logos"
       },
       {
         "title": "projects",
-        "url": "#"
+        "url": "projects"
       },
       {
-        "title": "blog",
-        "url": "#"
+        "title": "statistics",
+        "url": "statistics"
       },
       {
-        "title": "contact",
-        "url": "#"
+        "title": "our teams",
+        "url": "team"
       }
     ]
   },
   "hero": {
+    "sectionId": "hero",
     "title": "Let Your Home Be Unique",
     "description": "There are many variations of the passages of lorem Ipsum from available, variations of the passages.",
     "buttonText": "Get Started",
@@ -42,6 +51,7 @@
     "imgUrl": "https://res.cloudinary.com/duc04fwdb/image/upload/v1701808857/templates/template_one/Photo_3_jpjtdv.jpg"
   },
   "services": {
+    "sectionId": "services",
     "services": [
       {
         "title": "Project Plan",
@@ -61,6 +71,7 @@
     ]
   },
   "features": {
+    "sectionId": "features",
     "title": "We Create The Art Of Stylish Living Stylishly",
     "description": "It is a long established fact that a reader will be distracted by the of readable content of a page when looking at its layouts the points of using that it has a more-or-less normal.",
     "phone": "012345678",
@@ -72,6 +83,7 @@
     "imgUrl": "https://res.cloudinary.com/duc04fwdb/image/upload/v1701813388/templates/template_one/Photo_sonnlx.jpg"
   },
   "testimonials": {
+    "sectionId": "testimonials",
     "title": "What the People Thinks About Us",
     "testimonials": [
       {
@@ -95,6 +107,7 @@
     ]
   },
   "logos": {
+    "sectionId": "logos",
     "companies": [
       {
         "imgUrl": "https://res.cloudinary.com/duc04fwdb/image/upload/v1701808448/templates/template_one/01_p78hjd.svg",
@@ -119,6 +132,7 @@
     ]
   },
   "projects": {
+    "sectionId": "projects",
     "title": "Follow Our Projects",
     "description": "It is a long established fact that a reader will be distracted by the of readable content of page  lookings at its layouts  points.",
     "projects": [
@@ -149,6 +163,7 @@
     ]
   },
   "statistics": {
+    "sectionId": "statistics",
     "statistics": [
       {
         "title": "Years Of Experience",
@@ -169,6 +184,7 @@
     ]
   },
   "items": {
+    "sectionId": "items",
     "title": "Articles & News",
     "description": "It is a long established fact that a reader will be distracted by the of readable content of a page when lookings at its layouts the points of using.",
     "items": [
@@ -196,6 +212,7 @@
     ]
   },
   "team": {
+    "sectionId": "team",
     "title": "Our Team Members",
     "members": [
       {
@@ -301,6 +318,7 @@
     ]
   },
   "pricing": {
+    "sectionId": "pricing",
     "title": "Pricing & Plan",
     "description": "Home / Priceing",
     "plans": [
@@ -334,6 +352,7 @@
     ]
   },
   "cta": {
+    "sectionId": "cta",
     "title": "Wanna join the interno?",
     "description": "It is a long established fact  will be distracted.",
     "buttonText": "Contact With Us",

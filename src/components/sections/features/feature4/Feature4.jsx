@@ -15,7 +15,7 @@ const Feature4 = ({ template }) => {
   };
 
   return (
-    <section id="value4" className="v-wrapper4">
+    <section id="value4" className="v-wrapper4" id={features.sectionId}>
       <div className="paddings4 innerWidth4 flexCenter4 v-container4">
         {/* left side */}
         <div className="v-left4">

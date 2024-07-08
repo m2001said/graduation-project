@@ -1,8 +1,14 @@
 import React from "react";
 import { render, fireEvent } from "@testing-library/react";
 import "@testing-library/jest-dom/extend-expect"; // For DOM assertion methods
-
+import { useDispatch } from "react-redux";
 import ChangeImageController from "../components/dashboard/controllers/ChangeImageController";
+
+// Mock the useDispatch hook
+jest.mock("react-redux", () => ({
+  ...jest.requireActual("react-redux"),
+  useDispatch: jest.fn(),
+}));
 
 describe("ChangeImageController component", () => {
   const mockSrc = "mock-image-url";
@@ -11,6 +17,7 @@ describe("ChangeImageController component", () => {
 
   beforeEach(() => {
     jest.clearAllMocks();
+    useDispatch.mockReturnValue(mockDispatch);
   });
 
   it("renders with the correct image source and change button", () => {
@@ -33,7 +40,7 @@ describe("ChangeImageController component", () => {
     // Simulate upload success
     const mockResult = "mock-upload-result";
     const mockWidget = { close: jest.fn() };
-    fireEvent.upload(mockWidget, { target: { files: [mockResult] } });
+    fireEvent.change(changeButton, { target: { files: [mockResult] } });
 
     expect(mockDispatch).toHaveBeenCalledWith(mockDispatchRef("imgUrl", mockResult));
   });
@@ -46,7 +53,7 @@ describe("ChangeImageController component", () => {
 
     // Simulate upload error
     const mockWidget = { close: jest.fn() };
-    fireEvent.upload(mockWidget, { error: true });
+    fireEvent.change(changeButton, { target: { error: true } });
 
     expect(mockWidget.close).toHaveBeenCalled();
     expect(mockDispatch).not.toHaveBeenCalled();

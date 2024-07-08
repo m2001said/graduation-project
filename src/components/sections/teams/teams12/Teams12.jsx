@@ -3,10 +3,10 @@ import "./teams.css";
 import { useSelector } from "react-redux";
 
 const Teams12 = ({ template }) => {
-  const ownTeam= useSelector((state) => state.ownTemplate.team);
-  const team = template ? template.team : ownTeam;  
+  const ownTeam = useSelector((state) => state.ownTemplate.team);
+  const team = template ? template.team : ownTeam;
   return (
-    <div className="container12">
+    <div className="container12" id={team.sectionId}>
       <h2 className="title12 section__title16">{team.title}</h2>
       <div className="campus12">
         <div className="gallery12">

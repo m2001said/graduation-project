@@ -8,7 +8,7 @@ const Feature16 = ({ template }) => {
   const ownFooter = useSelector((state) => state.ownTemplate.features);
   const features = template ? template.features : ownFooter;
   return (
-    <section className="features16 section16" id="features">
+    <section className="features16 section16" id={features.sectionId}>
       <h2 className="section__title16" data-title="Features">
         {features.title}
       </h2>
