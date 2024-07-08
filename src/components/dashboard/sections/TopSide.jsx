@@ -43,26 +43,21 @@ const TopSide = ({ schema }) => {
   };
 
   const handleSubmit = async () => {
-    const regex = /\d+/
-    const isUpdating = pathname.includes("edit");
-    const inOwnPage = pathname.includes("own-page") || !regex.test(pathname);
-    console.log(pathname)
-    let url;
-    if (inOwnPage) {
-      url = isUpdating
-        ? `https://websitebuilderbackend-production-716e.up.railway.app/page/update/${id}`
-        : "https://websitebuilderbackend-production-716e.up.railway.app/page";
-    } else {
-      url = isUpdating
-        ? `https://websitebuilderbackend-production-716e.up.railway.app/website/update/${id}`
-        : "https://websitebuilderbackend-production-716e.up.railway.app/website";
-    }
-    const text = inOwnPage ? "page" : "website";
-    console.log(url);
-
-    console.log(schema);
-
     try {
+      const regex = /\d+/;
+      const isUpdating = pathname.includes("edit");
+      const inOwnPage = pathname.includes("own-page") || !regex.test(pathname);
+      let url;
+      if (inOwnPage) {
+        url = isUpdating
+          ? `https://websitebuilderbackend-production-716e.up.railway.app/page/update/${id}`
+          : "https://websitebuilderbackend-production-716e.up.railway.app/page";
+      } else {
+        url = isUpdating
+          ? `https://websitebuilderbackend-production-716e.up.railway.app/website/update/${id}`
+          : "https://websitebuilderbackend-production-716e.up.railway.app/website";
+      }
+      const text = inOwnPage ? "page" : "website";
       setIsGenerating(true);
       setWaitingMsg(isUpdating ? `Please waite for updating your ${text}` : `Please waite for genrating your ${text}`);
       const res = await fetch(url, {
@@ -90,7 +85,10 @@ const TopSide = ({ schema }) => {
         dispatch(templateActions1.updateSchema(initialState));
       }
     } catch (error) {
-      setIsGenerating(false);
+      setWaitingMsg(error);
+      setTimeout(() => {
+        setIsGenerating(false);
+      }, 5000);
       console.error("Error:", error);
     }
   };

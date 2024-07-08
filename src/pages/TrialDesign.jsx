@@ -38,16 +38,7 @@ const TrialDesign = ({ componentMapping, FooterComponent, NavbarComponent, HeroC
     }
   });
 
-  const persist = JSON.parse(localStorage.getItem("persist:root"));
-  const template1 = persist && JSON.parse(persist.template1);
-  useEffect(() => {
-    if (template1.templateInfo.id !== template && url.pathname.includes("build")) {
-      dispatch(resetState());
-      dispatch(fetchInitialTemplate(template));
-    } else if (url.pathname.includes("preview")) {
-      dispatch(fetchInitialTemplate(template));
-    }
-  }, [dispatch]);
+
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -57,9 +48,6 @@ const TrialDesign = ({ componentMapping, FooterComponent, NavbarComponent, HeroC
     const fetchData = async () => {
       setIsLoading(true);
       dispatch(resetState());
-
-
-      console.log("fetchData in trialDesign");
       try {
         const res = await axios.get(`https://websitebuilderbackend-production-716e.up.railway.app/website/${userId}/${templateId}`);
         console.log(res.data);
@@ -96,7 +84,18 @@ const TrialDesign = ({ componentMapping, FooterComponent, NavbarComponent, HeroC
   }, []);
 
 
+  const persist = JSON.parse(localStorage.getItem("persist:root"));
+  const template1 = persist && JSON.parse(persist.template1);
+  useEffect(() => {
+    if (template1.templateInfo.id !== template && url.pathname.includes("build")) {
+      dispatch(resetState());
+      dispatch(fetchInitialTemplate(template));
+    } else if (url.pathname.includes("preview")) {
+      dispatch(fetchInitialTemplate(template));
+    }
+  }, [dispatch]);
 
+  
   useEffect(() => {
     if (template1?.templateInfo.id !== template && url.pathname.includes("build")) {
       dispatch(resetState());
