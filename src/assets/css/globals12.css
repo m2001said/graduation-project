@@ -7,7 +7,6 @@
   --website-12-color-3: #000f984d;
   --website-12-color-4: #676767;
   --website-12-color-5: #ebecfe;
-
   --website-12-color-6: #474b6e;
 }
 .design-12 .logo12 {
@@ -37,7 +36,7 @@
   padding-right: 10%;
 }
 .design-12 .btn12 {
-  background: var(--website-1-color-1);
+  background: var(--website-12-color-5);
   color: var(--title-dark);
   padding: 12px 22px;
   font-size: 16px;
@@ -55,7 +54,7 @@
 }
 .design-12 .btn12.dark-btn12 {
   background: var(--website-12-color-6);
-  color: var(--website-1-color-1);
+  color: var(--website-12-color-5);
 }
 .design-12 .btn12:hover {
   color: var(--website-1-color-3);
