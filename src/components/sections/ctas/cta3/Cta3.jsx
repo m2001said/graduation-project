@@ -2,10 +2,10 @@ import React from "react";
 import "./cta3.css";
 
 const Cta3 = ({ template }) => {
-  const { title, subtitle, description, text, buttonText } = template.cta;
+  const { title, subtitle, description, text, buttonText, sectionId } = template.cta;
 
   return (
-    <div className="Join3" id="join3">
+    <div className="Join3" id={sectionId}>
       <div className="left-c3">
         <hr />
         <div className="title3-group">
