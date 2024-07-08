@@ -1,12 +1,17 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
+import { useSelector } from "react-redux";
 
 const Hero15 = ({ template }) => {
-  const hero = template.hero;
+  const ownHero = useSelector((state) => state.ownTemplate.hero);
+  const hero = template ? template.hero : ownHero;
+  const { i18n } = useTranslation();
+  const language = i18n.language;
 
   return (
     <main className="min-h-screen flex xl:pt-0 pt-36 hero15" id="home">
       <div className="xl:flex items-center container max-w-[1300px] mx-auto lg:px-3">
-        <section className="xl:w-1/2 xl:text-left text-center">
+        <section className={`xl:w-1/2 text-center ${language === "ar" ? "xl:text-right" : "xl:text-left"} `}>
           <p className="text-[25px] font-bold darkModeTextColor15">
             {hero.text} <span className="btnHoverColor15">{hero.name}</span>
           </p>
@@ -33,8 +38,14 @@ const Hero15 = ({ template }) => {
         </section>
         <section className="xl:w-1/2">
           <div className="w-full sm:h-[680px] h-96 relative xl:block flex justify-center xl:mt-0 mt-16 ">
-            <img src={hero.imgUrl[0]} alt="" className="absolute z-10 lg:w-auto w-full sm:w-[200px] lg:h-[500px] object-cover ml-[60px] w-[350px] mr-[45px]" />
-            <div className="absolute z-10 lg:bottom-24 bottom-20 xl:-left-10 lg:left-40 left-0">
+            <img
+              src={hero.imgUrl[0]}
+              alt=""
+              className={`absolute z-10 lg:w-auto  sm:w-[200px] lg:h-[500px] object-cover ml-[60px] w-[350px]  ${
+                language === "ar" ? " left-0 ml-[45px]" : "right-0 mr-[45px]"
+              }`}
+            />
+            <div className={`absolute z-10 lg:bottom-24 bottom-20 xl:-left-10 lg:left-40 left-0`}>
               <div className="block rounded-full sm:h-20 h-14 w-fit shadowbtn relative z-10">
                 <button className="h-full sm:px-6 px-3 border border-black border-solid rounded-full lg:text-[31px] text-[13px] font-bold flex items-center darkModeTextColor15">
                   {hero.title}

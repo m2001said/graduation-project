@@ -1,9 +1,11 @@
 import React from "react";
 import "./footer6.css";
+import { useSelector } from "react-redux";
 
 const Footer6 = ({ template }) => {
-  const footer = template.footer;
-
+  const ownFooter = useSelector((state) => state.ownTemplate.footer);
+  const footer = template ? template.footer : ownFooter;
+  
   return (
     <footer className="footer6">
       <div className="footer__top">

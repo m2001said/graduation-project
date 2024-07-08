@@ -13,26 +13,18 @@ import design8 from "../../../assets/images/designs/design8.jpg";
 import design9 from "../../../assets/images/designs/design9.jpg";
 import design10 from "../../../assets/images/designs/design10.jpg";
 import design11 from "../../../assets/images/designs/design11.jpg";
+import design12 from "../../../assets/images/designs/design12.webp";
+import design15 from "../../../assets/images/designs/design15.webp";
+import design17 from "../../../assets/images/designs/design17.webp";
 import design13 from "../../../assets/images/designs/design13.jpg";
 import design14 from "../../../assets/images/designs/design14.jpg";
 import design16 from "../../../assets/images/designs/design16.jpg";
 import design18 from "../../../assets/images/designs/design18.jpg";
-import websites from "../../../assets/images/websites.jpg";
 
 const DesignsContainer = () => {
   const { t } = useTranslation("main");
 
   const designsData = [
-    {
-      title: t("DESIGNS.TITLE_1"),
-      description: t("DESIGNS.DESCRIPTION_1"),
-      imageUrl: websites,
-    },
-    {
-      title: t("DESIGNS.TITLE_2"),
-      description: t("DESIGNS.DESCRIPTION_2"),
-      imageUrl: "https://res.cloudinary.com/dvp3nyulf/image/upload/v1709490323/create-with-you-self.jpg",
-    },
     {
       title: t("DESIGNS.TITLE_3"),
       description: t("DESIGNS.DESCRIPTION_3"),
@@ -91,7 +83,7 @@ const DesignsContainer = () => {
     {
       title: t("DESIGNS.TITLE_14"),
       description: t("DESIGNS.DESCRIPTION_14"),
-      imageUrl: "https://res.cloudinary.com/dvp3nyulf/image/upload/v1709147870/under-work.jpg",
+      imageUrl: design12,
     },
     {
       title: t("DESIGNS.TITLE_15"),
@@ -106,7 +98,7 @@ const DesignsContainer = () => {
     {
       title: t("DESIGNS.TITLE_17"),
       description: t("DESIGNS.DESCRIPTION_17"),
-      imageUrl: "https://res.cloudinary.com/dvp3nyulf/image/upload/v1709147870/under-work.jpg",
+      imageUrl: design15,
     },
     {
       title: t("DESIGNS.TITLE_18"),
@@ -116,7 +108,7 @@ const DesignsContainer = () => {
     {
       title: t("DESIGNS.TITLE_19"),
       description: t("DESIGNS.DESCRIPTION_19"),
-      imageUrl: "https://res.cloudinary.com/dvp3nyulf/image/upload/v1709147870/under-work.jpg",
+      imageUrl: design17,
     },
     {
       title: t("DESIGNS.TITLE_20"),
@@ -128,8 +120,8 @@ const DesignsContainer = () => {
     <>
       <div className="designs-section">
         <div className="container mx-auto px-4  py-4">
-          <h1 className="text-3xl font-bold tracking-tighter mb-4 text-center text-white sm:text-4xl md:text-5xl lg:text-6xl/none">{t("DESIGNS.TITLE")}</h1>
-          <p className="mx-auto max-w-[700px] text-gray-200 md:text-xl text-center">{t("DESIGNS.DESCRIPTION")}</p>
+          <h1 className="text-3xl font-bold tracking-tighter mb-4 text-center text-white sm:text-4xl md:text-5xl lg:text-6xl/none">{t("WEBSITES.TITLE")}</h1>
+          <p className="mx-auto max-w-[700px] text-gray-200 md:text-xl text-center">{t("WEBSITES.DESCRIPTION")}</p>
           <div className="designs-container flex flex-wrap gap-8 justify-center">
             {designsData.map((design, index) => (
               <DesignCard key={index} Designdata={design} index={index}></DesignCard>

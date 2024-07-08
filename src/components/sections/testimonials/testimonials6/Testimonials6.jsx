@@ -3,10 +3,13 @@ import "./testimonials6.css";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Autoplay } from "swiper/modules";
 import "swiper/css";
+import { useSelector } from "react-redux";
 
 const Testimonials6 = ({ template }) => {
-  const testimonials = template.testimonials;
 
+  const ownTestimonials= useSelector((state) => state.ownTemplate.testimonials);
+  const testimonials = template ? template.testimonials : ownTestimonials;
+  
   return (
     <section className="design-6">
       <div className="container mx-auto px-4">

@@ -30,7 +30,7 @@ const Header = ({ toggleModal }) => {
               <p className="info-description"> {t("HERO.DESCRIPTION")} </p>
               {authState.status === "succeeded" ? (
                 <div className="flex flex-wrap gap-8">
-                  <Link to={`/${i18n.language}/designs`}>
+                  <Link to={`/${i18n.language}/services`}>
                     <button className="info-btn"> {t("HERO.BUTTONTEXT")}</button>
                   </Link>
                   {user?.role === "admin" && (

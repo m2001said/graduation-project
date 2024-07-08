@@ -1,13 +1,10 @@
 import React from "react";
 import "./contact12.css";
-import msgIcon from "https://res.cloudinary.com/di8kjrflu/image/upload/v1719855279/msg-icon_admjx1.png";
-import emailIcon from "https://res.cloudinary.com/di8kjrflu/image/upload/v1719855301/mail-icon_cfnj5m.png";
-import phoneIcon from "https://res.cloudinary.com/di8kjrflu/image/upload/v1719855333/phone-icon_ct28v1.png";
-import locationIcon from "https://res.cloudinary.com/di8kjrflu/image/upload/v1719855417/location-icon_ytfm0b.png";
-import whiteArrow from "https://res.cloudinary.com/di8kjrflu/image/upload/v1719855189/white-arrow_bmhias.png";
+import { useSelector } from "react-redux";
 
 const Contact12 = ({ template }) => {
-  const contact = template.contact;
+  const ownContact= useSelector((state) => state.ownTemplate.contact);
+  const contact = template ? template.contact : ownContact;
   const [result, setResult] = React.useState("");
 
   const onSubmit = async (event) => {
@@ -33,33 +30,23 @@ const Contact12 = ({ template }) => {
       setResult(data.message);
     }
   };
+
   return (
     <div className="contact12 container12">
       {/* ------------------------Contact Left  */}
       <div className="contact-col12">
         <h3>
-          Send us a message <img src={msgIcon} alt="msg" />
+          {contact.title}
+          <img src={contact.icon} alt="msg" className="icon-msg12" />
         </h3>
-        <p>
-          Feel free to reach out through contact form or find our contact information below. Your feedback, questions, and suggestions are important to us as we
-          strive to provide exceptional service to our university community.
-        </p>
+        <p>{contact.description}</p>
         <ul>
-          <li>
-            {" "}
-            <img src={emailIcon} alt="icons" />
-            Contact@edusite.dev
-          </li>
-          <li>
-            {" "}
-            <img src={phoneIcon} alt="icons" />
-            +1 123-456-7890
-          </li>
-          <li>
-            {" "}
-            <img src={locationIcon} alt="icons" />
-            77 Massachusetts Ave, Cambridge <br /> MA 02139, United States
-          </li>
+          {contact.contacts.map((contactItem, index) => (
+            <li key={index}>
+              <img src={contactItem.icon} alt="icons" className="icon12" />
+              {contactItem.text}
+            </li>
+          ))}
         </ul>
       </div>
 
@@ -75,7 +62,7 @@ const Contact12 = ({ template }) => {
           <textarea name="message" rows="6" placeholder="Enter your message..!" required></textarea>
           <button type="submit" className="btn12 dark-btn12">
             Submit Now
-            <img src={whiteArrow} alt="arrow" />
+            <img src={contact.imgUrl} alt="arrow" />
           </button>
         </form>
         <span>{result}</span>

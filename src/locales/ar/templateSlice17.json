@@ -1,9 +1,9 @@
 {
   "templateInfo": {
     "id": 17,
-    "title": "",
-    "description": "",
-    "imgUrl": ""
+  "title": "محفظة شخصية",
+  "description": "محفظة ويب ديناميكية تؤكد على خبرة التصميم الأمامي وتجربة المستخدم وواجهة المستخدم.",
+    "imgUrl": "https://res.cloudinary.com/dvp3nyulf/image/upload/v1709147870/under-work.jpg"
   },
   "navbar": {
     "imgUrl": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1720037236/done/fast-delivery-fast-svgrepo-com_fr05yy_2_lxmgwl.webp",
@@ -110,6 +110,6 @@
     ]
   },
   "colors": {
-    "templateColors": ["#fff", "#cda274", "#292f36", "#f4f0ec", "#777777"]
+    "templateColors": ["#ff0c00", "#bb2c51", "#21d4b9", "#ffffff", "#000000", "#a09d9d"]
   }
 }

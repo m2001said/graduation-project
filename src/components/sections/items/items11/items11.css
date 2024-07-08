@@ -55,12 +55,6 @@
 }
 
 @media screen and (max-width: 1024px) {
-  .services__container11_2 {
-    grid-template-columns: repeat(1, 1fr);
-    row-gap: 1.875rem;
-    margin-bottom: 2rem;
-  }
-
   .services__card11_2 {
     width: 90%;
     height: auto;

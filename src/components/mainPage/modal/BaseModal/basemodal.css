@@ -1,4 +1,3 @@
-
 .modal-overlay {
   position: fixed;
   top: 0;
@@ -6,7 +5,7 @@
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.5); /* Adjust the alpha value for darkness */
-  z-index: 5;
+  z-index: 50;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -20,7 +19,7 @@
   max-width: 750px;
   position: relative;
   width: 85%;
-  z-index: 20;
+  z-index: 60;
   overflow: hidden;
 }
 /*head of modal*/
@@ -74,7 +73,6 @@
   width: 85%;
   max-width: 330px;
   flex-direction: column;
-/*  direction: rtl;*/
 }
 
 .modal-content h1 {
@@ -111,7 +109,7 @@
   box-shadow: 0 2px 3px #5b5b5b21 !important;
   padding: 5px 8px;
   transition: var(--transition);
-  background-color: white  !important;
+  background-color: white !important;
   color: #494949 !important;
 }
 
@@ -120,7 +118,7 @@
 }
 .modal-content .form-button {
   background: var(--modal-button) !important;
-  color: white  !important;
+  color: white !important;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -134,19 +132,18 @@
 .button-2 {
   background: var(--color-5) !important;
 }
-.message-error{
-  color:#d71616e3 ;
+.message-error {
+  color: #d71616e3;
 }
 
-.verification-message{
+.verification-message {
   height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   gap: 17px;
 }
-.verification-message p{
+.verification-message p {
   color: #222222de;
   text-align: center;
 }
-

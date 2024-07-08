@@ -1,8 +1,10 @@
+import { useSelector } from "react-redux";
 import Header from "./Header";
 import React, { useEffect, useRef } from "react";
 
 const Hero8 = ({ template }) => {
-  const hero = template.hero;
+  const ownHero = useSelector((state) => state.ownTemplate.hero);
+  const hero = template ? template.hero : ownHero;
   const scrollDirection = useRef("down");
 
   useEffect(() => {

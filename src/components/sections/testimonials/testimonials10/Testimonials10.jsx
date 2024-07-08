@@ -5,11 +5,12 @@ import "swiper/css";
 import "swiper/css/free-mode";
 import "swiper/css/pagination";
 import { Navigation, Pagination, Autoplay } from "swiper/modules";
+import { useSelector } from "react-redux";
 
 
 const Testimonials10 = ({template}) => {
-    const testimonial = template.testimonials;
-
+  const ownTestimonials= useSelector((state) => state.ownTemplate.testimonials);
+  const testimonial = template ? template.testimonials : ownTestimonials;
   return (
     <div className="pb-4 bg-[--white10] dark:bg-gray-900 dark:text-white">
       <div className="items-center p-10 sm:p-20">
@@ -35,7 +36,7 @@ const Testimonials10 = ({template}) => {
                         <h1 className="text-xl font-bold text-black/80 dark:text-white">{data.title}</h1>
                       </div>
                     </div>
-                    <p className="text-black/30 text-9xl font-serif absolute top-0 right-0">,,</p>
+                    {/* <p className="text-black/30 text-9xl font-serif absolute top-0 right-0">,,</p> */}
                   </div>
                 </div>
               </SwiperSlide>

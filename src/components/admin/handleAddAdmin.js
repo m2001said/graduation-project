@@ -1,13 +1,11 @@
 import axios from "axios";
 
-const API_BASE_URL = "https://websitebuilderbackend-production-716e.up.railway.app";
-
 const handleAddAdmin = async (name, email, password) => {
   const token = localStorage.getItem("token"); // Ensure token is parsed from JSON
   console.log(name, email, password);
   try {
     const response = await axios.post(
-      `${API_BASE_URL}/user/admin-new-user`,
+      `${process.env.REACT_APP_BACKEND_URL}/user/admin-new-user`,
       {
         name: name,
         email: email,

@@ -13,7 +13,25 @@ export const updateSchema = (state, action) => {
     state[key] = action.payload[key];
   });
 };
+
+export const changePalletes = (state, action) => {
+  console.log(state.templateInfo.id);
+
+  console.log(action.payload)
+  for (let index = 1; index <= action.payload.length; index++) {
+    if (state.templateInfo.id === 0) {
+      for (let i = 1; i <= 18; i++) {
+        document.documentElement.style.setProperty(`--website-${i}-color-${index}`, action.payload[index - 1]);
+      }
+    } else {
+      document.documentElement.style.setProperty(`--website-${state.templateInfo.id}-color-${index}`, action.payload[index - 1]);
+    }
+  }
+  state.colors.templateColors = action.payload;
+};
 export const editElement = (state, action) => {
+  console.log(state.templateInfo.id);
+
   const { section, variable, value, i, blockName, subBlockName, subIndex, objKey } = action.payload;
   // sub means level 2 of fields
   if (i === undefined) {
@@ -27,8 +45,19 @@ export const editElement = (state, action) => {
   } else {
     if (subIndex === undefined) {
       // edit array filed with index
-      if (variable === null) state[section][blockName][i] = value;
-      else {
+      console.log(value);
+      if (variable === null) {
+        if (blockName === "templateColors") {
+          if (state.templateInfo.id === 0) {
+            for (let index = 1; index <= 18; index++) {
+              document.documentElement.style.setProperty(`--website-${index}-color-${i + 1}`, value);
+            }
+          } else {
+            document.documentElement.style.setProperty(`--website-${state.templateInfo.id}-color-${i + 1}`, value);
+          }
+        }
+        state[section][blockName][i] = value;
+      } else {
         if (subBlockName === undefined) {
           // edit obj in array of objects
           state[section][blockName][i][variable] = value;
@@ -100,13 +129,22 @@ export const addElement = (state, action) => {
 
 //  for example add feature to array of features
 export const addElementToArray = (state, action) => {
+  const pattern = /\.(jpg|gif|png|svg)$/i;
   const { section, blockName, cardIndex, subBlockName } = action.payload;
   if (subBlockName) {
-    const txt = capitalizeFirstLetter(subBlockName.slice(0, -1));
-    state[section][blockName][cardIndex][subBlockName].push(`Enter ${txt}'s Details`);
+    if (pattern.test(state[section][blockName][cardIndex][subBlockName][0])) {
+      state[section][blockName][cardIndex][subBlockName].push("/assets/icons/picture3.svg");
+    } else {
+      const txt = capitalizeFirstLetter(subBlockName.slice(0, -1));
+      state[section][blockName][cardIndex][subBlockName].push(`Enter ${txt}'s Details`);
+    }
   } else {
-    const txt = capitalizeFirstLetter(blockName.slice(0, -1));
-    state[section][blockName].push(`Enter ${txt}'s Details`);
+    if (pattern.test(state[section][blockName][0])) {
+      state[section][blockName].push("/assets/icons/picture3.svg");
+    } else {
+      const txt = capitalizeFirstLetter(blockName.slice(0, -1));
+      state[section][blockName].push(`Enter ${txt}'s Details`);
+    }
   }
 };
 

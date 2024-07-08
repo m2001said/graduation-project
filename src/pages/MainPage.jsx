@@ -20,7 +20,7 @@ const MainPage = ({ toggleModal, isModalOpen }) => {
       <Steps></Steps>
       <DemoVideo></DemoVideo>
       <ContactForm></ContactForm>
-      <PricingPlans></PricingPlans>
+      {/* <PricingPlans></PricingPlans> */}
     </>
   );
 };

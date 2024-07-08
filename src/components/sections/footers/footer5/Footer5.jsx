@@ -1,12 +1,14 @@
-import React, { useEffect } from "react";
+import React from "react";
 import "./footer5.css";
+import { useSelector } from "react-redux";
 
 
 
 
 const Footer5 = ({template}) => {
-  const footer = template.footer;
-
+  const ownFooter = useSelector((state) => state.ownTemplate.footer);
+  const footer = template ? template.footer : ownFooter;
+  
   return (
     <div className="footer5">
       <div className="footer5-mainSection design5-container design5-grid">

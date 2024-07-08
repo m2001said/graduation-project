@@ -1,9 +1,9 @@
 {
   "templateInfo": {
     "id": 9,
-    "title": "",
-    "description": "",
-    "imgUrl": ""
+    "title": "هوم هاب",
+    "description": "اكتشف منزل أحلامك على منصة تجارة إلكترونية متفاعلة وسهلة الاستخدام.",
+    "imgUrl": "/static/media/design9.dea0caaa71f282558382.jpg"
   },
   "navbar": {
     "imgUrl": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1720030973/done/tower_qajd1k_robuyn.webp",
@@ -376,6 +376,6 @@
     "links": ["terms and and conditions", "Privacy Policy", "Disclaimer"]
   },
   "colors": {
-    "templateColors": ["#fff", "#cda274", "#292f36", "#f4f0ec", "#777777"]
+    "templateColors": ["#ffffff", "#0ca39a", "#0c4f37", "#000000", "#646cffaa", "#74cac5"]
   }
 }

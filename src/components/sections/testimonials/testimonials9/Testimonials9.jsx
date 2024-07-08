@@ -1,9 +1,13 @@
 import React, { useState } from "react";
 import { useTranslation } from "react-i18next";
+import { useSelector } from "react-redux";
 
 const Testimonials9 = ({ template }) => {
   const { t, i18n } = useTranslation();
-  const testimonialsData = template.testimonials;
+  
+  const ownTestimonials= useSelector((state) => state.ownTemplate.testimonials);
+  const testimonialsData = template ? template.testimonials : ownTestimonials;
+  
   const [currentTestimonialIndex, setCurrentTestimonialIndex] = useState(0);
   const [rating, setRating] = useState(0);
 

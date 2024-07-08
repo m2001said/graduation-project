@@ -1,8 +1,10 @@
 import React from "react";
+import { useSelector } from "react-redux";
 
 const Footer13 = ({ template }) => {
-  const footer = template.footer;
-
+  const ownFooter = useSelector((state) => state.ownTemplate.footer);
+  const footer = template ? template.footer : ownFooter;
+  
   return (
     <footer className="bg-[var(--website-13-color-1)] text-[var(--website-13-color-3)] pb-16">
       <div className="container mx-auto px-3 lg:pt-20 pt-8">

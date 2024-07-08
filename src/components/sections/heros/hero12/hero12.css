@@ -5,7 +5,7 @@
     url("https://res.cloudinary.com/di8kjrflu/image/upload/v1720023586/background1_fwarbl.jpg");
   background-size: cover;
   background-position: center;
-  color: var(--website-color-1);
+  color: var(--website-1-color-1);
   display: flex;
   align-items: center;
   justify-content: center;

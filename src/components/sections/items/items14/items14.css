@@ -62,7 +62,7 @@
 .item14-card12 img,
 .item14-card18 img{
 
-    @apply w-[270px] absolute bottom-0 
+    @apply w-[270px] absolute bottom-0 -right-7
     
 }
 
@@ -165,3 +165,15 @@
 
     @apply bg-white text-[--website-14-color-4]
 }
+
+/* item14-allCard */
+
+.ltr .item14-allCard {
+ display: flex;
+}
+.rtl .item14-allCard {
+ display: flex;
+ flex-direction: row-reverse;
+}
+
+

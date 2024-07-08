@@ -1,13 +1,15 @@
 import React from "react";
 import "./feature11.css";
+import { useSelector } from "react-redux";
 
 const Feature11 = ({ template }) => {
-  const features = template.features;
+  const ownFooter = useSelector((state) => state.ownTemplate.features);
+  const features = template ? template.features : ownFooter;
 
   return (
-    <section className="blog11 container section11" id="blog">
+    <section className="blog11 py-4 md:py-10" id="blog">
       <h2 className="section__title11">{features.title}</h2>
-      <div className="blog__container11 grid11">
+      <div className="blog__container11">
         {features.features.map((card, index) => (
           <div className="blog__card11" key={index}>
             <div className="blog__thumb11">

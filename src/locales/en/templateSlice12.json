@@ -1,9 +1,9 @@
 {
   "templateInfo": {
     "id": 12,
-    "title": "",
-    "description": "",
-    "imgUrl": ""
+    "title": "Nike Ecommerce",
+    "description": "Innovative Nike e-commerce for a stylish and seamless shopping experience.",
+    "imgUrl": "https://res.cloudinary.com/dvp3nyulf/image/upload/v1709147870/under-work.jpg"
   },
   "navbar": {
     "imgUrl": "https://res.cloudinary.com/duc04fwdb/image/upload/v1719850710/jammal_photos/vh9x6ll6nixpsybvxe5q.png",
@@ -83,32 +83,60 @@
     "buttonText": "See more here",
     "icon": "https://res.cloudinary.com/di8kjrflu/image/upload/v1719855189/white-arrow_bmhias.png"
   },
+  "testimonials": {
+    "testimonials": [
+      {
+        "imgUrl": "https://res.cloudinary.com/duc04fwdb/image/upload/v1719827222/jammal_photos/ei4ppt3gybkh7l98hapt.png",
+        "name": "William Jackson",
+        "location": "Edusity, USA",
+        "opinion": "Choosing to pursue my degree at Edusity was one of the best decisions I've ever made. The supportive community, state-of-the-art facilities, and commitment to academic excellence have truly exceeded my expectations."
+      },
+      {
+        "imgUrl": "https://res.cloudinary.com/duc04fwdb/image/upload/v1719827597/jammal_photos/bxmfbv8zmfjw7kbuewiu.png",
+        "name": "William Jackson",
+        "location": "Edusity, USA",
+        "opinion": "Choosing to pursue my degree at Edusity was one of the best decisions I've ever made. The supportive community, state-of-the-art facilities, and commitment to academic excellence have truly exceeded my expectations."
+      },
+      {
+        "imgUrl": "https://res.cloudinary.com/duc04fwdb/image/upload/v1708546089/jammal_photos/o9shd85cnsznypdcrf6k.jpg",
+        "name": "William Jackson",
+        "location": "Edusity, USA",
+        "opinion": "Choosing to pursue my degree at Edusity was one of the best decisions I've ever made. The supportive community, state-of-the-art facilities, and commitment to academic excellence have truly exceeded my expectations."
+      },
+      {
+        "imgUrl": "https://res.cloudinary.com/duc04fwdb/image/upload/v1719827597/jammal_photos/bxmfbv8zmfjw7kbuewiu.png",
+        "name": "William Jackson",
+        "location": "Edusity, USA",
+        "opinion": "Choosing to pursue my degree at Edusity was one of the best decisions I've ever made. The supportive community, state-of-the-art facilities, and commitment to academic excellence have truly exceeded my expectations."
+      }
+    ]
+  },
   "contact": {
-    "icons": [
-      "https://res.cloudinary.com/di8kjrflu/image/upload/v1719855279/msg-icon_admjx1.png",
-      "https://res.cloudinary.com/di8kjrflu/image/upload/v1719855301/mail-icon_cfnj5m.png",
-      "https://res.cloudinary.com/di8kjrflu/image/upload/v1719855333/phone-icon_ct28v1.png",
-      "https://res.cloudinary.com/di8kjrflu/image/upload/v1719855417/location-icon_ytfm0b.png",
-      "https://res.cloudinary.com/di8kjrflu/image/upload/v1719855189/white-arrow_bmhias.png"
-    ],
     "title": "Send us a message",
     "description": "Feel free to reach out through contact form or find our contact information below. Your feedback, questions, and suggestions are important to us as we strive to provide exceptional service to our university community.",
+    "icon": "https://res.cloudinary.com/di8kjrflu/image/upload/v1719855279/msg-icon_admjx1.png",
+    "imgUrl": "https://res.cloudinary.com/di8kjrflu/image/upload/v1719855189/white-arrow_bmhias.png",
     "contacts": [
       {
-        "icon": 1,
+        "icon": "https://res.cloudinary.com/di8kjrflu/image/upload/v1719855301/mail-icon_cfnj5m.png",
         "text": "Contact@edusite.dev"
       },
       {
-        "icon": 2,
+        "icon": "https://res.cloudinary.com/di8kjrflu/image/upload/v1719855333/phone-icon_ct28v1.png",
         "text": "+1 123-456-7890"
       },
       {
-        "icon": 3,
+        "icon": "https://res.cloudinary.com/di8kjrflu/image/upload/v1719855417/location-icon_ytfm0b.png",
         "text": "77 Massachusetts Ave, Cambridge\nMA 02139, United States"
       }
     ]
   },
+  "footer": {
+    "title": "© 2024 user002. All rights reserved.",
+    "description": "Terms of Services",
+    "subtitle": "Privacy Policy"
+  },
   "colors": {
-    "templateColors": ["#ffffff", "#cda274", "#292f36", "#f4f0ec", "#777777"]
+    "templateColors": ["#000f38", "#212ea0", "#000f984d", "#676767", "#ebecfe", "#474b6e"]
   }
 }

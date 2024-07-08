@@ -11,6 +11,13 @@
   gap: 1.5rem;
 }
 
+.ltr .feature5_2-text {
+  padding:0px 40px;
+}
+.rtl .feature5_2-text {
+   padding: 0px 80px 0px 50px;
+}
+
 .feature5_2-imgDiv {
   margin: auto;
   width: 55%;

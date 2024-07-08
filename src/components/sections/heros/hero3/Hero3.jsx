@@ -2,14 +2,15 @@ import React, { useEffect } from "react";
 import "./hero3.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { useSelector } from "react-redux";
 
 const Hero3 = ({ template }) => {
   useEffect(() => {
     AOS.init();
   }, []);
 
-  const hero = template.hero;
-
+  const ownHero = useSelector((state) => state.ownTemplate.hero);
+  const hero = template ? template.hero : ownHero;
   if (!hero) {
     return null;
   }
@@ -32,14 +33,14 @@ const Hero3 = ({ template }) => {
           </div>
         </div>
 
-        <div className="figures">
+        {/* <div className="figures">
           {hero.heros.map((counter, index) => (
             <div key={index}>
               <span>{counter.count}</span>
               <span>{counter.description}</span>
             </div>
           ))}
-        </div>
+        </div> */}
 
         <div className="hero3-button">
           <button className="btn3">{hero.buttonText}</button>

@@ -28,7 +28,7 @@ const TrialDesign16 = () => {
   };
   return (
     <TrialDesign
-      className="body16 "
+      className="body16"
       componentMapping={componentMapping}
       HeroComponent={Hero16}
       NavbarComponent={Navbar16}

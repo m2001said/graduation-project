@@ -2,12 +2,16 @@ import React from 'react';
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Autoplay } from "swiper/modules";
 import "swiper/css";
+import { useSelector } from "react-redux";
 
 import './hero9.css'; // Import your CSS file for styles
 
 const Hero9 = ({ template }) => {
-  const hero = template.hero;
-  const reviews = template.reviews;
+  const ownHero = useSelector((state) => state.ownTemplate.hero);
+  const hero = template ? template.hero : ownHero;
+
+  const ownReview = useSelector((state) => state.ownTemplate.reviews);
+  const reviews = template ? template.reviews : ownReview;
 
   const handleHover = (event) => {
     const starsContainer = event.currentTarget;

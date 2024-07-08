@@ -2,11 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 :root {
-  --website-8-color-1: black;
+  --website-8-color-1: #000000;
   --website-8-color-2: #212ea0;
-  --website-8-color-3: rgba(0, 15, 152, 0.3);
+  --website-8-color-3: #000f984d;
+  --website-8-color-4: #000000; /* from me */
+  --website-8-color-5: #000000; /* from me */
   --website-8-color-6: #212ea0;
 }
+
 .design-8 {
   background-color: var(--website-8-color-1);
 }

@@ -1,9 +1,12 @@
 import React from "react";
 import "../../../../assets/css/globals10.css";
+import "./footer10.css"
+import { useSelector } from "react-redux";
 
 const Footer10 = ({ template }) => {
-  const footer = template.footer;
-
+  const ownFooter = useSelector((state) => state.ownTemplate.footer);
+  const footer = template ? template.footer : ownFooter;
+  
   return (
     <div className="bg-[--website-10-color-5] dark:bg-gray-950 dark:text-white">
       <section className="items-center p-10 sm:p-30">
@@ -36,7 +39,7 @@ const Footer10 = ({ template }) => {
           <div className="grid grid-cols-2 sm:grid-cols-3 col-span-2 md:pl-10 ">
             {footer.footerSections.map((item) => (
               <div className="py-8 px-4 " key={item.title}>
-                <h1 className="sm:text-xl text-xl font-bold sm:text-left text-justify mb-3">{item.title}</h1>
+                <h1 className="footer10-sectionTitle sm:text-xl text-xl font-bold sm:text-left text-justify mb-3">{item.title}</h1>
                 <ul className={`flex flex-col gap-3`}>
                   {item.links.map((link) => (
                     <a href={link.url} key={link.title}>

@@ -1,7 +1,9 @@
 import React from "react";
+import { useSelector } from "react-redux";
 
 const Feature9 = ({ template }) => {
-  const features = template.features;
+  const ownFooter = useSelector((state) => state.ownTemplate.features);
+  const features = template ? template.features : ownFooter;
 
   return (
     <main className="bg-gradient-to-t from-[var(--website-9-color-3)] to-[var(--website-9-color-1)] py-12 px-4">

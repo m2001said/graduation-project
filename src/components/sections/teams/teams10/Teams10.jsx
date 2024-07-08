@@ -1,9 +1,10 @@
 import React from "react";
 import "../../../../assets/css/globals10.css";
+import { useSelector } from "react-redux";
 
 const Teams10 = ({ template }) => {
-  const team = template.team;
-
+  const ownTeam= useSelector((state) => state.ownTemplate.team);
+  const team = template ? template.team : ownTeam;
   return (
     <>
       <div className="pt-10 bg-[--white10] dark:bg-gray-900 dark:text-white">

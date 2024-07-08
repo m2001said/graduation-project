@@ -1,14 +1,17 @@
 import React from "react";
 import "./services11.css";
 import ServicesBox11 from "./ServicesBox11_1";
+import { useSelector } from "react-redux";
 
 const Services11 = ({ template }) => {
-  const services = template.services;
-  return (
-    <section className="about container section11" id="about">
+  const ownServices = useSelector((state) => state.ownTemplate.services);
+  const services = template ? template.services : ownServices;
+  
+    return (
+    <section className="about" id="about">
       <h2 className="section__title11">{services.title}</h2>
-      <div className="about11__container grid11">
-        <img src={services.imgUrl} alt="" className="aboutImg11" />
+      <div className="flex items-center justify-center gap-10 flex-wrap py-10 md:py-16">
+        <img src={services.imgUrl} alt="" className="" />
         <div className="about__data11 grid11">
           <div className="about__info11">
             <p className="about__description11">{services.description}</p>

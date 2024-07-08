@@ -1,9 +1,11 @@
 import React, { useState } from "react";
 import { useTranslation } from "react-i18next";
+import { useSelector } from "react-redux";
 
 const Navbar13 = ({ template }) => {
   const { t, i18n } = useTranslation();
-  const navbar = template.navbar;
+  const ownNavbar = useSelector((state) => state.ownTemplate.navbar);
+  const navbar = template ? template.navbar : ownNavbar;  
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleMenu = () => {

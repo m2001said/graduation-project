@@ -1,10 +1,12 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
+import { useSelector } from "react-redux";
 
 const Footer9 = ({ template }) => {
   const { t, i18n } = useTranslation();
-  const footer = template.footer;
-  const isRTL = i18n.dir() === "rtl";
+  const ownFooter = useSelector((state) => state.ownTemplate.footer);
+  const footer = template ? template.footer : ownFooter;
+    const isRTL = i18n.dir() === "rtl";
 
   return (
     <footer className="footer9 text-[var(--website-9-color-2)]">

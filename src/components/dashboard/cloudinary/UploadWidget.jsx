@@ -43,6 +43,9 @@ const UploadWidget = ({ children, onUpload }) => {
       cloudName, // Ex: mycloudname
       uploadPreset, // Ex: myuploadpreset
       maxFiles: 1,
+      clientAllowedFormats: ["jpg", "png", "gif", "svg"], // Only allow these formats
+      clientMaxFileSize: 10 * 1024 * 1024, // Optional: limit file size to 10MB
+      resourceType: "auto", // Detect resource type automatically
     };
 
     return cloudinary?.createUploadWidget(options, function (error, result) {

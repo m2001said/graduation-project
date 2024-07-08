@@ -5,7 +5,6 @@ import { handleAddAdmin } from "./handleAddAdmin";
 import Loader from "../Loader/Loader";
 import deleteAdmin from "./useDeleteAdmin";
 
-const API_BASE_URL = "https://websitebuilderbackend-production-716e.up.railway.app";
 const token = localStorage.getItem("token") || undefined;
 
 const AdminAccounts = () => {
@@ -22,7 +21,7 @@ const AdminAccounts = () => {
       try {
         setLoading(true);
         setError(false);
-        const data = await axios.get(`${API_BASE_URL}/user/admin-users?role=admin`, {
+        const data = await axios.get(`${process.env.AI_URL}/user/admin-users?role=admin`, {
           headers: {
             Authorization: "Bearer " + token,
           },
@@ -35,27 +34,8 @@ const AdminAccounts = () => {
         setLoading(false);
       }
     };
-    // const superAdmin = async () => {
-    //   try {
-    //     setLoading(true);
-    //     setError(false);
-    //     const data = await axios.get(`${API_BASE_URL}/user/superadmin?super-admin`, {
-    //       headers: {
-    //         Authorization: "Bearer " + token,
-    //       },
-    //     });
-    //      console.log(data);
-    //     setAdmins(data.data.users);
-    //   } catch (error) {
-    //     console.log(error);
-    //     setError(true);
-    //   } finally {
-    //     setLoading(false);
-    //   }
-    // };
 
     fetchAdmins();
-    // superAdmin();
   }, []);
 
   const user = JSON.parse(localStorage.getItem("persist:root"));
@@ -69,25 +49,25 @@ const AdminAccounts = () => {
       {error && <p className="mt-24 text-2xl text-red-700">Some Error Occured</p>}
       {!loading && !error && (
         <div>
-          <div className="flex items-center gap-2 w-3/4 ml-2 mb-4">
+          <div className="flex items-center gap-2 w-10/12 ml-2 mb-4">
             <div className="w-1/4 text-[#350E5C] text-xl font-bold">Name</div>
             <div className="w-1/3 text-[#350E5C] text-xl font-bold">Email</div>
             <div className="w-1/6  text-[#350E5C] text-xl font-bold">Role</div>
           </div>
           {admins?.map((admin) => (
             <div key={admin._id} className="flex flex-col gap-2">
-              <div className="flex items-center gap-2 w-3/4 ">
+              <div className="flex items-center gap-2 w-10/12 width-respnsive">
                 <div className="w-1/4 mb-2">
                   {/* <label className="text-[#350E5C] text-xl">Name</label> */}
-                  <p className=" text-[#350E5C] border border-inherit text-xl p-2 rounded-lg shadow">{admin?.name}</p>
+                  <p class="text-[#350E5C] border border-inherit p-2 rounded-lg shadow max-w-full break-words">{admin?.name}</p>
                 </div>
                 <div className="w-1/3 mb-2">
                   {/* <label className="text-[#350E5C] text-xl ">Email</label> */}
-                  <p className="text-[#350E5C] border border-inherit text-xl p-2 rounded-lg shadow">{admin?.email}</p>
+                  <p class="text-[#350E5C] border border-inherit p-2 rounded-lg shadow max-w-full break-words">{admin?.email}</p>
                 </div>
                 <div className="w-1/6 mb-2">
                   {/* <label className="text-[#350E5C] text-xl ">Role</label> */}
-                  <p className="text-[#350E5C] border border-inherit text-xl p-2 rounded-lg shadow mr-2">{admin?.role}</p>
+                  <p class="text-[#350E5C] border border-inherit p-2 rounded-lg shadow max-w-full break-words">{admin?.role}</p>
                 </div>
                 {userData?.user?.role === "super-admin" && (
                   <svg
@@ -131,7 +111,7 @@ const AdminAccounts = () => {
         />
         <button
           type="submit"
-          className="text-[#350E5C] font-semibold text-xl bg-[#D095CF] py-2 px-4 rounded-lg transition-colors hover:bg-[#b963b8]"
+          className="text-[#350E5C] font-semibold text-base bg-[#D095CF] py-2 px-4 rounded-lg transition-colors hover:bg-[#b963b8]"
           onClick={async () => {
             await handleAddAdmin(newAdminName, newAdminEmail, newAdminPass);
             setNewAdminName("");

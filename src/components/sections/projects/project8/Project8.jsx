@@ -1,6 +1,8 @@
 import React, { useEffect } from "react";
+import { useSelector } from "react-redux";
 const Project8 = ({ template }) => {
-  const projects = template.projects;
+  const ownProjects = useSelector((state) => state.ownTemplate.projects);
+  const projects = template ? template.projects : ownProjects;
   useEffect(() => {
     // AOS initialization and refresh removed
     return () => {};

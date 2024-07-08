@@ -1,9 +1,9 @@
 {
   "templateInfo": {
     "id": 14,
-    "title": "",
-    "description": "",
-    "imgUrl": ""
+    "title": "مركز متجر الأجهزة",
+    "description": "استكشاف مجموعتنا المختارة من السماعات الرأسية وأجهزة الكمبيوتر المحمولة في متجرنا.",
+    "imgUrl": "/static/media/design14.9d5c6915c21658af1b5f.jpg"
   },
   "navbar": {
     "title": "المتجر الإلكتروني",
@@ -49,7 +49,7 @@
         "imgUrl": "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707602295/macbook_dxcdn8.png",
         "subtitle": "بيتس سولو",
         "title": "علامة تجارية",
-        "description": "أجهزة الكمبيوتر المحمولة"
+        "description": " اجهزة الكمبيوتر"
       }
     ],
     "buttonText": "تسوق حسب الفئة"
@@ -63,19 +63,19 @@
         "imgUrl": "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707777277/earphone_pgistv.png"
       },
       {
-        "title": "أداة",
+        "title": "ساعة ذكية",
         "imgUrl": "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707777305/watch_dn63md.png"
       },
       {
-        "title": "كمبيوتر محمول",
+        "title": "لابتوب",
         "imgUrl": "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707602295/macbook_dxcdn8.png"
       },
       {
-        "title": "كمبيوتر محمول",
+        "title": " الالعاب",
         "imgUrl": "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707777316/gaming_zceuxk.png"
       },
       {
-        "title": "أداة",
+        "title": " الافتراضي",
         "imgUrl": "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707602303/vr_zzinjy.png"
       },
       {
@@ -292,6 +292,6 @@
     ]
   },
   "colors": {
-    "templateColors": ["#f42c37", "fdc62e", "#34cc73", "#1376f4", "#acabab9c", "#eeeeee"]
+    "templateColors": ["#f42c37", "fdc62e", "#34cc73", "#1376f4", "#acabab9c", "#ffffff"]
   }
 }

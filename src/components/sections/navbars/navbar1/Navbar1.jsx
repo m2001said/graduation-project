@@ -1,7 +1,12 @@
 import React, { useState, useRef, useEffect } from "react";
 import "./navbar1.css";
+import { useSelector } from "react-redux";
+import { Link } from "react-router-dom";
 
 const Navbar1 = ({ template }) => {
+  const ownNavbar = useSelector((state) => state.ownTemplate.navbar);
+  const navbar = template ? template.navbar : ownNavbar;
+
   const [openMenu, setOpenMenu] = useState(false);
   const [isSmallScreen, setIsSmallScreen] = useState(window.innerWidth <= 667);
   const menuRef = useRef(null);
@@ -40,7 +45,7 @@ const Navbar1 = ({ template }) => {
     <header className="template1">
       <div className="Nav-container design-1">
         <a href=" #" className="logo">
-          <img src={template.navbar.imgUrl} alt="Logo" />
+          <img src={navbar.imgUrl} alt="Logo" />
         </a>
         <nav>
           {isSmallScreen && (
@@ -52,11 +57,12 @@ const Navbar1 = ({ template }) => {
           )}
           <ul className={isSmallScreen && openMenu ? "show" : ""}>
             {/* Map over navbar.links to dynamically generate links */}
-            {template.navbar.links.map((link, index) => (
+            {navbar.links.map((link, index) => (
               <li key={index}>
-                <a href={link.url} onClick={() => setOpenMenu(false)}>
+                <Link to={link.url} onClick={() => setOpenMenu(false)}>
                   {link.title}
-                </a>
+                </Link>
+
               </li>
             ))}
           </ul>
