@@ -1,11 +1,10 @@
 import axios from "axios";
 
-const API_BASE_URL = "https://websitebuilderbackend-production-716e.up.railway.app";
 const token = localStorage.getItem("token");
 
 async function deletePages(userId) {
   try {
-    await axios.delete(`${API_BASE_URL}/user/${userId}`, {
+    await axios.delete(`${process.env.REACT_APP_BACKEND_URL}/user/${userId}`, {
       headers: {
         Authorization: "Bearer " + token,
       },
@@ -16,7 +15,7 @@ async function deletePages(userId) {
 }
 async function deletePage(userId, pageId) {
   try {
-    await axios.delete(`${API_BASE_URL}/user/${userId}/${pageId}`, {
+    await axios.delete(`${process.env.REACT_APP_BACKEND_URL}/user/${userId}/${pageId}`, {
       headers: {
         Authorization: "Bearer " + token,
       },

@@ -6,7 +6,7 @@ const Cta11 = ({ template }) => {
   const cta = template.cta;
 
   return (
-    <section className="resume11 pt-10 md:pt-16" id="resume">
+    <section className="resume11 pt-10 md:pt-16" id={cta.sectionId}>
       <h2 className="section__title11">{cta.title}</h2>
       <div className="resume__container11">
         <div className="timeline11 grid11">

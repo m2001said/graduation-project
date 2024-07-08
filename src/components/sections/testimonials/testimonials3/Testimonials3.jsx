@@ -7,9 +7,9 @@ const Testimonials3 = ({ template }) => {
   const { i18n } = useTranslation();
   const language = i18n.language;
 
-  const ownTestimonials= useSelector((state) => state.ownTemplate.testimonials);
+  const ownTestimonials = useSelector((state) => state.ownTemplate.testimonials);
   const testimonial = template ? template.testimonials : ownTestimonials;
-  
+
   const [selected, setSelected] = useState(0);
   const tLength = testimonial.testimonials.length;
 
@@ -17,7 +17,7 @@ const Testimonials3 = ({ template }) => {
   const nextImgUrl = testimonial.imgs && testimonial.imgs[0] ? testimonial.imgs[0] : "";
 
   return (
-    <div className="testimonials3" id="Testimonials">
+    <div className="testimonials3" id={testimonial.sectionId}>
       <div className="left-t3">
         <span>{testimonial.title}</span>
         <span className="stroke-text">{testimonial.subtitle}</span>

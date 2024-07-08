@@ -39,7 +39,7 @@ const MainNav = ({ toggleModal }) => {
   };
 
   const showchangelanguage = () => {
-    const adminRoutes = ["admin", "user-information", "designs", "reset-password", "failed-verified", "success-verified", "websites", "services"];
+    const adminRoutes = ["admin", "user-information", "designs", "reset-password", "failed-verified", "success-verified", "websites", "services", "pages"];
     const pathWithoutLang = currentPath.replace(/^\/(en|ar)/, "");
     return pathWithoutLang === "" || adminRoutes.some((route) => pathWithoutLang === `/${route}`);
   };
@@ -47,8 +47,6 @@ const MainNav = ({ toggleModal }) => {
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
-
-  console.log(authState.status);
 
   return (
     <>
@@ -124,7 +122,7 @@ const MainNav = ({ toggleModal }) => {
                   className={({ isActive }) => (isActive ? "text-pink-300" : "hover:text-pink-300")}
                   onClick={toggleMenu}
                 >
-                  {t("HERO.DESIGNS")}
+                  {t("HERO.SERVICES")}
                 </NavLink>
                 <NavLink
                   to={`/${i18n.language}/websites`}

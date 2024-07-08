@@ -5,9 +5,6 @@ import "swiper/css";
 import { Pagination } from "swiper/modules";
 import Loader from "../Loader/Loader";
 
-
-
-const API_BASE_URL = "https://websitebuilderbackend-production-716e.up.railway.app";
 const token = localStorage.getItem("token") || undefined;
 
 const AdminMessages = () => {
@@ -20,7 +17,7 @@ const AdminMessages = () => {
       try {
         setLoading(true);
         setError(false);
-        const response = await axios.get(`${API_BASE_URL}/message/admin`, {
+        const response = await axios.get(`${process.env.REACT_APP_BACKEND_URL}/message/admin`, {
           headers: {
             Authorization: "Bearer " + token,
           },

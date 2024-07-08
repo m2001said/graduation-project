@@ -112,6 +112,6 @@
     "buttonText": "Send message"
   },
   "colors": {
-    "templateColors": ["#000000", "#212ea0", "#000f984d", "#000000", "#000000" , "#212ea0" ]
+    "templateColors": ["#000000", "#212ea0", "#000f984d", "#000000", "#000000", "#212ea0"]
   }
 }

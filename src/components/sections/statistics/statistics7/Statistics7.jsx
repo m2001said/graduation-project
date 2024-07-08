@@ -6,7 +6,7 @@ const Stats7 = ({ template }) => {
   console.log(statistics);
 
   return (
-    <div className={`bg-primary ${styles.paddingX} ${styles.flexStart}`}>
+    <div id={statistics.sectionId} className={`bg-primary ${styles.paddingX} ${styles.flexStart}`}>
       <div className={`${styles.boxWidth}`}>
         <section className={`${styles.flexCenter} flex-row flex-wrap sm:mb-20 mb-6`}>
           {statistics.statistics.map((stat, index) => (

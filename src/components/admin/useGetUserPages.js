@@ -1,11 +1,10 @@
 import axios from "axios";
 
-const API_BASE_URL = "https://websitebuilderbackend-production-716e.up.railway.app";
 const token = localStorage.getItem("token");
 
 async function getUserPages(userId) {
   try {
-    const res = await axios.get(`${API_BASE_URL}/user/${userId}/pages`, {
+    const res = await axios.get(`${process.env.REACT_APP_BACKEND_URL}/user/${userId}/pages`, {
       headers: {
         Authorization: "Bearer " + token,
       },
@@ -17,7 +16,7 @@ async function getUserPages(userId) {
 }
 async function getUserPage(userId, pageId) {
   try {
-    const res = await axios.get(`${API_BASE_URL}/user/${userId}/${pageId}`, {
+    const res = await axios.get(`${process.env.REACT_APP_BACKEND_URL}/user/${userId}/${pageId}`, {
       headers: {
         Authorization: "Bearer " + token,
       },
@@ -29,5 +28,3 @@ async function getUserPage(userId, pageId) {
 }
 
 export { getUserPages, getUserPage };
-
-
