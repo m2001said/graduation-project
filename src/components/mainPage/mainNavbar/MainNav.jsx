@@ -1,5 +1,5 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React, { useState } from "react";
+import { Link, NavLink } from "react-router-dom";
 import "./mainNav.css";
 import logo from "../../../assets/images/mainPageAssets/logo.svg";
 import user from "../../../assets/images/mainPageAssets/user.svg";
@@ -19,6 +19,7 @@ const MainNav = ({ toggleModal }) => {
   const userAvatar = useSelector((state) => state.auth.userAvatar);
   const dispatch = useDispatch();
   const { i18n, t } = useTranslation("main");
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const handleSignOut = () => {
     dispatch(logoutUserAsync());
@@ -26,6 +27,7 @@ const MainNav = ({ toggleModal }) => {
     persistor.purge().then(() => {
       navigate("/");
     });
+    toggleMenu();
   };
 
   const currentPath = window.location.pathname;
@@ -37,26 +39,46 @@ const MainNav = ({ toggleModal }) => {
   };
 
   const showchangelanguage = () => {
-    const adminRoutes = ["admin", "user-information", "designs", "reset-password", "failed-verified", "success-verified", "websites"];
+    const adminRoutes = ["admin", "user-information", "designs", "reset-password", "failed-verified", "success-verified", "websites", "services"];
     const pathWithoutLang = currentPath.replace(/^\/(en|ar)/, "");
     return pathWithoutLang === "" || adminRoutes.some((route) => pathWithoutLang === `/${route}`);
+  };
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
   };
 
   return (
     <>
       <div className="main-nav" id="main-nav">
         <div className="container mx-auto px-4 flex  justify-between items-center py-4">
-          <Link to={`/${i18n.language}`}>
+          <Link dir="ltr" to={`/${i18n.language}`}>
             <div className="main-logo flex items-center">
               <img src={logo} alt="logo" />
               <span>WEB</span>
             </div>
           </Link>
 
-          <div className="nav-controls flex justify-between items-center gap-2 md:gap-6">
+          {authState.status === "succeeded" && (
+            <div className="hidden md:flex justify-between items-center gap-4">
+              <NavLink to={`/${i18n.language}/services`} className={({ isActive }) => (isActive ? "text-pink-300" : "hover:text-pink-300")}>
+                {t("HERO.SERVICES")}
+              </NavLink>
+              <NavLink to={`/${i18n.language}/websites`} className={({ isActive }) => (isActive ? "text-pink-300" : "hover:text-pink-300")}>
+                {t("HERO.WEBSITES")}
+              </NavLink>
+              <NavLink to={`/${i18n.language}/pages`} className={({ isActive }) => (isActive ? "text-pink-300" : "hover:text-pink-300")}>
+                {t("HERO.PAGES")}
+              </NavLink>
+              <NavLink to={`/${i18n.language}#contact-us`} className="hover:text-pink-300">
+                {t("HERO.CONTACT")}
+              </NavLink>
+            </div>
+          )}
+
+          <div className="nav-controls flex justify-between items-center gap-4 md:gap-6">
             {authState.status === "succeeded" && authState.user && (
-              <Link to={`/${i18n.language}/user-information`} className="flex items-center gap-2 ">
-                <p className="text-base md:text-lg hidden md:block">{authState.userName || authState.user.name}</p>
+              <Link to={`/${i18n.language}/user-information`} className="hidden md:flex items-center gap-2 ">
                 {userAvatar ? <img src={userAvatar} alt="logo" className="w-10 h-10 rounded-full" /> : <img className="w-6" src={user} alt="logo" />}
               </Link>
             )}
@@ -64,7 +86,7 @@ const MainNav = ({ toggleModal }) => {
             <LoadingButton
               loading={authState.status === "loading"}
               onClick={authState.status === "succeeded" && authState.user ? handleSignOut : toggleModal}
-              className="signIn-btn p-1 md:p-2"
+              className="hidden md:block signIn-btn p-1 md:p-2"
               btnText={authState.status === "succeeded" && authState.user ? t("USER.LOG_OUT") : t("USER.SIGN_IN")}
             />
 
@@ -82,8 +104,57 @@ const MainNav = ({ toggleModal }) => {
                 )}
               </div>
             )}
+
+            <button onClick={toggleMenu} className={`md:hidden menu-button ${isMenuOpen ? "open" : ""}`}>
+              <span className="menu-icon"></span>
+              <span className="menu-icon"></span>
+              <span className="menu-icon"></span>
+            </button>
           </div>
         </div>
+
+        {isMenuOpen && (
+          <div className="mobile-menu flex flex-col gap-6 items-center justify-center shadow-lg py-10  md:hidden">
+            {authState.status === "succeeded" && (
+              <>
+                <NavLink
+                  to={`/${i18n.language}/services`}
+                  className={({ isActive }) => (isActive ? "text-pink-300" : "hover:text-pink-300")}
+                  onClick={toggleMenu}
+                >
+                  {t("HERO.DESIGNS")}
+                </NavLink>
+                <NavLink
+                  to={`/${i18n.language}/websites`}
+                  className={({ isActive }) => (isActive ? "text-pink-300" : "hover:text-pink-300")}
+                  onClick={toggleMenu}
+                >
+                  {t("HERO.WEBSITES")}
+                </NavLink>
+                <NavLink to={`/${i18n.language}/pages`} className={({ isActive }) => (isActive ? "text-pink-300" : "hover:text-pink-300")} onClick={toggleMenu}>
+                  {t("HERO.PAGES")}
+                </NavLink>
+                <NavLink to={`/${i18n.language}#contact-us`} className="hover:text-pink-300" onClick={toggleMenu}>
+                  {t("HERO.CONTACT")}
+                </NavLink>
+              </>
+            )}
+
+            {authState.status === "succeeded" && authState.user && (
+              <Link to={`/${i18n.language}/user-information`} className="flex items-center justify-center gap-2 " onClick={toggleMenu}>
+                {userAvatar ? <img src={userAvatar} alt="logo" className="w-10 h-10 rounded-full" /> : <img className="w-6" src={user} alt="logo" />}
+                <p className="text-base  md:text-lg ">{authState.userName || authState.user.name}</p>
+              </Link>
+            )}
+
+            <LoadingButton
+              loading={authState.status === "loading"}
+              onClick={authState.status === "succeeded" && authState.user ? handleSignOut : toggleModal}
+              className="signIn-btn w-10/12 p-1 md:p-2"
+              btnText={authState.status === "succeeded" && authState.user ? t("USER.LOG_OUT") : t("USER.SIGN_IN")}
+            />
+          </div>
+        )}
       </div>
     </>
   );

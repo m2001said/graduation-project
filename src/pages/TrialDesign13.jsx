@@ -19,7 +19,7 @@ const TrialDesign13 = () => {
     testimonials: Testimonials13,
     contact: Contact13,
     logos: Logos13,
-    feature: Feature13,
+    features: Feature13,
   };
   return (
     <TrialDesign

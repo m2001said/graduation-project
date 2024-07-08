@@ -1,8 +1,10 @@
 import React from "react";
 import "./feature11.css";
+import { useSelector } from "react-redux";
 
 const Feature11 = ({ template }) => {
-  const features = template.features;
+  const ownFooter = useSelector((state) => state.ownTemplate.features);
+  const features = template ? template.features : ownFooter;
 
   return (
     <section className="blog11 py-4 md:py-10" id="blog">

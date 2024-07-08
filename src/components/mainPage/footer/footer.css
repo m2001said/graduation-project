@@ -1,0 +1,13 @@
+.footer-section {
+  padding-top: 85px;
+  padding-bottom: 55px;
+  background-image: linear-gradient(to bottom, #8f74b3, #240d55) !important;
+  background-size: 100% 100%, 19px 20px;
+  background-blend-mode: multiply;
+}
+.demo-section .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+}

@@ -248,6 +248,6 @@
     ]
   },
   "colors": {
-    "templateColors": ["hsl(255, 50%, 48%)", "#f0f4f4", "#eb967a", "#fabe89", "#000000","#919191"]
+    "templateColors": ["#5c3db8", "#f0f4f4", "#eb967a", "#fabe89", "#000000" , "#919191"]
   }
 }

@@ -36,7 +36,7 @@ const TrialDesign1 = () => {
       componentMapping={componentMapping1}
       HeroComponent={Hero1}
       NavbarComponent={Navbar1}
-      footerComponent={Footer1}
+      FooterComponent={Footer1}
       template={1}
     />
   );

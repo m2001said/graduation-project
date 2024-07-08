@@ -1,9 +1,9 @@
 {
   "templateInfo": {
     "id": 16,
-    "title": "",
-    "description": "",
-    "imgUrl": ""
+    "title": "كافيه كوفيروز",
+    "description": "تذوق جوهر القهوة في مقهىنا. تحقق من قائمتنا، احجز طاولة.",
+    "imgUrl": "/static/media/design16.5a3cbfaad1d95e7f06bf.jpg"
   },
   "navbar": {
     "imgUrl": "https://res.cloudinary.com/duc04fwdb/image/upload/v1708464166/jammal_photos/pzfqcxfrr2cw4mvelbjd.png",
@@ -398,6 +398,6 @@
     ]
   },
   "colors": {
-    "templateColors": ["#fff", "#cda274", "#292f36", "#f4f0ec", "#777777"]
+    "templateColors": ["#ffc727", "#e9f1f5", "#d5dae2", "#888883", "#111111", "#ffffff"]
   }
 }

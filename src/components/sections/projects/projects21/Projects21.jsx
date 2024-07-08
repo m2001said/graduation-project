@@ -1,8 +1,11 @@
 import React from "react";
+import { useSelector } from "react-redux";
 
 
 const Projects21 = ({template}) => {
-    const projects2 = template.blogs;
+    const ownProjects = useSelector((state) => state.ownTemplate.blogs);
+    const projects2 = template ? template.blogs : ownProjects;
+  
 
 
   return (

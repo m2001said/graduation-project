@@ -6,6 +6,7 @@ import ai from "../../../assets/images/mainPageAssets/ai.svg";
 import signin from "../../../assets/images/mainPageAssets/signin.svg";
 import ways from "../../../assets/images/mainPageAssets/ways.svg";
 import deploy from "../../../assets/images/mainPageAssets/deploy.svg";
+import deploy2 from "../../../assets/images/mainPageAssets/deploy2.webp";
 import { useTranslation } from "react-i18next";
 
 const Steps = () => {
@@ -31,6 +32,11 @@ const Steps = () => {
       title: t("STEPS.TITLE_4"),
       description: t("STEPS.DESCRIPTION_4"),
       imageUrl: deploy,
+    },
+    {
+      title: t("STEPS.TITLE_5"),
+      description: t("STEPS.DESCRIPTION_5"),
+      imageUrl: deploy2,
     },
   ];
 

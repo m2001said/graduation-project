@@ -23,8 +23,13 @@ const SignUpForm = ({ toggleForm }) => {
       setErrorMessage(validationError);
       return;
     }
-    await dispatch(registerUserAsync({ name, email, password }));
-    setCreateSuccess(true);
+
+    try {
+      await dispatch(registerUserAsync({ name, email, password })).unwrap();
+      setCreateSuccess(true);
+    } catch (error) {
+      setErrorMessage(error.message || "Registration failed. Please try again.");
+    }
   };
 
   // Clear form fields when createSuccess changes

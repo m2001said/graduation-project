@@ -1,8 +1,10 @@
 import React from "react";
 import "./projects2.css";
+import { useSelector } from "react-redux";
  
 const Projects2 = ({ template }) => {
-  const projects = template.projects;
+  const ownProjects = useSelector((state) => state.ownTemplate.projects);
+  const projects = template ? template.projects : ownProjects;
   return (
     <section id="projects2" className="section2">
       <h5>{projects.title}</h5>

@@ -1,10 +1,12 @@
 // eslint-disable-next-line no-unused-vars
 import React from "react";
+import { useSelector } from "react-redux";
 
 
 const Features = ({template}) => {
-const feature = template.features;
-
+  const ownFooter = useSelector((state) => state.ownTemplate.features);
+  const feature = template ? template.features : ownFooter;
+ 
 
   return (
     <div className="dark:bg-[--website-18-color-5] dark:text-white bg-[--website-18-color-2] sm:min-h-[600px] sm:grid sm:place-items-center duration-300">

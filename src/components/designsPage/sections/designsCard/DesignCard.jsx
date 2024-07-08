@@ -19,10 +19,10 @@ const DesignCard = ({ Designdata, index }) => {
     <>
       {isModalOpen ? (
         <BaseModal poster={aiPoster} toggleModal={toggleModal}>
-          <AiForm index={index - 2} />
+          <AiForm index={index + 1} />
         </BaseModal>
       ) : null}
-      {index > 2 && (
+      {
         <div className="design-card rounded-2xl overflow-hidden shadow-lg flex flex-column">
           <div className="design-Img-container mb-2">
             <Loader src={Designdata.imageUrl} alt="design--Img" />
@@ -35,7 +35,7 @@ const DesignCard = ({ Designdata, index }) => {
           <div className="button-container p-4 flex justify-between gap-4">
             <button
               className="flex items-center gap-4 bg-[#ce79cc] text-white font-bold py-2 px-4 hover:shadow-lg rounded-full w-full hover:bg-[#b568b8]"
-              onClick={() => toggleModal(index)}
+              onClick={() => toggleModal(index + 1)}
             >
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" className="w-5 h-5">
                 <path
@@ -46,7 +46,7 @@ const DesignCard = ({ Designdata, index }) => {
               {t("USER.BUILD_1")}
             </button>
 
-            <Link className=" py-2 px-4 w-20" to={`/${i18n.language}/preview-trial-design${index - 2}`}>
+            <Link className=" py-2 px-4 w-20" to={`/${i18n.language}/preview-trial-design${index + 1}`}>
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
                 <path
                   fill="#ce79cc"
@@ -56,49 +56,7 @@ const DesignCard = ({ Designdata, index }) => {
             </Link>
           </div>
         </div>
-      )}
-
-      {index === 2 && (
-        <Link to={`/${i18n.language}/page-craft`}>
-          <div className="design-card rounded-lg overflow-hidden shadow-lg flex flex-column">
-            <div className="design-Img-container mb-2">
-              <Loader src={Designdata.imageUrl} alt="design--Img" />
-            </div>
-
-            <div className="design-info px4 py-2">
-              <h2 className="designs-title font-bold text-xl text-center font-semibold">{Designdata.title}</h2>
-              <p className="designs-description text-gray-600 text-sm  text-center ">{Designdata.description}</p>
-            </div>
-          </div>
-        </Link>
-      )}
-
-      {index === 1 && (
-        <Link to={`/${i18n.language}/pages`}>
-          <div className="design-card rounded-lg overflow-hidden shadow-lg flex flex-column">
-            <div className="design-Img-container mb-2">
-              <Loader src={Designdata.imageUrl} alt="design--Img" />
-            </div>
-            <div className="design-info px4 py-2">
-              <h2 className="designs-title font-bold text-xl text-center font-semibold">{Designdata.title}</h2>
-              <p className="designs-description text-gray-600 text-sm  text-center ">{Designdata.description}</p>
-            </div>
-          </div>
-        </Link>
-      )}
-      {index === 0 && (
-        <Link to={`/${i18n.language}/websites`}>
-          <div className="design-card rounded-lg overflow-hidden shadow-lg flex flex-column">
-            <div className="design-Img-container mb-2">
-              <Loader src={Designdata.imageUrl} alt="design--Img" />
-            </div>
-            <div className="design-info px4 py-2">
-              <h2 className="designs-title font-bold text-xl text-center font-semibold">{Designdata.title}</h2>
-              <p className="designs-description text-gray-600 text-sm  text-center ">{Designdata.description}</p>
-            </div>
-          </div>
-        </Link>
-      )}
+      }
     </>
   );
 };

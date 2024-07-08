@@ -1,11 +1,9 @@
 import axios from "axios";
 
-const API_BASE_URL = "https://websitebuilderbackend-production-716e.up.railway.app";
-
 // Function to create a new user
 export const createUser = async (name, email, password) => {
   try {
-    const response = await axios.post(`${API_BASE_URL}/user`, {
+    const response = await axios.post(`${process.env.REACT_APP_BACKEND_URL}/user`, {
       name,
       email,
       password,
@@ -19,7 +17,7 @@ export const createUser = async (name, email, password) => {
 // Function to login a user
 export const loginUser = async (email, password) => {
   try {
-    const response = await axios.post(`${API_BASE_URL}/user/login`, {
+    const response = await axios.post(`${process.env.REACT_APP_BACKEND_URL}/user/login`, {
       email,
       password,
     });
@@ -38,7 +36,7 @@ export const loginUser = async (email, password) => {
 export const logoutUser = async () => {
   try {
     const token = localStorage.getItem("token");
-    const response = await axios.get(`${API_BASE_URL}/user/logout-user`, {
+    const response = await axios.get(`${process.env.REACT_APP_BACKEND_URL}/user/logout-user`, {
       headers: {
         Authorization: `Bearer ${token}`,
       },
@@ -56,7 +54,7 @@ export const logoutUser = async () => {
 export const fetchUserAvatar = async () => {
   try {
     const token = localStorage.getItem("token");
-    const response = await axios.get(`${API_BASE_URL}/user/avatar`, {
+    const response = await axios.get(`${process.env.REACT_APP_BACKEND_URL}/user/avatar`, {
       headers: {
         Authorization: `Bearer ${token}`,
       },
@@ -70,7 +68,7 @@ export const fetchUserAvatar = async () => {
 // Function to forget password
 export const forgetPassword = async (email) => {
   try {
-    const response = await axios.post(`${API_BASE_URL}/user/forget-password`, {
+    const response = await axios.post(`${process.env.REACT_APP_BACKEND_URL}/user/forget-password`, {
       email,
     });
     return response.data;
@@ -82,7 +80,7 @@ export const forgetPassword = async (email) => {
 // Function to reset password
 export const resetPassword = async (token, password) => {
   try {
-    const response = await axios.post(`${API_BASE_URL}/user/reset-password/${token}`, {
+    const response = await axios.post(`${process.env.REACT_APP_BACKEND_URL}/user/reset-password/${token}`, {
       password,
     });
     return response.data;
@@ -96,7 +94,7 @@ export const refreshToken = async () => {
   const refresh_token = localStorage.getItem("refresh_token");
 
   try {
-    const response = await axios.get(`${API_BASE_URL}/user/refresh-token`, {
+    const response = await axios.get(`${process.env.REACT_APP_BACKEND_URL}/user/refresh-token`, {
       headers: {
         Authorization: `Bearer ${refresh_token}`,
       },

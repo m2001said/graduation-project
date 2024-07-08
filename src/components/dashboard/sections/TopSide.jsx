@@ -2,11 +2,12 @@ import React, { useState, useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { updateScreen } from "../../../features/screen/screenSlice";
 import { useLocation, useNavigate } from "react-router";
-import { fetchTemplates } from "../../../features/templates/templatesSlice";
 import { useSearchParams } from "react-router-dom";
 import { initialState, templateActions1 } from "../../../features/templateData/templateSlice";
 import { useTranslation } from "react-i18next";
 import { ownTemplateActions } from "../../../features/templateData/ownTemplateSlice";
+import { fetchPages } from "../../../features/templates/pagesSlice";
+import { fetchWebsites } from "../../../features/templates/websitesSlice";
 
 const TopSide = ({ schema }) => {
   const { i18n } = useTranslation();
@@ -42,20 +43,20 @@ const TopSide = ({ schema }) => {
   };
 
   const handleSubmit = async () => {
+    const regex = /\d+/;
     const isUpdating = pathname.includes("edit");
-    const inOwnPage = pathname.includes("own-page");
+    const inOwnPage = pathname.includes("own-page") || !regex.test(pathname);
+    console.log(pathname);
     let url;
     if (inOwnPage) {
-      url = isUpdating
-        ? `https://websitebuilderbackend-production-716e.up.railway.app/page/update/${id}`
-        : "https://websitebuilderbackend-production-716e.up.railway.app/page";
+      url = isUpdating ? `${process.env.REACT_APP_BACKEND_URL}/page/update/${id}` : `${process.env.REACT_APP_BACKEND_URL}/page`;
     } else {
-      url = isUpdating
-        ? `https://websitebuilderbackend-production-716e.up.railway.app/website/update/${id}`
-        : "https://websitebuilderbackend-production-716e.up.railway.app/website";
+      url = isUpdating ? `${process.env.REACT_APP_BACKEND_URL}/website/update/${id}` : `${process.env.REACT_APP_BACKEND_URL}/website`;
     }
     const text = inOwnPage ? "page" : "website";
     console.log(url);
+
+    console.log(schema);
 
     try {
       setIsGenerating(true);
@@ -69,17 +70,18 @@ const TopSide = ({ schema }) => {
         },
       });
       const result = await res.json();
+      console.log(result);
 
-      console.log(result.data);
+      console.log("respone after create ", result.data);
       setIsGenerating(false);
       if (inOwnPage) {
         // get pages in pages page
-        dispatch(fetchTemplates("page")); // need edit
+        dispatch(fetchPages()); // need edit
         navigate(`/${i18n.language}/pages`);
         dispatch(ownTemplateActions.deleteSchema()); // remove data in ownpage slice
       } else {
         // get websites in websites page
-        dispatch(fetchTemplates("website"));
+        dispatch(fetchWebsites());
         navigate(`/${i18n.language}/websites`);
         dispatch(templateActions1.updateSchema(initialState));
       }

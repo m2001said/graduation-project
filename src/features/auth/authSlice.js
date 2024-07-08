@@ -116,7 +116,7 @@ const authSlice = createSlice({
         state.status = "loading";
       })
       .addCase(logoutUserAsync.fulfilled, (state) => {
-        state.status = "succeeded";
+        state.status = "idle";
         state.user = null;
         state.userName = "";
         state.userAvatar = "";

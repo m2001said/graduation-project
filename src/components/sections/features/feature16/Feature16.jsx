@@ -1,11 +1,12 @@
 import React from "react";
 
 import "./feature16.css";
+import { useSelector } from "react-redux";
 // import { useLocation } from "react-router";
 
 const Feature16 = ({ template }) => {
-  const features = template.features;
-
+  const ownFooter = useSelector((state) => state.ownTemplate.features);
+  const features = template ? template.features : ownFooter;
   return (
     <section className="features16 section16" id="features">
       <h2 className="section__title16" data-title="Features">

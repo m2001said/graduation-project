@@ -1,8 +1,10 @@
 import React, { useState } from "react";
 import "../project11/project11.css";
+import { useSelector } from "react-redux";
 
 const Project11 = ({ template }) => {
-  const projects = template.projects;
+  const ownProjects = useSelector((state) => state.ownTemplate.projects);
+  const projects = template ? template.projects : ownProjects;
 
   const [cards, setCards] = useState(projects.projects); // Initialize state with projects.projects
 

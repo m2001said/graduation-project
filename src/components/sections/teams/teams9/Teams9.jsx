@@ -1,6 +1,9 @@
+import { useSelector } from "react-redux";
+
 const Teams9 = ({ template }) => {
-  const team = template.team;
-  return (
+  const ownTeam= useSelector((state) => state.ownTemplate.team);
+  const team = template ? template.team : ownTeam;
+    return (
     <main className="container mx-auto px-3 pt-8 pb-12 team9">
       <p className="text-[var(--website-9-color-3)] uppercase md:text-xl text-lg text-center">{team.title}</p>
       <h1 className="lg:text-4xl text-3xl font-medium capitalize pt-3 pb-12 text-center">{team.description}</h1>

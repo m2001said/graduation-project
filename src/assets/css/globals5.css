@@ -1,9 +1,8 @@
-* {
+.design5 {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
   font-family: "Spartan", sans-serif;
-  /* max-width: 100%; */
 }
 
 :root {

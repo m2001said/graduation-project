@@ -1,8 +1,10 @@
 import React from "react";
+import { useSelector } from "react-redux";
 
 const Services14 = ({ template }) => {
-  const services = template.services;
-
+  const ownServices = useSelector((state) => state.ownTemplate.services);
+  const services = template ? template.services : ownServices;
+  
   return (
     <div className="bg-[--website-14-color-6] dark:bg-gray-900 dark:text-white">
       <div className="container14 py-14 md:py-20">

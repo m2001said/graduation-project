@@ -1,9 +1,9 @@
 {
   "templateInfo": {
     "id": 6,
-    "title": "",
-    "description": "",
-    "imgUrl": ""
+    "title": "طعام الشيف",
+    "description": "اكتشف النكهات المتنوعة مع قائمتنا والشهادات المُرضية.",
+    "imgUrl": "/static/media/design6.c46344039514b1e76dbf.jpg"
   },
   "navbar": {
     "logo": "https://res.cloudinary.com/duc04fwdb/image/upload/v1706351943/jammal_photos/jicfizb2xdqr8hcgkmc4.png",
@@ -483,6 +483,6 @@
     ]
   },
   "colors": {
-    "templateColors": ["#0a071a", "#141124", "#f76e11", "#f5b70a", "#fff", "#c4c4c4b5"]
+    "templateColors": ["#0a071a", "#141124", "#f76e11", "#f5b70a", "#ffffff", "#c4c4c4b5"]
   }
 }

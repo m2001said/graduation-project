@@ -1,7 +1,10 @@
 import React from "react";
+import { useSelector } from "react-redux";
 
 const Feature13 = ({ template }) => {
-  const { title, subtitle, description, features } = template.feature;
+  const ownFooter = useSelector((state) => state.ownTemplate.features);
+  const { title, subtitle, description, features }  = template ? template.features : ownFooter;
+
 
   return (
     <div id="feature13" className="relative overflow-hidden flex flex-col items-center justify-center bg-gradient-to-t from-[var(--website-13-color-5)] to-[var(--website-13-color-1)] lg:py-20 py-8 ">

@@ -1,7 +1,10 @@
 import React from "react";
 import "./testimonials1.css";
+import { useSelector } from "react-redux";
 const Testimonials1 = ({ template }) => {
-  const testimonial = template.testimonials;
+  const ownTestimonials= useSelector((state) => state.ownTemplate.testimonials);
+  const testimonial = template ? template.testimonials : ownTestimonials;
+  
   return (
     <div className="Testimonials1 design1">
       <div className="testimonials">

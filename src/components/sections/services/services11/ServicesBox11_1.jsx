@@ -1,7 +1,10 @@
 import React from "react";
+import { useSelector } from "react-redux";
 
 const ServicesBox11 = ({ template }) => {
-  const statistic = template.statistics;
+  const ownStatistics = useSelector((state) => state.ownTemplate.statistics);
+  const statistic = template ? template.statistics : ownStatistics;
+
   return (
     <div className="flex flex-wrap items-center justify-between gap-8 px-6 py-10 md:py-20">
       {statistic.statistics.map((stat, index) => (

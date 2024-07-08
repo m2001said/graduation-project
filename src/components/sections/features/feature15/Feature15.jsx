@@ -1,4 +1,5 @@
 import React from "react";
+import { useSelector } from "react-redux";
 
 const Card = ({ title, description, number }) => (
   <div className="w-full">
@@ -13,8 +14,9 @@ const Card = ({ title, description, number }) => (
 );
 
 const Feature15 = ({ template }) => {
-  const feature = template.features;
-
+  const ownFooter = useSelector((state) => state.ownTemplate.features);
+  const feature = template ? template.features : ownFooter;
+  
   return (
     <main className="pt-16 px-3 feat15" id="skills">
       <div className="container mx-auto max-w-7xl">

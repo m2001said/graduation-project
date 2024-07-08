@@ -230,7 +230,7 @@ const templateSlice = createSlice({
   },
 });
 
-export const { resetState } = templateSlice.actions;
+export const { resetState, updateTemplate } = templateSlice.actions;
 export const templateActions1 = templateSlice.actions;
 export { initialState };
 export default templateSlice.reducer;
