@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import "./big-loader.css";
 import { useTranslation } from "react-i18next";
 
-const BigLoader = () => {
+const BigLoader = ({ lineLoadTime }) => {
   const { i18n } = useTranslation();
   const language = i18n.language;
 
@@ -30,7 +30,7 @@ const BigLoader = () => {
   const [status, setStatus] = useState(Array(sentences.length).fill("loading"));
 
   useEffect(() => {
-    const interval = 20000;
+    const interval = lineLoadTime;
     const timers = sentences.slice(0, -1).map((_, index) =>
       setTimeout(() => {
         setStatus((prevStatus) => {
