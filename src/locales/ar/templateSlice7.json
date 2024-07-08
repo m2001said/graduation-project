@@ -1,8 +1,8 @@
 {
   "templateInfo": {
     "id": 7,
- "title": "حلول مالية آمنة",
-  "description": "اكتشف مجموعة متنوعة من الحلول المالية الآمنة مع قائمتنا والشهادات المرضية.",
+    "title": "حلول مالية آمنة",
+    "description": "اكتشف مجموعة متنوعة من الحلول المالية الآمنة مع قائمتنا والشهادات المرضية.",
     "imgUrl": "/static/media/design7.18970144c26bb47555d4.jpg"
   },
   "navbar": {
@@ -10,23 +10,24 @@
     "links": [
       {
         "title": "الرئيسية",
-        "url": "#home"
+        "url": "hero"
       },
       {
         "title": "المميزات",
-        "url": "#features"
+        "url": "features"
       },
       {
         "title": "المنتجات",
-        "url": "#product"
+        "url": "items"
       },
       {
         "title": "العملاء",
-        "url": "#clients"
+        "url": "testimonials"
       }
     ]
   },
   "hero": {
+    "sectionId": "hero",
     "title": "طريقة الدفع للجيل القادم",
     "subtitle": "خصم 20% لحساب الشهر الأول",
     "description": "يستخدم فريق الخبراء لدينا منهجية لتحديد بطاقات الائتمان الأكثر احتمالًا لتلبية احتياجاتك. نقوم بفحص معدلات النسبة المئوية السنوية، والرسوم السنوية.",
@@ -38,6 +39,7 @@
     ]
   },
   "statistics": {
+    "sectionId": "statistics",
     "statistics": [
       {
         "title": "المستخدمون النشطون",
@@ -54,6 +56,7 @@
     ]
   },
   "features": {
+    "sectionId": "features",
     "title": "أنت تقوم بالأعمال،",
     "subtitle": "ونحن سنتولى المال.",
     "description": "مع بطاقة الائتمان المناسبة، يمكنك تحسين حياتك المالية من خلال بناء الائتمان، وكسب المكافآت وتوفير المال. ولكن مع مئات بطاقات الائتمان في السوق.",
@@ -77,6 +80,7 @@
     ]
   },
   "items": {
+    "sectionId": "items",
     "title": "تحكم بسهولة في",
     "subtitle": "الفواتير والفوترة",
     "description": "النخبة حتى يتم أيضًا. موريس eu زيادة عرض أماتوديو أيني نيك. Fusce ipsum orci rhoncus aliporttitor integer platea placerat.",
@@ -87,6 +91,7 @@
     ]
   },
   "services": {
+    "sectionId": "services",
     "title": "اعثر على صفقة بطاقة أفضل",
     "subtitle": "في خطوات سهلة قليلة.",
     "description": "قوس التورتة، بوروس في ماتيس في سد انتجر faucibus. Aliquet quis aliquet eget mauris tortor.ç Aliquet ultrices ac, ametau.",
@@ -94,6 +99,7 @@
     "buttonText": "ابدأ الآن"
   },
   "testimonials": {
+    "sectionId": "testimonials",
     "title": "ما يقوله الناس",
     "subtitle": "عنا",
     "description": "كل ما تحتاجه لقبول المدفوعات بالبطاقات وتنمية عملك في أي مكان على الكوكب.",
@@ -119,6 +125,7 @@
     ]
   },
   "logos": {
+    "sectionId": "logos",
     "companies": [
       {
         "imgUrl": "https://res.cloudinary.com/duc04fwdb/image/upload/v1706817792/jammal_photos/yt3cnulaigujjqu1upxq.png",
@@ -139,11 +146,13 @@
     ]
   },
   "cta": {
+    "sectionId": "cta",
     "title": "دعنا نجرب خدمتنا الآن!",
     "description": "كل ما تحتاجه لقبول المدفوعات بالبطاقات وتنمية عملك في أي مكان على الكوكب.",
     "buttonText": "ابدأ الآن"
   },
   "footer": {
+    "sectionId": "footer",
     "footerSections": [
       {
         "title": "روابط مفيدة",

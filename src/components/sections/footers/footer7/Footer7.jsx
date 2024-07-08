@@ -63,11 +63,11 @@ import { useSelector } from "react-redux";
 const Footer7 = ({ template }) => {
   const ownFooter = useSelector((state) => state.ownTemplate.footer);
   const footer = template ? template.footer : ownFooter;
-  
+
   const socialMediaIcons = footer.medias;
 
   return (
-    <div className={`bg-primary ${styles.paddingX} ${styles.flexStart}`}>
+    <div id={footer.sectionId} className={`bg-primary ${styles.paddingX} ${styles.flexStart}`}>
       <div className={`${styles.boxWidth}`}>
         <section className={`${styles.flexCenter} ${styles.paddingY} flex-col`} style={{ color: "var(--website-7-color-6)" }}>
           <div className={`${styles.flexStart} md:flex-row flex-col mb-8 w-full`}>

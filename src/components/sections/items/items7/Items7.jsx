@@ -7,7 +7,7 @@ const Billing = ({ template }) => {
   return (
     <div className={`bg-primary ${styles.paddingX} ${styles.flexStart}`}>
       <div className={`${styles.boxWidth}`}>
-        <section id="product" className={layout.sectionReverse}>
+        <section id={items.sectionId} className={layout.sectionReverse}>
           <div className={layout.sectionImgReverse}>
             <img src={items.imgs[2]} alt="billing" className="w-[100%] h-[100%] relative z-[5]" />
             <div className="absolute z-[3] -left-1/2 top-0 w-[50%] h-[50%] rounded-full white__gradient" />
