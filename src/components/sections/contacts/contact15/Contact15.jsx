@@ -1,9 +1,8 @@
-
 import React from "react";
 import { useSelector } from "react-redux";
 
 const Contact15 = ({ template }) => {
-  const ownContact= useSelector((state) => state.ownTemplate.contact);
+  const ownContact = useSelector((state) => state.ownTemplate.contact);
   const contact = template ? template.contact : ownContact;
 
   const ContactInfo = ({ type, address, imgUrl }) => {
@@ -24,7 +23,7 @@ const Contact15 = ({ template }) => {
   };
 
   return (
-    <main className="pb-5 lg:py-52 py-16 px-3 cont15" id="contact">
+    <main className="pb-5 lg:py-52 py-16 px-3 cont15" id={contact.sectionId}>
       <div className="lg:flex flex-col items-center container max-w-[1300px] mx-auto">
         <h1 className="sm:text-[44px] text-[26px] text-center m-0 cont15_1">{contact.title}</h1>
         <p className="font-bold text-sm cont15_2 flex items-center justify-center text-center gap-x-4">

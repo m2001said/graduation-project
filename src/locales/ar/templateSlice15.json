@@ -1,36 +1,37 @@
 {
   "templateInfo": {
     "id": 15,
-  "title": "محفظة المطور",
-  "description": "استكشاف تطوير التطبيقات الابتكاري مع محفظة مطور البرمجيات لدينا.",
-  "imgUrl": "https://res.cloudinary.com/dvp3nyulf/image/upload/v1709147870/under-work.jpg"
-},
+    "title": "محفظة المطور",
+    "description": "استكشاف تطوير التطبيقات الابتكاري مع محفظة مطور البرمجيات لدينا.",
+    "imgUrl": "https://res.cloudinary.com/dvp3nyulf/image/upload/v1709147870/under-work.jpg"
+  },
   "navbar": {
     "imgUrl": "https://res.cloudinary.com/duc04fwdb/image/upload/v1706799023/jammal_photos/wz8vakvjdjio0wcqhnfe.svg",
     "links": [
       {
         "title": "الرئيسية",
-        "url": "#home"
+        "url": "hero"
       },
       {
         "title": "الخدمات",
-        "url": "#services"
+        "url": "services"
       },
       {
         "title": "المهارات",
-        "url": "#skills"
+        "url": "projects"
       },
       {
         "title": "التقييمات",
-        "url": "#testimonials"
+        "url": "testimonials"
       },
       {
         "title": "تواصل معنا",
-        "url": "#contact"
+        "url": "contact"
       }
     ]
   },
   "hero": {
+    "sectionId": "hero",
     "imgUrl": ["https://res.cloudinary.com/duc04fwdb/image/upload/v1708017251/jammal_photos/z8h6g9lv2sxmywvygcts.png"],
     "text": "مرحبًا اسمي",
     "name": "زوي ميلر",
@@ -56,6 +57,7 @@
     "linkText": "مهاراتي"
   },
   "services": {
+    "sectionId": "services",
     "title": "ماذا أفعل",
     "subtitle": "خدماتي",
     "buttonText": "انظر الأسعار",
@@ -79,6 +81,7 @@
     ]
   },
   "features": {
+    "sectionId": "features",
     "title": "المهارات المهنية",
     "subtitle": "موهبتي",
     "features": [
@@ -115,6 +118,7 @@
     ]
   },
   "projects": {
+    "sectionId": "projects",
     "title": "المحفظة",
     "subtitle": "حالاتي",
     "buttonText": "انظر الأسعار",
@@ -161,6 +165,7 @@
     ]
   },
   "cta": {
+    "sectionId": "cta",
     "title": "السيرة الذاتية",
     "subtitle": "قصتي",
     "imgs": [
@@ -215,6 +220,7 @@
     ]
   },
   "testimonials": {
+    "sectionId": "testimonials",
     "title": "التقييمات",
     "subtitle": "ماذا يقول العملاء",
     "description": "لوريم إيبسوم هو نص شكلي (بمعنى أن الغاية هي الشكل وليس المحتوى) ويُستخدم في صناعات المطابع ودور النشر.",
@@ -253,6 +259,7 @@
     ]
   },
   "pricing": {
+    "sectionId": "pricing",
     "title": "الأسعار",
     "subtitle": "لوحة أسعاري",
     "plans": [
@@ -285,6 +292,7 @@
     ]
   },
   "blogs": {
+    "sectionId": "blogs",
     "title": "أحدث المدونات",
     "subtitle": "مقالاتي ونصائحي",
     "description": "فيفاموس إينتردم سوسيببيت لاكوس. نونك أولتراسيز أكومسان ماتيس. أليغام فيل سيم فيل فيليت إيفيسير ماليسودا. دونيك أركو لاكوس، أورنار ريجيت...",
@@ -313,6 +321,7 @@
     ]
   },
   "contact": {
+    "sectionId": "contact",
     "title": "تواصل معي",
     "subtitle": "دعنا نتحدث عن الأفكار",
     "name": "اسمك الكامل *",
@@ -344,6 +353,7 @@
     "buttonText": "إرسال الرسالة"
   },
   "footer": {
+    "sectionId": "footer",
     "title": "حقوق الطبع والنشر Ⓒ 2022 LUIQUE . جميع الحقوق محفوظة",
     "subtitle": "تم التطوير بواسطة BSLTHEMES",
     "medias": [

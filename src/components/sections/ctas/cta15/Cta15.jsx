@@ -8,7 +8,7 @@ const Cta15 = ({ template }) => {
   const cta = template.cta;
 
   return (
-    <main className="flex flex-col items-center justify-center w-full min-h-screen cta15" id="resume">
+    <main className="flex flex-col items-center justify-center w-full min-h-screen cta15" id={cta.sectionId}>
       <h1 className="sm:text-[44px] text-[26px] text-center m-0 cta15_1">{cta.title}</h1>
       <p className="font-bold text-sm flex items-center justify-center gap-x-4 cta15_2">{cta.subtitle}</p>
       <div className="w-full lg:flex gap-x-20 justify-center">
