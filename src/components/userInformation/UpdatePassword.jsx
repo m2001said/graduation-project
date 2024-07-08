@@ -8,16 +8,26 @@ const UpdatePassword = () => {
   const [oldPassword, setOldPassword] = useState("");
   const [responseMessage, setResponseMessage] = useState("");
   const [loading, setLoading] = useState(false);
+  const token = localStorage.getItem("token");
 
 
   const handleUpdatePassword = async () => {
     setLoading(true);
     setResponseMessage("");
     try {
-    const response = await axios.post("/user/update-password", {
-      oldPassword: oldPassword,
-      newPassword: newPassword,
-    });
+    const response = await axios.post(
+      "https://websitebuilderbackend-production-716e.up.railway.app/user/update-password",
+      {
+        oldPassword: oldPassword,
+        newPassword: newPassword,
+      },
+      {
+        headers: {
+          Authorization: `Bearer ${token}`,
+          "Content-Type": "application/json",
+        },
+      }
+    );
       setResponseMessage("Password updated successfully!");
     } catch (error) {
       setResponseMessage("Error updating password. Please try again.");

@@ -18,18 +18,13 @@ const SignUpForm = ({ toggleForm }) => {
   const { status } = useSelector((state) => state.auth);
 
   const handleSignUp = async () => {
-    const validationError = validate(name, email, password);
+    const validationError = validate("createAccount", name, email, password);
     if (validationError) {
       setErrorMessage(validationError);
       return;
     }
-
-    try {
-      await dispatch(registerUserAsync({ name, email, password })).unwrap();
-      setCreateSuccess(true);
-    } catch (error) {
-      setErrorMessage(error.message || "Registration failed. Please try again.");
-    }
+    await dispatch(registerUserAsync({ name, email, password }));
+    setCreateSuccess(true);
   };
 
   // Clear form fields when createSuccess changes

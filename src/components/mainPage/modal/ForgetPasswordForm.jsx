@@ -11,7 +11,7 @@ const ForgetPasswordForm = ({ onForgotPasswordSuccess }) => {
 
     try {
       const response = await axios.post(
-        `${process.env.REACT_APP_BACKEND_URL}/user/forget-password`,
+        "https://websitebuilderbackend-production-716e.up.railway.app/user/forget-password",
         { email },
         {
           headers: {
