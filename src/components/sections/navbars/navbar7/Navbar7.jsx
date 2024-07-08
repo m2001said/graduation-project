@@ -39,7 +39,7 @@ const Navbar7 = ({ template }) => {
             />
             <div
               className={`${!toggle ? "hidden" : "flex"} ${
-                language ? "right-auto left-0 " : "left-auto right-0"
+                language === "ar" ? "right-auto left-0 " : "left-auto right-0"
               } p-6 bg-black-gradient absolute top-20  mx-4 my-2 min-w-[140px] rounded-xl sidebar`}
             >
               <ul className="list-none flex justify-end items-start flex-1 flex-col">

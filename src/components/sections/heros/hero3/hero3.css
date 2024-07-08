@@ -155,16 +155,10 @@
 
 .hero-image {
   position: absolute;
-  top: 2rem;
+  /* top: 2rem; */
   top: 5rem;
   width: 23rem;
   z-index: 2;
-}
-.ltr .hero-image {
-  right: 8rem;
-}
-.rtl .hero-image {
-  left: 8rem;
 }
 
 .hero-image-back1 {
@@ -214,6 +208,12 @@
 }
 
 /* res mobile hero3 sec*/
+@media screen and (max-width: 1300px) {
+  .hero-image-back1,
+  .hero-image-back2 {
+    display: none;
+  }
+}
 @media screen and (max-width: 768px) {
   .hero3 {
     flex-direction: column;
@@ -281,6 +281,7 @@
     align-self: center;
     justify-content: center;
     margin-bottom: 50px;
+    right: auto;
   }
 
   .hero-image-back1,
