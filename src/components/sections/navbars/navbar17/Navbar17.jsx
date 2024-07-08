@@ -14,7 +14,7 @@ const Navbar17 = ({ template }) => {
   };
 
   return (
-    <div className="container17 bg-[var(--website-17-color-2)] shadow-sm sticky top-16 z-30">
+    <div className="container17 bg-[var(--website-17-color-2)] shadow-sm   z-30">
       <div className="flex justify-between items-center py-4 sm:py-3 px-4 sm:px-8">
         {/* Logo section */}
         <img src={navbar.imgUrl} className="" style={{ width: "50px", height: "50px" }} alt="" />

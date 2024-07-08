@@ -6,8 +6,8 @@
     "imgUrl": ""
   },
   "navbar": {
-    "title": "Soliii",
-    "links": [
+    "imgUrl": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1720030973/done/tower_qajd1k_robuyn.webp",
+     "links": [
       {
         "title": "Design",
         "url": "#about13"
@@ -65,7 +65,7 @@
       "https://res.cloudinary.com/dowtlcpxj/image/upload/v1719966175/done/avatar3_pbztwn_ggzr8x.webp",
       "https://res.cloudinary.com/dowtlcpxj/image/upload/v1720023640/done/smile_1_yfcyoh.webp"
     ],
-    "logos":  [
+    "logos": [
       "https://res.cloudinary.com/dowtlcpxj/image/upload/v1720023922/done/logo5_iwqjl7_h9r76r.webp",
       "https://res.cloudinary.com/dowtlcpxj/image/upload/v1720023921/done/logo6_ddaq6y_rkqshl.webp",
       "https://res.cloudinary.com/dowtlcpxj/image/upload/v1720023920/done/logo2_z1jb8d_ez6dwd.webp",
@@ -149,7 +149,7 @@
     "title": "Testimonials",
     "subtitle": "What Our Clients Say",
     "description": "they also found there purpose",
-    "icons":  [
+    "icons": [
       "https://res.cloudinary.com/dowtlcpxj/image/upload/v1720028408/done/next_2989988_stvovd_r4wozp.webp",
       "https://res.cloudinary.com/dowtlcpxj/image/upload/v1720028391/done/back-arrow_340_m9e0hp_toc5d5.webp",
       "https://res.cloudinary.com/dowtlcpxj/image/upload/v1720028498/done/quote-icon-png-15_c5hrkg_ctlve8.webp",
