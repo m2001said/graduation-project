@@ -12,7 +12,6 @@
 
 .design-8 {
   background-color: var(--website-8-color-1);
-  margin-top: 4rem;
 }
 .design-8 .serviceC {
   color: var(--white);
@@ -37,7 +36,7 @@
   height: 40rem;
 }
 .hero8 {
-  margin-bottom: 4rem;
+  margin-bottom: 5rem;
 }
 
 @layer base {
