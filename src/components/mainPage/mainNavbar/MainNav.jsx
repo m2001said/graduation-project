@@ -122,7 +122,7 @@ const MainNav = ({ toggleModal }) => {
                   className={({ isActive }) => (isActive ? "text-pink-300" : "hover:text-pink-300")}
                   onClick={toggleMenu}
                 >
-                  {t("HERO.DESIGNS")}
+                  {t("HERO.SERVICES")}
                 </NavLink>
                 <NavLink
                   to={`/${i18n.language}/websites`}
