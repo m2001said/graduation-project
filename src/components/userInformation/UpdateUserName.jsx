@@ -19,7 +19,7 @@ const UpdateName = () => {
     setResponseMessage("");
     try {
       const response = await axios.put(
-        "https://websitebuilderbackend-production-716e.up.railway.app/user/update-username",
+        `${process.env.REACT_APP_BACKEND_URL}/user/update-username`,
         {
           name: newName,
         },

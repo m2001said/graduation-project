@@ -16,7 +16,7 @@ const UpdatePassword = () => {
     setResponseMessage("");
     try {
     const response = await axios.post(
-      "https://websitebuilderbackend-production-716e.up.railway.app/user/update-password",
+      `${process.env.REACT_APP_BACKEND_URL}/user/update-password`,
       {
         oldPassword: oldPassword,
         newPassword: newPassword,
