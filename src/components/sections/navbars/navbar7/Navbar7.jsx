@@ -24,7 +24,7 @@ const Navbar7 = ({ template }) => {
                 className={`font-poppins font-normal cursor-pointer text-[16px] ${active === nav.title ? "text-white" : "text-dimWhite"} `}
                 onClick={() => setActive(nav.title)}
               >
-                <a href={nav.url} style={{ color: active === nav.title ? "var(--website-7-color-6)" : "var(--website-7-color-5)" }}>
+                <a href={`#${nav.url}`} style={{ color: active === nav.title ? "var(--website-7-color-6)" : "var(--website-7-color-5)" }}>
                   {nav.title}
                 </a>
               </li>
@@ -54,7 +54,7 @@ const Navbar7 = ({ template }) => {
                       setToggle(false);
                     }}
                   >
-                    <a href={nav.url} style={{ color: active === nav.title ? "var(--website-7-color-6)" : "var(--website-15-color-3)" }}>
+                    <a href={`#${nav.url}`} style={{ color: active === nav.title ? "var(--website-7-color-6)" : "var(--website-15-color-3)" }}>
                       {nav.title}
                     </a>
                   </li>

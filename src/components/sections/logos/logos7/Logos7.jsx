@@ -4,7 +4,7 @@ const Clients7 = ({ template }) => {
   const logos = template.logos;
 
   return (
-    <div className={`bg-primary ${styles.paddingX} ${styles.flexStart}`}>
+    <div id={logos.sectionId} className={`bg-primary ${styles.paddingX} ${styles.flexStart}`}>
       <div className={`${styles.boxWidth}`}>
         <section className={`${styles.flexCenter} my-4`}>
           <div className={`${styles.flexCenter} w-full`} style={{ color: "var(--website-7-color-6)", display: "flex", flexWrap: "wrap" }}>
