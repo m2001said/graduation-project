@@ -12,6 +12,7 @@
 
 .design-8 {
   background-color: var(--website-8-color-1);
+  margin-top: 4rem;
 }
 .design-8 .serviceC {
   color: var(--white);
@@ -27,10 +28,16 @@
 .design-8 .active {
   background: linear-gradient(92.23deg, #406aff 21.43%, #3bace2 50.63%, #b936ee 100%, #ff56f6 117.04%);
 }
-.design-8 .active {
+/* .design-8 .active {
   color: #fff;
-  padding: 1rem;
+  padding: 10rem;
   border-radius: 100%;
+} */
+.about8-image {
+  height: 40rem;
+}
+.hero8 {
+  margin-bottom: 4rem;
 }
 
 @layer base {

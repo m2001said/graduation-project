@@ -29,7 +29,7 @@ const About8 = ({ template }) => {
           {/* image */}
           <div className="flex-1   h-[640px]  bg-top">
             <div className="">
-              <img src={about.imgUrl} alt="About Image" />
+              <img src={about.imgUrl} alt="About Image" className="about8-image" />
             </div>
           </div>
           {/* text */}
