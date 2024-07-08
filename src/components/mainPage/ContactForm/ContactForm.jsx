@@ -87,7 +87,7 @@ const ContactForm = () => {
             />
 
             <label htmlFor="message" className="block text-lg mb-2 font-bold text-gray-500">
-              {t("CONTACT.NAME")}
+              {t("CONTACT.MESSAGE")}
             </label>
             <textarea
               id="message"
