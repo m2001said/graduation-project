@@ -23,25 +23,25 @@ const AiForm = ({ index }) => {
     setLoading(true);
     try {
       // todo for ai version
-      // const AiResponse = await axios.post(`${process.env.REACT_APP_AI_URL}/generate-schema`, {
-      //   user_text: overview,
-      //   TemplateId: index,
-      // });
-      // console.log("AiResponse.data", AiResponse.data);
-      // dispatch(templateActions1.updateSchema(AiResponse.data));
+      const AiResponse = await axios.post(`${process.env.REACT_APP_AI_URL}/generate-schema`, {
+        user_text: overview,
+        TemplateId: index,
+      });
+      console.log("AiResponse.data", AiResponse.data);
+      dispatch(templateActions1.updateSchema(AiResponse.data));
 
-      // const backResponse = await axios.post(`${process.env.REACT_APP_BACKEND_URL}/website`, AiResponse.data, {
-      //   headers: {
-      //     "Content-Type": "application/json",
-      //     Authorization: `Bearer ${localStorage.getItem("token")}`,
-      //   },
-      // });
+      const backResponse = await axios.post(`${process.env.REACT_APP_BACKEND_URL}/website`, AiResponse.data, {
+        headers: {
+          "Content-Type": "application/json",
+          Authorization: `Bearer ${localStorage.getItem("token")}`,
+        },
+      });
 
-      // const templateId = backResponse.data.savedPage["_id"];
-      // console.log("backResponse.data", backResponse.data);
-      // navigate(`/edit-zweb${index}?id=${templateId}`);
+      const templateId = backResponse.data.savedPage["_id"];
+      console.log("backResponse.data", backResponse.data);
+      navigate(`/edit-zweb${index}?id=${templateId}`);
 
-      navigate(`/build-trial-design${index}`);
+      // navigate(`/build-trial-design${index}`);
     } catch (error) {
       console.error("Error in ai:", error);
       setLoading(false);
