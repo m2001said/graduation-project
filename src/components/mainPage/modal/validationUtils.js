@@ -1,7 +1,11 @@
 export const validate = (type, name, email, password) => {
-  if (type === "createAccount" && !name.trim()) {
-    return "Name is required";
-  }
+ if (type === "createAccount") {
+   if (!name.trim()) {
+     return "Name is required";
+   } else if (name.trim().length < 6) {
+     return "Name must be at least 6 characters long";
+   }
+ }
 
   if (!email.trim()) {
     return "Email is required";
