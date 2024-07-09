@@ -1,483 +1,558 @@
-=====================================================
-1 , 2 , 3 ,4 , 5 ,6 , 7 , 8 , 9 , 10 , 11 , 13 , 14 , 15  , 16 , 17 , 18
+import mongoose from "mongoose";
 
+const pageSchema = new mongoose.Schema({
+  templateInfo: {
+    id: Number,
+    title: String,
+    description: String,
+    imgUrl: String,
+    selectedSections: {
+      navbarIndexSelected: Number,
+      heroIndexSelected: Number,
+      featuresIndexSelected: Number,
+      projectsIndexSelected: Number,
+      servicesIndexSelected: Number,
+      contactIndexSelected: Number,
+      teamIndexSelected: Number,
+      testimonialsIndexSelected: Number,
+      statisticsIndexSelected: Number,
+      logosIndexSelected: Number,
+      itemsIndexSelected: Number,
+      pricingIndexSelected: Number,
+      ctaIndexSelected: Number,
+      footerIndexSelected: Number,
+    },
+  },
 
+  navbar: {
+    imgUrl: String,
+    email: String,
+    buttonText: String,
+    icon: String,
+    searchIcon: String,
+    shoppingIcon: String,
+    title: String,
+    subtitle: String,
+    description: String,
+    icons: Array,
+    links: [
+      {
+        title: String,
+        url: String,
+        imgUrl: String,
+      },
+    ],
+    dropDown: [
+      {
+        title: String,
+        url: String,
+      },
+    ],
+  },
+  hero: {
+    sectionId: String,
+    title: String,
+    description: String,
+    subtitle: String,
+    text: String,
+    imgUrl: String,
+    imageUrl: String,
+    videoUrl: String,
+    icon: String,
+    buttonText: String,
+    buttonIcon: String,
+    linkText: String,
+    duration: String,
+    inputPlaceholder: String,
+    jop: String,
+    icons: Array,
+    imgs: Array,
+    buttons: [
+      {
+        buttonText: String,
+        url: String,
+      },
+    ],
+    heros: [
+      {
+        title: String,
+        description: String,
+        subtitle: String,
+        imgUrl: String,
+        icon: String,
+        start: String,
+        end: String,
+        count: String,
+      },
+    ],
+  },
+  services: {
+    sectionId: String,
+    title: String,
+    subtitle: String,
+    description: String,
+    buttonText: String,
+    imgUrl: String,
+    icon: String,
+    services: [
+      {
+        title: String,
+        description: String,
+        icon: String,
+        linkText: String,
+        buttonText: String,
+        imgUrl: String,
+        value: String,
+        price: Number,
+        items: Array,
+      },
+    ],
+  },
+  features: {
+    sectionId: String,
+    title: String,
+    subtitle: String,
+    description: String,
+    text: String,
+    imgUrl: String,
+    buttonText: String,
+    phone: String,
+    discount: String,
+    percentage: String,
+    date: String,
+    icons: Array,
+    imgs: Array,
+    features: [
+      {
+        title: String,
+        description: String,
+        icon: String,
+        imgUrl: String,
+        number: String,
+        date: String,
+        name: String,
+      },
+    ],
+  },
+  testimonials: {
+    sectionId: String,
+    title: String,
+    description: String,
+    subtitle: String,
+    imgUrl: String,
+    buttonText: String,
+    imgs: Array,
+    icons: Array,
+    testimonials: [
+      {
+        name: String,
+        location: String,
+        imgUrl: String,
+        opinion: String,
+        title: String,
+        role: String,
+        description: String,
+        subtitle: String,
+        star: String,
+      },
+    ],
+  },
+  logos: {
+    sectionId: String,
+    companies: [
+      {
+        imgUrl: String,
+        url: String,
+        title: String,
+      },
+    ],
+  },
+  projects: {
+    sectionId: String,
+    title: String,
+    description: String,
+    subtitle: String,
+    imgUrl: String,
+    icon: String,
+    buttonText: String,
+    linkText: String,
+    categories: Array,
+    projects: [
+      {
+        title: String,
+        description: String,
+        subtitle: String,
+        imgUrl: String,
+        icon: String,
+        name: String,
+        price: String,
+        buttonText: String,
+        space: String,
+        category: String,
+        url: String,
+        link: String,
+        icons: [
+          {
+            icon: String,
+            title: String,
+          },
+        ],
+      },
+    ],
+  },
+  statistics: {
+    sectionId: String,
 
-navbar
-    imgUrl : string
-    email : string
-    buttonText : string
-    icon : string
-    searchIcon : string
-    shoppingIcon : string
-    title : string
-    subtitle : string 
-    description : string
-    icons : []string
-    links : [
-        {
-            title : string
-            url : string
-            imgUrl : string
-        }
-    ]
-    dropDown : [
-        {
-            title : string
-            url : string
-        }
-    ]
+    statistics: [
+      {
+        title: String,
+        value: String,
+        imgUrl: String,
+      },
+    ],
+  },
+  items: {
+    sectionId: String,
+    subtitle: String,
+    imgs: Array,
+    title: { type: String },
+    description: { type: String },
+    items: [
+      {
+        title: { type: String },
+        subtitle: { type: String },
+        description: { type: String },
+        imgUrl: { type: String },
+        icon: { type: String },
+        caption: { type: String },
+      },
+      {
+        title: { type: String },
+        subtitle: { type: String },
+        description: { type: String },
+        imgUrl: { type: String },
+        icon: { type: String },
+        caption: { type: String },
+      },
+      {
+        title: { type: String },
+        subtitle: { type: String },
+        description: { type: String },
+        imgUrl: { type: String },
+        icon: { type: String },
+        caption: { type: String },
+      },
+    ],
+  },
+  team: {
+    sectionId: String,
 
---------------------------------------
-hero
-    title : string
-    description : string
-    subtitle : string
-    text : string
-    imgUrl : string
-    imageUrl : string
-    videoUrl : string
-    icon : string
-    buttonText : string
-    buttonIcon : string
-    linkText : string
-    duration : string
-    inputPlaceholder : string
-    jop : string
-    icons : []string
-    imgs : []string
-    buttons : [
-        {
-            buttonText : string
-            url : string
-        }
-    ]
-    heros : [
-        {
-            title : string
-            description : string
-            subtitle : string
-            imgUrl :  string
-            icon : string
-            start : string
-            end : string
-            count : string
+    title: String,
+    subtitle: String,
+    description: String,
+    buttonText: String,
+    members: [
+      {
+        membersectionId: String,
+        name: String,
+        jop: String,
+        email: String,
+        location: String,
+        imgUrl: String,
+        destinationImage: String,
+        travelerImage: String,
+        rating: String,
+        icon: String,
+        socialLink: String,
+        medias: [
+          {
+            icon: String,
+            url: String,
+          },
+        ],
+      },
+    ],
+    medias: [
+      {
+        icon: String,
+        url: String,
+      },
+    ],
+  },
+  pricing: {
+    sectionId: String,
 
-        }
-    ]
+    title: String,
+    subtitle: String,
+    text: String,
+    description: String,
+    buttonText: String,
+    imgUrl: String,
+    imgs: Array,
+    plans: [
+      {
+        title: String,
+        subtitle: String,
+        description: String,
+        price: String,
+        currencySymbol: String,
+        timeUnit: String,
+        buttonText: String,
+        icon: String,
+        features: Array,
+      },
+    ],
+  },
 
--------------------------------------------------------------
-services
-    title : string
-    subtitle : string
-    description : string
-    buttonText : string
-    imgUrl : string
-    icon : string
-    services : [
-        {
-            title : string,
-            description : string,
-            icon : string,
-            linkText : string
-            buttonText : string
-            imgUrl : string
-            value : string
-            price : int
-            items : []string
-        }
-    ]
+  cta: {
+    sectionId: String,
 
--------------------------------------------------------------
+    title: String,
+    subtitle: String,
+    description: String,
+    text: String,
+    email: String,
+    buttonText: String,
+    icon: String,
+    inputPlaceholder: String,
+    googleButton: {
+      buttonText: String,
+      buttonIcon: String,
+    },
+    appleButton: {
+      buttonText: String,
+      buttonIcon: String,
+    },
+    imgs: Array,
+    educations: [
+      {
+        imgUrl: String,
+        title: String,
+        description: String,
+        year: String,
+      },
+    ],
+    experiences: [
+      {
+        imgUrl: String,
+        title: String,
+        description: String,
+        year: String,
+      },
+    ],
+    items: [
+      {
+        title: String,
+        subtitle: String,
+        date: String,
+        description: String,
+        category: String,
+      },
+    ],
+  },
+  contact: {
+    sectionId: String,
 
-features
-    title : string
-    subtitle : string
-    description : string
-    text : string
-    imgUrl : string
-    buttonText : string
-    phone : string
-    discount : string
-    percentage : string
-    date : string
-    icons : []string
-    imgs : []string
-    features : [
-        {
-            title : string
-            description : string
-            icon : string
-            imgUrl : string
-            number : string
-            date : string
-            name : string
-        }
-    ]
-    
+    title: String,
+    subtitle: String,
+    description: String,
+    email: String,
+    phone: String,
+    imgUrl: String,
+    icon: String,
+    buttonText: String,
+    linkText: String,
+    name: String,
+    address: String,
+    subject: String,
+    message: String,
+    contacts: [
+      {
+        type: String,
+        phone: String,
+        address: String,
+        email: String,
+        buttonText: String,
+        imgUrl: String,
+      },
+    ],
+  },
+  blogs: {
+    sectionId: String,
 
--------------------------------------------------------------
+    title: String,
+    description: String,
+    subtitle: String,
+    imgUrl: String,
+    buttonText: String,
+    linkText: String,
+    blogs: [
+      {
+        title: String,
+        description: String,
+        subtitle: String,
+        imgUrl: String,
+        date: String,
+      },
+    ],
+  },
 
-testimonials
-    title : string
-    description : string     
-    subtitle : string
-    imgUrl : string           
-    buttonText : string              
-    imgs : []string
-    icons : []string
-    testimonials : [
-        {
-            name : string
-            location : string
-            imgUrl : string
-            opinion : string
-            title : string
-            role : string
-            description : string
-            subtitle : string
-            star : string
-        }
-    ]
+  header: {
+    sectionId: String,
 
--------------------------------------------------------------
+    imgUrl: String,
+    buttonText: String,
+  },
 
-logos
-    companies : [
-        {
-            imgUrl : string
-            url : string
-            title : string
-        }
-    ]
+  reservation: {
+    sectionId: String,
 
--------------------------------------------------------------
+    title: String,
+    buttonText: String,
+    imgUrl: String,
+    shape: String,
+  },
 
-projects
-    title : string
-    description : string
-    subtitle : string
-    imgUrl : string
-    icon : string
-    buttonText : string
-    linkText : string
-    categories : []string
-    projects : [
-        {
-            title : string
-            description : string
-            subtitle : string
-            imgUrl : string
-            icon : string
-            name : string
-            price : string
-            buttonText : string
-            space : string
-            category : string
-            url : string
-            link : string
-            icons : [
-                {
-                    icon : string
-                    title : string
-                }
-            ]
-        }
-    ]
--------------------------------------------------------------
+  about: {
+    sectionId: String,
 
-statistics
-    statistics : [
-        {
-            title : string
-            value : string
-            imgUrl : string
-        }
-    ]
--------------------------------------------------------------
+    title: String,
+    subtitle: String,
+    description: String,
+    buttonText: String,
+    buttonIcon: String,
+    linkText: String,
+    imgUrl: String,
+    icon: String,
+    imgs: Array,
+    details: Array,
+    numbers: Array,
+    sign: Array,
+    type: Array,
+    typeOfExpericnce: Array,
+    abouts: [
+      {
+        title: String,
+        value: Number,
+      },
+    ],
+    buttons: [
+      {
+        buttonText: String,
+        icon: String,
+        url: String,
+      },
+    ],
+  },
 
-items
-    title : string
-    description : string
-    subtitle : string
-    imgs : [] string
-    items : [
-        {
-            title : string
-            subtitle : string
-            description : string
-            imgUrl : string
-            icon : string
-            price: string
-        }
-    ]
--------------------------------------------------------------
+  gallery: {
+    sectionId: String,
 
-team
-    title : string
-    subtitle : string
-    description : string
-    buttonText : string
-    members : [
-        {
-            memberId : string
-            name : string
-            jop : string
-            email : string
-            location : string
-            imgUrl : string
-            destinationImage : string
-            travelerImage : string
-            rating : string
-            icon : string
-            socialLink : string
-            medias : [
-                {
-                    icon : string
-                    url : string
-                }
-            ]
-        }
-    ]
--------------------------------------------------------------
+    gallery: [
+      {
+        imgUrl: String,
+        title: String,
+      },
+    ],
+  },
 
-pricing
-    title : string
-    subtitle : string
-    text : string
-    description : string
-    buttonText : string
-    imgUrl : string
-    imgs : []string
-    plans : [
-        {
-            title : string
-            subtitle : string
-            description : string
-            price : string
-            currencySymbol : string
-            timeUnit : string
-            buttonText : string
-            icon : string
-            features : [] string
-        }
-    ]
+  offers: {
+    sectionId: String,
 
--------------------------------------------------------------
+    title: String,
+    buttonText: String,
+    offers: [
+      {
+        title: String,
+        description: String,
+        discount: String,
+        imgUrl: String,
+      },
+    ],
+  },
 
-cta
-    title : string
-    subtitle : string
-    description : string
-    text : string
-    email : string
-    buttonText : string
-    icon : string
-    inputPlaceholder : string
-    googleButton : {
-        buttonText : string
-        buttonIcon : string
-    }
-    appleButton : {
-        buttonText : string
-        buttonIcon : string
-    }
-    imgs : []string
-    educations : [
-        {
-            imgUrl : string
-            title : string
-            description : string
-            year : string
-        }
-    ]
-    experiences : [
-        {
-            imgUrl : string
-            title : string
-            description : string
-            year : string
-        }
-    ]
-    items : [
-        {
-            title : string
-            subtitle : string
-            date : string
-            description : string
-            category : string
-        }
-    ]
--------------------------------------------------------------
+  reviews: {
+    sectionId: String,
 
-contact 
-    title : string
-    subtitle : string
-    description : string
-    email : string
-    phone : string
-    imgUrl : string
-    icon : string
-    buttonText : string
-    linkText : string
-    name : string 
-    address : string
-    subject : string
-    message : string
-    contacts : [
-        {
-            type : string
-            phone : string
-            address : string
-            email : string
-            buttonText : string
-            imgUrl : string
-            
-        }
-    ]
+    title: String,
+    description: String,
+    subtitle: String,
+    imgUrl: String,
+    icon: String,
+    reviews: Array,
+    logos: Array,
+  },
 
--------------------------------------------------------------
+  products: {
+    sectionId: String,
 
-blogs
-    title : string
-    description : string
-    subtitle : string
-    imgUrl : string
-    buttonText
-    linkText
-    blogs : [
-        {
-            title : string
-            description : string
-            subtitle : string
-            imgUrl : string
-            date : string
-        }
-    ]
+    title: String,
+    subtitle: String,
+    icon: String,
+    rateIcon: String,
+    products: [
+      {
+        title: String,
+        items: [
+          {
+            itemsectionId: String,
+            title: String,
+            price: String,
+            imgUrl: String,
+          },
+        ],
+      },
+    ],
+  },
 
--------------------------------------------------------------
-header
-    imgUrl : string
-    buttonText : string
+  footer: {
+    sectionId: String,
 
--------------------------------------------------------------
+    imgUrl: String,
+    description: String,
+    title: String,
+    subtitle: String,
+    icon: String,
+    links: Array,
+    medias: [
+      {
+        icon: String,
+        url: String,
+      },
+    ],
+    footerSections: [
+      {
+        title: String,
+        url: String,
+        links: [
+          {
+            title: String,
+            url: String,
+          },
+        ],
+      },
+    ],
+    contacts: [
+      {
+        title: String,
+        value: String,
+        icon: String,
+        url: String,
+      },
+    ],
+  },
 
-reservation
-    title : string
-    buttonText : string
-    imgUrl : string
-    shape : string
+  colors: {
+    templateColors: Array,
+  },
 
--------------------------------------------------------------
-about 
-    title : string
-    subtitle : string
-    description : string
-    buttonText : string
-    buttonIcon : string
-    linkText : string
-    imgUrl : string
-    icon : string
-    imgs : []string
-    details : []string     
-    abouts : [
-        {
-            title : string
-            value : int
-        }
-    ]
-    buttons : [
-        {
-            buttonText : string
-            icon : string
-            url : string
-        }
-    ]
+  owner: {
+    type: mongoose.Schema.Types.ObjectId,
+    required: true,
+    ref: "User",
+  },
+});
 
--------------------------------------------------------------
-galary
-    galary : [
-        {
-            imgUrl : string
-            title : string
-        }
-    ]
+const Page = new mongoose.model("Page", pageSchema);
 
--------------------------------------------------------------
-
-offers
-    title : string
-    buttonText : string
-    offers : [
-        {
-            title : string
-            description : string
-            discount : string
-            imgUrl : string
-        }
-    ]
-
--------------------------------------------------------------
-reviews
-    title
-    string
-    description
-    subtitle
-    imgUrl
-    icon
-    reviews : [] string
-    logos : [] string
--------------------------------------------------------------
-products
-    title : string
-    subtitle : string
-    icon : string
-    rateIcon : string
-    products : [
-        {
-            title : string
-            items : [
-                {
-                    itemId : string
-                    title : string
-                    price : string
-                    imgUrl : string
-                }
-            ]
-        }
-    ]
-
--------------------------------------------------------------     
-footer
-    imgUrl : string
-    description : string
-    title : string
-    subtitle : string
-    icon : string
-    links : []string
-    medias : [
-        {
-            icon : string
-            url : string
-        }
-    ]
-    footerSections : [
-        {
-            title : string
-            url : string
-            links : [
-                {
-                    title : string
-                    url : string
-                }
-            ]
-        }
-    ]
-    contacts:[
-        {
-            title : string
-            value : string
-            icon : string
-            url : string
-        }
-    ]
+export { Page };
