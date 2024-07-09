@@ -71,21 +71,6 @@ const YourPages = () => {
     );
   }
 
-  const versions = (templates) => {
-    const versionsNumber = {};
-    return templates.map((template) => {
-      const id = template.templateInfo.id;
-      if (versionsNumber[id]) {
-        versionsNumber[id]++;
-      } else {
-        versionsNumber[id] = 1;
-      }
-      return {
-        ...template,
-        versionNumber: versionsNumber[id],
-      };
-    });
-  };
 
   function removeEmptyArrays(obj) {
     for (let prop in obj) {
@@ -121,7 +106,6 @@ const YourPages = () => {
       removeEmptyArrays(res.data);
       dispatch(ownTemplateActions.deleteSchema()); // remove data in ownpage slice
       dispatch(ownTemplateActions.insertSections({ data: res.data }));
-      //dispatch(ownTemplateActions.updateSchema(schema));
       setIsLoading(false);
       navigate(`/edit-zweb?id=${templateId}`);
       document.documentElement.style = "";
@@ -139,6 +123,7 @@ const YourPages = () => {
     }
   };
   const toggleModal = () => {
+    window.scrollTo(0, 0);
     setIsModalOpen(!isModalOpen);
     setIsCelebrityBirthday(!isCelebrityBirthday);
     setCopied(false)

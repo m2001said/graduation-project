@@ -17,7 +17,7 @@ const Hero2 = ({ template }) => {
         </div>
 
         <div className="hero2__content">
-          <div className="hero2__cards">
+          {/* <div className="hero2__cards">
             {hero.heros.map((heros, index) => (
               <article className="hero2__card" key={index}>
                 <img className="hero2__icon" src={heros.icon} alt={heros.title} />
@@ -25,7 +25,7 @@ const Hero2 = ({ template }) => {
                 <small>{heros.description}</small>
               </article>
             ))}
-          </div>
+          </div> */}
           <p>{hero.description}</p>
           <a  href={`#${hero.linkText}`}className="a2 btn2 btn-primary2">
            {hero.buttonText}
