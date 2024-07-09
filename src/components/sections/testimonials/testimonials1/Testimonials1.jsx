@@ -16,9 +16,9 @@ const Testimonials1 = ({ template }) => {
               <div className="testimonials-card-header">
                 <img className="testimonials-card-header-img" src={card.imgUrl} alt=" " />
                 <div className="testimonials-card-info">
-                  <b>{card.name}</b>
+                  <b className="infotest1">{card.name}</b>
 
-                  <p>{card.location}</p>
+                  <p className="infotest1">{card.location}</p>
                 </div>
               </div>
               <p className="testimonials-card-body">{card.opinion}</p>

@@ -69,6 +69,33 @@ ul {
   list-style: none;
 }
 
+.note-item {
+  position: relative;
+}
+.note-item::before {
+  position: absolute;
+  content: "•";
+  color: black;
+}
+.ltr .note-item::before {
+  left: -15px;
+}
+.rtl .note-item::before {
+  right: -15px;
+}
+
+.microphone {
+  animation: scale-up-center 1s cubic-bezier(0.39, 0.575, 0.565, 1) infinite both;
+}
+@keyframes scale-up-center {
+  0% {
+    transform: scale(0.7);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
 /* TYPOGRAPHY */
 .h1-bold {
   @apply text-[36px] font-bold leading-[140%] tracking-tighter;

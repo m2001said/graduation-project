@@ -8,11 +8,15 @@ import { useTranslation } from "react-i18next";
 import { ownTemplateActions } from "../../../features/templateData/ownTemplateSlice";
 import { fetchPages } from "../../../features/templates/pagesSlice";
 import { fetchWebsites } from "../../../features/templates/websitesSlice";
+import BaseModal from "../../mainPage/modal/BaseModal/BaseModal";
+import announcement from "../../../assets/images/announcement.png";
+import microphone from "../../../assets/images/microphone.png";
 
 const TopSide = ({ schema }) => {
-  const { i18n } = useTranslation();
+  const { t, i18n } = useTranslation();
   const { pathname } = useLocation();
   const [viewportWidth, setViewportWidth] = useState(window.innerWidth);
+  const [showModal, setShowModal] = useState(true);
   const screen = useSelector((state) => state.screen);
   const dispatch = useDispatch();
   const token = localStorage.getItem("token");
@@ -86,7 +90,10 @@ const TopSide = ({ schema }) => {
         dispatch(templateActions1.updateSchema(initialState));
       }
     } catch (error) {
-      setIsGenerating(false);
+      setWaitingMsg(error);
+      setTimeout(() => {
+        setIsGenerating(false);
+      }, 5000);
       console.error("Error:", error);
     }
   };
@@ -112,9 +119,6 @@ const TopSide = ({ schema }) => {
     },
   ];
 
-  // const handleUpdateSchema = () => {
-  //   dispatch(websitesActions[templateNum - 1].updateSchema(initalStateWebsites[templateNum - 1]));
-  // };
   return isGenerating ? (
     <div className="fixed top-0 left-0 w-full h-full bg-gray-900 opacity-70 z-50 flex items-center justify-center">
       <div className="p-5 bg-red-900 rounded-lg shadow-lg">
@@ -122,27 +126,42 @@ const TopSide = ({ schema }) => {
       </div>
     </div>
   ) : (
-    <div className="flex-center gap-5 bg-1A2345 text-white  h-14 relative">
-      {devices.map((device) => {
-        const showControllers = viewportWidth >= 1024;
-        const isActive = screen === device.type;
-        return showControllers ? (
-          <div key={device.endPoint} className={isActive ? "bg-blue-500 p-1 rounded-sm w-10 h-10 flex-center" : "w-10 h-10 flex-center"}>
-            {device.icon}
-          </div>
-        ) : (
-          ""
-        );
-      })}
-      <div className="absolute right-6">
-        {/* <div className="flex"> */}
-        <button className="bg-blue-500 px-4 rounded-lg h-10 flex-center" onClick={handleSubmit}>
-          {pathname.includes("edit-zweb") ? "Update" : "Save"}
+    <>
+      <div className="flex-center gap-5 bg-1A2345 text-white  h-14 relative">
+        {devices.map((device) => {
+          const showControllers = viewportWidth >= 1024;
+          const isActive = screen === device.type;
+          return showControllers ? (
+            <div key={device.endPoint} className={isActive ? "bg-blue-500 p-1 rounded-sm w-10 h-10 flex-center" : "w-10 h-10 flex-center"}>
+              {device.icon}
+            </div>
+          ) : (
+            ""
+          );
+        })}
+
+        <div className="absolute right-20">
+          <button className="bg-blue-500 px-4 rounded-lg h-10 flex-center" onClick={handleSubmit}>
+            {pathname.includes("edit-zweb") ? "Update" : "Save"}
+          </button>
+        </div>
+        <button className="microphone text-white absolute right-6" onClick={() => setShowModal(true)}>
+          <img src={microphone} alt="microphone" className="w-8" />
         </button>
-        {/* <button onClick={handleUpdateSchema}>Update Schema</button>
-        </div> */}
       </div>
-    </div>
+
+      {showModal && (
+        <BaseModal poster={announcement} toggleModal={() => setShowModal(false)}>
+          <div className="flex flex-col gap-4 text-black">
+            <h1 className="microphone mb-4 !mt-4">{t("DASHBOARD.MODAL.TITLE")}</h1>
+
+            <p className="note-item text-lg">{t("DASHBOARD.MODAL.NOTE_1")}</p>
+            <p className="note-item text-lg">{t("DASHBOARD.MODAL.NOTE_2")}</p>
+            <p className="note-item text-lg">{t("DASHBOARD.MODAL.NOTE_3")}</p>
+          </div>
+        </BaseModal>
+      )}
+    </>
   );
 };
 

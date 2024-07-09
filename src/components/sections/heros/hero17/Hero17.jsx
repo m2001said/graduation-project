@@ -22,7 +22,7 @@ const Hero17 = ({ template }) => {
 
   return (
     <>
-      <div style={BgStyle} className="container17 relative px-4">
+      <div id={hero.sectionId} style={BgStyle} className="container17 relative px-4">
         <div className="py-16 sm:py-0">
           <div className="grid grid-cols-1 lg:grid-cols-2 sm:grid-cols-2 gap-4 place-items-center min-h-[600px]">
             <div className="space-y-7 order-2 sm:order-1">

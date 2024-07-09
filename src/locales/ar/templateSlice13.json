@@ -11,24 +11,24 @@
     "subtitle": "تواصل معنا",
     "links": [
       {
-        "title": "التصميم",
-        "url": "#about13"
+        "title": "الرئيسية",
+        "url": "hero"
       },
       {
         "title": "من نحن",
-        "url": "#"
+        "url": "about"
       },
       {
         "title": "المشاريع",
-        "url": "#"
+        "url": "projects"
       },
       {
         "title": "فريق الاتصال",
-        "url": "#"
+        "url": "contact"
       },
       {
-        "title": "التقييمات",
-        "url": "#testimonials13"
+        "title": "مميزات",
+        "url": "features"
       }
     ],
     "icons": [
@@ -38,16 +38,17 @@
     ]
   },
   "hero": {
+    "sectionId": "hero",
     "title": "المعماريون بنهج مختلف",
     "description": "الهندسة المعمارية هي فن وتقنية التصميم والبناء، متميزة عن المهارات",
     "buttons": [
       {
         "buttonText": "عرض المشاريع",
-        "url": "#projects13"
+        "url": "projects"
       },
       {
         "buttonText": "خدماتنا",
-        "url": "#services13"
+        "url": "features"
       }
     ],
     "imgUrl": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1720033596/done/3_tx6g05_kcssey.webp",
@@ -77,6 +78,7 @@
     ]
   },
   "about": {
+    "sectionId": "about",
   "title": "مرحبا بكم في شركتنا",
   "subtitle": "رحلتنا",
   "text": "منذ 2010",
@@ -112,6 +114,7 @@
 }
 ,
 "projects": {
+  "sectionId": "projects",
   "title": "أعمالنا الأخيرة",
   "subtitle": "مشاريعنا المكتملة",
   "description": "مشاريعنا المكتملة",
@@ -141,6 +144,7 @@
 }
 ,
   "contact": {
+    "sectionId": "contact",
     "title": "اشترك في نشرتنا الإخبارية",
     "subtitle": "احصل على تحديثات البريد الإلكتروني لدينا حول أحدث المتاجر والعروض الخاصة.",
     "description": "النشرة الإخبارية",
@@ -148,6 +152,7 @@
     "icon": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707952901/right-arrow_1_y7iz2i.png"
   },
  "logos": {
+  "sectionId": "logos",
   "companies": [
     {
       "imgUrl": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1720023921/done/logo6_ddaq6y_rkqshl.webp",
@@ -173,6 +178,7 @@
 }
 ,
   "testimonials": {
+    "sectionId": "testimonials",
     "title": "ما الذي ",
     "subtitle": "يقولونه عملائنا",
     "description": "",
@@ -216,6 +222,7 @@
     ]
   },
   "footer": {
+    "sectionId": "footer",
     "imgUrl": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707938679/lightning_h1zfze.png",
     "description": "الهندسة المعمارية مع فهم عقول الناس",
     "medias": [
@@ -267,23 +274,23 @@
         "links": [
           {
             "title": "الرئيسية",
-            "url": "#"
+            "url": "hero"
           },
           {
             "title": "المشاريع",
-            "url": "#"
+            "url": "projects"
           },
           {
-            "title": "التصميم",
-            "url": "#"
+            "title": "الاراء",
+            "url": "testimonials"
           },
           {
             "title": "تابعنا",
-            "url": "#"
+            "url": "contact"
           },
           {
-            "title": "الجوائز",
-            "url": "#"
+            "title": "الرعاة",
+            "url": "logos"
           }
         ]
       }

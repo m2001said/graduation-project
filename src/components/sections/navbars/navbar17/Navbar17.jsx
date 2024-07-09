@@ -16,10 +16,10 @@ const Navbar17 = ({ template }) => {
   };
 
   return (
-    <div className="container17 bg-[var(--website-17-color-2)] shadow-sm sticky top-16 z-30">
+    <div className="container17 bg-[var(--website-17-color-2)] shadow-sm   z-30">
       <div className="flex justify-between items-center py-4 sm:py-3 px-4 sm:px-8">
         {/* Logo section */}
-        <img src={navbar.title} className="" style={{ width: "50px", height: "50px" }} alt="" />
+        <img src={navbar.imgUrl} className="" style={{ width: "50px", height: "50px" }} alt="" />
         {/* Toggle button for small screens */}
         <div className="sm:hidden">
           <button onClick={toggleMenu} className="text-[var(--website-17-color-4)] focus:outline-none">
@@ -35,7 +35,7 @@ const Navbar17 = ({ template }) => {
             {navbar.links.map(({ index, title, url }) => (
               <li key={index}>
                 <a
-                  href={url}
+                  href={`#${url}`}
                   className="text-[var(--website-17-color-4)] hover:text-[var(--website-17-color-1)] text-xl font-semibold"
                 >
                   {title}
@@ -56,7 +56,7 @@ const Navbar17 = ({ template }) => {
                 <ul>
                   {navbar.dropDown.map(({ index, title, url }) => (
                     <li key={index}>
-                      <a href={url} className="text-xl inline-block w-full rounded-md p-2 hover:bg-[var(--website-17-color-1)]">
+                      <a href={`#${url}`} className="text-xl inline-block w-full rounded-md p-2 hover:bg-[var(--website-17-color-1)]">
                         {title}
                       </a>
                     </li>
@@ -68,7 +68,7 @@ const Navbar17 = ({ template }) => {
             {/* Login button section */}
             <li>
               <button className="flex justify-center items-center gap-2 bg-gradient-to-t from-[var(--website-17-color-1)] to-[var(--website-17-color-2)] rounded-3xl px-2 md:px-5 py-2 hover:scale-105 duration-300">
-                {navbar.subtitle}
+                {navbar.title}
               </button>
             </li>
           </ul>

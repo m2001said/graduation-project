@@ -32,7 +32,7 @@
   },
   "hero": {
     "sectionId": "hero",
-    "imgUrl": ["https://res.cloudinary.com/duc04fwdb/image/upload/v1708017251/jammal_photos/z8h6g9lv2sxmywvygcts.png"],
+    "imgUrl": "https://res.cloudinary.com/duc04fwdb/image/upload/v1708017251/jammal_photos/z8h6g9lv2sxmywvygcts.png",
     "text": "HELLO MY NAME IS",
     "name": "ZOE MILLER",
     "subtitle": "I AM Web Developer",

@@ -11,9 +11,13 @@
   --container2-width-sm: 90%;
   --transition2: all 400ms ease;
 }
+
 .nav2 a {
   color: var(--website-2-color-5);
   transition: all 0.3s ease;
+}
+.contactUs2__option-logo2 {
+  width: 1.5rem;
 }
 
 .nav2 a.active {
@@ -41,15 +45,15 @@
 }
 .trialdesign2 {
   font-family: "Poppins", sans-serif;
-  background: var(--website-2-color-1) url("https://res.cloudinary.com/dowtlcpxj/image/upload/v1703134021/bg-texture_up9ylo.png");
+  /* background: var(--website-2-color-1) url("https://res.cloudinary.com/dowtlcpxj/image/upload/v1703134021/bg-texture_up9ylo.png"); */
   color: var(--website-2-color-5);
   line-height: 1.7;
-
+  padding: 0 auto;
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-  margin: 0;
-  padding: 2rem;
+ width: 100%;
+ padding: 2rem;
 }
 
 .trialdesign2 .container2 {
@@ -74,10 +78,12 @@ h1 {
 .section2 > h5 {
   text-align: center;
   color: var(--website-2-color-5);
+  font-size: 24px;
 }
 .section2 > h2 {
-  color: var(--website-2-color-3);
+  color: var(--website-2-color-5);
   margin-bottom: 3rem;
+  font-size: 30px;
 }
 .text-light {
   color: var(--website-2-color-5);
@@ -131,4 +137,25 @@ h1 {
   .section2 > h2 {
     margin-bottom: 2rem;
   }
+}
+.hero2 {
+  background: var(--website-2-color-4) url("https://res.cloudinary.com/dowtlcpxj/image/upload/v1703134021/bg-texture_up9ylo.png");
+}
+.services2 {
+  background: var(--website-2-color-4) url("https://res.cloudinary.com/dowtlcpxj/image/upload/v1703134021/bg-texture_up9ylo.png");
+}
+.projects2 {
+  background: var(--website-2-color-3) url("https://res.cloudinary.com/dowtlcpxj/image/upload/v1703134021/bg-texture_up9ylo.png");
+}
+.testimonials2 {
+  background: var(--website-2-color-4) url("https://res.cloudinary.com/dowtlcpxj/image/upload/v1703134021/bg-texture_up9ylo.png");
+}
+.contact2 {
+  background: var(--website-2-color-1) url("https://res.cloudinary.com/dowtlcpxj/image/upload/v1703134021/bg-texture_up9ylo.png");
+}
+.footer2 {
+  background: var(--website-2-color-1) url("https://res.cloudinary.com/dowtlcpxj/image/upload/v1703134021/bg-texture_up9ylo.png");
+}
+.trialdesign2 {
+  background: var(--website-2-color-1);
 }

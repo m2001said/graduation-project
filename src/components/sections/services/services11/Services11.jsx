@@ -27,7 +27,7 @@ const Services11 = ({ template }) => {
                   <span className="skills__number11">{statistic.value}</span>
                 </div>
                 <div className="skills__bar11">
-                  <span className={`skills__percentage11 ${statistic.title.toLowerCase().replace(/\s/g, "-")}`}></span>
+                  <span className={`skills__percentage11`} style={{ width: statistic.value }}></span>
                 </div>
               </div>
             ))}

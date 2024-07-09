@@ -1,21 +1,18 @@
 /* footer15.css */
 .footer15 {
-  padding: 0 3px;
+  padding: 60px 0;
   background-color: transparent;
   background-color: var(--website-15-color-1);
-}
-
-.footer15-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  gap: 4px;
+  gap: 20px;
 }
 
 .footer15-text {
   font-size: 19px;
-  color: var(--website-15-color-1);;
+  color: var(--website-15-color-1);
   font-weight: bold;
 }
 
@@ -24,17 +21,12 @@
   gap: 60px;
   padding-bottom: 6px;
   font-size: 22px;
-  margin-left: 300px;
   cursor: pointer;
 }
 
 .footer15-img {
   width: 40px;
   height: 40px;
-}
-
-.footer15-titles {
-  margin-left: 180px;
 }
 
 .footer15-title {

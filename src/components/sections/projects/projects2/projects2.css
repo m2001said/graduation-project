@@ -1,6 +1,9 @@
 #projects2 h5 {
   padding-top: 1.5rem;
 }
+.project_h2 {
+  color: var(--website-2-color-1);
+}
 .projects2__container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -15,7 +18,7 @@
 }
 .projects2__item:hover {
   border-color: var(--website-2-color-4);
-  background: transparent;
+  background: linear-gradient(to bottom, var(--website-2-color-3), var(--website-2-color-2));
 }
 
 .projects2__item-img {
