@@ -9,7 +9,7 @@ const Footer9 = ({ template }) => {
     const isRTL = i18n.dir() === "rtl";
 
   return (
-    <footer className="footer9 text-[var(--website-9-color-2)]">
+    <footer id={footer.sectionId} className="footer9 text-[var(--website-9-color-2)]">
       <section className="flex flex-col bg-[var(--website-9-color-3)] pt-8">
         <div className="container mx-auto lg:flex items-start justify-between pb-8">
           <div className="lg:flex justify-between w-full px-3 py-12">
@@ -35,7 +35,7 @@ const Footer9 = ({ template }) => {
                   <ul>
                     {section.links.map((link, linkIndex) => (
                       <li key={linkIndex} className="xl:text-base text-sm mt-2 cursor-pointer">
-                        <a href={link.url}>{link.title}</a>
+                        <a href={`#${link.url}`}>{link.title}</a>
                       </li>
                     ))}
                   </ul>
@@ -57,7 +57,7 @@ const Footer9 = ({ template }) => {
               </div>
               <span className="text-[var(--website-9-color-2)] flex items-center gap-4 text-3xl justify-center lg:justify-start mt-4">
                 {footer.contacts.map((item, index) => (
-                  <a href={item.url} key={index}>
+                  <a href={`${item.url}`} target="_blank " rel="noreferrer" key={index}>
                     <img src={item.icon} className="cursor-pointer w-8 h-8" alt={item.url} />
                   </a>
                 ))}

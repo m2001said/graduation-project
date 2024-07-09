@@ -6,7 +6,7 @@ const Feature9 = ({ template }) => {
   const features = template ? template.features : ownFooter;
 
   return (
-    <main className="bg-gradient-to-t from-[var(--website-9-color-3)] to-[var(--website-9-color-1)] py-12 px-4">
+    <main  id={features.sectionId} className="bg-gradient-to-t from-[var(--website-9-color-3)] to-[var(--website-9-color-1)] py-12 px-4">
       <div className="text-center pb-12">
         <button className="bg-gradient-to-r from-[var(--website-9-color-6)] to-[var(--website-9-color-1)] rounded-full h-12 w-12 mx-auto mb-4"></button>
         <p className="text-[var(--website-9-color-3)] uppercase md:text-xl text-lg">{features.title}</p>

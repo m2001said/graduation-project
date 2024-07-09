@@ -1,8 +1,8 @@
 {
   "templateInfo": {
     "id": 8,
-  "title": "مركز الأرشيف",
-  "description": "استمتع بتصميمات واجهة المستخدم وتجارب المستخدم الجذابة في معرض أعمالنا.",
+    "title": "مركز الأرشيف",
+    "description": "استمتع بتصميمات واجهة المستخدم وتجارب المستخدم الجذابة في معرض أعمالنا.",
     "imgUrl": "/static/media/design8.1c22e7855cb0b280f527.jpg"
   },
   "navbar": {
@@ -112,6 +112,13 @@
     "buttonText": "أرسل رسالة"
   },
   "colors": {
-    "templateColors": ["#000000", "#212ea0", "#000f984d", "#000000", "#000000" , "#212ea0" ]
+    "templateColors": [
+      "#000000",
+      "#ffffff",
+      "linear-gradient(92.23deg, #ff56f6 21.43%, #b936ee 50.63%, #3bace2 100%, #406aff 117.04%)",
+      "linear-gradient(92.23deg, #406aff 21.43%, #3bace2 50.63%, #b936ee 100%, #ff56f6 117.04%)",
+      "#3bace2",
+      "#ff56f682"
+    ]
   }
 }

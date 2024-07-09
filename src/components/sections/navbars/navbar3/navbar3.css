@@ -20,12 +20,13 @@
   margin-top: 10px;
 }
 
-.menu-icon {
+.menu-icon3 {
   /* position: fixed; */
   width: 30px;
   height: 20px;
   right: 1rem;
   z-index: 2;
+  background-color: none;
 }
 
 /* res mobile */

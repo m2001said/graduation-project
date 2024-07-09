@@ -9,27 +9,28 @@
     "links": [
       {
         "imgUrl": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1719963637/done/otfppm5rfnnwzupynj8u.webp",
-        "url": "hero2"
+        "url": "hero"
       },
       {
         "imgUrl": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1719963637/done/ftnddz78dytnqfnusxj8.jpg",
-        "url": "services2"
+        "url": "services"
       },
       {
         "imgUrl": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1719963637/done/yyfzpdydh2bsorlrmvdc.webp",
-        "url": "projects2"
+        "url": "projects"
       },
       {
         "imgUrl": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1719963636/done/xka4pmu6tteq7gk2ul33.webp",
-        "url": "testimonials2"
+        "url": "testimonials"
       },
       {
         "imgUrl": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1719963637/done/fxeg0yobcvboxerrhxdy.webp",
-        "url": "contactUs2"
+        "url": "contact"
       }
     ]
   },
   "hero": {
+    "sectionId": "hero",
     "title": "تعرف علي",
     "subtitle": "البطل",
     "description": "أقوم بتصميم وبرمجة مواقع الويب الرائعة والمتجاوبة للمساعدة في نمو الأعمال عبر الإنترنت. بشغفي للتصميم والبرمجة، أضمن أن يكون كل مشروع فريدًا ومصممًا وفقًا لاحتياجات العميل.",
@@ -50,9 +51,12 @@
         "title": "المشاريع",
         "description": "أكثر من 80 مشروع منجز"
       }
-    ]
+    ],
+    "buttonText": "ابدأ الآن",
+    "linkText": "contact"
   },
   "testimonials": {
+    "sectionId": "testimonials",
     "title": "آراء العملاء حولنا",
     "subtitle": "شهادات العملاء",
     "testimonials": [
@@ -79,6 +83,7 @@
     ]
   },
   "projects": {
+    "sectionId": "projects",
     "title": "أعمالي الأخيرة",
     "description": "المشاريع",
     "projects": [
@@ -121,6 +126,7 @@
     ]
   },
   "contact": {
+    "sectionId": "contact",
     "title": "تواصل معنا",
     "description": "تواصل معنا",
     "contacts": [
@@ -150,6 +156,7 @@
     "linkText": "إرسال رسالة"
   },
   "services": {
+    "sectionId": "services",
     "title": "ما نقدمه",
     "description": "خدماتنا",
     "services": [
@@ -171,24 +178,25 @@
     ]
   },
   "footer": {
+    "sectionId": "footer",
     "title": "بقية الصفحة",
     "description": "ابق على اتصال معنا. جميع الحقوق محفوظة.",
     "footerSections": [
       {
         "title": "الرئيسية",
-        "url": "#hero2"
+        "url": "hero"
       },
       {
         "title": "الخدمات",
-        "url": "#services2"
+        "url": "services"
       },
       {
         "title": "شهادات العملاء",
-        "url": "#testimonials2"
+        "url": "testimonials"
       },
       {
         "title": "اتصل بنا",
-        "url": "#contactUs2"
+        "url": "contact"
       }
     ],
     "medias": [

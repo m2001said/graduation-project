@@ -120,5 +120,13 @@
     "DESCRIPTION": "Discover the incredible Custom Websites you've created.",
     "NO_PAGES": "No Custom Websites has been created by you",
     "CREATE": "Create One"
+  },
+  "DASHBOARD": {
+    "MODAL": {
+      "TITLE": "Notes",
+      "NOTE_1": "Click Save to store your template in our backend.",
+      "NOTE_2": "Ensure the URL in the navbar matches the section ID you want to scroll to.",
+      "NOTE_3": "In the black-white template, please avoid changing colors from the palette. Instead, use the main color input to make adjustments."
+    }
   }
 }

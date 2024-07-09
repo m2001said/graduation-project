@@ -12,7 +12,7 @@ const Services9 = ({ template }) => {
   };
 
   return (
-    <main className="bg-[var(--website-9-color-3)] mt-20 lg:py-20 service-99">
+    <main id={services.sectionId} className="bg-[var(--website-9-color-3)] mt-20 lg:py-20 service-99">
       <div className="container mx-auto px-3 text-center" service-9-div="true">
         <p className="uppercase text-xl text-[var(--website-9-color-1)] py-8">{services.title}</p>
 

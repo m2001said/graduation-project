@@ -29,8 +29,8 @@ const Navbar3 = ({ template }) => {
       <img src={navbar.imgUrl} alt="" className="logo3" />
       <div className="navbar3-menu">
         {mobile ? (
-          <div className="menu-icon" onClick={toggleMenu}>
-            <img src={"https://res.cloudinary.com/duc04fwdb/image/upload/v1706799720/jammal_photos/jx9bn26thzu46apznikl.svg"} alt="" className="menu-icon" />
+          <div className="menu-icon3" onClick={toggleMenu}>
+            <img src={"https://res.cloudinary.com/duc04fwdb/image/upload/v1706799720/jammal_photos/jx9bn26thzu46apznikl.svg"} alt="" className="menu-icon3" />
           </div>
         ) : (
           navbar.links &&
