@@ -1,0 +1,483 @@
+=====================================================
+1 , 2 , 3 ,4 , 5 ,6 , 7 , 8 , 9 , 10 , 11 , 13 , 14 , 15  , 16 , 17 , 18
+
+
+
+navbar
+    imgUrl : string
+    email : string
+    buttonText : string
+    icon : string
+    searchIcon : string
+    shoppingIcon : string
+    title : string
+    subtitle : string 
+    description : string
+    icons : []string
+    links : [
+        {
+            title : string
+            url : string
+            imgUrl : string
+        }
+    ]
+    dropDown : [
+        {
+            title : string
+            url : string
+        }
+    ]
+
+--------------------------------------
+hero
+    title : string
+    description : string
+    subtitle : string
+    text : string
+    imgUrl : string
+    imageUrl : string
+    videoUrl : string
+    icon : string
+    buttonText : string
+    buttonIcon : string
+    linkText : string
+    duration : string
+    inputPlaceholder : string
+    jop : string
+    icons : []string
+    imgs : []string
+    buttons : [
+        {
+            buttonText : string
+            url : string
+        }
+    ]
+    heros : [
+        {
+            title : string
+            description : string
+            subtitle : string
+            imgUrl :  string
+            icon : string
+            start : string
+            end : string
+            count : string
+
+        }
+    ]
+
+-------------------------------------------------------------
+services
+    title : string
+    subtitle : string
+    description : string
+    buttonText : string
+    imgUrl : string
+    icon : string
+    services : [
+        {
+            title : string,
+            description : string,
+            icon : string,
+            linkText : string
+            buttonText : string
+            imgUrl : string
+            value : string
+            price : int
+            items : []string
+        }
+    ]
+
+-------------------------------------------------------------
+
+features
+    title : string
+    subtitle : string
+    description : string
+    text : string
+    imgUrl : string
+    buttonText : string
+    phone : string
+    discount : string
+    percentage : string
+    date : string
+    icons : []string
+    imgs : []string
+    features : [
+        {
+            title : string
+            description : string
+            icon : string
+            imgUrl : string
+            number : string
+            date : string
+            name : string
+        }
+    ]
+    
+
+-------------------------------------------------------------
+
+testimonials
+    title : string
+    description : string     
+    subtitle : string
+    imgUrl : string           
+    buttonText : string              
+    imgs : []string
+    icons : []string
+    testimonials : [
+        {
+            name : string
+            location : string
+            imgUrl : string
+            opinion : string
+            title : string
+            role : string
+            description : string
+            subtitle : string
+            star : string
+        }
+    ]
+
+-------------------------------------------------------------
+
+logos
+    companies : [
+        {
+            imgUrl : string
+            url : string
+            title : string
+        }
+    ]
+
+-------------------------------------------------------------
+
+projects
+    title : string
+    description : string
+    subtitle : string
+    imgUrl : string
+    icon : string
+    buttonText : string
+    linkText : string
+    categories : []string
+    projects : [
+        {
+            title : string
+            description : string
+            subtitle : string
+            imgUrl : string
+            icon : string
+            name : string
+            price : string
+            buttonText : string
+            space : string
+            category : string
+            url : string
+            link : string
+            icons : [
+                {
+                    icon : string
+                    title : string
+                }
+            ]
+        }
+    ]
+-------------------------------------------------------------
+
+statistics
+    statistics : [
+        {
+            title : string
+            value : string
+            imgUrl : string
+        }
+    ]
+-------------------------------------------------------------
+
+items
+    title : string
+    description : string
+    subtitle : string
+    imgs : [] string
+    items : [
+        {
+            title : string
+            subtitle : string
+            description : string
+            imgUrl : string
+            icon : string
+            price: string
+        }
+    ]
+-------------------------------------------------------------
+
+team
+    title : string
+    subtitle : string
+    description : string
+    buttonText : string
+    members : [
+        {
+            memberId : string
+            name : string
+            jop : string
+            email : string
+            location : string
+            imgUrl : string
+            destinationImage : string
+            travelerImage : string
+            rating : string
+            icon : string
+            socialLink : string
+            medias : [
+                {
+                    icon : string
+                    url : string
+                }
+            ]
+        }
+    ]
+-------------------------------------------------------------
+
+pricing
+    title : string
+    subtitle : string
+    text : string
+    description : string
+    buttonText : string
+    imgUrl : string
+    imgs : []string
+    plans : [
+        {
+            title : string
+            subtitle : string
+            description : string
+            price : string
+            currencySymbol : string
+            timeUnit : string
+            buttonText : string
+            icon : string
+            features : [] string
+        }
+    ]
+
+-------------------------------------------------------------
+
+cta
+    title : string
+    subtitle : string
+    description : string
+    text : string
+    email : string
+    buttonText : string
+    icon : string
+    inputPlaceholder : string
+    googleButton : {
+        buttonText : string
+        buttonIcon : string
+    }
+    appleButton : {
+        buttonText : string
+        buttonIcon : string
+    }
+    imgs : []string
+    educations : [
+        {
+            imgUrl : string
+            title : string
+            description : string
+            year : string
+        }
+    ]
+    experiences : [
+        {
+            imgUrl : string
+            title : string
+            description : string
+            year : string
+        }
+    ]
+    items : [
+        {
+            title : string
+            subtitle : string
+            date : string
+            description : string
+            category : string
+        }
+    ]
+-------------------------------------------------------------
+
+contact 
+    title : string
+    subtitle : string
+    description : string
+    email : string
+    phone : string
+    imgUrl : string
+    icon : string
+    buttonText : string
+    linkText : string
+    name : string 
+    address : string
+    subject : string
+    message : string
+    contacts : [
+        {
+            type : string
+            phone : string
+            address : string
+            email : string
+            buttonText : string
+            imgUrl : string
+            
+        }
+    ]
+
+-------------------------------------------------------------
+
+blogs
+    title : string
+    description : string
+    subtitle : string
+    imgUrl : string
+    buttonText
+    linkText
+    blogs : [
+        {
+            title : string
+            description : string
+            subtitle : string
+            imgUrl : string
+            date : string
+        }
+    ]
+
+-------------------------------------------------------------
+header
+    imgUrl : string
+    buttonText : string
+
+-------------------------------------------------------------
+
+reservation
+    title : string
+    buttonText : string
+    imgUrl : string
+    shape : string
+
+-------------------------------------------------------------
+about 
+    title : string
+    subtitle : string
+    description : string
+    buttonText : string
+    buttonIcon : string
+    linkText : string
+    imgUrl : string
+    icon : string
+    imgs : []string
+    details : []string     
+    abouts : [
+        {
+            title : string
+            value : int
+        }
+    ]
+    buttons : [
+        {
+            buttonText : string
+            icon : string
+            url : string
+        }
+    ]
+
+-------------------------------------------------------------
+galary
+    galary : [
+        {
+            imgUrl : string
+            title : string
+        }
+    ]
+
+-------------------------------------------------------------
+
+offers
+    title : string
+    buttonText : string
+    offers : [
+        {
+            title : string
+            description : string
+            discount : string
+            imgUrl : string
+        }
+    ]
+
+-------------------------------------------------------------
+reviews
+    title
+    string
+    description
+    subtitle
+    imgUrl
+    icon
+    reviews : [] string
+    logos : [] string
+-------------------------------------------------------------
+products
+    title : string
+    subtitle : string
+    icon : string
+    rateIcon : string
+    products : [
+        {
+            title : string
+            items : [
+                {
+                    itemId : string
+                    title : string
+                    price : string
+                    imgUrl : string
+                }
+            ]
+        }
+    ]
+
+-------------------------------------------------------------     
+footer
+    imgUrl : string
+    description : string
+    title : string
+    subtitle : string
+    icon : string
+    links : []string
+    medias : [
+        {
+            icon : string
+            url : string
+        }
+    ]
+    footerSections : [
+        {
+            title : string
+            url : string
+            links : [
+                {
+                    title : string
+                    url : string
+                }
+            ]
+        }
+    ]
+    contacts:[
+        {
+            title : string
+            value : string
+            icon : string
+            url : string
+        }
+    ]
