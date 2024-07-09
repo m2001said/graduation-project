@@ -10,28 +10,28 @@
     "links": [
       {
         "title": "Home",
-        "url": "#"
+        "url": "hero"
       },
       {
         "title": "Shop",
-        "url": "#"
+        "url": "items"
       },
       {
-        "title": "About",
-        "url": "#"
+        "title": "Services",
+        "url": "services"
       },
       {
         "title": "Blogs",
-        "url": "#"
+        "url": "blogs"
       }
     ],
-    "icon": "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707775619/icons8-shopping-cart-24_w0vwvt.png",
     "icons": [
       "https://res.cloudinary.com/dmcdea0b9/image/upload/v1706805795/dark-mode-button_e9kiqi.png",
       "https://res.cloudinary.com/dmcdea0b9/image/upload/v1706805773/light-mode-button_ermmq3.png"
     ]
   },
   "hero": {
+    "sectionId": "hero",
     "heros": [
       {
         "imgUrl": "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707602286/headphone_qbcak3.png",
@@ -55,6 +55,7 @@
     "buttonText": "Shop By Category"
   },
   "items": {
+    "sectionId": "items",
     "title": "Enjoy",
     "subtitle": "With",
     "items": [
@@ -86,6 +87,7 @@
     "buttonText": "Browse"
   },
   "services": {
+    "sectionId": "services",
     "services": [
       {
         "icon": "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707602721/icons8-sedan-30_zecew1.png",
@@ -109,7 +111,7 @@
       }
     ]
   },
-  "featuers": {
+  "features": {
     "discount": "30% OFF",
     "title": "Fine Smile",
     "date": "10 Jan to 28 Jan",
@@ -163,10 +165,10 @@
         "title": "Printed ",
         "price": "220"
       }
-    ],
-    "buttonText": "Add to cart"
+    ]
   },
   "blogs": {
+    "sectionId": "blogs",
     "title": "Recent News",
     "description": "Explore Our Blogs",
     "blogs": [
@@ -292,6 +294,6 @@
     ]
   },
   "colors": {
-    "templateColors": ["#f42c37", "fdc62e", "#34cc73", "#1376f4", "#acabab9c", "#ffffff"]
+    "templateColors": ["#f42c37", "#fdc62e", "#34cc73", "#1376f4", "#acabab9c", "#ffffff"]
   }
 }

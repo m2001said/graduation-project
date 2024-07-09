@@ -7,7 +7,7 @@ const Services10 = ({ template }) => {
   const services = template ? template.services : ownServices;
   return (
     <>
-      <div className="py-10 bg-[--website-10-color-2] dark:bg-gray-900 dark:text-white">
+      <div className="py-10 bg-[--website-10-color-2] dark:bg-gray-900 dark:text-white" id={services.sectionId}>
         <div className="items-center p-7 sm:p-30">
           {/* head sec */}
           <div className="text-center mb-20 max-w-[400px] mx-auto">
@@ -21,7 +21,7 @@ const Services10 = ({ template }) => {
             {services.services.map((service, index) => (
               <div
                 key={index}
-                className="my-7 rounded-2xl bg-white bgHover10 dark:bg-gray-800 dark:hover:bg-blue-600 hover:text-white relative shadow-xl duration-high group max-w-[300px] min-w-[300px]"
+                className="my-7 rounded-2xl bg-white bgHover10 dark:bg-gray-800 dark:hover:bg-[--website-10-color-1] hover:text-[--website-10-color-2] relative shadow-xl duration-high group max-w-[300px] min-w-[300px]"
               >
                 <div className="h-[100px]">
                   <img
@@ -39,7 +39,7 @@ const Services10 = ({ template }) => {
                   </div>
                   <h1 className="text-xl font-bold">{service.title}</h1>
                   <p className="text-gray-500 group-hover:text-white duration-300 text-sm line-clamp-2">{service.description}</p>
-                  <button className="btnBg10 btnTxt10 hover:scale-105 duration-300 py-1 px-4 rounded-full mt-4 group-hover:bg-white group-hover:text-blue-600">
+                  <button className="btnBg10 btnTxt10 hover:scale-105 duration-300 py-1 px-4 rounded-full mt-4 group-hover:bg-white group-hover:text-[--website-10-color-1]">
                     {service.buttonText}
                   </button>
                 </div>

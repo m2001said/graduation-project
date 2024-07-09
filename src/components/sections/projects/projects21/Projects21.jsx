@@ -9,7 +9,7 @@ const Projects21 = ({template}) => {
 
 
   return (
-    <div className="pb-10 bg-[--website-14-color-6] dark:bg-gray-900 dark:text-white">
+    <div className="pb-10 bg-[--website-14-color-6] dark:bg-gray-900 dark:text-white" id={projects2.sectionId}>
       <div className="container14">
         {/* head sec */}
         <div className="text-center mb-10 max-w-[600px] mx-auto space-y-2">

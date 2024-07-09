@@ -12,32 +12,34 @@
     "links": [
       {
         "title": "Home",
-        "url": "#"
+        "url": "hero"
       },
       {
         "title": "About",
-        "url": "#"
+        "url": "features"
       },
       {
-        "title": "Offers",
-        "url": "#"
+        "title": "Services",
+        "url": "services"
       },
       {
-        "title": "Seats",
-        "url": "#"
+        "title": "Blogs",
+        "url": "blogs"
       },
       {
         "title": "Destinations",
-        "url": "#"
+        "url": "team"
       }
     ]
   },
   "hero": {
+    "sectionId": "hero",
     "title": "Create Ever-lasting Memories With us",
     "imgUrl": "https://res.cloudinary.com/dmcdea0b9/image/upload/v1703110738/takeOff_znaedp.png",
     "videoUrl": "https://res.cloudinary.com/dmcdea0b9/video/upload/v1703110566/heroVideo_z23a38.mp4"
   },
   "features": {
+    "sectionId": "features",
     "title": "Plan your travel with confidence",
     "subtitle": "travel support",
     "description": "find help with booking and travel plans, see what to expect the journey",
@@ -61,6 +63,7 @@
     ]
   },
   "services": {
+    "sectionId": "services",
     "title": "Travel to make memories all around the world",
     "services": [
       {
@@ -81,6 +84,7 @@
     ]
   },
   "blogs": {
+    "sectionId": "blogs",
     "title": "Unaccompanied minor lounge",
     "imgUrl": "https://res.cloudinary.com/dmcdea0b9/image/upload/v1703116246/fea5-2_q5na0z.jpg",
     "blogs": [
@@ -103,6 +107,7 @@
     ]
   },
   "team": {
+    "sectionId": "team",
     "title": "Top travelers of this month!",
     "members": [
       {
@@ -248,6 +253,6 @@
     ]
   },
   "colors": {
-    "templateColors": ["#5c3db8", "#f0f4f4", "#eb967a", "#fabe89", "#000000" , "#919191"]
+    "templateColors": ["#5c3db8", "#f0f4f4", "#eb967a", "#ffffff", "#000000" , "#919191"]
   }
 }
