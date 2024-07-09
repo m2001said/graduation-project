@@ -9,7 +9,7 @@ const ContactUs2 = ({ template }) => {
   const contact = template ? template.contact : ownContact;
 
   return (
-    <div id="contactUs2">
+    <div id={contact.sectionId} className="pt-24 pb-9 section2 contact2">
       <h5 className="text-light2">{contact.subtitle}</h5>
       <h2>{contact.title}</h2>
 
@@ -17,7 +17,7 @@ const ContactUs2 = ({ template }) => {
         <div id="contactUs2" className="contactUs2__options">
           {contact.contacts.map((contacts, index) => (
             <article className="contactUs2__option" key={index}>
-              <img src={contacts.imgUrl} alt={`${contacts.type} Logo`} className="contactUs2__option-logo" />
+              <img src={contacts.imgUrl} alt={`${contacts.type} Logo`} className="contactUs2__option-logo2" />
               <h4>{contacts.type}</h4>
               <h5>{contacts.title}</h5>
               <a href={contacts.email} target="_blank" className="a2" rel="noopener noreferrer">

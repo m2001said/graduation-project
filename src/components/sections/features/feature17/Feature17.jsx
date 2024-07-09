@@ -5,13 +5,13 @@ import { useSelector } from "react-redux";
 
 const Feature17 = ({ template }) => {
   const ownFooter = useSelector((state) => state.ownTemplate.features);
-  const { title, subtitle, description, imgs } = template ? template.features : ownFooter;
+  const { title, subtitle, description, imgs, sectionId } = template ? template.features : ownFooter;
   const { t, i18n } = useTranslation();
   const isRTL = i18n.dir() === 'rtl';
 
   return (
     <>
-      <div className="container17 py-20 bg-gradient-to-t from-[var(--website-17-color-6)] to-[var(--website-17-color-4)] relative">
+      <div id={sectionId} className="container17 py-20 bg-gradient-to-t from-[var(--website-17-color-6)] to-[var(--website-17-color-4)] relative">
         <div className="relative">
           <h1 className=" tracking-wider  text-[var(--website-17-color-1)] lg:text-7xl text-4xl p-9 border-b  border-b-[var(--website-17-color-4)] ephesis text-center">
             {title}

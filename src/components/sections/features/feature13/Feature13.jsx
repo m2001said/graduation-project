@@ -3,11 +3,13 @@ import { useSelector } from "react-redux";
 
 const Feature13 = ({ template }) => {
   const ownFooter = useSelector((state) => state.ownTemplate.features);
-  const { title, subtitle, description, features }  = template ? template.features : ownFooter;
-
+  const { title, subtitle, description, features, sectionId } = template ? template.features : ownFooter;
 
   return (
-    <div id="feature13" className="relative overflow-hidden flex flex-col items-center justify-center bg-gradient-to-t from-[var(--website-13-color-5)] to-[var(--website-13-color-1)] lg:py-20 py-8 ">
+    <div
+      id={sectionId}
+      className="relative overflow-hidden flex flex-col items-center justify-center bg-gradient-to-t from-[var(--website-13-color-5)] to-[var(--website-13-color-1)] lg:py-20 py-8 "
+    >
       <p className="text-center text-[var(--website-13-color-4)] text-lg">{title}</p>
       <h1 className="text-center text-[var(--website-13-color-3)] lg:text-5xl text-xl primary-font mt-4">
         {subtitle} <br /> <span className="underline decoration-[var(--website-13-color-4)]">{description}</span>

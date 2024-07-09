@@ -6,7 +6,7 @@ const Hero2 = ({ template }) => {
   const ownHero = useSelector((state) => state.ownTemplate.hero);
   const hero = template ? template.hero : ownHero;
   return (
-    <section id="hero2" className="section2">
+    <section id={hero.sectionId} className="pb-24 section2 hero2">
       <h5>{hero.title}</h5>
       <h2>{hero.subtitle}</h2>
       <div className="container2 hero2__container">
@@ -27,8 +27,8 @@ const Hero2 = ({ template }) => {
             ))}
           </div> */}
           <p>{hero.description}</p>
-          <a href="#contactUs2" className="a2 btn2 btn-primary2">
-            Let's Talk
+          <a  href={`#${hero.linkText}`}className="a2 btn2 btn-primary2">
+           {hero.buttonText}
           </a>
         </div>
       </div>

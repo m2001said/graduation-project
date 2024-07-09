@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import TopSide from "./../components/dashboard/sections/TopSide";
 import LeftSide from "../components/dashboard/sections/LeftSide";
 import RightSide from "../components/dashboard/sections/RightSide";
+import ChatBot from "../components/dashboard/chatBot/ChatBot";
 import { useSelector } from "react-redux";
 import { templateActions1 } from "../features/templateData/templateSlice";
 
@@ -47,6 +48,8 @@ const Dashboard = () => {
           </div>
         </div>
       </div>
+      {/* only in ai version --> we will open it */}
+      {/* <ChatBot /> */}
     </section>
   );
 };
