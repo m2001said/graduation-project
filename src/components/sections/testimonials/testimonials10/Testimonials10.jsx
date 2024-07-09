@@ -33,7 +33,7 @@ const Testimonials10 = ({template}) => {
                     <div className="flex items-center gap-4">
                       <div>
                         <p className="text-gray-500 text-sm">{data.description}</p>
-                        <h1 className="text-xl font-bold text-black/80 dark:text-white">{data.title}</h1>
+                        <h1 className="text-xl font-bold text-black/80 dark:text-white">{data.name}</h1>
                       </div>
                     </div>
                     {/* <p className="text-black/30 text-9xl font-serif absolute top-0 right-0">,,</p> */}
