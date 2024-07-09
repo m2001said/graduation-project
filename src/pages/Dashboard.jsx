@@ -36,7 +36,8 @@ const Dashboard = () => {
           </div>
         </div>
       </div>
-      <ChatBot />
+      {/* only in ai version --> we will open it */}
+      {/* <ChatBot /> */}
     </section>
   );
 };
