@@ -5,7 +5,7 @@
 .f-left4 {
   gap: 1rem;
   width: 14rem;
-  color: (var(--website-4-color-1));
+  color: var(--website-4-color-1);
 }
 .f-menu4 {
   gap: 1.5rem;
