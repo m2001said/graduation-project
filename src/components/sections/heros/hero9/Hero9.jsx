@@ -33,7 +33,7 @@ const Hero9 = ({ template }) => {
   };
 
   return (
-    <main className="trialdesign9 mb-12 pt-4">
+    <main id={hero.sectionId} className="trialdesign9  mb-12 ">
       <div className="bg-gradient-to-t from-[var(--website-9-color-3)] to-[var(--website-9-color-1)]  hero9">
         <div className="container mx-auto px-3 lg:flex justify-between items-center lg:h-screen relative">
           <div className="lg:w-2/5">

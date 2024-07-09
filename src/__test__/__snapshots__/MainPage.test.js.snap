@@ -1,0 +1,49 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<header
+  className="main-header"
+>
+  <div
+    className="container mx-auto px-4"
+  >
+    <div
+      className="info-section flex gap-5 justify-between items-center py-8"
+    >
+      <div
+        className="hero-info"
+        data-aos="fade-right"
+        data-aos-duration="1000"
+      >
+        <h1
+          className="info-title"
+        >
+           
+          HERO.TITLE
+        </h1>
+        <p
+          className="info-description"
+        >
+           
+          HERO.DESCRIPTION
+           
+        </p>
+        <button
+          className="info-btn"
+          onClick={[Function]}
+        >
+          HERO.BUTTONTEXT
+        </button>
+      </div>
+      <div
+        className="main-hero-image"
+      >
+        <img
+          alt="hero"
+          src="hero-min.svg"
+        />
+      </div>
+    </div>
+  </div>
+</header>
+`;

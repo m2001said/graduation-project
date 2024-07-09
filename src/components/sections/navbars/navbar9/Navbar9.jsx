@@ -11,10 +11,10 @@ const Navbar9 = ({ template }) => {
   };
 
   return (
-    <nav className="sticky top-16  bg-gradient-to-r from-[var(--website-9-color-3)] to-[var(--website-9-color-5)] shadow-lg py-4 z-10">
+    <nav className="  w-full  flex flex-wrap bg-gradient-to-r from-[var(--website-9-color-3)] to-[var(--website-9-color-5)] shadow-lg py-4 z-10 ">
       <div className="container mx-auto flex justify-between items-center px-4">
         <div className="text-[var(--website-9-color-6)] text-xl font-bold">
-          {navbar.title}
+         <img src= {navbar.imgUrl} className="w-16 h-10 hover:scale-110 hover:w-1/2 hover:h-auto  transition-transform    duration-1000  "   alt="" />
         </div>
         <div className="md:hidden">
           <button onClick={toggleMenu} className="text-[var(--website-9-color-6)] focus:outline-none">
@@ -30,7 +30,7 @@ const Navbar9 = ({ template }) => {
         <ul className={`flex-col md:flex-row md:flex space-x-6 text-[var(--website-9-color-6)] text-lg font-medium ${isOpen ? 'block' : 'hidden'} md:block`}>
           {navbar.links.map((link, index) => (
             <li key={index}>
-              <a href={link.url} className="block py-2 md:py-0 hover:text-[var(--website-9-color-3)] transition-colors duration-300">
+              <a href={`#${link.url}`} className="block py-2 md:py-0 hover:text-[var(--website-9-color-3)] transition-colors duration-300">
                 {link.title.charAt(0).toUpperCase() + link.title.slice(1)}
               </a>
             </li>

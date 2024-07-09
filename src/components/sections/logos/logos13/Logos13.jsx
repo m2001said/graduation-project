@@ -5,7 +5,7 @@ const Logos13 = ({ template }) => {
   const logos = template.logos;
 
   return (
-    <div className="relative flex overflow-hidden bg-[var(--website-13-color-5)] lg:py-20 py-8 px-3 logos13">
+    <div id={logos.sectionId} className="relative flex overflow-hidden bg-[var(--website-13-color-5)] lg:py-20 py-8 px-3 logos13">
       <section className="flex items-center flex-wrap w-full   justify-around gap-2 mt-24 mb-16 ">
         {logos.companies &&
           logos.companies.map((logo, index) => (

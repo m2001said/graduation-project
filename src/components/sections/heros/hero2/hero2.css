@@ -54,13 +54,13 @@
 }
 
 .hero2__card:hover {
-  background: transparent;
+  background: linear-gradient(to bottom, var(--website-2-color-3), var(--website-2-color-2));
   border-color: var(--website-2-color-4);
   cursor: default;
 }
 
 .hero2__icon {
-  color: var(--color-2-primary);
+  color: var(--website-2-color-4);
   font-size: 1.4rem;
   margin-bottom: 1rem;
   width: 20%;

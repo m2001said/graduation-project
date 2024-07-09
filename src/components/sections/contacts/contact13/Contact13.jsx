@@ -10,7 +10,7 @@ const Contact13 = ({ template }) => {
   const isRTL = i18n.language === "ar";  // Adjust this based on your language setup
   
   return (
-    <div id="contact13" className="relative overflow-hidden bg-[var(--website-13-color-5)] lg:py-20 py-8 px-4 contact13">
+    <div id={contact.sectionId} className="relative overflow-hidden bg-[var(--website-13-color-5)] lg:py-20 py-8 px-4 contact13">
       <section className="lg:flex justify-between items-center relative mt-12 lg:p-8">
         <div className="lg:w-1/2">
           <p className="text-[var(--website-13-color-4)]">{t(contact.title)}</p>

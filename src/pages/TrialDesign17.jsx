@@ -1,6 +1,5 @@
 import React from "react";
 import "../assets/css/globals17.css";
-import "aos/dist/aos.css";
 import Navbar17 from "../components/sections/navbars/navbar17/Navbar17";
 import Hero17 from "../components/sections/heros/hero17/Hero17";
 import Services17 from "../components/sections/services/services17/Services17";
