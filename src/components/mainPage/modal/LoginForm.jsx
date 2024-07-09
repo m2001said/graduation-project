@@ -26,7 +26,8 @@ const LoginForm = ({ toggleForm, toggleModal }) => {
         return;
       }
       const user = await dispatch(loginUserAsync({ email, password }));
-
+     const currentTime = new Date().getTime();
+     localStorage.setItem("loginTime", currentTime);
       if (user.payload.user.role === "admin" || user.payload.user.role === "super-admin") {
         await navigate(`/${language}/admin`);
       } else {
