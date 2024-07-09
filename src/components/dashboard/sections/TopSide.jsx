@@ -86,7 +86,10 @@ const TopSide = ({ schema }) => {
         dispatch(templateActions1.updateSchema(initialState));
       }
     } catch (error) {
-      setIsGenerating(false);
+      setWaitingMsg(error);
+      setTimeout(() => {
+        setIsGenerating(false);
+      }, 5000);
       console.error("Error:", error);
     }
   };
