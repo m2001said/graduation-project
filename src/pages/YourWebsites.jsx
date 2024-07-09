@@ -123,6 +123,7 @@ const YourWebsites = () => {
     }
   };
   const toggleModal = () => {
+    window.scrollTo(0, 0);
     setIsModalOpen(!isModalOpen);
     setIsCelebrityBirthday(!isCelebrityBirthday);
     setCopied(false);

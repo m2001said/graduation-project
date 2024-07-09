@@ -8,7 +8,6 @@ import { useTranslation } from "react-i18next";
 import { ownTemplateActions } from "../../../features/templateData/ownTemplateSlice";
 import { fetchPages } from "../../../features/templates/pagesSlice";
 import { fetchWebsites } from "../../../features/templates/websitesSlice";
-
 const TopSide = ({ schema }) => {
   const { i18n } = useTranslation();
   const { pathname } = useLocation();
@@ -17,6 +16,8 @@ const TopSide = ({ schema }) => {
   const dispatch = useDispatch();
   const token = localStorage.getItem("token");
   const [isGenerating, setIsGenerating] = useState(false);
+  const [isError, setIsError] = useState(false);
+
   const [waitingMsg, setWaitingMsg] = useState("");
   const navigate = useNavigate();
   let [searchParams] = useSearchParams();
@@ -42,7 +43,18 @@ const TopSide = ({ schema }) => {
     dispatch(updateScreen("phone"));
   };
 
+  // const copyObjectWithoutId = (obj) => {
+  //   const newObj = {};
+  //   for (let key in obj) {
+  //     if (key !== "_id") {
+  //       newObj[key] = obj[key];
+  //     }
+  //   }
+  //   return newObj;
+  // };
+
   const handleSubmit = async () => {
+    setIsError(false);
     const regex = /\d+/;
     const isUpdating = pathname.includes("edit");
     const inOwnPage = pathname.includes("own-page") || !regex.test(pathname);
@@ -54,9 +66,7 @@ const TopSide = ({ schema }) => {
       url = isUpdating ? `${process.env.REACT_APP_BACKEND_URL}/website/update/${id}` : `${process.env.REACT_APP_BACKEND_URL}/website`;
     }
     const text = inOwnPage ? "page" : "website";
-    console.log(url);
-
-    console.log(schema);
+    // const newSchema = copyObjectWithoutId(schema);
 
     try {
       setIsGenerating(true);
@@ -70,9 +80,7 @@ const TopSide = ({ schema }) => {
         },
       });
       const result = await res.json();
-      console.log(result);
-
-      console.log("respone after create ", result.data);
+      if (result.error) throw new Error(result.error);
       setIsGenerating(false);
       if (inOwnPage) {
         // get pages in pages page
@@ -86,10 +94,8 @@ const TopSide = ({ schema }) => {
         dispatch(templateActions1.updateSchema(initialState));
       }
     } catch (error) {
-      setWaitingMsg(error);
-      setTimeout(() => {
-        setIsGenerating(false);
-      }, 5000);
+      setIsError(true);
+      setWaitingMsg(error.message);
       console.error("Error:", error);
     }
   };
@@ -119,9 +125,17 @@ const TopSide = ({ schema }) => {
   //   dispatch(websitesActions[templateNum - 1].updateSchema(initalStateWebsites[templateNum - 1]));
   // };
   return isGenerating ? (
-    <div className="fixed top-0 left-0 w-full h-full bg-gray-900 opacity-70 z-50 flex items-center justify-center">
-      <div className="p-5 bg-red-900 rounded-lg shadow-lg">
+    <div className="fixed top-0 left-0 w-full h-full bg-gray-900 opacity-70 z-50 flex items-center justify-center" onClick={() => setIsGenerating(false)}>
+      <div className="p-5 bg-red-900 rounded-lg shadow-lg relative ">
         <p className="text-lg text-white">{waitingMsg}</p>
+        {isError && (
+          <img
+            src='/assets/icons/close.svg'
+            alt="cancel"
+            className="w-6 h-6 absolute top-1 right-1 cursor-pointer"
+            onClick={() => setIsGenerating(false)}
+          />
+        )}
       </div>
     </div>
   ) : (

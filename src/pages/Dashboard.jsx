@@ -21,11 +21,23 @@ const Dashboard = () => {
     setScreenWidth(sWidth);
   }, [screen]);
 
+  const copyObjectWithoutId = (obj) => {
+    const newObj = {};
+    for (let key in obj) {
+      if (key !== "_id") {
+        newObj[key] = obj[key];
+      }
+    }
+    return newObj;
+  };
+
+  const newState = copyObjectWithoutId(state)
+
   return (
     <section className="dashboard-container mx-auto relative">
-      <TopSide schema={state} />
+      <TopSide schema={newState} />
       <div className="w-full flex-between flex-col md:flex-row dashboard-subContainer overflow-hidden">
-        <LeftSide targetTemplate={state} updateAllRef={templateActions1} />
+        <LeftSide targetTemplate={newState} updateAllRef={templateActions1} />
         <div
           className="max-md:w-full md:w-70 flex-auto  flex justify-start flex-col items-center text-black "
           style={{ height: "calc(100vh - 56px)", maxWidth: screenWidth }}

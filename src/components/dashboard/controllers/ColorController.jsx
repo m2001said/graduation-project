@@ -1,8 +1,16 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { useDispatch } from "react-redux";
 import ColorPicker from "./ColorPicker";
+import { initialState } from "../../../features/templateData/templateSlice";
+
 const ColorController = ({ targetTemplate, updateAll }) => {
   const [open, setOpen] = useState(false);
+  console.log(initialState);
+  const [firstColor, setFirstColor] = useState([]);
+  useEffect(() => {
+    setFirstColor(colors.templateColors.slice());
+  }, []);
+
 
   // const { colors } = useSelector((state) => state.template);
   const colors = targetTemplate.colors;
@@ -26,10 +34,8 @@ const ColorController = ({ targetTemplate, updateAll }) => {
     dispatch(updateAll.updateTemplate({ section: "colors", variable: null, value: e.target.value, i: index, blockName: templateColors }));
     // document.documentElement.style.setProperty(`--website-${targetTemplate.templateInfo.id}-color${index + 1}`, e.target.value);
   };
-const firstPalette = colors.templateColors.slice()
   const palettes = [
     colors.templateColors,
-    firstPalette,
     ["#FFFAF3", "#F1C40F", "#E67E22", "#E74C3C", "#8E44AD", "#3498DB"],
     ["#F5F3BB", "#C7F0BD", "#7DBBC3", "#607196", "#5C3C92", "#4A256D"],
     ["#F8F4E3", "#F1DCA7", "#F9A870", "#E68364", "#966C6C", "#684A4A"],
@@ -41,6 +47,9 @@ const firstPalette = colors.templateColors.slice()
     ["#FFFAF0", "#F3EACB", "#E2CFC4", "#C7B198", "#A67C67", "#70564A"],
     ["#FFF5EE", "#FFD1B3", "#FFA07A", "#CD5C5C", "#8B4513", "#602E1A"],
     ["#E6E6FA", "#D8BFD8", "#DDA0DD", "#EE82EE", "#BA55D3", "#8A2BE2"],
+    ["#FFDAB9", "#FFE4B5", "#FFA07A", "#FA8072", "#E9967A", "#FF6347"],
+    ["#FFFACD", "#FAFAD2", "#FFEFD5", "#FFDAB9", "#FFE4B5", "#FFD700"],
+    firstColor,
   ];
   const [selectedColor, setSelectedColor] = useState(0);
   const handleColorChange = (paletteIndex) => {
