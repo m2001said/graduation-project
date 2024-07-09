@@ -215,7 +215,7 @@ const pageSchema = new mongoose.Schema({
     sectionId: String,
     subtitle: String,
     imgs: Array,
-    title: { type: String },
+    title: String ,
     description: { type: String },
     items: [
       {
@@ -369,6 +369,9 @@ const pageSchema = new mongoose.Schema({
     contacts: [
       {
         type: String,
+        title: String,
+        icon: String,
+        text: String,
         phone: String,
         address: String,
         email: String,
@@ -434,6 +437,13 @@ const pageSchema = new mongoose.Schema({
       {
         title: String,
         value: Number,
+      },
+    ],
+    icon: [
+      {
+        text: String,
+        linkText: Number,
+        imgUrl: Number,
       },
     ],
     buttons: [

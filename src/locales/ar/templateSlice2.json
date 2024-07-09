@@ -52,9 +52,8 @@
         "description": "أكثر من 80 مشروع منجز"
       }
     ],
-    "buttonText": "ابدأ الآن"
-    , "linkText": "contact"
-    
+    "buttonText": "ابدأ الآن",
+    "linkText": "contact"
   },
   "testimonials": {
     "sectionId": "testimonials",
