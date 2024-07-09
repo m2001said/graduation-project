@@ -11,24 +11,24 @@
     "subtitle": "Contact us",
     "links": [
       {
-        "title": "Design",
-        "url": "#about13"
+        "title": "Home",
+        "url": "hero"
       },
       {
         "title": "About us",
-        "url": "#"
+        "url": "about"
       },
       {
-        "title": "Projects",
-        "url": "#"
+        "title": "projects",
+        "url": "projects"
       },
       {
-        "title": "Contact team",
-        "url": "#"
+        "title": "contact",
+        "url": "contact"
       },
       {
-        "title": "Reviews",
-        "url": "#testimonials13"
+        "title": "features",
+        "url": "features"
       }
     ],
     "icons": [
@@ -38,16 +38,17 @@
     ]
   },
   "hero": {
+    "sectionId": "hero",
     "title": "Architects with different approach",
     "description": "Architecture is the art & technique of designing and building, as distinguished from the skills",
     "buttons": [
       {
         "buttonText": "view projects",
-        "url": "#projects13"
+        "url": "projects"
       },
       {
         "buttonText": "our Services",
-        "url": "#services13"
+        "url": "features"
       }
     ],
     "imgUrl": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1720033596/done/3_tx6g05_kcssey.webp",
@@ -55,6 +56,7 @@
     "icon": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707952901/right-arrow_1_y7iz2i.png"
   },
   "features": {
+    "sectionId": "features",
     "title": "welcome to lighting",
     "subtitle": "The Art Of ARCHITECTURE ",
     "description": "you will meet your taste",
@@ -77,6 +79,7 @@
     ]
   },
   "about": {
+    "sectionId": "about",
     "title": "Welcome to our company",
     "subtitle": "our JOURNEY",
     "text": "since 2010",
@@ -101,16 +104,17 @@
       {
         "buttonText": "Get started",
         "icon": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707952901/right-arrow_1_y7iz2i.png",
-        "url": "#contact13"
+        "url": "contact"
       },
       {
         "buttonText": "learn more",
         "icon": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707952901/right-arrow_1_y7iz2i.png",
-        "url": "#feature13"
+        "url": "features"
       }
     ]
   },
   "projects": {
+    "sectionId": "projects",
     "title": "Our recent works",
     "subtitle": "Our completed projects",
     "description": "Our completed projects",
@@ -139,6 +143,7 @@
     "icon": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707553370/klipartz.com_z2zhsv.png"
   },
   "contact": {
+    "sectionId": "contact",
     "title": "Subscribe to our newsletter",
     "subtitle": "Get our e-mail updates about our latest shops and special offers.",
     "description": "Newsletter",
@@ -146,6 +151,7 @@
     "icon": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707952901/right-arrow_1_y7iz2i.png"
   },
   "logos": {
+    "sectionId": "logos",
     "companies": [
       {
         "imgUrl": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1720023921/done/logo6_ddaq6y_rkqshl.webp",
@@ -170,6 +176,7 @@
     ]
   },
   "testimonials": {
+    "sectionId": "testimonials",
     "title": "What our  ",
     "subtitle": "Clients",
     "description": "say's",
@@ -213,6 +220,7 @@
     ]
   },
   "footer": {
+    "sectionId": "footer",
     "imgUrl": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1707938679/lightning_h1zfze.png",
     "description": "Architecture with understanding people minds",
     "medias": [
@@ -264,23 +272,23 @@
         "links": [
           {
             "title": "Home",
-            "url": "#"
+            "url": "hero"
           },
           {
             "title": "Projects",
-            "url": "#"
+            "url": "projects"
           },
           {
-            "title": "Design",
-            "url": "#"
+            "title": "reviews",
+            "url": "testimonials"
           },
           {
-            "title": "Follow",
-            "url": "#"
+            "title": "contact",
+            "url": "contact"
           },
           {
-            "title": "Award",
-            "url": "#"
+            "title": "sponsers",
+            "url": "logos"
           }
         ]
       }

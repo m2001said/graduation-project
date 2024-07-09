@@ -9,28 +9,29 @@
     "imgUrl": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1720030973/done/tower_qajd1k_robuyn.webp",
      "links": [
       {
-        "title": "التصميم",
-        "url": "#about13"
+        "title": "الرئيسية",
+        "url": "hero"
       },
       {
         "title": "من نحن",
-        "url": "#"
+        "url": "about"
       },
       {
-        "title": "المشاريع",
-        "url": "#"
+        "title": "التواصل",
+        "url": "contact"
       },
       {
-        "title": "تواصل مع الفريق",
-        "url": "#"
+        "title": "الفريق",
+        "url": "team"
       },
       {
-        "title": "التقييمات",
-        "url": "#testimonials13"
+        "title": "الخدمات",
+        "url": "services"
       }
     ]
   },
   "hero": {
+    "sectionId": "hero",
     "title": "العقارات",
     "subtitle": "اعثر على المنزل المثالي الذي تحبه..!",
     "description": "اعثر على المنزل المثالي الذي تحبه..!",
@@ -54,6 +55,7 @@
     ]
   },
   "reviews": {
+    "sectionId": "reviews",
     "title": "72k+ عملاء سعداء",
     "description": "200+ قوائم جديدة كل يوم",
     "subtitle": "موثوق به من قبل 100+ شركة حول العالم",
@@ -74,6 +76,7 @@
     ]
   },
   "services": {
+    "sectionId": "services",
     "title": "خدماتنا",
     "services": [
       {
@@ -94,6 +97,7 @@
     ]
   },
   "features": {
+    "sectionId": "features",
     "title": "مناطق عبر المدينة",
     "subtitle": "عقارات الأحياء",
     "description": "عقارات الأحياء",
@@ -131,6 +135,7 @@
     ]
   },
   "about": {
+    "sectionId": "about",
     "title": "من نحن",
     "description": " نحن فريق الخبراء للبيع والشراء من العقارات الأحياء",
     "imgUrl": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1720027426/done/e0c167ecaf94e55e76cb89c8e9ef896f_ibw9le_ggxkoi.webp",
@@ -146,6 +151,7 @@
     ]
   },
   "testimonials": {
+    "sectionId": "testimonials",
     "title": "الشهادات",
     "subtitle": "ما يقوله عملاؤنا",
     "description": "لقد وجدوا هدفهم أيضًا",
@@ -170,6 +176,7 @@
   },
 
   "projects": {
+    "sectionId": "projects",
     "title": "تحقق من جديدنا",
     "description": "أحدث العقارات المدرجة",
     "subtitle": "نحقق حلمك",
@@ -258,6 +265,7 @@
     ]
   },
   "team": {
+    "sectionId": "team",
     "title": "تحية من",
     "description": "فريقنا من الخبراء",
     "members": [
@@ -284,6 +292,7 @@
     ]
   },
   "contact": {
+    "sectionId": "contact",
     "imgUrl": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1720030973/done/tower_qajd1k_robuyn.webp",
     "title": "كن وكيلاً.",
     "description": "تواصل معنا.",
@@ -291,6 +300,7 @@
     "linkText": "https://www.google.com"
   },
   "footer": {
+    "sectionId": "footer",
     "title": "هندسة الحاسب",
     "subtitle": "227  الزقازيق",
     "description": "2024 كل الحقوق محفوظة",

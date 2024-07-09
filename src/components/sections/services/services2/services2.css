@@ -16,7 +16,7 @@
 }
 .service:hover {
   background: transparent;
-  border-color: var(--website-2-color-4);
+  background: linear-gradient(to bottom, var(--website-2-color-3), var(--website-2-color-2));
   cursor: default;
 }
 .service__head {

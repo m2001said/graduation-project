@@ -30,7 +30,7 @@ const Navbar9 = ({ template }) => {
         <ul className={`flex-col md:flex-row md:flex space-x-6 text-[var(--website-9-color-6)] text-lg font-medium ${isOpen ? 'block' : 'hidden'} md:block`}>
           {navbar.links.map((link, index) => (
             <li key={index}>
-              <a href={link.url} className="block py-2 md:py-0 hover:text-[var(--website-9-color-3)] transition-colors duration-300">
+              <a href={`#${link.url}`} className="block py-2 md:py-0 hover:text-[var(--website-9-color-3)] transition-colors duration-300">
                 {link.title.charAt(0).toUpperCase() + link.title.slice(1)}
               </a>
             </li>

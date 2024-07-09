@@ -9,7 +9,7 @@ const About9 = ({ template }) => {
      
       
       {/* Content */}
-      <div className="container mx-auto lg:flex px-3 mb-12   pt-20 about-9 relative">
+      <div id={about.sectionId} className="container mx-auto lg:flex px-3 mb-12   pt-20 about-9 relative">
         <div className="lg:w-2/5 " >
           <div className="bg-[var(--website-9-color-1)] shadow-2xl px-4 py-6 rounded-3xl  items-start gap-x-3 lg:w-4/5 mt-6">
           <p className="text-[var(--website-9-color-3)] md:text-xl text-lg font-medium">{about.title}</p>

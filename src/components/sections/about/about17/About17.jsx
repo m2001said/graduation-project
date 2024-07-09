@@ -1,7 +1,7 @@
 import React from "react";
 
 const About17 = ({ template }) => {
-  const { title, subtitle, imgs, buttonText, buttonIcon } = template.about;
+  const { title, subtitle, imgs,sectionId } = template.about;
   const bgStyle = {
     backgroundImage: `url(${imgs[0]})`,
     backgroundPosition: "center",
@@ -14,7 +14,7 @@ const About17 = ({ template }) => {
 
   return (
     <>
-      <div style={bgStyle} className="py-56">
+      <div id={sectionId} style={bgStyle} className="py-56">
         <div className="container17 min-h-[500px] relative z-1">
           <h1
             className="pt-20 tracking-wider text-4xl font-semibold 
@@ -23,20 +23,10 @@ const About17 = ({ template }) => {
             {title}
           </h1>
           {/* card section */}
-          <div className="bg-gradient-to-t from-[var(--website-17-color-6)] to-[var(--website-17-color-4)] text-[var(--website-17-color-5)] p-10 my-3 h-auto overflow-hidden rounded-3xl">
+          <div className="bg-gradient-to-t from-[var(--website-17-color-4)] to-[var(--website-17-color-4)] text-[var(--website-17-color-5)] p-10 my-3 h-auto overflow-hidden rounded-3xl">
             {subtitle}
           </div>
-
-          <div className="pt-10 justify-center">
-            <button
-              className="flex justify-center items-center 
-              gap-2 bg-[var(--website-17-color-1)] text-xl
-              h-[40px] text-[var(--website-17-color-5)] px-5 py-2 hover:scale-105 duration-300"
-            >
-              <img src={buttonIcon} className="icon-17" alt="" />
-              {buttonText}
-            </button>
-          </div>
+ 
         </div>
         {/* wave vector */}
         <div className="absolute top-0 right-0 w-full">

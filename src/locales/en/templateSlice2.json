@@ -9,27 +9,28 @@
     "links": [
       {
         "imgUrl": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1719963637/done/otfppm5rfnnwzupynj8u.webp",
-        "url": "hero2"
+        "url": "hero"
       },
       {
         "imgUrl": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1719963637/done/ftnddz78dytnqfnusxj8.jpg",
-        "url": "services2"
+        "url": "services"
       },
       {
         "imgUrl": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1719963637/done/yyfzpdydh2bsorlrmvdc.webp",
-        "url": "projects2"
+        "url": "projects"
       },
       {
         "imgUrl": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1719963636/done/xka4pmu6tteq7gk2ul33.webp",
-        "url": "testimonials2"
+        "url": "testimonials"
       },
       {
         "imgUrl": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1719963637/done/fxeg0yobcvboxerrhxdy.webp",
-        "url": "contactUs2"
+        "url": "contact"
       }
     ]
   },
   "hero": {
+    "sectionId": "hero",
     "title": "Get to know",
     "subtitle": "Hero",
     "description": "I create stunning and responsive websites to help businesses grow online. With a passion for design and coding, I ensure each project is unique and tailored to client needs.",
@@ -50,9 +51,12 @@
         "title": "Projects",
         "description": "80+ completed projects"
       }
-    ]
+    ],
+    "buttonText": "lets talk",
+    "linkText": "contact"
   },
   "testimonials": {
+    "sectionId": "testimonials",
     "title": "What the People Thinks About Us",
     "subtitle": "Clients Testimonials",
     "testimonials": [
@@ -79,6 +83,7 @@
     ]
   },
   "projects": {
+    "sectionId": "projects",
     "title": "My Recent Work",
     "description": "projects",
     "projects": [
@@ -121,6 +126,7 @@
     ]
   },
   "contact": {
+    "sectionId": "contact",
     "title": "Get in Touch",
     "description": "Reach out to us",
     "contacts": [
@@ -150,6 +156,7 @@
     "linkText": "send message"
   },
   "services": {
+    "sectionId": "services",
     "title": "What We Offer",
     "description": "Our Services",
     "services": [
@@ -171,24 +178,25 @@
     ]
   },
   "footer": {
+    "sectionId": "footer",
     "title": "CSE",
     "description": "Stay connected with us. All rights reserved.",
     "footerSections": [
       {
         "title": "Home",
-        "url": "#hero2"
+        "url": "hero"
       },
       {
         "title": "Services",
-        "url": "#services2"
+        "url": "services"
       },
       {
         "title": "Testimonials",
-        "url": "#testimonials2"
+        "url": "testimonials"
       },
       {
         "title": "Contact",
-        "url": "#contactUs2"
+        "url": "contact"
       }
     ],
     "medias": [

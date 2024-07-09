@@ -9,7 +9,7 @@ const ContactUs2 = ({ template }) => {
   const contact = template ? template.contact : ownContact;
 
   return (
-    <div id="contactUs2">
+    <div id={contact.sectionId} className="pt-24 pb-9 section2 contact2">
       <h5 className="text-light2">{contact.subtitle}</h5>
       <h2>{contact.title}</h2>
 

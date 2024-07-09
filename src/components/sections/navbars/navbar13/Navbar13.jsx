@@ -18,7 +18,7 @@ const Navbar13 = ({ template }) => {
     <nav className=" z-50 bg-[var(--website-13-color-2)] nav13">
       <div className="container mx-auto lg:flex flex-wrap items-center justify-between px-3 border-b border-[var(--website-13-color-22)]">
         <div className="lg:w-1/5  flex justify-between lg:static lg:justify-start h-[10vh] items-center">
-          <a href="/" className="font-medium tracking-wider transition-colors cursor-pointer">
+          <a href={"/"} className="font-medium tracking-wider transition-colors cursor-pointer">
             <button className="flex items-center gap-x-4 text-[var(--website-13-color-3)]">
               <img src={navbar.imgUrl} alt={navbar.title} className="w-8 h-8 sm:w-10 sm:h-10" style={{ filter: "invert(100%)" }} />
               <p className="text-2xl primary-font text-[var(--website-13-color-3)] logo-text">{navbar.title}</p>
@@ -48,7 +48,7 @@ const Navbar13 = ({ template }) => {
           >
             {navbar.links.map((link, index) => (
               <li key={index} className="py-2 flex text-[var(--website-13-color-3)] font-medium items-center leading-snug hover:opacity-40">
-                <a href={link.url} className="menu-link">
+                <a href={`#${link.url}`} className="menu-link">
                   {link.title}
                 </a>
               </li>

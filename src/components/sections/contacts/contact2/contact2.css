@@ -85,7 +85,7 @@ form {
   border: 2px solid var(--website-2-color-4);
   resize: none;
   color: var(--website-2-color-5);
-  background: transparent;
+  background: linear-gradient(to bottom, var(--website-2-color-1), var(--website-2-color-2));
 }
 
 @media screen and (max-width: 1024px) {

@@ -35,7 +35,7 @@ const Navbar17 = ({ template }) => {
             {navbar.links.map(({ index, title, url }) => (
               <li key={index}>
                 <a
-                  href={url}
+                  href={`#${url}`}
                   className="text-[var(--website-17-color-4)] hover:text-[var(--website-17-color-1)] text-xl font-semibold"
                 >
                   {title}
@@ -56,7 +56,7 @@ const Navbar17 = ({ template }) => {
                 <ul>
                   {navbar.dropDown.map(({ index, title, url }) => (
                     <li key={index}>
-                      <a href={url} className="text-xl inline-block w-full rounded-md p-2 hover:bg-[var(--website-17-color-1)]">
+                      <a href={`#${url}`} className="text-xl inline-block w-full rounded-md p-2 hover:bg-[var(--website-17-color-1)]">
                         {title}
                       </a>
                     </li>

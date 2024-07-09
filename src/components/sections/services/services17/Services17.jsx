@@ -16,7 +16,7 @@ const Services17 = ({ template }) => {
   };
 
   return (
-    <div
+    <div id={services.sectionId}
       className="py-16 md:py-28 bg-gradient-to-b from-[var(--website-17-color-4)] to-[var(--website-17-color-6)]  "
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
