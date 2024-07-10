@@ -32,7 +32,7 @@
   },
   "hero": {
     "sectionId": "hero",
-    "imgUrl": "https://res.cloudinary.com/duc04fwdb/image/upload/v1708017251/jammal_photos/z8h6g9lv2sxmywvygcts.png",
+    "imgUrl": "https://res.cloudinary.com/duc04fwdb/image/upload/v1720473357/jammal_photos/mza9wlkzc87leq6ujg8g.png",
     "text": "HELLO MY NAME IS",
     "name": "ZOE MILLER",
     "subtitle": "I AM Web Developer",
@@ -40,15 +40,15 @@
     "medias": [
       {
         "icon": "https://res.cloudinary.com/duc04fwdb/image/upload/v1708017487/jammal_photos/dov4re8wizaegdj3jiza.svg",
-        "url": "https://example.com"
+        "url": "https://x.com/?lang-en="
       },
       {
         "icon": "https://res.cloudinary.com/duc04fwdb/image/upload/v1708017404/jammal_photos/ihzghh1idyxmj1u4vk9r.svg",
-        "url": "https://example.com"
+        "url": "https://play.google.com/store/apps/details?id=xyz.be.customer&hl=en_US&pli=1"
       },
       {
         "icon": "https://res.cloudinary.com/duc04fwdb/image/upload/v1708017568/jammal_photos/hpyyah3zyuwxvydg7dnw.png",
-        "url": "https://example.com"
+        "url": "https://www.dribble.com/"
       }
     ],
     "title": "12 + YEARS OF EXPERIENCE",
@@ -363,11 +363,11 @@
       },
       {
         "icon": "https://res.cloudinary.com/duc04fwdb/image/upload/v1708017404/jammal_photos/ihzghh1idyxmj1u4vk9r.svg",
-        "url": "https://x.com/?lang-en="
+        "url": "https://play.google.com/store/apps/details?id=xyz.be.customer&hl=en_US&pli=1"
       },
       {
         "icon": "https://res.cloudinary.com/duc04fwdb/image/upload/v1708017568/jammal_photos/hpyyah3zyuwxvydg7dnw.png",
-        "url": "https://x.com/?lang-en="
+        "url": "https://www.dribble.com/"
       }
     ]
   },

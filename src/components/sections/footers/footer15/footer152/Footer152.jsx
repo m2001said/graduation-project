@@ -8,9 +8,9 @@ const Blog15 = ({ template }) => {
   const Card = ({ date, title, imgUrl, description }) => {
     return (
       <div className="hoverBtn">
-        <div className="blog15_4 rounded-[20px] py-[30px] px-[35px] relative overflow-hidden">
+        <div className="blog15_4 rounded-[20px] py-[30px] px-[30px] relative overflow-hidden">
           <p className="text-[13px] font-medium blog15_7">{date}</p>
-          <p className="text-2xl blog15_6 font-bold hover:text-[#29a587] my-[15px]">{title}</p>
+          <p className="text-2xl blog15_6  hover:text-[#29a587] my-[15px]">{title}</p>
           <p className="blog15_5 opacity-80 leading-[1.7rem]">{description} </p>
           <span className="pt-[10px]">
             <a href="#" className="font-bold flex items-center gap-x-2 no-underline text-[var(--website-15-color-5)] hover:text-[var(--website-15-color-2)]">

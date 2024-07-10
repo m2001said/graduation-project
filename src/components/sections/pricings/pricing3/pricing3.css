@@ -6,6 +6,7 @@
   gap: 3rem;
   position: relative;
   background: var(--website-3-color-2);
+  flex-wrap: wrap;
 }
 
 .plans-header3 {
@@ -26,7 +27,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 3rem;
+  gap: 2rem;
+  flex-wrap: wrap;
 }
 
 .plans-blur-1 {
@@ -56,20 +58,20 @@
 
 .plan3:nth-child(2) {
   background: var(--website-3-color-3);
-  transform: scale(1.1);
+  /* transform: scale(1.1); */
 }
 
-.plan3> :nth-child(2) {
+.plan3 > :nth-child(2) {
   font-size: 1.5rem;
   font-weight: bold;
 }
 
-.plan3> :nth-child(3) {
+.plan3 > :nth-child(3) {
   font-size: 1.5rem;
   font-weight: bold;
 }
 
-.plan3> :nth-child(5) {
+.plan3 > :nth-child(5) {
   font-size: 0.8rem;
 }
 
@@ -85,11 +87,11 @@
   gap: 1rem;
 }
 
-.feature3>img {
+.feature3 > img {
   width: 1rem;
 }
 
-.plans3> :nth-child(2)>svg {
+.plans3 > :nth-child(2) > svg {
   fill: var(--website-3-color-5);
 }
 
@@ -97,7 +99,7 @@
   color: var(--website-3-color-6);
 }
 
-.plans3> :nth-child(2)>button {
+.plans3 > :nth-child(2) > button {
   color: var(--website-3-color-1);
 }
 
@@ -116,7 +118,7 @@
     flex-direction: column;
   }
 
-  .plans3> :nth-child(2) {
+  .plans3 > :nth-child(2) {
     transform: none;
   }
 
