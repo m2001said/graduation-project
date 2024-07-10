@@ -23,13 +23,13 @@ const About8 = ({ template }) => {
   }, []);
 
   return (
-    <section className="" id="about">
+    <section className="" id={about.sectionId}>
       <div className="container mx-auto">
         <div className="flex flex-col gap-y-10 lg:flex-row lg:items-center lg:gap-x-20 lg:gap-y-0 h-screen">
           {/* image */}
           <div className="flex-1   h-[640px]  bg-top">
             <div className="">
-              <img src={about.imgUrl} alt="About Image" />
+              <img src={about.imgUrl} alt="About Image" className="about8-image" />
             </div>
           </div>
           {/* text */}

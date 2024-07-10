@@ -7,12 +7,12 @@ import "swiper/css/pagination";
 import { useSelector } from "react-redux";
 
 const Testimonials13 = ({ template }) => {
-  const ownTestimonials= useSelector((state) => state.ownTemplate.testimonials);
+  const ownTestimonials = useSelector((state) => state.ownTemplate.testimonials);
   const testimonials = template ? template.testimonials : ownTestimonials;
   const Card = ({ testimonial }) => {
-    const { name, location, imgUrl, opinion } = testimonial;
+    const { name, location, imgUrl, opinion, sectionId } = testimonial;
     return (
-      <div className="bg-[var(--website-13-color-5)]  text-[var(--website-13-color-1)]  p-6 rounded-lg shadow-lg transition-all duration-300">
+      <div id={sectionId} className="bg-[var(--website-13-color-5)]  text-[var(--website-13-color-1)]  p-6 rounded-lg shadow-lg transition-all duration-300">
         <img
           src={imgUrl}
           alt={name}

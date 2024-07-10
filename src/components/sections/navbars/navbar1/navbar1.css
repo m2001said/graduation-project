@@ -114,6 +114,7 @@ header.template1 nav ul {
   header.template1 nav ul.show {
     display: flex;
     width: 170px;
+    z-index: 10;
   }
   header.template1 nav ul.show li a {
     text-transform: capitalize;
@@ -140,7 +141,7 @@ header.template1 nav ul li a {
   transition: 0.2s;
   text-transform: capitalize;
   position: relative;
-  z-index: 2;
+  z-index: 10;
 }
 header.template1 nav ul li a:hover {
   background-color: var(--website-1-color-3);

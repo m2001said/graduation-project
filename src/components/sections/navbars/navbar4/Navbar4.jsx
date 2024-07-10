@@ -25,9 +25,9 @@ const Navbar4 = ({ template }) => {
         <img src={navbar.imgUrl} alt="logo" width={100} />
         <div className="flexCenter4 h-menu4" style={getMenuStyles(menuOpened)}>
           {navbar.links.map((link, index) => (
-            <Link to={link.url} key={index} onClick={handleLinkClick}>
+            <a key={index} href={`#${link.url}`} onClick={() => setMenuOpened(false)}>
               {link.title}
-            </Link>
+            </a>
           ))}
           <button className="button4">
             <a href={navbar.email}>{navbar.buttonText}</a>

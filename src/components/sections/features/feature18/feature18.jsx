@@ -9,7 +9,10 @@ const Features = ({template}) => {
  
 
   return (
-    <div className="dark:bg-[--website-18-color-5] dark:text-white bg-[--website-18-color-2] sm:min-h-[600px] sm:grid sm:place-items-center duration-300">
+    <div
+      className="dark:bg-[#111111] dark:text-white bg-[--website-18-color-2] sm:min-h-[600px] sm:grid sm:place-items-center duration-300"
+      id={feature.sectionId}
+    >
       <div className="container18">
         <div className="grid grid-cols-1 sm:grid-cols-2 place-items-center">
           <div>

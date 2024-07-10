@@ -4,7 +4,7 @@ const Teams9 = ({ template }) => {
   const ownTeam= useSelector((state) => state.ownTemplate.team);
   const team = template ? template.team : ownTeam;
     return (
-    <main className="container mx-auto px-3 pt-8 pb-12 team9">
+    <main id={team.sectionId} className="container mx-auto px-3 pt-8 pb-12 team9">
       <p className="text-[var(--website-9-color-3)] uppercase md:text-xl text-lg text-center">{team.title}</p>
       <h1 className="lg:text-4xl text-3xl font-medium capitalize pt-3 pb-12 text-center">{team.description}</h1>
       <section className="lg:flex items-center grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 lg:gap-12  gap-8 justify-center">

@@ -39,9 +39,9 @@ const Hero15 = ({ template }) => {
         <section className="xl:w-1/2">
           <div className="w-full sm:h-[680px] h-96 relative xl:block flex justify-center xl:mt-0 mt-16 ">
             <img
-              src={hero.imgUrl[0]}
+              src={hero.imgUrl}
               alt=""
-              className={`absolute z-10 lg:w-auto  sm:w-[200px] lg:h-[500px] object-cover ml-[60px] w-[350px]  ${
+              className={`absolute z-10 lg:w-auto  sm:w-[150px] lg:h-[450px] object-cover ml-[60px] w-[300px]  left-0 ml-[7px] ${
                 language === "ar" ? " left-0 ml-[45px]" : "right-0 mr-[45px]"
               }`}
             />

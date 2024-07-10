@@ -11,7 +11,7 @@ const Navbar2 = ({ template }) => {
       {navbar.links.map((item) => (
         <a
           key={item.url}
-          href={item.url}
+          href={`#${item.url}`}
           onClick={() => setActiveNav(item.url)}
           className={activeNav === item.url ? "active" : ""}
         >

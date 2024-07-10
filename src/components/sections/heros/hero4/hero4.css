@@ -1,5 +1,4 @@
 .hero-wrapper4 {
-  color: var(--white);
   position: relative;
   z-index: 1;
   padding-bottom: 2rem;
@@ -8,7 +7,8 @@
 .hero-container4 {
   justify-content: space-around;
   align-items: flex-end;
-  background-color: var(--website-4-color-1);
+  /* background-color: var(--website-4-color-2); */
+  color: var(--website-4-color-1);
 }
 
 .hero-left4 {
@@ -45,10 +45,10 @@
 }
 .search-bar4 > input {
   border: solid;
-  border-color: var(--website-1-color-1);
+  border-color: var(--website-4-color-2);
   outline: none;
   padding: 4px;
-  background-color: var(--website-1-color-1);
+  background-color: var(--website-4-color-2);
   color: var(--website-4-color-1);
 }
 .stats4 {

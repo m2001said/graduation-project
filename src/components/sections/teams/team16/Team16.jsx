@@ -3,10 +3,10 @@ import "./team16.css";
 import { useSelector } from "react-redux";
 
 const Team16 = ({ template }) => {
-  const ownTeam= useSelector((state) => state.ownTemplate.team);
+  const ownTeam = useSelector((state) => state.ownTemplate.team);
   const team = template ? template.team : ownTeam;
   return (
-    <section className="team16 section16" id="team">
+    <section className="team16 section16" id={team.sectionId}>
       <h2 className="section__title16" data-title="Chefs">
         {team.title}
       </h2>

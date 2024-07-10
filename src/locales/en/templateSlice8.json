@@ -9,23 +9,23 @@
     "links": [
       {
         "title": "Home",
-        "url": "#home"
+        "url": "hero"
       },
       {
         "title": "About",
-        "url": "#about"
+        "url": "about"
       },
       {
         "title": "Services",
-        "url": "#services"
+        "url": "services"
       },
       {
         "title": "Work",
-        "url": "#work"
+        "url": "projects"
       },
       {
         "title": "Contact",
-        "url": "#contact"
+        "url": "contact"
       }
     ]
   },
@@ -34,6 +34,7 @@
     "buttonText": "Work with me"
   },
   "hero": {
+    "sectionId": "hero",
     "text": "Abdo",
     "title": "HOSNI",
     "subtitle": "I Am a ",
@@ -45,6 +46,7 @@
     "icons": ["🚀", "💻", "🎨"]
   },
   "about": {
+    "sectionId": "about",
     "title": "About",
     "subtitle": "I'm a Freelance Frontend Developer with over 5 years of experience.",
     "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora accusamus porro tempore quibusdam ab nesciunt voluptatum magnam doloribus corrupti molestiae.",
@@ -57,6 +59,7 @@
     "imgUrl": "https://res.cloudinary.com/duc04fwdb/image/upload/v1708042892/jammal_photos/ui2jxaq52dfjtffndkjq.png"
   },
   "services": {
+    "sectionId": "services",
     "title": "WHAT I DO.",
     "subtitle": "I'm a Freelance Frontend Developer with over 5 years of experience.",
     "buttonText": "see my work ",
@@ -85,6 +88,7 @@
     "imgUrl": "https://res.cloudinary.com/duc04fwdb/image/upload/v1708031587/jammal_photos/lidxpp6o8dtr95ajdv5t.png"
   },
   "projects": {
+    "sectionId": "projects",
     "projects": [
       {
         "imgUrl": "\thttps://res.cloudinary.com/duc04fwdb/image/upload/v1708272971/jammal_photos/w5rnjea8huwe5pgrazeg.png",
@@ -107,11 +111,19 @@
     "buttonText": "View all projects"
   },
   "contact": {
+    "sectionId": "contact",
     "title": "  Let's work  together!",
     "subtitle": "Get in touch",
     "buttonText": "Send message"
   },
   "colors": {
-    "templateColors": ["#000000", "#212ea0", "#000f984d", "#000000", "#000000", "#212ea0"]
+    "templateColors": [
+      "#000000",
+      "#ffffff",
+      "linear-gradient(92.23deg, #ff56f6 21.43%, #b936ee 50.63%, #3bace2 100%, #406aff 117.04%)",
+      "linear-gradient(92.23deg, #406aff 21.43%, #3bace2 50.63%, #b936ee 100%, #ff56f6 117.04%)",
+      "#3bace2",
+      "#ff56f682"
+    ]
   }
 }

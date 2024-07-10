@@ -6,7 +6,7 @@ const Choose16 = ({ template }) => {
   const Choose = template.Choose;
 
   return (
-    <section className="choose16 section16">
+    <section className="choose16 section16" id={Choose.sectionId}>
       <div className="choose__grid16 container16 grid16">
         <div className="choose__content16">
           <h2 className="section__title16" data-title="Why Choose Us">

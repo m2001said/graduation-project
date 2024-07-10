@@ -9,7 +9,7 @@ const Project8 = ({ template }) => {
   }, []);
 
   return (
-    <section className="section8" id="work">
+    <section className="section8" id={projects.sectionId}>
       <div className="container mx-auto">
         <div>
           <h2 className="h2 leading-tight text-accent">{projects.title}</h2>

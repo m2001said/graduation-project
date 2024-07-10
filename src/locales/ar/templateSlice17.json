@@ -6,39 +6,40 @@
     "imgUrl": "https://res.cloudinary.com/dvp3nyulf/image/upload/v1709147870/under-work.jpg"
   },
   "navbar": {
-    "title": "الشعار",
-    "subtitle": "العنوان الفرعي",
+    "imgUrl": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1720037236/done/fast-delivery-fast-svgrepo-com_fr05yy_2_lxmgwl.webp",
+    "title": "العنوان ",
     "description": "القائمة المنسدلة",
     "links": [
       {
         "title": "الرئيسية",
-        "url": "/#"
+        "url": "hero"
       },
       {
         "title": "من نحن",
-        "url": "/#"
+        "url": "about"
       },
       {
-        "title": "اتصل بنا",
-        "url": "/#"
+        "title": "مميزات",
+        "url": "features"
       }
     ],
     "dropDown": [
       {
         "title": "الخضروات",
-        "url": "/#"
+        "url": "features"
       },
       {
-        "title": "الفواكه",
-        "url": "/#"
+        "title": "اتصل بنا",
+        "url": "footer"
       },
       {
-        "title": "الحبوب",
-        "url": "/#"
+        "title": "خدماتنا",
+        "url": "services"
       }
     ]
   },
   "hero": {
+    "sectionId": "hero",
     "title": "طاير",
     "subtitle": "خدمة توصيل  و نظام وجبات صحية طازجة",
     "description": "اكتشف أطباقًا لذيذة ستلبي رغباتك من 132.95 في الأسبوع",
@@ -46,6 +47,7 @@
     "imgUrl": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1720036255/done/heroBg_vahqtb_czftpx.webp"
   },
   "services": {
+    "sectionId": "services",
     "title": "لماذا تختارنا",
     "services": [
       {
@@ -67,6 +69,7 @@
     ]
   },
   "about": {
+    "sectionId": "about",
     "title": "من نحن",
     "subtitle": " نحن نستخدم فقط المكونات الطازجة والعالية الجودة لإعداد وجباتنا. يتم الحصول على منتجاتنا محليًا وتكون عضوية كلما أمكن ذلك، مما يضمن أن كل لقمة مليئة بالعناصر الغذائية والنكهة تم تصميم قائمتنا مع الأخذ في الاعتبار الصحة. من الوجبات المتوازنة إلى الخيارات النباتية والخالية من الغلوتين، نلبي مجموعة متنوعة من الاحتياجات والتفضيلات الغذائية. كل وجبة مصممة لتوفير التوازن المثالي بين البروتينات والكربوهيدرات والدهون الصحية، مما يساعدك على الحفاظ على نمط حياة صحي بكل سهولة",
     "imgs": [
@@ -77,6 +80,7 @@
     "buttonIcon": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1720039330/done/icons8-person-64_ppr9e8_e6w8z3.webp"
   },
   "features": {
+    "sectionId": "features",
     "title": "طعم مختلف وصحي.",
     "subtitle": "نص افتراضي يستخدم في صناعة الطباعة والتنضيد. النص البديل هنا لتعريف المشروع بشكل موجز.",
     "description": "نحن نعلم أن الوقت هو أكبر قيمة في العالم الحديث. خدمة توصيل وجبات الطعام الصحية لدينا هي الحل لأولئك الذين يرغبون في تناول الطعام الصحي وتوفير الوقت والمال.",
@@ -89,6 +93,7 @@
     ]
   },
   "footer": {
+    "sectionId": "footer",
     "title": "اتصل بنا",
     "description": "حقوق النشر © 2024 سولغودفود. جميع الحقوق محفوظة.",
     "contacts": [

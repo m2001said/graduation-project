@@ -9,7 +9,7 @@ const About13 = ({ template }) => {
   const isRtl = i18n.dir() === "rtl";
 
   return (
-    <div id="about13" className="relative overflow-hidden bg-gradient-to-t from-[var(--website-13-color-5)] to-[var(--website-13-color-1)] lg:py-20 py-8">
+    <div id={about.sectionId} className="relative overflow-hidden bg-gradient-to-t from-[var(--website-13-color-5)] to-[var(--website-13-color-1)] lg:py-20 py-8">
       <div className="h-[50px] bg-[var(--website-13-color-1)] absolute -bottom-7 -left-[30px]-right-[30px] py-3 px-[30px] rounded-[50%]"></div>
 
       <div className="xl:w-[1200px] mx-auto px-3 pt-8">
@@ -28,7 +28,7 @@ const About13 = ({ template }) => {
                 {about.buttons.map((buttons, index) => (
                   <a
                     key={index}
-                    href={buttons.url}
+                    href={`#${buttons.url}`}
                     className={`rounded-full flex-row px-4 py-2 flex items-center text-sm bg-[var(--website-13-color-4)] gap-2 transition ease-out duration-300 transform hover:scale-110 ${
                       index !== about.buttons.length - 1 ? "mr-2 mb-2" : "mb-2"
                     }`}

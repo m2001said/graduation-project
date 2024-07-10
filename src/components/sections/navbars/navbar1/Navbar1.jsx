@@ -1,7 +1,6 @@
 import React, { useState, useRef, useEffect } from "react";
 import "./navbar1.css";
 import { useSelector } from "react-redux";
-import { Link } from "react-router-dom";
 
 const Navbar1 = ({ template }) => {
   const ownNavbar = useSelector((state) => state.ownTemplate.navbar);
@@ -58,11 +57,10 @@ const Navbar1 = ({ template }) => {
           <ul className={isSmallScreen && openMenu ? "show" : ""}>
             {/* Map over navbar.links to dynamically generate links */}
             {navbar.links.map((link, index) => (
-              <li key={index}>
-                <Link to={link.url} onClick={() => setOpenMenu(false)}>
+              <li>
+                <a key={index} href={`#${link.url}`} onClick={() => setOpenMenu(false)}>
                   {link.title}
-                </Link>
-
+                </a>
               </li>
             ))}
           </ul>

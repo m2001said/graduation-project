@@ -17,7 +17,7 @@ const Contact9 = ({ template }) => {
   ) : null;
 
   return (
-    <main className="container mx-auto mt-32 mb-24 px-3 pb-6 pt-8">
+    <main id={contact.sectionId} className="container mx-auto mt-32 mb-24 px-3 pb-6 pt-8">
       <div className="bg-gradient-to-b from-[var(--website-9-color-6)] to-[var(--website-9-color-1)] rounded-3xl flex items-center lg:flex-row flex-col-reverse lg:pl-16 lg:h-60 relative">
         {renderImage}
         <div className="flex items-center w-full lg:flex-row flex-col lg:pt-0 pt-12">

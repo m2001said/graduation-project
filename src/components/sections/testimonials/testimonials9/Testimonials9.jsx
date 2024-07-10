@@ -34,7 +34,7 @@ const Testimonials9 = ({ template }) => {
   }
 
   return (
-    <main className=" mx-auto px-4 py-12 flex flex-col lg:flex-row justify-between items-center space-y-8 lg:space-y-0 lg:space-x-8 bg-gradient-to-r from-[var(--website-9-color-1)] to-[var(--website-9-color-3)] testimonial-9">
+    <main id={testimonialsData.id} className=" mx-auto px-4 py-12 flex flex-col lg:flex-row justify-between items-center space-y-8 lg:space-y-0 lg:space-x-8 bg-gradient-to-r from-[var(--website-9-color-1)] to-[var(--website-9-color-3)] testimonial-9">
       <div className="container lg:w-1/3 flex flex-col items-start space-y-4">
         <p className="text-[var(--website-9-color-4)] uppercase text-lg lg:text-xl">
           {testimonialsData.title}
