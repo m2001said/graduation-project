@@ -3,7 +3,6 @@ import { useDispatch, useSelector } from "react-redux";
 import { registerUserAsync } from "../../../features/auth/authSlice";
 import { validate } from "./validationUtils";
 import Verified from "./Verified";
-import { useEffect } from "react";
 import { useTranslation } from "react-i18next";
 
 const SignUpForm = ({ toggleForm }) => {
@@ -18,28 +17,28 @@ const SignUpForm = ({ toggleForm }) => {
   const { status } = useSelector((state) => state.auth);
 
   const handleSignUp = async () => {
-    const validationError = validate(name, email, password);
-    if (validationError) {
-      setErrorMessage(validationError);
-      return;
-    }
-
     try {
-      await dispatch(registerUserAsync({ name, email, password })).unwrap();
-      setCreateSuccess(true);
+      const validationError = validate("createAccount", name, email, password);
+      if (validationError) {
+        setErrorMessage(validationError);
+        setCreateSuccess(false); // Ensure createSuccess is false on validation error
+        return;
+      }
+      setErrorMessage(""); // Clear any previous error messages
+
+      const resultAction = await dispatch(registerUserAsync({ name, email, password }));
+
+      if (registerUserAsync.fulfilled.match(resultAction)) {
+        setCreateSuccess(true); // Set createSuccess only on successful registration
+      } else {
+        setErrorMessage("Account creation failed."); // Handle registration error
+        setCreateSuccess(false); // Ensure createSuccess is false on error
+      }
     } catch (error) {
-      setErrorMessage(error.message || "Registration failed. Please try again.");
+      setErrorMessage("Account creation failed."); // Handle any unexpected error
+      setCreateSuccess(false); // Ensure createSuccess is false on error
     }
   };
-
-  // Clear form fields when createSuccess changes
-  useEffect(() => {
-    if (createSuccess) {
-      setName("");
-      setEmail("");
-      setPassword("");
-    }
-  }, [createSuccess]);
 
   return (
     <>
@@ -50,15 +49,13 @@ const SignUpForm = ({ toggleForm }) => {
           <h1>{t("USER.CREATE_ACCOUNT")}</h1>
           <div className="modal-form">
             <label htmlFor="newName">{t("USER.NAME")}</label>
-            <input type="text" id="newName" value={name} onChange={(e) => setName(e.target.value)} />
+            <input type="text" id="newName" value={name} onChange={(e) => setName(e.target.value)} aria-invalid={!!errorMessage} />
             <label htmlFor="newEmail">{t("USER.EMAIL")}</label>
-            <input type="email" id="newEmail" value={email} onChange={(e) => setEmail(e.target.value)} />
+            <input type="email" id="newEmail" value={email} onChange={(e) => setEmail(e.target.value)} aria-invalid={!!errorMessage} />
             <label htmlFor="newPassword">{t("USER.PASSWORD")}</label>
-            <input type="password" id="newPassword" value={password} onChange={(e) => setPassword(e.target.value)} />
-            <div className="message-error"></div>
+            <input type="password" id="newPassword" value={password} onChange={(e) => setPassword(e.target.value)} aria-invalid={!!errorMessage} />
             {errorMessage && <p className="message-error">{errorMessage}</p>}
-
-            <button className={`form-button`} onClick={handleSignUp} disabled={status === "loading"}>
+            <button className="form-button" onClick={handleSignUp} disabled={status === "loading"}>
               {status === "loading" && (
                 <svg
                   aria-hidden="true"
@@ -81,8 +78,8 @@ const SignUpForm = ({ toggleForm }) => {
               {t("USER.CREATE_ACCOUNT")}
             </button>
             <div className="sub-button">
-              <span> {t("USER.HAVE_ACCOUNT")} </span>
-              <button onClick={toggleForm}> {t("USER.LOGIN")}</button>
+              <span>{t("USER.HAVE_ACCOUNT")}</span>
+              <button onClick={toggleForm}>{t("USER.LOGIN")}</button>
             </div>
           </div>
         </>

@@ -98,16 +98,16 @@ const ContactForm = () => {
                 required
               />
 
-              <label htmlFor="message" className="block text-lg mb-2 font-bold text-gray-500">
-                {t("CONTACT.NAME")}
-              </label>
-              <textarea
-                id="message"
-                value={message}
-                onChange={(e) => setMessage(e.target.value)}
-                className="text-black shadow-md border border-gray-200 rounded py-2 px-4 block w-full mb-2 h-32 resize-none focus:outline-none focus:bg-white focus:border-purple-500"
-                required
-              ></textarea>
+            <label htmlFor="message" className="block text-lg mb-2 font-bold text-gray-500">
+              {t("CONTACT.MESSAGE")}
+            </label>
+            <textarea
+              id="message"
+              value={message}
+              onChange={(e) => setMessage(e.target.value)}
+              className="text-black shadow-md border border-gray-200 rounded py-2 px-4 block w-full mb-2 h-32 resize-none focus:outline-none focus:bg-white focus:border-purple-500"
+              required
+            ></textarea>
 
               <LoadingButton
                 loading={isLoading}
