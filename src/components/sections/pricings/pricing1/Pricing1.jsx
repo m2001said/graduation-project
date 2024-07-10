@@ -5,12 +5,14 @@ import { useSelector } from "react-redux";
 
 
 const Pricing1 = ({ template }) => {
+
   const ownPricing = useSelector((state) => state.ownTemplate.pricing);
   const pricing = template ? template.pricing : ownPricing;
   const { i18n } = useTranslation();
   const language = i18n.language;
+
   return (
-    <div className="pricing1 design-1">
+    <div className="pricing1 design-1" id={pricing.sectionId}>
       <div className="pricing1-head">
         <h1>{template.pricing.title}</h1>
         <p>{template.pricing.description}</p>

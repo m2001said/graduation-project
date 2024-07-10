@@ -3,7 +3,7 @@ import "./contact12.css";
 import { useSelector } from "react-redux";
 
 const Contact12 = ({ template }) => {
-  const ownContact= useSelector((state) => state.ownTemplate.contact);
+  const ownContact = useSelector((state) => state.ownTemplate.contact);
   const contact = template ? template.contact : ownContact;
   const [result, setResult] = React.useState("");
 
@@ -32,7 +32,7 @@ const Contact12 = ({ template }) => {
   };
 
   return (
-    <div className="contact12 container12">
+    <div className="contact12 container12 " id={contact.sectionId}>
       {/* ------------------------Contact Left  */}
       <div className="contact-col12">
         <h3>

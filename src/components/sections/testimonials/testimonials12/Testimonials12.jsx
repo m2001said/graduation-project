@@ -5,9 +5,9 @@ var nextIcon = "https://res.cloudinary.com/di8kjrflu/image/upload/v1720131505/ne
 var backIcon = "https://res.cloudinary.com/di8kjrflu/image/upload/v1720131485/back-icon_mi8ovh.png";
 
 const Testimonials12 = ({ template }) => {
-  const ownTestimonials= useSelector((state) => state.ownTemplate.testimonials);
+  const ownTestimonials = useSelector((state) => state.ownTemplate.testimonials);
   const testimonials = template ? template.testimonials : ownTestimonials;
-    const slider = useRef();
+  const slider = useRef();
   let tx = 0;
   const slideForward = () => {
     if (tx > -50) {
@@ -23,7 +23,7 @@ const Testimonials12 = ({ template }) => {
   };
 
   return (
-    <div className="testimonials12">
+    <div className="testimonials12" id={testimonials.sectionId}>
       <img src={nextIcon} alt="testimonials" className="next-btn12" onClick={slideForward} />
       <img src={backIcon} alt="testimonials" className="back-btn12 " onClick={slideBackward} />
       <div className="slider12">

@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import { useSelector } from "react-redux";
 
 const Contact8 = ({ template }) => {
-  const ownContact= useSelector((state) => state.ownTemplate.contact);
+  const ownContact = useSelector((state) => state.ownTemplate.contact);
   const contact = template ? template.contact : ownContact;
 
   useEffect(() => {
@@ -11,7 +11,7 @@ const Contact8 = ({ template }) => {
   }, []);
 
   return (
-    <section className="py-16 lg:section" id="contact">
+    <section className="py-16 lg:section" id={contact.sectionId}>
       <div className="container mx-auto">
         <div className="flex flex-col lg:flex-row">
           {/* text */}

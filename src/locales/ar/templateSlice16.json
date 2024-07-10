@@ -9,36 +9,37 @@
     "imgUrl": "https://res.cloudinary.com/duc04fwdb/image/upload/v1708464166/jammal_photos/pzfqcxfrr2cw4mvelbjd.png",
     "links": [
       {
-        "name": "الصفحة الرئيسية",
-        "url": "home"
+        "title": "الصفحة الرئيسية",
+        "url": "hero"
       },
       {
-        "name": "من نحن",
+        "title": "من نحن",
         "url": "about"
       },
       {
-        "name": "الميزات",
+        "title": "الميزات",
         "url": "features"
       },
       {
-        "name": "القائمة",
-        "url": "menu"
+        "title": "القائمة",
+        "url": "items"
       },
       {
-        "name": "المعرض",
-        "url": "gallery"
+        "title": "المعرض",
+        "url": "galary"
       },
       {
-        "name": "الطهاة",
+        "title": "الطهاة",
         "url": "team"
       },
       {
-        "name": "الشهادات",
+        "title": "الشهادات",
         "url": "testimonials"
       }
     ]
   },
   "hero": {
+    "sectionId": "hero",
     "title": "اكتشف مقهى مذهل واحصل على الطاقة",
     "subtitle": "مرحبًا بكم في كوفيرو!",
     "description": "هناك العديد من الاختلافات في النصوص المتاحة ولكن الأغلبية تعرضت لتغيير بشكل ما بواسطة الفكاهة المدخلة أو الكلمات العشوائية.",
@@ -46,6 +47,7 @@
     "linkText": "احجز طاولة"
   },
   "about": {
+    "sectionId": "about",
     "imgUrl": "https://res.cloudinary.com/duc04fwdb/image/upload/v1708549637/jammal_photos/xg3omldwwfpdgfrmhzub.jpg",
     "title": "جودة طازجة وقهوة عضوية لذيذة لك",
     "description": "هناك العديد من الاختلافات في نصوص لوريم إيبسوم المتاحة، ولكن الأغلبية تعرضت لتغيير بشكل ما بواسطة الفكاهة المدخلة أو الكلمات العشوائية التي لا تبدو حتى قريبة من الواقع.",
@@ -57,6 +59,7 @@
     "buttonText": "خبراؤنا"
   },
   "features": {
+    "sectionId": "features",
     "title": "أفضل ميزاتنا",
     "imgUrl": "https://res.cloudinary.com/duc04fwdb/image/upload/v1708479391/jammal_photos/wscmwomccmc5jdnbwidf.png",
     "features": [
@@ -83,6 +86,7 @@
     ]
   },
   "galary": {
+    "sectionId": "galary",
     "galary": [
       {
         "imgUrl": "https://res.cloudinary.com/duc04fwdb/image/upload/v1708538315/jammal_photos/vma52kyndc9kydhebbww.jpg",
@@ -111,6 +115,7 @@
     ]
   },
   "items": {
+    "sectionId": "items",
     "items": [
       {
         "imgUrl": "https://res.cloudinary.com/duc04fwdb/image/upload/v1708539082/jammal_photos/fk4qk2x6enbuflmobk3f.jpg",
@@ -163,6 +168,7 @@
     ]
   },
   "Choose": {
+    "sectionId": "choose",
     "title": "كوفيرو أكثر من مقهى مفضل لذيذ",
     "description": "هناك العديد من الاختلافات في نصوص لوريم إيبسوم المتاحة ولكن الأغلبية تعرضت لتغيير بشكل ما بواسطة الفكاهة المدخلة أو الكلمات العشوائية التي لا تبدو حتى قريبة من الواقع.",
     "Choose": [
@@ -185,6 +191,7 @@
     "imgUrl": "https://res.cloudinary.com/duc04fwdb/image/upload/v1708544842/jammal_photos/s39yk1hre9kt36flguug.jpg"
   },
   "statistics": {
+    "sectionId": "statistics",
     "statistics": [
       {
         "imgUrl": "https://res.cloudinary.com/duc04fwdb/image/upload/v1708549772/jammal_photos/cdulhjzrscft50xc9qpq.svg",
@@ -209,6 +216,7 @@
     ]
   },
   "offer": {
+    "sectionId": "offer",
     "title": "عرض خاص لك",
     "buttonText": "اطلب الآن",
     "offer": [
@@ -227,6 +235,7 @@
     ]
   },
   "team": {
+    "sectionId": "team",
     "title": "قابل خبرائنا",
     "members": [
       {
@@ -270,12 +279,14 @@
     ]
   },
   "reservation": {
+    "sectionId": "reservation",
     "title": "احجز طاولة",
     "buttonText": "احجز طاولة",
     "imgUrl": "https://res.cloudinary.com/duc04fwdb/image/upload/v1708555056/jammal_photos/irqxlw9ph3hzp28ipfv9.png",
     "shape": "https://res.cloudinary.com/duc04fwdb/image/upload/v1708555103/jammal_photos/vsurnwxgmf1bvfbgr5hu.png"
   },
   "testimonials": {
+    "sectionId": "testimonials",
     "testimonials": [
       {
         "imgUrl": "https://res.cloudinary.com/duc04fwdb/image/upload/v1708545949/jammal_photos/kjcpvqovfxziihn6firi.jpg",

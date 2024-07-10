@@ -32,7 +32,7 @@ const Hero4 = ({ template }) => {
   }, []);
 
   return (
-    <section className="hero-wrapper4" data-aos="fade-up">
+    <section className="hero-wrapper4" data-aos="fade-up" id={hero.sectionId}>
       <div className="paddings4 innerWidth4 flexCenter4 hero-container4">
         <div className="flexColStart4 hero-left4" data-aos="fade-up">
           <div className="hero-title4">

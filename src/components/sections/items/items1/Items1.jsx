@@ -1,7 +1,7 @@
 import React from "react";
 import "./items1.css";
 import { useTranslation } from "react-i18next";
-const Items1 = ({template}) => {
+const Items1 = ({ template }) => {
   const items = template.items;
   const { i18n } = useTranslation();
   const language = i18n.language;
@@ -15,7 +15,7 @@ const Items1 = ({template}) => {
   // });
 
   return (
-    <div className="items1 design-1">
+    <div className="items1 design-1" id={items.sectionId}>
       <div className="items1-header">
         <p className="title-1">{items.title}</p>
         <p className="description-1">{items.description}</p>

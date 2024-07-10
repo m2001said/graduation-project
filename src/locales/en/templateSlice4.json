@@ -10,25 +10,30 @@
     "links": [
       {
         "title": "Residencies",
-        "url": "#"
+        "url": "hero"
       },
       {
         "title": "Our Value",
-        "url": "#"
+        "url": "features"
+      },
+      {
+        "title": "Projects",
+        "url": "projects"
       },
       {
         "title": "Contact Us",
-        "url": "#"
+        "url": "contact"
       },
       {
         "title": "Get Started",
-        "url": "#"
+        "url": "cta"
       }
     ],
     "email": "mailto:zainkeepscode@gmail.com",
     "buttonText": "Contact"
   },
   "hero": {
+    "sectionId": "hero",
     "name": "ahmed",
     "imgUrl": "https://res.cloudinary.com/duc04fwdb/image/upload/v1703196080/jammal_photos/taiu0lj7gzq6ew6srqsz.png",
     "title": " Discover Most Suitable Property",
@@ -56,6 +61,7 @@
     "icon": "+"
   },
   "features": {
+    "sectionId": "features",
     "title": "Our Value",
     "subtitle": "Value We Give to You",
     "description": " We are always ready to help by providing the best services for you.",
@@ -80,6 +86,7 @@
     "imgUrl": "https://res.cloudinary.com/duc04fwdb/image/upload/v1703203417/jammal_photos/if4uayalbxuh6enjdenm.png"
   },
   "projects": {
+    "sectionId": "projects",
     "title": "Best Choices",
     "subtitle": "Popular Residencies",
     "projects": [
@@ -122,6 +129,7 @@
     ]
   },
   "contact": {
+    "sectionId": "contact",
     "title": "Our Contact Us",
     "subtitle": "Easy to contact us",
     "description": " We always ready to help by providijng the best services for you. We beleive a good blace to live can make your life better",
@@ -152,6 +160,7 @@
     ]
   },
   "cta": {
+    "sectionId": "cta",
     "title": "Get started with Homyz",
     "description": " Subscribe and find super attractive price quotes from us.",
     "text": " Find your residence soon",
@@ -159,6 +168,7 @@
     "email": "mailto:zainkeepscode@gmail.com"
   },
   "footer": {
+    "sectionId": "footer",
     "imgUrl": "https://res.cloudinary.com/duc04fwdb/image/upload/v1703209942/jammal_photos/xd2ugq6yopzvjkw37qc7.png",
     "description": "Our vision is to make all people the best place to live for them.",
     "footerSections": [
@@ -191,6 +201,6 @@
     ]
   },
   "colors": {
-    "templateColors": ["#000000", "#00ffff", "#23dfb9c6", "#40dfffa5", "#ffa500" , "#88a0ff40"]
+    "templateColors": ["#000000", "#00ffff", "#23dfb9c6", "#40dfffa5", "#ffa500", "#88a0ff40"]
   }
 }

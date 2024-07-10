@@ -5,7 +5,7 @@ const Items16 = ({ template }) => {
   const items = template.items;
 
   return (
-    <section className="menu16 section16" id="menu">
+    <section className="menu16 section16" id={items.sectionId}>
       <h2 className="section__title16 " data-title="Our Menu">
         Let's Check Our Menu
       </h2>

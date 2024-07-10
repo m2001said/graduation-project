@@ -1,16 +1,17 @@
 import React, { useState } from "react";
 import "./teams1.css";
 import { useSelector } from "react-redux";
-const Teams1 = ({template}) => {
+import Items1 from "../../items/items1/Items1";
+const Teams1 = ({ template }) => {
   const [selectedMember, setSelectedMember] = useState(null);
-  const ownTeam= useSelector((state) => state.ownTemplate.team);
+  const ownTeam = useSelector((state) => state.ownTemplate.team);
   const team = template ? template.team : ownTeam;
 
   const handleCardClick = (member) => {
     setSelectedMember(member === selectedMember ? null : member);
   };
   return (
-    <div className="team1 design-1">
+    <div className="team1 design-1" id={team.sectionId}>
       <h2 className="team1-head">{team.title}</h2>
       <div className="team1-Card">
         <div className="team1-Card-main">

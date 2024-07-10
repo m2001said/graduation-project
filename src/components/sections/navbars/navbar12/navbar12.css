@@ -10,7 +10,9 @@
   align-items: center;
   justify-content: space-between;
   position: relative;
+  height: 90px;
 }
+
 .logo12 {
   width: 180px;
 }
@@ -21,15 +23,17 @@
   margin: 5px 20px;
   font-size: 16px;
 }
-.dark-n12 {
+
+.dark-nav12 {
   background: var(--website-12-color-2);
   transition: 0.5s;
 }
+
 .menu-icon12 {
   display: none;
 }
-/* ----------------------Media query------------- */
 
+/* Media query */
 @media (max-width: 1000px) {
   .logo12 {
     width: 140px;
@@ -39,23 +43,22 @@
     margin: 10px 15px;
   }
 }
+
 @media (max-width: 843px) {
   .nav12 {
     padding: 15px 0;
   }
+
   .nav12 ul {
-    position: fixed;
-    top: 0;
-    right: 0px;
-    bottom: 0;
+    position: absolute;
+    top: 3rem;
+    right: 0;
     background: var(--website-12-color-2);
     z-index: -1;
     width: 200px;
-    padding-top: 70px;
     transition: 0.5s;
-
-    padding-top: 130px;
   }
+
   .nav12 ul li {
     display: block;
     margin: 25px 40px;
@@ -65,8 +68,15 @@
     display: block;
     width: 30px;
     cursor: pointer;
+    margin-left: 10rem;
+    margin-top: -2rem;
   }
-  .mb-menu12 {
-    right: -200px;
+
+  .mobile-menu-closed {
+    display: none;
+  }
+
+  .mobile-menu-open {
+    display: block;
   }
 }

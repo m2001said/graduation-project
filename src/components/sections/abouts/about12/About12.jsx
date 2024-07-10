@@ -5,7 +5,7 @@ const About12 = ({ template }) => {
   const about = template.about;
 
   return (
-    <div className="about12 container12">
+    <div className="about12 container12" id={about.sectionId}>
       <div className="about-left12">
         <img src={about.imgUrl} alt="about-image" className="about-img12" />
       </div>
