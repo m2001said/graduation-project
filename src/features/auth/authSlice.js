@@ -85,6 +85,12 @@ const authSlice = createSlice({
       state.userName = "";
       state.userAvatar = "";
     },
+    updateUser(state, action) {
+      state.status = "succeeded";
+      state.user = action.payload;
+      state.userName = "";
+      state.userAvatar = "";
+    },
   },
   extraReducers: (builder) => {
     builder
@@ -139,5 +145,5 @@ const authSlice = createSlice({
   },
 });
 
-export const { logout, updateUserName, updateUserAvatar, clearUserData } = authSlice.actions;
+export const { logout, updateUserName, updateUserAvatar, clearUserData, updateUser } = authSlice.actions;
 export default authSlice.reducer;

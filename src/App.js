@@ -54,7 +54,7 @@ function App() {
   return (
     <div className={isRightToLeft ? "rtl" : "ltr"}>
       <MainNav toggleModal={toggleModal} />
-      <SessionChecker />
+      {localStorage.getItem("refresh_token") && <SessionChecker />}
       <div style={{ marginTop: "77px" }} id="template-container">
         <Routes>
           <Route path={`/${language}/success-verified`} element={<SuccessVerified />} />
@@ -65,9 +65,9 @@ function App() {
           <Route
             path={`/${language}/designs`}
             element={
-              <ProtectedRoute>
+              // <ProtectedRoute>
                 <DesignsPage />
-              </ProtectedRoute>
+              // </ProtectedRoute>
             }
           />
           <Route
