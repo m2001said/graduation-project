@@ -65,9 +65,9 @@ function App() {
           <Route
             path={`/${language}/designs`}
             element={
-              // <ProtectedRoute>
+               <ProtectedRoute>
                 <DesignsPage />
-              // </ProtectedRoute>
+               </ProtectedRoute>
             }
           />
           <Route
