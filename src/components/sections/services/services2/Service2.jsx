@@ -7,7 +7,7 @@ const Services2 = ({ template }) => {
   const services = template ? template.services : ownServices;
   console.log(services);
   return (
-    <section id="services2" className="section2">
+    <section id={services.sectionId} className="pb-24 pb-9 section2 services2 w-full">
       <h5>{services.title}</h5>
       <h2>{services.description}</h2>
 

@@ -29,6 +29,9 @@ const TrialDesign = ({ componentMapping, FooterComponent, NavbarComponent, HeroC
   const userId = useSelector((state) => state.auth.user && state.auth.user._id) || searchParams.get("userId");
   const templateId = searchParams.get("templateId") || null;
   const [templateData, setTemplateData] = useState(null);
+  const id = searchParams.get("id") || templateId || null;
+
+  console.log(id);
 
   let state = useSelector((state) => {
     if (url.pathname.includes("own-page")) {
@@ -37,17 +40,6 @@ const TrialDesign = ({ componentMapping, FooterComponent, NavbarComponent, HeroC
       return state.template1;
     }
   });
-
-  const persist = JSON.parse(localStorage.getItem("persist:root"));
-  const template1 = persist && JSON.parse(persist.template1);
-  useEffect(() => {
-    if (template1.templateInfo.id !== template && url.pathname.includes("build")) {
-      dispatch(resetState());
-      dispatch(fetchInitialTemplate(template));
-    } else if (url.pathname.includes("preview")) {
-      dispatch(fetchInitialTemplate(template));
-    }
-  }, [dispatch]);
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -94,6 +86,17 @@ const TrialDesign = ({ componentMapping, FooterComponent, NavbarComponent, HeroC
     // }
   }, []);
 
+  const persist = JSON.parse(localStorage.getItem("persist:root"));
+  const template1 = persist && JSON.parse(persist.template1);
+  useEffect(() => {
+    if (template1.templateInfo.id !== template && url.pathname.includes("build")) {
+      dispatch(resetState());
+      dispatch(fetchInitialTemplate(template));
+    } else if (url.pathname.includes("preview")) {
+      dispatch(fetchInitialTemplate(template));
+    }
+  }, [dispatch]);
+
   useEffect(() => {
     if (template1?.templateInfo.id !== template && url.pathname.includes("build")) {
       dispatch(resetState());
@@ -120,7 +123,8 @@ const TrialDesign = ({ componentMapping, FooterComponent, NavbarComponent, HeroC
     }
   }, [state, templateNumber]);
 
-  return state && state.templateInfo.id === template ? (
+  const checkCondition = state?._id === id || id === null;
+  return state && state.templateInfo.id === template && checkCondition ? (
     <div className={className}>
       {NavbarComponent && <NavbarComponent template={state} />}
       {HeroComponent && <HeroComponent template={state} />}
@@ -134,9 +138,13 @@ const TrialDesign = ({ componentMapping, FooterComponent, NavbarComponent, HeroC
     <div className="fixed top-0 left-0 w-full h-full d-flex items-center justify-center">
       <Loader />
     </div>
-  ) : (
+  ) : state?._id !== id ? (
     <div className="fixed top-0 left-0 w-full h-full d-flex items-center justify-center">
       <NotFound />
+    </div>
+  ) : (
+    <div className="fixed top-0 left-0 w-full h-full d-flex items-center justify-center">
+      <Loader />
     </div>
   );
 };

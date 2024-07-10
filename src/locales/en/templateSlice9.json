@@ -6,31 +6,32 @@
     "imgUrl": "/static/media/design9.dea0caaa71f282558382.jpg"
   },
   "navbar": {
-    "title": "Soliii",
-    "links": [
+    "imgUrl": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1720030973/done/tower_qajd1k_robuyn.webp",
+     "links": [
       {
-        "title": "Design",
-        "url": "#about13"
+        "title": "Hero",
+        "url": "hero"
       },
       {
         "title": "About us",
-        "url": "#"
+        "url": "about"
       },
       {
-        "title": "Projects",
-        "url": "#"
+        "title": "contact",
+        "url": "contact"
       },
       {
-        "title": "Contact team",
-        "url": "#"
+        "title": "Team",
+        "url": "team"
       },
       {
-        "title": "Reviews",
-        "url": "#testimonials13"
+        "title": "services",
+        "url": "services"
       }
     ]
   },
   "hero": {
+    "sectionId": "hero",
     "title": "REAL ESTATE",
     "subtitle": "Find a perfect home you love..!",
     "description": "Etiam eget elementum elit. Anean dignissim dapibus vestibulum...",
@@ -54,6 +55,7 @@
     ]
   },
   "reviews": {
+    "sectionId": "reviews",
     "title": "72k+ Happy Customers+",
     "description": "200+ new Listings Everyday",
     "subtitle": "Trusted by 100+ companies across the global",
@@ -65,7 +67,7 @@
       "https://res.cloudinary.com/dowtlcpxj/image/upload/v1719966175/done/avatar3_pbztwn_ggzr8x.webp",
       "https://res.cloudinary.com/dowtlcpxj/image/upload/v1720023640/done/smile_1_yfcyoh.webp"
     ],
-    "logos":  [
+    "logos": [
       "https://res.cloudinary.com/dowtlcpxj/image/upload/v1720023922/done/logo5_iwqjl7_h9r76r.webp",
       "https://res.cloudinary.com/dowtlcpxj/image/upload/v1720023921/done/logo6_ddaq6y_rkqshl.webp",
       "https://res.cloudinary.com/dowtlcpxj/image/upload/v1720023920/done/logo2_z1jb8d_ez6dwd.webp",
@@ -74,6 +76,7 @@
     ]
   },
   "services": {
+    "sectionId": "services",
     "title": "Our Services",
     "services": [
       {
@@ -94,6 +97,7 @@
     ]
   },
   "features": {
+    "sectionId": "features",
     "title": "Areas across the town",
     "subtitle": "Neighborhood Properties",
     "description": "Neighborhood Properties",
@@ -131,6 +135,7 @@
     ]
   },
   "about": {
+    "sectionId": "about",
     "title": "WHO WE ARE ",
     "description": " we are a team of experts in real estate.",
     "imgUrl": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1720027426/done/e0c167ecaf94e55e76cb89c8e9ef896f_ibw9le_ggxkoi.webp",
@@ -146,10 +151,11 @@
     ]
   },
   "testimonials": {
+    "sectionId": "testimonials",
     "title": "Testimonials",
     "subtitle": "What Our Clients Say",
     "description": "they also found there purpose",
-    "icons":  [
+    "icons": [
       "https://res.cloudinary.com/dowtlcpxj/image/upload/v1720028408/done/next_2989988_stvovd_r4wozp.webp",
       "https://res.cloudinary.com/dowtlcpxj/image/upload/v1720028391/done/back-arrow_340_m9e0hp_toc5d5.webp",
       "https://res.cloudinary.com/dowtlcpxj/image/upload/v1720028498/done/quote-icon-png-15_c5hrkg_ctlve8.webp",
@@ -169,6 +175,7 @@
     ]
   },
   "projects": {
+    "sectionId": "projects",
     "title": "checkout our new",
     "description": "Latest Listed Properties",
     "subtitle": "make a wish",
@@ -258,6 +265,7 @@
   },
   "team": {
     "title": "Hello from",
+    "sectionId": "team",
     "description": "Our Team of Experts",
     "members": [
       {
@@ -283,6 +291,7 @@
     ]
   },
   "contact": {
+    "sectionId": "contact",
     "imgUrl": "https://res.cloudinary.com/dowtlcpxj/image/upload/v1720030973/done/tower_qajd1k_robuyn.webp",
     "title": "Become an Agent.",
     "description": "Contact us  .",
@@ -290,6 +299,7 @@
     "linkText": "https://www.google.com"
   },
   "footer": {
+    "sectionId": "footer",
     "title": "computers engineering",
     "subtitle": "227 st zagazig",
     "description": "2024 soly cse all rights reserved",
@@ -311,23 +321,23 @@
         "links": [
           {
             "title": "Home",
-            "url": "#"
+            "url": "hero"
           },
           {
             "title": "About",
-            "url": "#"
+            "url": "about"
           },
           {
-            "title": "Listings",
-            "url": "#"
+            "title": "pricing",
+            "url": "projects"
           },
           {
-            "title": "blogs",
-            "url": "#"
+            "title": "features",
+            "url": "features"
           },
           {
             "title": "become an agent",
-            "url": "#"
+            "url": "contact"
           }
         ]
       },

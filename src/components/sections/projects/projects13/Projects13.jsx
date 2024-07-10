@@ -7,7 +7,7 @@ const Projects13 = ({ template }) => {
 
   const Cards = ({ project }) => {
     return (
-      <div className="lg:pb-0 pb-4 w-full transform transition ease-out duration-300 hover:scale-[1.03]">
+      <div id={projects.sectionId} className="lg:pb-0 pb-4 w-full transform transition ease-out duration-300 hover:scale-[1.03]">
         <img src={project.imgUrl} alt={project.title} className="lg:w-full md:w-52 mx-auto" />
         <div className="flex items-center justify-between md:w-auto w-60 mx-auto">
           <span className="text-[var(--website-13-color-1)] pt-2">

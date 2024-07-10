@@ -11,10 +11,19 @@
   margin-top: 2rem;
 }
 
-.footer2 a {
-  color: var();
-}
+ 
+.footer-title2{
+  color: var(--website-2-color-1);
+  font-size: 2rem;
+  font-weight: 500;
+  margin-bottom: 2rem;
+  display: inline-block;
 
+}
+.footer-title2:hover{
+  color: var(--website-2-color-5); 
+  
+}
 .footer2__logo:hover {
   transition: var(--transition);
   color: var(--website-2-color-2);
@@ -28,10 +37,13 @@
 }
 
 .permalinks2:hover {
-  transition: var(--transition);
-  color: var(--website-2-color-2);
+  
 }
+.footer-link2:hover{
+  transition: var(--transition);
+  color: var(--website-2-color-1);
 
+}
 .permalinks2 {
   display: flex;
   flex-wrap: wrap;

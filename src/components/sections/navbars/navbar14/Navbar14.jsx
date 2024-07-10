@@ -21,7 +21,10 @@ const Navbar14 = ({template}) => {
               <ul className="flex items-center gap-4">
                 {navbar.links.map((link, index) => (
                   <li key={index}>
-                    <a href={link.url} className="inline-block px-4 font-semibold text-gray-500 hover:text-black dark:hover:text-white duration-200">
+                    <a
+                      href={`#${link.url}`}
+                      className="inline-block px-4 font-semibold text-[--website-14-color-5] hover:text-[--website-14-color-1] dark:hover:text-white duration-200"
+                    >
                       {link.title}
                     </a>
                   </li>
@@ -33,10 +36,10 @@ const Navbar14 = ({template}) => {
           {/* Nav right sec */}
           <div className="flex justify-between items-center gap-4">
             {/* Order-button */}
-            <button className="relative p-3">
+            {/* <button className="relative p-3">
               <img src={navbar.icon} alt="" className="w-6" />
               <div className="w-4 h-4 bg-[--website-14-color-1] text-white rounded-full absolute top-0 right-0 flex items-center justify-center text-xs">!</div>
-            </button>
+            </button> */}
             {/* Dark Mode sec */}
             <div>
               <DarkMode14 template={template} />

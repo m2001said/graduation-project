@@ -30,7 +30,7 @@ const Pricing9 = ({ template }) => {
   const projects = template.projects.projects;
 
   return (
-    <main className="py-20 bg-gradient-to-r from-[var(--website-9-color-1)] to-[var(--website-9-color-3)] ">
+    <main id={template.projects.sectionId} className="py-20 bg-gradient-to-r from-[var(--website-9-color-1)] to-[var(--website-9-color-3)] ">
       <div className="container mx-auto px-3">
       <div className="lg:flex justify-between items-center  bg-[var(--website-9-color-1)]    p-4  
        shadow-2xl px-4 py-6 rounded-3xl flex ">

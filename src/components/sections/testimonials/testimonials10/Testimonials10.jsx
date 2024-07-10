@@ -12,7 +12,7 @@ const Testimonials10 = ({template}) => {
   const ownTestimonials= useSelector((state) => state.ownTemplate.testimonials);
   const testimonial = template ? template.testimonials : ownTestimonials;
   return (
-    <div className="pb-4 bg-[--white10] dark:bg-gray-900 dark:text-white">
+    <div className="pb-4 bg-[--website-10-color-2] dark:bg-gray-900 dark:text-white">
       <div className="items-center p-10 sm:p-20">
         {/* header sec*/}
         <div className="text-center mb-10 max-w-[600px] mx-auto">
@@ -33,7 +33,7 @@ const Testimonials10 = ({template}) => {
                     <div className="flex items-center gap-4">
                       <div>
                         <p className="text-gray-500 text-sm">{data.description}</p>
-                        <h1 className="text-xl font-bold text-black/80 dark:text-white">{data.title}</h1>
+                        <h1 className="text-xl font-bold text-black/80 dark:text-white">{data.name}</h1>
                       </div>
                     </div>
                     {/* <p className="text-black/30 text-9xl font-serif absolute top-0 right-0">,,</p> */}

@@ -8,7 +8,7 @@ const Footer18 = ({template}) => {
   const footer = template ? template.footer : ownFooter;
   
   return (
-    <div className="bg-gray-100 dark:bg-black dark:text-white duration-300">
+    <div className="bg-[--website-18-color-3] dark:bg-black dark:text-white duration-300">
       <section className="container18">
         <div className=" grid md:grid-cols-3 py-5">
           {/* company Details */}

@@ -14,7 +14,7 @@ const Testimonials2 = ({ template }) => {
   const testimonials = template ? template.testimonials : ownTestimonials;
    
   return (
-    <section id="testimonials2" className="section2">
+    <section id={testimonials.sectionId} className="pb-24 pt-7 section2 testimonials2">
       <h5>{testimonials.subtitle}</h5>
       <h2>{testimonials.title}</h2>
       <Swiper

@@ -6,11 +6,11 @@ const Footer17 = ({ template }) => {
   const { t, i18n } = useTranslation();
   const ownFooter = useSelector((state) => state.ownTemplate.footer);
   const footer = template ? template.footer : ownFooter;
-    const isRTL = i18n.dir() === "rtl"; 
+  const isRTL = i18n.dir() === "rtl";
 
   return (
     <>
-      <div className="text-[var(--website-17-color-4)] ">
+      <div id={footer.sectionId} className="text-[var(--website-17-color-4)] ">
         <div className="container17 bg-gradient-to-b from-[var(--website-17-color-1)] to-[var(--website-17-color-2)] rounded-t-3xl">
           <h1 className="py-10 text-3xl font-bold text-yellow text-center">{footer.title}</h1>
 

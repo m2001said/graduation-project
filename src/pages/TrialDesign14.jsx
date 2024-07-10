@@ -15,7 +15,7 @@ import Footer14 from "../components/sections/footers/footer14/Footer14";
 const componentMapping14 = {
   items: Items14,
   services: Services14,
-  featuers: Features14,
+  features: Features14,
   projects: Projects14,
   blogs: Projects21,
   logos: Logos14,
