@@ -5,7 +5,7 @@ const Feature5_2 = ({ template }) => {
   const feature2 = template.blogs;
 
   return (
-    <div className="feature5_2 design5 design5-container design5-section">
+    <div className="feature5_2 design5 design5-container design5-section" id={feature2.sectionId}>
       <div className="featue5_2-main">
         <div className="feature5_2-imgDiv">
           <img src={feature2.imgUrl} alt="" className="feature5_2-image" />

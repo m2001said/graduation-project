@@ -37,7 +37,7 @@ const Navbar5 = ({template}) => {
         <ul className="navbarMenu5-list">
           {navbar.links.map((link, index) => (
             <li key={index} className="navbarMenu-5-listItem">
-              <a href={link.url} onClick={() => removeNavbar()}>
+              <a href={`#${link.url}`} onClick={() => removeNavbar()}>
                 {link.title}
               </a>
             </li>

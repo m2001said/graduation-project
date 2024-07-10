@@ -7,6 +7,7 @@
   flex-direction: column;
   gap: 2rem;
   margin: auto;
+  background-color: var(--website-5-color-4);
 }
 
 .hero5-mainText {

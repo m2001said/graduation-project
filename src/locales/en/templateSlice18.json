@@ -10,19 +10,15 @@
     "links": [
       {
         "title": "HOME",
-        "url": "#"
+        "url": "hero"
       },
       {
         "title": "CARS",
-        "url": "#"
+        "url": "projects"
       },
       {
         "title": "ABOUT",
-        "url": "#about"
-      },
-      {
-        "title": "BOOKING",
-        "url": "#"
+        "url": "features"
       }
     ],
     "icons": [
@@ -32,6 +28,7 @@
     ]
   },
   "hero": {
+    "sectionId": "hero",
     "title": "RentCar",
     "subtitle": "Effortless",
     "description": "Travel in style and comfort with a wide selection of cars to suit all your needs. Whether you’re looking for an economical car",
@@ -39,6 +36,7 @@
     "imgUrl": "https://res.cloudinary.com/dmcdea0b9/image/upload/v1708094043/banner-car_nzxi5c.png"
   },
   "features": {
+    "sectionId": "features",
     "title": "About us",
     "subtitle": "We are a dedicated car rental service provider offering high-quality and diverse car rental solutions to meet the varied needs of our clients?",
     "description": "Our company was founded on the principle of providing an exceptional driving experience that combines comfort, safety, and competitive pricing..",
@@ -72,6 +70,7 @@
     ]
   },
   "projects": {
+    "sectionId": "projects",
     "title": " Explore Our Wide Range of Cars",
     "description": "we offer a diverse selection of cars to meet all your needs and expectations.?",
     "projects": [

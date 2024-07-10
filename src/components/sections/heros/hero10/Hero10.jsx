@@ -10,7 +10,7 @@ const Hero10 = ({ template }) => {
   return (
     <>
       <div
-        className="min-h-[550px] sm:min-h-[650px] bg-[--graybg] flex justify-center items-center dark:bg-gray-950 dark:text-white duration-200"
+        className="min-h-[550px] sm:min-h-[650px] bg-[--website-10-color-5] flex justify-center items-center dark:bg-gray-950 dark:text-white duration-200"
         style={{
           backgroundImage: `url(${hero.imgs[0]})`,
           backgroundPosition: "center",
@@ -18,11 +18,12 @@ const Hero10 = ({ template }) => {
           backgroundSize: "cover",
           width: "100%",
         }}
+        id={hero.sectionId}
       >
-        <div className="items-center p-10 sm:p-30 pb-8 sm:pb-0">
+        <div className="items-center p-10 sm:p-30 pb-8 sm:pb-0 ">
           <div className="grid grid-cols-1 sm:grid-cols-2">
             {/* txt sec */}
-            <div className="hero10-textContent flex flex-col justify-center gap-4 pt-12 sm:pt-0 text-center sm:text-left order-2 sm:order-1">
+            <div className="hero10-textContent flex flex-col justify-center gap-4 pt-12 sm:mt-12 text-center sm:text-left order-2 sm:order-1">
               <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold">{hero.heros[id].title}</h1>
               <p className="text-sm mt-4">{hero.heros[id].description}</p>
               <div>
@@ -36,7 +37,7 @@ const Hero10 = ({ template }) => {
                 <img src={hero.heros[id].imgUrl} alt="" className="w-[300px] h-[300px] sm:h-[450px] sm:w-[450px] sm:scale-125 object-contain mx-auto" />
               </div>
               {/* other image list */}
-              <div className="flex lg:flex-col  overflow-y-scroll lg:top-1/2 lg:-translate-y-1/2 lg:py-2 justify-start gap-4 absolute -bottom-[40px] lg:-right-1 bg-white rounded-full">
+              <div className="flex lg:flex-col  overflow-y-scroll lg:top-1/2 lg:-translate-y-1/2 lg:py-2 justify-start gap-4 absolute -bottom-[40px] lg:-right-1 bg-white rounded-full mb-12">
                 {hero.heros.map((data, index) => (
                   <img
                     key={index}

@@ -12,12 +12,16 @@
     "links": [
       {
         "title": "الرئيسية",
-        "url": "#"
+        "url": "hero"
       },
       {
         "title": "الأكثر مبيعًا",
-        "url": "#"
-      }
+        "url": "services"
+      },
+      {
+        "title": "مكتبه",
+        "url": "features"
+     }
     ],
     "icons": [
       "https://res.cloudinary.com/dmcdea0b9/image/upload/v1706806477/cart-shopping-shop-svgrepo-com_oxwiez.svg",
@@ -26,6 +30,7 @@
     ]
   },
   "hero": {
+    "sectionId": "hero",
     "title": "ستتغير حياته إلى الأبد",
     "description": "لوريم إيبسوم دولور سيت أميت، كونسيكتيتور أديبيسشينج إيليت، سيد دو إيوسمد تيمبور إنسيديدونت أوت لابور إت دولور ماجنا أليكوا.",
     "buttonText": "اطلب الآن",
@@ -52,6 +57,7 @@
     ]
   },
   "services": {
+    "sectionId": "services",
     "title": "أفضل الكتب",
     "description": "لوريم إيبسوم، دولور سيت أميت كونسيكتيتور أديبيسشينج إيليت تمييز كونسيكتيتور",
     "subtitle": "الكتب الشائعة",
@@ -78,6 +84,7 @@
     ]
   },
   "features": {
+    "sectionId": "features",
     "title": "مكتبة في متناول يدك",
     "description": "لوريم إيبسوم، دولور سيت أميت كونسيكتيتور أديبيسشينج إيليت. إعادة اختراع إيست راشون إكس ألياس كويز ماجني في أوبتيو",
     "imgUrl": "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707084593/library_ww1bzg.jpg",

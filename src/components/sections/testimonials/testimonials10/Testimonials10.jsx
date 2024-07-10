@@ -12,7 +12,7 @@ const Testimonials10 = ({template}) => {
   const ownTestimonials= useSelector((state) => state.ownTemplate.testimonials);
   const testimonial = template ? template.testimonials : ownTestimonials;
   return (
-    <div className="pb-4 bg-[--white10] dark:bg-gray-900 dark:text-white">
+    <div className="pb-4 bg-[--website-10-color-2] dark:bg-gray-900 dark:text-white">
       <div className="items-center p-10 sm:p-20">
         {/* header sec*/}
         <div className="text-center mb-10 max-w-[600px] mx-auto">

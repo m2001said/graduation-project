@@ -16,12 +16,12 @@ const SingleItem = ({ title, description, subtitle, year, template }) => {
         {expanded && (
           <div className="pr-5 pl-3">
             <span className="flex items-center justify-between">
-              <p className="text-lg font-bold m-0 cta_7">{subtitle}</p>
+              <p className="text-lg font-bold m-0 cta15_1">{subtitle}</p>
               <span className="flex items-center gap-x-1">
-                <p className="text-sm font-bold m-0 cta_8">{year}</p>
+                <p className="text-sm font-bold m-0 cta15_1">{year}</p>
               </span>
             </span>
-            <p className=" relative pt-2 pb-5 leading-8 cta_9">{description}</p>
+            <p className=" relative pt-2 pb-5 leading-8 cta15_1">{description}</p>
           </div>
         )}
         <span

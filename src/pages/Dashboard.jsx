@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import TopSide from "./../components/dashboard/sections/TopSide";
 import LeftSide from "../components/dashboard/sections/LeftSide";
 import RightSide from "../components/dashboard/sections/RightSide";
+import ChatBot from "../components/dashboard/chatBot/ChatBot";
 import { useSelector } from "react-redux";
 import { templateActions1 } from "../features/templateData/templateSlice";
 
@@ -21,11 +22,23 @@ const Dashboard = () => {
     setScreenWidth(sWidth);
   }, [screen]);
 
+  const copyObjectWithoutId = (obj) => {
+    const newObj = {};
+    for (let key in obj) {
+      if (key !== "_id") {
+        newObj[key] = obj[key];
+      }
+    }
+    return newObj;
+  };
+
+  const newState = copyObjectWithoutId(state)
+
   return (
     <section className="dashboard-container mx-auto relative">
-      <TopSide schema={state} />
+      <TopSide schema={newState} />
       <div className="w-full flex-between flex-col md:flex-row dashboard-subContainer overflow-hidden">
-        <LeftSide targetTemplate={state} updateAllRef={templateActions1} />
+        <LeftSide targetTemplate={newState} updateAllRef={templateActions1} />
         <div
           className="max-md:w-full md:w-70 flex-auto  flex justify-start flex-col items-center text-black "
           style={{ height: "calc(100vh - 56px)", maxWidth: screenWidth }}
@@ -35,6 +48,8 @@ const Dashboard = () => {
           </div>
         </div>
       </div>
+      {/* only in ai version --> we will open it */}
+      {/* <ChatBot /> */}
     </section>
   );
 };
