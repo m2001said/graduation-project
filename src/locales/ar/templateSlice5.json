@@ -12,32 +12,34 @@
     "links": [
       {
         "title": "الرئيسية",
-        "url": "#"
+        "url": "hero"
       },
       {
         "title": "حول",
-        "url": "#"
+        "url": "features"
       },
       {
-        "title": "العروض",
-        "url": "#"
+        "title": "الخدمات",
+        "url": "services"
       },
       {
         "title": "المقاعد",
-        "url": "#"
+        "url": "blogs"
       },
       {
         "title": "الوجهات",
-        "url": "#"
+        "url": "team"
       }
     ]
   },
   "hero": {
+    "sectionId": "hero",
     "title": "أنشئ ذكريات دائمة معنا",
     "imgUrl": "https://res.cloudinary.com/dmcdea0b9/image/upload/v1703110738/takeOff_znaedp.png",
     "videoUrl": "https://res.cloudinary.com/dmcdea0b9/video/upload/v1703110566/heroVideo_z23a38.mp4"
   },
   "features": {
+    "sectionId": "features",
     "title": "خطط لسفرك بثقة",
     "subtitle": "دعم السفر",
     "description": "اعثر على المساعدة في حجز خطط السفر، وشاهد ما يمكن توقعه خلال الرحلة",
@@ -61,6 +63,7 @@
     ]
   },
   "services": {
+    "sectionId": "services",
     "title": "سافر لتصنع ذكريات حول العالم",
     "services": [
       {
@@ -81,6 +84,7 @@
     ]
   },
   "blogs": {
+    "sectionId": "blogs",
     "title": "صالة الأطفال غير المصحوبين بذويهم",
     "imgUrl": "https://res.cloudinary.com/dmcdea0b9/image/upload/v1703116246/fea5-2_q5na0z.jpg",
     "blogs": [
@@ -103,6 +107,7 @@
     ]
   },
   "team": {
+    "sectionId": "team",
     "title": "أفضل المسافرين لهذا الشهر!",
     "members": [
       {
@@ -248,6 +253,6 @@
     ]
   },
   "colors": {
-    "templateColors": ["#5c3db8", "#f0f4f4", "#eb967a", "#fabe89", "#000000" , "#919191"]
+    "templateColors": ["#5c3db8", "#f0f4f4", "#eb967a", "#ffffff", "#000000", "#919191"]
   }
 }

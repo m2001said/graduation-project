@@ -13,6 +13,7 @@
   align-items: center;
   padding: 1rem;
   width: 100%;
+  background-color: var(--website-5-color-2);
 }
 
 .navbar5-two-icon {
@@ -71,7 +72,7 @@
   outline: none;
   border-radius: 3rem;
   cursor: pointer;
-  color: hsl(0, 0%, 100%);
+  color:var(--website-5-color-5);
 }
 
 .navbarMenu-5-btnOne a {

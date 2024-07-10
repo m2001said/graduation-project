@@ -10,7 +10,7 @@ const Services5 = ({template}) => {
   const service = template ? template.services : ownServices;
 
   return (
-    <div className="services5">
+    <div className="services5" id={service.sectionId}>
       <div className="services5-mainSection">
         <div className="services5-title">
           <h2>{service.title}</h2>
