@@ -34,7 +34,7 @@
 
 .bgHover10:hover {
   background-color: var(--website-10-color-1);
-  color: var(2);
+  color: var(--website-10-color-2);
 }
 
 /* ////////// */
