@@ -7,6 +7,7 @@ const initialState = {
   userAvatar: "",
   status: "idle",
   error: null,
+  login: false,
 };
 
 // Thunk for user registration
@@ -74,6 +75,7 @@ const authSlice = createSlice({
       state.user = null;
       state.userName = "";
       state.userAvatar = "";
+      state.login = false;
     },
     updateUserName(state, action) {
       state.userName = action.payload;
@@ -84,12 +86,14 @@ const authSlice = createSlice({
     clearUserData(state) {
       state.userName = "";
       state.userAvatar = "";
+      state.login = false;
     },
     updateUser(state, action) {
       state.status = "succeeded";
       state.user = action.payload;
       state.userName = "";
       state.userAvatar = "";
+      state.login = true; // Updating the login  
     },
   },
   extraReducers: (builder) => {
@@ -113,10 +117,12 @@ const authSlice = createSlice({
         state.status = "succeeded";
         state.user = action.payload.user;
         state.userName = action.payload.user.name;
+        state.login = true;
       })
       .addCase(loginUserAsync.rejected, (state, action) => {
         state.status = "failed";
         state.error = action.payload;
+        state.login = false;
       })
       .addCase(logoutUserAsync.pending, (state) => {
         state.status = "loading";
@@ -126,6 +132,7 @@ const authSlice = createSlice({
         state.user = null;
         state.userName = "";
         state.userAvatar = "";
+        state.login = false;
       })
       .addCase(logoutUserAsync.rejected, (state, action) => {
         state.status = "failed";
