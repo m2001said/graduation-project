@@ -75,15 +75,6 @@ const TrialDesign = ({ componentMapping, FooterComponent, NavbarComponent, HeroC
   const persist = JSON.parse(localStorage.getItem("persist:root"));
   const template1 = persist && JSON.parse(persist.template1);
   useEffect(() => {
-    if (template1.templateInfo.id !== template && url.pathname.includes("build")) {
-      dispatch(resetState());
-      dispatch(fetchInitialTemplate(template));
-    } else if (url.pathname.includes("preview")) {
-      dispatch(fetchInitialTemplate(template));
-    }
-  }, [dispatch]);
-
-  useEffect(() => {
     if (template1?.templateInfo.id !== template && url.pathname.includes("build")) {
       dispatch(resetState());
       dispatch(fetchInitialTemplate(template));
@@ -91,6 +82,8 @@ const TrialDesign = ({ componentMapping, FooterComponent, NavbarComponent, HeroC
       dispatch(fetchInitialTemplate(template));
     }
   }, [dispatch]);
+
+
   //this will return to intial state if you do refresh
   useEffect(() => {
     window.scrollTo(0, 0);

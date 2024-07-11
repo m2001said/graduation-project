@@ -85,7 +85,7 @@ const MainNav = ({ toggleModal }) => {
 
             <LoadingButton
               loading={authState.status === "loading"}
-              onClick={authState.status === "succeeded" && !authState.user.message ? handleSignOut : toggleModal}
+              onClick={authState.status === "succeeded" && !authState.user?.message ? handleSignOut : toggleModal}
               className="hidden md:block signIn-btn p-1 md:p-2"
               btnText={authState.status === "succeeded" && !authState.user.message ? t("USER.LOG_OUT") : t("USER.SIGN_IN")}
             />
