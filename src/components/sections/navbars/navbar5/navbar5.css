@@ -56,6 +56,7 @@
 .navbarMenu5-list li {
   list-style: none;
   cursor: pointer;
+  color: var(--website-5-color-5);
 }
 .navbarMenu5-list li:hover {
   color: var(--website-5-color-1);

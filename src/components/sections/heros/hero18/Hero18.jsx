@@ -16,9 +16,9 @@ const Hero = ({ template }) => {
               />
             </div>
             <div className="space-y-5 order-2 sm:order-1 sm:pr-32 ">
-              <p className="text-primary text-2xl font-serif">{hero.subtitle}</p>
-              <h1 className="text-5xl lg:text-7xl font-semibold font-serif">{hero.title}</h1>
-              <p className="text-sm">{hero.description} </p>
+              <p className="text-primary text-2xl font-serif text-[--website-18-color-5] dark:text-[--website-18-color-6]">{hero.subtitle}</p>
+              <h1 className="text-5xl lg:text-7xl font-semibold font-serif text-[--website-18-color-5] dark:text-[--website-18-color-6]">{hero.title}</h1>
+              <p className="text-sm text-[--website-18-color-4] dark:text-[--website-18-color-6]">{hero.description} </p>
               <button className="rounded-md bg-[--website-18-color-1] hover:opacity-[0.8] transition duration-500 py-2 px-6 text-black">
                 {hero.buttonText}
               </button>

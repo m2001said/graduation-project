@@ -24,8 +24,8 @@ const Hero10 = ({ template }) => {
           <div className="grid grid-cols-1 sm:grid-cols-2">
             {/* txt sec */}
             <div className="hero10-textContent flex flex-col justify-center gap-4 pt-12 sm:mt-12 text-center sm:text-left order-2 sm:order-1">
-              <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold">{hero.heros[id].title}</h1>
-              <p className="text-sm mt-4">{hero.heros[id].description}</p>
+              <h1 className="textColor10 text-5xl sm:text-6xl lg:text-7xl font-bold">{hero.heros[id].title}</h1>
+              <p className="text-sm mt-4 paraColor10">{hero.heros[id].description}</p>
               <div>
                 <button className="btnBg10 btnTxt10 px-4 py-2 rounded-full mt-4 hover:scale-105 duration-200 ">{hero.buttonText}</button>
               </div>

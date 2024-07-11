@@ -12,7 +12,9 @@ const Services = ({template}) => {
       <div className="bg-[--website-18-color-6] dark:bg-black dark:text-white py-14 sm:min-h-[600px] sm:grid sm:place-items-center">
         <div className="container18">
           <div className="pb-12">
-            <h1 className="text-3xl font-semibold text-center sm:text-4xl font-serif">{services.title}</h1>
+            <h1 className="text-3xl font-semibold text-center sm:text-4xl font-serif text-[--website-18-color-5] dark:text-[--website-18-color-6]">
+              {services.title}
+            </h1>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
             {services.services.map((data) => (
@@ -25,10 +27,7 @@ const Services = ({template}) => {
                 </div>
                 <h1 className="text-xl font-bold">{data.name}</h1>
                 <p>{data.description}</p>
-                <a
-                  href={data.linkText}
-                  className="inline-block text-lg font-semibold py-3 duration-300"
-                >
+                <a href={data.linkText} className="inline-block text-lg font-semibold py-3 duration-300">
                   {data.buttonText}
                 </a>
               </div>

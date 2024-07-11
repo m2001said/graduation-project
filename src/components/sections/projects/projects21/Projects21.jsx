@@ -13,7 +13,7 @@ const Projects21 = ({template}) => {
       <div className="container14">
         {/* head sec */}
         <div className="text-center mb-10 max-w-[600px] mx-auto space-y-2">
-          <h1 className="pt-12 text-3xl font-bold lg:text-4xl">{projects2.title}</h1>
+          <h1 className="pt-12 text-3xl font-bold lg:text-4xl text-black dark:text-white">{projects2.title}</h1>
           <p className="text-xs text-gray-400">{projects2.description}</p>
         </div>
 
@@ -29,7 +29,7 @@ const Projects21 = ({template}) => {
               {/* content sec */}
               <div className="space-y-2">
                 <p className="text-xs text-gray-500">{data.description}</p>
-                <p className="font-bold line-clamp-1">{data.title}</p>
+                <p className="font-bold line-clamp-1 text-black dark:text-white">{data.title}</p>
                 <p className="line-clamp-2 text-sm text-gray-600 dark:text-gray-400">{data.subtitle}</p>
               </div>
             </div>

@@ -17,7 +17,7 @@ const Navbar18 = ({ template }) => {
         <div className="container18 py-2 md:py-0">
           <div className="flex justify-between items-center">
             <div className="flex justify-between gap-4">
-              <span className="text-3xl font-bold font-serif ">{navbar.title}</span>
+              <span className="text-3xl font-bold font-serif text-[--website-18-color-5] dark:text-[--website-18-color-6]">{navbar.title}</span>
             </div>
             <nav className="hidden md:block">
               <ul className="flex items-center gap-8">
@@ -25,7 +25,7 @@ const Navbar18 = ({ template }) => {
                   <li key={index} className="py-4">
                     <a
                       href={`#${link.url}`}
-                      className="text-lg font-medium hover:text-[--website-18-color-1] py-2 hover:border-b-2 hover:border-[--website-18-color-1] transition-colors duration-500"
+                      className="text-lg font-medium text-[--website-18-color-5] hover:text-[--website-18-color-1] dark:text-[--website-18-color-6] dark:hover:text-[--website-18-color-1] py-2 hover:border-b-2 hover:border-[--website-18-color-1] transition-colors duration-500"
                     >
                       {link.title}
                     </a>

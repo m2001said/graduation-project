@@ -13,8 +13,10 @@ const Testimonial = ({template}) => {
         <div className="container18">
           {/* Header */}
           <div className="space-y-4 pb-12">
-            <p className="text-3xl font-semibold text-center sm:text-4xl font-serif">{testimonial.title}</p>
-            <p className="text-center sm:px-44">{testimonial.description}</p>
+            <p className="text-3xl font-semibold text-center sm:text-4xl font-serif text-[--website-18-color-5] dark:text-[--website-18-color-6]">
+              {testimonial.title}
+            </p>
+            <p className="text-center sm:px-44 text-[--website-18-color-5] dark:text-[--website-18-color-6]">{testimonial.description}</p>
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 text-black dark:text-white">

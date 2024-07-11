@@ -23,7 +23,7 @@ const Footer14 = ({ template }) => {
           <div className="col-span-2 grid grid-cols-2 sm:grid-cols-3 md:pl-10">
             {footer.footerSections.map((item) => (
               <div className="py-8 px-4 " key={item.title}>
-                <h1 className="footer14-sectionTitle text-xl font-bold sm:text-left mb-3">{item.title}</h1>
+                <h1 className="footer14-sectionTitle text-xl font-bold sm:text-left mb-3 text-black dark:text-white">{item.title}</h1>
                 <ul className={`flex flex-col gap-3`}>
                   {item.links.map((link) => (
                     <a href={link.url} key={link.title}>
@@ -36,13 +36,13 @@ const Footer14 = ({ template }) => {
 
             {/* Company Address */}
             <div className="py-8 px-4 col-span-2 sm:col-auto">
-              <h1 className="footer14-sectionTitle text-xl font-bold sm:text-left mb-3">Contact</h1>
+              <h1 className="footer14-sectionTitle text-xl font-bold sm:text-left mb-3 text-black dark:text-white">Contact</h1>
               <div>
                 <div className="flex flex-col gap-3">
                   {footer.contacts.map((item, index) => (
                     <div className="flex items-center gap-3 " key={index}>
                       <img src={item.icon} alt="" className="w-6" />
-                      <p>{item.value}</p>
+                      <p className="text-gray-600 dark:text-gray-400">{item.value}</p>
                     </div>
                   ))}
                 </div>

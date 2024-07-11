@@ -12,8 +12,8 @@ const Teams10 = ({ template }) => {
           {/* head sec */}
           <div className="text-center mb-10 max-w-[600px] mx-auto">
             <p className="smHeader10 text-sm bg-clip-text text-transparent">{team.subtitle}</p>
-            <h1 className="text-3xl font-bold">{team.title}</h1>
-            <p className="text-xs text-gray-400">{team.description}</p>
+            <h1 className="text-3xl font-bold textColor10">{team.title}</h1>
+            <p className="text-xs paraColor10">{team.description}</p>
           </div>
           {/* card sec */}
           <div>
@@ -22,11 +22,11 @@ const Teams10 = ({ template }) => {
                 <div className="space-y-3" key={index}>
                   <img src={data.imgUrl} alt="" className="h-[220px] w-[150px] object-cover rounded-md " />
                   <div>
-                    <h2 className="font-semibold">{data.title}</h2>
-                    <p className="text-sm text-gray-700 dark:text-gray-400">{data.name}</p>
+                    <h2 className="font-semibold textColor10">{data.title}</h2>
+                    <p className="text-sm paraColor10 dark:text-gray-400">{data.name}</p>
                     <div className="flex items-center gap-1">
                       <img src={data.icon} alt="" className="w-6" />
-                      <span>{data.rating}</span>
+                      <span className="textColor10">{data.rating}</span>
                     </div>
                   </div>
                 </div>

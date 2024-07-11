@@ -11,7 +11,7 @@ const Projects14 = ({template}) => {
       <div className="container14">
         {/* Header section */}
         <div className="text-center mb-10 max-w-[600px] mx-auto space-y-2">
-          <h1 className="text-3xl font-bold lg:text-4xl">{projects1.title}</h1>
+          <h1 className="text-3xl font-bold lg:text-4xl text-black dark:text-white">{projects1.title}</h1>
           <p className="text-xs text-gray-400">{projects1.description}</p>
         </div>
         {/* Body section */}
@@ -30,8 +30,8 @@ const Projects14 = ({template}) => {
                   </div> */}
                 </div>
                 <div className="leading-7">
-                  <h2 className="font-semibold">{data.title}</h2>
-                  <h2 className="font-bold ">{data.price}</h2>
+                  <h2 className="font-semibold text-black dark:text-white">{data.title}</h2>
+                  <h2 className="font-bold text-black dark:text-white">{data.price}</h2>
                 </div>
               </div>
             ))}

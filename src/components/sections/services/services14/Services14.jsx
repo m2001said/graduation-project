@@ -13,7 +13,7 @@ const Services14 = ({ template }) => {
             <div className="flex flex-col items-start sm:flex-row gap-4" key={index}>
               <img src={data.icon} alt="" className="w-[50px]" />
               <div>
-                <h1 className="lg:text-xl font-bold">{data.title}</h1>
+                <h1 className="lg:text-xl font-bold text-black dark:text-white">{data.title}</h1>
                 <h1 className="text-gray-400 text-sm">{data.description}</h1>
               </div>
             </div>
