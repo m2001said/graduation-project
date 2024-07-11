@@ -2,9 +2,9 @@ import React, { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { loginUserAsync } from "../../../features/auth/authSlice";
 import { useNavigate } from "react-router-dom";
-import { unwrapResult } from "@reduxjs/toolkit";
 import ForgetPasswordForm from "./ForgetPasswordForm";
 import { useTranslation } from "react-i18next";
+import { validate } from "./validationUtils";
 
 const LoginForm = ({ toggleForm, toggleModal }) => {
   const { t, i18n } = useTranslation();
@@ -20,22 +20,24 @@ const LoginForm = ({ toggleForm, toggleModal }) => {
 
   const handleSignInClick = async () => {
     try {
-      const user = await dispatch(loginUserAsync({ email, password }));
-      const result = unwrapResult(user);
-
-      // Only toggle the modal if the login is successful
-      toggleModal();
-      const currentTime = new Date().getTime();
-      localStorage.setItem("loginTime", currentTime);
-
-      if (result.user.role === "admin" || result.user.role === "super-admin") {
-        navigate(`/${language}/admin`);
-      } else {
-        navigate(`/${language}/services`);
+      const validationError = validate("login", "", email, password);
+      if (validationError) {
+        setLoginError(validationError);
+        return;
       }
+      const user = await dispatch(loginUserAsync({ email, password }));
+
+      if (user.payload.user.role === "admin" || user.payload.user.role === "super-admin") {
+        await navigate(`/${language}/admin`);
+      } else {
+        await navigate(`/${language}/designs`);
+      }
+
+      toggleModal();
     } catch (error) {
       console.error("Login failed:", error);
-      setLoginError(error.message || "Invalid login credentials. Please try again.");
+      setLoginError("Invalid login credentials. Please try again.");
+
     }
   };
 

@@ -6,7 +6,7 @@ const Reservation16 = ({ template }) => {
   const reservation = template.reservation;
 
   return (
-    <section className="reservation16 container16" id="reservation16">
+    <section className="reservation16 container16" id={reservation.sectionId}>
       <h2 className="section__title16 " data-title="Reservation">
         {reservation.title}
       </h2>

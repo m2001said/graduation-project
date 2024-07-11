@@ -10,7 +10,7 @@ const Featrue1 = ({ template }) => {
   const language = i18n.language;
 
   return (
-    <div className="feature1-layout design-1">
+    <div className="feature1-layout design-1" id={feature.sectionId}>
       <div className="feature-image-container1">
         <div className="img-background1">
           <img className="feature-img-background1" src={feature.imgUrl} alt="" />{" "}

@@ -9,7 +9,7 @@ const Feature5 = ({template}) => {
   const feature1 = template ? template.features : ownFooter;
 
 return (
-  <div className="feature5_1 design5-section design5">
+  <div className="feature5_1 design5-section design5" id={feature1.sectionId}>
     <div className="feature5_1-mainSection">
       <div className="feature5_1-title">
         <small>{feature1.subtitle}</small>

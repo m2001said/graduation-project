@@ -26,7 +26,7 @@ const UpdateUserPicture = () => {
       const formData = new FormData();
       formData.append("avatar", file);
 
-      const backendResponse = await axios.post("/user/upload", formData, {
+      const backendResponse = await axios.post(`${process.env.REACT_APP_BACKEND_URL}/user/upload`, formData, {
         headers: {
           Authorization: `Bearer ${token}`,
           "Content-Type": "multipart/form-data",

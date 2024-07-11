@@ -24,7 +24,7 @@ const Navbar18 = ({ template }) => {
                 {navbar.links.map((link, index) => (
                   <li key={index} className="py-4">
                     <a
-                      href={link.url}
+                      href={`#${link.url}`}
                       className="text-lg font-medium hover:text-[--website-18-color-1] py-2 hover:border-b-2 hover:border-[--website-18-color-1] transition-colors duration-500"
                     >
                       {link.title}

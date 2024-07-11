@@ -17,7 +17,7 @@ import TrialDesign from "./TrialDesign";
 const TrialDesign16 = () => {
   const componentMapping = {
     about: About16,
-    feature: Feature16,
+    features: Feature16,
     galary: Gallery16,
     items: Items16,
     choose: Choose16,

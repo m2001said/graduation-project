@@ -5,7 +5,7 @@ import Navbar1 from "../components/sections/navbars/navbar1/Navbar1";
 import Hero1 from "../components/sections/heros/hero1/Hero1";
 import Services1 from "../components/sections/services/services1/Services1";
 import Project1 from "../components/sections/projects/projects1/Project1";
-import Items1 from "../components/sections/items/items1/Items1";
+// import Items1 from "../components/sections/items/items1/Items1";
 import Statistics1 from "../components/sections/statistics/statistics1/Statistics1";
 import Testimonials1 from "../components/sections/testimonials/testimonials1/Testimonials1";
 import Featrue1 from "../components/sections/features/feature1/Featrue1";
@@ -19,7 +19,7 @@ import "../assets/css/globals1.css";
 const componentMapping1 = {
   services: Services1,
   projects: Project1,
-  items: Items1,
+  // items: Items1,
   statistics: Statistics1,
   testimonials: Testimonials1,
   features: Featrue1,

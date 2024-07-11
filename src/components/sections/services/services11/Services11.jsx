@@ -8,7 +8,8 @@ const Services11 = ({ template }) => {
   const services = template ? template.services : ownServices;
 
   return (
-    <section className="about" id={services.sectionId}>
+    // <section className="about" id={services.sectionId} >
+    <section className="about" id="about">
       <h2 className="section__title11">{services.title}</h2>
       <div className="flex items-center justify-center gap-10 flex-wrap py-10 md:py-16">
         <img src={services.imgUrl} alt="" className="" />

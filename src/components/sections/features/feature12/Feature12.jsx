@@ -5,7 +5,7 @@ const Feature12 = ({ template }) => {
   const ownFooter = useSelector((state) => state.ownTemplate.features);
   const features = template ? template.features : ownFooter;
   return (
-    <div className="container12">
+    <div className="container12" id={features.sectionId}>
       <h2 className=" title12 section__title16">{features.title}</h2>
       <div className="programs12">
         {features.features.map((features, index) => (

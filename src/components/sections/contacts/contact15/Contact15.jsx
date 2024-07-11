@@ -42,21 +42,21 @@ const Contact15 = ({ template }) => {
               <div className="sm:flex gap-x-8 w-full mb-8">
                 <label className="flex flex-col w-full gap-4">
                   <p className="pl-12 font-bold text-sm cont15_4">{contact.name}</p>
-                  <input type="text" className="rounded-full h-[60px] px-8 border border-white border-solid outline-none" />
+                  <input type="text" className="rounded-full h-[60px] border border-white text-green-500 border-solid outline-none" />
                 </label>
 
                 <label className="flex flex-col w-full gap-4">
                   <p className="pl-12 font-bold text-sm cont15_4">{contact.address}</p>
-                  <input type="email" className="rounded-full h-[60px] px-8 border border-white border-solid outline-none" />
-                </label>
+                  <input type="email" className="rounded-full h-[60px] border border-white text-green-500 outline-none px-4" />
+                  </label>
               </div>
               <label className="flex flex-col w-full gap-4">
                 <p className="pl-12 font-bold text-sm cont15_4">{contact.subject}</p>
-                <input type="text" className="rounded-full h-[60px] px-8 border border-white border-solid outline-none" />
+                <input type="text" className="rounded-full h-[60px] px-8 border border-white  text-green-500 border-solid outline-none" />
               </label>
               <label className="flex flex-col w-full gap-4">
                 <p className="pl-12 font-bold text-sm cont15_4">{contact.message}</p>
-                <textarea className="rounded-[30px] p-8 h-[140px] resize-none border-white border-solid outline-none" />
+                <textarea className="rounded-[30px] p-8 h-[140px] resize-none border border-white text-green-500 border-solid outline-none" />
               </label>
               <div className="flex sm:flex-row flex-col sm:items-center items-end justify-end gap-8">
                 <span className="block rounded-full h-14 border border-black border-solid shadowbtn">

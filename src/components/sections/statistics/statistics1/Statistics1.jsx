@@ -30,7 +30,7 @@ const Statistics1 = ({ template }) => {
   }, [started, statistic]);
 
   return (
-    <div className="statistics1 design-1">
+    <div className="statistics1 design-1" id={statistic.sectionId}>
       <div className="statistics1-cards">
         {statistic.statistics.map((cards, index) => (
           <div className="statistics1-card" key={index}>
