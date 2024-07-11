@@ -30,9 +30,6 @@ const TrialDesign = ({ componentMapping, FooterComponent, NavbarComponent, HeroC
   const templateId = searchParams.get("templateId") || null;
   const [templateData, setTemplateData] = useState(null);
   const id = searchParams.get("id") || templateId || null;
-
-  console.log(id);
-
   let state = useSelector((state) => {
     if (url.pathname.includes("own-page")) {
       return state.ownTemplate;
@@ -56,13 +53,8 @@ const TrialDesign = ({ componentMapping, FooterComponent, NavbarComponent, HeroC
         console.log(res.data);
         removeEmptyArrays(res.data);
         console.log(res.data);
-
         setTemplateData(res.data);
         setIsLoading(false);
-        // document.documentElement.style = "";
-        // for (let index = 0; index < res.data.colors?.templateColors.length; index++) {
-        //   document.documentElement.style.setProperty(`--website-${templateNumber}-color-${index + 1}`, res.data.colors?.templateColors[index]);
-        // }
       } catch (error) {
         console.error("Error fetching template data:", error);
       }
@@ -78,12 +70,6 @@ const TrialDesign = ({ componentMapping, FooterComponent, NavbarComponent, HeroC
         fetchData();
       }
     }
-    // else {
-    //   document.documentElement.style = "";
-    //   for (let index = 0; index < state.colors?.templateColors.length; index++) {
-    //     document.documentElement.style.setProperty(`--website-${templateNumber}-color-${index + 1}`, state.colors?.templateColors[index]);
-    //   }
-    // }
   }, []);
 
   const persist = JSON.parse(localStorage.getItem("persist:root"));
@@ -105,9 +91,7 @@ const TrialDesign = ({ componentMapping, FooterComponent, NavbarComponent, HeroC
       dispatch(fetchInitialTemplate(template));
     }
   }, [dispatch]);
-
-  //       // this will return to intial state if you do refresh
-
+  //this will return to intial state if you do refresh
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);

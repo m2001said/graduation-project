@@ -3,7 +3,6 @@ import { useDispatch, useSelector } from "react-redux";
 import ChangeImageController from "../ChangeImageController";
 
 const SubFieldControllerIsObject = ({ targetSection, sectionName, cardIndex, blockName, subBlockName, dispatchRef, showSection }) => {
-  // const targetSection = useSelector((state) => state.template[sectionName]);
   const dispatch = useDispatch();
   const fields = Object.keys(targetSection[blockName][cardIndex][subBlockName]);
   const pattern = /\.(jpg|gif|png|svg)$/i;
@@ -20,7 +19,6 @@ const SubFieldControllerIsObject = ({ targetSection, sectionName, cardIndex, blo
         return (
           <div className="subController " key={index}>
             <label className="text-[16px]  capitalize">{field}</label>
-            {/* {field === "imgUrl" || field === "icon" ? ( */}
             {pattern.test(targetSection[blockName][cardIndex][subBlockName][field]) ? (
               <ChangeImageController field={field} src={targetSection[blockName][cardIndex][subBlockName][field]} dispatchRef={dispatchedRefForImg} />
             ) : (

@@ -10,7 +10,6 @@ import Confetti from "react-confetti";
 import { resetState, templateActions1 } from "../features/templateData/templateSlice";
 import { CopyToClipboard } from "react-copy-to-clipboard";
 import aiPoster from "../assets/images/mainPageAssets/hero-min.svg";
-
 import axios from "axios";
 import "../globals.css";
 import { useTranslation } from "react-i18next";
@@ -43,7 +42,6 @@ const YourWebsites = () => {
   const [copied, setCopied] = useState(false);
   const [url, setUrl] = useState("");
   const [isLoading, setIsLoading] = useState(false);
-  // const [btnTxt, setBtnTxt] = useState(true);
   const navigate = useNavigate();
 
   const handleCopy = () => {
@@ -114,10 +112,6 @@ const YourWebsites = () => {
       dispatch(templateActions1.updateSchema(res.data));
       setIsLoading(false);
       navigate(`/edit-zweb${templateNum}?id=${templateId}`);
-      // document.documentElement.style = "";
-      // for (let index = 0; index < res.data.colors?.templateColors.length; index++) {
-      //   document.documentElement.style.setProperty(`--website-${templateNum}-color-${index + 1}`, res.data.colors?.templateColors[index]);
-      // }
     } catch (error) {
       console.error("Error fetching template data:", error);
     }
@@ -203,7 +197,7 @@ const YourWebsites = () => {
                       <button
                         className="flex justify-center gap-4 items-center w-full py-2 Build-button design-btn"
                         onClick={() => {
-                          setUrl(`http://localhost:3000/zweb${template.templateInfo.id}?userId=${userId}&templateId=${template._id}`);
+                          setUrl(`https://zagwebbuilder-git-main-m2001saids-projects.vercel.app/zweb${template.templateInfo.id}?userId=${userId}&templateId=${template._id}`);
                           toggleModal();
                         }}
                       >
@@ -229,6 +223,7 @@ const YourWebsites = () => {
               <p className="mx-auto max-w-[700px] text-gray-200 md:text-xl text-center">
                 {t("WEBSITES.NO_WEBSITES")}
                 <Link to={`/${i18n.language}/designs`} className="text-gray-400">
+                  {" "}
                   {t("WEBSITES.CREATE")}
                 </Link>
               </p>

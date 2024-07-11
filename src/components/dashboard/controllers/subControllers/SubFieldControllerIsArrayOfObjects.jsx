@@ -66,8 +66,6 @@ const SubFieldControllerIsArrayOfObjects = ({
       <div className="flex justify-between items-start gap-1 m-1">
         <div className={`flex-grow ${open ? "controller-field" : "controller-field_without-padding"}`}>
           <label className={`cursor-pointer flex-between ${open ? "controller-label " : "controller-label_without-border"}`} onClick={handleShowSection}>
-            {/* <div className="controller-field m-1"> */}
-            {/* <label className=" controller-label"> */}
             {subName}
             {subIndex + 1}
             {open ? <img src="/assets/icons/down.svg" width={14} alt="down" /> : <img src="/assets/icons/up.svg" width={14} alt="down" />}

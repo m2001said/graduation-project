@@ -53,21 +53,14 @@ const OwnPage = () => {
   const { i18n } = useTranslation();
   const location = useLocation();
   const [isLoading, setIsLoading] = useState(false);
-  // const [selectedData , setSelectedData] = useState({})
   let ownTemplate = useSelector((state) => state.ownTemplate);
-  console.log(ownTemplate);
   let selectedData = location.state || ownTemplate?.templateInfo?.selectedSections;
-  console.log(selectedData);
-
-  // setSelectedData(location.state || ownTemplate?.templateInfo?.selectedSections)
-
   const searchParams = new URLSearchParams(location.search);
-  const id = searchParams.get("id");
   const userId = useSelector((state) => state.auth.user && state.auth.user._id) || searchParams.get("userId");
+  const dispatch = useDispatch();
   const templateId = searchParams.get("templateId") || null;
   const [templateData, setTemplateData] = useState(null);
-  console.log(templateId);
-  const dispatch = useDispatch();
+  const id = searchParams.get("id") || templateId || null;
 
   // edit here
   const screen = useSelector((state) => state.screen);
@@ -99,19 +92,10 @@ const OwnPage = () => {
         dispatch(ownTemplateActions.deleteSchema()); // remove data in ownpage slice
         dispatch(ownTemplateActions.insertSections({ data: res.data }));
         setIsLoading(false);
-
-        // setSelectedData(res.data.templateInfo.selectedData)
-        // document.documentElement.style = "";
-        // for (let index = 1; index <= 18; index++) {
-        //   for (let i = 0; i < res.data.colors?.templateColors.length; i++) {
-        //     document.documentElement.style.setProperty(`--website-${index}-color-${i + 1}`, res.data.colors?.templateColors[i]);
-        //   }
-        // }
       } catch (error) {
         console.error("Error fetching template data:", error);
       }
     };
-    console.log(location.pathname);
     if (templateId) {
       if (!location.pathname.includes("edit")) {
         document.getElementById("main-nav").style.display = "none";
@@ -122,16 +106,7 @@ const OwnPage = () => {
         fetchData(templateId);
       }
     }
-
-    // else {
-    //   const colors = ownTemplate.colors;
-    //   for (let index = 1; index <= 18; index++) {
-    //     for (let i = 0; i < colors?.templateColors.length; i++) {
-    //       document.documentElement.style.setProperty(`--website-${index}-color-${i + 1}`, colors?.templateColors[i]);
-    //     }
-    //   }
-    // }
-  }, [dispatch, templateId, userId, location.pathname]);
+  }, [dispatch, templateId, userId, location.pathname]); // change here on trail
 
   if (location.pathname.includes("zweb") && !location.pathname.includes("edit-zweb")) {
     ownTemplate = templateData;
@@ -164,19 +139,22 @@ const OwnPage = () => {
   const sectionNames = ["navbar", "hero", "features", "projects", "services", "contact", "team", "testimonials", "footer"];
   const sectionTypes = ["navbar", "hero", "feature", "project", "service", "contact", "team", "testimonial", "footer"];
 
-  // this function for render components in right order based on changes of user
-  let renderOrderedComponents = reorderedComponents?.map((section) => {
-    for (let index = 0; index < sectionTypes.length; index++) {
-      const element = sectionTypes[index];
-      if (section.startsWith(element)) {
-        return { type: sectionTypes[index], index: index };
+  let renderOrderedComponents =
+    reorderedComponents &&
+    reorderedComponents?.map((section) => {
+      for (let index = 0; index < sectionTypes.length; index++) {
+        const element = sectionTypes[index];
+        if (section.startsWith(element)) {
+          return { type: sectionTypes[index], index: index };
+        }
       }
-    }
-    return null;
-  });
-  renderOrderedComponents = renderOrderedComponents?.filter((element) => {
-    return element !== null;
-  });
+      return null;
+    });
+  renderOrderedComponents =
+    renderOrderedComponents &&
+    renderOrderedComponents?.filter((element) => {
+      return element !== null;
+    });
   useEffect(() => {
     document.documentElement.style = "";
     for (let index = 1; index <= 18; index++) {
@@ -185,21 +163,37 @@ const OwnPage = () => {
       }
     }
   }, [ownTemplate]);
-  selectedData = ownTemplate?.templateInfo.selectedSections;
-  return ownTemplate && Object.keys(ownTemplate).length > 0 ? (
+
+  selectedData = ownTemplate?.templateInfo?.selectedSections;
+  const checkCondition = ownTemplate?._id === id || id === null ;
+  const copyObjectWithoutId = (obj) => {
+    const newObj = {};
+    for (let key in obj) {
+      if (key !== "_id") {
+        newObj[key] = obj[key];
+      }
+    }
+    return newObj;
+  };
+  const newOwnTemplate = copyObjectWithoutId(ownTemplate);
+  return ownTemplate && Object.keys(ownTemplate).length > 0 && checkCondition ? (
     templateId ? (
       <>{renderOrderedComponents.map((element) => renderComponent(element.type, selectedData[`${sectionNames[element.index]}IndexSelected`]))}</>
     ) : (
       <>
         <section className="dashboard-container mx-auto relative">
-          <TopSide schema={ownTemplate} />
-          <div className="w-full flex-between flex-col md:flex-row dashboard-subContainer overflow-hidden">
-            <LeftSide targetTemplate={ownTemplate} updateAllRef={ownTemplateActions} />
+          <TopSide schema={newOwnTemplate} />
+          <div className={`w-full ${screen === "phone" ? "flex content-start" : "flex-between"} flex-col md:flex-row dashboard-subContainer overflow-hidden`}>
+            <LeftSide targetTemplate={newOwnTemplate} updateAllRef={ownTemplateActions} />
             <div
               className="max-md:w-full md:w-70 flex-auto  flex justify-start flex-col items-center text-black p-2"
               style={{ height: "calc(100vh - 56px)", maxWidth: screenWidth }}
             >
-              <div className="w-full border border-slate-300 shadow  md:rounded-tl-3xl md:rounded-bl-3xl  mb-2 overflow-y-auto overflow-x-hidden  mx-2 md:mx-4 md:self-start md:ml-1 relative">
+              <div
+                className={`w-full border border-slate-300 shadow ${
+                  screen === "phone" ? "md:rounded-3xl " : "md:rounded-tl-3xl md:rounded-bl-3xl"
+                }    mb-2 overflow-y-auto overflow-x-hidden  mx-2 md:mx-4 md:self-start md:ml-1 relative`}
+              >
                 {renderOrderedComponents.map((element) => renderComponent(element.type, selectedData[`${sectionNames[element.index]}IndexSelected`]))}
               </div>
             </div>
@@ -211,13 +205,14 @@ const OwnPage = () => {
     <div className="designs-section flex items-center justify-center">
       <Loader />
     </div>
+  ) : !ownTemplate?.savingflag ? (
+    <div className="fixed top-0 left-0 w-full h-full d-flex items-center justify-center">
+      <NotFound />
+    </div>
   ) : (
-    <>
-      <div className="fixed top-0 left-0 w-full h-full d-flex items-center justify-center">
-        <NotFound />
-      </div>
-      {/* <Navigate to={`/${i18n.language}/pages`} /> */}
-    </>
+    <div className="fixed top-0 left-0 w-full h-full d-flex items-center justify-center">
+      <Loader />
+    </div>
   );
 };
 

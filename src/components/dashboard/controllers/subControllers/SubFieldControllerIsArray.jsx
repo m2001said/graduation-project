@@ -19,8 +19,6 @@ const SubFieldControllerIsArray = ({ targetSection, cardIndex, sectionName, bloc
   const _targetSection = [...fields];
   _targetSection.push("add new element"); //3
 
-  // const isLastFiled = subIndex === numOfFields - 1;
-  // const isFirstFiled = subIndex === 0;
   const handleReorder = (type, isFirstFiled, isLastFiled, subIndex) => {
     if ((isLastFiled && type === "down") | (isFirstFiled && type === "up")) {
       return;

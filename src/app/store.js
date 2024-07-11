@@ -3,9 +3,7 @@ import authReducer from "../features/auth/authSlice";
 import storage from "redux-persist/lib/storage";
 import { combineReducers } from "redux";
 import { persistReducer, persistStore } from "redux-persist";
-
 import screenReducer from "../features/screen/screenSlice";
-import templatesReducer from "../features/templates/templatesSlice";
 import pagesReducer from "../features/templates/pagesSlice";
 import websitesReducer from "../features/templates/websitesSlice";
 import messagesReducer from "../features/messages/messagesSlice";
@@ -15,7 +13,6 @@ import templateReducer from "../features/templateData/templateSlice";
 const rootReducer = combineReducers({
   auth: authReducer,
   screen: screenReducer,
-  templates: templatesReducer,
   pages: pagesReducer,
   websites: websitesReducer,
   ownTemplate: ownTemplateReducer,

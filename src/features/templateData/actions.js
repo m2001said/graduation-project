@@ -5,7 +5,6 @@ function capitalizeFirstLetter(string) {
 }
 
 export const updateSchema = (state, action) => {
-  console.log("action.payload in updateSchema", action.payload);
   delete action.payload.owner;
   // delete action.payload._id;
   delete action.payload.__v;
@@ -15,9 +14,6 @@ export const updateSchema = (state, action) => {
 };
 
 export const changePalletes = (state, action) => {
-  console.log(state.templateInfo.id);
-
-  console.log(action.payload);
   for (let index = 1; index <= action.payload.length; index++) {
     if (state.templateInfo.id === 0) {
       for (let i = 1; i <= 18; i++) {

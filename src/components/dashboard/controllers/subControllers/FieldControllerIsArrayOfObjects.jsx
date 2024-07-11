@@ -1,12 +1,11 @@
 import React, { useState } from "react";
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
 import SubFieldControllerIsArrayOfObjects from "./SubFieldControllerIsArrayOfObjects";
 import SubFieldControllerIsArray from "./SubFieldControllerIsArray";
 import ChangeImageController from "../ChangeImageController";
 import SubFieldControllerIsObject from "./SubFieldControllerIsObject";
 import { Reorder } from "../shared/Reorder";
 const FieldControllerIsArrayOfObjects = ({ targetSection, cardIndex, sectionName, subName, blockName, dispatchRef, numOfFields }) => {
-  // const targetSection = useSelector((state) => state.template6[sectionName]);
   const dispatch = useDispatch();
   const dispatchedRefForImg = (target, result) =>
     dispatchRef.updateTemplate({ section: sectionName, variable: target, value: result?.info?.secure_url, i: cardIndex, blockName: blockName });
@@ -132,32 +131,6 @@ const FieldControllerIsArrayOfObjects = ({ targetSection, cardIndex, sectionName
       {show ? null : (
         <Reorder isFirstFiled={isFirstFiled} isLastFiled={isLastFiled} deleteItem={deleteItem} handleReorder={handleReorder} componentType={"branch"} />
       )}
-      {/* <div className="flex-center border rounded-xl" style={{ marginTop: "6px" }}>
-        <div className="px-2 py-1 ">
-          <img
-            src="/assets/icons/arrow-small-up.svg"
-            alt="delete"
-            style={{ width: 20, cursor: `${cardIndex === 0 ? "auto" : "pointer"}`, opacity: `${cardIndex === 0 ? "0.3" : "1"}` }}
-            onClick={() => handleReorder("up")}
-          />
-        </div>
-        <div className="px-2 py-1 " style={{ marginTop: "0px" }}>
-          <img src="/assets/icons/trash.svg" alt="delete" style={{ width: 16, cursor: "pointer" }} onClick={deleteItem} />
-        </div>
-        <div className="px-2 py-1 ">
-          <img
-            src="/assets/icons/arrow-small-up.svg"
-            alt="delete"
-            style={{
-              width: 20,
-              cursor: `${isLastFiled ? "auto" : "pointer"}`,
-              opacity: `${isLastFiled ? "0.3" : "1"}`,
-              transform: "rotate(180deg)",
-            }}
-            onClick={() => handleReorder("down")}
-          />
-        </div>
-      </div> */}
     </div>
   );
 };

@@ -48,16 +48,6 @@ const TopSide = ({ schema }) => {
     dispatch(updateScreen("phone"));
   };
 
-  // const copyObjectWithoutId = (obj) => {
-  //   const newObj = {};
-  //   for (let key in obj) {
-  //     if (key !== "_id") {
-  //       newObj[key] = obj[key];
-  //     }
-  //   }
-  //   return newObj;
-  // };
-
   const handleSubmit = async () => {
     setIsError(false);
     const regex = /\d+/;
@@ -71,8 +61,6 @@ const TopSide = ({ schema }) => {
       url = isUpdating ? `${process.env.REACT_APP_BACKEND_URL}/website/update/${id}` : `${process.env.REACT_APP_BACKEND_URL}/website`;
     }
     const text = inOwnPage ? "page" : "website";
-    // const newSchema = copyObjectWithoutId(schema);
-
     try {
       setIsGenerating(true);
       setWaitingMsg(isUpdating ? `Please waite for updating your ${text}` : `Please waite for genrating your ${text}`);
@@ -92,6 +80,7 @@ const TopSide = ({ schema }) => {
         dispatch(fetchPages()); // need edit
         navigate(`/${i18n.language}/pages`);
         dispatch(ownTemplateActions.deleteSchema()); // remove data in ownpage slice
+        dispatch(ownTemplateActions.fireFlag(true))
       } else {
         // get websites in websites page
         dispatch(fetchWebsites());
@@ -108,20 +97,20 @@ const TopSide = ({ schema }) => {
   const devices = [
     {
       icon: <img src="/assets/icons/pc.svg" height={22} alt="down" style={{ cursor: "pointer" }} onClick={updateToPC} />,
-      endPoint: "5000",
+      endPoint: "1920",
       startPoint: "1024",
       type: "pc",
     },
     {
       icon: <img src="/assets/icons/tablet.svg" height={27} alt="down" style={{ cursor: "pointer" }} onClick={updateToTablet} />,
       endPoint: "1023",
-      startPoint: "768",
+      startPoint: "600",
       type: "tablet",
     },
     {
       icon: <img src="/assets/icons/phone.svg" height={27} alt="down" style={{ cursor: "pointer" }} onClick={updateToIphone} />,
-      endPoint: "767",
-      startPoint: "0",
+      endPoint: "425",
+      startPoint: "320",
       type: "phone",
     },
   ];

@@ -29,12 +29,13 @@ const YourPages = () => {
   const [copied, setCopied] = useState(false);
   const [url, setUrl] = useState("");
   const [isLoading, setIsLoading] = useState(false);
-  // const [btnTxt, setBtnTxt] = useState(true);
   const navigate = useNavigate();
-
   const handleCopy = () => {
     setCopied(true);
   };
+  useEffect(() => {
+    dispatch(ownTemplateActions.deleteSchema());
+  }, [templates]);
 
   useEffect(() => {
     if (status === "idle") {
@@ -70,7 +71,6 @@ const YourPages = () => {
       </div>
     );
   }
-
 
   function removeEmptyArrays(obj) {
     for (let prop in obj) {
@@ -109,15 +109,6 @@ const YourPages = () => {
       setIsLoading(false);
       navigate(`/edit-zweb?id=${templateId}`);
       document.documentElement.style = "";
-
-      // you can remove it from here or from own page
-      // for (let i = 1; i <= 18; i++) {
-      //   for (let index = 0; index < res.data.colors?.templateColors.length; index++) {
-      //     document.documentElement.style.setProperty(`--website-${i}-color-${index + 1}`, res.data.colors?.templateColors[index]);
-      //   }
-      // }
-
-
     } catch (error) {
       console.error("Error fetching template data:", error);
     }
@@ -126,7 +117,7 @@ const YourPages = () => {
     window.scrollTo(0, 0);
     setIsModalOpen(!isModalOpen);
     setIsCelebrityBirthday(!isCelebrityBirthday);
-    setCopied(false)
+    setCopied(false);
   };
   return isLoading ? (
     <div className="designs-section flex items-center justify-center">
@@ -169,13 +160,6 @@ const YourPages = () => {
               <div className="designs-container flex flex-wrap gap-8 justify-center">
                 {templates.map((template, index) => (
                   <div className="websites design-card rounded-lg overflow-hidden shadow-lg flex flex-column  relative" key={template._id} id={template._id}>
-                    {/* <div
-                      className="absolute left-[-36px] top-[-36px] z-30 w-[100px] h-[100px] flex justify-center items-center text-2xl rounded-full"
-                      style={{ padding: "2rem 0 0 2rem", backgroundColor: "rgb(67 12 123)" }}
-                    >
-                      V{template.versionNumber}
-                    </div> */}
-
                     <div
                       className="trash absolute left-[-36px] top-[-36px] z-30 w-[100px] h-[100px] flex justify-center items-center text-2xl rounded-full"
                       style={{ padding: "2rem 0 0 2rem", backgroundColor: "white" }}
@@ -201,7 +185,7 @@ const YourPages = () => {
                       <button
                         className="flex justify-center gap-4 items-center w-full py-2 Build-button design-btn"
                         onClick={() => {
-                          setUrl(`http://localhost:3000/zweb?userId=${userId}&templateId=${template._id}`);
+                          setUrl(`https://zagwebbuilder-git-main-m2001saids-projects.vercel.app/zweb?userId=${userId}&templateId=${template._id}`);
                           toggleModal();
                         }}
                       >
@@ -227,6 +211,7 @@ const YourPages = () => {
               <p className="mx-auto max-w-[700px] text-gray-200 md:text-xl text-center">
                 {t("PAGES.NO_PAGES")}
                 <Link to={`/${i18n.language}/page-craft`} className="text-gray-400">
+                  {" "}
                   {t("PAGES.CREATE")}
                 </Link>
               </p>

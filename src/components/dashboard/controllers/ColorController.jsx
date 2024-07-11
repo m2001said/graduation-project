@@ -11,28 +11,11 @@ const ColorController = ({ targetTemplate, updateAll }) => {
     setFirstColor(colors.templateColors.slice());
   }, []);
 
-
-  // const { colors } = useSelector((state) => state.template);
   const colors = targetTemplate.colors;
   const templateColors = Object.keys(colors)[0];
   const dispatch = useDispatch();
-  // const [webColors, setWebColors] = useState(colors.templateColors);
-
   const handleChange = (e, index) => {
-    // const styleAttributeValue = document.documentElement.getAttribute("style");
-    // const styleDeclarations = styleAttributeValue.split(";");
-    // styleDeclarations.pop();
-    // let colors = [];
-    // styleDeclarations.forEach((declaration) => {
-    //   const [property] = declaration.trim().split(":");
-    //   colors.push(property);
-    // });
-    // const copiedColors = webColors.slice();
-    // copiedColors[index] = e.target.value;
-    // setWebColors(copiedColors);
-    // document.documentElement.style.setProperty(colors[index], e.target.value);
     dispatch(updateAll.updateTemplate({ section: "colors", variable: null, value: e.target.value, i: index, blockName: templateColors }));
-    // document.documentElement.style.setProperty(`--website-${targetTemplate.templateInfo.id}-color${index + 1}`, e.target.value);
   };
   const palettes = [
     colors.templateColors,

@@ -1,5 +1,16 @@
 import { createSlice } from "@reduxjs/toolkit";
-import { addElement, addElementToArray, addSubElement, changePalletes, deleteElement, deleteSection, editElement, reorder, reorderSections, updateSchema } from "./actions";
+import {
+  addElement,
+  addElementToArray,
+  addSubElement,
+  changePalletes,
+  deleteElement,
+  deleteSection,
+  editElement,
+  reorder,
+  reorderSections,
+  updateSchema,
+} from "./actions";
 const ownTemplateSlice = createSlice({
   initialState: {},
 
@@ -35,12 +46,17 @@ const ownTemplateSlice = createSlice({
     insertSections: (state, action) => {
       const { data } = action.payload;
       delete data.owner;
-      delete data._id;
+      // delete data._id;
       delete data.__v;
+      delete data.flag;
       return data;
     },
     deleteSchema: (state, action) => {
       return {};
+    },
+    fireFlag: (state, action) => {
+      console.log(action.payload)
+      return { savingflag: action.payload };
     },
     updateSchema: (state, action) => {
       console.log(state);

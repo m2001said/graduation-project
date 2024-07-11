@@ -13,11 +13,11 @@ const Dashboard = () => {
   useEffect(() => {
     let sWidth;
     if (screen === "phone") {
-      sWidth = "767px";
+      sWidth = "425px";
     } else if (screen === "tablet") {
       sWidth = "1023px";
     } else {
-      sWidth = "5000px"; // Default width if screen is neither "phone" nor "tablet"
+      sWidth = "1920px"; // Default width if screen is neither "phone" nor "tablet"
     }
     setScreenWidth(sWidth);
   }, [screen]);
@@ -32,18 +32,18 @@ const Dashboard = () => {
     return newObj;
   };
 
-  const newState = copyObjectWithoutId(state)
+  const newState = copyObjectWithoutId(state);
 
   return (
     <section className="dashboard-container mx-auto relative">
       <TopSide schema={newState} />
-      <div className="w-full flex-between flex-col md:flex-row dashboard-subContainer overflow-hidden">
+      <div className={`w-full ${screen === 'phone' ? 'flex content-start':'flex-between'} flex-col md:flex-row dashboard-subContainer overflow-hidden`}>
         <LeftSide targetTemplate={newState} updateAllRef={templateActions1} />
         <div
           className="max-md:w-full md:w-70 flex-auto  flex justify-start flex-col items-center text-black "
           style={{ height: "calc(100vh - 56px)", maxWidth: screenWidth }}
         >
-          <div className="w-full border border-slate-300 shadow  md:rounded-tl-3xl md:rounded-bl-3xl  mb-2 overflow-y-auto overflow-x-hidden  mx-2 md:mx-4 md:self-start md:ml-1 relative">
+          <div className={`w-full border border-slate-300 shadow ${screen === 'phone' ? 'md:rounded-3xl ':'md:rounded-tl-3xl md:rounded-bl-3xl'}    mb-2 overflow-y-auto overflow-x-hidden  mx-2 md:mx-4 md:self-start md:ml-1 relative`}>
             <RightSide />
           </div>
         </div>

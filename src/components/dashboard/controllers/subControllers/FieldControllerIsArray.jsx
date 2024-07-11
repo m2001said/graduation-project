@@ -3,7 +3,6 @@ import { useDispatch } from "react-redux";
 import ChangeImageController from "../ChangeImageController";
 import { Reorder } from "../shared/Reorder";
 const FieldControllerIsArray = ({ targetSection, sectionName, subName, blockName, dispatchRef, numOfFields }) => {
-  // const targetSection = useSelector((state) => state.template[sectionName]);
   const dispatch = useDispatch();
   const [open, setOpen] = useState(false);
   const fields = targetSection[blockName];
@@ -13,8 +12,6 @@ const FieldControllerIsArray = ({ targetSection, sectionName, subName, blockName
     setOpen(!open);
   };
   const pattern = /\.(jpg|gif|png|svg)$/i;
-  // const dispatchedRefForImg = (target, result) =>
-  // dispatchRef({ section: sectionName, variable: null, value: result?.info?.secure_url, i: index, blockName: blockName });
 
   // add new future to section for example if i have 3 services and i need to add one else
   const addNewElement = () => {

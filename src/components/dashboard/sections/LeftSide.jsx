@@ -39,7 +39,7 @@ const LeftSide = ({ targetTemplate, updateAllRef }) => {
   });
   let stopCheckFirst = true;
   return showLeftSide ? (
-    <div className="max-md:w-full flex-auto w-60 pb-6 bg-white md:overflow-y-auto md:overflow-x-hidden dashboard-subContainer" style={{ minWidth: "250px" }}>
+    <div className="max-md:w-full flex-auto w-60 pb-6 bg-white md:overflow-y-auto md:overflow-x-hidden dashboard-subContainer" style={{ minWidth: "250px" , maxWidth:'600px' }}>
       <div className="update-controller">
         <div className="flex-between cursor-pointer" onClick={handleClick}>
           <h3 className="body-bold  cursor-pointer uppercase">edit sections</h3>
