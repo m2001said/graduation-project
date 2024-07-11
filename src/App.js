@@ -59,15 +59,15 @@ function App() {
         <Routes>
           <Route path={`/${language}/success-verified`} element={<SuccessVerified />} />
           <Route path={`/${language}/failed-verified`} element={<FailedVerified />} />
-          <Route path={`/${language}/reset-password/:token`} element={<ResetPassword />} />
+          <Route path={`/${language}/reset-password`} element={<ResetPassword />} />
 
           <Route path={`/${language}`} element={<MainPage toggleModal={toggleModal} isModalOpen={isModalOpen} />} />
           <Route
             path={`/${language}/designs`}
             element={
-               <ProtectedRoute>
+              <ProtectedRoute>
                 <DesignsPage />
-               </ProtectedRoute>
+              </ProtectedRoute>
             }
           />
           <Route

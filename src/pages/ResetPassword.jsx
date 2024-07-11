@@ -1,24 +1,32 @@
-import React, { useState } from "react";
-import { useParams } from "react-router-dom";
+import React, { useState, useEffect } from "react";
 import axios from "axios";
 import LoadingButton from "../components/loadingButton/LoadingButton";
 
 const ResetPassword = () => {
-  const { token } = useParams();
   const [password, setPassword] = useState("");
   const [message, setMessage] = useState("");
   const [loading, setLoading] = useState(false);
+  const [accessToken, setAccessToken] = useState("");
+
+  useEffect(() => {
+    const urlParams = new URLSearchParams(window.location.search);
+    const token = urlParams.get("token");
+    if (token) {
+      setAccessToken(token);
+    }
+  }, []);
 
   const handleResetPassword = async () => {
     setLoading(true);
     try {
-      const response = await axios.post(`/user/reset-password/${token}`, {
+      const response = await axios.post(`${process.env.REACT_APP_BACKEND_URL}/user/reset-password/${accessToken}`, {
         password: password,
       });
 
-      setMessage(response.data.message); // Assuming the response has a 'message' field
+      setMessage("Password reset successfully!");
     } catch (error) {
       console.error("Error resetting password:", error);
+      setMessage("Failed to reset password.");
     } finally {
       setLoading(false);
     }
@@ -48,7 +56,7 @@ const ResetPassword = () => {
           />
         </div>
 
-        {message && <div className="text-white bg-gray-500 rounded p-2 w-full md:w-1/2 text-center mt-4">{message}</div>}
+        {message && <div className="text-green-700 p-2 w-full md:w-1/2 text-center mt-4">{message}</div>}
       </section>
     </div>
   );
