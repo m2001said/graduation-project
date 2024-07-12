@@ -48,7 +48,7 @@ const Project15 = ({ template }) => {
           })}
         </section>
         <span className="block rounded-full mt-[70px] h-14 border-black border-solid shadowbtn">
-          <button className="bg-transparent h-full font-bold px-10 rounded-full hover:border-2 border-solid bg-[var(--website-15-color-5)] text-[var(--website-15-color-3)] hover:border-white proj15_10">
+          <button className="bg-transparent h-full font-bold px-10 rounded-full border-2 border-solid bg-[var(--website-15-color-3)] text-[var(--website-15-color-5)] ">
             {projects.linkText}
           </button>
         </span>

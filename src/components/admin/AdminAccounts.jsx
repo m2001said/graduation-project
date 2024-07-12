@@ -21,7 +21,7 @@ const AdminAccounts = () => {
       try {
         setLoading(true);
         setError(false);
-        const data = await axios.get(`${process.env.AI_URL}/user/admin-users?role=admin`, {
+        const data = await axios.get(`${process.env.REACT_APP_BACKEND_URL}/user/admin-users?role=admin`, {
           headers: {
             Authorization: "Bearer " + token,
           },

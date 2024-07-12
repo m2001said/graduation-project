@@ -6,7 +6,7 @@ const Hero5 = ({ template }) => {
   const ownHero = useSelector((state) => state.ownTemplate.hero);
   const hero = template ? template.hero : ownHero;
   return (
-    <div className="hero5 design5">
+    <div className="hero5 design5" id={hero.sectionId}>
       <div className="hero5-mainText">
         <h1>{hero.title}</h1>
       </div>

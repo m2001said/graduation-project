@@ -1,7 +1,16 @@
 import React from "react";
 import "./pricing1.css";
+import { useTranslation } from "react-i18next";
+import { useSelector } from "react-redux";
+
+
 const Pricing1 = ({ template }) => {
-  const pricing = template.pricing;
+
+  const ownPricing = useSelector((state) => state.ownTemplate.pricing);
+  const pricing = template ? template.pricing : ownPricing;
+  const { i18n } = useTranslation();
+  const language = i18n.language;
+
   return (
     <div className="pricing1 design-1" id={pricing.sectionId}>
       <div className="pricing1-head">
@@ -9,7 +18,7 @@ const Pricing1 = ({ template }) => {
         <p>{template.pricing.description}</p>
       </div>
       <div className="pricing1-mainCards">
-        {template.pricing.plans.map((card, index) => (
+        {pricing.plans.map((card, index) => (
           // <div key={index} className={`pricing1-card${index}`}>
           <div key={index} className={index % 2 === 0 ? "pricing1-even-card" : "pricing1-odd-card"}>
             <h3 className="pricing1-card-title">{card.title}</h3>
@@ -28,7 +37,7 @@ const Pricing1 = ({ template }) => {
             <button className={index % 2 === 0 ? "even-card-button" : "odd-card-button"}>
               <span> {card.buttonText} </span>
               <a href={" #"}>
-                <img src={card.icon} alt="icon" />
+                <img src={card.icon} alt="icon" className={language === "ar" ? "transform rotate-180" : ""} />
               </a>
             </button>
           </div>

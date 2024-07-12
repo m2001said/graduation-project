@@ -10,19 +10,19 @@
     "links": [
       {
         "title": "الرئيسية",
-        "url": "#"
+        "url": "hero"
       },
       {
         "title": "تسوق",
-        "url": "#"
+        "url": "items"
       },
       {
-        "title": "حول",
-        "url": "#"
+        "title": "خدمات",
+        "url": "services"
       },
       {
         "title": "المدونات",
-        "url": "#"
+        "url": "blogs"
       }
     ],
     "icon": "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707775619/icons8-shopping-cart-24_w0vwvt.png",
@@ -32,6 +32,7 @@
     ]
   },
   "hero": {
+    "sectionId": "hero",
     "heros": [
       {
         "imgUrl": "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707602286/headphone_qbcak3.png",
@@ -55,6 +56,7 @@
     "buttonText": "تسوق حسب الفئة"
   },
   "items": {
+    "sectionId": "items",
     "title": "استمتع",
     "subtitle": "مع",
     "items": [
@@ -86,6 +88,7 @@
     "buttonText": "تصفح"
   },
   "services": {
+    "sectionId": "services",
     "services": [
       {
         "icon": "https://res.cloudinary.com/dmcdea0b9/image/upload/v1707602721/icons8-sedan-30_zecew1.png",
@@ -167,6 +170,7 @@
     "buttonText": "أضف إلى السلة"
   },
   "blogs": {
+    "sectionId": "blogs",
     "title": "الأخبار الأخيرة",
     "description": "استكشف مدوناتنا",
     "blogs": [
@@ -292,6 +296,6 @@
     ]
   },
   "colors": {
-    "templateColors": ["#f42c37", "fdc62e", "#34cc73", "#1376f4", "#acabab9c", "#ffffff"]
+    "templateColors": ["#f42c37", "#fdc62e", "#34cc73", "#1376f4", "#acabab9c", "#ffffff"]
   }
 }

@@ -11,7 +11,7 @@ const Teams5 = ({template}) => {
 
 
   return (
-    <div className="teams5 design5 design5-container design5-section">
+    <div className="teams5 design5" id={team.sectionId}>
       <div className="teams5-mainSectiom">
         <h2>{team.title}</h2>
 

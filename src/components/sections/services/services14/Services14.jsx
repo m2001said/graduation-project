@@ -6,7 +6,7 @@ const Services14 = ({ template }) => {
   const services = template ? template.services : ownServices;
   
   return (
-    <div className="bg-[--website-14-color-6] dark:bg-gray-900 dark:text-white">
+    <div className="bg-[--website-14-color-6] dark:bg-gray-900 dark:text-white" id={services.sectionId}>
       <div className="container14 py-14 md:py-20">
         <div className="flex justify-center flex-wrap gap-6 gap-y-8">
           {services.services.map((data, index) => (

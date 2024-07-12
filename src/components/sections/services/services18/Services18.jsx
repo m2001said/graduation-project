@@ -18,14 +18,17 @@ const Services = ({template}) => {
             {services.services.map((data) => (
               <div
                 key={data.title}
-                className="card text-center group space-y-3 sm:space-y-6 p-4 sm:py-16 bg-[--website-18-color-5]  hover:bg-[--website-18-color-1] duration-300 text-white hover:text-black rounded-lg"
+                className="text-center group space-y-3 sm:space-y-6 p-4 sm:py-16 bg-[--website-18-color-5]  hover:bg-[--website-18-color-1] duration-300 text-white hover:text-black rounded-lg dark:bg-gray-900 dark:text-white dark:hover:text-white"
               >
                 <div className="grid place-items-center">
                   <img src={data.icon} alt="" className="w-8" />
                 </div>
                 <h1 className="text-xl font-bold">{data.name}</h1>
                 <p>{data.description}</p>
-                <a href={data.linkText} className="inline-block text-lg font-semibold py-3 text-[--website-18-color-1] group-hover:text-black duration-300">
+                <a
+                  href={data.linkText}
+                  className="inline-block text-lg font-semibold py-3 duration-300"
+                >
                   {data.buttonText}
                 </a>
               </div>
