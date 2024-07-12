@@ -1,9 +1,36 @@
-import React from "react";
+import React, { useState } from "react";
+import axios from "axios";
 import LoadingButton from "../components/loadingButton/LoadingButton";
 
 const FailedVerified = () => {
+  const [email, setEmail] = useState("");
+  const [loading, setLoading] = useState(false);
+  const [message, setMessage] = useState("");
+
+  const handleEmailChange = (event) => {
+    setEmail(event.target.value);
+  };
+
+  const handleResendEmailVerification = async () => {
+    setLoading(true);
+    setMessage("");
+    try {
+      const response = await axios.post(`${process.env.REACT_APP_BACKEND_URL}/user/resend-email-verification`, {
+        email: email,
+      });
+
+      if (response.status === 200) {
+        setMessage("Email verification resent successfully.");
+      }
+    } catch (error) {
+      setMessage("Error resending email verification. Please try again.");
+    } finally {
+      setLoading(false);
+    }
+  };
+
   return (
-    <div className="bg-gradient-to-r from-[#481b91] to-[#240d55]  flex flex-col justify-center items-center min-h-screen">
+    <div className="bg-gradient-to-r from-[#481b91] to-[#240d55] flex flex-col justify-center items-center min-h-screen">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" className="w-auto h-48">
         <path
           fill="#B197FC"
@@ -23,14 +50,17 @@ const FailedVerified = () => {
           required
           className="min-w-0 outline-none flex-auto rounded-md border-0 bg-white/5 px-3.5 py-2 text-white shadow-sm ring-1 ring-inset ring-white/10 focus:ring-2 focus:ring-inset focus:ring-indigo-500 sm:text-sm sm:leading-6"
           placeholder="Enter your email"
+          value={email}
+          onChange={handleEmailChange}
         />
         <LoadingButton
-          loading={""}
-          onClick={"handleUpdateName"}
+          loading={loading}
+          onClick={handleResendEmailVerification}
           className="flex-none rounded-md bg-indigo-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500"
-          btnText="Reverified"
+          btnText="Reverify"
         />
       </div>
+      {message && <p className="mt-4 text-center text-white">{message}</p>}
     </div>
   );
 };
