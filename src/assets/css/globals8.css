@@ -39,6 +39,9 @@
 .hero8 {
   margin-bottom: 5rem;
 }
+.text-color8 {
+  color: var(--website-8-color-6) !important;
+}
 
 @layer base {
   .design-8 {
