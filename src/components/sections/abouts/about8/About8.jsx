@@ -63,7 +63,7 @@ const About8 = ({ template }) => {
             </div>
             <div className="flex gap-x-8 items-center">
               <button className="btn btn-lg">{about.buttonText}</button>
-              <a href="#" className="text-gradient btn-link">
+              <a href="#" className="text-gradient btn-link text-color8">
                 {about.linkText}
               </a>
             </div>
