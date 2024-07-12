@@ -18,9 +18,9 @@ const SuccessVerified = () => {
           <p className="mx-auto max-w-[700px] text-gray-200 md:text-xl text-center">
             Your email has been successfully verified. Please return to the login page.
           </p>
-          <Link className="rounded-md text-sm font-medium h-10 my-6 px-4 py-2 bg-white text-gray-900 hover:text-black" to={"/"}>
+          {/* <Link className="rounded-md text-sm font-medium h-10 my-6 px-4 py-2 bg-white text-gray-900 hover:text-black" to={`/en`}>
             Go back home
-          </Link>
+          </Link> */}
         </section>
       </div>
     </>

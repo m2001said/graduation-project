@@ -40,7 +40,7 @@ const ForgetPasswordForm = ({ onForgotPasswordSuccess }) => {
     <>
       <label htmlFor="email">Email</label>
       <input type="email" id="email" value={email} onChange={(e) => setEmail(e.target.value)} />
-      {forgetPasswordResponse && <div className="message-error">{forgetPasswordResponse}</div>}
+      {forgetPasswordResponse && <div className="text-green-700">{forgetPasswordResponse}</div>}
       <button className={`form-button`} onClick={handleForgotPassword} disabled={forgetPasswordStatus === "loading"}>
         {forgetPasswordStatus === "loading" && (
           <svg

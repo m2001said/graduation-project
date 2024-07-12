@@ -77,7 +77,7 @@ const MainNav = ({ toggleModal }) => {
           )}
 
           <div className="nav-controls flex justify-between items-center gap-4 md:gap-6">
-            {authState.status === "succeeded" && authState.user && (
+            {authState.status === "succeeded" && authState.login && (
               <Link to={`/${i18n.language}/user-information`} className="hidden md:flex items-center gap-2 ">
                 {userAvatar ? <img src={userAvatar} alt="logo" className="w-10 h-10 rounded-full" /> : <img className="w-6" src={user} alt="logo" />}
               </Link>
@@ -85,9 +85,9 @@ const MainNav = ({ toggleModal }) => {
 
             <LoadingButton
               loading={authState.status === "loading"}
-              onClick={authState.status === "succeeded" && !authState.user.message ? handleSignOut : toggleModal}
+              onClick={authState.status === "succeeded" && authState.login ? handleSignOut : toggleModal}
               className="hidden md:block signIn-btn p-1 md:p-2"
-              btnText={authState.status === "succeeded" && !authState.user.message ? t("USER.LOG_OUT") : t("USER.SIGN_IN")}
+              btnText={authState.status === "succeeded" && authState.login ? t("USER.LOG_OUT") : t("USER.SIGN_IN")}
             />
 
             {showchangelanguage() && (

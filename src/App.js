@@ -22,6 +22,10 @@ import SessionChecker from "./components/mainPage/SessionChecker.jsx";
 import YourPages from "./pages/YourPages.jsx";
 import Services from "./pages/Services.jsx";
 
+// deal with redirect after google login
+import { useDispatch } from "react-redux";
+import { updateUser } from "./features/auth/authSlice";
+
 const trialDesignComponents = Array.from({ length: 18 }, (_, i) => require(`./pages/TrialDesign${i + 1}`).default);
 const websites = Array.from({ length: 18 }, (_, i) => require(`./pages/TrialDesign${i + 1}`).default);
 
@@ -32,6 +36,41 @@ function App() {
   const language = i18n.language;
   const navigate = useNavigate();
   const location = useLocation();
+ 
+  // deal with redirect after google login
+  const [user, setUser] = useState(null);
+  const [accessToken, setAccessToken] = useState(null);
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    // Get the URL parameters
+    const urlParams = new URLSearchParams(window.location.search);
+
+    // Extract the user parameter and parse it as JSON
+    const userParam = urlParams.get("user");
+    if (userParam) {
+      try {
+        const userObject = JSON.parse(userParam);
+        setUser(userObject);
+      } catch (error) {
+        console.error("Failed to parse user parameter:", error);
+      }
+    }
+
+    // Extract the accessToken parameter
+    const token = urlParams.get("accessToken");
+    if (token) {
+      setAccessToken(token);
+    }
+  }, []);
+
+  useEffect(() => {
+    if (user && accessToken) {
+      // console.log(user, "..", accessToken);
+      localStorage.setItem("token", accessToken);
+      dispatch(updateUser(user));
+    }
+  }, [user, accessToken]);
 
   useEffect(() => {
     // Redirect root URL to the current language
@@ -54,12 +93,12 @@ function App() {
   return (
     <div className={isRightToLeft ? "rtl" : "ltr"}>
       <MainNav toggleModal={toggleModal} />
-      <SessionChecker />
+      {localStorage.getItem("refresh_token") && <SessionChecker />}
       <div style={{ marginTop: "77px" }} id="template-container">
         <Routes>
           <Route path={`/${language}/success-verified`} element={<SuccessVerified />} />
           <Route path={`/${language}/failed-verified`} element={<FailedVerified />} />
-          <Route path={`/${language}/reset-password/:token`} element={<ResetPassword />} />
+          <Route path={`/${language}/reset-password`} element={<ResetPassword />} />
 
           <Route path={`/${language}`} element={<MainPage toggleModal={toggleModal} isModalOpen={isModalOpen} />} />
           <Route

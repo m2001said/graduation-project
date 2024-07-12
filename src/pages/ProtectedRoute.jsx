@@ -6,8 +6,8 @@ const ProtectedRoute = ({ children }) => {
    const authState = useSelector(state => state.auth);
    let location = useLocation();
 
-   if (authState.status !== "succeeded" || !authState.user) {
-       return <Navigate to="/" state={{ from: location }} replace />;
+   if (!authState.login) {
+     return <Navigate to="/" state={{ from: location }} replace />;
    }
    return children;
 };
