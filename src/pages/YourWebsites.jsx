@@ -151,7 +151,7 @@ const YourWebsites = () => {
               <p className="text-gray-500 text-sm">Click the Copy button to copy the URL.</p>
               <p className="text-gray-800 mt-5 p-1 text-sm ">
                 For custom domains, please reach out to{" "}
-                <a className="text-blue-500 hover:underline hover:text-blue-800" href="/support">
+                <a className="text-blue-500 hover:underline hover:text-blue-800" href={`/${i18n.language}/#contact-us`}>
                   Support
                 </a>
                 .

@@ -71,7 +71,6 @@ const YourPages = () => {
     );
   }
 
-
   function removeEmptyArrays(obj) {
     for (let prop in obj) {
       if (Array.isArray(obj[prop])) {
@@ -116,8 +115,6 @@ const YourPages = () => {
       //     document.documentElement.style.setProperty(`--website-${i}-color-${index + 1}`, res.data.colors?.templateColors[index]);
       //   }
       // }
-
-
     } catch (error) {
       console.error("Error fetching template data:", error);
     }
@@ -126,7 +123,7 @@ const YourPages = () => {
     window.scrollTo(0, 0);
     setIsModalOpen(!isModalOpen);
     setIsCelebrityBirthday(!isCelebrityBirthday);
-    setCopied(false)
+    setCopied(false);
   };
   return isLoading ? (
     <div className="designs-section flex items-center justify-center">
@@ -149,7 +146,7 @@ const YourPages = () => {
               <p className="text-gray-500 text-sm">Click the Copy button to copy the URL.</p>
               <p className="text-gray-800 mt-5 p-1 text-sm ">
                 For custom domains, please reach out to{" "}
-                <a className="text-blue-500 hover:underline hover:text-blue-800" href="/support">
+                <a className="text-blue-500 hover:underline hover:text-blue-800" href={`/${i18n.language}/#contact-us`}>
                   Support
                 </a>
                 .

@@ -32,7 +32,7 @@ const Dashboard = () => {
     return newObj;
   };
 
-  const newState = copyObjectWithoutId(state)
+  const newState = copyObjectWithoutId(state);
 
   return (
     <section className="dashboard-container mx-auto relative">
