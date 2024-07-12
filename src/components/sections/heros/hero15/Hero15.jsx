@@ -18,13 +18,13 @@ const Hero15 = ({ template }) => {
           <h1 className="xl:text-[65px] text-[74px] mt-10 mb-5 sm:py-0 py-4 btnHoverColor15 textShadow">{hero.subtitle}</h1>
           <p className="text-[15px] mb-5 font-bold darkModeTextColor15">{hero.description}</p>
           <div className="xl:block hidden">
-            <div className="flex items-center gap-x-8 pb-6 text-[22px]">
-              {hero.medias.map((icon, index) => (
+            {/* <div className="flex items-center gap-x-8 pb-6 text-[22px]"> */}
+            {/* {hero.medias.map((icon, index) => (
                 <a key={icon.url} href={icon.url} target="_blank" rel="noopener noreferrer">
                   <img src={icon.icon} alt={`Icon ${index + 1}`} style={{ width: "40px", height: "40px" }} />
                 </a>
-              ))}
-            </div>
+              ))} */}
+            {/* </div> */}
             <div className="flex items-center w-fit text-[13px] font-bold pt-4">
               <span className="block rounded-full h-14 border border-black border-solid shadowbtn">
                 <button className="bg-transparenent darkModeTextColor15 h-full font-bold px-10 rounded-full hover:border-2 border-solid bg-[var(--website-15-color-5)]">
