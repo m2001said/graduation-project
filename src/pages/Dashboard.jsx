@@ -48,8 +48,8 @@ const Dashboard = () => {
           </div>
         </div>
       </div>
-      {/* only in ai version --> we will open it */}
-      {/* <ChatBot /> */}
+      {/* only in ai version -------------------> we will open it */}
+      <ChatBot />
     </section>
   );
 };
