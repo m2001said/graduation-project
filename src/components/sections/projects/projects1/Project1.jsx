@@ -1,10 +1,14 @@
 import React from "react";
 import "./project1.css";
 import { useSelector } from "react-redux";
+import { useTranslation } from "react-i18next";
+
 
 const Project1 = ({ template }) => {
   const ownProjects = useSelector((state) => state.ownTemplate.projects);
   const projects = template ? template.projects : ownProjects;
+  const { i18n } = useTranslation();
+  const language = i18n.language;
 
   return (
     <div className="projects1 design-1" id={projects.sectionId}>
@@ -25,7 +29,7 @@ const Project1 = ({ template }) => {
               </div>
               <a href={"/#"} className="projects1-card-link">
                 <span>
-                  <img src={cards.icon} alt="icon" />
+                  <img src={cards.icon} alt="icon" className={language === "ar" ? "transform rotate-180" : ""} />
                 </span>
               </a>
             </div>

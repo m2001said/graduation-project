@@ -13,8 +13,8 @@ const Projects = ({template}) => {
     <div className="pb-24 bg-[--website-18-color-6] dark:bg-black dark:text-white" id={projects.sectionId}>
       <div className="container18">
         {/* Heading */}
-        <h1 className="text-3xl sm:text-4xl font-semibold font-serif mb-3">{projects.title}</h1>
-        <p className="text-base pb-10">{projects.description}</p>
+        <h1 className="text-3xl sm:text-4xl font-semibold font-serif mb-3 text-[--website-18-color-5] dark:text-[--website-18-color-6]">{projects.title}</h1>
+        <p className="text-base pb-10 text-[--website-18-color-5] dark:text-[--website-18-color-6]">{projects.description}</p>
         {/* Car listing */}
         <div>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-16">
@@ -26,11 +26,11 @@ const Projects = ({template}) => {
                 <div className="space-y-2">
                   <h1 className="text-[--website-18-color-1] font-semibold">{data.title}</h1>
                   <div className="flex justify-between items-center text-xl font-semibold">
-                    <p>{data.price}</p>
-                    <a href="/#">{data.buttonText}</a>
+                    <p className="text-[--website-18-color-5] dark:text-[--website-18-color-6]">{data.price}</p>
+                    <p className="text-[--website-18-color-5] dark:text-[--website-18-color-6]">{data.buttonText}</p>
                   </div>
                 </div>
-                <p className="text-xl font-semibold absolute top-0 left-3">{data.space}</p>
+                <p className="text-xl font-semibold absolute top-0 left-3 text-[--website-18-color-5] dark:text-[--website-18-color-6]">{data.space}</p>
               </div>
             ))}
           </div>

@@ -12,7 +12,7 @@ const Services10 = ({ template }) => {
           {/* head sec */}
           <div className="text-center mb-20 max-w-[400px] mx-auto">
             <p className="smHeader10 text-sm bg-clip-text text-transparent">{services.subtitle}</p>
-            <h1 className="text-3xl font-bold">{services.title}</h1>
+            <h1 className="text-3xl font-bold textColor10">{services.title}</h1>
             <p className="text-xs text-gray-400">{services.description}</p>
           </div>
           {/* card sec */}
@@ -37,9 +37,9 @@ const Services10 = ({ template }) => {
                     <img src={services.icon} alt="" className="w-6" />
                     <img src={services.icon} alt="" className="w-6" />
                   </div>
-                  <h1 className="text-xl font-bold">{service.title}</h1>
-                  <p className="text-gray-500 group-hover:text-white duration-300 text-sm line-clamp-2">{service.description}</p>
-                  <button className="btnBg10 btnTxt10 hover:scale-105 duration-300 py-1 px-4 rounded-full mt-4 group-hover:bg-white group-hover:text-[--website-10-color-1]">
+                  <h1 className="text-xl font-bold textColor10 group-hover:text-[--website-10-color-5]">{service.title}</h1>
+                  <p className="paraColor10 group-hover:text-[--website-10-color-5] duration-300 text-sm line-clamp-2">{service.description}</p>
+                  <button className="btnBg10 btnTxt10 hover:scale-105 duration-300 py-1 px-4 rounded-full mt-4 group-hover:bg-[--website-10-color-5] group-hover:text-[--website-10-color-1]">
                     {service.buttonText}
                   </button>
                 </div>

@@ -20,9 +20,9 @@ const Features = ({template}) => {
           </div>
           <div>
             <div className="space-y-5 sm:p-12 pb-6">
-              <h1 className="text-3xl sm:text-4xl font-bold font-serif">{feature.title}</h1>
-              <p className="leading-8 tracking-wide text-base">{feature.subtitle}</p>
-              <p className="text-base">{feature.description}</p>
+              <h1 className="text-3xl sm:text-4xl font-bold font-serif text-[--website-18-color-5] dark:text-[--website-18-color-6]">{feature.title}</h1>
+              <p className="leading-8 tracking-wide text-base text-[--website-18-color-4] dark:text-[--website-18-color-6]">{feature.subtitle}</p>
+              <p className="text-base text-[--website-18-color-4] dark:text-[--website-18-color-6]">{feature.description}</p>
               <button className="button-outline ">{feature.buttonText}</button>
             </div>
           </div>

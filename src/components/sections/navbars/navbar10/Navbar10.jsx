@@ -15,7 +15,7 @@ const Navbar10 = ({template}) => {
               <a href="# ">
                 <img src={navbar.imgUrl} alt="" className="w-10" />
               </a>
-              {navbar.title}
+              <span className="textColor10">{navbar.title}</span>
             </div>
             <div className="flex justify-between items-center gap-4">
               <div>
@@ -24,7 +24,7 @@ const Navbar10 = ({template}) => {
               <ul className="items-center gap-4 hidden sm:flex">
                 {navbar.links.map((link, index) => (
                   <li key={index}>
-                    <a href={`#${link.url}`} className="textHover10 inline-block py-4 px-4 duration-200">
+                    <a href={`#${link.url}`} className="textHover10 textColor10 inline-block py-4 px-4 duration-200">
                       {link.title}
                     </a>
                   </li>

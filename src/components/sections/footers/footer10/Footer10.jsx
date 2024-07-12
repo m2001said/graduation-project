@@ -14,15 +14,15 @@ const Footer10 = ({ template }) => {
           <div className=" py-8 px-4 ">
             <h1 className="sm:text-3xl text-xl font-bold sm:text-left text-justify mb-3 flex items-center gap-3">
               <img src={footer.imgUrl} alt="Logo" className="max-w-[50px]" />
-              {footer.title}
+              <span className="textColor10">{footer.title}</span>
             </h1>
-            <p className="">{footer.description}</p>
+            <p className="paraColor10">{footer.description}</p>
             <br />
             <div className="flex flex-col gap-3">
               {footer.contacts.map((contact, index) => (
                 <div className="flex items-center gap-3" key={index}>
                   <img src={contact.icon} alt="" className="w-5" />
-                  <p>{contact.value}</p>
+                  <p className="paraColor10">{contact.value}</p>
                 </div>
               ))}
             </div>
@@ -39,7 +39,7 @@ const Footer10 = ({ template }) => {
           <div className="grid grid-cols-2 sm:grid-cols-3 col-span-2 md:pl-10 ">
             {footer.footerSections.map((item) => (
               <div className="py-8 px-4 " key={item.title}>
-                <h1 className="footer10-sectionTitle sm:text-xl text-xl font-bold sm:text-left text-justify mb-3">{item.title}</h1>
+                <h1 className="footer10-sectionTitle textColor10 sm:text-xl text-xl font-bold sm:text-left text-justify mb-3">{item.title}</h1>
                 <ul className={`flex flex-col gap-3`}>
                   {item.links.map((link) => (
                     <a href={link.url} key={link.title}>

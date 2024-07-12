@@ -18,7 +18,7 @@ const Feature10 = ({ template }) => {
             </div>
             {/* txt sec */}
             <div className="flex flex-col justify-center gap-6 sm:pt-0">
-              <h1 className="text-3xl sm:text-4xl font-bold">{feature.title}</h1>
+              <h1 className="text-3xl sm:text-4xl font-bold textColor10">{feature.title}</h1>
               <p className="text-sm text-gray-500 tracking-wide leading-5">{feature.description} </p>
               <div className="flex flex-col gap-4">
                 {feature.features.map((data, index) => (
@@ -26,7 +26,7 @@ const Feature10 = ({ template }) => {
                     <div className={`feature10-divIcon`}>
                       <img src={data.icon} alt="" className="w-full rounded-full" />
                     </div>
-                    <p className="text-base font-sans">{data.title}</p>
+                    <p className="text-base font-sans textColor10">{data.title}</p>
                   </div>
                 ))}
               </div>

@@ -17,8 +17,8 @@ const Testimonials10 = ({template}) => {
         {/* header sec*/}
         <div className="text-center mb-10 max-w-[600px] mx-auto">
           <p className="smHeader10 text-sm bg-clip-text text-transparent">{testimonial.subtitle}</p>
-          <h1 className="text-3xl font-bold">{testimonial.name}</h1>
-          <p className="text-xs text-gray-400">{testimonial.description}</p>
+          <h1 className="text-3xl font-bold textColor10">{testimonial.title}</h1>
+          <p className="text-xs paraColor10">{testimonial.description}</p>
         </div>
         {/* card sec */}
         <div className="">
@@ -32,7 +32,7 @@ const Testimonials10 = ({template}) => {
                     </div>
                     <div className="flex items-center gap-4">
                       <div>
-                        <p className="text-gray-500 text-sm">{data.description}</p>
+                        <p className="paraColor10 text-sm">{data.description}</p>
                         <h1 className="text-xl font-bold text-black/80 dark:text-white">{data.name}</h1>
                       </div>
                     </div>
