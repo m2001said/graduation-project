@@ -52,7 +52,7 @@ const Hero8 = ({ template }) => {
               <p className="mb-8 max-w-lg mx-auto lg:mx-0">{hero.description}</p>
               <div className="flex max-w-max items-center gap-x-6 mb-12 mx-auto lg:mx-0">
                 <button className="btn btn-lg">{hero.buttonText}</button>
-                <a href="#" className="text-gradient btn-link">
+                <a href="#" className="text-gradient btn-link text-color8">
                   {hero.linkText}
                 </a>
               </div>
