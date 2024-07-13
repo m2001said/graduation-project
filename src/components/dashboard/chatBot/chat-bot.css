@@ -20,7 +20,7 @@
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   width: 320px;
-  height: 400px;
+  height: 70vh;
   display: flex;
   flex-direction: column;
 }

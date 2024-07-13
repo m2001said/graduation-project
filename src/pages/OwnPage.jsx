@@ -8,6 +8,7 @@ import axios from "axios";
 import Loader from "../components/Loader/Loader";
 import { useTranslation } from "react-i18next";
 import NotFound from "./NotFoundPage";
+import ChatBot from "../components/dashboard/chatBot/ChatBot";
 
 const importComponent = (type, index) => {
   let module = null;
@@ -203,7 +204,9 @@ const OwnPage = () => {
                 {renderOrderedComponents.map((element) => renderComponent(element.type, selectedData[`${sectionNames[element.index]}IndexSelected`]))}
               </div>
             </div>
-          </div>
+          </div>{" "}
+          {/* only in ai version -------------------> we will open it */}
+          <ChatBot />
         </section>
       </>
     )
